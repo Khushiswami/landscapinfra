@@ -59,53 +59,53 @@ const faqs: FAQ[] = [
   {
     question: "What are sandwich panels?",
     answer:
-      "A factory building is a structure designed to house manufacturing or production operations."
+      "Sandwich panels consist of two metal layers with an insulating core in between, offering superior thermal insulation and structural strength."
   },
   {
-    question: "What materials are used in factory building construction?",
+    question: "What materials are used in sandwich panels?",
     answer:
-      "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency."
+      "Sandwich panels usually feature outer layers made of galvanized or coated steel, while the core insulation is commonly composed of materials such as EPS (Expanded Polystyrene), PUF (Polyurethane Foam), Rockwool, or Glasswool."
   },
   {
-    question: "What are the benefits of prefabricated factory buildings?",
+    question: "What are the applications of sandwich panels?",
     answer:
-      "They are faster to build, cost-effective, customizable, and more sustainable."
+      "Due to their excellent thermal and sound insulation properties, sandwich panels are extensively used in industrial facilities, cold storage units, clean rooms, site offices, warehouses, and various prefabricated structures."
   },
   {
     question:
-      "How does a pre-engineered factory building differ from traditional buildings?",
+      "What are the advantages of sandwich panels?",
     answer:
-      "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost."
+      "The main advantages include effective thermal and acoustic insulation, lightweight design, fast installation, fire resistance (depending on the core material), and overall cost-effectiveness."
   },
   {
-    question: "Can factory buildings be customized?",
+    question: "How durable are sandwich panels?",
     answer:
-      "Yes, they can be tailored to specific design, size, and operational requirements."
+      "Sandwich panels offer high durability and are resistant to corrosion, moisture, and physical impact, with an average lifespan ranging from 15 to 25 years, depending on the core material and application."
   },
   {
-    question: "What are Pre-Engineered Buildings (PEBs)?",
+    question: "Are sandwich panels fire-resistant?",
     answer:
-      "Pre-Engineered Buildings are factory-fabricated steel structures that are shipped in parts and assembled on-site, offering speed, durability, and cost savings."
+      "Rockwool and Glasswool panels provide outstanding fire resistance, while PUF and EPS panels offer moderate protection and are available in fire-retardant variants."
   },
   {
-    question: "Why choose Pre-Engineered Buildings over conventional construction?",
+    question: "Can sandwich panels withstand harsh weather conditions?",
     answer:
-      "PEBs reduce construction time by up to 60%, offer flexibility in design, and ensure long-term strength with minimal maintenance compared to traditional methods."
+      "Ladsking Infra’s sandwich panels are engineered to endure extreme weather conditions such as high temperatures, humidity, heavy rainfall, and wind loads, when installed properly."
   },
   {
-    question: "What are Prefabricated Structures?",
+    question: "What is the installation process for sandwich panels?",
     answer:
-      "Prefabricated structures are modular buildings manufactured in factories and assembled at site, ensuring faster delivery, reduced labor, and consistent quality."
+      "At Ladsking Infra, installation involves securely mounting the panels onto a steel or prefabricated framework using specialized fasteners, sealants, and edge protectors to ensure a durable and leak-proof finish."
   },
   {
-    question: "What is Light Gauge Steel Framing (LGSF)?",
+    question: "What is the lifespan of sandwich panels?",
     answer:
-      "LGSF is an advanced construction method using cold-formed steel sections for walls, roofs, and floors, making structures lightweight, durable, and sustainable."
+      "When installed and maintained correctly, Ladsking Infra’s sandwich panels can provide reliable performance for up to 25 years, delivering outstanding long-term value and energy efficiency."
   },
   {
-    question: "Where is Light Gauge Steel Framing used?",
+    question: "What industries use sandwich panels the most?",
     answer:
-      "LGSF is commonly used in residential buildings, commercial complexes, schools, hospitals, and temporary housing solutions."
+      "Sectors like warehousing, logistics, food processing, pharmaceuticals, agriculture, and construction extensively depend on sandwich panels."
   },
   {
     question: "What are Sandwich Panels in construction?",
@@ -118,19 +118,19 @@ const faqs: FAQ[] = [
       "They provide superior insulation, reduce energy costs, are lightweight, easy to install, and suitable for cold storage, industrial sheds, and modular units."
   },
   {
-    question: "What are Standard Modular Solutions?",
+    question: "How energy-efficient are sandwich panels?",
     answer:
-      "Standard Modular Solutions are ready-to-use prefabricated units designed for quick installation, flexibility, and cost-effectiveness across industries."
+      "Sandwich panels help cut energy expenses by limiting heat transfer, keeping indoor temperatures stable, and lowering the need for air conditioning or heating"
   },
   {
-    question: "What are Ready-to-Use Modular Units?",
+    question: "Do sandwich panels meet building code and safety standards in India?",
     answer:
-      "Ready-to-use modular units are pre-built cabins or structures delivered directly to the site, requiring minimal setup and providing instant usability."
+     "Ladsking Infra’s sandwich panels meet all applicable IS standards and fire safety regulations, guaranteeing structural strength and reliable performance."
   },
   {
-    question: "Where can Ready-to-Use Modular Units be applied?",
+    question: "Are sandwich panels environmentally friendly?",
     answer:
-      "They are ideal for site offices, security cabins, classrooms, healthcare units, toilets, and temporary accommodations."
+      "Sandwich panels are both energy-efficient and recyclable. Ladsking Infra manufactures its panels using environmentally friendly processes that minimize waste."
   }
 ];
 

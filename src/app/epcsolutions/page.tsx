@@ -25,188 +25,71 @@ export default function Epcsolutions() {
 const areas = [
   {
     id: 1,
-    title: "Prefab Site Infrastructure ",
-    subtitle: "Prefab Site Infrastructure Solutions",
-    description:"At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
+    title: " Engineering & Design ",
+    subtitle: " Engineering & Design",
+    description:"We offer detailed project planning, thorough structural analysis, and innovative design solutions tailored to project requirements. Leveraging advanced engineering tools such as BIM and 3D modeling, we ensure precision, efficiency, and seamless coordination. All our processes strictly adhere to both national and international quality and safety standards.",
     image: "/industry.jpg",
   },
   {
     id: 2,
-    title: "Prefab Site Office",
-    subtitle: "Prefab Site Office",
-    description:"At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
+    title: "Construction & Execution",
+    subtitle: "Construction & Execution",
+    description:"Our end-to-end site management and project coordination ensure smooth execution at every stage. Using modern construction techniques, we enable efficient and fast-track installations. With minimal on-site disruptions, we guarantee quick project turnaround without compromising quality or safety.",
    image: "/expertise/third.png",
   },
   {
     id: 3,
-    title: "Labor Hutments",
-    subtitle: "Prefabricated Industrial Shed Manufacturers",
+    title: "Procurement & Manufacturing",
+    subtitle: "Procurement & Manufacturing",
     description:
-      "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
+      "We source only high-quality raw materials and components to ensure reliability from the ground up. Our in-house manufacturing capabilities cover PEB structures, prefabricated buildings, and sandwich panels—delivering consistent quality and faster timelines. We prioritize sustainable, cost-effective materials that offer long-term durability and performance.",
     image: "/expertise/third.png",
   },
   {
     id: 4,
-    title: "Portable Security Guard Cabins",
-    subtitle: "FPortable Security Guard Cabins",
-    description:"Portable Security Guard Cabins are compact, movable structures designed to provide a safe, comfortable, and functional workspace for security personnel. Built with durable materials such as steel, aluminum, or high-quality insulated panels, these cabins are weather-resistant and sturdy, ensuring long-lasting use in both indoor and outdoor environments.",
+    title: "Quality & Safety Compliance",
+    subtitle: "Quality & Safety Compliance",
+    description:"We implement stringent quality control measures at every stage of the project to ensure flawless execution and reliable performance. All our processes comply with ISO, IS, and global safety standards, reflecting our commitment to excellence. With a strong focus on sustainable construction, we utilize eco-friendly materials to minimize environmental impact while maximizing long-term value.",
     image: "/expertise/third.png",
   },
-  {
-    id: 5,
-    title: "Clean Room",
-    subtitle: "Clean Room",
-    description:
-"offers advanced cleanroom solutions for controlled environments in industries like pharmaceuticals, electronics, and biotechnology. Our cleanrooms are designed with precision to meet stringent hygiene, airflow, and temperature control standards, ensuring optimal conditions for sensitive operations."  ,
-  image: "/expertise/third.png",
-  },
-  {
-    id: 6,
-    title: "Prefabricated Toilet",
-    subtitle: "Prefabricated Toilet",
-    description:"Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-    image: "/expertise/third.png",
-  },
-    {
-    id: 7,
-    title: "Prefab Porta Cabins Manufacturer",
-    subtitle: "Prefab Porta Cabins Manufacturer",
-    description:"Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-    image: "/expertise/third.png",
-  },
-    {
-    id: 8,
-    title: "Railway Shelters",
-    subtitle: "Railway Shelters",
-    description:"Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
-    image: "/expertise/third.png",
-  },
-  {
-    id: 9,
-    title: "Cold Storage & Cold Room Manufacturer",
-    subtitle: "Railway Shelters",
-    description:"Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
-    image: "/product/Cold Storage ps.jpg",
-  },
+  
 ];
 
-const faqs: FAQ[] = [
-  {
-    question: "What is a factory building?",
-    answer:
-      "A factory building is a structure designed to house manufacturing or production operations."
-  },
-  {
-    question: "What materials are used in factory building construction?",
-    answer:
-      "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency."
-  },
-  {
-    question: "What are the benefits of prefabricated factory buildings?",
-    answer:
-      "They are faster to build, cost-effective, customizable, and more sustainable."
-  },
-  {
-    question:
-      "How does a pre-engineered factory building differ from traditional buildings?",
-    answer:
-      "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost."
-  },
-  {
-    question: "Can factory buildings be customized?",
-    answer:
-      "Yes, they can be tailored to specific design, size, and operational requirements."
-  },
-  {
-    question: "What are Pre-Engineered Buildings (PEBs)?",
-    answer:
-      "Pre-Engineered Buildings are factory-fabricated steel structures that are shipped in parts and assembled on-site, offering speed, durability, and cost savings."
-  },
-  {
-    question: "Why choose Pre-Engineered Buildings over conventional construction?",
-    answer:
-      "PEBs reduce construction time by up to 60%, offer flexibility in design, and ensure long-term strength with minimal maintenance compared to traditional methods."
-  },
-  {
-    question: "What are Prefabricated Structures?",
-    answer:
-      "Prefabricated structures are modular buildings manufactured in factories and assembled at site, ensuring faster delivery, reduced labor, and consistent quality."
-  },
-  {
-    question: "What is Light Gauge Steel Framing (LGSF)?",
-    answer:
-      "LGSF is an advanced construction method using cold-formed steel sections for walls, roofs, and floors, making structures lightweight, durable, and sustainable."
-  },
-  {
-    question: "Where is Light Gauge Steel Framing used?",
-    answer:
-      "LGSF is commonly used in residential buildings, commercial complexes, schools, hospitals, and temporary housing solutions."
-  },
-  {
-    question: "What are Sandwich Panels in construction?",
-    answer:
-      "Sandwich Panels are prefabricated wall and roof panels with an insulating core between two metal sheets, offering excellent thermal efficiency and durability."
-  },
-  {
-    question: "What are the benefits of Sandwich Panels?",
-    answer:
-      "They provide superior insulation, reduce energy costs, are lightweight, easy to install, and suitable for cold storage, industrial sheds, and modular units."
-  },
-  {
-    question: "What are Standard Modular Solutions?",
-    answer:
-      "Standard Modular Solutions are ready-to-use prefabricated units designed for quick installation, flexibility, and cost-effectiveness across industries."
-  },
-  {
-    question: "What are Ready-to-Use Modular Units?",
-    answer:
-      "Ready-to-use modular units are pre-built cabins or structures delivered directly to the site, requiring minimal setup and providing instant usability."
-  },
-  {
-    question: "Where can Ready-to-Use Modular Units be applied?",
-    answer:
-      "They are ideal for site offices, security cabins, classrooms, healthcare units, toilets, and temporary accommodations."
-  }
-];
+
 
 
 const possibilities = [
   {
-    subtitle: "High Tolerance & Durability",
+    subtitle: "🏭 Industrial & Manufacturing Units",
     description:
-      "Engineered with high tolerance, corrosion resistance, and exceptional durability to ensure reliable long-term performance.",
+      "Robust structures designed to support heavy-duty industrial operations and production lines.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Dimensional Accuracy",
+    subtitle: "🏢 Commercial & Institutional Buildings",
     description:
-      "Precision manufacturing guarantees exact dimensional accuracy, ensuring the final product meets and exceeds client expectations.",
+      "Modular spaces for offices, educational institutions, healthcare, and retail environments.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Quick Erection & Installation",
+    subtitle: "🏗️ Warehouses & Logistics Parks",
     description:
-      "Designed for rapid erection, enabling swift installation even in complex or challenging site conditions.",
+      "Efficient storage and distribution facilities built for scalability and fast operations.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Thermal Efficiency",
+    subtitle: "🌱 Agro & Cold Storage Solutions",
     description:
-      "Insulated panels maintain a 5–7°C temperature difference, significantly enhancing energy efficiency and comfort.",
+      "Temperature-controlled, durable structures for agricultural produce and perishable goods.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Accelerated Project Timelines",
+    subtitle: "⚡ Power & Energy Sector Infrastructure",
     description:
-      "Optimized production and installation processes ensure timely delivery, meeting tight project schedules.",
+      "Custom-built solutions for power plants, substations, and energy sector facilities.",
     image: "/industry.jpg",
   },
-  {
-    subtitle: "Robust Construction",
-    description:
-      "Strong and sturdy construction ensures long service life, structural stability, and reliable performance.",
-    image: "/industry.jpg",
-  },
+  
 ];
 
 const [startIndex, setStartIndex] = useState(0);
@@ -297,7 +180,7 @@ const [selectedId, setSelectedId] = useState(3);
         {/* Left Text */}
         <div className="text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-           Prefabricated Structures
+          EPC Solutions
           </h1>
           <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0">
 Prefabricated structures are buildings or components manufactured in a factory and then transported to the site for quick assemblly.          </p>
@@ -355,15 +238,13 @@ Prefabricated structures are buildings or components manufactured in a factory a
         {/* Left Content */}
         <div>
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-Smart and Flexible Solutions for Modern Building       </h2>
+EPC Solutions – Comprehensive Turnkey Project Management by Ladsking Infra      </h2>
           <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
           <p className="text-gray-700 mb-4 leading-relaxed">
-Lightweight, durable, relocatable, economical, and energy-efficient, prefabricated structures are increasingly recognized as a modern and sustainable alternative to conventional construction methods. These innovative solutions meet all the functional requirements of traditional buildings while offering added advantages such as faster execution, cost savings, and design flexibility.          </p>
+At Ladsking Infra, we deliver complete EPC (Engineering, Procurement, and Construction) solutions, ensuring a smooth process from concept to completion. As a trusted leader in prefabrication and PEB systems across India, we provide tailored turnkey solutions for industrial, commercial, and infrastructure projects. </p>
 
-          <p className="text-gray-700 mb-4 leading-relaxed">
-At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabricated structures tailored to diverse applications. Our dry construction process enables quicker project timelines and greater efficiency. Manufactured with premium-grade steel frames and insulated panels, our modular solutions are engineered for long-lasting durability and ease of installation.          </p>
-
+          
         
 
           <Link href="/contact">
@@ -405,26 +286,16 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
           <div className="flex items-center mb-4">
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-              Redefining Modern Infrastructure with Prefabricated Buildings
+             Ladsking Infra’s EPC Expertise: Delivering End-to-End Solutions
             </h2>
           </div>
 
+         
           <p className="text-gray-600 leading-relaxed mb-4">
-            <strong>Landsking Infra Pvt. Ltd.</strong> we believe that the true value of prefabricated buildings lies in their innovative design, structural integrity, and flawless execution. Each project begins with a carefully engineered design, which is then integrated into advanced automated production systems to ensure precision, uniformity, and uncompromised quality.
+           Our comprehensive project management handles every phase of the construction process, enabling clients to concentrate on their core business while we manage execution. With integrated design, manufacturing, and on-site capabilities, we deliver cost-efficient, high-quality, and timely solutions.
           </p>
 
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Our infrastructure is powered by a highly skilled team of
-            engineers, supported with state-of-the-art CNC machinery, robotic
-            welding systems, and high-capacity fabrication tools. These
-            advanced resources enable us to deliver large-scale{" "}
-            <span className="font-semibold">steel structures</span> with
-            precision and efficiency.
-          </p>
-
-          <p className="text-gray-600 leading-relaxed">
-            Our prefabricated structures are pre-engineered and pre-assembled at the factory, reducing on-site work and ensuring quick, seamless installation. This approach delivers not only efficiency and durability, but also an elegant balance of aesthetics and functionality, making them ideal for a wide range of residential, commercial, and industrial applications
-          </p>
+        
           <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
         GET A QUOTE
       </button>
@@ -435,7 +306,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
     {/* explore conettt */}
      <section className="max-w-7xl mx-auto px-4 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-       Our Range of Prefabricated Structure Products
+       Our EPC Service Offerings
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
@@ -493,7 +364,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
      <section className="bg-[#000080] text-white py-10">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-             Benefits of Pre-Engineered Buildings
+         Industries We Serve:
             </h2>
     
             {/* Cards Row */}
@@ -541,7 +412,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
   <div className="max-w-7xl mx-auto px-6 md:px-12">
     {/* Title */}
     <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-      Accelerate Construction with Prefabrication – Save Up to 60% Time
+      Why Choose Ladsking Infra for Your EPC Projects?
       <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
     </h2>
 
@@ -561,12 +432,22 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
 
       {/* Text Section (Right Side) */}
       <div>
-        <p className="text-gray-700 leading-relaxed">
-          With advanced prefabrication technology, <b>Landsking Infra Pvt. Ltd.</b> helps you build smarter and faster. Our modern, fully automated production systems ensure precision, consistency, and reduced dependency on manual labor, making prefabrication up to <b>60% quicker</b> than conventional construction methods.
-        </p>
-        <p className="text-gray-700 leading-relaxed mt-4">
-          By cutting down construction timelines, our prefabricated solutions not only <b>speed up project delivery</b> but also guarantee <b>strength, durability, and long-term reliability</b>. This makes them the preferred choice for a wide range of projects, including <b>commercial spaces, industrial facilities, residential complexes, and institutional buildings</b>.
-        </p>
+        <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✔ End-to-End Solutions:</strong> We offer single-point responsibility from design to execution, ensuring seamless project management.
+          </p>
+         <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✔ Cost & Time Efficiency</strong>Our fast-track approach enables timely delivery while keeping costs optimized.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✔ Industry Expertise </strong>  With over 25 years of experience in PEB and prefabrication, we bring deep industry knowledge to every project.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✔ Customization & Scalability  </strong> Our modular solutions are tailored to meet the unique needs of various sectors and can scale as required.
+          </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✔ Pan-India Presence  </strong>  A strong nationwide supply chain and project execution capability allow us to serve clients across India efficiently.
+          </p>
+            
       </div>
     </div>
   </div>
@@ -635,47 +516,7 @@ End-to-End Turnkey Solutions covering design, fabrication, delivery, and install
     {/* end why choose us */}
      <PebCallP/>
     
-     {/* faqs */}
-<section className="max-w-7xl mx-auto px-4 py-12 ">
-      {/* Heading */}
-      <div className="text-center mb-10">
-        <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
-          Frequently Asked Questions
-        </h2>
-        {/* Yellow divider line */}
-        <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
-      </div>
-
-      {/* FAQ Items */}
-      <div className="border-t border-gray-200 ">
-        {faqs.map((faq: FAQ, index: number) => (
-          <div key={index} className="border-b border-gray-200">
-            {/* Question */}
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
-            >
-              <span
-                className={`font-medium font-bold transition-colors duration-200 ${
-                  openIndex === index ? "text-[#000080]" : "text-gray-800"
-                }`}
-              >
-                {faq.question}
-              </span>
-              <span className="text-gray-500 text-sm font-bold">
-                {openIndex === index ? "▲" : "▼"}
-              </span>
-            </button>
-
-            {/* Answer */}
-            {openIndex === index && (
-              <div className="pb-4 text-gray-600">{faq.answer}</div>
-            )}
-          </div>
-        ))}
-      </div>
-    </section>
-     {/* end faqs */}
+     
     
      <PebFooterP/>
     </>

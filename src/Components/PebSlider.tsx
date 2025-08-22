@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+
 const categories = [
   {
     title: "Infrastructure Sector",
@@ -80,29 +81,44 @@ const categories = [
   },
 ];
 
-
 export default function PebSlider() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   return (
-    <div className="bg-gray-100 px-auto py-8 mt-6">
+    <div className="px-auto py-8 mt-6 bg-gray-50">
       {/* Section Title */}
       <div className="text-center mb-12">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Expertise
         </p>
-        <h2 className="text-4xl font-bold text-[#000080] leading-snug">
+        <h2 className="text-xl font-bold text-[#000080] leading-snug md:text-4xl">
           Industrial Building We Build
         </h2>
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3 rounded-full" />
       </div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto my-8 px-4">
-        <div className="flex flex-col md:flex-row w-full h-[500px] rounded-xl overflow-hidden">
-          
-          {/* Left Menu */}
-          <div className="w-full md:w-1/4 bg-white flex flex-col rounded-tl-xl rounded-bl-xl border border-gray-300">
+        {/* ✅ Tab Buttons - ONLY visible on mobile & tablet */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:hidden gap-4 mb-8">
+          {categories.map((cat, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveCategory(cat)}
+              className={`p-4 rounded-lg border text-sm font-medium transition-all duration-300 ${
+                activeCategory.title === cat.title
+                  ? "bg-[#000080] text-white shadow-lg"
+                  : "bg-white text-black hover:bg-gray-100"
+              }`}
+            >
+              {cat.title}
+            </button>
+          ))}
+        </div>
+
+        {/* Desktop View: Images + Description */}
+        <div className="hidden lg:flex w-full h-[500px] rounded-xl overflow-hidden">
+          {/* Left Tabs (optional if you want vertical tabs on desktop) */}
+          <div className="w-1/4 bg-white flex flex-col rounded-tl-xl rounded-bl-xl border border-gray-300">
             {categories.map((cat, index) => (
               <button
                 key={index}
@@ -111,7 +127,11 @@ export default function PebSlider() {
                   activeCategory.title === cat.title
                     ? "bg-white font-semibold shadow-inner"
                     : ""
-                } ${index !== categories.length - 1 ? "border-b border-gray-300" : ""}`}
+                } ${
+                  index !== categories.length - 1
+                    ? "border-b border-gray-300"
+                    : ""
+                }`}
               >
                 {cat.title}
               </button>
@@ -119,7 +139,7 @@ export default function PebSlider() {
           </div>
 
           {/* Right Slider */}
-          <div className="w-full md:w-3/4 relative">
+          <div className="w-3/4 relative">
             <Swiper
               navigation={true}
               modules={[Navigation]}
@@ -131,16 +151,15 @@ export default function PebSlider() {
                     className="w-full h-full bg-cover bg-center relative"
                     style={{ backgroundImage: `url(${img})` }}
                   >
-                    {/* Bottom Center Text Overlay */}
+                    {/* Overlay */}
                     <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-11/12">
                       <div className="bg-black/40 p-8 rounded-lg text-white shadow-lg">
-                        <h3 className="text-2xl font-bold mb-3 text-center">{activeCategory.title}</h3>
-                        <p className="text-sm mb-3 text-center">{activeCategory.description}</p>
-                        {/* <p className="text-sm mb-1 text-center">
-                          <strong>Projects:</strong> {activeCategory.projectsCompleted} | <strong>Experience:</strong> {activeCategory.experience} | <strong>Clients:</strong> {activeCategory.clientsServed}
+                        <h3 className="text-2xl font-bold mb-3 text-center">
+                          {activeCategory.title}
+                        </h3>
+                        <p className="text-sm mb-3 text-center">
+                          {activeCategory.description}
                         </p>
-                        <p className="text-sm mb-1 text-center"><strong>Status:</strong> {activeCategory.status}</p>
-                        <p className="text-sm italic text-center">{activeCategory.highlight}</p> */}
                       </div>
                     </div>
                   </div>
@@ -148,7 +167,6 @@ export default function PebSlider() {
               ))}
             </Swiper>
           </div>
-
         </div>
       </div>
     </div>

@@ -1,78 +1,124 @@
 "use client";
-import { useRef, useState } from "react";
-import { FaPlay } from "react-icons/fa";
+import { useState, useEffect } from "react";
+// import Pebexpertise from "../pebexpertise/page"
+// import Aboutpeb from "../Aboutpeb/page";
+// import Platform from "../platform/page"
+// import Totalsolution from "../totalsolution/page"
+import PlatformP from "../../Components/PlatformP"
+import AboutPebP from "../../Components/AboutPebP"
+import TotalSolutionP from "../../Components/TotalSolutionP"
+import PebExpertiseP from "../../Components/PebExpertiseP"
+import MediaP from "../../Components/MediaP"
+import PebBrandP from "../../Components/PebBrandP"
+import Insights from "../../Components/Insights"
+// import Pebheader from "../../Components/Pebheader"
+import PebFooterP from "../../Components/PebFooterP"
+// import PebCode from "../../Components/PebCode"
 
-export default function About() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+import { IoCallOutline } from "react-icons/io5";
+import PebSlider from "../../Components/PebSlider";
+// import ImageSlider from "../../Components/ImageSlider";
+// import ContactSection from "../../Components/ContactSection";
+import TripleBottomAccordion from "../../Components/TripleBottomAccordion";
+import ReviewsSection from "../../Components/ReviewsSection";
+import Timeline from "../../Components/Timeline";
+import ProjectSlider from "../../Components/ProjectSlider";
+import KeyFeatures from "../../Components/KeyFeatures";
+import ServicesSlider from "../../Components/ServicesSlider";
+import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
+import BuildHistory from "../../Components/BuildHistory";
+import PebheaderW from "../../Components/PebheaderW";
 
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
+const slides = [
+  {
+    title: "PRE ENGINEERED BUILDINGS",
+    description:
+      "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
+    video: "/video.mp4",
+  },
+  {
+    title: "EPC Solutions",
+    description:
+      "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
+    video: "/video.mp4",
+  },
+  {
+    title: "Project Management Consultancy",
+    description:
+      "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
+    video: "/video.mp4",
+  },
+  {
+    title: "Structural Engineering Services",
+    description:
+      "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
+    video: "/homeslider.mp4",
+  },
+];
+
+export default function About() {   
+    const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const slideTimer = setTimeout(() => {
+      setActive((prevActive) => (prevActive + 1) % slides.length);
+    }, 5000);
+
+    return () => {
+      clearTimeout(slideTimer);
+    };
+  }, [active]);
 
   return (
-    <section className="w-full min-h-[500px] flex flex-col md:flex-row">
-      <div
-        className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
-        style={{
-          backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
-        }}
-      >
-        <div className="max-w-lg text-white space-y-4 relative z-10">
-          <h1 className="text-2xl md:text-3xl font-bold leading-snug tracking-wide">
-            Lands king Infra works with Clients in diverse industries around
-            the world to design, construct and maintain their capital projects.
-          </h1>
-          <p className="text-sm md:text-lg leading-relaxed">
-            Landsking Infra is one of India s Fastest Growing Company as an
-            Industrial Solution Provider, It works on engineering, procurement,
-            construction (EPC) and maintenance companies.
-          </p>
-        </div>
-      </div>
+    <>
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      <AboutPebP />
+      <TripleBottomAccordion />
+      <PebSlider />
+      <ReviewsSection />
+      <KeyFeatures />
+      <BuildHistory />
+      <Timeline />
+      <ServicesSlider />
+      <PlatformP />
+      <PreEngineeredProducts />
+      <ProjectSlider />
+      <PebExpertiseP />
+      {/* <TotalSolutionP/> */}
+      {/* <Insights/> */}
+      {/* <PebCode/> */}
+      {/* <MediaP/> */}
+      {/* <PebBrandP/> */}
+      {/* <ImageSlider/> */}
+      {/* <ContactSection/> */}
 
-      {/* Right Column */}
-      <div
-        className="flex-1 relative flex items-center justify-center p-6 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/aboutleft.jpeg')`,
-        }}
-      >
-        <div className="absolute inset-0 bg-[rgba(14,14,85,0.3)]"></div>
+      <div className="bg-[#272727] bg-repeat py-10 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white">
+          {/* Left text */}
+          <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left mb-4 md:mb-0">
+            COMMITTED TO YOUR SATISFACTION
+          </h2>
 
-        <div className="relative w-full max-w-xl aspect-video z-10 flex flex-col items-center justify-center">
-         <video
-  ref={videoRef}
-  className="w-full h-full rounded-lg shadow-lg"
-  src="/video.mp4"
-  muted
-  loop
-  playsInline
-  poster="/about.png"
-  onPlay={() => setIsPlaying(true)}
-  controls={isPlaying} 
-></video>
-
-
-          {!isPlaying && (
-            <div
-              className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer px-4"
-              onClick={handleVideoClick}
-            >
-              <div className="flex items-center justify-center w-24 h-24 md:w-32 md:h-32 border-4 border-[rgb(0_0_0_/_44%)] rounded-full mb-4 hover:border-[rgb(0_0_0_/_60%)] transition">
-                <FaPlay className="text-4xl md:text-6xl text-[rgb(0_0_0_/_44%)]" />
-              </div>
-
-              <h2 className="text-xl md:text-3xl font-bold leading-snug tracking-wide text-white text-center">
-                CONNECTING VISIONS <br /> BUILDING FUTURE
-              </h2>
+          {/* Right call info */}
+          <div className="flex items-center gap-4 bg-white text-[#000080] px-4 py-2 rounded-full shadow-lg">
+            <div className="bg-[#000080] text-white p-3 rounded-full">
+              <IoCallOutline />
             </div>
-          )}
+            <div>
+              <p className="text-sm font-semibold">CALL US</p>
+              <a
+                href="tel:+918130444466"
+                className="text-lg font-bold hover:underline"
+              >
+                +91 8130 444 466
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+
+      <PebFooterP />
+    </>
   );
 }

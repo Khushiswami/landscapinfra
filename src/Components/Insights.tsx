@@ -18,7 +18,7 @@ const cards = [
     title: "EU AI Act is Critical for Innovation",
     description:
       "The integration of Artificial Intelligence is transforming the medical device industry, facilitating smarter diagnosis, physiological monitoring, and treatment decisions",
-     image: "/industry.jpg",
+    image: "/industry.jpg",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const cards = [
     title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
     description:
       "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
-     image: "/industry.jpg",
+    image: "/industry.jpg",
   },
 ];
 
@@ -71,7 +71,10 @@ export default function Insights() {
   };
 
   return (
-    <div className="relative max-w-8xl mx-auto px-10 md:px-20 py-10 my-40">
+    <div className="relative  md:px-20 py-10 my-40">
+      <h1 className="text-center text-4xl font-bold my-10">
+        Our Latest Insights
+      </h1>
       {/* Slider Container */}
       <div className="overflow-hidden">
         <div
@@ -80,50 +83,48 @@ export default function Insights() {
             transform: `translateX(-${(startIndex * 100) / cardsPerSlide}%)`,
           }}
         >
-          {cards
-            .slice(startIndex, startIndex + cardsPerSlide)
-            .map((card) => (
+          {cards.slice(startIndex, startIndex + cardsPerSlide).map((card) => (
+            <div
+              key={card.id}
+              className="flex-shrink-0 relative w-full sm:w-1/2 lg:w-1/3 h-[500px] rounded-md overflow-hidden cursor-pointer group"
+            >
+              {/* Tag */}
               <div
-                key={card.id}
-                className="flex-shrink-0 relative w-full sm:w-1/2 lg:w-1/3 h-[500px] rounded-md overflow-hidden cursor-pointer group"
+                className={`absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#23dce1] text-[#112868]`}
               >
-                {/* Tag */}
-                <div
-                  className={`absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#23dce1] text-[#112868]`}
-                >
-                  {card.tag}
+                {card.tag}
+              </div>
+
+              {/* Image */}
+              <img
+                src={card.image}
+                alt={card.title}
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+              />
+
+              {/* Title (default) */}
+              <div className="absolute bottom-4 left-4 right-4 text-white text-lg font-bold transition-opacity duration-500 group-hover:opacity-0 tracking-widest">
+                {card.title}
+              </div>
+
+              {/* Hover content */}
+              <div className="absolute inset-0 bg-[#f8f8f8] flex flex-col justify-between p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-left">
+                <div>
+                  <h3 className="text-2xl font-bold mb-4 text-blue-900 tracking-widest">
+                    {card.title}
+                  </h3>
+                  <p className="text-base text-gray-600 mb-6 tracking-widest">
+                    {card.description}
+                  </p>
                 </div>
-
-                {/* Image */}
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
-                />
-
-                {/* Title (default) */}
-                <div className="absolute bottom-4 left-4 right-4 text-white text-lg font-bold transition-opacity duration-500 group-hover:opacity-0 tracking-widest">
-                  {card.title}
-                </div>
-
-                {/* Hover content */}
-                <div className="absolute inset-0 bg-[#f8f8f8] flex flex-col justify-between p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-left">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-4 text-blue-900 tracking-widest">
-                      {card.title}
-                    </h3>
-                    <p className="text-base text-gray-600 mb-6 tracking-widest">
-                      {card.description}
-                    </p>
-                  </div>
-                  <div>
-                    <button className="bg-blue-900 text-xl text-[#23dce1] px-4 py-2 rounded-lg font-medium hover:bg-blue-900 transition">
-                      Know More
-                    </button>
-                  </div>
+                <div>
+                  <button className="bg-blue-900 text-xl text-[#23dce1] px-4 py-2 rounded-lg font-medium hover:bg-blue-900 transition">
+                    Know More
+                  </button>
                 </div>
               </div>
-            ))}
+            </div>
+          ))}
         </div>
       </div>
 

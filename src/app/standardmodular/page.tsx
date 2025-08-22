@@ -25,186 +25,131 @@ export default function Standardmodular() {
 const areas = [
   {
     id: 1,
-    title: "Prefab Site Infrastructure ",
-    subtitle: "Prefab Site Infrastructure Solutions",
-    description:"At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
+    title: "Liftable Cabin",
+    subtitle: "Liftable Cabin",
+    description:"Ladsking Infra’s liftable cabins offer a versatile and convenient solution for a wide range of temporary or portable space requirements. Featuring an innovative design and easy lifting mechanism, these cabins provide mobility and flexibility without sacrificing comfort or functionality.",
     image: "/industry.jpg",
   },
   {
     id: 2,
-    title: "Prefab Site Office",
-    subtitle: "Prefab Site Office",
-    description:"At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
+    title: "Mi Homes",
+    subtitle: "Mi Homes",
+    description:"Ladsking Infra’s MI Homes are innovative, sustainable, and budget-friendly modular homes crafted for rapid installation and lasting durability. Perfect for residential, commercial, and emergency use, these homes provide comfortable living spaces equipped with modern amenities.",
    image: "/expertise/third.png",
   },
   {
     id: 3,
-    title: "Labor Hutments",
-    subtitle: "Prefabricated Industrial Shed Manufacturers",
+    title: "K-House",
+    subtitle: "K-House",
     description:
-      "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
+      "K-House is a state-of-the-art solution for contemporary living, blending sustainability and innovation in its design. Featuring modular construction and energy-efficient elements, K-House provides a comfortable and eco-friendly lifestyle for individuals and families committed to a greener future.",
     image: "/expertise/third.png",
   },
-  {
-    id: 4,
-    title: "Portable Security Guard Cabins",
-    subtitle: "FPortable Security Guard Cabins",
-    description:"Portable Security Guard Cabins are compact, movable structures designed to provide a safe, comfortable, and functional workspace for security personnel. Built with durable materials such as steel, aluminum, or high-quality insulated panels, these cabins are weather-resistant and sturdy, ensuring long-lasting use in both indoor and outdoor environments.",
-    image: "/expertise/third.png",
-  },
-  {
-    id: 5,
-    title: "Clean Room",
-    subtitle: "Clean Room",
-    description:
-"offers advanced cleanroom solutions for controlled environments in industries like pharmaceuticals, electronics, and biotechnology. Our cleanrooms are designed with precision to meet stringent hygiene, airflow, and temperature control standards, ensuring optimal conditions for sensitive operations."  ,
-  image: "/expertise/third.png",
-  },
-  {
-    id: 6,
-    title: "Prefabricated Toilet",
-    subtitle: "Prefabricated Toilet",
-    description:"Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-    image: "/expertise/third.png",
-  },
-    {
-    id: 7,
-    title: "Prefab Porta Cabins Manufacturer",
-    subtitle: "Prefab Porta Cabins Manufacturer",
-    description:"Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-    image: "/expertise/third.png",
-  },
-    {
-    id: 8,
-    title: "Railway Shelters",
-    subtitle: "Railway Shelters",
-    description:"Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
-    image: "/expertise/third.png",
-  },
-  {
-    id: 9,
-    title: "Cold Storage & Cold Room Manufacturer",
-    subtitle: "Railway Shelters",
-    description:"Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
-    image: "/product/Cold Storage ps.jpg",
-  },
+  
 ];
 
 const faqs: FAQ[] = [
   {
-    question: "What is a factory building?",
+    question: "What is a standard modular solution?",
     answer:
-      "A factory building is a structure designed to house manufacturing or production operations."
+      "Standard modular solutions consist of prefabricated, customizable units designed for a wide range of applications, enabling fast, efficient, and flexible construction."
   },
   {
-    question: "What materials are used in factory building construction?",
+    question: "What types of structures can be built with modular solutions?",
     answer:
-      "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency."
+      "These solutions cover a variety of uses, including site offices, portable cabins, classrooms, worker accommodations, and modular retail spaces."
   },
   {
-    question: "What are the benefits of prefabricated factory buildings?",
+    question: "How are modular structures constructed?",
     answer:
-      "They are faster to build, cost-effective, customizable, and more sustainable."
+      "Modular structures are constructed off-site using prefabricated components and then assembled on-site, allowing for rapid installation and minimal disruption."
   },
   {
     question:
-      "How does a pre-engineered factory building differ from traditional buildings?",
+      "What materials are used in modular structures?",
     answer:
-      "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost."
+      "They are generally constructed using steel frameworks combined with insulated panels for the walls and roofing, ensuring strength and energy efficiency."
   },
   {
-    question: "Can factory buildings be customized?",
+    question: "Can modular structures be customized?",
     answer:
-      "Yes, they can be tailored to specific design, size, and operational requirements."
+      "Yes, modular structures can be customized to meet specific dimensions, layouts, and functional requirements."
   },
   {
-    question: "What are Pre-Engineered Buildings (PEBs)?",
+    question: "Are modular structures suitable for extreme weather conditions?",
     answer:
-      "Pre-Engineered Buildings are factory-fabricated steel structures that are shipped in parts and assembled on-site, offering speed, durability, and cost savings."
+      "Yes, these structures are built to withstand tough climates, including high winds and heavy rain."
   },
   {
-    question: "Why choose Pre-Engineered Buildings over conventional construction?",
+    question: "How long does it take to construct a modular building?",
     answer:
-      "PEBs reduce construction time by up to 60%, offer flexibility in design, and ensure long-term strength with minimal maintenance compared to traditional methods."
+      "Modular structures can be completed within weeks, depending on their size and complexity, offering a much faster alternative to traditional construction methods."
   },
   {
-    question: "What are Prefabricated Structures?",
+    question: "Who can benefit from modular solutions?",
     answer:
-      "Prefabricated structures are modular buildings manufactured in factories and assembled at site, ensuring faster delivery, reduced labor, and consistent quality."
+      "Industries like construction, education, healthcare, and retail often rely on modular solutions for both temporary and permanent infrastructure needs."
   },
   {
-    question: "What is Light Gauge Steel Framing (LGSF)?",
+    question: "What is the lifespan of a modular building?",
     answer:
-      "LGSF is an advanced construction method using cold-formed steel sections for walls, roofs, and floors, making structures lightweight, durable, and sustainable."
+      "With regular maintenance, modular buildings can have a lifespan of 20 to 30 years or longer."
   },
   {
-    question: "Where is Light Gauge Steel Framing used?",
+    question: "Can modular solutions be relocated?",
     answer:
-      "LGSF is commonly used in residential buildings, commercial complexes, schools, hospitals, and temporary housing solutions."
+      "Yes, these structures are portable and can be quickly dismantled and moved to new locations as required."
   },
   {
-    question: "What are Sandwich Panels in construction?",
+    question: "Are modular solutions compliant with building codes?",
     answer:
-      "Sandwich Panels are prefabricated wall and roof panels with an insulating core between two metal sheets, offering excellent thermal efficiency and durability."
+      "Yes, Ladsking Infra ensures that all modular solutions comply with industry standards and regulatory requirements.."
   },
   {
-    question: "What are the benefits of Sandwich Panels?",
+    question: "What is the installation process for modular buildings?",
     answer:
-      "They provide superior insulation, reduce energy costs, are lightweight, easy to install, and suitable for cold storage, industrial sheds, and modular units."
+      "Modules are prefabricated off-site, delivered to the site, and assembled using straightforward joining methods."
   },
-  {
-    question: "What are Standard Modular Solutions?",
-    answer:
-      "Standard Modular Solutions are ready-to-use prefabricated units designed for quick installation, flexibility, and cost-effectiveness across industries."
-  },
-  {
-    question: "What are Ready-to-Use Modular Units?",
-    answer:
-      "Ready-to-use modular units are pre-built cabins or structures delivered directly to the site, requiring minimal setup and providing instant usability."
-  },
-  {
-    question: "Where can Ready-to-Use Modular Units be applied?",
-    answer:
-      "They are ideal for site offices, security cabins, classrooms, healthcare units, toilets, and temporary accommodations."
-  }
+  
+
 ];
 
 
 const possibilities = [
   {
-    subtitle: "High Tolerance & Durability",
+    subtitle: "On-site Project Offices",
     description:
-      "Engineered with high tolerance, corrosion resistance, and exceptional durability to ensure reliable long-term performance.",
+      "Quick-to-install office spaces at construction or industrial sites, providing a functional and comfortable working environment for project teams.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Dimensional Accuracy",
+    subtitle: "Employee Housing Units",
     description:
-      "Precision manufacturing guarantees exact dimensional accuracy, ensuring the final product meets and exceeds client expectations.",
+      "Durable and secure accommodation units for workers, designed to ensure comfort and privacy during long-term site deployments.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Quick Erection & Installation",
+    subtitle: "Portable Restrooms & Washrooms",
     description:
-      "Designed for rapid erection, enabling swift installation even in complex or challenging site conditions.",
+      "Hygienic, ready-to-use sanitation units that can be quickly installed at remote locations or project sites with limited infrastructure.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Thermal Efficiency",
+    subtitle: "Modular Educational Classrooms",
     description:
-      "Insulated panels maintain a 5–7°C temperature difference, significantly enhancing energy efficiency and comfort.",
+      "Flexible and scalable classrooms ideal for schools, training centers, or temporary learning spaces, built for quick deployment and durability.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Accelerated Project Timelines",
+    subtitle: "Security Booths",
     description:
-      "Optimized production and installation processes ensure timely delivery, meeting tight project schedules.",
+      "Compact and sturdy cabins for security personnel, strategically placed at entry points or perimeters to monitor and control access.",
     image: "/industry.jpg",
   },
   {
-    subtitle: "Robust Construction",
+    subtitle: "Model Apartments & Villas",
     description:
-      "Strong and sturdy construction ensures long service life, structural stability, and reliable performance.",
+      "Fully functional sample flats and villas used for real estate demos, built with speed and precision to showcase final project layouts.",
     image: "/industry.jpg",
   },
 ];
@@ -297,7 +242,7 @@ const [selectedId, setSelectedId] = useState(3);
         {/* Left Text */}
         <div className="text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-           Prefabricated Structures
+           Standard Modular Solutions
           </h1>
           <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0">
 Prefabricated structures are buildings or components manufactured in a factory and then transported to the site for quick assemblly.          </p>
@@ -355,14 +300,14 @@ Prefabricated structures are buildings or components manufactured in a factory a
         {/* Left Content */}
         <div>
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-Smart and Flexible Solutions for Modern Building       </h2>
+Flexible, Expandable, and Quick-to-Deploy Modular Solutions”    </h2>
           <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
           <p className="text-gray-700 mb-4 leading-relaxed">
-Lightweight, durable, relocatable, economical, and energy-efficient, prefabricated structures are increasingly recognized as a modern and sustainable alternative to conventional construction methods. These innovative solutions meet all the functional requirements of traditional buildings while offering added advantages such as faster execution, cost savings, and design flexibility.          </p>
+At Ladsking Infra, we recognize the demand for fast, flexible, and premium-quality infrastructure in today’s ever-changing environment. Our Standard Modular Solutions are factory-built, pre-designed structures engineered to cater to a wide variety of applications—delivering exceptional speed, quality, and cost savings.    </p>
 
           <p className="text-gray-700 mb-4 leading-relaxed">
-At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabricated structures tailored to diverse applications. Our dry construction process enables quicker project timelines and greater efficiency. Manufactured with premium-grade steel frames and insulated panels, our modular solutions are engineered for long-lasting durability and ease of installation.          </p>
+Whether you need site offices, accommodation units, toilets, guard cabins, or modular classrooms, our solutions are designed for quick deployment, minimal site disturbance, and lasting performance.      </p>
 
         
 
@@ -405,25 +350,27 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
           <div className="flex items-center mb-4">
             
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-              Redefining Modern Infrastructure with Prefabricated Buildings
+             Why Choose Ladsking Infra’s Modular Solutions?
             </h2>
           </div>
 
           <p className="text-gray-600 leading-relaxed mb-4">
-            <strong>Landsking Infra Pvt. Ltd.</strong> we believe that the true value of prefabricated buildings lies in their innovative design, structural integrity, and flawless execution. Each project begins with a carefully engineered design, which is then integrated into advanced automated production systems to ensure precision, uniformity, and uncompromised quality.
+            <strong>✅ Quick Installation:</strong>  Delivered in ready-to-assemble modules, reducing construction time by up to 60%..
           </p>
-
+         <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✅ Superior Build Quality:</strong> Manufactured in our controlled facility using high-grade materials and precision processes.
+          </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Our infrastructure is powered by a highly skilled team of
-            engineers, supported with state-of-the-art CNC machinery, robotic
-            welding systems, and high-capacity fabrication tools. These
-            advanced resources enable us to deliver large-scale{" "}
-            <span className="font-semibold">steel structures</span> with
-            precision and efficiency.
+            <strong>✅ Cost-Effective: </strong>  Saves time, labor, and overhead costs while ensuring consistent quality.
           </p>
-
-          <p className="text-gray-600 leading-relaxed">
-            Our prefabricated structures are pre-engineered and pre-assembled at the factory, reducing on-site work and ensuring quick, seamless installation. This approach delivers not only efficiency and durability, but also an elegant balance of aesthetics and functionality, making them ideal for a wide range of residential, commercial, and industrial applications
+          <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✅ Portable & Relocatable:  </strong>  Easily dismantled and reassembled at new locations.
+          </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✅ Durable & Weather-Resistant :  </strong>   Built to withstand diverse environmental conditions and heavy usage.
+          </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+            <strong>✅ Custom Configurations: </strong>  While standard in design, they can be tweaked as per your operational needs.
           </p>
           <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
         GET A QUOTE
@@ -435,7 +382,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
     {/* explore conettt */}
      <section className="max-w-7xl mx-auto px-4 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-       Our Range of Prefabricated Structure Products
+       Our Standard Modular Solutions
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
@@ -493,7 +440,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
      <section className="bg-[#000080] text-white py-10">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-             Benefits of Pre-Engineered Buildings
+            Applications of Our Modular Solutions
             </h2>
     
             {/* Cards Row */}
@@ -541,7 +488,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
   <div className="max-w-7xl mx-auto px-6 md:px-12">
     {/* Title */}
     <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-      Accelerate Construction with Prefabrication – Save Up to 60% Time
+     Engineered to Support Your Fast-Paced Projects
       <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
     </h2>
 
@@ -562,10 +509,10 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
       {/* Text Section (Right Side) */}
       <div>
         <p className="text-gray-700 leading-relaxed">
-          With advanced prefabrication technology, <b>Landsking Infra Pvt. Ltd.</b> helps you build smarter and faster. Our modern, fully automated production systems ensure precision, consistency, and reduced dependency on manual labor, making prefabrication up to <b>60% quicker</b> than conventional construction methods.
+        Ladsking Infra brings years of expertise in prefab construction, delivering modular solutions that extend far beyond just temporary setups. Our standard modular units are built with the same precision and quality as permanent structures — supported by a dedicated team that manages everything from design to delivery and installation.
         </p>
         <p className="text-gray-700 leading-relaxed mt-4">
-          By cutting down construction timelines, our prefabricated solutions not only <b>speed up project delivery</b> but also guarantee <b>strength, durability, and long-term reliability</b>. This makes them the preferred choice for a wide range of projects, including <b>commercial spaces, industrial facilities, residential complexes, and institutional buildings</b>.
+         From leading infrastructure companies to real estate developers, Ladsking Infra has earned trust as a reliable modular construction partner for numerous projects nationwide. Our extensive manufacturing and logistics network across India ensures quick turnaround times and seamless execution — even in the most remote locations.
         </p>
       </div>
     </div>

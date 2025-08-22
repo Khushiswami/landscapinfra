@@ -25,7 +25,9 @@ export default function MediaP() {
                 className="mb-4"
               />
               <p className="text-sm text-gray-700 font-semibold">
-                Landsking Infra is one of India’s Fastest Growing Company as an Industrial Solution Provider, It works on engineering, procurement, construction (EPC) and maintenance companies.
+                Landsking Infra is one of India’s Fastest Growing Company as an
+                Industrial Solution Provider, It works on engineering,
+                procurement, construction (EPC) and maintenance companies.
               </p>
             </div>
 
@@ -39,7 +41,9 @@ export default function MediaP() {
                 className="mb-4"
               />
               <p className="text-sm text-gray-700 font-semibold">
-                We are a solution-driven company that handles all aspects of a project from concept to erection, employing optimized solutions and value engineering.
+                We are a solution-driven company that handles all aspects of a
+                project from concept to erection, employing optimized solutions
+                and value engineering.
               </p>
             </div>
           </div>
@@ -55,7 +59,7 @@ export default function MediaP() {
             Latest News and Update
           </h2>
           <h3 className="text-2xl font-bold border-l-4 border-[#000080] pl-2 mb-6">
-            EPACK UPDATE
+            Landsking Infra
           </h3>
 
           <ul className="space-y-6">
@@ -70,8 +74,8 @@ export default function MediaP() {
               <div>
                 <p className="text-sm text-gray-500">Jun 26, 2025</p>
                 <p className="text-gray-800 font-semibold">
-                  EPACK Prefab Participated In India Warehousing Show 2025 –
-                  Yashobhoomi, Dwarka
+                  Landsking Infra Prefab Participated In India Warehousing Show
+                  2025 – Yashobhoomi, Dwarka
                 </p>
               </div>
             </li>
@@ -87,7 +91,7 @@ export default function MediaP() {
               <div>
                 <p className="text-sm text-gray-500">Jun 17, 2025</p>
                 <p className="text-gray-800 font-semibold">
-                  EPACK Prefab Recognised at ISDA’s IIN Awards 2025
+                  Landsking Infra Prefab Recognised at ISDA’s IIN Awards 2025
                 </p>
               </div>
             </li>
@@ -103,8 +107,8 @@ export default function MediaP() {
               <div>
                 <p className="text-sm text-gray-500">Apr 26, 2025</p>
                 <p className="text-gray-800 font-semibold">
-                  EPACK Prefab Participated In Roof India Exhibition, Mumbai
-                  2025–26
+                  Landsking Infra Prefab Participated In Roof India Exhibition,
+                  Mumbai 2025–26
                 </p>
               </div>
             </li>
