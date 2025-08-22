@@ -42,7 +42,16 @@ export default function PebheaderW() {
 
   const navLinks: MenuItem[] = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+     {
+      name: "Solutions",
+      href: "/system",
+      subItems: [
+        { name: "Overview", href: "/system" },
+        { name: "Systems", href: "/systemPage" },
+        { name: "Products", href: "/productsPage" },
+      ],
+    },
+   
     {
       name: "Products",
       href: "",
@@ -147,18 +156,9 @@ export default function PebheaderW() {
         { name: "Project Videos", href: "/projects/videos" },
       ],
     },
-    {
-      name: "Solutions",
-      href: "/system",
-      subItems: [
-        { name: "Overview", href: "/system" },
-        { name: "Systems", href: "/systemPage" },
-        { name: "Products", href: "/productsPage" },
-      ],
-    },
+    { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
-
   return (
     <header className="fixed top-0 z-50 transition-all duration-300 bg-white shadow-lg w-full left-0">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4 transition-all duration-300">

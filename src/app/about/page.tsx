@@ -6,11 +6,11 @@ import { useState, useEffect } from "react";
 // import Totalsolution from "../totalsolution/page"
 import PlatformP from "../../Components/PlatformP"
 import AboutPebP from "../../Components/AboutPebP"
-import TotalSolutionP from "../../Components/TotalSolutionP"
-import PebExpertiseP from "../../Components/PebExpertiseP"
-import MediaP from "../../Components/MediaP"
-import PebBrandP from "../../Components/PebBrandP"
-import Insights from "../../Components/Insights"
+// import TotalSolutionP from "../../Components/TotalSolutionP"
+// import PebExpertiseP from "../../Components/PebExpertiseP"
+// import MediaP from "../../Components/MediaP"
+// import PebBrandP from "../../Components/PebBrandP"
+// import Insights from "../../Components/Insights"
 // import Pebheader from "../../Components/Pebheader"
 import PebFooterP from "../../Components/PebFooterP"
 // import PebCode from "../../Components/PebCode"
@@ -28,6 +28,7 @@ import ServicesSlider from "../../Components/ServicesSlider";
 import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
 import BuildHistory from "../../Components/BuildHistory";
 import PebheaderW from "../../Components/PebheaderW";
+// import Accolades from "../../Components/Accolades";
 
 const slides = [
   {
@@ -84,7 +85,8 @@ export default function About() {
       <PlatformP />
       <PreEngineeredProducts />
       <ProjectSlider />
-      <PebExpertiseP />
+      {/* <PebExpertiseP /> */}
+      {/* <Accolades/> */}
       {/* <TotalSolutionP/> */}
       {/* <Insights/> */}
       {/* <PebCode/> */}

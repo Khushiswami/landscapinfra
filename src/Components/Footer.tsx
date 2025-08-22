@@ -19,18 +19,102 @@ export default function Footer() {
       title: "Industry",
       external: true,
       items: [
-        { name: "Mobility", subItems: ["Aerospace Engineering", "Automotive", "Rail Transportation", "Trucks & Off-Highway Vehicles"] },
-        { name: "Sustainability", subItems: ["Discrete Manufacturing & Industrial Products", "Process Manufacturing"] },
-        { name: "Tech", subItems: ["Consumer Electronics", "MedTech", "Media & Entertainment", "NexGen Comms", "Semiconductors", "Software & Platforms", "Public Infrastructure & Smart Cities"] },
+        {
+          name: "Mobility",
+          subItems: [
+            "Aerospace Engineering",
+            "Automotive",
+            "Rail Transportation",
+            "Trucks & Off-Highway Vehicles",
+          ],
+        },
+        {
+          name: "Sustainability",
+          subItems: [
+            "Discrete Manufacturing & Industrial Products",
+            "Process Manufacturing",
+          ],
+        },
+        {
+          name: "Tech",
+          subItems: [
+            "Consumer Electronics",
+            "MedTech",
+            "Media & Entertainment",
+            "NexGen Comms",
+            "Semiconductors",
+            "Software & Platforms",
+            "Public Infrastructure & Smart Cities",
+          ],
+        },
       ],
     },
     {
       title: "Services",
       items: [
-        { name: "Digital Engineering", subItems: ["Artificial Intelligence", "Cybersecure", "Security Monitoring", "Security Solutions", "Security Services", "Immersive Experiences", "Industry 4.0", "Product Consulting", "Sustainability Engineering", "Sustainable Smart World", "5G"] },
-        { name: "Product Engineering", subItems: ["CAE & CFD", "CAx Automation", "Software Engineering", "Cloud Engineering", "DevOps", "Embedded Systems", "Engineering Analytics", "Integrated Design, Validation & Testing", "Lab as a Service", "Sustenance", "Testing", "Testing & Validation", "User Experience", "VLSI", "Voice Innovations", "Wearables Engineering"] },
-        { name: "Manufacturing Engineering", subItems: ["Accelerated Operations", "Agile Supply Chain", "Content Engineering", "Digital Factory & Simulations", "Line Expansion & Transfer", "Manufacturing Automation", "New Product Development", "PLM on Cloud", "Plant Design & Engineering", "Sourcing & Procurement"] },
-        { name: "Plant Engineering", subItems: ["CAPEX Project E/EPCM Services", "Material & Parts Management", "Operational Excellence", "Plant Sustenance & Management", "Sourcing & Procurement", "Regulatory Compliance Engineering"] },
+        {
+          name: "Digital Engineering",
+          subItems: [
+            "Artificial Intelligence",
+            "Cybersecure",
+            "Security Monitoring",
+            "Security Solutions",
+            "Security Services",
+            "Immersive Experiences",
+            "Industry 4.0",
+            "Product Consulting",
+            "Sustainability Engineering",
+            "Sustainable Smart World",
+            "5G",
+          ],
+        },
+        {
+          name: "Product Engineering",
+          subItems: [
+            "CAE & CFD",
+            "CAx Automation",
+            "Software Engineering",
+            "Cloud Engineering",
+            "DevOps",
+            "Embedded Systems",
+            "Engineering Analytics",
+            "Integrated Design, Validation & Testing",
+            "Lab as a Service",
+            "Sustenance",
+            "Testing",
+            "Testing & Validation",
+            "User Experience",
+            "VLSI",
+            "Voice Innovations",
+            "Wearables Engineering",
+          ],
+        },
+        {
+          name: "Manufacturing Engineering",
+          subItems: [
+            "Accelerated Operations",
+            "Agile Supply Chain",
+            "Content Engineering",
+            "Digital Factory & Simulations",
+            "Line Expansion & Transfer",
+            "Manufacturing Automation",
+            "New Product Development",
+            "PLM on Cloud",
+            "Plant Design & Engineering",
+            "Sourcing & Procurement",
+          ],
+        },
+        {
+          name: "Plant Engineering",
+          subItems: [
+            "CAPEX Project E/EPCM Services",
+            "Material & Parts Management",
+            "Operational Excellence",
+            "Plant Sustenance & Management",
+            "Sourcing & Procurement",
+            "Regulatory Compliance Engineering",
+          ],
+        },
       ],
     },
     {
@@ -88,7 +172,9 @@ export default function Footer() {
           <div key={section.title}>
             <h3 className="flex items-center text-lg font-semibold border-b border-gray-500 pb-3 text-[#23dce1]">
               <span>{section.title}</span>
-              {section.external && <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />}
+              {section.external && (
+                <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
+              )}
             </h3>
 
             <ul
@@ -113,7 +199,9 @@ export default function Footer() {
                   return (
                     <div
                       key={item.name}
-                      className={`${hasSub ? "border-b border-gray-700" : ""} rounded-md`}
+                      className={`${
+                        hasSub ? "border-b border-gray-700" : ""
+                      } rounded-md`}
                     >
                       <div
                         className={`flex items-center justify-between cursor-pointer ${
@@ -157,43 +245,60 @@ export default function Footer() {
               {/* Extra links for Industry */}
               {section.title === "Industry" && (
                 <>
-                <div className="mt-21">
-                       <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer text-lg px-1 flex items-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      Engineering The Change
-                      <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                    </a>
-                  </li>
-                  <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer mt-6 text-lg px-1 flex items-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      Engineer at Heart
-                      <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                    </a>
-                  </li>
+                  <div className="mt-21">
+                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer text-lg px-1 flex items-center">
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
+                        Engineering The Change
+                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
+                      </a>
+                    </li>
+                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer mt-6 text-lg px-1 flex items-center">
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
+                        Engineer at Heart
+                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
+                      </a>
+                    </li>
                   </div>
- 
                 </>
               )}
 
               {/* Extra links for Services */}
               {section.title === "Services" && (
                 <>
-                <div className="mt-8">
-
-                  <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer text-lg px-1 flex items-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      Careers
-                      <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                    </a>
-                  </li>
-                  <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer mt-6 text-lg px-1 flex items-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                      Resources
-                      <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                    </a>
-                  </li>                  
-                </div>
-
+                  <div className="mt-8">
+                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer text-lg px-1 flex items-center">
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
+                        Careers
+                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
+                      </a>
+                    </li>
+                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer mt-6 text-lg px-1 flex items-center">
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
+                        Resources
+                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
+                      </a>
+                    </li>
+                  </div>
                 </>
               )}
             </ul>
@@ -202,7 +307,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-12 border-t border-gray-700 pt-6 text-xs text-gray-400 text-center">
-        © {new Date().getFullYear()} LTTS. All Rights Reserved.
+        © {new Date().getFullYear()} Landsking Infra
       </div>
     </footer>
   );

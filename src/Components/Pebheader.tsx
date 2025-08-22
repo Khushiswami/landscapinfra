@@ -51,7 +51,16 @@ export default function Pebheader() {
 
   const navLinks: MenuItem[] = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+     {
+      name: "Solutions",
+      href: "/system",
+      subItems: [
+        { name: "Overview", href: "/system" },
+        { name: "Systems", href: "/systemPage" },
+        { name: "Products", href: "/productsPage" },
+      ],
+    },
+   
     {
       name: "Products",
       href: "",
@@ -156,15 +165,7 @@ export default function Pebheader() {
         { name: "Project Videos", href: "/projects/videos" },
       ],
     },
-    {
-      name: "Solutions",
-      href: "/system",
-      subItems: [
-        { name: "Overview", href: "/system" },
-        { name: "Systems", href: "/systemPage" },
-        { name: "Products", href: "/productsPage" },
-      ],
-    },
+    { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
 

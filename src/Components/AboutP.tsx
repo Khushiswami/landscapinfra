@@ -23,16 +23,14 @@ export default function AboutP() {
       >
         <div className="max-w-lg text-white space-y-4 relative z-10">
           <h1 className="text-2xl md:text-3xl font-bold leading-snug tracking-wide">
-             LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More than 120MT Capacity Rice
-mill Plant ,350 Minor and Major Bridge and Super Structure, 26 KM MS Pipe line upto 3.8m
-dia, and 410KM HDPE pipeline Excavation and laying , 6,76,000Sqft PEB Erection Work ,
-15.5MW solar plant in Its Portfolio .
+            Tradition, Innovation, Performance, Worldwide
           </h1>
           <p className="text-sm md:text-lg leading-relaxed">
-            LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More than 120MT Capacity Rice
-mill Plant ,350 Minor and Major Bridge and Super Structure, 26 KM MS Pipe line upto 3.8m
-dia, and 410KM HDPE pipeline Excavation and laying , 6,76,000Sqft PEB Erection Work ,
-15.5MW solar plant in Its Portfolio 
+            Landsking Infra is one of the India s Fastest Growing Company, Work
+            on engineering, procurement, construction (EPC) and maintenance
+            companies. Landsking Infra works with Clients in diverse industries
+            around the world to design, construct and maintain their capital
+            projects.
           </p>
         </div>
       </div>
@@ -47,18 +45,17 @@ dia, and 410KM HDPE pipeline Excavation and laying , 6,76,000Sqft PEB Erection W
         <div className="absolute inset-0 bg-[rgba(14,14,85,0.3)]"></div>
 
         <div className="relative w-full max-w-xl aspect-video z-10 flex flex-col items-center justify-center">
-         <video
-  ref={videoRef}
-  className="w-full h-full rounded-lg shadow-lg"
-  src="/video.mp4"
-  muted
-  loop
-  playsInline
-  poster="/about.png"
-  onPlay={() => setIsPlaying(true)}
-  controls={isPlaying} 
-></video>
-
+          <video
+            ref={videoRef}
+            className="w-full h-full rounded-lg shadow-lg"
+            src="/video.mp4"
+            muted
+            loop
+            playsInline
+            poster="/about.png"
+            onPlay={() => setIsPlaying(true)}
+            controls={isPlaying}
+          ></video>
 
           {!isPlaying && (
             <div
