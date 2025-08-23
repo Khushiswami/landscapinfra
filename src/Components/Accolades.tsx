@@ -73,7 +73,9 @@ export default function Accolades() {
             <div className="bg-white rounded-xl shadow-lg p-8 h-[250px] sm:h-[300px] flex flex-col justify-start">
               {/* Icon */}
               <div className="mb-4">
-                <span className="inline-block text-yellow-500 text-3xl">⭐</span>
+                <span className="inline-block text-yellow-500 text-3xl">
+                  ⭐
+                </span>
               </div>
 
               {/* Title */}
