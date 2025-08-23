@@ -1,49 +1,41 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { ArrowUpRight } from "lucide-react";
 
-type Slide = {
+type Card = {
   id: number;
-  location?: string;
   title: string;
   desc: string;
-  image: string;
 };
 
-const slides: Slide[] = [
+const cards: Card[] = [
   {
     id: 1,
-    title: "Pre Engineered Buildings",
-    desc: "Customized steel structures designed for quick assembly and durability, ideal for warehouses, factories, and commercial Decade.",
-    image: "/expertise/firstexpertise.png",
+    title: "Best Organizations for Women 2022",
+    desc: "Brigade Group was recognised as one of the Best Organizations for Women by The Economic Times.",
   },
   {
     id: 2,
-    title: "Prefabricated Structures",
-    desc: "Modular buildings constructed off-site for applications like site offices, classrooms, and healthcare facilities.",
-    image: "/expertise/second.png",
+    title: "Idea Video/TVC Campaign of the Year 2022",
+    desc: '"We Make Room" campaign won at the Realty+ Indian Digital Excellence Awards.',
   },
   {
     id: 3,
-    title: "Light Gauge Steel Framing",
-    desc: "Lightweight steel structures suitable for residential and commercial buildings, offering design flexibility and rapid construction.",
-    image: "/expertise/third.png",
+    title: "Pradhan Mantri Awas Yojana Award",
+    desc: "Brigade El Dorado won for affordable housing projects at PMAY - Empowering India Awards 2022.",
   },
   {
     id: 4,
-    title: "Sandwich Panels",
-    desc: "Insulated panels used for walls and roofs, providing thermal efficiency and structural strength.",
-    image: "/expertise/fourth.png",
+    title: "Sustainability Champion 2022",
+    desc: "Awarded for outstanding commitment towards sustainable and eco-friendly construction practices.",
   },
   {
     id: 5,
-    title: "Standard Modular Solutions",
-    desc: "Ready-to-use modular units like porta cabins and liftable cabins for immediate deployment.",
-    image: "/expertise/fifth.png",
+    title: "Customer Experience Excellence Award",
+    desc: "Recognised for delivering best-in-class customer experience across projects in 2022.",
   },
 ];
 
@@ -55,43 +47,42 @@ export default function Accolades() {
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Accolades
         </p>
-        {/* <h2 className="text-3xl sm:text-4xl font-bold text-[#000080] leading-snug">
-          Explore Our Comprehensive <br className="hidden sm:block" />
-          Prefabricated Building Solutions
-        </h2> */}
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3 rounded-full" />
       </div>
 
       {/* Swiper */}
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           prevEl: ".custom-prev",
           nextEl: ".custom-next",
         }}
-        spaceBetween={16}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        loop={true}
+        spaceBetween={24}
         slidesPerView={1}
-        autoHeight={true} // Dynamically adjust slide height
+        autoHeight={true}
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
       >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div className="rounded-xl overflow-hidden shadow-lg bg-white flex flex-col h-full">
-              {/* Image */}
-              <div className="relative w-full h-[250px] sm:h-[350px]"> {/* Increased height for mobile and desktop */}
-                <img
-                  src={slide.image}
-                  alt={slide.title}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
+        {cards.map((card) => (
+          <SwiperSlide key={card.id}>
+            <div className="bg-white rounded-xl shadow-lg p-8 h-[250px] sm:h-[300px] flex flex-col justify-start">
+              {/* Icon */}
+              <div className="mb-4">
+                <span className="inline-block text-yellow-500 text-3xl">⭐</span>
               </div>
 
-             
+              {/* Title */}
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                {card.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-600 text-sm">{card.desc}</p>
             </div>
           </SwiperSlide>
         ))}

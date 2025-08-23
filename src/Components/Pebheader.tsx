@@ -191,7 +191,7 @@ export default function Pebheader() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/logo.png"
+            src="/logo.jpeg"
             alt=""
             width={scrolled ? 120 : 150}
             height={scrolled ? 40 : 50}

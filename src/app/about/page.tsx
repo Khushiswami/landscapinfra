@@ -28,7 +28,7 @@ import ServicesSlider from "../../Components/ServicesSlider";
 import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
 import BuildHistory from "../../Components/BuildHistory";
 import PebheaderW from "../../Components/PebheaderW";
-// import Accolades from "../../Components/Accolades";
+import Accolades from "../../Components/Accolades";
 
 const slides = [
   {
@@ -86,7 +86,7 @@ export default function About() {
       <PreEngineeredProducts />
       <ProjectSlider />
       {/* <PebExpertiseP /> */}
-      {/* <Accolades/> */}
+      <Accolades/>
       {/* <TotalSolutionP/> */}
       {/* <Insights/> */}
       {/* <PebCode/> */}

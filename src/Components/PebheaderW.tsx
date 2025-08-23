@@ -164,7 +164,7 @@ export default function PebheaderW() {
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4 transition-all duration-300">
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo.png" alt="Logo" width={120} height={40} priority />
+          <Image src="/logo.jpeg" alt="Logo" width={120} height={40} priority />
         </Link>
 
         {/* Desktop Nav */}

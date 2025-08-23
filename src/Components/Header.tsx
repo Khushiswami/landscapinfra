@@ -400,7 +400,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+          <img src="/logo.jpeg" alt="Logo" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
