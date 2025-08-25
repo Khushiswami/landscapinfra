@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Pebheader from "../../Components/Pebheader";
-import PedFooterP from "../../Components/PebFooterP";
+import PedFooter from "../../Components/Footer";
 
 const PrefabricatedSite = () => {
   return (
@@ -100,13 +100,13 @@ const PrefabricatedSite = () => {
               Prefab Multi-Storey Buildings for Multipurpose Applications
             </h2>
             <p className="text-gray-700 text-lg">
-              EPACK Prefab delivers cutting-edge and dependable multi-storey prefabricated buildings tailored for a variety of uses—including office hubs, commercial centers, and institutional infrastructures. Constructed using advanced PUF/EPS insulated panels and Light Gauge Steel Framing (LGSF) technology, our buildings offer excellent durability, thermal efficiency, and quick on-site assembly.
+              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and dependable multi-storey prefabricated buildings tailored for a variety of uses—including office hubs, commercial centers, and institutional infrastructures. Constructed using advanced PUF/EPS insulated panels and Light Gauge Steel Framing (LGSF) technology, our buildings offer excellent durability, thermal efficiency, and quick on-site assembly.
               <br /><br />
-              Each structure is meticulously designed to meet vital engineering standards, including earthquake resistance (seismic compliance), wind load management, and optimal load-bearing capacity. At EPACK, we manage the entire process in-house—from architectural design and manufacturing to complete on-site erection—providing a true turnkey experience.
+              Each structure is meticulously designed to meet vital engineering standards, including earthquake resistance (seismic compliance), wind load management, and optimal load-bearing capacity. At Landsking Infra Pvt Ltd, we manage the entire process in-house—from architectural design and manufacturing to complete on-site erection—providing a true turnkey experience.
               <br /><br />
               Our prefab multi-storey solutions are especially suitable for sites with space constraints or time-sensitive schedules. By combining Pre-Engineered Building (PEB) systems with LGSF frameworks, we ensure enhanced strength and structural integrity. In addition, fire-rated coatings are applied to meet high safety benchmarks.
               <br /><br />
-              Backed by 20+ years of industry experience, EPACK Prefab is a trusted partner for fast, cost-effective, and long-lasting multi-storey building solutions across India.
+              Backed by 20+ years of industry experience, Landsking Infra Pvt Ltd Prefab is a trusted partner for fast, cost-effective, and long-lasting multi-storey building solutions across India.
             </p>
           </div>
 
@@ -143,7 +143,7 @@ const PrefabricatedSite = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
               <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric tons, EPACK Prefab is
+                With an annual production capacity exceeding 133,924 metric tons, Landsking Infra Pvt Ltd Prefab is
                 fully equipped to execute large-scale and technically demanding prefab construction
                 projects across India. Our offerings align with global quality standards and are
                 fully customizable to suit specific project needs, including:
@@ -176,7 +176,7 @@ const PrefabricatedSite = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">Why EPACK Prefab?</h3>
+              <h3 className="text-2xl font-bold mb-4">Why Landsking Infra Pvt Ltd Prefab?</h3>
               <ul className="space-y-1">
                 <li>✔️ Trusted Expertise Since 1999</li>
                 <li>✔️ Comprehensive Turnkey Project Solutions</li>
@@ -207,7 +207,7 @@ const PrefabricatedSite = () => {
                 {
                   question: "Can these buildings be customized?",
                   answer:
-                    "Absolutely. EPACK Prefab offers complete customization based on size, layout, height, and interior specifications.",
+                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
                 },
                 {
                   question: "How long does it take to construct a prefab multi-storey building?",
@@ -230,14 +230,14 @@ const PrefabricatedSite = () => {
                     "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
                 },
                 {
-                  question: "How does EPACK ensure the quality of its prefab buildings?",
+                  question: "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
                   answer:
-                    "EPACK employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
                 },
                 {
                   question: "Who is the best manufacturer of prefab multi-storey buildings in India?",
                   answer:
-                    "EPACK Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
                 },
               ].map((faq, idx) => (
                 <details
@@ -257,7 +257,7 @@ const PrefabricatedSite = () => {
           </div>
         </section>
       </div>
-      <PedFooterP />
+      <PedFooter />
     </>
   );
 };

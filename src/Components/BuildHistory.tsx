@@ -8,10 +8,10 @@ export default function BuildHistory() {
       {/* Left Side */}
       <div className="space-y-6">
         <h2 className="text-4xl md:text-5xl font-semibold text-gray-800">
-          We Build History
+          Who we are
         </h2>
-        <button className="flex items-center gap-2 text-red-600 font-semibold hover:underline">
-          <span className="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center">
+        <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
+          <span className="w-10 h-10 rounded-full bg-[#000080] flex items-center justify-center">
             <ArrowRight className="text-white w-5 h-5" />
           </span>
           Explore More Projects
@@ -21,15 +21,12 @@ export default function BuildHistory() {
       {/* Right Side */}
       <div className="text-gray-700 space-y-6">
         <p>
-          The 21st century and beyond will be shaped by the world’s ability to
-          work at speed and at scale to meet fast-evolving needs for
-          infrastructure, energy, advanced manufacturing, critical resources,
-          environmental protection, and national security.
+          Landsking Infra is one of India s Fastest Growing Companies as an Industrial Solution Provider,  Work on engineering, procurement, construction (EPC), and maintenance companies.
+
+ Landsking Infra works with Clients in diverse industries around the world to design, construct, and maintain their capital projects.
         </p>
         <p>
-          For more than 126 years, we have risen to the occasion. With our
-          unique expertise and experience, Bechtel is purpose-built to tackle
-          these challenges.
+          LandsKingInfra Pvt. Ltd. with the Team Combined Experience have More than 350 Minor and Major Bridge and Super Structure and 68KM PMGSY Road work, 26 KM MS Pipe line and 610KM HDPE pipeline Excavation and laying , 4,65,000Sqft PEB Erection Work,3.5MW solar plant in Its Portfolio.
         </p>
       </div>
     </section>

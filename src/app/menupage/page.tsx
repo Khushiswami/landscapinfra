@@ -12,8 +12,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import Platform from "../platform/page";
 import PebCallP from "../../Components/PebCallP"
-// import Pebfooter from "../pebfooter/page";
-import PebFooterP from "../..//Components/PebFooterP";
+// import Footer from "../Footer/page";
+import Footer from "../../Components/Footer";
 import Pebheader from "../../Components/Pebheader";
 
 
@@ -29,7 +29,7 @@ const areas = [
     subtitle: "Prefabricated Multi-Storey Building Manufacturer",
     description:
       "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
-    image: "/industry.jpg",
+    image: "/menupageimg/peb3.jpg",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const areas = [
     subtitle: "Warehouse",
     description:
       "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions to meet industrial and commercial demands.",
-   image: "/expertise/third.png",
+   image: "/menupageimg/peb4.png",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const areas = [
     subtitle: "Prefabricated Industrial Shed Manufacturers",
     description:
       "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/peb5.png",
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const areas = [
     subtitle: "Factory Building Solutions",
     description:
       "Our factory buildings are designed to provide a safe, efficient, and scalable infrastructure for manufacturing operations across multiple sectors.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/peb8.jpg",
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const areas = [
     subtitle: "Industrial Enclosures",
     description:
       "We deliver customized industrial enclosures that ensure safety, reliability, and protection of equipment while optimizing operational performance.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/peb6.jpg",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const areas = [
     subtitle: "Cold Storage & Cold Room Manufacturer",
     description:
       "Our advanced cold storage and cold room solutions are engineered to maintain precise temperatures, ensuring freshness and quality for perishable goods.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/peb7.jpg",
   },
 ];
 
@@ -375,7 +375,7 @@ Smart Construction. Faster Delivery. Reliable Performance        </h2>
         </div>
 <div className="flex justify-center">
           <img
-  src="/industry.jpg"
+  src="/menupageimg/peb2.jpg"
   alt="EPACK Prefab Industrial Building"
   className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
 />
@@ -477,7 +477,7 @@ Smart Construction. Faster Delivery. Reliable Performance        </h2>
         <div className="relative">
           <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
           <img
-            src="/PEB.jpg" // replace with your real factory image
+            src="/menupageimg/peb8.jpg" // replace with your real factory image
             alt="Manufacturing Facility"
             width={700}
             height={450}
@@ -616,7 +616,7 @@ Smart Construction. Faster Delivery. Reliable Performance        </h2>
           <div className="relative">
             <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
             <img
-              src="/industry.jpg"
+              src="/menupageimg/peb9.jpeg"
               alt="PUF panels in industrial shed"
               width={600}
               height={400}
@@ -731,7 +731,7 @@ End-to-End Turnkey Solutions covering design, fabrication, delivery, and install
     </section>
      {/* end faqs */}
     
-     <PebFooterP/>
+     <Footer/>
     </>
   );
 }

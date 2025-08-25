@@ -7,11 +7,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ExpertiseP() {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   const services = [
     { title: "Architecture & Design services", image: "/industry.jpg" },
@@ -35,9 +37,10 @@ export default function ExpertiseP() {
   return (
     <section className="py-12 px-6 bg-white">
       <div className="flex items-center justify-between max-w-7xl mx-auto mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#061b49]">Our Expertise</h2>
+        <h2 className="text-xl md:text-3xl font-bold text-[#061b49]">
+          Explore Our Comprehensive Prefabricated Building Solutions
+        </h2>
 
-        {/* Custom navigation buttons */}
         <div className="flex items-center gap-2">
           <button
             ref={prevRef}
@@ -62,7 +65,6 @@ export default function ExpertiseP() {
             nextEl: nextRef.current,
           }}
           onBeforeInit={(swiper: SwiperType) => {
-            // Bind navigation elements before init
             const nav = swiper.params.navigation;
             if (nav && typeof nav !== "boolean") {
               nav.prevEl = prevRef.current;
@@ -80,7 +82,11 @@ export default function ExpertiseP() {
         >
           {services.map((service, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-white rounded-xl overflow-hidden shadow-md">
+              <motion.div
+                className="relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer"
+                onMouseEnter={() => setHoverIndex(i)}
+                onMouseLeave={() => setHoverIndex(null)}
+              >
                 <div className="w-full h-56 overflow-hidden">
                   <img
                     src={service.image}
@@ -88,13 +94,28 @@ export default function ExpertiseP() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3">
+
+                <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3 relative z-10">
                   <p className="text-white font-semibold text-sm">{service.title}</p>
                   <div className="bg-white rounded-full p-1">
                     <ArrowUpRight className="w-4 h-4 text-[#1F4B9A]" />
                   </div>
                 </div>
-              </div>
+
+                <AnimatePresence>
+                  {hoverIndex === i && (
+                    <motion.div
+                      className="absolute inset-0 bg-[#000080]/35 flex flex-col items-center justify-center text-center p-4 z-20"
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 50 }}
+                      transition={{ duration: 0.4 }}
+                    >
+                      <h3 className="text-white text-lg font-semibold">{service.title}</h3>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>

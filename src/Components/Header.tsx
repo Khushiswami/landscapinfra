@@ -423,7 +423,7 @@ export default function Header() {
                   Industry Installation
                 </Link>
                 
-            <Link href="/pebbanner" className="block hover:bg-gray-100 px-2 py-1 rounded">
+            <Link href="/preEngineeredBuildings" className="block hover:bg-gray-100 px-2 py-1 rounded">
               Pre Engineered Building
             </Link>
           

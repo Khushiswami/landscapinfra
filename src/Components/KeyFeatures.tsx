@@ -7,7 +7,7 @@ export default function KeyFeatures() {
     <section className="w-full bg-white py-12 px-6 lg:px-20">
       {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-bold mb-10">
-        <span className="bg-blue-600 text-white px-3 py-1 rounded-md mr-2">
+        <span className=" text-[#000080] px-3 py-1 rounded-md mr-2">
           KEY FEATURES
         </span>
         OF LANDSKING INFRA PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS
@@ -17,7 +17,7 @@ export default function KeyFeatures() {
         {/* Left Image */}
         <div className="w-full">
           <Image
-            src="/aboutnew.webp"
+            src="/industry.jpg"
             alt="Cold Storage by LANDSKING INFRA"
             width={600}
             height={400}

@@ -12,13 +12,13 @@ import AboutPebP from "../../Components/AboutPebP"
 // import PebBrandP from "../../Components/PebBrandP"
 // import Insights from "../../Components/Insights"
 // import Pebheader from "../../Components/Pebheader"
-import PebFooterP from "../../Components/PebFooterP"
+import Footer from "../../Components/Footer"
 // import PebCode from "../../Components/PebCode"
 
 import { IoCallOutline } from "react-icons/io5";
 import PebSlider from "../../Components/PebSlider";
 // import ImageSlider from "../../Components/ImageSlider";
-// import ContactSection from "../../Components/ContactSection";
+import ContactSection from "../../Components/ContactSection";
 import TripleBottomAccordion from "../../Components/TripleBottomAccordion";
 import ReviewsSection from "../../Components/ReviewsSection";
 import Timeline from "../../Components/Timeline";
@@ -74,6 +74,20 @@ export default function About() {
     <>
       {/* <Pebheader/> */}
       <PebheaderW />
+      <div className="w-full min-h-[500px] flex flex-col md:flex-row">
+        <div
+          className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
+          style={{
+            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
+          }}
+        >
+          <div className="text-white text-center relative z-10">
+            <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              About Us
+            </h1>
+          </div>
+        </div>
+      </div>
       <AboutPebP />
       <TripleBottomAccordion />
       <PebSlider />
@@ -93,7 +107,7 @@ export default function About() {
       {/* <MediaP/> */}
       {/* <PebBrandP/> */}
       {/* <ImageSlider/> */}
-      {/* <ContactSection/> */}
+      <ContactSection/>
 
       <div className="bg-[#272727] bg-repeat py-10 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white">
@@ -120,7 +134,7 @@ export default function About() {
         </div>
       </div>
 
-      <PebFooterP />
+      <Footer />
     </>
   );
 }

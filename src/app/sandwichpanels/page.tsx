@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import Platform from "../platform/page";
 import PebCallP from "../../Components/PebCallP"
-import PebFooterP from "../../Components/PebFooterP";
+import Footer from "../../Components/Footer";
 import Pebheader from "../../Components/Pebheader";
 import Link from "next/link";
 
@@ -27,14 +27,14 @@ const areas = [
     title: "PUF Panels",
     subtitle: "PUF Panels",
     description:"PUF panels are renowned for their superior thermal insulation, energy-saving properties, and strong mechanical performance. Combining light weight with durability, they are widely utilized in cold storage facilities, industrial buildings, and prefabricated constructions. Engineered for quick and easy installation, PUF panels help reduce both construction time and energy expenses.",
-    image: "/industry.jpg",
+    image: "/menupageimg/sap-pub.jpg",
   },
   {
     id: 2,
     title: "Rockwool Panel",
     subtitle: "Rockwool Panel",
     description:"Rockwool panels offer outstanding acoustic and thermal insulation along with exceptional fire resistance. They are perfect for spaces requiring enhanced soundproofing and temperature regulation, such as factories, recording studios, and high-temperature areas.",
-   image: "/expertise/third.png",
+   image: "/menupageimg/sp-Rockwool-Panel.jpg",
   },
   {
     id: 3,
@@ -42,14 +42,14 @@ const areas = [
     subtitle: "Glass Wool Panels",
     description:
       "Glass Wool Panels provide excellent resistance to fire, heat, and noise. Their lightweight and flexible nature makes them ideal for both commercial and residential applications requiring effective thermal and acoustic insulation.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/sandwich-glasswool-panel.png",
   },
   {
     id: 4,
     title: "EPS Panels",
     subtitle: "EPS Panels",
     description:"EPS panels deliver an excellent combination of thermal insulation, lightweight design, and affordability. Frequently utilized in warehouses, commercial buildings, and cold storage facilities, they are easy to install, highly durable, and adaptable to a wide range of project requirements.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/sp-eps.png",
   },
  
   
@@ -265,7 +265,7 @@ const [selectedId, setSelectedId] = useState(3);
            Sandwich Panels
           </h1>
           <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0">
-Prefabricated structures are buildings or components manufactured in a factory and then transported to the site for quick assemblly.          </p>
+Sandwich panels are a type of prefabricated building component manufactured in factories. They are transported to the site and assembled quickly, allowing for fast and efficient construction.          </p>
         </div>
 
         {/* Right Slider */}
@@ -341,7 +341,7 @@ Premium Insulation Panels Designed for Modern Construction     </h2>
         </div>
 <div className="flex justify-center">
         <img
-  src="/industry.jpg"
+  src="/menupageimg/sp1.jpg"
   alt="EPACK Prefab Industrial Building"
   className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
 />
@@ -359,7 +359,7 @@ Premium Insulation Panels Designed for Modern Construction     </h2>
         <div className="relative">
           <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
           <img
-            src="/PEB.jpg" // replace with your real factory image
+            src="/menupageimg/sp2.png" // replace with your real factory image
             alt="Manufacturing Facility"
             width={700}
             height={450}
@@ -513,7 +513,7 @@ Premium Insulation Panels Designed for Modern Construction     </h2>
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
         <img
-          src="/industry.jpg"
+          src="/menupageimg/sp3.jpg"
           alt="PUF panels in industrial shed"
           width={600}
           height={400}
@@ -638,7 +638,7 @@ End-to-End Turnkey Solutions covering design, fabrication, delivery, and install
     </section>
      {/* end faqs */}
     
-     <PebFooterP/>
+     <Footer/>
     </>
   );
 }

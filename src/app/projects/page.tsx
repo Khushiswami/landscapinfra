@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import PebFooterP from "yes/Components/PebFooterP";
+import Footer from "yes/Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 import ContactSection from "yes/Components/ContactSection";
 
@@ -292,7 +292,7 @@ export default function Projects() {
 
       <ContactSection />
 
-      <PebFooterP />
+      <Footer />
     </>
   );
 }

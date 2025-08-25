@@ -42,16 +42,16 @@ export default function PebheaderW() {
 
   const navLinks: MenuItem[] = [
     { name: "Home", href: "/" },
-     {
+    {
       name: "Solutions",
       href: "/system",
-      subItems: [
-        { name: "Overview", href: "/system" },
-        { name: "Systems", href: "/systemPage" },
-        { name: "Products", href: "/productsPage" },
-      ],
+      // subItems: [
+      //   { name: "Overview", href: "/system" },
+      //   { name: "Systems", href: "/systemPage" },
+      //   { name: "Products", href: "/productsPage" },
+      // ],
     },
-   
+
     {
       name: "Products",
       href: "",
@@ -150,12 +150,14 @@ export default function PebheaderW() {
     {
       name: "Projects",
       href: "/projects",
-      subItems: [
-        { name: "Pre Engineered Buildings", href: "/projects/pre-engineered" },
-        { name: "Prefab Buildings", href: "/projects/prefab" },
-        { name: "Project Videos", href: "/projects/videos" },
-      ],
+      // subItems: [
+      //   { name: "Pre Engineered Buildings", href: "/projects/pre-engineered" },
+      //   { name: "Prefab Buildings", href: "/projects/prefab" },
+      //   { name: "Project Videos", href: "/projects/videos" },
+      // ],
     },
+    { name: "Insights", href: "/insight" },
+
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];

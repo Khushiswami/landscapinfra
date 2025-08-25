@@ -49,7 +49,7 @@ export default function Media() {
           </button>
         </div>
 
-        {/* Right Section - EPACK Update */}
+        {/* Right Section - Landsking Infra Pvt Ltd Update */}
         <div>
           <h2 className="text-gray-900 font-bold text-xl mb-2">
             Latest News and Update
@@ -70,7 +70,7 @@ export default function Media() {
               <div>
                 <p className="text-sm text-gray-500">Jun 26, 2025</p>
                 <p className="text-gray-800 font-semibold">
-                  EPACK Prefab Participated In India Warehousing Show 2025 –
+                  Landsking Infra Pvt Ltd Prefab Participated In India Warehousing Show 2025 –
                   Yashobhoomi, Dwarka
                 </p>
               </div>

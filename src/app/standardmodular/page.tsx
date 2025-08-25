@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 import PebCallP from "../../Components/PebCallP"
 import Pebheader from "../../Components/Pebheader";
-import PebFooterP from "../../Components/PebFooterP";
+import Footer from "../../Components/Footer";
 
 import Link from "next/link";
 
@@ -320,7 +320,7 @@ Whether you need site offices, accommodation units, toilets, guard cabins, or mo
 <div className="flex justify-center">
         <img
   src="/industry.jpg"
-  alt="EPACK Prefab Industrial Building"
+  alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
   className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
 />
 
@@ -531,7 +531,7 @@ Whether you need site offices, accommodation units, toilets, guard cabins, or mo
             Why Choose Landsking Infra Pvt. Ltd for PEBs?
           </h2>
 
-          <p>25+ Years of Expertise in prefabricated and steel building solutions
+          <p>15 Years of Expertise in prefabricated and steel building solutions
 
 Nationwide Presence with a strong logistics and project execution network
 
@@ -624,7 +624,7 @@ End-to-End Turnkey Solutions covering design, fabrication, delivery, and install
     </section>
      {/* end faqs */}
     
-     <PebFooterP/>
+     <Footer/>
     </>
   );
 }

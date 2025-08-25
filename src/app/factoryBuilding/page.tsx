@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Pebheader from "../../Components/Pebheader";
-import PedFooterP from "../../Components/PebFooterP";
+import PedFooter from "../../Components/Footer";
 
 const FactoryBuilding = () => {
   return (
@@ -16,13 +16,13 @@ const FactoryBuilding = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/industry.jpg')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/khushi/factory1.png')",
             }}
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+              Factory Building
               </h1>
             </div>
           </div>
@@ -35,7 +35,7 @@ const FactoryBuilding = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 1.png"
+                src="/khushi/factory1.png"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -43,15 +43,11 @@ const FactoryBuilding = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+              Prefabricated Factory Buildings Designed for Industrial Applications
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative prefabricated multi-storey
-                structures that offer unmatched durability, rapid construction, and eco-friendly
-                solutions. With over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized to suit your
-                specific requirements—whether for commercial, institutional, or residential
-                applications.
+                Landsking Infra delivers durable and efficient prefabricated factory buildings suitable for a wide range of industrial uses, such as warehouses, manufacturing units, and testing centers.
+                 Their solutions offer fast installation, energy savings, and long-term reliability—all while keeping costs optimized.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -63,30 +59,22 @@ const FactoryBuilding = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Why Choose Prefab Multi-Storey Buildings?
+                Prefab Factory Building Manufacturing Techniques and Technology 
               </h3>
               <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are prefabricated off-site and
-                swiftly assembled at the destination, cutting construction time by up to 50%
-                compared to traditional building methods.
+                🚀 Material Quality - Uses premium steel and insulated panels for durability and thermal efficiency.
               </p>
               <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material waste, and quicker
-                project turnaround help bring down total project costs—without sacrificing quality.
+                💰Structural Design: - Features strong columns, beams, and trusses to guarantee stability and precision.
               </p>
               <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable layouts, meet varied
-                load-bearing needs, and can be easily expanded in the future—perfect for evolving
-                commercial and institutional spaces.
+                🏢Flexible Construction - Offsite fabrication reduces on-site disruptions and accelerates the installation process.
               </p>
-              <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to less on-site
-                disruption, reduced material wastage, and a smaller environmental impact.
-              </p>
+              
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 2.jpg"
+                src="/khushi/factory2.jpg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -95,26 +83,13 @@ const FactoryBuilding = () => {
           </div>
 
           {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Prefab Multi-Storey Buildings for Multipurpose Applications
-            </h2>
-            <p className="text-gray-700 text-lg">
-              EPACK Prefab delivers cutting-edge and dependable multi-storey prefabricated buildings tailored for a variety of uses—including office hubs, commercial centers, and institutional infrastructures. Constructed using advanced PUF/EPS insulated panels and Light Gauge Steel Framing (LGSF) technology, our buildings offer excellent durability, thermal efficiency, and quick on-site assembly.
-              <br /><br />
-              Each structure is meticulously designed to meet vital engineering standards, including earthquake resistance (seismic compliance), wind load management, and optimal load-bearing capacity. At EPACK, we manage the entire process in-house—from architectural design and manufacturing to complete on-site erection—providing a true turnkey experience.
-              <br /><br />
-              Our prefab multi-storey solutions are especially suitable for sites with space constraints or time-sensitive schedules. By combining Pre-Engineered Building (PEB) systems with LGSF frameworks, we ensure enhanced strength and structural integrity. In addition, fire-rated coatings are applied to meet high safety benchmarks.
-              <br /><br />
-              Backed by 20+ years of industry experience, EPACK Prefab is a trusted partner for fast, cost-effective, and long-lasting multi-storey building solutions across India.
-            </p>
-          </div>
+          
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 3.jpeg"
+                src="/khushi/factory3.jpg"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -122,15 +97,16 @@ const FactoryBuilding = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
+               Key Applications of Prefabricated Factory Buildings
               </h3>
+              <p>Landsking Infra’s factory buildings cater to a wide range of industrial requirements, such as:</p>
               <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
+                <li>🏭 Production plants and manufacturing units</li>
+                <li>📦 Warehouses and distribution centers</li>
+                <li>🧪 Testing and quality assurance labs</li>
+                <li>🛡️ Industrial enclosures</li>
+                <li>🔍 Assembly and inspection zones</li>
+                
               </ul>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
@@ -139,44 +115,13 @@ const FactoryBuilding = () => {
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
-              <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric tons, EPACK Prefab is
-                fully equipped to execute large-scale and technically demanding prefab construction
-                projects across India. Our offerings align with global quality standards and are
-                fully customizable to suit specific project needs, including:
-              </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
-              </ul>
-            </div>
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/row4.jpg"
-                alt="Row 4"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
+         
 
           {/* Row 5 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/row5.jpg"
-                alt="Row 5"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
+           
             <div>
-              <h3 className="text-2xl font-bold mb-4">Why EPACK Prefab?</h3>
+              <h3 className="text-2xl font-bold mb-4">Why Choose Landsking Infra?</h3>
               <ul className="space-y-1">
                 <li>✔️ Trusted Expertise Since 1999</li>
                 <li>✔️ Comprehensive Turnkey Project Solutions</li>
@@ -184,6 +129,14 @@ const FactoryBuilding = () => {
                 <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
                 <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
               </ul>
+            </div>
+             <div className="relative w-full h-80 md:h-[450px]">
+              <Image
+                src="/khushi/factory2.jpg"
+                alt="Row 5"
+                fill
+                className="object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
 
@@ -195,49 +148,49 @@ const FactoryBuilding = () => {
             <div className="space-y-4">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "What is a factory building?",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "A factory building is a facility constructed to accommodate industrial activities like manufacturing, assembly, storage, and other related processes.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "What materials are used in factory building construction?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "Factory buildings are commonly built with steel, prefabricated panels, reinforced concrete, and insulated materials to ensure strength, durability, and energy efficiency.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question: "What are the benefits of prefabricated factory buildings?",
                   answer:
-                    "Absolutely. EPACK Prefab offers complete customization based on size, layout, height, and interior specifications.",
+                    "Prefabricated factory buildings provide quicker construction times, cost savings, design flexibility, and a lower environmental footprint.",
                 },
                 {
-                  question: "How long does it take to construct a prefab multi-storey building?",
+                  question: "How does a pre-engineered factory building differ from traditional buildings?",
                   answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
+                    "Pre-engineered buildings (PEBs) utilize pre-designed components for rapid assembly, whereas traditional buildings involve on-site construction that typically takes more time.",
                 },
                 {
-                  question: "Where can I use these structures?",
+                  question: "How long does it take to construct a prefabricated factory building?",
                   answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "Construction time can vary but is generally much shorter than traditional methods, often finishing within just a few weeks.",
                 },
                 {
-                  question: "What are the benefits of using prefab multi-storey buildings?",
+                  question: "Are prefabricated factory buildings durable?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    "Exactly! These buildings are engineered for durability, capable of enduring tough environmental conditions and supporting heavy industrial loads over the long term.",
                 },
                 {
-                  question: "In which sectors can prefab multi-storey buildings be utilized?",
+                  question: "What is the cost of constructing a factory building in India?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    "The cost varies based on factors such as size, design, materials, and location, but prefabricated buildings are typically more budget-friendly compared to traditional construction.",
                 },
                 {
-                  question: "How does EPACK ensure the quality of its prefab buildings?",
+                  question: "What is the role of insulation in factory buildings?",
                   answer:
-                    "EPACK employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "Insulation improves energy efficiency, helps regulate temperature, and minimizes noise within factory buildings.",
                 },
                 {
-                  question: "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                  question: "What are the maintenance requirements for prefabricated factory buildings?",
                   answer:
-                    "EPACK Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    " These buildings need minimal upkeep, mainly routine inspections and small repairs to ensure their structural soundness.",
                 },
               ].map((faq, idx) => (
                 <details
@@ -257,7 +210,7 @@ const FactoryBuilding = () => {
           </div>
         </section>
       </div>
-      <PedFooterP />
+      <PedFooter />
     </>
   );
 };

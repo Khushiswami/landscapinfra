@@ -7,28 +7,36 @@ import { useRouter } from "next/navigation";
 
 const TABS = [
   {
-    title: "PRE ENGINEERED BUILDINGS",
-    headline: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS",
-    body:"LandsKingInfra Pvt. Ltd. is a one-stop solution for all building requirements of diverse customers. Our pre-engineered steel buildings are uniquely designed and fabricated to match your specific needs. Built in strict compliance with international standards, these buildings consist of carefully engineered components, meticulously designed for seamless compatibility with each other.",
+    title: "Pre Engineered Buildings",
+    headline: "High-Performance Pre-Engineered Steel Buildings",
+    body: "LandsKingInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings. Each structure is designed for strength, flexibility, and long-lasting performance, tailored to meet diverse industrial and commercial needs.",
     img: "/about.png",
-    buttonText: "DISCOVER ALL",
-    url: "/industries", 
-  },
-  {
-    title: "Structural Engineering Services",
-    headline: "Overview of the company",
-    body:"LandsKingInfra Pvt. Ltd. is a leading provider of structural engineering services, specializing in the design and analysis of complex structures. Our team of experienced engineers utilizes advanced software and methodologies to ensure safety, efficiency, and cost-effectiveness in every project.",
-   img: "/industry.png",
-    buttonText: "EXPLORE SOLUTIONS",
-    url: "/system", 
+    buttonText: "VIEW MORE",
+    url: "/menupage",
   },
   {
     title: "EPC Solutions",
-    headline: "3DEXPERIENCE EDU",
-    body:"From the initial concept and detailed design to procurement, fabrication, and on-site execution, our integrated approach ensures quality, cost-efficiency, and timely delivery. We leverage cutting-edge technologies, international standards, and sustainable practices to build structures that not only stand strong but also create lasting value for businesses and communities.",
-img: "/solution/stell.jpg",
-    buttonText: "EXPLORE SOLUTIONS",
-    url: "/system",
+    headline: "End-to-End EPC Solutions",
+    body: "From concept to commissioning, our EPC solutions ensure seamless project execution with a strong focus on quality, cost-efficiency, and sustainability. We integrate advanced technologies and global standards to deliver world-class infrastructure.",
+    img: "/solution/stell.jpg",
+    buttonText: "VIEW MORE",
+    url: "/epcsolutions",
+  },
+  {
+    title: "Structural Engineering Services",
+    headline: "Excellence in Structural Engineering",
+    body: "Our expert engineers provide innovative structural design and analysis services. With advanced tools and decades of expertise, we ensure the highest safety, efficiency, and performance standards for every project we deliver.",
+    img: "/industry.png",
+    buttonText: "VIEW MORE",
+    url: "/structural-engineering",
+  },
+  {
+    title: "Project Consultancy & Management",
+    headline: "Trusted Project Consultancy & Management",
+    body: "We provide end-to-end project consultancy and management services, helping clients optimize planning, execution, and delivery. With proven methodologies, we ensure timely, cost-effective, and high-quality project outcomes.",
+    img: "/project.jpg",
+    buttonText: "VIEW MORE",
+    url: "/project-consultancy",
   },
 ];
 
@@ -41,32 +49,36 @@ export default function PlatformP() {
       {/* Top heading + subheading */}
       <div className="max-w-4xl mx-auto px-4 pt-12 text-center">
         <h1 className="text-3xl text-[#000080] md:text-4xl font-semibold tracking-tight">
-          One Platform, Endless Possibilities
+          Comprehensive Infrastructure Solutions
         </h1>
         <p className="mt-4 text-base md:text-lg text-gray-600">
-          By combining a diversity of talents and breaking up traditional silos, the
-          3DEXPERIENCE platform empowers organizations to invent, learn, produce, and
-          trade in entirely new ways.
+          From design and engineering to execution and management, we deliver
+          integrated solutions that shape industries and build a stronger
+          future.
         </p>
       </div>
 
       {/* Tabs */}
       <div className="mt-8">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="relative flex items-center justify-center gap-8 overflow-x-auto">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="relative flex items-center justify-center gap-6 md:gap-10 overflow-x-auto">
             {TABS.map((t, i) => (
               <button
                 key={t.title}
                 onClick={() => setActive(i)}
                 className={`pb-3 text-sm md:text-base font-medium transition-colors whitespace-nowrap
-                  ${active === i ? "text-[#272727]" : "text-gray-600 hover:text-[#000080]"}`}
+                  ${
+                    active === i
+                      ? "text-[#272727]"
+                      : "text-gray-600 hover:text-[#000080]"
+                  }`}
               >
                 {t.title}
               </button>
             ))}
           </div>
           {/* Active underline */}
-          <div className="relative mx-auto mt-0.5 h-px max-w-4xl bg-gray-200">
+          <div className="relative mx-auto mt-0.5 h-px max-w-5xl bg-gray-200">
             <span
               className="absolute -top-[1px] block h-0.5 bg-[#000080] transition-all duration-300"
               style={{
@@ -79,9 +91,9 @@ export default function PlatformP() {
       </div>
 
       {/* Content Card */}
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="mt-8 relative rounded-xl overflow-hidden shadow-lg">
-          <div className="relative w-full h-[340px] md:h-[420px]">
+          <div className="relative w-full h-[340px] md:h-[460px]">
             <Image
               src={TABS[active].img}
               alt={TABS[active].title}

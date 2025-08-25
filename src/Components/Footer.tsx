@@ -3,7 +3,15 @@
 import { useState } from "react";
 import { FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-type Item = string | { name: string; subItems?: string[] };
+// Updated Item type with href support
+type Item =
+  | string
+  | {
+      name: string;
+      href?: string;
+      subItems?: { name: string; href?: string }[];
+    };
+
 type Section = {
   title: string;
   link?: string;
@@ -16,36 +24,60 @@ export default function Footer() {
 
   const sections: Section[] = [
     {
-      title: "Industry",
+      title: "Services",
       external: true,
       items: [
         {
-          name: "Mobility",
-          subItems: [
-            "Aerospace Engineering",
-            "Automotive",
-            "Rail Transportation",
-            "Trucks & Off-Highway Vehicles",
-          ],
+          name: "Industry Installation and Construction",
+          // subItems: [
+          //   { name: "Aerospace Engineering", href: "/aerospace-engineering" },
+          //   { name: "Automotive", href: "/automotive" },
+          //   { name: "Rail Transportation", href: "/rail-transportation" },
+          //   {
+          //     name: "Trucks & Off-Highway Vehicles",
+          //     href: "/trucks-offhighway",
+          //   },
+          // ],
         },
         {
-          name: "Sustainability",
-          subItems: [
-            "Discrete Manufacturing & Industrial Products",
-            "Process Manufacturing",
-          ],
+          name: "Engineering and R&D Services",
+          // subItems: [
+          //   {
+          //     name: "Discrete Manufacturing & Industrial Products",
+          //     href: "/discrete-manufacturing",
+          //   },
+          //   { name: "Process Manufacturing", href: "/process-manufacturing" },
+          // ],
         },
         {
-          name: "Tech",
-          subItems: [
-            "Consumer Electronics",
-            "MedTech",
-            "Media & Entertainment",
-            "NexGen Comms",
-            "Semiconductors",
-            "Software & Platforms",
-            "Public Infrastructure & Smart Cities",
-          ],
+          name: "Renewable Energy and solution Provider",
+          // subItems: [
+          //   { name: "Consumer Electronics", href: "/consumer-electronics" },
+          //   { name: "MedTech", href: "/medtech" },
+          //   { name: "Media & Entertainment", href: "/media-entertainment" },
+          //   { name: "NexGen Comms", href: "/nexgen-comms" },
+          //   { name: "Semiconductors", href: "/semiconductors" },
+          //   { name: "Software & Platforms", href: "/software-platforms" },
+          //   {
+          //     name: "Public Infrastructure & Smart Cities",
+          //     href: "/smart-cities",
+          //   },
+          // ],
+        },
+        {
+          name: "Real Estate Development",
+          // subItems: [
+          //   { name: "Consumer Electronics", href: "/consumer-electronics" },
+          //   { name: "MedTech", href: "/medtech" },
+          //   { name: "Media & Entertainment", href: "/media-entertainment" },
+          //   { name: "NexGen Comms", href: "/nexgen-comms" },
+          //   { name: "Semiconductors", href: "/semiconductors" },
+          //   { name: "Software & Platforms", href: "/software-platforms" },
+          //   {
+          //     name: "Public Infrastructure & Smart Cities",
+          //     href: "/smart-cities",
+          //   },
+          // ],
         },
       ],
     },
@@ -54,109 +86,84 @@ export default function Footer() {
       items: [
         {
           name: "Digital Engineering",
-          subItems: [
-            "Artificial Intelligence",
-            "Cybersecure",
-            "Security Monitoring",
-            "Security Solutions",
-            "Security Services",
-            "Immersive Experiences",
-            "Industry 4.0",
-            "Product Consulting",
-            "Sustainability Engineering",
-            "Sustainable Smart World",
-            "5G",
-          ],
+          // subItems: [
+          //   {
+          //     name: "Artificial Intelligence",
+          //     href: "/artificial-intelligence",
+          //   },
+          //   { name: "Cybersecure", href: "/cybersecure" },
+          //   { name: "Security Monitoring", href: "/security-monitoring" },
+          //   { name: "Security Solutions", href: "/security-solutions" },
+          //   { name: "Security Services", href: "/security-services" },
+          //   { name: "Immersive Experiences", href: "/immersive-experiences" },
+          //   { name: "Industry 4.0", href: "/industry-4" },
+          //   { name: "Product Consulting", href: "/product-consulting" },
+          //   {
+          //     name: "Sustainability Engineering",
+          //     href: "/sustainability-engineering",
+          //   },
+          //   {
+          //     name: "Sustainable Smart World",
+          //     href: "/sustainable-smart-world",
+          //   },
+          //   { name: "5G", href: "/5g" },
+          // ],
         },
         {
           name: "Product Engineering",
-          subItems: [
-            "CAE & CFD",
-            "CAx Automation",
-            "Software Engineering",
-            "Cloud Engineering",
-            "DevOps",
-            "Embedded Systems",
-            "Engineering Analytics",
-            "Integrated Design, Validation & Testing",
-            "Lab as a Service",
-            "Sustenance",
-            "Testing",
-            "Testing & Validation",
-            "User Experience",
-            "VLSI",
-            "Voice Innovations",
-            "Wearables Engineering",
-          ],
-        },
-        {
-          name: "Manufacturing Engineering",
-          subItems: [
-            "Accelerated Operations",
-            "Agile Supply Chain",
-            "Content Engineering",
-            "Digital Factory & Simulations",
-            "Line Expansion & Transfer",
-            "Manufacturing Automation",
-            "New Product Development",
-            "PLM on Cloud",
-            "Plant Design & Engineering",
-            "Sourcing & Procurement",
-          ],
-        },
-        {
-          name: "Plant Engineering",
-          subItems: [
-            "CAPEX Project E/EPCM Services",
-            "Material & Parts Management",
-            "Operational Excellence",
-            "Plant Sustenance & Management",
-            "Sourcing & Procurement",
-            "Regulatory Compliance Engineering",
-          ],
+          // subItems: [
+          //   { name: "CAE & CFD", href: "/cae-cfd" },
+          //   { name: "CAx Automation", href: "/cax-automation" },
+          //   { name: "Software Engineering", href: "/software-engineering" },
+          //   { name: "Cloud Engineering", href: "/cloud-engineering" },
+          //   { name: "DevOps", href: "/devops" },
+          //   { name: "Embedded Systems", href: "/embedded-systems" },
+          //   { name: "Engineering Analytics", href: "/engineering-analytics" },
+          //   {
+          //     name: "Integrated Design, Validation & Testing",
+          //     href: "/design-validation",
+          //   },
+          //   { name: "Lab as a Service", href: "/lab-as-service" },
+          //   { name: "Sustenance", href: "/sustenance" },
+          //   { name: "Testing", href: "/testing" },
+          //   { name: "Testing & Validation", href: "/testing-validation" },
+          //   { name: "User Experience", href: "/user-experience" },
+          //   { name: "VLSI", href: "/vlsi" },
+          //   { name: "Voice Innovations", href: "/voice-innovations" },
+          //   { name: "Wearables Engineering", href: "/wearables-engineering" },
+          // ],
         },
       ],
     },
     {
-      title: "Solutions",
+      title: "Industries",
       external: true,
       items: [
-        "AiCE",
-        "AiKno®",
-        "AnnotAI",
-        "ARC",
-        "Asset Health Framework",
-        "CHEST-rAi™",
-        "Connected Security",
-        "EDGYneer",
-        "EvQUAL",
-        "FlyBoard®",
-        "Fusion",
-        "i-BEMS",
-        "Nilten",
-        "nBOn",
-        "PSM",
-        "SafeX",
-        "Semiconductor IP",
-        "Sensor & Gateway Solution",
-        "UBIQWeise 2.0",
+        { name: "Industry Installation", href: "/industry-installation" },
+        { name: "Pre Engineered Building", href: "/pebbanner" },
+        { name: "Infrastructure & Energy", href: "/infrastructure-energy" },
+        { name: "Engineering R&D", href: "/engineering-rd" },
+        { name: "Renewable Energy", href: "/renewable-energy" },
+        { name: "Real State", href: "/real-state" },
+        { name: "Civil Services", href: "/civil-services" },
+        { name: "Industrial Construction", href: "/industrial-construction" },
+        {
+          name: "Structural Engineering Services",
+          href: "/structural-engineering",
+        },
+        { name: "Heavy Engineering", href: "/heavy-engineering" },
+        { name: "Mining Metals", href: "/mining-metals" },
+        { name: "Other Industries", href: "/other-industries" },
       ],
     },
     {
       title: "About Us",
       external: true,
       items: [
-        "Accolades",
-        "Alliances",
-        "Blogs",
-        "Board of Directors",
-        "CSR",
-        "Events & Webinars",
-        "Investors",
-        "Media Kit",
-        "Nearshore Centers",
-        "News & Media",
-        "Quality Management",
+        { name: "Insights", href: "/insights" },
+
+        { name: "Blogs", href: "/blogs" },
+        { name: "Contact", href: "/contact" },
       ],
     },
   ];
@@ -166,32 +173,28 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#002b5c] py-12 px-6 md:px-20 font-sans">
+    <footer className="bg-[#000080] text-white py-12 px-6 md:px-20 font-sans">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
         {sections.map((section) => (
           <div key={section.title}>
-            <h3 className="flex items-center text-lg font-semibold border-b border-gray-500 pb-3 text-[#23dce1]">
+            <h3 className="flex items-center text-lg font-semibold border-b border-gray-500 pb-3">
               <span>{section.title}</span>
               {section.external && (
                 <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
               )}
             </h3>
 
-            <ul
-              className={`mt-5 ${
-                section.title === "Solutions"
-                  ? "grid grid-cols-2 gap-x-4 gap-y-2"
-                  : "space-y-3"
-              }`}
-            >
+            <ul className="mt-5 space-y-3">
               {section.items.map((item) => {
                 if (typeof item === "string") {
                   return (
-                    <li
-                      key={item}
-                      className="text-[#c1cbd1] hover:text-[#23dce1] cursor-pointer text-sm leading-relaxed px-1"
-                    >
-                      {item}
+                    <li key={item}>
+                      <a
+                        href="#"
+                        className="text-[#c1cbd1] hover:text-[#23dce1] cursor-pointer text-sm leading-relaxed px-1 block"
+                      >
+                        {item}
+                      </a>
                     </li>
                   );
                 } else {
@@ -206,10 +209,17 @@ export default function Footer() {
                       <div
                         className={`flex items-center justify-between cursor-pointer ${
                           hasSub ? "text-[#23dce1]" : "text-[#c1cbd1]"
-                        } hover:text-[#23dce1] px-1 py-2`}
+                        } hover:text-[#23dce1] px-1 py-1`}
                         onClick={() => hasSub && toggleItem(item.name)}
                       >
-                        {item.name}
+                        {item.href ? (
+                          <a href={item.href} className="block w-full">
+                            {item.name}
+                          </a>
+                        ) : (
+                          item.name
+                        )}
+
                         {hasSub && (
                           <span>
                             {openItem === item.name ? (
@@ -228,11 +238,13 @@ export default function Footer() {
                           }`}
                         >
                           {item.subItems!.map((sub) => (
-                            <li
-                              key={sub}
-                              className="text-[#c1cbd1] hover:text-[#23dce1] cursor-pointer text-sm py-1 pl-1"
-                            >
-                              {sub}
+                            <li key={sub.name}>
+                              <a
+                                href={sub.href || "#"}
+                                className="text-[#c1cbd1] hover:text-[#23dce1] cursor-pointer text-sm py-1 pl-1 block"
+                              >
+                                {sub.name}
+                              </a>
                             </li>
                           ))}
                         </ul>
@@ -241,66 +253,6 @@ export default function Footer() {
                   );
                 }
               })}
-
-              {/* Extra links for Industry */}
-              {section.title === "Industry" && (
-                <>
-                  <div className="mt-21">
-                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer text-lg px-1 flex items-center">
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center"
-                      >
-                        Engineering The Change
-                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                      </a>
-                    </li>
-                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer mt-6 text-lg px-1 flex items-center">
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center"
-                      >
-                        Engineer at Heart
-                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                      </a>
-                    </li>
-                  </div>
-                </>
-              )}
-
-              {/* Extra links for Services */}
-              {section.title === "Services" && (
-                <>
-                  <div className="mt-8">
-                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer text-lg px-1 flex items-center">
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center"
-                      >
-                        Careers
-                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                      </a>
-                    </li>
-                    <li className="text-[#92b7f7] hover:text-[#23dce1] cursor-pointer mt-6 text-lg px-1 flex items-center">
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center"
-                      >
-                        Resources
-                        <FaExternalLinkAlt className="ml-2 text-xs opacity-70" />
-                      </a>
-                    </li>
-                  </div>
-                </>
-              )}
             </ul>
           </div>
         ))}

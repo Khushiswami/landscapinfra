@@ -1,24 +1,18 @@
 "use client";
 import { useState, useEffect } from "react";
-// import Pebexpertise from "../pebexpertise/page"
-// import Aboutpeb from "../Aboutpeb/page";
-// import Platform from "../platform/page"
-// import Totalsolution from "../totalsolution/page"
+import { useRouter } from "next/navigation"; // ✅ import router
+
 import PlatformP from "../../Components/PlatformP";
 import AboutPebP from "../../Components/AboutPebP";
 import TotalSolutionP from "../../Components/TotalSolutionP";
-import PebExpertiseP from "../../Components/PebExpertiseP";
 import MediaP from "../../Components/MediaP";
 import PebBrandP from "../../Components/PebBrandP";
 import Insights from "../../Components/Insights";
 import Pebheader from "../../Components/Pebheader";
-import PebFooterP from "../../Components/PebFooterP";
-
-import { IoCallOutline } from "react-icons/io5";
+import Footer from "../../Components/Footer";
 import PebSlider from "../../Components/PebSlider";
 import ImageSlider from "../../Components/ImageSlider";
 import ContactSection from "../../Components/ContactSection";
-
 import Pebexpertise from "../pebexpertise/page";
 import Servicesone from "yes/Components/Servicesone";
 
@@ -27,30 +21,35 @@ const slides = [
     title: "PRE ENGINEERED BUILDINGS",
     description: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
     video: "/video.mp4",
+    url: "/menupage",
   },
   {
     title: "EPC Solutions",
     description:
       "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
     video: "/video.mp4",
+    url: "/epcsolutions", // ✅ new url
   },
   {
     title: "Project Management Consultancy",
     description:
       "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
     video: "/video.mp4",
+    url: "/projectmanagement", // ✅ new url
   },
   {
     title: "Structural Engineering Services",
     description:
       "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
     video: "/homeslider.mp4",
+    url: "/solutionservice", // ✅ new url
   },
 ];
 
-export default function Pebbanner() {
+export default function Insight() {
   const [active, setActive] = useState(0);
   const [progress, setProgress] = useState(0);
+  const router = useRouter(); // ✅ initialize router
 
   useEffect(() => {
     setProgress(0);
@@ -97,11 +96,15 @@ export default function Pebbanner() {
             {slides[active].description}
           </p>
 
-         <button className="hidden sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition">
-  Learn more
-</button>
+          {/* Learn More button → redirect */}
+          <button
+            onClick={() => router.push(slides[active].url)} // ✅ redirect
+            className="hidden sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
+          >
+            Learn more
+          </button>
 
-
+          {/* Bottom Tabs */}
           <div className="absolute bottom-0 left-0 right-0 flex flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
             {slides.map((slide, index) => (
               <div key={index} className="relative w-full sm:w-auto">
@@ -115,13 +118,13 @@ export default function Pebbanner() {
                   ></div>
                 )}
                 <button
-                  onClick={() => setActive(index)}
+                  onClick={() => router.push(slide.url)} // ✅ redirect on tab click
                   className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words 
-              ${
-                active === index
-                  ? "text-white"
-                  : "text-white/80 hover:text-white"
-              }`}
+                    ${
+                      active === index
+                        ? "text-white"
+                        : "text-white/80 hover:text-white"
+                    }`}
                 >
                   {slide.title}
                 </button>
@@ -131,18 +134,10 @@ export default function Pebbanner() {
         </div>
       </div>
 
-      <AboutPebP />
-      <Servicesone />
-      <PlatformP />
-      <TotalSolutionP />
-      <PebSlider />
-      <ImageSlider />
       <Insights />
       <MediaP />
-      <PebBrandP />
       <ContactSection />
-
-      <PebFooterP />
+      <Footer />
     </>
   );
 }

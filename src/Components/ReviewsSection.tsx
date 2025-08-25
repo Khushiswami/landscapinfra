@@ -11,64 +11,102 @@ import "swiper/css/pagination";
 
 const reviews = [
   {
-    img: "/slider/image_9.webp",
-    text: `"I purchased my building in September of 2012, and had it delivered by December 2012. I bought a 3000 sq..."`,
-    name: "Jim F.",
-    location: "Hockley, Texas",
+    id: 1,
+    img: "/industry.jpg",
+    text: `"Our warehouse project was delivered on time with excellent quality. Truly satisfied with the service!"`,
+    name: "Ravi Kumar",
+    location: "MaharajSagar Warehouse, Lohati",
   },
   {
-    img: "/slider/image_10.webp",
-    text: `"I am very satisfied and would use Armstrong again as the end result was a good building. Thanks to the..."`,
-    name: "Derek L.",
-    location: "Woolwich, Maine",
+    id: 2,
+    img: "/realstate.png",
+    text: `"Professional work and timely delivery. Highly recommended for industrial solutions."`,
+    name: "Pooja Sharma",
+    location: "Baba Warehouse, Pipariya",
   },
   {
-    img: "/slider/image_11.webp",
-    text: `"As I began searching for a steel barn, there was one company in particular that went out of their way..."`,
-    name: "Jean S.",
-    location: "Houlton, Wisconsin",
+    id: 3,
+    img: "/new1.png",
+    text: `"They understood our requirements perfectly and executed the warehouse project smoothly."`,
+    name: "Vikas Singh",
+    location: "Maa Narmada Ware House, Pipriya",
   },
   {
-    img: "/slider/image_12.webp",
-    text: `"We initially sent a building deposit to a well-known steel building company in Denver who we later learned had an..."`,
-    name: "Loris Z.",
-    location: "Denver, Colorado",
+    id: 4,
+    img: "/industry.jpg",
+    text: `"Very reliable and customer-focused. The team completed the warehouse setup efficiently."`,
+    name: "Devisingh Patel",
+    location: "Devisingh Patel Ware House, Raisen",
   },
   {
-    img: "/slider/image_13.webp",
-    text: `"The quality of my Armstrong Building was excellent. The builder I used had not put up a pre-cut building before..."`,
-    name: "Karla M.",
-    location: "Plainview, Texas",
+    id: 5,
+    img: "/industry.jpg",
+    text: `"Affordable pricing with great execution quality. Will work with them again."`,
+    name: "Anita Verma",
+    location: "Astik Agro Marketing, Hosangabad",
   },
   {
-    img: "/slider/image_14.webp",
-    text: `"Timing was an extremely important factor for us and we knew no one in America could get a steel building..."`,
-    name: "Adam J.",
-    location: "Waco, Texas",
+    id: 6,
+    img: "/industry.jpg",
+    text: `"Excellent construction and on-time completion of our warehouse project."`,
+    name: "Sandeep Joshi",
+    location: "ShreeSai Ware House, Tikamgargh",
   },
   {
-    img: "/slider/image_15.webp",
-    text: `"Timing was an extremely important factor for us and we knew no one in America could get a steel building..."`,
-    name: "Adam J.",
-    location: "Waco, Texas",
+    id: 7,
+    img: "/industry.jpg",
+    text: `"We are impressed with the high-quality materials and smooth delivery."`,
+    name: "Rohit Mehra",
+    location: "Goverdhan WareHouse, Pipriya",
   },
   {
-    img: "/slider/image_16.webp",
-    text: `"Timing was an extremely important factor for us and we knew no one in America could get a steel building..."`,
-    name: "Adam J.",
-    location: "Waco, Texas",
+    id: 8,
+    img: "/industry.jpg",
+    text: `"Great coordination and professional execution. Highly satisfied."`,
+    name: "Priya Mishra",
+    location: "100 ft Clear Span Panchotiya Warehouse, Kasrawad",
   },
   {
-    img: "/slider/image_9.webp",
-    text: `"Timing was an extremely important factor for us and we knew no one in America could get a steel building..."`,
-    name: "Adam J.",
-    location: "Waco, Texas",
+    id: 9,
+    img: "/industry.jpg",
+    text: `"A trustworthy team that delivered beyond expectations."`,
+    name: "Amit Tiwari",
+    location: "Agrawal Logistic Park, Dewas",
   },
   {
-    img: "/slider/washington-steel-building-3.webp",
-    text: `"Timing was an extremely important factor for us and we knew no one in America could get a steel building..."`,
-    name: "Adam J.",
-    location: "Waco, Texas",
+    id: 10,
+    img: "/industry.jpg",
+    text: `"From planning to execution, everything was handled seamlessly."`,
+    name: "Sneha Kulkarni",
+    location: "Trivani Crop Science Pvt Ltd, Factory Shed, Bhopal MP",
+  },
+  {
+    id: 11,
+    img: "/industry.jpg",
+    text: `"They ensured the project was completed with precision and quality."`,
+    name: "Rajesh Gupta",
+    location: "Reva Rice Mill Warehouse, Udaipura MP",
+  },
+  {
+    id: 12,
+    img: "/industry.jpg",
+    text: `"Very cooperative and professional team. Delivered exactly what we wanted."`,
+    name: "Neha Yadav",
+    location: "Mekal Food Products Pvt Ltd (Rice Mill, 120MT), Udaipura MP",
+  },
+  {
+    id: 13,
+    img: "/industry.jpg",
+    text: `"We appreciate the commitment and professionalism throughout the project."`,
+    name: "Vivek Jain",
+    location: "TATA Steel Plant, Kaling Nagar, Odisha",
+  },
+  {
+    id: 14,
+    img: "/industry.jpg",
+    text: `"Strongly recommend them for industrial and warehouse projects."`,
+    name: "Sunita Dubey",
+    location: "Praj Industries Ltd, Kandala Port, Gujarat",
   },
 ];
 
@@ -77,27 +115,31 @@ export default function ReviewsSection() {
     <section className="bg-white text-white py-16 px-4 relative">
       {/* Blue Top Section */}
       <div className="bg-[#0B1444] text-white min-h-[550px] px-4 relative z-10 flex flex-col items-center">
-        {/* content stays at top */}
         <div className="flex flex-col items-center text-center mt-10">
           <h2 className="text-4xl font-bold mb-8">
-            See why we’re rated <span className="italic text-blue-500">(almost)</span> 5-stars!
+            See why we’re rated{" "}
+            <span className="italic text-blue-500">(almost)</span> 5-stars!
           </h2>
 
           <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center justify-center gap-24">
             {/* Left: Heading */}
             <div className="text-center lg:text-left">
               <p className="mt-2 text-yellow-400 text-2xl font-semibold">
-                7,462,865 customers
+                7,462+ customers
               </p>
-              <p className="text-white mt-1">just like you have connected with us online!</p>
+              <p className="text-white mt-1">
+                across India have trusted us with their projects!
+              </p>
             </div>
 
             {/* Middle: Stars & Rating */}
             <div className="flex flex-col items-center mt-4 lg:mt-0">
               <div className="flex space-x-1 mb-1">
-                {Array(5).fill(0).map((_, i) => (
-                  <AiFillStar key={i} className="w-8 h-8 text-yellow-400" />
-                ))}
+                {Array(5)
+                  .fill(0)
+                  .map((_, i) => (
+                    <AiFillStar key={i} className="w-8 h-8 text-yellow-400" />
+                  ))}
               </div>
               <p className="font-bold text-2xl">4.9 out of 5</p>
             </div>
@@ -115,52 +157,50 @@ export default function ReviewsSection() {
         </div>
       </div>
 
-      {/* Slider Overlapping Blue Section */}
-      <div className="max-w-8xl mx-auto relative -mt-40 z-20 px-4">
-     {/* Slider Overlapping Blue Section */}
-<div className="max-w-8xl mx-auto relative -mt-64 z-20 px-4">
-  <Swiper
-    modules={[Autoplay, Pagination]}
-    spaceBetween={30}
-    slidesPerView={1}
-    autoplay={{ delay: 3000, disableOnInteraction: false }}
-    pagination={{ clickable: true }}
-    breakpoints={{
-      640: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 4 },
-    }}
-  >
-    {reviews.map((review, idx) => (
-      <SwiperSlide key={idx}>
-        <div className="bg-white text-gray-800 shadow-lg overflow-hidden">
-          <div className="h-48 relative">
-            <Image
-              src={review.img}
-              alt={review.name}
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="p-4">
-            <div className="flex mb-2">
-              {Array(5).fill(0).map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-yellow-400" />
-              ))}
-            </div>
-            <p className="text-sm mb-4">{review.text}</p>
-            <p className="font-semibold">{review.name}</p>
-            <p className="text-gray-500 text-xs">{review.location}</p>
-            <span className="mt-2 inline-block bg-blue-900 text-white px-2 py-1 rounded text-xs">
-              Verified Customer
-            </span>
-          </div>
-        </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</div>
-
+      {/* Slider */}
+      <div className="max-w-8xl mx-auto relative -mt-64 z-20 px-4">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 4 },
+          }}
+        >
+          {reviews.map((review) => (
+            <SwiperSlide key={review.id}>
+              <div className="bg-white text-gray-800 shadow-lg overflow-hidden">
+                <div className="h-48 relative">
+                  <Image
+                    src={review.img}
+                    alt={review.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4">
+                  <div className="flex mb-2">
+                    {Array(5)
+                      .fill(0)
+                      .map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-yellow-400" />
+                      ))}
+                  </div>
+                  <p className="text-sm mb-4">{review.text}</p>
+                  <p className="font-semibold">{review.name}</p>
+                  <p className="text-gray-500 text-xs">{review.location}</p>
+                  <span className="mt-2 inline-block bg-blue-900 text-white px-2 py-1 rounded text-xs">
+                    Verified Customer
+                  </span>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

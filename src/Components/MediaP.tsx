@@ -53,7 +53,7 @@ export default function MediaP() {
           </button>
         </div>
 
-        {/* Right Section - EPACK Update */}
+        {/* Right Section - Landsking Infra Pvt Ltd Update */}
         <div>
           <h2 className="text-gray-900 font-bold text-xl mb-2">
             Latest News and Update

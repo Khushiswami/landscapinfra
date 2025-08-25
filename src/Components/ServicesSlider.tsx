@@ -41,7 +41,8 @@ work packs link models to construction activity to improve productivity.
            unlike our competitors in the India we have an integrated supply chain. 
         </strong>{" "}
        This gives us greater 
-visibility of costs, maximizes integration across disciplines and minimizes risk through the delivery process. We 
+visibility of costs, maximizes integration across disciplines
+ and minimizes risk through the delivery process. We 
 retain the knowledge learned on a project and use it to deliver certainty for our next client
       </>
     ),
@@ -86,23 +87,23 @@ it will produce lower carbon products for more of our projects.
 
 export default function ServicesSlider() {
   return (
-    <section className="bg-gray-50 py-28"> 
+    <section className="bg-[#d9d9d9] py-28"> 
       <div className="mx-auto px-6 flex flex-col md:flex-row gap-10">
         {/* Left side text */}
         <div className="w-full md:w-2/6">
-          <h2 className="text-4xl md:text-6xl font-bold text-blue-900 mb-6">
+          <h2 className="text-3xl md:text-6xl font-bold text-[#000080] mb-6">
             Services and delivery methods
           </h2>
-          <p className="text-gray-700 text-lg mb-12">
+          <p className="text-gray-700 text-md mb-12">
              We deliver certainty for our clients based on an operating model that harnesses new technologies to 
 maximise the use of pioneering modern methods of construction.
           </p>
           {/* Swiper Navigation buttons */}
           <div className="flex gap-4">
-            <button className="custom-prev border border-blue-500 text-blue-600 p-3 rounded hover:bg-blue-50">
+            <button className="custom-prev border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
               <ChevronLeft />
             </button>
-            <button className="custom-next border border-blue-500 text-blue-600 p-3 rounded hover:bg-blue-50">
+            <button className="custom-next border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
               <ChevronRight />
             </button>
           </div>
@@ -123,14 +124,12 @@ maximise the use of pioneering modern methods of construction.
             }}
           >
             {services.map((item, i) => (
-              <SwiperSlide key={i}>
-                <div className="py-10 px-6 bg-gray-50 border-x border-gray-300 h-full">
-                  <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-700 text-lg">{item.desc}</p>
-                </div>
-              </SwiperSlide>
+             <SwiperSlide key={i} className="h-full">
+  <div className="py-10 px-6 bg-[#f2f2f2] border-x border-gray-300 h-full flex flex-col">
+    <h3 className="text-xl md:text-3xl font-bold mb-3">{item.title}</h3>
+    <p className="text-black text-md flex-1">{item.desc}</p>
+  </div>
+</SwiperSlide>
             ))}
           </Swiper>
         </div>

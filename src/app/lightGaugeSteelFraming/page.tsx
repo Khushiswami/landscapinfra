@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 import PebCallP from "../../Components/PebCallP"
 import Pebheader from "../../Components/Pebheader";
-import PebFooterP from "../../Components/PebFooterP";
+import Footer from "../../Components/Footer";
 
 import Link from "next/link";
 
@@ -28,14 +28,14 @@ const areas = [
     title: "LGSF Homes & Luxury Villas",
     subtitle: "LGSF Homes & Luxury Villas",
     description:"Landsking Infra offers expertly crafted prefabricated homes, designed to be innovative, energy-efficient, and budget-friendly. Constructed using premium materials such as PUF and EPS panels, these homes provide excellent thermal insulation and long-lasting durability. Fully customizable and rapidly installable, they are an ideal solution for a wide range of residential applications.",
-    image: "/industry.jpg",
+    image: "/menupageimg/lgs3.jpg",
   },
   {
     id: 2,
     title: "Prefab School",
     subtitle: "Prefab School",
     description:" Landsking Infra delivers sustainable and economical prefabricated solutions tailored for schools and healthcare facilities. These modular buildings are engineered for fast deployment, design flexibility, and energy efficiency, making them perfect for educational and medical environments. Built with high-quality, customizable materials, they ensure optimal functionality, safety, and comfort to meet diverse operational needs.",
-   image: "/expertise/third.png",
+   image: "/menupageimg/lgs4.jpg",
   },
  
  
@@ -237,7 +237,8 @@ const [selectedId, setSelectedId] = useState(3);
 
           </h1>
           <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0">
-Prefabricated structures are buildings or components manufactured in a factory and then transported to the site for quick assemblly.          </p>
+Light Gauge Steel Framing structures are prefabricated components manufactured in a controlled factory environment 
+and then transported to the construction site for fast and efficient assembly.       </p>
         </div>
 
         {/* Right Slider */}
@@ -316,7 +317,7 @@ What is Light Gauge Steel Framing (LGSF)?      </h2>
         </div>
 <div className="flex justify-center">
         <img
-  src="/industry.jpg"
+  src="/menupageimg/lgs1.jpeg"
   alt="EPACK Prefab Industrial Building"
   className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
 />
@@ -334,7 +335,7 @@ What is Light Gauge Steel Framing (LGSF)?      </h2>
         <div className="relative">
           <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
           <img
-            src="/PEB.jpg" // replace with your real factory image
+            src="/menupageimg/lgs2.jpg" // replace with your real factory image
             alt="Manufacturing Facility"
             width={700}
             height={450}
@@ -481,7 +482,7 @@ What is Light Gauge Steel Framing (LGSF)?      </h2>
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
         <img
-          src="/industry.jpg"
+          src="/menupageimg/lgs5.png"
           alt="PUF panels in industrial shed"
           width={600}
           height={400}
@@ -614,7 +615,7 @@ End-to-End Turnkey Solutions covering design, fabrication, delivery, and install
     </section>
      {/* end faqs */}
     
-     <PebFooterP/>
+     <Footer/>
     </>
   );
 }

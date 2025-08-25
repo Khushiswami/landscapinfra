@@ -10,32 +10,32 @@ interface CounterItem {
 const counters: CounterItem[] = [
   { value: 1.2, label: "Sq. Ft. Area Delivered", suffix: "M" },
   { value: 55, label: "Global Clients", suffix: "+" },
-  { value: 200, label: "Project Executed", suffix: "+" },
+  { value: 250, label: "Project Executed", suffix: "+" }, // updated
   { value: 5, label: "JV & Alliance Partners", suffix: "+" },
-  { value: 7, label: "Years Manufacturing Experience", suffix: "+" },
+  { value: 15, label: "Years Manufacturing Experience", suffix: "+" }, // updated
 ];
 
 export default function CounterP() {
   const [counts, setCounts] = useState(counters.map(() => 0));
 
   useEffect(() => {
-    const intervals = counters.map((counter, i) => {
-      const target = counter.value;
-      const duration = 1500; // ms
-      const step = target / (duration / 30);
+    counters.forEach((counter, i) => {
+      let start = 0;
+      const end = counter.value;
+      const duration = 2000; // total animation ms
+      const stepTime = 20; // ms
+      const increment = end / (duration / stepTime);
 
-      return setInterval(() => {
+      const interval = setInterval(() => {
+        start += increment;
         setCounts(prev => {
           const updated = [...prev];
-          if (updated[i] < target) {
-            updated[i] = parseFloat((updated[i] + step).toFixed(2));
-          }
+          updated[i] = start >= end ? end : start;
           return updated;
         });
-      }, 30);
+        if (start >= end) clearInterval(interval);
+      }, stepTime);
     });
-
-    return () => intervals.forEach(clearInterval);
   }, []);
 
   return (
@@ -44,13 +44,12 @@ export default function CounterP() {
         Leading the charge in industries that are shaping the future with Purposeful Agile Innovation.
       </h2>
 
-      <div className="bg-[#061b49] rounded-lg flex flex-col md:flex-row justify-around items-center py-8 px-4 gap-8">
+      <div className="bg-[#061b49] rounded-2xl shadow-lg flex flex-col md:flex-row justify-around items-center py-10 px-6 gap-8">
         {counters.map((counter, i) => (
           <div key={i} className="text-center">
-            <p className="text-4xl font-bold text-teal-400">
-              {counts[i] >= counter.value
-                ? `${counter.value}${counter.suffix || ""}`
-                : `${counts[i].toFixed(2)}${counter.suffix || ""}`}
+            <p className="text-4xl font-bold text-white transition-all duration-500">
+              {counts[i].toFixed(counter.value % 1 !== 0 ? 1 : 0)}
+              {counter.suffix || ""}
             </p>
             <p className="text-white text-sm mt-2">{counter.label}</p>
           </div>

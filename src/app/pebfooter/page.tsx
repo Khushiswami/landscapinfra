@@ -9,7 +9,7 @@ import {
   FaMapMarkerAlt 
 } from "react-icons/fa";
 
-export default function Pebfooter() {
+export default function Footer() {
   return (
     <footer className="bg-[#000080] text-gray-300">
       <div className="mx-auto max-w-7xl px-6 py-10">
@@ -53,7 +53,7 @@ export default function Pebfooter() {
 
           {/* 3 - Contact Info */}
           <div className="md:w-1/3 space-y-4">
-            <h3 className="text-white font-semibold">EPACK Prefab</h3>
+            <h3 className="text-white font-semibold">Landsking Infra Pvt Ltd Prefab</h3>
             <ul className="text-sm space-y-2">
               <li className="flex items-center gap-2">
                 <FaPhoneAlt /> 
@@ -61,7 +61,7 @@ export default function Pebfooter() {
               </li>
               <li className="flex items-center gap-2">
                 <FaEnvelope /> 
-                <a href="mailto:enquiry@epack.in" className="hover:text-white">enquiry@epack.in</a>
+                <a href="mailto:enquiry@Landsking Infra Pvt Ltd.in" className="hover:text-white">enquiry@Landsking Infra Pvt Ltd.in</a>
               </li>
               <li className="flex items-center gap-2">
                 <FaMapMarkerAlt /> 
@@ -80,7 +80,7 @@ export default function Pebfooter() {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-          © 2025 EPACK Prefab. All Rights Reserved. 
+          © 2025 Landsking Infra Pvt Ltd Prefab. All Rights Reserved. 
           <a href="#" className="hover:text-white mx-2">Privacy Policy</a> | 
           <a href="#" className="hover:text-white mx-2">Disclaimer</a>
         </div>

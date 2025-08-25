@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Pebheader from "../../Components/Pebheader";
-import PedFooterP from "../../Components/PebFooterP";
+import PedFooter from "../../Components/Footer";
 
 const MultiStoryBuilding = () => {
   return (
@@ -208,7 +208,7 @@ const MultiStoryBuilding = () => {
                 {
                   question: "Can these buildings be customized?",
                   answer:
-                    "Absolutely. EPACK Prefab offers complete customization based on size, layout, height, and interior specifications.",
+                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
                 },
                 {
                   question: "How long does it take to construct a prefab multi-storey building?",
@@ -231,14 +231,14 @@ const MultiStoryBuilding = () => {
                     "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
                 },
                 {
-                  question: "How does EPACK ensure the quality of its prefab buildings?",
+                  question: "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
                   answer:
-                    "EPACK employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
                 },
                 {
                   question: "Who is the best manufacturer of prefab multi-storey buildings in India?",
                   answer:
-                    "EPACK Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
                 },
               ].map((faq, idx) => (
                 <details
@@ -258,7 +258,7 @@ const MultiStoryBuilding = () => {
           </div>
         </section>
       </div>
-      <PedFooterP />
+      <PedFooter />
     </>
   );
 };

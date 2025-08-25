@@ -3,18 +3,18 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { CountUp } from "countup.js";
-import { Building2, Users, Layers, Home } from "lucide-react";
+import { Ruler, Building2, Globe, Factory } from "lucide-react";
 
 export default function AboutPebP() {
   const stats = [
-    { value: 1.2e6, suffix: "+", label: "Sq. Ft. Area Delivered", icon: Home },
+    { value: 1.2e6, suffix: "+", label: "Sq. Ft. Area Delivered", icon: Ruler },
     { value: 200, suffix: "+", label: "Project Executed", icon: Building2 },
-    { value: 55, suffix: "+", label: "Global Clients", icon: Users },
+    { value: 55, suffix: "+", label: "Global Clients", icon: Globe },
     {
       value: 7,
       suffix: "+",
       label: "Years Manufacturing Experience",
-      icon: Layers,
+      icon: Factory,
     },
   ];
 
@@ -74,7 +74,7 @@ export default function AboutPebP() {
           {/* Single Image with Zigzag Right Cut */}
           <div className="relative w-full h-44 overflow-hidden rounded-xl shadow-lg transform transition-transform duration-700 hover:scale-105">
             <Image
-              src="/new1.png"
+              src="/attt.png"
               alt="Building 1"
               fill
               className="object-cover "

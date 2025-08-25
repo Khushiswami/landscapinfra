@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 import PebCallP from "../../Components/PebCallP"
 import Pebheader from "../../Components/Pebheader";
-import PebFooterP from "../../Components/PebFooterP";
+import Footer from "../../Components/Footer";
 
 import Link from "next/link";
 
@@ -28,14 +28,14 @@ const areas = [
     title: "Prefab Site Infrastructure ",
     subtitle: "Prefab Site Infrastructure Solutions",
     description:"At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
-    image: "/industry.jpg",
+    image: "/menupageimg/mod15.png",
   },
   {
     id: 2,
     title: "Prefab Site Office",
     subtitle: "Prefab Site Office",
     description:"At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
-   image: "/expertise/third.png",
+   image: "/menupageimg/mod4.png",
   },
   {
     id: 3,
@@ -43,14 +43,14 @@ const areas = [
     subtitle: "Prefabricated Industrial Shed Manufacturers",
     description:
       "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/mod3.jpg",
   },
   {
     id: 4,
     title: "Portable Security Guard Cabins",
     subtitle: "FPortable Security Guard Cabins",
     description:"Portable Security Guard Cabins are compact, movable structures designed to provide a safe, comfortable, and functional workspace for security personnel. Built with durable materials such as steel, aluminum, or high-quality insulated panels, these cabins are weather-resistant and sturdy, ensuring long-lasting use in both indoor and outdoor environments.",
-    image: "/expertise/third.png",
+    image: "/menupageimg/mod8.jpg",
   },
   {
     id: 5,
@@ -58,35 +58,35 @@ const areas = [
     subtitle: "Clean Room",
     description:
 "offers advanced cleanroom solutions for controlled environments in industries like pharmaceuticals, electronics, and biotechnology. Our cleanrooms are designed with precision to meet stringent hygiene, airflow, and temperature control standards, ensuring optimal conditions for sensitive operations."  ,
-  image: "/expertise/third.png",
+  image: "/menupageimg/mod9.png",
   },
   {
     id: 6,
     title: "Prefabricated Toilet",
     subtitle: "Prefabricated Toilet",
     description:"Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-    image: "/expertise/third.png",
+    image: "/menupageimg/mod10.png",
   },
     {
     id: 7,
     title: "Prefab Porta Cabins Manufacturer",
     subtitle: "Prefab Porta Cabins Manufacturer",
     description:"Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-    image: "/expertise/third.png",
+    image: "/menupageimg/mod11.jpeg",
   },
     {
     id: 8,
     title: "Railway Shelters",
     subtitle: "Railway Shelters",
     description:"Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
-    image: "/expertise/third.png",
+    image: "/menupageimg/mod12.jpg",
   },
   {
     id: 9,
     title: "Cold Storage & Cold Room Manufacturer",
     subtitle: "Railway Shelters",
     description:"Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
-    image: "/product/Cold Storage ps.jpg",
+    image: "/menupageimg/cold4.png",
   },
 ];
 
@@ -374,7 +374,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
         </div>
 <div className="flex justify-center">
         <img
-  src="/industry.jpg"
+  src="/menupageimg/mod13.jpg"
   alt="EPACK Prefab Industrial Building"
   className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
 />
@@ -392,7 +392,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
         <div className="relative">
           <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
           <img
-            src="/PEB.jpg" // replace with your real factory image
+            src="/menupageimg/mod14.png" // replace with your real factory image
             alt="Manufacturing Facility"
             width={700}
             height={450}
@@ -550,7 +550,7 @@ At Landsking Infra Pvt. Ltd, we specialize in delivering high-quality prefabrica
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
         <img
-          src="/industry.jpg"
+          src="/menupageimg/mod16.jpg"
           alt="PUF panels in industrial shed"
           width={600}
           height={400}
@@ -677,7 +677,7 @@ End-to-End Turnkey Solutions covering design, fabrication, delivery, and install
     </section>
      {/* end faqs */}
     
-     <PebFooterP/>
+     <Footer/>
     </>
   );
 }

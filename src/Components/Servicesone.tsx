@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,36 +8,38 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Servicesone() {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   const services = [
     {
       title: "Pre Engineered Buildings",
-      // desc: "Customized steel structures designed for quick assembly and durability, ideal for warehouses, factories, and commercial spaces.",
+      desc: "Customized steel structures designed for quick assembly and durability, ideal for warehouses, factories, and commercial spaces.",
       image: "expertise/firstexpertise.png",
     },
     {
       title: "Prefabricated Structures",
-      // desc: "Modular buildings constructed off-site for applications like site offices, classrooms, and healthcare facilities.",
+      desc: "Modular buildings constructed off-site for applications like site offices, classrooms, and healthcare facilities.",
       image: "expertise/second.png",
     },
     {
       title: "Light Gauge Steel Framing",
-      // desc: "Lightweight steel structures suitable for residential and commercial buildings, offering design flexibility and rapid construction.",
+      desc: "Lightweight steel structures suitable for residential and commercial buildings, offering design flexibility and rapid construction.",
       image: "expertise/third.png",
     },
     {
       title: "Sandwich Panels",
-      // desc: "Insulated panels used for walls and roofs, providing thermal efficiency and structural strength.",
+      desc: "Insulated panels used for walls and roofs, providing thermal efficiency and structural strength.",
       image: "expertise/fourth.png",
     },
     {
       title: "Standard Modular Solutions",
-      // desc: "Ready-to-use modular units like porta cabins and liftable cabins for immediate deployment.",
+      desc: "Ready-to-use modular units like porta cabins and liftable cabins for immediate deployment.",
       image: "expertise/fifth.png",
     },
   ];
@@ -73,7 +76,6 @@ export default function Servicesone() {
             nextEl: nextRef.current,
           }}
           onBeforeInit={(swiper: SwiperType) => {
-            // Bind navigation elements before init
             const nav = swiper.params.navigation;
             if (nav && typeof nav !== "boolean") {
               nav.prevEl = prevRef.current;
@@ -91,7 +93,12 @@ export default function Servicesone() {
         >
           {services.map((service, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-white rounded-xl overflow-hidden shadow-md">
+              <motion.div
+                className="relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer"
+                onMouseEnter={() => setHoverIndex(i)}
+                onMouseLeave={() => setHoverIndex(null)}
+              >
+                {/* Image */}
                 <div className="w-full h-56 overflow-hidden">
                   <img
                     src={service.image}
@@ -99,7 +106,9 @@ export default function Servicesone() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3">
+
+                {/* Bottom strip (default view) */}
+                <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3 relative z-10">
                   <p className="text-white font-semibold text-sm">
                     {service.title}
                   </p>
@@ -107,7 +116,25 @@ export default function Servicesone() {
                     <ArrowUpRight className="w-4 h-4 text-[#1F4B9A]" />
                   </div>
                 </div>
-              </div>
+
+                {/* Hover overlay */}
+                <AnimatePresence>
+                  {hoverIndex === i && (
+                    <motion.div
+                      className="absolute inset-0 bg-[#000080]/35 flex flex-col items-center justify-center text-center p-4 z-20"
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 50 }}
+                      transition={{ duration: 0.4 }}
+                    >
+                      <h3 className="text-white text-lg font-semibold">
+                        {service.title}
+                      </h3>
+                      <p className="text-white text-sm mt-2">{service.desc}</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -11,7 +11,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-export default function PebFooterP() {
+export default function Footer() {
   return (
     <footer className="bg-[#000080] text-gray-300">
       <div className="mx-auto max-w-7xl px-6 py-10">

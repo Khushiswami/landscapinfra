@@ -36,6 +36,22 @@ const cards = [
       "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
     image: "/industry.jpg",
   },
+  {
+    id: 5,
+    tag: "Whitepaper Study",
+    title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
+    description:
+      "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
+    image: "/industry.jpg",
+  },
+  {
+    id: 6,
+    tag: "Whitepaper Study",
+    title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
+    description:
+      "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
+    image: "/industry.jpg",
+  },
 ];
 
 export default function Insights() {
@@ -86,7 +102,7 @@ export default function Insights() {
           {cards.slice(startIndex, startIndex + cardsPerSlide).map((card) => (
             <div
               key={card.id}
-              className="flex-shrink-0 relative w-full sm:w-1/2 lg:w-1/3 h-[500px] rounded-md overflow-hidden cursor-pointer group"
+              className="flex-shrink-0 relative w-full h-[320px] sm:w-1/2 lg:w-1/3 h-[420px] rounded-md overflow-hidden cursor-pointer group"
             >
               {/* Tag */}
               <div
@@ -110,7 +126,7 @@ export default function Insights() {
               {/* Hover content */}
               <div className="absolute inset-0 bg-[#f8f8f8] flex flex-col justify-between p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-left">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4 text-blue-900 tracking-widest">
+                  <h3 className="text-xl font-bold mt-17 mb-4 text-blue-900 tracking-widest">
                     {card.title}
                   </h3>
                   <p className="text-base text-gray-600 mb-6 tracking-widest">
@@ -118,7 +134,7 @@ export default function Insights() {
                   </p>
                 </div>
                 <div>
-                  <button className="bg-blue-900 text-xl text-[#23dce1] px-4 py-2 rounded-lg font-medium hover:bg-blue-900 transition">
+                  <button className="bg-blue-900 text-xl text-[#fff] px-4 py-2 rounded-lg font-medium hover:bg-blue-900 transition">
                     Know More
                   </button>
                 </div>
@@ -133,16 +149,16 @@ export default function Insights() {
         <button
           onClick={prevSlide}
           disabled={startIndex === 0}
-          className="bg-white text-blue-900 p-2 rounded-[6px] shadow border-2 border-blue-900 hover:bg-blue-50 disabled:opacity-50 disabled:border-gray-300"
+          className="bg-white text-blue-900 p-2 rounded-[6px] shadow-sm border-2 border-blue-900 hover:bg-blue-50 disabled:opacity-50 disabled:border-gray-300"
         >
-          <FaArrowLeft size={26} />
+          <FaArrowLeft size={23} />
         </button>
         <button
           onClick={nextSlide}
           disabled={startIndex >= cards.length - cardsPerSlide}
-          className="bg-white text-blue-900 p-2 rounded-[6px] shadow border-2 border-blue-900 hover:bg-blue-50 disabled:opacity-50 disabled:border-gray-300"
+          className="bg-white text-blue-900 p-2 rounded-[6px] shadow-sm border-2 border-blue-900 hover:bg-blue-50 disabled:opacity-50 disabled:border-gray-300"
         >
-          <FaArrowRight size={26} />
+          <FaArrowRight size={23} />
         </button>
       </div>
     </div>

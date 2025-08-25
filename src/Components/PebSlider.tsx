@@ -10,72 +10,36 @@ const categories = [
   {
     title: "Infrastructure Sector",
     images: ["/about.png", "/about.png", "/about.png"],
-    categoryType: "Design & Development",
-    projectsCompleted: 120,
-    experience: "10+ years",
-    clientsServed: 50,
-    status: "Ongoing",
-    highlight: "Durable, custom-designed Pre-Engineered Buildings",
     description:
       "LandsKingInfra Pvt.Ltd offers durable, custom-designed Pre-Engineered Buildings (PEBs) to protect and enhance your organization. We design, manufacture, and build infrastructure solutions that support long-term business growth and deliver strong returns on investment.",
   },
   {
     title: "Sports & Leisure",
     images: ["/about.png", "/about.png", "/about.png"],
-    categoryType: "Design & Development",
-    projectsCompleted: 120,
-    experience: "10+ years",
-    clientsServed: 50,
-    status: "Ongoing",
-    highlight: "Modern designs for leisure & community engagement",
     description:
       "We design and deliver high-quality sports complexes, stadiums, and recreational facilities. Our prefabricated solutions ensure modern aesthetics, fast construction, and durability, creating spaces that encourage active and healthy lifestyles.",
   },
   {
     title: "Institutional Sector",
     images: ["/about.png", "/about.png"],
-    categoryType: "Industrial Setup",
-    projectsCompleted: 85,
-    experience: "8+ years",
-    clientsServed: 40,
-    status: "Completed",
-    highlight: "Efficient prefabricated solutions for institutions",
     description:
       "We specialize in large institutional buildings such as schools, hospitals, and offices. Prefabrication is increasingly recognized as a reliable alternative to traditional construction, offering faster delivery, cost efficiency, and enhanced sustainability.",
   },
   {
     title: "Special Buildings",
     images: ["/about.png", "/about.png"],
-    categoryType: "Sustainability & Compliance",
-    projectsCompleted: 60,
-    experience: "7+ years",
-    clientsServed: 30,
-    status: "Ongoing",
-    highlight: "Eco-friendly and innovative special structures",
     description:
       "From landmark structures to custom-designed special-purpose buildings, our solutions combine modern engineering with sustainability. We deliver unique projects that stand out for their design, durability, and environmental responsibility.",
   },
   {
     title: "Construction Sector",
     images: ["/about.png", "/about.png"],
-    categoryType: "Project Management",
-    projectsCompleted: 50,
-    experience: "12+ years",
-    clientsServed: 25,
-    status: "Ongoing",
-    highlight: "Collaboration with leading names in construction",
     description:
       "We offer a wide range of prefabricated products tailored to the construction sector, collaborating with leading names in the industry. Our efficient project execution and quality assurance make us a trusted partner in modern construction.",
   },
   {
     title: "Industrial Buildings Construction",
     images: ["/about.png", "/about.png"],
-    categoryType: "Renewable Energy",
-    projectsCompleted: 40,
-    experience: "6+ years",
-    clientsServed: 20,
-    status: "Completed",
-    highlight: "Smart and sustainable industrial spaces",
     description:
       "We deliver robust industrial buildings and factories designed for efficiency and long-term performance. With advanced prefabrication technology and landscaping integration, our solutions ensure operational excellence and sustainable growth.",
   },
@@ -92,14 +56,14 @@ export default function PebSlider() {
           Our Expertise
         </p>
         <h2 className="text-xl font-bold text-[#000080] leading-snug md:text-4xl">
-          Industrial Building We Build
+          Shaping the Future of Multiple Sectors
         </h2>
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3 rounded-full" />
       </div>
 
       <div className="max-w-7xl mx-auto my-8 px-4">
-        {/* ✅ Tab Buttons - ONLY visible on mobile & tablet */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:hidden gap-4 mb-8">
+        {/* ✅ Mobile & Tablet View (Tabs + Description Only) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:hidden gap-4">
           {categories.map((cat, index) => (
             <button
               key={index}
@@ -115,9 +79,17 @@ export default function PebSlider() {
           ))}
         </div>
 
-        {/* Desktop View: Images + Description */}
+        {/* ✅ Mobile & Tablet Description */}
+        <div className="lg:hidden mt-6 bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 className="text-lg font-semibold text-[#000080] mb-3">
+            {activeCategory.title}
+          </h3>
+          <p className="text-gray-600 text-sm">{activeCategory.description}</p>
+        </div>
+
+        {/* ✅ Desktop View: Left Tabs + Right Image Slider */}
         <div className="hidden lg:flex w-full h-[500px] rounded-xl overflow-hidden">
-          {/* Left Tabs (optional if you want vertical tabs on desktop) */}
+          {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col rounded-tl-xl rounded-bl-xl border border-gray-300">
             {categories.map((cat, index) => (
               <button
@@ -138,7 +110,7 @@ export default function PebSlider() {
             ))}
           </div>
 
-          {/* Right Slider */}
+          {/* Right Image Slider */}
           <div className="w-3/4 relative">
             <Swiper
               navigation={true}

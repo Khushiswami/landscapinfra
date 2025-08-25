@@ -45,6 +45,7 @@ export default function Home() {
     <ClientP/>
     <HelpP/>
     <Insights/>
+    
     <Footer/>
     {/* <Menupage/> */}
     
