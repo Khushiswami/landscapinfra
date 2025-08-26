@@ -87,7 +87,7 @@ export default function Insights() {
   };
 
   return (
-    <div className="relative  md:px-20 py-10 my-40">
+    <div className="relative  md:px-20 py-10 ">
       <h1 className="text-center text-4xl font-bold my-10">
         Our Latest Insights
       </h1>

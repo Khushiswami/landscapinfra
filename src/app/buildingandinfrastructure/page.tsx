@@ -27,7 +27,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import Platform from "../platform/page";
-import PebCallP from "../../Components/PebCallP";
+import Brand from "../../Components/Brand";
+
 // import Footer from "../Footer/page";
 import Footer from "../../Components/Footer";
 import Pebheader from "../../Components/Pebheader";
@@ -872,7 +873,6 @@ export default function Buildingandinfrastructure() {
         </div>
       </section>
       {/* end why choose us */}
-      <PebCallP />
 
       <ContactSection />
 
