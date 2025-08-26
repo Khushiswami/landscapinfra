@@ -235,7 +235,7 @@
 //             <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
 //                Renewable Energy
 //             </Link>
-//           </li> 
+//           </li>
 //           <li>
 //             <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
 //              Real State
@@ -249,7 +249,7 @@
 //             <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
 //              Industrial Construction
 //             </Link>
-//           </li> 
+//           </li>
 //            <li>
 //             <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
 //               Structural Engineering Services
@@ -264,14 +264,12 @@
 //              <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
 //                   Mining Metals
 //                 </Link>
-               
+
 //           </li>
 //           <li> <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
 //                   Other Industries
 //                 </Link></li>
-          
-         
-          
+
 //         </ul>
 //       )}
 //     </div>
@@ -312,12 +310,11 @@
 //                   Factories Installation
 //                 </Link>
 //                 </li>
-//                    <li> 
+//                    <li>
 //                     <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
 //                   Cold Storage &amp; Warehouse
 //                 </Link>
-               
-               
+
 //                  </li>
 //                     <li>  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
 //                   Structure Design Services
@@ -328,7 +325,7 @@
 //               HVAC Services
 //             </Link>
 //           </li>
-          
+
 //         </ul>
 //       )}
 //     </div>
@@ -370,8 +367,6 @@
 //   </nav>
 // )}
 
-
-    
 //     </header>
 //   );
 // }
@@ -419,50 +414,77 @@ export default function Header() {
             </button>
             {openDropdown === "industries" && (
               <div className="absolute top-full left-0 mt-2 bg-white text-black shadow-lg rounded w-64 border border-gray-100 z-50">
-                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                <Link
+                  href="industryinstallation"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Industry Installation
                 </Link>
-                
-            <Link href="/preEngineeredBuildings" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Pre Engineered Building
-            </Link>
-          
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-             Infrastructure & Energy
-            </Link>
-          
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Engineering R&D
-            </Link>
-         
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-               Renewable Energy
-            </Link>
-          <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-             Real State
-            </Link>
-          
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Civil Services
-            </Link>
-          
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-             Industrial Construction
-            </Link>
-          
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Structural Engineering Services
-            </Link>
-         
-            <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+
+                <Link
+                  href="/preEngineeredBuildings"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Pre Engineered Building
+                </Link>
+
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Infrastructure & Energy
+                </Link>
+
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Engineering R&D
+                </Link>
+
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Renewable Energy
+                </Link>
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Real State
+                </Link>
+
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Civil Services
+                </Link>
+
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Industrial Construction
+                </Link>
+
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Structural Engineering Services
+                </Link>
+
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Heavy Engineering
                 </Link>
-          
-             <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Mining Metals
                 </Link>
-               
-           <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Other Industries
                 </Link>
               </div>
@@ -482,38 +504,39 @@ export default function Header() {
                 <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Defence Installations
                 </Link>
-              <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Other Services
                 </Link>
-               <Link
+                <Link
                   href="https://staging.landsking.com/industries/"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Industry Building Solutions
                 </Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Fabrication
-                </Link><Link
+                </Link>
+                <Link
                   href="https://staging.landsking.com/fabrication/"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Factories Installation
                 </Link>
-                
-                    <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Cold Storage &amp; Warehouse
                 </Link>
-               
-               
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Structure Design Services
                 </Link>
 
-         
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              HVAC Services
-            </Link>
-          
+                <Link
+                  href="#"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  HVAC Services
+                </Link>
               </div>
             )}
           </div>
@@ -566,179 +589,226 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-  <nav className="md:hidden bg-white text-black px-4 py-4 shadow-lg max-h-screen overflow-auto">
-    <Link href="/" className="block py-2 border-b border-gray-200">
-      HOME
-    </Link>
+        <nav className="md:hidden bg-white text-black px-4 py-4 shadow-lg max-h-screen overflow-auto">
+          <Link href="/" className="block py-2 border-b border-gray-200">
+            HOME
+          </Link>
 
-    {/* Industries collapsible */}
-    <div className="border-b border-gray-200 py-2">
-      <button
-        onClick={() => toggleDropdown("industries")}
-        className="w-full text-left font-semibold flex justify-between items-center"
-      >
-        INDUSTRIES
-        <span>{openDropdown === "industries" ? "−" : "+"}</span>
-      </button>
+          {/* Industries collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("industries")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              INDUSTRIES
+              <span>{openDropdown === "industries" ? "−" : "+"}</span>
+            </button>
 
-      {openDropdown === "industries" && (
-        <ul className="pl-4 mt-2 space-y-1">
-          <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Industry Installation
-            </Link>
-          </li>
-           <li>
-            <Link href="/preEngineeredBuildings" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Pre Engineered Building
-            </Link>
-          </li> <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-             Infrastructure & Energy
-            </Link>
-          </li> <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Engineering R&D
-            </Link>
-          </li> <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-               Renewable Energy
-            </Link>
-          </li> 
-          <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-             Real State
-            </Link>
-          </li>
-            <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Civil Services
-            </Link>
-          </li>  <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-             Industrial Construction
-            </Link>
-          </li> 
-           <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Structural Engineering Services
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Heavy Engineering
-                </Link>
-          </li>
-          <li>
-             <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Mining Metals
-                </Link>
-               
-          </li>
-          <li> <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Other Industries
-                </Link></li>
-          
-         
-          
-        </ul>
-      )}
-    </div>
-
-    {/* Expertise collapsible */}
-    <div className="border-b border-gray-200 py-2">
-      <button
-        onClick={() => toggleDropdown("expertise")}
-        className="w-full text-left font-semibold flex justify-between items-center"
-      >
-        EXPERTISE
-        <span>{openDropdown === "expertise" ? "−" : "+"}</span>
-      </button>
-
-      {openDropdown === "expertise" && (
-        <ul className="pl-4 mt-2 space-y-1">
-          <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              Defence Installations
-            </Link>
-          </li>
-          <li><Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Other Services
-                </Link></li>
-                <li><Link
-                  href="https://staging.landsking.com/industries/"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Industry Building Solutions
-                </Link></li>
-                 <li> <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Fabrication
-                </Link></li>
-                  <li> <Link
-                  href="https://staging.landsking.com/fabrication/"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Factories Installation
-                </Link>
+            {openDropdown === "industries" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Industry Installation
+                  </Link>
                 </li>
-                   <li> 
-                    <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Cold Storage &amp; Warehouse
-                </Link>
-               
-               
-                 </li>
-                    <li>  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Structure Design Services
-                </Link></li>
+                <li>
+                  <Link
+                    href="/preEngineeredBuildings"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Pre Engineered Building
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Infrastructure & Energy
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Engineering R&D
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Renewable Energy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Real State
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Civil Services
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Industrial Construction
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Structural Engineering Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Heavy Engineering
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Mining Metals
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Other Industries
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
 
-         <li>
-            <Link href="#" className="block hover:bg-gray-100 px-2 py-1 rounded">
-              HVAC Services
-            </Link>
-          </li>
-          
-        </ul>
+          {/* Expertise collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("expertise")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              EXPERTISE
+              <span>{openDropdown === "expertise" ? "−" : "+"}</span>
+            </button>
+
+            {openDropdown === "expertise" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Defence Installations
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Other Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://staging.landsking.com/industries/"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Industry Building Solutions
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Fabrication
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link
+                    href="https://staging.landsking.com/fabrication/"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Factories Installation
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Cold Storage &amp; Warehouse
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Structure Design Services
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    HVAC Services
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          <Link
+            href="/projects"
+            className="block py-2 border-b border-gray-200"
+          >
+            PROJECTS
+          </Link>
+          <Link href="/sectors" className="block py-2 border-b border-gray-200">
+            INSIGHTS
+          </Link>
+          <Link href="/media" className="block py-2 border-b border-gray-200">
+            MEDIA
+          </Link>
+          <Link href="/about" className="block py-2 border-b border-gray-200">
+            ABOUT
+          </Link>
+
+          <div className="flex items-center space-x-4 pt-4 border-t">
+            <button>
+              <MagnifyingGlassIcon className="h-6 w-6" />
+            </button>
+            <button>
+              <EnvelopeIcon className="h-6 w-6" />
+            </button>
+            <button
+              onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+              className="px-2 py-1 border rounded text-sm"
+            >
+              {language}
+            </button>
+          </div>
+
+          <Link
+            href="/contact"
+            className="block bg-[#000080] text-white px-4 py-2 rounded font-semibold mt-3"
+          >
+            CONTACT US
+          </Link>
+        </nav>
       )}
-    </div>
-
-    <Link href="/projects" className="block py-2 border-b border-gray-200">
-      PROJECTS
-    </Link>
-    <Link href="/sectors" className="block py-2 border-b border-gray-200">
-      INSIGHTS
-    </Link>
-    <Link href="/media" className="block py-2 border-b border-gray-200">
-      MEDIA
-    </Link>
-    <Link href="/about" className="block py-2 border-b border-gray-200">
-      ABOUT
-    </Link>
-
-    <div className="flex items-center space-x-4 pt-4 border-t">
-      <button>
-        <MagnifyingGlassIcon className="h-6 w-6" />
-      </button>
-      <button>
-        <EnvelopeIcon className="h-6 w-6" />
-      </button>
-      <button
-        onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
-        className="px-2 py-1 border rounded text-sm"
-      >
-        {language}
-      </button>
-    </div>
-
-    <Link
-      href="/contact"
-      className="block bg-[#000080] text-white px-4 py-2 rounded font-semibold mt-3"
-    >
-      CONTACT US
-    </Link>
-  </nav>
-)}
-
     </header>
   );
 }
