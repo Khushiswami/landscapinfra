@@ -378,11 +378,11 @@ export default function IndustryHeader() {
       subItems: [
         {
           title: "Power",
-          href: "/power",
+          href: "/buildingandinfrastructure",
           subMenu: [
-            { name: "Hydro Power", href: "/power/hydro" },
-            { name: "Nuclear Power", href: "/power/nuclear" },
-            { name: "Thermal Power", href: "/power/thermal" },
+            { name: "Hydro Power", href: "/businessAreas/hydropower" },
+            { name: "Nuclear Power", href: "/businessAreas/nuclearpower" },
+            { name: "Thermal Power", href: "/businessAreas/thermalpower" },
           ],
         },
         {
@@ -391,39 +391,42 @@ export default function IndustryHeader() {
           subMenu: [
             {
               name: "Highways, Roads & Bridges",
-              href: "/transportation/highways",
+              href: "/businessAreas/highwaysroads",
             },
-            { name: "Railways", href: "/transportation/railways" },
+            { name: "Railways", href: "/businessAreas/railways" },
             {
               name: "Mass Rapid Transit Systems",
-              href: "/transportation/mrts",
+              href: "/businessAreas/massRapidTransitSystems",
             },
-            { name: "Ports & Harbours", href: "/transportation/ports" },
+            { name: "Ports & Harbours", href: "/businessAreas/portsharbours" },
           ],
         },
         {
           title: "Water",
           href: "/water",
           subMenu: [
-            { name: "Water Supply & Sanitation", href: "/water/supply" },
-            { name: "Irrigation", href: "/water/irrigation" },
+            {
+              name: "Water Supply & Sanitation",
+              href: "/businessAreas/waterSupplySanitation",
+            },
+            { name: "Irrigation", href: "/businessAreas/irrigation" },
           ],
         },
         {
           title: "Industrial & Buildings",
-          href: "/industrial-buildings",
+          href: "/businessAreas/mrts",
           subMenu: [
             {
               name: "Manufacturing & Process Plants",
-              href: "/industrial/plants",
+              href: "/businessAreas/manufacturingProcessPlants",
             },
             {
               name: "Commercial & Institutional",
-              href: "/industrial/commercial",
+              href: "/businessAreas/commercialInstitutional",
             },
             {
               name: "Smart Cities & Townships",
-              href: "/industrial/smart-cities",
+              href: "/businessAreas/smartCitiesTownships",
             },
           ],
         },

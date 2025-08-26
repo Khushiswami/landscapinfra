@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-// import {Quicksand } from "next/font/google";
-import { Lato } from 'next/font/google';
+import { Inter } from "next/font/google"; // ✅ Inter import kiya
 
-// Poppins Medium
-// const quicksand = Quicksand({
-//   variable: "--font-quicksand",
-//   subsets: ["latin"],
-//   weight: ["300", "400", "500", "600", "700"],
-// });
-const lato = Lato({ subsets: ['latin'], weight: ['400', '700'] });
+// Inter font initialize
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"], // ✅ aap aur bhi weight add kar sakte ho
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,11 +19,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-<body
-       className={lato.className}
-        // className={`${quicksand.variable} antialiased`}
-      >
-          {children}
+      <body className={inter.className}>
+        {" "}
+        {/* ✅ Inter apply */}
+        {children}
       </body>
     </html>
   );

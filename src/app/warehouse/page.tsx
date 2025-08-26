@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Pebheader from "../../Components/Pebheader";
-import PedFooter from "../../Components/Footer";
+import Footer from "../../Components/Footer";
 
 const Warehouse = () => {
   return (
@@ -16,13 +16,13 @@ const Warehouse = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/industry.jpg')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/menupagetwo/w-1.jpg')",
             }}
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+                Warehouse
               </h1>
             </div>
           </div>
@@ -30,12 +30,11 @@ const Warehouse = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
-
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 1.png"
+                src="/menupagetwo/w-2.jpg"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -43,15 +42,23 @@ const Warehouse = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+                Pre-fabricated Warehouse and Storage Solutions by LandsKing
+                Infra.
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative prefabricated multi-storey
-                structures that offer unmatched durability, rapid construction, and eco-friendly
-                solutions. With over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized to suit your
-                specific requirements—whether for commercial, institutional, or residential
-                applications.
+                Boost your industrial storage and logistics efficiency with
+                LandsKing Infra’s pre-fabricated warehouse and godown structures
+                — engineered for strength, quick deployment, and
+                cost-effectiveness. As a trusted PEB solutions provider in
+                India, we offer fully customized warehouse infrastructure to
+                match your specific industry requirements.
+              </p>
+              <p className="text-gray-700 mb-4">
+                LandsKing Infra, a prominent name among warehouse structure
+                manufacturers in India, specializes in delivering pre-engineered
+                warehouses tailored to client-specific demands. Our structures
+                are lightweight yet robust, offering a budget-friendly solution
+                ideal for both commercial and industrial use.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -63,30 +70,32 @@ const Warehouse = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Why Choose Prefab Multi-Storey Buildings?
+                Why Choose Pre-Engineered Warehouses?
               </h3>
               <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are prefabricated off-site and
-                swiftly assembled at the destination, cutting construction time by up to 50%
-                compared to traditional building methods.
+                📦 Rapid Installation - Up to 50% faster construction than
+                traditional methods — enabling quicker operational readiness.
               </p>
               <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material waste, and quicker
-                project turnaround help bring down total project costs—without sacrificing quality.
+                💰 Cost Efficiency - Reduce overall costs with minimal material
+                waste and lower labor requirements.
               </p>
               <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable layouts, meet varied
-                load-bearing needs, and can be easily expanded in the future—perfect for evolving
-                commercial and institutional spaces.
+                📐 Customizable Designs - Fully tailored to your specific
+                dimensions, layout, and workflow needs.
               </p>
               <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to less on-site
-                disruption, reduced material wastage, and a smaller environmental impact.
+                🛡️ Strength & Durability - Built to be earthquake-resistant and
+                weatherproof, ensuring long-term reliability.
+              </p>
+              <p className="text-gray-700 mb-4">
+                📈 Easily Expandable - Designed for future scalability, allowing
+                smooth expansion as your business grows.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 2.jpg"
+                src="/menupagetwo/w-4.jpg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -97,16 +106,28 @@ const Warehouse = () => {
           {/* Centered Heading + Paragraph */}
           <div className="text-center mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Prefab Multi-Storey Buildings for Multipurpose Applications
+              LandsKing Infra’s Complete Turnkey Warehouse Solutions Include:
             </h2>
             <p className="text-gray-700 text-lg">
-              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and dependable multi-storey prefabricated buildings tailored for a variety of uses—including office hubs, commercial centers, and institutional infrastructures. Constructed using advanced PUF/EPS insulated panels and Light Gauge Steel Framing (LGSF) technology, our buildings offer excellent durability, thermal efficiency, and quick on-site assembly.
-              <br /><br />
-              Each structure is meticulously designed to meet vital engineering standards, including earthquake resistance (seismic compliance), wind load management, and optimal load-bearing capacity. At Landsking Infra Pvt Ltd, we manage the entire process in-house—from architectural design and manufacturing to complete on-site erection—providing a true turnkey experience.
-              <br /><br />
-              Our prefab multi-storey solutions are especially suitable for sites with space constraints or time-sensitive schedules. By combining Pre-Engineered Building (PEB) systems with LGSF frameworks, we ensure enhanced strength and structural integrity. In addition, fire-rated coatings are applied to meet high safety benchmarks.
-              <br /><br />
-              Backed by 20+ years of industry experience, Landsking Infra Pvt Ltd Prefab is a trusted partner for fast, cost-effective, and long-lasting multi-storey building solutions across India.
+              At LandsKing Infra, our turnkey warehouse solutions start with
+              expert design and engineering, tailored to meet your unique
+              operational requirements. We ensure every detail is optimized for
+              performance and efficiency.
+              <br />
+              <br />
+              Next, we focus on fabrication and quality control, producing
+              durable components that meet the highest standards. Our skilled
+              team handles on-site erection and installation, guaranteeing
+              timely and safe project completion. When necessary, we also manage
+              civil foundation work to provide a solid and reliable base for
+              your structure.
+              <br />
+              <br />
+              To ensure your facility is fully operational and compliant, we
+              integrate essential electrical systems and fire safety features.
+              Our support doesn’t end there — we provide ongoing post-sales
+              assistance to keep your warehouse running smoothly for years to
+              come.
             </p>
           </div>
 
@@ -114,7 +135,7 @@ const Warehouse = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 3.jpeg"
+                src="/menupagetwo/w-5.png"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -122,16 +143,44 @@ const Warehouse = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
+                Main Advantages of LandsKing Infras Pre-Engineered Warehouses
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
+                <li>
+                  <strong>🔩 Main Frame Structure:</strong>
+                  Heavy-duty <em>welded steel rigid frames</em> ensure strength
+                  and stability.
+                </li>
+                <li>
+                  <strong>🧱 Support Members:</strong>
+                  High-quality <em>Z/C-shaped purlins and girts</em> used for
+                  walls and roofing support.
+                </li>
+                <li>
+                  <strong>🏠 Roof & Wall Panels:</strong>
+                  Insulated panels made from <em>PUF, EPS, or Rockwool</em> for
+                  superior thermal efficiency.
+                </li>
+
+                <li>
+                  <strong>💨 Ventilation Solutions:</strong>
+                  Multiple airflow options including{" "}
+                  <em>ridge vents, turbo ventilators, and louvered windows</em>.
+                </li>
+                <li>
+                  <strong>🏢 Optional Add-Ons:</strong>
+                  Customizable{" "}
+                  <em>mezzanine floors and internal office partitions</em> as
+                  per requirements.
+                </li>
+                <li>
+                  <strong>🔥 Fire & Corrosion Protection:</strong>
+                  Structures come with <em>fire-rated wall panels</em> and{" "}
+                  <em>anti-corrosive paint coatings</em> for added safety and
+                  durability.
+                </li>
               </ul>
+
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
               </button>
@@ -141,23 +190,50 @@ const Warehouse = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
-              <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric tons, Landsking Infra Pvt Ltd Prefab is
-                fully equipped to execute large-scale and technically demanding prefab construction
-                projects across India. Our offerings align with global quality standards and are
-                fully customizable to suit specific project needs, including:
-              </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
+              <h3 className="text-2xl font-bold mb-4">
+                Applications Across Industries
+              </h3>
+              <ul className="text-gray-700 mb-4 space-y-1 ">
+                <li>
+                  <strong>Logistics and Supply Chain Operations:</strong>{" "}
+                  Efficient storage and handling of goods to streamline
+                  transportation and distribution.
+                </li>
+                <li>
+                  <strong>FMCG and Retail Inventory Storage:</strong> Safe,
+                  organized spaces for fast-moving consumer goods and retail
+                  products to ensure timely availability.
+                </li>
+                <li>
+                  <strong>Cold Chain and Food Processing Facilities:</strong>{" "}
+                  Temperature-controlled environments designed for perishable
+                  goods and food processing requirements.
+                </li>
+                <li>
+                  <strong>Pharmaceutical and Chemical Storage:</strong> Secure
+                  and compliant storage for sensitive pharmaceutical products
+                  and hazardous chemicals.
+                </li>
+                <li>
+                  <strong>Manufacturing Plants and Factories:</strong> Durable
+                  structures to house raw materials, machinery, and finished
+                  goods within production facilities.
+                </li>
+                <li>
+                  <strong>Automotive Parts and Accessories Storage:</strong>{" "}
+                  Organized storage solutions tailored to accommodate bulky
+                  automotive components and spare parts.
+                </li>
+                <li>
+                  <strong>E-commerce Fulfillment Hubs:</strong> Flexible
+                  warehouse spaces that support fast and accurate order
+                  processing and dispatch.
+                </li>
               </ul>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/row4.jpg"
+                src="/menupagetwo/w-6.png"
                 alt="Row 4"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -169,14 +245,16 @@ const Warehouse = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/row5.jpg"
+                src="/menupagetwo/w-7.png"
                 alt="Row 5"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">Why Landsking Infra Pvt Ltd Prefab?</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                Why Landsking Infra Pvt Ltd Prefab?
+              </h3>
               <ul className="space-y-1">
                 <li>✔️ Trusted Expertise Since 1999</li>
                 <li>✔️ Comprehensive Turnkey Project Solutions</li>
@@ -195,49 +273,53 @@ const Warehouse = () => {
             <div className="space-y-4">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "How long does it take to build a PEB warehouse? ",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "Typically, construction can be completed in 3 to 6 months, depending on size and customization. Pre-fabrication speeds up the process significantly compared to traditional methods.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "What is a PEB warehouse?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "A PEB warehouse is a pre-engineered building made from factory-fabricated steel components, designed for quick assembly and durability in industrial and commercial applications.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question:
+                    "What are the benefits of choosing a PEB warehouse over traditional construction?",
                   answer:
-                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
+                    "PEB warehouses offer faster construction, lower costs, better quality control, flexibility, and ease of future expansion.",
                 },
                 {
-                  question: "How long does it take to construct a prefab multi-storey building?",
+                  question:
+                    "What kind of maintenance do PEB warehouses require?",
                   answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
+                    "They require minimal maintenance due to corrosion-resistant coatings and durable materials but regular inspections are recommended to ensure longevity.",
                 },
                 {
-                  question: "Where can I use these structures?",
+                  question:
+                    "Do you provide post-construction support and warranties?",
                   answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "Yes, comprehensive post-sales support and warranties are provided to ensure your facility operates smoothly and any issues are promptly addressed.x",
                 },
                 {
-                  question: "What are the benefits of using prefab multi-storey buildings?",
+                  question:
+                    "Are PEB warehouses resistant to natural disasters like earthquakes and storms?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    "Yes, PEB warehouses are designed to meet strict structural standards and are engineered to withstand seismic activity, high winds, and other environmental challenges.",
                 },
                 {
-                  question: "In which sectors can prefab multi-storey buildings be utilized?",
+                  question: "How energy-efficient are PEB warehouses?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    "PEB warehouses can be designed with insulated panels, skylights, and ventilation systems to reduce energy consumption and improve temperature control.",
                 },
                 {
-                  question: "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                  question: "What are the size limitations for PEB warehouses?",
                   answer:
-                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "PEB warehouses can be designed for a wide range of sizes, with clear spans typically up to 30 meters or more without internal columns, adaptable to your space needs.",
                 },
                 {
-                  question: "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                  question: "Can PEB warehouses be relocated if needed?",
                   answer:
-                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "Yes, since they are modular and pre-fabricated, PEB structures can be dismantled and reassembled at a new location if required.",
                 },
               ].map((faq, idx) => (
                 <details
@@ -257,7 +339,7 @@ const Warehouse = () => {
           </div>
         </section>
       </div>
-      <PedFooter />
+      <Footer />
     </>
   );
 };
