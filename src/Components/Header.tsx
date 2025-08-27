@@ -429,10 +429,10 @@ export default function Header() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/buildingandinfrastructure"
                   className="block hover:bg-gray-100 px-2 py-1 rounded"
                 >
-                  Infrastructure & Energy
+                  Building and Infrastructure
                 </Link>
 
                 <Link
@@ -508,8 +508,7 @@ export default function Header() {
                   Other Services
                 </Link>
                 <Link
-                  href="https://staging.landsking.com/industries/"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  href="structuralsteel"className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Industry Building Solutions
                 </Link>
@@ -532,7 +531,7 @@ export default function Header() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/hvac"
                   className="block hover:bg-gray-100 px-2 py-1 rounded"
                 >
                   HVAC Services

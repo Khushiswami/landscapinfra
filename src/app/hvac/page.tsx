@@ -29,8 +29,11 @@ import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
 import Pebheader from "../../Components/Pebheader";
 import Brand from "yes/Components/Brand";
+import ImageSlider from "yes/Components/ImageSlider";
+import PebSlider from "yes/Components/PebSlider";
+import PlatformP from "yes/Components/PlatformP";
 
-export default function Menupage() {
+export default function Hvac() {
   interface FAQ {
     question: string;
     answer: string;
@@ -450,113 +453,10 @@ export default function Menupage() {
           </div>
         </div>
       </section>
-      {/* explore conettt */}
-      <section className="max-w-7xl mx-auto px-4 py-10 ">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Pre Engineered Products
-        </h2>
-
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
-          <div className="bg-blue-900 text-white rounded-lg flex flex-col w-full md:w-1/4">
-            {areas.map((area, idx) => (
-              <button
-                key={area.id}
-                onClick={() => setSelectedId(area.id)}
-                className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                  selectedId === area.id
-                    ? "bg-blue-800 font-bold"
-                    : "hover:bg-blue-800 text-gray-300"
-                }`}
-              >
-                <span className="text-sm opacity-70">
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
-                <span>{area.title}</span>
-              </button>
-            ))}
-          </div>
-
-          {/* Right Content */}
-          {selectedArea && (
-            <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-              {/* Text Content */}
-              <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-                  {selectedArea.subtitle}
-                </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-                  GET A QUOTE
-                </button>
-              </div>
-
-              {/* Image */}
-              <div className="w-full md:w-1/2">
-                <img
-                  src={selectedArea.image}
-                  alt={selectedArea.subtitle}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
-      {/* explore content */}
-
+     
+<PebSlider/>
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Left Side - Image */}
-          <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
-              src="/menupageimg/peb8.jpg" // replace with your real factory image
-              alt="Manufacturing Facility"
-              width={700}
-              height={450}
-              className="relative rounded-2xl shadow-lg"
-            />
-          </div>
-
-          {/* Right Side - Content */}
-          <div>
-            <div className="flex items-center mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                Our Manufacturing Capabilities
-              </h2>
-            </div>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
-              fully-integrated PEB manufacturing facility where every stage—
-              from design and fabrication to finishing and dispatch—takes place
-              under one roof. This seamless process ensures superior quality,
-              faster delivery, and reliable performance.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Our infrastructure is powered by a highly skilled team of
-              engineers, supported with state-of-the-art CNC machinery, robotic
-              welding systems, and high-capacity fabrication tools. These
-              advanced resources enable us to deliver large-scale{" "}
-              <span className="font-semibold">steel structures</span> with
-              precision and efficiency.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed">
-              With strict quality checks at every stage—from automated
-              fabrication to final assembly—we ensure that all components meet
-              global industry standards. Whether it s a standard warehouse,
-              factory building, or a customized industrial project,{" "}
-              <strong>Landsking Infra Pvt. Ltd.</strong> provides dependable,
-              cost-effective, and timely{" "}
-              <span className="font-semibold">PEB solutions across India.</span>
-            </p>
-          </div>
-        </div>
-      </section>
+      
       {/* endcapill */}
       {/* business benifts */}
       <section className="bg-[#272727] text-white py-10">
@@ -658,67 +558,8 @@ export default function Menupage() {
         </div>
       </section>
       {/* end special section */}
-      {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 flex items-center">
-              Why Choose Landsking Infra Pvt. Ltd for PEBs?
-            </h2>
-
-            <p>
-              25+ Years of Expertise in prefabricated and steel building
-              solutions Nationwide Presence with a strong logistics and project
-              execution network In-House Design & Engineering powered by 3D
-              modeling and load optimization Certified Manufacturing Standards
-              ensuring compliance with IS codes and quality benchmarks Timely
-              Project Delivery backed by structured planning and skilled
-              professionals End-to-End Turnkey Solutions covering design,
-              fabrication, delivery, and installation
-            </p>
-
-            {/* Animated Counters */}
-            <div
-              ref={ref}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
-            >
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center bg-white shadow-lg p-3 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <div className="text-blue-600 text-base">{stat.icon}</div>
-                  <h3 className="text-base font-extrabold text-gray-900 mt-2">
-                    {inView && (
-                      <CountUp
-                        end={stat.value}
-                        duration={2}
-                        suffix={stat.suffix}
-                      />
-                    )}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 mt-1 text-center">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
-              src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
-              width={700}
-              height={450}
-              className="relative rounded-2xl shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
+      <PlatformP/>
+   
       {/* end why choose us */}
       <Brand />
 

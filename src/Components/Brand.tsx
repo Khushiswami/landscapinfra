@@ -57,7 +57,7 @@ export default function Brand() {
 
   return (
     <>
-      <div className="bg-[#272727]  bg-repeat py-10 px-4">
+      <div className="bg-[#272727]  bg-repeat py-10 px-4 mt-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white">
           {/* Left text */}
           <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left mb-4 md:mb-0">
