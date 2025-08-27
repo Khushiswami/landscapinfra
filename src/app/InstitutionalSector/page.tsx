@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, ReactNode } from "react";
-import { FaPlay, FaWarehouse, FaIndustry, FaSnowflake, FaShieldAlt } from "react-icons/fa";
+import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
 import Pebheader from "../../Components/Pebheader";
 import Footer from "../../Components/Footer";
@@ -32,12 +32,16 @@ function Card({ image, icon, title, description }: CardProps) {
 
       {/* Text */}
       <div className="px-5 pb-6 flex-1 flex flex-col">
-        <h3 className="text-xl font-bold tracking-wide mb-3">{title}</h3>
-        <p className="text-gray-600 text-base tracking-wide mb-5 flex-1">{description}</p>
+        <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
+          {title}
+        </h3>
+        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+          {description}
+        </p>
 
         <a
           href="#"
-          className="relative border border-blue-900 text-lg tracking-wider text-black px-5 py-2 font-semibold w-fit overflow-hidden"
+          className="relative border border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit overflow-hidden"
         >
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             READ MORE
@@ -66,15 +70,15 @@ export default function IndustrialBuildingsConstruction() {
       <Pebheader />
 
       {/* Hero Section */}
-      <section className="w-full min-h-[500px] flex flex-col md:flex-row">
+      <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
         <div
-          className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
+          className="flex-1 flex items-center justify-center p-6 sm:p-8 bg-cover bg-center relative"
           style={{
             backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
           }}
         >
           <div className="text-white text-center relative z-10">
-            <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-snug tracking-wide">
               Institutional Sector
             </h1>
           </div>
@@ -82,7 +86,7 @@ export default function IndustrialBuildingsConstruction() {
       </section>
 
       {/* Company Intro Section */}
-      <section className="w-full bg-white py-12 px-12">
+      <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
@@ -93,23 +97,30 @@ export default function IndustrialBuildingsConstruction() {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4">
-               Stand out from the competition with cutting-edge and visually
-                appealing Pre-Engineered Institutional Building Solutions from Landsking Infra.
+              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+                Stand out from the competition with cutting-edge and visually
+                appealing Pre-Engineered Institutional Building Solutions from
+                Landsking Infra.
               </p>
-              <p className="text-gray-700 mb-4">
-                Our comprehensive range of structures delivers unmatched strength, durability, and elegance. We serve a wide array of sectors, including large-scale Pre-Engineered School Buildings, Hostel Complexes, Hospitals, Office Facilities, Exhibition Halls, and more. At Landsking Infra, we collaborate closely with you to develop designs that strike the perfect balance of space, 
-                functionality, and flexibility—tailored to meet your institutional and commercial needs.
+              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+                Our comprehensive range of structures delivers unmatched
+                strength, durability, and elegance. We serve a wide array of
+                sectors, including large-scale Pre-Engineered School Buildings,
+                Hostel Complexes, Hospitals, Office Facilities, Exhibition
+                Halls, and more. At Landsking Infra, we collaborate closely with
+                you to develop designs that strike the perfect balance of space,
+                functionality, and flexibility—tailored to meet your
+                institutional and commercial needs.
               </p>
-             
+
               <div className="flex items-center gap-4">
-                <button className="border text-blue-900 border-blue-900 px-6 py-2 hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-blue-900 border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
             </div>
 
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/Industrial-Buildings-Construction.webp"
                 alt="Industrial Building"
@@ -121,10 +132,10 @@ export default function IndustrialBuildingsConstruction() {
         </div>
       </section>
 
-      {/* Cards Section */}
-      <main className="bg-white px-12">
-        <section className="bg-gray-50 py-12 px-12">
-          <div className="container mx-auto grid md:grid-cols-3 gap-6">
+      {/* ✅ Cards Section */}
+      <main className="bg-white px-4 sm:px-6 md:px-12">
+        <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-12">
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               image="/NDR.webp"
               icon={<FaWarehouse size={38} className="text-white" />}
@@ -135,8 +146,7 @@ export default function IndustrialBuildingsConstruction() {
               image="/clean-room-2.webp"
               icon={<MdOutlineCleanHands size={38} className="text-white" />}
               title="Prefabricated Multi-Storey Building Manufacturer"
-              description="Landsking Infra’s multi-storey buildings are designed to provide exceptional strength, fast construction timelines, and cost-effective solutions. Perfect for commercial and
-               residential projects, these buildings maximize space utilization while ensuring long-term value and reduced construction time."
+              description="Landsking Infra’s multi-storey buildings are designed to provide exceptional strength, fast construction timelines, and cost-effective solutions. Perfect for commercial and residential projects, these buildings maximize space utilization while ensuring long-term value and reduced construction time."
             />
             <Card
               image="/7-2.webp"
@@ -156,26 +166,33 @@ export default function IndustrialBuildingsConstruction() {
               title="Light Gauge Steel Framing"
               description="Lightweight steel structures ideal for residential and commercial buildings, providing design versatility and accelerated construction timelines."
             />
-           
           </div>
         </section>
       </main>
 
       {/* Info Section */}
-      <section className="bg-gray-50 py-16 px-6 md:px-16 text-center mb-12">
-        <h2 className="text-2xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
+      <section className="bg-gray-50 py-16 px-4 sm:px-8 md:px-16 text-center mb-12">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
           Versatile design options, exceptional quality, and refined aesthetics
         </h2>
         <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
         </div>
-        <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
-         Pre-engineered building technology has gained widespread recognition globally. Over time, more and more industries in India are adopting this modern technology, which is rapidly becoming mainstream in the country’s construction sector. This trend is important because pre-engineered structures offer the most innovative and efficient methods to complete construction projects in an energy-saving way. They are cost-effective and can speed up construction by approximately 50% compared to traditional methods. Like any other industry, 
-         the construction sector has strict deadlines to meet, which is why pre-engineered buildings are becoming increasingly popular.
+        <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+          Pre-engineered building technology has gained widespread recognition
+          globally. Over time, more and more industries in India are adopting
+          this modern technology, which is rapidly becoming mainstream in the
+          country’s construction sector. This trend is important because
+          pre-engineered structures offer the most innovative and efficient
+          methods to complete construction projects in an energy-saving way.
+          They are cost-effective and can speed up construction by approximately
+          50% compared to traditional methods. Like any other industry, the
+          construction sector has strict deadlines to meet, which is why
+          pre-engineered buildings are becoming increasingly popular.
         </p>
       </section>
-      <Footer/>
-</>
+
+      <Footer />
+    </>
   );
 }
-

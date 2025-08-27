@@ -94,7 +94,7 @@ export default function Insights() {
       {/* Slider Container */}
       <div className="overflow-hidden">
         <div
-          className="flex gap-6 transition-transform duration-500 mx-10"
+          className="flex gap-6 transition-transform duration-500 mx-6 md:mx-10"
           style={{
             transform: `translateX(-${(startIndex * 100) / cardsPerSlide}%)`,
           }}

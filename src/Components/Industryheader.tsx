@@ -370,7 +370,7 @@ export default function IndustryHeader() {
   };
 
   const navLinks: MenuItem[] = [
-    { name: "About Landsking", href: "/" },
+    { name: "Home", href: "/" },
     { name: "Our Commitment", href: "/system" },
     {
       name: "Business Areas",
@@ -432,9 +432,35 @@ export default function IndustryHeader() {
         },
       ],
     },
-    { name: "Careers", href: "/sectors" },
-    { name: "Investors", href: "/investors" },
-    { name: "Media Room", href: "/insight" },
+    { name: "Projects", href: "/projects" },
+    {
+      name: "Insights",
+      href: "/insight",
+      subItems: [
+        { name: "Blogs", href: "/projects/pre-engineered" },
+        { name: "Brouchers", href: "/projects/prefab" },
+        { name: "Whitepaper", href: "/projects/videos" },
+        { name: "Carrers", href: "/projects/videos" },
+      ],
+    },
+    {
+      name: "Media",
+      href: "/insight",
+      subItems: [
+        { name: "Latest News", href: "/projects/pre-engineered" },
+        { name: "Gallery", href: "/projects/prefab" },
+      ],
+    },
+    {
+      name: "About us",
+      href: "/about",
+      subItems: [
+        { name: "Our Leadership", href: "/projects/pre-engineered" },
+        { name: "Our History", href: "/projects/prefab" },
+        { name: "Our Mission", href: "/projects/videos" },
+        { name: "Innovation", href: "/projects/videos" },
+      ],
+    },
   ];
 
   return (

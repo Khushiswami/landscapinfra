@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, ReactNode } from "react";
-import { FaPlay, FaWarehouse, FaIndustry, FaSnowflake, FaShieldAlt } from "react-icons/fa";
+import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
 import Pebheader from "../../Components/Pebheader";
 import Footer from "../../Components/Footer";
@@ -33,7 +33,9 @@ function Card({ image, icon, title, description }: CardProps) {
       {/* Text */}
       <div className="px-5 pb-6 flex-1 flex flex-col">
         <h3 className="text-xl font-bold tracking-wide mb-3">{title}</h3>
-        <p className="text-gray-600 text-base tracking-wide mb-5 flex-1">{description}</p>
+        <p className="text-gray-600 text-base tracking-wide mb-5 flex-1">
+          {description}
+        </p>
 
         <a
           href="#"
@@ -50,7 +52,7 @@ function Card({ image, icon, title, description }: CardProps) {
 }
 
 // ✅ Main Page Component
-export default function IndustrialBuildingsConstruction() {
+export default function Construction() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -82,7 +84,7 @@ export default function IndustrialBuildingsConstruction() {
       </section>
 
       {/* Company Intro Section */}
-      <section className="w-full bg-white py-12 px-12">
+      <section className="w-full bg-white py-12 px-4 md:px-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
@@ -94,14 +96,22 @@ export default function IndustrialBuildingsConstruction() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4">
-                Landsking Infra has successfully delivered numerous infrastructure solutions for the construction sector, including worker accommodations, canteens, site offices, and more. Over the years,
-                 we have supported construction companies of all sizes with reliable and efficient prefab solutions.
+                Landsking Infra has successfully delivered numerous
+                infrastructure solutions for the construction sector, including
+                worker accommodations, canteens, site offices, and more. Over
+                the years, we have supported construction companies of all sizes
+                with reliable and efficient prefab solutions.
               </p>
               <p className="text-gray-700 mb-4">
-                With over 25 years of expertise in the prefabricated building industry, Landsking Infra specializes not only in site infrastructure but also in custom-designed warehouses, factory buildings, industrial sheds, poultry farms, cold storage units, clean rooms, and a wide range of other prefab structures. All our solutions are built to 
-                international quality standards and are widely recognized for their durability and performance.
+                With over 25 years of expertise in the prefabricated building
+                industry, Landsking Infra specializes not only in site
+                infrastructure but also in custom-designed warehouses, factory
+                buildings, industrial sheds, poultry farms, cold storage units,
+                clean rooms, and a wide range of other prefab structures. All
+                our solutions are built to international quality standards and
+                are widely recognized for their durability and performance.
               </p>
-             
+
               <div className="flex items-center gap-4">
                 <button className="border text-blue-900 border-blue-900 px-6 py-2 hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
@@ -122,9 +132,9 @@ export default function IndustrialBuildingsConstruction() {
       </section>
 
       {/* Cards Section */}
-      <main className="bg-white px-12">
-        <section className="bg-gray-50 py-12 px-12">
-          <div className="container mx-auto grid md:grid-cols-3 gap-6">
+      <main className="bg-white px-4 sm:px-8 md:px-12">
+        <section className="bg-gray-50 py-12 px-2 sm:px-6 md:px-12">
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               image="/NDR.webp"
               icon={<FaWarehouse size={38} className="text-white" />}
@@ -135,7 +145,7 @@ export default function IndustrialBuildingsConstruction() {
               image="/clean-room-2.webp"
               icon={<MdOutlineCleanHands size={38} className="text-white" />}
               title="Light Gauge Steel Framing"
-              description=" Light steel structures ideal for both residential and commercial projects, providing flexible design options and fast construction timelines."
+              description="Light steel structures ideal for both residential and commercial projects, providing flexible design options and fast construction timelines."
             />
             <Card
               image="/7-2.webp"
@@ -155,7 +165,6 @@ export default function IndustrialBuildingsConstruction() {
               title="Prefab Porta Cabins Manufacturer"
               description="Landsking Infra produces top-quality, customizable porta cabins tailored to suit different space and functional needs. These portable units are perfect for construction sites, office setups, and other temporary applications, offering strength, ease of installation, and reliable performance."
             />
-           
           </div>
         </section>
       </main>
@@ -169,11 +178,23 @@ export default function IndustrialBuildingsConstruction() {
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
         </div>
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
-          The <span className="text-blue-900 font-semibold">pre engineered building</span>has gained widespread recognition globally. Over time, a growing number of industries in India are adopting this innovative approach, which is transforming the entire construction sector in the country. This is important because pre-engineered structures offer some of the most advanced and efficient methods for completing construction projects. They are cost-effective and can speed up the building process by up to 50% compared to traditional methods. Like any other industry, construction has strict deadlines, which is why pre-engineered buildings are becoming increasingly popular.
+          The{" "}
+          <span className="text-blue-900 font-semibold">
+            pre engineered building
+          </span>{" "}
+          has gained widespread recognition globally. Over time, a growing
+          number of industries in India are adopting this innovative approach,
+          which is transforming the entire construction sector in the country.
+          This is important because pre-engineered structures offer some of the
+          most advanced and efficient methods for completing construction
+          projects. They are cost-effective and can speed up the building
+          process by up to 50% compared to traditional methods. Like any other
+          industry, construction has strict deadlines, which is why
+          pre-engineered buildings are becoming increasingly popular.
         </p>
       </section>
-      <Footer/>
-</>
+
+      <Footer />
+    </>
   );
 }
-

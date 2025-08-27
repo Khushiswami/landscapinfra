@@ -608,7 +608,7 @@ export default function Header() {
               <ul className="pl-4 mt-2 space-y-1">
                 <li>
                   <Link
-                    href="#"
+                    href="industryinstallation"
                     className="block hover:bg-gray-100 px-2 py-1 rounded"
                   >
                     Industry Installation
