@@ -504,8 +504,14 @@ export default function Header() {
                 <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                   Defence Installations
                 </Link>
-                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Other Services
+                <Link href="/officespace" className="block px-4 py-2 hover:bg-gray-100">
+                  Office Space
+                </Link>
+                 <Link href="/publicoffice" className="block px-4 py-2 hover:bg-gray-100">
+                  Office Space
+                </Link>
+                  <Link href="/waterinfrastructure" className="block px-4 py-2 hover:bg-gray-100">
+                  Office Space
                 </Link>
                 <Link
                   href="structuralsteel"className="block px-4 py-2 hover:bg-gray-100"
@@ -522,12 +528,12 @@ export default function Header() {
                   Factories Installation
                 </Link>
 
-                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                <Link href="/coldstorageandwarehouse" className="block px-4 py-2 hover:bg-gray-100">
                   Cold Storage &amp; Warehouse
                 </Link>
 
-                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Structure Design Services
+                <Link href="/solar" className="block px-4 py-2 hover:bg-gray-100">
+                  Solar  Services
                 </Link>
 
                 <Link
@@ -535,6 +541,22 @@ export default function Header() {
                   className="block hover:bg-gray-100 px-2 py-1 rounded"
                 >
                   HVAC Services
+                </Link>
+                 <Link
+                  href="/fabrication"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Fabrication
+                </Link> <Link
+                  href="/fire-safety"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Fire Saftey
+                </Link> <Link
+                  href="/greenbuilding"
+                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                >
+                  Green Building
                 </Link>
               </div>
             )}

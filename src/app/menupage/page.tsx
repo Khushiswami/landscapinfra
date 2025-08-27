@@ -29,6 +29,7 @@ import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
 import Pebheader from "../../Components/Pebheader";
 import Brand from "yes/Components/Brand";
+import Products from "yes/Components/Products";
 
 export default function Menupage() {
   interface FAQ {

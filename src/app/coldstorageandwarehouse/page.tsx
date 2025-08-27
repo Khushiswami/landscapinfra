@@ -26,7 +26,7 @@ import Brand from "yes/Components/Brand";
 import PebSlider from "yes/Components/PebSlider";
 import PlatformP from "yes/Components/PlatformP";
 
-export default function Hvac() {
+export default function Coldstorageandwarehouse() {
   interface FAQ {
     question: string;
     answer: string;

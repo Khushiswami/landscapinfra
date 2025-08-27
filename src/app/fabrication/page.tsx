@@ -29,7 +29,7 @@ import Pebheader from "../../Components/Pebheader";
 import IndustryHeader from "yes/Components/Industryheader";
 import ContactSection from "yes/Components/ContactSection";
 
-export default function Buildingandinfrastructure() {
+export default function Fabrication() {
   interface FAQ {
     question: string;
     answer: string;
