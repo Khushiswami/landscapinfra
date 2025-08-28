@@ -25,7 +25,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";import Brand from "yes/Components/Brand";
+import Pebheader from "yes/Components/Pebheader";
+import Brand from "yes/Components/Brand";
 import { motion } from "framer-motion";
 
 export default function Structuralsteel() {
@@ -98,7 +99,7 @@ export default function Structuralsteel() {
 
   return (
     <>
-      <IndustryHeader />
+      <Pebheader />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
@@ -275,7 +276,9 @@ export default function Structuralsteel() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Landsking Infra Pvt. Ltd. LEADING THE WAY TO THE FUTURE</strong>{" "}
+              <strong>
+                Landsking Infra Pvt. Ltd. LEADING THE WAY TO THE FUTURE
+              </strong>{" "}
               is your one-stop solution for all structural and building
               requirements. Our pre-engineered steel buildings are thoughtfully
               designed and precisely fabricated to meet your specific needs.

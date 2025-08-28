@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";import PedFooter from "../../Components/Footer";
+import Pebheader from "yes/Components/Pebheader";
+import PedFooter from "../../Components/Footer";
 
 const PrefabricatedSite = () => {
   return (
     <>
       <div>
-        <IndustryHeader/>
-
+        <Pebheader />
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">
           {/* Left Column */}
@@ -29,7 +29,6 @@ const PrefabricatedSite = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
-
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
@@ -45,12 +44,13 @@ const PrefabricatedSite = () => {
                 Prefab Multi-Storey Buildings by Landsking Infra
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative prefabricated multi-storey
-                structures that offer unmatched durability, rapid construction, and eco-friendly
-                solutions. With over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized to suit your
-                specific requirements—whether for commercial, institutional, or residential
-                applications.
+                At Landsking Infra, we excel in crafting innovative
+                prefabricated multi-storey structures that offer unmatched
+                durability, rapid construction, and eco-friendly solutions. With
+                over 20 years of industry experience and advanced production
+                facilities, we provide end-to-end turnkey solutions customized
+                to suit your specific requirements—whether for commercial,
+                institutional, or residential applications.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -65,22 +65,26 @@ const PrefabricatedSite = () => {
                 Why Choose Prefab Multi-Storey Buildings?
               </h3>
               <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are prefabricated off-site and
-                swiftly assembled at the destination, cutting construction time by up to 50%
-                compared to traditional building methods.
+                🚀 Accelerated Build Time - Structural elements are
+                prefabricated off-site and swiftly assembled at the destination,
+                cutting construction time by up to 50% compared to traditional
+                building methods.
               </p>
               <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material waste, and quicker
-                project turnaround help bring down total project costs—without sacrificing quality.
+                💰 Economical Solution - Efficient designs, reduced material
+                waste, and quicker project turnaround help bring down total
+                project costs—without sacrificing quality.
               </p>
               <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable layouts, meet varied
-                load-bearing needs, and can be easily expanded in the future—perfect for evolving
-                commercial and institutional spaces.
+                🏢 Enhanced Design Versatility - Our buildings offer adaptable
+                layouts, meet varied load-bearing needs, and can be easily
+                expanded in the future—perfect for evolving commercial and
+                institutional spaces.
               </p>
               <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to less on-site
-                disruption, reduced material wastage, and a smaller environmental impact.
+                🌍 Eco-Conscious Construction - Off-site manufacturing leads to
+                less on-site disruption, reduced material wastage, and a smaller
+                environmental impact.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -99,13 +103,34 @@ const PrefabricatedSite = () => {
               Prefab Multi-Storey Buildings for Multipurpose Applications
             </h2>
             <p className="text-gray-700 text-lg">
-              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and dependable multi-storey prefabricated buildings tailored for a variety of uses—including office hubs, commercial centers, and institutional infrastructures. Constructed using advanced PUF/EPS insulated panels and Light Gauge Steel Framing (LGSF) technology, our buildings offer excellent durability, thermal efficiency, and quick on-site assembly.
-              <br /><br />
-              Each structure is meticulously designed to meet vital engineering standards, including earthquake resistance (seismic compliance), wind load management, and optimal load-bearing capacity. At Landsking Infra Pvt Ltd, we manage the entire process in-house—from architectural design and manufacturing to complete on-site erection—providing a true turnkey experience.
-              <br /><br />
-              Our prefab multi-storey solutions are especially suitable for sites with space constraints or time-sensitive schedules. By combining Pre-Engineered Building (PEB) systems with LGSF frameworks, we ensure enhanced strength and structural integrity. In addition, fire-rated coatings are applied to meet high safety benchmarks.
-              <br /><br />
-              Backed by 20+ years of industry experience, Landsking Infra Pvt Ltd Prefab is a trusted partner for fast, cost-effective, and long-lasting multi-storey building solutions across India.
+              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and
+              dependable multi-storey prefabricated buildings tailored for a
+              variety of uses—including office hubs, commercial centers, and
+              institutional infrastructures. Constructed using advanced PUF/EPS
+              insulated panels and Light Gauge Steel Framing (LGSF) technology,
+              our buildings offer excellent durability, thermal efficiency, and
+              quick on-site assembly.
+              <br />
+              <br />
+              Each structure is meticulously designed to meet vital engineering
+              standards, including earthquake resistance (seismic compliance),
+              wind load management, and optimal load-bearing capacity. At
+              Landsking Infra Pvt Ltd, we manage the entire process
+              in-house—from architectural design and manufacturing to complete
+              on-site erection—providing a true turnkey experience.
+              <br />
+              <br />
+              Our prefab multi-storey solutions are especially suitable for
+              sites with space constraints or time-sensitive schedules. By
+              combining Pre-Engineered Building (PEB) systems with LGSF
+              frameworks, we ensure enhanced strength and structural integrity.
+              In addition, fire-rated coatings are applied to meet high safety
+              benchmarks.
+              <br />
+              <br />
+              Backed by 20+ years of industry experience, Landsking Infra Pvt
+              Ltd Prefab is a trusted partner for fast, cost-effective, and
+              long-lasting multi-storey building solutions across India.
             </p>
           </div>
 
@@ -142,10 +167,12 @@ const PrefabricatedSite = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
               <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric tons, Landsking Infra Pvt Ltd Prefab is
-                fully equipped to execute large-scale and technically demanding prefab construction
-                projects across India. Our offerings align with global quality standards and are
-                fully customizable to suit specific project needs, including:
+                With an annual production capacity exceeding 133,924 metric
+                tons, Landsking Infra Pvt Ltd Prefab is fully equipped to
+                execute large-scale and technically demanding prefab
+                construction projects across India. Our offerings align with
+                global quality standards and are fully customizable to suit
+                specific project needs, including:
               </p>
               <ul className="space-y-1">
                 <li>G+1, G+2, and multi-level building configurations</li>
@@ -175,7 +202,9 @@ const PrefabricatedSite = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">Why Landsking Infra Pvt Ltd Prefab?</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                Why Landsking Infra Pvt Ltd Prefab?
+              </h3>
               <ul className="space-y-1">
                 <li>✔️ Trusted Expertise Since 1999</li>
                 <li>✔️ Comprehensive Turnkey Project Solutions</li>
@@ -209,7 +238,8 @@ const PrefabricatedSite = () => {
                     "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
                 },
                 {
-                  question: "How long does it take to construct a prefab multi-storey building?",
+                  question:
+                    "How long does it take to construct a prefab multi-storey building?",
                   answer:
                     "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
                 },
@@ -219,22 +249,26 @@ const PrefabricatedSite = () => {
                     "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
                 },
                 {
-                  question: "What are the benefits of using prefab multi-storey buildings?",
+                  question:
+                    "What are the benefits of using prefab multi-storey buildings?",
                   answer:
                     "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
                 },
                 {
-                  question: "In which sectors can prefab multi-storey buildings be utilized?",
+                  question:
+                    "In which sectors can prefab multi-storey buildings be utilized?",
                   answer:
                     "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
                 },
                 {
-                  question: "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                  question:
+                    "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
                   answer:
                     "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
                 },
                 {
-                  question: "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                  question:
+                    "Who is the best manufacturer of prefab multi-storey buildings in India?",
                   answer:
                     "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
                 },

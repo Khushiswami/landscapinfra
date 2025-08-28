@@ -1,10 +1,11 @@
-// components/CoreBusiness.tsx
 "use client";
+import Image from "next/image";
+import { useState } from "react";
 
-export default function CoreBusinessP() {
-  const services = [
+export default function CoreBusiness() {
+  const coreBusinessData = [
     {
-      title: "Industry Installation and Construction",
+      title: "Industry Installation ",
       image: "/industry.jpg",
       description:
         "Quality Construction Project Delivery on time with customer Satisfaction",
@@ -16,7 +17,7 @@ export default function CoreBusinessP() {
         "Committed to advancing innovation, fairness, equity, measurement quality in assessment , learning Materials.",
     },
     {
-      title: "Renewable Energy Solution Provider",
+      title: "Renewable Energy ",
       image: "/renewable.jpg",
       description:
         "Committed to providing affordable, clean and abundant power with Renewable Energy Solutions.",
@@ -25,39 +26,42 @@ export default function CoreBusinessP() {
       title: "Real Estate Development",
       image: "/realstate.png",
       description:
-        "Landsking Infra s Real Estate Division specializes in unlocking high-value industrial and premium real estate deals across India's emerging growth corridors. From industrial plots, townships, mega-farmhouses",
+        "Landsking Infra's Real Estate Division specializes in unlocking high-value industrial and premium real estate deals across India's emerging growth corridors. From industrial plots, townships, mega-farmhouses",
     },
   ];
 
+  // Track which image is zoomed out
+  const [zoomedIndex, setZoomedIndex] = useState<number | null>(null);
+
+  const handleImageClick = (index: number) => {
+    // Toggle zoom for the clicked image
+    setZoomedIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
-    <section className="py-12 px-6 bg-white">
-      <h2 className="text-center text-2xl md:text-3xl font-bold text-[#061b49] mb-10 tracking-wide">
+    <section className="py-16 bg-white md:mx-15 lg:mx-19">
+      <h2 className="text-3xl font-bold text-center text-[#000080] mb-12">
         Core Business
       </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
-        {services.map((service, i) => (
-          <div
-            key={i}
-            className="relative group w-full h-72 rounded-lg shadow-md overflow-hidden cursor-pointer"
-          >
-            {/* Image */}
-            <img
-              src={service.image}
-              alt={service.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-
-            {/* Title */}
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 text-white px-4 text-center text-lg md:text-xl font-semibold tracking-wide opacity-100 group-hover:opacity-0 transition-opacity duration-500">
-              {service.title}
-            </div>
-
-            {/* Description */}
-            <div className="absolute inset-0 flex items-center justify-center bg-black/70 px-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p className="text-white text-base md:text-lg tracking-wide">
-                {service.description}
-              </p>
+      <div className="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
+        {coreBusinessData.map((item, idx) => (
+          <div key={idx} className="flex flex-col items-center">
+            <h3 className="mb-4 text-[15px] font-medium text-black text-center  w-full">
+              {item.title}
+            </h3>
+            <div
+              onClick={() => handleImageClick(idx)}
+              className={`relative w-full h-48 sm:h-40 md:h-36 lg:h-44 xl:h-52 rounded-lg overflow-hidden shadow-md cursor-pointer
+              transition-transform duration-500 ease-in-out
+              ${zoomedIndex === idx ? "scale-90" : "scale-100"}`}
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover"
+                priority={true}
+              />
             </div>
           </div>
         ))}

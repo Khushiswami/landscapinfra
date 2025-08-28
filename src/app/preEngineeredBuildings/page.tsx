@@ -8,14 +8,14 @@ import TotalSolutionP from "../../Components/TotalSolutionP";
 import MediaP from "../../Components/MediaP";
 import PebBrandP from "../../Components/PebBrandP";
 import Insights from "../../Components/Insights";
-import IndustryHeader from "yes/Components/Industryheader";import PebSlider from "../../Components/PebSlider";
+import IndustryHeader from "yes/Components/Industryheader";
+import PebSlider from "../../Components/PebSlider";
 import ImageSlider from "../../Components/ImageSlider";
 import ContactSection from "../../Components/ContactSection";
 import Pebexpertise from "../pebexpertise/page";
 import Servicesone from "yes/Components/Servicesone";
 import Footer from "../../Components/Footer";
-
-
+import Pebheader from "yes/Components/Pebheader";
 const slides = [
   {
     title: "PRE ENGINEERED BUILDINGS",
@@ -42,7 +42,7 @@ const slides = [
     description:
       "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
     video: "/homeslider.mp4",
-    url: "/solutionservice", // ✅ new url
+    url: "/buildingandinfrastructure", // ✅ new url
   },
 ];
 
@@ -70,7 +70,7 @@ export default function PreEngineeredBuildings() {
 
   return (
     <>
-      <IndustryHeader/>
+      <Pebheader />
 
       <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
         {/* Background Video */}

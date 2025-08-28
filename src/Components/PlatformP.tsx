@@ -28,7 +28,7 @@ const TABS = [
     body: "Our expert engineers provide innovative structural design and analysis services. With advanced tools and decades of expertise, we ensure the highest safety, efficiency, and performance standards for every project we deliver.",
     img: "/industry.png",
     buttonText: "VIEW MORE",
-    url: "/structural-engineering",
+    url: "/buildingandinfrastructure",
   },
   {
     title: "Project Consultancy & Management",

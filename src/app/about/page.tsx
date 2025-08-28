@@ -4,15 +4,17 @@ import { useState, useEffect } from "react";
 // import Aboutpeb from "../Aboutpeb/page";
 // import Platform from "../platform/page"
 // import Totalsolution from "../totalsolution/page"
-import PlatformP from "../../Components/PlatformP"
-import AboutPebP from "../../Components/AboutPebP"
+import PlatformP from "../../Components/PlatformP";
+import AboutPebP from "../../Components/AboutPebP";
 // import TotalSolutionP from "../../Components/TotalSolutionP"
 // import PebExpertiseP from "../../Components/PebExpertiseP"
 // import MediaP from "../../Components/MediaP"
 // import PebBrandP from "../../Components/PebBrandP"
 // import Insights from "../../Components/Insights"
 import IndustryHeader from "yes/Components/Industryheader";
-import Footer from "../../Components/Footer"
+import Pebheader from "yes/Components/PebheaderW";
+
+import Footer from "../../Components/Footer";
 // import PebCode from "../../Components/PebCode"
 
 import { IoCallOutline } from "react-icons/io5";
@@ -32,8 +34,7 @@ import Accolades from "../../Components/Accolades";
 const slides = [
   {
     title: "PRE ENGINEERED BUILDINGS",
-    description:
-      "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
+    description: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
     video: "/video.mp4",
   },
   {
@@ -56,8 +57,8 @@ const slides = [
   },
 ];
 
-export default function About() {   
-    const [active, setActive] = useState(0);
+export default function About() {
+  const [active, setActive] = useState(0);
 
   useEffect(() => {
     const slideTimer = setTimeout(() => {
@@ -71,7 +72,7 @@ export default function About() {
 
   return (
     <>
-      <IndustryHeader/>
+      <Pebheader />
       <div className="w-full min-h-[500px] flex flex-col md:flex-row">
         <div
           className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
@@ -98,14 +99,14 @@ export default function About() {
       <PreEngineeredProducts />
       <ProjectSlider />
       {/* <PebExpertiseP /> */}
-      <Accolades/>
+      <Accolades />
       {/* <TotalSolutionP/> */}
       {/* <Insights/> */}
       {/* <PebCode/> */}
       {/* <MediaP/> */}
       {/* <PebBrandP/> */}
       {/* <ImageSlider/> */}
-      <ContactSection/>
+      <ContactSection />
 
       <div className="bg-[#272727] bg-repeat py-10 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white">

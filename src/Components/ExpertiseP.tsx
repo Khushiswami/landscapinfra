@@ -1,41 +1,106 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
+
+import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function ExpertiseP() {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
+  const router = useRouter();
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   const services = [
-    { title: "Architecture & Design services", image: "/industry.jpg" },
-    { title: "Architecture & Design services", image: "/industry.jpg" },
-    { title: "Cold Storage and warehouse", image: "/industry.jpg" },
-    { title: "Solar Plant Installation", image: "/industry.jpg" },
-    { title: "HVAC", image: "/industry.jpg" },
-    { title: "Fire and Safety", image: "/industry.jpg" },
-    { title: "STRUCTURAL ENGINEERING SERVICES", image: "/industry.jpg" },
-    { title: "Infrastructure, Energy & Materials Civil Services", image: "/Infras.jpg" },
-    { title: "Infrastructure, Energy & Materials Civil Services", image: "/industry.jpg" },
-    { title: "Heavy Engineering", image: "/industry.jpg" },
-    { title: "Mining Metals", image: "/core/mining.jpg" },
-    { title: "Factories Installation", image: "/factories Installation.jpg" },
-    { title: "Green buildings", image: "/green.png" },
-    { title: "PEB Erection and fabrication", image: "/PEB.jpg" },
-    { title: "Advisory & Auditing", image: "/industry.jpg" },
-    { title: "T&D Engineering & Simulation", image: "/industry.jpg" },
+    {
+      title: "Architecture & Design services",
+      image: "/expertiseimages/Architecture & Design services.png",
+      link: "/architecture",
+    },
+    {
+      title: "Cold Storage and warehouse",
+      image: "/expertiseimages/Cold Storage and warehouse.jpg",
+      link: "/coldstorageandwarehouse",
+    },
+    {
+      title: "Solar Plant Installation",
+      image: "/expertiseimages/Solar Plant Installation.jpg",
+      link: "/solar",
+    },
+
+    { title: "HVAC", image: "/expertiseimages/HVAC.jpg", link: "/hvac" },
+    { title: "Fire and Safety", image: "/industry.jpg", link: "/fire-saftey" },
+    {
+      title: "STRUCTURAL ENGINEERING SERVICES",
+      image: "/expertiseimages/STRUCTURAL ENGINEERING SERVICES.jpg",
+      link: "/architecture",
+    },
+    {
+      title: "Infrastructure, Energy & Materials Civil Services",
+      image:
+        "/expertiseimages/Infrastructure, Energy & Materials Civil Services.jpg",
+      link: "/energyandnaturalresource",
+    },
+    {
+      title: "Heavy Engineering",
+      image: "/expertiseimages/Heavy Engineering.jpg",
+      link: "/heavyengineering",
+    },
+    {
+      title: "Mining Metals",
+      image: "/expertiseimages/Mining Metals.jpg",
+      link: "/miningandmetals",
+    },
+    {
+      title: "Factories Installation",
+      image: "/expertiseimages/Factories Installation.jpg",
+      link: "/factoriesinstallation",
+    },
+    {
+      title: "Green buildings",
+      image: "/expertiseimages/Green buildings.png",
+      link: "/greenbuilding",
+    },
+    {
+      title: "PEB Erection and fabrication",
+      image: "/expertiseimages/PEB Erection and fabrication.jpg",
+      link: "/fabrication",
+    },
+    {
+      title: "Advisory & Auditing",
+      image: "/expertiseimages/Advisory & Auditing.jpg",
+      link: "/advisory-auditing",
+    },
+    {
+      title: "T&D Engineering & Simulation",
+      image: "/expertiseimages/",
+      link: "/engineeringsimulation",
+    },
   ];
 
+  const handleArrowClick = (direction: "prev" | "next") => {
+    // Navigate to a new URL (adjust to your desired path)
+    const url = direction === "prev" ? "/prev-slide" : "/next-slide";
+    window.location.href = url;
+  };
+  const handleRedirect = (type: "prev" | "next") => {
+    if (type === "prev") {
+      router.push("/previous-slide"); // Replace with actual route
+    } else {
+      router.push("/next-slide"); // Replace with actual route
+    }
+  };
+
   return (
-    <section className="py-12 px-6 bg-white">
+    <section className="py-12 px-10 bg-white mx-0 md:mx-12 lg:mx-20">
+      {/* Heading + Controls */}
       <div className="flex items-center justify-between max-w-7xl mx-auto mb-8">
         <h2 className="text-xl md:text-3xl font-bold text-[#061b49]">
           Explore Our Comprehensive Prefabricated Building Solutions
@@ -44,22 +109,27 @@ export default function ExpertiseP() {
         <div className="flex items-center gap-2">
           <button
             ref={prevRef}
-            className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition"
+            className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
+            onClick={() => handleRedirect("prev")}
+            aria-label="Previous Slide"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             ref={nextRef}
-            className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition"
+            className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
+            onClick={() => handleRedirect("next")}
+            aria-label="Next Slide"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
       </div>
 
+      {/* Swiper Slider */}
       <div className="max-w-7xl mt-10 mx-auto">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
@@ -72,6 +142,10 @@ export default function ExpertiseP() {
             }
           }}
           pagination={{ clickable: true }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
@@ -83,11 +157,13 @@ export default function ExpertiseP() {
           {services.map((service, i) => (
             <SwiperSlide key={i}>
               <motion.div
-                className="relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer"
+                className={`relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer`}
                 onMouseEnter={() => setHoverIndex(i)}
                 onMouseLeave={() => setHoverIndex(null)}
+                onClick={() => service.link && router.push(service.link)}
               >
-                <div className="w-full h-56 overflow-hidden">
+                {/* Image */}
+                <div className="w-full h-70 md:h-80 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -95,23 +171,33 @@ export default function ExpertiseP() {
                   />
                 </div>
 
+                {/* Title Bar */}
                 <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3 relative z-10">
-                  <p className="text-white font-semibold text-sm">{service.title}</p>
+                  <p className="text-white font-semibold text-sm line-clamp-1">
+                    {service.title}
+                  </p>
                   <div className="bg-white rounded-full p-1">
                     <ArrowUpRight className="w-4 h-4 text-[#1F4B9A]" />
                   </div>
                 </div>
 
+                {/* Hover Overlay */}
                 <AnimatePresence>
                   {hoverIndex === i && (
                     <motion.div
-                      className="absolute inset-0 bg-[#000080]/35 flex flex-col items-center justify-center text-center p-4 z-20"
+                      className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20"
+                      style={{
+                        background:
+                          "linear-gradient(0deg, rgba(33, 71, 95, 0.8) 0%, rgba(22, 46, 68, 0.8) 100%)",
+                      }}
                       initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 50 }}
                       transition={{ duration: 0.4 }}
                     >
-                      <h3 className="text-white text-lg font-semibold">{service.title}</h3>
+                      <h3 className="text-white text-lg font-semibold">
+                        {service.title}
+                      </h3>
                     </motion.div>
                   )}
                 </AnimatePresence>

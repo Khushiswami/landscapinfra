@@ -8,7 +8,7 @@ import Header from "../Components/Header";
 // import Client from "./client/page";
 // import Help from "./help/page";
 
-import Insights from "../Components/Insights"
+import Insights from "../Components/Insights";
 import Footer from "../Components/Footer";
 import HelpP from "../Components/HelpP";
 import ClientP from "../Components/ClientP";
@@ -33,22 +33,19 @@ import BannerP from "../Components/BannerP";
 
 export default function Home() {
   return (
-    
     <>
-    {/* <System/> */}
-    <Header/>
-    <BannerP/>
-    <AboutP/>
-    <CounterP/>
-    <CoreBusinessP/>
-    <ExpertiseP/>
-    <ClientP/>
-    <HelpP/>
-    <Insights/>
-    
-    <Footer/>
-    {/* <Menupage/> */}
-    
+      {/* <System/> */}
+      <Header />
+      <BannerP />
+      <AboutP />
+      <CounterP />
+      <CoreBusinessP />
+      <ExpertiseP />
+      <ClientP />
+      <Insights />
+
+      <Footer />
+      {/* <Menupage/> */}
     </>
   );
 }

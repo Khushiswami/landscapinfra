@@ -26,7 +26,7 @@ import "swiper/css/pagination";
 import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
 
-import IndustryHeader from "yes/Components/Industryheader";
+import Pebheader from "yes/Components/Pebheader";
 import ContactSection from "yes/Components/ContactSection";
 
 export default function Buildingandinfrastructure() {
@@ -206,8 +206,16 @@ export default function Buildingandinfrastructure() {
       title: "Prefabricated Multi-Storey Building Manufacturer",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Industrial Enclosures", link: "#" },
-    { image: "/expertise/third.png", title: "Cold Storage & Cold Room Manufacturer", link: "#" },
+    {
+      image: "/expertise/third.png",
+      title: "Industrial Enclosures",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Cold Storage & Cold Room Manufacturer",
+      link: "#",
+    },
     { image: "/expertise/third.png", title: "Factory Building", link: "#" },
     { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
@@ -273,7 +281,9 @@ export default function Buildingandinfrastructure() {
   const visibleCards = 4;
 
   const prevSlide = () =>
-    setStartIndex((prev) => (prev === 0 ? possibilities.length - visibleCards : prev - 1));
+    setStartIndex((prev) =>
+      prev === 0 ? possibilities.length - visibleCards : prev - 1
+    );
   const nextSlide = () =>
     setStartIndex((prev) =>
       prev + visibleCards >= possibilities.length ? 0 : prev + 1
@@ -283,24 +293,48 @@ export default function Buildingandinfrastructure() {
     .slice(startIndex, startIndex + visibleCards)
     .concat(
       startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(0, (startIndex + visibleCards) % possibilities.length)
+        ? possibilities.slice(
+            0,
+            (startIndex + visibleCards) % possibilities.length
+          )
         : []
     );
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) => setOpenIndex(openIndex === index ? null : index);
+  const toggleFAQ = (index: number) =>
+    setOpenIndex(openIndex === index ? null : index);
 
   const stats = [
-    { label: "Years of Expertise", value: 20, suffix: "+", icon: <FaAward className="text-[#000080] text-xl" /> },
-    { label: "Projects Delivered", value: 500, suffix: "+", icon: <FaProjectDiagram className="text-[#000080] text-xl" /> },
-    { label: "Nationwide Presence", value: 25, suffix: "+ States", icon: <FaGlobeAsia className="text-[#000080] text-xl" /> },
-    { label: "Certified Processes", value: 100, suffix: "%", icon: <FaCertificate className="text-[#000080] text-xl" /> },
+    {
+      label: "Years of Expertise",
+      value: 20,
+      suffix: "+",
+      icon: <FaAward className="text-[#000080] text-xl" />,
+    },
+    {
+      label: "Projects Delivered",
+      value: 500,
+      suffix: "+",
+      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
+    },
+    {
+      label: "Nationwide Presence",
+      value: 25,
+      suffix: "+ States",
+      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
+    },
+    {
+      label: "Certified Processes",
+      value: 100,
+      suffix: "%",
+      icon: <FaCertificate className="text-[#000080] text-xl" />,
+    },
   ];
 
   return (
     <>
-      <IndustryHeader />
+      <Pebheader />
       <section className="relative  flex items-center text-white overflow-hidden md:h-screen">
         {/* Background video */}
         <video
@@ -320,16 +354,16 @@ export default function Buildingandinfrastructure() {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Text */}
-         <div className="text-center lg:text-left px-4 sm:px-6 lg:px-0 pt-20 sm:pt-24 lg:pt-32">
-  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
-    Pre Engineered Buildings
-  </h1>
-  <p className="text-base sm:text-lg md:text-xl max-w-full sm:max-w-lg mx-auto lg:mx-0">
-    Pre-Engineered Buildings (PEBs) are modern steel structures designed, fabricated, and assembled using standardized components for faster construction.
-  </p>
-</div>
-
-
+          <div className="text-center lg:text-left px-4 sm:px-6 lg:px-0 pt-20 sm:pt-24 lg:pt-32">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
+              Pre Engineered Buildings
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl max-w-full sm:max-w-lg mx-auto lg:mx-0">
+              Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction.
+            </p>
+          </div>
 
           {/* Right Slider */}
           <div className="w-full relative mt-10">
@@ -459,7 +493,7 @@ export default function Buildingandinfrastructure() {
         </div>
       </section>
       {/* explore conettt */}
-     <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
           Pre Engineered Products
         </h2>
@@ -533,7 +567,9 @@ export default function Buildingandinfrastructure() {
                   <h3 className="text-2xl font-semibold text-blue-900 mb-3">
                     {selectedArea.subtitle}
                   </h3>
-                  <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                  <p className="text-gray-700 mb-5">
+                    {selectedArea.description}
+                  </p>
                   <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                     GET A QUOTE
                   </button>
@@ -553,7 +589,6 @@ export default function Buildingandinfrastructure() {
         </div>
       </section>
 
-     
       {/* explore content */}
 
       {/* capiablites */}

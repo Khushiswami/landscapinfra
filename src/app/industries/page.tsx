@@ -8,7 +8,8 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
-import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
+import Pebheader from "yes/Components/Pebheader";
+import Footer from "../../Components/Footer";
 import Image from "next/image";
 
 // Card Props Type
@@ -71,7 +72,7 @@ export default function Industries() {
 
   return (
     <>
-      <IndustryHeader/>
+      <Pebheader />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
@@ -83,7 +84,8 @@ export default function Industries() {
         >
           <div className="text-white text-center relative z-10">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-Industries Installation            </h1>
+              Industries Installation{" "}
+            </h1>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Footer from "yes/Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";
+import Pebheader from "yes/Components/Pebheader";
 
 import ContactSection from "yes/Components/ContactSection";
 
@@ -165,7 +165,7 @@ export default function Projects() {
 
   return (
     <>
-      <IndustryHeader/>
+      <Pebheader />
       <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
         {/* Background Video */}
         <video

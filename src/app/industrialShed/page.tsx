@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
+import Pebheader from "yes/Components/Pebheader";
+import Footer from "../../Components/Footer";
 
 const IndustrialShed = () => {
   return (
     <>
       <div>
-        <IndustryHeader/>
+        <Pebheader />
 
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">

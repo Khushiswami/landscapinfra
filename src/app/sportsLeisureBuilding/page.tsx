@@ -8,7 +8,8 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
-import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
+import Pebheader from "yes/Components/Pebheader";
+import Footer from "../../Components/Footer";
 import Image from "next/image";
 
 // Card Props Type
@@ -71,7 +72,7 @@ export default function SportsLeisureBuilding() {
 
   return (
     <>
-      <IndustryHeader/>
+      <Pebheader />
 
       {/* Hero Section */}
       <section className="w-full min-h-[350px] sm:min-h-[450px] md:min-h-[500px] flex flex-col md:flex-row">

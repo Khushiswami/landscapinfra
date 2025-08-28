@@ -15,35 +15,40 @@ export default function AboutP() {
 
   return (
     <section className="w-full min-h-[500px] flex flex-col md:flex-row">
+      {/* Left Column (Text) */}
       <div
         className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
+          backgroundImage: `linear-gradient(0deg, rgba(33, 71, 95, 0.8), rgba(22, 46, 68, 0.8)), url('/aboutright.jpeg')`,
         }}
       >
         <div className="max-w-lg text-white space-y-4 relative z-10">
-          <h1 className="text-2xl md:text-3xl font-bold leading-snug tracking-wide">
-            Tradition, Innovation, Performance, Worldwide
+          <h1
+            className="text-2xl md:text-3xl font-medium leading-snug tracking-wide"
+            style={{ fontFamily: "'HelveticaNowLight', Arial, sans" }}
+          >
+            {" "}
+            Landsking Infra partners with global clients to design, build, and
+            maintain capital projects.
           </h1>
-          <p className="text-sm md:text-lg leading-relaxed">
-            Landsking Infra is one of the India s Fastest Growing Company, Work
-            on engineering, procurement, construction (EPC) and maintenance
-            companies. Landsking Infra works with Clients in diverse industries
-            around the world to design, construct and maintain their capital
-            projects.
+          <p
+            className="text-base md:text-base font-bold leading-relaxed"
+            style={{ fontFamily: "'HelveticaNowLight', Arial, sans" }}
+          >
+            Landsking Infra is one of India s Fastest Growing Company as an
+            Industrial Solution Provider, It works on engineering, procurement,
+            construction (EPC) and maintenance companies
           </p>
         </div>
       </div>
 
-      {/* Right Column */}
+      {/* Right Column (Video) */}
       <div
         className="flex-1 relative flex items-center justify-center p-6 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/aboutleft.jpeg')`,
+          backgroundImage: `linear-gradient(0deg, rgba(33, 71, 95, 0.8), rgba(22, 46, 68, 0.8)), url('/aboutleft.jpeg')`,
         }}
       >
-        <div className="absolute inset-0 bg-[rgba(14,14,85,0.3)]"></div>
-
         <div className="relative w-full max-w-xl aspect-video z-10 flex flex-col items-center justify-center">
           <video
             ref={videoRef}
@@ -66,8 +71,8 @@ export default function AboutP() {
                 <FaPlay className="text-4xl md:text-6xl text-[rgb(0_0_0_/_44%)]" />
               </div>
 
-              <h2 className="text-xl md:text-3xl font-bold leading-snug tracking-wide text-white text-center">
-                CONNECTING VISIONS <br /> BUILDING FUTURE
+              <h2 className="text-xl md:text-4xl font-bold leading-snug tracking-wide text-white text-center">
+                Tradition, Innovation, <br /> Performance, Worldwide
               </h2>
             </div>
           )}
