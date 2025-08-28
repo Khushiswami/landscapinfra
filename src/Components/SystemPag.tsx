@@ -1,13 +1,14 @@
 // src/pages/SystemPage.tsx
 "use client";
 import Footer from "../Components/Footer";
-import PebheaderW from "../Components/PebheaderW";
+
 import { ArrowUpRight } from "lucide-react";
+import IndustryHeader from "./Industryheader";
 
 export default function SystemPage() {
   return (
     <>
-      <PebheaderW />
+    <IndustryHeader/>
       <section>
         {/* Hero Section */}
         <div className="w-full mb-6 py-8 pt-32">

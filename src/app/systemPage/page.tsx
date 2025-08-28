@@ -2,10 +2,10 @@
 import { useState } from "react";
 import Footer from "../../Components/Footer";
 // import Pebcall from "../pebcall/page";
-import Pebheader from "../../Components/Pebheader";
+import IndustryHeader from "yes/Components/Industryheader";
 import Brand from "../../Components/Brand";
 
-import PebheaderW from "../../Components/PebheaderW";
+
 import { ArrowUpRight } from "lucide-react";
 
 // Product interface
@@ -132,8 +132,9 @@ export default function Page() {
 
   return (
     <>
-      {/* <Pebheader/> */}
-      <PebheaderW />
+      {/* <      IndustryHeader
+/> */}
+      <      IndustryHeader/>
       <section>
         {/* Hero */}
 

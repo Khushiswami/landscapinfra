@@ -25,7 +25,6 @@ import "swiper/css/pagination";
 
 import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
-import Pebheader from "../../Components/Pebheader";
 import IndustryHeader from "yes/Components/Industryheader";
 import ContactSection from "yes/Components/ContactSection";
 

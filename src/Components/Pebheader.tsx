@@ -25,7 +25,8 @@ type ProductMenu = {
 
 type MenuItem = NormalMenu | ProductMenu;
 
-export default function Pebheader() {
+export default function       IndustryHeader
+() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileSubMenu, setOpenMobileSubMenu] = useState<string | null>(

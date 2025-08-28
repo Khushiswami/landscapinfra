@@ -8,15 +8,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const services = [
   {
-    title: " Offsite manufacturing",
+    title: "Offsite manufacturing",
     desc: (
       <>
         <strong>
-          we have invested Modern New technology Machines to create the
-          Landsking Infra Centre of Excellence for Modern Construction in India.
+          We have invested in modern machines to create the Landsking Infra Centre of Excellence for Modern Construction in India.
         </strong>{" "}
-        We Believe in New techupdated Machineries and In the future, it will
-        produce lower carbon products for more of our projects.
+        We believe in new tech-updated machinery that will produce lower carbon products for future projects.
       </>
     ),
   },
@@ -25,83 +23,50 @@ const services = [
     desc: (
       <>
         <strong>
-          thanks to our digital engineers, we build every project twice –
+          Thanks to our digital engineers, we build every project twice –
         </strong>{" "}
-        virtually and then physically. This allows us to de-risk both the design
-        and construction phases of projects, and once we are on site our digital
-        work packs link models to construction activity to improve productivity.
+        virtually and then physically. This de-risks both design and construction phases and improves productivity on-site.
       </>
     ),
   },
   {
-    title: " Direct delivery ",
+    title: "Direct delivery",
     desc: (
       <>
         <strong>
-          unlike our competitors in the India we have an integrated supply
-          chain.
+          Unlike our competitors in India, we have an integrated supply chain.
         </strong>{" "}
-        This gives us greater visibility of costs, maximizes integration across
-        disciplines and minimizes risk through the delivery process. We retain
-        the knowledge learned on a project and use it to deliver certainty for
-        our next client
+        This gives us better cost visibility, maximizes integration across disciplines, and minimizes risk.
       </>
     ),
   },
   {
-    title: " Offsite manufacturing",
+    title: "Offsite manufacturing",
     desc: (
       <>
         <strong>
-          we have invested Modern New technology Machines to create the
-          Landsking Infra Centre of Excellence for Modern Construction in India.
+          We have invested in modern machines to create the Landsking Infra Centre of Excellence for Modern Construction in India.
         </strong>{" "}
-        We Believe in New techupdated Machineries and In the future, it will
-        produce lower carbon products for more of our projects.
+        We believe in new tech-updated machinery that will produce lower carbon products for future projects.
       </>
     ),
   },
-  //   {
-  //     title: "Construction",
-  //     desc: (
-  //       <>
-  //         <strong>
-  //           We provide end-to-end construction services with strong project
-  //           management.
-  //         </strong>{" "}
-  //         Ensuring safety, quality, and timely delivery for every client.
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     title: "Sustainability",
-  //     desc: (
-  //       <>
-  //         <strong>
-  //           Focused on green building solutions and eco-friendly practices.
-  //         </strong>{" "}
-  //         Delivering projects with minimal environmental impact.
-  //       </>
-  //     ),
-  //   },
 ];
 
 export default function ServicesSlider() {
   return (
-    <section className="bg-[#d9d9d9] py-28">
-      <div className="mx-auto px-6 flex flex-col md:flex-row gap-10">
+    <section className="bg-[#d9d9d9] md:py-28 py-10">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-8 md:gap-10">
         {/* Left side text */}
         <div className="w-full md:w-2/6">
-          <h2 className="text-3xl md:text-6xl font-bold text-[#000080] mb-6">
+          <h2 className="text-3xl md:text-6xl font-bold text-[#000080] mb-4 md:mb-6">
             Services and delivery methods
           </h2>
-          <p className="text-gray-700 text-md mb-12">
-            We deliver certainty for our clients based on an operating model
-            that harnesses new technologies to maximise the use of pioneering
-            modern methods of construction.
+          <p className="text-gray-700 text-md mb-4 md:mb-12">
+            We deliver certainty for our clients based on an operating model that harnesses new technologies to maximise the use of pioneering modern methods of construction.
           </p>
-          {/* Swiper Navigation buttons */}
-          <div className="flex gap-4">
+          {/* Desktop arrows */}
+          <div className="hidden md:flex gap-4">
             <button className="custom-prev border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
               <ChevronLeft />
             </button>
@@ -119,7 +84,7 @@ export default function ServicesSlider() {
               prevEl: ".custom-prev",
               nextEl: ".custom-next",
             }}
-            spaceBetween={0}
+            spaceBetween={20}
             breakpoints={{
               0: { slidesPerView: 1 },
               768: { slidesPerView: 3 },
@@ -127,8 +92,8 @@ export default function ServicesSlider() {
           >
             {services.map((item, i) => (
               <SwiperSlide key={i} className="h-full">
-                <div className="py-10 px-6 bg-[#d9d9d9] border-x border-gray-300 h-full flex flex-col">
-                  <h3 className="text-xl  text-[#000080]md:text-3xl font-bold mb-3">
+                <div className="py-8 md:py-10 px-6 bg-[#d9d9d9] border-x border-gray-300 h-full flex flex-col">
+                  <h3 className="text-xl md:text-3xl text-[#000080] font-bold mb-3">
                     {item.title}
                   </h3>
                   <p className="text-black text-md flex-1">{item.desc}</p>
@@ -136,6 +101,16 @@ export default function ServicesSlider() {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          {/* Mobile arrows below slider */}
+          <div className="flex gap-4 justify-center mt-4 md:hidden">
+            <button className="custom-prev border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
+              <ChevronLeft />
+            </button>
+            <button className="custom-next border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
+              <ChevronRight />
+            </button>
+          </div>
         </div>
       </div>
     </section>

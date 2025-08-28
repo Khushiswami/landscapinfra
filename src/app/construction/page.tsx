@@ -3,8 +3,7 @@
 import { useRef, useState, ReactNode } from "react";
 import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
-import Pebheader from "../../Components/Pebheader";
-import Footer from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
 import Image from "next/image";
 
 // Card Props Type
@@ -65,7 +64,7 @@ export default function Construction() {
 
   return (
     <>
-      <Pebheader />
+      <IndustryHeader/>
 
       {/* Hero Section */}
       <section className="w-full min-h-[500px] flex flex-col md:flex-row">

@@ -28,8 +28,7 @@ import "swiper/css/pagination";
 import Brand from "../../Components/Brand";
 
 import Footer from "../../Components/Footer";
-import Pebheader from "../../Components/Pebheader";
-import Link from "next/link";
+import IndustryHeader from "yes/Components/Industryheader";import Link from "next/link";
 
 export default function Sandwichpanels() {
   interface FAQ {
@@ -273,7 +272,7 @@ export default function Sandwichpanels() {
 
   return (
     <>
-      <Pebheader />
+      <IndustryHeader/>
       <section className="relative h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video

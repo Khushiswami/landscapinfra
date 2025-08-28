@@ -7,7 +7,8 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import PebheaderW from "../../../Components/PebheaderW";
+import IndustryHeader from "yes/Components/Industryheader";
+
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -194,7 +195,7 @@ export default function MassRapidTransitSystems() {
 
   return (
     <>
-      <PebheaderW />
+      <      IndustryHeader/>
 
       <ContactSectionB
         title="About Landsking Infra"

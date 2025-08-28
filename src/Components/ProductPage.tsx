@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Footer from "../Components/Footer";
 import PebCallP from "../Components/PebCallP";
-import PebheaderW from "../Components/PebheaderW";
+import IndustryHeader from "./Industryheader";
+
 
 // Product interface
 interface Product {
@@ -129,7 +130,7 @@ export default function ProductPage() {
 
   return (
     <>
-      <PebheaderW />
+      <IndustryHeader/>
       <section className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-5xl font-bold mb-6 text-center">Products</h2>

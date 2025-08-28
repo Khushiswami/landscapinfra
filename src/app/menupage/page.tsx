@@ -27,8 +27,7 @@ import "swiper/css/pagination";
 // import Platform from "../platform/page";
 // import Footer from "../Footer/page";
 import Footer from "../../Components/Footer";
-import Pebheader from "../../Components/Pebheader";
-import Brand from "yes/Components/Brand";
+import IndustryHeader from "yes/Components/Industryheader";import Brand from "yes/Components/Brand";
 import Products from "yes/Components/Products";
 
 export default function Menupage() {
@@ -308,7 +307,7 @@ export default function Menupage() {
 
   return (
     <>
-      <Pebheader />
+      <IndustryHeader/>
     <section className="relative min-h-screen flex items-center text-white overflow-hidden">
   {/* Background video */}
   <video

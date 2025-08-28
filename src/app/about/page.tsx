@@ -11,7 +11,7 @@ import AboutPebP from "../../Components/AboutPebP"
 // import MediaP from "../../Components/MediaP"
 // import PebBrandP from "../../Components/PebBrandP"
 // import Insights from "../../Components/Insights"
-// import Pebheader from "../../Components/Pebheader"
+import IndustryHeader from "yes/Components/Industryheader";
 import Footer from "../../Components/Footer"
 // import PebCode from "../../Components/PebCode"
 
@@ -27,7 +27,6 @@ import KeyFeatures from "../../Components/KeyFeatures";
 import ServicesSlider from "../../Components/ServicesSlider";
 import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
 import BuildHistory from "../../Components/BuildHistory";
-import PebheaderW from "../../Components/PebheaderW";
 import Accolades from "../../Components/Accolades";
 
 const slides = [
@@ -72,8 +71,7 @@ export default function About() {
 
   return (
     <>
-      {/* <Pebheader/> */}
-      <PebheaderW />
+      <IndustryHeader/>
       <div className="w-full min-h-[500px] flex flex-col md:flex-row">
         <div
           className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"

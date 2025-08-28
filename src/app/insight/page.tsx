@@ -8,8 +8,7 @@ import TotalSolutionP from "../../Components/TotalSolutionP";
 import MediaP from "../../Components/MediaP";
 import PebBrandP from "../../Components/PebBrandP";
 import Insights from "../../Components/Insights";
-import Pebheader from "../../Components/Pebheader";
-import Footer from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
 import PebSlider from "../../Components/PebSlider";
 import ImageSlider from "../../Components/ImageSlider";
 import ContactSection from "../../Components/ContactSection";
@@ -70,7 +69,7 @@ export default function Insight() {
 
   return (
     <>
-      <Pebheader />
+      <IndustryHeader/>
 
       <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
         {/* Background Video */}

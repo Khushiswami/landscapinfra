@@ -501,26 +501,34 @@ export default function Header() {
             </button>
             {openDropdown === "expertise" && (
               <div className="absolute top-full left-0 mt-2 bg-white text-black shadow-lg rounded w-64 border border-gray-100 z-50">
-                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Defence Installations
+                <Link href="/heavyengineering" className="block px-4 py-2 hover:bg-gray-100">
+                 Heavy Engineering
                 </Link>
                 <Link href="/officespace" className="block px-4 py-2 hover:bg-gray-100">
                   Office Space
                 </Link>
                  <Link href="/publicoffice" className="block px-4 py-2 hover:bg-gray-100">
-                  Office Space
+                  Public Office
                 </Link>
                   <Link href="/waterinfrastructure" className="block px-4 py-2 hover:bg-gray-100">
-                  Office Space
+                  Water Infrastructure
                 </Link>
                 <Link
                   href="structuralsteel"className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Industry Building Solutions
                 </Link>
-                <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                  Fabrication
+                 <Link
+                  href="otherindustries"className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Other Industries
                 </Link>
+               <Link
+                    href="/simulation"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Simulation Service
+                  </Link>
                 <Link
                   href="https://staging.landsking.com/fabrication/"
                   className="block px-4 py-2 hover:bg-gray-100"
@@ -538,25 +546,32 @@ export default function Header() {
 
                 <Link
                   href="/hvac"
-                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                className="block px-4 py-2 hover:bg-gray-100"
                 >
-                  HVAC Services
+                  HVAC  Services
                 </Link>
                  <Link
                   href="/fabrication"
-                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Fabrication
                 </Link> <Link
                   href="/fire-safety"
-                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                 className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Fire Saftey
-                </Link> <Link
+                </Link> 
+                <Link
                   href="/greenbuilding"
-                  className="block hover:bg-gray-100 px-2 py-1 rounded"
+                 className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Green Building
+                </Link>
+                <Link
+                  href="/miningandmetals"
+                 className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Mining and Metals
                 </Link>
               </div>
             )}
@@ -732,60 +747,79 @@ export default function Header() {
             {openDropdown === "expertise" && (
               <ul className="pl-4 mt-2 space-y-1">
                 <li>
-                  <Link
-                    href="#"
-                    className="block hover:bg-gray-100 px-2 py-1 rounded"
-                  >
-                    Defence Installations
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Other Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://staging.landsking.com/industries/"
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    Industry Building Solutions
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Fabrication
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link
-                    href="https://staging.landsking.com/fabrication/"
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    Factories Installation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Cold Storage &amp; Warehouse
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Structure Design Services
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="block hover:bg-gray-100 px-2 py-1 rounded"
-                  >
-                    HVAC Services
-                  </Link>
+                  <Link href="/heavyengineering" className="block px-4 py-2 hover:bg-gray-100">
+          Heavy Engineering
+        </Link>
+      </li>
+      <li>
+        <Link href="/officespace" className="block px-4 py-2 hover:bg-gray-100">
+          Office Space
+        </Link>
+      </li>
+      <li>
+        <Link href="/publicoffice" className="block px-4 py-2 hover:bg-gray-100">
+          Public Office
+        </Link>
+      </li>
+      <li>
+        <Link href="/waterinfrastructure" className="block px-4 py-2 hover:bg-gray-100">
+          Water Infrastructure
+        </Link>
+      </li>
+      <li>
+        <Link href="/structuralsteel" className="block px-4 py-2 hover:bg-gray-100">
+          Industry Building Solutions
+        </Link>
+      </li>
+      <li>
+        <Link href="/otherindustries" className="block px-4 py-2 hover:bg-gray-100">
+          Other Industries
+        </Link>
+      </li>
+      <li>
+        <Link href="/simulation" className="block px-4 py-2 hover:bg-gray-100">
+          Simulation Service
+        </Link>
+      </li>
+      <li>
+        <Link href="/fabrication" className="block px-4 py-2 hover:bg-gray-100">
+          Fabrication
+        </Link>
+      </li>
+      <li>
+        <Link href="/fire-safety" className="block px-4 py-2 hover:bg-gray-100">
+          Fire Safety
+        </Link>
+      </li>
+      <li>
+        <Link href="/greenbuilding" className="block px-4 py-2 hover:bg-gray-100">
+          Green Building
+        </Link>
+      </li>
+      <li>
+        <Link href="/miningandmetals" className="block px-4 py-2 hover:bg-gray-100">
+          Mining and Metals
+        </Link>
+      </li>
+      <li>
+        <Link href="/coldstorageandwarehouse" className="block px-4 py-2 hover:bg-gray-100">
+          Cold Storage &amp; Warehouse
+        </Link>
+      </li>
+      <li>
+        <Link href="/solar" className="block px-4 py-2 hover:bg-gray-100">
+          Solar Services
+        </Link>
+      </li>
+      <li>
+        <Link href="/hvac" className="block px-4 py-2 hover:bg-gray-100">
+          HVAC Services
+        </Link>
+      </li>
+      <li>
+        <Link href="/factoriesinstallation" className="block px-4 py-2 hover:bg-gray-100">
+          Factories Installation
+        </Link>
                 </li>
               </ul>
             )}

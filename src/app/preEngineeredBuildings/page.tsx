@@ -8,8 +8,7 @@ import TotalSolutionP from "../../Components/TotalSolutionP";
 import MediaP from "../../Components/MediaP";
 import PebBrandP from "../../Components/PebBrandP";
 import Insights from "../../Components/Insights";
-import Pebheader from "../../Components/Pebheader";
-import PebSlider from "../../Components/PebSlider";
+import IndustryHeader from "yes/Components/Industryheader";import PebSlider from "../../Components/PebSlider";
 import ImageSlider from "../../Components/ImageSlider";
 import ContactSection from "../../Components/ContactSection";
 import Pebexpertise from "../pebexpertise/page";
@@ -71,7 +70,7 @@ export default function PreEngineeredBuildings() {
 
   return (
     <>
-      <Pebheader />
+      <IndustryHeader/>
 
       <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
         {/* Background Video */}

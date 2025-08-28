@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Pebheader from "../../Components/Pebheader";
-import PedFooter from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";import PedFooter from "../../Components/Footer";
 
 const PrefabSiteOffice = () => {
   return (
     <>
       <div>
-        <Pebheader />
+        <IndustryHeader/>
 
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">

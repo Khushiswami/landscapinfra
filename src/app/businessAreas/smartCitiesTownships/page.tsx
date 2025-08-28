@@ -7,7 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import PebheaderW from "../../../Components/PebheaderW";
+
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -18,6 +18,7 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
+import IndustryHeader from "yes/Components/Industryheader";
 
 const testimonialsData = [
   {
@@ -194,8 +195,9 @@ export default function SmartCitiesTownships() {
 
   return (
     <>
-      {/* <Pebheader/> */}
-      <PebheaderW />
+      {/* <      IndustryHeader
+/> */}
+      < IndustryHeader/>
       {/* <ContactSection/> */}
 
       <ContactSectionB

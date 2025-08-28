@@ -27,8 +27,7 @@ import "swiper/css/pagination";
 
 import Brand from "../../Components/Brand";
 
-import Pebheader from "../../Components/Pebheader";
-import Footer from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
 
 import Link from "next/link";
 
@@ -251,7 +250,7 @@ export default function Standardmodular() {
 
   return (
     <>
-      <Pebheader />
+      <IndustryHeader/>
       <section className="relative h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video

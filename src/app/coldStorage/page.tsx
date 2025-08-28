@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import Pebheader from "../../Components/Pebheader";
-import Footer from "../../Components/Footer";
 
+import Footer from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";
 const ColdStorage = () => {
   return (
     <>
       <div>
-        <Pebheader />
+        <IndustryHeader/>
 
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">

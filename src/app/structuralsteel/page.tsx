@@ -25,9 +25,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
-import Pebheader from "../../Components/Pebheader";
-import Brand from "yes/Components/Brand";
-import IndustryHeader from "yes/Components/Industryheader";
+import IndustryHeader from "yes/Components/Industryheader";import Brand from "yes/Components/Brand";
 import { motion } from "framer-motion";
 
 export default function Structuralsteel() {
