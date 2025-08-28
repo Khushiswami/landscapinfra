@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Footer from "../../Components/Footer";
 // import Pebcall from "../pebcall/page";
-import Pebheader from "yes/Components/Pebheader";
+import PebheaderW from "yes/Components/PebheaderW";
 import Brand from "../../Components/Brand";
 
 import { ArrowUpRight } from "lucide-react";
@@ -131,7 +131,7 @@ export default function System() {
 
   return (
     <>
-      <Pebheader />
+      <PebheaderW />
       <section>
         {/* Hero */}
 
@@ -156,6 +156,12 @@ export default function System() {
                 durability and performance, helping you build with confidence
                 and efficiency.
               </p>
+              <a
+                href="/solutionservice"
+                className="mt-4 inline-flex items-center text-[#000080] font-bold text-[18px] hover:underline"
+              >
+                Explore more <span className="ml-1">→</span>
+              </a>
             </div>
           </div>
         </div>

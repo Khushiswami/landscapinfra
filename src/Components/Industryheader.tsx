@@ -455,7 +455,7 @@ export default function IndustryHeader() {
       name: "About us",
       href: "/about",
       subItems: [
-        { name: "Our Leadership", href: "/projects/pre-engineered" },
+        { name: "Our Leadership", href: "/leadership" },
         { name: "Our History", href: "/projects/prefab" },
         { name: "Our Mission", href: "/projects/videos" },
         { name: "Innovation", href: "/projects/videos" },
