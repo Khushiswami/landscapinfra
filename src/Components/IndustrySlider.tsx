@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -6,7 +7,6 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// ✅ Main Categories (Power, Transportation, Water, Industrial)
 const categories = [
   {
     title: "Power",
@@ -17,7 +17,6 @@ const categories = [
   {
     title: "Transportation",
     images: ["/industry.jpg", "/industry.jpg", "/industry.jpg"],
-
     description:
       "Comprehensive transportation infrastructure covering highways, roads, bridges, railways, metros, and ports. Our solutions drive connectivity and modern mobility.",
   },
@@ -35,7 +34,7 @@ const categories = [
   },
 ];
 
-export default function IndustrySlider() {
+export default function PebSlider() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   return (
@@ -52,33 +51,39 @@ export default function IndustrySlider() {
       </div>
 
       <div className="max-w-7xl mx-auto my-8 px-4">
-        {/* ✅ Mobile & Tablet View (Tabs + Description Only) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:hidden gap-4">
-          {categories.map((cat, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveCategory(cat)}
-              className={`p-4 rounded-lg border text-sm font-medium transition-all duration-300 ${
-                activeCategory.title === cat.title
-                  ? "bg-[#000080] text-white shadow-lg"
-                  : "bg-white text-black hover:bg-gray-100"
-              }`}
-            >
-              {cat.title}
-            </button>
+        {/* ✅ Mobile: Each category row with overlay title */}
+        <div className="lg:hidden space-y-2">
+          {categories.map((cat, idx) => (
+            <div key={idx} className="rounded-lg shadow-md overflow-hidden">
+              <Swiper
+  navigation={true}
+  modules={[Navigation]}
+  spaceBetween={0}   // ✅ gap hata diya
+  className="w-full h-64 rounded-md overflow-hidden"
+>
+  {cat.images.map((img, i) => (
+    <SwiperSlide key={i}>
+      <div
+        className="w-full h-64 bg-cover bg-center relative"
+        style={{ backgroundImage: `url(${img})` }}
+      >
+        {/* Overlay title */}
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <h3 className="text-lg font-bold text-white text-center px-2">
+            {cat.title}
+          </h3>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+            </div>
           ))}
         </div>
 
-        {/* ✅ Mobile & Tablet Description */}
-        <div className="lg:hidden mt-6 bg-white p-6 rounded-lg shadow-md text-center">
-          <h3 className="text-lg font-semibold text-[#000080] mb-3">
-            {activeCategory.title}
-          </h3>
-          <p className="text-gray-600 text-sm">{activeCategory.description}</p>
-        </div>
-
-        {/* ✅ Desktop View: Left Tabs + Right Image Slider */}
-        <div className="hidden lg:flex w-full h-[500px] rounded-xl overflow-hidden">
+        {/* ✅ Desktop: Tabs left + Slider right (unchanged) */}
+        <div className="hidden lg:flex w-full h-[500px] rounded-sm overflow-hidden">
           {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col rounded-tl-xl rounded-bl-xl border border-gray-300">
             {categories.map((cat, index) => (
@@ -113,7 +118,7 @@ export default function IndustrySlider() {
                     className="w-full h-full bg-cover bg-center relative"
                     style={{ backgroundImage: `url(${img})` }}
                   >
-                    {/* Overlay */}
+                    {/* Overlay with title + description */}
                     <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-11/12">
                       <div className="bg-black/40 p-8 rounded-lg text-white shadow-lg">
                         <h3 className="text-2xl font-bold mb-3 text-center">
@@ -134,3 +139,4 @@ export default function IndustrySlider() {
     </div>
   );
 }
+

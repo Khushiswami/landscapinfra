@@ -101,10 +101,10 @@ export default function ExpertiseP() {
   return (
     <section className="py-12 px-10 bg-white mx-0 md:mx-12 lg:mx-20">
       {/* Heading + Controls */}
-      <div className="flex items-center justify-between max-w-7xl mx-auto mb-8">
-        <h2 className="text-xl md:text-3xl font-bold text-[#061b49]">
-          Explore Our Comprehensive Prefabricated Building Solutions
-        </h2>
+      <div className="flex items-center justify-between  mx-auto mb-8">
+<h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
+  Our Expertise
+</h2>
 
         <div className="flex items-center gap-2">
           <button
@@ -182,25 +182,27 @@ export default function ExpertiseP() {
                 </div>
 
                 {/* Hover Overlay */}
-                <AnimatePresence>
-                  {hoverIndex === i && (
-                    <motion.div
-                      className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20"
-                      style={{
-                        background:
-                          "linear-gradient(0deg, rgba(33, 71, 95, 0.8) 0%, rgba(22, 46, 68, 0.8) 100%)",
-                      }}
-                      initial={{ opacity: 0, y: 50 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 50 }}
-                      transition={{ duration: 0.4 }}
-                    >
-                      <h3 className="text-white text-lg font-semibold">
-                        {service.title}
-                      </h3>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {/* Hover Overlay */}
+<AnimatePresence>
+  {hoverIndex === i && (
+    <motion.div
+      className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20"
+      style={{
+        background:
+          "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.95) 100%)", // darker gradient
+      }}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.4 }}
+    >
+      <h3 className="text-white text-lg font-semibold">
+        {service.title}
+      </h3>
+    </motion.div>
+  )}
+</AnimatePresence>
+
               </motion.div>
             </SwiperSlide>
           ))}
