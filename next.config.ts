@@ -14,8 +14,8 @@ const nextConfig: NextConfig = {
     unoptimized: true, // disables built-in image optimization (memory-heavy during builds)
   },
   experimental: {
-    optimizeCss: true,
-    scrollRestoration: true,
+    optimizeCss: false,
+    scrollRestoration: false,
   },
   webpack(config) {
     // Optional: limit memory-heavy Webpack plugins or adjust settings
