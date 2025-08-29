@@ -17,7 +17,7 @@ import CoreBusinessP from "../Components/CoreBusinessP";
 import CounterP from "../Components/CounterP";
 import AboutP from "../Components/AboutP";
 import BannerP from "../Components/BannerP";
-import Newheader from "../Components/Newheader"
+// import Newheader from "../Components/Newheader"
 // import News from"./news/page";
 // import Contact from"./contact/page";
 // import Pebbanner from "./pebbanner/page"
@@ -34,8 +34,8 @@ import Newheader from "../Components/Newheader"
 export default function Home() {
   return (
     <>
-      <Newheader/>
-      {/* <Header /> */}
+{/*       <Newheader/> */}
+      <Header />
       <BannerP />
       <AboutP />
       <CounterP />
