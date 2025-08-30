@@ -62,20 +62,30 @@ export default function Navbar() {
       
       {/* Left Section */}
       <div className="w-1/3 text-white p-6 space-y-4">
-        <p className="hover:text-teal-300 cursor-pointer">Product Engineering</p>
-        <p className="hover:text-teal-300 cursor-pointer">Design & Prototyping</p>
-        <p className="hover:text-teal-300 cursor-pointer">Testing & Validation</p>
-        <p className="hover:text-teal-300 cursor-pointer">Embedded Systems</p>
-        <p className="hover:text-teal-300 cursor-pointer">Cloud Engineering</p>
+         <Link href="/industryinstallation" className="hover:text-teal-300 cursor-pointer block">
+          Industry Installation
+        </Link>
+        <Link href="/preEngineeredBuildings" className="hover:text-teal-300 cursor-pointer block">
+          Pre Engineered Building
+        </Link>
+        <Link href="/buildingandinfrastructure" className="hover:text-teal-300 cursor-pointer block">
+          Building And Infrastructure
+        </Link>
+
       </div>
 
       {/* Middle Section (lighter blue bg) */}
       <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-4 rounded-md">
-        <p className="hover:text-teal-300 cursor-pointer">AI & Analytics</p>
-        <p className="hover:text-teal-300 cursor-pointer">Cybersecurity</p>
-        <p className="hover:text-teal-300 cursor-pointer">Digital Twin</p>
-        <p className="hover:text-teal-300 cursor-pointer">IoT Solutions</p>
-        <p className="hover:text-teal-300 cursor-pointer">Sustainability Services</p>
+        <Link href="#" className="hover:text-teal-300 cursor-pointer block">
+          Engineering  R&amp;D
+        </Link>
+       
+        <Link href="#" className="hover:text-teal-300 cursor-pointer block">
+          Renewable Energy
+        </Link>
+        <Link href="#" className="hover:text-teal-300 cursor-pointer block">
+          Real Estate Development
+        </Link>
       </div>
 
       {/* Right Image Section */}
@@ -98,7 +108,7 @@ export default function Navbar() {
     </div>
             )}
           </div>
-
+            
 {/* EXPERTISE Dropdown */}
 <div className="relative">
   <button
@@ -123,6 +133,8 @@ export default function Navbar() {
         <p className="hover:text-teal-300 cursor-pointer">Public Office</p>
         <p className="hover:text-teal-300 cursor-pointer">Water Infrastructure</p>
         <p className="hover:text-teal-300 cursor-pointer">Industry Building Solutions</p>
+        <p className="hover:text-teal-300 cursor-pointer">HVAC Services</p>
+        <p className="hover:text-teal-300 cursor-pointer">Fabrication</p>
       </div>
 
       {/* Middle Section (lighter blue bg) */}
@@ -132,15 +144,35 @@ export default function Navbar() {
         <p className="hover:text-teal-300 cursor-pointer">Factories Installation</p>
         <p className="hover:text-teal-300 cursor-pointer">Cold Storage & Warehouse</p>
         <p className="hover:text-teal-300 cursor-pointer">Solar Services</p>
+        <p className="hover:text-teal-300 cursor-pointer">Fire Safety</p>
+        <p className="hover:text-teal-300 cursor-pointer">Green Building</p>
+        <p className="hover:text-teal-300 cursor-pointer">Mining And Metals</p>
       </div>
 
       {/* Right Section */}
-      <div className="w-1/3 bg-[#2e69c2] p-6 flex flex-col justify-between text-white space-y-3">
+      {/* <div className="w-1/3 bg-[#2e69c2] p-6 flex flex-col justify-between text-white space-y-3">
         <p className="hover:text-teal-300 cursor-pointer">HVAC Services</p>
         <p className="hover:text-teal-300 cursor-pointer">Fabrication</p>
         <p className="hover:text-teal-300 cursor-pointer">Fire Safety</p>
         <p className="hover:text-teal-300 cursor-pointer">Green Building</p>
         <p className="hover:text-teal-300 cursor-pointer">Mining And Metals</p>
+      </div> */}
+      {/* Right Image Section */}
+      <div className="w-1/3 bg-[#2e69c2] p-4 flex flex-col justify-between text-white">
+         <img
+    src="/service.jpg"
+    alt="Our Services"
+    className="rounded-md object-cover h-54 w-full mb-4"
+  />
+        <div>
+          <p className="font-semibold text-xl">Explore Our Services</p>
+          <Link
+            href="/services"
+            className="mt-2 inline-block bg-white text-blue-700 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
+          >
+            Know More
+          </Link>
+        </div>
       </div>
     </div>
   )}
