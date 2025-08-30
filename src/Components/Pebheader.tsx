@@ -25,7 +25,7 @@ type ProductMenu = {
 
 type MenuItem = NormalMenu | ProductMenu;
 
-export default function       IndustryHeader
+export default function   Pebheader
 () {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -87,13 +87,13 @@ export default function       IndustryHeader
             { name: "Control Room", href: "/controlRoom" },
             { name: "Clean Room", href: "/cleanRoom" },
             { name: "Railway Shelters", href: "/railwayShelters" },
-            { name: "Labor Hutment", href: "/labor-hutment" },
+            { name: "Labor Hutment", href: "/laborHutment" },
             {
               name: "Prefabricated Site Infrastructure Solutions",
-              href: "/site-infra",
+              href: "/prefabricatedSite",
             },
-            { name: "Low Cost Housing", href: "/low-cost-housing" },
-            { name: "Acoustic Enclosures", href: "/acoustic-enclosures" },
+            { name: "Low Cost Housing", href: "/lowCostHousing" },
+            { name: "Acoustic Enclosures", href: "/acousticEnclosures" },
             {
               name: "Portable Security Guard Cabins",
               href: "/security-cabins",
@@ -106,7 +106,7 @@ export default function       IndustryHeader
           subMenu: [
             {
               name: "Prefab School",
-              href: "/products/light-gauge-steel/prefab-school",
+              href: "/prefabSiteOffice",
             },
           ],
         },
@@ -114,15 +114,15 @@ export default function       IndustryHeader
           title: "Sandwich Panels",
           href: "/sandwichpanels",
           subMenu: [
-            { name: "PUF Panels", href: "/products/sandwich-panels/puf" },
-            { name: "EPS Panels", href: "/products/sandwich-panels/eps" },
+            { name: "PUF Panels", href: "/puf" },
+            { name: "EPS Panels", href: "/eps" },
             {
               name: "Rockwool Panel",
-              href: "/products/sandwich-panels/rockwool",
+              href: "/rockwool",
             },
             {
               name: "Glass Wool Panels",
-              href: "/products/sandwich-panels/glass-wool",
+              href: "/glasswool",
             },
           ],
         },
@@ -132,14 +132,14 @@ export default function       IndustryHeader
           subMenu: [
             {
               name: "Porta Cabins",
-              href: "/products/standard-modular/porta-cabins",
+              href: "/portacabins",
             },
             {
               name: "Liftable Cabin",
-              href: "/products/standard-modular/liftable-cabin",
+              href: "/liftablecabin",
             },
-            { name: "Mi Homes", href: "/products/standard-modular/mi-homes" },
-            { name: "K-House", href: "/products/standard-modular/k-house" },
+            { name: "Mi Homes", href: "mihomes" },
+            { name: "K-House", href:"khouse" },
           ],
         },
         { title: "EPC Solutions", href: "/epcsolutions" },
@@ -173,12 +173,7 @@ export default function       IndustryHeader
   ];
 
   return (
-    // <header
-    //   className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-    //     scrolled ? "bg-white shadow-lg" : "bg-transparent"
-    //   }`}
-    // >
-    //   <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 py-4">
+  
     <header
       className={`fixed top-0 z-50 transition-all duration-300 ${
         scrolled

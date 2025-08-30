@@ -45,7 +45,29 @@ export default function CounterP() {
           Leading industries toward a smarter future with focused and adaptable
           innovation.
         </h2>
+{/* <h1 style={{ fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif" }}>
+        Mediumg 500 Normal
+      </h1>
 
+      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 500, fontStyle: "italic" }}>
+        Mediumg 500 Italic
+      </h1>
+
+      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 700 }}>
+        Boldg 700 Normal
+      </h1>
+
+      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 700, fontStyle: "italic" }}>
+        Boldg 700 Italic
+      </h1>
+
+      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 900 }}>
+        Black g900 Normal
+      </h1>
+
+      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 900, fontStyle: "italic" }}>
+        Blackg 900 Italic
+      </h1> */}
         <div
           className="bg-[#09306b] rounded-2xl shadow-lg py-10 px-6 
           flex flex-wrap justify-center gap-y-10 gap-x-6 

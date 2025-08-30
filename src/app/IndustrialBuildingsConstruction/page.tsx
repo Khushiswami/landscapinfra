@@ -99,7 +99,7 @@
 //                 options to meet diverse project needs.
 //               </p>
 //               <p className="text-gray-700 mb-4">
-//                 At <span className="font-semibold">Landsking Infra Pvt Ltd</span>, we bring over 25 years
+//                 At <span className="font-semibold">Landsking Infra Pvt Ltd</span>, we bring over 7 years
 //                 of expertise in delivering top-quality pre-engineered and prefabricated industrial
 //                 buildings. Our portfolio includes warehouses, manufacturing units, industrial sheds,
 //                 poultry farms, cold storage facilities, clean rooms, and many other specialized
@@ -308,7 +308,7 @@ export default function IndustrialBuildingsConstruction() {
               <p className="text-gray-700 mb-4 text-sm md:text-base">
                 At{" "}
                 <span className="font-semibold">Landsking Infra Pvt Ltd</span>,
-                we bring over 25 years of expertise in delivering top-quality
+                we bring over 7 years of expertise in delivering top-quality
                 pre-engineered and prefabricated industrial buildings. Our
                 portfolio includes warehouses, manufacturing units, industrial
                 sheds, poultry farms, cold storage facilities, clean rooms, and
@@ -329,7 +329,7 @@ export default function IndustrialBuildingsConstruction() {
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
-                src="/Industrial-Buildings-Construction.webp"
+                src="/sectorimg/indd.jpg"
                 alt="Industrial Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -344,37 +344,37 @@ export default function IndustrialBuildingsConstruction() {
         <section className="bg-gray-50 py-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
-              image="/NDR.webp"
+              image="/sectorimg/ware.jpg"
               icon={<FaWarehouse size={30} className="text-white" />}
               title="Warehouse"
               description="Designed for strength and long-lasting use, our prefabricated warehouses are easy to install, adaptable in layout, and highly efficient for storage. Ideal for use in logistics, farming, and industrial operations."
             />
             <Card
-              image="/clean-room-2.webp"
+              image="/sectorimg/room.jpg"
               icon={<MdOutlineCleanHands size={30} className="text-white" />}
               title="Clean Room"
               description="Landsking Infra Pvt Ltd provides advanced cleanroom solutions for controlled environments in pharmaceuticals, electronics, and biotechnology, ensuring top hygiene and quality."
             />
             <Card
-              image="/7-2.webp"
+              image="/sectorimg/fac.webp"
               icon={<FaIndustry size={30} className="text-white" />}
               title="Factory Building"
               description="Our industrial buildings feature smart designs, excellent insulation, and quick construction times. Built to handle heavy loads and ensure proper airflow, they are ideal for seamless and efficient production operations."
             />
             <Card
-              image="/NDR.webp"
+              image="/sectorimg/ind.jpeg"
               icon={<FaIndustry size={30} className="text-white" />}
               title="Industrial Shed"
               description="Built for strength and flexibility, Landsking Infra’s industrial sheds are ideal for factories, workshops, and large-scale operations. They offer quick installation, high durability, and customizable designs to suit your business needs."
             />
             <Card
-              image="/clean-room-2.webp"
+              image="/sectorimg/cold.png"
               icon={<FaSnowflake size={30} className="text-white" />}
               title="Cold Storage & Cold Room Manufacturer"
               description="Landsking Infra’s cold storage facilities are constructed using high-quality insulated panels and modern refrigeration systems to maximize energy efficiency. Whether for pharmaceuticals or perishable goods, we ensure reliable temperature control and long-term preservation in line with industry standards."
             />
             <Card
-              image="/7-2.webp"
+              image="/sectorimg/cabin.webp"
               icon={<FaShieldAlt size={30} className="text-white" />}
               title="Portable Security Guard Cabins"
               description="Landsking Infra provides portable security guard cabins that are easy to install and relocate. Built with durable, insulated materials, these cabins offer a secure and comfortable environment for security staff. They are perfectly suited for construction sites, industrial zones, and other locations needing reliable security posts."

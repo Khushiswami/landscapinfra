@@ -122,7 +122,7 @@ export default function IndustrialBuildingsConstruction() {
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
-                src="/Industrial-Buildings-Construction.webp"
+                src="/sectorimg/ins.jpg"
                 alt="Industrial Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -137,31 +137,31 @@ export default function IndustrialBuildingsConstruction() {
         <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
-              image="/NDR.webp"
+              image="/sectorimg/h.jpg"
               icon={<FaWarehouse size={38} className="text-white" />}
               title="Prefab School"
               description="Landsking Infra provides sustainable and cost-effective prefab solutions for schools and healthcare centers. These modular buildings are designed for rapid installation, adaptability, and energy efficiency, making them ideal for educational and medical infrastructure. With customizable layouts and durable construction, our solutions ensure functionality, safety, and comfort to meet diverse institutional needs."
             />
             <Card
-              image="/clean-room-2.webp"
+              image="/sectorimg/inf.jpeg"
               icon={<MdOutlineCleanHands size={38} className="text-white" />}
               title="Prefabricated Multi-Storey Building Manufacturer"
               description="Landsking Infra’s multi-storey buildings are designed to provide exceptional strength, fast construction timelines, and cost-effective solutions. Perfect for commercial and residential projects, these buildings maximize space utilization while ensuring long-term value and reduced construction time."
             />
             <Card
-              image="/7-2.webp"
+              image="/sectorimg/hos.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Prefabricated Hospital"
               description="Landsking Infra is a pioneer in the manufacturing and installation of prefabricated structures, including staff accommodations, worker housing, labor hutments, and more."
             />
             <Card
-              image="/NDR.webp"
+              image="/sectorimg/roomm.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Clean Room"
               description="Landsking Infra provides state-of-the-art cleanroom solutions tailored for controlled environments in sectors such as pharmaceuticals, electronics, and biotechnology. Our cleanrooms are meticulously engineered to comply with strict hygiene, airflow, and temperature control requirements, ensuring ideal conditions for sensitive and critical operations."
             />
             <Card
-              image="/clean-room-2.webp"
+              image="/sectorimg/lgg.jpg"
               icon={<FaSnowflake size={38} className="text-white" />}
               title="Light Gauge Steel Framing"
               description="Lightweight steel structures ideal for residential and commercial buildings, providing design versatility and accelerated construction timelines."
@@ -182,7 +182,7 @@ export default function IndustrialBuildingsConstruction() {
           Pre-engineered building technology has gained widespread recognition
           globally. Over time, more and more industries in India are adopting
           this modern technology, which is rapidly becoming mainstream in the
-          country’s construction sector. This trend is important because
+          countrys construction sector. This trend is important because
           pre-engineered structures offer the most innovative and efficient
           methods to complete construction projects in an energy-saving way.
           They are cost-effective and can speed up construction by approximately

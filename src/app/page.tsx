@@ -17,6 +17,7 @@ import CoreBusinessP from "../Components/CoreBusinessP";
 import CounterP from "../Components/CounterP";
 import AboutP from "../Components/AboutP";
 import BannerP from "../Components/BannerP";
+import Navbar from "../Components/Navbar";
 // import Newheader from "../Components/Newheader"
 // import News from"./news/page";
 // import Contact from"./contact/page";
@@ -35,6 +36,7 @@ export default function Home() {
   return (
     <>
 {/*       <Newheader/> */}
+{/* <Navbar/> */}
       <Header />
       <BannerP />
       <AboutP />

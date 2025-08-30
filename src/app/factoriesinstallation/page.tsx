@@ -207,7 +207,6 @@ const prevRef = useRef<HTMLDivElement>(null);
   return (
     <>
       
-
       {/* Hero Section */}
      <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
   {/* Background Video */}

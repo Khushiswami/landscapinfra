@@ -74,7 +74,7 @@ export default function InfrastructureSector() {
         <div
           className="flex-1 flex items-center justify-center p-6 md:p-8 bg-cover bg-center relative"
           style={{
-            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
+            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/sectorimg/infra.jpg')`,
           }}
         >
           <div className="text-white text-center relative z-10 px-4">
@@ -128,7 +128,7 @@ export default function InfrastructureSector() {
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
-                src="/Industrial-Buildings-Construction.webp"
+                src="/sectorimg/infreaa.jpg"
                 alt="Industrial Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -149,13 +149,13 @@ export default function InfrastructureSector() {
               description="Durable railway and telecom shelters, built to endure harsh conditions. Quick installation, low maintenance, and long-lasting reliability."
             />
             <Card
-              image="/clean-room-2.webp"
+              image="/sectorimg/inf.jpeg"
               icon={<MdOutlineCleanHands size={32} className="text-white" />}
               title="Prefabricated Multi-Storey Buildings"
               description="Designed for superior strength and cost-effectiveness, suitable for commercial and residential projects."
             />
             <Card
-              image="/7-2.webp"
+              image="/sectorimg/airport.jpg"
               icon={<FaIndustry size={32} className="text-white" />}
               title="Airport Terminal Buildings"
               description="Prefabricated structures for staff accommodations, worker housing, and more."

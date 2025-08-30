@@ -7,16 +7,80 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-    font-family: var(--font-quicksand), sans-serif;
+    /* font-family: var(--font-quicksand), sans-serif; */
 }
 
-@font-face {
+/* @font-face {
   font-family: "Canela";
   src: url("/fonts/Canela-Regular.woff2") format("woff2"),
     url("/fonts/Canela-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
+} */
+
+ @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-regular.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-regular-italic.otf') format('opentype');
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-medium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-medium-italic.otf') format('opentype');
+            font-weight: 500;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-bold.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-bold-italic.otf') format('opentype');
+            font-weight: 700;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-black.otf') format('opentype');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NewPanam Skyline';
+            src: url('https://staging.landsking.com/wp-content/themes/landsking/assets/fonts/swiss-typefaces-newpanam-skyline-black-italic.otf') format('opentype');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
 
 
 @theme inline {
@@ -70,3 +134,6 @@ body {
   );
 }
 
+.swiper-wrapper {
+margin-bottom: 26px !important;
+}

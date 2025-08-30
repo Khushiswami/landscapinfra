@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // ✅ import router
+import { useRouter } from "next/navigation"; 
 
 import PlatformP from "../../Components/PlatformP";
 import AboutPebP from "../../Components/AboutPebP";
@@ -8,11 +8,8 @@ import TotalSolutionP from "../../Components/TotalSolutionP";
 import MediaP from "../../Components/MediaP";
 import PebBrandP from "../../Components/PebBrandP";
 import Insights from "../../Components/Insights";
-import IndustryHeader from "yes/Components/Industryheader";
 import PebSlider from "../../Components/PebSlider";
-import ImageSlider from "../../Components/ImageSlider";
 import ContactSection from "../../Components/ContactSection";
-import Pebexpertise from "../pebexpertise/page";
 import Servicesone from "yes/Components/Servicesone";
 import Footer from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
@@ -28,28 +25,28 @@ const slides = [
     description:
       "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
     video: "/video.mp4",
-    url: "/epcsolutions", // ✅ new url
+    url: "/epcsolutions", 
   },
   {
     title: "Project Management Consultancy",
     description:
       "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
     video: "/video.mp4",
-    url: "/project-management", // ✅ new url
+    url: "/projectmanagementconsultancy",
   },
   {
     title: "Structural Engineering Services",
     description:
       "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
     video: "/homeslider.mp4",
-    url: "/buildingandinfrastructure", // ✅ new url
+    url: "/buildingandinfrastructure", 
   },
 ];
 
 export default function PreEngineeredBuildings() {
   const [active, setActive] = useState(0);
   const [progress, setProgress] = useState(0);
-  const router = useRouter(); // ✅ initialize router
+  const router = useRouter(); 
 
   useEffect(() => {
     setProgress(0);
