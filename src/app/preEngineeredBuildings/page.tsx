@@ -140,7 +140,7 @@ export default function PreEngineeredBuildings() {
       <PlatformP />
       <TotalSolutionP />
       <PebSlider />
-      <ImageSlider />
+      {/* <ImageSlider /> */}
       <Insights />
       <MediaP />
       <PebBrandP />

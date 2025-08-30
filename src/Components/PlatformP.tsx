@@ -12,7 +12,7 @@ const TABS = [
     body: "LandsKingInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings. Each structure is designed for strength, flexibility, and long-lasting performance, tailored to meet diverse industrial and commercial needs.",
     img: "/about.png",
     buttonText: "VIEW MORE",
-    url: "/menupage",
+    url: "/menupageimg/peb2.jpg",
   },
   {
     title: "EPC Solutions",
@@ -20,13 +20,13 @@ const TABS = [
     body: "From concept to commissioning, our EPC solutions ensure seamless project execution with a strong focus on quality, cost-efficiency, and sustainability. We integrate advanced technologies and global standards to deliver world-class infrastructure.",
     img: "/solution/stell.jpg",
     buttonText: "VIEW MORE",
-    url: "/epcsolutions",
+    url: "/PEB.jpg",
   },
   {
     title: "Structural Engineering Services",
     headline: "Excellence in Structural Engineering",
     body: "Our expert engineers provide innovative structural design and analysis services. With advanced tools and decades of expertise, we ensure the highest safety, efficiency, and performance standards for every project we deliver.",
-    img: "/industry.png",
+    img: "/Square2.jpg",
     buttonText: "VIEW MORE",
     url: "/structuralsteel",
   },
@@ -65,10 +65,10 @@ export default function PlatformP() {
     <section className="w-full">
       {/* Top heading + subheading */}
       <div className="max-w-4xl mx-auto px-4 pt-12 text-center">
-        <h1 className="text-3xl text-[#000080] md:text-4xl font-semibold tracking-tight">
+        <h1 className="text-3xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Comprehensive Infrastructure Solutions
         </h1>
-        <p className="mt-4 text-base md:text-lg text-gray-600">
+<p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
           From design and engineering to execution and management, we deliver
           integrated solutions that shape industries and build a stronger
           future.
@@ -94,7 +94,7 @@ export default function PlatformP() {
               tabRefs.current[i] = el;
             }}
             onClick={() => setActive(i)}
-            className={`pb-3 text-sm md:text-base font-medium transition-colors whitespace-nowrap
+            className={`pb-3 text-sm md:text-[16px] font-medium transition-colors whitespace-nowrap
               ${
                 active === i
                   ? "text-[#272727]"
@@ -137,11 +137,11 @@ export default function PlatformP() {
               <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
                 {TABS[active].headline}
               </h2>
-              <p className="mt-4 text-sm md:text-base text-gray-200">
+              <p className="mt-4 text-sm md:text-[15px] text-gray-200">
                 {TABS[active].body}
               </p>
               <button
-                className="mt-6 bg-[#000080] hover:bg-[#272727] text-white font-semibold px-4 py-2 rounded-md"
+                className="mt-6 border border-[#fff] rounded-lg text-[13px] hover:bg-[#272727] text-white font-semibold px-4 py-2 rounded-lg"
                 onClick={() => router.push(TABS[active].url)}
               >
                 {TABS[active].buttonText}

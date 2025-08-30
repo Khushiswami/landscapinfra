@@ -562,7 +562,7 @@ export default function Menupage() {
       </section>
       {/* endcapill */}
       {/* business benifts */}
-      <section className="bg-[#272727] text-white py-10">
+      <section className="bg-[#000080] text-white py-10">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Benefits of Pre-Engineered Buildings
@@ -573,14 +573,14 @@ export default function Menupage() {
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-gray-900 rounded-lg overflow-hidden shadow-lg"
+                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
-                  <p className="text-sm text-gray-300 font-semibold mb-2 md:text-xl">
+                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-gray-400">{item.description}</p>
+                  <p className="text-sm text-black">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -590,15 +590,15 @@ export default function Menupage() {
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronLeft className="w-6 h-6 text-white" />
+              <ChevronLeft className="w-6 h-6 text-[#000080]" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronRight className="w-6 h-6 text-white" />
+              <ChevronRight className="w-6 h-6 text-[#000080]" />
             </button>
           </div>
         </div>
