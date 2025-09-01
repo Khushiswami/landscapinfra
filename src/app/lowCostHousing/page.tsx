@@ -21,7 +21,7 @@ const LowCostHousing = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+                Cost-Effective Housing With PUF Panel Sheets
               </h1>
             </div>
           </div>
@@ -41,16 +41,10 @@ const LowCostHousing = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+                Innovative and Budget-Friendly Housing with PUF and EPS Panels
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative
-                prefabricated multi-storey structures that offer unmatched
-                durability, rapid construction, and eco-friendly solutions. With
-                over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized
-                to suit your specific requirements—whether for commercial,
-                institutional, or residential applications.
+                LANDSKING delivers innovative, budget-friendly housing solutions using PUF and EPS panels, ensuring eco-friendly, energy-efficient, and durable construction. These solutions are designed to meet modern housing needs without compromising on quality or comfort.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -61,30 +55,26 @@ const LowCostHousing = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Choose Prefab Multi-Storey Buildings?
+              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+                Advantages and unique qualities of PUF and EPS panel homes
               </h3>
               <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are
-                prefabricated off-site and swiftly assembled at the destination,
-                cutting construction time by up to 50% compared to traditional
-                building methods.
+                ✅ Cost-effective construction: Pre-engineered panels minimize labor and installation time, cutting down overall expenses.
               </p>
               <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material
-                waste, and quicker project turnaround help bring down total
-                project costs—without sacrificing quality.
+                ✅ Thermal efficiency: Excellent insulation helps maintain indoor comfort while reducing energy usage.
               </p>
               <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable
-                layouts, meet varied load-bearing needs, and can be easily
-                expanded in the future—perfect for evolving commercial and
-                institutional spaces.
+                ✅ Durability: Built to resist corrosion, pests, fire, and extreme weather for long-lasting performance.
               </p>
               <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to
-                less on-site disruption, reduced material wastage, and a smaller
-                environmental impact.
+                ✅ Lightweight and relocatable: Easy to transport and assemble, making them ideal for multiple applications.
+              </p>
+              <p className="text-gray-700 mb-4">
+                ✅ Customizable designs: Flexible layouts and finishes tailored to suit varied project needs.
+              </p>
+              <p className="text-gray-700 mb-4">
+                ✅ Eco-friendly: Sustainable materials help lower the overall carbon footprint.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -97,8 +87,39 @@ const LowCostHousing = () => {
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
+          
+
+          {/* Row 3 - Image Left, Content Right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[450px]">
+              <Image
+                src="/Menuimges/multi 3.jpeg"
+                alt="Row 3"
+                fill
+                className="object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+                Applications
+              </h3>
+              <ul className="text-gray-700 mb-4 space-y-1">
+                <li>✅ Labour accommodation: Rapidly deployable housing units to meet workforce requirements.</li>
+                <li>✅ Modular site offices: Efficient, relocatable office spaces designed for construction environments.</li>
+                <li>✅ Temporary housing: Practical short-term living solutions for disaster relief or seasonal staff.</li>
+                <li>✅ Marketing offices: Portable and functional structures for sales or promotional operations.</li>
+                <li>✅ Construction canteens: Convenient on-site dining facilities for workers and teams.</li>
+                <li>✅ Equipment housing: Secure and durable shelters for machinery, tools, and equipment.</li>
+              </ul>
+              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+
+{/* Centered Heading + Paragraph */}
+          {/* <div className="text-center mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-[#000080]">
               Prefab Multi-Storey Buildings for Multipurpose Applications
             </h2>
@@ -132,145 +153,55 @@ const LowCostHousing = () => {
               Ltd Prefab is a trusted partner for fast, cost-effective, and
               long-lasting multi-storey building solutions across India.
             </p>
-          </div>
+          </div> */}
 
-          {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/multi 3.jpeg"
-                alt="Row 3"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
-              </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
-              </ul>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
-                Learn More
-              </button>
-            </div>
-          </div>
 
-          {/* Row 4 - Content Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
-              <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric
-                tons, Landsking Infra Pvt Ltd Prefab is fully equipped to
-                execute large-scale and technically demanding prefab
-                construction projects across India. Our offerings align with
-                global quality standards and are fully customizable to suit
-                specific project needs, including:
-              </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
-              </ul>
-            </div>
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/row4.jpg"
-                alt="Row 4"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-
-          {/* Row 5 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/row5.jpg"
-                alt="Row 5"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Landsking Infra Pvt Ltd Prefab?
-              </h3>
-              <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
-              </ul>
-            </div>
-          </div>
+    
 
           {/* FAQ Section */}
           <div className="max-w-4xl mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-[#000080]">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "Why choose PUF panels for low-cost housing?",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "PUF (Polyurethane Foam) panel-based homes are built using insulated, prefabricated panels for walls and roofs. This method ensures affordability, energy efficiency, and quick construction, making it an excellent solution for cost-effective housing.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "Are PUF panel houses strong and weather-resistant?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "Yes, PUF panel houses are highly durable and designed to endure extreme weather conditions. They offer superior insulation, fire resistance, and moisture protection, making them reliable in various climates.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question: "What advantages do PUF panels offer for affordable housing?",
                   answer:
-                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
-                },
-                {
-                  question:
-                    "How long does it take to construct a prefab multi-storey building?",
-                  answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
-                },
-                {
-                  question: "Where can I use these structures?",
-                  answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "PUF panels provide quick, cost-effective construction, offer great insulation, need little maintenance, and resist termites and corrosion — suitable for shelters, work accommodations, site offices, and permanent homes.",
                 },
                 {
                   question:
-                    "What are the benefits of using prefab multi-storey buildings?",
+                    "Are PUF panel houses customizable?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    "Yes! LANDSKING offers PUF panel housing that can be personalized in every aspect — from layout and size to interior partitions, doors, windows, and utility fittings — ensuring the perfect fit for your project.",
+                },
+                {
+                  question: "What’s the construction time for PUF panel houses?",
+                  answer:
+                    "Construction timelines are greatly minimized with PUF panels. Depending on the project’s scale, a standard low-cost housing unit can be completed in just a few days to a couple of weeks.",
                 },
                 {
                   question:
-                    "In which sectors can prefab multi-storey buildings be utilized?",
+                    "Are PUF panel houses eco-friendly?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    "Yes, PUF panel homes are highly energy-efficient thanks to their excellent insulation, which reduces HVAC energy usage. Additionally, their construction process produces minimal waste, supporting sustainable and eco-friendly building practices.",
                 },
                 {
                   question:
-                    "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                    "Is PUF panel housing good for government or NGO use?",
                   answer:
-                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
-                },
-                {
-                  question:
-                    "Who is the best manufacturer of prefab multi-storey buildings in India?",
-                  answer:
-                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "Yes, PUF panel solutions are trusted by governments and NGOs for large-scale affordable housing, emergency shelters, and temporary living spaces, thanks to their quick setup and budget-friendly nature.",
                 },
               ].map((faq, idx) => (
                 <details

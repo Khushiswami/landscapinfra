@@ -21,7 +21,7 @@ const PrefabricatedSite = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+                Prefabricated Site Infrastructure Solutions
               </h1>
             </div>
           </div>
@@ -41,16 +41,12 @@ const PrefabricatedSite = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+                Complete Infrastructure Solutions for Quick, Efficient, and Economical Project Implementation
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative
-                prefabricated multi-storey structures that offer unmatched
-                durability, rapid construction, and eco-friendly solutions. With
-                over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized
-                to suit your specific requirements—whether for commercial,
-                institutional, or residential applications.
+                LANDSKING offers customized prefab site infrastructure solutions designed for fast-paced construction, industrial, and infrastructure projects throughout India. Our modular structures are durable, cost-effective, and ready for quick deployment, making them ideal for temporary high-performance setups.
+                <br /><br />
+                Whether it’s a site office, worker accommodation, toilet block, or storage unit, LANDSKING provides complete, ready-to-use solutions that minimize downtime and keep your projects running seamlessly.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -61,30 +57,25 @@ const PrefabricatedSite = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Choose Prefab Multi-Storey Buildings?
+              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+                Essential Site Infrastructure Components We Provide
               </h3>
               <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are
-                prefabricated off-site and swiftly assembled at the destination,
-                cutting construction time by up to 50% compared to traditional
-                building methods.
+                We offer a comprehensive range of prefabricated infrastructure modules, including:
+                <br />
               </p>
+              <ul className="text-gray-700 mb-4 list-disc pl-5">
+                <li>🏗️ Prefabricated Site Offices</li>
+                <li>🛏️ Accommodation for Staff and Labour</li>
+                <li>🚿 Sanitary and Toilet Facilities</li>
+                <li>🛖 Security Cabins & Guard Posts</li>
+                <li>📦 Storage and Inventory Units</li>
+                <li>🍽️ Kitchen and Mess Areas</li>
+                <li>🧼 Hand Wash and Utility Stations</li>
+              </ul>
+
               <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material
-                waste, and quicker project turnaround help bring down total
-                project costs—without sacrificing quality.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable
-                layouts, meet varied load-bearing needs, and can be easily
-                expanded in the future—perfect for evolving commercial and
-                institutional spaces.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to
-                less on-site disruption, reduced material wastage, and a smaller
-                environmental impact.
+                Each unit is factory-built, pre-engineered, and ready for quick on-site assembly, saving you time, effort, and costs.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -97,42 +88,6 @@ const PrefabricatedSite = () => {
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Prefab Multi-Storey Buildings for Multipurpose Applications
-            </h2>
-            <p className="text-gray-700 text-lg">
-              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and
-              dependable multi-storey prefabricated buildings tailored for a
-              variety of uses—including office hubs, commercial centers, and
-              institutional infrastructures. Constructed using advanced PUF/EPS
-              insulated panels and Light Gauge Steel Framing (LGSF) technology,
-              our buildings offer excellent durability, thermal efficiency, and
-              quick on-site assembly.
-              <br />
-              <br />
-              Each structure is meticulously designed to meet vital engineering
-              standards, including earthquake resistance (seismic compliance),
-              wind load management, and optimal load-bearing capacity. At
-              Landsking Infra Pvt Ltd, we manage the entire process
-              in-house—from architectural design and manufacturing to complete
-              on-site erection—providing a true turnkey experience.
-              <br />
-              <br />
-              Our prefab multi-storey solutions are especially suitable for
-              sites with space constraints or time-sensitive schedules. By
-              combining Pre-Engineered Building (PEB) systems with LGSF
-              frameworks, we ensure enhanced strength and structural integrity.
-              In addition, fire-rated coatings are applied to meet high safety
-              benchmarks.
-              <br />
-              <br />
-              Backed by 20+ years of industry experience, Landsking Infra Pvt
-              Ltd Prefab is a trusted partner for fast, cost-effective, and
-              long-lasting multi-storey building solutions across India.
-            </p>
-          </div>
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -145,16 +100,16 @@ const PrefabricatedSite = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
+              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+                Why Choose LANDSKING for Modular Infrastructure?
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
+                <li>✅ Quick Setup – Get your site ready faster than traditional methods</li>
+                <li>✅ Moveable & Reusable – Ideal for projects across multiple locations</li>
+                <li>✅ Built to Last – Engineered for extreme weather and demanding site conditions</li>
+                <li>✅ Flexible Designs – Customizable layouts for offices, accommodation, and more</li>
+                <li>✅ Comfortable Spaces – Thermal and sound insulation for a pleasant environment</li>
+                <li>✅ Green Construction – Low waste and eco-conscious materials</li>
               </ul>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
@@ -165,21 +120,20 @@ const PrefabricatedSite = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
+              <h3 className="text-2xl text-[#000080] font-bold mb-4">Ideal Applications</h3>
               <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric
-                tons, Landsking Infra Pvt Ltd Prefab is fully equipped to
-                execute large-scale and technically demanding prefab
-                construction projects across India. Our offerings align with
-                global quality standards and are fully customizable to suit
-                specific project needs, including:
+                Our prefabricated infrastructure solutions are trusted across a wide range of sectors: <br /><br />
+                <ul className="list-disc pl-5">
+                  <li>Civil construction projects</li>
+                  <li>Highway and metro development projects</li>
+                  <li>Oil and gas industry sites</li>
+                  <li>Mining operations</li>
+                  <li>Power and energy plants</li>
+                  <li>Remote industrial facilities</li>
+                </ul>
+
+
               </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
-              </ul>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -191,87 +145,90 @@ const PrefabricatedSite = () => {
             </div>
           </div>
 
-          {/* Row 5 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/row5.jpg"
-                alt="Row 5"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Landsking Infra Pvt Ltd Prefab?
-              </h3>
-              <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
-              </ul>
-            </div>
-          </div>
+
 
           {/* FAQ Section */}
           <div className="max-w-4xl mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-[#000080]">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "How long does installation take?",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "Most basic setups are ready in just 5–10 days, depending on the site dimensions.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "Are these units resuseable for different locations?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "Absolutely! The units can be easily taken down, moved, and reassembled wherever needed.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question: "What does prefabricated site infrastructure mean?",
                   answer:
-                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
-                },
-                {
-                  question:
-                    "How long does it take to construct a prefab multi-storey building?",
-                  answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
-                },
-                {
-                  question: "Where can I use these structures?",
-                  answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "Prefabricated site infrastructure mean ready-made modular structures that can be quickly installed at a site to provide facilities like offices, living units, or utility blocks, saving time and reducing costs.",
                 },
                 {
                   question:
-                    "What are the benefits of using prefab multi-storey buildings?",
+                    "Which industries can take advantage of prefabricated infrastructure solutions?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    "Industries such as construction, mining, oil & gas, and disaster management often use prefab setups for offices, housing, and other temporary or semi-permanent facilities.",
+                },
+                {
+                  question: "What makes LANDSKING the ideal choice for site infrastructure?",
+                  answer:
+                    "LANDSKING provides innovative, durable, and eco-friendly modular solutions that save time and costs. From tailored designs to fast installation, we help businesses meet project timelines efficiently and reliably.",
                 },
                 {
                   question:
-                    "In which sectors can prefab multi-storey buildings be utilized?",
+                    "Which materials make LANDSKING prefab infrastructure durable?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    "LANDSKING uses premium insulated panels, heavy-duty steel frames, and protective coatings to create long-lasting, low-maintenance, and energy-efficient solutions.",
                 },
                 {
                   question:
-                    "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                    "Are these solutions customizable?",
                   answer:
-                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "Yes, LANDSKING provides fully tailored designs to match your project’s specific requirements, from layout and size to functional features.",
                 },
                 {
                   question:
-                    "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                    "What is the installation time for prefab infrastructure?",
                   answer:
-                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "With LANDSKING, installation is fast and efficient, reducing downtime and enabling you to start operations in just days for smaller setups or a few weeks for larger projects.",
                 },
+                {
+                  question:
+                    "How eco-friendly are prefab structures?",
+                  answer:
+                    "They are designed with sustainability in mind, reducing material waste, optimizing energy efficiency, and promoting greener construction practices.",
+                },
+                {
+                  question:
+                    "How eco-friendly are LANDSKING’s prefab structures?",
+                  answer:
+                    "They are designed with sustainability in mind, reducing material waste, optimizing energy efficiency, and promoting greener construction practices.",
+                },
+                {
+                  question:
+                    "How long do prefabricated infrastructures last?",
+                  answer:
+                    "Designed with high-quality materials, these solutions are built to last for decades while withstanding tough weather and site conditions.",
+                },
+                {
+                  question:
+                    "Can prefabricated infrastructure be relocated?",
+                  answer:
+                    "Yes! Our modular structures are built for easy relocation, helping you save time and cost when projects shift locations.",
+                },
+                {
+                  question:
+                    "How do prefabricated structures help save money?",
+                  answer:
+                    "They optimize costs by reducing on-site labor, speeding up construction, and cutting down on unused materials, giving you maximum value for investment.",
+                },
+
               ].map((faq, idx) => (
                 <details
                   key={idx}

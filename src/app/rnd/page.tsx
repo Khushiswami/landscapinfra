@@ -52,29 +52,24 @@ export default function Rnd() {
 
   const slides = [
     {
-      title: "Industry Installation and Construction",
-      desc: "Quality Construction Project Delivery on time with customer satisfaction.",
+      title: "CAD / CAM / CAE Services",
+  desc: "Delivering precise construction projects using advanced CAD, CAM, and CAE tools.",
       image: "/industry.jpg",
-      link: "/industryinstallation",
+      link: "/cadservices",
     },
     {
-      title: "Real Estate",
-      desc: "Innovative real estate solutions designed for modern needs and sustainable growth.",
+      title: "Design Engineering Services",
+  desc: "Innovative and sustainable engineering solutions for modern real estate needs.",
       image: "/industry.jpg",
       link: "/real-estate",
     },
     {
-      title: "Engineering & RND Services",
-      desc: "Committed to advancing innovation, fairness, equity, and quality in assessment.",
+      title: "Product Engineering",
+  desc: "Designing and optimizing products with quality, innovation, and efficiency.",
       image: "/industry.jpg",
       link: "/preEngineeredBuildings",
     },
-    {
-      title: "Renewable Energy Solution Provider",
-      desc: "Explore innovation in industrial equipment with green technologies.",
-      image: "/industry.jpg",
-      link: "/renewable-energy",
-    },
+   
   ];
 
   const [active, setActive] = useState(0);
@@ -92,7 +87,7 @@ export default function Rnd() {
     <>
     <Rndheader/>
     {/* rnd banneer */}
-    <section className="relative w-full h-[94vh] overflow-hidden px-30">
+    <section className="relative w-full h-[84vh] overflow-hidden md:px-30 h-[94vh]">
       {/* Background Image with AnimatePresence */}
       <AnimatePresence mode="wait">
         <motion.img
@@ -111,35 +106,43 @@ export default function Rnd() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Slide Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full  mx-auto px-6">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={slides[active].title}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -40 }}
-            transition={{ duration: 0.7 }}
-          >
-            <h1 className="text-3xl md:text-md font-bold text-white mb-6 drop-shadow-lg">
-              {slides[active].title}
-            </h1>
-            <p className="text-base md:text-5xl text-gray-200 mb-6 max-w-4xl leading-relaxed">
-              {slides[active].desc}
-            </p>
+    {/* Slide Content */}
+<div className="relative z-10 flex flex-col justify-center h-full px-4 md:px-6">
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={slides[active].title}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -40 }}
+      transition={{ duration: 0.7 }}
+      className="text-left"   // 👈 always left aligned
+    >
+      {/* Title */}
+      <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-6 drop-shadow-lg">
+        {slides[active].title}
+      </h1>
 
-           <button
-  onClick={() => router.push(slides[active].link)}
-  className="flex items-center gap-3 text-white font-semibold text-lg group"
->
-  <span>Launch the experience</span>
-  <span className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-white ">
-    <IoIosArrowForward className="w-4 h-4" />
-  </span>
-</button>
+      {/* Description */}
+      <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-200 mb-4 md:mb-6 leading-relaxed md:max-w-4xl">
+        {slides[active].desc}
+      </p>
 
-          </motion.div>
-        </AnimatePresence>
+      {/* Button */}
+      <div className="flex justify-start">   {/* 👈 left aligned button */}
+        <button
+          onClick={() => router.push(slides[active].link)}
+          className="flex items-center gap-3 text-white font-semibold text-sm sm:text-base md:text-lg group"
+        >
+          <span>Launch the experience</span>
+          <span className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border-2 border-white">
+            <IoIosArrowForward className="w-3 h-3 sm:w-4 sm:h-4" />
+          </span>
+        </button>
       </div>
+    </motion.div>
+  </AnimatePresence>
+</div>
+
 
       {/* Bottom Navigation Progress + Controls */}
      {/* Bottom Navigation Progress + Controls */}

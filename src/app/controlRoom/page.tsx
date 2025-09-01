@@ -22,7 +22,7 @@ const ControlRoom = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+                Control Room
               </h1>
             </div>
           </div>
@@ -42,16 +42,10 @@ const ControlRoom = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+                Advanced Engineering Solutions for Control Rooms
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative
-                prefabricated multi-storey structures that offer unmatched
-                durability, rapid construction, and eco-friendly solutions. With
-                over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized
-                to suit your specific requirements—whether for commercial,
-                institutional, or residential applications.
+                LANDSKING offers prefabricated control rooms using high-quality PUF-insulated panels, serving sectors like steel plants, mining, power generation, and beyond. Designed for strength and reliability, these control rooms come in both lift-on and non-lift-on variants and can be customized with or without steel frameworks.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -62,30 +56,22 @@ const ControlRoom = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Choose Prefab Multi-Storey Buildings?
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Key Features of Control Rooms
               </h3>
               <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are
-                prefabricated off-site and swiftly assembled at the destination,
-                cutting construction time by up to 50% compared to traditional
-                building methods.
+                Control rooms are engineered for superior performance in industrial environments, Key features are:
               </p>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li>Pre-engineered construction using PUF-insulated panels</li>
+                <li>Variety of exterior finishes, such as PPGS/PPGS, PPGS/ACP, and SS/SS</li>
+                <li>Strong, long-lasting walls offered in multiple heights</li>
+                <li>Easy-to-handle panels for versatile installation</li>
+                <li>Integrated large view windows within the insulated panels</li>
+                <li>Raised flooring for organized cable routing</li>
+              </ul>
               <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material
-                waste, and quicker project turnaround help bring down total
-                project costs—without sacrificing quality.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable
-                layouts, meet varied load-bearing needs, and can be easily
-                expanded in the future—perfect for evolving commercial and
-                institutional spaces.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to
-                less on-site disruption, reduced material wastage, and a smaller
-                environmental impact.
+                Allows for effortless integration of essential safety equipment, such as smoke detection and fire suppression systems.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -98,42 +84,7 @@ const ControlRoom = () => {
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Prefab Multi-Storey Buildings for Multipurpose Applications
-            </h2>
-            <p className="text-gray-700 text-lg">
-              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and
-              dependable multi-storey prefabricated buildings tailored for a
-              variety of uses—including office hubs, commercial centers, and
-              institutional infrastructures. Constructed using advanced PUF/EPS
-              insulated panels and Light Gauge Steel Framing (LGSF) technology,
-              our buildings offer excellent durability, thermal efficiency, and
-              quick on-site assembly.
-              <br />
-              <br />
-              Each structure is meticulously designed to meet vital engineering
-              standards, including earthquake resistance (seismic compliance),
-              wind load management, and optimal load-bearing capacity. At
-              Landsking Infra Pvt Ltd, we manage the entire process
-              in-house—from architectural design and manufacturing to complete
-              on-site erection—providing a true turnkey experience.
-              <br />
-              <br />
-              Our prefab multi-storey solutions are especially suitable for
-              sites with space constraints or time-sensitive schedules. By
-              combining Pre-Engineered Building (PEB) systems with LGSF
-              frameworks, we ensure enhanced strength and structural integrity.
-              In addition, fire-rated coatings are applied to meet high safety
-              benchmarks.
-              <br />
-              <br />
-              Backed by 20+ years of industry experience, Landsking Infra Pvt
-              Ltd Prefab is a trusted partner for fast, cost-effective, and
-              long-lasting multi-storey building solutions across India.
-            </p>
-          </div>
+
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -146,17 +97,10 @@ const ControlRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Manufacturing Technology
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
-              </ul>
+              <p className="text-gray-700 mb-4">LANDSKING leads in control room engineering, combining cutting-edge production technology with superior materials. Designed for peak performance in demanding conditions, our control rooms comply with regulatory approvals and satisfy both commercial and safety standards.</p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
               </button>
@@ -166,21 +110,17 @@ const ControlRoom = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
-              <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric
-                tons, Landsking Infra Pvt Ltd Prefab is fully equipped to
-                execute large-scale and technically demanding prefab
-                construction projects across India. Our offerings align with
-                global quality standards and are fully customizable to suit
-                specific project needs, including:
-              </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">Applications</h3>
+              <p className="text-gray-700 mb-4">LANDSKING provides control room solutions for diverse industries, including:</p>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li>Industrial manufacturing and production sites</li>
+                <li>Steel plants, smelting operations, and furnace sections</li>
+                <li>Bulk goods handling areas</li>
+                <li>Facilities for food processing, pharmaceuticals, and electronics testing</li>
+                <li>High-heat environments like steel mills</li>
+                <li>Tailored HSM control rooms, offered in both lift-on and non-lift-on designs</li>
               </ul>
+
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -192,28 +132,24 @@ const ControlRoom = () => {
             </div>
           </div>
 
-          {/* Row 5 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/row5.jpg"
-                alt="Row 5"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Landsking Infra Pvt Ltd Prefab?
-              </h3>
-              <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
+
+          {/* Centered Heading + Paragraph */}
+          <div className=" mx-auto">
+            <h2 className="text-center text-3xl font-bold mb-4 text-[#000080]">
+              Benefits of LANDSKING Control Rooms
+            </h2>
+            <p className="text-gray-700 text-lg">
+              Key benefits of LANDSKING control rooms include:
+              <br />
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li>Enhanced thermal insulation for better energy management and comfort</li>
+                <li>Strong, long-lasting structures for safe operation in challenging environments</li>
+                <li>Rapid dry construction, eliminating the need for water</li>
+                <li>Panels that can be customized to site-specific conditions</li>
+                <li>Easily adaptable for relocation or expansion</li>
+                <li>All-weather construction for reliable and consistent performance</li>
               </ul>
-            </div>
+            </p>
           </div>
 
           {/* FAQ Section */}
@@ -221,57 +157,81 @@ const ControlRoom = () => {
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-[#000080]">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "What is a control pulpit?",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "A control pulpit is a specialized modular structure that houses industrial control panels and monitoring systems, providing a safe and organized workspace.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "How does a control room relate to a control pulpit?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "A control room serves as the main hub for process monitoring and management, while a control pulpit is a compact version, customized for particular equipment or sections within an industrial setup.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question: "What sectors rely on control pulpits or control rooms?",
                   answer:
-                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
-                },
-                {
-                  question:
-                    "How long does it take to construct a prefab multi-storey building?",
-                  answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
-                },
-                {
-                  question: "Where can I use these structures?",
-                  answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "Industries such as power generation, steel production, manufacturing, and process-heavy operations commonly use control rooms and pulpits.",
                 },
                 {
                   question:
-                    "What are the benefits of using prefab multi-storey buildings?",
+                    "Which features define a modern control room or control pulpit?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    "Key features include ergonomically designed workspaces, state-of-the-art monitoring equipment, climate control, acoustic insulation, and tailored layouts to optimize workflow.",
+                },
+                {
+                  question: "How do control pulpits differ from traditional control rooms?",
+                  answer:
+                    "Control pulpits are compact, localized units designed for specific equipment, whereas control rooms oversee broader, plant-wide operations.",
                 },
                 {
                   question:
-                    "In which sectors can prefab multi-storey buildings be utilized?",
+                    "Can control pulpits be customized for control room applications?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    "Yes, LANDSKING provides tailored solutions to suit control room needs, including advanced insulation, integrated equipment, and HVAC systems.",
                 },
                 {
                   question:
-                    "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                    "How are control rooms and pulpits constructed?",
                   answer:
-                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "Steel structures, insulated panels, fire-retardant materials, and specialized flooring are used to construct control rooms and pulpits, providing robustness and safety.",
                 },
                 {
                   question:
-                    "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                    "Are control rooms and pulpits built for extreme industrial environments?",
                   answer:
-                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "LANDSKING’s control rooms and pulpits are designed to handle high heat, vibrations, and industrial noise, ensuring reliable functionality.",
+                },
+                {
+                  question:
+                    "How does LANDSKING ensure safety in control rooms and pulpits?",
+                  answer:
+                    "Control rooms and pulpits from LANDSKING are equipped with fire-resistant components, soundproofing, anti-static flooring, and advanced ventilation systems to guarantee a safe working environment.",
+                },
+                {
+                  question:
+                    "Can control rooms be moved like control pulpits?",
+                  answer:
+                    "While control pulpits are generally portable, larger control rooms can be designed modularly for relocation or future expansion.",
+                },
+                {
+                  question:
+                    "How long do control rooms and pulpits last?",
+                  answer:
+                    "With proper maintenance, LANDSKING control rooms and pulpits can last over 20 years while maintaining optimal performance.",
+                },
+                {
+                  question:
+                    "Why choose LANDSKING for control rooms and pulpits?",
+                  answer:
+                    "LANDSKING offers durable, customizable, and cost-effective solutions designed to meet industry-specific requirements while ensuring safety and reliability.",
+                },
+                {
+                  question:
+                    "How long does it take to install control rooms and pulpits?",
+                  answer:
+                    "Installation times vary depending on project size and complexity, but LANDSKING’s prefabricated solutions ensure faster delivery compared to conventional construction methods.",
                 },
               ].map((faq, idx) => (
                 <details

@@ -29,7 +29,7 @@ export default function BannerP() {
       desc:
         "Committed to advancing innovation, fairness, equity, and quality in assessment.",
       video: "/homeslider.mp4",
-      link: "/preEngineeredBuildings",
+      link: "/rnd",
     },
     {
       title: "Renewable Energy Solution Provider",
@@ -45,13 +45,7 @@ export default function BannerP() {
       video: "/homeslider.mp4",
       link: "/preEngineeredBuildings",
     },
-    {
-      title: "Renewable Energy Solution Provider",
-      desc:
-        "Explore innovation in industrial equipment with green technologies.",
-      video: "/homeslider.mp4",
-      link: "/renewable-energy",
-    },
+    
   ];
 
   const [active, setActive] = useState(0);

@@ -21,7 +21,7 @@ const PortableSecurity = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+                Portable Security Guard Cabins
               </h1>
             </div>
           </div>
@@ -41,16 +41,12 @@ const PortableSecurity = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+                Portable Security Guard Cabins – Strong, Reliable, and Built for Safety
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative
-                prefabricated multi-storey structures that offer unmatched
-                durability, rapid construction, and eco-friendly solutions. With
-                over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized
-                to suit your specific requirements—whether for commercial,
-                institutional, or residential applications.
+                LANDSKING is a trusted manufacturer of prefabricated security cabins and guard rooms. Built with durable PUF or EPS panels, our cabins ensure reliable protection and are among the finest available nationwide. <br /><br />
+                As a leading name in the industry, we specialize in portable guard cabins designed to provide a safe and comfortable space for security personnel at factories, warehouses, offices, and other facilities. <br /><br />
+                With innovative manufacturing and a wide range of ready-made solutions, we help businesses enhance both security and operational efficiency.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -61,31 +57,19 @@ const PortableSecurity = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
                 Why Choose Prefab Multi-Storey Buildings?
               </h3>
-              <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are
-                prefabricated off-site and swiftly assembled at the destination,
-                cutting construction time by up to 50% compared to traditional
-                building methods.
-              </p>
-              <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material
-                waste, and quicker project turnaround help bring down total
-                project costs—without sacrificing quality.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable
-                layouts, meet varied load-bearing needs, and can be easily
-                expanded in the future—perfect for evolving commercial and
-                institutional spaces.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to
-                less on-site disruption, reduced material wastage, and a smaller
-                environmental impact.
-              </p>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Robust Construction:</strong> Built with premium materials to ensure strength and long-term durability.</li>
+                <li><strong>Thermal Insulation:</strong> Maintains a comfortable interior temperature in all weather conditions.</li>
+                <li><strong>Weather Resistance:</strong> Withstands extreme heat, cold, and moisture effectively.</li>
+                <li><strong>Quick Installation:</strong> Delivered ready-to-use, requiring minimal on-site setup.</li>
+                <li><strong>Low Maintenance:</strong> Designed for long-lasting performance with little upkeep.</li>
+                <li><strong>Custom Design:</strong> Offered in multiple sizes and layouts to match specific security needs.</li>
+                <li><strong>Portable:</strong> Easy to transport and relocate when required.</li>
+              </ul>
+
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -97,42 +81,6 @@ const PortableSecurity = () => {
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Prefab Multi-Storey Buildings for Multipurpose Applications
-            </h2>
-            <p className="text-gray-700 text-lg">
-              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and
-              dependable multi-storey prefabricated buildings tailored for a
-              variety of uses—including office hubs, commercial centers, and
-              institutional infrastructures. Constructed using advanced PUF/EPS
-              insulated panels and Light Gauge Steel Framing (LGSF) technology,
-              our buildings offer excellent durability, thermal efficiency, and
-              quick on-site assembly.
-              <br />
-              <br />
-              Each structure is meticulously designed to meet vital engineering
-              standards, including earthquake resistance (seismic compliance),
-              wind load management, and optimal load-bearing capacity. At
-              Landsking Infra Pvt Ltd, we manage the entire process
-              in-house—from architectural design and manufacturing to complete
-              on-site erection—providing a true turnkey experience.
-              <br />
-              <br />
-              Our prefab multi-storey solutions are especially suitable for
-              sites with space constraints or time-sensitive schedules. By
-              combining Pre-Engineered Building (PEB) systems with LGSF
-              frameworks, we ensure enhanced strength and structural integrity.
-              In addition, fire-rated coatings are applied to meet high safety
-              benchmarks.
-              <br />
-              <br />
-              Backed by 20+ years of industry experience, Landsking Infra Pvt
-              Ltd Prefab is a trusted partner for fast, cost-effective, and
-              long-lasting multi-storey building solutions across India.
-            </p>
-          </div>
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -145,17 +93,15 @@ const PortableSecurity = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Advanced Manufacturing Technology at EPACK Prefab
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
-              </ul>
+              <p className="text-gray-700 mb-4">
+                At LANDSKING, our manufacturing process allows us to customize the design and structure of each portable security cabin to meet our clients’ specific requirements. This ensures every cabin is tailored and unique for individual needs. <br /><br />
+
+                Our cabins are built on a strong steel framework for durability and stability. The walls use composite insulated panels, offering excellent thermal insulation and an ergonomic design for a comfortable working environment.<br /><br />
+
+                We provide guard cabins in various standard sizes, including 4’x4′, 4’x6′, 4’x8′, 6’x8′, and 8’x10′, along with custom dimensions. Door and window placements are also flexible to fit the specific requirements of each site.</p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
               </button>
@@ -165,21 +111,17 @@ const PortableSecurity = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
-              <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric
-                tons, Landsking Infra Pvt Ltd Prefab is fully equipped to
-                execute large-scale and technically demanding prefab
-                construction projects across India. Our offerings align with
-                global quality standards and are fully customizable to suit
-                specific project needs, including:
-              </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Uses of Portable Security Guard Cabins
+              </h3>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Construction Sites:</strong> Efficiently monitors workers and visitors at entrances.</li>
+                <li><strong>Corporate Offices:</strong> Provides a secure station for office security staff.</li>
+                <li><strong>Factories & Warehouses:</strong> Oversees movement of goods and personnel in industrial facilities.</li>
+                <li><strong>Parking Lots & Toll Plazas:</strong> Controls vehicle access and ensures smooth traffic flow.</li>
+                <li><strong>Residential Complexes:</strong> Strengthens security for gated communities and apartments.</li>
               </ul>
+
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -202,76 +144,112 @@ const PortableSecurity = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Landsking Infra Pvt Ltd Prefab?
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Why Choose Portable Security Guard Cabins from Landsking Prefab?
               </h3>
-              <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Durable Construction:</strong> Made with strong materials to withstand harsh weather and continuous use for long-lasting performance.</li>
+                <li><strong>Easy Installation:</strong> Prefabricated and ready-to-install, reducing on-site work and speeding up deployment.</li>
+                <li><strong>Portable:</strong> Can be easily moved and relocated to meet changing site requirements.</li>
+                <li><strong>Customizable:</strong> Size, layout, and features can be tailored to your specific needs.</li>
+                <li><strong>Comfort & Safety:</strong> Designed to provide a comfortable workspace with proper ventilation, lighting, and essential utilities for security personnel.</li>
+                <li><strong>Cost-Effective:</strong> Prefabrication lowers construction costs and reduces setup time, offering a quick, budget-friendly solution.</li>
               </ul>
+
             </div>
           </div>
+
+
+          {/* Centered Heading + Paragraph */}
+          <div className="text-center mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
+              Why Landsking Prefab?
+            </h2>
+            <p className="text-gray-700 text-lg">
+              With years of experience in prefabricated solutions, LANDSKING provides portable guard cabins that meet high standards of quality, safety, and efficiency. Our products are designed to deliver long-lasting performance and excellent value, reflecting our expertise and innovation in the prefab industry.
+              <br />
+              <br />
+              For more information about our Portable Security Guard Cabins, contact us today!
+            </p>
+          </div>
+
 
           {/* FAQ Section */}
           <div className="max-w-4xl mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-[#000080]">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "What is a portable cabin?",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "Portable cabins are modular structures that can be used for offices on construction sites, security stations, temporary lodging, storage solutions, and sanitary facilities.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "What is a security hut?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "Security huts act as the primary barrier to prevent unauthorized entry, intrusions, or theft at industrial, commercial, and high-security locations.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question: "How are porta cabins used?",
                   answer:
-                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
-                },
-                {
-                  question:
-                    "How long does it take to construct a prefab multi-storey building?",
-                  answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
-                },
-                {
-                  question: "Where can I use these structures?",
-                  answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "Porta cabins are ideal for on-site offices, small office setups, or staff accommodation, with the flexibility to move them whenever required.",
                 },
                 {
                   question:
-                    "What are the benefits of using prefab multi-storey buildings?",
+                    "What is the standard size of a security hut?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    (<div>
+                      <p>Portable security cabins generally come in the following dimensions:</p>
+                      <ul className="list-disc pl-5 text-gray-700 mb-4">
+                        <li>4ft x 4ft</li>
+                        <li>4ft x 6ft</li>
+                        <li>6ft x 6ft</li>
+                        <li>8ft x 8ft</li>
+                      </ul>
+                      <p>Custom heights are available according to your needs.</p>
+                    </div>),
+                },
+                {
+                  question: "What is a portable security booth used for?",
+                  answer:
+                    "A portable security booth serves as a movable shelter for security personnel, allowing it to be positioned wherever needed. Its robust construction ensures it withstands diverse weather and remains durable over time.",
                 },
                 {
                   question:
-                    "In which sectors can prefab multi-storey buildings be utilized?",
+                    "What are the ways to secure a remote cabin?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    (<div>
+                      <p>To ensure the safety of your remote cabin:</p>
+                      <ul className="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Strengthen all doors and windows.</li>
+                        <li>Do not store valuables inside.</li>
+                        <li>Keep the cabin looking lived-in.</li>
+                        <li>Get help or advice from local people</li>
+                        <li>Set up a dependable security system.</li>
+                      </ul>
+                    </div>),
                 },
                 {
                   question:
-                    "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                    "Who manufactures the best acoustic enclosures?",
                   answer:
-                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "LANDSKING has earned a reputation as a trusted acoustic enclosure manufacturer, supplying reliable and effective noise control and soundproofing solutions for multiple applications.",
                 },
                 {
                   question:
-                    "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                    "What makes prefabricated security cabins useful?",
                   answer:
-                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "These pre-built cabins offer speedy installation, reliable durability, and customizable features for security purposes. Their mobility ensures they can be relocated easily, making them a flexible option for boosting security arrangements.",
                 },
+                {
+                  question:
+                    "Who are the top security cabin manufacturers?",
+                  answer:
+                    "LANDSKING is a leading PEB security cabin manufacturer in India. The company has partnered with numerous well-known industry brands, providing them with durable and customizable security cabins for a range of applications, ensuring both safety and long-lasting performance.",
+                },
+        
               ].map((faq, idx) => (
                 <details
                   key={idx}

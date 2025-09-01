@@ -79,7 +79,7 @@ export default function SportsLeisureBuilding() {
         <div
           className="flex-1 flex items-center justify-center p-6 sm:p-8 bg-cover bg-center relative"
           style={{
-            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
+            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/sectorimg/sports.jpg')`,
           }}
         >
           <div className="text-white text-center relative z-10">
@@ -128,7 +128,7 @@ export default function SportsLeisureBuilding() {
 
             <div className="relative w-full h-60 sm:h-72 md:h-[450px]">
               <Image
-                src="/Industrial-Buildings-Construction.webp"
+                src="/sectorimg/sportss.jpeg"
                 alt="Industrial Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -143,7 +143,7 @@ export default function SportsLeisureBuilding() {
         <section className="bg-gray-50 py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
-              image="/NDR.webp"
+              image="/sectorimg/sportsss.jpeg"
               icon={<FaWarehouse size={34} className="text-white" />}
               title="Stadium Sports Complex"
               description="Modular prefabricated stadium structures offer a modern and cost-effective alternative to permanent stadiums. If you manage a sports team and require quickly installed infrastructure, modular stadiums are the ideal solution. We can construct your stadium facilities efficiently within a matter of weeks."

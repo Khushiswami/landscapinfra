@@ -21,7 +21,7 @@ const ColdRoom = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+                Cold Storage & Cold Room Manufacturer
               </h1>
             </div>
           </div>
@@ -41,16 +41,12 @@ const ColdRoom = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+                LANDSKING – Leading Cold Storage and Cold Room Solutions Provider in India
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative
-                prefabricated multi-storey structures that offer unmatched
-                durability, rapid construction, and eco-friendly solutions. With
-                over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized
-                to suit your specific requirements—whether for commercial,
-                institutional, or residential applications.
+                Nearly 40–50% of fresh produce in India goes to waste annually because of inadequate cold chain systems, causing losses worth USD 440 billion. <br /><br />
+
+                LANDSKING provides state-of-the-art cold storage and cold room solutions to protect perishable goods and reduce wastage. Backed by industry expertise, high-quality standards, and innovative solutions, we are a trusted cold storage manufacturer, cold room manufacturer, and supplier of cold room panels for businesses across sectors.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -61,31 +57,16 @@ const ColdRoom = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Choose Prefab Multi-Storey Buildings?
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Reasons to Choose LANDSKING for Your Cold Storage and Cold Room Needs
               </h3>
-              <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are
-                prefabricated off-site and swiftly assembled at the destination,
-                cutting construction time by up to 50% compared to traditional
-                building methods.
-              </p>
-              <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material
-                waste, and quicker project turnaround help bring down total
-                project costs—without sacrificing quality.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable
-                layouts, meet varied load-bearing needs, and can be easily
-                expanded in the future—perfect for evolving commercial and
-                institutional spaces.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to
-                less on-site disruption, reduced material wastage, and a smaller
-                environmental impact.
-              </p>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Proven Expertise:</strong> Years of experience delivering high-performance, industry-specific cold storage solutions.</li>
+                <li><strong>Customized Designs:</strong> Storage systems tailored to your precise requirements for optimal space and temperature management.</li>
+                <li><strong>Efficient Operations:</strong> Energy-saving technologies that minimize costs and enhance sustainability.</li>
+                <li><strong>Top-Quality Construction:</strong> High-grade materials and advanced manufacturing for durability and reliability.</li>
+                <li><strong>Standards Compliance:</strong> Adherence to all regulatory guidelines for safe and dependable storage.</li>
+              </ul>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -97,42 +78,7 @@ const ColdRoom = () => {
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Prefab Multi-Storey Buildings for Multipurpose Applications
-            </h2>
-            <p className="text-gray-700 text-lg">
-              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and
-              dependable multi-storey prefabricated buildings tailored for a
-              variety of uses—including office hubs, commercial centers, and
-              institutional infrastructures. Constructed using advanced PUF/EPS
-              insulated panels and Light Gauge Steel Framing (LGSF) technology,
-              our buildings offer excellent durability, thermal efficiency, and
-              quick on-site assembly.
-              <br />
-              <br />
-              Each structure is meticulously designed to meet vital engineering
-              standards, including earthquake resistance (seismic compliance),
-              wind load management, and optimal load-bearing capacity. At
-              Landsking Infra Pvt Ltd, we manage the entire process
-              in-house—from architectural design and manufacturing to complete
-              on-site erection—providing a true turnkey experience.
-              <br />
-              <br />
-              Our prefab multi-storey solutions are especially suitable for
-              sites with space constraints or time-sensitive schedules. By
-              combining Pre-Engineered Building (PEB) systems with LGSF
-              frameworks, we ensure enhanced strength and structural integrity.
-              In addition, fire-rated coatings are applied to meet high safety
-              benchmarks.
-              <br />
-              <br />
-              Backed by 20+ years of industry experience, Landsking Infra Pvt
-              Ltd Prefab is a trusted partner for fast, cost-effective, and
-              long-lasting multi-storey building solutions across India.
-            </p>
-          </div>
+
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -145,17 +91,16 @@ const ColdRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Key Features of LANDSKING Cold Storage and Cold Room Solutions
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
+              <p className="text-gray-700 mb-4">Our cold rooms and storage systems combine precision and innovation for optimal operation:</p>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li>Factory-Engineered Panels: High-quality insulated panels ensure thermal efficiency and durability.</li>
+                <li>Superior Insulation: Incorporates PUF/EPS and advanced continuous line panels for reduced energy loss and improved heat retention.</li>
+                <li>Precision Design: Structurally optimized for reliable and consistent functionality.</li>
               </ul>
+
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
               </button>
@@ -165,21 +110,18 @@ const ColdRoom = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">Cold Storage Manufacturing Technology</h3>
               <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric
-                tons, Landsking Infra Pvt Ltd Prefab is fully equipped to
-                execute large-scale and technically demanding prefab
-                construction projects across India. Our offerings align with
-                global quality standards and are fully customizable to suit
-                specific project needs, including:
+                We use advanced manufacturing technologies to deliver superior quality and performance:
               </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li>Continuous Line Panels: Newly implemented panels provide consistent quality and are ideal for cold room construction.</li>
+                <li>Factory-Produced Insulated Panels: Offer accurate thermal control and robust durability.</li>
+                <li>Innovative Insulation: Uses PUF/EPS for excellent energy retention.</li>
+                <li>Precision Structural Design: Ensures consistent performance and integrity in all conditions.</li>
               </ul>
+
+
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -202,17 +144,47 @@ const ColdRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Landsking Infra Pvt Ltd Prefab?
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Applications of Cold Room and Cold Storage Solutions
               </h3>
-              <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
+              <p className="text-gray-700 mb-4">
+                LANDSKING’s cold storage and cold room solutions serve a wide range of industries, including:              </p>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Food Sector:</strong> Keep perishable food items like fruits, vegetables, dairy, and meat fresh.</li>
+                <li><strong>Pharma Industry:</strong> Ensure secure storage of medicines, vaccines, and sensitive pharmaceuticals.</li>
+                <li><strong>Chemicals:</strong> Preserve chemicals and hazardous substances under controlled conditions.</li>
+                <li><strong>Horticulture:</strong> Prolong the life and quality of flowers, plants, and horticultural produce.</li>
               </ul>
+
             </div>
+          </div>
+
+          {/* Centered Heading + Paragraph */}
+          <div className=" mx-auto">
+            <h2 className="text-center text-3xl font-bold mb-4 text-[#000080]">
+              What Makes LANDSKING Cold Room Panels Exceptional
+            </h2>
+            <p className="text-gray-700 text-lg">
+              LANDSKING cold room and cold storage panels are engineered for superior performance:
+              <br />
+
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Precise Temperature Control:</strong> Ensures energy efficiency and maintains product integrity.</li>
+                <li><strong>Robust Construction:</strong> Panels designed to endure rigorous cold room and storage conditions.</li>
+                <li><strong>Fast Installation:</strong> Modular, pre-fabricated components enable quick assembly and reduced operational delays.</li>
+              </ul>
+
+              LANDSKING delivers reliable, energy-efficient, and durable cold storage and cold room solutions. Through continuous line panel manufacturing, advanced designs, and quality-driven processes, we enable industries to safeguard products and reduce waste.
+              <br />
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Accurate Temperature Management:</strong> Ensures product preservation with precise and stable temperatures.</li>
+                <li><strong>Operational Efficiency:</strong> Thermally efficient materials lower energy costs.</li>
+                <li><strong>Long-Lasting Panels:</strong> Factory-produced panels create airtight and robust structures.</li>
+                <li><strong>Tailored Layouts:</strong> Designs customized for your facility and industry needs.</li>
+                <li><strong>Fast Assembly:</strong> Pre-fabricated components allow rapid and smooth installation, reducing delays.</li>
+              </ul>
+
+            </p>
           </div>
 
           {/* FAQ Section */}
@@ -220,58 +192,109 @@ const ColdRoom = () => {
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-[#000080]">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "How is a cold storage facility used?",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "A cold storage facility provides a regulated, chilled space for storing perishable goods like food, medicines, and other temperature-sensitive materials.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "What are the advantages of prefabricated cold storage?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "These solutions allow for quick setup, reduce costs, save energy, and can be tailored to specific storage needs.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question: "Which sectors use cold storage facilities?",
                   answer:
-                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
+                    "Cold storage is widely used in agriculture, food production, pharmaceuticals, fisheries, and retail to preserve perishable products.",
                 },
                 {
-                  question:
-                    "How long does it take to construct a prefab multi-storey building?",
+                  question: "Which materials are commonly used in cold storage construction?",
                   answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
+                    "Insulated panels, including PUF, EPS, and Rockwool, are used in cold storage facilities to provide effective thermal insulation and robust durability.",
                 },
                 {
-                  question: "Where can I use these structures?",
+                  question: "Can cold storage solutions be customized?",
                   answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "Yes, LANDSKING offers fully customizable cold storage solutions to meet specific temperature control and size requirements.",
                 },
                 {
-                  question:
-                    "What are the benefits of using prefab multi-storey buildings?",
+                  question: "What temperature ranges can cold storage maintain?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    "Cold storage solutions can maintain a broad range of temperatures, from deep-freezing at -40°C to chilled conditions between 0°C and 10°C, depending on your needs.",
                 },
                 {
-                  question:
-                    "In which sectors can prefab multi-storey buildings be utilized?",
+                  question: "What makes modern cold storage energy-efficient?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    "Cold storage systems use advanced insulation and energy-efficient technologies to minimize power consumption.",
                 },
                 {
-                  question:
-                    "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                  question: "What are the essential components of a cold storage unit?",
                   answer:
-                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "Key components of a cold storage unit include insulated panels, refrigeration systems, flooring, lighting, and climate control systems.",
                 },
                 {
-                  question:
-                    "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                  question: "In what way does cold storage prevent food wastage?",
                   answer:
-                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "Cold storage systems preserve perishable goods at ideal temperatures, reducing spoilage and lowering food wastage.",
                 },
+                {
+                  question: "Is it possible to enlarge cold storage facilities later?",
+                  answer:
+                    "Yes, modular cold storage units allow for seamless expansion to handle additional storage demands.",
+                },
+                 {
+                  question: "How long do prefabricated cold storage facilities last?",
+                  answer:
+                    "A well-maintained cold storage facility can provide reliable service for many decades.",
+                },
+                {
+                  question: "How do cold storage facilities ensure fire safety?",
+                  answer:
+                    "Cold storage units are built with fire-resistant panels and adhere to all relevant fire safety regulations.",
+                },
+                {
+                  question: "Does LANDSKING provide turnkey solutions for cold storage?",
+                  answer:
+                    "Yes, LANDSKING delivers full turnkey solutions, covering everything from design and fabrication to transportation and installation.",
+                },
+                {
+                  question: "Are cold storage units suitable for pharmaceutical applications?",
+                  answer:
+                    "Cold storage systems are commonly used to preserve vaccines, medicines, and temperature-sensitive pharmaceutical products.",
+                },
+                 {
+                  question: "How does LANDSKING ensure the quality of its cold storage solutions?",
+                  answer:
+                    "LANDSKING uses premium materials, advanced manufacturing technology, and rigorous quality control processes to deliver durable and efficient cold storage facilities.",
+                },
+                {
+                  question: "How much does it cost to build a cold storage unit in India?",
+                  answer:
+                    "Costs vary based on dimensions, materials, and customization, with LANDSKING’s prefabricated options offering an economical solution.",
+                },
+                {
+                  question: "How long does it take to build a cold storage facility?",
+                  answer:
+                    "Prefabricated cold storage solutions enable fast construction, significantly reducing project timelines compared to traditional methods.",
+                },
+                {
+                  question: "What maintenance is required for cold storage systems?",
+                  answer:
+                    "Cold storage requires routine checks of insulation, cooling systems, and temperature controls to maintain optimal efficiency.",
+                },
+                {
+                  question: "Are portable cold storage units available?",
+                  answer:
+                    "Yes, LANDSKING provides portable cold storage units ideal for temporary or mobile storage requirements.",
+                },
+                {
+                  question: "What makes LANDSKING a reliable cold storage provider?",
+                  answer:
+                    "LANDSKING stands out for its superior quality, innovative and customizable designs, and complete turnkey services for every client.",
+                },
+                
               ].map((faq, idx) => (
                 <details
                   key={idx}

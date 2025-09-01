@@ -22,7 +22,7 @@ const CleanRoom = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-                Prefabricated Multi-Storey Building Manufacturer
+                Clean Room
               </h1>
             </div>
           </div>
@@ -42,16 +42,11 @@ const CleanRoom = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra
+                High-Precision Controlled Environments
               </h3>
               <p className="text-gray-700 mb-4">
-                At Landsking Infra, we excel in crafting innovative
-                prefabricated multi-storey structures that offer unmatched
-                durability, rapid construction, and eco-friendly solutions. With
-                over 20 years of industry experience and advanced production
-                facilities, we provide end-to-end turnkey solutions customized
-                to suit your specific requirements—whether for commercial,
-                institutional, or residential applications.
+                Clean rooms are specialized environments created to keep airborne particles, contaminants, and pollutants at extremely low levels. They are critical for sectors such as pharmaceuticals, electronics, biotechnology, food processing, and medical devices, where even tiny particles can compromise product quality. <br /><br />
+                LANDSKING excels in designing and producing modular clean room solutions using premium PUF, EPS, and Rockwool sandwich panels. Leveraging more than 25 years of prefabrication expertise, our systems comply with rigorous international standards, offering excellent hygiene, thermal performance, and contamination control.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -62,31 +57,18 @@ const CleanRoom = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Choose Prefab Multi-Storey Buildings?
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Why Choose Us for Clean Room Construction?
               </h3>
-              <p className="text-gray-700 mb-4">
-                🚀 Accelerated Build Time - Structural elements are
-                prefabricated off-site and swiftly assembled at the destination,
-                cutting construction time by up to 50% compared to traditional
-                building methods.
-              </p>
-              <p className="text-gray-700 mb-4">
-                💰 Economical Solution - Efficient designs, reduced material
-                waste, and quicker project turnaround help bring down total
-                project costs—without sacrificing quality.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🏢 Enhanced Design Versatility - Our buildings offer adaptable
-                layouts, meet varied load-bearing needs, and can be easily
-                expanded in the future—perfect for evolving commercial and
-                institutional spaces.
-              </p>
-              <p className="text-gray-700 mb-4">
-                🌍 Eco-Conscious Construction - Off-site manufacturing leads to
-                less on-site disruption, reduced material wastage, and a smaller
-                environmental impact.
-              </p>
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li><strong>Comprehensive In-House Design & Manufacturing:</strong> LANDSKING offers complete clean room solutions from concept design to commissioning, tailored for your industry’s needs.</li>
+                <li><strong>Premium Modular Panels:</strong> Constructed using insulated sandwich panels for high strength, thermal efficiency, and airtight performance.</li>
+                <li><strong>Flexible Configurations:</strong> ISO-class compliant clean rooms with modular layouts that can be easily expanded or reconfigured.</li>
+                <li><strong>Rapid Delivery:</strong> State-of-the-art production facilities enable fast manufacturing and installation, covering over 6,800 sqm daily.</li>
+                <li><strong>Nationwide Project Execution:</strong> Delivering to pharma hubs, industrial zones, and R&D centers across India with a reliable logistics network.</li>
+                <li><strong>Standards & Compliance:</strong> Designed to adhere to GMP, FDA, ISO, and WHO guidelines depending on project specifications.</li>
+              </ul>
+
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -98,42 +80,7 @@ const CleanRoom = () => {
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Prefab Multi-Storey Buildings for Multipurpose Applications
-            </h2>
-            <p className="text-gray-700 text-lg">
-              Landsking Infra Pvt Ltd Prefab delivers cutting-edge and
-              dependable multi-storey prefabricated buildings tailored for a
-              variety of uses—including office hubs, commercial centers, and
-              institutional infrastructures. Constructed using advanced PUF/EPS
-              insulated panels and Light Gauge Steel Framing (LGSF) technology,
-              our buildings offer excellent durability, thermal efficiency, and
-              quick on-site assembly.
-              <br />
-              <br />
-              Each structure is meticulously designed to meet vital engineering
-              standards, including earthquake resistance (seismic compliance),
-              wind load management, and optimal load-bearing capacity. At
-              Landsking Infra Pvt Ltd, we manage the entire process
-              in-house—from architectural design and manufacturing to complete
-              on-site erection—providing a true turnkey experience.
-              <br />
-              <br />
-              Our prefab multi-storey solutions are especially suitable for
-              sites with space constraints or time-sensitive schedules. By
-              combining Pre-Engineered Building (PEB) systems with LGSF
-              frameworks, we ensure enhanced strength and structural integrity.
-              In addition, fire-rated coatings are applied to meet high safety
-              benchmarks.
-              <br />
-              <br />
-              Backed by 20+ years of industry experience, Landsking Infra Pvt
-              Ltd Prefab is a trusted partner for fast, cost-effective, and
-              long-lasting multi-storey building solutions across India.
-            </p>
-          </div>
+
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -146,16 +93,16 @@ const CleanRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Applications of Prefab Multi-Storey Structures
+              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+                Industries Served by Us
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏥 Healthcare Facilities</li>
-                <li>🏢 Corporate Office Buildings</li>
-                <li>🏫 Schools & Educational Institutes</li>
-                <li>🏨 Hostels & Hotels</li>
-                <li>🏬 Retail & Shopping Complexes</li>
-                <li>🏘️ Residential Apartments</li>
+              <ul className=" list-disc text-gray-700 mb-4 space-y-1">
+                <li>Pharmaceutical & API Manufacturing Units</li>
+                <li>Biotechnology & Life Science Industries</li>
+                <li>Food & Beverage Manufacturing</li>
+                <li>Electronics and Semiconductor Assembly</li>
+                <li>Medical, Lab & Research Centers</li>
+                <li>Aerospace & Defense Sectors</li>
               </ul>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
@@ -166,21 +113,18 @@ const CleanRoom = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Capabilities</h3>
-              <p className="text-gray-700 mb-4">
-                With an annual production capacity exceeding 133,924 metric
-                tons, Landsking Infra Pvt Ltd Prefab is fully equipped to
-                execute large-scale and technically demanding prefab
-                construction projects across India. Our offerings align with
-                global quality standards and are fully customizable to suit
-                specific project needs, including:
-              </p>
-              <ul className="space-y-1">
-                <li>G+1, G+2, and multi-level building configurations</li>
-                <li>Seismic-resilient construction for enhanced safety</li>
-                <li>Custom load-bearing designs based on functional demands</li>
-                <li>Seamless integration of HVAC and MEP systems</li>
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">Essential Features of LANDSKING Clean Rooms</h3>
+
+              <ul className="list-disc pl-5 text-gray-700 mb-4">
+                <li>Leak-proof, continuous construction</li>
+                <li>Excellent thermal and sound insulation</li>
+                <li>Panels that resist fire and corrosion</li>
+                <li>Easy-to-clean, hygienic finishes</li>
+                <li>Fully compatible with HVAC and filtration systems</li>
+                <li>Lower energy consumption thanks to high-performance insulation</li>
+                <li>Long-lasting, maintenance-free design</li>
               </ul>
+
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -192,28 +136,19 @@ const CleanRoom = () => {
             </div>
           </div>
 
-          {/* Row 5 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
-              <Image
-                src="/Menuimges/row5.jpg"
-                alt="Row 5"
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Why Landsking Infra Pvt Ltd Prefab?
-              </h3>
-              <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
-              </ul>
-            </div>
+
+
+          {/* Centered Heading + Paragraph */}
+          <div className="text-center mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
+              Let’s Build Your Clean Room – The Smarter Way
+            </h2>
+            <p className="text-gray-700 text-lg">
+              Planning to set up a clean room? LANDSKING offers a flexible, affordable, and regulation-compliant solution, executed with accuracy and expertise.
+              <br />
+
+              📩 Contact us today for expert consultation on your clean room project.
+            </p>
           </div>
 
           {/* FAQ Section */}
@@ -221,57 +156,73 @@ const CleanRoom = () => {
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-[#000080]">
               {[
                 {
-                  question: "What is a prefab multi-storey building?",
+                  question: "What is a cleanroom?",
                   answer:
-                    "A prefab multi-storey building is a structure made from pre-engineered components manufactured off-site and assembled on-site. These buildings are faster to build and more cost-efficient than traditional RCC structures.",
+                    "A cleanroom is a specially designed space that minimizes airborne pollutants, including dust, microbes, and particles, ensuring the cleanest possible environment. They are widely used in sectors such as electronics, pharma, and medical equipment production.",
                 },
                 {
-                  question: "Are prefab buildings durable?",
+                  question: "What are ISO cleanrooms?",
                   answer:
-                    "Yes. Our prefab buildings are designed to withstand seismic loads, adverse weather conditions, and daily usage for decades.",
+                    "ISO cleanrooms are rated by air cleanliness. In the U.S. Federal Standard 209, the class is defined by the number of particles 0.5 microns or larger present in each cubic foot of air.",
                 },
                 {
-                  question: "Can these buildings be customized?",
+                  question: "Which types of cleanrooms are commonly used?",
                   answer:
-                    "Absolutely. Landsking Infra Pvt Ltd Prefab offers complete customization based on size, layout, height, and interior specifications.",
-                },
-                {
-                  question:
-                    "How long does it take to construct a prefab multi-storey building?",
-                  answer:
-                    "Depending on the project size, construction timelines can be reduced by up to 40-60% compared to traditional construction.",
-                },
-                {
-                  question: "Where can I use these structures?",
-                  answer:
-                    "They’re ideal for hospitals, offices, schools, residential complexes, retail outlets, and more.",
+                    "The two main types of cleanrooms are turbulently ventilated (non-unidirectional) and unidirectional flow cleanrooms. Prefabricated versions of both types are available.",
                 },
                 {
                   question:
-                    "What are the benefits of using prefab multi-storey buildings?",
+                    "What is the cost of a cleanroom in India?",
                   answer:
-                    "Benefits include reduced construction time, cost-effectiveness, design flexibility, sustainability, and high-quality standards.",
+                    "In India, the cost of modular cleanrooms ranges from less than 7,000 INR to more than 70,000 INR per square foot. LANDSKING delivers competitively priced cleanroom solutions with free-standing walls and robust load-bearing ceilings.",
+                },
+                {
+                  question: "Who uses cleanrooms?",
+                  answer:
+                    (<div>
+                      <ul className="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Pharmaceuticals & Nutraceuticals</li>
+                        <li>Research Labs & Laboratories</li>
+                        <li>Hospitals & Healthcare Facilities</li>
+                        <li>Food Processing Industries</li>
+                        <li>Cosmetics & Perfume Manufacturing</li>
+                        <li>Medical Cannabis Production</li>
+                        <li>Sustainable Energy Supply Industries</li>
+                      </ul>
+                    </div>),
                 },
                 {
                   question:
-                    "In which sectors can prefab multi-storey buildings be utilized?",
+                    "Who manufactures cleanrooms?",
                   answer:
-                    "They are suitable for various sectors, including commercial complexes, educational institutions, healthcare facilities, and residential apartments.",
+                    "LANDSKING is a leading provider of modular cleanroom systems, offering complete design, manufacturing, and installation services to meet specific industry requirements.",
                 },
                 {
                   question:
-                    "How does Landsking Infra Pvt Ltd ensure the quality of its prefab buildings?",
+                    "Which cleanroom standard is commonly followed in India?",
                   answer:
-                    "Landsking Infra Pvt Ltd employs stringent quality control measures, advanced manufacturing techniques, and skilled professionals to deliver high-quality prefab structures.",
+                    "In India, ISO 7 is a typical cleanroom classification, allowing under 352,000 particles >0.5 microns per cubic meter and mandating 60 HEPA-filtered air changes per hour. This is equivalent to the Federal Standard Class 10,000.",
                 },
                 {
                   question:
-                    "Who is the best manufacturer of prefab multi-storey buildings in India?",
+                    "How are pharmaceutical cleanrooms classified?",
                   answer:
-                    "Landsking Infra Pvt Ltd Prefab is one of the leading manufacturers of prefab multi-storey buildings in India, known for innovative designs and superior quality.",
+                    "Pharmaceutical cleanrooms are categorized based on the number of airborne particles per cubic meter. This classification ensures the environment complies with pharmaceutical standards. Common ISO classes for pharmaceutical cleanrooms are ISO 7 and ISO 8, corresponding to Class 10,000 and Class 100,000 in the older Federal Standard 209E.",
+                },
+                {
+                  question:
+                    "What is the recommended ceiling coverage for a cleanroom?",
+                  answer:
+                    "Ceiling coverage refers to the portion of the ceiling equipped with HEPA (high-efficiency particulate air) and ULPA (ultra-low penetration air) filters. For an ISO Class 1 cleanroom, which is the highest cleanliness level, 500–750 air changes per hour are recommended, with 80–100% ceiling coverage.",
+                },
+                {
+                  question:
+                    "How are cleanrooms used in pharma?",
+                  answer:
+                    "A pharmaceutical cleanroom is a specially controlled space where air is supplied, filtered, and circulated under strict monitoring. It ensures that products remain free from dust, microbes, and other pollutants.",
                 },
               ].map((faq, idx) => (
                 <details

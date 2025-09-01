@@ -10,12 +10,7 @@ export default function AboutPebP() {
     { value: 1.2e6, suffix: "+", label: "Sq. Ft. Area Delivered", icon: Ruler },
     { value: 200, suffix: "+", label: "Project Executed", icon: Building2 },
     { value: 55, suffix: "+", label: "Global Clients", icon: Globe },
-    {
-      value: 7,
-      suffix: "+",
-      label: "Years Manufacturing Experience",
-      icon: Factory,
-    },
+    { value: 7, suffix: "+", label: "Years Manufacturing Experience", icon: Factory },
   ];
 
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -49,18 +44,16 @@ export default function AboutPebP() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-20 px-5 md:px-16 overflow-hidden">
+    <section className="relative py-16 px-4 md:px-16 overflow-hidden">
       {/* Decorative Background */}
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100"></div> */}
-      <div className="absolute top-20 left-10  bg-[#f2f2f2]  rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-10 right-10  bg-[#f2f2f2]  rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
+      <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center z-10">
+      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center z-10">
         {/* Left Section - Video & Images */}
-        {/* Left Section - Video & Image */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative w-full h-68 md:h-70 overflow-hidden rounded-2xl shadow-lg hover:border-blue-400 transition-all duration-500">
+          <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-2xl shadow-lg hover:border-blue-400 transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -71,56 +64,49 @@ export default function AboutPebP() {
             />
           </div>
 
-          {/* Single Image with Zigzag Right Cut */}
-          <div className="relative w-full h-44 overflow-hidden rounded-xl shadow-lg transform transition-transform duration-700 hover:scale-105">
+          {/* Image */}
+          <div className="relative w-full h-40 sm:h-48 md:h-52 overflow-hidden rounded-xl shadow-lg transform transition-transform duration-700 hover:scale-105">
             <Image
               src="/attt.png"
               alt="Building 1"
               fill
-              className="object-cover "
-              // className="object-cover [clip-path:polygon(10%_0%,85%_0%,100%_50%,85%_100%,0%_100%)]"
+              className="object-cover"
             />
           </div>
         </div>
 
         {/* Right Section - About Us */}
         <div>
-          <h2 className="text-3xl md:text-3xl font-extrabold text-[#000080] mb-6">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080] mb-4 sm:mb-6">
             ABOUT US
           </h2>
 
-          <p className="text-gray-700 mb-5 leading-relaxed text-lg">
-            LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More
-            than 120MT Capacity Rice mill Plant ,350 Minor and Major Bridge and
-            Super Structure, 26 KM MS Pipe line upto 3.8m dia, and 410KM HDPE
-            pipeline Excavation and laying , 6,76,000Sqft PEB Erection Work ,
-            15.5MW solar plant in Its Portfolio .
+          <p className="text-gray-700 mb-4 sm:mb-5 leading-relaxed text-sm sm:text-base">
+            LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More than 120MT Capacity Rice mill Plant, 350 Minor and Major Bridge and Super Structure, 26 KM MS Pipe line upto 3.8m dia, and 410KM HDPE pipeline Excavation and laying, 6,76,000Sqft PEB Erection Work, 15.5MW solar plant in Its Portfolio.
           </p>
 
           {/* Stats with Icons */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
               return (
                 <div
                   key={i}
-                  className="flex items-center gap-3 bg-white/70 backdrop-blur-lg p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
+                  className="flex items-center gap-3 bg-white/80 backdrop-blur-lg p-3 sm:p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
                 >
-                  <div className="p-3 bg-[#000080] rounded-full text-white shadow-lg">
-                    <Icon size={22} />
+                  <div className="p-2 sm:p-3 bg-[#000080] rounded-full text-white shadow-lg">
+                    <Icon size={20} className="sm:w-5 sm:h-5" />
                   </div>
                   <div>
                     <h3
                       ref={(el) => {
                         numberRefs.current[i] = el;
                       }}
-                      className="text-2xl md:text-2xl font-extrabold text-[#000080]"
+                      className="text-xl sm:text-2xl font-extrabold text-[#000080]"
                     >
                       0
                     </h3>
-                    <p className="text-gray-600 text-xs md:text-sm">
-                      {stat.label}
-                    </p>
+                    <p className="text-gray-600 text-xs sm:text-sm">{stat.label}</p>
                   </div>
                 </div>
               );

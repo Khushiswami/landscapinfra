@@ -7,28 +7,28 @@ import { useRouter } from "next/navigation";
 
 const TABS = [
   {
-    title: "Pre Engineered Buildings",
+    title: "Product Engineering",
     headline: "High-Performance Pre-Engineered Steel Buildings",
     body: "LandsKingInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings. Each structure is designed for strength, flexibility, and long-lasting performance, tailored to meet diverse industrial and commercial needs.",
     img: "/about.png",
     buttonText: "VIEW MORE",
-    url: "/menupageimg/peb2.jpg",
+    url: "/productengineering",
   },
   {
-    title: "EPC Solutions",
+    title: "CAD / CAM / CAE Services",
     headline: "End-to-End EPC Solutions",
     body: "From concept to commissioning, our EPC solutions ensure seamless project execution with a strong focus on quality, cost-efficiency, and sustainability. We integrate advanced technologies and global standards to deliver world-class infrastructure.",
     img: "/solution/stell.jpg",
     buttonText: "VIEW MORE",
-    url: "/PEB.jpg",
+    url: "/cadservices",
   },
   {
-    title: "Structural Engineering Services",
+    title: "Simulation Design for Manufacturing",
     headline: "Excellence in Structural Engineering",
     body: "Our expert engineers provide innovative structural design and analysis services. With advanced tools and decades of expertise, we ensure the highest safety, efficiency, and performance standards for every project we deliver.",
     img: "/Square2.jpg",
     buttonText: "VIEW MORE",
-    url: "/structuralsteel",
+    url: "/rndsimulation",
   },
   
 ];

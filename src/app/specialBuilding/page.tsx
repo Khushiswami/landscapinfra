@@ -73,12 +73,12 @@ export default function IndustrialBuildingsConstruction() {
         <div
           className="flex-1 flex items-center justify-center p-6 sm:p-8 bg-cover bg-center relative"
           style={{
-            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
+            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/sectorimg/sp.webp')`,
           }}
         >
           <div className="text-white text-center relative z-10">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-              Sports & Leisure
+              Special Buildings
             </h1>
           </div>
         </div>
@@ -89,8 +89,7 @@ export default function IndustrialBuildingsConstruction() {
         <div className="container mx-auto px-2 sm:px-4">
           <div className="text-center mb-8 sm:mb-10">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Pre-Engineered Building Solutions for Sports and Recreation
-              Facilities
+             Prefab Construction of Specialized Buildings
             </h2>
             <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
@@ -98,12 +97,12 @@ export default function IndustrialBuildingsConstruction() {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Landsking Infra delivers comprehensive Pre-Engineered Building
-                (PEB) solutions...
+               We specialize in the design and manufacturing of versatile prefabricated structures, including K-houses, liftable porta cabins, Mi Homes, control pulpits, and soundproof enclosures. With over 25 years of experience in prefabrication,
+                we deliver durable, industry-compliant solutions tailored to a wide range of applications.
               </p>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Our PEBs effortlessly blend strong structural integrity with
-                attractive designs...
+              Our capabilities go beyond special structures — offering high-quality prefabricated warehouses, factory buildings, industrial sheds, poultry shelters, cold storage units, and clean rooms.
+               Every structure is engineered for efficiency, sustainability, and long-term performance.
               </p>
 
               <div className="flex items-center gap-3 sm:gap-4">
@@ -115,7 +114,7 @@ export default function IndustrialBuildingsConstruction() {
 
             <div className="relative w-full h-60 sm:h-72 md:h-[450px]">
               <Image
-                src="/Industrial-Buildings-Construction.webp"
+                src="/sectorimg/ste.webp"
                 alt="Industrial Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -130,10 +129,40 @@ export default function IndustrialBuildingsConstruction() {
         <section className="bg-gray-50 py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
-              image="/NDR.webp"
+              image="/sectorimg/control.jpg"
               icon={<FaWarehouse size={34} className="text-white" />}
-              title="Stadium Sports Complex"
-              description="Modular prefabricated stadium structures offer a modern and cost-effective..."
+              title="Control Room"
+              description="We offer durable, customizable control pulpits engineered for efficient performance in industrial settings. Built using high-quality materials, these units prioritize operator safety, ease of use, and reliable functionality — making them ideal for a wide range of control and monitoring applications."
+            />
+             <Card
+              image="/sectorimg/cabinn.webp"
+              icon={<FaWarehouse size={34} className="text-white" />}
+              title="Prefab Porta Cabins Manufacturer"
+              description="We manufacture high-quality, customizable porta cabins designed to meet diverse space and functional requirements. These portable units are perfect for construction sites, temporary offices, and on-site facilities, offering excellent durability, quick installation, and reliable convenience."
+            />
+             <Card
+              image="/sectorimg/acoustic.jpg"
+              icon={<FaWarehouse size={34} className="text-white" />}
+              title="Acoustic Enclosure"
+              description="We offer advanced acoustic enclosures specifically designed to reduce industrial noise and enhance workplace comfort. Engineered with high-performance sound-absorbing panels, these enclosures help create quieter environments around machinery and equipment. Ideal for a variety of industries, they support noise compliance standards while boosting employee focus and productivity."
+            />
+             <Card
+              image="/sectorimg/khouse.jpg"
+              icon={<FaWarehouse size={34} className="text-white" />}
+              title="K-House"
+              description="K-House represents a modern approach to sustainable living, blending innovative design with modular construction. Built for energy efficiency and comfort, it provides an eco-friendly housing solution ideal for individuals and families looking to embrace a greener, smarter lifestyle."
+            />
+             <Card
+              image="/sectorimg/mi.jpg"
+              icon={<FaWarehouse size={34} className="text-white" />}
+              title="Mi Homes"
+              description="MI Homes are modern, sustainable, and cost-effective modular housing solutions designed for rapid installation and long-lasting performance. Perfect for residential, commercial, and emergency use, these homes provide comfortable living spaces equipped with contemporary amenities."
+            />
+             <Card
+              image="/sectorimg/liftable.jpeg"
+              icon={<FaWarehouse size={34} className="text-white" />}
+              title="Liftable Cabin"
+              description="Liftable cabins offer a practical and flexible solution for a wide range of temporary or portable space requirements. Designed with mobility in mind, these units feature an easy lifting mechanism that ensures quick relocation without sacrificing comfort or functionality."
             />
           </div>
         </section>
@@ -142,14 +171,14 @@ export default function IndustrialBuildingsConstruction() {
       {/* Info Section */}
       <section className="bg-gray-50 py-12 sm:py-16 px-4 sm:px-6 md:px-16 text-center mb-10">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
-          Modern Designs with Flexible Customization Options
+          Functional Structures Designed for Everyday Life
         </h2>
         <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
         </div>
         <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
-          Pre-engineered building (PEB) technology has achieved global
-          recognition...
+          Our team is professionally trained to deliver quality and excellence, proficient at every stage of 
+          the manufacturing process—from gathering requirements to production and installation.
         </p>
       </section>
 
