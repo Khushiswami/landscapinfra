@@ -64,7 +64,7 @@ export default function Header() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/rnd"
                   className="block hover:bg-gray-100 px-2 py-1 rounded"
                 >
                   Engineering R&D
