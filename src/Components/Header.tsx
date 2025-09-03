@@ -71,7 +71,7 @@ export default function Header() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="renewableenergy"
                   className="block hover:bg-gray-100 px-2 py-1 rounded"
                 >
                   Renewable Energy
@@ -216,7 +216,7 @@ export default function Header() {
                   Our History
                 </Link>
                 <Link
-                  href="/about/leadership"
+                  href="/leadership"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Leadership
@@ -315,7 +315,7 @@ export default function Header() {
                 </li>{" "}
                 <li>
                   <Link
-                    href="#"
+                    href="/rnd"
                     className="block hover:bg-gray-100 px-2 py-1 rounded"
                   >
                     Engineering R&D
@@ -323,7 +323,7 @@ export default function Header() {
                 </li>{" "}
                 <li>
                   <Link
-                    href="#"
+                    href="renewableenergy"
                     className="block hover:bg-gray-100 px-2 py-1 rounded"
                   >
                     Renewable Energy
