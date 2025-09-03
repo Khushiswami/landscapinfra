@@ -10,42 +10,42 @@ const exploreItems = [
     subtitle: "Smart Design for the Brain of Technology",
     description:
       "Advanced semiconductor tools act like a strategist for microchips—analyzing, optimizing, and reducing risks so integrated circuits perform with precision and power.",
-    image: "/industry.jpg",
+    image: "/rndimages/semiconductor.jpg",
   },
   {
     title: "Materials 🔬",
     subtitle: "Material Intelligence: The DNA of Innovation",
     description:
       "Material platforms unlock the hidden properties of metals, polymers, and composites, giving engineers the data and models they need to build stronger, smarter products.",
-    image: "/industry.jpg",
+    image: "/rndimages/Material Intelligence.jpg",
   },
   {
     title: "Systems ⚙️",
     subtitle: "Engineering Harmony in Complex Systems",
     description:
       "Like a conductor guiding an orchestra, systems engineering software ensures every mechanical, digital, and electronic component works in sync—delivering efficiency before the first prototype is built.",
-    image: "/industry.jpg",
+    image: "/rndimages/systems engineering software.jpg",
   },
   {
     title: "Fluids 🌊",
     subtitle: "Mastering the Invisible Language of Flow",
     description:
       "CFD software turns the unseen movements of air and liquids into precise insights, helping engineers refine designs for better aerodynamics, cooling, and performance.",
-    image: "/industry.jpg",
+    image: "/rndimages/Multi-Body System Simulation.jpg",
   },
   {
     title: "Electronics ⚡",
     subtitle: "Reliable Electronics Through Multiphysics Precision",
     description:
       "Chips and 3D ICs behave like ecosystems where heat, electricity, and mechanics collide. Multiphysics tools reveal these interactions, ensuring efficient and resilient designs.",
-    image: "/industry.jpg",
+    image: "/rndimages/Reliable Electronics.jpeg",
   },
   {
     title: "Structures 🏗️",
     subtitle: "Strength You Can Simulate Before You Build",
     description:
       "Structural analysis software predicts how bridges, towers, and machines will endure stress and strain, giving engineers the confidence to design for safety and durability.",
-    image: "/industry.jpg",
+    image: "/rndimages/System Simulation.jpg",
   },
 ];
 
@@ -67,7 +67,10 @@ export default function ExploreSection() {
     );
   };
 
-  const visibleItems = exploreItems.slice(startIndex, startIndex + itemsPerPage);
+  const visibleItems = exploreItems.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
   return (
     <section className="bg-black py-12 px-6 md:px-12 relative">
@@ -103,23 +106,22 @@ export default function ExploreSection() {
       </div>
 
       {/* Prev/Next buttons row */}
-     {/* Prev/Next buttons row */}
-<div className="flex justify-center gap-6">
-  <button
-    onClick={handlePrev}
-    className="bg-black/60 hover:bg-black/80 p-3 rounded-full border-2 border-white shadow-lg transition-colors duration-300"
-  >
-    <ChevronLeft className="text-white" size={28} />
-  </button>
+      {/* Prev/Next buttons row */}
+      <div className="flex justify-center gap-6">
+        <button
+          onClick={handlePrev}
+          className="bg-black/60 hover:bg-black/80 p-3 rounded-full border-2 border-white shadow-lg transition-colors duration-300"
+        >
+          <ChevronLeft className="text-white" size={28} />
+        </button>
 
-  <button
-    onClick={handleNext}
-    className="bg-black/60 hover:bg-black/80 p-3 rounded-full border-2 border-white shadow-lg transition-colors duration-300"
-  >
-    <ChevronRight className="text-white" size={28} />
-  </button>
-</div>
-
+        <button
+          onClick={handleNext}
+          className="bg-black/60 hover:bg-black/80 p-3 rounded-full border-2 border-white shadow-lg transition-colors duration-300"
+        >
+          <ChevronRight className="text-white" size={28} />
+        </button>
+      </div>
     </section>
   );
 }

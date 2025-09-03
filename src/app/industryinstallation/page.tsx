@@ -90,16 +90,30 @@ export default function Industryinstallation() {
             {slides[active].description}
           </p>
 
-          {/* Learn More button → redirect */}
+          {/* Learn More button */}
           <button
-            onClick={() => router.push(slides[active].url)} // ✅ redirect
-            className="hidden sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 py-3 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
+            onClick={() => router.push(slides[active].url)}
+            className=" sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
           >
             Learn more
           </button>
 
-          {/* Bottom Tabs */}
-          <div className="absolute bottom-0 left-0 right-0 flex flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
+          {/* Bottom Navigation */}
+          {/* 👉 Mobile: Dots */}
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 sm:hidden">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActive(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  active === index ? "bg-blue-500 scale-110" : "bg-white/70"
+                }`}
+              ></button>
+            ))}
+          </div>
+
+          {/* 👉 Desktop: Tabs */}
+          <div className="hidden sm:flex absolute bottom-0 left-0 right-0 flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
             {slides.map((slide, index) => (
               <div key={index} className="relative w-full sm:w-auto">
                 {active === index && (
@@ -112,7 +126,7 @@ export default function Industryinstallation() {
                   ></div>
                 )}
                 <button
-                  onClick={() => router.push(slide.url)} // ✅ redirect on tab click
+                  onClick={() => router.push(slide.url)}
                   className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words 
                     ${
                       active === index

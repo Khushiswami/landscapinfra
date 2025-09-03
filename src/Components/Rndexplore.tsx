@@ -127,10 +127,8 @@ export default function Rndexplore() {
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>
               <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                VER MÁS
-                <span className="bg-yellow-400 p-1 rounded-full text-black">
-                  →
-                </span>
+                More
+                <span className=" p-1 rounded-full text-[#000080]">→</span>
               </button>
             </div>
 
