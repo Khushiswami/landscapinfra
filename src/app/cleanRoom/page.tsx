@@ -16,7 +16,7 @@ const CleanRoom = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/industry.jpg')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/clean-room-1.png')",
             }}
           >
             {/* Centered Text */}
@@ -34,7 +34,7 @@ const CleanRoom = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 1.png"
+                src="/new-images/clean-room-2.jpg"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -72,7 +72,7 @@ const CleanRoom = () => {
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 2.jpg"
+                src="/new-images/clean-room-3.jpg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -86,7 +86,7 @@ const CleanRoom = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 3.jpeg"
+                src="/new-images/clean-room-4.jpg"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -128,7 +128,7 @@ const CleanRoom = () => {
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/row4.jpg"
+                src="/new-images/clean-room-5.avif"
                 alt="Row 4"
                 fill
                 className="object-cover rounded-lg shadow-lg"

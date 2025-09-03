@@ -15,7 +15,7 @@ const LowCostHousing = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/industry.jpg')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/low-cost-housing-1.jpg')",
             }}
           >
             {/* Centered Text */}
@@ -33,7 +33,7 @@ const LowCostHousing = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 1.png"
+                src="/new-images/low-cost-housing-2.jpg"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -79,7 +79,7 @@ const LowCostHousing = () => {
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 2.jpg"
+                src="/new-images/low-cost-housing-3.jpg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -93,7 +93,7 @@ const LowCostHousing = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 3.jpeg"
+                src="/new-images/low-cost-housing-4.webp"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg shadow-lg"

@@ -24,14 +24,14 @@ const Rndheader = () => {
 
   const navItems: NavItem[] = [
     {
-      label: "Why Altair",
+      label: "why Landsking",
       dropdown: [
         {
           title: "Our Mission",
           items: [
             { label: "Data Science + Rocket Science" },
             { label: "Our Company" },
-            { label: "About Altair" },
+            { label: "About Landsking" },
             { label: "Careers" },
             { label: "Partners" },
             { label: "Investors" },
@@ -64,9 +64,9 @@ const Rndheader = () => {
         {
           title: "PLATFORMS",
           items: [
-            { label: "ALTAIR HPCWORKS", sub: "HPC & Cloud Platform" },
-            { label: "ALTAIR HYPERWORKS", sub: "Design & Simulation Platform" },
-            { label: "ALTAIR RAPIDMINER", sub: "Data Analytics & AI Platform" },
+            { label: " HPCWORKS", sub: "HPC & Cloud Platform" },
+            { label: "Landsking HYPERWORKS", sub: "Design & Simulation Platform" },
+            { label: "Landsking RAPIDMINER", sub: "Data Analytics & AI Platform" },
           ],
         },
         {
@@ -122,7 +122,7 @@ const Rndheader = () => {
         },
       ],
     },
-    { label: "Altair One", href: "#" },
+    { label: "Landsking One", href: "#" },
     {
       label: "Resources",
       dropdown: [
@@ -150,8 +150,7 @@ const Rndheader = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <span className="text-orange-500 font-bold text-xl">ALTAIR</span>
-          <span className="text-sm text-gray-500">ONLY FORWARD</span>
+          <span className="text-orange-500 font-bold text-xl">Landsking</span>
         </div>
 
         {/* Desktop Nav */}

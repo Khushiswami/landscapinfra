@@ -15,7 +15,7 @@ const PortableSecurity = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/industry.jpg')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/guard-room-1.jpg')",
             }}
           >
             {/* Centered Text */}
@@ -33,7 +33,7 @@ const PortableSecurity = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 1.png"
+                src="/new-images/guard-room-2.webp"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -73,7 +73,7 @@ const PortableSecurity = () => {
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 2.jpg"
+                src="/new-images/guard-room-3.jpg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -86,7 +86,7 @@ const PortableSecurity = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/multi 3.jpeg"
+                src="/new-images/guard-room-4.webp"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -125,7 +125,7 @@ const PortableSecurity = () => {
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/row4.jpg"
+                src="/new-images/guard-room-5.avif"
                 alt="Row 4"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -137,7 +137,7 @@ const PortableSecurity = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/Menuimges/row5.jpg"
+                src="/new-images/guard-room-6.webp"
                 alt="Row 5"
                 fill
                 className="object-cover rounded-lg shadow-lg"

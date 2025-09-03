@@ -54,27 +54,18 @@ Simulation Design for Manufacturing
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-Simulation Design for Manufacturing
-            </h2>
+Simulation Design for Manufacturing: Streamlining Production with CAD/CAE            </h2>
             <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-1 gap-8 items-center">
             <div>
+             
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Stand out from the competition with cutting-edge and visually
-                appealing Pre-Engineered Institutional Building Solutions from
-                Landsking Infra.
-              </p>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Our comprehensive range of structures delivers unmatched
-                strength, durability, and elegance. We serve a wide array of
-                sectors, including large-scale Pre-Engineered School Buildings,
-                Hostel Complexes, Hospitals, Office Facilities, Exhibition
-                Halls, and more. At Landsking Infra, we collaborate closely with
-                you to develop designs that strike the perfect balance of space,
-                functionality, and flexibility—tailored to meet your
-                institutional and commercial needs.
+
+Simulation Design for Manufacturing: Streamlining Production with CAD/CAE In today s competitive manufacturing landscape, Simulation Design for Manufacturing leverages the power of Computer-Aided Design (CAD) and Computer-Aided Engineering (CAE) to optimize product development and production processes. By integrating advanced simulation tools, manufacturers can reduce costs, minimize errors, and accelerate time-to-market. Below is a concise overview of how CAD/CAE drives manufacturing excellence.
+Engineering Solutions
+
               </p>
 
               <div className="flex items-center gap-4">
@@ -97,124 +88,113 @@ Simulation Design for Manufacturing
     </h2>
 
     {/* Grid Container */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {/* Column 1 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="Design and Engineering"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Design and Engineering</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Development to quickly take a product from concept phases through to full production. From design space layout [packaging] to detailed design for manufacture.
-        </p>
-      </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  {/* Column 1 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="Durability Analysis"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">Durability Analysis</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Analyze and eliminate weak points in your design to prevent warranty claims and costly repairs. Ensure your products longevity and reliability.
+    </p>
+  </div>
 
-      {/* Column 2 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="Durability Analysis"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Durability Analysis</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Highlight and eliminate weak points, reduce physical tests, and prevent warranty claims. Analysis from individual abuse tests through full-life fatigue.
-        </p>
-      </div>
+  {/* Column 2 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="Multi-Body Simulation"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">Multi-Body Simulation</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Simulate complex kinematic systems to evaluate component stress and suitability for various use cases. Optimize performance and reduce physical testing.
+    </p>
+  </div>
 
-      {/* Column 3 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="Multi-Body System Simulation"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Multi-Body System Simulation</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Simulate kinematic systems, check forces, and evaluate component stress and suitability for various use cases.
-        </p>
-      </div>
+  {/* Column 3 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="Optimisation"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">Optimisation</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Find the sweet spot between weight, cost, and performance while considering manufacturing constraints. Create efficient and effective designs.
+    </p>
+  </div>
 
-      {/* Column 4 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="Optimisation"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Optimisation</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Optimize components for weight, cost, and performance while considering manufacturing constraints and multi-disciplinary requirements.
-        </p>
-      </div>
+  {/* Column 4 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="Dynamic Simulation"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">Dynamic Simulation</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Analyze high-energy events to predict component and assembly behavior, reducing prototype costs and time to market. Make informed design decisions.
+    </p>
+  </div>
 
-      {/* Column 5 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="Dynamic Simulation"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Dynamic Simulation</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Analyze high-energy or non-linear events to predict impact on components and assemblies, reducing prototype costs and time to market.
-        </p>
-      </div>
+  {/* Column 5 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="NVH Analysis"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">NVH Analysis</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Predict and minimize noise, vibration, and harshness in your product for a smoother user experience. Enhance comfort and satisfaction.
+    </p>
+  </div>
 
-      {/* Column 6 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="NVH Analysis"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">NVH (Noise, Vibration & Harshness)</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Predict what occupants experience in terms of feel and noise, then develop the product to minimize undesirable effects.
-        </p>
-      </div>
+  {/* Column 6 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="CFD"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">CFD</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Optimize fluid and heat flow in your design for improved performance and efficiency. Reduce physical testing and prototyping.
+    </p>
+  </div>
 
-      {/* Column 7 */}
-      <div className="flex flex-col items-center text-center bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="CFD"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Computational Fluid Dynamics (CFD)</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Calculate fluid and heat flow over or through components, from aerodynamics to HVAC systems, brake cooling, and more.
-        </p>
-      </div>
+  {/* Column 7 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="Multi-Physics Simulation"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">Multi-Physics Simulation</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Combine multiple simulations for a holistic view of your design s performance. Ensure accuracy and reliability.
+    </p>
+  </div>
 
-      {/* Column 8 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="Multi-Physics Simulation"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Coupled / Multi-Physics Simulation</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Join multiple simulations together so outputs from one can affect another, e.g., CFD + structural or MBS + structural simulations.
-        </p>
-      </div>
+  {/* Column 8 */}
+  <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+    <img
+      src="/Profiles/PebWall.png"
+      alt="System Simulation"
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h3 className="text-xl font-semibold mb-2">System Simulation</h3>
+    <p className="text-gray-700 text-sm sm:text-base">
+      Examine complex systems and benchmark against competitors for improved product development efficiency and performance. Stay ahead of the curve.
+    </p>
+  </div>
+</div>
 
-      {/* Column 9 */}
-      <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-        <img
-          src="/Profiles/PebWall.png"
-          alt="System Simulation"
-          className="w-full h-40 object-cover rounded-md mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">System Simulation & Virtual Benchmarking</h3>
-        <p className="text-gray-700 text-sm sm:text-base">
-          Examine complex systems and benchmark against competitors using CAE models to improve product development efficiency and performance.
-        </p>
-      </div>
-    </div>
+      
   </div>
 </section>
 
@@ -227,22 +207,13 @@ Simulation Design for Manufacturing
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                   <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-                    Landsking Solutions for Advanced Manufacturing
+Simulation-Driven Manufacturing: Accelerating Innovation with CAD/CAE
               </h2>
+              
                 <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                  Stand out from the competition with cutting-edge and visually
-                  appealing Pre-Engineered Institutional Building Solutions from
-                  Landsking Infra.
-                </p>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                  Our comprehensive range of structures delivers unmatched
-                  strength, durability, and elegance. We serve a wide array of
-                  sectors, including large-scale Pre-Engineered School Buildings,
-                  Hostel Complexes, Hospitals, Office Facilities, Exhibition
-                  Halls, and more. At Landsking Infra, we collaborate closely with
-                  you to develop designs that strike the perfect balance of space,
-                  functionality, and flexibility—tailored to meet your
-                  institutional and commercial needs.
+                 In today s fast-paced industrial environment, simulation-led design is transforming how products are engineered and manufactured. By harnessing Computer-Aided Design (CAD) and Computer-Aided Engineering (CAE), companies can explore ideas virtually, validate performance early, and fine-tune processes before production begins.
+
+With advanced CAD/CAE integration, manufacturers gain the ability to reduce development costs, eliminate design flaws, and shorten product cycles—delivering smarter, more reliable solutions to market faster.
                 </p>
   
                 <div className="flex items-center gap-4">

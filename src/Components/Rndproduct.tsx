@@ -6,45 +6,45 @@ import Image from "next/image";
 
 const exploreItems = [
   {
-    title: "Fluids",
-    subtitle: "Computational Fluids Dynamics Software",
+    title: "Semiconductors 💡",
+    subtitle: "Smart Design for the Brain of Technology",
     description:
-      "CFD Fluids simulates fluid dynamics, enhancing engineering solutions for optimized performance.",
+      "Advanced semiconductor tools act like a strategist for microchips—analyzing, optimizing, and reducing risks so integrated circuits perform with precision and power.",
     image: "/industry.jpg",
   },
   {
-    title: "Electronics",
-    subtitle: "Multiphysics Analysis Solutions for Chips and 3D IC",
+    title: "Materials 🔬",
+    subtitle: "Material Intelligence: The DNA of Innovation",
     description:
-      "Create reliable and efficient designs with production-proven multiphysics analysis.",
+      "Material platforms unlock the hidden properties of metals, polymers, and composites, giving engineers the data and models they need to build stronger, smarter products.",
     image: "/industry.jpg",
   },
   {
-    title: "Structures",
-    subtitle: "Structural Analysis & Simulation Software",
+    title: "Systems ⚙️",
+    subtitle: "Engineering Harmony in Complex Systems",
     description:
-      "Ansys Structures provides robust structural analysis for engineering precision and durability.",
+      "Like a conductor guiding an orchestra, systems engineering software ensures every mechanical, digital, and electronic component works in sync—delivering efficiency before the first prototype is built.",
     image: "/industry.jpg",
   },
   {
-    title: "Semiconductors",
-    subtitle: "Semiconductor Design Software",
+    title: "Fluids 🌊",
+    subtitle: "Mastering the Invisible Language of Flow",
     description:
-      "Semiconductor solutions to analyze, optimize, and reduce design risks.",
+      "CFD software turns the unseen movements of air and liquids into precise insights, helping engineers refine designs for better aerodynamics, cooling, and performance.",
     image: "/industry.jpg",
   },
   {
-    title: "Materials",
-    subtitle: "Material Intelligence Software",
+    title: "Electronics ⚡",
+    subtitle: "Reliable Electronics Through Multiphysics Precision",
     description:
-      "Accelerate innovation with trusted material data and modeling capabilities.",
+      "Chips and 3D ICs behave like ecosystems where heat, electricity, and mechanics collide. Multiphysics tools reveal these interactions, ensuring efficient and resilient designs.",
     image: "/industry.jpg",
   },
   {
-    title: "Systems",
-    subtitle: "Systems Engineering & Simulation",
+    title: "Structures 🏗️",
+    subtitle: "Strength You Can Simulate Before You Build",
     description:
-      "Optimize complex system designs with integrated simulation tools.",
+      "Structural analysis software predicts how bridges, towers, and machines will endure stress and strain, giving engineers the confidence to design for safety and durability.",
     image: "/industry.jpg",
   },
 ];
