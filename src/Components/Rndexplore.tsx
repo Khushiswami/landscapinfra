@@ -3,36 +3,64 @@
 import { useState } from "react";
 
 const areas = [
-  { id: 1, title: "Soluciones", subtitle: "Soluciones Globales", description: "Ofrecemos soluciones innovadoras para diversos sectores, adaptándonos a las necesidades de cada cliente.", image: "/green.png" },
-  { id: 2, title: "Ingeniería", subtitle: "Proyectos de Ingeniería", description: "Diseñamos y desarrollamos proyectos de ingeniería de alta complejidad, garantizando calidad y eficiencia.", image: "/green.png" },
-  { id: 3, title: "Infraestructuras", subtitle: "Inversión en Infraestructuras", description: "Combinamos fórmulas de colaboración tradicionales con alianzas específicas para minimizar el riesgo e impulsar la eficiencia.", image: "/green.png" },
-  { id: 4, title: "Otros", subtitle: "Otras Áreas", description: "Participamos en múltiples sectores, ofreciendo valor añadido y soluciones integrales.", image: "/green.png" },
+  {
+    id: 1,
+    title: "Soluciones",
+    subtitle: "Soluciones Globales",
+    description:
+      "Ofrecemos soluciones innovadoras para diversos sectores, adaptándonos a las necesidades de cada cliente.",
+    image: "/green.png",
+  },
+  {
+    id: 2,
+    title: "Ingeniería",
+    subtitle: "Proyectos de Ingeniería",
+    description:
+      "Diseñamos y desarrollamos proyectos de ingeniería de alta complejidad, garantizando calidad y eficiencia.",
+    image: "/green.png",
+  },
+  {
+    id: 3,
+    title: "Infraestructuras",
+    subtitle: "Inversión en Infraestructuras",
+    description:
+      "Combinamos fórmulas de colaboración tradicionales con alianzas específicas para minimizar el riesgo e impulsar la eficiencia.",
+    image: "/green.png",
+  },
+  {
+    id: 4,
+    title: "Otros",
+    subtitle: "Otras Áreas",
+    description:
+      "Participamos en múltiples sectores, ofreciendo valor añadido y soluciones integrales.",
+    image: "/green.png",
+  },
 ];
 
 export default function Rndexplore() {
   const [selectedId, setSelectedId] = useState(3);
-  const [open, setOpen] = useState(false); // for mobile dropdown
+  const [open, setOpen] = useState(false);
 
   const selectedArea = areas.find((area) => area.id === selectedId);
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-        Áreas de negocio
+        Our Products
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
         <div className="w-full md:w-1/4">
           {/* Mobile Dropdown */}
-          <div className="md:hidden mb-4">
+          <div className="md:hidden mb-4 bg-[#000080]">
             <button
               onClick={() => setOpen(!open)}
-              className="w-full p-3 border border-gray-300 rounded-lg text-blue-900 font-semibold flex justify-between items-center bg-white"
+              className="w-full p-3 border bg-[#000080] border-gray-300 rounded-lg text-white font-semibold flex justify-between items-center"
             >
               {areas.find((a) => a.id === selectedId)?.title}
               <svg
-                className="w-5 h-5 text-gray-400"
+                className="w-5 h-5 text-white"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -47,7 +75,7 @@ export default function Rndexplore() {
             </button>
 
             {open && (
-              <div className="mt-2 w-full bg-white border border-gray-300 rounded-lg shadow">
+              <div className="mt-2 w-full bg-[#000080] border border-gray-300 rounded-lg shadow">
                 {areas.map((area) => (
                   <button
                     key={area.id}
@@ -55,8 +83,10 @@ export default function Rndexplore() {
                       setSelectedId(area.id);
                       setOpen(false);
                     }}
-                    className={`w-full text-left px-4 py-3 hover:bg-blue-100 transition ${
-                      selectedId === area.id ? "bg-blue-50 font-semibold" : ""
+                    className={`w-full text-left px-4 py-3 transition font-medium ${
+                      selectedId === area.id
+                        ? "text-blue-400 bg-blue-900"
+                        : "text-white hover:bg-blue-800"
                     }`}
                   >
                     {area.title}

@@ -32,7 +32,7 @@ export default function ContactSectionB({
   testimonials = [],
 }: ContactSectionProps) {
   return (
-    <div className="relative text-white mt-20">
+    <div className="relative text-white pt-6 ">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -63,7 +63,11 @@ export default function ContactSectionB({
                   stroke="white"
                   className="w-4 h-4"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </span>
             </button>
@@ -94,7 +98,9 @@ export default function ContactSectionB({
                   {/* Right Content */}
                   <div className="p-6 flex flex-col justify-center h-full">
                     <h3 className="font-bold text-lg">{item.name}</h3>
-                    <p className="text-sm text-gray-200 mb-2">{item.location}</p>
+                    <p className="text-sm text-gray-200 mb-2">
+                      {item.location}
+                    </p>
                     <span className="text-yellow-400 text-sm font-semibold mb-3">
                       ★ Verified Customer
                     </span>

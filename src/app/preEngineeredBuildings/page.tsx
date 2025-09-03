@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 
 import PlatformP from "../../Components/PlatformP";
 import AboutPebP from "../../Components/AboutPebP";
@@ -25,7 +25,7 @@ const slides = [
     description:
       "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
     video: "/video.mp4",
-    url: "/epcsolutions", 
+    url: "/epcsolutions",
   },
   {
     title: "Project Management Consultancy",
@@ -39,14 +39,14 @@ const slides = [
     description:
       "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
     video: "/homeslider.mp4",
-    url: "/buildingandinfrastructure", 
+    url: "/buildingandinfrastructure",
   },
 ];
 
 export default function PreEngineeredBuildings() {
   const [active, setActive] = useState(0);
   const [progress, setProgress] = useState(0);
-  const router = useRouter(); 
+  const router = useRouter();
 
   useEffect(() => {
     setProgress(0);
@@ -93,16 +93,30 @@ export default function PreEngineeredBuildings() {
             {slides[active].description}
           </p>
 
-          {/* Learn More button → redirect */}
+          {/* Learn More button */}
           <button
-            onClick={() => router.push(slides[active].url)} // ✅ redirect
-            className="hidden sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
+            onClick={() => router.push(slides[active].url)}
+            className=" sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
           >
             Learn more
           </button>
 
-          {/* Bottom Tabs */}
-          <div className="absolute bottom-0 left-0 right-0 flex flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
+          {/* Bottom Navigation */}
+          {/* 👉 Mobile: Dots */}
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 sm:hidden">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActive(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  active === index ? "bg-blue-500 scale-110" : "bg-white/70"
+                }`}
+              ></button>
+            ))}
+          </div>
+
+          {/* 👉 Desktop: Tabs */}
+          <div className="hidden sm:flex absolute bottom-0 left-0 right-0 flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
             {slides.map((slide, index) => (
               <div key={index} className="relative w-full sm:w-auto">
                 {active === index && (
@@ -115,7 +129,7 @@ export default function PreEngineeredBuildings() {
                   ></div>
                 )}
                 <button
-                  onClick={() => router.push(slide.url)} // ✅ redirect on tab click
+                  onClick={() => router.push(slide.url)}
                   className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words 
                     ${
                       active === index

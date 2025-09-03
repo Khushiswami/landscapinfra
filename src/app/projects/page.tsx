@@ -1,9 +1,10 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Footer from "yes/Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
-
 import ContactSection from "yes/Components/ContactSection";
+import { useRouter } from "next/navigation";
 
 type Project = {
   id: number;
@@ -95,34 +96,38 @@ const slides = [
     title: "PRE ENGINEERED BUILDINGS",
     description: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
     video: "/video.mp4",
+    url: "/services/peb",
   },
   {
     title: "EPC Solutions",
     description:
       "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
     video: "/video.mp4",
+    url: "/services/epc",
   },
   {
     title: "Project Management Consultancy",
     description:
       "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
     video: "/video.mp4",
+    url: "/services/pmc",
   },
   {
     title: "Structural Engineering Services",
     description:
       "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
     video: "/homeslider.mp4",
+    url: "/services/structural",
   },
 ];
 
 export default function Projects() {
+  const router = useRouter();
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [active, setActive] = useState(0);
   const [progress, setProgress] = useState(0);
-
-  // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
+
   const projectsPerPage = 12;
   const totalPages = Math.ceil(projects.length / projectsPerPage);
 
@@ -132,7 +137,6 @@ export default function Projects() {
 
   useEffect(() => {
     setProgress(0);
-
     const progressTimer = setInterval(() => {
       setProgress((prev) => Math.min(prev + 2, 100));
     }, 100);
@@ -147,7 +151,6 @@ export default function Projects() {
     };
   }, [active]);
 
-  // Calculate projects to show on current page
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = projects.slice(
@@ -155,19 +158,17 @@ export default function Projects() {
     indexOfLastProject
   );
 
-  // Pagination controls
   const goToPage = (page: number) => {
     if (page < 1) page = 1;
     else if (page > totalPages) page = totalPages;
     setCurrentPage(page);
-    setSelectedId(null); // reset selection on page change
+    setSelectedId(null);
   };
 
   return (
     <>
       <Pebheader />
       <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
-        {/* Background Video */}
         <video
           key={slides[active].video}
           className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
@@ -178,10 +179,8 @@ export default function Projects() {
           <source src={slides[active].video} type="video/mp4" />
         </video>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-8 md:px-20 text-white">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight max-w-full md:max-w-3xl">
             {slides[active].title}
@@ -190,12 +189,28 @@ export default function Projects() {
             {slides[active].description}
           </p>
 
-          <button className="mt-5 mb-8 sm:mb-10 w-fit sm: max-w-[50%] md:max-w-[20%] inline-block px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition">
+          <button
+            onClick={() => router.push(slides[active].url)}
+            className="sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
+          >
             Learn more
           </button>
 
-          {/* Tabs with blue progress bar */}
-          <div className="absolute bottom-0 left-0 right-0 flex flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
+          {/* Mobile Dots */}
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 sm:hidden">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActive(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  active === index ? "bg-blue-500 scale-110" : "bg-white/70"
+                }`}
+              ></button>
+            ))}
+          </div>
+
+          {/* Desktop Tabs */}
+          <div className="hidden sm:flex absolute bottom-0 left-0 right-0 flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
             {slides.map((slide, index) => (
               <div key={index} className="relative w-full sm:w-auto">
                 {active === index && (
@@ -208,13 +223,12 @@ export default function Projects() {
                   ></div>
                 )}
                 <button
-                  onClick={() => setActive(index)}
-                  className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words 
-              ${
-                active === index
-                  ? "text-white"
-                  : "text-white/80 hover:text-white"
-              }`}
+                  onClick={() => router.push(slide.url)}
+                  className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words ${
+                    active === index
+                      ? "text-white"
+                      : "text-white/80 hover:text-white"
+                  }`}
                 >
                   {slide.title}
                 </button>
@@ -224,7 +238,7 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Projects grid */}
+      {/* Projects Grid */}
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {currentProjects.map(({ id, img, location }) => (
@@ -241,13 +255,11 @@ export default function Projects() {
                 }`}
               />
               <div
-                className={`absolute inset-0 flex items-center justify-center text-white text-xl font-semibold
-          transition-opacity duration-500
-          bg-[#000080] ${
-            selectedId === id
-              ? "bg-opacity-40 opacity-50"
-              : "bg-opacity-0 opacity-0"
-          }`}
+                className={`absolute inset-0 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-500 bg-[#000080] ${
+                  selectedId === id
+                    ? "bg-opacity-40 opacity-50"
+                    : "bg-opacity-0 opacity-0"
+                }`}
                 style={{ pointerEvents: selectedId === id ? "auto" : "none" }}
               >
                 {location}
@@ -258,13 +270,6 @@ export default function Projects() {
 
         {/* Pagination */}
         <div className="flex justify-center mt-8 space-x-3">
-          {/* <button
-            onClick={() => goToPage(currentPage - 1)}
-            disabled={currentPage === 1}
-            className="px-3 py-1 rounded bg-blue-600 text-white disabled:bg-gray-400"
-          >
-            Prev
-          </button> */}
           {[...Array(totalPages)].map((_, idx) => {
             const pageNum = idx + 1;
             return (
@@ -274,25 +279,17 @@ export default function Projects() {
                 className={`px-3 py-1 rounded ${
                   currentPage === pageNum
                     ? "bg-black text-white"
-                    : "bg-[#000080] text-white hover:[bg-#000080]"
+                    : "bg-[#000080] text-white hover:bg-blue-800"
                 }`}
               >
                 {pageNum}
               </button>
             );
           })}
-          {/* <button
-            onClick={() => goToPage(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className="px-3 py-1 rounded bg-blue-600 text-white disabled:bg-gray-400"
-          >
-            Next
-          </button> */}
         </div>
       </div>
 
       <ContactSection />
-
       <Footer />
     </>
   );

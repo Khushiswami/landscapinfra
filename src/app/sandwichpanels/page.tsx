@@ -243,6 +243,7 @@ export default function Sandwichpanels() {
   ];
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const [open, setOpen] = useState(false);
 
   const stats = [
     {
@@ -294,7 +295,7 @@ export default function Sandwichpanels() {
         <div className="relative z-10 container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Text */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
               Sandwich Panels
             </h1>
             <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0">
@@ -358,7 +359,7 @@ export default function Sandwichpanels() {
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra stands as one of India’s top manufacturers of
+              Landsking Infra stands as one of India s top manufacturers of
               sandwich panels, providing a diverse selection of insulated panels
               designed for superior thermal performance, robust structural
               strength, and fast installation. Equipped with both continuous and
@@ -443,28 +444,75 @@ export default function Sandwichpanels() {
       {/* explore conettt */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          What Are Sandwich Panels?
+          Our Products
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Menu */}
-          <div className="bg-blue-900 text-white rounded-lg flex flex-col w-full md:w-1/4">
-            {areas.map((area, idx) => (
+          <div className="w-full md:w-1/4">
+            {/* Mobile Dropdown */}
+            <div className="md:hidden mb-4 bg-[#000080]">
               <button
-                key={area.id}
-                onClick={() => setSelectedId(area.id)}
-                className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                  selectedId === area.id
-                    ? "bg-blue-800 font-bold"
-                    : "hover:bg-blue-800 text-white"
-                }`}
+                onClick={() => setOpen(!open)}
+                className="w-full p-3 border bg-[#000080] border-gray-300 rounded-lg text-white font-semibold flex justify-between items-center"
               >
-                <span className="text-sm opacity-70">
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
-                <span>{area.title}</span>
+                {areas.find((a) => a.id === selectedId)?.title}
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+                  />
+                </svg>
               </button>
-            ))}
+
+              {open && (
+                <div className="mt-2 w-full bg-[#000080] border border-gray-300 rounded-lg shadow">
+                  {areas.map((area) => (
+                    <button
+                      key={area.id}
+                      onClick={() => {
+                        setSelectedId(area.id);
+                        setOpen(false);
+                      }}
+                      className={`w-full text-left px-4 py-3 transition font-medium ${
+                        selectedId === area.id
+                          ? "text-blue-400 bg-blue-900"
+                          : "text-white hover:bg-blue-800"
+                      }`}
+                    >
+                      {area.title}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Desktop Menu */}
+            <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-lg">
+              {areas.map((area, idx) => (
+                <button
+                  key={area.id}
+                  onClick={() => setSelectedId(area.id)}
+                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
+                    selectedId === area.id
+                      ? "bg-blue-800 font-bold"
+                      : "hover:bg-blue-800 text-gray-300"
+                  }`}
+                >
+                  <span className="text-sm opacity-70">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <span>{area.title}</span>
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Right Content */}
@@ -476,8 +524,11 @@ export default function Sandwichpanels() {
                   {selectedArea.subtitle}
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="border border-[#000080] px-4 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors w-auto md:w-36">
-                  GET A QUOTE
+                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                  VER MÁS
+                  <span className="bg-yellow-400 p-1 rounded-full text-black">
+                    →
+                  </span>
                 </button>
               </div>
 
