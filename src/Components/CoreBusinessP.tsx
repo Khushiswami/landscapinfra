@@ -50,8 +50,7 @@ export default function CoreBusiness() {
       swiperRef.current.params.navigation &&
       typeof swiperRef.current.params.navigation !== "boolean"
     ) {
-      const navigation = swiperRef.current.params
-        .navigation as NavigationOptions;
+      const navigation = swiperRef.current.params.navigation as NavigationOptions;
 
       navigation.prevEl = prevRef.current;
       navigation.nextEl = nextRef.current;
@@ -63,8 +62,8 @@ export default function CoreBusiness() {
   }, []);
 
   return (
-    <section className="py-16 bg-white">
-      <h2 className="text-3xl font-bold text-center text-[#000080] mb-12">
+    <section className="py-4 md:py-16 bg-white">
+      <h2 className="text-3xl font-bold text-center text-[#000080] mb-2 md:mb-12">
         Core Business
       </h2>
 
@@ -74,7 +73,7 @@ export default function CoreBusiness() {
           loop={true}
           spaceBetween={30}
           slidesPerView={1}
-          navigation={true}
+          navigation={false} // important: start without navigation
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 4 },
@@ -110,7 +109,7 @@ export default function CoreBusiness() {
 
         {/* Custom navigation arrows */}
         <div className="flex justify-center items-center gap-8 mt-6">
-          <div ref={prevRef} className="cursor-pointer">
+          <div ref={prevRef} className="cursor-pointer !block">
             <Image
               src="/leftArrow.png"
               alt="Previous"
@@ -119,7 +118,7 @@ export default function CoreBusiness() {
               className="hover:scale-110 transition-transform duration-200"
             />
           </div>
-          <div ref={nextRef} className="cursor-pointer">
+          <div ref={nextRef} className="cursor-pointer !block">
             <Image
               src="/rightArrow.png"
               alt="Next"

@@ -63,7 +63,7 @@ export default function Brand() {
   );
 
   return (
-    <section className="py-12 bg-white">
+    <section className="md:py-12 bg-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-[#000080] mb-8">
         Meet Our Clients
       </h2>

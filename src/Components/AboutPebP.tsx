@@ -65,7 +65,7 @@ export default function AboutPebP() {
           </div>
 
           {/* Image */}
-          <div className="relative w-full h-40 sm:h-48 md:h-52 overflow-hidden rounded-xl shadow-lg transform transition-transform duration-700 hover:scale-105">
+          <div className="relative w-full h-40 sm:h-48 md:h-52 overflow-hidden rounded-xl transform transition-transform duration-700 hover:scale-105">
             <Image
               src="/attt.png"
               alt="Building 1"

@@ -17,6 +17,7 @@ export default function ExpertiseP() {
   const nextRef = useRef<HTMLButtonElement>(null);
   const router = useRouter();
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
+  const [swiper, setSwiper] = useState<SwiperType | null>(null); // State to store Swiper instance
 
   const services = [
     {
@@ -34,9 +35,12 @@ export default function ExpertiseP() {
       image: "/expertiseimages/Solar Plant Installation.jpg",
       link: "/solar",
     },
-
     { title: "HVAC", image: "/expertiseimages/HVAC.jpg", link: "/hvac" },
-    { title: "Fire and Safety", image: "/industry.jpg", link: "/fire-saftey" },
+    {
+      title: "Fire and Safety",
+      image: "/industry.jpg",
+      link: "/fire-saftey",
+    },
     {
       title: "STRUCTURAL ENGINEERING SERVICES",
       image: "/expertiseimages/STRUCTURAL ENGINEERING SERVICES.jpg",
@@ -85,40 +89,27 @@ export default function ExpertiseP() {
     },
   ];
 
-  const handleArrowClick = (direction: "prev" | "next") => {
-    // Navigate to a new URL (adjust to your desired path)
-    const url = direction === "prev" ? "/prev-slide" : "/next-slide";
-    window.location.href = url;
-  };
-  const handleRedirect = (type: "prev" | "next") => {
-    if (type === "prev") {
-      router.push("/previous-slide"); // Replace with actual route
-    } else {
-      router.push("/next-slide"); // Replace with actual route
-    }
-  };
-
   return (
     <section className="py-12 px-10 bg-white mx-0 md:mx-12 lg:mx-20">
-      {/* Heading + Controls */}
-      <div className="flex items-center justify-between  mx-auto mb-8">
-<h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
-  Our Expertise
-</h2>
-
+      <div className="flex items-center justify-between mx-auto mb-8">
+        <h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
+          Our Expertise
+        </h2>
         <div className="flex items-center gap-2">
+          {/* Use swiper.slidePrev() on click */}
           <button
             ref={prevRef}
             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
-            onClick={() => handleRedirect("prev")}
+            onClick={() => swiper?.slidePrev()}
             aria-label="Previous Slide"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
+          {/* Use swiper.slideNext() on click */}
           <button
             ref={nextRef}
             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
-            onClick={() => handleRedirect("next")}
+            onClick={() => swiper?.slideNext()}
             aria-label="Next Slide"
           >
             <ChevronRight className="w-5 h-5" />
@@ -129,7 +120,8 @@ export default function ExpertiseP() {
       {/* Swiper Slider */}
       <div className="max-w-7xl mt-10 mx-auto">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Autoplay]}
+          onSwiper={setSwiper} // Store the Swiper instance
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
@@ -141,7 +133,6 @@ export default function ExpertiseP() {
               nav.nextEl = nextRef.current;
             }
           }}
-          pagination={{ clickable: true }}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -182,27 +173,25 @@ export default function ExpertiseP() {
                 </div>
 
                 {/* Hover Overlay */}
-                {/* Hover Overlay */}
-<AnimatePresence>
-  {hoverIndex === i && (
-    <motion.div
-      className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20"
-      style={{
-        background:
-          "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.95) 100%)", // darker gradient
-      }}
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 50 }}
-      transition={{ duration: 0.4 }}
-    >
-      <h3 className="text-white text-lg font-semibold">
-        {service.title}
-      </h3>
-    </motion.div>
-  )}
-</AnimatePresence>
-
+                <AnimatePresence>
+                  {hoverIndex === i && (
+                    <motion.div
+                      className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20"
+                      style={{
+                        background:
+                          "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.95) 100%)",
+                      }}
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 50 }}
+                      transition={{ duration: 0.4 }}
+                    >
+                      <h3 className="text-white text-lg font-semibold">
+                        {service.title}
+                      </h3>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
             </SwiperSlide>
           ))}

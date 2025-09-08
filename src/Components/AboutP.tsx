@@ -17,7 +17,6 @@ export default function AboutP() {
 
   return (
     <section className="w-full min-h-[500px] flex flex-col md:flex-row">
-      {/* Left Column (Text) */}
       <div
         className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
         style={{

@@ -6,40 +6,36 @@ import { Play, Pause } from "lucide-react";
 import { IoIosArrowForward } from "react-icons/io";
 import { useRouter } from "next/navigation";
 
-export default function BannerP() {
+export default function BannerPEB() {
   const router = useRouter();
 
   const slides = [
     {
-      title: "Industry Installation and Construction",
-      desc: "Quality Construction Project Delivery on time with customer satisfaction.",
-      video: "/homeslider.mp4",
+     title: "PRE ENGINEERED BUILDINGS",
+    desc: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
+      video: "/video.mp4",
       link: "/industryinstallation",
     },
     {
-      title: "Real Estate",
-      desc: "Innovative real estate solutions designed for modern needs and sustainable growth.",
-      video: "/homeslider.mp4",
+     title: "EPC Solutions",
+    desc:"Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
+    video: "/video.mp4",
       link: "/real-estate",
     },
     {
-      title: "Engineering & RND Services",
-      desc: "Committed to advancing innovation, fairness, equity, and quality in assessment.",
-      video: "/homeslider.mp4",
+       title: "Project Management Consultancy",
+    desc:"Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
+      video: "/video.mp4",
       link: "/rnd",
     },
     {
-      title: "Renewable Energy Solution Provider",
-      desc: "Explore innovation in industrial equipment with green technologies.",
-      video: "/homeslider.mp4",
+        title: "Structural Engineering Services",
+    desc:
+      "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
+      video: "/video.mp4",
       link: "/renewable-energy",
     },
-    {
-      title: "Pre-Engineered Buildings",
-      desc: "Modular and pre-engineered structures tailored for efficiency and scalability.",
-      video: "/homeslider.mp4",
-      link: "/preEngineeredBuildings",
-    },
+    
   ];
 
   const [active, setActive] = useState(0);
