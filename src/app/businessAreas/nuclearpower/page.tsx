@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -19,7 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,29 +37,29 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Green Belt Development",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "Designing and implementing eco-friendly green belts around reactor and auxiliary buildings to enhance environmental safety and air quality.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Site Landscaping for Turbine Generator Buildings",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "Developing sustainable landscapes that improve aesthetics and contribute to site safety near turbine halls.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Balance of Plant Landscaping",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "Comprehensive landscaping solutions across balance of plant areas to support operational efficiency and environmental compliance.",
   },
   {
-    title: "Energy Efficiency & Cost Savings",
+    title: "Coastal and Sea-water Intake Landscaping",
     description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
+      "Plantation and erosion control measures around sea-water intake systems to protect sensitive marine interface zones..",
   },
   {
-    title: "Hygiene & Easy Maintenance",
+    title: "Pumphouse and Cooling Tower Green Zones",
     description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
+      "Creating green buffers and landscaped zones to mitigate heat and improve visual impact near pumphouses and cooling towers.",
   },
 ];
 
@@ -196,31 +194,33 @@ export default function NuclearPower() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      {/* <ContactSection/> */}
 
       <ContactSectionB
         title="About NuclearPower Infra"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Specialized landscaping solutions for secure and sustainable nuclear power sites."
         buttonText="Know More"
         buttonLink="/about"
         bgImage="/product/s2.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Expert Landscaping for Nuclear Facilities"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/nucl.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -231,7 +231,7 @@ export default function NuclearPower() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

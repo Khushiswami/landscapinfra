@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -19,7 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,30 +37,21 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Decades of Marine Construction",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "Experience in building civil and naval port projects across India and the Middle East on an EPC basis.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Pan-India Coastal Presence",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "Executed projects along the entire Indian coastline with integrated road and rail connectivity.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Complete Marine Infrastructure",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "Specialized in berths, jetties, tanker terminals, wharfs, dry docks, breakwaters, and sea-links.",
   },
-  {
-    title: "Energy Efficiency & Cost Savings",
-    description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
-  },
-  {
-    title: "Hygiene & Easy Maintenance",
-    description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
-  },
+  
 ];
 
 const areasData: Area[] = [
@@ -196,30 +185,33 @@ export default function Portsharbours() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      {/* <ContactSection/> */}
+
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Ports & Harbours"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Turnkey experts in marine and metro infrastructure across India."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/port.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Marine & Port Infrastructure"
+        highlight="LandSking Infra Capabilities"
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/port2.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="With extensive experience in port construction, LandSking Infra delivers end-to-end marine infrastructure solutions across India and abroad. From core port facilities to complex marine structures, we offer turnkey execution with precision and reliability."
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -230,7 +222,7 @@ export default function Portsharbours() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

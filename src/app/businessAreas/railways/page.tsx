@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -19,7 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,30 +37,21 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Landsking has developed landscape features for railway stations, metro lines, and transit corridors,",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "including green walls, platform gardens, shaded waiting areas, and ecological buffers along tracks and yards.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Our landscape designs provide all-weather, all-terrain sustainability",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "enhancing passenger experience while improving ecological balance even in the remotest and most demanding locations.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Landsking has also delivered green beautification projects near water bodies, canals, and drainage-sensitive zones,",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "incorporating native plantation and erosion control measures.",
   },
-  {
-    title: "Energy Efficiency & Cost Savings",
-    description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
-  },
-  {
-    title: "Hygiene & Easy Maintenance",
-    description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
-  },
+
 ];
 
 const areasData: Area[] = [
@@ -196,31 +185,33 @@ export default function Railways() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Railways"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="With proven expertise in both softscape and hardscape solutions."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/r.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Railway & Transit Green Infrastructure"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/railwayy.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="Landsking contribution to India green infrastructure extends to the railway and transit ecosystem, where we deliver tailored landscaping solutions for railway stations, metro corridors, rail yards, and transit-adjacent areas. From functional green buffers to aesthetic enhancements, Landsking supports sustainable mobility through eco-conscious design."
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -231,7 +222,7 @@ export default function Railways() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

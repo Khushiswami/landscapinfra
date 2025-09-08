@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -19,7 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,30 +37,21 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Trusted Partner in Water Solutions",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "LandSking Infra has established itself as a reliable name in India’s water infrastructure sector, delivering complex projects from source development to bulk transmission and treatment.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "End-to-End Capabilities Across the Water Value Chain",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "LandSking Infra provides comprehensive water infrastructure solutions, including source development through dams and barrages, advanced treatment facilities such as water and sewage treatment plants, efficient transmission systems involving tunnels, pipelines, and aqueducts, and integrated water supply schemes catering to both urban and rural areas.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Proven Execution Track Record",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "LandSking Infra has successfully completed over 100 water and sewage treatment plants and constructed more than 30 km of water supply and sewerage tunnels. The company possesses extensive expertise in building gravity dams and bulk water transfer systems, delivering large-scale water infrastructure projects for both public and private sector clients.",
   },
-  {
-    title: "Energy Efficiency & Cost Savings",
-    description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
-  },
-  {
-    title: "Hygiene & Easy Maintenance",
-    description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
-  },
+ 
 ];
 
 const areasData: Area[] = [
@@ -196,31 +185,33 @@ export default function WaterSupplySanitation() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Water Supply & Sanitation"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Expert providers of complete water infrastructure solutions across India."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/water.webp"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Water Supply & Sanitation"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/waterr.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description=""
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -231,7 +222,7 @@ export default function WaterSupplySanitation() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

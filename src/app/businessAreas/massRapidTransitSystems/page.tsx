@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -19,7 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,29 +37,29 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Key Contributor to Metro Infrastructure",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "Actively involved in the execution of major metro rail projects across India’s metropolitan cities.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Experience in Landmark Projects",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "Delivered critical components for Delhi Metro, Mumbai Metro One, and currently executing underground metro packages in Mumbai.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Turnkey EPC Solutions",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "Specializes in end-to-end Metro Rail Systems on an EPC (Engineering, Procurement & Construction) basis.",
   },
   {
-    title: "Energy Efficiency & Cost Savings",
+    title: "Multi-Disciplinary Expertise",
     description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
+      "Civil & structural construction , Ballastless track laying , HVAC system installation",
   },
   {
-    title: "Hygiene & Easy Maintenance",
+    title: "Advanced Tunnel Construction",
     description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
+      "Expertise in building underground tunnels using both conventional methods and Tunnel Boring Machines (TBMs).",
   },
 ];
 
@@ -196,32 +194,32 @@ export default function MassRapidTransitSystems() {
 
   return (
     <>
-      <IndustryHead />
+      <PebheaderW />
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Mass Rapid Transit Systems"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Design and construction of elevated rail corridors to suit congested urban environments."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/metroo.jpg"
         testimonials={testimonialsData}
       />
 
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Mass Rapid Transit Systems"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/metro.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description=""
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -232,7 +230,7 @@ export default function MassRapidTransitSystems() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

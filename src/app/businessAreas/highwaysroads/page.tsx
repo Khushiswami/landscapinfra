@@ -7,7 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -18,8 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHeader from "yes/Components/Industryheader";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,30 +37,21 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Landsking has developed green spaces in the remotest of locations",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "facing extremely challenging climatic conditions as well as in densely populated urban areas, along with large-scale beautification around infrastructure projects.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Landsking has executed landscaping projects under PPP / BOT formats",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "as well as under EPC contracts, delivering both public and private sector projects efficiently.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Landsking also develops elevated gardens, green walls, and podium landscaping",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "on a design-build basis, ensuring aesthetics, sustainability, and performance.",
   },
-  {
-    title: "Energy Efficiency & Cost Savings",
-    description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
-  },
-  {
-    title: "Hygiene & Easy Maintenance",
-    description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
-  },
+  
 ];
 
 const areasData: Area[] = [
@@ -196,31 +185,32 @@ export default function HighwaysRoads() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
       {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Highways, Roads & Bridges"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Landsking also undertakes elevated landscaping projects executed on a design-build model."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/higg.png"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="From Highways to High-Rises"
+        highlight="Complete Green Infrastructure by Landsking"
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/high.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="Landsking is a complete landscaping solutions provider, having executed terrain-specific and climate-responsive green projects including urban gardens, highway landscaping, vertical greenery, and sustainable irrigation systems. We have mastered the art of designing and delivering landscapes in complex environments ranging from rugged hills to congested cityscapes."
         features={featuresData}
       />
-
+{/* 
       <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
@@ -232,7 +222,7 @@ export default function HighwaysRoads() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

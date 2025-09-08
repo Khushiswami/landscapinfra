@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -19,7 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,29 +37,29 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Green Belt Development",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "Creation of eco-friendly buffer zones using native and adaptive plant species to enhance environmental compliance and air quality.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Land Grading and Contouring",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "Shaping and leveling of terrain to support site drainage, prevent soil erosion, and prepare the area for plantation or infrastructure.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Roadside and Boundary Plantation",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "Tree and shrub planting along internal roads and perimeters for dust control, aesthetic improvement, and natural barriers.",
   },
   {
-    title: "Energy Efficiency & Cost Savings",
+    title: "Turfing and Hydroseeding",
     description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
+      "Rapid vegetation cover using grass turf or seed spraying techniques to stabilize soil and prevent erosion in open areas.",
   },
   {
-    title: "Hygiene & Easy Maintenance",
+    title: "Erosion Control Measures",
     description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
+      "Implementation of geotextiles, mulching, and native vegetation to minimize soil displacement and protect sloped terrains.",
   },
 ];
 
@@ -196,42 +194,44 @@ export default function Thermalpower() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Thermal Power"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="From green belts to grading, we deliver excellence with proven reliability."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/PL-31.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Comprehensive Landscaping Solutions for Thermal Power Projects"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/jpg.png",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="Landsking Infra offers end-to-end landscaping solutions for Coal and Gas-based Thermal Power Plants. With a proven track record, we have successfully delivered landscaping works across numerous thermal power sites."
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
         areas={areasData}
-      />
+      /> */}
 
-      <PlatformSectionB
+      {/* <PlatformSectionB
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"
