@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -38,29 +37,29 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Petrochemical Plants",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "Facilities for processing and producing petrochemical products.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Refineries",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "Units for refining crude oil into usable fuels and chemicals.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Fertilizer Plants",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "Plants for manufacturing urea, ammonia, and other fertilizers.",
   },
   {
-    title: "Energy Efficiency & Cost Savings",
+    title: "Chemical Plants",
     description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
+      "Infrastructure for producing industrial and specialty chemicals.",
   },
   {
-    title: "Hygiene & Easy Maintenance",
+    title: "Steel Plants",
     description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
+      "Structures for steel production, rolling, and finishing operations",
   },
 ];
 
@@ -195,34 +194,34 @@ export default function ManufacturingProcessPlants() {
 
   return (
     <>
-      {/* <      IndustryHeader
-/> */}
-      < IndustryHeader/>
+      {/* <Pebheader/> */}
+      <PebheaderW />
       {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Manufacturing & Process Plants
+"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Leading provider of customized industrial infrastructure and fabrication solutions."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/manufacturingProcessPlants.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Manufacturing & Process Plants"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="Landsking Infra is a leading industrial infrastructure provider with extensive experience in building process plants, auxiliary facilities, factories, workshops, and pumping stations. We also specialize in establishing on-site fabrication units tailored to meet highly specific and customized project needs."
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -233,7 +232,7 @@ export default function ManufacturingProcessPlants() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

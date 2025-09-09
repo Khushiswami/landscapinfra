@@ -7,8 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import IndustryHeader from "yes/Components/Industryheader";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -19,7 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,30 +37,26 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Design & Engineering",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "Comprehensive planning and technical design of irrigation systems to ensure efficient water distribution and sustainable infrastructure.",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Construction",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "Execution of large-scale projects including dams, barrages, canals, and lift irrigation facilities with high-quality workmanship.",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Commissioning",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "Rigorous testing and operational setup to ensure all irrigation systems function optimally before handover.",
   },
   {
-    title: "Energy Efficiency & Cost Savings",
+    title: "Operation & Maintenance",
     description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
+      "Ongoing management and upkeep of irrigation infrastructure to maximize longevity and performance.",
   },
-  {
-    title: "Hygiene & Easy Maintenance",
-    description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
-  },
+  
 ];
 
 const areasData: Area[] = [
@@ -196,27 +190,29 @@ export default function Irrigation() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Irrigation"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Specialists in executing advanced, multidisciplinary irrigation projects with sustainable solutions."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/irrigations.png"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Irrigation"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/irrigationss.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="Landsking Infra has been instrumental in executing large-scale and complex irrigation projects that have reshaped landscapes across India. Our portfolio includes dams, barrages, extensive networks of major and minor canals, as well as advanced lift irrigation systems."
         features={featuresData}
       />
 

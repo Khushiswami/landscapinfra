@@ -1,9 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 
+import PlatformP from "../../../Components/PlatformP";
 import Footer from "../../../Components/Footer";
 import { IoCallOutline } from "react-icons/io5";
-
+import ProjectSlider from "../../../Components/ProjectSlider";
+import KeyFeatures from "../../../Components/KeyFeatures";
+import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
+import PebheaderW from "../../../Components/PebheaderW";
+import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
 import PreEngineeredProductsB, {
@@ -13,8 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHeader from "yes/Components/Industryheader";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -34,30 +37,31 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Comprehensive construction solutions for Commercial, Institutional, and Residential buildings",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Expertise in structural works including core and shell development.",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Commitment to safety standards and environmental compliance throughout all projects.",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "",
   },
   {
-    title: "Energy Efficiency & Cost Savings",
+    title: "Use of modern technology and materials to enhance building performance and durability.",
     description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
+      "",
   },
   {
-    title: "Hygiene & Easy Maintenance",
+    title: "Coordination with multiple stakeholders for seamless construction workflows.",
     description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
+      "",
   },
+ 
 ];
 
 const areasData: Area[] = [
@@ -191,32 +195,33 @@ export default function CommercialInstitutional() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
       {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Commercial & Institutional"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="End-to-end expert construction solutions for commercial, institutional, and sustainable building projects."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/Commercial-Industry.webp"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Commercial & Institutional"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/commercialInstitutional.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="Landscape Infra delivers complete construction services for all kinds of Commercial and Institutional buildings. Our experience covers Residential, Commercial, and Institutional projects, offering full-spectrum solutions including structural work, electrical systems, HVAC, and interior finishes. We also specialize in integrated campus development, involving multiple buildings with supporting infrastructure, along with sustainable Green Building construction."
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -227,7 +232,7 @@ export default function CommercialInstitutional() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

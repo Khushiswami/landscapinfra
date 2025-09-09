@@ -7,7 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 import ProjectSlider from "../../../Components/ProjectSlider";
 import KeyFeatures from "../../../Components/KeyFeatures";
 import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-
+import PebheaderW from "../../../Components/PebheaderW";
 import Accolades from "../../../Components/Accolades";
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
@@ -18,8 +18,6 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHeader from "yes/Components/Industryheader";
-import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -39,30 +37,26 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Factory-Fabricated Panels",
+    title: "Residential, Commercial, Social, and Recreational infrastructure development",
     description:
-      "Precision-engineered insulated panels ensure airtight sealing, excellent thermal efficiency, and unmatched durability.",
+      "",
   },
   {
-    title: "Advanced Insulation Technology",
+    title: "Geographic Information System (GIS) integration for efficient city planning and management",
     description:
-      "Incorporation of PUF / EPS panels and continuous line production methods for superior cooling, reduced heat loss, and energy savings.",
+      "",
   },
   {
-    title: "Reliable Engineering & Design",
+    title: "Environmentally conscious master planning focused on sustainability",
     description:
-      "Built with advanced structural design and engineering, our cold rooms guarantee consistent performance and compliance with global industry standards.",
+      "",
   },
   {
-    title: "Energy Efficiency & Cost Savings",
+    title: "Advanced, scalable IT infrastructure supporting smart city operations",
     description:
-      "Optimized refrigeration systems minimize power consumption while delivering maximum cooling efficiency.",
+      "",
   },
-  {
-    title: "Hygiene & Easy Maintenance",
-    description:
-      "Smooth, easy-to-clean surfaces and proper ventilation maintain strict hygiene — ideal for food and pharma applications.",
-  },
+ 
 ];
 
 const areasData: Area[] = [
@@ -196,31 +190,33 @@ export default function SmartCitiesTownships() {
 
   return (
     <>
-      <IndustryHead />
+      {/* <Pebheader/> */}
+      <PebheaderW />
+      {/* <ContactSection/> */}
 
       <ContactSectionB
-        title="About Landsking Infra"
+        title="Smart Cities & Townships"
         subtitle="Building trust with every project"
         description="From warehouses to custom structures, we ensure quality and timely delivery."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/product/s2.jpg"
+        bgImage="/Bussinessareaimg/smartcity.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="KEY FEATURES"
-        highlight="OF OUR COLD STORAGE SOLUTIONS"
+        heading="Smart Cities & Townships"
+        highlight=""
         image={{
-          src: "/custom.jpg",
+          src: "/Bussinessareaimg/smart.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="We provide modern cold storage and refrigeration solutions designed for efficiency, reliability, and long-term performance."
+        description="In response to the growing demand for intelligent and sustainable urban living, Landscape Infra embraces the development of smart cities. Our journey began with the landmark project of Lavasa, an innovative urban township spread across 25,000 acres near Pune, comprising five distinct towns: Dasve, Mugaon, Dhamanohol, Gadle, and Sakhri-Wadavli."
         features={featuresData}
       />
 
-      <PreEngineeredProductsB
+      {/* <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
         description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
@@ -231,7 +227,7 @@ export default function SmartCitiesTownships() {
         heading="Comprehensive Infrastructure Solutions"
         subheading="From design and engineering to execution and management..."
         tabs={HOME_TABS}
-      />
+      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"
