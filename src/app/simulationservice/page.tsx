@@ -74,7 +74,6 @@ export default function Defenceinstallation() {
       Simulation Service
     </h1>
     <p className="text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
-      Pre-Engineered Buildings (PEBs) are modern steel structures designed, fabricated, and assembled using standardized components for faster construction.
     </p>
   </div>
 </section>
@@ -86,31 +85,20 @@ export default function Defenceinstallation() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-                Defence Installation
+                Simulation Services
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
-              of Pre-Engineered Buildings (PEBs), delivering complete solutions
-              for industrial, commercial, and institutional structures. Our
-              buildings are designed with advanced engineering and
-              prefabrication technology, ensuring faster project delivery, cost
-              efficiency, and customized designs for diverse applications.
+              Landskings in-house simulation specialists use platforms like ANSYS, Revit + BIM, and EnergyPlus to provide accurate, actionable insights. We apply these technologies to optimize industrial layouts, HVAC systems, and structural designs, and to support green building certifications. Our ISO-compliant methodologies ensure a cross-functional, integrated approach, delivering data-driven excellence from the design phase through to execution.
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              What is a Pre-Engineered Building?{" "}
-              <span className="font-bold">Landsking Infra pvt.ltd</span> A
-              Pre-Engineered Building (PEB) is a steel structure based on a
-              structural framework of primary framing (columns and rafters),
-              secondary framing (purlins and girts), along with roof and wall
-              sheeting, and other components. All parts are pre-fabricated in
-              factories and assembled on-site, drastically reducing construction
-              time compared to conventional methods.
+            
+              We provide comprehensive simulation services to address a variety of critical applications. Our expertise includes modeling for industrial facility layout and safety design, HVAC system optimization, and fire modeling for emergency planning. We also conduct structural testing for complex architectural designs and offer full support for green building certification. By integrating our simulation expertise with architecture, MEP, and civil teams, we provide valuable insights that guide the entire design and execution process.
             </p>
 
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+            <button className="border border-[#000080] bg-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
               GET A QUOTE
             </button>
           </div>
