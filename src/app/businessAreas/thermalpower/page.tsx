@@ -18,6 +18,7 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
+import IndustryHead from "yes/Components/Industryhead";
 
 const testimonialsData = [
   {
@@ -194,9 +195,7 @@ export default function Thermalpower() {
 
   return (
     <>
-      {/* <Pebheader/> */}
-      <PebheaderW />
-      {/* <ContactSection/> */}
+      <IndustryHead />
 
       <ContactSectionB
         title="Thermal Power"

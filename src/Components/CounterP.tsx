@@ -45,36 +45,23 @@ export default function CounterP() {
           Leading industries toward a smarter future with focused and adaptable
           innovation.
         </h2>
-{/* <h1 style={{ fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif" }}>
-        Mediumg 500 Normal
-      </h1>
 
-      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 500, fontStyle: "italic" }}>
-        Mediumg 500 Italic
-      </h1>
-
-      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 700 }}>
-        Boldg 700 Normal
-      </h1>
-
-      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 700, fontStyle: "italic" }}>
-        Boldg 700 Italic
-      </h1>
-
-      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 900 }}>
-        Black g900 Normal
-      </h1>
-
-      <h1 style={{ fontFamily: "NewPanam Skyline", fontWeight: 900, fontStyle: "italic" }}>
-        Blackg 900 Italic
-      </h1> */}
+        {/* Counter Grid */}
         <div
-          className="bg-[#09306b] rounded-2xl shadow-lg py-10 px-6 
-          flex flex-wrap justify-center gap-y-10 gap-x-6 
-         grid grid-cols-2 gap-y-10 gap-x-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-items-center"
+          className="
+            bg-[#09306b] rounded-2xl shadow-lg py-10 px-6 
+            grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 
+            gap-y-10 gap-x-6 justify-items-center
+          "
         >
           {counters.map((counter, i) => (
-            <div key={i} className="text-center min-w-[120px]">
+            <div
+              key={i}
+              className={`text-center min-w-[120px] ${
+                // make the last item span full row on mobile
+                i === counters.length - 1 ? "col-span-2 sm:col-span-1" : ""
+              }`}
+            >
               <p className="text-4xl font-bold text-cyan-400 transition-all duration-500">
                 {counts[i].toFixed(counter.value % 1 !== 0 ? 2 : 0)}
                 {counter.suffix || ""}

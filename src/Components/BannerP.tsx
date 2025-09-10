@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -54,7 +54,7 @@ export default function BannerP() {
   }, [isPlaying, slides.length]);
 
   return (
-    <section className="relative w-full h-[50vh] sm:h-[94vh] overflow-hidden">
+    <section className="relative w-full h-[80vh] sm:h-[94vh] overflow-hidden">
       {/* Background Video */}
       <video
         src={slides[active].video}
@@ -69,7 +69,7 @@ export default function BannerP() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Slide Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full max-w-6xl mx-auto px-4 sm:px-6 text-center sm:text-left">
+      <div className="relative z-10 flex flex-col justify-center h-full max-w-8xl mx-auto px-4 sm:px-6 text-left sm:text-left">
         <AnimatePresence mode="wait">
           <motion.div
             key={slides[active].title}
@@ -87,7 +87,7 @@ export default function BannerP() {
 
             <button
               onClick={() => router.push(slides[active].link)}
-              className="px-4 sm:px-8 py-2 sm:py-3 bg-white text-blue-700 font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-base mx-auto sm:mx-0"
+              className="px-4 sm:px-8 py-2 sm:py-3 bg-white text-blue-700 font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center justify-start sm:justify-center gap-1 sm:gap-2 text-xs sm:text-base"
             >
               <IoIosArrowForward className="w-4 h-4 sm:w-5 sm:h-5 text-blue-700" />
               <span>Start now</span>
@@ -97,8 +97,8 @@ export default function BannerP() {
       </div>
 
       {/* Bottom Navigation Progress + Controls */}
-      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 w-full px-3 sm:px-6 z-10">
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-8 relative">
+      <div className="absolute bottom-4 sm:bottom-6 left-0 sm:left-1/2 sm:-translate-x-1/2 w-full px-3 sm:px-6 z-10">
+        <div className="flex  gap-2 sm:gap-8 relative justify-start sm:justify-center">
           {slides.map((s, i) => (
             <div
               key={i}

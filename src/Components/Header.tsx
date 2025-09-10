@@ -8,6 +8,7 @@ import {
   MagnifyingGlassIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,20 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <img src="/logo.jpeg" alt="Logo" className="h-10 w-auto" />
         </Link>
-
+        <div className="flex items-center space-x-3 md:hidden">
+          <button>
+            <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
+          </button>
+          <button>
+            <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
+          </button>
+          <button
+            onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+            className="px-2 py-1 border rounded text-sm hover:bg-gray-100"
+          >
+            {language}
+          </button>
+        </div>
         {/* Desktop Navigation */}
         <nav className="hidden capitalize md:flex items-center space-x-6 font-medium relative">
           <Link href="/" className="hover:opacity-80">
@@ -77,7 +91,7 @@ export default function Header() {
                   Renewable Energy
                 </Link>
                 <Link
-                  href="#"
+                  href="realStateDevlopment"
                   className="block hover:bg-gray-100 px-2 py-1 rounded"
                 >
                   Real EState Development
@@ -133,7 +147,7 @@ export default function Header() {
                   Other Industries
                 </Link>
                 <Link
-                  href="/simulation"
+                  href="/simulationservice"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Simulation Service
@@ -272,7 +286,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-white text-black px-4 py-4 shadow-lg max-h-screen overflow-auto">
+        <nav className="md:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
           <Link href="/" className="block py-2 border-b border-gray-200">
             HOME
           </Link>
@@ -284,7 +298,13 @@ export default function Header() {
               className="w-full text-left font-semibold flex justify-between items-center"
             >
               INDUSTRIES
-              <span>{openDropdown === "industries" ? "−" : "+"}</span>
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
             </button>
 
             {openDropdown === "industries" && (
@@ -348,7 +368,13 @@ export default function Header() {
               className="w-full text-left font-semibold flex justify-between items-center"
             >
               EXPERTISE
-              <span>{openDropdown === "expertise" ? "−" : "+"}</span>
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
             </button>
 
             {openDropdown === "expertise" && (
@@ -496,7 +522,13 @@ export default function Header() {
               className="w-full text-left font-semibold flex justify-between items-center"
             >
               ABOUT
-              <span>{openDropdown === "about" ? "−" : "+"}</span>
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
             </button>
 
             {openDropdown === "about" && (
@@ -537,26 +569,8 @@ export default function Header() {
             )}
           </div>
 
-          <div className="flex items-center space-x-4 pt-4 border-t">
-            <button>
-              <MagnifyingGlassIcon className="h-6 w-6" />
-            </button>
-            <button>
-              <EnvelopeIcon className="h-6 w-6" />
-            </button>
-            <button
-              onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
-              className="px-2 py-1 border rounded text-sm"
-            >
-              {language}
-            </button>
-          </div>
-
-          <Link
-            href="/contact"
-            className="block bg-[#000080] text-white px-4 py-2 rounded font-semibold mt-3"
-          >
-            CONTACT US
+          <Link href="/contact" className="block py-2 border-b border-gray-200">
+            Contact Us
           </Link>
         </nav>
       )}

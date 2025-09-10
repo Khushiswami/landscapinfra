@@ -47,10 +47,6 @@ export default function MediaP() {
               </p>
             </div>
           </div>
-
-          <button className="mt-6 bg-[#000080] hover:bg-[#272727] text-white font-semibold px-4 py-2 rounded">
-            DISCOVER ALL
-          </button>
         </div>
 
         {/* Right Section - Landsking Infra Pvt Ltd Update */}

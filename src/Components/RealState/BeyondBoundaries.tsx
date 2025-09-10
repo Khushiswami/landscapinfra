@@ -28,7 +28,7 @@ const BeyondBoundaries = () => {
   return (
     <section className="py-16 px-6 md:px-20 bg-white text-center">
       
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 uppercase mb-12">
+      <h2 className="text-3xl md:text-2xl font-black tracking-wide text-blue-900 uppercase mb-12">
         Beyond Boundaries
       </h2>
 

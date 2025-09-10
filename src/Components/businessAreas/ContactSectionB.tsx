@@ -75,7 +75,7 @@ export default function ContactSectionB({
         </div>
 
         {/* Right Slider */}
-        <div className="relative">
+        <div className="relative hidden md:block">
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation
