@@ -12,6 +12,9 @@ import PropertySearch from "../../Components/RealState/PropertySearch";
 import SectorSlider from "../../Components/RealState/SectorSlider";
 import LandmarkProjects from "../../Components/RealState/LandmarkProjects";
 import NewsCorner from "../../Components/RealState/NewsCorner";
+import AccoladesSlider from "../../Components/RealState/AccoladesSlider";
+import FooterReal from "../../Components/RealState/FooterReal";
+import ClientReal from "../../Components/RealState/ClientReal";
 
 
 export default function RealStateDevlopment() {
@@ -28,8 +31,11 @@ export default function RealStateDevlopment() {
         <PropertySearch />
         <SectorSlider/>
         <LandmarkProjects />
+        <ClientReal />
         <NewsCorner />
+        <AccoladesSlider />
         <BeyondBoundaries />
+        <FooterReal />
       </section>
     </>
   );

@@ -1,9 +1,10 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const projects = [
   {
@@ -45,11 +46,13 @@ export default function ProjectsSection() {
 
       <div className="max-w-4xl mx-auto sm:px-4 px-2 relative">
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Pagination, Autoplay]}
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           spaceBetween={16}
           slidesPerView={1}
           breakpoints={{
@@ -57,6 +60,7 @@ export default function ProjectsSection() {
             768: { slidesPerView: 2, spaceBetween: 24 },
             1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
+          className="pb-10" // ⬅️ niche dots ke liye jagah
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id}>
@@ -68,20 +72,20 @@ export default function ProjectsSection() {
                   ({project.status})
                 </p>
 
-
+                {/* Image + Button */}
                 <div className="relative w-full h-52 sm:h-60 md:h-64 flex justify-center">
-  <div className="relative w-[85%] sm:w-[90%] md:w-full h-full">
-    <Image
-      src={project.image}
-      alt={project.title}
-      fill
-      className="object-cover rounded-lg"
-    />
-    <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-blue-900 text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-blue-900 hover:text-white transition">
-      KNOW MORE
-    </button>
-  </div>
-</div>
+                  <div className="relative w-[85%] sm:w-[90%] md:w-full h-full">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover rounded-lg"
+                    />
+                    <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-blue-900 text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-blue-900 hover:text-white transition">
+                      KNOW MORE
+                    </button>
+                  </div>
+                </div>
 
                 <p className="text-sm md:text-base text-gray-700 mt-2 md:mt-3">
                   {project.location}
@@ -92,7 +96,7 @@ export default function ProjectsSection() {
         </Swiper>
 
         {/* Navigation buttons */}
-        <div className="custom-prev absolute -left-4 sm:-left-6 md:-left-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+        <div className="custom-prev absolute left-2 md:-left-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
@@ -102,7 +106,7 @@ export default function ProjectsSection() {
             <path d="M15 18l-6-6 6-6" />
           </svg>
         </div>
-        <div className="custom-next absolute -right-4 sm:-right-6 md:-right-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+        <div className="custom-next absolute right-2 md:-right-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"

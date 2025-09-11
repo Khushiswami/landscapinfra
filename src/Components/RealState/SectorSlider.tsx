@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation ,Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -49,21 +49,21 @@ export default function SectorSlider() {
     <section className="text-center px-4 sm:px-6 md:px-20 pt-12 md:pt-16 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="max-w-6xl mx-auto px-2 sm:px-4 relative">
-          {/* Heading aligned with slider */}
+          {/* Heading */}
           <h2 className="text-xl md:text-3xl font-bold text-start text-blue-900 mb-6">
             Sectors
           </h2>
 
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
             autoplay={{
-          delay: 2500, 
-          disableOnInteraction: false,
-        }}
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             spaceBetween={20}
             slidesPerView={1.3}
             centeredSlides={true}
@@ -113,10 +113,10 @@ export default function SectorSlider() {
           </Swiper>
 
           {/* Custom Navigation Buttons */}
-          <div className="custom-prev absolute -left-8 md:-left-12 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+          <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-12 z-20 cursor-pointer flex items-center justify-center  rounded-full p-2 md:p-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10"
+              className="h-6 w-6 md:h-10 md:w-10"
               fill="none"
               viewBox="0 0 24 24"
               stroke="#1c398e"
@@ -127,10 +127,10 @@ export default function SectorSlider() {
             </svg>
           </div>
 
-          <div className="custom-next absolute -right-8 md:-right-12 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+          <div className="custom-next absolute top-1/2 -translate-y-1/2 right-2 md:-right-12 z-20 cursor-pointer flex items-center justify-center  rounded-full  p-2 md:p-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10"
+              className="h-6 w-6 md:h-10 md:w-10"
               fill="none"
               viewBox="0 0 24 24"
               stroke="#1c398e"

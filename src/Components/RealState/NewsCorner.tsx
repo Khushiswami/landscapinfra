@@ -2,17 +2,15 @@
 
 export default function NewsCorner() {
   return (
-    <div className="bg-white py-10 px-6">
+    <div className="bg-white py-10 px-6 ">
       {/* Heading */}
-      <h2 className="text-center text-4xl font-bold text-gray-200 mb-10">
+      <h2 className="text-center text-4xl font-bold text-gray-200 mb-20 ">
         News Corner
       </h2>
 
-      {/* Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         
-        {/* LEFT SIDE - SCROLLABLE NEWS LIST */}
-        <div className="max-h-96 overflow-y-auto border-l-2 border-yellow-400 pl-4 pr-2 scrollbar-left-blue">
+        <div className="max-h-96 overflow-y-auto  pl-4 pr-2 scrollbar-left-blue">
           <ul className="space-y-6">
             <li className="pb-2 border-b">
               Prominent Rock Band Indian Ocean preludes Musicians in the Museum
@@ -47,7 +45,7 @@ export default function NewsCorner() {
         <div className="grid grid-cols-2 gap-4">
           <iframe
             className="w-full h-48 rounded-lg shadow-md"
-            src="https://www.youtube.com/watch?v=6aAMaQGDjQs"
+            src="https://www.youtube.com/embed/7pmaSWoP3A4"
             title="YouTube video 1"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -55,7 +53,7 @@ export default function NewsCorner() {
           ></iframe>
           <iframe
             className="w-full h-48 rounded-lg shadow-md"
-            src="https://www.youtube.com/watch?v=rNeMNlTKd48"
+            src="https://www.youtube.com/embed/szDJx6v_M0g"
             title="YouTube video 2"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
