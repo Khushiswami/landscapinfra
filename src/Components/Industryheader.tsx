@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 type NormalMenu = {
   name: string;
@@ -249,7 +250,7 @@ export default function IndustryHead() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white px-4 py-6 shadow-md absolute w-full z-40 max-h-[80vh] overflow-auto">
+        <div className="lg:hidden bg-[#000080] px-4 py-6 shadow-md absolute w-full z-40 max-h-[80vh] overflow-auto">
           <ul className="space-y-4">
             {navLinks.map((link) => (
               <li key={link.name}>
@@ -257,7 +258,7 @@ export default function IndustryHead() {
                   {/* First-level menu */}
                   {link.subItems ? (
                     <button
-                      className="w-full text-left font-light text-lg text-black flex justify-between items-center"
+                      className="w-full text-left font-light text-lg text-white flex justify-between items-center"
                       onClick={() =>
                         setOpenMobileSubMenu(
                           openMobileSubMenu === link.name ? null : link.name
@@ -266,14 +267,18 @@ export default function IndustryHead() {
                     >
                       {link.name}
                       <span className="ml-2">
-                        {openMobileSubMenu === link.name ? "▲" : "▼"}
+                        {openMobileSubMenu === link.name ? (
+                          <FaChevronUp />
+                        ) : (
+                          <FaChevronDown />
+                        )}
                       </span>
                     </button>
                   ) : (
                     <Link
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block font-light text-lg text-black"
+                      className="block font-light text-lg text-white"
                     >
                       {link.name}
                     </Link>
@@ -290,7 +295,7 @@ export default function IndustryHead() {
                               {col.subMenu ? (
                                 <>
                                   <button
-                                    className="w-full text-left text-black font-medium flex justify-between items-center"
+                                    className="w-full text-left font-light text-lg text-white flex justify-between items-center"
                                     onClick={() =>
                                       setOpenMobileSubSubMenu(
                                         openMobileSubSubMenu === col.title
@@ -301,9 +306,11 @@ export default function IndustryHead() {
                                   >
                                     {col.title}
                                     <span className="ml-2">
-                                      {openMobileSubSubMenu === col.title
-                                        ? "▲"
-                                        : "▼"}
+                                      {openMobileSubSubMenu === col.title ? (
+                                        <FaChevronUp />
+                                      ) : (
+                                        <FaChevronDown />
+                                      )}
                                     </span>
                                   </button>
                                   {/* Third-level submenu */}
@@ -316,7 +323,7 @@ export default function IndustryHead() {
                                             onClick={() =>
                                               setMobileMenuOpen(false)
                                             }
-                                            className="text-sm text-black block"
+                                            className="text-sm text-white block"
                                           >
                                             {sub.name}
                                           </Link>
@@ -329,7 +336,7 @@ export default function IndustryHead() {
                                 <Link
                                   href={col.href}
                                   onClick={() => setMobileMenuOpen(false)}
-                                  className="text-black font-medium block"
+                                  className="text-white font-medium block"
                                 >
                                   {col.title}
                                 </Link>
@@ -342,7 +349,7 @@ export default function IndustryHead() {
                               <Link
                                 href={item.href}
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="text-black text-sm block"
+                                className="text-white text-sm block"
                               >
                                 {item.name}
                               </Link>
