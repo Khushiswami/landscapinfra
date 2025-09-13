@@ -59,7 +59,7 @@ function Card({ image, icon, title, description }: CardProps) {
 }
 
 // ✅ Main Page Component
-export default function IndustrialBuildingsConstruction() {
+export default function Solarstructure() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -84,7 +84,7 @@ export default function IndustrialBuildingsConstruction() {
         >
           <div className="text-white text-center relative z-10">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-              Innovative Building & Construction
+              SOLAR STRUCTURES Efficient Structures with shorter{" "}
             </h1>
           </div>
         </div>
@@ -95,8 +95,7 @@ export default function IndustrialBuildingsConstruction() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              LANDSKING INFRA PVT LTD: CUSTOMIZED PREFABRICATED SOLUTIONS FOR
-              INDUSTRIAL BUILDINGS
+              Solar Module Mounting Structures (MMS)
             </h2>
             <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
@@ -104,11 +103,13 @@ export default function IndustrialBuildingsConstruction() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm md:text-base">
-                As modern industrialization continues to expand, prefabrication
-                has emerged as a revolutionary construction technology. It helps
-                in reducing construction timelines and costs, minimizes material
-                waste, and allows for highly flexible and tailored design
-                options to meet diverse project needs.
+                Landscapinfra designs durable and efficient Solar Module
+                Mounting Structures engineered for rooftops, ground-mounted, and
+                large-scale solar projects. Built with high-quality materials,
+                our MMS solutions withstand harsh conditions while ensuring
+                stability and long-lasting performance. With a focus on
+                innovation and sustainability, we help maximize energy output
+                and support India’s clean energy growth.
               </p>
               <p className="text-gray-700 mb-4 text-sm md:text-base">
                 At{" "}
@@ -147,18 +148,22 @@ export default function IndustrialBuildingsConstruction() {
       {/* Cards Section */}
       <main className="bg-white px-4 sm:px-6 md:px-12">
         <section className="bg-gray-50 py-12">
+          <h1>Solar Module Mounting Structures</h1>
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               image="/sectorimg/ware.jpg"
               icon={<FaWarehouse size={30} className="text-white" />}
-              title="Warehouse"
-              description="Designed for strength and long-lasting use, our prefabricated warehouses are easy to install, adaptable in layout, and highly efficient for storage. Ideal for use in logistics, farming, and industrial operations."
+              title="Solar Structural"
+              description="Landscapinfra has established itself as a trustworthy name in the Solar MMS manufacturing sector. With a strong foundation in structural engineering, fabrication, and project execution, we deliver superior mounting solutions designed for today’s evolving solar industry. Drawing from years of expertise in infrastructure and construction, we provide durable, low-cost, and sustainable systems that address the individual demands of solar power projects across India."
             />
             <Card
               image="/sectorimg/room.jpg"
               icon={<MdOutlineCleanHands size={30} className="text-white" />}
-              title="Clean Room"
-              description="Landsking Infra Pvt Ltd provides advanced cleanroom solutions for controlled environments in pharmaceuticals, electronics, and biotechnology, ensuring top hygiene and quality."
+              title="Comprehensive Expertise
+
+
+"
+              description="Our capabilities extend far beyond fabrication, covering the complete solar project lifecycle. From concept design and precise engineering to sourcing premium materials and on-site installation, Landscapinfra ensures end-to-end efficiency. This integral approach reduces project delays, improves quality, and supports faster commissioning. Backed by a skilled workforce and modern technology, we collaborate closely with clients to develop personalized MMS solutions that assurance long-term reliability, adaptability, and performance for diverse solar applications."
             />
             <Card
               image="/sectorimg/fac.webp"
@@ -169,14 +174,17 @@ export default function IndustrialBuildingsConstruction() {
             <Card
               image="/sectorimg/ind.jpeg"
               icon={<FaIndustry size={30} className="text-white" />}
-              title="Industrial Shed"
-              description="Built for strength and flexibility, Landsking Infra’s industrial sheds are ideal for factories, workshops, and large-scale operations. They offer quick installation, high durability, and customizable designs to suit your business needs."
+              title="Manufacturing Capacity and Quality Assurance"
+              description=" At Landscapinfra, we tak pride in our strong production capability, with the ability to deliver over 150 MW of MMS solutions every month. Our modernized resources are equipped with modern technology and streamlined production systems, allowing us to serve the growing solar market with speed and accuracy. This scale ensures the timely execution of projects while maintaining consistent quality standards, helping clients build reliable solar plants that perform for decades.
+"
             />
             <Card
               image="/sectorimg/cold.png"
               icon={<FaSnowflake size={30} className="text-white" />}
-              title="Cold Storage & Cold Room Manufacturer"
-              description="Landsking Infra’s cold storage facilities are constructed using high-quality insulated panels and modern refrigeration systems to maximize energy efficiency. Whether for pharmaceuticals or perishable goods, we ensure reliable temperature control and long-term preservation in line with industry standards."
+              title="Rigorous Quality Control
+"
+              description=" Quality is at the Top of everything we manufacture. Landscapinfra follows strict quality assurance protocols to ensure each MMS component meets universal guidelines. Every stage, from raw material inspection to fabrication and completion, is carefully monitored. We use premium materials such as hot-dip galvanized steel and corrosion-resistant coatings, boosting durability and minimizing maintenance needs. With this commitment to quality, our mounting structures remain resilient in different climates, delivering stability in the long term and dependable performance among all solar applications.
+"
             />
             <Card
               image="/sectorimg/cabin.webp"

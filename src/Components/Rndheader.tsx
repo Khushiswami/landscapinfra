@@ -1,10 +1,12 @@
 "use client";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 interface DropdownItem {
   label: string;
   sub?: string;
+  href?: string;
 }
 
 interface DropdownSection {
@@ -23,122 +25,70 @@ const Rndheader = () => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
 
   const navItems: NavItem[] = [
+    { label: "Home", href: "/" },
     {
-      label: "why Landsking",
-      dropdown: [
-        {
-          title: "Our Mission",
-          items: [
-            { label: "Data Science + Rocket Science" },
-            { label: "Our Company" },
-            { label: "About Landsking" },
-            { label: "Careers" },
-            { label: "Partners" },
-            { label: "Investors" },
-            { label: "Newsroom" },
-            { label: "Blog" },
-            { label: "Sustainability" },
-            { label: "Licensing" },
-            { label: "Contact Us" },
-          ],
-        },
-        {
-          title: "Our Technology",
-          items: [
-            { label: "Artificial Intelligence (AI)" },
-            { label: "Cloud & Hybrid Computing" },
-            { label: "Digital Twin" },
-            { label: "Electrification" },
-            { label: "Exascale" },
-            { label: "Simulation-Driven Design" },
-            { label: "Smart Manufacturing" },
-            { label: "Sustainability Solutions" },
-            { label: "View All" },
-          ],
-        },
-      ],
-    },
-    {
-      label: "Products",
+      label: "Solutions",
       dropdown: [
         {
           title: "PLATFORMS",
           items: [
-            { label: " HPCWORKS", sub: "HPC & Cloud Platform" },
-            { label: "Landsking HYPERWORKS", sub: "Design & Simulation Platform" },
-            { label: "Landsking RAPIDMINER", sub: "Data Analytics & AI Platform" },
+            {
+              label: "HPCWORKS",
+              sub: "HPC & Cloud Platform",
+              href: "/platforms/hpcworks",
+            },
+            {
+              label: "Landsking HYPERWORKS",
+              sub: "Design & Simulation Platform",
+              href: "/platforms/hyperworks",
+            },
+            {
+              label: "Landsking RAPIDMINER",
+              sub: "Data Analytics & AI Platform",
+              href: "/platforms/rapidminer",
+            },
           ],
         },
         {
           title: "SOLUTIONS",
           items: [
-            { label: "AI-Powered Engineering" },
-            { label: "Data Analytics & AI" },
-            { label: "Electromagnetics" },
-            { label: "Electronic System Design" },
-            { label: "Fluids & Thermal" },
-            { label: "HPC & Cloud" },
-            { label: "Internet of Things" },
-            { label: "Manufacturability" },
-            { label: "Materials" },
-            { label: "Multiphysics" },
-            { label: "Product Design" },
-            { label: "Structural Analysis" },
-            { label: "Structural Engineering - AEC" },
-            { label: "Systems Modeling" },
-          ],
-        },
-        {
-          title: "PRODUCTS",
-          items: [{ label: "View All" }, { label: "Free Trials" }],
-        },
-      ],
-    },
-    {
-      label: "Industries",
-      dropdown: [
-        {
-          title: "Industries We Serve",
-          items: [
-            { label: "Aerospace" },
-            { label: "Architecture, Engineering, & Construction (AEC)" },
-            { label: "Automotive" },
-            { label: "Consumer Goods" },
-            { label: "Defense" },
-            { label: "Electronics" },
-            { label: "Energy" },
-            { label: "Financial Services" },
-            { label: "Healthcare & Life Sciences" },
-            { label: "Heavy Equipment" },
-            { label: "Industrial Machinery" },
-            { label: "Marine" },
-            { label: "Process Manufacturing" },
-            { label: "Rail" },
-            { label: "Semiconductors" },
-            { label: "Technology" },
-            { label: "Weather & Climate" },
-            { label: "View All" },
+            {
+              label: "AI-Powered Engineering",
+              href: "/solutions/ai-engineering",
+            },
+            { label: "Data Analytics & AI", href: "/solutions/data-ai" },
+            { label: "Electromagnetics", href: "/solutions/electromagnetics" },
+            // Add more links as needed
           ],
         },
       ],
     },
-    { label: "Landsking One", href: "#" },
+    { label: "Projects", href: "/projects" },
     {
-      label: "Resources",
+      label: "Insights",
       dropdown: [
         {
           title: "Resources",
           items: [
-            { label: "Case Studies" },
-            { label: "White Papers" },
-            { label: "Webinars" },
-            { label: "Events" },
-            { label: "Training" },
-            { label: "Documentation" },
-            { label: "Videos" },
-            { label: "Blogs" },
-            { label: "Newsroom" },
-            { label: "View All" },
+            { label: "Our History", href: "/about/history" },
+            { label: "Leadership", href: "/about/leadership" },
+            { label: "Our Mission", href: "/about/mission" },
+            { label: "Innovation", href: "/about/innovation" },
+          ],
+        },
+      ],
+    },
+    { label: "Media", href: "/media" },
+    {
+      label: "About",
+      dropdown: [
+        {
+          title: "Resources",
+          items: [
+            { label: "Our History", href: "/about/history" },
+            { label: "Leadership", href: "/about/leadership" },
+            { label: "Our Mission", href: "/about/mission" },
+            { label: "Innovation", href: "/about/innovation" },
           ],
         },
       ],
@@ -168,48 +118,53 @@ const Rndheader = () => {
                   <ChevronDown size={16} />
                 </button>
 
-                {/* Fullscreen Dropdown */}
-               {/* Fullscreen Dropdown */}
-{openDropdown === idx && (
-  <div className="fixed left-0 top-16 w-screen bg-white border-t shadow-xl z-50">
-    <div className="max-w-7xl mx-auto px-8 py-12 grid grid-cols-3 gap-12">
-      {item.dropdown.map((section, i) => (
-        <div key={i}>
-          <h4 className="text-xs font-semibold text-gray-500 tracking-wide mb-4 uppercase">
-            {section.title}
-          </h4>
-          <ul className="space-y-4">
-            {section.items.map((link, j) => (
-              <li key={j}>
-                <a
-                  href="#"
-                  className="block hover:text-orange-600 transition"
-                >
-                  <div className="text-base font-medium">{link.label}</div>
-                  {link.sub && (
-                    <div className="text-sm text-gray-500 leading-tight">
-                      {link.sub}
+                {openDropdown === idx && (
+                  <div className="fixed left-0 top-16 w-screen bg-white border-t shadow-xl z-50">
+                    <div className="max-w-7xl mx-auto px-8 py-12 grid grid-cols-3 gap-12">
+                      {item.dropdown.map((section, i) => (
+                        <div key={i}>
+                          <h4 className="text-xs font-semibold text-gray-500 tracking-wide mb-4 uppercase">
+                            {section.title}
+                          </h4>
+                          <ul className="space-y-4">
+                            {section.items.map((link, j) => (
+                              <li key={j}>
+                                {link.href ? (
+                                  <Link
+                                    href={link.href}
+                                    className="block hover:text-orange-600 transition"
+                                  >
+                                    <div className="text-base font-medium">
+                                      {link.label}
+                                    </div>
+                                    {link.sub && (
+                                      <div className="text-sm text-gray-500 leading-tight">
+                                        {link.sub}
+                                      </div>
+                                    )}
+                                  </Link>
+                                ) : (
+                                  <span className="block text-base font-medium">
+                                    {link.label}
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
                     </div>
-                  )}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
-
+                  </div>
+                )}
               </div>
             ) : (
-              <a
+              <Link
                 key={idx}
-                href={item.href}
+                href={item.href || "/"}
                 className="hover:text-orange-600 transition"
               >
                 {item.label}
-              </a>
+              </Link>
             )
           )}
         </nav>
@@ -248,12 +203,18 @@ const Rndheader = () => {
                         <ul className="space-y-2 pl-2">
                           {section.items.map((link, j) => (
                             <li key={j}>
-                              <a
-                                href="#"
-                                className="block text-gray-700 hover:text-orange-600 text-sm"
-                              >
-                                {link.label}
-                              </a>
+                              {link.href ? (
+                                <Link
+                                  href={link.href}
+                                  className="block text-gray-700 hover:text-orange-600 text-sm"
+                                >
+                                  {link.label}
+                                </Link>
+                              ) : (
+                                <span className="block text-gray-700 text-sm">
+                                  {link.label}
+                                </span>
+                              )}
                               {link.sub && (
                                 <p className="text-xs text-gray-500 pl-2">
                                   {link.sub}
@@ -268,13 +229,13 @@ const Rndheader = () => {
                 )}
               </div>
             ) : (
-              <a
+              <Link
                 key={idx}
-                href={item.href}
+                href={item.href || "/"}
                 className="block hover:text-orange-600"
               >
                 {item.label}
-              </a>
+              </Link>
             )
           )}
         </div>
