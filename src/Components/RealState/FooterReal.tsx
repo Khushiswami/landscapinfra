@@ -9,35 +9,30 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
-export default function Footer() {
+export default function FooterReal() {
   return (
     <footer className="bg-[#f7f7f7] border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="flex flex-col items-center gap-6 w-full md:w-1/4">
-            <Image
-              src="/logo.png" 
-              alt="Brigade Logo"
-              width={140}
-              height={80}
-            />
+            <Image src="/logo.png" alt="Brigade Logo" width={140} height={80} />
 
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               <a className="p-2 rounded-full bg-sky-600 text-white">
-                <FaLinkedinIn size={22}/>
+                <FaLinkedinIn size={22} />
               </a>
               <a className="p-2 rounded-full bg-pink-500 text-white">
-                <FaInstagram size={22}/>
+                <FaInstagram size={22} />
               </a>
               <a className="p-2 rounded-full bg-blue-600 text-white">
-                <FaFacebookF size={22}/>
+                <FaFacebookF size={22} />
               </a>
               <a className="p-2 rounded-full bg-red-600 text-white">
-                <FaYoutube size={22}/>
+                <FaYoutube size={22} />
               </a>
               <a className="p-2 rounded-full bg-black text-white">
-                <FaXTwitter size={22}/>
+                <FaXTwitter size={22} />
               </a>
             </div>
 
@@ -106,7 +101,9 @@ export default function Footer() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {/* Residential Projects */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Residential Projects</h3>
+                <h3 className="text-lg font-semibold mb-4">
+                  Residential Projects
+                </h3>
                 <ul className="space-y-2 text-gray-800 text-sm">
                   <li>Bengaluru</li>
                   <li>Chennai</li>

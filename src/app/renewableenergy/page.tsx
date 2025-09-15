@@ -12,6 +12,8 @@ import Accordion from "yes/Components/Renewable/Accordion";
 import PebBrandP from "yes/Components/PebBrandP";
 import TotalSolutionP from "yes/Components/TotalSolutionP";
 import Explore from "yes/Components/Renewable/Explore";
+import Realstateheader from "yes/Components/Realstateheader";
+import NewsCorner from "yes/Components/RealState/NewsCorner";
 
 const slides = [
   {
@@ -175,6 +177,7 @@ export default function Renewableenergy() {
       <Accordion />
       <PebBrandP />
       <TotalSolutionP />
+      <NewsCorner />
       <Explore />
       <QuickLinks heading="Quick Links" links={links} />
 

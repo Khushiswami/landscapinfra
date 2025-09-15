@@ -15,28 +15,26 @@ import NewsCorner from "../../Components/RealState/NewsCorner";
 import AccoladesSlider from "../../Components/RealState/AccoladesSlider";
 import FooterReal from "../../Components/RealState/FooterReal";
 import ClientReal from "../../Components/RealState/ClientReal";
-
+import Realstateheader from "yes/Components/Realstateheader";
+import Footer from "yes/Components/Footer";
 
 export default function RealStateDevlopment() {
   return (
     <>
-    
-    <section className="py-12 bg-white">
-        <Header /> 
-        <VideoSection />
-        <ProjectsSection />
-        <ZigzagSection />
-        <AboutPage />
-        <OurLineage />
-        <PropertySearch />
-        <SectorSlider/>
-        <LandmarkProjects />
-        <ClientReal />
-        <NewsCorner />
-        <AccoladesSlider />
-        <BeyondBoundaries />
-        <FooterReal />
-      </section>
+      <Realstateheader />
+      <VideoSection />
+      <ProjectsSection />
+      <ZigzagSection />
+      <AboutPage />
+      <OurLineage />
+      <PropertySearch />
+      <SectorSlider />
+      <LandmarkProjects />
+      <ClientReal />
+      <NewsCorner />
+      <AccoladesSlider />
+      <BeyondBoundaries />
+      <Footer />
     </>
   );
 }

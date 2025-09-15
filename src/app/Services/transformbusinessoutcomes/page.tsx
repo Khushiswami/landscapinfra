@@ -1,18 +1,16 @@
 "use client";
 
-import { useRef, useState, ReactNode } from "react";
-import {
-  FaWarehouse,
-  FaIndustry,
-  FaSnowflake,
-  FaShieldAlt,
-} from "react-icons/fa";
+import { ReactNode } from "react";
+import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
-import IndustryHeader from "yes/Components/Industryheader";
-import Footer from "../../Components/Footer";
 import Image from "next/image";
-import Pebheader from "yes/Components/Pebheader";
-
+import Footer from "yes/Components/RealState/FooterReal";
+import Realstateheader from "yes/Components/Realstateheader";
+import Insights from "yes/Components/Insights";
+import ZigzagSection from "yes/Components/RealState/ZigzagSection";
+import ContactSection from "yes/Components/ContactSection";
+import QuickLinks from "yes/Components/businessAreas/QuickLinks";
+import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
 // Card Props Type
 type CardProps = {
   image: string;
@@ -20,6 +18,32 @@ type CardProps = {
   title: string;
   description: string;
 };
+const links = [
+  {
+    title: "CADFEM Service",
+    subtitle: "SUPPORT & ENGINEERING",
+    icon: <Wrench size={20} />,
+    url: "/service",
+  },
+  {
+    title: "Simulation-Trends",
+    subtitle: "DIE ZUKUNFT ENTDECKEN",
+    icon: <Lightbulb size={20} />,
+    url: "/trends",
+  },
+  {
+    title: "Studenten-Portal",
+    subtitle: "DEIN GRATIS ANGEBOT",
+    icon: <GraduationCap size={20} />,
+    url: "/students",
+  },
+  {
+    title: "Starkes Netzwerk",
+    subtitle: "WELTWEIT SIMULIEREN",
+    icon: <Users size={20} />,
+    url: "/network",
+  },
+];
 
 // ✅ Card Component
 function Card({ image, icon, title, description }: CardProps) {
@@ -59,21 +83,11 @@ function Card({ image, icon, title, description }: CardProps) {
   );
 }
 
-// ✅ Main Page Component
-export default function IndustrialBuildingsConstruction() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
-
+// ✅ Page Component
+export default function Transformbusinessoutcomes() {
   return (
     <>
-      <Pebheader />
+      <Realstateheader />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
@@ -85,7 +99,7 @@ export default function IndustrialBuildingsConstruction() {
         >
           <div className="text-white text-center relative z-10">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-              Innovative Building & Construction
+              Transform Business Outcomes{" "}
             </h1>
           </div>
         </div>
@@ -96,8 +110,7 @@ export default function IndustrialBuildingsConstruction() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              LANDSKING INFRA PVT LTD: CUSTOMIZED PREFABRICATED SOLUTIONS FOR
-              INDUSTRIAL BUILDINGS
+              Solar Module Mounting Structures (MMS)
             </h2>
             <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
@@ -105,26 +118,22 @@ export default function IndustrialBuildingsConstruction() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm md:text-base">
-                As modern industrialization continues to expand, prefabrication
-                has emerged as a revolutionary construction technology. It helps
-                in reducing construction timelines and costs, minimizes material
-                waste, and allows for highly flexible and tailored design
-                options to meet diverse project needs.
+                Landscapinfra designs durable and efficient Solar Module
+                Mounting Structures engineered for rooftops, ground-mounted, and
+                large-scale solar projects. Built with high-quality materials,
+                our MMS solutions withstand harsh conditions while ensuring
+                stability and long-lasting performance.
               </p>
               <p className="text-gray-700 mb-4 text-sm md:text-base">
                 At{" "}
                 <span className="font-semibold">Landsking Infra Pvt Ltd</span>,
                 we bring over 7 years of expertise in delivering top-quality
-                pre-engineered and prefabricated industrial buildings. Our
-                portfolio includes warehouses, manufacturing units, industrial
-                sheds, poultry farms, cold storage facilities, clean rooms, and
-                many other specialized structures.
+                pre-engineered and prefabricated industrial buildings.
               </p>
               <p className="text-gray-700 mb-6 text-sm md:text-base">
                 Our skilled team ensures excellence at every stage — from
                 understanding your vision, planning, and design to manufacturing
-                and on-site installation — delivering durable, cost-effective,
-                and efficient solutions.
+                and on-site installation.
               </p>
               <div className="flex items-center gap-4">
                 <button className="border text-blue-900 border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-blue-900 hover:text-white transition">
@@ -148,68 +157,54 @@ export default function IndustrialBuildingsConstruction() {
       {/* Cards Section */}
       <main className="bg-white px-4 sm:px-6 md:px-12">
         <section className="bg-gray-50 py-12">
+          <h1 className="text-black text-center text-2xl md:text-3xl font-bold mb-6">
+            Solar Module Mounting Structures
+          </h1>
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               image="/sectorimg/ware.jpg"
               icon={<FaWarehouse size={30} className="text-white" />}
-              title="Warehouse"
-              description="Designed for strength and long-lasting use, our prefabricated warehouses are easy to install, adaptable in layout, and highly efficient for storage. Ideal for use in logistics, farming, and industrial operations."
+              title="Solar Structural"
+              description="Landscapinfra has established itself as a trustworthy name in the Solar MMS manufacturing sector."
             />
             <Card
               image="/sectorimg/room.jpg"
               icon={<MdOutlineCleanHands size={30} className="text-white" />}
-              title="Clean Room"
-              description="Landsking Infra Pvt Ltd provides advanced cleanroom solutions for controlled environments in pharmaceuticals, electronics, and biotechnology, ensuring top hygiene and quality."
-            />
-            <Card
-              image="/sectorimg/fac.webp"
-              icon={<FaIndustry size={30} className="text-white" />}
-              title="Factory Building"
-              description="Our industrial buildings feature smart designs, excellent insulation, and quick construction times. Built to handle heavy loads and ensure proper airflow, they are ideal for seamless and efficient production operations."
+              title="Comprehensive Expertise"
+              description="Our capabilities extend far beyond fabrication, covering the complete solar project lifecycle."
             />
             <Card
               image="/sectorimg/ind.jpeg"
               icon={<FaIndustry size={30} className="text-white" />}
-              title="Industrial Shed"
-              description="Built for strength and flexibility, Landsking Infra’s industrial sheds are ideal for factories, workshops, and large-scale operations. They offer quick installation, high durability, and customizable designs to suit your business needs."
+              title="Manufacturing Capacity"
+              description="We take pride in our strong production capability, delivering over 150 MW of MMS monthly."
             />
             <Card
               image="/sectorimg/cold.png"
               icon={<FaSnowflake size={30} className="text-white" />}
-              title="Cold Storage & Cold Room Manufacturer"
-              description="Landsking Infra’s cold storage facilities are constructed using high-quality insulated panels and modern refrigeration systems to maximize energy efficiency. Whether for pharmaceuticals or perishable goods, we ensure reliable temperature control and long-term preservation in line with industry standards."
-            />
-            <Card
-              image="/sectorimg/cabin.webp"
-              icon={<FaShieldAlt size={30} className="text-white" />}
-              title="Portable Security Guard Cabins"
-              description="Landsking Infra provides portable security guard cabins that are easy to install and relocate. Built with durable, insulated materials, these cabins offer a secure and comfortable environment for security staff. They are perfectly suited for construction sites, industrial zones, and other locations needing reliable security posts."
+              title="Rigorous Quality Control"
+              description="We follow strict quality assurance protocols to ensure each MMS component meets universal guidelines."
             />
           </div>
         </section>
       </main>
-
+      {/* zigzag */}
       {/* Info Section */}
       <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-16 text-center mb-12">
         <h2 className="text-xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
-          Custom-Designed Buildings to Match Your Business Goals
+          Diverse Applications of Solar Mounting Structures
         </h2>
         <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
         </div>
         <p className="text-gray-700 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
-          The{" "}
-          <span className="text-blue-900 font-semibold">
-            pre engineered building
-          </span>{" "}
-          technology has gained strong recognition worldwide. Across India, more
-          industries are adopting this modern approach, transforming the
-          construction sector. These prefabricated solutions deliver faster
-          completion — up to 50% quicker than traditional methods — while being
-          cost-effective, energy-efficient, and adaptable to various business
-          needs.
+          The <span className="text-blue-900 font-semibold">Landscapinfra</span>{" "}
+          delivers a wide portfolio of Solar Mounting Structures engineered for
+          multiple applications across the renewable energy landscape.
         </p>
       </section>
+      <QuickLinks heading="Quick Links" links={links} />
+      <Insights />
 
       <Footer />
     </>

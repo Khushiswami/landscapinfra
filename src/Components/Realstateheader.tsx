@@ -1,0 +1,498 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
+
+// TypeScript types
+type MenuLink = {
+  label: string;
+  href: string;
+};
+
+type MegaMenu = {
+  left: {
+    title: string;
+    text: string;
+    buttonText: string;
+    buttonLink: string;
+    image?: string;
+    linkText?: string;
+    linkHref?: string;
+  };
+  needs: MenuLink[];
+  propertyTypes: MenuLink[];
+  industries: MenuLink[];
+};
+
+export default function Realstateheader() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState<string | null>(
+    null
+  );
+
+  // Mega menu states
+  const [megaMenuOpen, setMegaMenuOpen] = useState<string | null>(null);
+
+  // Close mega menu when clicking outside
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (
+        !(e.target as HTMLElement).closest("#mega-menu-container") &&
+        !(e.target as HTMLElement).closest(".top-nav-item")
+      ) {
+        setMegaMenuOpen(null);
+      }
+    };
+    document.addEventListener("click", handler);
+    return () => document.removeEventListener("click", handler);
+  }, []);
+
+  const menuItems = [
+    { label: "Services", href: "/Services" },
+    { label: "Properties", href: "/properties" },
+    { label: "People & Offices", href: "/people" },
+    { label: "Insights", href: "/insights" },
+    { label: "About Us", href: "/about" },
+  ];
+
+  const ServicesMenu: MegaMenu = {
+    left: {
+      title: "Services",
+      text: "Unlock the value in every dimension of your real estate with integrated, data-led Services that support your overall business strategy.",
+      buttonText: "See Overview",
+      buttonLink: "/Services",
+      image: "/solar.jpg",
+      linkText: "Sustainability Solutions",
+      linkHref: "/Services/sustainability",
+    },
+    needs: [
+      {
+        label: "Invest, Finance & Value",
+        href: "/Services/investfinancevalue",
+      },
+      { label: "Plan, Lease & Occupy", href: "/Services/planleaseoccupy" },
+      { label: "Design & Build", href: "/Services/media" },
+      {
+        label: "Manage Properties & Portfolios",
+        href: "/Services/managepropertiesportfolios",
+      },
+      {
+        label: "Transform Business Outcomes",
+        href: "/Services/transformbusinessoutcomes",
+      },
+    ],
+    propertyTypes: [
+      { label: "Office", href: "/Services/office" },
+      { label: "Retail", href: "/Services/retail" },
+      { label: "Industrial", href: "/Services/industriesproperties" },
+      { label: "Multifamily", href: "/Services/multifamily" },
+      { label: "Hotels", href: "/Services/hotels" },
+    ],
+    industries: [
+      { label: "Data Center", href: "/Services/datacenter" },
+      { label: "Life Sciences", href: "/Services/lifescience" },
+      { label: "Banking & Financial Services", href: "/Services/banking" },
+      { label: "Tech, Media & Telecommunications", href: "/Services/tech" },
+      { label: "Healthcare", href: "/Services/healthcare" },
+    ],
+  };
+
+  const propertiesMenu: MegaMenu = {
+    left: {
+      title: "Properties",
+      text: "Find the right property for your business from our extensive listings of office, retail, and industrial spaces.",
+      buttonText: "Browse All Properties",
+      buttonLink: "/properties",
+      image: "/office.jpg",
+      linkText: "Leasing Opportunities",
+      linkHref: "/properties/leasing",
+    },
+    needs: [
+      { label: "Properties for Lease", href: "/Services/propertiesforlease" },
+    ],
+    propertyTypes: [
+      {
+        label: "Properties for Sale",
+        href: "/Services/propertiesforsale",
+      },
+      {
+        label: "Investment Property For Sale",
+        href: "/Services/propertiesforinvestment",
+      },
+    ],
+    industries: [{ label: "Hospitality", href: "/Services/hospitality" }],
+  };
+
+  const peopleMenu: MegaMenu = {
+    left: {
+      title: "People & Offices",
+      text: "Meet our team and find the right office for your business.",
+      buttonText: "Find Offices",
+      buttonLink: "/people",
+      image: "/office.jpg",
+      linkText: "Our Team",
+      linkHref: "/people/team",
+    },
+    needs: [],
+    propertyTypes: [],
+    industries: [],
+  };
+
+  const activeMenu: MegaMenu | null =
+    megaMenuOpen === "Services"
+      ? ServicesMenu
+      : megaMenuOpen === "Properties"
+      ? propertiesMenu
+      : megaMenuOpen === "People & Offices"
+      ? peopleMenu
+      : null;
+
+  return (
+    <header className="w-full border-b border-gray-200 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.jpeg"
+              alt="CBRE Logo"
+              width={100}
+              height={30}
+              priority
+            />
+          </Link>
+
+          {/* Desktop Menu */}
+          <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-900">
+            {menuItems.map((item) => {
+              const hasMega =
+                item.label === "Services" ||
+                item.label === "Properties" ||
+                item.label === "People & Offices";
+              return (
+                <div key={item.label} className="relative top-nav-item">
+                  <Link
+                    href={item.href}
+                    onClick={(e) => {
+                      if (hasMega) {
+                        e.preventDefault();
+                        setMegaMenuOpen((prev) =>
+                          prev === item.label ? null : item.label
+                        );
+                      } else {
+                        setMegaMenuOpen(null);
+                      }
+                    }}
+                    className="hover:text-[#000080] transition flex items-center"
+                  >
+                    {item.label}
+                    {hasMega && <ChevronDown className="ml-1 h-4 w-4" />}
+                  </Link>
+                </div>
+              );
+            })}
+          </nav>
+
+          {/* Right Side */}
+          <div className="hidden md:flex items-center space-x-4">
+            <button className="p-2 text-gray-700 hover:text-[#000080]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z"
+                />
+              </svg>
+            </button>
+            <Image src="/us-flag.png" alt="US Flag" width={20} height={14} />
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-gray-700"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* Mega Menu Desktop */}
+      {activeMenu && (
+        <div
+          id="mega-menu-container"
+          className="absolute left-0 w-full bg-white border-t border-gray-200 shadow-lg z-50"
+        >
+          <div className="max-w-7xl mx-auto px-8 py-8 grid grid-cols-4 gap-8">
+            {/* LEFT COLUMN */}
+            <div className="col-span-1">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+                {activeMenu.left.title}
+              </h2>
+              <p className="text-sm text-gray-600 mb-4">
+                {activeMenu.left.text}
+              </p>
+              <Link
+                href={activeMenu.left.buttonLink}
+                className="inline-block bg-[#000080] text-white px-4 py-2 rounded hover:bg-green-800 transition mb-6"
+              >
+                {activeMenu.left.buttonText}
+              </Link>
+              {activeMenu.left.image && (
+                <div className="flex flex-col space-y-2">
+                  <Image
+                    src={activeMenu.left.image}
+                    alt="Promo"
+                    width={200}
+                    height={120}
+                    className="rounded"
+                  />
+                  {activeMenu.left.linkHref && (
+                    <Link
+                      href={activeMenu.left.linkHref}
+                      className="text-[#000080] text-sm font-medium hover:underline"
+                    >
+                      {activeMenu.left.linkText}
+                    </Link>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* NEEDS */}
+            {activeMenu.needs.length > 0 && (
+              <div>
+                <h3 className="text-gray-800 font-semibold border-b pb-2 mb-3">
+                  Needs
+                </h3>
+                <ul className="space-y-2">
+                  {activeMenu.needs.map((link: MenuLink) => (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className="hover:text-green-800 transition"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* PROPERTY TYPES */}
+            {activeMenu.propertyTypes.length > 0 && (
+              <div>
+                <h3 className="text-gray-800 font-semibold border-b pb-2 mb-3">
+                  Property Types
+                </h3>
+                <ul className="space-y-2">
+                  {activeMenu.propertyTypes.map((link: MenuLink) => (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className="hover:text-green-800 transition"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* INDUSTRIES */}
+            {activeMenu.industries.length > 0 && (
+              <div>
+                <h3 className="text-gray-800 font-semibold border-b pb-2 mb-3">
+                  Industries
+                </h3>
+                <ul className="space-y-2">
+                  {activeMenu.industries.map((link: MenuLink) => (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className="hover:text-green-800 transition"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-white">
+          <nav className="px-4 py-3 space-y-2 text-gray-900">
+            {menuItems.map((item) => {
+              const hasMega =
+                item.label === "Services" ||
+                item.label === "Properties" ||
+                item.label === "People & Offices";
+
+              const activeMobileMenu: MegaMenu =
+                item.label === "Services"
+                  ? ServicesMenu
+                  : item.label === "Properties"
+                  ? propertiesMenu
+                  : peopleMenu;
+
+              return (
+                <div key={item.label} className="space-y-1">
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={item.href}
+                      className="hover:text-green-800 transition flex-1 text-left"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                    {hasMega && (
+                      <button
+                        onClick={() =>
+                          setMobileSubmenuOpen(
+                            mobileSubmenuOpen === item.label ? null : item.label
+                          )
+                        }
+                        className="p-1"
+                        aria-label="Toggle submenu"
+                      >
+                        {mobileSubmenuOpen === item.label ? (
+                          <ChevronUp className="h-4 w-4" />
+                        ) : (
+                          <ChevronDown className="h-4 w-4" />
+                        )}
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Mega Menu Content */}
+                  {hasMega && mobileSubmenuOpen === item.label && (
+                    <div className="pl-4 pt-2 space-y-4 text-sm">
+                      {/* LEFT SECTION */}
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                          {activeMobileMenu.left.title}
+                        </h3>
+                        <p className="text-gray-600 mb-2">
+                          {activeMobileMenu.left.text}
+                        </p>
+                        <Link
+                          href={activeMobileMenu.left.buttonLink}
+                          className="inline-block bg-green-900 text-white px-3 py-1 rounded hover:bg-green-800 transition mb-2"
+                        >
+                          {activeMobileMenu.left.buttonText}
+                        </Link>
+                        {activeMobileMenu.left.image && (
+                          <div className="mt-2">
+                            <Image
+                              src={activeMobileMenu.left.image}
+                              alt="Promo"
+                              width={180}
+                              height={100}
+                              className="rounded mb-1"
+                            />
+                            {activeMobileMenu.left.linkHref && (
+                              <Link
+                                href={activeMobileMenu.left.linkHref}
+                                className="text-green-800 text-sm font-medium hover:underline"
+                              >
+                                {activeMobileMenu.left.linkText}
+                              </Link>
+                            )}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* NEEDS */}
+                      {activeMobileMenu.needs.length > 0 && (
+                        <div>
+                          <h4 className="font-semibold mb-1">Needs</h4>
+                          <ul className="space-y-1">
+                            {activeMobileMenu.needs.map((link: MenuLink) => (
+                              <li key={link.label}>
+                                <Link
+                                  href={link.href}
+                                  className="block hover:text-green-800 transition"
+                                  onClick={() => setMobileMenuOpen(false)}
+                                >
+                                  {link.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* PROPERTY TYPES */}
+                      {activeMobileMenu.propertyTypes.length > 0 && (
+                        <div>
+                          <h4 className="font-semibold mb-1">Property Types</h4>
+                          <ul className="space-y-1">
+                            {activeMobileMenu.propertyTypes.map(
+                              (link: MenuLink) => (
+                                <li key={link.label}>
+                                  <Link
+                                    href={link.href}
+                                    className="block hover:text-green-800 transition"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                  >
+                                    {link.label}
+                                  </Link>
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* INDUSTRIES */}
+                      {activeMobileMenu.industries.length > 0 && (
+                        <div>
+                          <h4 className="font-semibold mb-1">Industries</h4>
+                          <ul className="space-y-1">
+                            {activeMobileMenu.industries.map(
+                              (link: MenuLink) => (
+                                <li key={link.label}>
+                                  <Link
+                                    href={link.href}
+                                    className="block hover:text-green-800 transition"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                  >
+                                    {link.label}
+                                  </Link>
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}

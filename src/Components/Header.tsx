@@ -70,12 +70,12 @@ export default function Header() {
                   Pre Engineered Building
                 </Link>
 
-                <Link
+                {/* <Link
                   href="/buildingandinfrastructure"
                   className="block hover:bg-gray-100 px-2 py-1 rounded"
                 >
                   Building and Infrastructure
-                </Link>
+                </Link> */}
 
                 <Link
                   href="/rnd"
