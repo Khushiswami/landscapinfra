@@ -22,27 +22,27 @@ const slides = [
     video: "/video.mp4",
     url: "/solarstructure",
   },
-  // {
-  //   title: "EPC Solutions",
-  //   description:
-  //     "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
-  //   video: "/video.mp4",
-  //   url: "/epcsolutions",
-  // },
-  // {
-  //   title: "Project Management Consultancy",
-  //   description:
-  //     "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
-  //   video: "/video.mp4",
-  //   url: "/projectmanagementconsultancy",
-  // },
-  // {
-  //   title: "Structural Engineering Services",
-  //   description:
-  //     "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
-  //   video: "/homeslider.mp4",
-  //   url: "/buildingandinfrastructure",
-  // },
+  {
+    title: "EPC Solutions",
+    description:
+      "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
+    video: "/video.mp4",
+    url: "/epcsolutions",
+  },
+  {
+    title: "Project Management Consultancy",
+    description:
+      "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
+    video: "/video.mp4",
+    url: "/projectmanagementconsultancy",
+  },
+  {
+    title: "Structural Engineering Services",
+    description:
+      "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
+    video: "/homeslider.mp4",
+    url: "/buildingandinfrastructure",
+  },
 ];
 
 export default function Renewableenergy() {

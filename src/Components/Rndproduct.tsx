@@ -6,46 +6,22 @@ import Image from "next/image";
 
 const exploreItems = [
   {
-    title: "Semiconductors 💡",
-    subtitle: "Smart Design for the Brain of Technology",
+    subtitle: "Mechanical Engineering Design",
     description:
-      "Advanced semiconductor tools act like a strategist for microchips—analyzing, optimizing, and reducing risks so integrated circuits perform with precision and power.",
+      "From custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
     image: "/rndimages/semiconductor.jpg",
   },
   {
-    title: "Materials 🔬",
-    subtitle: "Material Intelligence: The DNA of Innovation",
+    subtitle: "Civil Engineering Design",
     description:
-      "Material platforms unlock the hidden properties of metals, polymers, and composites, giving engineers the data and models they need to build stronger, smarter products.",
+      "Safe, sustainable, and future-ready—our civil designs balance strength with environmental care. From Indore’s growing roads to India s urban skylines, structural integrity is not just a choice, it s a necessity.",
     image: "/rndimages/Material Intelligence.jpg",
   },
   {
-    title: "Systems ⚙️",
-    subtitle: "Engineering Harmony in Complex Systems",
+    subtitle: "CAE Simulation Services",
     description:
-      "Like a conductor guiding an orchestra, systems engineering software ensures every mechanical, digital, and electronic component works in sync—delivering efficiency before the first prototype is built.",
+      "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
     image: "/rndimages/systems engineering software.jpg",
-  },
-  {
-    title: "Fluids 🌊",
-    subtitle: "Mastering the Invisible Language of Flow",
-    description:
-      "CFD software turns the unseen movements of air and liquids into precise insights, helping engineers refine designs for better aerodynamics, cooling, and performance.",
-    image: "/rndimages/Multi-Body System Simulation.jpg",
-  },
-  {
-    title: "Electronics ⚡",
-    subtitle: "Reliable Electronics Through Multiphysics Precision",
-    description:
-      "Chips and 3D ICs behave like ecosystems where heat, electricity, and mechanics collide. Multiphysics tools reveal these interactions, ensuring efficient and resilient designs.",
-    image: "/rndimages/Reliable Electronics.jpeg",
-  },
-  {
-    title: "Structures 🏗️",
-    subtitle: "Strength You Can Simulate Before You Build",
-    description:
-      "Structural analysis software predicts how bridges, towers, and machines will endure stress and strain, giving engineers the confidence to design for safety and durability.",
-    image: "/rndimages/System Simulation.jpg",
   },
 ];
 
@@ -75,7 +51,7 @@ export default function ExploreSection() {
   return (
     <section className="bg-black py-12 px-6 md:px-12 relative">
       <h2 className="text-white text-3xl md:text-4xl font-bold mb-10 text-center">
-        Explore Ansys Possibilities
+        Explore Services
       </h2>
 
       {/* Cards row */}
@@ -87,15 +63,12 @@ export default function ExploreSection() {
           >
             <Image
               src={item.image}
-              alt={item.title}
+              alt={item.subtitle}
               width={500}
               height={600}
               className="object-cover w-full h-[400px] transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
-              <h3 className="text-yellow-400 font-semibold text-lg">
-                {item.title}
-              </h3>
               <h4 className="text-white font-bold text-xl mb-2">
                 {item.subtitle}
               </h4>
