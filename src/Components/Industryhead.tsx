@@ -117,10 +117,10 @@ export default function IndustryHead() {
       name: "Insights",
       href: "/insight",
       subItems: [
-        { name: "Blogs", href: "/projects/pre-engineered" },
-        { name: "Brouchers", href: "/projects/prefab" },
-        { name: "Whitepaper", href: "/projects/videos" },
-        { name: "Carrers", href: "/projects/videos" },
+        { name: "Blogs", href: "/blogs" },
+        { name: "Brouchers", href: "/brouchers" },
+        { name: "Whitepaper", href: "/whitepaper" },
+        { name: "Carrers", href: "/carrers" },
       ],
     },
     {
@@ -135,10 +135,13 @@ export default function IndustryHead() {
       name: "About us",
       href: "/about",
       subItems: [
-        { name: "Our Leadership", href: "/leadership" },
-        { name: "Our History", href: "/company" },
-        { name: "Our Mission", href: "/mission" },
-        { name: "Innovation", href: "/innovation" },
+        {
+          name: "Our Leadership",
+          href: "/industryinstallationaboutus/leadership",
+        },
+        { name: "Our History", href: "/industryinstallationaboutus/company" },
+        { name: "Our Mission", href: "/industryinstallationaboutus/mission" },
+        { name: "Innovation", href: "/industryinstallationaboutus/innovation" },
       ],
     },
   ];

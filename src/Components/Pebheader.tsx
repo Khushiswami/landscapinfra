@@ -132,7 +132,20 @@ export default function Pebheader() {
     },
     { name: "Projects", href: "/projects" },
     { name: "Insights", href: "/insight" },
-    { name: "About", href: "/about" },
+    // { name: "About", href: "/about" },
+    {
+      name: "About",
+      href: "/about",
+      subItems: [
+        {
+          name: "Our Leadership",
+          href: "/pebabout/leadership",
+        },
+        { name: "Our History", href: "/pebabout/history" },
+        { name: "Our Mission", href: "/pebabout/mission" },
+        { name: "Innovation", href: "/pebabout/innovation" },
+      ],
+    },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -178,7 +191,9 @@ export default function Pebheader() {
                 <div
                   className={`absolute left-0 mt-2 w-56 rounded-b-3xl opacity-0 invisible 
                     group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out
-                    backdrop-blur-md z-50 ${scrolled ? "bg-white" : "bg-white/20"}`}
+                    backdrop-blur-md z-50 ${
+                      scrolled ? "bg-white" : "bg-white/20"
+                    }`}
                 >
                   <ul className="py-2">
                     {link.name === "Products"
@@ -240,110 +255,111 @@ export default function Pebheader() {
 
       {/* Mobile Menu */}
       {/* Mobile Menu */}
-{mobileMenuOpen && (
-  <div className="lg:hidden bg-white px-4 py-6 shadow-md absolute w-full z-40">
-    <ul className="space-y-4">
-      {navLinks.map((link) => (
-        <li key={link.name}>
-          <div className="flex flex-col">
-            {"subItems" in link && link.subItems ? (
-              // 👉 Submenu ke liye button
-              <button
-                className="w-full text-left font-semibold text-black text-lg flex justify-between items-center"
-                onClick={() =>
-                  setOpenMobileSubMenu(
-                    openMobileSubMenu === link.name ? null : link.name
-                  )
-                }
-              >
-                {link.name}
-                <span>{openMobileSubMenu === link.name ? "-" : "+"}</span>
-              </button>
-            ) : (
-              // 👉 Simple links ke liye direct Link
-              <Link
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="font-semibold text-black text-lg"
-              >
-                {link.name}
-              </Link>
-            )}
+      {mobileMenuOpen && (
+        <div className="lg:hidden bg-white px-4 py-6 shadow-md absolute w-full z-40">
+          <ul className="space-y-4">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <div className="flex flex-col">
+                  {"subItems" in link && link.subItems ? (
+                    // 👉 Submenu ke liye button
+                    <button
+                      className="w-full text-left font-semibold text-black text-lg flex justify-between items-center"
+                      onClick={() =>
+                        setOpenMobileSubMenu(
+                          openMobileSubMenu === link.name ? null : link.name
+                        )
+                      }
+                    >
+                      {link.name}
+                      <span>{openMobileSubMenu === link.name ? "-" : "+"}</span>
+                    </button>
+                  ) : (
+                    // 👉 Simple links ke liye direct Link
+                    <Link
+                      href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="font-semibold text-black text-lg"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
 
-            {/* Submenu render */}
-            {"subItems" in link &&
-              openMobileSubMenu === link.name &&
-              link.subItems && (
-                <ul className="ml-4 mt-2 space-y-2">
-                  {link.name === "Products"
-                    ? (link as ProductMenu).subItems?.map((item) => (
-                        <li key={item.title} className="flex flex-col">
-                          {item.subMenu ? (
-                            <>
-                              <button
-                                className="text-left font-medium text-black flex justify-between items-center w-full"
-                                onClick={() =>
-                                  setOpenMobileSubSubMenu(
-                                    openMobileSubSubMenu === item.title
-                                      ? null
-                                      : item.title
-                                  )
-                                }
-                              >
-                                {item.title}
-                                <span>
-                                  {openMobileSubSubMenu === item.title
-                                    ? "-"
-                                    : "+"}
-                                </span>
-                              </button>
-                              {openMobileSubSubMenu === item.title && (
-                                <ul className="ml-4 mt-1 space-y-1">
-                                  {item.subMenu.map((sub) => (
-                                    <li key={sub.name}>
-                                      <Link
-                                        href={sub.href}
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className="text-sm text-black"
-                                      >
-                                        {sub.name}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              )}
-                            </>
-                          ) : (
-                            <Link
-                              href={item.href}
-                              onClick={() => setMobileMenuOpen(false)}
-                              className="text-left font-medium text-black py-2"
-                            >
-                              {item.title}
-                            </Link>
-                          )}
-                        </li>
-                      ))
-                    : (link as NormalMenu).subItems?.map((item) => (
-                        <li key={item.name}>
-                          <Link
-                            href={item.href}
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="text-black"
-                          >
-                            {item.name}
-                          </Link>
-                        </li>
-                      ))}
-                </ul>
-              )}
-          </div>
-        </li>
-      ))}
-    </ul>
-  </div>
-)}
-
+                  {/* Submenu render */}
+                  {"subItems" in link &&
+                    openMobileSubMenu === link.name &&
+                    link.subItems && (
+                      <ul className="ml-4 mt-2 space-y-2">
+                        {link.name === "Products"
+                          ? (link as ProductMenu).subItems?.map((item) => (
+                              <li key={item.title} className="flex flex-col">
+                                {item.subMenu ? (
+                                  <>
+                                    <button
+                                      className="text-left font-medium text-black flex justify-between items-center w-full"
+                                      onClick={() =>
+                                        setOpenMobileSubSubMenu(
+                                          openMobileSubSubMenu === item.title
+                                            ? null
+                                            : item.title
+                                        )
+                                      }
+                                    >
+                                      {item.title}
+                                      <span>
+                                        {openMobileSubSubMenu === item.title
+                                          ? "-"
+                                          : "+"}
+                                      </span>
+                                    </button>
+                                    {openMobileSubSubMenu === item.title && (
+                                      <ul className="ml-4 mt-1 space-y-1">
+                                        {item.subMenu.map((sub) => (
+                                          <li key={sub.name}>
+                                            <Link
+                                              href={sub.href}
+                                              onClick={() =>
+                                                setMobileMenuOpen(false)
+                                              }
+                                              className="text-sm text-black"
+                                            >
+                                              {sub.name}
+                                            </Link>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    )}
+                                  </>
+                                ) : (
+                                  <Link
+                                    href={item.href}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="text-left font-medium text-black py-2"
+                                  >
+                                    {item.title}
+                                  </Link>
+                                )}
+                              </li>
+                            ))
+                          : (link as NormalMenu).subItems?.map((item) => (
+                              <li key={item.name}>
+                                <Link
+                                  href={item.href}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                  className="text-black"
+                                >
+                                  {item.name}
+                                </Link>
+                              </li>
+                            ))}
+                      </ul>
+                    )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </header>
   );
 }

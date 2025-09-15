@@ -207,9 +207,47 @@ export default function Header() {
           <Link href="/projects" className="hover:opacity-80">
             PROJECTS
           </Link>
-          <Link href="/sectors" className="hover:opacity-80">
+          {/* insights */}
+          <div className="relative">
+            <button
+              onClick={() => toggleDropdown("insights")}
+              className="hover:opacity-80"
+            >
+              INSIGHTS
+            </button>
+            {openDropdown === "insights" && (
+              <div className="absolute top-full left-0 mt-2 bg-white text-black shadow-lg rounded w-64 border border-gray-100 z-50">
+                <Link
+                  href="/blogs"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Blogs{" "}
+                </Link>
+                <Link
+                  href="/brouchers"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Brouchers
+                </Link>
+                <Link
+                  href="/whitepaper"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Whitepaper
+                </Link>
+                <Link
+                  href="/carrers"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Carrers
+                </Link>
+              </div>
+            )}
+          </div>
+          {/* end insights */}
+          {/* <Link href="/sectors" className="hover:opacity-80">
             INSIGHTS
-          </Link>
+          </Link> */}
           <Link href="/media" className="hover:opacity-80">
             MEDIA
           </Link>

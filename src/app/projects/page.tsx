@@ -1,162 +1,201 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Footer from "yes/Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 import ContactSection from "yes/Components/ContactSection";
-import { useRouter } from "next/navigation";
 
+// ---------------- Types ----------------
 type Project = {
   id: number;
   img: string;
   location: string;
+  category: string;
 };
 
 const projects: Project[] = [
-  { id: 1, img: "/industry.jpg", location: "MaharajSagar Warehouse, Lohati" },
-  { id: 2, img: "/realstate.png", location: "Baba Warehouse, Pipariya" },
-  { id: 3, img: "/new1.png", location: "Maa Narmada Ware House, Pipriya" },
+  {
+    id: 1,
+    img: "/industry.jpg",
+    location: "MaharajSagar Warehouse, Lohati",
+    category: "Factory Buildings",
+  },
+  {
+    id: 2,
+    img: "/realstate.png",
+    location: "Baba Warehouse, Pipariya",
+    category: "Commercial Building",
+  },
+  {
+    id: 3,
+    img: "/new1.png",
+    location: "Maa Narmada Ware House, Pipriya",
+    category: "Government & PSU's",
+  },
   {
     id: 4,
     img: "/industry.jpg",
     location: "Devisingh Patel Ware House, Raisen",
+    category: "Factory Buildings",
   },
-  { id: 5, img: "/industry.jpg", location: "Maa Narmada Ware House, Pipriya" },
+  {
+    id: 5,
+    img: "/industry.jpg",
+    location: "Maa Narmada Ware House, Pipriya",
+    category: "Commercial Building",
+  },
   {
     id: 6,
     img: "/industry.jpg",
     location: "Devisingh Patel Ware House, Raisen",
+    category: "Government & PSU's",
   },
-  { id: 7, img: "/industry.jpg", location: "Astik Agro Marketing, Hosangabad" },
-  { id: 8, img: "/industry.jpg", location: "ShreeSai Ware House, Tikamgargh" },
-  { id: 9, img: "/industry.jpg", location: "Goverdhan WareHouse, Pipriya" },
+  {
+    id: 7,
+    img: "/industry.jpg",
+    location: "Astik Agro Marketing, Hosangabad",
+    category: "Factory Buildings",
+  },
+  {
+    id: 8,
+    img: "/industry.jpg",
+    location: "ShreeSai Ware House, Tikamgargh",
+    category: "Airport Building",
+  },
+  {
+    id: 9,
+    img: "/industry.jpg",
+    location: "Goverdhan WareHouse, Pipriya",
+    category: "Airport Building",
+  },
   {
     id: 10,
     img: "/industry.jpg",
     location: "100 ft Clear Span Panchotiya Warehouse, Kasrawad",
+    category: "Clean Room",
   },
-  { id: 11, img: "/industry.jpg", location: "Maanpurna Warehouse, Nalkheda" },
-  { id: 12, img: "/industry.jpg", location: "Agrawal Logistic Park, Dewas" },
+
+  // Newly added with categories:
+  {
+    id: 11,
+    img: "/industry.jpg",
+    location: "Maanpurna Warehouse, Nalkheda",
+    category: "Factory Buildings",
+  },
+  {
+    id: 12,
+    img: "/industry.jpg",
+    location: "Agrawal Logistic Park, Dewas",
+    category: "Commercial Building",
+  },
   {
     id: 13,
     img: "/industry.jpg",
     location: "Trivani Crop Science Pvt Ltd, Factory Shed, Bhopal MP",
+    category: "Government & PSU's",
   },
   {
     id: 14,
     img: "/industry.jpg",
     location: "100X245 Clear 100ft Span, Ringnod Warehouse, Dhar",
+    category: "Clean Room",
   },
   {
     id: 15,
     img: "/industry.jpg",
     location: "Reva Rice Mill Warehouse, Udaipura MP",
+    category: "Factory Buildings",
   },
   {
     id: 16,
     img: "/industry.jpg",
     location: "Mekal Food Products Pvt Ltd (Rice Mill, 120MT), Udaipura MP",
+    category: "Factory Buildings",
   },
-  { id: 17, img: "/industry.jpg", location: "PMAY, Indore" },
+  {
+    id: 17,
+    img: "/industry.jpg",
+    location: "PMAY, Indore",
+    category: "Government & PSU's",
+  },
   {
     id: 18,
     img: "/industry.jpg",
     location: "Kundaliyalift Irrigation, Nalkheda",
+    category: "Government & PSU's",
   },
   {
     id: 19,
     img: "/industry.jpg",
     location: "DFCC Site Tata Project, Ankleshwar, Gujarat",
+    category: "Government & PSU's",
   },
-  { id: 20, img: "/industry.jpg", location: "ROB, Hoshangabad MP" },
+  {
+    id: 20,
+    img: "/industry.jpg",
+    location: "ROB, Hoshangabad MP",
+    category: "Government & PSU's",
+  },
   {
     id: 21,
     img: "/industry.jpg",
     location: "O2 Power, 200MW Solar Pilework, Agar MP",
+    category: "Government & PSU's",
   },
   {
     id: 22,
     img: "/industry.jpg",
     location: "TATA Steel Plant, Kaling Nagar, Odisha",
+    category: "Factory Buildings",
   },
   {
     id: 23,
     img: "/industry.jpg",
     location: "TATA Steel Plant, Kaling Nagar, Odisha",
+    category: "Factory Buildings",
   },
   {
     id: 24,
     img: "/industry.jpg",
     location: "Praj Industries Ltd, Kandala Port, Gujarat",
+    category: "Commercial Building",
   },
 ];
 
-const slides = [
-  {
-    title: "PRE ENGINEERED BUILDINGS",
-    description: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
-    video: "/video.mp4",
-    url: "/services/peb",
-  },
-  {
-    title: "EPC Solutions",
-    description:
-      "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
-    video: "/video.mp4",
-    url: "/services/epc",
-  },
-  {
-    title: "Project Management Consultancy",
-    description:
-      "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
-    video: "/video.mp4",
-    url: "/services/pmc",
-  },
-  {
-    title: "Structural Engineering Services",
-    description:
-      "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
-    video: "/homeslider.mp4",
-    url: "/services/structural",
-  },
+const categories = [
+  "All",
+  "Airport Building",
+  "Canteen Building",
+  "Clean Room",
+  "Commercial Building",
+  "Factory Buildings",
+  "Government & PSU's",
 ];
 
 export default function Projects() {
-  const router = useRouter();
   const [selectedId, setSelectedId] = useState<number | null>(null);
-  const [active, setActive] = useState(0);
-  const [progress, setProgress] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const projectsPerPage = 12;
-  const totalPages = Math.ceil(projects.length / projectsPerPage);
+
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projects
+      : projects.filter((p) => p.category === selectedCategory);
+
+  const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = filteredProjects.slice(
+    indexOfFirstProject,
+    indexOfLastProject
+  );
 
   const handleClick = (id: number) => {
     setSelectedId(id === selectedId ? null : id);
   };
-
-  useEffect(() => {
-    setProgress(0);
-    const progressTimer = setInterval(() => {
-      setProgress((prev) => Math.min(prev + 2, 100));
-    }, 100);
-
-    const slideTimer = setTimeout(() => {
-      setActive((prevActive) => (prevActive + 1) % slides.length);
-    }, 5000);
-
-    return () => {
-      clearInterval(progressTimer);
-      clearTimeout(slideTimer);
-    };
-  }, [active]);
-
-  const indexOfLastProject = currentPage * projectsPerPage;
-  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-  const currentProjects = projects.slice(
-    indexOfFirstProject,
-    indexOfLastProject
-  );
 
   const goToPage = (page: number) => {
     if (page < 1) page = 1;
@@ -168,104 +207,126 @@ export default function Projects() {
   return (
     <>
       <Pebheader />
-      <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
-        <video
-          key={slides[active].video}
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
-          autoPlay
-          loop
-          muted
+
+      {/* Hero Section */}
+      <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
+        <div
+          className="flex-1 flex items-center justify-center p-6 sm:p-8 bg-cover bg-center relative"
+          style={{
+            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
+          }}
         >
-          <source src={slides[active].video} type="video/mp4" />
-        </video>
-
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-8 md:px-20 text-white">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight max-w-full md:max-w-3xl">
-            {slides[active].title}
-          </h1>
-          <p className="mt-3 text-sm sm:text-base md:text-lg max-w-full md:max-w-2xl">
-            {slides[active].description}
-          </p>
-
-          <button
-            onClick={() => router.push(slides[active].url)}
-            className="sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
-          >
-            Learn more
-          </button>
-
-          {/* Mobile Dots */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 sm:hidden">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setActive(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  active === index ? "bg-blue-500 scale-110" : "bg-white/70"
-                }`}
-              ></button>
-            ))}
-          </div>
-
-          {/* Desktop Tabs */}
-          <div className="hidden sm:flex absolute bottom-0 left-0 right-0 flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
-            {slides.map((slide, index) => (
-              <div key={index} className="relative w-full sm:w-auto">
-                {active === index && (
-                  <div
-                    className="absolute -top-1 left-0 h-1 bg-blue-500 rounded"
-                    style={{
-                      width: `${progress}%`,
-                      transition: "width 0.1s linear",
-                    }}
-                  ></div>
-                )}
-                <button
-                  onClick={() => router.push(slide.url)}
-                  className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words ${
-                    active === index
-                      ? "text-white"
-                      : "text-white/80 hover:text-white"
-                  }`}
-                >
-                  {slide.title}
-                </button>
-              </div>
-            ))}
+          <div className="text-white text-center relative z-10">
+            <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
+              Our Projects
+            </h1>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Projects Grid */}
       <div className="max-w-7xl mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {currentProjects.map(({ id, img, location }) => (
-            <div
-              key={id}
-              className="relative cursor-pointer overflow-hidden rounded-md shadow-md"
-              onClick={() => handleClick(id)}
+        <div className="text-center my-8">
+          <h1 className="text-3xl font-bold">OUR RECENT WORKS</h1>
+          <p className="mt-2 text-gray-600">
+            Explore Innovative Projects to Spark Your Ideas
+          </p>
+        </div>
+
+        {/* Filter + Showing count */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+          {/* Left - Browse by Category */}
+          {/* <div className="flex items-center space-x-2">
+            <label className="text-gray-700 font-medium">
+              Browse by Category:
+            </label>
+            <select
+              value={selectedCategory}
+              onChange={(e) => {
+                setSelectedCategory(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="border border-gray-300 rounded-md px-3 py-2 text-sm"
             >
-              <img
-                src={img}
-                alt={location}
-                className={`w-full h-48 object-cover transition-transform duration-300 ${
-                  selectedId === id ? "scale-105" : ""
-                }`}
-              />
+              {categories.map((cat) => (
+                <option key={cat} value={cat}>
+                  {cat}
+                </option>
+              ))}
+            </select>
+          </div> */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-2 w-full">
+            <label className="text-gray-700 font-medium text-sm sm:text-base mb-2 sm:mb-0">
+              Browse by Category:
+            </label>
+            <select
+              value={selectedCategory}
+              onChange={(e) => {
+                setSelectedCategory(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="
+      w-full sm:w-auto
+      border border-gray-300 rounded-md px-3 py-2 text-sm
+      appearance-none
+      focus:outline-none focus:ring-2 focus:ring-[#000080]
+    "
+            >
+              {categories.map((cat) => (
+                <option key={cat} value={cat}>
+                  {cat}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Right - Showing count */}
+          <div className="hidden md:block text-gray-600 text-sm">
+            Showing {indexOfFirstProject + 1}–
+            {Math.min(indexOfLastProject, filteredProjects.length)} of{" "}
+            {filteredProjects.length} projects
+          </div>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {currentProjects.map(({ id, img, location }) => {
+            const isActive = selectedId === id;
+            return (
               <div
-                className={`absolute inset-0 flex items-center justify-center text-white text-xl font-semibold transition-opacity duration-500 bg-[#000080] ${
-                  selectedId === id
-                    ? "bg-opacity-40 opacity-50"
-                    : "bg-opacity-0 opacity-0"
-                }`}
-                style={{ pointerEvents: selectedId === id ? "auto" : "none" }}
+                key={id}
+                className="relative cursor-pointer overflow-hidden rounded-md shadow-md group"
+                onClick={() => handleClick(id)}
               >
-                {location}
+                {/* Image */}
+                <img
+                  src={img}
+                  alt={location}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                {/* Overlay background */}
+                <div
+                  className={`absolute inset-0 bg-[#000080] transition-opacity duration-500 ${
+                    isActive
+                      ? "bg-opacity-60 opacity-50"
+                      : "bg-opacity-0 opacity-0"
+                  }`}
+                ></div>
+
+                {/* Sliding text container */}
+                <div
+                  className={`absolute inset-0 flex items-center justify-center text-white text-center px-4 text-lg font-semibold transform transition-transform duration-500 ease-in-out ${
+                    isActive
+                      ? "translate-x-0 opacity-100"
+                      : "-translate-x-full opacity-0"
+                  }`}
+                >
+                  {location}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Pagination */}

@@ -26,7 +26,7 @@ type MegaMenu = {
 
 type MenuItem = NormalMenu | MegaMenu;
 
-export default function IndustryHead() {
+export default function Industryheader() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileSubMenu, setOpenMobileSubMenu] = useState<string | null>(
@@ -136,10 +136,13 @@ export default function IndustryHead() {
       name: "About us",
       href: "/about",
       subItems: [
-        { name: "Our Leadership", href: "/leadership" },
-        { name: "Our History", href: "/company" },
-        { name: "Our Mission", href: "/mission" },
-        { name: "Innovation", href: "/innovation" },
+        {
+          name: "Our Leadership",
+          href: "/industryinstallationaboutus/leadership",
+        },
+        { name: "Our History", href: "/industryinstallationaboutus/company" },
+        { name: "Our Mission", href: "/industryinstallationaboutus/mission" },
+        { name: "Innovation", href: "/industryinstallationaboutus/innovation" },
       ],
     },
   ];
