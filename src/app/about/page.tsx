@@ -30,6 +30,7 @@ import ServicesSlider from "../../Components/ServicesSlider";
 import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
 import BuildHistory from "../../Components/BuildHistory";
 import Accolades from "../../Components/Accolades";
+import Navbar from "yes/Components/Navbar";
 
 const slides = [
   {
@@ -72,7 +73,7 @@ export default function About() {
 
   return (
     <>
-      <Pebheader />
+      <Navbar />
       <div className="w-full min-h-[500px] flex flex-col md:flex-row">
         <div
           className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"

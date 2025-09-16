@@ -5,6 +5,7 @@ import Footer from "../../Components/Footer";
 
 import InnovationImpact from "../../Components/innovationComponent/InnovationImpact";
 import Header from "yes/Components/Header";
+import Navbar from "yes/Components/Navbar";
 // import CompanySlider from "../../Components/companyComponent/CompanySlider";
 
 export default function Innovation() {
@@ -13,7 +14,7 @@ export default function Innovation() {
   return (
     <>
       {/* <Pebheader/> */}
-      <Header />
+      <Navbar />
       <InnovationImpact />
 
       <Footer />

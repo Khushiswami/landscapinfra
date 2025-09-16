@@ -6,44 +6,61 @@ import {
   Bars3Icon,
   XMarkIcon,
   MagnifyingGlassIcon,
-  ChevronRightIcon,
+  EnvelopeIcon,
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [openNestedDropdown, setOpenNestedDropdown] = useState<string | null>("mobility"); // 👈 default Mobility open
+  const [rightImage, setRightImage] = useState("/service.jpg"); // default img
+  const [language, setLanguage] = useState("EN");
 
+  // toggle dropdown
   const handleDropdownClick = (name: string) => {
-    if (openDropdown === name) {
-      setOpenDropdown(null);
-      setOpenNestedDropdown(null);
-    } else {
-      setOpenDropdown(name);
-      if (name === "industry") {
-        setOpenNestedDropdown("mobility"); // 👈 Industry open hote hi Mobility default
-      } else {
-        setOpenNestedDropdown(null);
-      }
-    }
+    setOpenDropdown(openDropdown === name ? null : name);
+    setRightImage("/service.jpg");
+  };
+  const toggleDropdown = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
   };
 
-  const handleNestedClick = (name: string) => {
-    setOpenNestedDropdown(name);
+  // update preview image
+  const handleImageChange = (imgPath: string) => {
+    setRightImage(imgPath);
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-[#001f3f] shadow-md text-white transition-all duration-300">
+    <header className="fixed top-0 w-full z-50 bg-white shadow-md text-black transition-all duration-300">
+      {/* <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3"> */}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img src="/logo.jpeg" alt="L&T Technology Services" className="h-12 w-auto" />
+          <img src="/landsking.png" alt="Logo" className="h-15 w-auto" />
         </Link>
+        <div className="flex items-center space-x-3 md:hidden">
+          <button>
+            <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
+          </button>
+          <button>
+            <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
+          </button>
+          <button
+            onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+            className="px-2 py-1 border rounded text-sm hover:bg-gray-100"
+          >
+            {language}
+          </button>
+        </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden capitalize md:flex items-center space-x-6 font-medium relative">
+        <nav className="hidden capitalize md:flex items-center space-x-6 font-medium text-lg  relative">
+          <Link href="/" className="hover:opacity-80">
+            Home
+          </Link>
+
           {/* Industry Dropdown */}
           <div className="relative">
             <button
@@ -52,191 +69,247 @@ export default function Navbar() {
             >
               Industry
               {openDropdown === "industry" ? (
-                <ChevronUpIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
+                <ChevronUpIcon className="h-4 w-4 inline ml-1" />
               ) : (
-                <ChevronDownIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
+                <ChevronDownIcon className="h-4 w-4 inline ml-1" />
               )}
             </button>
             {openDropdown === "industry" && (
-<div className="fixed left-1/2 top-[70px] transform -translate-x-1/2 bg-[#0a2351] shadow-lg rounded-lg w-[1300px] flex z-50 border border-gray-100">
-      
-      {/* Left Section */}
-      <div className="w-1/3 text-white p-6 space-y-4">
-         <Link href="/industryinstallation" className="hover:text-teal-300 cursor-pointer block">
-          Industry Installation
-        </Link>
-        <Link href="/preEngineeredBuildings" className="hover:text-teal-300 cursor-pointer block">
-          Pre Engineered Building
-        </Link>
-        <Link href="/buildingandinfrastructure" className="hover:text-teal-300 cursor-pointer block">
-          Building And Infrastructure
-        </Link>
+              <div className="fixed left-1/2 top-[85px] mb-10 transform -translate-x-1/2 bg-[#0a2351] shadow-lg rounded-lg w-[1300px] flex z-50">
+                {/* Left Section */}
+                <div className="w-1/3 text-white p-6 space-y-4">
+                  <button
+                    onMouseEnter={() => handleImageChange("/industry.jpg")}
+                    onClick={() =>
+                      (window.location.href = "/industryinstallation")
+                    } // redirect on click
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Industry Installation
+                  </button>
 
-      </div>
+                  <button
+                    onMouseEnter={() => handleImageChange("/engineer.jpg")}
+                    onClick={() => (window.location.href = "/rnd")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Engineering R&amp;D
+                  </button>
+                </div>
 
-      {/* Middle Section (lighter blue bg) */}
-      <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-4 rounded-md">
-        <Link href="#" className="hover:text-teal-300 cursor-pointer block">
-          Engineering  R&amp;D
-        </Link>
-       
-        <Link href="#" className="hover:text-teal-300 cursor-pointer block">
-          Renewable Energy
-        </Link>
-        <Link href="#" className="hover:text-teal-300 cursor-pointer block">
-          Real Estate Development
-        </Link>
-      </div>
+                {/* Middle Section */}
+                <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-4 rounded-md">
+                  <button
+                    onMouseEnter={() => handleImageChange("/renewable.jpg")}
+                    onClick={() => (window.location.href = "/renewableenergy")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Renewable Energy
+                  </button>
 
-      {/* Right Image Section */}
-      <div className="w-1/3 bg-[#2e69c2] p-4 flex flex-col justify-between text-white">
-         <img
-    src="/service.jpg"
-    alt="Our Services"
-    className="rounded-md object-cover h-54 w-full mb-4"
-  />
-        <div>
-          <p className="font-semibold text-xl">Explore Our Services</p>
-          <Link
-            href="/services"
-            className="mt-2 inline-block bg-white text-blue-700 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
-          >
-            Know More
-          </Link>
-        </div>
-      </div>
-    </div>
+                  <button
+                    onMouseEnter={() => handleImageChange("/pebone.jpeg")}
+                    onClick={() =>
+                      (window.location.href = "/preEngineeredBuildings")
+                    }
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Pre Engineered Building
+                  </button>
+
+                  <button
+                    onMouseEnter={() => handleImageChange("/realstate.png")}
+                    onClick={() =>
+                      (window.location.href = "/realStateDevlopment")
+                    }
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Real Estate Development
+                  </button>
+                </div>
+
+                {/* Right Image Section */}
+                <div className="w-1/3 bg-[#2e69c2] p-4 pr-8 flex flex-col justify-between text-white">
+                  <img
+                    src={rightImage}
+                    alt="Dynamic Preview"
+                    className="rounded-md object-cover h-54 w-full mb-4"
+                  />
+                  <div></div>
+                </div>
+              </div>
             )}
           </div>
-            
-{/* EXPERTISE Dropdown */}
-<div className="relative">
-  <button
-    onClick={() => handleDropdownClick("expertise")}
-    className="flex items-center hover:opacity-80"
-  >
-    Expertise
-    {openDropdown === "expertise" ? (
-      <ChevronUpIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
-    ) : (
-      <ChevronDownIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
-    )}
-  </button>
 
-  {openDropdown === "expertise" && (
-    <div className="fixed left-1/2 top-[70px] transform -translate-x-1/2 bg-[#0a2351] shadow-lg rounded-lg w-[1300px] flex z-50 border border-gray-100">
-      
-      {/* Left Section */}
-      <div className="w-1/3 text-white p-6 space-y-3">
-        <p className="hover:text-teal-300 cursor-pointer">Heavy Engineering</p>
-        <p className="hover:text-teal-300 cursor-pointer">Office Space</p>
-        <p className="hover:text-teal-300 cursor-pointer">Public Office</p>
-        <p className="hover:text-teal-300 cursor-pointer">Water Infrastructure</p>
-        <p className="hover:text-teal-300 cursor-pointer">Industry Building Solutions</p>
-        <p className="hover:text-teal-300 cursor-pointer">HVAC Services</p>
-        <p className="hover:text-teal-300 cursor-pointer">Fabrication</p>
-      </div>
+          {/* Expertise Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => handleDropdownClick("expertise")}
+              className="flex items-center hover:opacity-80"
+            >
+              Expertise
+              {openDropdown === "expertise" ? (
+                <ChevronUpIcon className="h-4 w-4 inline ml-1" />
+              ) : (
+                <ChevronDownIcon className="h-4 w-4 inline ml-1" />
+              )}
+            </button>
+            {openDropdown === "expertise" && (
+              <div className="fixed  left-1/2 top-[85px] mb-20 pb-10 transform -translate-x-1/2 bg-[#0a2351] text-white shadow-lg rounded-lg w-[1300px] flex z-50">
+                {/* Left Section */}
+                <div className="w-1/3 text-white p-10 space-y-3">
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange(
+                        "/expertiseimages/Heavy Engineering.jpg"
+                      )
+                    }
+                    onClick={() => (window.location.href = "/heavyengineering")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Heavy Engineering
+                  </button>
+                  <button
+                    onMouseEnter={() => handleImageChange("/office.jpg")}
+                    onClick={() => (window.location.href = "/officespace")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Office Space
+                  </button>
+                  <button
+                    onMouseEnter={() => handleImageChange("/publicoffice.jpg")}
+                    onClick={() => (window.location.href = "/publicspace")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Public Office
+                  </button>
+                  <button
+                    onMouseEnter={() => handleImageChange("/waterinfra.jpg")}
+                    onClick={() =>
+                      (window.location.href = "/waterinfrastructure")
+                    }
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Water Infrastructure
+                  </button>
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange(
+                        "//expertiseimages/STRUCTURAL ENGINEERING SERVICES.jpg"
+                      )
+                    }
+                    onClick={() => (window.location.href = "/structuralsteel")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Industry Building Solutions
+                  </button>
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange("/expertiseimages/Green buildings.png")
+                    }
+                    onClick={() => (window.location.href = "/greenbuilding")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Green Building
+                  </button>{" "}
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange("/expertiseimages/Mining Metals.jpg")
+                    }
+                    onClick={() => (window.location.href = "/miningandmetals")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Mining and Metals
+                  </button>
+                </div>
 
-      {/* Middle Section (lighter blue bg) */}
-      <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-3 rounded-md">
-        <p className="hover:text-teal-300 cursor-pointer">Other Industries</p>
-        <p className="hover:text-teal-300 cursor-pointer">Simulation Service</p>
-        <p className="hover:text-teal-300 cursor-pointer">Factories Installation</p>
-        <p className="hover:text-teal-300 cursor-pointer">Cold Storage & Warehouse</p>
-        <p className="hover:text-teal-300 cursor-pointer">Solar Services</p>
-        <p className="hover:text-teal-300 cursor-pointer">Fire Safety</p>
-        <p className="hover:text-teal-300 cursor-pointer">Green Building</p>
-        <p className="hover:text-teal-300 cursor-pointer">Mining And Metals</p>
-      </div>
+                {/* Middle Section */}
+                <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-3 rounded-md">
+                  <button
+                    onMouseEnter={() => handleImageChange("/simulation.jpeg")}
+                    onClick={() =>
+                      (window.location.href = "/simulationservice")
+                    }
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Simulation Service
+                  </button>
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange(
+                        "/expertiseimages/Factories Installation.jpg"
+                      )
+                    }
+                    onClick={() => (window.location.href = "/otherindustries")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Other Industries
+                  </button>
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange(
+                        "/expertiseimages/Cold Storage and warehouse.jpg"
+                      )
+                    }
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Cold Storage &amp; Warehouse
+                  </button>
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange(
+                        "/expertiseimages/Solar Plant Installation.jpg"
+                      )
+                    }
+                    onClick={() => (window.location.href = "/solar")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Solar Services
+                  </button>
+                  <button
+                    onMouseEnter={() =>
+                      handleImageChange("/expertiseimages/HVAC.jpg")
+                    }
+                    onClick={() => (window.location.href = "/hvac")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    HVAC Services
+                  </button>
+                  <button
+                    onMouseEnter={() => handleImageChange("/fire.jpg")}
+                    onClick={() => (window.location.href = "/fabrication")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Fabrication
+                  </button>{" "}
+                  <button
+                    onMouseEnter={() => handleImageChange("/industry.jpg")}
+                    onClick={() => (window.location.href = "/fire-safety")}
+                    className="hover:text-teal-300 block text-left w-full"
+                  >
+                    Fire Saftey
+                  </button>
+                </div>
 
-      {/* Right Section */}
-      {/* <div className="w-1/3 bg-[#2e69c2] p-6 flex flex-col justify-between text-white space-y-3">
-        <p className="hover:text-teal-300 cursor-pointer">HVAC Services</p>
-        <p className="hover:text-teal-300 cursor-pointer">Fabrication</p>
-        <p className="hover:text-teal-300 cursor-pointer">Fire Safety</p>
-        <p className="hover:text-teal-300 cursor-pointer">Green Building</p>
-        <p className="hover:text-teal-300 cursor-pointer">Mining And Metals</p>
-      </div> */}
-      {/* Right Image Section */}
-      <div className="w-1/3 bg-[#2e69c2] p-4 flex flex-col justify-between text-white">
-         <img
-    src="/service.jpg"
-    alt="Our Services"
-    className="rounded-md object-cover h-54 w-full mb-4"
-  />
-        <div>
-          <p className="font-semibold text-xl">Explore Our Services</p>
-          <Link
-            href="/services"
-            className="mt-2 inline-block bg-white text-blue-700 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
-          >
-            Know More
+                {/* Right Image Section */}
+                <div className="w-1/3 bg-[#2e69c2] p-4 pr-8 flex flex-col justify-between text-white">
+                  <img
+                    src={rightImage}
+                    alt="Dynamic Preview"
+                    className="rounded-md object-cover h-54 w-full mb-4"
+                  />
+                  <div></div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Projects simple link */}
+          <Link href="/projects" className="hover:opacity-80">
+            Projects
           </Link>
-        </div>
-      </div>
-    </div>
-  )}
-</div>
 
-
-       {/* Services Dropdown */}
-<div className="relative">
-  <button
-    onClick={() => handleDropdownClick("services")}
-    className="flex items-center hover:opacity-80"
-  >
-    Services
-    {openDropdown === "services" ? (
-      <ChevronUpIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
-    ) : (
-      <ChevronDownIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
-    )}
-  </button>
-
-  {openDropdown === "services" && (
-    <div className="fixed left-1/2 top-[70px] transform -translate-x-1/2 bg-[#0a2351] shadow-lg rounded-lg w-[1300px] flex z-50 border border-gray-100">
-      
-      {/* Left Section */}
-      <div className="w-1/3 text-white p-6 space-y-4">
-        <p className="hover:text-teal-300 cursor-pointer">Product Engineering</p>
-        <p className="hover:text-teal-300 cursor-pointer">Design & Prototyping</p>
-        <p className="hover:text-teal-300 cursor-pointer">Testing & Validation</p>
-        <p className="hover:text-teal-300 cursor-pointer">Embedded Systems</p>
-        <p className="hover:text-teal-300 cursor-pointer">Cloud Engineering</p>
-      </div>
-
-      {/* Middle Section (lighter blue bg) */}
-      <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-4 rounded-md">
-        <p className="hover:text-teal-300 cursor-pointer">AI & Analytics</p>
-        <p className="hover:text-teal-300 cursor-pointer">Cybersecurity</p>
-        <p className="hover:text-teal-300 cursor-pointer">Digital Twin</p>
-        <p className="hover:text-teal-300 cursor-pointer">IoT Solutions</p>
-        <p className="hover:text-teal-300 cursor-pointer">Sustainability Services</p>
-      </div>
-
-      {/* Right Image Section */}
-      <div className="w-1/3 bg-[#2e69c2] p-4 flex flex-col justify-between text-white">
-         <img
-    src="/service.jpg"
-    alt="Our Services"
-    className="rounded-md object-cover h-54 w-full mb-4"
-  />
-        <div>
-          <p className="font-semibold text-xl">Explore Our Services</p>
-          <Link
-            href="/services"
-            className="mt-2 inline-block bg-white text-blue-700 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
-          >
-            Know More
-          </Link>
-        </div>
-      </div>
-    </div>
-  )}
-</div>
-
-
-          {/* Insights Dropdown */}
+          {/* Insights - simple row of 4 links */}
           <div className="relative">
             <button
               onClick={() => handleDropdownClick("insights")}
@@ -244,91 +317,383 @@ export default function Navbar() {
             >
               Insights
               {openDropdown === "insights" ? (
-                <ChevronUpIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
+                <ChevronUpIcon className="h-4 w-4 inline ml-1" />
               ) : (
-                <ChevronDownIcon className="h-4 w-4 inline ml-1 transition-transform duration-300" />
+                <ChevronDownIcon className="h-4 w-4 inline ml-1" />
               )}
             </button>
             {openDropdown === "insights" && (
-         <div className="fixed left-1/2 top-[70px] transform -translate-x-1/2 bg-[#0a2351] shadow-lg rounded-lg w-[1300px] flex z-50 border border-gray-100">
-      
-      {/* Left Section */}
-      <div className="w-1/3 text-white p-6 space-y-4">
-        <p className="hover:text-teal-300 cursor-pointer">Product Engineering</p>
-        <p className="hover:text-teal-300 cursor-pointer">Design & Prototyping</p>
-        <p className="hover:text-teal-300 cursor-pointer">Testing & Validation</p>
-        <p className="hover:text-teal-300 cursor-pointer">Embedded Systems</p>
-        <p className="hover:text-teal-300 cursor-pointer">Cloud Engineering</p>
-      </div>
-
-      {/* Middle Section (lighter blue bg) */}
-      <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-4 rounded-md">
-        <p className="hover:text-teal-300 cursor-pointer">AI & Analytics</p>
-        <p className="hover:text-teal-300 cursor-pointer">Cybersecurity</p>
-        <p className="hover:text-teal-300 cursor-pointer">Digital Twin</p>
-        <p className="hover:text-teal-300 cursor-pointer">IoT Solutions</p>
-        <p className="hover:text-teal-300 cursor-pointer">Sustainability Services</p>
-      </div>
-
-      {/* Right Image Section */}
-      <div className="w-1/3 bg-[#2e69c2] p-4 flex flex-col justify-between text-white">
-        <img
-    src="/service.jpg"
-    alt="Our Services"
-    className="rounded-md object-cover h-54 w-full mb-4"
-  />
-        <div>
-          <p className="font-semibold text-xl">Explore Our Services</p>
-          <Link
-            href="/services"
-            className="mt-2 inline-block bg-white text-blue-700 px-4 py-2 rounded font-semibold hover:bg-gray-100 transition"
-          >
-            Know More
-          </Link>
-        </div>
-      </div>
-    </div>
+              <div className="fixed left-0 top-[85px] w-full py-10 bg-[#0a2351] text-white shadow-lg rounded-none z-50 border-t border-gray-100">
+                <div className="grid grid-cols-4 gap-6 text-center">
+                  <Link href="/careers" className="hover:text-teal-300">
+                    Careers
+                  </Link>
+                  <Link href="/blogs" className="hover:text-teal-300">
+                    Blogs
+                  </Link>
+                  <Link href="/whitepapers" className="hover:text-teal-300">
+                    Whitepapers
+                  </Link>
+                  <Link href="/brochures" className="hover:text-teal-300">
+                    Brochures
+                  </Link>
+                </div>
+              </div>
             )}
           </div>
 
-          {/* Simple Links */}
-          <Link href="/" className="flex items-center hover:opacity-80">
-            Careers
-          </Link>
-          <Link href="/" className="flex items-center hover:opacity-80">
-            About Us
-          </Link>
+          {/* About - simple row of 4 links */}
+          <div className="relative">
+            <button
+              onClick={() => handleDropdownClick("about")}
+              className="flex items-center hover:opacity-80"
+            >
+              About
+              {openDropdown === "about" ? (
+                <ChevronUpIcon className="h-4 w-4 inline ml-1" />
+              ) : (
+                <ChevronDownIcon className="h-4 w-4 inline ml-1" />
+              )}
+            </button>
+            {openDropdown === "about" && (
+              <div className="fixed left-0 top-[85px] w-full py-10 bg-[#0a2351] text-white shadow-lg rounded-none z-50 border-t border-gray-100">
+                <div className="grid grid-cols-4 gap-6 text-center">
+                  <Link href="/mission" className="hover:text-teal-300">
+                    Mission
+                  </Link>
+                  <Link href="/leadership" className="hover:text-teal-300">
+                    Leadership
+                  </Link>
+                  <Link href="/innovation" className="hover:text-teal-300">
+                    Innovation
+                  </Link>
+                  <Link href="/history" className="hover:text-teal-300">
+                    History
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
         </nav>
-
-        {/* Right Side Icons */}
         <div className="hidden md:flex items-center space-x-4">
           <button>
             <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
           </button>
-          <div className="relative">
-            <button className="flex items-center space-x-1 px-2 py-1 border rounded text-sm hover:bg-gray-100">
-              <span className="text-white">EN</span>
-              <ChevronDownIcon className="h-4 w-4 text-white" />
-            </button>
-          </div>
+          <button>
+            <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
+          </button>
+          <button
+            onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+            className="px-2 py-1 border rounded text-sm hover:bg-gray-100"
+          >
+            {language}
+          </button>
           <Link
             href="/contact"
-            className="bg-[#2e69c2] text-white px-4 py-2 rounded hover:bg-black font-semibold"
+            className="bg-[#000080] text-white px-4 py-2 rounded hover:bg-black font-semibold"
           >
-            Contact
+            CONTACT US
           </Link>
         </div>
-
         {/* Mobile Menu Button */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-white">
-          {menuOpen ? <XMarkIcon className="h-7 w-7" /> : <Bars3Icon className="h-7 w-7" />}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-black"
+        >
+          {menuOpen ? (
+            <XMarkIcon className="h-7 w-7" />
+          ) : (
+            <Bars3Icon className="h-7 w-7" />
+          )}
         </button>
       </div>
-
-      {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-white text-black px-4 py-4 shadow-lg max-h-screen overflow-auto">
-          {/* Mobile menu content */}
+        <nav className="md:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
+          <Link href="/" className="block py-2 border-b border-gray-200">
+            HOME
+          </Link>
+
+          {/* Industries collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("industries")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              INDUSTRIES
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
+            </button>
+
+            {openDropdown === "industries" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="industryinstallation"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Industry Installation and Construction
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/preEngineeredBuildings"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Pre Engineered Building
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="#"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Infrastructure & Energy
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="/rnd"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Engineering R&D
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="renewableenergy"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Renewable Energy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="realStateDevlopment"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Real EState Development
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          {/* Expertise collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("expertise")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              EXPERTISE
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
+            </button>
+
+            {openDropdown === "expertise" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="/heavyengineering"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Heavy Engineering
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/officespace"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Office Space
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/publicoffice"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Public Office
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/waterinfrastructure"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Water Infrastructure
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/structuralsteel"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Industry Building Solutions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/otherindustries"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Other Industries
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/simulation"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Simulation Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/fabrication"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Fabrication
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/fire-safety"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Fire Safety
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/greenbuilding"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Green Building
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/miningandmetals"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Mining and Metals
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/coldstorageandwarehouse"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Cold Storage &amp; Warehouse
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/solar"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Solar Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/hvac"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    HVAC Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/factoriesinstallation"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Factories Installation
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          <Link
+            href="/projects"
+            className="block py-2 border-b border-gray-200"
+          >
+            PROJECTS
+          </Link>
+          <Link href="/sectors" className="block py-2 border-b border-gray-200">
+            INSIGHTS
+          </Link>
+          <Link href="/media" className="block py-2 border-b border-gray-200">
+            MEDIA
+          </Link>
+          {/* About collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("about")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              ABOUT
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
+            </button>
+
+            {openDropdown === "about" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="/company"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Our History
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/leadership"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Leadership
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/mission"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Our Mission
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/innovation"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Innovation
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          <Link href="/contact" className="block py-2 border-b border-gray-200">
+            Contact Us
+          </Link>
         </nav>
       )}
     </header>

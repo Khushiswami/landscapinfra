@@ -10,6 +10,7 @@ import CustomerStories from "../../Components/missionComponent/CustomerStories";
 import BusinessPractices from "../../Components/missionComponent/BusinessPractices";
 import InterestedSection from "../../Components/missionComponent/InterestedSection";
 import Header from "yes/Components/Header";
+import Navbar from "yes/Components/Navbar";
 // import CompanySlider from "../../Components/companyComponent/CompanySlider";
 
 export default function Mission() {
@@ -18,7 +19,7 @@ export default function Mission() {
   return (
     <>
       {/* <Pebheader/> */}
-      <Header />
+      <Navbar />
       <MissionBanner />
       <HumanInnovation />
       <Sustainability />

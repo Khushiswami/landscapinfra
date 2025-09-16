@@ -40,7 +40,7 @@ export default function CounterP() {
 
   return (
     <section className="py-12 bg-white">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className=" mx-[20px] px-6">
         <h2 className="text-2xl md:text-[30px] font-bold text-[#09306b] mb-8 leading-snug">
           Leading industries toward a smarter future with focused and adaptable
           innovation.

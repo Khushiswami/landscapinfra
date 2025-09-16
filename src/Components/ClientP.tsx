@@ -10,17 +10,15 @@ import "swiper/css/free-mode";
 
 export default function Brand() {
   const images: string[] = [
-    "/clientlogo1.png",
-    "/client2.jpeg",
-    "/client3.jpeg",
-    "/client4.jpeg",
-    "/client5.jpeg",
-    "/client6.jpeg",
-    "/client7.jpeg",
-    "/client8.jpeg",
-    "/client9.jpeg",
-    "/client10.jpeg",
-    "/client11.jpeg",
+    "/client/adani.jpg",
+    "/client/dilip.png",
+    "/client/dv.png",
+    "/client/indore.png",
+    "/client/pp.jpg",
+    "/client/mega.png",
+    "/client/mp.jpg",
+    "/client/praj.png",
+    "/client/tata.jpg",
   ];
 
   const renderRow = (reverse: boolean) => (
@@ -54,7 +52,7 @@ export default function Brand() {
             <img
               src={src}
               alt={`Brand ${i + 1}`}
-              className="h-18 w-full object-contain"
+              className="h-20 w-full object-contain"
             />
           </div>
         </SwiperSlide>
@@ -64,7 +62,7 @@ export default function Brand() {
 
   return (
     <section className="md:py-12 bg-white">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#000080] mb-8">
+      <h2 className="text-3xl md:text-3xl font-bold text-center text-[#000080] mb-8">
         Meet Our Clients
       </h2>
       <div className="space-y-4">

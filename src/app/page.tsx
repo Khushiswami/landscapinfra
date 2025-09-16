@@ -11,11 +11,11 @@ import CounterP from "../Components/CounterP";
 import AboutP from "../Components/AboutP";
 import BannerP from "../Components/BannerP";
 import Navbar from "../Components/Navbar";
-
+import Mainheader from "yes/Components/Mainheader";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Navbar />
       <BannerP />
       <AboutP />
       <CounterP />

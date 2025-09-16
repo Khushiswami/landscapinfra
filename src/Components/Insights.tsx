@@ -76,7 +76,8 @@ export default function Insights() {
       swiperRef.current.params.navigation &&
       typeof swiperRef.current.params.navigation !== "boolean"
     ) {
-      const navigation = swiperRef.current.params.navigation as NavigationOptions;
+      const navigation = swiperRef.current.params
+        .navigation as NavigationOptions;
       navigation.prevEl = prevRef.current;
       navigation.nextEl = nextRef.current;
 
@@ -87,9 +88,9 @@ export default function Insights() {
   }, []);
 
   return (
-    <div className="relative px-6 md:px-20 pb-6  md:py-10">
+    <div className="relative px-6 md:px-10 pb-6  md:py-10">
       {/* Heading */}
-      <h1 className="text-left text-3xl font-bold my-10 text-[#000080]">
+      <h1 className="text-center text-3xl font-bold my-10 text-[#000080]">
         Our Latest Insights
       </h1>
 
@@ -110,7 +111,7 @@ export default function Insights() {
             <div className="flex-shrink-0 bg-[#f3f6f4] relative w-full rounded-md overflow-hidden cursor-pointer group">
               {/* Mobile version */}
               <div className="block sm:hidden p-4 bg-[#f3f6f4] rounded-md mb-6">
-                <div className="inline-block px-3 py-1 rounded-full text-md bg-[#23dce1] text-[#112868] mb-2">
+                <div className="inline-block px-3 py-1 rounded-full text-md bg-[#000080] text-[#fff] mb-2">
                   {card.tag}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2 tracking-widest">
@@ -133,7 +134,7 @@ export default function Insights() {
 
               {/* Desktop version with hover */}
               <div className="hidden sm:block h-[380px]">
-                <div className="absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#23dce1] text-[#112868]">
+                <div className="absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#000080] text-[#fff]">
                   {card.tag}
                 </div>
 
@@ -161,8 +162,8 @@ export default function Insights() {
                   <div>
                     <div className="flex justify-end">
                       <button
-                        className="bg-blue-900 text-sm text-[#23dce1] px-4 py-2 rounded-lg font-medium 
-                        hover:bg-[#23dce1] hover:text-[#000080] 
+                        className="bg-blue-900 text-sm text-[#fff] px-4 py-2 rounded-lg font-medium 
+                        hover:bg-[#] hover:text-[#000080] 
                         transition"
                       >
                         Know More
@@ -180,13 +181,13 @@ export default function Insights() {
       <div className="flex justify-end gap-3 md:mt-6">
         <button
           ref={prevRef}
-          className="bg-white font-light border border-[#000080] text-[#000080] p-2 rounded-[3px] hover:bg-[#23dce1]"
+          className="bg-white font-light border border-[#000080] text-[#000080] p-2 rounded-[3px] hover:bg-[#8080FF] "
         >
           <FaArrowLeft size={16} className="font-light" />
         </button>
         <button
           ref={nextRef}
-          className="bg-white border border-[#000080] text-[#000080] p-2 rounded-[3px] hover:bg-[#23dce1]"
+          className="bg-white border border-[#000080] text-[#000080] p-2 rounded-[3px] hover:bg-[#8080FF]"
         >
           <FaArrowRight size={16} className="font-light" />
         </button>

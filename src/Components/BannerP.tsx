@@ -16,12 +16,7 @@ export default function BannerP() {
       video: "/homeslider.mp4",
       link: "/industryinstallation",
     },
-    {
-      title: "Real Estate",
-      desc: "Innovative real estate solutions designed for modern needs and sustainable growth.",
-      video: "/homeslider.mp4",
-      link: "/real-estate",
-    },
+
     {
       title: "Engineering & RND Services",
       desc: "Committed to advancing innovation, fairness, equity, and quality in assessment.",
@@ -32,13 +27,19 @@ export default function BannerP() {
       title: "Renewable Energy Solution Provider",
       desc: "Explore innovation in industrial equipment with green technologies.",
       video: "/homeslider.mp4",
-      link: "/renewable-energy",
+      link: "/renewableenergy",
     },
     {
       title: "Pre-Engineered Buildings",
       desc: "Modular and pre-engineered structures tailored for efficiency and scalability.",
       video: "/homeslider.mp4",
       link: "/preEngineeredBuildings",
+    },
+    {
+      title: "Real Estate",
+      desc: "Innovative real estate solutions designed for modern needs and sustainable growth.",
+      video: "/homeslider.mp4",
+      link: "/realStateDevlopment",
     },
   ];
 

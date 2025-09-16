@@ -39,7 +39,7 @@ export default function CoreBusiness() {
     },
     {
       title: "Pre Engineered Building ",
-      image: "/renewable.jpg",
+      image: "/pebone.jpeg",
       description:
         "Committed to providing affordable, clean and abundant power with Renewable Energy Solutions.",
     },

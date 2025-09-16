@@ -8,6 +8,7 @@ import TimelineTabs from "../../Components/companyComponent/TimelineTabs";
 import ProgressSection from "../../Components/companyComponent/ProgressSection";
 import AcquisitionsSection from "../../Components/companyComponent/AcquisitionsSection";
 import Header from "yes/Components/Header";
+import Navbar from "yes/Components/Navbar";
 // import CompanySlider from "../../Components/companyComponent/CompanySlider";
 
 export default function Company() {
@@ -16,12 +17,11 @@ export default function Company() {
   return (
     <>
       {/* <Pebheader/> */}
-      <Header />
+      <Navbar />
       <CompanySlider />
       <TimelineTabs />
       <ProgressSection />
       <AcquisitionsSection />
-
       <Footer />
     </>
   );

@@ -14,6 +14,7 @@ import TotalSolutionP from "yes/Components/TotalSolutionP";
 import Explore from "yes/Components/Renewable/Explore";
 import Realstateheader from "yes/Components/Realstateheader";
 import NewsCorner from "yes/Components/RealState/NewsCorner";
+import Navbar from "yes/Components/Navbar";
 
 const slides = [
   {
@@ -95,7 +96,7 @@ export default function Renewableenergy() {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
         {/* Background Video */}
         <video
