@@ -99,7 +99,7 @@ export default function Footer() {
       external: true,
       items: [
         { name: "Our History", href: "/company" },
-        { name: "Leadership", href: "/about/leadership" },
+        { name: "Leadership", href: "/leadership" },
         { name: "Our Mission", href: "/mission" },
         { name: "Innovation", href: "/innovation" },
       ],

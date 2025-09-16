@@ -40,8 +40,8 @@ export default function CounterP() {
 
   return (
     <section className="py-12 bg-white">
-      <div className=" mx-[20px] px-6">
-        <h2 className="text-2xl md:text-[30px] font-bold text-[#09306b] mb-8 leading-snug">
+      <div className=" mx-[20px] px-5">
+        <h2 className="text-xl md:text-[30px] font-bold text-[#09306b] mb-8 leading-snug">
           Leading industries toward a smarter future with focused and adaptable
           innovation.
         </h2>
@@ -62,7 +62,7 @@ export default function CounterP() {
                 i === counters.length - 1 ? "col-span-2 sm:col-span-1" : ""
               }`}
             >
-              <p className="text-[33px] font-bold text-cyan-400 transition-all duration-500">
+              <p className=" text-[19px] font-bold text-[#fff] transition-all duration-500 md:text-[33px]">
                 {counts[i].toFixed(counter.value % 1 !== 0 ? 2 : 0)}
                 {counter.suffix || ""}
               </p>
