@@ -20,25 +20,25 @@ export default function CoreBusiness() {
 
   const coreBusinessData = [
     {
-      title: "Industry Installation",
+      title: "Industry Installation and Construction",
       image: "/industry.jpg",
       description:
         "Quality Construction Project Delivery on time with customer Satisfaction",
     },
     {
-      title: "Engineering and R&D Services",
+      title: "Engineering  and R&D services",
       image: "/engineer.jpg",
       description:
         "Committed to advancing innovation, fairness, equity, measurement quality in assessment, learning materials.",
     },
     {
-      title: "Renewable Energy",
+      title: "Renewable Energy Solution Provider",
       image: "/renewable.jpg",
       description:
         "Committed to providing affordable, clean and abundant power with Renewable Energy Solutions.",
     },
     {
-      title: "Pre Engineered Building ",
+      title: "Pre Engineered     Building ",
       image: "/pebone.jpeg",
       description:
         "Committed to providing affordable, clean and abundant power with Renewable Energy Solutions.",
