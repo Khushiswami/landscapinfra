@@ -5,34 +5,30 @@ import { useState } from "react";
 const areas = [
   {
     id: 1,
-    title: "Soluciones",
-    subtitle: "Soluciones Globales",
-    description:
-      "Ofrecemos soluciones innovadoras para diversos sectores, adaptándonos a las necesidades de cada cliente.",
+    title: "Static Analysis",
+    subtitle: "Static Analysis",
+    description: "",
     image: "/green.png",
   },
   {
     id: 2,
-    title: "Ingeniería",
-    subtitle: "Proyectos de Ingeniería",
-    description:
-      "Diseñamos y desarrollamos proyectos de ingeniería de alta complejidad, garantizando calidad y eficiencia.",
+    title: "Implicit Dynamic Analysis",
+    subtitle: "Implicit Dynamic Analysis",
+    description: "",
     image: "/green.png",
   },
   {
     id: 3,
-    title: "Infraestructuras",
-    subtitle: "Inversión en Infraestructuras",
-    description:
-      "Combinamos fórmulas de colaboración tradicionales con alianzas específicas para minimizar el riesgo e impulsar la eficiencia.",
+    title: "Explicit Dynamic Analysis",
+    subtitle: "Explicit Dynamic Analysis",
+    description: "",
     image: "/green.png",
   },
   {
     id: 4,
-    title: "Otros",
-    subtitle: "Otras Áreas",
-    description:
-      "Participamos en múltiples sectores, ofreciendo valor añadido y soluciones integrales.",
+    title: "Fatigue / Durability",
+    subtitle: "Fatigue / Durability",
+    description: "",
     image: "/green.png",
   },
 ];
@@ -46,7 +42,7 @@ export default function Rndexplore() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-        Our Products
+        CAE Simulation Services
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">

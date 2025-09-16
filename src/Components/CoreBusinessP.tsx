@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import type { NavigationOptions } from "swiper/types";
 
@@ -14,6 +14,9 @@ export default function CoreBusiness() {
   const prevRef = useRef<HTMLDivElement | null>(null);
   const nextRef = useRef<HTMLDivElement | null>(null);
   const swiperRef = useRef<SwiperType | null>(null);
+
+  // ⬇️ NEW: track which image is clicked
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const coreBusinessData = [
     {
@@ -35,6 +38,12 @@ export default function CoreBusiness() {
         "Committed to providing affordable, clean and abundant power with Renewable Energy Solutions.",
     },
     {
+      title: "Pre Engineered Building ",
+      image: "/renewable.jpg",
+      description:
+        "Committed to providing affordable, clean and abundant power with Renewable Energy Solutions.",
+    },
+    {
       title: "Real Estate Development",
       image: "/realstate.png",
       description:
@@ -50,7 +59,8 @@ export default function CoreBusiness() {
       swiperRef.current.params.navigation &&
       typeof swiperRef.current.params.navigation !== "boolean"
     ) {
-      const navigation = swiperRef.current.params.navigation as NavigationOptions;
+      const navigation = swiperRef.current.params
+        .navigation as NavigationOptions;
 
       navigation.prevEl = prevRef.current;
       navigation.nextEl = nextRef.current;
@@ -67,13 +77,13 @@ export default function CoreBusiness() {
         Core Business
       </h2>
 
-      <div className="max-w-7xl mx-auto px-6 relative">
+      <div className=" mx-auto px-6 relative">
         <Swiper
           modules={[Navigation]}
           loop={true}
           spaceBetween={30}
           slidesPerView={1}
-          navigation={false} // important: start without navigation
+          navigation={false} // start without navigation
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 4 },
@@ -84,22 +94,34 @@ export default function CoreBusiness() {
             <SwiperSlide key={idx}>
               <div className="flex flex-col items-center group">
                 <h3
-                  className="relative mb-6 text-[15px] font-medium text-black text-center w-full 
+                  className="relative mb-6 text-[16px] font-medium text-black text-center w-full 
                   transition-colors duration-500 group-hover:text-[#000080] pb-2"
                 >
                   {item.title}
                   <span
-                    className="absolute left-0 right-0 -bottom-1 mx-auto h-[2px] w-0 bg-[#000080] 
+                    className="absolute left-0 right-0 -bottom-1 mx-auto h-[2px] w-0 bg-[#8080FF]
+] 
                     transition-all duration-500 group-hover:w-full"
                   ></span>
                 </h3>
 
-                <div className="relative w-full h-44 lg:h-44 overflow-hidden shadow-md">
+                {/* Image container */}
+                <div
+                  className="relative w-full h-44 lg:h-44 overflow-hidden  cursor-pointer"
+                  onClick={() =>
+                    setActiveIndex(activeIndex === idx ? null : idx)
+                  }
+                >
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover"
+                    className={`object-cover transition-transform duration-500 ease-in-out 
+                      ${
+                        activeIndex === idx
+                          ? "scale-90" // zoom OUT on click
+                          : "scale-100" // normal
+                      }`}
                   />
                 </div>
               </div>

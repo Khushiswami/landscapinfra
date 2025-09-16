@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,8 +16,12 @@ export default function ExpertiseP() {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   const router = useRouter();
+
+  // state for hover & click
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
-  const [swiper, setSwiper] = useState<SwiperType | null>(null); // State to store Swiper instance
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const [swiper, setSwiper] = useState<SwiperType | null>(null); // Store Swiper instance
 
   const services = [
     {
@@ -90,13 +94,13 @@ export default function ExpertiseP() {
   ];
 
   return (
-    <section className="py-12 px-10 bg-white mx-0 md:mx-12 lg:mx-20">
+    <section className="py-12 px-10 bg-white mx-0 md:mx-1 lg:mx-1">
       <div className="flex items-center justify-between mx-auto mb-8">
         <h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
           Our Expertise
         </h2>
         <div className="flex items-center gap-2">
-          {/* Use swiper.slidePrev() on click */}
+          {/* Prev Button */}
           <button
             ref={prevRef}
             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
@@ -105,7 +109,7 @@ export default function ExpertiseP() {
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          {/* Use swiper.slideNext() on click */}
+          {/* Next Button */}
           <button
             ref={nextRef}
             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
@@ -118,7 +122,7 @@ export default function ExpertiseP() {
       </div>
 
       {/* Swiper Slider */}
-      <div className="max-w-7xl mt-10 mx-auto">
+      <div className=" mt-10 mx-auto">
         <Swiper
           modules={[Navigation, Autoplay]}
           onSwiper={setSwiper} // Store the Swiper instance
@@ -151,7 +155,10 @@ export default function ExpertiseP() {
                 className={`relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer`}
                 onMouseEnter={() => setHoverIndex(i)}
                 onMouseLeave={() => setHoverIndex(null)}
-                onClick={() => service.link && router.push(service.link)}
+                onClick={() => {
+                  setActiveIndex(i);
+                  service.link && router.push(service.link);
+                }}
               >
                 {/* Image */}
                 <div className="w-full h-70 md:h-80 overflow-hidden">
@@ -168,7 +175,23 @@ export default function ExpertiseP() {
                     {service.title}
                   </p>
                   <div className="bg-white rounded-full p-1">
-                    <ArrowUpRight className="w-4 h-4 text-[#1F4B9A]" />
+                    <motion.div
+                      key={
+                        hoverIndex === i || activeIndex === i
+                          ? "chevron"
+                          : "arrow"
+                      }
+                      initial={{ opacity: 0, rotate: -90 }}
+                      animate={{ opacity: 1, rotate: 0 }}
+                      exit={{ opacity: 0, rotate: 90 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {hoverIndex === i || activeIndex === i ? (
+                        <ChevronRight className="w-4 h-4 text-[#1F4B9A]" />
+                      ) : (
+                        <ArrowUpRight className="w-4 h-4 text-[#1F4B9A]" />
+                      )}
+                    </motion.div>
                   </div>
                 </div>
 
@@ -179,7 +202,7 @@ export default function ExpertiseP() {
                       className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20"
                       style={{
                         background:
-                          "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.95) 100%)",
+                          "linear-gradient(0deg, rgba(33, 71, 95, 0.8) 0%, rgba(22, 46, 68, 0.8) 100%)",
                       }}
                       initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}

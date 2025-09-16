@@ -8,7 +8,7 @@ const exploreItems = [
   {
     subtitle: "Mechanical Engineering Design",
     description:
-      "From custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
+      " custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
     image: "/rndimages/semiconductor.jpg",
   },
   {
