@@ -454,108 +454,109 @@ export default function Menupage() {
           </div>
         </div>
       </section>
-      {/* explore conettt */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Our Products
-        </h2>
+      {/*neww  explore conettt */}
+    <section className="max-w-7xl mx-auto px-4 py-10">
+  <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+    Our Products
+  </h2>
 
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
-          <div className="w-full md:w-1/4">
-            {/* Mobile Dropdown */}
-            <div className="md:hidden mb-4 bg-[#000080]">
+  <div className="flex flex-col md:flex-row gap-6">
+    {/* Left Menu */}
+    <div className="w-full md:w-1/4">
+      {/* Mobile Dropdown */}
+      <div className="md:hidden mb-4 bg-[#000080]">
+        <button
+          onClick={() => setOpen(!open)}
+          className="w-full p-3 border bg-[#000080] border-gray-300 rounded-lg text-white font-semibold flex justify-between items-center"
+        >
+          {areas.find((a) => a.id === selectedId)?.title}
+          <svg
+            className="w-5 h-5 text-white"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d={open ? 'M5 15l7-7 7 7' : 'M19 9l-7 7-7-7'}
+            />
+          </svg>
+        </button>
+
+        {open && (
+          <div className="mt-2 w-full bg-[#000080] border border-gray-300 rounded-lg shadow">
+            {areas.map((area) => (
               <button
-                onClick={() => setOpen(!open)}
-                className="w-full p-3 border bg-[#000080] border-gray-300 rounded-lg text-white font-semibold flex justify-between items-center"
+                key={area.id}
+                onClick={() => {
+                  setSelectedId(area.id);
+                  setOpen(false);
+                }}
+                className={`w-full text-left px-4 py-3 transition font-medium ${
+                  selectedId === area.id
+                    ? 'text-blue-400 bg-blue-900'
+                    : 'text-white hover:bg-blue-800'
+                }`}
               >
-                {areas.find((a) => a.id === selectedId)?.title}
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
-                  />
-                </svg>
+                {area.title}
               </button>
-
-              {open && (
-                <div className="mt-2 w-full bg-[#000080] border border-gray-300 rounded-lg shadow">
-                  {areas.map((area) => (
-                    <button
-                      key={area.id}
-                      onClick={() => {
-                        setSelectedId(area.id);
-                        setOpen(false);
-                      }}
-                      className={`w-full text-left px-4 py-3 transition font-medium ${
-                        selectedId === area.id
-                          ? "text-blue-400 bg-blue-900"
-                          : "text-white hover:bg-blue-800"
-                      }`}
-                    >
-                      {area.title}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-lg">
-              {areas.map((area, idx) => (
-                <button
-                  key={area.id}
-                  onClick={() => setSelectedId(area.id)}
-                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                    selectedId === area.id
-                      ? "bg-blue-800 font-bold"
-                      : "hover:bg-blue-800 text-gray-300"
-                  }`}
-                >
-                  <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <span>{area.title}</span>
-                </button>
-              ))}
-            </div>
+            ))}
           </div>
+        )}
+      </div>
 
-          {/* Right Content */}
-          {selectedArea && (
-            <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-              {/* Text Content */}
-              <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-                  {selectedArea.subtitle}
-                </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold ">
-                  More
-                  <span className=" p-1 rounded-full text-[#000080]">→</span>
-                </button>
-              </div>
+      {/* Desktop Menu */}
+      <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-lg">
+        {areas.map((area, idx) => (
+          <button
+            key={area.id}
+            onClick={() => setSelectedId(area.id)}
+            className={`flex items-center gap-3 px-5 py-4 text-left transition ${
+              selectedId === area.id
+                ? 'bg-blue-800 font-bold'
+                : 'hover:bg-blue-800 text-gray-300'
+            }`}
+          >
+            <span className="text-sm opacity-70">
+              {String(idx + 1).padStart(2, '0')}
+            </span>
+            <span>{area.title}</span>
+          </button>
+        ))}
+      </div>
+    </div>
 
-              {/* Image */}
-              <div className="w-full md:w-1/2">
-                <img
-                  src={selectedArea.image}
-                  alt={selectedArea.subtitle}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          )}
+    {/* Right Content */}
+    {selectedArea && (
+      <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+        {/* Text Content */}
+        <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
+          <h3 className="text-2xl font-semibold text-[#000080] mb-3">
+            {selectedArea.subtitle}
+          </h3>
+          <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+          <button className="flex items-center gap-2 text-[#000080] font-semibold ">
+            More
+            <span className=" p-1 rounded-full text-[#000080]">→</span>
+          </button>
         </div>
-      </section>
-      {/* explore content */}
+
+        {/* Image */}
+        <div className="w-full md:w-1/2">
+          <img
+            src={selectedArea.image}
+            alt={selectedArea.subtitle}
+            className="w-full h-64 md:h-70 object-cover pt-3" 
+          />
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+      {/*  end new explore content */}
 
       {/* capiablites */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
@@ -575,7 +576,7 @@ export default function Menupage() {
           {/* Right Side - Content */}
           <div>
             <div className="flex items-center mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Our Manufacturing Capabilities
               </h2>
             </div>
@@ -639,15 +640,15 @@ export default function Menupage() {
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black"
             >
-              <ChevronLeft className="w-6 h-6 text-[#000080]" />
+              <ChevronLeft className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black"
             >
-              <ChevronRight className="w-6 h-6 text-[#000080]" />
+              <ChevronRight className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
           </div>
         </div>
@@ -715,7 +716,7 @@ export default function Menupage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 flex items-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
@@ -731,7 +732,7 @@ export default function Menupage() {
             </p>
 
             {/* Animated Counters */}
-            <div
+            {/* <div
               ref={ref}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
             >
@@ -755,7 +756,7 @@ export default function Menupage() {
                   </p>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}

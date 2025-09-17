@@ -49,14 +49,14 @@ export default function ContactSection() {
             Get in touch with us – we are always ready to help with your
             project.
           </p>
-          <div className="h-1 w-[100%] bg-yellow-500 mb-4"></div>
+          <div className="h-1 w-[100%] bg-[#8080FF] mb-4"></div>
           <p className="mb-6 text-gray-200">
             Whether you need a basic or elaborate steel building, Landsking
             Infra will ensure your project is designed, manufactured, and
             delivered on time.
           </p>
           <a href="/contact">
-            <button className="bg-yellow-500 text-black px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-yellow-400 transition">
+            <button className="bg-[#000080] text-white px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-yellow-400 transition">
               Contact Us
               <span className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900">
                 <svg
@@ -105,7 +105,7 @@ export default function ContactSection() {
                     <p className="text-sm text-gray-200 mb-2">
                       {item.location}
                     </p>
-                    <span className="text-yellow-400 text-sm font-semibold mb-3">
+                    <span className="text-[#8080FF] text-sm font-semibold mb-3">
                       ★ Verified Customer
                     </span>
                     <p className="italic text-gray-100 mb-4 line-clamp-4">
@@ -113,7 +113,7 @@ export default function ContactSection() {
                     </p>
                     <a
                       href="/quote"
-                      className="text-sm font-semibold text-yellow-400 hover:underline"
+                      className="text-sm font-semibold text-[#8080FF] hover:underline"
                     >
                       Get A Quote →
                     </a>

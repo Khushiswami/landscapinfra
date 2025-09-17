@@ -14,16 +14,14 @@ import Servicesone from "yes/Components/Servicesone";
 import Footer from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 import BannerPEB from "../../Components/BannerPEB";
+// import ClientP from "../Components/ClientP";
 
 export default function PreEngineeredBuildings() {
   return (
     <>
       <Pebheader />
 
-     
-
 <BannerPEB/>
-      {/* Rest of content */}
       <AboutPebP />
       <Servicesone />
       <PlatformP />
@@ -33,6 +31,7 @@ export default function PreEngineeredBuildings() {
       <Insights />
       <MediaP />
       <PebBrandP />
+      {/* <ClientP/> */}
       <ContactSection />
       <Footer />
     </>

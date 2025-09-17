@@ -317,7 +317,7 @@ export default function Epcsolutions() {
           {/* Right Side - Content */}
           <div>
             <div className="flex items-center mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Ladsking Infra’s EPC Expertise: Delivering End-to-End Solutions
               </h2>
             </div>
@@ -337,7 +337,7 @@ export default function Epcsolutions() {
         </div>
       </section>
       {/* endcapill */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className="max-w-7xl mx-auto px-5 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
           Our EPC Service Offerings
         </h2>
@@ -420,7 +420,7 @@ export default function Epcsolutions() {
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
                 <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                  VER MÁS
+                  More
                   <span className="bg-yellow-400 p-1 rounded-full text-black">
                     →
                   </span>
@@ -428,11 +428,11 @@ export default function Epcsolutions() {
               </div>
 
               {/* Image */}
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 ">
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-full object-cover"
+            className="w-full h-64 md:h-67 object-cover pt-5 " 
                 />
               </div>
             </div>
@@ -469,15 +469,15 @@ export default function Epcsolutions() {
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black"
             >
-              <ChevronLeft className="w-6 h-6 text-[#000080]" />
+              <ChevronLeft className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black"
             >
-              <ChevronRight className="w-6 h-6 text-[#000080]" />
+              <ChevronRight className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
           </div>
         </div>
@@ -541,7 +541,7 @@ export default function Epcsolutions() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 flex items-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
@@ -557,7 +557,7 @@ export default function Epcsolutions() {
             </p>
 
             {/* Animated Counters */}
-            <div
+            {/* <div
               ref={ref}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
             >
@@ -581,7 +581,7 @@ export default function Epcsolutions() {
                   </p>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}

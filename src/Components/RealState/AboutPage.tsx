@@ -1,5 +1,4 @@
-// This code is an example for a Next.js project with Tailwind CSS.
-// Make sure you have Next.js, Tailwind CSS, and react-icons installed.
+
 
 import Image from 'next/image';
 import { FaPlay } from 'react-icons/fa';
@@ -21,11 +20,7 @@ export default function AboutPage() {
           Your browser does not support the video tag.
         </video>
            
-            {/* <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-              <div className="p-4 rounded-full bg-white bg-opacity-75 cursor-pointer hover:scale-110 transition-transform">
-                <FaPlay className="text-4xl text-blue-600" />
-              </div>
-            </div> */}
+           
           </div>
 
           <div className="flex flex-col justify-center space-y-4">

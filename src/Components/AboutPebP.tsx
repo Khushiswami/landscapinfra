@@ -49,11 +49,11 @@ export default function AboutPebP() {
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center z-10">
-        {/* Left Section - Video & Images */}
+      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10">
+        {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-2xl shadow-lg hover:border-blue-400 transition-all duration-500">
+          <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-sm shadow-lg hover:border-blue-400 transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -64,25 +64,38 @@ export default function AboutPebP() {
             />
           </div>
 
-          {/* Image */}
-          <div className="relative w-full h-40 sm:h-48 md:h-52 overflow-hidden rounded-xl transform transition-transform duration-700 hover:scale-105">
-            <Image
-              src="/attt.png"
-              alt="Building 1"
-              fill
-              className="object-cover"
-            />
+          {/* Two Images in a Row */}
+          <div className="grid grid-cols-2 gap-1">
+            <div className="relative w-full h-40 sm:h-48 overflow-hidden rounded-sm transform transition-transform duration-700 ">
+              <Image
+                src="/engineer.jpg"
+                alt="Building 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative w-full h-40 sm:h-48 overflow-hidden rounded-sm transform transition-transform duration-700 ">
+              <Image
+                src="/attt.png"
+                alt="Building 2"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
 
         {/* Right Section - About Us */}
         <div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080] mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080] mb-4 mt-9 sm:mb-6">
             ABOUT US
           </h2>
 
           <p className="text-gray-700 mb-4 sm:mb-5 leading-relaxed text-sm sm:text-base">
             LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More than 120MT Capacity Rice mill Plant, 350 Minor and Major Bridge and Super Structure, 26 KM MS Pipe line upto 3.8m dia, and 410KM HDPE pipeline Excavation and laying, 6,76,000Sqft PEB Erection Work, 15.5MW solar plant in Its Portfolio.
+          We combine our expertise with purposeful technology, deploying innovations like digital engineering and AI to produce powerful results.
+
+
           </p>
 
           {/* Stats with Icons */}
