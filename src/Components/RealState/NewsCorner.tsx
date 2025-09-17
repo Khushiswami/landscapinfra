@@ -9,7 +9,6 @@ export default function NewsCorner() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        
         <div className="max-h-96 overflow-y-auto  pl-4 pr-2 scrollbar-left-blue">
           <ul className="space-y-6">
             <li className="pb-2 border-b">
@@ -64,7 +63,7 @@ export default function NewsCorner() {
 
       {/* BUTTON CENTERED BELOW BOTH SECTIONS */}
       <div className="mt-10 flex justify-center">
-        <button className="border border-yellow-400 text-gray-800 px-6 py-2 hover:bg-yellow-400 hover:text-white transition">
+        <button className="border border-[#000080] text-gray-800 px-6 py-2 hover:bg-black hover:text-white transition">
           Explore Media Center
         </button>
       </div>
