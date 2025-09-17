@@ -8,11 +8,14 @@ interface CounterItem {
 }
 
 const counters: CounterItem[] = [
-  { value: 1.2, label: "Sq. Ft. Area Delivered", suffix: "M" },
   { value: 55, label: "Global Clients", suffix: "+" },
+    { value: 5, label: " Partners", suffix: "+" },
+
   { value: 250, label: "Project Executed", suffix: "+" },
-  { value: 5, label: "JV & Alliance Partners", suffix: "+" },
-  { value: 15, label: "Years Manufacturing Experience", suffix: "+" },
+
+  { value: 15, label: "Years Experience", suffix: "+" },
+      { value: 1.2, label: "Sq. Ft. Area Delivered", suffix: "M" },
+
 ];
 
 export default function CounterP() {
@@ -39,9 +42,14 @@ export default function CounterP() {
   }, []);
 
   return (
-    <section className="py-12 bg-white">
-      <div className=" mx-[20px] px-5">
-        <h2 className="text-xl md:text-[30px] font-bold text-[#09306b] mb-8 leading-snug">
+<section
+  className="py-12 bg-cover bg-center md:px-40"
+
+>      <div className=" mx-[20px] px-5">
+        <h2 className="text-xl md:text-[30px] font-bold text-[#09306b] mb-8 "
+        style={{
+    fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
+  }}>
           Leading industries toward a smarter future with focused and adaptable
           innovation.
         </h2>
@@ -49,7 +57,7 @@ export default function CounterP() {
         {/* Counter Grid */}
         <div
           className="
-            bg-[#09306b] rounded-2xl shadow-lg py-3 px-6 
+            bg-[#09306b] rounded-2xl shadow-lg py-6 px-6 
             grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 
             gap-y-10 gap-x-6 justify-items-center
           "
@@ -62,11 +70,11 @@ export default function CounterP() {
                 i === counters.length - 1 ? "col-span-2 sm:col-span-1" : ""
               }`}
             >
-              <p className=" text-[19px] font-bold text-[#fff] transition-all duration-500 md:text-[33px]">
+              <p className=" text-[25px] font-bold text-[#8080FF] transition-all duration-500 md:text-[33px]">
                 {counts[i].toFixed(counter.value % 1 !== 0 ? 2 : 0)}
                 {counter.suffix || ""}
               </p>
-              <p className="text-white font-bold text-[15px] mt-2">
+              <p className="text-white font-bold text-[16px] mt-2">
                 {counter.label}
               </p>
             </div>

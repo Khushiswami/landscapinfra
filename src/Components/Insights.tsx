@@ -18,7 +18,8 @@ const cards = [
     title: "How AI is Driving the Next Era of Mobility",
     description:
       "The mobility industry experts at LTTS engaged in an extensive analysis of these trends, across three domains – Product Development Life Cycle, Software Development Life Cycle and User Experience.",
-    image: "/industry.jpg",
+        image: "/news2.jpeg",
+
   },
   {
     id: 2,
@@ -26,7 +27,7 @@ const cards = [
     title: "EU AI Act is Critical for Innovation",
     description:
       "The integration of Artificial Intelligence is transforming the medical device industry, facilitating smarter diagnosis, physiological monitoring, and treatment decisions",
-    image: "/industry.jpg",
+    image: "/engineer.jpg",
   },
   {
     id: 3,
@@ -34,7 +35,7 @@ const cards = [
     title: "Agentic AI Meets ER&D: Engineering the Next Leap in Autonomy",
     description:
       "Agentic AI is redefining autonomy—LTTS fuses AI with engineering to build intelligent, adaptive systems across mobility, manufacturing, and healthcare.",
-    image: "/industry.jpg",
+    image: "/new4.jpg",
   },
   {
     id: 4,
@@ -50,7 +51,7 @@ const cards = [
     title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
     description:
       "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
-    image: "/industry.jpg",
+    image: "/new2.png",
   },
   {
     id: 6,
@@ -58,7 +59,7 @@ const cards = [
     title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
     description:
       "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
-    image: "/industry.jpg",
+    image: "/news2.jpeg",
   },
 ];
 
@@ -108,7 +109,7 @@ export default function Insights() {
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
-            <div className="flex-shrink-0 bg-[#f3f6f4] relative w-full rounded-md overflow-hidden cursor-pointer group">
+            <div className="flex-shrink-0 bg-[#f3f6f4] relative w-full  rounded-md overflow-hidden cursor-pointer group">
               {/* Mobile version */}
               <div className="block sm:hidden p-4 bg-[#f3f6f4] rounded-md mb-6">
                 <div className="inline-block px-3 py-1 rounded-full text-md bg-[#000080] text-[#fff] mb-2">
@@ -133,7 +134,7 @@ export default function Insights() {
               </div>
 
               {/* Desktop version with hover */}
-              <div className="hidden sm:block h-[380px]">
+              <div className="hidden sm:block h-[450px]">
                 <div className="absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#000080] text-[#fff]">
                   {card.tag}
                 </div>

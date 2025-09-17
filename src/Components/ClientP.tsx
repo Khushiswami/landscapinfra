@@ -48,11 +48,11 @@ export default function Brand() {
     >
       {images.map((src, i) => (
         <SwiperSlide key={i}>
-          <div className="bg-white border border-gray-200 shadow-sm rounded-lg flex items-center justify-center h-28 w-full p-2">
+          <div className="bg-white border border-gray-200 shadow-sm rounded-lg flex items-center justify-center h-35 w-full p-2">
             <img
               src={src}
               alt={`Brand ${i + 1}`}
-              className="h-20 w-full object-contain"
+              className="h-20 w-full object-contain md:h-28"
             />
           </div>
         </SwiperSlide>
