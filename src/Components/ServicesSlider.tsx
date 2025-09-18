@@ -1,3 +1,132 @@
+
+// "use client";
+
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// const services = [
+//   {
+//     title: "Project programming services",
+//     desc: (
+//       <>
+
+        
+//         We fast-track project success by comparing your plan against thousands of similar projects. This information allows us to build a budget and plan that fits your needs, translates easily into design, and reduces costly rework.
+//         By leveraging proven insights, we help you make informed decisions quickly, ensuring your project stays on time and on budget.
+//       </>
+//     ),
+//   },
+//   {
+//     title: "Design management",
+//     desc: (
+//       <>
+//         The earlier we get involved, the better the outcome—and design is where it all begins. Using tried and true methods like integrated project delivery and design-build, we operate at a higher level and deliver a streamlined, stress-free process with your goals as our guide.
+//       </>
+//     ),
+//   },
+//   {
+//     title: "Engineering services",
+//     desc: (
+//       <>
+//         Our engineers are prepared to come up with creative solutions and lead design-build efforts for complex projects. By working with our construction teams, we are uniquely empowered to offer innovative solutions.
+//       </>
+//     ),
+//   },
+//   {
+//     title: "Offsite manufacturing",
+//     desc: (
+//       <>
+//               Our engineers are prepared to come up with creative solutions and lead design-build efforts for complex projects. By working with our construction teams, we are uniquely empowered to offer innovative solutions.
+
+//         We  have invested in modern machines to create the Landsking Infra Centre of Excellence for Modern Construction in India. We believe in new tech-updated machinery that will produce lower carbon products for future projects.
+//       </>
+//     ),
+//   },
+// ];
+
+// export default function ServicesSlider() {
+//   return (
+//     <section className="bg-[#E8ECEC] md:py-28 py-10 overflow-x-hidden">
+//       <div className="mx-auto px-6  flex flex-col md:flex-row gap-8 md:gap-10 relative border-t border-b border-gray-300">
+//         {/* Left Side Text */}
+//         <div className="w-full md:w-2/6  border-r border-gray-300">
+//           <h2 className="text-2xl md:text-5xl pt-15 font-bold text-[#000080] mb-4 md:mb-6 ">
+//             Services and delivery methods
+//           </h2>
+//           <p className="text-gray-700 text-md mb-4 md:mb-12">
+//             In the intricate world of construction, your project deserves a general contractor with the flexibility and expertise to make your dreams a reality.
+//           </p>
+//           {/* Desktop Arrows */}
+//           <div className="hidden md:flex gap-4">
+//             <button className="custom-prev border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
+//               <ChevronLeft />
+//             </button>
+//             <button className="custom-next border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
+//               <ChevronRight />
+//             </button>
+//           </div>
+//         </div>
+
+//         {/* Right Side Swiper */}
+//         <div className="w-full md:w-4/6 overflow-visible">
+//           <Swiper
+//             modules={[Navigation]}
+//             navigation={{
+//               prevEl: ".custom-prev",
+//               nextEl: ".custom-next",
+//             }}
+//             spaceBetween={0}
+//             slidesPerView={1.1}
+//             breakpoints={{
+//               768: {
+//                 slidesPerView: 2.5,
+//               },
+//               1024: {
+//                 slidesPerView: 3.2,
+//               },
+//             }}
+//             className="overflow-visible"
+//           >
+//             {services.map((item, i) => (
+//               <SwiperSlide key={i} className="!w-[300px] md:!w-[340px] overflow-visible">
+//                 <div
+//                   className={`
+//                     group 
+//                     py-8 md:py-15 px-6 
+//                     bg-[#E8ECEC] 
+//                     border-gray-300
+//                      border-r
+//                     h-full flex flex-col 
+//                     transition-colors duration-300 
+//                     hover:bg-white
+//                   `}
+//                 >
+//                   <h3 className="text-xl md:text-2xl text-[#000080] font-semibold mb-3">
+//                     {item.title}
+//                   </h3>
+//                   <p className="text-black text-md flex-1">{item.desc}</p>
+//                 </div>
+//               </SwiperSlide>
+//             ))}
+//           </Swiper>
+
+//           {/* Mobile Arrows */}
+//           <div className="flex gap-4 justify-center mt-4 md:hidden">
+//             <button className="custom-prev border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
+//               <ChevronLeft />
+//             </button>
+//             <button className="custom-next border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
+//               <ChevronRight />
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,35 +137,27 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const services = [
   {
-    title: "Offsite manufacturing",
+    title: "Project programming services",
     desc: (
       <>
-        <strong>
-          We have invested in modern machines to create the Landsking Infra Centre of Excellence for Modern Construction in India.
-        </strong>{" "}
-        We believe in new tech-updated machinery that will produce lower carbon products for future projects.
+        We fast-track project success by comparing your plan against thousands of similar projects. This information allows us to build a budget and plan that fits your needs, translates easily into design, and reduces costly rework.
+        By leveraging proven insights, we help you make informed decisions quickly, ensuring your project stays on time and on budget.
       </>
     ),
   },
   {
-    title: "Digital engineering",
+    title: "Design management",
     desc: (
       <>
-        <strong>
-          Thanks to our digital engineers, we build every project twice –
-        </strong>{" "}
-        virtually and then physically. This de-risks both design and construction phases and improves productivity on-site.
+        The earlier we get involved, the better the outcome—and design is where it all begins. Using tried and true methods like integrated project delivery and design-build, we operate at a higher level and deliver a streamlined, stress-free process with your goals as our guide.
       </>
     ),
   },
   {
-    title: "Direct delivery",
+    title: "Engineering services",
     desc: (
       <>
-        <strong>
-          Unlike our competitors in India, we have an integrated supply chain.
-        </strong>{" "}
-        This gives us better cost visibility, maximizes integration across disciplines, and minimizes risk.
+        Our engineers are prepared to come up with creative solutions and lead design-build efforts for complex projects. By working with our construction teams, we are uniquely empowered to offer innovative solutions.
       </>
     ),
   },
@@ -44,40 +165,60 @@ const services = [
     title: "Offsite manufacturing",
     desc: (
       <>
-        <strong>
-          We have invested in modern machines to create the Landsking Infra Centre of Excellence for Modern Construction in India.
-        </strong>{" "}
-        We believe in new tech-updated machinery that will produce lower carbon products for future projects.
+        Our engineers are prepared to come up with creative solutions and lead design-build efforts for complex projects. By working with our construction teams, we are uniquely empowered to offer innovative solutions.
+
+        We have invested in modern machines to create the Landsking Infra Centre of Excellence for Modern Construction in India. We believe in new tech-updated machinery that will produce lower carbon products for future projects.
       </>
     ),
   },
+  {
+  title: "Modern Offsite Manufacturing",
+  desc: (
+    <>
+      Revolutionizing construction with precision-engineered components, our offsite manufacturing facilities combine advanced machinery with sustainable practices.  
+      This approach reduces onsite construction time, minimizes waste, and ensures consistent quality for every project.  
+
+      By leveraging technology and innovation, we deliver faster, smarter, and eco-friendly solutions tailored to your project needs.
+    </>
+  ),
+}
+
 ];
 
 export default function ServicesSlider() {
   return (
-    <section className="bg-[#d9d9d9] md:py-28 py-10">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-8 md:gap-10">
-        {/* Left side text */}
-        <div className="w-full md:w-2/6">
-          <h2 className="text-3xl md:text-6xl font-bold text-[#000080] mb-4 md:mb-6">
+    <section className="bg-[#E8ECEC] md:py-28 py-10 overflow-x-hidden">
+      <div className="mx-auto px-6 flex flex-col md:flex-row gap-8 md:gap-10 relative md:border-t md:border-b border-gray-300">
+        {/* Left Side Text */}
+ <div className="w-full md:w-2/6 md:border-r md:border-gray-300">
+          <h2 className="text-2xl md:text-5xl pt-15 font-bold text-[#000080] mb-4 md:mb-6">
             Services and delivery methods
           </h2>
           <p className="text-gray-700 text-md mb-4 md:mb-12">
-            We deliver certainty for our clients based on an operating model that harnesses new technologies to maximise the use of pioneering modern methods of construction.
+            In the intricate world of construction, your project deserves a general contractor with the flexibility and expertise to make your dreams a reality.
           </p>
-          {/* Desktop arrows */}
-          <div className="hidden md:flex gap-4">
-            <button className="custom-prev border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
-              <ChevronLeft />
-            </button>
-            <button className="custom-next border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
-              <ChevronRight />
-            </button>
-          </div>
+          {/* Desktop Arrows */}
+        <div className="hidden md:flex gap-4">
+  <button
+    className="custom-prev border border-[#000080] text-[#000080] p-3 
+               transition-all duration-300 ease-in-out
+               hover:bg-blue-50 hover:text-black hover:scale-110"
+  >
+    <ChevronLeft />
+  </button>
+  <button
+    className="custom-next border border-[#000080] text-[#000080] p-3 
+               transition-all duration-300 ease-in-out
+               hover:bg-blue-50 hover:text-black hover:scale-110"
+  >
+    <ChevronRight />
+  </button>
+</div>
+
         </div>
 
-        {/* Slider */}
-        <div className="w-full md:w-4/6">
+        {/* Right Side Swiper */}
+        <div className="w-full md:w-4/6 relative overflow-hidden">
           <Swiper
             modules={[Navigation]}
             navigation={{
@@ -85,32 +226,58 @@ export default function ServicesSlider() {
               nextEl: ".custom-next",
             }}
             spaceBetween={20}
-            breakpoints={{
-              0: { slidesPerView: 1 },
-              768: { slidesPerView: 3 },
-            }}
+            slidesPerView="auto"
+            centeredSlides={false}
+            className="overflow-visible"
           >
             {services.map((item, i) => (
-              <SwiperSlide key={i} className="h-full">
-                <div className="py-8 md:py-10 px-6 bg-[#d9d9d9] border-x border-gray-300 h-full flex flex-col">
-                  <h3 className="text-xl md:text-3xl text-[#000080] font-bold mb-3">
+              <SwiperSlide
+                key={i}
+                className={`!w-[300px] md:!w-[340px] overflow-visible ${
+                  i === services.length - 1 ? "mr-8 md:mr-12" : ""
+                }`}
+              >
+                <div
+  className={`
+    group 
+    py-8 md:py-15 px-6 
+    bg-[#E8ECEC] 
+    md:border-gray-300
+    md:border-r
+    h-full flex flex-col 
+    transition-colors duration-300 
+    hover:bg-white
+  `}
+>
+
+                  <h3 className="text-xl md:text-3xl text-[#000080] font-semibold mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-black text-md flex-1">{item.desc}</p>
+                  <p className="text-[#000] text-md flex-1">{item.desc}</p>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* Mobile arrows below slider */}
-          <div className="flex gap-4 justify-center mt-4 md:hidden">
-            <button className="custom-prev border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
-              <ChevronLeft />
-            </button>
-            <button className="custom-next border border-[#000080] text-[#000080] p-3 rounded hover:bg-blue-50">
-              <ChevronRight />
-            </button>
+          {/* Mobile Arrows */}
+          <div className="flex gap-4 justify-between mt-0 md:hidden">
+            <button
+    className="custom-prev border border-[#000080] text-[#000080] p-3 
+               transition-all duration-300 ease-in-out
+               hover:bg-blue-50 hover:text-black hover:scale-110"
+  >
+    <ChevronLeft />
+  </button>
+  <button
+    className="custom-next border border-[#000080] text-[#000080] p-3 
+               transition-all duration-300 ease-in-out
+               hover:bg-blue-50 hover:text-black hover:scale-110"
+  >
+    <ChevronRight />
+  </button>
+
           </div>
+         
         </div>
       </div>
     </section>

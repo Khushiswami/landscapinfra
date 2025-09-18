@@ -26,10 +26,10 @@ export default function Accordion() {
   return (
     <div className="max-w-5xl mx-auto mt-10 p-4">
       <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2>
-      <h1 className="text-3xl font-semibold mb-6">
+      <h1 className="text-2xl font-semibold mb-6 text-[#000080] md:text-3xl">
         How we approach the triple bottom line
       </h1>
-      <p className="text-xl  mb-6">
+      <p className="text-lg  mb-6 md:text-xl">
 To be a global leader in infrastructure development, setting benchmarks in both civil and industrial engineering. We envision a future where our work not only supports the foundation of economies but also contributes meaningfully to the economic and social progress of the communities we serve. Through innovation, sustainability, and unwavering commitment, we strive to shape a better world through– “The Triple Bottom Line Approach” </p>
       {/* <h1 className="text-3xl font-semibold mb-6">
         How we approach the triple bottom line

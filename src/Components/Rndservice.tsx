@@ -57,11 +57,11 @@ export default function Rndservice() {
 
   return (
     <section className="py-12 relative">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold text-blue-900 mb-8">
+      <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
         DISCOVER OUR PROJECTS
       </h2>
 
-      <div className="relative max-w-6xl mx-auto px-12">
+      <div className="relative   mx-auto  px-12 md:mx-25">
         {/* ✅ Swiper only mounts on client */}
         {isMounted && (
           <Swiper
@@ -89,7 +89,7 @@ export default function Rndservice() {
             {projects.map((project, idx) => (
               <SwiperSlide key={idx}>
                 <div className="flex flex-col items-center text-center">
-                  <h3 className="text-lg font-semibold text-blue-900">
+                  <h3 className="text-lg font-semibold text-[#000080]">
                     {project.title}
                   </h3>
                   <p className="text-gray-500 text-sm mb-2">
@@ -114,20 +114,33 @@ export default function Rndservice() {
         )}
 
         {/* Left Arrow */}
-        <div
-          ref={prevRef}
-          className="absolute top-1/2 -left-2 -translate-y-1/2 bg-blue-900 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
-        >
-          ◀
-        </div>
+       <div
+  ref={prevRef}
+  className="
+    absolute top-1/2 
+    left-4 md:-left-2   /* mobile = left-4, desktop = -left-2 */
+    -translate-y-1/2 
+    text-[#000080] w-10 h-10 flex items-center justify-center 
+    rounded-full cursor-pointer hover:transition z-10
+  "
+>
+  ◀
+</div>
+
 
         {/* Right Arrow */}
-        <div
-          ref={nextRef}
-          className="absolute top-1/2 -right-2 -translate-y-1/2 bg-blue-900 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
-        >
-          ▶
-        </div>
+       <div
+  ref={nextRef}
+  className="
+    absolute top-1/2 
+    right-4 md:-right-2  /* mobile = right-4, desktop = -right-2 */
+    -translate-y-1/2 
+    text-[#000080] w-10 h-10 flex items-center justify-center 
+    rounded-full cursor-pointer hover: transition z-10
+  "
+>
+  ▶
+</div>
       </div>
     </section>
   );

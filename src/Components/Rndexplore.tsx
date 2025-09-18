@@ -42,21 +42,20 @@ export default function Rndexplore() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-        CAE Simulation Services
-      </h2>
+CAE Simulation Services      </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
         <div className="w-full md:w-1/4">
           {/* Mobile Dropdown */}
-          <div className="md:hidden mb-4 bg-[#000080]">
+          <div className="md:hidden mb-0">
             <button
               onClick={() => setOpen(!open)}
-              className="w-full p-3 border bg-[#000080] border-gray-300 rounded-lg text-white font-semibold flex justify-between items-center"
+              className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
             >
               {areas.find((a) => a.id === selectedId)?.title}
               <svg
-                className="w-5 h-5 text-white"
+                className="w-5 h-5 text-[#8080FF]"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -71,7 +70,7 @@ export default function Rndexplore() {
             </button>
 
             {open && (
-              <div className="mt-2 w-full bg-[#000080] border border-gray-300 rounded-lg shadow">
+              <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
                 {areas.map((area) => (
                   <button
                     key={area.id}
@@ -79,10 +78,10 @@ export default function Rndexplore() {
                       setSelectedId(area.id);
                       setOpen(false);
                     }}
-                    className={`w-full text-left px-4 py-3 transition font-medium ${
+                    className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
                       selectedId === area.id
-                        ? "text-blue-400 bg-blue-900"
-                        : "text-white hover:bg-blue-800"
+                        ? "text-white font-semibold"
+                        : ""
                     }`}
                   >
                     {area.title}
@@ -93,15 +92,17 @@ export default function Rndexplore() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-lg">
+          {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
+          <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
+
             {areas.map((area, idx) => (
               <button
                 key={area.id}
                 onClick={() => setSelectedId(area.id)}
                 className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                   selectedId === area.id
-                    ? "bg-blue-800 font-bold"
-                    : "hover:bg-blue-800 text-gray-300"
+                    ? " font-bold"
+                    : "hover: text-gray-300"
                 }`}
               >
                 <span className="text-sm opacity-70">
@@ -115,16 +116,27 @@ export default function Rndexplore() {
 
         {/* Right Content */}
         {selectedArea && (
-          <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-            {/* Text Content */}
-            <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
+          // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
+          <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+            
+            <div
+  className="
+    p-6 flex flex-col justify-center w-full md:w-1/2
+    rounded-lg                
+    md:rounded-none          
+    md:rounded-tl-lg md:rounded-bl-lg
+    shadow border border-[#808080] md:border-r-0
+  "
+>
               <h3 className="text-2xl font-semibold text-blue-900 mb-3">
                 {selectedArea.subtitle}
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>
               <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                More
-                <span className=" p-1 rounded-full text-[#000080]">→</span>
+
+More                <span className=" p-1 rounded-full text-[#000080]">
+                  →
+                </span>
               </button>
             </div>
 
@@ -133,7 +145,7 @@ export default function Rndexplore() {
               <img
                 src={selectedArea.image}
                 alt={selectedArea.subtitle}
-                className="w-full h-full object-cover"
+                className="w-full h-64 md:h-83 object-cover"
               />
             </div>
           </div>

@@ -21,25 +21,25 @@ export default function QuickLinks({ heading, links }: QuickLinksProps) {
     <section className="py-12">
       <h2 className="text-center text-2xl md:text-3xl font-semibold text-blue-900 mb-10 relative">
         {heading}
-        <span className="block w-12 h-1 bg-blue-600 mx-auto mt-2"></span>
+        <span className="block w-15 h-1 bg-[#8080FF] mx-auto mt-2"></span>
       </h2>
 
-      <div className="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:mx-25">
         {links.map((link, idx) => (
           <a
             key={idx}
             href={link.url || "#"}
             className="bg-white shadow-md rounded-lg p-6 flex flex-col justify-between hover:shadow-lg transition group"
           >
-            <h3 className="text-lg font-semibold text-blue-900 mb-4">
+            <h3 className="text-lg font-semibold text-[#000080] mb-4">
               {link.title}
             </h3>
-            <div className="flex items-center text-blue-500 font-medium text-sm  space-x-2">
+            <div className="flex items-center text-[#8080FF] font-medium text-sm  space-x-2">
               {link.icon}
               <span>{link.subtitle}</span>
             </div>
-            <div className="mt-4 flex items-center text-blue-500 font-semibold group-hover:translate-x-1 transition">
-              <ArrowRight size={18} />
+            <div className="mt-4 flex items-center text-[#8080FF] font-semibold group-hover:translate-x-1 transition">
+              <ArrowRight size={25} />
             </div>
           </a>
         ))}

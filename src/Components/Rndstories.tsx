@@ -33,16 +33,16 @@ export default function Rndstories() {
   const router = useRouter();
 
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-12 py-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#000080] text-center mb-10">
+    <section className=" mx-auto px-6 md:px-12 py-12 md:mx-25">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-10">
         Success Stories
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {STORIES.map((story) => (
           <div
             key={story.id}
-            className="flex flex-col bg-white rounded-lg shadow hover:shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+            className="flex flex-col bg-white hover:shadow-lg overflow-hidden transition-transform transform hover:scale-105"
           >
             <img
               src={story.img}
@@ -50,12 +50,12 @@ export default function Rndstories() {
               className="w-full h-40 md:h-48 object-cover"
             />
             <div className="p-4 flex flex-col justify-between flex-grow">
-              <h3 className="text-[#000000] font-medium text-md md:text-md mb-3">
+              <h3 className="text-[#000000] font-medium text-md md:text-lg mb-3">
                 {story.title}
               </h3>
               <button
                 onClick={() => router.push(story.url)}
-                className="flex items-center text-sm md:text-base font-medium text-[#000080] hover:text-[#ff0000] mt-auto"
+                className="flex items-center text-sm md:text-base font-medium text-[#000] hover:text-[#ff0000] mt-auto"
               >
                 Explore success story
                 <span className="ml-1 inline-block transform transition-transform group-hover:translate-x-1">

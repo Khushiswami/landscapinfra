@@ -2,7 +2,7 @@
 
 export default function IndustryaboutUs() {
   const stats = [
-    { number: "4,000+", label: "employees" },
+    { number: "55+", label: "Global Clients" },
     { number: "250+", label: "active projects" },
     { number: "17", label: "states with active projects" },
     { number: "15+", label: "years in business" },
@@ -14,17 +14,17 @@ export default function IndustryaboutUs() {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#000080] mb-10">
-            About Our Journey{" "}
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0B1460] mb-12">
+            A little about us
           </h2>
 
           <div className="space-y-8">
             {stats.map((item, idx) => (
-              <div key={idx} className="flex items-baseline space-x-9">
-                <p className="text-3xl  md:text-5xl font-light  text-[#1591EA] w-28">
+              <div key={idx} className="flex items-center space-x-6 border-b border-gray-300 pb-2">
+                <p className="text-4xl md:text-5xl font-light text-[#1591EA] w-28">
                   {item.number}
                 </p>
-                <p className="text-[#000080] text-md font-bold ">
+                <p className="text-[#0B1460] text-lg md:text-xl font-semibold">
                   {item.label}
                 </p>
               </div>

@@ -9,35 +9,37 @@ import IndustrySlider from "yes/Components/IndustrySlider";
 import IndustryaboutUs from "yes/Components/Industryabout";
 import ServicesSlider from "yes/Components/ServicesSlider";
 import Explore from "yes/Components/Explore";
-
+import { motion, AnimatePresence } from "framer-motion";
+import { IoIosArrowForward } from "react-icons/io";
+import IndustrySector from "yes/Components/Industrysectors";
 const slides = [
   {
     title: "Power",
-    description:
+    desc:
       "Delivering cutting-edge power generation and transmission solutions that ensure energy efficiency, reliability, and sustainable growth for industries and communities.",
     video: "/video.mp4",
-    url: "/menupage",
+    link: "/menupage",
   },
   {
     title: "Transportation",
-    description:
+     desc:
       "Building world-class highways, railways, metros, and airports that redefine connectivity, reduce travel time, and power economic development.",
     video: "/video.mp4",
-    url: "/epcsolutions",
+   link: "/epcsolutions",
   },
   {
     title: "Water",
-    description:
+    desc:
       "Designing and implementing smart water supply, wastewater treatment, and desalination projects to secure clean water and sustainable management for the future.",
     video: "/video.mp4",
-    url: "/project-management",
+   link: "/project-management",
   },
   {
     title: "Industrial & Buildings",
-    description:
+     desc:
       "Creating advanced industrial plants, commercial complexes, and iconic building projects with innovative engineering, safety, and modern design standards.",
     video: "/homeslider.mp4",
-    url: "/solutionservice",
+   link: "/solutionservice",
   },
 ];
 
@@ -46,102 +48,94 @@ export default function Industryinstallation() {
   const [progress, setProgress] = useState(0);
   const router = useRouter(); // ✅ initialize router
 
-  useEffect(() => {
-    setProgress(0);
-
-    const progressTimer = setInterval(() => {
-      setProgress((prev) => Math.min(prev + 2, 100));
-    }, 100);
-
-    const slideTimer = setTimeout(() => {
-      setActive((prevActive) => (prevActive + 1) % slides.length);
-    }, 5000);
-
-    return () => {
-      clearInterval(progressTimer);
-      clearTimeout(slideTimer);
-    };
-  }, [active]);
+ useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   return (
     <>
       <Industryheader />
-      <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
-        {/* Background Video */}
-        <video
-          key={slides[active].video}
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
-          autoPlay
-          loop
-          muted
-        >
-          <source src={slides[active].video} type="video/mp4" />
-        </video>
+      <section className="relative w-full h-[70vh] sm:h-[99vh] overflow-hidden">
+      {/* Background Video */}
+      <video
+        src={slides[active].video}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60" />
 
-        {/* Content */}
-        <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-8 md:px-20 text-white">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight max-w-full md:max-w-3xl">
-            {slides[active].title}
-          </h1>
-          <p className="mt-3 text-sm sm:text-base md:text-lg max-w-full md:max-w-2xl">
-            {slides[active].description}
-          </p>
-
-          {/* Learn More button */}
-          <button
-            onClick={() => router.push(slides[active].url)}
-            className=" sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
+      {/* Slide Content */}
+      <div className="relative z-10 flex flex-col justify-center h-full max-w-7xl mx-auto px-6 text-left">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={slides[active].title}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -40 }}
+            transition={{ duration: 0.7 }}
           >
-            Learn more
-          </button>
+            <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-snug">
+              {slides[active].title}
+            </h1>
+            <p className="text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+              {slides[active].desc}
+            </p>
 
-          {/* Bottom Navigation */}
-          {/* 👉 Mobile: Dots */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 sm:hidden">
-            {slides.map((_, index) => (
+            <button
+              onClick={() => router.push(slides[active].link)}
+              className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
+            >
+              <span>Learn More</span>
+              <IoIosArrowForward className="w-5 h-5" />
+            </button>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* Bottom Navigation */}
+      <div className="absolute bottom-0 w-full ">
+        <div className="max-w-7xl mx-auto flex justify-center sm:justify-start gap-6 px-6 py-4 overflow-x-auto">
+          {/* Desktop Tabs */}
+          <div className="hidden sm:flex gap-6">
+            {slides.map((s, i) => (
               <button
-                key={index}
-                onClick={() => setActive(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  active === index ? "bg-blue-500 scale-110" : "bg-white/70"
+                key={i}
+                onClick={() => setActive(i)}
+                className={`pb-1 text-sm sm:text-base font-medium border-b-2 transition ${
+                  active === i
+                    ? "text-[#8080FF] border-[#8080FF]"
+                    : "text-gray-300 border-transparent hover:text-white"
                 }`}
-              ></button>
+              >
+                {s.title}
+              </button>
             ))}
           </div>
 
-          {/* 👉 Desktop: Tabs */}
-          <div className="hidden sm:flex absolute bottom-0 left-0 right-0 flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
-            {slides.map((slide, index) => (
-              <div key={index} className="relative w-full sm:w-auto">
-                {active === index && (
-                  <div
-                    className="absolute -top-1 left-0 h-1 bg-blue-500 rounded"
-                    style={{
-                      width: `${progress}%`,
-                      transition: "width 0.1s linear",
-                    }}
-                  ></div>
-                )}
-                <button
-                  onClick={() => router.push(slide.url)}
-                  className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words 
-                    ${
-                      active === index
-                        ? "text-white"
-                        : "text-white/80 hover:text-white"
-                    }`}
-                >
-                  {slide.title}
-                </button>
-              </div>
+          {/* Mobile Dots */}
+          <div className="flex sm:hidden justify-center w-full gap-2">
+            {slides.map((_, i) => (
+              <span
+                key={i}
+                onClick={() => setActive(i)}
+                className={`w-2 h-2 rounded-full cursor-pointer transition ${
+                  active === i ? "bg-#8080FF" : "bg-[#fff]"
+                }`}
+              />
             ))}
           </div>
         </div>
       </div>
-      <Sectors />
+    </section>
+      <IndustrySector/>
       <Industryplatform />
       <IndustryaboutUs />
       <IndustrySlider />

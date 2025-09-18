@@ -13,8 +13,8 @@ const SOLUTIONS = [
 
 export default function OurSolutions() {
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-12 py-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#000080] text-center mb-10">
+    <section className=" mx-auto px-6 md:px-12 py-12 md:mx-25">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-10">
         Our Solutions
       </h2>
 

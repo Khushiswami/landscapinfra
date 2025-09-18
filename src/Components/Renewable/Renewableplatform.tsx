@@ -63,7 +63,7 @@ export default function Renewableplatform() {
     <section className="w-full">
       {/* Top heading + subheading */}
       <div className="mx-auto px-4 pt-12 text-center">
-        <h1 className="text-3xl text-[#000080] md:text-3xl font-bold tracking-tight">
+        <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Comprehensive Infrastructure Solutions
         </h1>
         <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
@@ -103,7 +103,8 @@ export default function Renewableplatform() {
                 style={underlineStyle}
               />
             </div>
-            <div className="h-px bg-gray-200 mt-0.5 w-full"></div>
+            {/* <div className="h-px bg-gray-200 mt-0.5 w-full"></div> */}
+            
           </div>
         </div>
       </div>

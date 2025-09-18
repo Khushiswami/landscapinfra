@@ -47,7 +47,7 @@ const sectors = [
   },
 ];
 
-export default function RenewableSector() {
+export default function IndustrySector() {
   const [current, setCurrent] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
   const [mobileOverlay, setMobileOverlay] = useState(false);
