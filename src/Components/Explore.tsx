@@ -27,14 +27,16 @@ export default function Explore() {
           <span className="text-[#000080] font-bold">Building Solutions</span>
         </h2>
 
-        <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-6 gap-10 border-gray-200 pt-12">
+        <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-6   pt-12  ">
           {solutions.map((item, idx) => (
            <div
   key={idx}
-  className="group flex flex-col items-center text-center space-y-3 
-             border-gray-300 md:border-r last:border-r-0
-             p-4 rounded transition-colors duration-300 hover:bg-[#000080]"
+  className=" group flex flex-col items-center text-center space-y-3
+         md:border-r md:last:border-r-0 border-gray-300
+       
+        p-4  transition-colors duration-300 hover:bg-[#000080]"
 >
+  
   {/* Icon */}
   <div className="text-gray-600 group-hover:text-white">{item.icon}</div>
 

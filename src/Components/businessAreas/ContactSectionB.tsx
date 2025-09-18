@@ -46,13 +46,13 @@ export default function ContactSectionB({
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
-          <p className="text-lg font-semibold text-white mb-3">{subtitle}</p>
-          <div className="h-1 w-full bg-yellow-500 mb-4"></div>
+         <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
+            <p className="text-lg font-semibold text-white mb-3">{subtitle}</p>
+          <div className="h-1 w-[100%] bg-[#8080FF] mb-4"></div>
           <p className="mb-6 text-gray-200">{description}</p>
 
           <a href={buttonLink}>
-            <button className="bg-yellow-500 text-black px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-yellow-400 transition">
+            <button className="bg-[#000080] text-white px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-yellow-400 transition">
               {buttonText}
               <span className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900">
                 <svg
@@ -101,7 +101,7 @@ export default function ContactSectionB({
                     <p className="text-sm text-gray-200 mb-2">
                       {item.location}
                     </p>
-                    <span className="text-yellow-400 text-sm font-semibold mb-3">
+                    <span className="text-[#8080FF] text-sm font-semibold mb-3">
                       ★ Verified Customer
                     </span>
                     <p className="italic text-gray-100 mb-4 line-clamp-4">
@@ -109,7 +109,7 @@ export default function ContactSectionB({
                     </p>
                     <a
                       href={item.quoteLink || "/quote"}
-                      className="text-sm font-semibold text-yellow-400 hover:underline"
+                      className="text-sm font-semibold text-[#8080FF] hover:underline"
                     >
                       Get A Quote →
                     </a>
@@ -118,6 +118,24 @@ export default function ContactSectionB({
               </SwiperSlide>
             ))}
           </Swiper>
+          <style jsx global>{`
+            .swiper-button-prev,
+            .swiper-button-next {
+              top: 50% !important;
+              transform: translateY(-50%);
+              width: 32px;
+              height: 32px;
+              background: rgba(0, 0, 0, 0.5); /* Black transparent */
+              border-radius: 50%;
+              color: #fff !important;
+              font-size: 14px !important;
+            }
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+              font-size: 14px !important;
+              font-weight: bold;
+            }
+          `}</style>
         </div>
       </div>
     </div>

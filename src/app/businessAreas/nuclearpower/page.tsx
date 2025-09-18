@@ -19,6 +19,7 @@ import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
 import IndustryHead from "yes/Components/Industryhead";
+import Brand from "yes/Components/Brand";
 
 const testimonialsData = [
   {
@@ -239,30 +240,7 @@ export default function NuclearPower() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-      <div className="bg-[#272727] bg-repeat py-10 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white">
-          {/* Left text */}
-          <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left mb-4 md:mb-0">
-            COMMITTED TO YOUR SATISFACTION
-          </h2>
-
-          {/* Right call info */}
-          <div className="flex items-center gap-4 bg-white text-[#000080] px-4 py-2 rounded-full shadow-lg">
-            <div className="bg-[#000080] text-white p-3 rounded-full">
-              <IoCallOutline />
-            </div>
-            <div>
-              <p className="text-sm font-semibold">CALL US</p>
-              <a
-                href="tel:+918130444466"
-                className="text-lg font-bold hover:underline"
-              >
-                +91 8130 444 466
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Brand/>
 
       <Footer />
     </>
