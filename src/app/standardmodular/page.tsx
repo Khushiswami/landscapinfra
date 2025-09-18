@@ -253,7 +253,7 @@ export default function Standardmodular() {
   return (
     <>
       <Pebheader />
-      <section className="relative h-screen flex items-center text-white overflow-hidden">
+        <section className="relative h-[75vh] sm:min-h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video
           autoPlay
@@ -283,7 +283,7 @@ export default function Standardmodular() {
           </div>
 
           {/* Right Slider */}
-          <div className="w-full relative mt-10">
+          <div className="w-full relative order-2 mt-6 lg:mt-13 mb-2 flex justify-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -303,7 +303,7 @@ export default function Standardmodular() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-72 object-cover"
+                      className="w-full h-50 sm:h-72 object-cover"
                     />
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-semibold">{slide.title}</h3>

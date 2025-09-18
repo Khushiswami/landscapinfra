@@ -310,7 +310,9 @@ export default function Menupage() {
   return (
     <>
       <Pebheader />
-      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
+      {/* <section className="relative min-h-screen flex items-center text-white overflow-hidden"> */}
+        <section className="relative h-[75vh] sm:min-h-screen flex items-center text-white overflow-hidden">
+
         {/* Background video */}
         <video
           autoPlay
@@ -341,7 +343,7 @@ export default function Menupage() {
           </div>
 
           {/* Right Slider */}
-          <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
+          <div className="w-full relative order-2 mt-6 lg:mt-13 mb-2 flex justify-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -349,7 +351,7 @@ export default function Menupage() {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop
-              className="pb-10 max-w-[260px] sm:max-w-sm"
+              className="pb-10 max-w-[240px] sm:max-w-sm"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
@@ -357,7 +359,7 @@ export default function Menupage() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-56 sm:h-72 object-cover"
+                      className="w-full h-50 sm:h-72 object-cover"
                     />
                     <div className="p-3 text-center">
                       <h3 className="text-base sm:text-lg font-semibold">
@@ -467,7 +469,7 @@ export default function Menupage() {
       <div className="md:hidden mb-4 bg-[#000080]">
         <button
           onClick={() => setOpen(!open)}
-          className="w-full p-3 border bg-[#000080] border-gray-300 rounded-lg text-white font-semibold flex justify-between items-center"
+          className="w-full p-3 border bg-[#000080] border-gray-300 rounded-xl text-white font-semibold flex justify-between items-center"
         >
           {areas.find((a) => a.id === selectedId)?.title}
           <svg
@@ -508,7 +510,7 @@ export default function Menupage() {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-lg">
+      <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-xl">
         {areas.map((area, idx) => (
           <button
             key={area.id}
@@ -516,7 +518,7 @@ export default function Menupage() {
             className={`flex items-center gap-3 px-5 py-4 text-left transition ${
               selectedId === area.id
                 ? 'bg-blue-800 font-bold'
-                : 'hover:bg-blue-800 text-gray-300'
+                : 'hover:bg-blue-800 text-gray-300 rounded-xl'
             }`}
           >
             <span className="text-sm opacity-70">
