@@ -92,7 +92,7 @@ export default function Pebheader() {
         },
         {
           title: "Light Gauge Steel Framing",
-          href: "/lightGaugeSteelFraming",
+          href: "/lightguage",
           subMenu: [{ name: "Prefab School", href: "/prefabSiteOffice" }],
         },
         {
@@ -174,17 +174,16 @@ export default function Pebheader() {
         </Link> */}
         <Link href="/" className="flex-shrink-0">
           <Image
-            src={scrolled ? '/logo.png' : '/landsking.png'}
+            src={scrolled ? "/logo.png" : "/landsking.png"}
             alt="Logo"
             width={150} // base width
             height={50} // base height
             priority
             className={`transition-all duration-300 ${
-              scrolled ? 'w-28 h-10' : 'w-36 h-12'
+              scrolled ? "w-28 h-10" : "w-36 h-12"
             }`}
           />
         </Link>
-
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center space-x-8">

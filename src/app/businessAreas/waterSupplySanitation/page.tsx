@@ -53,7 +53,6 @@ const featuresData = [
     description:
       "LandSking Infra has successfully completed over 100 water and sewage treatment plants and constructed more than 30 km of water supply and sewerage tunnels. The company possesses extensive expertise in building gravity dams and bulk water transfer systems, delivering large-scale water infrastructure projects for both public and private sector clients.",
   },
- 
 ];
 
 const areasData: Area[] = [
@@ -233,7 +232,7 @@ export default function WaterSupplySanitation() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-     <Brand/>
+      <Brand />
       <Footer />
     </>
   );

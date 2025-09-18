@@ -92,7 +92,7 @@ export default function IndustryHeaderW() {
         },
         {
           title: "Light Gauge Steel Framing",
-          href: "/lightGaugeSteelFraming",
+          href: "/lightguage",
           subMenu: [
             {
               name: "Prefab School",

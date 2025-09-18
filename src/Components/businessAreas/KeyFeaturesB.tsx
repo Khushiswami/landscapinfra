@@ -38,14 +38,14 @@ export default function KeyFeaturesB({
   return (
     <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
       {/* Heading */}
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 sm:mb-10 leading-snug">
+      <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold sm:mb-10 leading-snug">
         <span className="text-[#000080] block sm:inline px-3 py-1 rounded-md mr-0 sm:mr-2">
           {heading}
         </span>
         <span className="block sm:inline">{highlight}</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 ">
         {/* Left Image */}
         <div className="w-full">
           <Image
@@ -53,7 +53,7 @@ export default function KeyFeaturesB({
             alt={image.alt}
             width={image.width || 600}
             height={image.height || 400}
-            className="w-full h-auto rounded-lg shadow-md object-cover"
+            className="w-full h-auto rounded-lg shadow-md object-cover "
           />
         </div>
 

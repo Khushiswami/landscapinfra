@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -61,23 +60,23 @@ export default function Brand() {
   return (
     <>
       {/* Section with animated gradient background */}
-      <section className="section-footer-cta">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white px-4">
+      <section className="section-footer-cta mb-7 pt-10 pb-10 md:pt-20 md:pb-20 md:mb-0">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-left justify-between text-white px-4 md:items-center ">
           {/* Left text */}
-          <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left mb-4 md:mb-0">
+          <h2 className="text-2xl md:text-4xl font-bold text-left md:text-center mb-4 md:mb-0">
             COMMITTED TO YOUR SATISFACTION
           </h2>
 
           {/* Right call info */}
-          <div className="flex items-center gap-4  text-[#FFF] px-4 py-2 ">
+          <div className="flex items-left gap-4  text-[#FFF] px-2 py-2 md:items-center md:px-4  ">
             <div className=" text-black p-3 rounded-full bg-white ">
               <IoCallOutline size={26} className="shadow-lg rounded-xl" />
             </div>
             <div>
-              <p className="text-md font-semibold">CALL US</p>
+              <p className="text-sm font-semibold md:text-md">CALL US</p>
               <a
                 href="tel:+918130444466"
-                className="text-2xl font-bold "
+                className="text-xl  font-bold md:text-2xl"
               >
                 +91 8130 444 466
               </a>
@@ -87,27 +86,27 @@ export default function Brand() {
       </section>
 
       {/* Client Logos */}
-     <ClientP/>
+      <ClientP />
 
       {/* Local CSS (scoped, not global) */}
       <style jsx>{`
         .section-footer-cta {
-            background-color: #272727; /* dark base */
           background-color: #272727; /* dark base */
-    background-image: repeating-linear-gradient(
-      -45deg,
-      #ffffff,
-      #ffffff 10px,
-      rgb(230, 230, 230) 10px,
-      rgb(230, 230, 230) 20px
-    );
-           background-blend-mode: overlay; /* mix with dark background */
+          background-color: #272727; /* dark base */
+          background-image: repeating-linear-gradient(
+            -45deg,
+            #ffffff,
+            #ffffff 10px,
+            rgb(230, 230, 230) 10px,
+            rgb(230, 230, 230) 20px
+          );
+          background-blend-mode: overlay; /* mix with dark background */
 
           background-size: 200% 200%;
           -webkit-animation: barberpole 50s linear infinite;
           animation: barberpole 50s linear infinite;
-          padding-top: 4rem;
-          padding-bottom: 4rem;
+          // padding-top: 4rem;
+          // padding-bottom: 4rem;
         }
 
         @keyframes barberpole {
@@ -122,4 +121,3 @@ export default function Brand() {
     </>
   );
 }
-

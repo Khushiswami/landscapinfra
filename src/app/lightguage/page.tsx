@@ -32,7 +32,7 @@ import Pebheader from "yes/Components/Pebheader";
 
 import Link from "next/link";
 
-export default function LightGaugeSteelFraming() {
+export default function Lightguage() {
   interface FAQ {
     question: string;
     answer: string;
@@ -154,6 +154,7 @@ export default function LightGaugeSteelFraming() {
 
   const [startIndex, setStartIndex] = useState(0);
   const visibleCards = 4; // Show 4 cards per row
+  const [open, setOpen] = useState(false); // for mobile dropdown
 
   const prevSlide = () => {
     setStartIndex((prev) =>
@@ -206,7 +207,6 @@ export default function LightGaugeSteelFraming() {
   ];
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-  const [open, setOpen] = useState(false);
 
   const stats = [
     {
@@ -238,7 +238,7 @@ export default function LightGaugeSteelFraming() {
   return (
     <>
       <Pebheader />
-      <section className="relative h-screen flex items-center text-white overflow-hidden">
+      <section className="relative h-[75vh] sm:min-h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video
           autoPlay
@@ -270,7 +270,7 @@ export default function LightGaugeSteelFraming() {
           </div>
 
           {/* Right Slider */}
-          <div className="w-full relative mt-10">
+          <div className="w-full relative order-2 mt-6 lg:mt-13 flex justify-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -290,7 +290,7 @@ export default function LightGaugeSteelFraming() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-72 object-cover"
+                      className="w-full h-50 sm:h-72 object-cover"
                     />
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-semibold">{slide.title}</h3>
@@ -419,108 +419,113 @@ export default function LightGaugeSteelFraming() {
           </div>
         </div>
       </section>
-     
-       <section className="max-w-7xl mx-auto px-4 py-10">
-  <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-    Our Products
-  </h2>
+      {/* endcapill */}
+      <section className="max-w-7xl mx-auto px-4 py-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+          Our Products
+        </h2>
 
-  <div className="flex flex-col md:flex-row gap-6">
-    {/* Left Menu */}
-    <div className="w-full md:w-1/4">
-      {/* Mobile Dropdown */}
-      <div className="md:hidden mb-4 bg-[#000080]">
-        <button
-          onClick={() => setOpen(!open)}
-          className="w-full p-3 border bg-[#000080] border-gray-300 rounded-lg text-white font-semibold flex justify-between items-center"
-        >
-          {areas.find((a) => a.id === selectedId)?.title}
-          <svg
-            className="w-5 h-5 text-white"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d={open ? 'M5 15l7-7 7 7' : 'M19 9l-7 7-7-7'}
-            />
-          </svg>
-        </button>
-
-        {open && (
-          <div className="mt-2 w-full bg-[#000080] border border-gray-300 rounded-lg shadow">
-            {areas.map((area) => (
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Left Menu */}
+          <div className="w-full md:w-1/4">
+            {/* Mobile Dropdown */}
+            <div className="md:hidden mb-0">
               <button
-                key={area.id}
-                onClick={() => {
-                  setSelectedId(area.id);
-                  setOpen(false);
-                }}
-                className={`w-full text-left px-4 py-3 transition font-medium ${
-                  selectedId === area.id
-                    ? 'text-blue-400 bg-blue-900'
-                    : 'text-white hover:bg-blue-800'
-                }`}
+                onClick={() => setOpen(!open)}
+                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
               >
-                {area.title}
+                {areas.find((a) => a.id === selectedId)?.title}
+                <svg
+                  className="w-5 h-5 text-[#8080FF]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+                  />
+                </svg>
               </button>
-            ))}
+
+              {open && (
+                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
+                  {areas.map((area) => (
+                    <button
+                      key={area.id}
+                      onClick={() => {
+                        setSelectedId(area.id);
+                        setOpen(false);
+                      }}
+                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
+                        selectedId === area.id ? "text-white font-semibold" : ""
+                      }`}
+                    >
+                      {area.title}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Desktop Menu */}
+            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[74px] pb-[74px] px-[5px]">
+              {areas.map((area, idx) => (
+                <button
+                  key={area.id}
+                  onClick={() => setSelectedId(area.id)}
+                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
+                    selectedId === area.id
+                      ? " font-bold"
+                      : "hover: text-gray-300"
+                  }`}
+                >
+                  <span className="text-sm opacity-70">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <span>{area.title}</span>
+                </button>
+              ))}
+            </div>
           </div>
-        )}
-      </div>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-lg">
-        {areas.map((area, idx) => (
-          <button
-            key={area.id}
-            onClick={() => setSelectedId(area.id)}
-            className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-              selectedId === area.id
-                ? 'bg-blue-800 font-bold'
-                : 'hover:bg-blue-800 text-gray-300'
-            }`}
-          >
-            <span className="text-sm opacity-70">
-              {String(idx + 1).padStart(2, '0')}
-            </span>
-            <span>{area.title}</span>
-          </button>
-        ))}
-      </div>
-    </div>
+          {/* Right Content */}
+          {selectedArea && (
+            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
+            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+              <div
+                className="
+    p-6 flex flex-col justify-center w-full md:w-1/2
+    rounded-lg                
+    md:rounded-none          
+    md:rounded-tl-lg md:rounded-bl-lg
+    shadow border border-[#808080] md:border-r-0
+  "
+              >
+                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                  {selectedArea.subtitle}
+                </h3>
+                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                  More{" "}
+                  <span className=" p-1 rounded-full text-[#000080]">→</span>
+                </button>
+              </div>
 
-    {/* Right Content */}
-    {selectedArea && (
-      <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-        {/* Text Content */}
-        <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-          <h3 className="text-2xl font-semibold text-[#000080] mb-3">
-            {selectedArea.subtitle}
-          </h3>
-          <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-          <button className="flex items-center gap-2 text-[#000080] font-semibold ">
-            More
-            <span className=" p-1 rounded-full text-[#000080]">→</span>
-          </button>
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src={selectedArea.image}
+                  alt={selectedArea.subtitle}
+                  className="w-full h-64 md:h-85 object-cover"
+                />
+              </div>
+            </div>
+          )}
         </div>
-
-        {/* Image */}
-        <div className="w-full md:w-1/2">
-          <img
-            src={selectedArea.image}
-            alt={selectedArea.subtitle}
-            className="w-full h-full object-cover md:h-full"
-          />
-        </div>
-      </div>
-    )}
-  </div>
-</section>
-
+      </section>
       {/* explore content */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
@@ -623,7 +628,7 @@ export default function LightGaugeSteelFraming() {
             </p>
 
             {/* Animated Counters */}
-            <div
+            {/* <div
               ref={ref}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
             >
@@ -647,7 +652,7 @@ export default function LightGaugeSteelFraming() {
                   </p>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}

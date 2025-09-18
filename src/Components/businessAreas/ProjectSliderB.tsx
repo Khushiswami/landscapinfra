@@ -20,7 +20,10 @@ type ProjectSliderProps = {
   projects: Project[];
 };
 
-export default function ProjectSliderB({ heading, projects }: ProjectSliderProps) {
+export default function ProjectSliderB({
+  heading,
+  projects,
+}: ProjectSliderProps) {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
 
@@ -31,7 +34,7 @@ export default function ProjectSliderB({ heading, projects }: ProjectSliderProps
 
   return (
     <section className="py-12 relative">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold text-blue-900 mb-8">
+      <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
         {heading}
       </h2>
 
@@ -78,7 +81,7 @@ export default function ProjectSliderB({ heading, projects }: ProjectSliderProps
             {/* Left Arrow (inside swiper area) */}
             <div
               ref={prevRef}
-              className="absolute top-1/2 left-2 -translate-y-1/2 bg-white text-blue-900 w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10"
+              className="absolute top-1/2 left-2 -translate-y-1/2 bg-white text-[#000080] w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10"
             >
               ←
             </div>
@@ -86,7 +89,7 @@ export default function ProjectSliderB({ heading, projects }: ProjectSliderProps
             {/* Right Arrow (inside swiper area) */}
             <div
               ref={nextRef}
-              className="absolute top-1/2 right-2 -translate-y-1/2 bg-white text-blue-900 w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10"
+              className="absolute top-1/2 right-2 -translate-y-1/2 bg-white text-[#000080] w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10"
             >
               →
             </div>
