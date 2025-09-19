@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { ChevronRight, ArrowUpRight } from "lucide-react";
 
-export default function TotalSolutionP() {
+export default function Pebsolution() {
   const items = [
     {
       title: "System",
@@ -28,7 +28,7 @@ export default function TotalSolutionP() {
 
   return (
     <section className="w-full py-12 mt-15 bg-[#f2f2f2] ">
-      <div className=" mx-auto px-4 py-5 md:mx-20 md:py-8">
+      <div className=" mx-auto px-4 py-5 md:mx-25 md:py-8">
         {/* Heading and Description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-8 ">
           <h2 className="text-3xl font-bold md:text-4xl">

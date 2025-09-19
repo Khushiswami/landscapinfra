@@ -59,7 +59,7 @@ export default function ExpertiseP() {
 
   return (
     <section className="py-12 px-10 bg-white mx-0 md:mx-1 lg:mx-1">
-      <div className="flex items-center justify-between mx-auto mb-8">
+      <div className="flex items-center justify-between mx-auto mb-8 md:mx-25">
         <h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
           Our Expertise
         </h2>
@@ -86,7 +86,7 @@ export default function ExpertiseP() {
       </div>
 
       {/* Swiper Slider */}
-      <div className=" mt-10 mx-auto">
+      <div className=" mt-10 mx-auto  md:mx-18">
         <Swiper
           modules={[Navigation, Autoplay]}
           onSwiper={setSwiper} // Store the Swiper instance

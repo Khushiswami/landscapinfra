@@ -63,7 +63,7 @@ export default function BannerPEB() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Slide Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full max-w-7xl mx-auto px-6 text-left">
+      <div className="relative z-10 flex flex-col justify-center h-full  mx-auto px-6  text-left md:px-16">
         <AnimatePresence mode="wait">
           <motion.div
             key={slides[active].title}

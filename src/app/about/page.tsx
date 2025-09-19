@@ -18,7 +18,6 @@ import Footer from "../../Components/Footer";
 // import PebCode from "../../Components/PebCode"
 
 import { IoCallOutline } from "react-icons/io5";
-import PebSlider from "../../Components/PebSlider";
 // import ImageSlider from "../../Components/ImageSlider";
 import ContactSection from "../../Components/ContactSection";
 import TripleBottomAccordion from "../../Components/TripleBottomAccordion";
@@ -31,6 +30,7 @@ import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
 import BuildHistory from "../../Components/BuildHistory";
 import Accolades from "../../Components/Accolades";
 import Navbar from "yes/Components/Navbar";
+import Pebslide from "yes/Components/Pebslide";
 
 const slides = [
   {
@@ -90,7 +90,7 @@ export default function About() {
       </div>
       <AboutPebP />
       <TripleBottomAccordion />
-      <PebSlider />
+      <Pebslide/>
       <ReviewsSection />
       <KeyFeatures />
       <BuildHistory />

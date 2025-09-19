@@ -48,7 +48,7 @@ const categories: Category[] = [
   },
 ];
 
-export default function PebSlider() {
+export default function Pebslide() {
   const [activeCategory, setActiveCategory] = useState<Category>(categories[0]);
   const swiperRef = useRef<SwiperType | null>(null);
 

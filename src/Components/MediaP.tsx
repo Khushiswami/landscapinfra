@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MediaP() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-10 my-10">
+    <section className=" mx-auto px-4 py-10 my-10 md:mx-25">
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Section - Media Highlights */}
         <div>

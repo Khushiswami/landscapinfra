@@ -277,7 +277,7 @@ export default function RenewableSector() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-25 pt-12 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:px-28 pt-12 md:pt-16 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-xl md:text-3xl font-bold text-start text-blue-900 mb-6">

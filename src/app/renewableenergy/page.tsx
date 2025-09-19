@@ -18,6 +18,7 @@ import Navbar from "yes/Components/Navbar";
 import Renewablebanner from "yes/Components/Renewable/Renewablebanner";
 import Renewableplatform from "yes/Components/Renewable/Renewableplatform";
 import Renewableslider from "yes/Components/Renewable/Renewableslider";
+import Pebsolution from "yes/Components/Pebsolution";
 
 export default function Renewableenergy() {
   const [active, setActive] = useState(0);
@@ -61,7 +62,8 @@ export default function Renewableenergy() {
       <Accordion />
       <Renewableslider />
       <PebBrandP />
-      <TotalSolutionP />
+      {/* <TotalSolutionP /> */}
+      <Pebsolution/>
       <NewsCorner />
       <Explore />
       <QuickLinks heading="Quick Links" links={links} />
