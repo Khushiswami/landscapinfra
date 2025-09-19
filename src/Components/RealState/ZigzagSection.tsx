@@ -15,11 +15,11 @@ const ZigzagSection: FC = () => {
           className="relative z-10 md:-me-16"
         >
           <div className="flex flex-col md:flex-row items-center gap-4 justify-center py-6 md:py-10">
-            <h2 className="text-lg md:text-xl font-black tracking-wide text-blue-900 text-center">
+            <h2 className="text-lg md:text-xl font-black tracking-wide text-[#000080] text-center">
               RESIDENTIAL PROJECTS
             </h2>
-            <button className="text-sm px-4 py-2 border-2 border-blue-600 text-blue-600 font-semibold flex items-center gap-2 hover:bg-blue-600 hover:text-white transition">
-              View Projects <span className="text-yellow-500">→</span>
+            <button className="text-sm px-4 py-2 border-2 border-[#000080] text-[#000080] font-semibold flex items-center gap-2 hover:bg-blue-600 hover:text-white transition">
+              View Projects <span className="text-[#8080FF]">→</span>
             </button>
           </div>
 
@@ -38,11 +38,11 @@ const ZigzagSection: FC = () => {
           className="relative md:-ml-16"
         >
           <div className="flex flex-col md:flex-row items-center gap-4 justify-center py-6 md:py-10">
-            <h2 className="text-lg md:text-xl font-black tracking-wide text-blue-900 text-center">
+            <h2 className="text-lg md:text-xl font-black tracking-wide text-[#000080] text-center">
               COMMERCIAL PROJECTS
             </h2>
-            <button className="text-sm px-4 py-2 border-2 border-blue-600 text-blue-600 font-semibold flex items-center gap-2 hover:bg-blue-600 hover:text-white transition">
-              View Projects <span className="text-yellow-500">→</span>
+            <button className="text-sm px-4 py-2 border-2 border-[#000080] text-[#000080] font-semibold flex items-center gap-2 hover:bg-blue-600 hover:text-white transition">
+              View Projects <span className="text-[#8080FF]">→</span>
             </button>
           </div>
 

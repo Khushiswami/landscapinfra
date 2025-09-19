@@ -1,15 +1,16 @@
 // pages/contact.jsx
 
 import { FaMapMarkerAlt, FaEnvelope, FaCommentDots } from "react-icons/fa";
+import Footer from "yes/Components/Footer";
+import Navbar from "yes/Components/Navbar";
 
 export default function ContactPage() {
   return (
     <>
-      
-
+      <Navbar/>
       {/* Contact Section */}
-      <section className="py-12 bg-white">
-         <h2 className="text-4xl font-bold text-center text-[#061b49] mb-6">
+      <section className="py-12 bg-white mt-20 md:mt-30">
+         <h2 className="text-2xl font-bold text-center text-[#061b49] mb-6 md:text-4xl">
         Contact Us
       </h2>
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 px-4">
@@ -109,7 +110,7 @@ className="w-full border-b-2 border-[#061b49] focus:outline-none focus:border-bl
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="bg-[#061b49] hover:bg-purple-700 text-white px-8 py-2 rounded transition"
+                  className="bg-[#000080] hover:bg-black text-white px-8 py-2 rounded transition"
                 >
                   Send Message
                 </button>
@@ -118,6 +119,7 @@ className="w-full border-b-2 border-[#061b49] focus:outline-none focus:border-bl
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

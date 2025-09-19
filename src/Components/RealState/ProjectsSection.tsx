@@ -40,11 +40,11 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section className="w-full py-12 md:py-16 bg-white relative">
-      <h2 className="text-xl md:text-3xl font-bold text-center text-blue-900 mb-8 md:mb-10">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-[#000080] mb-8 md:mb-10">
         DISCOVER OUR PROJECTS
       </h2>
 
-      <div className="max-w-4xl mx-auto sm:px-4 px-2 relative">
+      <div className=" mx-auto sm:px-4 px-2 relative md:mx-25">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation={{
@@ -65,7 +65,7 @@ export default function ProjectsSection() {
           {projects.map((project) => (
             <SwiperSlide key={project.id}>
               <div className="text-center">
-                <h3 className="text-base md:text-lg font-semibold text-blue-900">
+                <h3 className="text-base md:text-lg font-semibold text-[#000080]">
                   {project.title}
                 </h3>
                 <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-4">
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
                       fill
                       className="object-cover rounded-lg"
                     />
-                    <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-blue-900 text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-blue-900 hover:text-white transition">
+                    <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-blue-900 text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-black hover:text-white transition">
                       KNOW MORE
                     </button>
                   </div>
@@ -100,7 +100,7 @@ export default function ProjectsSection() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
-            fill="#1c398e"
+            fill="#000080"
             viewBox="0 0 24 24"
           >
             <path d="M15 18l-6-6 6-6" />
@@ -110,7 +110,7 @@ export default function ProjectsSection() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
-            fill="#1c398e"
+            fill="#000080"
             viewBox="0 0 24 24"
           >
             <path d="M9 6l6 6-6 6" />

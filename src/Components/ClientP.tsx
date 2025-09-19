@@ -40,7 +40,7 @@ export default function Brand() {
       speed={6000} // higher speed = smoother continuous scroll
       allowTouchMove={false} // disable manual swipe for smooth autoplay
       breakpoints={{
-        320: { slidesPerView: 2, spaceBetween: 10 },
+        320: { slidesPerView: 2, spaceBetween: 20 },
         640: { slidesPerView: 3, spaceBetween: 15 },
         768: { slidesPerView: 4, spaceBetween: 15 },
         1024: { slidesPerView: 6, spaceBetween: 20 },
@@ -48,7 +48,7 @@ export default function Brand() {
     >
       {images.map((src, i) => (
         <SwiperSlide key={i}>
-          <div className="bg-white border border-gray-200 shadow-sm rounded-lg flex items-center justify-center h-35 w-full p-2">
+          <div className="bg-white border border-gray-200 shadow-sm rounded-lg flex items-center justify-center h-35 w-full p-2 ">
             <img
               src={src}
               alt={`Brand ${i + 1}`}

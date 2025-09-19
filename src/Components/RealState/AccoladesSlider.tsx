@@ -39,8 +39,8 @@ export default function AccoladesSlider() {
   ];
 
   return (
-    <section className="bg-[#efeee4] py-16 relative">
-      <h2 className="text-3xl md:text-6xl font-bold text-center text-[#dddbc3] mb-12">
+    <section className="bg-gray-50 py-10 relative md:py-15">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-[#000080] mb-12">
         Our Accolades
       </h2>
 

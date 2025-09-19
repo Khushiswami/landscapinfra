@@ -27,10 +27,10 @@ const PropertySearch = () => {
 
   return (
     <section className="w-full bg-gray-50 py-12 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[30%_70%] gap-10 items-start">
+      <div className=" mx-auto grid grid-cols-1 md:grid-cols-[30%_70%] gap-10 items-start">
         {/* Left Text */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-light text-gray-800 leading-snug">
+          <h2 className="text-2xl md:text-3xl font-light text-[#000080] leading-snug">
             Find the most <br />
             <span className="font-semibold">reliable & appreciating</span> <br />
             Real Estate Properties
@@ -47,7 +47,7 @@ const PropertySearch = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`pb-2 text-sm font-medium tracking-wide ${
                   activeTab === tab
-                    ? "text-black border-b-2 border-yellow-600"
+                    ? "text-black border-b-2 border-[[#8080FF] ]"
                     : "text-gray-600 hover:text-black"
                 }`}
               >
@@ -224,14 +224,14 @@ const PropertySearch = () => {
                       max="100"
                       value={price[1]}
                       onChange={(e) => setPrice([0, Number(e.target.value)])}
-                      className="w-full accent-yellow-600"
+                      className="w-full accent-[#8080FF] "
                     />
                   </div>
                 )}
 
                 {/* Button */}
                 <div className="flex items-end">
-                  <button className="px-6 py-3 w-full md:w-auto rounded-full border border-gray-800 text-gray-800 font-medium flex items-center justify-center gap-2 hover:bg-gray-900 hover:text-white transition">
+                  <button className="px-6 py-3 w-full md:w-auto rounded-full border border-[#000080] text-gray-800 font-medium flex items-center justify-center gap-2 hover:bg-gray-900 hover:text-white transition">
                     0 PROJECTS FOUND →
                   </button>
                 </div>
