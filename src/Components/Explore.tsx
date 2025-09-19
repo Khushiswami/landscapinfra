@@ -20,8 +20,8 @@ const solutions = [
 
 export default function Explore() {
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="bg-gray-50 py-16 px-6 md:px-1">
+      <div className=" mx-auto text-center md:mx-8 ">
         <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-12">
           Explore{" "}
           <span className="text-[#000080] font-bold">Building Solutions</span>

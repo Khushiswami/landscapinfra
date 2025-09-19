@@ -49,13 +49,13 @@ export default function ExploreSection() {
   );
 
   return (
-    <section className="bg-black py-12 px-6 md:px-12 relative">
+    <section className="bg-black py-12 px-6 md:px-23 relative">
       <h2 className="text-white text-3xl md:text-4xl font-bold mb-10 text-center">
         Explore Services
       </h2>
 
       {/* Cards row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full  mx-auto mb-6">
         {visibleItems.map((item, index) => (
           <div
             key={index}

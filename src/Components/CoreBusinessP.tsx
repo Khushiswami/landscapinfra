@@ -71,12 +71,12 @@ export default function CoreBusiness() {
   }, []);
 
   return (
-    <section className="py-4 md:py-16 bg-white">
+    <section className="py-4 md:py-16 bg-white md:px-10">
       <h2 className="text-2xl font-bold text-center text-[#000080] mb-2 md:mb-12 md:text-4xl">
         Core Business
       </h2>
 
-      <div className="mx-auto px-6 relative">
+      <div className="mx-auto px-6 relative ">
         <Swiper
           modules={[Navigation]}
           loop={true}

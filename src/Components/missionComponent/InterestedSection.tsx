@@ -33,8 +33,8 @@ export default function InterestedSection() {
 
   return (
     <section className="w-full bg-white md:py-16">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10">
+      <div className="md:mx-20 mx-auto px-6 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-10">
           You Might Also Be Interested In…
         </h2>
 
@@ -52,7 +52,7 @@ export default function InterestedSection() {
 
               <a
                 href={item.link}
-                className="inline-block border border-blue-600 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-600 hover:text-white transition"
+                className="inline-block border border-[#000080] text-[#000080] px-5 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition"
               >
                 {item.btn}
               </a>

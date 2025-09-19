@@ -154,7 +154,7 @@ export default function Industryheader() {
       }`}
     >
       <div
-        className={`mx-auto flex items-center justify-between px-6 transition-all duration-300 ${
+        className={`mx-auto flex items-center justify-between px-6 transition-all duration-300 md:px-20 ${
           scrolled ? "py-3" : "py-5"
         }`}
       >

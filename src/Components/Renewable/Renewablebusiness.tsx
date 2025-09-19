@@ -71,7 +71,7 @@ export default function Renewablebusiness() {
   }, []);
 
   return (
-    <section className="py-4 md:py-16 bg-white">
+    <section className="py-4 md:py-16 bg-white md:px-10">
       <h2 className="text-2xl font-bold  mt-5 text-center text-[#000080] mb-2 md:mb-12 md:text-3xl">
         Core Business
       </h2>

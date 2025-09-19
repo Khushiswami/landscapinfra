@@ -94,7 +94,7 @@ export default function ExpertiseP() {
   ];
 
   return (
-    <section className="py-12 px-10 bg-white mx-0 md:mx-1 lg:mx-1">
+    <section className="py-12 px-8 bg-white mx-0 md:mx-1 lg:mx-1 md:px-13">
       <div className="flex items-center justify-between mx-auto mb-8">
         <h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
           Our Expertise

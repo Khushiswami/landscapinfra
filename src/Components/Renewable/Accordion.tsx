@@ -24,7 +24,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className=" mx-auto mt-10 p-4 md:px-32">
+    <div className=" mx-auto mt-10 p-4 md:px-15">
       <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2>
       <h1 className="text-2xl font-semibold mb-6 text-[#000080] md:text-3xl">
         How we approach the triple bottom line

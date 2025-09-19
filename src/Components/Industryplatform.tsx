@@ -116,7 +116,7 @@ export default function Industryplatform() {
           </div>
     
           {/* Content Card */}
-          <div className="max-w-6xl mx-auto px-4">
+          <div className=" mx-auto px-4 md:px-18">
             <div className="mt-8 flex justify-center">
               <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full md:w-[90%] lg:w-[80%]">
                 <div className="relative w-full h-[340px] md:h-[460px]">

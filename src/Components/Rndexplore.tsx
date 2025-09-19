@@ -40,7 +40,7 @@ export default function Rndexplore() {
   const selectedArea = areas.find((area) => area.id === selectedId);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-10">
+    <section className=" mx-auto px-4 py-10 md:px-23">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
 CAE Simulation Services      </h2>
 

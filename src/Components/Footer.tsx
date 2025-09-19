@@ -116,14 +116,14 @@ export default function Footer() {
 
   return (
     <footer
-      className="py-12 px-6 md:px-20 text-[14px] text-white"
+      className="py-12 px-6 md:px-17 text-[14px] text-white"
       style={{
         backgroundColor: "#0d1d52",
         fontFamily: `"DM Sans", Arial, sans-serif !important`,
       }}
     >
       {/* Desktop grid */}
-      <div className="hidden md:grid grid-cols-4 gap-10 max-w-7xl mx-auto">
+      <div className="hidden md:grid grid-cols-4 gap-10  mx-auto">
         {sections.map((section) => (
           <div key={section.title}>
             <h3 className="flex items-center text-lg font-semibold border-b border-gray-500 pb-3">

@@ -61,7 +61,7 @@ export default function Rndservice() {
         DISCOVER OUR PROJECTS
       </h2>
 
-      <div className="relative   mx-auto  px-12 md:mx-25">
+      <div className="relative   mx-auto  px-12 md:mx-23">
         {/* ✅ Swiper only mounts on client */}
         {isMounted && (
           <Swiper

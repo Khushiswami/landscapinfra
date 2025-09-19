@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow-md text-black transition-all duration-300">
       {/* <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3"> */}
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <div className=" mx-auto flex items-center justify-between px-4 py-3 md:px-10">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img src="/landsking.png" alt="Logo" className="h-15 w-auto" />

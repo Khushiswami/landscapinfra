@@ -34,7 +34,7 @@ export default function CustomerStories() {
     <section className="w-full bg-white py-16">
       {/* Heading */}
       <div className="max-w-6xl mx-auto px-4 text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#000080]">
           We Help Our Customers Create a Positive Impact
         </h2>
         <p className="text-gray-600 mb-8">
@@ -45,14 +45,14 @@ export default function CustomerStories() {
         </p>
         <a
           href="#"
-          className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
+          className="inline-block bg-[#000080] text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
         >
           Explore more stories
         </a>
       </div>
 
       {/* Cards */}
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div className=" mx-auto px-4 grid md:grid-cols-3 gap-6 md:mx-20">
         {stories.map((story) => (
           <div
             key={story.id}

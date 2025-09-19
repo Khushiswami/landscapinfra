@@ -31,7 +31,7 @@ export default function MissionBanner() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           className="absolute inset-0 z-20 flex flex-col justify-center items-start text-left text-white px-8 md:px-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold drop-shadow-lg">
+          <h2 className="text-3xl mt-10 md:text-5xl font-bold drop-shadow-lg md:mt-0">
             Our Mission
           </h2>
           <p className="mt-3 max-w-3xl text-lg leading-relaxed text-gray-200">
@@ -63,7 +63,7 @@ export default function MissionBanner() {
 
         {/* Right Content */}
         <div className="col-span-2 bg-[#F4F6F8] p-6 rounded-xl">
-          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+          <h3 className="text-2xl font-bold mb-4 text-[#000080]">
             We Are Purpose Driven
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -98,12 +98,12 @@ export default function MissionBanner() {
         </div>
       </motion.div>
 
-      <section className="w-full max-w-7xl mx-auto px-4 py-16">
+      <section className="w-full  mx-auto px-4 py-16 md:mx-20">
       {/* Top Section */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
             Our Horizon for 2040
           </h2>
           <p className="font-semibold">
@@ -138,7 +138,7 @@ export default function MissionBanner() {
         <div className="flex flex-col items-center">
           <div className="relative w-full max-w-md aspect-video rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/company/future-video.webp" // replace with your image
+              src="/about.png" // replace with your image
               alt="Ambition 2040"
               fill
               className="object-cover"
@@ -162,8 +162,8 @@ export default function MissionBanner() {
 
  <section className="w-full bg-white pb-16">
       {/* Top Banner */}
-       <div className="mt-20 text-center max-w-3xl mx-auto space-y-4 pb-12">
-        <h3 className="text-xl md:text-2xl font-bold">
+       <div className="mt-20 text-center  mx-auto space-y-4 pb-12 md:mx-20">
+        <h3 className="text-xl md:text-3xl font-bold text-[#000080]">
           Sustainable Innovation is a Core Practice
         </h3>
         <p className="text-gray-700 leading-relaxed">
@@ -196,7 +196,7 @@ export default function MissionBanner() {
             </p>
             <a
               href="#"
-              className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
+              className="bg-white text-[#000080] font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
             >
               Innovation at Dassault Systèmes
             </a>
@@ -217,9 +217,9 @@ export default function MissionBanner() {
           </p>
           <a
             href="#"
-            className="inline-flex items-center gap-2 text-blue-600 font-medium group"
+            className="inline-flex items-center gap-2 text-[#000080] font-medium group"
           >
-            <span className="w-7 h-7 flex items-center justify-center rounded-full border border-blue-600 group-hover:bg-blue-600 transition">
+            <span className="w-7 h-7 flex items-center justify-center rounded-full border border-[#000080] group-hover:bg-blue-600 transition">
               <MdKeyboardArrowRight className="text-lg group-hover:text-white" />
             </span>
             Discover the 3DEXPERIENCE Lab
@@ -239,7 +239,7 @@ export default function MissionBanner() {
             href="#"
             className="inline-flex items-center gap-2 text-blue-600 font-medium group"
           >
-            <span className="w-7 h-7 flex items-center justify-center rounded-full border border-blue-600 group-hover:bg-blue-600 transition">
+            <span className="w-7 h-7 flex items-center justify-center rounded-full border border-[#000080] group-hover:bg-blue-600 transition">
               <MdKeyboardArrowRight className="text-lg group-hover:text-white" />
             </span>
             Discover 3DEXPERIENCE Edu
@@ -257,9 +257,9 @@ export default function MissionBanner() {
           </p>
           <a
             href="#"
-            className="inline-flex items-center gap-2 text-blue-600 font-medium group"
+            className="inline-flex items-center gap-2 text-[#000080] font-medium group"
           >
-            <span className="w-7 h-7 flex items-center justify-center rounded-full border border-blue-600 group-hover:bg-blue-600 transition">
+            <span className="w-7 h-7 flex items-center justify-center rounded-full border border-[#000080] group-hover:bg-blue-600 transition">
               <MdKeyboardArrowRight className="text-lg group-hover:text-white" />
             </span>
             Discover our DESIGNStudio

@@ -277,7 +277,7 @@ export default function RenewableSector() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-28 pt-12 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:px-12 pt-12 md:pt-16 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-xl md:text-3xl font-bold text-start text-blue-900 mb-6">
@@ -291,7 +291,7 @@ export default function RenewableSector() {
             loop={true}
             centeredSlides={false} // default false
             breakpoints={{
-              0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false }, // mobile full width
+              0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
               640: { slidesPerView: 1.5, spaceBetween: 20, centeredSlides: true },
               768: { slidesPerView: 2.2, spaceBetween: 24, centeredSlides: true },
               1024: { slidesPerView: 3, spaceBetween: 30, centeredSlides: true },
@@ -381,7 +381,7 @@ export default function RenewableSector() {
           </Swiper>
 
           {/* Desktop arrows */}
-          <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-12 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
+          <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 md:h-8 md:w-9"
@@ -395,7 +395,7 @@ export default function RenewableSector() {
             </svg>
           </div>
 
-          <div className="custom-next absolute top-1/2 -translate-y-1/2 right-2 md:-right-12 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
+          <div className="custom-next absolute top-1/2 -translate-y-1/2 right-2 md:-right-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 md:h-8 md:w-9"

@@ -6,7 +6,7 @@ export default function Sustainability() {
     <section className="w-full bg-white md:py-16">
       {/* Top Heading */}
       <div className="max-w-5xl mx-auto text-center px-4 mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#000080]">
           We Help Businesses and People Innovate Sustainably to Address
           the Worlds Challenges
         </h2>
@@ -18,7 +18,7 @@ export default function Sustainability() {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 space-y-20">
+      <div className="md:mx-20 mx-auto px-4 space-y-20">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left Image */}
           <div className="relative w-full h-[300px] md:h-[350px] rounded-lg overflow-hidden">
@@ -32,7 +32,7 @@ export default function Sustainability() {
 
           {/* Right Text */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl font-bold mb-4 text-[#000080]">
               Our Sustainability Commitments
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -55,7 +55,7 @@ export default function Sustainability() {
             </p>
             <a
               href="#"
-              className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
+              className="inline-block bg-[#000080] text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
             >
               Read our commitments
             </a>
@@ -66,7 +66,7 @@ export default function Sustainability() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left Text */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Our Impact</h3>
+            <h3 className="text-2xl font-bold mb-4 text-[#000080]">Our Impact</h3>
             <p className="text-gray-700 leading-relaxed">
              Were in the business of innovation. Our aim is to build a new development model to address the major challenges facing the world today. Whether its manufacturers virtualizing their operations to improve data sharing and collaboration across their organization or the healthcare industry using virtualization to create more precise experiences for people as part of prevention, treatment and follow up, virtual twins help our clients experiment in real-time and improve their products and processes. We are proud to support all those who imagine and innovate and have been proudly watching our customers transform the world for the past 40+ years.
             </p>

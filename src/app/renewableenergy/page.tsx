@@ -19,6 +19,9 @@ import Renewablebanner from "yes/Components/Renewable/Renewablebanner";
 import Renewableplatform from "yes/Components/Renewable/Renewableplatform";
 import Renewableslider from "yes/Components/Renewable/Renewableslider";
 import Pebsolution from "yes/Components/Pebsolution";
+import Renewableabout from "yes/Components/Renewable/Renewableabout";
+import Renewablesolution from "yes/Components/Renewable/Renewablesolution";
+import Renewablenews from "yes/Components/Renewable/Renewablenews";
 
 export default function Renewableenergy() {
   const [active, setActive] = useState(0);
@@ -55,16 +58,16 @@ export default function Renewableenergy() {
     <>
       <Navbar />
       <Renewablebanner />
+      
       <RenewableBusiness />
       <RenewableSector />
       <Renewableplatform />
-      <AboutPebP />
+      <Renewableabout/>
       <Accordion />
       <Renewableslider />
       <PebBrandP />
-      {/* <TotalSolutionP /> */}
-      <Pebsolution/>
-      <NewsCorner />
+      <Renewablesolution/>
+      <Renewablenews/>
       <Explore />
       <QuickLinks heading="Quick Links" links={links} />
 

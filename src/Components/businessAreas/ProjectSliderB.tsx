@@ -33,12 +33,12 @@ export default function ProjectSliderB({
   }, []);
 
   return (
-    <section className="py-12 relative">
+    <section className="py-12 relative md:px-10">
       <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
         {heading}
       </h2>
 
-      <div className="relative max-w-6xl mx-auto px-12">
+      <div className="relative  mx-auto px-12 ">
         {isMounted && (
           <Swiper
             modules={[Navigation]}

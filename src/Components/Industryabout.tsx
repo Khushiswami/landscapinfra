@@ -10,8 +10,8 @@ export default function IndustryaboutUs() {
   ];
 
   return (
-    <section className="relative bg-white py-16 px-6 md:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <section className="relative bg-white py-16 px-6 md:px-18 lg:px-20">
+      <div className=" mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1460] mb-12">

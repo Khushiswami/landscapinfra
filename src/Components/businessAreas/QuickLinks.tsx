@@ -24,7 +24,7 @@ export default function QuickLinks({ heading, links }: QuickLinksProps) {
         <span className="block w-15 h-1 bg-[#8080FF] mx-auto mt-2"></span>
       </h2>
 
-      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:mx-25">
+      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:mx-12">
         {links.map((link, idx) => (
           <a
             key={idx}
