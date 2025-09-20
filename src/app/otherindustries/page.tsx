@@ -27,6 +27,7 @@ import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
 import IndustryHeader from "yes/Components/Industryheader";
 import ContactSection from "yes/Components/ContactSection";
+import Navbar from "yes/Components/Navbar";
 
 export default function Otherindustries() {
   interface FAQ {
@@ -205,8 +206,16 @@ export default function Otherindustries() {
       title: "Prefabricated Multi-Storey Building Manufacturer",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Industrial Enclosures", link: "#" },
-    { image: "/expertise/third.png", title: "Cold Storage & Cold Room Manufacturer", link: "#" },
+    {
+      image: "/expertise/third.png",
+      title: "Industrial Enclosures",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Cold Storage & Cold Room Manufacturer",
+      link: "#",
+    },
     { image: "/expertise/third.png", title: "Factory Building", link: "#" },
     { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
@@ -266,13 +275,15 @@ export default function Otherindustries() {
   // ===== States =====
   const [selectedId, setSelectedId] = useState(areas[0].id);
   const selectedArea = areas.find((a) => a.id === selectedId);
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const [startIndex, setStartIndex] = useState(0);
   const visibleCards = 4;
 
   const prevSlide = () =>
-    setStartIndex((prev) => (prev === 0 ? possibilities.length - visibleCards : prev - 1));
+    setStartIndex((prev) =>
+      prev === 0 ? possibilities.length - visibleCards : prev - 1
+    );
   const nextSlide = () =>
     setStartIndex((prev) =>
       prev + visibleCards >= possibilities.length ? 0 : prev + 1
@@ -282,32 +293,56 @@ export default function Otherindustries() {
     .slice(startIndex, startIndex + visibleCards)
     .concat(
       startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(0, (startIndex + visibleCards) % possibilities.length)
+        ? possibilities.slice(
+            0,
+            (startIndex + visibleCards) % possibilities.length
+          )
         : []
     );
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) => setOpenIndex(openIndex === index ? null : index);
+  const toggleFAQ = (index: number) =>
+    setOpenIndex(openIndex === index ? null : index);
 
   const stats = [
-    { label: "Years of Expertise", value: 20, suffix: "+", icon: <FaAward className="text-[#000080] text-xl" /> },
-    { label: "Projects Delivered", value: 500, suffix: "+", icon: <FaProjectDiagram className="text-[#000080] text-xl" /> },
-    { label: "Nationwide Presence", value: 25, suffix: "+ States", icon: <FaGlobeAsia className="text-[#000080] text-xl" /> },
-    { label: "Certified Processes", value: 100, suffix: "%", icon: <FaCertificate className="text-[#000080] text-xl" /> },
+    {
+      label: "Years of Expertise",
+      value: 20,
+      suffix: "+",
+      icon: <FaAward className="text-[#000080] text-xl" />,
+    },
+    {
+      label: "Projects Delivered",
+      value: 500,
+      suffix: "+",
+      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
+    },
+    {
+      label: "Nationwide Presence",
+      value: 25,
+      suffix: "+ States",
+      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
+    },
+    {
+      label: "Certified Processes",
+      value: 100,
+      suffix: "%",
+      icon: <FaCertificate className="text-[#000080] text-xl" />,
+    },
   ];
 
   return (
     <>
-      <IndustryHeader />
-      <section className="relative  flex items-center text-white overflow-hidden md:h-screen">
+      <Navbar />
+      <section className="relative h-[75vh] sm:min-h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover "
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -317,21 +352,21 @@ export default function Otherindustries() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Text */}
-         <div className="text-center lg:text-left px-4 sm:px-6 lg:px-0 pt-20 sm:pt-24 lg:pt-32">
-  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
-    Pre Engineered Buildings
-  </h1>
-  <p className="text-base sm:text-lg md:text-xl max-w-full sm:max-w-lg mx-auto lg:mx-0">
-    Pre-Engineered Buildings (PEBs) are modern steel structures designed, fabricated, and assembled using standardized components for faster construction.
-  </p>
-</div>
-
-
+          <div className="text-center mt-10 lg:text-left order-1">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold  mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0 md:mt-10">
+              Other Industries{" "}
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+              Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction.
+            </p>
+          </div>
 
           {/* Right Slider */}
-          <div className="w-full relative mt-10">
+          <div className="w-full relative order-2 mt-6 lg:mt-13 mb-2 flex justify-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -339,25 +374,23 @@ export default function Otherindustries() {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              className="pb-10"
+              className="pb-10 max-w-[240px] sm:max-w-sm"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[250px]">
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-72 object-cover"
+                      className="w-full h-50 sm:h-72 object-cover"
                     />
-                    <div className="p-4 text-center">
-                      <h3 className="text-lg font-semibold">{slide.title}</h3>
+                    <div className="p-3 text-center">
+                      <h3 className="text-base sm:text-lg font-semibold">
+                        {slide.title}
+                      </h3>
                       <a
                         href={slide.link}
-                        className="mt-3 inline-block text-[#000080] hover:underline"
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →
                       </a>
@@ -365,10 +398,6 @@ export default function Otherindustries() {
                   </div>
                 </SwiperSlide>
               ))}
-
-              {/* Navigation Buttons */}
-              {/* <div className="swiper-button-prev !text-white !top-1/2 !-translate-y-1/2 !left-0"></div>
-            <div className="swiper-button-next !text-white !top-1/2 !-translate-y-1/2 !right-0"></div> */}
             </Swiper>
           </div>
         </div>
@@ -379,11 +408,10 @@ export default function Otherindustries() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Buildings{" "}
+              Other Industries
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed mt-3">
               It is extremely important for CAD architects to understand the
               concept of building design for public infrastructure. Equally
               necessary is the alignment of such professionals with service
@@ -426,9 +454,9 @@ export default function Otherindustries() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
+        <div className=" mx-auto text-center md:px-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
               Landsking Infra Pvt. Ltd. PEB Structures
@@ -458,60 +486,67 @@ export default function Otherindustries() {
         </div>
       </section>
       {/* explore conettt */}
-     <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className=" mx-auto px-4 py-10 md:px-23">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Pre Engineered Products
+          Our Products
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Left menu / Dropdown */}
-          <div className="bg-[#000080] text-white rounded-lg w-full md:w-1/4">
-            {/* Mobile */}
-            <div className="md:hidden">
+          {/* Left Menu */}
+          <div className="w-full md:w-1/4">
+            {/* Mobile Dropdown */}
+            <div className="md:hidden mb-0">
               <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-3 px-5 py-4 text-left w-full transition bg-blue-800 font-bold"
+                onClick={() => setOpen(!open)}
+                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
               >
-                <span className="text-sm opacity-70">
-                  {String(
-                    areas.findIndex((a) => a.id === selectedId) + 1
-                  ).padStart(2, "0")}
-                </span>
-                <span>{selectedArea?.title}</span>
+                {areas.find((a) => a.id === selectedId)?.title}
+                <svg
+                  className="w-5 h-5 text-[#8080FF]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+                  />
+                </svg>
               </button>
 
-              {isOpen &&
-                areas.map((area, idx) => (
-                  <button
-                    key={area.id}
-                    onClick={() => {
-                      setSelectedId(area.id);
-                      setIsOpen(false);
-                    }}
-                    className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                      selectedId === area.id
-                        ? "bg-[#000080]  font-bold"
-                        : "hover:bg-[#000080]  text-gray-300"
-                    }`}
-                  >
-                    <span className="text-sm opacity-70">
-                      {String(idx + 1).padStart(2, "0")}
-                    </span>
-                    <span>{area.title}</span>
-                  </button>
-                ))}
+              {open && (
+                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
+                  {areas.map((area) => (
+                    <button
+                      key={area.id}
+                      onClick={() => {
+                        setSelectedId(area.id);
+                        setOpen(false);
+                      }}
+                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
+                        selectedId === area.id ? "text-white font-semibold" : ""
+                      }`}
+                    >
+                      {area.title}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
-            {/* Desktop */}
-            <div className="hidden md:flex flex-col">
+            {/* Desktop Menu */}
+            {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
+            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
               {areas.map((area, idx) => (
                 <button
                   key={area.id}
                   onClick={() => setSelectedId(area.id)}
                   className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                     selectedId === area.id
-                      ? "bg-[#000080]  font-bold"
-                      : "hover:bg-[#000080]  text-gray-300"
+                      ? " font-bold"
+                      : "hover: text-gray-300"
                   }`}
                 >
                   <span className="text-sm opacity-70">
@@ -523,41 +558,46 @@ export default function Otherindustries() {
             </div>
           </div>
 
-          {/* Right content */}
+          {/* Right Content */}
           {selectedArea && (
-            <div className="bg-white rounded-lg shadow overflow-hidden w-full md:w-3/4 mt-4 md:mt-0">
-              <div className="flex flex-col md:flex-row">
-                {/* Text */}
-                <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-                  <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-                    {selectedArea.subtitle}
-                  </h3>
-                  <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                  <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-                    GET A QUOTE
-                  </button>
-                </div>
+            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
+            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+              <div
+                className="
+    p-6 flex flex-col justify-center w-full md:w-1/2
+    rounded-lg                
+    md:rounded-none          
+    md:rounded-tl-lg md:rounded-bl-lg
+    shadow border border-[#808080] md:border-r-0
+  "
+              >
+                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                  {selectedArea.subtitle}
+                </h3>
+                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                  More{" "}
+                  <span className=" p-1 rounded-full text-[#000080]">→</span>
+                </button>
+              </div>
 
-                {/* Image */}
-                <div className="w-full md:w-1/2">
-                  <img
-                    src={selectedArea.image}
-                    alt={selectedArea.subtitle}
-                    className="w-full h-64 md:h-full object-cover"
-                  />
-                </div>
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src={selectedArea.image}
+                  alt={selectedArea.subtitle}
+                  className="w-full h-64 md:h-98 object-cover"
+                />
               </div>
             </div>
           )}
         </div>
       </section>
-
-     
       {/* explore content */}
 
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="w-full bg-white py-12 px-6 md:px-34 lg:px-20">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
@@ -572,8 +612,8 @@ export default function Otherindustries() {
 
           {/* Right Side - Content */}
           <div>
-            <div className="flex items-center mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            <div className="flex items-center mb-4 ">
+              <h2 className="text-3xl md:text-3xl font-bold text-[#000080]">
                 Our Manufacturing Capabilities
               </h2>
             </div>
@@ -609,8 +649,8 @@ export default function Otherindustries() {
       </section>
       {/* endcapill */}
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#000080] text-white py-10 md:px-35">
+        <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Inclusive Services{" "}
           </h2>
@@ -653,7 +693,7 @@ export default function Otherindustries() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className=" mx-auto px-6 md:px-20">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Steel Tubes for Building and Infrastructure
@@ -720,7 +760,7 @@ export default function Otherindustries() {
 
       {/* end special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className=" mx-auto px-6 md:px-20">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
             Our Support
@@ -833,11 +873,11 @@ export default function Otherindustries() {
       </section>
 
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="w-full bg-white py-16 px-6  lg:px-20 md:px-20">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 flex items-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
               Become a Customer
             </h2>
 

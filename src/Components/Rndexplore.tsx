@@ -7,28 +7,32 @@ const areas = [
     id: 1,
     title: "Static Analysis",
     subtitle: "Static Analysis",
-    description: "",
+    description:
+      "We provide advanced static analysis to predict stresses, deformations, and joint behavior with precision. From linear and non-linear to quasi-static and bolt-joint simulations, we ensure safer, cost-efficient, and reliable engineering outcomes.",
     image: "/green.png",
   },
   {
     id: 2,
     title: "Implicit Dynamic Analysis",
     subtitle: "Implicit Dynamic Analysis",
-    description: "",
+    description:
+      "We offer implicit dynamic simulations to study long-duration, time-dependent structural responses for reliability in automotive, aerospace, and industrial machinery. From modal, transient, frequency response, to spectrum analysis, we ensure designs perform safely under vibrations, shocks, and complex dynamic loads.",
     image: "/green.png",
   },
   {
     id: 3,
     title: "Explicit Dynamic Analysis",
     subtitle: "Explicit Dynamic Analysis",
-    description: "",
+    description:
+      "We provide high-speed impact and crash simulations to ensure safety and compliance where traditional methods fail. From crash analysis to drop and slam tests, we optimize durability and protection for vehicles, machinery, and products.",
     image: "/green.png",
   },
   {
     id: 4,
     title: "Fatigue / Durability",
     subtitle: "Fatigue / Durability",
-    description: "",
+    description:
+      "We deliver fatigue and durability analysis to predict product lifespan under repeated stresses, ensuring long-term reliability. Using stress-life, strain-life, crack growth, and vibration fatigue methods, we help prevent failures and extend component life.",
     image: "/green.png",
   },
 ];
@@ -42,7 +46,8 @@ export default function Rndexplore() {
   return (
     <section className=" mx-auto px-4 py-10 md:px-23">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-CAE Simulation Services      </h2>
+        CAE Simulation Services{" "}
+      </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
@@ -79,9 +84,7 @@ CAE Simulation Services      </h2>
                       setOpen(false);
                     }}
                     className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
-                      selectedId === area.id
-                        ? "text-white font-semibold"
-                        : ""
+                      selectedId === area.id ? "text-white font-semibold" : ""
                     }`}
                   >
                     {area.title}
@@ -94,15 +97,12 @@ CAE Simulation Services      </h2>
           {/* Desktop Menu */}
           {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
           <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
-
             {areas.map((area, idx) => (
               <button
                 key={area.id}
                 onClick={() => setSelectedId(area.id)}
                 className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                  selectedId === area.id
-                    ? " font-bold"
-                    : "hover: text-gray-300"
+                  selectedId === area.id ? " font-bold" : "hover: text-gray-300"
                 }`}
               >
                 <span className="text-sm opacity-70">
@@ -118,25 +118,21 @@ CAE Simulation Services      </h2>
         {selectedArea && (
           // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
           <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-            
             <div
-  className="
+              className="
     p-6 flex flex-col justify-center w-full md:w-1/2
     rounded-lg                
     md:rounded-none          
     md:rounded-tl-lg md:rounded-bl-lg
     shadow border border-[#808080] md:border-r-0
   "
->
+            >
               <h3 className="text-2xl font-semibold text-blue-900 mb-3">
                 {selectedArea.subtitle}
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>
               <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-
-More                <span className=" p-1 rounded-full text-[#000080]">
-                  →
-                </span>
+                More <span className=" p-1 rounded-full text-[#000080]">→</span>
               </button>
             </div>
 

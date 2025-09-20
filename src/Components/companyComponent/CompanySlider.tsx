@@ -77,7 +77,7 @@ export default function CompanySlider({
   }, []);
 
   return (
-    <section className="py-12 relative bg-white mt-20 md:mt-30">
+    <section className="py-12 relative bg-white mt-20 md:mt-30 md:px-20">
       <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
         {heading}
       </h2>

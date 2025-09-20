@@ -1,54 +1,51 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
+import { IoIosArrowForward } from "react-icons/io";
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import IndustryHeader from "yes/Components/Industryheader";import ProjectSlider from "yes/Components/ProjectSlider";
+import IndustryHeader from "yes/Components/Industryheader";
+import ProjectSlider from "yes/Components/ProjectSlider";
 import ServicesSlider from "yes/Components/ServicesSlider";
 import Explore from "yes/Components/Explore";
 import Footer from "../../Components/Footer";
 import IndustrySlider from "yes/Components/IndustrySlider";
+import Navbar from "yes/Components/Navbar";
+import { motion, AnimatePresence } from "framer-motion";
+import Heavysector from "yes/Components/Heavysector";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 const projects = [
   {
-    title: "Elixir Reserve",
+    id: 1,
+    title: "Rejuve 360",
     status: "Ongoing",
-    img: "/slider/p1.jpg",
+    image: "/realstate/three.webp",
+    location: "Mulund, Mumbai",
+  },
+  {
+    id: 2,
+    title: "West Square",
+    status: "Ongoing",
+    image: "/realstate/two.jpg",
+    location: "Seawoods, Navi Mumbai",
+  },
+  {
+    id: 3,
+    title: "Veridian",
+    status: "Completed",
+    image: "/realstate/one.webp",
     location: "Powai, Mumbai",
   },
   {
-    title: "The Gateway",
-    status: "Ongoing",
-    img: "/slider/p2.jpg",
-    location: "Sewri, Mumbai",
-  },
-  {
-    title: "77 Crossroads",
-    status: "Ongoing",
-    img: "/slider/p3.jpg",
-    location: "Ghatkopar, Mumbai",
-  },
-  {
-    title: "Emerald Heights",
-    status: "Ongoing",
-    img: "/slider/p4.jpg",
-    location: "Andheri, Mumbai",
-  },
-  {
-    title: "Sunrise Towers",
-    status: "Ongoing",
-    img: "/slider/p5.webp",
-    location: "Thane, Mumbai",
-  },
-  {
-    title: "Sunrise Towers",
-    status: "Ongoing",
-    img: "/slider/p7.png",
-    location: "Thane, Mumbai",
+    id: 4,
+    title: "Veridian",
+    status: "Completed",
+    image: "/realstate/one.webp",
+    location: "Powai, Mumbai",
   },
 ];
 
@@ -90,30 +87,29 @@ const TABS = [
 const slides = [
   {
     title: "PRE ENGINEERED BUILDINGS",
-    description: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
+    desc: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
     video: "/video.mp4",
-    url: "/menupage",
+    link: "/menupage",
   },
   {
     title: "EPC Solutions",
-    description: "Delivering end-to-end Engineering, Procurement, and Construction solutions.",
+    desc: "Delivering end-to-end Engineering, Procurement, and Construction solutions.",
     video: "/video.mp4",
-    url: "/epcsolutions",
+    link: "/epcsolutions",
   },
   {
     title: "Project Management Consultancy",
-    description: "Providing expert project management guidance.",
+    desc: "Providing expert project management guidance.",
     video: "/video.mp4",
-    url: "/project-management",
+    link: "/project-management",
   },
   {
     title: "Structural Engineering Services",
-    description: "Offering innovative structural engineering solutions.",
+    desc: "Offering innovative structural engineering solutions.",
     video: "/homeslider.mp4",
-    url: "/solutionservice",
+    link: "/solutionservice",
   },
 ];
-
 
 const sectors = [
   {
@@ -121,7 +117,8 @@ const sectors = [
     title: "Buildings and Infrastructure",
     image: "/industry.jpg",
     url: "/manufacturing",
-    description: "We deliver cutting-edge buildings and infrastructure solutions.",
+    description:
+      "We deliver cutting-edge buildings and infrastructure solutions.",
   },
   {
     id: 2,
@@ -142,7 +139,8 @@ const sectors = [
     title: "PLANT & PRODUCT ENGINEERING SERVICES",
     image: "/industry.jpg",
     url: "/oil",
-    description: "Our engineering services cover every aspect of plant and product development.",
+    description:
+      "Our engineering services cover every aspect of plant and product development.",
   },
   {
     id: 5,
@@ -169,17 +167,28 @@ export default function HeavyEngineering() {
   const [activeTab, setActiveTab] = useState(0);
   const [current, setCurrent] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
-const prevRef = useRef<HTMLDivElement>(null);
+  const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
-
+  const [active, setActive] = useState(0);
+  const [underlineStyle, setUnderlineStyle] = useState<{
+    width: number;
+    left: number;
+  }>({ width: 0, left: 0 });
+  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
   }, []);
   useEffect(() => {
     setProgress(0);
-    const progressTimer = setInterval(() => setProgress((prev) => Math.min(prev + 2, 100)), 100);
-    const slideTimer = setTimeout(() => setActiveSlide((prev) => (prev + 1) % slides.length), 5000);
+    const progressTimer = setInterval(
+      () => setProgress((prev) => Math.min(prev + 2, 100)),
+      100
+    );
+    const slideTimer = setTimeout(
+      () => setActiveSlide((prev) => (prev + 1) % slides.length),
+      5000
+    );
     return () => {
       clearInterval(progressTimer);
       clearTimeout(slideTimer);
@@ -195,223 +204,290 @@ const prevRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (itemsPerView > 1) {
-      const timer = setInterval(() => setCurrent((c) => (c + 1) % sectors.length), 5000);
+      const timer = setInterval(
+        () => setCurrent((c) => (c + 1) % sectors.length),
+        5000
+      );
       return () => clearInterval(timer);
     }
   }, [itemsPerView]);
+  useEffect(() => {
+    const el = tabRefs.current[active];
+    if (el) {
+      setUnderlineStyle({
+        width: el.offsetWidth,
+        left: el.offsetLeft,
+      });
 
-  const prevSlide = () => setCurrent((c) => (c - 1 + sectors.length) % sectors.length);
+      // Only scroll tabs on mobile
+      if (window.innerWidth < 768) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
+      }
+    }
+  }, [active]);
+  const prevSlide = () =>
+    setCurrent((c) => (c - 1 + sectors.length) % sectors.length);
   const nextSlide = () => setCurrent((c) => (c + 1) % sectors.length);
-
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
   return (
     <>
-      <IndustryHeader/>
+      <Navbar />
 
       {/* Hero Section */}
-     <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
-  {/* Background Video */}
-  <video
-    key={slides[activeSlide].video}
-    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
-    autoPlay
-    loop
-    muted
-  >
-    <source src={slides[activeSlide].video} type="video/mp4" />
-  </video>
+      <section className="relative w-full h-[70vh] sm:h-[99vh] overflow-hidden">
+        {/* Background Video */}
+        <video
+          src={slides[active].video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        />
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60" />
 
-  {/* Content */}
-  <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-8 md:px-20 text-white">
-    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight max-w-full md:max-w-3xl">
-      {slides[activeSlide].title}
-    </h1>
-    <p className="mt-3 text-sm sm:text-base md:text-lg max-w-full md:max-w-2xl">
-      {slides[activeSlide].description}
-    </p>
+        {/* Slide Content */}
+        <div className="relative z-10 flex flex-col justify-center h-full  mx-auto px-6  text-left md:px-16">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={slides[active].title}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -40 }}
+              transition={{ duration: 0.7 }}
+            >
+              <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-snug">
+                {slides[active].title}
+              </h1>
+              <p className="text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+                {slides[active].desc}
+              </p>
 
-    {/* Learn More button → redirect */}
-    <button
-      onClick={() => router.push(slides[activeSlide].url)} // ✅ redirect
-      className="hidden sm:inline-block mt-5 mb-8 sm:mb-10 w-fit sm:max-w-[50%] md:max-w-[20%] px-5 sm:px-6 py-2 text-sm sm:text-base font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-blue-100 transition"
-    >
-      Learn more
-    </button>
-
-    {/* Bottom Tabs */}
-    <div className="absolute bottom-0 left-0 right-0 flex flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
-      {slides.map((slide, index) => (
-        <div key={index} className="relative w-full sm:w-auto">
-          {activeSlide === index && (
-            <div
-              className="absolute -top-1 left-0 h-1 bg-blue-500 rounded"
-              style={{
-                width: `${progress}%`,
-                transition: "width 0.1s linear",
-              }}
-            ></div>
-          )}
-          <button
-            onClick={() => {
-              setActiveSlide(index); // ✅ switch immediately
-              setProgress(0);        // ✅ reset progress
-            }}
-            className={`pt-4 sm:pt-8 text-left sm:text-center transition-all duration-300 break-words 
-              ${
-                activeSlide === index
-                  ? "text-white"
-                  : "text-white/80 hover:text-white"
-              }`}
-          >
-            {slide.title}
-          </button>
+              <button
+                onClick={() => router.push(slides[active].link)}
+                className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
+              >
+                <span>Learn More</span>
+                <IoIosArrowForward className="w-5 h-5" />
+              </button>
+            </motion.div>
+          </AnimatePresence>
         </div>
-      ))}
-    </div>
-  </div>
-</div>
 
-      {/* Sectors */}
-      <div className="w-full py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">Sectors</h2>
-          <div className="relative overflow-hidden">
-            {itemsPerView > 1 ? (
-              <motion.div className="flex transition-transform duration-700" style={{ transform: `translateX(-${current * (100 / itemsPerView)}%)` }}>
-                {sectors.map((sector) => (
-                  <div key={sector.id} className="px-2" style={{ minWidth: `${100 / itemsPerView}%` }}>
-                    <div className="relative group overflow-hidden rounded-lg cursor-pointer">
-                      <img src={sector.image} alt={sector.title} className="w-full h-60 object-cover" />
-                      <div className="absolute bottom-0 w-full bg-blue-600/90 text-white py-2 text-center text-sm font-semibold">
-                        {sector.title}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </motion.div>
-            ) : (
-              <div className="flex justify-center">
-                <img src={sectors[current].image} alt={sectors[current].title} className="w-full h-60 object-cover rounded-lg" />
-              </div>
-            )}
-            <button onClick={prevSlide} className="absolute top-1/2 left-2 -translate-y-1/2 bg-white rounded-full p-2">
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button onClick={nextSlide} className="absolute top-1/2 right-2 -translate-y-1/2 bg-white rounded-full p-2">
-              <ChevronRight className="w-6 h-6" />
-            </button>
+        {/* Bottom Navigation */}
+        <div className="absolute bottom-0 w-full ">
+          <div className="max-w-7xl mx-auto flex justify-center sm:justify-start gap-6 px-6 py-4 overflow-x-auto">
+            {/* Desktop Tabs */}
+            <div className="hidden sm:flex gap-6">
+              {slides.map((s, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActive(i)}
+                  className={`pb-1 text-sm sm:text-base font-medium border-b-2 transition ${
+                    active === i
+                      ? "text-[#8080FF] border-[#8080FF]"
+                      : "text-gray-300 border-transparent hover:text-white"
+                  }`}
+                >
+                  {s.title}
+                </button>
+              ))}
+            </div>
+
+            {/* Mobile Dots */}
+            <div className="flex sm:hidden justify-center w-full gap-2">
+              {slides.map((_, i) => (
+                <span
+                  key={i}
+                  onClick={() => setActive(i)}
+                  className={`w-2 h-2 rounded-full cursor-pointer transition ${
+                    active === i ? "bg-#8080FF" : "bg-[#fff]"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-
+      </section>
+      {/* Sectors */}
+      <Heavysector />
       {/* Tabs */}
       <section className="w-full">
-        <div className="max-w-4xl mx-auto px-4 pt-12 text-center">
-          <h1 className="text-3xl text-[#000080] font-semibold">Comprehensive Infrastructure Solutions</h1>
-          <p className="mt-4 text-base text-gray-600">From design and engineering to execution and management.</p>
+        {/* Top heading + subheading */}
+        <div className="mx-auto px-4 pt-12 text-center">
+          <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
+            Comprehensive Infrastructure Solutions
+          </h1>
+          <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
+            From design and engineering to execution and management, we deliver
+            integrated solutions that shape industries and build a stronger
+            future.
+          </p>
         </div>
+
+        {/* Tabs */}
         <div className="mt-8">
-          <div className="max-w-5xl mx-auto px-4 flex gap-6 overflow-x-auto">
-            {TABS.map((t, i) => (
-              <button key={t.title} onClick={() => setActiveTab(i)} className={`pb-3 ${activeTab === i ? "text-[#272727]" : "text-gray-600"}`}>
-                {t.title}
-              </button>
-            ))}
+          <div className="mx-auto px-4">
+            <div className="relative">
+              <div className="flex md:justify-center gap-4 md:gap-10 overflow-x-auto md:overflow-x-visible relative">
+                {TABS.map((t, i) => (
+                  <button
+                    key={t.title}
+                    ref={(el) => {
+                      tabRefs.current[i] = el;
+                    }}
+                    onClick={() => setActive(i)}
+                    className={`pb-3 font-medium whitespace-nowrap transition-colors
+                         ${
+                           active === i
+                             ? "text-[#272727]"
+                             : "text-gray-600 hover:text-[#000080]"
+                         }
+                         text-[13px] sm:text-sm md:text-[16px]`}
+                  >
+                    {t.title}
+                  </button>
+                ))}
+
+                {/* Underline */}
+                <span
+                  className="absolute bottom-0 block h-0.5 bg-[#000080] transition-all duration-300"
+                  style={underlineStyle}
+                />
+              </div>
+              {/* <div className="h-px bg-gray-200 mt-0.5 w-full"></div> */}
+            </div>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto px-4 mt-8">
-          <div className="relative rounded-xl overflow-hidden shadow-lg h-[340px] md:h-[460px]">
-            <Image src={TABS[activeTab].img} alt={TABS[activeTab].title} fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center">
-              <div className="p-10 text-white">
-                <h2 className="text-2xl md:text-3xl font-semibold">{TABS[activeTab].headline}</h2>
-                <p className="mt-4 text-sm md:text-base">{TABS[activeTab].body}</p>
-                <button onClick={() => router.push(TABS[activeTab].url)} className="mt-6 bg-[#000080] text-white px-4 py-2 rounded-md">
-                  {TABS[activeTab].buttonText}
-                </button>
+
+        {/* Content Card */}
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="mt-8 flex justify-center">
+            <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full md:w-[90%] lg:w-[80%]">
+              <div className="relative w-full h-[340px] md:h-[460px]">
+                <Image
+                  src={TABS[active].img}
+                  alt={TABS[active].title}
+                  fill
+                  priority
+                  className="object-cover rounded-[5px]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent rounded-[5px]" />
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full p-6 md:p-10">
+                    <div className="text-white text-center md:text-left mx-auto">
+                      <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
+                        {TABS[active].headline}
+                      </h2>
+                      <p className="mt-4 text-sm md:text-[15px] text-gray-200">
+                        {TABS[active].body}
+                      </p>
+                      <button
+                        className="mt-6 border border-[#fff] rounded-lg text-[13px] hover:bg-[#272727] text-white font-semibold px-4 py-2"
+                        onClick={() => router.push(TABS[active].url)}
+                      >
+                        {TABS[active].buttonText}
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-{/* project slider */}
- <section className="py-12 relative">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold text-blue-900 mb-8">
-        DISCOVER OUR PROJECTS
-      </h2>
+      {/* project slider */}
+      <section className="w-full py-12 md:py-16 bg-white relative">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#000080] mb-8 md:mb-10">
+          DISCOVER OUR PROJECTS
+        </h2>
 
-      <div className="relative max-w-6xl mx-auto px-12">
-        {/* ✅ Swiper only mounts on client */}
-        {isMounted && (
+        <div className=" mx-auto sm:px-4 px-2 relative md:mx-25">
           <Swiper
-            modules={[Navigation]}
-            spaceBetween={20}
-            slidesPerView={3}
-            slidesPerGroup={1}
-            loop={true}
+            modules={[Navigation, Pagination, Autoplay]}
             navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
+              nextEl: ".custom-next",
+              prevEl: ".custom-prev",
             }}
-            onBeforeInit={(swiper) => {
-              // @ts-expect-error: Swiper types don’t include navigation refs directly
-              swiper.params.navigation.prevEl = prevRef.current;
-              // @ts-expect-error: Swiper types don’t include navigation refs directly
-              swiper.params.navigation.nextEl = nextRef.current;
-            }}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            spaceBetween={16}
+            slidesPerView={1}
             breakpoints={{
-              0: { slidesPerView: 1, slidesPerGroup: 1 },
-              768: { slidesPerView: 2, slidesPerGroup: 1 },
-              1024: { slidesPerView: 3, slidesPerGroup: 1 },
+              640: { slidesPerView: 1.2, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 24 },
+              1024: { slidesPerView: 3, spaceBetween: 30 },
             }}
+            className="pb-10" // ⬅️ niche dots ke liye jagah
           >
-            {projects.map((project, idx) => (
-              <SwiperSlide key={idx}>
-                <div className="flex flex-col items-center text-center">
-                  <h3 className="text-lg font-semibold text-blue-900">
+            {projects.map((project) => (
+              <SwiperSlide key={project.id}>
+                <div className="text-center">
+                  <h3 className="text-base md:text-lg font-semibold text-[#000080]">
                     {project.title}
                   </h3>
-                  <p className="text-gray-500 text-sm mb-2">
+                  <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-4">
                     ({project.status})
                   </p>
-                  <div className="relative w-full h-[300px] overflow-hidden rounded shadow">
-                    <Image
-                      src={project.img}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
-                    <button className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white border border-blue-700 text-blue-700 font-semibold px-4 py-1 text-sm hover:bg-blue-700 hover:text-white transition">
-                      KNOW MORE
-                    </button>
+
+                  {/* Image + Button */}
+                  <div className="relative w-full h-52 sm:h-60 md:h-64 flex justify-center">
+                    <div className="relative w-[85%] sm:w-[90%] md:w-full h-full">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover rounded-lg"
+                      />
+                      <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-blue-900 text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-black hover:text-white transition">
+                        KNOW MORE
+                      </button>
+                    </div>
                   </div>
-                  <p className="mt-3 text-gray-700">{project.location}</p>
+
+                  <p className="text-sm md:text-base text-gray-700 mt-2 md:mt-3">
+                    {project.location}
+                  </p>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-        )}
 
-        {/* Left Arrow */}
-        <div
-          ref={prevRef}
-          className="absolute top-1/2 -left-2 -translate-y-1/2 bg-blue-900 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
-        >
-          ◀
+          {/* Navigation buttons */}
+          <div className="custom-prev absolute left-2 md:-left-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
+              fill="#000080"
+              viewBox="0 0 24 24"
+            >
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </div>
+          <div className="custom-next absolute right-2 md:-right-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
+              fill="#000080"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </div>
         </div>
-
-        {/* Right Arrow */}
-        <div
-          ref={nextRef}
-          className="absolute top-1/2 -right-2 -translate-y-1/2 bg-blue-900 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
-        >
-          ▶
-        </div>
-      </div>
-    </section>
-{/* end project slider */}
+      </section>
+      {/* end project slider */}
       <IndustrySlider />
       <ServicesSlider />
       <Explore />

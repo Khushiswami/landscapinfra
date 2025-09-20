@@ -7,14 +7,14 @@ import { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-interface Project {
+interface Projectsector {
   id: number;
   title: string;
   description: string;
   image: string;
 }
 
-const projects: Project[] = [
+const projects: Projectsector[] = [
   {
     id: 1,
     title: "Power",
@@ -52,7 +52,7 @@ const projects: Project[] = [
   },
 ];
 
-export default function RenewableSector() {
+export default function Heavysector() {
   const [activeOverlay, setActiveOverlay] = useState<number | null>(null);
 
   const handleOverlayToggle = (id: number) => {
@@ -61,7 +61,7 @@ export default function RenewableSector() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-12 pt-12 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:px-16 pt-12 md:pt-16 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-xl md:text-3xl font-bold text-start text-blue-900 mb-6">
@@ -93,8 +93,8 @@ export default function RenewableSector() {
               },
             }}
           >
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
+            {projects.map((projectsector) => (
+              <SwiperSlide key={projectsector.id}>
                 {({ isActive }) => (
                   <div
                     className={`relative text-center transition-all duration-500 group ${
@@ -104,25 +104,25 @@ export default function RenewableSector() {
                     <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
                       <div className="relative w-full h-full">
                         <Image
-                          src={project.image}
-                          alt={project.title}
+                          src={projectsector.image}
+                          alt={projectsector.title}
                           fill
                           className="object-cover w-full h-full rounded-lg"
                         />
 
                         {/* Bottom title bar */}
                         <div className="absolute bottom-0 w-full bg-blue-600/90 text-white py-2 text-center text-sm font-semibold">
-                          {project.title}
+                          {projectsector.title}
                         </div>
 
                         {/* Overlay */}
                         <div
-                          onClick={() => handleOverlayToggle(project.id)}
+                          onClick={() => handleOverlayToggle(projectsector.id)}
                           className={`
                             absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
                             rounded-lg transition-opacity duration-500 cursor-pointer
                             ${
-                              activeOverlay === project.id
+                              activeOverlay === projectsector.id
                                 ? "opacity-100"
                                 : "opacity-0"
                             }
@@ -130,10 +130,10 @@ export default function RenewableSector() {
                           `}
                         >
                           <h3 className="text-md md:text-sm font-semibold mb-2">
-                            {project.title}
+                            {projectsector.title}
                           </h3>
                           <p className="text-base md:text-xs mb-4 line-clamp-3">
-                            {project.description}
+                            {projectsector.description}
                           </p>
                           <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
                             Know More

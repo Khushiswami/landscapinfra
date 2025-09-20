@@ -130,7 +130,7 @@ export default function Pebheader() {
         { name: "Special Buildings", href: "/specialBuilding" },
       ],
     },
-    { name: "Projects", href: "/projects" },
+    { name: "Projects", href: "/preengineredbuildingsprojects" },
     { name: "Insights", href: "/insight" },
     // { name: "About", href: "/about" },
     {
@@ -174,13 +174,13 @@ export default function Pebheader() {
         </Link> */}
         <Link href="/" className="flex-shrink-0">
           <Image
-            src={scrolled ? "/logo.png" : "/landsking.png"}
+            src={scrolled ? "/finallogo.png" : "/whitelogo.png"}
             alt="Logo"
             width={150} // base width
             height={50} // base height
             priority
             className={`transition-all duration-300 ${
-              scrolled ? "w-28 h-10" : "w-36 h-12"
+              scrolled ? "w-32 h-14" : "w-38 h-16"
             }`}
           />
         </Link>
@@ -193,7 +193,7 @@ export default function Pebheader() {
                 href={link.href}
                 className={`font-semibold text-lg ${
                   scrolled ? "text-black" : "text-white"
-                } hover:text-orange-500`}
+                } hover:text-[#000080]`}
               >
                 {link.name}
               </Link>
@@ -213,7 +213,7 @@ export default function Pebheader() {
                           <li key={item.title} className="relative group/sub">
                             <Link
                               href={item.href}
-                              className="px-4 py-2 block hover:text-orange-500 text-black"
+                              className="px-4 py-2 block hover:text-[#000080] text-black"
                             >
                               {item.title}
                             </Link>
@@ -224,7 +224,7 @@ export default function Pebheader() {
                                     <li key={sub.name}>
                                       <Link
                                         href={sub.href}
-                                        className="block px-4 py-2 hover:text-orange-500 text-black"
+                                        className="block px-4 py-2 hover:text-[#000080] text-black"
                                       >
                                         {sub.name}
                                       </Link>
@@ -239,7 +239,7 @@ export default function Pebheader() {
                           <li key={item.name}>
                             <Link
                               href={item.href}
-                              className="block px-4 py-2 hover:text-orange-500 text-black"
+                              className="block px-4 py-2 hover:text-[#000080] text-black"
                             >
                               {item.name}
                             </Link>

@@ -11,13 +11,14 @@ import TimelineTabs from "yes/Components/companyComponent/TimelineTabs";
 import ProgressSection from "yes/Components/companyComponent/ProgressSection";
 import AcquisitionsSection from "yes/Components/companyComponent/AcquisitionsSection";
 import Pebheader from "yes/Components/Pebheader";
+import PebheaderW from "yes/Components/PebheaderW";
 
 export default function History() {
   const [active, setActive] = useState(0);
 
   return (
     <>
-      <Pebheader />
+      <PebheaderW />
       <CompanySlider />
       <TimelineTabs />
       <ProgressSection />

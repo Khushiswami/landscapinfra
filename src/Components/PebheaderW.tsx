@@ -25,7 +25,7 @@ type ProductMenu = {
 
 type MenuItem = NormalMenu | ProductMenu;
 
-export default function IndustryHeaderW() {
+export default function PebheaderW() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openMobileSubMenu, setOpenMobileSubMenu] = useState<string | null>(
     null
@@ -149,7 +149,7 @@ export default function IndustryHeaderW() {
     },
     {
       name: "Projects",
-      href: "/projects",
+      href: "/preengineredbuildingsprojects",
       // subItems: [
       //   { name: "Pre Engineered Buildings", href: "/projects/pre-engineered" },
       //   { name: "Prefab Buildings", href: "/projects/prefab" },
@@ -158,7 +158,19 @@ export default function IndustryHeaderW() {
     },
     { name: "Insights", href: "/insight" },
 
-    { name: "About", href: "/about" },
+    {
+      name: "About",
+      href: "/about",
+      subItems: [
+        {
+          name: "Our Leadership",
+          href: "/pebabout/leadership",
+        },
+        { name: "Our History", href: "/pebabout/history" },
+        { name: "Our Mission", href: "/pebabout/mission" },
+        { name: "Innovation", href: "/pebabout/innovation" },
+      ],
+    },
     { name: "Contact", href: "/contact" },
   ];
   return (
@@ -166,7 +178,13 @@ export default function IndustryHeaderW() {
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4 transition-all duration-300">
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo.jpeg" alt="Logo" width={120} height={40} priority />
+          <Image
+            src="/finallogo.png"
+            alt="Logo"
+            width={90}
+            height={40}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -175,7 +193,7 @@ export default function IndustryHeaderW() {
             <div key={link.name} className="relative group">
               <Link
                 href={link.href}
-                className="font-semibold text-lg text-black hover:text-orange-500"
+                className="font-semibold text-lg text-black hover:text-[#000080]"
               >
                 {link.name}
               </Link>
@@ -193,7 +211,7 @@ export default function IndustryHeaderW() {
                             <li key={item.title} className="relative group/sub">
                               <Link
                                 href={item.href}
-                                className="px-4 py-2 block hover:text-orange-500 text-black"
+                                className="px-4 py-2 block hover:text-[#000080] text-black"
                               >
                                 {item.title}
                               </Link>
@@ -204,7 +222,7 @@ export default function IndustryHeaderW() {
                                       <li key={sub.name}>
                                         <Link
                                           href={sub.href}
-                                          className="block px-4 py-2 hover:text-orange-500 text-black"
+                                          className="block px-4 py-2 hover:text-[#000080] text-black"
                                         >
                                           {sub.name}
                                         </Link>
@@ -219,7 +237,7 @@ export default function IndustryHeaderW() {
                             <li key={item.name}>
                               <Link
                                 href={item.href}
-                                className="block px-4 py-2 hover:text-orange-500 text-black"
+                                className="block px-4 py-2 hover:text-[#000080] text-black"
                               >
                                 {item.name}
                               </Link>

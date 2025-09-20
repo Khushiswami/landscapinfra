@@ -1,29 +1,33 @@
 "use client";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaTools, FaShieldAlt, FaCogs } from "react-icons/fa";
 import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
   FaAward,
   FaGlobeAsia,
   FaCertificate,
   FaProjectDiagram,
+  FaUsers,
+  FaSearch,
+  FaLightbulb,
+  FaCube,
+  FaChartLine,
 } from "react-icons/fa";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Link from "next/link";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
+import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";import Brand from "yes/Components/Brand";
-import PebSlider from "yes/Components/PebSlider";
-import PlatformP from "yes/Components/PlatformP";
+import IndustryHeader from "yes/Components/Industryheader";
+import ContactSection from "yes/Components/ContactSection";
+import Navbar from "yes/Components/Navbar";
 
 export default function Hvac() {
   interface FAQ {
@@ -31,7 +35,192 @@ export default function Hvac() {
     answer: string;
   }
 
-  // ===== Data =====
+  // ===== FAQ =====
+  const faqs: FAQ[] = [
+    {
+      question: "What is a factory building?",
+      answer:
+        "A factory building is a structure designed to house manufacturing or production operations.",
+    },
+    {
+      question: "What materials are used in factory building construction?",
+      answer:
+        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
+    },
+    {
+      question: "What are the benefits of prefabricated factory buildings?",
+      answer:
+        "They are faster to build, cost-effective, customizable, and more sustainable.",
+    },
+    {
+      question:
+        "How does a pre-engineered factory building differ from traditional buildings?",
+      answer:
+        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+    },
+    {
+      question: "Can factory buildings be customized?",
+      answer:
+        "Yes, they can be tailored to specific design, size, and operational requirements.",
+    },
+    {
+      question:
+        "How long does it take to construct a prefabricated factory building?",
+      answer:
+        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
+    },
+  ];
+
+  // ===== Pre-engineered product possibilities =====
+  const possibilities = [
+    {
+      subtitle: "Concept & Detailed Engineering",
+      description:
+        "We provide complete engineering support from concept designs to detailed engineering, ensuring accuracy and reliability across the entire design cycle.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "2D Drawings",
+      description:
+        "Creation of precise 2D drawings using AutoCAD to establish the foundation for engineering and construction workflows.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Assembly Drawings",
+      description:
+        "Development of assembly drawings for walls, columns, and beams using REVIT for clarity and construction accuracy.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Fabrication & Piping Layouts",
+      description:
+        "Generation of fabrication drawings in 2D and piping layouts for HVAC using AutoCAD and other advanced software.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Family Creation",
+      description:
+        "REVIT-based family creation to streamline design elements, making models reusable and efficient.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Design Automation Sheets",
+      description:
+        "Automating repetitive design tasks with iLOGIC sheets to enhance efficiency and reduce turnaround time.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "3D CAD Models",
+      description:
+        "Creation of highly detailed 3D CAD models using miscellaneous advanced software for visualization and precision.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "BIM Content Development",
+      description:
+        "Building rich BIM content to support project collaboration and ensure accurate digital representation.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "BIM Coordination",
+      description:
+        "Using NAVISWORKS for BIM coordination, enabling smooth integration between multidisciplinary teams.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Advanced BIM Dimensions",
+      description:
+        "Providing 4D, 5D, 6D, and 7D BIM capabilities using miscellaneous platforms for comprehensive project lifecycle management.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "As-Built Designs & Technical Publications",
+      description:
+        "Delivering accurate as-built designs and supporting documentation through technical publications for long-term project reliability.",
+      image: "/industry.jpg",
+    },
+  ];
+
+  // ===== Features =====
+  const features = [
+    {
+      title: "Collaborative Analysis",
+      description:
+        "Detailed study of the building design with open discussions alongside your in-house team to align goals.",
+      icon: <FaUsers className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Opportunity Discovery",
+      description:
+        "Careful research to uncover new opportunities that add measurable value to your project.",
+      icon: <FaSearch className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Concept Development",
+      description:
+        "Generating findings to create a customized concept tailored to your operational needs.",
+      icon: <FaLightbulb className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "BIM Prototyping",
+      description:
+        "Presenting a BIM prototype that addresses all critical project parameters in detail.",
+      icon: <FaProjectDiagram className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "3D Visualization",
+      description:
+        "Crafting high-precision 3D models to support global marketing and streamlined construction execution.",
+      icon: <FaCube className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Risk Mitigation & Support",
+      description:
+        "Continuous product analysis to minimize risks, avoid potential failures, and ensure smooth delivery.",
+      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Onsite Troubleshooting",
+      description:
+        "Expert support for troubleshooting and adjustments after the project goes live, ensuring long-term reliability.",
+      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Integrated Collaboration",
+      description:
+        "Seamless work with architects, engineers, contractors, and manufacturers— all components unified in a single BIM model.",
+      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Progress Tracking",
+      description:
+        "Clients can access REVIT libraries to monitor progress, marking completion of each phase efficiently.",
+      icon: <FaChartLine className="text-[#000080] text-3xl mb-4" />,
+    },
+  ];
+
+  // ===== Slides for Swiper =====
+  const slides = [
+    {
+      image: "/expertise/third.png",
+      title: "Prefabricated Multi-Storey Building Manufacturer",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Industrial Enclosures",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Cold Storage & Cold Room Manufacturer",
+      link: "#",
+    },
+    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
+    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
+  ];
+
+  // ===== Areas for dropdown =====
   const areas = [
     {
       id: 1,
@@ -83,148 +272,38 @@ export default function Hvac() {
     },
   ];
 
-  const faqs: FAQ[] = [
-    {
-      question: "What is a factory building?",
-      answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
-    },
-    {
-      question: "What materials are used in factory building construction?",
-      answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
-    },
-    {
-      question: "What are the benefits of prefabricated factory buildings?",
-      answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
-    },
-    {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
-      answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
-    },
-    {
-      question: "Can factory buildings be customized?",
-      answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
-    },
-    {
-      question:
-        "How long does it take to construct a prefabricated factory building?",
-      answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
-    },
-  ];
+  // ===== States =====
+  const [selectedId, setSelectedId] = useState(areas[0].id);
+  const selectedArea = areas.find((a) => a.id === selectedId);
+  const [open, setOpen] = useState(false);
 
-  const possibilities = [
-    {
-      subtitle: "Quick Installation & Lightweight Construction",
-      description:
-        "Pre-engineered buildings (PEBs) allow for fast installation and easy erection due to their lightweight construction, reducing both time and labor costs.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Low Maintenance",
-      description:
-        "With superior materials and a meticulous manufacturing process, PEB structures are low-maintenance and built to last, offering durability with minimal upkeep.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Resistance to Corrosive Elements",
-      description:
-        "PEBs are resistant to corrosive elements and can withstand severe weather conditions, including high winds, ensuring longevity and structural integrity.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Energy Efficiency & Weatherproofing",
-      description:
-        "Insulated walls and facades make these buildings energy-efficient and weather-resistant, providing comfortable living or working environments in adverse weather conditions.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Aesthetic Flexibility",
-      description:
-        "PEBs offer a variety of finishing options that enhance their aesthetic appeal, making them suitable for diverse applications and architectural preferences.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Customizable Design & Layouts",
-      description:
-        "The flexibility of design and construction enables a wide range of layout possibilities, catering to specific client requirements, whether for industrial or commercial use.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Safety Features",
-      description:
-        "Pre-engineered buildings can easily accommodate safety and comfort features such as smoke detectors, firefighting equipment, and air conditioning units.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Ideal for Off-Site & Site Construction",
-      description:
-        "These buildings are widely used for construction sites and off-site projects, providing a quick, durable solution for setting up accommodation or infrastructure.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Expertise & Innovation",
-      description:
-        "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
-      image: "/industry.jpg",
-    },
-  ];
+  const [startIndex, setStartIndex] = useState(0);
+  const visibleCards = 4;
 
-  const features = [
-    {
-      title: "Custom-Built Design",
-      description:
-        "Fully tailored to your operational and architectural requirements, ensuring precision and efficiency.",
-      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Quick Installation",
-      description:
-        "Factory-engineered components allow rapid onsite assembly, saving both time and labor costs.",
-      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Cost-Efficient Construction",
-      description:
-        "Optimized designs reduce material waste and overall construction expenses.",
-      icon: <FaBolt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Durable and Low Maintenance",
-      description:
-        "Built to withstand harsh weather and seismic conditions with minimal upkeep.",
-      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Energy Efficient",
-      description:
-        "Insulated wall and roof panels provide excellent temperature control and energy savings.",
-      icon: <FaLeaf className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Expandable & Flexible",
-      description:
-        "Easily scalable and adaptable to meet future growth and business requirements.",
-      icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
-    },
-  ];
+  const prevSlide = () =>
+    setStartIndex((prev) =>
+      prev === 0 ? possibilities.length - visibleCards : prev - 1
+    );
+  const nextSlide = () =>
+    setStartIndex((prev) =>
+      prev + visibleCards >= possibilities.length ? 0 : prev + 1
+    );
 
-  const slides = [
-    {
-      image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
-      link: "#",
-    },
-    { image: "/expertise/third.png", title: "Industrial Enclosures", link: "#" },
-    { image: "/expertise/third.png", title: "Cold Storage & Cold Room Manufacturer", link: "#" },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
-  ];
+  const cardsToShow = possibilities
+    .slice(startIndex, startIndex + visibleCards)
+    .concat(
+      startIndex + visibleCards > possibilities.length
+        ? possibilities.slice(
+            0,
+            (startIndex + visibleCards) % possibilities.length
+          )
+        : []
+    );
+
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const toggleFAQ = (index: number) =>
+    setOpenIndex(openIndex === index ? null : index);
 
   const stats = [
     {
@@ -253,135 +332,116 @@ export default function Hvac() {
     },
   ];
 
-  // ===== State =====
-  const [selectedId, setSelectedId] = useState(areas[0].id);
-  const selectedArea = areas.find((a) => a.id === selectedId);
-
-  const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
-  const prevSlide = () =>
-    setStartIndex((prev) => (prev === 0 ? possibilities.length - visibleCards : prev - 1));
-  const nextSlide = () =>
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
-
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(0, (startIndex + visibleCards) % possibilities.length)
-        : []
-    );
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) => setOpenIndex(openIndex === index ? null : index);
-
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-
   return (
     <>
-      <IndustryHeader/>
-    <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-  {/* Background video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <Navbar />
+      <section className="relative h-[75vh] sm:min-h-screen flex items-center text-white overflow-hidden">
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/60"></div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-  {/* Content */}
-  <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    {/* Left Text */}
-    <div className="text-center lg:text-left order-1">
-      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-        Pre Engineered Buildings
-      </h1>
-      <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-        Pre-Engineered Buildings (PEBs) are modern steel structures
-        designed, fabricated, and assembled using standardized components
-        for faster construction.
-      </p>
-    </div>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Left Text */}
+          <div className="text-center mt-10 lg:text-left order-1">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold  mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0 md:mt-10">
+              Other Industries{" "}
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+              Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction.
+            </p>
+          </div>
 
-    {/* Right Slider */}
-    <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop
-        className="pb-10 max-w-[260px] sm:max-w-sm"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-56 sm:h-72 object-cover"
-              />
-              <div className="p-3 text-center">
-                <h3 className="text-base sm:text-lg font-semibold">{slide.title}</h3>
-                <a
-                  href={slide.link}
-                  className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                >
-                  Read more →
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  </div>
-</section>
-
+          {/* Right Slider */}
+          <div className="w-full relative order-2 mt-6 lg:mt-13 mb-2 flex justify-center">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop
+              className="pb-10 max-w-[240px] sm:max-w-sm"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-50 sm:h-72 object-cover"
+                    />
+                    <div className="p-3 text-center">
+                      <h3 className="text-base sm:text-lg font-semibold">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.link}
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Smart Construction. Faster Delivery. Reliable Performance{" "}
+              Other Industries
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
-              of Pre-Engineered Buildings (PEBs), delivering complete solutions
-              for industrial, commercial, and institutional structures. Our
-              buildings are designed with advanced engineering and
-              prefabrication technology, ensuring faster project delivery, cost
-              efficiency, and customized designs for diverse applications.
+            <p className="text-gray-700 mb-4 leading-relaxed mt-3">
+              It is extremely important for CAD architects to understand the
+              concept of building design for public infrastructure. Equally
+              necessary is the alignment of such professionals with service
+              providers possessing extensive knowledge in construction design.
+              We at Landsking Infra Pvt. Ltd. offer a suite of Virtual and
+              Design Construction expertise to clients. Our company collaborates
+              and works across a wide range of construction projects, including
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
-              Pre-Engineered Building (PEB) is a steel structure based on a
-              structural framework of primary framing (columns and rafters),
-              secondary framing (purlins and girts), along with roof and wall
-              sheeting, and other components. All parts are pre-fabricated in
-              factories and assembled on-site, drastically reducing construction
-              time compared to conventional methods.
+              Commercial and High-Rise Buildings,Production Facilities,Data
+              Centres,Health and Educational Constructions,Industrial and
+              Distribution Facilities.When our specialists are entrusted with
+              designing a new facility, they focus on intricate details and
+              specifications according to construction plans. Our engineers are
+              adept at classifying critical processes, raw materials, resources,
+              and value supply chains to create appropriate digital models of
+              proposed buildings. As digitization is essential, we leverage the
+              latest CAD software to generate multifaceted BIM (Building
+              Information Modeling) apparatus. Our experience across industries
+              assists clients in visualizing the final structure through
+              automated 2D and 3D CAD drawings.
             </p>
 
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
+            <Link href="/contact">
+              <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+                GET A QUOTE
+              </button>
+            </Link>
           </div>
           <div className="flex justify-center">
             <img
@@ -394,9 +454,9 @@ export default function Hvac() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
+        <div className=" mx-auto text-center md:px-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
               Landsking Infra Pvt. Ltd. PEB Structures
@@ -425,62 +485,68 @@ export default function Hvac() {
           </div>
         </div>
       </section>
-     
-{/* slider section */}
-  <section className="max-w-7xl mx-auto px-4 py-10">
+      {/* explore conettt */}
+      <section className=" mx-auto px-4 py-10 md:px-23">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Pre Engineered Products
+          Our Products
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Left menu / Dropdown */}
-          <div className="bg-[#000080] text-white rounded-lg w-full md:w-1/4">
-            {/* Mobile */}
-            <div className="md:hidden">
+          {/* Left Menu */}
+          <div className="w-full md:w-1/4">
+            {/* Mobile Dropdown */}
+            <div className="md:hidden mb-0">
               <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-3 px-5 py-4 text-left w-full transition bg-blue-800 font-bold"
+                onClick={() => setOpen(!open)}
+                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
               >
-                <span className="text-sm opacity-70">
-                  {String(
-                    areas.findIndex((a) => a.id === selectedId) + 1
-                  ).padStart(2, "0")}
-                </span>
-                <span>{selectedArea?.title}</span>
+                {areas.find((a) => a.id === selectedId)?.title}
+                <svg
+                  className="w-5 h-5 text-[#8080FF]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+                  />
+                </svg>
               </button>
 
-              {isOpen &&
-                areas.map((area, idx) => (
-                  <button
-                    key={area.id}
-                    onClick={() => {
-                      setSelectedId(area.id);
-                      setIsOpen(false);
-                    }}
-                    className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                      selectedId === area.id
-                        ? "bg-[#000080]  font-bold"
-                        : "hover:bg-[#000080]  text-gray-300"
-                    }`}
-                  >
-                    <span className="text-sm opacity-70">
-                      {String(idx + 1).padStart(2, "0")}
-                    </span>
-                    <span>{area.title}</span>
-                  </button>
-                ))}
+              {open && (
+                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
+                  {areas.map((area) => (
+                    <button
+                      key={area.id}
+                      onClick={() => {
+                        setSelectedId(area.id);
+                        setOpen(false);
+                      }}
+                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
+                        selectedId === area.id ? "text-white font-semibold" : ""
+                      }`}
+                    >
+                      {area.title}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
-            {/* Desktop */}
-            <div className="hidden md:flex flex-col">
+            {/* Desktop Menu */}
+            {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
+            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
               {areas.map((area, idx) => (
                 <button
                   key={area.id}
                   onClick={() => setSelectedId(area.id)}
                   className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                     selectedId === area.id
-                      ? "bg-[#000080]  font-bold"
-                      : "hover:bg-[#000080]  text-gray-300"
+                      ? " font-bold"
+                      : "hover: text-gray-300"
                   }`}
                 >
                   <span className="text-sm opacity-70">
@@ -492,43 +558,101 @@ export default function Hvac() {
             </div>
           </div>
 
-          {/* Right content */}
+          {/* Right Content */}
           {selectedArea && (
-            <div className="bg-white rounded-lg shadow overflow-hidden w-full md:w-3/4 mt-4 md:mt-0">
-              <div className="flex flex-col md:flex-row">
-                {/* Text */}
-                <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-                  <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-                    {selectedArea.subtitle}
-                  </h3>
-                  <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                  <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-                    GET A QUOTE
-                  </button>
-                </div>
+            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
+            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+              <div
+                className="
+    p-6 flex flex-col justify-center w-full md:w-1/2
+    rounded-lg                
+    md:rounded-none          
+    md:rounded-tl-lg md:rounded-bl-lg
+    shadow border border-[#808080] md:border-r-0
+  "
+              >
+                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                  {selectedArea.subtitle}
+                </h3>
+                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                  More{" "}
+                  <span className=" p-1 rounded-full text-[#000080]">→</span>
+                </button>
+              </div>
 
-                {/* Image */}
-                <div className="w-full md:w-1/2">
-                  <img
-                    src={selectedArea.image}
-                    alt={selectedArea.subtitle}
-                    className="w-full h-64 md:h-full object-cover"
-                  />
-                </div>
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src={selectedArea.image}
+                  alt={selectedArea.subtitle}
+                  className="w-full h-64 md:h-98 object-cover"
+                />
               </div>
             </div>
           )}
         </div>
       </section>
+      {/* explore content */}
 
       {/* capiablites */}
-      
+      <section className="w-full bg-white py-12 px-6 md:px-34 lg:px-20">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Left Side - Image */}
+          <div className="relative">
+            <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
+            <img
+              src="/menupageimg/peb8.jpg" // replace with your real factory image
+              alt="Manufacturing Facility"
+              width={700}
+              height={450}
+              className="relative rounded-2xl shadow-lg"
+            />
+          </div>
+
+          {/* Right Side - Content */}
+          <div>
+            <div className="flex items-center mb-4 ">
+              <h2 className="text-3xl md:text-3xl font-bold text-[#000080]">
+                Our Manufacturing Capabilities
+              </h2>
+            </div>
+
+            <p className="text-gray-600 leading-relaxed mb-4">
+              <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
+              fully-integrated PEB manufacturing facility where every stage—
+              from design and fabrication to finishing and dispatch—takes place
+              under one roof. This seamless process ensures superior quality,
+              faster delivery, and reliable performance.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Our infrastructure is powered by a highly skilled team of
+              engineers, supported with state-of-the-art CNC machinery, robotic
+              welding systems, and high-capacity fabrication tools. These
+              advanced resources enable us to deliver large-scale{" "}
+              <span className="font-semibold">steel structures</span> with
+              precision and efficiency.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed">
+              With strict quality checks at every stage—from automated
+              fabrication to final assembly—we ensure that all components meet
+              global industry standards. Whether it s a standard warehouse,
+              factory building, or a customized industrial project,{" "}
+              <strong>Landsking Infra Pvt. Ltd.</strong> provides dependable,
+              cost-effective, and timely{" "}
+              <span className="font-semibold">PEB solutions across India.</span>
+            </p>
+          </div>
+        </div>
+      </section>
       {/* endcapill */}
       {/* business benifts */}
-      <section className="bg-[#272727] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#000080] text-white py-10 md:px-35">
+        <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits of Pre-Engineered Buildings
+            Inclusive Services{" "}
           </h2>
 
           {/* Cards Row */}
@@ -536,14 +660,14 @@ export default function Hvac() {
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-gray-900 rounded-lg overflow-hidden shadow-lg"
+                className="bg-white rounded-lg overflow-hidden shadow-lg"
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
-                  <p className="text-sm text-gray-300 font-semibold mb-2 md:text-xl">
+                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-gray-400">{item.description}</p>
+                  <p className="text-sm text-black">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -553,15 +677,15 @@ export default function Hvac() {
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronLeft className="w-6 h-6 text-white" />
+              <ChevronLeft className="w-6 h-6 text-black" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronRight className="w-6 h-6 text-white" />
+              <ChevronRight className="w-6 h-6 text-black" />
             </button>
           </div>
         </div>
@@ -569,52 +693,62 @@ export default function Hvac() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className=" mx-auto px-6 md:px-20">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            SPECIFICATIONS OF INDUSTRIAL SHED COMPONENTS
+            Steel Tubes for Building and Infrastructure
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Text Section */}
-            <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
-              <li>
-                <span className="font-bold">Wall:</span> PUF / EPS insulated
-                sandwich panels of 50 / 60mm with PPGI sheet on both sides.
-              </li>
-              <li>
-                <span className="font-bold">Roof:</span> PUF / EPS insulated
-                sandwich panels of 30 / 40 mm or PPGI roofing sheets.
-              </li>
-              <li>
-                <span className="font-bold">Doors:</span> Insulated doors with
-                all accessories will be provided from our manufacturing setup.
-              </li>
-              <li>
-                <span className="font-bold">Windows:</span> Aluminum anodized
-                sliding windows will be provided from our manufacturing setup.
-              </li>
-              <li>
-                <span className="font-bold">Structure and Accessories:</span>{" "}
-                All required supporting accessories and structures will be
-                provided before project delivery.
-              </li>
-              <li>
-                <span className="font-bold">
-                  Electrical fittings, sanitary fittings, beds, etc.,
-                </span>{" "}
-                will be provided as per client requirements and fitted as per
-                the contract.
-              </li>
-            </ul>
+            {/* Left: Text Section */}
+            <div>
+              <p className="text-gray-700 text-base leading-relaxed mb-4">
+                With the growing adoption of virtual technologies in
+                construction, the role of lean Building Information Models (BIM)
+                and pre-engineering has become vital. Globally, infrastructure
+                upgrades are being driven by robotics, automation, drone-based
+                surveys, and even 3D printing solutions.
+              </p>
 
-            {/* Image Section */}
+              <p className="text-gray-700 text-base leading-relaxed mb-4">
+                Key infrastructure sectors where{" "}
+                <span className="font-bold">Landsking Infra Pvt. Ltd.</span>{" "}
+                provides support include:
+              </p>
+
+              <ul className="list-disc ml-6 space-y-2 text-gray-700 text-base leading-relaxed mb-4">
+                <li>Power and Energy</li>
+                <li>
+                  Transportation Hubs (Rail & Metro Stations, Bus Terminals,
+                  Tunnels, Airports)
+                </li>
+                <li>Stadiums and Leisure Centres</li>
+              </ul>
+
+              <p className="text-gray-700 text-base leading-relaxed mb-4">
+                This technological disruption is reshaping the way
+                infrastructure is designed, built, and maintained—ensuring
+                sustainability, efficiency, and safety. Construction firms that
+                embrace these advancements can overcome challenges in delivering
+                modern infrastructure projects.
+              </p>
+
+              <p className="text-gray-700 text-base leading-relaxed">
+                As urban areas continue to transform,{" "}
+                <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
+                earned the trust of clients by offering expertise that minimizes
+                risks, enhances public safety, and integrates automated systems
+                for long-term reliability.
+              </p>
+            </div>
+
+            {/* Right: Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <img
                 src="/menupageimg/peb9.jpeg"
-                alt="PUF panels in industrial shed"
+                alt="Steel tubes infrastructure"
                 width={600}
                 height={400}
                 className="rounded-md shadow-md relative z-20"
@@ -623,53 +757,162 @@ export default function Hvac() {
           </div>
         </div>
       </section>
+
       {/* end special section */}
-      <PlatformP/>
-   
-      {/* end why choose us */}
-      <Brand />
-
-      {/* faqs */}
-      <section className="max-w-4xl mx-auto px-4 py-12">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
-            Frequently Asked Questions
+      <section className="bg-white py-12">
+        <div className=" mx-auto px-6 md:px-20">
+          {/* Title */}
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
+            Our Support
+            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
-          {/* Yellow divider line */}
-          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
-        </div>
 
-        {/* FAQ Items */}
-        <div className="border-t border-gray-200">
-          {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
-              {/* Question */}
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
-              >
-                <span
-                  className={`font-medium transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
-                  }`}
-                >
-                  {faq.question}
-                </span>
-                <span className="text-gray-500 text-sm">
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
-
-              {/* Answer */}
-              {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
-              )}
+          {/* Support Rows */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700 text-base leading-relaxed">
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">
+                Research & Surveys
+              </h3>
+              <p>
+                Surveys are conducted through testing, research, site
+                inspections, and studying existing infrastructure.
+              </p>
             </div>
-          ))}
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">
+                Compliance & Policies
+              </h3>
+              <p>
+                All planning and designing considers compliance standards,
+                including adherence to environmental policies where required.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">
+                Collaborative Solutions
+              </h3>
+              <p>
+                Solutions are developed after detailed discussions with internal
+                teams to ensure practical and efficient outcomes.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">
+                Safety Standards
+              </h3>
+              <p>
+                Designs are developed to meet safety standards, ensuring
+                properties perform optimally and securely.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">Certifications</h3>
+              <p>
+                Environmental and project-specific certifications are provided
+                to ensure approvals and green signals for commencement.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">
+                Energy Sector Support
+              </h3>
+              <p>
+                Evaluations, lifecycle studies, inspections, and regulatory
+                checks are carried out for optimal energy asset performance.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">Virtual Models</h3>
+              <p>
+                Virtual models guide the project seamlessly from the initial
+                stages through to final completion.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">
+                Feasibility Studies
+              </h3>
+              <p>
+                Detailed feasibility studies are conducted for ambitious
+                projects, including large-scale highway developments.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
+              <h3 className="font-bold text-[#000080] mb-2">
+                3D Data & Analysis
+              </h3>
+              <p>
+                We provide advanced 3D geometric designs and data analytics to
+                support successful project execution.
+              </p>
+            </div>
+          </div>
+
+          {/* About Section */}
+          <div className="mt-12 text-center text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            <p>
+              Over the last 40 years,{" "}
+              <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
+              fulfilled its promise to numerous clients across the AEC industry
+              — from contractors and architects to fabricators, consultants, MEP
+              contractors, PEB companies, EPCs, OEMs, solution providers, and
+              system integrators. By partnering with us, you can avoid
+              unnecessary overheads and ensure smooth progress in urban planning
+              and infrastructure projects.
+            </p>
+          </div>
         </div>
       </section>
-      {/* end faqs */}
+
+      {/* why choose us */}
+      <section className="w-full bg-white py-16 px-6  lg:px-20 md:px-20">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
+              Become a Customer
+            </h2>
+
+            <p>
+              Landsking Infra Pvt. Ltd. is your one-stop solution for all
+              building and infrastructure requirements. Our pre-engineered steel
+              buildings are carefully designed and fabricated to match your
+              specific needs. Each structure is built in strict adherence to
+              international standards, with components meticulously engineered
+              for seamless compatibility. This ensures durability, efficiency,
+              and performance across every project we deliver.
+            </p>
+            <Link href="/contact">
+              <button className="border border-[#000080] mt-4 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+                GET A QUOTE
+              </button>
+            </Link>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative">
+            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
+            <img
+              src="/industry.jpg" // replace with your image
+              alt="Why Choose Us"
+              width={700}
+              height={450}
+              className="relative rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      {/* end why choose us */}
+
+      <ContactSection />
 
       <Footer />
     </>

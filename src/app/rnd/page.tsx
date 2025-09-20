@@ -20,6 +20,7 @@ import PebBrandP from "yes/Components/PebBrandP";
 import Rndsolution from "yes/Components/Rndsolution";
 import Rndstories from "yes/Components/Rndstories";
 import Rndfooter from "yes/Components/Rndfooter";
+import Rndaboutus from "yes/Components/Rndaboutus";
 export default function Rnd() {
   const router = useRouter();
 
@@ -86,7 +87,7 @@ export default function Rnd() {
     <>
       <Rndheader />
       {/* rnd banneer */}
-      <section className="relative w-full h-[84vh] overflow-hidden md:px-30 h-[94vh]">
+      <section className="relative w-full h-[84vh] overflow-hidden md:px-17 h-[94vh]">
         {/* Background Image with AnimatePresence */}
         <AnimatePresence mode="wait">
           <motion.img
@@ -200,7 +201,7 @@ export default function Rnd() {
 
       {/* end banner */}
       <Rndproduct />
-      <AboutPebP />
+      <Rndaboutus />
       <Rndservice />
       <Rndexplore />
       <Rndsolution />

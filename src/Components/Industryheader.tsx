@@ -159,16 +159,18 @@ export default function Industryheader() {
         }`}
       >
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" className="flex-shrink-0">
           <Image
-            src="/logo.jpeg"
-            alt="logo"
-            width={scrolled ? 120 : 150}
-            height={scrolled ? 40 : 50}
+            src={scrolled ? "/finallogo.png" : "/whitelogo.png"}
+            alt="Logo"
+            width={150} // base width
+            height={50} // base height
             priority
+            className={`transition-all duration-300 ${
+              scrolled ? "w-32 h-14" : "w-38 h-16"
+            }`}
           />
         </Link>
-
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -177,7 +179,7 @@ export default function Industryheader() {
                 href={link.href}
                 className={`font-light text-lg tracking-wide ${
                   scrolled ? "text-black" : "text-white"
-                } hover:text-orange-500`}
+                } hover:text-[#000080]`}
               >
                 {link.name}
               </Link>
@@ -202,7 +204,7 @@ export default function Industryheader() {
                                 <li key={item.name}>
                                   <Link
                                     href={item.href}
-                                    className="block text-sm font-light text-gray-700 hover:text-orange-500"
+                                    className="block text-sm font-light text-gray-700 hover:text-[#000080]"
                                   >
                                     {item.name}
                                   </Link>
@@ -225,7 +227,7 @@ export default function Industryheader() {
                             <li key={item.name}>
                               <Link
                                 href={item.href}
-                                className="block px-4 py-2 text-sm font-light text-gray-700 hover:text-orange-500"
+                                className="block px-4 py-2 text-sm font-light text-gray-700 hover:text-[#000080]"
                               >
                                 {item.name}
                               </Link>

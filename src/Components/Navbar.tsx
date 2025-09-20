@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className=" mx-auto flex items-center justify-between px-4 py-3 md:px-10">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img src="/landsking.png" alt="Logo" className="h-15 w-auto" />
+          <img src="/finallogo.png" alt="Logo" className="h-15 w-auto" />
         </Link>
         <div className="flex items-center space-x-3 md:hidden">
           <button>
@@ -178,7 +178,7 @@ export default function Navbar() {
                   </button>
                   <button
                     onMouseEnter={() => handleImageChange("/publicoffice.jpg")}
-                    onClick={() => (window.location.href = "/publicspace")}
+                    onClick={() => (window.location.href = "/publicoffice")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Public Office
@@ -198,7 +198,9 @@ export default function Navbar() {
                         "//expertiseimages/STRUCTURAL ENGINEERING SERVICES.jpg"
                       )
                     }
-                    onClick={() => (window.location.href = "/structuralsteel")}
+                    onClick={() =>
+                      (window.location.href = "/industrybuildingsolutions")
+                    }
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Industry Building Solutions
@@ -284,7 +286,7 @@ export default function Navbar() {
                   </button>{" "}
                   <button
                     onMouseEnter={() => handleImageChange("/industry.jpg")}
-                    onClick={() => (window.location.href = "/fire-safety")}
+                    onClick={() => (window.location.href = "/firesaftey")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Fire Saftey

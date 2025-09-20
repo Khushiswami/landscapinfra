@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function AcquisitionsSection() {
   return (
-    <section className="w-full mx-auto px-4 py-12 md:px-14">
+    <section className="w-full mx-auto px-4 py-12 md:px-25">
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-2xl md:text-3xl font-bold mt-20 md:mt-30 text-[#000080]">

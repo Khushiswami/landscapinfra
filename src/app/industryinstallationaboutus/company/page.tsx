@@ -10,13 +10,16 @@ import CompanySlider from "yes/Components/companyComponent/CompanySlider";
 import TimelineTabs from "yes/Components/companyComponent/TimelineTabs";
 import ProgressSection from "yes/Components/companyComponent/ProgressSection";
 import AcquisitionsSection from "yes/Components/companyComponent/AcquisitionsSection";
+import Industryheader from "yes/Components/Industryheader";
+import IndustryHeaderW from "yes/Components/PebheaderW";
+import Industryheadsecond from "yes/Components/Industryheadsecond";
 
 export default function Company() {
   const [active, setActive] = useState(0);
 
   return (
     <>
-      <IndustryHead />
+      <Industryheadsecond />
       <CompanySlider />
       <TimelineTabs />
       <ProgressSection />

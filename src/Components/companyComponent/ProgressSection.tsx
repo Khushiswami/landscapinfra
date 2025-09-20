@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProgressSection() {
   return (
-    <section className="w-full  mx-auto px-5 py-6 md:px-14">
+    <section className="w-full  mx-auto px-5 py-6 md:px-25">
       <div className="grid md:grid-cols-4 gap-4 items-stretch">
         {/* Left Card */}
         <div className="bg-gray-100 rounded-lg p-6 shadow-sm flex flex-col justify-center">

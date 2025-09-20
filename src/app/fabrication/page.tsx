@@ -6,6 +6,7 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 import IndustryHeader from "yes/Components/Industryheader";
+import Navbar from "yes/Components/Navbar";
 
 // Card Props Type
 type CardProps = {
@@ -67,7 +68,7 @@ export default function Fabrication() {
 
   return (
     <>
-      <IndustryHeader/>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="w-full min-h-[300px] md:min-h-[500px] flex flex-col md:flex-row">
@@ -79,7 +80,7 @@ export default function Fabrication() {
         >
           <div className="text-white text-center relative z-10 px-4">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-snug tracking-wide">
-          Fabrication
+              Fabrication
             </h1>
           </div>
         </div>

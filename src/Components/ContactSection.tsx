@@ -56,15 +56,15 @@ export default function ContactSection() {
             delivered on time.
           </p>
           <a href="/contact">
-            <button className="bg-[#000080] text-white px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-yellow-400 transition">
+            <button className="bg-[#000080] text-white px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-[#000] transition">
               Contact Us
-              <span className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900">
+              <span className="w-8 h-8 flex items-center justify-center rounded-full bg-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
-                  stroke="white"
+                  stroke="#000080"
                   className="w-4 h-4"
                 >
                   <path
