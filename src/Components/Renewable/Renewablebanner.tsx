@@ -10,28 +10,34 @@ export default function Renewablebanner() {
 
   const slides = [
     {
-      title: "PRE ENGINEERED BUILDINGS",
-      desc: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
+      title: "Rooftop Solar",
+      desc: "Turn your rooftop into a clean energy source and cut electricity costs.",
       video: "/video.mp4",
-      link: "/preEngineeredBuildings",
+      link: "/contact",
     },
     {
-      title: "Structural Steel",
-      desc: "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
+      title: "Ground-Mounted Solar",
+      desc: "Harness open land to generate large-scale, cost-effective solar power.",
       video: "/video.mp4",
-      link: "/structuralsteel",
+      link: "/contact",
     },
     {
-      title: " EPC Solutions ",
-      desc: "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
+      title: "On-Grid & Hybrid Solar",
+      desc: "Blend grid power with solar for reliable, sustainable energy solutions.",
       video: "/video.mp4",
-      link: "/epcsolutions",
+      link: "/contact",
     },
     {
-      title: "Project Management Consultancy",
-      desc: "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
+      title: "Net Metering & Open Access",
+      desc: "Export surplus solar power and save through net metering benefits.",
       video: "/video.mp4",
-      link: "/projectmanagementconsultancy",
+      link: "/contact",
+    },
+    {
+      title: "Battery-Integrated Solar",
+      desc: "Store excess solar energy for round-the-clock power and resilience.",
+      video: "/video.mp4",
+      link: "/contact",
     },
   ];
 
@@ -81,7 +87,7 @@ export default function Renewablebanner() {
               onClick={() => router.push(slides[active].link)}
               className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
             >
-              <span>Learn More</span>
+              <span>More</span>
               <IoIosArrowForward className="w-5 h-5" />
             </button>
           </motion.div>

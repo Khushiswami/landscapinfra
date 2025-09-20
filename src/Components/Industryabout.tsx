@@ -104,7 +104,7 @@ export default function Industryabout() {
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-sm shadow-lg hover:border-blue-400 transition-all duration-500">
+          <div className="relative w-full h-64 sm:h-72 md:h-75 overflow-hidden rounded-sm shadow-lg hover:border-blue-400 transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -117,7 +117,7 @@ export default function Industryabout() {
 
           {/* Two Images in a Row */}
           <div className="grid grid-cols-2 gap-1">
-            <div className="relative w-full h-40 sm:h-48 overflow-hidden rounded-sm transform transition-transform duration-700 ">
+            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
                 src="/engineer.jpg"
                 alt="Building 1"
@@ -125,9 +125,9 @@ export default function Industryabout() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full h-40 sm:h-48 overflow-hidden rounded-sm transform transition-transform duration-700 ">
+            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
-                src="/attt.png"
+                src="/cut.png"
                 alt="Building 2"
                 fill
                 className="object-cover"
