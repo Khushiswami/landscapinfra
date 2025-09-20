@@ -83,7 +83,7 @@ export default function Navbar() {
                     onClick={() =>
                       (window.location.href = "/industryinstallation")
                     } // redirect on click
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Industry Installation
                   </button>
@@ -91,7 +91,7 @@ export default function Navbar() {
                   <button
                     onMouseEnter={() => handleImageChange("/engineer.jpg")}
                     onClick={() => (window.location.href = "/rnd")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Engineering R&amp;D
                   </button>
@@ -102,7 +102,7 @@ export default function Navbar() {
                   <button
                     onMouseEnter={() => handleImageChange("/renewable.jpg")}
                     onClick={() => (window.location.href = "/renewableenergy")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Renewable Energy
                   </button>
@@ -112,7 +112,7 @@ export default function Navbar() {
                     onClick={() =>
                       (window.location.href = "/preEngineeredBuildings")
                     }
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Pre Engineered Building
                   </button>
@@ -122,7 +122,7 @@ export default function Navbar() {
                     onClick={() =>
                       (window.location.href = "/realStateDevlopment")
                     }
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Real Estate Development
                   </button>
@@ -165,21 +165,21 @@ export default function Navbar() {
                       )
                     }
                     onClick={() => (window.location.href = "/heavyengineering")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Heavy Engineering
                   </button>
                   <button
                     onMouseEnter={() => handleImageChange("/office.jpg")}
                     onClick={() => (window.location.href = "/officespace")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Office Space
                   </button>
                   <button
                     onMouseEnter={() => handleImageChange("/publicoffice.jpg")}
                     onClick={() => (window.location.href = "/publicspace")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Public Office
                   </button>
@@ -188,7 +188,7 @@ export default function Navbar() {
                     onClick={() =>
                       (window.location.href = "/waterinfrastructure")
                     }
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Water Infrastructure
                   </button>
@@ -199,7 +199,7 @@ export default function Navbar() {
                       )
                     }
                     onClick={() => (window.location.href = "/structuralsteel")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Industry Building Solutions
                   </button>
@@ -208,7 +208,7 @@ export default function Navbar() {
                       handleImageChange("/expertiseimages/Green buildings.png")
                     }
                     onClick={() => (window.location.href = "/greenbuilding")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Green Building
                   </button>{" "}
@@ -217,7 +217,7 @@ export default function Navbar() {
                       handleImageChange("/expertiseimages/Mining Metals.jpg")
                     }
                     onClick={() => (window.location.href = "/miningandmetals")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Mining and Metals
                   </button>
@@ -230,7 +230,7 @@ export default function Navbar() {
                     onClick={() =>
                       (window.location.href = "/simulationservice")
                     }
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Simulation Service
                   </button>
@@ -241,7 +241,7 @@ export default function Navbar() {
                       )
                     }
                     onClick={() => (window.location.href = "/otherindustries")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Other Industries
                   </button>
@@ -251,7 +251,7 @@ export default function Navbar() {
                         "/expertiseimages/Cold Storage and warehouse.jpg"
                       )
                     }
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Cold Storage &amp; Warehouse
                   </button>
@@ -262,7 +262,7 @@ export default function Navbar() {
                       )
                     }
                     onClick={() => (window.location.href = "/solar")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Solar Services
                   </button>
@@ -271,21 +271,21 @@ export default function Navbar() {
                       handleImageChange("/expertiseimages/HVAC.jpg")
                     }
                     onClick={() => (window.location.href = "/hvac")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     HVAC Services
                   </button>
                   <button
                     onMouseEnter={() => handleImageChange("/fire.jpg")}
                     onClick={() => (window.location.href = "/fabrication")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Fabrication
                   </button>{" "}
                   <button
                     onMouseEnter={() => handleImageChange("/industry.jpg")}
                     onClick={() => (window.location.href = "/fire-safety")}
-                    className="hover:text-teal-300 block text-left w-full"
+                    className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Fire Saftey
                   </button>
@@ -325,16 +325,16 @@ export default function Navbar() {
             {openDropdown === "insights" && (
               <div className="fixed left-0 top-[85px] w-full py-10 bg-[#0a2351] text-white shadow-lg rounded-none z-50 border-t border-gray-100">
                 <div className="grid grid-cols-4 gap-6 text-center">
-                  <Link href="/careers" className="hover:text-teal-300">
+                  <Link href="/careers" className="hover:text-[#8080FF]">
                     Careers
                   </Link>
-                  <Link href="/blogs" className="hover:text-teal-300">
+                  <Link href="/blogs" className="hover:text-[#8080FF]">
                     Blogs
                   </Link>
-                  <Link href="/whitepapers" className="hover:text-teal-300">
+                  <Link href="/whitepapers" className="hover:text-[#8080FF]">
                     Whitepapers
                   </Link>
-                  <Link href="/brochures" className="hover:text-teal-300">
+                  <Link href="/brochures" className="hover:text-[#8080FF]">
                     Brochures
                   </Link>
                 </div>
@@ -358,16 +358,16 @@ export default function Navbar() {
             {openDropdown === "about" && (
               <div className="fixed left-0 top-[85px] w-full py-10 bg-[#0a2351] text-white shadow-lg rounded-none z-50 border-t border-gray-100">
                 <div className="grid grid-cols-4 gap-6 text-center">
-                  <Link href="/mission" className="hover:text-teal-300">
+                  <Link href="/mission" className="hover:text-[#8080FF]">
                     Mission
                   </Link>
-                  <Link href="/leadership" className="hover:text-teal-300">
+                  <Link href="/leadership" className="hover:text-[#8080FF]">
                     Leadership
                   </Link>
-                  <Link href="/innovation" className="hover:text-teal-300">
+                  <Link href="/innovation" className="hover:text-[#8080FF]">
                     Innovation
                   </Link>
-                  <Link href="/history" className="hover:text-teal-300">
+                  <Link href="/company" className="hover:text-[#8080FF]">
                     History
                   </Link>
                 </div>

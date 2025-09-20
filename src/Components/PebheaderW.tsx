@@ -139,7 +139,7 @@ export default function IndustryHeaderW() {
       name: "Sectors",
       href: "/sectors",
       subItems: [
-        { name: "Industrial Sector", href: "/IndustrialBuildingsConstruction" },
+        // { name: "Industrial Sector", href: "/IndustrialBuildingsConstruction" },
         { name: "Construction Sector", href: "/construction" },
         { name: "Infrastructure Sector", href: "/InfrastructureSector" },
         { name: "institutional Sector", href: "/InstitutionalSector" },

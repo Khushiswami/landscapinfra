@@ -8,43 +8,43 @@ export default function InnovationImpact() {
   const stats = [
     {
       id: 1,
-      icon: <FaPlane className="text-[#005792] text-6xl" />,
+      icon: <FaPlane className="text-[#000080] text-6xl" />,
       value: "100%",
       text: "of all planes, including solar-powered, are designed with Dassault Systèmes software.",
     },
     {
       id: 2,
-      icon: <MdOutlineMedicalServices className="text-[#005792] text-6xl" />,
+      icon: <MdOutlineMedicalServices className="text-[#000080] text-6xl" />,
       value: "Over 50%",
       text: "of drugs and medical devices are designed with Dassault Systèmes solutions.",
     },
     {
       id: 3,
-      icon: <FaCar className="text-[#005792] text-6xl" />,
+      icon: <FaCar className="text-[#000080] text-6xl" />,
       value: "100%",
       text: "of EV manufacturers are innovating with our design and manufacturing solutions.",
     },
     {
       id: 4,
-      icon: <FaUsers className="text-[#005792] text-6xl" />,
+      icon: <FaUsers className="text-[#000080] text-6xl" />,
       value: "8,000+",
       text: "active clinical trials are run with our MEDIDATA products.",
     },
   ];
 
   return (
-    <section className="w-full bg-white py-16 px-4">
+    <section className="w-full bg-white py-16 px-4  mt-20 md:mt-30">
       {/* Heading */}
-      <div className="text-center max-w-4xl mx-auto mb-12">
+      <div className="text-center  mx-auto mb-12 md:mx-20">
         <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
           Our Innovations Create a Positive Impact Everywhere
         </h2>
-        <p className="text-gray-600 text-base leading-relaxed">
+        <p className="text-gray-600 text-base leading-relaxed text-center">
           Since 1981, Dassault Systèmes, a{" "}
-          <a href="#" className="text-blue-600 underline hover:text-blue-800">
+          <a href="#" className="text-[#000080] underline hover:text-black">
             science-based company
           </a>
-         has provided solutions for sustainable innovation to a wide range of
+          has provided solutions for sustainable innovation to a wide range of
           industries. While we started out helping drive the worlds greatest
           industrial transformations, were now also applying our knowledge and
           know-how to transform the organic world.
@@ -68,7 +68,7 @@ export default function InnovationImpact() {
 
       {/* Button */}
       <div className="text-center mt-12">
-        <button className="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-full hover:bg-blue-600 hover:text-white transition">
+        <button className="px-6 py-2 border border-[#000080] text-[#000080] font-medium rounded-full hover:bg-black hover:border-black hover:text-white transition">
           Learn more facts
         </button>
       </div>

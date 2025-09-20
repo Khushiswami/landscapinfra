@@ -81,21 +81,23 @@ export default function LeadershipCards() {
               height={120}
               className="rounded-full mb-4"
             />
-            <h3 className="text-lg font-semibold">{leader.name}</h3>
+            <h3 className="text-lg font-semibold text-[#000080]">
+              {leader.name}
+            </h3>
             <p className="text-sm text-gray-600 mt-1">{leader.role}</p>
 
             {/* Buttons */}
             <div className="flex items-center justify-center gap-4 mt-6">
               <a
                 href="#"
-                className="flex items-center gap-2 text-blue-600 font-medium"
+                className="flex items-center gap-2 text-[#000080]font-medium"
               >
-                <span className="w-8 h-8 flex items-center justify-center rounded-full border border-blue-600">
-                  <MdKeyboardArrowRight className="text-blue-600 text-lg" />
+                <span className="w-8 h-8 flex items-center justify-center rounded-full border border-[#000080]">
+                  <MdKeyboardArrowRight className="text-[#000080] text-lg" />
                 </span>
                 View profile
               </a>
-              <a href="#" className="text-blue-600 text-xl">
+              <a href="#" className="text-[#000080]text-xl">
                 <FaLinkedin />
               </a>
             </div>

@@ -3,7 +3,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { NavigationOptions } from 'swiper/types'; // Import from 'swiper/types'
+import { NavigationOptions } from "swiper/types"; // Import from 'swiper/types'
 import "swiper/css";
 import "swiper/css/navigation";
 import { useRef, useEffect, useState } from "react";
@@ -77,8 +77,8 @@ export default function CompanySlider({
   }, []);
 
   return (
-    <section className="py-12 relative bg-white">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold text-blue-900 mb-8">
+    <section className="py-12 relative bg-white mt-20 md:mt-30">
+      <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
         {heading}
       </h2>
       <h2 className="text-center text-sm md:text-lg text-gray-500 mb-8">
@@ -98,8 +98,10 @@ export default function CompanySlider({
               nextEl: nextRef.current,
             }}
             onBeforeInit={(swiper) => {
-              (swiper.params.navigation as NavigationOptions).prevEl = prevRef.current;
-              (swiper.params.navigation as NavigationOptions).nextEl = nextRef.current;
+              (swiper.params.navigation as NavigationOptions).prevEl =
+                prevRef.current;
+              (swiper.params.navigation as NavigationOptions).nextEl =
+                nextRef.current;
             }}
             breakpoints={{
               0: { slidesPerView: 1, slidesPerGroup: 1 },
@@ -112,15 +114,15 @@ export default function CompanySlider({
               <SwiperSlide key={idx} className="h-full flex">
                 <div className="bg-gray-50 rounded-lg shadow-sm p-8 flex flex-col h-120 w-full">
                   <div className="flex flex-col flex-grow">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-700 mb-4">
+                    <h2 className="text-2xl md:text-5xl font-bold text-gray-700 mb-4">
                       {item.year}
                     </h2>
 
-                    <p className="uppercase text-xs font-semibold text-blue-700 mb-3 tracking-wide">
+                    <p className="uppercase text-xs font-semibold text-[#000080] mb-3 tracking-wide">
                       {item.subtitle}
                     </p>
 
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                    <h3 className="text-xl md:text-2xl font-bold text-black mb-3">
                       {item.title}
                     </h3>
 
@@ -147,13 +149,13 @@ export default function CompanySlider({
             {/* Navigation Buttons */}
             <div
               ref={prevRef}
-              className="absolute top-1/2 left-2 -translate-y-1/2 bg-white text-blue-900 w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10 rounded-full"
+              className="absolute top-1/2 left-2 -translate-y-1/2 bg-white text-[#000080] w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10 rounded-full"
             >
               ←
             </div>
             <div
               ref={nextRef}
-              className="absolute top-1/2 right-2 -translate-y-1/2 bg-white text-blue-900 w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10 rounded-full"
+              className="absolute top-1/2 right-2 -translate-y-1/2 bg-white text-[#000080] w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10 rounded-full"
             >
               →
             </div>

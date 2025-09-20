@@ -28,7 +28,6 @@ export default function LeadershipBanner() {
 
       {/* Leader Cards */}
       <div className="max-w-6xl mx-auto -mt-24 relative z-30 grid md:grid-cols-2 gap-6 px-4">
-        
         {/* Card 1 */}
         <div className="bg-[#F4F6F8] shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center gap-6">
           <Image
@@ -39,7 +38,9 @@ export default function LeadershipBanner() {
             className="rounded-full flex-shrink-0"
           />
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold">Bernard Charlès</h3>
+            <h3 className="text-xl font-semibold text-[#000080]">
+              Bernard Charlès
+            </h3>
             <p className="text-sm text-gray-500 mb-3">Executive Chairman</p>
             <p className="text-gray-600 text-sm leading-relaxed tracking-widest">
               Bernard Charlès has positioned Dassault Systèmes, world leader in
@@ -51,17 +52,17 @@ export default function LeadershipBanner() {
             <div className="flex items-center justify-center md:justify-start gap-3 mt-4">
               <a
                 href="#"
-                className="text-blue-600 font-semibold flex items-center gap-2"
+                className="text-[#000080] font-semibold flex items-center gap-2"
               >
-                <span className="w-7 h-7 flex items-center justify-center rounded-full border border-blue-600">
-                  <MdKeyboardArrowRight className="text-blue-600 text-lg" />
+                <span className="w-7 h-7 flex items-center justify-center rounded-full border border-[#000080]">
+                  <MdKeyboardArrowRight className="text-[#000080] text-lg" />
                 </span>
                 View profile
               </a>
-              <a href="#" className="text-blue-600 text-xl">
+              <a href="#" className="text-[#000080] text-xl">
                 <FaLinkedin />
               </a>
-              <a href="#" className="text-blue-600 text-xl">
+              <a href="#" className="text-[#000080] text-xl">
                 <FaTimes />
               </a>
             </div>
@@ -78,8 +79,12 @@ export default function LeadershipBanner() {
             className="rounded-full flex-shrink-0"
           />
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold">Pascal Daloz</h3>
-            <p className="text-sm text-gray-500 mb-3">Chief Executive Officer</p>
+            <h3 className="text-xl font-semibold text-[#000080]">
+              Pascal Daloz
+            </h3>
+            <p className="text-sm text-gray-500 mb-3">
+              Chief Executive Officer
+            </p>
             <p className="text-gray-600 text-sm leading-relaxed tracking-widest">
               With his ability to embrace future trends and bring together the
               most original talents, Pascal Daloz has made a key contribution to
@@ -89,23 +94,22 @@ export default function LeadershipBanner() {
             <div className="flex items-center justify-center md:justify-start gap-3 mt-4">
               <a
                 href="#"
-                className="text-blue-600 font-semibold flex items-center gap-2"
+                className="text-[#000080] font-semibold flex items-center gap-2"
               >
-                <span className="w-7 h-7 flex items-center justify-center rounded-full border border-blue-600">
-                  <MdKeyboardArrowRight className="text-blue-600 text-lg" />
+                <span className="w-7 h-7 flex items-center justify-center rounded-full border border-[#000080]">
+                  <MdKeyboardArrowRight className="text-[#000080] text-lg" />
                 </span>
                 View profile
               </a>
-              <a href="#" className="text-blue-600 text-xl">
+              <a href="#" className="text-[#000080] text-xl">
                 <FaLinkedin />
               </a>
-              <a href="#" className="text-blue-600 text-xl">
+              <a href="#" className="text-[#000080] text-xl">
                 <FaTimes />
               </a>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
