@@ -77,7 +77,7 @@ export default function IndustrialBuildingsConstruction() {
           }}
         >
           <div className="text-white text-center relative z-10">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+            <h1 className="text-3xl md:text-6xl font-bold leading-snug tracking-wide">
               Special Buildings
             </h1>
           </div>
@@ -89,7 +89,7 @@ export default function IndustrialBuildingsConstruction() {
         <div className="container mx-auto px-2 sm:px-4">
           <div className="text-center mb-8 sm:mb-10">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-             Prefab Construction of Specialized Buildings
+              Prefab Construction of Specialized Buildings
             </h2>
             <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
@@ -97,12 +97,19 @@ export default function IndustrialBuildingsConstruction() {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-               We specialize in the design and manufacturing of versatile prefabricated structures, including K-houses, liftable porta cabins, Mi Homes, control pulpits, and soundproof enclosures. With over 25 years of experience in prefabrication,
-                we deliver durable, industry-compliant solutions tailored to a wide range of applications.
+                We specialize in the design and manufacturing of versatile
+                prefabricated structures, including K-houses, liftable porta
+                cabins, Mi Homes, control pulpits, and soundproof enclosures.
+                With over 25 years of experience in prefabrication, we deliver
+                durable, industry-compliant solutions tailored to a wide range
+                of applications.
               </p>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-              Our capabilities go beyond special structures — offering high-quality prefabricated warehouses, factory buildings, industrial sheds, poultry shelters, cold storage units, and clean rooms.
-               Every structure is engineered for efficiency, sustainability, and long-term performance.
+                Our capabilities go beyond special structures — offering
+                high-quality prefabricated warehouses, factory buildings,
+                industrial sheds, poultry shelters, cold storage units, and
+                clean rooms. Every structure is engineered for efficiency,
+                sustainability, and long-term performance.
               </p>
 
               <div className="flex items-center gap-3 sm:gap-4">
@@ -134,31 +141,31 @@ export default function IndustrialBuildingsConstruction() {
               title="Control Room"
               description="We offer durable, customizable control pulpits engineered for efficient performance in industrial settings. Built using high-quality materials, these units prioritize operator safety, ease of use, and reliable functionality — making them ideal for a wide range of control and monitoring applications."
             />
-             <Card
+            <Card
               image="/sectorimg/cabinn.webp"
               icon={<FaWarehouse size={34} className="text-white" />}
               title="Prefab Porta Cabins Manufacturer"
               description="We manufacture high-quality, customizable porta cabins designed to meet diverse space and functional requirements. These portable units are perfect for construction sites, temporary offices, and on-site facilities, offering excellent durability, quick installation, and reliable convenience."
             />
-             <Card
+            <Card
               image="/sectorimg/acoustic.jpg"
               icon={<FaWarehouse size={34} className="text-white" />}
               title="Acoustic Enclosure"
               description="We offer advanced acoustic enclosures specifically designed to reduce industrial noise and enhance workplace comfort. Engineered with high-performance sound-absorbing panels, these enclosures help create quieter environments around machinery and equipment. Ideal for a variety of industries, they support noise compliance standards while boosting employee focus and productivity."
             />
-             <Card
+            <Card
               image="/sectorimg/khouse.jpg"
               icon={<FaWarehouse size={34} className="text-white" />}
               title="K-House"
               description="K-House represents a modern approach to sustainable living, blending innovative design with modular construction. Built for energy efficiency and comfort, it provides an eco-friendly housing solution ideal for individuals and families looking to embrace a greener, smarter lifestyle."
             />
-             <Card
+            <Card
               image="/sectorimg/mi.jpg"
               icon={<FaWarehouse size={34} className="text-white" />}
               title="Mi Homes"
               description="MI Homes are modern, sustainable, and cost-effective modular housing solutions designed for rapid installation and long-lasting performance. Perfect for residential, commercial, and emergency use, these homes provide comfortable living spaces equipped with contemporary amenities."
             />
-             <Card
+            <Card
               image="/sectorimg/liftable.jpeg"
               icon={<FaWarehouse size={34} className="text-white" />}
               title="Liftable Cabin"
@@ -177,8 +184,9 @@ export default function IndustrialBuildingsConstruction() {
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
         </div>
         <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
-          Our team is professionally trained to deliver quality and excellence, proficient at every stage of 
-          the manufacturing process—from gathering requirements to production and installation.
+          Our team is professionally trained to deliver quality and excellence,
+          proficient at every stage of the manufacturing process—from gathering
+          requirements to production and installation.
         </p>
       </section>
 

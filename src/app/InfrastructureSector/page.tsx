@@ -78,7 +78,7 @@ export default function InfrastructureSector() {
           }}
         >
           <div className="text-white text-center relative z-10 px-4">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+            <h1 className="text-3xl md:text-6xl font-bold leading-snug tracking-wide">
               Infrastructure Sector
             </h1>
           </div>

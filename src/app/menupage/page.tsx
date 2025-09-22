@@ -329,9 +329,8 @@ export default function Menupage() {
 
         {/* Content */}
         <div className="relative z-10  md:py-0 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Text */}
-          <div className="text-center  md:mt-10 lg:text-left order-1  ">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug  mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+          <div className="text-center mt-18 mb-10 md:mb-0 sm:mt-8 md:mt-10 lg:text-left order-1">
+            <h1 className="pt-8 sm:pt-0 text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
               Pre Engineered Buildings
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">

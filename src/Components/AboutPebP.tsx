@@ -107,7 +107,7 @@ export default function AboutPebP() {
           </p>
 
           {/* Stats with Icons */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
               return (

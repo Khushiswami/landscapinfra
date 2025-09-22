@@ -87,7 +87,7 @@ export default function Rnd() {
     <>
       <Rndheader />
       {/* rnd banneer */}
-      <section className="relative w-full h-[84vh] overflow-hidden md:px-17 h-[94vh]">
+      <section className="relative w-full h-[54vh] overflow-hidden md:px-17 h-[94vh]">
         {/* Background Image with AnimatePresence */}
         <AnimatePresence mode="wait">
           <motion.img

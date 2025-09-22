@@ -383,7 +383,7 @@ export default function PebheaderW() {
     { name: "Solutions", href: "/system" },
     {
       name: "Products",
-      href: "/products",
+      href: "/",
       subItems: [
         {
           title: "Pre Engineered Buildings",
@@ -425,7 +425,17 @@ export default function PebheaderW() {
         { title: "EPC Solutions", href: "/epcsolutions" },
       ],
     },
-    { name: "Sectors", href: "/sectors" },
+    {
+      name: "Sectors",
+      href: "",
+      subItems: [
+        { name: "Construction Sector", href: "/construction" },
+        { name: "Infrastructure Sector", href: "/InfrastructureSector" },
+        { name: "Institutional Sector", href: "/InstitutionalSector" },
+        { name: "Sports & Leisure", href: "/sportsLeisureBuilding" },
+        { name: "Special Buildings", href: "/specialBuilding" },
+      ],
+    },
     { name: "Projects", href: "/preengineredbuildingsprojects" },
     { name: "Insights", href: "/insight" },
     { name: "About", href: "/about" },

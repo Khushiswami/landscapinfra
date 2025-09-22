@@ -49,7 +49,7 @@ export default function Rndaboutus() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16 px-4 md:px-25 overflow-hidden">
+    <section className="relative py-16 px-4 md:px-0 overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
@@ -58,7 +58,7 @@ export default function Rndaboutus() {
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-sm shadow-lg hover:border-blue-400 transition-all duration-500">
+          <div className="relative w-full h-64 sm:h-72 md:h-75 overflow-hidden rounded-sm shadow-lg hover:border-blue-400 transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -71,7 +71,7 @@ export default function Rndaboutus() {
 
           {/* Two Images in a Row */}
           <div className="grid grid-cols-2 gap-1">
-            <div className="relative w-full h-40 sm:h-48 overflow-hidden rounded-sm transform transition-transform duration-700 ">
+            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
                 src="/engineer.jpg"
                 alt="Building 1"
@@ -79,9 +79,9 @@ export default function Rndaboutus() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full h-40 sm:h-48 overflow-hidden rounded-sm transform transition-transform duration-700 ">
+            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
-                src="/attt.png"
+                src="/cut.png"
                 alt="Building 2"
                 fill
                 className="object-cover"
@@ -107,7 +107,7 @@ export default function Rndaboutus() {
           </p>
 
           {/* Stats with Icons */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
               return (

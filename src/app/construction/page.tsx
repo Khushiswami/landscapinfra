@@ -76,7 +76,7 @@ export default function Construction() {
           }}
         >
           <div className="text-white text-center relative z-10">
-            <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+            <h1 className="text-3xl md:text-6xl font-bold leading-snug tracking-wide">
               Construction Sector
             </h1>
           </div>

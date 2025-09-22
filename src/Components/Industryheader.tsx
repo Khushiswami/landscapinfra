@@ -52,7 +52,7 @@ export default function Industryheader() {
 
   const navLinks: MenuItem[] = [
     { name: "Home", href: "/" },
-    { name: "Our Commitment", href: "/system" },
+    { name: "Our Commitment", href: "#" },
     {
       name: "Business Areas",
       href: "#",
