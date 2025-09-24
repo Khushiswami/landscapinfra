@@ -6,6 +6,9 @@ import { inter } from "../lib/fonts";
 export const metadata: Metadata = {
   title: "Landsking Infra",
   description: "Global clients partner with us to build projects.",
+  icons: {
+    icon: "/finallogo.png",
+  },
 };
 
 export default function RootLayout({
@@ -18,9 +21,7 @@ export default function RootLayout({
       {/* <body className={inter.className}>
         {children}
       </body> */}
-       <body className="font-newpanam">
-  {children}
-</body>
+      <body className="font-newpanam">{children}</body>
     </html>
   );
 }

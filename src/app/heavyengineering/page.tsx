@@ -194,7 +194,7 @@ export default function HeavyEngineering() {
       clearTimeout(slideTimer);
     };
   }, [activeSlide]);
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -241,6 +241,9 @@ export default function HeavyEngineering() {
     }, 6000);
     return () => clearInterval(interval);
   }, [slides.length]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {
   FaTools,
@@ -21,7 +21,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";import Brand from "yes/Components/Brand";
+import IndustryHeader from "yes/Components/Industryheader";
+import Brand from "yes/Components/Brand";
 import PebSlider from "yes/Components/PebSlider";
 import PlatformP from "yes/Components/PlatformP";
 
@@ -30,7 +31,9 @@ export default function Coldstorageandwarehouse() {
     question: string;
     answer: string;
   }
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // ===== Data =====
   const areas = [
     {
@@ -220,8 +223,16 @@ export default function Coldstorageandwarehouse() {
       title: "Prefabricated Multi-Storey Building Manufacturer",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Industrial Enclosures", link: "#" },
-    { image: "/expertise/third.png", title: "Cold Storage & Cold Room Manufacturer", link: "#" },
+    {
+      image: "/expertise/third.png",
+      title: "Industrial Enclosures",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Cold Storage & Cold Room Manufacturer",
+      link: "#",
+    },
     { image: "/expertise/third.png", title: "Factory Building", link: "#" },
     { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
@@ -260,7 +271,9 @@ export default function Coldstorageandwarehouse() {
   const [startIndex, setStartIndex] = useState(0);
   const visibleCards = 4; // Show 4 cards per row
   const prevSlide = () =>
-    setStartIndex((prev) => (prev === 0 ? possibilities.length - visibleCards : prev - 1));
+    setStartIndex((prev) =>
+      prev === 0 ? possibilities.length - visibleCards : prev - 1
+    );
   const nextSlide = () =>
     setStartIndex((prev) =>
       prev + visibleCards >= possibilities.length ? 0 : prev + 1
@@ -270,84 +283,90 @@ export default function Coldstorageandwarehouse() {
     .slice(startIndex, startIndex + visibleCards)
     .concat(
       startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(0, (startIndex + visibleCards) % possibilities.length)
+        ? possibilities.slice(
+            0,
+            (startIndex + visibleCards) % possibilities.length
+          )
         : []
     );
 
   const [isOpen, setIsOpen] = useState(false);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) => setOpenIndex(openIndex === index ? null : index);
+  const toggleFAQ = (index: number) =>
+    setOpenIndex(openIndex === index ? null : index);
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <>
-      <IndustryHeader/>
-    <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-  {/* Background video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <IndustryHeader />
+      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/60"></div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-  {/* Content */}
-  <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    {/* Left Text */}
-    <div className="text-center lg:text-left order-1">
-      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-        Pre Engineered Buildings
-      </h1>
-      <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-        Pre-Engineered Buildings (PEBs) are modern steel structures
-        designed, fabricated, and assembled using standardized components
-        for faster construction.
-      </p>
-    </div>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Left Text */}
+          <div className="text-center lg:text-left order-1">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+              Pre Engineered Buildings
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+              Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction.
+            </p>
+          </div>
 
-    {/* Right Slider */}
-    <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop
-        className="pb-10 max-w-[260px] sm:max-w-sm"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-56 sm:h-72 object-cover"
-              />
-              <div className="p-3 text-center">
-                <h3 className="text-base sm:text-lg font-semibold">{slide.title}</h3>
-                <a
-                  href={slide.link}
-                  className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                >
-                  Read more →
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  </div>
-</section>
+          {/* Right Slider */}
+          <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop
+              className="pb-10 max-w-[260px] sm:max-w-sm"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-56 sm:h-72 object-cover"
+                    />
+                    <div className="p-3 text-center">
+                      <h3 className="text-base sm:text-lg font-semibold">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.link}
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
 
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
@@ -425,9 +444,9 @@ export default function Coldstorageandwarehouse() {
           </div>
         </div>
       </section>
-     
-{/* slider section */}
-  <section className="max-w-7xl mx-auto px-4 py-10">
+
+      {/* slider section */}
+      <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
           Pre Engineered Products
         </h2>
@@ -501,7 +520,9 @@ export default function Coldstorageandwarehouse() {
                   <h3 className="text-2xl font-semibold text-blue-900 mb-3">
                     {selectedArea.subtitle}
                   </h3>
-                  <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                  <p className="text-gray-700 mb-5">
+                    {selectedArea.description}
+                  </p>
                   <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                     GET A QUOTE
                   </button>
@@ -522,7 +543,7 @@ export default function Coldstorageandwarehouse() {
       </section>
 
       {/* capiablites */}
-      
+
       {/* endcapill */}
       {/* business benifts */}
       <section className="bg-[#272727] text-white py-10">
@@ -624,8 +645,8 @@ export default function Coldstorageandwarehouse() {
         </div>
       </section>
       {/* end special section */}
-      <PlatformP/>
-   
+      <PlatformP />
+
       {/* end why choose us */}
       <Brand />
 
