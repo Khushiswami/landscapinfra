@@ -15,9 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/* <body className={inter.className}>
         {children}
-      </body>
+      </body> */}
+      <body className="font-newpanam">
+  {children}
+</body>
+
     </html>
   );
 }
