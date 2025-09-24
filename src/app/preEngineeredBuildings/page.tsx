@@ -17,6 +17,8 @@ import Pebslide from "yes/Components/Pebslide";
 import Renewableslider from "yes/Components/Renewable/Renewableslider";
 import Pebsolution from "yes/Components/Pebsolution";
 import Pebinsight from "yes/Components/Pebinsight";
+import Newheader from "yes/Components/Newheader";
+import PebheaderW from "yes/Components/PebheaderW";
 // import ClientP from "../Components/ClientP";
 
 export default function PreEngineeredBuildings() {
@@ -27,7 +29,7 @@ export default function PreEngineeredBuildings() {
   return (
     <>
       <Pebheader />
-
+      {/* <PebheaderW/> */}
 <BannerPEB/>
       <AboutPebP />
       <Servicesone />
