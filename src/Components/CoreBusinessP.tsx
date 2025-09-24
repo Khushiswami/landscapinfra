@@ -72,7 +72,7 @@ export default function CoreBusiness() {
 
   return (
     <section className="py-4 md:py-16 bg-white md:px-10">
-      <h2 className="text-2xl font-bold text-center text-[#000080] mb-2 md:mb-12 md:text-4xl">
+      <h2 className="text-2xl font-bold text-center text-[#000080] mb-2 md:mb-12 md:text-3xl">
         Core Business
       </h2>
 

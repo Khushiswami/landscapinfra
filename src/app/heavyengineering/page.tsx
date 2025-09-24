@@ -62,7 +62,7 @@ const TABS = [
     title: "EPC Solutions",
     headline: "End-to-End EPC Solutions",
     body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
+    img: "/industry.jpg",
     buttonText: "VIEW MORE",
     url: "/epcsolutions",
   },
@@ -70,7 +70,7 @@ const TABS = [
     title: "Structural Engineering Services",
     headline: "Excellence in Structural Engineering",
     body: "Our expert engineers provide innovative structural design and analysis services.",
-    img: "/industry.png",
+    img: "/fourth.png",
     buttonText: "VIEW MORE",
     url: "/structural-engineering",
   },
@@ -78,7 +78,7 @@ const TABS = [
     title: "Project Consultancy & Management",
     headline: "Trusted Project Consultancy & Management",
     body: "We provide end-to-end project consultancy and management services.",
-    img: "/project.jpg",
+    img: "/about.png",
     buttonText: "VIEW MORE",
     url: "/project-consultancy",
   },
@@ -194,6 +194,9 @@ export default function HeavyEngineering() {
       clearTimeout(slideTimer);
     };
   }, [activeSlide]);
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const updateItems = () => setItemsPerView(window.innerWidth < 768 ? 1 : 3);

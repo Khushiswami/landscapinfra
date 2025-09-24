@@ -268,6 +268,9 @@ export default function Rnd() {
 
   const [active, setActive] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     if (!isPlaying) return;

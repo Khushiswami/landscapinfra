@@ -20,6 +20,10 @@ import Pebinsight from "yes/Components/Pebinsight";
 // import ClientP from "../Components/ClientP";
 
 export default function PreEngineeredBuildings() {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Pebheader />

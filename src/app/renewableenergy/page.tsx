@@ -26,6 +26,9 @@ import Renewablenews from "yes/Components/Renewable/Renewablenews";
 export default function Renewableenergy() {
   const [active, setActive] = useState(0);
   const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const links = [
     {

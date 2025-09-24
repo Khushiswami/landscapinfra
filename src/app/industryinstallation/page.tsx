@@ -47,6 +47,9 @@ export default function Industryinstallation() {
   const [active, setActive] = useState(0);
   const [progress, setProgress] = useState(0);
   const router = useRouter(); // ✅ initialize router
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
  useEffect(() => {
     const interval = setInterval(() => {

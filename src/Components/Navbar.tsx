@@ -647,7 +647,7 @@ export default function Navbar() {
             >
               ABOUT
               <span>
-                {openDropdown === "industries" ? (
+                {openDropdown === "about" ? (
                   <FaChevronUp />
                 ) : (
                   <FaChevronDown />
