@@ -1,6 +1,6 @@
 // components/ExploreSection.tsx
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
@@ -27,7 +27,21 @@ const exploreItems = [
 
 export default function ExploreSection() {
   const [startIndex, setStartIndex] = useState(0);
-  const itemsPerPage = 3;
+  const [itemsPerPage, setItemsPerPage] = useState(3);
+
+  // ✅ Responsive itemsPerPage
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      if (window.innerWidth < 768) {
+        setItemsPerPage(1); // mobile
+      } else {
+        setItemsPerPage(3); // desktop
+      }
+    };
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
 
   const handlePrev = () => {
     setStartIndex((prev) =>
@@ -55,7 +69,11 @@ export default function ExploreSection() {
       </h2>
 
       {/* Cards row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full  mx-auto mb-6">
+      <div
+        className={`grid gap-6 w-full mx-auto mb-6 ${
+          itemsPerPage === 1 ? "grid-cols-1" : "grid-cols-3"
+        }`}
+      >
         {visibleItems.map((item, index) => (
           <div
             key={index}
@@ -66,7 +84,7 @@ export default function ExploreSection() {
               alt={item.subtitle}
               width={500}
               height={600}
-              className="object-cover w-full h-[400px] transition-transform duration-500 group-hover:scale-105"
+              className="object-cover w-full h-[350px] transition-transform duration-500 group-hover:scale-105 md:h-[400px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
               <h4 className="text-white font-bold text-xl mb-2">
@@ -78,8 +96,7 @@ export default function ExploreSection() {
         ))}
       </div>
 
-      {/* Prev/Next buttons row */}
-      {/* Prev/Next buttons row */}
+      {/* Prev/Next buttons */}
       <div className="flex justify-center gap-6">
         <button
           onClick={handlePrev}

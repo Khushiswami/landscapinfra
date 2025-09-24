@@ -17,6 +17,7 @@ import FooterReal from "../../Components/RealState/FooterReal";
 import ClientReal from "../../Components/RealState/ClientReal";
 import Realstateheader from "yes/Components/Realstateheader";
 import Footer from "yes/Components/Footer";
+import Realabout from "yes/Components/RealState/Realabout";
 
 export default function RealStateDevlopment() {
   return (
@@ -25,7 +26,8 @@ export default function RealStateDevlopment() {
       <VideoSection />
       <ProjectsSection />
       <ZigzagSection />
-      <AboutPage />
+      <Realabout/>
+      {/* <AboutPage /> */}
       <OurLineage />
       <PropertySearch />
       <SectorSlider />
