@@ -138,7 +138,7 @@ export default function Industryabout() {
 
         {/* Right Section - About Us */}
         <div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080] mb-4 mt-9 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 mt-9 sm:mb-6">
             ABOUT US
           </h2>
 
@@ -169,7 +169,7 @@ export default function Industryabout() {
                       ref={(el) => {
                         numberRefs.current[i] = el;
                       }}
-                      className="text-xl sm:text-2xl font-extrabold text-[#000080]"
+                      className="text-md sm:text-2xl font-bold text-[#000080]"
                     >
                       0
                     </h3>

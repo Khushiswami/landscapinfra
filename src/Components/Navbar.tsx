@@ -553,7 +553,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/simulation"
+                    href="/simulationservice"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     Simulation Service
@@ -569,7 +569,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/fire-safety"
+                    href="/firesaftey"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     Fire Safety
@@ -633,7 +633,7 @@ export default function Navbar() {
           >
             PROJECTS
           </Link>
-          <Link href="/sectors" className="block py-2 border-b border-gray-200">
+          <Link href="#" className="block py-2 border-b border-gray-200">
             INSIGHTS
           </Link>
           <Link href="/media" className="block py-2 border-b border-gray-200">
