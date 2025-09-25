@@ -104,7 +104,6 @@ export default function Renewableplatform() {
               />
             </div>
             {/* <div className="h-px bg-gray-200 mt-0.5 w-full"></div> */}
-            
           </div>
         </div>
       </div>
@@ -124,7 +123,7 @@ export default function Renewableplatform() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent rounded-[5px]" />
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full p-6 md:p-10">
-                  <div className="text-white text-center md:text-left mx-auto">
+                  <div className="text-white text-left md:text-left mx-auto">
                     <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
                       {TABS[active].headline}
                     </h2>

@@ -9,29 +9,27 @@ const TABS = [
   {
     title: "Industries",
     headline: "Transforming industries, markets and customer experiences",
-    body:
-      "Every day, leading companies turn industry challenges into business opportunities thanks to the 3DEXPERIENCE platform. Our clients range from global leaders to startups, and even individuals.",
+    body: "Every day, leading companies turn industry challenges into business opportunities thanks to the 3DEXPERIENCE platform. Our clients range from global leaders to startups, and even individuals.",
     img: "/about.png",
     buttonText: "DISCOVER ALL",
-    url: "/industries", 
+    url: "/industries",
   },
   {
     title: "Products",
-    headline: "Explore our 3DEXPERIENCE portfolio and find the solution you’re looking for",
-    body:
-      "We provide 3D modeling and simulating applications.We are experts in creating virtual twins of products and supply chains. We revolutionize workflows thanks to our social, collaborative and information intelligence applications.",
+    headline:
+      "Explore our 3DEXPERIENCE portfolio and find the solution you’re looking for",
+    body: "We provide 3D modeling and simulating applications.We are experts in creating virtual twins of products and supply chains. We revolutionize workflows thanks to our social, collaborative and information intelligence applications.",
     img: "/about.png",
     buttonText: "EXPLORE PRODUCTS",
-    url: "/products", 
+    url: "/products",
   },
   {
     title: "Learn & Support",
     headline: "3DEXPERIENCE EDU",
-    body:
-      "Reach a new milestone in your lifelong learning path.Boost your employability and innovation power!",
+    body: "Reach a new milestone in your lifelong learning path.Boost your employability and innovation power!",
     img: "/about.png",
     buttonText: "LEARN MORE",
-    url: "/learn-support", 
+    url: "/learn-support",
   },
 ];
 
@@ -47,9 +45,9 @@ export default function Platform() {
           One Platform, Endless Possibilities
         </h1>
         <p className="mt-4 text-base md:text-lg text-gray-600">
-          By combining a diversity of talents and breaking up traditional silos, the
-          3DEXPERIENCE platform empowers organizations to invent, learn, produce, and
-          trade in entirely new ways.
+          By combining a diversity of talents and breaking up traditional silos,
+          the 3DEXPERIENCE platform empowers organizations to invent, learn,
+          produce, and trade in entirely new ways.
         </p>
       </div>
 
@@ -62,7 +60,11 @@ export default function Platform() {
                 key={t.title}
                 onClick={() => setActive(i)}
                 className={`pb-3 text-sm md:text-base font-medium transition-colors whitespace-nowrap
-                  ${active === i ? "text-[#272727]" : "text-gray-600 hover:text-[#000080]"}`}
+                  ${
+                    active === i
+                      ? "text-[#272727]"
+                      : "text-gray-600 hover:text-[#000080]"
+                  }`}
               >
                 {t.title}
               </button>
@@ -95,7 +97,7 @@ export default function Platform() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
             <div className="absolute inset-0 flex items-center">
               <div className="w-full p-6 md:p-10">
-                <div className="max-w-2xl text-white text-center md:text-left">
+                <div className="text-white text-left md:text-left mx-auto">
                   <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
                     {TABS[active].headline}
                   </h2>

@@ -326,7 +326,7 @@ export default function ExpertiseP() {
                   service.link && router.push(service.link);
                 }}
               >
-                <div className="w-full h-80 md:h-80 overflow-hidden">
+                <div className="w-full h-95 md:h-80 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}

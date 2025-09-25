@@ -255,8 +255,8 @@ export default function PlatformP() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent rounded-[5px]" />
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full p-6 md:p-10">
-                  <div className="text-white text-center md:text-left mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
+                  <div className="text-white text-left md:text-left mx-auto">
+                    <h2 className="text-xl md:text-3xl font-semibold leading-tight">
                       {TABS[active].headline}
                     </h2>
                     <p className="mt-4 text-sm md:text-[15px] text-gray-200">

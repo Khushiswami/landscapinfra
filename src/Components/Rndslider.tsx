@@ -56,19 +56,39 @@ export default function Rndslider() {
   }, [activeCategory]);
 
   return (
-    <div className="px-auto py-8 mt-6 bg-[#f0f1f5]">
+    <div className="px-auto py-5 mt-6 bg-[#f0f1f5]">
       {/* Component-scoped styles for mobile arrow size & color */}
       <style jsx>{`
+        /* Force white arrows + full opacity on mobile */
         ${categories
           .map(
             (_, idx) => `
-          .swiper-next-mobile-${idx}::after,
-          .swiper-prev-mobile-${idx}::after {
-            color: white;       /* White arrows */
-            font-size: 17px;    /* Smaller size */
-            font-weight: 500;   /* Medium */
-          }
-        `
+        /* arrow icon */
+        .swiper-next-mobile-${idx}::after,
+        .swiper-prev-mobile-${idx}::after {
+          color: white;
+          font-size: 19px;
+          font-weight: 500;
+          opacity: 1 !important;
+        }
+
+        /* arrow container */
+        .swiper-next-mobile-${idx},
+        .swiper-prev-mobile-${idx} {
+          opacity: 1 !important;
+        }
+
+        /* also override disabled state completely */
+        .swiper-next-mobile-${idx}.swiper-button-disabled,
+        .swiper-prev-mobile-${idx}.swiper-button-disabled {
+          opacity: 1 !important;
+          pointer-events: auto; /* optional: keep clickable */
+        }
+        .swiper-next-mobile-${idx}.swiper-button-disabled::after,
+        .swiper-prev-mobile-${idx}.swiper-button-disabled::after {
+          opacity: 1 !important;
+        }
+      `
           )
           .join("\n")}
       `}</style>
@@ -84,7 +104,7 @@ export default function Rndslider() {
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3" />
       </div>
 
-      <div className="mx-auto my-8 px-4 md:px-25">
+      <div className="mx-auto my-8 px-4 md:px-18">
         {/* Mobile Slider */}
         <div className="lg:hidden space-y-2">
           {categories.map((cat, idx) => (
@@ -96,15 +116,15 @@ export default function Rndslider() {
                 }}
                 modules={[Navigation]}
                 spaceBetween={0}
-                className="w-full h-64  overflow-hidden"
+                className="w-full h-45  overflow-hidden"
               >
                 {cat.images.map((img, i) => (
                   <SwiperSlide key={i}>
                     <div
-                      className="w-full h-54 bg-cover bg-center relative"
+                      className="w-full h-64 bg-cover bg-center relative"
                       style={{ backgroundImage: `url(${img})` }}
                     >
-                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <div className="absolute inset-0  flex items-center justify-center">
                         <h3 className="text-lg font-bold text-white text-center px-2">
                           {cat.title}
                         </h3>
@@ -133,7 +153,7 @@ export default function Rndslider() {
               <button
                 key={index}
                 onClick={() => setActiveCategory(cat)}
-                className={`flex-1 p-8 text-left text-xl font-medium transition-all duration-300 transition-colors
+                className={`flex-1 text-lg p-8 text-left md:text-[19px] font-medium transition-all duration-300 transition-colors
                   ${
                     activeCategory.title === cat.title
                       ? "bg-white text-black shadow-inner"

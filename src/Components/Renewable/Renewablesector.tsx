@@ -61,10 +61,10 @@ export default function RenewableSector() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-12 pt-12 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
-          <h2 className="text-xl md:text-3xl font-bold text-start text-blue-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
             Services
           </h2>
 
@@ -111,7 +111,7 @@ export default function RenewableSector() {
                         />
 
                         {/* Bottom title bar */}
-                        <div className="absolute bottom-0 w-full bg-blue-600/90 text-white py-2 text-center text-sm font-semibold">
+                        <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-sm font-semibold">
                           {project.title}
                         </div>
 
@@ -129,10 +129,10 @@ export default function RenewableSector() {
                             md:opacity-0 md:group-hover:opacity-100 md:cursor-default
                           `}
                         >
-                          <h3 className="text-md md:text-sm font-semibold mb-2">
+                          <h3 className="text-sm md:text-sm font-semibold mb-2">
                             {project.title}
                           </h3>
-                          <p className="text-base md:text-xs mb-4 line-clamp-3">
+                          <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
                             {project.description}
                           </p>
                           <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
