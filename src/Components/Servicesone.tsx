@@ -272,13 +272,13 @@ export default function ExpertiseP() {
     <section className="py-12 px-6 bg-white mx-0 md:mx-1 lg:mx-1 md:px-13">
       {/* Heading + Arrows */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mx-auto mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#061b49] text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center">
           Our Expertise
         </h2>
         <div className="flex items-center justify-center gap-2 mt-4 md:mt-0">
           <button
             ref={prevRef}
-            className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
+            className="bg-[#000080] text-white p-2 rounded-full hover:bg-black transition-transform duration-200 active:scale-90"
             onClick={() => swiper?.slidePrev()}
             aria-label="Previous Slide"
           >
@@ -286,7 +286,7 @@ export default function ExpertiseP() {
           </button>
           <button
             ref={nextRef}
-            className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
+            className="bg-[#000080] text-white p-2 rounded-full hover:bg-black transition-transform duration-200 active:scale-90"
             onClick={() => swiper?.slideNext()}
             aria-label="Next Slide"
           >
@@ -334,7 +334,7 @@ export default function ExpertiseP() {
                   />
                 </div>
 
-                <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3 relative z-10">
+                <div className="bg-[#000080] flex items-center justify-between px-4 py-3 relative z-10">
                   <p className="text-white font-semibold text-sm line-clamp-1">
                     {service.title}
                   </p>
@@ -351,9 +351,9 @@ export default function ExpertiseP() {
                       transition={{ duration: 0.2 }}
                     >
                       {hoverIndex === i || activeIndex === i ? (
-                        <ChevronRight className="w-4 h-4 text-[#1F4B9A]" />
+                        <ChevronRight className="w-4 h-4 text-[#000080]" />
                       ) : (
-                        <ArrowUpRight className="w-4 h-4 text-[#1F4B9A]" />
+                        <ArrowUpRight className="w-4 h-4 text-[#000080]" />
                       )}
                     </motion.div>
                   </div>
@@ -386,7 +386,7 @@ export default function ExpertiseP() {
         {/* Pagination dots outside */}
         <div
           ref={paginationRef}
-          className="flex justify-center mt-4 w-full swiper-pagination-custom"
+          className="flex justify-center mt-4 w-full swiper-pagination-custom "
         ></div>
       </div>
 
@@ -404,11 +404,19 @@ export default function ExpertiseP() {
           opacity: 1;
         }
         /* Center the external pagination */
+        /* Keep pagination visible by default (mobile) */
         .swiper-pagination-custom {
           display: flex !important;
           justify-content: center !important;
           width: 100% !important;
           position: relative !important;
+        }
+
+        /* Hide only on desktop (lg and up) */
+        @media screen and (min-width: 1024px) {
+          .swiper-pagination-custom {
+            display: none !important;
+          }
         }
       `}</style>
     </section>

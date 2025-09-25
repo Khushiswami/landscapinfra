@@ -6,13 +6,6 @@ import { useState, useEffect } from "react";
 // import Totalsolution from "../totalsolution/page"
 import PlatformP from "../../Components/PlatformP";
 import AboutPebP from "../../Components/AboutPebP";
-// import TotalSolutionP from "../../Components/TotalSolutionP"
-// import PebExpertiseP from "../../Components/PebExpertiseP"
-// import MediaP from "../../Components/MediaP"
-// import PebBrandP from "../../Components/PebBrandP"
-// import Insights from "../../Components/Insights"
-import IndustryHeader from "yes/Components/Industryheader";
-import Pebheader from "yes/Components/PebheaderW";
 
 import Footer from "../../Components/Footer";
 // import PebCode from "../../Components/PebCode"
@@ -30,7 +23,7 @@ import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
 import BuildHistory from "../../Components/BuildHistory";
 import Accolades from "../../Components/Accolades";
 import Navbar from "yes/Components/Navbar";
-import Pebslide from "yes/Components/Pebslide";
+import Renewableslider from "yes/Components/Renewable/Renewableslider";
 
 const slides = [
   {
@@ -90,7 +83,7 @@ export default function About() {
       </div>
       <AboutPebP />
       <TripleBottomAccordion />
-      <Pebslide/>
+      <Renewableslider />
       <ReviewsSection />
       <KeyFeatures />
       <BuildHistory />
