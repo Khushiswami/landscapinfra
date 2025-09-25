@@ -70,7 +70,7 @@ export default function Footer() {
         { name: "Water Infrastructure", href: "/waterinfrastructure" },
         { name: "Industry Building Solutions", href: "/structuralsteel" },
         { name: "Other Industries", href: "/otherindustries" },
-        { name: "Simulation Service", href: "/simulation" },
+        { name: "Simulation Service", href: "/simulationservice" },
         {
           name: "Factories Installation",
           href: "https://staging.landsking.com/fabrication/",

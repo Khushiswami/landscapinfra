@@ -253,6 +253,9 @@ export default function Navbar() {
                         "/expertiseimages/Cold Storage and warehouse.jpg"
                       )
                     }
+                    onClick={() =>
+                      (window.location.href = "/coldstorageandwarehouse")
+                    }
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Cold Storage &amp; Warehouse
@@ -647,11 +650,7 @@ export default function Navbar() {
             >
               ABOUT
               <span>
-                {openDropdown === "about" ? (
-                  <FaChevronUp />
-                ) : (
-                  <FaChevronDown />
-                )}
+                {openDropdown === "about" ? <FaChevronUp /> : <FaChevronDown />}
               </span>{" "}
             </button>
 

@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -60,8 +59,9 @@ export default function Renewableslider() {
     <div className="px-auto py-8 mt-6 bg-[#f0f1f5]">
       {/* Component-scoped styles for mobile arrow size & color */}
       <style jsx>{`
-        ${categories.map(
-          (_, idx) => `
+        ${categories
+          .map(
+            (_, idx) => `
           .swiper-next-mobile-${idx}::after,
           .swiper-prev-mobile-${idx}::after {
             color: white;       /* White arrows */
@@ -69,11 +69,12 @@ export default function Renewableslider() {
             font-weight: 500;   /* Medium */
           }
         `
-        ).join("\n")}
+          )
+          .join("\n")}
       `}</style>
 
       {/* Section Title */}
-      <div className="text-center mb-12">
+      <div className=" hidden text-center mb-12 md:hidden">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Expertise
         </p>
@@ -95,7 +96,7 @@ export default function Renewableslider() {
                 }}
                 modules={[Navigation]}
                 spaceBetween={0}
-                className="w-full h-64  overflow-hidden"
+                className="w-full h-45  overflow-hidden"
               >
                 {cat.images.map((img, i) => (
                   <SwiperSlide key={i}>
@@ -113,8 +114,12 @@ export default function Renewableslider() {
                 ))}
 
                 {/* Mobile arrows */}
-                <div className={`swiper-button-next swiper-next-mobile-${idx}`} />
-                <div className={`swiper-button-prev swiper-prev-mobile-${idx}`} />
+                <div
+                  className={`swiper-button-next swiper-next-mobile-${idx}`}
+                />
+                <div
+                  className={`swiper-button-prev swiper-prev-mobile-${idx}`}
+                />
               </Swiper>
             </div>
           ))}
@@ -134,7 +139,11 @@ export default function Renewableslider() {
                       ? "bg-white text-black shadow-inner"
                       : " text-gray-700 hover:bg-[#000080] hover:text-white"
                   }
-                  ${index !== categories.length - 1 ? "border-b border-gray-300" : ""}`}
+                  ${
+                    index !== categories.length - 1
+                      ? "border-b border-gray-300"
+                      : ""
+                  }`}
               >
                 {cat.title}
               </button>

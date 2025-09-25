@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -57,11 +56,12 @@ export default function Pebslide() {
   }, [activeCategory]);
 
   return (
-    <div className="px-auto py-8 mt-6 bg-[#f0f1f5]">
+    <div className="px-auto py-[1px] mt-6 bg-[#f0f1f5] md:py-8">
       {/* Component-scoped styles for mobile arrow size & color */}
       <style jsx>{`
-        ${categories.map(
-          (_, idx) => `
+        ${categories
+          .map(
+            (_, idx) => `
           .swiper-next-mobile-${idx}::after,
           .swiper-prev-mobile-${idx}::after {
             color: white;       /* White arrows */
@@ -69,11 +69,12 @@ export default function Pebslide() {
             font-weight: 500;   /* Medium */
           }
         `
-        ).join("\n")}
+          )
+          .join("\n")}
       `}</style>
 
       {/* Section Title */}
-      <div className="text-center mb-12">
+      <div className=" hidden text-center mb-12 md:hidden">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Expertise
         </p>
@@ -83,11 +84,11 @@ export default function Pebslide() {
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3" />
       </div>
 
-      <div className="mx-auto my-8 px-4 md:mx-25">
+      <div className="mx-auto my-8 px-4 md:px-18">
         {/* Mobile Slider */}
         <div className="lg:hidden space-y-2">
           {categories.map((cat, idx) => (
-            <div key={idx} className="rounded-lg shadow-md overflow-hidden relative">
+            <div key={idx} className=" shadow-md overflow-hidden relative">
               <Swiper
                 navigation={{
                   nextEl: `.swiper-next-mobile-${idx}`,
@@ -95,12 +96,12 @@ export default function Pebslide() {
                 }}
                 modules={[Navigation]}
                 spaceBetween={0}
-                className="w-full h-64 rounded-md overflow-hidden"
+                className="w-full h-45  overflow-hidden"
               >
                 {cat.images.map((img, i) => (
                   <SwiperSlide key={i}>
                     <div
-                      className="w-full h-64 bg-cover bg-center relative"
+                      className="w-full h-55 bg-cover bg-center relative"
                       style={{ backgroundImage: `url(${img})` }}
                     >
                       <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -113,8 +114,12 @@ export default function Pebslide() {
                 ))}
 
                 {/* Mobile arrows */}
-                <div className={`swiper-button-next swiper-next-mobile-${idx}`} />
-                <div className={`swiper-button-prev swiper-prev-mobile-${idx}`} />
+                <div
+                  className={`swiper-button-next swiper-next-mobile-${idx}`}
+                />
+                <div
+                  className={`swiper-button-prev swiper-prev-mobile-${idx}`}
+                />
               </Swiper>
             </div>
           ))}
@@ -134,7 +139,11 @@ export default function Pebslide() {
                       ? "bg-white text-black shadow-inner"
                       : " text-gray-700 hover:bg-[#000080] hover:text-white"
                   }
-                  ${index !== categories.length - 1 ? "border-b border-gray-300" : ""}`}
+                  ${
+                    index !== categories.length - 1
+                      ? "border-b border-gray-300"
+                      : ""
+                  }`}
               >
                 {cat.title}
               </button>

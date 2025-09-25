@@ -18,8 +18,7 @@ const cards = [
     title: "How AI is Driving the Next Era of Mobility",
     description:
       "The mobility industry experts at LTTS engaged in an extensive analysis of these trends, across three domains – Product Development Life Cycle, Software Development Life Cycle and User Experience.",
-        image: "/news2.jpeg",
-
+    image: "/news2.jpeg",
   },
   {
     id: 2,
@@ -134,7 +133,7 @@ export default function Insights() {
               </div>
 
               {/* Desktop version with hover */}
-              <div className="hidden sm:block h-[450px]">
+              <div className="hidden sm:block h-[470px]">
                 <div className="absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#000080] text-[#fff]">
                   {card.tag}
                 </div>

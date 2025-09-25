@@ -1,28 +1,216 @@
+// "use client";
+
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Autoplay } from "swiper/modules";
+// import type { Swiper as SwiperType } from "swiper";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+
+// import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
+// import { useRef, useState } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
+// import { useRouter } from "next/navigation";
+
+// export default function ExpertiseP() {
+//   const prevRef = useRef<HTMLButtonElement>(null);
+//   const nextRef = useRef<HTMLButtonElement>(null);
+//   const router = useRouter();
+
+//   // state for hover & click
+//   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
+//   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+//   const [swiper, setSwiper] = useState<SwiperType | null>(null); // Store Swiper instance
+
+//   const services = [
+//     {
+//       title: "Pre Engineered Buildings",
+//       desc: "Customized steel structures designed for quick assembly and durability, ideal for warehouses, factories, and commercial spaces.",
+//       image: "expertise/firstexpertise.png",
+//       link: "/menupage",
+//     },
+//     {
+//       title: "Prefabricated Structures",
+//       desc: "Modular buildings constructed off-site for applications like site offices, classrooms, and healthcare facilities.",
+//       image: "expertise/second.png",
+//       link: "/modular",
+//     },
+//     {
+//       title: "Light Gauge Steel Framing",
+//       desc: "Lightweight steel structures suitable for residential and commercial buildings, offering design flexibility and rapid construction.",
+//       image: "expertise/third.png",
+//       link: "/lightGaugeSteelFraming",
+//     },
+//     {
+//       title: "Sandwich Panels",
+//       desc: "Insulated panels used for walls and roofs, providing thermal efficiency and structural strength.",
+//       image: "expertise/fourth.png",
+//       link: "/sandwichpanels",
+//     },
+//     {
+//       title: "Standard Modular Solutions",
+//       desc: "Ready-to-use modular units like porta cabins and liftable cabins for immediate deployment.",
+//       image: "expertise/fifth.png",
+//       link: "/standardmodular",
+//     },
+//   ];
+
+//   return (
+//     <section className="py-12 px-10 bg-white mx-0 md:mx-1 lg:mx-1">
+//       <div className="flex items-center justify-between mx-auto mb-8 md:mx-25">
+//         <h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
+//           Our Expertise
+//         </h2>
+//         <div className="flex items-center gap-2">
+//           {/* Prev Button */}
+//           <button
+//             ref={prevRef}
+//             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
+//             onClick={() => swiper?.slidePrev()}
+//             aria-label="Previous Slide"
+//           >
+//             <ChevronLeft className="w-5 h-5" />
+//           </button>
+//           {/* Next Button */}
+//           <button
+//             ref={nextRef}
+//             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
+//             onClick={() => swiper?.slideNext()}
+//             aria-label="Next Slide"
+//           >
+//             <ChevronRight className="w-5 h-5" />
+//           </button>
+//         </div>
+//       </div>
+
+//       {/* Swiper Slider */}
+//       <div className=" mt-10 mx-auto  md:mx-18">
+//         <Swiper
+//           modules={[Navigation, Autoplay]}
+//           onSwiper={setSwiper} // Store the Swiper instance
+//           navigation={{
+//             prevEl: prevRef.current,
+//             nextEl: nextRef.current,
+//           }}
+//           onBeforeInit={(swiper: SwiperType) => {
+//             const nav = swiper.params.navigation;
+//             if (nav && typeof nav !== "boolean") {
+//               nav.prevEl = prevRef.current;
+//               nav.nextEl = nextRef.current;
+//             }
+//           }}
+//           autoplay={{
+//             delay: 3000,
+//             disableOnInteraction: false,
+//           }}
+//           spaceBetween={20}
+//           slidesPerView={1}
+//           breakpoints={{
+//             640: { slidesPerView: 2 },
+//             1024: { slidesPerView: 3 },
+//             1280: { slidesPerView: 3 },
+//           }}
+//         >
+//           {services.map((service, i) => (
+//             <SwiperSlide key={i}>
+//               <motion.div
+//                 className={`relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer`}
+//                 onMouseEnter={() => setHoverIndex(i)}
+//                 onMouseLeave={() => setHoverIndex(null)}
+//                 onClick={() => {
+//                   setActiveIndex(i);
+//                   service.link && router.push(service.link);
+//                 }}
+//               >
+//                 {/* Image */}
+//                 <div className="w-full h-70 md:h-80 overflow-hidden">
+//                   <img
+//                     src={service.image}
+//                     alt={service.title}
+//                     className="w-full h-full object-cover"
+//                   />
+//                 </div>
+
+//                 {/* Title Bar */}
+//                 <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3 relative z-10">
+//                   <p className="text-white font-semibold text-sm line-clamp-1">
+//                     {service.title}
+//                   </p>
+//                   <div className="bg-white rounded-full p-1">
+//                     <motion.div
+//                       key={
+//                         hoverIndex === i || activeIndex === i
+//                           ? "chevron"
+//                           : "arrow"
+//                       }
+//                       initial={{ opacity: 0, rotate: -90 }}
+//                       animate={{ opacity: 1, rotate: 0 }}
+//                       exit={{ opacity: 0, rotate: 90 }}
+//                       transition={{ duration: 0.2 }}
+//                     >
+//                       {hoverIndex === i || activeIndex === i ? (
+//                         <ChevronRight className="w-4 h-4 text-[#1F4B9A]" />
+//                       ) : (
+//                         <ArrowUpRight className="w-4 h-4 text-[#1F4B9A]" />
+//                       )}
+//                     </motion.div>
+//                   </div>
+//                 </div>
+
+//                 {/* Hover Overlay */}
+//                 <AnimatePresence>
+//                   {hoverIndex === i && (
+//                     <motion.div
+//                       className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-20"
+//                       style={{
+//                         background:
+//                           "linear-gradient(0deg, rgba(33, 71, 95, 0.8) 0%, rgba(22, 46, 68, 0.8) 100%)",
+//                       }}
+//                       initial={{ opacity: 0, y: 50 }}
+//                       animate={{ opacity: 1, y: 0 }}
+//                       exit={{ opacity: 0, y: 50 }}
+//                       transition={{ duration: 0.4 }}
+//                     >
+//                       <h3 className="text-white text-lg font-semibold">
+//                         {service.title}
+//                       </h3>
+//                     </motion.div>
+//                   )}
+//                 </AnimatePresence>
+//               </motion.div>
+//             </SwiperSlide>
+//           ))}
+//         </Swiper>
+//       </div>
+//     </section>
+//   );
+// }
 
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 
 export default function ExpertiseP() {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
+  const paginationRef = useRef<HTMLDivElement>(null);
+  const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const router = useRouter();
 
-  // state for hover & click
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  const [swiper, setSwiper] = useState<SwiperType | null>(null); // Store Swiper instance
 
   const services = [
     {
@@ -57,14 +245,37 @@ export default function ExpertiseP() {
     },
   ];
 
+  // Initialize Swiper navigation & pagination
+  useEffect(() => {
+    if (swiper) {
+      if (
+        swiper.params.navigation &&
+        typeof swiper.params.navigation !== "boolean"
+      ) {
+        swiper.params.navigation.prevEl = prevRef.current;
+        swiper.params.navigation.nextEl = nextRef.current;
+        swiper.navigation.init();
+        swiper.navigation.update();
+      }
+      if (
+        swiper.params.pagination &&
+        typeof swiper.params.pagination !== "boolean"
+      ) {
+        swiper.params.pagination.el = paginationRef.current;
+        swiper.pagination.init();
+        swiper.pagination.update();
+      }
+    }
+  }, [swiper]);
+
   return (
-    <section className="py-12 px-10 bg-white mx-0 md:mx-1 lg:mx-1">
-      <div className="flex items-center justify-between mx-auto mb-8 md:mx-25">
-        <h2 className="text-xl md:text-3xl font-bold text-[#061b49] text-center">
+    <section className="py-12 px-6 bg-white mx-0 md:mx-1 lg:mx-1 md:px-13">
+      {/* Heading + Arrows */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mx-auto mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#061b49] text-center">
           Our Expertise
         </h2>
-        <div className="flex items-center gap-2">
-          {/* Prev Button */}
+        <div className="flex items-center justify-center gap-2 mt-4 md:mt-0">
           <button
             ref={prevRef}
             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
@@ -73,7 +284,6 @@ export default function ExpertiseP() {
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          {/* Next Button */}
           <button
             ref={nextRef}
             className="bg-[#1F4B9A] text-white p-2 rounded-full hover:bg-[#163b78] transition-transform duration-200 active:scale-90"
@@ -86,24 +296,16 @@ export default function ExpertiseP() {
       </div>
 
       {/* Swiper Slider */}
-      <div className=" mt-10 mx-auto  md:mx-18">
+      <div className="mt-10 mx-auto">
         <Swiper
-          modules={[Navigation, Autoplay]}
-          onSwiper={setSwiper} // Store the Swiper instance
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper: SwiperType) => {
-            const nav = swiper.params.navigation;
-            if (nav && typeof nav !== "boolean") {
-              nav.prevEl = prevRef.current;
-              nav.nextEl = nextRef.current;
-            }
-          }}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
+          modules={[Navigation, Autoplay, Pagination]}
+          onSwiper={setSwiper}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
+          pagination={{
+            el: paginationRef.current,
+            clickable: true,
+            dynamicBullets: true,
           }}
           spaceBetween={20}
           slidesPerView={1}
@@ -116,7 +318,7 @@ export default function ExpertiseP() {
           {services.map((service, i) => (
             <SwiperSlide key={i}>
               <motion.div
-                className={`relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer`}
+                className="relative bg-white rounded-xl overflow-hidden shadow-md cursor-pointer"
                 onMouseEnter={() => setHoverIndex(i)}
                 onMouseLeave={() => setHoverIndex(null)}
                 onClick={() => {
@@ -124,8 +326,7 @@ export default function ExpertiseP() {
                   service.link && router.push(service.link);
                 }}
               >
-                {/* Image */}
-                <div className="w-full h-70 md:h-80 overflow-hidden">
+                <div className="w-full h-80 md:h-80 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -133,7 +334,6 @@ export default function ExpertiseP() {
                   />
                 </div>
 
-                {/* Title Bar */}
                 <div className="bg-[#1F4B9A] flex items-center justify-between px-4 py-3 relative z-10">
                   <p className="text-white font-semibold text-sm line-clamp-1">
                     {service.title}
@@ -159,7 +359,6 @@ export default function ExpertiseP() {
                   </div>
                 </div>
 
-                {/* Hover Overlay */}
                 <AnimatePresence>
                   {hoverIndex === i && (
                     <motion.div
@@ -183,8 +382,35 @@ export default function ExpertiseP() {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Pagination dots outside */}
+        <div
+          ref={paginationRef}
+          className="flex justify-center mt-4 w-full swiper-pagination-custom"
+        ></div>
       </div>
+
+      {/* Scoped styles for pagination bullets */}
+      <style jsx global>{`
+        .swiper-pagination-bullet {
+          background: grey;
+          opacity: 0.6;
+          width: 10px;
+          height: 10px;
+          margin: 0 4px;
+        }
+        .swiper-pagination-bullet-active {
+          background: #000080;
+          opacity: 1;
+        }
+        /* Center the external pagination */
+        .swiper-pagination-custom {
+          display: flex !important;
+          justify-content: center !important;
+          width: 100% !important;
+          position: relative !important;
+        }
+      `}</style>
     </section>
   );
 }
-

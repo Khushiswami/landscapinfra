@@ -23,7 +23,6 @@ import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
 
 import Brand from "yes/Components/Brand";
-import PebSlider from "yes/Components/PebSlider";
 import PlatformP from "yes/Components/PlatformP";
 import ContactSection from "yes/Components/ContactSection";
 import IndustryHeader from "yes/Components/Industryheader";
@@ -35,52 +34,58 @@ export default function Defenceinstallation() {
   }
 
   // ===== Data =====
-  
-  
-       const slides = [
+
+  const slides = [
     {
       image: "/expertise/third.png",
       title: "Prefabricated Multi-Storey Building Manufacturer",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Industrial Enclosures", link: "#" },
-    { image: "/expertise/third.png", title: "Cold Storage & Cold Room Manufacturer", link: "#" },
+    {
+      image: "/expertise/third.png",
+      title: "Industrial Enclosures",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Cold Storage & Cold Room Manufacturer",
+      link: "#",
+    },
     { image: "/expertise/third.png", title: "Factory Building", link: "#" },
     { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
 
-  
-
   return (
     <>
-<IndustryHeader/>
-  <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
-  {/* Background video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <IndustryHeader />
+      <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/60"></div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-  {/* Content */}
-  <div className="relative z-10 text-center px-4 sm:px-8 lg:px-12">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
-      Defence Installation
-    </h1>
-    <p className="text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
-      Pre-Engineered Buildings (PEBs) are modern steel structures designed, fabricated, and assembled using standardized components for faster construction.
-    </p>
-  </div>
-</section>
-
+        {/* Content */}
+        <div className="relative z-10 text-center px-4 sm:px-8 lg:px-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
+            Defence Installation
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+            Pre-Engineered Buildings (PEBs) are modern steel structures
+            designed, fabricated, and assembled using standardized components
+            for faster construction.
+          </p>
+        </div>
+      </section>
 
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
@@ -88,7 +93,7 @@ export default function Defenceinstallation() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-                Defence Installation
+              Defence Installation
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
@@ -126,7 +131,7 @@ export default function Defenceinstallation() {
         </div>
       </section>
       {/* end description */}
-   <ContactSection/>
+      <ContactSection />
       <Footer />
     </>
   );

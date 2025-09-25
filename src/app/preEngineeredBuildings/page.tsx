@@ -19,10 +19,11 @@ import Pebsolution from "yes/Components/Pebsolution";
 import Pebinsight from "yes/Components/Pebinsight";
 import Newheader from "yes/Components/Newheader";
 import PebheaderW from "yes/Components/PebheaderW";
+import Rndslider from "yes/Components/Rndslider";
 // import ClientP from "../Components/ClientP";
 
 export default function PreEngineeredBuildings() {
-    useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -30,15 +31,14 @@ export default function PreEngineeredBuildings() {
     <>
       <Pebheader />
       {/* <PebheaderW/> */}
-<BannerPEB/>
+      <BannerPEB />
       <AboutPebP />
       <Servicesone />
       <PlatformP />
-      <Pebsolution/>
-      {/* <TotalSolutionP /> */}
-      <Pebslide/>
-      {/* <Insights /> */}
-      <Pebinsight/>
+      <Pebsolution />
+
+      <Pebslide />
+      <Pebinsight />
       <MediaP />
       <PebBrandP />
       <ContactSection />
