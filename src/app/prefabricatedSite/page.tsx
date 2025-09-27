@@ -20,7 +20,7 @@ const PrefabricatedSite = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
                 Prefabricated Site Infrastructure Solutions
               </h1>
             </div>
@@ -41,12 +41,21 @@ const PrefabricatedSite = () => {
             </div>
             <div>
               <h3 className="text-2xl text-[#000080] font-bold mb-4">
-                Complete Infrastructure Solutions for Quick, Efficient, and Economical Project Implementation
+                Complete Infrastructure Solutions for Quick, Efficient, and
+                Economical Project Implementation
               </h3>
               <p className="text-gray-700 mb-4">
-                LANDSKING offers customized prefab site infrastructure solutions designed for fast-paced construction, industrial, and infrastructure projects throughout India. Our modular structures are durable, cost-effective, and ready for quick deployment, making them ideal for temporary high-performance setups.
-                <br /><br />
-                Whether it’s a site office, worker accommodation, toilet block, or storage unit, LANDSKING provides complete, ready-to-use solutions that minimize downtime and keep your projects running seamlessly.
+                LANDSKING offers customized prefab site infrastructure solutions
+                designed for fast-paced construction, industrial, and
+                infrastructure projects throughout India. Our modular structures
+                are durable, cost-effective, and ready for quick deployment,
+                making them ideal for temporary high-performance setups.
+                <br />
+                <br />
+                Whether it’s a site office, worker accommodation, toilet block,
+                or storage unit, LANDSKING provides complete, ready-to-use
+                solutions that minimize downtime and keep your projects running
+                seamlessly.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -61,7 +70,8 @@ const PrefabricatedSite = () => {
                 Essential Site Infrastructure Components We Provide
               </h3>
               <p className="text-gray-700 mb-4">
-                We offer a comprehensive range of prefabricated infrastructure modules, including:
+                We offer a comprehensive range of prefabricated infrastructure
+                modules, including:
                 <br />
               </p>
               <ul className="text-gray-700 mb-4 list-disc pl-5">
@@ -75,7 +85,8 @@ const PrefabricatedSite = () => {
               </ul>
 
               <p className="text-gray-700 mb-4">
-                Each unit is factory-built, pre-engineered, and ready for quick on-site assembly, saving you time, effort, and costs.
+                Each unit is factory-built, pre-engineered, and ready for quick
+                on-site assembly, saving you time, effort, and costs.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -87,7 +98,6 @@ const PrefabricatedSite = () => {
               />
             </div>
           </div>
-
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -104,12 +114,29 @@ const PrefabricatedSite = () => {
                 Why Choose LANDSKING for Modular Infrastructure?
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
-                <li>✅ Quick Setup – Get your site ready faster than traditional methods</li>
-                <li>✅ Moveable & Reusable – Ideal for projects across multiple locations</li>
-                <li>✅ Built to Last – Engineered for extreme weather and demanding site conditions</li>
-                <li>✅ Flexible Designs – Customizable layouts for offices, accommodation, and more</li>
-                <li>✅ Comfortable Spaces – Thermal and sound insulation for a pleasant environment</li>
-                <li>✅ Green Construction – Low waste and eco-conscious materials</li>
+                <li>
+                  ✅ Quick Setup – Get your site ready faster than traditional
+                  methods
+                </li>
+                <li>
+                  ✅ Moveable & Reusable – Ideal for projects across multiple
+                  locations
+                </li>
+                <li>
+                  ✅ Built to Last – Engineered for extreme weather and
+                  demanding site conditions
+                </li>
+                <li>
+                  ✅ Flexible Designs – Customizable layouts for offices,
+                  accommodation, and more
+                </li>
+                <li>
+                  ✅ Comfortable Spaces – Thermal and sound insulation for a
+                  pleasant environment
+                </li>
+                <li>
+                  ✅ Green Construction – Low waste and eco-conscious materials
+                </li>
               </ul>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
@@ -120,9 +147,13 @@ const PrefabricatedSite = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">Ideal Applications</h3>
+              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+                Ideal Applications
+              </h3>
               <p className="text-gray-700 mb-4">
-                Our prefabricated infrastructure solutions are trusted across a wide range of sectors: <br /><br />
+                Our prefabricated infrastructure solutions are trusted across a
+                wide range of sectors: <br />
+                <br />
                 <ul className="list-disc pl-5">
                   <li>Civil construction projects</li>
                   <li>Highway and metro development projects</li>
@@ -131,8 +162,6 @@ const PrefabricatedSite = () => {
                   <li>Power and energy plants</li>
                   <li>Remote industrial facilities</li>
                 </ul>
-
-
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -144,8 +173,6 @@ const PrefabricatedSite = () => {
               />
             </div>
           </div>
-
-
 
           {/* FAQ Section */}
           <div className="max-w-4xl mx-auto mt-16">
@@ -160,7 +187,8 @@ const PrefabricatedSite = () => {
                     "Most basic setups are ready in just 5–10 days, depending on the site dimensions.",
                 },
                 {
-                  question: "Are these units resuseable for different locations?",
+                  question:
+                    "Are these units resuseable for different locations?",
                   answer:
                     "Absolutely! The units can be easily taken down, moved, and reassembled wherever needed.",
                 },
@@ -176,7 +204,8 @@ const PrefabricatedSite = () => {
                     "Industries such as construction, mining, oil & gas, and disaster management often use prefab setups for offices, housing, and other temporary or semi-permanent facilities.",
                 },
                 {
-                  question: "What makes LANDSKING the ideal choice for site infrastructure?",
+                  question:
+                    "What makes LANDSKING the ideal choice for site infrastructure?",
                   answer:
                     "LANDSKING provides innovative, durable, and eco-friendly modular solutions that save time and costs. From tailored designs to fast installation, we help businesses meet project timelines efficiently and reliably.",
                 },
@@ -187,8 +216,7 @@ const PrefabricatedSite = () => {
                     "LANDSKING uses premium insulated panels, heavy-duty steel frames, and protective coatings to create long-lasting, low-maintenance, and energy-efficient solutions.",
                 },
                 {
-                  question:
-                    "Are these solutions customizable?",
+                  question: "Are these solutions customizable?",
                   answer:
                     "Yes, LANDSKING provides fully tailored designs to match your project’s specific requirements, from layout and size to functional features.",
                 },
@@ -199,8 +227,7 @@ const PrefabricatedSite = () => {
                     "With LANDSKING, installation is fast and efficient, reducing downtime and enabling you to start operations in just days for smaller setups or a few weeks for larger projects.",
                 },
                 {
-                  question:
-                    "How eco-friendly are prefab structures?",
+                  question: "How eco-friendly are prefab structures?",
                   answer:
                     "They are designed with sustainability in mind, reducing material waste, optimizing energy efficiency, and promoting greener construction practices.",
                 },
@@ -211,24 +238,20 @@ const PrefabricatedSite = () => {
                     "They are designed with sustainability in mind, reducing material waste, optimizing energy efficiency, and promoting greener construction practices.",
                 },
                 {
-                  question:
-                    "How long do prefabricated infrastructures last?",
+                  question: "How long do prefabricated infrastructures last?",
                   answer:
                     "Designed with high-quality materials, these solutions are built to last for decades while withstanding tough weather and site conditions.",
                 },
                 {
-                  question:
-                    "Can prefabricated infrastructure be relocated?",
+                  question: "Can prefabricated infrastructure be relocated?",
                   answer:
                     "Yes! Our modular structures are built for easy relocation, helping you save time and cost when projects shift locations.",
                 },
                 {
-                  question:
-                    "How do prefabricated structures help save money?",
+                  question: "How do prefabricated structures help save money?",
                   answer:
                     "They optimize costs by reducing on-site labor, speeding up construction, and cutting down on unused materials, giving you maximum value for investment.",
                 },
-
               ].map((faq, idx) => (
                 <details
                   key={idx}

@@ -6,8 +6,7 @@ import Header from "../../Components/Header";
 import VideoSection from "../../Components/RealState/VideoSection";
 import ZigzagSection from "../../Components/RealState/ZigzagSection";
 import OurLineage from "../../Components/RealState/OurLineage";
-import BeyondBoundaries from "../../Components/RealState/BeyondBoundaries";
-import AboutPage from "../../Components/RealState/AboutPage";
+
 import PropertySearch from "../../Components/RealState/PropertySearch";
 import SectorSlider from "../../Components/RealState/SectorSlider";
 import LandmarkProjects from "../../Components/RealState/LandmarkProjects";
@@ -16,7 +15,6 @@ import AccoladesSlider from "../../Components/RealState/AccoladesSlider";
 import FooterReal from "../../Components/RealState/FooterReal";
 import ClientReal from "../../Components/RealState/ClientReal";
 import Realstateheader from "yes/Components/Realstateheader";
-import Footer from "yes/Components/Footer";
 import Realabout from "yes/Components/RealState/Realabout";
 
 export default function RealStateDevlopment() {
@@ -26,8 +24,7 @@ export default function RealStateDevlopment() {
       <VideoSection />
       <ProjectsSection />
       <ZigzagSection />
-      <Realabout/>
-      {/* <AboutPage /> */}
+      <Realabout />
       <OurLineage />
       <PropertySearch />
       <SectorSlider />
@@ -36,7 +33,7 @@ export default function RealStateDevlopment() {
       <NewsCorner />
       <AccoladesSlider />
       {/* <BeyondBoundaries /> */}
-      <FooterReal/>
+      <FooterReal />
     </>
   );
 }

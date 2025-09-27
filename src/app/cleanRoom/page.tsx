@@ -21,7 +21,7 @@ const CleanRoom = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
                 Clean Room
               </h1>
             </div>
@@ -45,8 +45,19 @@ const CleanRoom = () => {
                 High-Precision Controlled Environments
               </h3>
               <p className="text-gray-700 mb-4">
-                Clean rooms are specialized environments created to keep airborne particles, contaminants, and pollutants at extremely low levels. They are critical for sectors such as pharmaceuticals, electronics, biotechnology, food processing, and medical devices, where even tiny particles can compromise product quality. <br /><br />
-                LANDSKING excels in designing and producing modular clean room solutions using premium PUF, EPS, and Rockwool sandwich panels. Leveraging more than 25 years of prefabrication expertise, our systems comply with rigorous international standards, offering excellent hygiene, thermal performance, and contamination control.
+                Clean rooms are specialized environments created to keep
+                airborne particles, contaminants, and pollutants at extremely
+                low levels. They are critical for sectors such as
+                pharmaceuticals, electronics, biotechnology, food processing,
+                and medical devices, where even tiny particles can compromise
+                product quality. <br />
+                <br />
+                LANDSKING excels in designing and producing modular clean room
+                solutions using premium PUF, EPS, and Rockwool sandwich panels.
+                Leveraging more than 25 years of prefabrication expertise, our
+                systems comply with rigorous international standards, offering
+                excellent hygiene, thermal performance, and contamination
+                control.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -61,14 +72,39 @@ const CleanRoom = () => {
                 Why Choose Us for Clean Room Construction?
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li><strong>Comprehensive In-House Design & Manufacturing:</strong> LANDSKING offers complete clean room solutions from concept design to commissioning, tailored for your industry’s needs.</li>
-                <li><strong>Premium Modular Panels:</strong> Constructed using insulated sandwich panels for high strength, thermal efficiency, and airtight performance.</li>
-                <li><strong>Flexible Configurations:</strong> ISO-class compliant clean rooms with modular layouts that can be easily expanded or reconfigured.</li>
-                <li><strong>Rapid Delivery:</strong> State-of-the-art production facilities enable fast manufacturing and installation, covering over 6,800 sqm daily.</li>
-                <li><strong>Nationwide Project Execution:</strong> Delivering to pharma hubs, industrial zones, and R&D centers across India with a reliable logistics network.</li>
-                <li><strong>Standards & Compliance:</strong> Designed to adhere to GMP, FDA, ISO, and WHO guidelines depending on project specifications.</li>
+                <li>
+                  <strong>
+                    Comprehensive In-House Design & Manufacturing:
+                  </strong>{" "}
+                  LANDSKING offers complete clean room solutions from concept
+                  design to commissioning, tailored for your industry’s needs.
+                </li>
+                <li>
+                  <strong>Premium Modular Panels:</strong> Constructed using
+                  insulated sandwich panels for high strength, thermal
+                  efficiency, and airtight performance.
+                </li>
+                <li>
+                  <strong>Flexible Configurations:</strong> ISO-class compliant
+                  clean rooms with modular layouts that can be easily expanded
+                  or reconfigured.
+                </li>
+                <li>
+                  <strong>Rapid Delivery:</strong> State-of-the-art production
+                  facilities enable fast manufacturing and installation,
+                  covering over 6,800 sqm daily.
+                </li>
+                <li>
+                  <strong>Nationwide Project Execution:</strong> Delivering to
+                  pharma hubs, industrial zones, and R&D centers across India
+                  with a reliable logistics network.
+                </li>
+                <li>
+                  <strong>Standards & Compliance:</strong> Designed to adhere to
+                  GMP, FDA, ISO, and WHO guidelines depending on project
+                  specifications.
+                </li>
               </ul>
-
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -79,8 +115,6 @@ const CleanRoom = () => {
               />
             </div>
           </div>
-
-
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -113,7 +147,9 @@ const CleanRoom = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">Essential Features of LANDSKING Clean Rooms</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Essential Features of LANDSKING Clean Rooms
+              </h3>
 
               <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>Leak-proof, continuous construction</li>
@@ -121,10 +157,11 @@ const CleanRoom = () => {
                 <li>Panels that resist fire and corrosion</li>
                 <li>Easy-to-clean, hygienic finishes</li>
                 <li>Fully compatible with HVAC and filtration systems</li>
-                <li>Lower energy consumption thanks to high-performance insulation</li>
+                <li>
+                  Lower energy consumption thanks to high-performance insulation
+                </li>
                 <li>Long-lasting, maintenance-free design</li>
               </ul>
-
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -136,23 +173,23 @@ const CleanRoom = () => {
             </div>
           </div>
 
-
-
           {/* Centered Heading + Paragraph */}
           <div className="text-center mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-[#000080]">
               Let’s Build Your Clean Room – The Smarter Way
             </h2>
             <p className="text-gray-700 text-lg">
-              Planning to set up a clean room? LANDSKING offers a flexible, affordable, and regulation-compliant solution, executed with accuracy and expertise.
+              Planning to set up a clean room? LANDSKING offers a flexible,
+              affordable, and regulation-compliant solution, executed with
+              accuracy and expertise.
               <br />
-
-              📩 Contact us today for expert consultation on your clean room project.
+              📩 Contact us today for expert consultation on your clean room
+              project.
             </p>
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
+          <div className=" mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
@@ -174,15 +211,14 @@ const CleanRoom = () => {
                     "The two main types of cleanrooms are turbulently ventilated (non-unidirectional) and unidirectional flow cleanrooms. Prefabricated versions of both types are available.",
                 },
                 {
-                  question:
-                    "What is the cost of a cleanroom in India?",
+                  question: "What is the cost of a cleanroom in India?",
                   answer:
                     "In India, the cost of modular cleanrooms ranges from less than 7,000 INR to more than 70,000 INR per square foot. LANDSKING delivers competitively priced cleanroom solutions with free-standing walls and robust load-bearing ceilings.",
                 },
                 {
                   question: "Who uses cleanrooms?",
-                  answer:
-                    (<div>
+                  answer: (
+                    <div>
                       <ul className="list-disc pl-5 text-gray-700 mb-4">
                         <li>Pharmaceuticals & Nutraceuticals</li>
                         <li>Research Labs & Laboratories</li>
@@ -192,11 +228,11 @@ const CleanRoom = () => {
                         <li>Medical Cannabis Production</li>
                         <li>Sustainable Energy Supply Industries</li>
                       </ul>
-                    </div>),
+                    </div>
+                  ),
                 },
                 {
-                  question:
-                    "Who manufactures cleanrooms?",
+                  question: "Who manufactures cleanrooms?",
                   answer:
                     "LANDSKING is a leading provider of modular cleanroom systems, offering complete design, manufacturing, and installation services to meet specific industry requirements.",
                 },
@@ -207,8 +243,7 @@ const CleanRoom = () => {
                     "In India, ISO 7 is a typical cleanroom classification, allowing under 352,000 particles >0.5 microns per cubic meter and mandating 60 HEPA-filtered air changes per hour. This is equivalent to the Federal Standard Class 10,000.",
                 },
                 {
-                  question:
-                    "How are pharmaceutical cleanrooms classified?",
+                  question: "How are pharmaceutical cleanrooms classified?",
                   answer:
                     "Pharmaceutical cleanrooms are categorized based on the number of airborne particles per cubic meter. This classification ensures the environment complies with pharmaceutical standards. Common ISO classes for pharmaceutical cleanrooms are ISO 7 and ISO 8, corresponding to Class 10,000 and Class 100,000 in the older Federal Standard 209E.",
                 },
@@ -219,8 +254,7 @@ const CleanRoom = () => {
                     "Ceiling coverage refers to the portion of the ceiling equipped with HEPA (high-efficiency particulate air) and ULPA (ultra-low penetration air) filters. For an ISO Class 1 cleanroom, which is the highest cleanliness level, 500–750 air changes per hour are recommended, with 80–100% ceiling coverage.",
                 },
                 {
-                  question:
-                    "How are cleanrooms used in pharma?",
+                  question: "How are cleanrooms used in pharma?",
                   answer:
                     "A pharmaceutical cleanroom is a specially controlled space where air is supplied, filtered, and circulated under strict monitoring. It ensures that products remain free from dust, microbes, and other pollutants.",
                 },

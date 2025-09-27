@@ -650,7 +650,7 @@ export default function Coldstorageandwarehouse() {
       <Brand />
 
       {/* faqs */}
-      <section className="max-w-4xl mx-auto px-4 py-12">
+      <section className=" mx-auto px-4 py-12">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">

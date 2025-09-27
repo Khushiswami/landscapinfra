@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";
+import Footer from "../../Components/Footer";
 
 const FactoryBuilding = () => {
   return (
     <>
       <div>
-        <IndustryHeader/>
+        <IndustryHeader />
 
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">
@@ -20,7 +21,7 @@ const FactoryBuilding = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
                 Factory Building
               </h1>
             </div>
@@ -146,7 +147,7 @@ const FactoryBuilding = () => {
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
+          <div className=" mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>

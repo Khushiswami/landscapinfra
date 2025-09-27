@@ -18,8 +18,8 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 import Brand from "yes/Components/Brand";
+import Industryheader from "yes/Components/Industryheader";
 
 const testimonialsData = [
   {
@@ -39,21 +39,23 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Landsking has developed landscape features for railway stations, metro lines, and transit corridors,",
+    title:
+      "Landsking has developed landscape features for railway stations, metro lines, and transit corridors,",
     description:
       "including green walls, platform gardens, shaded waiting areas, and ecological buffers along tracks and yards.",
   },
   {
-    title: "Our landscape designs provide all-weather, all-terrain sustainability",
+    title:
+      "Our landscape designs provide all-weather, all-terrain sustainability",
     description:
       "enhancing passenger experience while improving ecological balance even in the remotest and most demanding locations.",
   },
   {
-    title: "Landsking has also delivered green beautification projects near water bodies, canals, and drainage-sensitive zones,",
+    title:
+      "Landsking has also delivered green beautification projects near water bodies, canals, and drainage-sensitive zones,",
     description:
       "incorporating native plantation and erosion control measures.",
   },
-
 ];
 
 const areasData: Area[] = [
@@ -187,7 +189,7 @@ export default function Railways() {
 
   return (
     <>
-      <IndustryHead/>
+      <Industryheader />
 
       <ContactSectionB
         title="Railways"
@@ -231,7 +233,7 @@ export default function Railways() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-      <Brand/>
+      <Brand />
 
       <Footer />
     </>

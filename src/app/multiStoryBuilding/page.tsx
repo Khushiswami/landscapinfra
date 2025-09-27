@@ -21,7 +21,7 @@ const MultiStoryBuilding = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
                 Prefabricated Multi-Storey Building Manufacturer
               </h1>
             </div>
@@ -213,7 +213,7 @@ const MultiStoryBuilding = () => {
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
+          <div className=" mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
@@ -272,7 +272,7 @@ const MultiStoryBuilding = () => {
               ].map((faq, idx) => (
                 <details
                   key={idx}
-                  className="bg-white rounded-lg shadow p-4 cursor-pointer group"
+                  className="bg-white  p-4 cursor-pointer group"
                 >
                   <summary className="flex justify-between items-center font-semibold text-lg list-none">
                     {faq.question}

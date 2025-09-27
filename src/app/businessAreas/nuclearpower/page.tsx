@@ -18,8 +18,8 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 import Brand from "yes/Components/Brand";
+import Industryheader from "yes/Components/Industryheader";
 
 const testimonialsData = [
   {
@@ -196,8 +196,7 @@ export default function NuclearPower() {
 
   return (
     <>
-      <IndustryHead/>
-
+      <Industryheader />
       <ContactSectionB
         title="About NuclearPower Infra"
         subtitle="Building trust with every project"
@@ -240,7 +239,7 @@ export default function NuclearPower() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-      <Brand/>
+      <Brand />
 
       <Footer />
     </>

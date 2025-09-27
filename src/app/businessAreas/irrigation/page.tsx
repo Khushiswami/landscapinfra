@@ -18,8 +18,8 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 import Brand from "yes/Components/Brand";
+import Industryheader from "yes/Components/Industryheader";
 
 const testimonialsData = [
   {
@@ -58,7 +58,6 @@ const featuresData = [
     description:
       "Ongoing management and upkeep of irrigation infrastructure to maximize longevity and performance.",
   },
-  
 ];
 
 const areasData: Area[] = [
@@ -192,7 +191,7 @@ export default function Irrigation() {
 
   return (
     <>
-      <IndustryHead/>
+      <Industryheader />
 
       <ContactSectionB
         title="Irrigation"
@@ -236,7 +235,7 @@ export default function Irrigation() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-     <Brand/>
+      <Brand />
       <Footer />
     </>
   );

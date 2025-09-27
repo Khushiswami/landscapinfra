@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";import PedFooter from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";
+import PedFooter from "../../Components/Footer";
 
 const PrefabSiteOffice = () => {
   return (
     <>
       <div>
-        <IndustryHeader/>
+        <IndustryHeader />
 
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">
@@ -20,7 +21,7 @@ const PrefabSiteOffice = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
                 Prefab Site Office
               </h1>
             </div>

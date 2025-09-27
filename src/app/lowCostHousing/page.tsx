@@ -20,7 +20,7 @@ const LowCostHousing = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
                 Cost-Effective Housing With PUF Panel Sheets
               </h1>
             </div>
@@ -44,7 +44,11 @@ const LowCostHousing = () => {
                 Innovative and Budget-Friendly Housing with PUF and EPS Panels
               </h3>
               <p className="text-gray-700 mb-4">
-                LANDSKING delivers innovative, budget-friendly housing solutions using PUF and EPS panels, ensuring eco-friendly, energy-efficient, and durable construction. These solutions are designed to meet modern housing needs without compromising on quality or comfort.
+                LANDSKING delivers innovative, budget-friendly housing solutions
+                using PUF and EPS panels, ensuring eco-friendly,
+                energy-efficient, and durable construction. These solutions are
+                designed to meet modern housing needs without compromising on
+                quality or comfort.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -59,22 +63,28 @@ const LowCostHousing = () => {
                 Advantages and unique qualities of PUF and EPS panel homes
               </h3>
               <p className="text-gray-700 mb-4">
-                ✅ Cost-effective construction: Pre-engineered panels minimize labor and installation time, cutting down overall expenses.
+                ✅ Cost-effective construction: Pre-engineered panels minimize
+                labor and installation time, cutting down overall expenses.
               </p>
               <p className="text-gray-700 mb-4">
-                ✅ Thermal efficiency: Excellent insulation helps maintain indoor comfort while reducing energy usage.
+                ✅ Thermal efficiency: Excellent insulation helps maintain
+                indoor comfort while reducing energy usage.
               </p>
               <p className="text-gray-700 mb-4">
-                ✅ Durability: Built to resist corrosion, pests, fire, and extreme weather for long-lasting performance.
+                ✅ Durability: Built to resist corrosion, pests, fire, and
+                extreme weather for long-lasting performance.
               </p>
               <p className="text-gray-700 mb-4">
-                ✅ Lightweight and relocatable: Easy to transport and assemble, making them ideal for multiple applications.
+                ✅ Lightweight and relocatable: Easy to transport and assemble,
+                making them ideal for multiple applications.
               </p>
               <p className="text-gray-700 mb-4">
-                ✅ Customizable designs: Flexible layouts and finishes tailored to suit varied project needs.
+                ✅ Customizable designs: Flexible layouts and finishes tailored
+                to suit varied project needs.
               </p>
               <p className="text-gray-700 mb-4">
-                ✅ Eco-friendly: Sustainable materials help lower the overall carbon footprint.
+                ✅ Eco-friendly: Sustainable materials help lower the overall
+                carbon footprint.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -86,8 +96,6 @@ const LowCostHousing = () => {
               />
             </div>
           </div>
-
-          
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -104,12 +112,30 @@ const LowCostHousing = () => {
                 Applications
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
-                <li>✅ Labour accommodation: Rapidly deployable housing units to meet workforce requirements.</li>
-                <li>✅ Modular site offices: Efficient, relocatable office spaces designed for construction environments.</li>
-                <li>✅ Temporary housing: Practical short-term living solutions for disaster relief or seasonal staff.</li>
-                <li>✅ Marketing offices: Portable and functional structures for sales or promotional operations.</li>
-                <li>✅ Construction canteens: Convenient on-site dining facilities for workers and teams.</li>
-                <li>✅ Equipment housing: Secure and durable shelters for machinery, tools, and equipment.</li>
+                <li>
+                  ✅ Labour accommodation: Rapidly deployable housing units to
+                  meet workforce requirements.
+                </li>
+                <li>
+                  ✅ Modular site offices: Efficient, relocatable office spaces
+                  designed for construction environments.
+                </li>
+                <li>
+                  ✅ Temporary housing: Practical short-term living solutions
+                  for disaster relief or seasonal staff.
+                </li>
+                <li>
+                  ✅ Marketing offices: Portable and functional structures for
+                  sales or promotional operations.
+                </li>
+                <li>
+                  ✅ Construction canteens: Convenient on-site dining facilities
+                  for workers and teams.
+                </li>
+                <li>
+                  ✅ Equipment housing: Secure and durable shelters for
+                  machinery, tools, and equipment.
+                </li>
               </ul>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
@@ -117,8 +143,7 @@ const LowCostHousing = () => {
             </div>
           </div>
 
-
-{/* Centered Heading + Paragraph */}
+          {/* Centered Heading + Paragraph */}
           {/* <div className="text-center mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-[#000080]">
               Prefab Multi-Storey Buildings for Multipurpose Applications
@@ -155,11 +180,8 @@ const LowCostHousing = () => {
             </p>
           </div> */}
 
-
-    
-
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
+          <div className=" mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
@@ -171,29 +193,30 @@ const LowCostHousing = () => {
                     "PUF (Polyurethane Foam) panel-based homes are built using insulated, prefabricated panels for walls and roofs. This method ensures affordability, energy efficiency, and quick construction, making it an excellent solution for cost-effective housing.",
                 },
                 {
-                  question: "Are PUF panel houses strong and weather-resistant?",
+                  question:
+                    "Are PUF panel houses strong and weather-resistant?",
                   answer:
                     "Yes, PUF panel houses are highly durable and designed to endure extreme weather conditions. They offer superior insulation, fire resistance, and moisture protection, making them reliable in various climates.",
                 },
                 {
-                  question: "What advantages do PUF panels offer for affordable housing?",
+                  question:
+                    "What advantages do PUF panels offer for affordable housing?",
                   answer:
                     "PUF panels provide quick, cost-effective construction, offer great insulation, need little maintenance, and resist termites and corrosion — suitable for shelters, work accommodations, site offices, and permanent homes.",
                 },
                 {
-                  question:
-                    "Are PUF panel houses customizable?",
+                  question: "Are PUF panel houses customizable?",
                   answer:
                     "Yes! LANDSKING offers PUF panel housing that can be personalized in every aspect — from layout and size to interior partitions, doors, windows, and utility fittings — ensuring the perfect fit for your project.",
                 },
                 {
-                  question: "What’s the construction time for PUF panel houses?",
+                  question:
+                    "What’s the construction time for PUF panel houses?",
                   answer:
                     "Construction timelines are greatly minimized with PUF panels. Depending on the project’s scale, a standard low-cost housing unit can be completed in just a few days to a couple of weeks.",
                 },
                 {
-                  question:
-                    "Are PUF panel houses eco-friendly?",
+                  question: "Are PUF panel houses eco-friendly?",
                   answer:
                     "Yes, PUF panel homes are highly energy-efficient thanks to their excellent insulation, which reduces HVAC energy usage. Additionally, their construction process produces minimal waste, supporting sustainable and eco-friendly building practices.",
                 },

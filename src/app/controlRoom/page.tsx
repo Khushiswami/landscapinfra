@@ -21,7 +21,7 @@ const ControlRoom = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
                 Control Room
               </h1>
             </div>
@@ -45,7 +45,12 @@ const ControlRoom = () => {
                 Advanced Engineering Solutions for Control Rooms
               </h3>
               <p className="text-gray-700 mb-4">
-                LANDSKING offers prefabricated control rooms using high-quality PUF-insulated panels, serving sectors like steel plants, mining, power generation, and beyond. Designed for strength and reliability, these control rooms come in both lift-on and non-lift-on variants and can be customized with or without steel frameworks.
+                LANDSKING offers prefabricated control rooms using high-quality
+                PUF-insulated panels, serving sectors like steel plants, mining,
+                power generation, and beyond. Designed for strength and
+                reliability, these control rooms come in both lift-on and
+                non-lift-on variants and can be customized with or without steel
+                frameworks.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -60,18 +65,25 @@ const ControlRoom = () => {
                 Key Features of Control Rooms
               </h3>
               <p className="text-gray-700 mb-4">
-                Control rooms are engineered for superior performance in industrial environments, Key features are:
+                Control rooms are engineered for superior performance in
+                industrial environments, Key features are:
               </p>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>Pre-engineered construction using PUF-insulated panels</li>
-                <li>Variety of exterior finishes, such as PPGS/PPGS, PPGS/ACP, and SS/SS</li>
+                <li>
+                  Variety of exterior finishes, such as PPGS/PPGS, PPGS/ACP, and
+                  SS/SS
+                </li>
                 <li>Strong, long-lasting walls offered in multiple heights</li>
                 <li>Easy-to-handle panels for versatile installation</li>
-                <li>Integrated large view windows within the insulated panels</li>
+                <li>
+                  Integrated large view windows within the insulated panels
+                </li>
                 <li>Raised flooring for organized cable routing</li>
               </ul>
               <p className="text-gray-700 mb-4">
-                Allows for effortless integration of essential safety equipment, such as smoke detection and fire suppression systems.
+                Allows for effortless integration of essential safety equipment,
+                such as smoke detection and fire suppression systems.
               </p>
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
@@ -83,8 +95,6 @@ const ControlRoom = () => {
               />
             </div>
           </div>
-
-
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -100,7 +110,13 @@ const ControlRoom = () => {
               <h3 className="text-2xl font-bold mb-4 text-[#000080]">
                 Manufacturing Technology
               </h3>
-              <p className="text-gray-700 mb-4">LANDSKING leads in control room engineering, combining cutting-edge production technology with superior materials. Designed for peak performance in demanding conditions, our control rooms comply with regulatory approvals and satisfy both commercial and safety standards.</p>
+              <p className="text-gray-700 mb-4">
+                LANDSKING leads in control room engineering, combining
+                cutting-edge production technology with superior materials.
+                Designed for peak performance in demanding conditions, our
+                control rooms comply with regulatory approvals and satisfy both
+                commercial and safety standards.
+              </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
               </button>
@@ -110,17 +126,27 @@ const ControlRoom = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">Applications</h3>
-              <p className="text-gray-700 mb-4">LANDSKING provides control room solutions for diverse industries, including:</p>
+              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+                Applications
+              </h3>
+              <p className="text-gray-700 mb-4">
+                LANDSKING provides control room solutions for diverse
+                industries, including:
+              </p>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>Industrial manufacturing and production sites</li>
                 <li>Steel plants, smelting operations, and furnace sections</li>
                 <li>Bulk goods handling areas</li>
-                <li>Facilities for food processing, pharmaceuticals, and electronics testing</li>
+                <li>
+                  Facilities for food processing, pharmaceuticals, and
+                  electronics testing
+                </li>
                 <li>High-heat environments like steel mills</li>
-                <li>Tailored HSM control rooms, offered in both lift-on and non-lift-on designs</li>
+                <li>
+                  Tailored HSM control rooms, offered in both lift-on and
+                  non-lift-on designs
+                </li>
               </ul>
-
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -132,7 +158,6 @@ const ControlRoom = () => {
             </div>
           </div>
 
-
           {/* Centered Heading + Paragraph */}
           <div className=" mx-auto">
             <h2 className="text-center text-3xl font-bold mb-4 text-[#000080]">
@@ -142,18 +167,29 @@ const ControlRoom = () => {
               Key benefits of LANDSKING control rooms include:
               <br />
               <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li>Enhanced thermal insulation for better energy management and comfort</li>
-                <li>Strong, long-lasting structures for safe operation in challenging environments</li>
+                <li>
+                  Enhanced thermal insulation for better energy management and
+                  comfort
+                </li>
+                <li>
+                  Strong, long-lasting structures for safe operation in
+                  challenging environments
+                </li>
                 <li>Rapid dry construction, eliminating the need for water</li>
-                <li>Panels that can be customized to site-specific conditions</li>
+                <li>
+                  Panels that can be customized to site-specific conditions
+                </li>
                 <li>Easily adaptable for relocation or expansion</li>
-                <li>All-weather construction for reliable and consistent performance</li>
+                <li>
+                  All-weather construction for reliable and consistent
+                  performance
+                </li>
               </ul>
             </p>
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
+          <div className=" mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
@@ -165,12 +201,14 @@ const ControlRoom = () => {
                     "A control pulpit is a specialized modular structure that houses industrial control panels and monitoring systems, providing a safe and organized workspace.",
                 },
                 {
-                  question: "How does a control room relate to a control pulpit?",
+                  question:
+                    "How does a control room relate to a control pulpit?",
                   answer:
                     "A control room serves as the main hub for process monitoring and management, while a control pulpit is a compact version, customized for particular equipment or sections within an industrial setup.",
                 },
                 {
-                  question: "What sectors rely on control pulpits or control rooms?",
+                  question:
+                    "What sectors rely on control pulpits or control rooms?",
                   answer:
                     "Industries such as power generation, steel production, manufacturing, and process-heavy operations commonly use control rooms and pulpits.",
                 },
@@ -181,7 +219,8 @@ const ControlRoom = () => {
                     "Key features include ergonomically designed workspaces, state-of-the-art monitoring equipment, climate control, acoustic insulation, and tailored layouts to optimize workflow.",
                 },
                 {
-                  question: "How do control pulpits differ from traditional control rooms?",
+                  question:
+                    "How do control pulpits differ from traditional control rooms?",
                   answer:
                     "Control pulpits are compact, localized units designed for specific equipment, whereas control rooms oversee broader, plant-wide operations.",
                 },
@@ -192,8 +231,7 @@ const ControlRoom = () => {
                     "Yes, LANDSKING provides tailored solutions to suit control room needs, including advanced insulation, integrated equipment, and HVAC systems.",
                 },
                 {
-                  question:
-                    "How are control rooms and pulpits constructed?",
+                  question: "How are control rooms and pulpits constructed?",
                   answer:
                     "Steel structures, insulated panels, fire-retardant materials, and specialized flooring are used to construct control rooms and pulpits, providing robustness and safety.",
                 },
@@ -210,14 +248,12 @@ const ControlRoom = () => {
                     "Control rooms and pulpits from LANDSKING are equipped with fire-resistant components, soundproofing, anti-static flooring, and advanced ventilation systems to guarantee a safe working environment.",
                 },
                 {
-                  question:
-                    "Can control rooms be moved like control pulpits?",
+                  question: "Can control rooms be moved like control pulpits?",
                   answer:
                     "While control pulpits are generally portable, larger control rooms can be designed modularly for relocation or future expansion.",
                 },
                 {
-                  question:
-                    "How long do control rooms and pulpits last?",
+                  question: "How long do control rooms and pulpits last?",
                   answer:
                     "With proper maintenance, LANDSKING control rooms and pulpits can last over 20 years while maintaining optimal performance.",
                 },

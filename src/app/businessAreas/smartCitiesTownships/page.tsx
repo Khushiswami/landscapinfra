@@ -18,8 +18,8 @@ import PlatformSectionB from "../../../Components/businessAreas/PlatformSection"
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-import IndustryHead from "yes/Components/Industryhead";
 import Brand from "yes/Components/Brand";
+import Industryheader from "yes/Components/Industryheader";
 
 const testimonialsData = [
   {
@@ -39,26 +39,25 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Residential, Commercial, Social, and Recreational infrastructure development",
-    description:
-      "",
+    title:
+      "Residential, Commercial, Social, and Recreational infrastructure development",
+    description: "",
   },
   {
-    title: "Geographic Information System (GIS) integration for efficient city planning and management",
-    description:
-      "",
+    title:
+      "Geographic Information System (GIS) integration for efficient city planning and management",
+    description: "",
   },
   {
-    title: "Environmentally conscious master planning focused on sustainability",
-    description:
-      "",
+    title:
+      "Environmentally conscious master planning focused on sustainability",
+    description: "",
   },
   {
-    title: "Advanced, scalable IT infrastructure supporting smart city operations",
-    description:
-      "",
+    title:
+      "Advanced, scalable IT infrastructure supporting smart city operations",
+    description: "",
   },
- 
 ];
 
 const areasData: Area[] = [
@@ -192,7 +191,7 @@ export default function SmartCitiesTownships() {
 
   return (
     <>
-    <IndustryHead/>
+      <Industryheader />
 
       <ContactSectionB
         title="Smart Cities & Townships"
@@ -236,7 +235,7 @@ export default function SmartCitiesTownships() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-     <Brand/>
+      <Brand />
       <Footer />
     </>
   );

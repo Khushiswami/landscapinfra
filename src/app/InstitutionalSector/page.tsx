@@ -79,7 +79,7 @@ export default function IndustrialBuildingsConstruction() {
           }}
         >
           <div className="text-white text-center relative z-10">
-            <h1 className="text-3xl md:text-6xl font-bold leading-snug tracking-wide">
+            <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
               Institutional Sector
             </h1>
           </div>

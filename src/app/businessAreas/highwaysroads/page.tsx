@@ -20,6 +20,7 @@ import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
 import IndustryHead from "yes/Components/Industryhead";
 import Brand from "yes/Components/Brand";
+import Industryheader from "yes/Components/Industryheader";
 
 const testimonialsData = [
   {
@@ -188,7 +189,7 @@ export default function HighwaysRoads() {
 
   return (
     <>
-      <IndustryHead />
+      <Industryheader />
 
       <ContactSectionB
         title="Highways, Roads & Bridges"
