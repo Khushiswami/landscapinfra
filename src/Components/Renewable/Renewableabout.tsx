@@ -58,7 +58,7 @@ export default function Renewableabout() {
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative w-full h-64 sm:h-72 md:h-75 overflow-hidden rounded-sm shadow-lg hover:border-blue-400 transition-all duration-500">
+          <div className="relative w-full h-64 sm:h-72 md:h-75 overflow-hidden   hover: transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay

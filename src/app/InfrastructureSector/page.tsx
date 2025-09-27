@@ -93,7 +93,6 @@ export default function InfrastructureSector() {
               Long-Lasting and Personalized Pre-Engineered Buildings for
               Infrastructure Projects
             </h2>
-            <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -140,7 +139,7 @@ export default function InfrastructureSector() {
 
       {/* Cards Section */}
       <main className="bg-white">
-        <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-12">
+        <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
               image="/NDR.webp"

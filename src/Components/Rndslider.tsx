@@ -56,7 +56,7 @@ export default function Rndslider() {
   }, [activeCategory]);
 
   return (
-    <div className="px-auto py-5 mt-6 bg-[#f0f1f5]">
+    <div className="px-auto py-5 mt-6 bg-[#f0f1f5] mb-7 md:mb-0">
       {/* Component-scoped styles for mobile arrow size & color */}
       <style jsx>{`
         /* Force white arrows + full opacity on mobile */

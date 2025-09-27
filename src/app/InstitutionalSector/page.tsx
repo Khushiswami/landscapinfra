@@ -93,7 +93,6 @@ export default function IndustrialBuildingsConstruction() {
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               PEB Institutional Sector
             </h2>
-            <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -135,7 +134,7 @@ export default function IndustrialBuildingsConstruction() {
 
       {/* ✅ Cards Section */}
       <main className="bg-white px-4 sm:px-6 md:px-12">
-        <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-12">
+        <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               image="/sectorimg/h.jpg"

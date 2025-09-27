@@ -247,7 +247,7 @@ export default function Realstateheader() {
               </p>
               <Link
                 href={activeMenu.left.buttonLink}
-                className="inline-block bg-[#000080] text-white px-4 py-2 rounded hover:bg-green-800 transition mb-6"
+                className="inline-block bg-[#000080] text-white px-4 py-2 rounded hover:bg-[#000080] transition mb-6"
               >
                 {activeMenu.left.buttonText}
               </Link>
@@ -283,7 +283,7 @@ export default function Realstateheader() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="hover:text-green-800 transition"
+                        className="hover:text-[#000080] transition"
                       >
                         {link.label}
                       </Link>
@@ -304,7 +304,7 @@ export default function Realstateheader() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="hover:text-green-800 transition"
+                        className="hover:text-[#000080] transition"
                       >
                         {link.label}
                       </Link>
@@ -325,7 +325,7 @@ export default function Realstateheader() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="hover:text-green-800 transition"
+                        className="hover:text-[#000080] transition"
                       >
                         {link.label}
                       </Link>
@@ -360,7 +360,7 @@ export default function Realstateheader() {
                   <div className="flex items-center justify-between">
                     <Link
                       href={item.href}
-                      className="hover:text-green-800 transition flex-1 text-left"
+                      className="hover:[#000080] transition flex-1 text-left"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -397,7 +397,7 @@ export default function Realstateheader() {
                         </p>
                         <Link
                           href={activeMobileMenu.left.buttonLink}
-                          className="inline-block bg-green-900 text-white px-3 py-1 rounded hover:bg-green-800 transition mb-2"
+                          className="inline-block bg-[#000080] text-white px-3 py-1 rounded hover:bg-[#000080] transition mb-2"
                         >
                           {activeMobileMenu.left.buttonText}
                         </Link>
@@ -413,7 +413,7 @@ export default function Realstateheader() {
                             {activeMobileMenu.left.linkHref && (
                               <Link
                                 href={activeMobileMenu.left.linkHref}
-                                className="text-green-800 text-sm font-medium hover:underline"
+                                className="text-[#000080] text-sm font-medium hover:underline"
                               >
                                 {activeMobileMenu.left.linkText}
                               </Link>
@@ -431,7 +431,7 @@ export default function Realstateheader() {
                               <li key={link.label}>
                                 <Link
                                   href={link.href}
-                                  className="block hover:text-green-800 transition"
+                                  className="block hover:text-[#000080] transition"
                                   onClick={() => setMobileMenuOpen(false)}
                                 >
                                   {link.label}
@@ -452,7 +452,7 @@ export default function Realstateheader() {
                                 <li key={link.label}>
                                   <Link
                                     href={link.href}
-                                    className="block hover:text-green-800 transition"
+                                    className="block hover:text-[#000080] transition"
                                     onClick={() => setMobileMenuOpen(false)}
                                   >
                                     {link.label}
@@ -474,7 +474,7 @@ export default function Realstateheader() {
                                 <li key={link.label}>
                                   <Link
                                     href={link.href}
-                                    className="block hover:text-green-800 transition"
+                                    className="block hover:text-[#000080] transition"
                                     onClick={() => setMobileMenuOpen(false)}
                                   >
                                     {link.label}

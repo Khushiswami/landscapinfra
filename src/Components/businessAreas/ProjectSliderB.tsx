@@ -38,7 +38,7 @@ export default function ProjectSliderB({
         {heading}
       </h2>
 
-      <div className="relative  mx-auto px-12 ">
+      <div className="relative  mx-auto px-4 md:px-12 ">
         {isMounted && (
           <Swiper
             modules={[Navigation]}

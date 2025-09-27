@@ -216,7 +216,7 @@
 //                       </div>
 //                     ) : (
 //                       <div
-//                         className={`absolute left-0 mt-2 w-56 rounded-lg shadow-lg opacity-0 invisible 
+//                         className={`absolute left-0 mt-2 w-56 rounded-lg shadow-lg opacity-0 invisible
 //                         group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out
 //                         backdrop-blur-md z-50 ${
 //                           scrolled ? "bg-white" : "bg-white/90"
@@ -402,8 +402,12 @@ type MenuItem = NormalMenu | MegaMenu;
 export default function Industryheader() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [openMobileSubMenu, setOpenMobileSubMenu] = useState<string | null>(null);
-  const [openMobileSubSubMenu, setOpenMobileSubSubMenu] = useState<string | null>(null);
+  const [openMobileSubMenu, setOpenMobileSubMenu] = useState<string | null>(
+    null
+  );
+  const [openMobileSubSubMenu, setOpenMobileSubSubMenu] = useState<
+    string | null
+  >(null);
   const [isDesktop, setIsDesktop] = useState(false);
 
   // detect screen size
@@ -430,7 +434,6 @@ export default function Industryheader() {
 
   const navLinks: MenuItem[] = [
     { name: "Home", href: "/" },
-    { name: "Our Commitment", href: "#" },
     {
       name: "Business Areas",
       href: "#",
@@ -448,9 +451,15 @@ export default function Industryheader() {
           title: "Transportation",
           href: "/transportation",
           subMenu: [
-            { name: "Highways, Roads & Bridges", href: "/businessAreas/highwaysroads" },
+            {
+              name: "Highways, Roads & Bridges",
+              href: "/businessAreas/highwaysroads",
+            },
             { name: "Railways", href: "/businessAreas/railways" },
-            { name: "Mass Rapid Transit Systems", href: "/businessAreas/massRapidTransitSystems" },
+            {
+              name: "Mass Rapid Transit Systems",
+              href: "/businessAreas/massRapidTransitSystems",
+            },
             { name: "Ports & Harbours", href: "/businessAreas/portsharbours" },
           ],
         },
@@ -458,7 +467,10 @@ export default function Industryheader() {
           title: "Water",
           href: "/water",
           subMenu: [
-            { name: "Water Supply & Sanitation", href: "/businessAreas/waterSupplySanitation" },
+            {
+              name: "Water Supply & Sanitation",
+              href: "/businessAreas/waterSupplySanitation",
+            },
             { name: "Irrigation", href: "/businessAreas/irrigation" },
           ],
         },
@@ -466,9 +478,18 @@ export default function Industryheader() {
           title: "Industrial & Buildings",
           href: "/businessAreas/mrts",
           subMenu: [
-            { name: "Manufacturing & Process Plants", href: "/businessAreas/manufacturingProcessPlants" },
-            { name: "Commercial & Institutional", href: "/businessAreas/commercialInstitutional" },
-            { name: "Smart Cities & Townships", href: "/businessAreas/smartCitiesTownships" },
+            {
+              name: "Manufacturing & Process Plants",
+              href: "/businessAreas/manufacturingProcessPlants",
+            },
+            {
+              name: "Commercial & Institutional",
+              href: "/businessAreas/commercialInstitutional",
+            },
+            {
+              name: "Smart Cities & Townships",
+              href: "/businessAreas/smartCitiesTownships",
+            },
           ],
         },
       ],
@@ -496,7 +517,10 @@ export default function Industryheader() {
       name: "About us",
       href: "/about",
       subItems: [
-        { name: "Our Leadership", href: "/industryinstallationaboutus/leadership" },
+        {
+          name: "Our Leadership",
+          href: "/industryinstallationaboutus/leadership",
+        },
         { name: "Our History", href: "/industryinstallationaboutus/company" },
         { name: "Our Mission", href: "/industryinstallationaboutus/mission" },
         { name: "Innovation", href: "/industryinstallationaboutus/innovation" },
@@ -527,7 +551,9 @@ export default function Industryheader() {
             width={150}
             height={50}
             priority
-            className={`transition-all duration-300 ${isDesktop && !scrolled ? "w-38 h-16" : "w-32 h-14"}`}
+            className={`transition-all duration-300 ${
+              isDesktop && !scrolled ? "w-38 h-16" : "w-32 h-14"
+            }`}
           />
         </Link>
 
@@ -544,54 +570,62 @@ export default function Industryheader() {
                 {link.name}
               </Link>
 
-              {"subItems" in link && link.subItems && link.subItems.length > 0 && (
-                <>
-                  {link.name === "Business Areas" ? (
-                    <div
-                      className={`absolute left-1/2 -translate-x-1/2 mt-2 w-[800px] grid grid-cols-4 gap-6 p-6 rounded-lg shadow-lg opacity-0 invisible
+              {"subItems" in link &&
+                link.subItems &&
+                link.subItems.length > 0 && (
+                  <>
+                    {link.name === "Business Areas" ? (
+                      <div
+                        className={`absolute left-1/2 -translate-x-1/2 mt-2 w-[800px] grid grid-cols-4 gap-6 p-6 rounded-lg shadow-lg opacity-0 invisible
                         group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out
-                        backdrop-blur-md z-50 ${scrolled ? "bg-white" : "bg-white/95"}`}
-                    >
-                      {(link as MegaMenu).subItems?.map((col) => (
-                        <div key={col.title}>
-                          <h4 className="font-semibold text-blue-700 mb-2">{col.title}</h4>
-                          <ul className="space-y-1">
-                            {col.subMenu?.map((item) => (
-                              <li key={item.name}>
-                                <Link
-                                  href={item.href}
-                                  className="block text-sm font-light text-gray-700 hover:text-[#000080]"
-                                >
-                                  {item.name}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <div
-                      className={`absolute left-0 mt-2 w-56 rounded-lg shadow-lg opacity-0 invisible 
-                        group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out
-                        backdrop-blur-md z-50 ${scrolled ? "bg-white" : "bg-white/90"}`}
-                    >
-                      <ul className="py-2">
-                        {(link as NormalMenu).subItems?.map((item) => (
-                          <li key={item.name}>
-                            <Link
-                              href={item.href}
-                              className="block px-4 py-2 text-sm font-light text-gray-700 hover:text-[#000080]"
-                            >
-                              {item.name}
-                            </Link>
-                          </li>
+                        backdrop-blur-md z-50 ${
+                          scrolled ? "bg-white" : "bg-white/95"
+                        }`}
+                      >
+                        {(link as MegaMenu).subItems?.map((col) => (
+                          <div key={col.title}>
+                            <h4 className="font-semibold text-blue-700 mb-2">
+                              {col.title}
+                            </h4>
+                            <ul className="space-y-1">
+                              {col.subMenu?.map((item) => (
+                                <li key={item.name}>
+                                  <Link
+                                    href={item.href}
+                                    className="block text-sm font-light text-gray-700 hover:text-[#000080]"
+                                  >
+                                    {item.name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
                         ))}
-                      </ul>
-                    </div>
-                  )}
-                </>
-              )}
+                      </div>
+                    ) : (
+                      <div
+                        className={`absolute left-0 mt-2 w-56 rounded-lg shadow-lg opacity-0 invisible 
+                        group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out
+                        backdrop-blur-md z-50 ${
+                          scrolled ? "bg-white" : "bg-white/90"
+                        }`}
+                      >
+                        <ul className="py-2">
+                          {(link as NormalMenu).subItems?.map((item) => (
+                            <li key={item.name}>
+                              <Link
+                                href={item.href}
+                                className="block px-4 py-2 text-sm font-light text-gray-700 hover:text-[#000080]"
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </>
+                )}
             </div>
           ))}
         </nav>
@@ -616,12 +650,18 @@ export default function Industryheader() {
                     <button
                       className="w-full text-left font-light text-lg text-white flex justify-between items-center"
                       onClick={() =>
-                        setOpenMobileSubMenu(openMobileSubMenu === link.name ? null : link.name)
+                        setOpenMobileSubMenu(
+                          openMobileSubMenu === link.name ? null : link.name
+                        )
                       }
                     >
                       {link.name}
                       <span className="ml-2">
-                        {openMobileSubMenu === link.name ? <FaChevronUp /> : <FaChevronDown />}
+                        {openMobileSubMenu === link.name ? (
+                          <FaChevronUp />
+                        ) : (
+                          <FaChevronDown />
+                        )}
                       </span>
                     </button>
                   ) : (
@@ -648,7 +688,9 @@ export default function Industryheader() {
                                     className="w-full text-left font-light text-lg text-white flex justify-between items-center"
                                     onClick={() =>
                                       setOpenMobileSubSubMenu(
-                                        openMobileSubSubMenu === col.title ? null : col.title
+                                        openMobileSubSubMenu === col.title
+                                          ? null
+                                          : col.title
                                       )
                                     }
                                   >
@@ -668,7 +710,9 @@ export default function Industryheader() {
                                         <li key={sub.name}>
                                           <Link
                                             href={sub.href}
-                                            onClick={() => setMobileMenuOpen(false)}
+                                            onClick={() =>
+                                              setMobileMenuOpen(false)
+                                            }
                                             className="text-sm text-white block hover:text-[#8080FF]"
                                           >
                                             {sub.name}

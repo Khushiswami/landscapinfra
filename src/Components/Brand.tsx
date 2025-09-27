@@ -60,8 +60,8 @@ export default function Brand() {
   return (
     <>
       {/* Section with animated gradient background */}
-      <section className="section-footer-cta mb-7 pt-10 pb-10 md:pt-20 md:pb-20 md:mb-0">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-left justify-between text-white px-4 md:items-center ">
+      <section className="section-footer-cta mb-7 pt-10 pb-10 md:pt-20 md:pb-20 md:mb-0 md:px-18">
+        <div className=" mx-auto flex flex-col md:flex-row items-left justify-between text-white px-4 md:items-center ">
           {/* Left text */}
           <h2 className="text-2xl md:text-4xl font-bold text-left md:text-center mb-4 md:mb-0">
             COMMITTED TO YOUR SATISFACTION
