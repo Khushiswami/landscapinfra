@@ -208,11 +208,11 @@ export default function Publicoffice() {
       </section>
 
       {/* Sectors Carousel */}
-      <section className="text-center px-4 sm:px-6 md:px-20 pt-12 md:pt-16 bg-white">
+      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
-            <h2 className="text-xl md:text-3xl font-bold text-start text-blue-900 mb-6">
-              Sectors
+            <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
+              Services
             </h2>
 
             <Swiper
@@ -240,8 +240,8 @@ export default function Publicoffice() {
                 },
               }}
             >
-              {projects.map((projectsector) => (
-                <SwiperSlide key={projectsector.id}>
+              {projects.map((project) => (
+                <SwiperSlide key={project.id}>
                   {({ isActive }) => (
                     <div
                       className={`relative text-center transition-all duration-500 group ${
@@ -251,38 +251,36 @@ export default function Publicoffice() {
                       <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
                         <div className="relative w-full h-full">
                           <Image
-                            src={projectsector.image}
-                            alt={projectsector.title}
+                            src={project.image}
+                            alt={project.title}
                             fill
                             className="object-cover w-full h-full rounded-lg"
                           />
 
                           {/* Bottom title bar */}
-                          <div className="absolute bottom-0 w-full bg-blue-600/90 text-white py-2 text-center text-sm font-semibold">
-                            {projectsector.title}
+                          <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-sm font-semibold">
+                            {project.title}
                           </div>
 
                           {/* Overlay */}
                           <div
-                            onClick={() =>
-                              handleOverlayToggle(projectsector.id)
-                            }
+                            onClick={() => handleOverlayToggle(project.id)}
                             className={`
-                            absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
-                            rounded-lg transition-opacity duration-500 cursor-pointer
-                            ${
-                              activeOverlay === projectsector.id
-                                ? "opacity-100"
-                                : "opacity-0"
-                            }
-                            md:opacity-0 md:group-hover:opacity-100 md:cursor-default
-                          `}
+                                absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
+                                rounded-lg transition-opacity duration-500 cursor-pointer
+                                ${
+                                  activeOverlay === project.id
+                                    ? "opacity-100"
+                                    : "opacity-0"
+                                }
+                                md:opacity-0 md:group-hover:opacity-100 md:cursor-default
+                              `}
                           >
-                            <h3 className="text-md md:text-sm font-semibold mb-2">
-                              {projectsector.title}
+                            <h3 className="text-sm md:text-sm font-semibold mb-2">
+                              {project.title}
                             </h3>
-                            <p className="text-base md:text-xs mb-4 line-clamp-3">
-                              {projectsector.description}
+                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                              {project.description}
                             </p>
                             <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
                               Know More

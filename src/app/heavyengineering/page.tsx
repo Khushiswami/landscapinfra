@@ -326,7 +326,6 @@ export default function HeavyEngineering() {
           </div>
         </div>
       </section>
-      {/* Sectors */}
       <Heavysector />
       {/* Tabs */}
       <section className="w-full">

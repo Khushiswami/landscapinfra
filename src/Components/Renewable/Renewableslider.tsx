@@ -56,7 +56,7 @@ export default function Renewableslider() {
   }, [activeCategory]);
 
   return (
-    <div className="px-auto py-5 mt-6 bg-[#f0f1f5]">
+    <div className="px-auto py-5 mt-6 mb-5 bg-[#f0f1f5] md:mb-0">
       {/* Component-scoped styles for mobile arrow size & color */}
       <style jsx>{`
         /* Force white arrows + full opacity on mobile */

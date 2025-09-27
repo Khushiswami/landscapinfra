@@ -44,16 +44,17 @@ const featuresData = [
       "facing extremely challenging climatic conditions as well as in densely populated urban areas, along with large-scale beautification around infrastructure projects.",
   },
   {
-    title: "Landsking has executed landscaping projects under PPP / BOT formats",
+    title:
+      "Landsking has executed landscaping projects under PPP / BOT formats",
     description:
       "as well as under EPC contracts, delivering both public and private sector projects efficiently.",
   },
   {
-    title: "Landsking also develops elevated gardens, green walls, and podium landscaping",
+    title:
+      "Landsking also develops elevated gardens, green walls, and podium landscaping",
     description:
       "on a design-build basis, ensuring aesthetics, sustainability, and performance.",
   },
-  
 ];
 
 const areasData: Area[] = [
@@ -187,7 +188,7 @@ export default function HighwaysRoads() {
 
   return (
     <>
-      <IndustryHead/>
+      <IndustryHead />
 
       <ContactSectionB
         title="Highways, Roads & Bridges"
@@ -210,7 +211,7 @@ export default function HighwaysRoads() {
         description="Landsking is a complete landscaping solutions provider, having executed terrain-specific and climate-responsive green projects including urban gardens, highway landscaping, vertical greenery, and sustainable irrigation systems. We have mastered the art of designing and delivering landscapes in complex environments ranging from rugged hills to congested cityscapes."
         features={featuresData}
       />
-{/* 
+      {/* 
       <PreEngineeredProductsB
         heading="Our Expertise"
         subheading="What We Build"
@@ -231,7 +232,7 @@ export default function HighwaysRoads() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-      <Brand/>
+      <Brand />
       <Footer />
     </>
   );

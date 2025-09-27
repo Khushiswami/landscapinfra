@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -106,9 +104,9 @@ export default function Banner() {
             </p>
             <button
               onClick={() => router.push(activeSlide.link)}
-              className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-sm sm:text-base"
+              className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-sm sm:text-base"
             >
-              <IoIosArrowForward className="w-5 h-5 text-blue-700" />
+              <IoIosArrowForward className="w-5 h-5 text-[#000080]" />
               <span>Start now</span>
             </button>
           </motion.div>
@@ -142,20 +140,19 @@ export default function Banner() {
                       duration: active === realIndex ? 6 : 0,
                       ease: "linear",
                     }}
-                    className="h-full bg-blue-600 absolute left-0 top-0"
+                    className="h-full bg-[#8080FF] absolute left-0 top-0"
                   />
                 </div>
 
                 {/* Tab Title */}
                 <p
-  className={`text-[10px] sm:text-md font-medium text-center min-h-[24px] leading-snug truncate ${
-    active === realIndex ? "text-white" : "text-gray-300"
-  }`}
-  title={s.title}
->
-  {s.title}
-</p>
-
+                  className={`text-[10px] sm:text-md font-medium text-center min-h-[24px] leading-snug truncate ${
+                    active === realIndex ? "text-white" : "text-gray-300"
+                  }`}
+                  title={s.title}
+                >
+                  {s.title}
+                </p>
               </div>
             );
           })}

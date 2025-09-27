@@ -39,31 +39,30 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Comprehensive construction solutions for Commercial, Institutional, and Residential buildings",
-    description:
-      "",
+    title:
+      "Comprehensive construction solutions for Commercial, Institutional, and Residential buildings",
+    description: "",
   },
   {
-    title: "Expertise in structural works including core and shell development.",
-    description:
-      "",
+    title:
+      "Expertise in structural works including core and shell development.",
+    description: "",
   },
   {
-    title: "Commitment to safety standards and environmental compliance throughout all projects.",
-    description:
-      "",
+    title:
+      "Commitment to safety standards and environmental compliance throughout all projects.",
+    description: "",
   },
   {
-    title: "Use of modern technology and materials to enhance building performance and durability.",
-    description:
-      "",
+    title:
+      "Use of modern technology and materials to enhance building performance and durability.",
+    description: "",
   },
   {
-    title: "Coordination with multiple stakeholders for seamless construction workflows.",
-    description:
-      "",
+    title:
+      "Coordination with multiple stakeholders for seamless construction workflows.",
+    description: "",
   },
- 
 ];
 
 const areasData: Area[] = [
@@ -198,7 +197,7 @@ export default function CommercialInstitutional() {
   return (
     <>
       {/* <Pebheader/> */}
-      <IndustryHead/>
+      <IndustryHead />
       {/* <ContactSection/> */}
 
       <ContactSectionB
@@ -243,8 +242,7 @@ export default function CommercialInstitutional() {
 
       <QuickLinks heading="Quick Links" links={links} />
 
-      
-<Brand/>
+      <Brand />
       <Footer />
     </>
   );
