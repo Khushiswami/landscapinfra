@@ -57,7 +57,7 @@ const projects: Projectsector[] = [
 const sectors = [
   {
     id: 1,
-    title: "Integrated Design & Fit-outs",
+    title: "Industrial Facility Layout & Safety Design",
     image: "/industry.jpg",
     url: "/manufacturing",
     description:
@@ -65,7 +65,7 @@ const sectors = [
   },
   {
     id: 2,
-    title: "Smart Automation",
+    title: "HVAC System Optimization for Large Buildings",
     image: "/industry.jpg",
     url: "/urban",
     description:
@@ -73,7 +73,7 @@ const sectors = [
   },
   {
     id: 3,
-    title: "Specialized Interiors",
+    title: "Green Building Certification Support",
     image: "/industry.jpg",
     url: "/advanced",
     description:
@@ -81,7 +81,15 @@ const sectors = [
   },
   {
     id: 4,
-    title: "Sustainable Green Offices",
+    title: "Fire Modeling & Emergency Planning",
+    image: "/industry.jpg",
+    url: "/oil",
+    description:
+      "We develop green offices that are certified by LEED and IGBC, focusing on eco-friendly and healthy environments.",
+  },
+  {
+    id: 4,
+    title: "  Structural Testing for Complex Architectural Design",
     image: "/industry.jpg",
     url: "/oil",
     description:
@@ -165,19 +173,15 @@ export default function Simulationservice() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-6 mt-5">
-            Building your dream office shouldn&apos;t be a nightmare. At
-            Landsking Infra, we turn the complex process of creating a modern
-            workspace into a simple, stress-free journey. We design and build
-            flexible offices that not only reflect your brand&apos;s unique
-            identity but also boost your team&apos;s productivity and
-            well-being. <br />
-            We manage the entire process, from BIM-based visualization and 3D
-            walkthroughs to the final handover. This &quot;design to handover
-            under one roof&quot; approach ensures timely delivery and cost
-            transparency. Our dedicated in-house team handles every detail,
-            ensuring your project complies with all major codes like NBC and
-            ASHRAE. By focusing on employee wellness and sustainable operations,
-            we create inspiring spaces where your people can thrive.
+            Landsking Infra provides advanced simulation services for complex
+            engineering and infrastructure projects. Our solutions optimize
+            designs, improve efficiency, and lower operational risks with
+            precision. Through digital modeling, we help clients validate ideas
+            before real-world implementation. Simulation tools predict
+            performance, durability, and long-term reliability of systems. This
+            approach ensures cost-effective execution with fewer delays or
+            design errors. With Landsking Infra, innovation meets accuracy for
+            smarter project delivery.
           </p>
 
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">
@@ -212,7 +216,7 @@ export default function Simulationservice() {
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
-              Services
+              Industries We Serve
             </h2>
 
             <Swiper
