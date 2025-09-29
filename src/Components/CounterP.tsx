@@ -9,13 +9,12 @@ interface CounterItem {
 
 const counters: CounterItem[] = [
   { value: 55, label: "Global Clients", suffix: "+" },
-    { value: 5, label: " Partners", suffix: "+" },
+  { value: 5, label: " Partners", suffix: "+" },
 
   { value: 250, label: "Project Executed", suffix: "+" },
 
   { value: 15, label: "Years Experience", suffix: "+" },
-      { value: 1.2, label: "Sq. Ft. Area Delivered", suffix: "M" },
-
+  { value: 1.2, label: "Sq. Ft. Area Structured", suffix: "M" },
 ];
 
 export default function CounterP() {
@@ -42,14 +41,15 @@ export default function CounterP() {
   }, []);
 
   return (
-<section
-  className="py-12 bg-cover bg-center md:px-40"
-
->      <div className=" mx-[20px] px-5">
-        <h2 className="text-xl md:text-[30px] font-bold text-[#09306b] mb-8 "
-        style={{
-    fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
-  }}>
+    <section className="py-12 bg-cover bg-center md:px-40">
+      {" "}
+      <div className=" mx-[20px] px-5">
+        <h2
+          className="text-xl md:text-[30px] font-bold text-[#09306b] mb-8 "
+          style={{
+            fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
+          }}
+        >
           Leading industries toward a smarter future with focused and adaptable
           innovation.
         </h2>

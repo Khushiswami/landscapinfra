@@ -24,8 +24,9 @@ import Footer from "../../Components/Footer";
 import IndustryHeader from "yes/Components/Industryheader";
 import Brand from "yes/Components/Brand";
 import PlatformP from "yes/Components/PlatformP";
+import Navbar from "yes/Components/Navbar";
 
-export default function Coldstorageandwarehouse() {
+export default function Expertisecoldstorage() {
   interface FAQ {
     question: string;
     answer: string;
@@ -37,51 +38,43 @@ export default function Coldstorageandwarehouse() {
   const areas = [
     {
       id: 1,
-      title: "Prefabricated",
-      subtitle: "Prefabricated Multi-Storey Building Manufacturer",
+      title: "Turnkey Cold Storage Facility Construction",
+      subtitle: "Turnkey Cold Storage Facility Construction",
       description:
-        "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
+        " We deliver end-to-end cold storage construction, handling each and everything from design to final handover.Our turnkey approach ensures timely delivery, true cost, and operational readiness.",
       image: "/menupageimg/peb3.jpg",
     },
     {
       id: 2,
-      title: "Warehouse",
-      subtitle: "Warehouse",
+      title: "Temperature-Controlled Warehouse Design",
+      subtitle: "Temperature-Controlled Warehouse Design",
       description:
-        "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions to meet industrial and commercial demands.",
+        " We design warehouses with precise temperature control to preserve product quality and shelf life.Our designs optimize workflow, storage capacity, and energy efficiency for smooth operations",
       image: "/menupageimg/peb4.png",
     },
     {
       id: 3,
-      title: "Industrial Shed",
-      subtitle: "Prefabricated Industrial Shed Manufacturers",
+      title: "Refrigeration System Integration",
+      subtitle: "Refrigeration System Integration",
       description:
-        "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
+        " We integrate advanced refrigeration systems customised to your storage requirements.Our solutions include blast freezers, chillers, and cooling units for consistent temperature control.",
       image: "/menupageimg/peb5.png",
     },
     {
       id: 4,
-      title: "Factory Building",
-      subtitle: "Factory Building Solutions",
+      title: "Thermal Insulation",
+      subtitle: "Thermal Insulation",
       description:
-        "Our factory buildings are designed to provide a safe, efficient, and scalable infrastructure for manufacturing operations across multiple sectors.",
+        " We use high-quality PUF panels, thermal insulation, and vapor barriers to maintain optimum conditions.These materials improve energy efficiency and protect goods from environmental fluctuations",
       image: "/menupageimg/peb8.jpg",
     },
     {
       id: 5,
-      title: "Industrial Enclosures",
-      subtitle: "Industrial Enclosures",
+      title: "Fire Safety, MEP, and Automation Systems",
+      subtitle: "Fire Safety, MEP, and Automation Systems",
       description:
-        "We deliver customized industrial enclosures that ensure safety, reliability, and protection of equipment while optimizing operational performance.",
+        " We incorporate fire safety measures, MEP systems, and automation for secure, efficient operations.Our smart systems ensure compliance, safety, and streamlined warehouse management.",
       image: "/menupageimg/peb6.jpg",
-    },
-    {
-      id: 6,
-      title: "Cold Storage",
-      subtitle: "Cold Storage & Cold Room Manufacturer",
-      description:
-        "Our advanced cold storage and cold room solutions are engineered to maintain precise temperatures, ensuring freshness and quality for perishable goods.",
-      image: "/menupageimg/peb7.jpg",
     },
   ];
 
@@ -122,96 +115,72 @@ export default function Coldstorageandwarehouse() {
 
   const possibilities = [
     {
-      subtitle: "Quick Installation & Lightweight Construction",
+      subtitle: "Food Processing & Dairy",
       description:
         "Pre-engineered buildings (PEBs) allow for fast installation and easy erection due to their lightweight construction, reducing both time and labor costs.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Low Maintenance",
+      subtitle: "Pharmaceuticals & Life Sciences",
       description:
-        "With superior materials and a meticulous manufacturing process, PEB structures are low-maintenance and built to last, offering durability with minimal upkeep.",
+        "Our cold storage facilities preserve sensitive pharmaceuticals and life sciences products while maintaining regulatory compliance and efficacy.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Resistance to Corrosive Elements",
+      subtitle: "Horticulture & Floriculture",
       description:
-        "PEBs are resistant to corrosive elements and can withstand severe weather conditions, including high winds, ensuring longevity and structural integrity.",
+        "We design cold storage systems that maintain flowers, fruits, and vegetables fresh by optimisation temperature, humidity, and airflow.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Energy Efficiency & Weatherproofing",
+      subtitle: "Frozen Meat & Seafood Logistics",
       description:
-        "Insulated walls and facades make these buildings energy-efficient and weather-resistant, providing comfortable living or working environments in adverse weather conditions.",
+        " Our integrated cold storage and logistics solutions maintain constant temperatures to ensure the safety and quality of frozen meat and seafood.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Aesthetic Flexibility",
+      subtitle: "E-commerce Cold Chain and Distribution",
       description:
-        "PEBs offer a variety of finishing options that enhance their aesthetic appeal, making them suitable for diverse applications and architectural preferences.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Customizable Design & Layouts",
-      description:
-        "The flexibility of design and construction enables a wide range of layout possibilities, catering to specific client requirements, whether for industrial or commercial use.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Safety Features",
-      description:
-        "Pre-engineered buildings can easily accommodate safety and comfort features such as smoke detectors, firefighting equipment, and air conditioning units.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Ideal for Off-Site & Site Construction",
-      description:
-        "These buildings are widely used for construction sites and off-site projects, providing a quick, durable solution for setting up accommodation or infrastructure.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Expertise & Innovation",
-      description:
-        "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
+        "We build smart, temperature-controlled warehouses for e-commerce cold chain products, ensuring timely delivery and product integrity.",
       image: "/industry.jpg",
     },
   ];
 
   const features = [
     {
-      title: "Custom-Built Design",
+      title: ". Site Assessment",
       description:
-        "Fully tailored to your operational and architectural requirements, ensuring precision and efficiency.",
+        "We evaluate site conditions and calculate thermal loads to ensure efficient, reliable cold storage facilities.",
       icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Quick Installation",
+      title: "HVAC Design",
       description:
-        "Factory-engineered components allow rapid onsite assembly, saving both time and labor costs.",
+        " Tailored HVAC and cooling systems guarantee precise temperature control and optimal energy efficiency.",
       icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Cost-Efficient Construction",
+      title: "Smart WMS",
       description:
-        "Optimized designs reduce material waste and overall construction expenses.",
+        " Advanced warehouse management systems enable seamless inventory tracking, automation, and smooth operations.",
       icon: <FaBolt className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Durable and Low Maintenance",
+      title: "Quality Installation",
       description:
-        "Built to withstand harsh weather and seismic conditions with minimal upkeep.",
+        " All installations follow strict quality checks and safety protocols for reliable, secure operations.",
       icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Energy Efficient",
+      title: "Proven Expertise",
       description:
-        "Insulated wall and roof panels provide excellent temperature control and energy savings.",
+        " Our experience in large-scale cold storage projects ensures operational excellence and compliance.",
       icon: <FaLeaf className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Expandable & Flexible",
+      title: "Scalable Solutions",
       description:
-        "Easily scalable and adaptable to meet future growth and business requirements.",
+        " We deliver energy-efficient, IoT-enabled facilities that grow with your business while reducing costs.",
       icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
     },
   ];
@@ -298,7 +267,7 @@ export default function Coldstorageandwarehouse() {
 
   return (
     <>
-      <IndustryHeader />
+      <Navbar />
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video
@@ -320,12 +289,11 @@ export default function Coldstorageandwarehouse() {
           {/* Left Text */}
           <div className="text-center lg:text-left order-1">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Pre Engineered Buildings
+              Cold Storage{" "}
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-              Pre-Engineered Buildings (PEBs) are modern steel structures
-              designed, fabricated, and assembled using standardized components
-              for faster construction.
+              Landsking Infra specializes in advanced cold storage and warehouse
+              infrastructure solutions.
             </p>
           </div>
 
@@ -373,17 +341,18 @@ export default function Coldstorageandwarehouse() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Smart Construction. Faster Delivery. Reliable Performance{" "}
+              Cold Storage{" "}
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
-              of Pre-Engineered Buildings (PEBs), delivering complete solutions
-              for industrial, commercial, and institutional structures. Our
-              buildings are designed with advanced engineering and
-              prefabrication technology, ensuring faster project delivery, cost
-              efficiency, and customized designs for diverse applications.
+              Landsking Infra specializes in advanced cold storage and warehouse
+              infrastructure solutions. We design temperature-controlled
+              facilities that protect product quality and extend shelf life. Our
+              smart systems ensure energy efficiency, cost savings, and reliable
+              performance. Every project is delivered in compliance with strict
+              industry and safety standards. From concept to completion, we
+              provide future-ready storage solutions for diverse industries.
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
@@ -415,16 +384,14 @@ export default function Coldstorageandwarehouse() {
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Key Features of{" "}
-            <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
-            </span>
+            Why chose us{" "}
+            <span className="text-[#000080]">Landsking Infra Pvt. Ltd.</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+          {/* <p className="text-gray-600 max-w-2xl mx-auto mb-12">
             Our Pre-Engineered Buildings are designed with innovation,
             durability, and efficiency at the core—providing solutions that meet
             modern industrial and commercial needs.
-          </p>
+          </p> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div
@@ -447,7 +414,7 @@ export default function Coldstorageandwarehouse() {
       {/* slider section */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Pre Engineered Products
+          Our services
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
@@ -548,7 +515,7 @@ export default function Coldstorageandwarehouse() {
       <section className="bg-[#000080] text-white py-10">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits of Pre-Engineered Buildings
+            Industries We Serve{" "}
           </h2>
 
           {/* Cards Row */}

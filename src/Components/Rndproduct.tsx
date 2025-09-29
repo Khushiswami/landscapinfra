@@ -1,27 +1,32 @@
 // components/ExploreSection.tsx
 "use client";
+
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link"; // 🔗 add Link
 
 const exploreItems = [
   {
     subtitle: "Mechanical Engineering Design",
     description:
-      " custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
+      "Custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
     image: "/rndimages/semiconductor.jpg",
+    link: "/services/mechanical-engineering", // 🔗 URL
   },
   {
     subtitle: "Civil Engineering Design",
     description:
-      "Safe, sustainable, and future-ready—our civil designs balance strength with environmental care. From Indore’s growing roads to India s urban skylines, structural integrity is not just a choice, it s a necessity.",
+      "Safe, sustainable, and future-ready—our civil designs balance strength with environmental care. From Indore’s growing roads to India's urban skylines, structural integrity is not just a choice, it’s a necessity.",
     image: "/rndimages/Material Intelligence.jpg",
+    link: "/services/civil-engineering", // 🔗 URL
   },
   {
     subtitle: "CAE Simulation Services",
     description:
       "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
     image: "/rndimages/systems engineering software.jpg",
+    link: "/services/cae-simulation", // 🔗 URL
   },
 ];
 
@@ -63,8 +68,8 @@ export default function ExploreSection() {
   );
 
   return (
-    <section className="bg-black py-12 px-6 md:px-23 relative">
-      <h2 className="text-white text-3xl md:text-4xl font-bold mb-10 text-center">
+    <section className="py-12 px-6 md:px-23 relative">
+      <h2 className="text-black text-3xl md:text-4xl font-bold mb-10 text-center">
         Explore Services
       </h2>
 
@@ -75,9 +80,10 @@ export default function ExploreSection() {
         }`}
       >
         {visibleItems.map((item, index) => (
-          <div
+          <Link
             key={index}
-            className="relative rounded-xl overflow-hidden group cursor-pointer"
+            href={item.link} // 🔗 dynamic link
+            className="relative rounded-xl overflow-hidden group cursor-pointer block"
           >
             <Image
               src={item.image}
@@ -92,7 +98,7 @@ export default function ExploreSection() {
               </h4>
               <p className="text-gray-300 text-sm mb-3">{item.description}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

@@ -19,37 +19,38 @@ interface Projectsector {
 const projects: Projectsector[] = [
   {
     id: 1,
-    title: "Power",
+    title: "Structural Simulation (Stress, Strain & Load Distribution)",
     description:
-      "Tata Projects provides customized turnkey solutions for thermal power plants such as total EPC, comprehensive Balance of Plant (BOP), and Flue-gas desulfurization (FGD) solutions. With rich experience in coal and gas-based plants, super and subcritical technologies, we have executed several large and complex projects.",
+      " We deliver innovative structural simulations to analyze stress, strain, and load distribution. This ensures safer, stronger, and more trustworthy designs for complex engineering projects.",
+
     image: "/realstate/three.webp",
   },
   {
     id: 2,
-    title: "Water",
+    title: "HVAC and Thermal Flow Analysis",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " Our HVAC simulations maximize airflow, temperature control, and energy efficiency. We design sustainable systems that improve comfort while reducing in operation costs.",
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
-    title: "Advanced Technology Facilities",
+    title: "Solar Radiation & Energy Modeling",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " Using precise solar radiation and energy modeling, we help increase renewable energy output. Our simulations guide smarter solar integration for cost-effective sustainability.",
     image: "/realstate/one.webp",
   },
   {
     id: 4,
-    title: "Metals & Minerals",
+    title: "Building Performance Simulations (BPS)",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " We provide building performance simulations to assess energy use, daylight, ventilation, and overall efficiency. This enables data-driven decisions for powerful green buildings.",
     image: "/realstate/fourS.webp",
   },
   {
     id: 5,
-    title: "Oil, Gas and Hydrocarbon",
+    title: "Fire and Safety Evacuation Modeling",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " Our fire and safety simulations predict evacuation routes and emergency responses. This reduce risks, ensuring compliance and protecting people and assets.",
     image: "/realstate/fiveS.webp",
   },
 ];
@@ -96,12 +97,57 @@ const sectors = [
       "We develop green offices that are certified by LEED and IGBC, focusing on eco-friendly and healthy environments.",
   },
 ];
+const areas = [
+  {
+    id: 1,
+    title: "Industrial Facility Layout & Safety Design",
+    subtitle: "Industrial Facility Layout & Safety Design",
+    description:
+      "We design layouts for industrial plants that enhance workflow efficiency while meeting strict safety standards.Our simulation-driven procedure reduces risks and ensures compliance with international guidelines.",
+    image: "/green.png",
+  },
 
+  {
+    id: 3,
+    title: "HVAC System Optimization for Large Buildings",
+    subtitle: "HVAC System Optimization for Large Buildings",
+    description:
+      " Modern simulations help improve HVAC system efficiency, lower energy costs, and maintain indoor comfort. We deliver sustainable solutions tailored for huge commercial, residential, and industrial spaces.",
+    image: "/green.png",
+  },
+  {
+    id: 4,
+    title: "Green Building Certification Support",
+    subtitle: "Green Building Certification Support",
+    description:
+      "Our services support projects best for LEED, IGBC, and other green building certifications. Through fire and smoke simulations, we predict dangers and design effective evacuation strategies. This ensures maximum safety, compliance, and preparedness for emergencies.",
+    image: "/green.png",
+  },
+  {
+    id: 5,
+    title: "Structural Testing for Complex Architectural Design",
+    subtitle: "Structural Testing for Complex Architectural Design",
+    description:
+      " We provide digital testing of complex structures to evaluate strength, stability, and durability Our solutions minimize design errors and support innovative architectural projects.",
+    image: "/green.png",
+  },
+  {
+    id: 6,
+    title: "Fire Modeling & Emergency Planning",
+    subtitle: "Fire Modeling & Emergency Planning",
+    description:
+      " Through fire and smoke simulations, we predict dangers and design effective evacuation strategies.This ensures maximum safety, compliance, and preparedness for emergencies.",
+    image: "/green.png",
+  },
+];
 export default function Simulationservice() {
   const [current, setCurrent] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
   const [activeOverlay, setActiveOverlay] = useState<number | null>(null);
+  const [selectedId, setSelectedId] = useState(3);
+  const [open, setOpen] = useState(false);
 
+  const selectedArea = areas.find((area) => area.id === selectedId);
   const handleOverlayToggle = (id: number) => {
     if (activeOverlay === id) setActiveOverlay(null);
     else setActiveOverlay(id);
@@ -216,7 +262,7 @@ export default function Simulationservice() {
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
-              Industries We Serve
+              Our Services{" "}
             </h2>
 
             <Swiper
@@ -357,6 +403,114 @@ export default function Simulationservice() {
             </div>
           </div>
         </section>
+      </section>
+      {/* esplore */}
+      <section className=" mx-auto px-4 py-10 md:px-23">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+          Sectors{" "}
+        </h2>
+
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Left Menu */}
+          <div className="w-full md:w-1/4">
+            {/* Mobile Dropdown */}
+            <div className="md:hidden mb-0">
+              <button
+                onClick={() => setOpen(!open)}
+                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
+              >
+                {areas.find((a) => a.id === selectedId)?.title}
+                <svg
+                  className="w-5 h-5 text-[#8080FF]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+                  />
+                </svg>
+              </button>
+
+              {open && (
+                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
+                  {areas.map((area) => (
+                    <button
+                      key={area.id}
+                      onClick={() => {
+                        setSelectedId(area.id);
+                        setOpen(false);
+                      }}
+                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
+                        selectedId === area.id ? "text-white font-semibold" : ""
+                      }`}
+                    >
+                      {area.title}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Desktop Menu */}
+            {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
+            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
+              {areas.map((area, idx) => (
+                <button
+                  key={area.id}
+                  onClick={() => setSelectedId(area.id)}
+                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
+                    selectedId === area.id
+                      ? " font-bold"
+                      : "hover: text-gray-300"
+                  }`}
+                >
+                  <span className="text-sm opacity-70">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <span>{area.title}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Content */}
+          {selectedArea && (
+            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
+            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+              <div
+                className="
+    p-6 flex flex-col justify-center w-full md:w-1/2
+    rounded-lg                
+    md:rounded-none          
+    md:rounded-tl-lg md:rounded-bl-lg
+    shadow border border-[#808080] md:border-r-0
+  "
+              >
+                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                  {selectedArea.subtitle}
+                </h3>
+                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                  More{" "}
+                  <span className=" p-1 rounded-full text-[#000080]">→</span>
+                </button>
+              </div>
+
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src={selectedArea.image}
+                  alt={selectedArea.subtitle}
+                  className="w-full h-64 md:h-83 object-cover"
+                />
+              </div>
+            </div>
+          )}
+        </div>
       </section>
       <ContactSection />
       <Footer />

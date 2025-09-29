@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { ChevronRight, ArrowUpRight } from "lucide-react";
 
@@ -16,13 +15,13 @@ export default function Pebsolution() {
       description:
         "We stand by our customers at every stage of the building project process.",
       img: "/service.jpg",
-      link: "/system",
+      link: "/solutionservice",
     },
     {
       title: "Product",
       description: "Designed for sustainability and world-class quality.",
       img: "/product.jpg",
-      link: "/system",
+      link: "/system#products-section",
     },
   ];
 

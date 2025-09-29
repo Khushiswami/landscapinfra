@@ -1,49 +1,3 @@
-// "use client";
-
-// export default function IndustryaboutUs() {
-//   const stats = [
-//     { number: "55+", label: "Global Clients" },
-//     { number: "250+", label: "active projects" },
-//     { number: "17", label: "states with active projects" },
-//     { number: "15+", label: "years in business" },
-//     { number: "$7.4", label: "billion in projected annual revenue" },
-//   ];
-
-//   return (
-//     <section className="relative bg-white py-16 px-6 md:px-18 lg:px-20">
-//       <div className=" mx-auto grid lg:grid-cols-2 gap-12 items-center">
-//         {/* Left Content */}
-//         <div>
-//           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1460] mb-12">
-//             A little about us
-//           </h2>
-
-//           <div className="space-y-8">
-//             {stats.map((item, idx) => (
-//               <div key={idx} className="flex items-center space-x-6 border-b border-gray-300 pb-2">
-//                 <p className="text-4xl md:text-5xl font-light text-[#1591EA] w-28">
-//                   {item.number}
-//                 </p>
-//                 <p className="text-[#0B1460] text-lg md:text-xl font-semibold">
-//                   {item.label}
-//                 </p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-
-//         {/* Right Image */}
-//         <div className="relative">
-//           <img
-//             src="/industry.jpg"
-//             alt="About Us"
-//             className="rounded-lg shadow-lg w-full object-cover"
-//           />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 "use client";
 
 import Image from "next/image";
@@ -104,7 +58,7 @@ export default function Industryabout() {
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative w-full h-64 sm:h-72 md:h-75 overflow-hidden  hover: transition-all duration-500">
+          <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-110 overflow-hidden  hover: transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -116,7 +70,7 @@ export default function Industryabout() {
           </div>
 
           {/* Two Images in a Row */}
-          <div className="grid grid-cols-2 gap-1">
+          {/* <div className="grid grid-cols-2 gap-1">
             <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
                 src="/engineer.jpg"
@@ -133,7 +87,7 @@ export default function Industryabout() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Section - About Us */}

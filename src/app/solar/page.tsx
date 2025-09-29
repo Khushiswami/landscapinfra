@@ -9,47 +9,54 @@ import Industryheader from "yes/Components/Industryheader";
 import Footer from "../../Components/Footer";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
-interface Projectsector {
+interface Project {
   id: number;
   title: string;
   description: string;
   image: string;
 }
 
-const projects: Projectsector[] = [
+const projects: Project[] = [
   {
     id: 1,
-    title: "Power",
+    title: "Rooftop Solar for Manufacturing",
     description:
-      "Tata Projects provides customized turnkey solutions for thermal power plants such as total EPC, comprehensive Balance of Plant (BOP), and Flue-gas desulfurization (FGD) solutions. With rich experience in coal and gas-based plants, super and subcritical technologies, we have executed several large and complex projects.",
+      "We design and install both rooftop and ground-mounted solar systems.Each project is customized for optimal energy generation and space utilization.High-quality components and precision installation maximize efficiency and reliability.",
     image: "/realstate/three.webp",
   },
   {
     id: 2,
-    title: "Water",
+    title: "On-Grid, Off-Grid & Hybrid System Design",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      "Our team delivers on-grid, off-grid, and hybrid solar solutions tailored to your needs.We ensure reliable power supply, energy independence, and system scalability.Smart design and monitoring guarantee optimal performance and ROI.",
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
-    title: "Advanced Technology Facilities",
+    title: "Solar Panel Supply, Structure Erection & Cabling",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      "We supply high-quality solar panels and complete mounting structures.Our technicians handle precise erection, secure cabling, and safe connections.Every system is installed for durability, efficiency, and regulatory compliance.",
     image: "/realstate/one.webp",
   },
   {
     id: 4,
-    title: "Metals & Minerals",
+    title: "Net Metering & Open Access Support",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " We assist with net metering setup to enable energy export and savings.Our team guides clients through subsidy applications and government incentives.This ensures maximum financial benefits and faster project ROI.",
     image: "/realstate/fourS.webp",
   },
   {
     id: 5,
-    title: "Oil, Gas and Hydrocarbon",
+    title: "Battery-Integrated Solar for Power Reliability",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    image: "/realstate/fiveS.webp",
+  },
+  {
+    id: 6,
+    title: "Turnkey EPC for Solar PV Systems",
+    description:
+      "We provide complete end-to-end EPC solutions for solar PV projects.From design to installation, we handle every step for seamless execution.Our technique ensures cost-efficiency, compliance, and long-term system performance.",
     image: "/realstate/fiveS.webp",
   },
 ];
@@ -165,19 +172,16 @@ export default function Solar() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-6 mt-5">
-            Building your dream office shouldn&apos;t be a nightmare. At
-            Landsking Infra, we turn the complex process of creating a modern
-            workspace into a simple, stress-free journey. We design and build
-            flexible offices that not only reflect your brand&apos;s unique
-            identity but also boost your team&apos;s productivity and
-            well-being. <br />
-            We manage the entire process, from BIM-based visualization and 3D
-            walkthroughs to the final handover. This &quot;design to handover
-            under one roof&quot; approach ensures timely delivery and cost
-            transparency. Our dedicated in-house team handles every detail,
-            ensuring your project complies with all major codes like NBC and
-            ASHRAE. By focusing on employee wellness and sustainable operations,
-            we create inspiring spaces where your people can thrive.
+            Landsking Infra delivers end-to-end solar EPC services, providing
+            clean, cost-effective, and reliable energy solutions for industries
+            and institutions. We design rooftop and ground-mounted solar systems
+            using Helioscope, PVsyst, and AutoCAD for optimal efficiency.
+            Services include site surveys, shadow analysis, BIS & MNRE-compliant
+            procurement, and structured installation by skilled technicians. We
+            use Tier-1 modules and inverters, ensuring high performance,
+            durability, and compliance. With rapid project execution,
+            SCADA-enabled monitoring, AMC support, and finance advisory, we
+            maximize ROI and operational efficiency.
           </p>
 
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">

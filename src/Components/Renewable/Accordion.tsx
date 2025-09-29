@@ -11,9 +11,24 @@ interface AccordionItem {
 }
 
 const items: AccordionItem[] = [
-  { id: 1, title: "People", content: "We are committed to building inclusive, equitable, and sustainable environments—especially for youth, women, and marginalized groups. As a company, we believe diversity is our strength and that every individual has the power to shape a better future. Through innovation, integrity, and social responsibility, we strive to leave a lasting positive impact on society and the economies we serve." },
-  { id: 2, title: "Planet", content: "At Landsking, we recognize our responsibility to minimize our environmental impact and contribute to a thriving society. As part of our sustainability strategy, we are committed to achieving operational net zero by 2035, reducing at least 75% of our Scope 1 & 2 emissions, with the remainder offset through carbon removal efforts." },
-  { id: 3, title: "Purpose", content: "No single organization can create a sustainable future. Sustainability is nurtured within an ecosystem therefore We at Landsking recognize that tackling Scope 3 emissions—those arising from our broader supply chain—is essential to achieving true sustainability in construction. That’s why we are actively engaging with clients, suppliers, and academic partners to drive collaborative solutions. Through our dedicated efforts at the Landsking Infra Centre for Construction Engineering and Technology in Indore, we are investing in cutting-edge research, innovation, and skill development to accelerate the decarbonization of the construction sector and promote environmentally responsible building practices." },
+  {
+    id: 1,
+    title: "Engineering (E)",
+    content:
+      "The Blueprint of Your Solar System Engineering is the critical foundation of every Solar EPC project. At Manufyn, our EPC engineers begin with meticulous site assessments.This includes detailed energy audits,load profiling,and shadow analysis. We use this essential data to create a highly customized solar system design. This design is always optimized for your site's solar potential, climate, and electrical load. Our EPC experts ensure the layout maximizes energy production while strictly adhering to safety and local compliance standards. By combining advanced software simulations with on-site inspections, we deliver precise, efficient, and future-ready solar solutions. This proactive engineering approach reduces operational risks and guarantees long-term solar system performance.",
+  },
+  {
+    id: 2,
+    title: "Procurement(P)",
+    content:
+      "Sourcing Quality for Your Solar System Procurement is the assurance that every single component of your solar system meets the highest quality standards. Manufyn sources all critical materials—solar panels, inverters, batteries, and mounting structures—exclusively from certified Tier-1 suppliers. We enforce strict quality checks throughout our procurement process to guarantee the durability, efficiency, and optimal performance of your solar system under all local weather conditions. Our focus is on providing cost-effective, reliable, and scalable solar solutions. Choosing high-grade components through rigorous EPC procurement allows for lower maintenance costs, a longer system life, and consistent energy output. This commitment cements us as a trusted choice among solar EPC companies in India.",
+  },
+  {
+    id: 3,
+    title: "Construction (C)",
+    content:
+      "Bringing Your Solar System to Life Construction is the phase where our precise engineering design is realized with professionalism. Our certified EPC contractors meticulously manage every aspect: site preparation, civil work, module mounting, electrical wiring, and system interconnections. Every step of construction follows strict safety protocols and industry standards. Following installation, rigorous testing ensures the entire solar system operates efficiently and safely. We provide full commissioning, comprehensive documentation, and essential maintenance guidance, offering clients a seamless turnkey EPC experience. By combining engineering accuracy with expert construction execution, Manufyn delivers solar projects that are reliable, durable, and high-performing, securing our position as one of India’s leading solar EPC companies.",
+  },
 ];
 
 export default function Accordion() {
@@ -27,10 +42,20 @@ export default function Accordion() {
     <div className=" mx-auto mt-10 p-4 md:px-15">
       <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2>
       <h1 className="text-2xl font-semibold mb-6 text-[#000080] md:text-3xl">
-        How we approach the triple bottom line
+        Your Solar EPC Partner Landsking Infra{" "}
       </h1>
       <p className="text-lg  mb-6 md:text-xl">
-To be a global leader in infrastructure development, setting benchmarks in both civil and industrial engineering. We envision a future where our work not only supports the foundation of economies but also contributes meaningfully to the economic and social progress of the communities we serve. Through innovation, sustainability, and unwavering commitment, we strive to shape a better world through– “The Triple Bottom Line Approach” </p>
+        Solar EPC (Engineering, Procurement & Construction) is the ultimate
+        turnkey solution for your solar energy needs. When you choose a single
+        company to manage every stage—from initial design to final
+        commissioning—you guarantee efficiency, cost control, and reliability.
+        This is why the Solar EPC model is the preferred choice for businesses
+        in India. At Manufyn, as a leading Solar EPC contractor, we handle all
+        phases under one roof. This integrated approach minimizes delays,
+        streamlines processes, and delivers a solar system perfectly tailored to
+        your specific energy needs. Trust us as your complete Solar EPC company
+        for a seamless experience.
+      </p>
       {/* <h1 className="text-3xl font-semibold mb-6">
         How we approach the triple bottom line
       </h1> */}
@@ -48,20 +73,21 @@ To be a global leader in infrastructure development, setting benchmarks in both 
                 <span className="text-gray-900 text-3xl ">{item.title}</span>
               </div>
               <span
-  className={`flex items-center justify-center h-8 w-8 rounded-full border border-black ${
-    openIndex === index ? "bg-black" : "bg-white"
-  }`}
->
-  {openIndex === index ? (
-    <MinusIcon className="h-10 w-5 text-white" />
-  ) : (
-    <PlusIcon className="h-10 w-5 text-black" />
-  )}
-</span>
-
+                className={`flex items-center justify-center h-8 w-8 rounded-full border border-black ${
+                  openIndex === index ? "bg-black" : "bg-white"
+                }`}
+              >
+                {openIndex === index ? (
+                  <MinusIcon className="h-10 w-5 text-white" />
+                ) : (
+                  <PlusIcon className="h-10 w-5 text-black" />
+                )}
+              </span>
             </button>
             {openIndex === index && (
-              <p className="pb-4 text-gray-800 text-xl tracking-wider ">{item.content}</p>
+              <p className="pb-4 text-gray-800 text-xl tracking-wider ">
+                {item.content}
+              </p>
             )}
           </div>
         ))}

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Elixir Reserve",
+    title: "Conceptual Design",
     status: "Ongoing",
     img: "/slider/p1.jpg",
     location: "Powai, Mumbai",
@@ -58,7 +58,7 @@ export default function Rndservice() {
   return (
     <section className="py-12 relative">
       <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
-        DISCOVER OUR PROJECTS
+        Important Elements of PLMs Design Services{" "}
       </h2>
 
       <div className="relative   mx-auto  px-12 md:mx-23">
@@ -114,33 +114,32 @@ export default function Rndservice() {
         )}
 
         {/* Left Arrow */}
-       <div
-  ref={prevRef}
-  className="
+        <div
+          ref={prevRef}
+          className="
     absolute top-1/2 
     left-4 md:-left-2   /* mobile = left-4, desktop = -left-2 */
     -translate-y-1/2 
     text-[#000080] w-10 h-10 flex items-center justify-center 
     rounded-full cursor-pointer hover:transition z-10
   "
->
-  ◀
-</div>
-
+        >
+          ◀
+        </div>
 
         {/* Right Arrow */}
-       <div
-  ref={nextRef}
-  className="
+        <div
+          ref={nextRef}
+          className="
     absolute top-1/2 
     right-4 md:-right-2  /* mobile = right-4, desktop = -right-2 */
     -translate-y-1/2 
     text-[#000080] w-10 h-10 flex items-center justify-center 
     rounded-full cursor-pointer hover: transition z-10
   "
->
-  ▶
-</div>
+        >
+          ▶
+        </div>
       </div>
     </section>
   );

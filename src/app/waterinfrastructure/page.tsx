@@ -19,37 +19,37 @@ interface Projectsector {
 const projects: Projectsector[] = [
   {
     id: 1,
-    title: "Power",
+    title: "Water & Sewage Plants",
     description:
-      "Tata Projects provides customized turnkey solutions for thermal power plants such as total EPC, comprehensive Balance of Plant (BOP), and Flue-gas desulfurization (FGD) solutions. With rich experience in coal and gas-based plants, super and subcritical technologies, we have executed several large and complex projects.",
+      " Design and implement WTP and STP systems ensuring safe water supply, effective wastewater treatment, and regulatory compliance.",
     image: "/realstate/three.webp",
   },
   {
     id: 2,
-    title: "Water",
+    title: "Rainwater Harvesting Systems",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      "Develop rainwater harvesting and recharge solutions to conserve water, reduce runoff, and support sustainable urban water management.",
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
-    title: "Advanced Technology Facilities",
+    title: "Stormwater & Drainage",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " Plan and construct stormwater and drainage infrastructure to prevent flooding, ensure efficient runoff, and maintain urban safety.",
     image: "/realstate/one.webp",
   },
   {
     id: 4,
-    title: "Metals & Minerals",
+    title: "Pumping Stations & Reservoirs",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " Design pumping stations and underground reservoirs to provide reliable water storage, pressure, and distribution for communities and industries.",
     image: "/realstate/fourS.webp",
   },
   {
     id: 5,
-    title: "Oil, Gas and Hydrocarbon",
+    title: "Pipeline Networks & Distribution",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      "Implement pipeline networks and distribution systems ensuring seamless water delivery, minimal leakage, and optimized operational efficiency.",
     image: "/realstate/fiveS.webp",
   },
 ];
@@ -161,23 +161,23 @@ export default function Waterinfrastructure() {
       <section className=" mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-cente md:px-20">
         <div>
           <h2 className="text-3xl md:text-3xl font-bold  text-[#000080] ">
-            WATER INFRASTRUCTURE
+            Landsking Infra – Water Infrastructure Solutions
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-6 mt-5">
-            Building your dream office shouldn&apos;t be a nightmare. At
-            Landsking Infra, we turn the complex process of creating a modern
-            workspace into a simple, stress-free journey. We design and build
-            flexible offices that not only reflect your brand&apos;s unique
-            identity but also boost your team&apos;s productivity and
-            well-being. <br />
-            We manage the entire process, from BIM-based visualization and 3D
-            walkthroughs to the final handover. This &quot;design to handover
-            under one roof&quot; approach ensures timely delivery and cost
-            transparency. Our dedicated in-house team handles every detail,
-            ensuring your project complies with all major codes like NBC and
-            ASHRAE. By focusing on employee wellness and sustainable operations,
-            we create inspiring spaces where your people can thrive.
+            Landsking Infra specializes in designing and executing advanced
+            water infrastructure systems that promote sustainable urban and
+            industrial development. Our turnkey solutions cover water supply,
+            treatment, and distribution, ensuring efficiency, quality, and
+            long-term environmental compliance. With extensive expertise in both
+            greenfield and brownfield projects, we deliver tailored solutions
+            that meet unique site requirements. Our end-to-end in-house design
+            and execution capabilities allow precise planning and seamless
+            implementation. We emphasize sustainability and water reuse,
+            incorporating innovative technologies to optimize resources. All
+            projects strictly adhere to CPCB, MoEF, and WHO water quality
+            standards, guaranteeing safe, reliable, and future-ready water
+            infrastructure solutions.
           </p>
 
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">
@@ -212,7 +212,7 @@ export default function Waterinfrastructure() {
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
-              Services
+              Our services
             </h2>
 
             <Swiper

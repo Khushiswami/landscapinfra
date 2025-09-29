@@ -254,7 +254,7 @@ export default function Navbar() {
                       )
                     }
                     onClick={() =>
-                      (window.location.href = "/coldstorageandwarehouse")
+                      (window.location.href = "/expertisecoldstorage")
                     }
                     className="hover:text-[#8080FF] block text-left w-full"
                   >

@@ -58,7 +58,7 @@ export default function AboutPebP() {
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative w-full h-64 sm:h-72 md:h-75 overflow-hidden  hover: transition-all duration-500">
+          <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-110 overflow-hidden  hover: transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -70,7 +70,7 @@ export default function AboutPebP() {
           </div>
 
           {/* Two Images in a Row */}
-          <div className="grid grid-cols-2 gap-1">
+          {/* <div className="grid grid-cols-2 gap-1">
             <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
                 src="/engineer.jpg"
@@ -87,7 +87,7 @@ export default function AboutPebP() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Section - About Us */}

@@ -74,69 +74,33 @@ export default function Firesafety() {
   // ===== Pre-engineered product possibilities =====
   const possibilities = [
     {
-      subtitle: "Concept & Detailed Engineering",
+      subtitle: "Manufacturing and Warehouses",
       description:
-        "We provide complete engineering support from concept designs to detailed engineering, ensuring accuracy and reliability across the entire design cycle.",
+        " We provide tailored solutions for efficient, safe, and durable manufacturing and warehouse facilities.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "2D Drawings",
+      subtitle: "Commercial Complexes & Malls",
       description:
-        "Creation of precise 2D drawings using AutoCAD to establish the foundation for engineering and construction workflows.",
+        " Our services enhance safety, functionality, and comfort in commercial complexes and shopping malls.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Assembly Drawings",
+      subtitle: "Educational Institutions & Hospitals",
       description:
-        "Development of assembly drawings for walls, columns, and beams using REVIT for clarity and construction accuracy.",
+        " We deliver reliable systems ensuring safety, compliance, and efficiency for schools, colleges, and hospitals.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Fabrication & Piping Layouts",
+      subtitle: "Data Centers & Server Rooms",
       description:
-        "Generation of fabrication drawings in 2D and piping layouts for HVAC using AutoCAD and other advanced software.",
+        " Specialized solutions maintain optimal conditions, security, and uninterrupted operations for data centers.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Family Creation",
+      subtitle: "High-Rise Residential & Hotels",
       description:
-        "REVIT-based family creation to streamline design elements, making models reusable and efficient.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Design Automation Sheets",
-      description:
-        "Automating repetitive design tasks with iLOGIC sheets to enhance efficiency and reduce turnaround time.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "3D CAD Models",
-      description:
-        "Creation of highly detailed 3D CAD models using miscellaneous advanced software for visualization and precision.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "BIM Content Development",
-      description:
-        "Building rich BIM content to support project collaboration and ensure accurate digital representation.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "BIM Coordination",
-      description:
-        "Using NAVISWORKS for BIM coordination, enabling smooth integration between multidisciplinary teams.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Advanced BIM Dimensions",
-      description:
-        "Providing 4D, 5D, 6D, and 7D BIM capabilities using miscellaneous platforms for comprehensive project lifecycle management.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "As-Built Designs & Technical Publications",
-      description:
-        "Delivering accurate as-built designs and supporting documentation through technical publications for long-term project reliability.",
+        " We implement systems that ensure safety, comfort, and efficiency in high-rise residences and hotels.",
       image: "/industry.jpg",
     },
   ];
@@ -144,57 +108,40 @@ export default function Firesafety() {
   // ===== Features =====
   const features = [
     {
-      title: "Collaborative Analysis",
+      title: "NBC Compliance",
       description:
-        "Detailed study of the building design with open discussions alongside your in-house team to align goals.",
+        " Projects adhere to National Building Code (NBC) standards for safety and design compliance",
       icon: <FaUsers className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Opportunity Discovery",
+      title: "NFPA Standards",
       description:
-        "Careful research to uncover new opportunities that add measurable value to your project.",
+        " All fire systems follow National Fire Protection Association (NFPA) codes for optimal safety.",
       icon: <FaSearch className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Concept Development",
+      title: "IS & BIS Certifications",
       description:
-        "Generating findings to create a customized concept tailored to your operational needs.",
+        "We use IS and BIS-certified materials and equipment for reliable performance.",
       icon: <FaLightbulb className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "BIM Prototyping",
+      title: "Local Fire Clearances",
       description:
-        "Presenting a BIM prototype that addresses all critical project parameters in detail.",
+        " Obtain clearances from local fire authorities to ensure regulatory compliance.",
       icon: <FaProjectDiagram className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "3D Visualization",
+      title: "UL & CE Certifications",
       description:
-        "Crafting high-precision 3D models to support global marketing and streamlined construction execution.",
+        " We implement UL and CE-certified products for international safety and quality standards.",
       icon: <FaCube className="text-[#000080] text-3xl mb-4" />,
     },
+
     {
-      title: "Risk Mitigation & Support",
+      title: "ISO Fire Safety Compliance",
       description:
-        "Continuous product analysis to minimize risks, avoid potential failures, and ensure smooth delivery.",
-      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Onsite Troubleshooting",
-      description:
-        "Expert support for troubleshooting and adjustments after the project goes live, ensuring long-term reliability.",
-      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Integrated Collaboration",
-      description:
-        "Seamless work with architects, engineers, contractors, and manufacturers— all components unified in a single BIM model.",
-      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Progress Tracking",
-      description:
-        "Clients can access REVIT libraries to monitor progress, marking completion of each phase efficiently.",
+        " All processes follow ISO standards for consistent quality and risk management.",
       icon: <FaChartLine className="text-[#000080] text-3xl mb-4" />,
     },
   ];
@@ -224,51 +171,43 @@ export default function Firesafety() {
   const areas = [
     {
       id: 1,
-      title: "Prefabricated",
-      subtitle: "Prefabricated Multi-Storey Building Manufacturer",
+      title: "Turnkey Fire Systems",
+      subtitle: "Turnkey Fire Systems",
       description:
-        "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
+        "We provide end-to-end fire detection and suppression installation, ensuring safety, compliance, and rapid response for industrial and commercial spaces.",
       image: "/menupageimg/peb3.jpg",
     },
     {
       id: 2,
-      title: "Warehouse",
-      subtitle: "Warehouse",
+      title: "Fire Alarm & Sensors",
+      subtitle: "Fire Alarm & Sensors",
       description:
-        "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions to meet industrial and commercial demands.",
+        " Advanced fire alarm panels, smoke and heat detectors, and gas leak sensors for reliable early warning and risk mitigation.",
       image: "/menupageimg/peb4.png",
     },
     {
       id: 3,
-      title: "Industrial Shed",
-      subtitle: "Prefabricated Industrial Shed Manufacturers",
+      title: "Hydrant & Sprinkler Systems",
+      subtitle: "Hydrant & Sprinkler Systems",
       description:
-        "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
+        "Installation of fire hydrants, sprinklers, and mist systems to protect property, assets, and personnel efficiently.",
       image: "/menupageimg/peb5.png",
     },
     {
       id: 4,
-      title: "Factory Building",
-      subtitle: "Factory Building Solutions",
+      title: "Emergency Lighting & Evacuation",
+      subtitle: "Emergency Lighting & Evacuation",
       description:
-        "Our factory buildings are designed to provide a safe, efficient, and scalable infrastructure for manufacturing operations across multiple sectors.",
+        " Emergency lighting, exit signage, and evacuation solutions designed to guide occupants safely during fire incidents.",
       image: "/menupageimg/peb8.jpg",
     },
     {
       id: 5,
-      title: "Industrial Enclosures",
-      subtitle: "Industrial Enclosures",
+      title: "Fire Audit & Training",
+      subtitle: "Fire Audit & Training",
       description:
-        "We deliver customized industrial enclosures that ensure safety, reliability, and protection of equipment while optimizing operational performance.",
+        "Comprehensive fire audits, risk assessments, and safety training programs to ensure preparedness, regulatory compliance, and minimized hazards.",
       image: "/menupageimg/peb6.jpg",
-    },
-    {
-      id: 6,
-      title: "Cold Storage",
-      subtitle: "Cold Storage & Cold Room Manufacturer",
-      description:
-        "Our advanced cold storage and cold room solutions are engineered to maintain precise temperatures, ensuring freshness and quality for perishable goods.",
-      image: "/menupageimg/peb7.jpg",
     },
   ];
 
@@ -335,73 +274,72 @@ export default function Firesafety() {
   return (
     <>
       <Navbar />
-     <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
-  {/* Background video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Optional dark overlay for better text contrast */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        {/* Optional dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Content */}
-  <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    {/* Text */}
-    <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-        Pre Engineered Buildings
-      </h1>
-      <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-        Pre-Engineered Buildings (PEBs) are modern steel structures designed,
-        fabricated, and assembled using standardized components for faster
-        construction.
-      </p>
-    </div>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Text */}
+          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+              Fire safety
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+              Landsking Infra delivers comprehensive fire protection and safety
+              solutions for industrial, commercial, and institutional facilities
+            </p>
+          </div>
 
-    {/* Slider */}
-    <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop
-        className="pb-10 max-w-[240px] sm:max-w-sm"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-48 sm:h-72 object-cover"
-              />
-              <div className="p-3 text-center">
-                <h3 className="text-base sm:text-lg font-semibold">
-                  {slide.title}
-                </h3>
-                <a
-                  href={slide.link}
-                  className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                >
-                  Read more →
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  </div>
-</section>
+          {/* Slider */}
+          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop
+              className="pb-10 max-w-[240px] sm:max-w-sm"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-48 sm:h-72 object-cover"
+                    />
+                    <div className="p-3 text-center">
+                      <h3 className="text-base sm:text-lg font-semibold">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.link}
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
 
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
@@ -413,29 +351,20 @@ export default function Firesafety() {
             </h2>
 
             <p className="text-gray-700 mb-4 leading-relaxed mt-3">
-              It is extremely important for CAD architects to understand the
-              concept of building design for public infrastructure. Equally
-              necessary is the alignment of such professionals with service
-              providers possessing extensive knowledge in construction design.
-              We at Landsking Infra Pvt. Ltd. offer a suite of Virtual and
-              Design Construction expertise to clients. Our company collaborates
-              and works across a wide range of construction projects, including
-            </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              <span className="font-bold">Landsking Infra pvt.ltd</span> A
-              Commercial and High-Rise Buildings,Production Facilities,Data
-              Centres,Health and Educational Constructions,Industrial and
-              Distribution Facilities.When our specialists are entrusted with
-              designing a new facility, they focus on intricate details and
-              specifications according to construction plans. Our engineers are
-              adept at classifying critical processes, raw materials, resources,
-              and value supply chains to create appropriate digital models of
-              proposed buildings. As digitization is essential, we leverage the
-              latest CAD software to generate multifaceted BIM (Building
-              Information Modeling) apparatus. Our experience across industries
-              assists clients in visualizing the final structure through
-              automated 2D and 3D CAD drawings.
+              Landsking Infra delivers comprehensive fire protection and safety
+              solutions for industrial, commercial, and institutional
+              facilities. Our systems are designed to mitigate risks, safeguard
+              lives, and protect critical assets through intelligent design and
+              rapid response mechanisms. We provide end-to-end services,
+              including fire detection, alarm systems, sprinkler installation,
+              emergency lighting, and suppression systems, all compliant with
+              national safety codes and standards. Our team of certified
+              engineers and technicians ensures precise installation,
+              maintenance, and monitoring for optimal performance. By combining
+              advanced technology, expert engineering, and a client-focused
+              approach, Landsking Infra ensures safe, reliable, and
+              code-compliant fire protection solutions tailored to every
+              facility’s unique requirements.
             </p>
 
             <Link href="/contact">
@@ -460,14 +389,10 @@ export default function Firesafety() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
+              Landsking Infra Pvt. Ltd. Fire Saftey
             </span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            Our Pre-Engineered Buildings are designed with innovation,
-            durability, and efficiency at the core—providing solutions that meet
-            modern industrial and commercial needs.
-          </p>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div
@@ -489,7 +414,7 @@ export default function Firesafety() {
       {/* explore conettt */}
       <section className=" mx-auto px-4 py-10 md:px-23">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Our Products
+          Our services
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
@@ -597,58 +522,7 @@ export default function Firesafety() {
       {/* explore content */}
 
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-34 lg:px-20">
-        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Left Side - Image */}
-          <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
-              src="/menupageimg/peb8.jpg" // replace with your real factory image
-              alt="Manufacturing Facility"
-              width={700}
-              height={450}
-              className="relative rounded-2xl shadow-lg"
-            />
-          </div>
 
-          {/* Right Side - Content */}
-          <div>
-            <div className="flex items-center mb-4 ">
-              <h2 className="text-3xl md:text-3xl font-bold text-[#000080]">
-                Our Manufacturing Capabilities
-              </h2>
-            </div>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
-              fully-integrated PEB manufacturing facility where every stage—
-              from design and fabrication to finishing and dispatch—takes place
-              under one roof. This seamless process ensures superior quality,
-              faster delivery, and reliable performance.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Our infrastructure is powered by a highly skilled team of
-              engineers, supported with state-of-the-art CNC machinery, robotic
-              welding systems, and high-capacity fabrication tools. These
-              advanced resources enable us to deliver large-scale{" "}
-              <span className="font-semibold">steel structures</span> with
-              precision and efficiency.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed">
-              With strict quality checks at every stage—from automated
-              fabrication to final assembly—we ensure that all components meet
-              global industry standards. Whether it s a standard warehouse,
-              factory building, or a customized industrial project,{" "}
-              <strong>Landsking Infra Pvt. Ltd.</strong> provides dependable,
-              cost-effective, and timely{" "}
-              <span className="font-semibold">PEB solutions across India.</span>
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* endcapill */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10 md:px-35">
         <div className=" mx-auto px-4">
@@ -692,225 +566,7 @@ export default function Firesafety() {
         </div>
       </section>
       {/* benefits end */}
-      {/* special section */}
-      <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-20">
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Steel Tubes for Building and Infrastructure
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Left: Text Section */}
-            <div>
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
-                With the growing adoption of virtual technologies in
-                construction, the role of lean Building Information Models (BIM)
-                and pre-engineering has become vital. Globally, infrastructure
-                upgrades are being driven by robotics, automation, drone-based
-                surveys, and even 3D printing solutions.
-              </p>
-
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
-                Key infrastructure sectors where{" "}
-                <span className="font-bold">Landsking Infra Pvt. Ltd.</span>{" "}
-                provides support include:
-              </p>
-
-              <ul className="list-disc ml-6 space-y-2 text-gray-700 text-base leading-relaxed mb-4">
-                <li>Power and Energy</li>
-                <li>
-                  Transportation Hubs (Rail & Metro Stations, Bus Terminals,
-                  Tunnels, Airports)
-                </li>
-                <li>Stadiums and Leisure Centres</li>
-              </ul>
-
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
-                This technological disruption is reshaping the way
-                infrastructure is designed, built, and maintained—ensuring
-                sustainability, efficiency, and safety. Construction firms that
-                embrace these advancements can overcome challenges in delivering
-                modern infrastructure projects.
-              </p>
-
-              <p className="text-gray-700 text-base leading-relaxed">
-                As urban areas continue to transform,{" "}
-                <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
-                earned the trust of clients by offering expertise that minimizes
-                risks, enhances public safety, and integrates automated systems
-                for long-term reliability.
-              </p>
-            </div>
-
-            {/* Right: Image Section */}
-            <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
-                src="/menupageimg/peb9.jpeg"
-                alt="Steel tubes infrastructure"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md relative z-20"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* end special section */}
-      <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-20">
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
-            Our Support
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
-          </h2>
-
-          {/* Support Rows */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700 text-base leading-relaxed">
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Research & Surveys
-              </h3>
-              <p>
-                Surveys are conducted through testing, research, site
-                inspections, and studying existing infrastructure.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Compliance & Policies
-              </h3>
-              <p>
-                All planning and designing considers compliance standards,
-                including adherence to environmental policies where required.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Collaborative Solutions
-              </h3>
-              <p>
-                Solutions are developed after detailed discussions with internal
-                teams to ensure practical and efficient outcomes.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Safety Standards
-              </h3>
-              <p>
-                Designs are developed to meet safety standards, ensuring
-                properties perform optimally and securely.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">Certifications</h3>
-              <p>
-                Environmental and project-specific certifications are provided
-                to ensure approvals and green signals for commencement.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Energy Sector Support
-              </h3>
-              <p>
-                Evaluations, lifecycle studies, inspections, and regulatory
-                checks are carried out for optimal energy asset performance.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">Virtual Models</h3>
-              <p>
-                Virtual models guide the project seamlessly from the initial
-                stages through to final completion.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Feasibility Studies
-              </h3>
-              <p>
-                Detailed feasibility studies are conducted for ambitious
-                projects, including large-scale highway developments.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                3D Data & Analysis
-              </h3>
-              <p>
-                We provide advanced 3D geometric designs and data analytics to
-                support successful project execution.
-              </p>
-            </div>
-          </div>
-
-          {/* About Section */}
-          <div className="mt-12 text-center text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            <p>
-              Over the last 40 years,{" "}
-              <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
-              fulfilled its promise to numerous clients across the AEC industry
-              — from contractors and architects to fabricators, consultants, MEP
-              contractors, PEB companies, EPCs, OEMs, solution providers, and
-              system integrators. By partnering with us, you can avoid
-              unnecessary overheads and ensure smooth progress in urban planning
-              and infrastructure projects.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6  lg:px-20 md:px-20">
-        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Become a Customer
-            </h2>
-
-            <p>
-              Landsking Infra Pvt. Ltd. is your one-stop solution for all
-              building and infrastructure requirements. Our pre-engineered steel
-              buildings are carefully designed and fabricated to match your
-              specific needs. Each structure is built in strict adherence to
-              international standards, with components meticulously engineered
-              for seamless compatibility. This ensures durability, efficiency,
-              and performance across every project we deliver.
-            </p>
-            <Link href="/contact">
-              <button className="border border-[#000080] mt-4 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-                GET A QUOTE
-              </button>
-            </Link>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
-              src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
-              width={700}
-              height={450}
-              className="relative rounded-2xl shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
       {/* end why choose us */}
 
       <ContactSection />

@@ -19,37 +19,37 @@ interface Projectsector {
 const projects: Projectsector[] = [
   {
     id: 1,
-    title: "Power",
+    title: "Urban Local Bodies",
     description:
-      "Tata Projects provides customized turnkey solutions for thermal power plants such as total EPC, comprehensive Balance of Plant (BOP), and Flue-gas desulfurization (FGD) solutions. With rich experience in coal and gas-based plants, super and subcritical technologies, we have executed several large and complex projects.",
+      " We provide inclusive infrastructure solutions for municipalities, enhancing public spaces, safety, accessibility, and sustainable urban living for local communities.",
     image: "/realstate/three.webp",
   },
   {
     id: 2,
-    title: "Water",
+    title: "Smart City Projects",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " Our expertise supports Smart City initiatives and development authorities, delivering technology-driven, sustainable, and people-centric urban infrastructure solutions.",
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
-    title: "Advanced Technology Facilities",
+    title: "Public-Private Partnerships",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      "We collaborate with PPP projects to implement efficient, scalable, and innovative public infrastructure that meets regulatory and community needs.",
     image: "/realstate/one.webp",
   },
   {
     id: 4,
-    title: "Metals & Minerals",
+    title: "Institutional Campuses",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      "We design and develop institutional campuses and townships with functional layouts, safety compliance, and sustainable infrastructure planning.",
     image: "/realstate/fourS.webp",
   },
   {
     id: 5,
-    title: "Oil, Gas and Hydrocarbon",
+    title: "Cultural & Tourism Boards",
     description:
-      "Tata Projects offers end-to-end industrial and municipal water treatment solutions across the value chain; river rejuvenation, water supply system, sewage system, treatment plants including desalination and effluent treatment Plants.",
+      " Our projects support cultural and tourism development boards, creating accessible, aesthetic, and engaging public spaces for high visitor engagement.",
     image: "/realstate/fiveS.webp",
   },
 ];
@@ -161,23 +161,23 @@ export default function Publicoffice() {
       <section className=" mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-cente md:px-20">
         <div>
           <h2 className="text-3xl md:text-3xl font-bold  text-[#000080] ">
-            Public Office{" "}
+            Public Spaces Solutions
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-6 mt-5">
-            Building your dream office shouldn&apos;t be a nightmare. At
-            Landsking Infra, we turn the complex process of creating a modern
-            workspace into a simple, stress-free journey. We design and build
-            flexible offices that not only reflect your brand&apos;s unique
-            identity but also boost your team&apos;s productivity and
-            well-being. <br />
-            We manage the entire process, from BIM-based visualization and 3D
-            walkthroughs to the final handover. This &quot;design to handover
-            under one roof&quot; approach ensures timely delivery and cost
-            transparency. Our dedicated in-house team handles every detail,
-            ensuring your project complies with all major codes like NBC and
-            ASHRAE. By focusing on employee wellness and sustainable operations,
-            we create inspiring spaces where your people can thrive.
+            Landsking Infra designs and develops inclusive, functional, and
+            aesthetically attractive public spaces that enhance community
+            engagement and urban living. Our solutions prioritize convenience,
+            safety, and sustainability, creating environments that are
+            user-friendly and future-ready. We follow a holistic, people-centric
+            design approach, ensuring every project caters to multicultural
+            society needs. All designs comply with UDCPR, CPWD, and NMT
+            guidelines, maintaining regulatory standards while promoting green
+            mobility and environmental responsibility. With proven success in
+            high-footfall and high-visibility projects, our public spaces
+            combine durability, functionality, and visual appeal, fostering
+            vibrant community interactions and elevating the quality of urban
+            infrastructure.
           </p>
 
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">
