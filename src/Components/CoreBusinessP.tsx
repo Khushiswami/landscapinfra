@@ -93,7 +93,7 @@ export default function CoreBusiness() {
               <div className="flex flex-col items-center justify-start">
                 {/* ✅ Title */}
                 <h3
-                  className="relative md:mb-4 text-[19px] font-medium text-black text-center w-full min-h-[60px] flex items-center justify-center px-2 transition-colors duration-500 group-hover:text-[#000080] pb-2"
+                  className="relative md:mb-4 text-[16px] font-medium text-black text-center w-full min-h-[60px] flex items-center justify-center px-2 transition-colors duration-500 group-hover:text-[#000080] pb-2"
                   style={{
                     fontFamily:
                       "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",

@@ -129,7 +129,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Right Image Section */}
-                <div className="w-1/3 bg-[#2e69c2] p-4 pr-8 flex flex-col justify-between text-white">
+                <div className="w-1/3 bg-[#2e69c2] p-4 pt-5 pr-8 flex flex-col justify-between text-white">
                   <img
                     src={rightImage}
                     alt="Dynamic Preview"
@@ -170,21 +170,21 @@ export default function Navbar() {
                     Heavy Engineering
                   </button>
                   <button
-                    onMouseEnter={() => handleImageChange("/office.jpg")}
+                    onMouseEnter={() => handleImageChange("/new5.jpg")}
                     onClick={() => (window.location.href = "/officespace")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Office Space
                   </button>
                   <button
-                    onMouseEnter={() => handleImageChange("/publicoffice.jpg")}
+                    onMouseEnter={() => handleImageChange("/new4.jpg")}
                     onClick={() => (window.location.href = "/publicoffice")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Public Office
                   </button>
                   <button
-                    onMouseEnter={() => handleImageChange("/waterinfra.jpg")}
+                    onMouseEnter={() => handleImageChange("/new2.png")}
                     onClick={() =>
                       (window.location.href = "/waterinfrastructure")
                     }
@@ -281,7 +281,9 @@ export default function Navbar() {
                     HVAC Services
                   </button>
                   <button
-                    onMouseEnter={() => handleImageChange("/fire.jpg")}
+                    onMouseEnter={() =>
+                      handleImageChange("/expertisecoldstorage")
+                    }
                     onClick={() => (window.location.href = "/fabrication")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
@@ -297,11 +299,11 @@ export default function Navbar() {
                 </div>
 
                 {/* Right Image Section */}
-                <div className="w-1/3 bg-[#2e69c2] p-4 pr-8 flex flex-col justify-between text-white">
+                <div className="w-1/3 bg-[#2e69c2] p-7 pr-8 flex flex-col justify-between text-white">
                   <img
                     src={rightImage}
                     alt="Dynamic Preview"
-                    className="rounded-md object-cover h-54 w-full mb-4"
+                    className="rounded-md object-cover h-59 w-full mb-4"
                   />
                   <div></div>
                 </div>
