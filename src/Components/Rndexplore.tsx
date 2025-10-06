@@ -1,40 +1,66 @@
 "use client";
 
 import { useState } from "react";
+import {  ArrowRight } from "lucide-react";
 
 const areas = [
   {
     id: 1,
-    title: "Static Analysis",
-    subtitle: "Static Analysis",
+    title: "Comprehensive Mechanical Design & Development Solutions",
+    subtitle: "Comprehensive Mechanical Design & Development Solutions",
     description:
-      "We provide advanced static analysis to predict stresses, deformations, and joint behavior with precision. From linear and non-linear to quasi-static and bolt-joint simulations, we ensure safer, cost-efficient, and reliable engineering outcomes.",
-    image: "/green.png",
+      "We provide end-to-end mechanical design and development solutions, combining innovation, precision, and engineering expertise. Our offerings include mechanical concept design, detailed CAD design and development, machine and sheet metal design, as well as advanced 3D modeling using SolidWorks, Autodesk Inventor, and CATIA. We specialize in assembly modeling, parametric 3D design, and the creation of tools, jigs, and fixtures to streamline manufacturing. Additionally, we support legacy data conversion, product lifecycle management, and weldment and frame design, ensuring every project achieves optimal performance, manufacturability, and reliability.",
+    image: "/rndimages/Mechanical/coreMachanical.webp",
   },
   {
     id: 2,
-    title: "Implicit Dynamic Analysis",
-    subtitle: "Implicit Dynamic Analysis",
+    title: "Virtual Testing & Performance Analysis Services",
+    subtitle: "Virtual Testing & Performance Analysis Services",
     description:
-      "We offer implicit dynamic simulations to study long-duration, time-dependent structural responses for reliability in automotive, aerospace, and industrial machinery. From modal, transient, frequency response, to spectrum analysis, we ensure designs perform safely under vibrations, shocks, and complex dynamic loads.",
-    image: "/green.png",
+      "We deliver comprehensive simulation, analysis, and virtual testing services to ensure optimal product performance and reliability. Our expertise covers finite element analysis (FEA), fatigue, crash, impact, and structural stress analysis, along with computational fluid dynamics, thermal modeling, vibration analysis, and tolerance assessments. Through virtual prototyping, failure analysis, and load testing simulations, we help engineers predict performance, identify risks, and optimize designs before physical production, saving time and reducing costly errors.",
+    image: "/rndimages/Mechanical/specialist.jpg",
   },
   {
     id: 3,
-    title: "Explicit Dynamic Analysis",
-    subtitle: "Explicit Dynamic Analysis",
+    title: "End-to-End Industrial Design & Automation Services",
+    subtitle: "End-to-End Industrial Design & Automation Services",
     description:
-      "We provide high-speed impact and crash simulations to ensure safety and compliance where traditional methods fail. From crash analysis to drop and slam tests, we optimize durability and protection for vehicles, machinery, and products.",
-    image: "/green.png",
+      "We provide comprehensive industrial design and engineering automation services to streamline manufacturing and optimize production processes. Our offerings include casting and vacuum casting design, process planning and automation, CNC programming, tooling and die design, and assembly line optimization. We also support engineering fabrication, production cost estimation, proposal review, bid management, engineering change orders, and tolerance analysis for machining. Leveraging advanced project management tools and industrial automation, we help businesses improve efficiency, reduce errors, and achieve high-quality, cost-effective manufacturing outcomes.",
+    image: "/rndimages/Mechanical/industrial.jpeg",
   },
   {
     id: 4,
-    title: "Fatigue / Durability",
-    subtitle: "Fatigue / Durability",
+    title: "Comprehensive Piping, Plant & HVAC Design",
+    subtitle: "Comprehensive Piping, Plant & HVAC Design",
+    description:
+      "We deliver end-to-end plant, piping, and HVAC design services, ensuring efficient and compliant facility layouts. Our expertise includes plant design engineering, modular plant services, and piping design and drafting. We also provide HVAC ducting, plumbing, firefighting, and fire protection engineering solutions. With precise design and coordination, we help optimize operations and enhance system reliability.",
+    image: "/rndimages/Mechanical/plant.jpeg",
+  },
+  {
+    id: 5,
+    title: "Tailored Design Solutions for Specialized Sectors",
+    subtitle: "Tailored Design Solutions for Specialized Sectors",
+    description:
+      "We provide specialized design services for diverse sectors, including tower engineering, ship deck drafting, and consumer electronics product design. Our solutions combine precision, compliance, and innovative approaches to meet unique industry requirements. Deliver high-quality, optimized designs that enhance performance and functionality across specialized applications.",
+    image: "/rndimages/Mechanical/specialist.jpg",
+  },
+  {
+    id: 6,
+    title: "Product Data, Compliance & Lifecycle Management Services",
+    subtitle: "Product Data, Compliance & Lifecycle Management Services",
     description:
       "We deliver fatigue and durability analysis to predict product lifespan under repeated stresses, ensuring long-term reliability. Using stress-life, strain-life, crack growth, and vibration fatigue methods, we help prevent failures and extend component life.",
-    image: "/green.png",
+    image: "/rndimages/Mechanical/plm.jpeg",
   },
+  {
+    id: 7,
+     title: "Efficient, Compliant & Sustainable Product Design",
+    subtitle: "Efficient, Compliant & Sustainable Product Design",
+    description:
+      "We provide value engineering and sustainability services focused on cost-efficient, high-performance designs. Our expertise includes design optimization, lightweighting, material substitution, and energy efficiency improvements. We ensure compliance with environmental standards such as RoHS and REACH. By integrating sustainability into engineering processes, we help reduce costs, improve performance, and support environmentally responsible product development.",
+    image: "/rndimages/Mechanical/value.jpg",
+  },
+ 
 ];
 
 export default function Rndexplore() {
@@ -46,12 +72,12 @@ export default function Rndexplore() {
   return (
     <section className=" mx-auto px-4 py-10 md:px-23">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-        CAE Simulation Services{" "}
+       Explore Our Full Spectrum of Mechanical Engineering Solutions
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
-        <div className="w-full md:w-1/4">
+        <div className="w-full md:w-2/4">
           {/* Mobile Dropdown */}
           <div className="md:hidden mb-0">
             <button
@@ -75,7 +101,7 @@ export default function Rndexplore() {
             </button>
 
             {open && (
-              <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
+              <div className="mt-0 w-full bg-[#000080] rounded-b-lg ">
                 {areas.map((area) => (
                   <button
                     key={area.id}
@@ -115,37 +141,43 @@ export default function Rndexplore() {
         </div>
 
         {/* Right Content */}
-        {selectedArea && (
-          // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
-          <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-            <div
-              className="
-    p-6 flex flex-col justify-center w-full md:w-1/2
-    rounded-lg                
-    md:rounded-none          
-    md:rounded-tl-lg md:rounded-bl-lg
-    shadow border border-[#808080] md:border-r-0
-  "
-            >
-              <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-                {selectedArea.subtitle}
-              </h3>
-              <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-              <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                More <span className=" p-1 rounded-full text-[#000080]">→</span>
-              </button>
-            </div>
+      {/* Right Content */}
+{selectedArea && (
+  <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
+    {/* ✅ Left Text Section */}
+    <div
+      className="
+        p-6 flex flex-col justify-center w-full md:w-1/2
+        rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
+      "
+    >
+      <h3 className="text-2xl font-semibold text-blue-900 mb-3 text-center md:text-left">
+        {selectedArea.subtitle}
+      </h3>
+      <p className="text-gray-700 mb-5 text-center md:text-left">
+        {selectedArea.description}
+      </p>
+      <div className="flex justify-center md:justify-start">
+        <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+          More{" "}
+           <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
+                              <ArrowRight className="w-4 h-4 text-white" />
+                            </div>
+        </button>
+      </div>
+    </div>
 
-            {/* Image */}
-            <div className="w-full md:w-1/2">
-              <img
-                src={selectedArea.image}
-                alt={selectedArea.subtitle}
-                className="w-full h-64 md:h-83 object-cover"
-              />
-            </div>
-          </div>
-        )}
+    {/* ✅ Image Section (centered vertically) */}
+    <div className="w-full md:w-1/2 flex items-center justify-center bg-white pe-2">
+      <img
+        src={selectedArea.image}
+        alt={selectedArea.subtitle}
+        className="w-full max-w-[500px] h-64 md:h-80 object-cover rounded-lg md:rounded-none"
+      />
+    </div>
+  </div>
+)}
+
       </div>
     </section>
   );

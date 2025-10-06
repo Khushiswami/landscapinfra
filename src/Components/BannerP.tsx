@@ -146,7 +146,7 @@ export default function Banner() {
 
                 {/* Tab Title */}
                 <p
-                  className={`text-[12px] sm:text-md font-medium text-center min-h-[24px] leading-snug truncate ${
+                  className={`text-[17px] sm:text-md font-medium text-center min-h-[24px] leading-snug truncate ${
                     active === realIndex ? "text-white" : "text-gray-300"
                   }`}
                   title={s.title}

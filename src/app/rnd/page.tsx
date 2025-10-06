@@ -25,6 +25,7 @@ import Rndsolution from "yes/Components/Rndsolution";
 import Rndstories from "yes/Components/Rndstories";
 import Rndfooter from "yes/Components/Rndfooter";
 import Rndaboutus from "yes/Components/Rndaboutus";
+import RndServicesNew from "yes/Components/RndServicesNew";
 
 export default function Rnd() {
   const router = useRouter();
@@ -199,7 +200,8 @@ export default function Rnd() {
       {/* Other Sections */}
       <Rndproduct />
       <Rndaboutus />
-      <Rndservice />
+      {/* <Rndservice /> */}
+      <RndServicesNew/>
       <Rndexplore />
       <Rndsolution />
       <Rndplatform />

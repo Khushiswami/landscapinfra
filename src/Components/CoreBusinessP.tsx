@@ -7,7 +7,7 @@ import { useRef, useEffect, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import type { NavigationOptions } from "swiper/types";
 
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,7 +15,6 @@ import "swiper/css/navigation";
 export default function CoreBusiness() {
   const swiperRef = useRef<SwiperType | null>(null);
 
-  // Separate refs for mobile and desktop arrows
   const prevMobileRef = useRef<HTMLDivElement | null>(null);
   const nextMobileRef = useRef<HTMLDivElement | null>(null);
   const prevDesktopRef = useRef<HTMLDivElement | null>(null);
@@ -25,7 +24,7 @@ export default function CoreBusiness() {
 
   const coreBusinessData = [
     { title: "Industry Installation and Construction", image: "/industry.jpg" },
-    { title: "Engineering and R&D services", image: "/engineer.jpg" },
+    { title: "Engineering and R&D Services", image: "/engineer.jpg" },
     { title: "Renewable Energy Solution Provider", image: "/renewable.jpg" },
     { title: "Real Estate Development", image: "/realstate.png" },
   ];
@@ -36,29 +35,18 @@ export default function CoreBusiness() {
     const swiper = swiperRef.current;
     const navigation = swiper.params.navigation as NavigationOptions;
 
-    // Pick arrows based on screen width
     const isMobile = window.innerWidth < 768;
-
-    navigation.prevEl = isMobile
-      ? prevMobileRef.current
-      : prevDesktopRef.current;
-    navigation.nextEl = isMobile
-      ? nextMobileRef.current
-      : nextDesktopRef.current;
+    navigation.prevEl = isMobile ? prevMobileRef.current : prevDesktopRef.current;
+    navigation.nextEl = isMobile ? nextMobileRef.current : nextDesktopRef.current;
 
     swiper.navigation.destroy();
     swiper.navigation.init();
     swiper.navigation.update();
 
-    // Optional: update on resize to switch arrows dynamically
     const handleResize = () => {
       const mobile = window.innerWidth < 768;
-      navigation.prevEl = mobile
-        ? prevMobileRef.current
-        : prevDesktopRef.current;
-      navigation.nextEl = mobile
-        ? nextMobileRef.current
-        : nextDesktopRef.current;
+      navigation.prevEl = mobile ? prevMobileRef.current : prevDesktopRef.current;
+      navigation.nextEl = mobile ? nextMobileRef.current : nextDesktopRef.current;
 
       swiper.navigation.destroy();
       swiper.navigation.init();
@@ -81,7 +69,7 @@ export default function CoreBusiness() {
           loop={true}
           spaceBetween={30}
           slidesPerView={1}
-          navigation={false} // manually attach refs
+          navigation={false}
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 4 },
@@ -90,22 +78,10 @@ export default function CoreBusiness() {
         >
           {coreBusinessData.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="flex flex-col items-center justify-start">
-                {/* ✅ Title */}
-                <h3
-                  className="relative md:mb-4 text-[16px] font-medium text-black text-center w-full min-h-[60px] flex items-center justify-center px-2 transition-colors duration-500 group-hover:text-[#000080] pb-2"
-                  style={{
-                    fontFamily:
-                      "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
-                  }}
-                >
-                  {item.title}
-                  <span className="absolute left-0 right-0 -bottom-1 mx-auto h-[2px] w-0 bg-[#8080FF] transition-all duration-500 group-hover:w-full"></span>
-                </h3>
-
-                {/* ✅ Image container */}
+              <div className="flex flex-col items-center justify-start group cursor-pointer">
+                {/* ✅ Image */}
                 <div
-                  className="relative w-full h-[200px] md:h-[180px] overflow-hidden cursor-pointer group"
+                  className="relative w-full h-[200px] md:h-[180px] overflow-hidden rounded-lg"
                   onClick={() =>
                     setActiveIndex(activeIndex === idx ? null : idx)
                   }
@@ -119,12 +95,30 @@ export default function CoreBusiness() {
                     } group-hover:scale-90`}
                   />
                 </div>
+
+                {/* ✅ Title + Circular Arrow below image */}
+                <div className="flex items-center justify-center gap-3 mt-3">
+                  <h3
+                    className="text-[15px] font-bold text-black text-center transition-colors duration-500 group-hover:text-[#000080]"
+                    style={{
+                      fontFamily:
+                        "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
+                    }}
+                  >
+                    {item.title}
+                  </h3>
+
+                  {/* 🔵 Blue circular background arrow */}
+                  <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
+                    <ArrowRight className="w-4 h-4 text-white" />
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Mobile arrows overlay */}
+        {/* ✅ Mobile arrows overlay */}
         <div className="mx-3 absolute inset-0 flex items-center justify-between px-2 md:hidden z-20">
           <div
             ref={prevMobileRef}
@@ -140,7 +134,7 @@ export default function CoreBusiness() {
           </div>
         </div>
 
-        {/* Desktop arrows below */}
+        {/* ✅ Desktop arrows below */}
         <div className="hidden md:flex justify-center items-center gap-8 mt-4">
           <div ref={prevDesktopRef} className="cursor-pointer">
             <Image src="/leftArrow.png" alt="Previous" width={40} height={40} />
