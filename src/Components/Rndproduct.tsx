@@ -12,7 +12,7 @@ const exploreItems = [
     description:
       "Custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
     image: "/rndimages/semiconductor.jpg",
-    link: "/services/mechanical", // 🔗 URL
+    link: "/service/mechanical", // 🔗 URL
   },
   {
     subtitle: "Civil Engineering Design",

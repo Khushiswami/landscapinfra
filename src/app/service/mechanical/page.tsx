@@ -1,21 +1,25 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState, ReactNode, useEffect } from "react";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
+import { FaTools, FaBolt, FaShieldAlt, FaLeaf, FaExpand } from "react-icons/fa";
+
 import {
   FaAward,
   FaGlobeAsia,
-  FaDraftingCompass,
   FaCertificate,
   FaClock,
   FaProjectDiagram,
+} from "react-icons/fa";
+import {
+  FaDraftingCompass,
+  FaPencilRuler,
+  FaCube,
+  FaCogs,
+  FaUndoAlt,
+  FaLightbulb,
+  FaIndustry,
+  FaFlask,
 } from "react-icons/fa";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -24,215 +28,240 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import RNDMechanicalCom from "yes/Components/RNDMechanicalCom";
+import {
+  FaSearch, // Requirement Analysis
+  FaMapMarkedAlt, // Strategic Planning
+  FaCheckCircle, // Quality Assurance
+  FaHandshake, // Delivery & Support
+} from "react-icons/fa";
 import Rndheader from "yes/Components/Rndheader";
 
 import Link from "next/link";
 import Rndfooter from "yes/Components/Rndfooter";
 import Brand from "yes/Components/ClientP";
 
+type CardProps = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+};
+
+// ✅ Card Component
+function Card({ icon, title, description }: CardProps) {
+  return (
+    <div className="bg-[#f5f7fb] shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
+      {/* Image with centered icon */}
+      <div className="relative w-full h-48 sm:h-56 overflow-hidden flex items-center justify-center">
+        {/* Centered Icon */}
+        <div className="absolute flex items-center justify-center bg-blue-900 p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
+          {icon}
+        </div>
+
+        {/* Hover underline effect */}
+      </div>
+
+      {/* Text */}
+      <div className="px-4 sm:px-5 pb-6 flex-1 flex flex-col mt-4">
+        <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
+          {title}
+        </h3>
+        <p className="text-black text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+          {description}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function Mechanical() {
   interface FAQ {
     question: string;
     answer: string;
   }
+  interface Possibility {
+    subtitle: string;
+    description: string;
+    image: string;
+  }
+
   const areas = [
     {
       id: 1,
-      title: "Prefab Site Infrastructure ",
-      subtitle: "Prefab Site Infrastructure Solutions",
+      title: "  Design & Development Services ",
+      subtitle: "Comprehensive Mechanical Design & Development Services",
       description:
-        "At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
+        "We offer complete mechanical engineering solutions, including core design, analysis, CAD modeling, and product development services across industries. Our expertise covers machine design, sheet metal, assembly modeling, parametric 3D modeling, and tools, fixtures, and jigs design. Using advanced platforms like SolidWorks, CATIA, and Autodesk Inventor, we deliver Global Standard services and manufacturable designs. From legacy conversion to full product lifecycle support, our services enhance collaboration, accelerate development, ensure compliance, and drive innovation at every stage.",
       image: "/menupageimg/mod15.png",
     },
     {
       id: 2,
-      title: "Prefab Site Office",
-      subtitle: "Prefab Site Office",
+      title: "Advanced Simulation Services",
+      subtitle: "Advanced Simulation, Analysis & Virtual Testing Services",
       description:
-        "At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
+        "We deliver comprehensive simulation, analysis, and virtual testing services to improve engineering accuracy and product reliability. Our expertise spans finite element analysis (FEA), fatigue, crash and impact, CAE modal, structural, stress, thermal, vibration, and computational fluid dynamics simulations. Additionally, we provide failure, tolerance, and load testing analyses along with virtual prototyping services. Leveraging advanced simulation engineering tools, our solutions help validate designs, reduce defects, ensure compliance, and accelerate product development across industries.",
       image: "/menupageimg/mod4.png",
     },
     {
       id: 3,
-      title: "Labor Hutments",
-      subtitle: "Prefabricated Industrial Shed Manufacturers",
+      title: "Industrial Design  Services",
+      subtitle: "Industrial Design & Engineering Automation Services",
       description:
-        "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
+        "We provide end-to-end industrial design and engineering automation services to optimize manufacturing processes and product quality. Our expertise includes casting design, vacuum casting, CNC programming, tooling and die design, assembly line optimization, and tolerance analysis for machining. As well, we support process planning, engineering fabrication, production cost estimation, project management, proposal review, bid management, and engineering change orders. Taking advantage of advanced automation tools and best practices, we help industries improve efficiency, reduce errors, ensure compliance, and accelerate production timelines",
       image: "/menupageimg/mod3.jpg",
     },
     {
       id: 4,
-      title: "Portable Security Guard Cabins",
-      subtitle: "FPortable Security Guard Cabins",
+      title: "Plant, Piping & HVAC Design Services",
+      subtitle: "Plant, Piping & HVAC Design Services",
       description:
-        "Portable Security Guard Cabins are compact, movable structures designed to provide a safe, comfortable, and functional workspace for security personnel. Built with durable materials such as steel, aluminum, or high-quality insulated panels, these cabins are weather-resistant and sturdy, ensuring long-lasting use in both indoor and outdoor environments.",
+        "We provide complete plant, piping, and HVAC design services to optimize operational efficiency, safety, and compliance. Our offerings include plant design engineering, Plant Design Management System (PDMS), modular plant design, piping design and drafting, HVAC ducting design, plumbing, firefighting, and fire protection engineering services. Leveraging advanced CAD and simulation tools, our expert team ensures accuracy in ISO-compliant designs that streamline construction, reduce errors, and enhance overall system performance across industries.",
+
       image: "/menupageimg/mod8.jpg",
     },
-    {
-      id: 5,
-      title: "Clean Room",
-      subtitle: "Clean Room",
-      description:
-        "offers advanced cleanroom solutions for controlled environments in industries like pharmaceuticals, electronics, and biotechnology. Our cleanrooms are designed with precision to meet stringent hygiene, airflow, and temperature control standards, ensuring optimal conditions for sensitive operations.",
-      image: "/menupageimg/mod9.png",
-    },
+
     {
       id: 6,
-      title: "Prefabricated Toilet",
-      subtitle: "Prefabricated Toilet",
+      title: "Specialized  Design Services",
+      subtitle: "Specialized Sector Design Services",
       description:
-        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "We offer specialized design services across niche industries to meet unique technical and functional requirements. We are experts in assisting industries with our services. like tower design, ship deck design and drafting, and consumer electronics product design. Using advanced CAD tools and industry best practices, we deliver precise, ISO-compliant, and manufacturable designs that enhance performance, ensure compliance, and accelerate product development for specialized sectors.",
       image: "/menupageimg/mod10.png",
     },
     {
       id: 7,
-      title: "Prefab Porta Cabins Manufacturer",
-      subtitle: "Prefab Porta Cabins Manufacturer",
+      title: "Product  Services",
+      subtitle: "Product Lifecycle & Documentation Services",
       description:
-        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "We provide each and every product lifecycle and documentation services to support efficient development, compliance, and operations. We are experts in PLM implementation and customization, technical publications, installation and maintenance manuals, engineering change documentation, CE/UL certification support, and material compliance reports. Leveraging industry best practices and advanced tools, we ensure accurate, ISO-compliant documentation that enhances traceability, reduces errors, and accelerates product launching.",
       image: "/menupageimg/mod11.jpeg",
     },
     {
       id: 8,
-      title: "Railway Shelters",
-      subtitle: "Railway Shelters",
-      description:
-        "Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
+      title: " Engineering & Sustainability Services",
+      subtitle:
+        "We offer Expert engineering and sustainability services to optimize designs and reduce costs. Our solutions include design optimization, lightweighting, material substitution, and energy efficiency improvements.We also ensure compliance with environmental regulations like RoHS and REACH, supporting sustainable and efficient product development.",
+      description: "",
       image: "/menupageimg/mod12.jpg",
-    },
-    {
-      id: 9,
-      title: "Cold Storage & Cold Room Manufacturer",
-      subtitle: "Railway Shelters",
-      description:
-        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
-      image: "/menupageimg/cold4.png",
     },
   ];
 
-  const faqs: FAQ[] = [
+  const services = [
     {
-      question: "What is a factory building?",
-      answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
+      icon: <FaSearch size={40} className="text-[#000080]" />,
+      title: "Requirement Analysis",
+      description:
+        "We begin by assessing your business goals, technical specifications, and project constraints to tailor our mechanical engineering services. This ensures compliance, addresses engineering challenges, and achieves long-term performance objectives.",
     },
     {
-      question: "What materials are used in factory building construction?",
-      answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
+      icon: <FaMapMarkedAlt size={40} className="text-[#000080]" />,
+      title: "Strategic Planning",
+      description:
+        "Our engineers and project leads develop a clear roadmap, selecting the right tools, experts, and delivery methods to optimize efficiency, accuracy, and timely delivery across all mechanical engineering services.",
     },
     {
-      question: "What are the benefits of prefabricated factory buildings?",
-      answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
+      icon: <FaDraftingCompass size={40} className="text-[#000080]" />,
+      title: "Design & Development",
+      description:
+        "Strategic plans are translated into action using CAD modeling, simulation, and virtual prototyping. We engineer every component for high performance, durability, and scalability.",
     },
     {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
-      answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+      icon: <FaIndustry size={40} className="text-[#000080]" />,
+      title: "Implementation",
+      description:
+        "Once SLAs are defined, our engineers execute detailed modeling, drafting, analysis, and documentation tasks while maintaining full transparency and alignment with project goals.",
     },
     {
-      question: "Can factory buildings be customized?",
-      answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
+      icon: <FaCheckCircle size={40} className="text-[#000080]" />,
+      title: "Quality Assurance",
+      description:
+        "As an ISO-certified company, we rigorously test and review every deliverable to ensure accuracy, validated simulations, and compliance with GD&T standards for reliable outcomes.",
     },
     {
-      question: "What are Pre-Engineered Buildings (PEBs)?",
-      answer:
-        "Pre-Engineered Buildings are factory-fabricated steel structures that are shipped in parts and assembled on-site, offering speed, durability, and cost savings.",
-    },
-    {
-      question:
-        "Why choose Pre-Engineered Buildings over conventional construction?",
-      answer:
-        "PEBs reduce construction time by up to 60%, offer flexibility in design, and ensure long-term strength with minimal maintenance compared to traditional methods.",
-    },
-    {
-      question: "What are Prefabricated Structures?",
-      answer:
-        "Prefabricated structures are modular buildings manufactured in factories and assembled at site, ensuring faster delivery, reduced labor, and consistent quality.",
-    },
-    {
-      question: "What is Light Gauge Steel Framing (LGSF)?",
-      answer:
-        "LGSF is an advanced construction method using cold-formed steel sections for walls, roofs, and floors, making structures lightweight, durable, and sustainable.",
-    },
-    {
-      question: "Where is Light Gauge Steel Framing used?",
-      answer:
-        "LGSF is commonly used in residential buildings, commercial complexes, schools, hospitals, and temporary housing solutions.",
-    },
-    {
-      question: "What are Sandwich Panels in construction?",
-      answer:
-        "Sandwich Panels are prefabricated wall and roof panels with an insulating core between two metal sheets, offering excellent thermal efficiency and durability.",
-    },
-    {
-      question: "What are the benefits of Sandwich Panels?",
-      answer:
-        "They provide superior insulation, reduce energy costs, are lightweight, easy to install, and suitable for cold storage, industrial sheds, and modular units.",
-    },
-    {
-      question: "What are Standard Modular Solutions?",
-      answer:
-        "Standard Modular Solutions are ready-to-use prefabricated units designed for quick installation, flexibility, and cost-effectiveness across industries.",
-    },
-    {
-      question: "What are Ready-to-Use Modular Units?",
-      answer:
-        "Ready-to-use modular units are pre-built cabins or structures delivered directly to the site, requiring minimal setup and providing instant usability.",
-    },
-    {
-      question: "Where can Ready-to-Use Modular Units be applied?",
-      answer:
-        "They are ideal for site offices, security cabins, classrooms, healthcare units, toilets, and temporary accommodations.",
+      icon: <FaHandshake size={40} className="text-[#000080]" />,
+      title: "Delivery & Support",
+      description:
+        "Final deliverables are securely shared in your preferred format. We offer ongoing support, including updates, documentation, and technical guidance for seamless post-project continuity.",
     },
   ];
 
   const possibilities = [
     {
-      subtitle: "High Tolerance & Durability",
+      subtitle: "100% Data security",
       description:
-        "Engineered with high tolerance, corrosion resistance, and exceptional durability to ensure reliable long-term performance.",
+        "We implement ISO-certified data protection protocols to ensure confidentiality at every stage. A signed NDA backs every project, safeguarding your data against breaches, downtime, or unauthorized access.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Dimensional Accuracy",
+      subtitle: "Global Standard Infrastructure",
       description:
-        "Precision manufacturing guarantees exact dimensional accuracy, ensuring the final product meets and exceeds client expectations.",
+        "Our team uses advanced CAD workstations, simulation software, secure data centers, and redundant communication networks",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Quick Erection & Installation",
+      subtitle: "Precision-Engineered Mechanical Services",
       description:
-        "Designed for rapid erection, enabling swift installation even in complex or challenging site conditions.",
+        "Using industry-standard tools like SolidWorks, AutoCAD, and Creo, we deliver models, assemblies, and components with unmatched accuracy, fidelity, and manufacturability.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Thermal Efficiency",
+      subtitle: "Multiple Quality Checks",
       description:
-        "Insulated panels maintain a 5–7°C temperature difference, significantly enhancing energy efficiency and comfort.",
+        "Every deliverable undergoes multi-stage quality inspections, guided by Lean Six Sigma principles, to detect and resolve even minor errors, ensuring all mechanical engineering services meet strict technical standards.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Accelerated Project Timelines",
+      subtitle: "Compliance with Industry Standards",
       description:
-        "Optimized production and installation processes ensure timely delivery, meeting tight project schedules.",
+        "All designs adhere to global protocols such as ASME, ISO, ASTM, SAE, BS, DIN, ANSI, and MIL, guaranteeing designs meet tolerancing, material specifications, and documentation requirements",
       image: "/industry.jpg",
     },
     {
-      subtitle: "Robust Construction",
+      subtitle: "Quick Turnaround Time",
       description:
-        "Strong and sturdy construction ensures long service life, structural stability, and reliable performance.",
+        "Our 10+ global delivery centers offer fast project execution and 24/48-hour response times while maintaining high accuracy, scalability, and service quality.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Flexible Pricing Options",
+      description:
+        "Pricing models are tailored based on team size, resource hours, shift patterns, location, and service complexity, aligning perfectly with your operational and budgeting goals.",
       image: "/industry.jpg",
     },
   ];
-
+  const [cardsToShow, setCardsToShow] = useState<Possibility[]>([]);
+  const [visibleCards, setVisibleCards] = useState(4);
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
-  const [open, setOpen] = useState(false); // for mobile dropdown
+
+  useEffect(() => {
+    const updateVisibleCards = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCards(1); // 📱 mobile
+      } else if (window.innerWidth < 1024) {
+        setVisibleCards(2); // 💻 tablet
+      } else {
+        setVisibleCards(4); // 🖥 desktop
+      }
+    };
+
+    updateVisibleCards();
+    window.addEventListener("resize", updateVisibleCards);
+    return () => window.removeEventListener("resize", updateVisibleCards);
+  }, []);
+
+  useEffect(() => {
+    const sliced = possibilities
+      .slice(startIndex, startIndex + visibleCards)
+      .concat(
+        startIndex + visibleCards > possibilities.length
+          ? possibilities.slice(
+              0,
+              (startIndex + visibleCards) % possibilities.length
+            )
+          : []
+      );
+    setCardsToShow(sliced);
+  }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {
     setStartIndex((prev) =>
@@ -245,26 +274,12 @@ export default function Mechanical() {
       prev + visibleCards >= possibilities.length ? 0 : prev + 1
     );
   };
-
-  // Slice visible cards and wrap around if needed
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
-    );
   const [selectedId, setSelectedId] = useState(3);
 
+  const [open, setOpen] = useState(false);
   const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
   const slides = [
     {
       image: "/expertise/third.png",
@@ -316,100 +331,33 @@ export default function Mechanical() {
   return (
     <>
       <Rndheader />
-      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        {/* Optional dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Text */}
-          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Mechanical Design Services
-            </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-              Pre-Engineered Buildings (PEBs) are modern steel structures
-              designed, fabricated, and assembled using standardized components
-              for faster construction.
-            </p>
-          </div>
-
-          {/* Slider */}
-          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
-              loop
-              className="pb-10 max-w-[240px] sm:max-w-sm"
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
-                      src={slide.image}
-                      alt={slide.title}
-                      className="w-full h-48 sm:h-72 object-cover"
-                    />
-                    <div className="p-3 text-center">
-                      <h3 className="text-base sm:text-lg font-semibold">
-                        {slide.title}
-                      </h3>
-                      <a
-                        href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                      >
-                        Read more →
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </section>
+      <RNDMechanicalCom />
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Mechanical Design Services
+              Mechanical Design and Simulation Services for Faster
+              Time-to-Market{" "}
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Lightweight, durable, relocatable, economical, and
-              energy-efficient, prefabricated structures are increasingly
-              recognized as a modern and sustainable alternative to conventional
-              construction methods. These innovative solutions meet all the
-              functional requirements of traditional buildings while offering
-              added advantages such as faster execution, cost savings, and
-              design flexibility.{" "}
-            </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              At Landsking Infra Pvt. Ltd, we specialize in delivering
-              high-quality prefabricated structures tailored to diverse
-              applications. Our dry construction process enables quicker project
-              timelines and greater efficiency. Manufactured with premium-grade
-              steel frames and insulated panels, our modular solutions are
-              engineered for long-lasting durability and ease of installation.{" "}
+              At landscapinfra, we eliminate design inefficiencies and
+              accelerate product development through high-fidelity mechanical
+              engineering services. By combining AI-powered design automation,
+              performance-based material optimization, and sustainability-driven
+              frameworks, we help manufacturers avoid costly reworks, delays,
+              and compliance issues. Our experienced engineers serve aerospace,
+              automotive, and industrial sectors—ensuring every design aligns
+              with ISO, ASME, and global quality standards. From advanced CAD
+              modeling to precise FEA and CFD simulations, we create
+              production-ready designs that reduce prototyping time, enhance
+              reliability, and support faster market launches. With Flatworld
+              Solutions, you gain not just engineering precision but a trusted
+              partner committed to innovation, performance, and long-term
+              success.
             </p>
 
             <Link href="/contact">
@@ -428,61 +376,70 @@ export default function Mechanical() {
         </div>
       </section>
       {/* end description */}
-      {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Left Side - Image */}
-          <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
-            <img
-              src="/menupageimg/mod14.png" // replace with your real factory image
-              alt="Manufacturing Facility"
-              width={700}
-              height={450}
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+
+      {/* mechanical services */}
+      <main className="bg-white px-4 sm:px-6 md:px-12">
+        <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
+          <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
+            <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+              Our Services
+            </h1>
+            <p className="text-black  text-lg md:text-2xl max-w-2xl">
+              We provide high-quality mechanical engineering services tailored
+              to meet your project needs.
+            </p>
+          </div>
+
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <Card
+              icon={<FaPencilRuler size={34} className="text-white" />} // Pencil + ruler = drafting
+              title="2D Drafting Services"
+              description="Produce modern, productive, ISO-compliant technical drawings for architectural, mechanical, and construction projects, empowering smooth design iterations. Our expert CAD drafting accelerates product development while ensuring efficiency."
+            />
+
+            <Card
+              icon={<FaCube size={34} className="text-white" />} // Cube = 3D modeling
+              title="3D CAD Modeling Services"
+              description="Create accurate 3D models to visualize components, test tolerances, detect interferences, and enhance collaboration across engineering, architecture, and manufacturing teams."
+            />
+
+            <Card
+              icon={<FaCogs size={34} className="text-white" />} // Cogs = mechanical design
+              title="CAD Design Services"
+              description="Comprehensive CAD design solutions covering concept development, CAE integration, fixture and mold design, prototyping, and manufacturing, backed by expert mechanical engineering knowledge."
+            />
+
+            <Card
+              icon={<FaUndoAlt size={34} className="text-white" />} // Undo = reverse engineering
+              title="Reverse Engineering Services"
+              description="Accurately recreate digital models from physical parts using 3D scanning, parametric modeling, and benchmarking to support system upgrades and in-depth competitor analysis."
+            />
+
+            <Card
+              icon={<FaLightbulb size={34} className="text-white" />} // Lightbulb = innovation, ideas
+              title="Product Design & Development"
+              description="End-to-end product lifecycle support—from concept and prototyping to testing and manufacturing—ensures compliance, accelerates time-to-market, and drives innovation."
+            />
+
+            <Card
+              icon={<FaIndustry size={34} className="text-white" />} // Industry = manufacturing optimization
+              title="Design for Manufacturing & Value Engineering"
+              description="Optimize designs for manufacturability through part standardization, material efficiency, and cost-benefit engineering, enabling scalable, efficient, and high-quality production."
+            />
+
+            <Card
+              icon={<FaFlask size={34} className="text-white" />} // Flask = testing, prototyping
+              title="Rapid Prototyping & Testing Support"
+              description="Speed up product validation with fast-turn prototypes and simulation-driven testing to ensure performance and reliability before full-scale production."
+            />
+            <Card
+              icon={<FaDraftingCompass size={34} className="text-white" />} // Compass = design conversion precision
+              title="CAD Conversion Services"
+              description="Transform outdated blueprints into accurate, editable CAD models that modernize your design and manufacturing workflow. Our CAD conversion services help reduce project costs, enhance collaboration, and improve design precision. Our skilled engineers and advanced tools ensure seamless interactivity, ISO-compliant accuracy, and faster product development with minimal errors."
             />
           </div>
-
-          {/* Right Side - Content */}
-          <div>
-            <div className="flex items-center mb-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
-                Redefining Modern Infrastructure with Prefabricated Buildings
-              </h2>
-            </div>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Landsking Infra Pvt. Ltd.</strong> we believe that the
-              true value of prefabricated buildings lies in their innovative
-              design, structural integrity, and flawless execution. Each project
-              begins with a carefully engineered design, which is then
-              integrated into advanced automated production systems to ensure
-              precision, uniformity, and uncompromised quality.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Our infrastructure is powered by a highly skilled team of
-              engineers, supported with state-of-the-art CNC machinery, robotic
-              welding systems, and high-capacity fabrication tools. These
-              advanced resources enable us to deliver large-scale{" "}
-              <span className="font-semibold">steel structures</span> with
-              precision and efficiency.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed">
-              Our prefabricated structures are pre-engineered and pre-assembled
-              at the factory, reducing on-site work and ensuring quick, seamless
-              installation. This approach delivers not only efficiency and
-              durability, but also an elegant balance of aesthetics and
-              functionality, making them ideal for a wide range of residential,
-              commercial, and industrial applications
-            </p>
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
       {/* endcapill */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
@@ -583,7 +540,7 @@ export default function Mechanical() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-163 object-cover"
+                  className="w-full h-64 md:h-155 object-cover"
                 />
               </div>
             </div>
@@ -592,14 +549,15 @@ export default function Mechanical() {
       </section>
       {/* explore content */}
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="text-black py-10 md:mx-8">
+        <div className="mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits of Pre-Engineered Buildings
+            Why Choose Us as Your Mechanical
+            <br /> Engineering Services Company?
           </h2>
 
-          {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
@@ -616,148 +574,65 @@ export default function Mechanical() {
             ))}
           </div>
 
-          {/* Navigation Buttons Below */}
+          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronLeft className="w-6 h-6 text-[#000080]" />
+              <ChevronLeft className="w-6 h-6 text-[#fff]" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronRight className="w-6 h-6 text-[#000080]" />
+              <ChevronRight className="w-6 h-6 text-[#fff]" />
             </button>
           </div>
         </div>
       </section>
-      {/* benefits end */}
-      {/* special section */}
-      <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Accelerate Construction with Prefabrication – Save Up to 60% Time
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Image Section (Left Side) */}
-            <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
-                src="/menupageimg/mod16.jpg"
-                alt="PUF panels in industrial shed"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
-              />
-            </div>
-
-            {/* Text Section (Right Side) */}
-            <div>
-              <p className="text-gray-700 leading-relaxed">
-                With advanced prefabrication technology,{" "}
-                <b>Landsking Infra Pvt. Ltd.</b> helps you build smarter and
-                faster. Our modern, fully automated production systems ensure
-                precision, consistency, and reduced dependency on manual labor,
-                making prefabrication up to <b>60% quicker</b> than conventional
-                construction methods.
-              </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
-                By cutting down construction timelines, our prefabricated
-                solutions not only <b>speed up project delivery</b> but also
-                guarantee <b>strength, durability, and long-term reliability</b>
-                . This makes them the preferred choice for a wide range of
-                projects, including{" "}
-                <b>
-                  commercial spaces, industrial facilities, residential
-                  complexes, and institutional buildings
-                </b>
-                .
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* end special section */}
-      {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Pvt. Ltd for PEBs?
-            </h2>
-
-            <p>
-              25+ Years of Expertise in prefabricated and steel building
-              solutions Nationwide Presence with a strong logistics and project
-              execution network In-House Design & Engineering powered by 3D
-              modeling and load optimization Certified Manufacturing Standards
-              ensuring compliance with IS codes and quality benchmarks Timely
-              Project Delivery backed by structured planning and skilled
-              professionals End-to-End Turnkey Solutions covering design,
-              fabrication, delivery, and installation
-            </p>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
-              src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
-              width={700}
-              height={450}
-              className="relative rounded-2xl shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
-      <Brand />
-      <section className="max-w-7xl mx-auto px-4 py-12 ">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
-            Frequently Asked Questions
-          </h2>
-          {/* Yellow divider line */}
-          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
+      {/* our process */}
+      <section className="py-16 ">
+        {/* Heading Row */}
+        <div className="text-center mb-12 px-3 md:px-0">
+          <h1 className="text-xl md:text-3xl font-bold text-[#000080]">
+            Our Mechanical Engineering Service workflow
+          </h1>
+          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+            At landscapinfra, we utilize a standardized workflow to streamline
+            operations, reduce costs, and provide high-quality mechanical
+            engineering services. Our process ensures that every step aligns
+            with your project goals, technical requirements, and compliance
+            standards.
+          </p>
         </div>
 
-        {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
-          {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
-              {/* Question */}
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
-              >
-                <span
-                  className={`font-medium font-bold transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
-                  }`}
-                >
-                  {faq.question}
-                </span>
-                <span className="text-gray-500 text-sm font-bold">
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
+        {/* Boxes Row */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 px-1 md:px-12">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg  hover: transition duration-300 flex flex-col items-left text-left p-6 group"
+            >
+              {/* Icon */}
+              <div className="text-[#000080] p-4 rounded-full mb-4 flex items-left justify-left transition-transform duration-300 group-hover:scale-110">
+                {service.icon}
+              </div>
 
-              {/* Answer */}
-              {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
-              )}
+              {/* Title */}
+              <h2 className="text-lg font-semibold text-black mb-2">
+                {service.title}
+              </h2>
+
+              {/* Description */}
+              <p className="text-gray-600 text-sm">{service.description}</p>
             </div>
           ))}
         </div>
       </section>
-      {/* end faqs */}
+      <Brand />
+      {/* Heading */}
+
       <Rndfooter />
     </>
   );

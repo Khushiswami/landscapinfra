@@ -1,21 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState, ReactNode, useEffect } from "react";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
+import { FaTools, FaBolt, FaShieldAlt, FaLeaf, FaExpand } from "react-icons/fa";
 import {
   FaAward,
   FaGlobeAsia,
-  FaDraftingCompass,
   FaCertificate,
   FaClock,
   FaProjectDiagram,
+} from "react-icons/fa";
+import {
+  FaDraftingCompass,
+  FaPencilRuler,
+  FaCube,
+  FaCogs,
+  FaUndoAlt,
+  FaLightbulb,
+  FaIndustry,
+  FaFlask,
 } from "react-icons/fa";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -24,6 +27,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import RNDMechanicalCom from "yes/Components/RNDMechanicalCom";
 
 import Rndheader from "yes/Components/Rndheader";
 
@@ -31,11 +35,50 @@ import Link from "next/link";
 import Rndfooter from "yes/Components/Rndfooter";
 import Brand from "yes/Components/ClientP";
 
+type CardProps = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+};
+
+// ✅ Card Component
+function Card({ icon, title, description }: CardProps) {
+  return (
+    <div className="bg-[#f5f7fb] shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
+      {/* Image with centered icon */}
+      <div className="relative w-full h-48 sm:h-56 overflow-hidden flex items-center justify-center">
+        {/* Centered Icon */}
+        <div className="absolute flex items-center justify-center bg-blue-900 p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
+          {icon}
+        </div>
+
+        {/* Hover underline effect */}
+      </div>
+
+      {/* Text */}
+      <div className="px-4 sm:px-5 pb-6 flex-1 flex flex-col mt-4">
+        <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
+          {title}
+        </h3>
+        <p className="text-black text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+          {description}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function Civil() {
   interface FAQ {
     question: string;
     answer: string;
   }
+  interface Possibility {
+    subtitle: string;
+    description: string;
+    image: string;
+  }
+
   const areas = [
     {
       id: 1,
@@ -229,10 +272,39 @@ export default function Civil() {
       image: "/industry.jpg",
     },
   ];
-
+  const [cardsToShow, setCardsToShow] = useState<Possibility[]>([]);
+  const [visibleCards, setVisibleCards] = useState(4);
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
-  const [open, setOpen] = useState(false); // for mobile dropdown
+
+  useEffect(() => {
+    const updateVisibleCards = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCards(1); // 📱 mobile
+      } else if (window.innerWidth < 1024) {
+        setVisibleCards(2); // 💻 tablet
+      } else {
+        setVisibleCards(4); // 🖥 desktop
+      }
+    };
+
+    updateVisibleCards();
+    window.addEventListener("resize", updateVisibleCards);
+    return () => window.removeEventListener("resize", updateVisibleCards);
+  }, []);
+
+  useEffect(() => {
+    const sliced = possibilities
+      .slice(startIndex, startIndex + visibleCards)
+      .concat(
+        startIndex + visibleCards > possibilities.length
+          ? possibilities.slice(
+              0,
+              (startIndex + visibleCards) % possibilities.length
+            )
+          : []
+      );
+    setCardsToShow(sliced);
+  }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {
     setStartIndex((prev) =>
@@ -245,26 +317,12 @@ export default function Civil() {
       prev + visibleCards >= possibilities.length ? 0 : prev + 1
     );
   };
-
-  // Slice visible cards and wrap around if needed
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
-    );
   const [selectedId, setSelectedId] = useState(3);
 
+  const [open, setOpen] = useState(false);
   const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
   const slides = [
     {
       image: "/expertise/third.png",
@@ -316,100 +374,33 @@ export default function Civil() {
   return (
     <>
       <Rndheader />
-      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        {/* Optional dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Text */}
-          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Civil Engineering Services{" "}
-            </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-              Pre-Engineered Buildings (PEBs) are modern steel structures
-              designed, fabricated, and assembled using standardized components
-              for faster construction.
-            </p>
-          </div>
-
-          {/* Slider */}
-          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
-              loop
-              className="pb-10 max-w-[240px] sm:max-w-sm"
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
-                      src={slide.image}
-                      alt={slide.title}
-                      className="w-full h-48 sm:h-72 object-cover"
-                    />
-                    <div className="p-3 text-center">
-                      <h3 className="text-base sm:text-lg font-semibold">
-                        {slide.title}
-                      </h3>
-                      <a
-                        href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                      >
-                        Read more →
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </section>
+      <RNDMechanicalCom />
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Civil Engineering Services{" "}
+              Mechanical Design and Simulation Services for Faster
+              Time-to-Market{" "}
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Lightweight, durable, relocatable, economical, and
-              energy-efficient, prefabricated structures are increasingly
-              recognized as a modern and sustainable alternative to conventional
-              construction methods. These innovative solutions meet all the
-              functional requirements of traditional buildings while offering
-              added advantages such as faster execution, cost savings, and
-              design flexibility.{" "}
-            </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              At Landsking Infra Pvt. Ltd, we specialize in delivering
-              high-quality prefabricated structures tailored to diverse
-              applications. Our dry construction process enables quicker project
-              timelines and greater efficiency. Manufactured with premium-grade
-              steel frames and insulated panels, our modular solutions are
-              engineered for long-lasting durability and ease of installation.{" "}
+              At landscapinfra, we eliminate design inefficiencies and
+              accelerate product development through high-fidelity mechanical
+              engineering services. By combining AI-powered design automation,
+              performance-based material optimization, and sustainability-driven
+              frameworks, we help manufacturers avoid costly reworks, delays,
+              and compliance issues. Our experienced engineers serve aerospace,
+              automotive, and industrial sectors—ensuring every design aligns
+              with ISO, ASME, and global quality standards. From advanced CAD
+              modeling to precise FEA and CFD simulations, we create
+              production-ready designs that reduce prototyping time, enhance
+              reliability, and support faster market launches. With Flatworld
+              Solutions, you gain not just engineering precision but a trusted
+              partner committed to innovation, performance, and long-term
+              success.
             </p>
 
             <Link href="/contact">
@@ -428,61 +419,71 @@ export default function Civil() {
         </div>
       </section>
       {/* end description */}
-      {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Left Side - Image */}
-          <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
-            <img
-              src="/menupageimg/mod14.png" // replace with your real factory image
-              alt="Manufacturing Facility"
-              width={700}
-              height={450}
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+
+      {/* mechanical services */}
+      <main className="bg-white px-4 sm:px-6 md:px-12">
+        <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
+          <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
+            <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+              Our Services
+            </h1>
+            <p className="text-black  text-lg md:text-2xl max-w-2xl">
+              We provide high-quality mechanical engineering services tailored
+              to meet your project needs.
+            </p>
+          </div>
+
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <Card
+              icon={<FaDraftingCompass size={34} className="text-white" />} // Compass = design conversion precision
+              title="CAD Conversion Services"
+              description="Transform outdated blueprints into accurate, editable CAD models that modernize your design and manufacturing workflow. Our CAD conversion services help reduce project costs, enhance collaboration, and improve design precision. Our skilled engineers and advanced tools ensure seamless interactivity, ISO-compliant accuracy, and faster product development with minimal errors."
+            />
+
+            <Card
+              icon={<FaPencilRuler size={34} className="text-white" />} // Pencil + ruler = drafting
+              title="2D Drafting Services"
+              description="Produce modern, productive, ISO-compliant technical drawings for architectural, mechanical, and construction projects, empowering smooth design iterations. Our expert CAD drafting accelerates product development while ensuring efficiency."
+            />
+
+            <Card
+              icon={<FaCube size={34} className="text-white" />} // Cube = 3D modeling
+              title="3D CAD Modeling Services"
+              description="Create accurate 3D models to visualize components, test tolerances, detect interferences, and enhance collaboration across engineering, architecture, and manufacturing teams."
+            />
+
+            <Card
+              icon={<FaCogs size={34} className="text-white" />} // Cogs = mechanical design
+              title="CAD Design Services"
+              description="Comprehensive CAD design solutions covering concept development, CAE integration, fixture and mold design, prototyping, and manufacturing, backed by expert mechanical engineering knowledge."
+            />
+
+            <Card
+              icon={<FaUndoAlt size={34} className="text-white" />} // Undo = reverse engineering
+              title="Reverse Engineering Services"
+              description="Accurately recreate digital models from physical parts using 3D scanning, parametric modeling, and benchmarking to support system upgrades and in-depth competitor analysis."
+            />
+
+            <Card
+              icon={<FaLightbulb size={34} className="text-white" />} // Lightbulb = innovation, ideas
+              title="Product Design & Development"
+              description="End-to-end product lifecycle support—from concept and prototyping to testing and manufacturing—ensures compliance, accelerates time-to-market, and drives innovation."
+            />
+
+            <Card
+              icon={<FaIndustry size={34} className="text-white" />} // Industry = manufacturing optimization
+              title="Design for Manufacturing & Value Engineering"
+              description="Optimize designs for manufacturability through part standardization, material efficiency, and cost-benefit engineering, enabling scalable, efficient, and high-quality production."
+            />
+
+            <Card
+              icon={<FaFlask size={34} className="text-white" />} // Flask = testing, prototyping
+              title="Rapid Prototyping & Testing Support"
+              description="Speed up product validation with fast-turn prototypes and simulation-driven testing to ensure performance and reliability before full-scale production."
             />
           </div>
-
-          {/* Right Side - Content */}
-          <div>
-            <div className="flex items-center mb-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
-                Redefining Modern Infrastructure with Prefabricated Buildings
-              </h2>
-            </div>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Landsking Infra Pvt. Ltd.</strong> we believe that the
-              true value of prefabricated buildings lies in their innovative
-              design, structural integrity, and flawless execution. Each project
-              begins with a carefully engineered design, which is then
-              integrated into advanced automated production systems to ensure
-              precision, uniformity, and uncompromised quality.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Our infrastructure is powered by a highly skilled team of
-              engineers, supported with state-of-the-art CNC machinery, robotic
-              welding systems, and high-capacity fabrication tools. These
-              advanced resources enable us to deliver large-scale{" "}
-              <span className="font-semibold">steel structures</span> with
-              precision and efficiency.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed">
-              Our prefabricated structures are pre-engineered and pre-assembled
-              at the factory, reducing on-site work and ensuring quick, seamless
-              installation. This approach delivers not only efficiency and
-              durability, but also an elegant balance of aesthetics and
-              functionality, making them ideal for a wide range of residential,
-              commercial, and industrial applications
-            </p>
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
       {/* endcapill */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
@@ -592,14 +593,15 @@ export default function Civil() {
       </section>
       {/* explore content */}
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="text-black py-10 md:mx-8">
+        <div className="mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits of Pre-Engineered Buildings
+            Why Choose Us as Your Mechanical
+            <br /> Engineering Services Company?
           </h2>
 
-          {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
@@ -616,19 +618,19 @@ export default function Civil() {
             ))}
           </div>
 
-          {/* Navigation Buttons Below */}
+          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronLeft className="w-6 h-6 text-[#000080]" />
+              <ChevronLeft className="w-6 h-6 text-[#fff]" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronRight className="w-6 h-6 text-[#000080]" />
+              <ChevronRight className="w-6 h-6 text-[#fff]" />
             </button>
           </div>
         </div>
@@ -640,7 +642,6 @@ export default function Civil() {
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Accelerate Construction with Prefabrication – Save Up to 60% Time
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -706,7 +707,6 @@ export default function Civil() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
@@ -718,46 +718,8 @@ export default function Civil() {
         </div>
       </section>
       <Brand />
-      <section className="max-w-7xl mx-auto px-4 py-12 ">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
-            Frequently Asked Questions
-          </h2>
-          {/* Yellow divider line */}
-          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
-        </div>
+      {/* Heading */}
 
-        {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
-          {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
-              {/* Question */}
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
-              >
-                <span
-                  className={`font-medium font-bold transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
-                  }`}
-                >
-                  {faq.question}
-                </span>
-                <span className="text-gray-500 text-sm font-bold">
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
-
-              {/* Answer */}
-              {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-      {/* end faqs */}
       <Rndfooter />
     </>
   );
