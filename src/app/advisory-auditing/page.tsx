@@ -12,6 +12,7 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 import IndustryHeader from "yes/Components/Industryheader";
+import PebheaderW from "yes/Components/PebheaderW";
 
 // Card Props Type
 type CardProps = {
@@ -73,7 +74,7 @@ export default function Advisoryauditing() {
 
   return (
     <>
-     <IndustryHeader/>
+      <PebheaderW />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">

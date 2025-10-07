@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader"; import PedFooter from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";
+import PedFooter from "../../Components/Footer";
+import Pebheader from "yes/Components/Pebheader";
 
 const AcousticEnclosures = () => {
   return (
     <>
       <div>
-        <IndustryHeader />
+        <Pebheader />
 
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">
@@ -29,7 +31,6 @@ const AcousticEnclosures = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
-
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
@@ -45,9 +46,16 @@ const AcousticEnclosures = () => {
                 Effective Noise Control Solutions For Industrial Spaces
               </h3>
               <p className="text-gray-700 mb-4">
-                Acoustic enclosures play a vital role in controlling noise pollution in industrial and commercial spaces. They block noise from loud equipment and protect interiors from external sounds, creating quieter and more productive workplaces.
+                Acoustic enclosures play a vital role in controlling noise
+                pollution in industrial and commercial spaces. They block noise
+                from loud equipment and protect interiors from external sounds,
+                creating quieter and more productive workplaces.
                 <br /> <br />
-                LANDSKING Prefab specializes in high-performance acoustic enclosures made from advanced materials like PUF panels, EPS panels, and Rock Wool. Built for durability and efficiency, our enclosures meet strict noise and safety standards and can be customized for a wide range of applications.
+                LANDSKING Prefab specializes in high-performance acoustic
+                enclosures made from advanced materials like PUF panels, EPS
+                panels, and Rock Wool. Built for durability and efficiency, our
+                enclosures meet strict noise and safety standards and can be
+                customized for a wide range of applications.
               </p>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Get a Quote
@@ -62,14 +70,31 @@ const AcousticEnclosures = () => {
                 Advantages of LANDSKING Prefab Acoustic Enclosures
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li><strong>Superior Noise Control:</strong> Effectively blocks loud industrial noise for a quieter environment.</li>
-                <li><strong>Strong and Long-Lasting:</strong> Made with high-quality materials for durability.</li>
-                <li><strong>Thermal and Sound Insulation:</strong> Keeps spaces comfortable and energy-efficient.</li>
-                <li><strong>Customizable Solutions:</strong> Designed to fit specific industrial or commercial needs.</li>
-                <li><strong>Easy to Install and Maintain:</strong> Quick setup with low maintenance requirements.</li>
-                <li><strong>Meets Safety Standards:</strong> Fully compliant with workplace noise and safety regulations.</li>
+                <li>
+                  <strong>Superior Noise Control:</strong> Effectively blocks
+                  loud industrial noise for a quieter environment.
+                </li>
+                <li>
+                  <strong>Strong and Long-Lasting:</strong> Made with
+                  high-quality materials for durability.
+                </li>
+                <li>
+                  <strong>Thermal and Sound Insulation:</strong> Keeps spaces
+                  comfortable and energy-efficient.
+                </li>
+                <li>
+                  <strong>Customizable Solutions:</strong> Designed to fit
+                  specific industrial or commercial needs.
+                </li>
+                <li>
+                  <strong>Easy to Install and Maintain:</strong> Quick setup
+                  with low maintenance requirements.
+                </li>
+                <li>
+                  <strong>Meets Safety Standards:</strong> Fully compliant with
+                  workplace noise and safety regulations.
+                </li>
               </ul>
-
             </div>
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -80,8 +105,6 @@ const AcousticEnclosures = () => {
               />
             </div>
           </div>
-
-
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -98,11 +121,26 @@ const AcousticEnclosures = () => {
                 Applications
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1 list-disc">
-                <li>Soundproofing solutions for <strong>recording studios</strong>.</li>
-                <li>Noise control for <strong>machinery and workshop operations</strong>.</li>
-                <li>Enclosures for <strong>radiators, heat exchangers, and engines</strong>.</li>
-                <li>Portable cabins for <strong>metal and automotive workshops</strong>.</li>
-                <li>Noise management in <strong>manufacturing and production units</strong>.</li>
+                <li>
+                  Soundproofing solutions for <strong>recording studios</strong>
+                  .
+                </li>
+                <li>
+                  Noise control for{" "}
+                  <strong>machinery and workshop operations</strong>.
+                </li>
+                <li>
+                  Enclosures for{" "}
+                  <strong>radiators, heat exchangers, and engines</strong>.
+                </li>
+                <li>
+                  Portable cabins for{" "}
+                  <strong>metal and automotive workshops</strong>.
+                </li>
+                <li>
+                  Noise management in{" "}
+                  <strong>manufacturing and production units</strong>.
+                </li>
               </ul>
               <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
                 Learn More
@@ -110,23 +148,25 @@ const AcousticEnclosures = () => {
             </div>
           </div>
 
-
           {/* Centered Heading + Paragraph */}
           <div className="text-center mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-[#000080]">
               Manufacturing Excellence
             </h2>
             <p className="text-gray-700 text-lg">
-              Our modern facility produces high-quality acoustic panels with advanced insulating cores like PUF, EPS, and Rock Wool. Every product is thoroughly tested to ensure top performance and compliance with industry standards.
-              <br /><br />
-              Wherever your project is in India, LANDSKING ensures on-time delivery, helping you build safer and quieter workplaces.
-
-
+              Our modern facility produces high-quality acoustic panels with
+              advanced insulating cores like PUF, EPS, and Rock Wool. Every
+              product is thoroughly tested to ensure top performance and
+              compliance with industry standards.
+              <br />
+              <br />
+              Wherever your project is in India, LANDSKING ensures on-time
+              delivery, helping you build safer and quieter workplaces.
             </p>
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
+          <div className=" mx-auto mt-16 md:px-9">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
@@ -153,7 +193,8 @@ const AcousticEnclosures = () => {
                     "ROCKWOOL is very effective for sound absorption thanks to its open, porous structure. It helps reduce noise, control echoes and vibrations, and even minimizes rain noise when used in roof insulation.",
                 },
                 {
-                  question: "What are the specifications of an acoustic enclosure?",
+                  question:
+                    "What are the specifications of an acoustic enclosure?",
                   answer:
                     "A modular acoustic enclosure is made of steel acoustic panels filled with mineral fiber insulation, lined with glass fiber, and covered with perforated sheet steel. These panels are assembled within a strong steel support frame for durability and stability.",
                 },

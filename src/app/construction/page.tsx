@@ -6,6 +6,7 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import Pebheader from "yes/Components/Pebheader";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 // Card Props Type
 type CardProps = {
@@ -13,10 +14,11 @@ type CardProps = {
   icon: ReactNode;
   title: string;
   description: string;
+  link: string; // <-- new prop
 };
 
 // ✅ Card Component
-function Card({ image, icon, title, description }: CardProps) {
+function Card({ image, icon, title, description, link }: CardProps) {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
       {/* Image */}
@@ -38,8 +40,8 @@ function Card({ image, icon, title, description }: CardProps) {
         </p>
 
         <a
-          href="#"
-          className="relative border border-blue-900 text-lg tracking-wider text-black px-5 py-2 font-semibold w-fit overflow-hidden"
+          href={link}
+          className="group relative border border-blue-900 text-lg tracking-wider text-black px-5 py-2 font-semibold w-fit overflow-hidden"
         >
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             READ MORE
@@ -138,30 +140,35 @@ export default function Construction() {
               image="/sectorimg/prefab.jpg"
               icon={<FaWarehouse size={38} className="text-white" />}
               title="Prefab Site Office"
+              link="/prefabSiteOffice"
               description="Landsking Infra offers a wide range of modular prefabricated site office solutions, featuring options like PUF-insulated panels, EPS-insulated panels, and Light Gauge Steel Framing (LGSF). These office units are engineered for quick installation and built to last, making them perfectly suited for use on construction sites and industrial projects."
             />
             <Card
               image="/sectorimg/lg.jpeg"
               icon={<MdOutlineCleanHands size={38} className="text-white" />}
               title="Light Gauge Steel Framing"
+              link="/lightguage"
               description="Light steel structures ideal for both residential and commercial projects, providing flexible design options and fast construction timelines."
             />
             <Card
               image="/sectorimg/lh.webp"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Labor Hutment"
+              link="/laborHutment"
               description="Landsking Infra delivers affordable and long-lasting prefabricated labour accommodations, ideal for rapid deployment at construction sites and industrial locations. Built using insulated panels, these modular units ensure a safe and comfortable environment for workers, while also being easy to transport and assemble."
             />
             <Card
               image="/sectorimg/pt.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Prefabricated Toilet"
+              link="/"
               description="Landsking Infra offers premium prefabricated toilet units that are sturdy, easy to set up, and suitable for a wide range of environments such as construction sites, industrial areas, and remote locations. These toilets provide a hygienic and budget-friendly solution for both temporary and permanent use."
             />
             <Card
               image="/sectorimg/por.jpg"
               icon={<FaSnowflake size={38} className="text-white" />}
               title="Prefab Porta Cabins Manufacturer"
+              link="/"
               description="Landsking Infra produces top-quality, customizable porta cabins tailored to suit different space and functional needs. These portable units are perfect for construction sites, office setups, and other temporary applications, offering strength, ease of installation, and reliable performance."
             />
           </div>

@@ -31,6 +31,7 @@ import Pebheader from "yes/Components/Pebheader";
 import Brand from "yes/Components/Brand";
 import Products from "yes/Components/Products";
 import Bectelslider from "yes/Components/Bectelslider";
+import Link from "next/link";
 
 export default function Menupage() {
   interface FAQ {
@@ -409,9 +410,11 @@ export default function Menupage() {
               time compared to conventional methods.
             </p>
 
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
+            <Link href="/peb-contact">
+              <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+                GET A QUOTE
+              </button>
+            </Link>
           </div>
           <div className="flex justify-center">
             <img
