@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {  ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const areas = [
   {
@@ -54,13 +54,12 @@ const areas = [
   },
   {
     id: 7,
-     title: "Efficient, Compliant & Sustainable Product Design",
+    title: "Efficient, Compliant & Sustainable Product Design",
     subtitle: "Efficient, Compliant & Sustainable Product Design",
     description:
       "We provide value engineering and sustainability services focused on cost-efficient, high-performance designs. Our expertise includes design optimization, lightweighting, material substitution, and energy efficiency improvements. We ensure compliance with environmental standards such as RoHS and REACH. By integrating sustainability into engineering processes, we help reduce costs, improve performance, and support environmentally responsible product development.",
     image: "/rndimages/Mechanical/value.jpg",
   },
- 
 ];
 
 export default function Rndexplore() {
@@ -70,9 +69,9 @@ export default function Rndexplore() {
   const selectedArea = areas.find((area) => area.id === selectedId);
 
   return (
-    <section className=" mx-auto px-4 py-10 md:px-23">
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-       Explore Our Full Spectrum of Mechanical Engineering Solutions
+    <section className=" mx-auto px-4 py-10 md:px-14">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
+        Engineering Solutions
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
@@ -82,7 +81,7 @@ export default function Rndexplore() {
           <div className="md:hidden mb-0">
             <button
               onClick={() => setOpen(!open)}
-              className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
+              className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-left bg-[#000080]"
             >
               {areas.find((a) => a.id === selectedId)?.title}
               <svg
@@ -141,43 +140,42 @@ export default function Rndexplore() {
         </div>
 
         {/* Right Content */}
-      {/* Right Content */}
-{selectedArea && (
-  <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
-    {/* ✅ Left Text Section */}
-    <div
-      className="
+        {/* Right Content */}
+        {selectedArea && (
+          <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
+            {/* ✅ Left Text Section */}
+            <div
+              className="
         p-6 flex flex-col justify-center w-full md:w-1/2
         rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
       "
-    >
-      <h3 className="text-2xl font-semibold text-blue-900 mb-3 text-center md:text-left">
-        {selectedArea.subtitle}
-      </h3>
-      <p className="text-gray-700 mb-5 text-center md:text-left">
-        {selectedArea.description}
-      </p>
-      <div className="flex justify-center md:justify-start">
-        <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-          More{" "}
-           <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
-                              <ArrowRight className="w-4 h-4 text-white" />
-                            </div>
-        </button>
-      </div>
-    </div>
+            >
+              <h3 className="text-2xl font-semibold text-blue-900 mb-3 text-center md:text-left">
+                {selectedArea.subtitle}
+              </h3>
+              <p className="text-gray-700 mb-5 text-center md:text-left">
+                {selectedArea.description}
+              </p>
+              <div className="flex justify-center md:justify-start">
+                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                  More{" "}
+                  <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
+                    <ArrowRight className="w-4 h-4 text-white" />
+                  </div>
+                </button>
+              </div>
+            </div>
 
-    {/* ✅ Image Section (centered vertically) */}
-    <div className="w-full md:w-1/2 flex items-center justify-center bg-white pe-2">
-      <img
-        src={selectedArea.image}
-        alt={selectedArea.subtitle}
-        className="w-full max-w-[500px] h-64 md:h-80 object-cover rounded-lg md:rounded-none"
-      />
-    </div>
-  </div>
-)}
-
+            {/* ✅ Image Section (centered vertically) */}
+            <div className="w-full md:w-1/2 flex  bg-white pe-2">
+              <img
+                src={selectedArea.image}
+                alt={selectedArea.subtitle}
+                className="w-full max-w-[500px] h-64 md:h-80 object-cover rounded-lg md:rounded-none"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

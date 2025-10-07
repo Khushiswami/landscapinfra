@@ -3,11 +3,13 @@
 import { FaMapMarkerAlt, FaEnvelope, FaCommentDots } from "react-icons/fa";
 import Footer from "yes/Components/Footer";
 import Navbar from "yes/Components/Navbar";
+import Pebheader from "yes/Components/Pebheader";
+import PebheaderW from "yes/Components/PebheaderW";
 
 export default function Pebcontact() {
   return (
     <>
-      <Navbar />
+      <PebheaderW />
       {/* Contact Section */}
       <section className="py-12 bg-white mt-20 md:mt-27 md:mx-10">
         <h2 className="text-3xl font-bold text-center text-[#061b49] mb-6 md:text-4xl md:mb-12">

@@ -190,43 +190,43 @@ export default function Mechanical() {
       subtitle: "100% Data security",
       description:
         "We implement ISO-certified data protection protocols to ensure confidentiality at every stage. A signed NDA backs every project, safeguarding your data against breaches, downtime, or unauthorized access.",
-      image: "/industry.jpg",
+      image: "/choose/choseone.webp",
     },
     {
       subtitle: "Global Standard Infrastructure",
       description:
         "Our team uses advanced CAD workstations, simulation software, secure data centers, and redundant communication networks",
-      image: "/industry.jpg",
+      image: "/choose/global.png",
     },
     {
       subtitle: "Precision-Engineered Mechanical Services",
       description:
         "Using industry-standard tools like SolidWorks, AutoCAD, and Creo, we deliver models, assemblies, and components with unmatched accuracy, fidelity, and manufacturability.",
-      image: "/industry.jpg",
+      image: "/choose/precsion.jpg",
     },
     {
       subtitle: "Multiple Quality Checks",
       description:
         "Every deliverable undergoes multi-stage quality inspections, guided by Lean Six Sigma principles, to detect and resolve even minor errors, ensuring all mechanical engineering services meet strict technical standards.",
-      image: "/industry.jpg",
+      image: "/choose/qualitycheck.png",
     },
     {
       subtitle: "Compliance with Industry Standards",
       description:
         "All designs adhere to global protocols such as ASME, ISO, ASTM, SAE, BS, DIN, ANSI, and MIL, guaranteeing designs meet tolerancing, material specifications, and documentation requirements",
-      image: "/industry.jpg",
+      image: "/choose/compliance.jpg",
     },
     {
       subtitle: "Quick Turnaround Time",
       description:
         "Our 10+ global delivery centers offer fast project execution and 24/48-hour response times while maintaining high accuracy, scalability, and service quality.",
-      image: "/industry.jpg",
+      image: "/choose/quick.png",
     },
     {
       subtitle: "Flexible Pricing Options",
       description:
         "Pricing models are tailored based on team size, resource hours, shift patterns, location, and service complexity, aligning perfectly with your operational and budgeting goals.",
-      image: "/industry.jpg",
+      image: "/choose/flexible.jpg",
     },
   ];
   const [cardsToShow, setCardsToShow] = useState<Possibility[]>([]);
@@ -333,8 +333,8 @@ export default function Mechanical() {
       <Rndheader />
       <RNDMechanicalCom />
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-15">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -378,7 +378,7 @@ export default function Mechanical() {
       {/* end description */}
 
       {/* mechanical services */}
-      <main className="bg-white px-4 sm:px-6 md:px-12">
+      <main className="bg-white px-4 sm:px-6 md:px-6">
         <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
             <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
@@ -441,7 +441,7 @@ export default function Mechanical() {
         </section>
       </main>
       {/* endcapill */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className=" mx-auto md:mx-12 px-4 py-10">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
           Our Products
         </h2>
@@ -550,8 +550,8 @@ export default function Mechanical() {
       {/* explore content */}
       {/* business benifts */}
       <section className="text-black py-10 md:mx-8">
-        <div className="mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+        <div className="mx-auto px-3 md:px-4">
+          <h2 className="text-2xl md:text-3xl font-bold  text-center mb-10 text-[#000080]">
             Why Choose Us as Your Mechanical
             <br /> Engineering Services Company?
           </h2>
@@ -563,7 +563,7 @@ export default function Mechanical() {
                 key={idx}
                 className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                <img src={item.image} className="w-full h-44 object-cover" />
+                <img src={item.image} className="w-full object-cover " />
                 <div className="p-4">
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
@@ -595,7 +595,7 @@ export default function Mechanical() {
       <section className="py-16 ">
         {/* Heading Row */}
         <div className="text-center mb-12 px-3 md:px-0">
-          <h1 className="text-xl md:text-3xl font-bold text-[#000080]">
+          <h1 className="text-2xl md:text-3xl font-bold text-[#000080]">
             Our Mechanical Engineering Service workflow
           </h1>
           <p className="text-gray-600 mt-3 max-w-2xl mx-auto">

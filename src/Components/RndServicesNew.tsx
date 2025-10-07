@@ -24,89 +24,120 @@ export default function RndServicesNew() {
 
   const services = [
     {
-      title: "Advanced Architectural 3D Modeling & Rendering Solutions",
-      description: "We create LOD 100 to 500 models with photorealistic renderings and meticulous detailing for both commercial and residential projects. Our designs guarantee zoning compliance and accurate layouts. Immersive visualizations enhance communication and streamline design approvals. Speed up your project timelines with our expert architectural modeling services.",
-      image: "/rndServices/Architectural3DModeling,.jpg",
-      link: "/architecture",
+      title: "Civil Engineering Services",
+      description:
+        "Providing expert civil engineering solutions for infrastructure design and construction, enhancing connectivity, public safety, and sustainable economic growth.",
+      image: "/rndServices/mepServices.jpg",
     },
     {
-      title: "Precision Civil 3D Modeling & Rendering Services",
-      description: "We deliver grading plans, terrain models, and utility layouts fully compliant with local regulations. Accurate visualizations support roads, drainage, and infrastructure planning. Our detailed, data-rich models minimize costly revisions and streamline approvals. Achieve regulatory compliance with our high-precision civil workflows.",
+      title: "Architectural Engineering Services",
+      description:
+        "Combining architectural design and engineering expertise to create functional, visually appealing, and regulation-compliant structures with optimized performance.",
+      image: "/rndServices/mechanicalEngineeringServices.jpg",
+    },
+    {
+      title: "HVAC Engineering Services",
+      description:
+        "Designing efficient HVAC systems that ensure comfortable, healthy indoor environments while minimizing energy use and operational costs.",
+      image: "/rndServices/3dStructuralModeling.webp",
+    },
+    {
+      title: "Architectural 3D Modeling, Drafting, and Rendering Services",
+      description:
+        "We create LOD 100 to 500 models with photorealistic renderings and meticulous detailing for both commercial and residential projects. Our designs guarantee zoning compliance and accurate layouts. Immersive visualizations enhance communication and streamline design approvals. Speed up your project timelines with our expert architectural modeling services.",
+      image: "/rndServices/Architectural3DModeling,.jpg",
+    },
+    {
+      title: "Civil 3D Modeling, Drafting, and Rendering Services",
+      description:
+        "We deliver grading plans, terrain models, and utility layouts fully compliant with local regulations. Accurate visualizations support roads, drainage, and infrastructure planning. Our detailed, data-rich models minimize costly revisions and streamline approvals. Achieve regulatory compliance with our high-precision civil workflows.",
       image: "/rndServices/Civil3DModeling.webp",
       link: "/coldstorageandwarehouse",
     },
     {
-      title: "Advanced Structural 3D Modeling & Detailing Services",
-      description: "We develop LOD-based steel and concrete models with integrated structural logic and global code compliance. Our detailed models include connection points, load-bearing elements, and clash-free layouts. Improve site coordination and fabrication accuracy while ensuring quality outcomes with our expert structural modeling solutions.",
+      title: "Structural 3D Modeling, Drafting, and Rendering Services",
+      description:
+        "We develop LOD-based steel and concrete models with integrated structural logic and global code compliance. Our detailed models include connection points, load-bearing elements, and clash-free layouts. Improve site coordination and fabrication accuracy while ensuring quality outcomes with our expert structural modeling solutions.",
       image: "/rndServices/3dStructuralModeling.webp",
       link: "/solar",
     },
-    { title: "Precision Mechanical Engineering & 3D Design Services", 
-        description: "We provide CAD-based mechanical design solutions for high-performance, precision-driven systems. From detailed drafts to 3D models, our services ensure engineering accuracy, minimize design errors, and enhance manufacturability—accelerating efficiency, reliability, and time to market.",
-         image: "/rndServices/mechanicalEngineeringServices.jpg", 
-         link: "/hvac" },
     {
-      title: "Integrated BIM & Project Coordination Services",
-      description: "Our BIM solutions integrate all project elements into a single, coherent model, enhancing stakeholder collaboration and transparency. Reduce errors, optimize resource management, and improve efficiency from concept to completion. Streamline your project lifecycle with our expert BIM consulting and engineering services.",
+      title: "Mechanical Engineering Services",
+      description:
+        "We provide CAD-based mechanical design solutions for high-performance, precision-driven systems. From detailed drafts to 3D models, our services ensure engineering accuracy, minimize design errors, and enhance manufacturability—accelerating efficiency, reliability, and time to market.",
+      image: "/rndServices/mechanicalEngineeringServices.jpg",
+      link: "/hvac",
+    },
+    {
+      title: "BIM Services",
+      description:
+        "Our BIM solutions integrate all project elements into a single, coherent model, enhancing stakeholder collaboration and transparency. Reduce errors, optimize resource management, and improve efficiency from concept to completion. Streamline your project lifecycle with our expert BIM consulting and engineering services.",
       image: "/rndServices/bim.webp",
       link: "/fire-saftey",
     },
     {
-      title: "Expert Revit Modeling & Design Solutions",
-      description: "Leverage Revits parametric features for accurate and flexible design solutions. Our workflows enhance coordination and consistency across all disciplines, reducing rework and improving outcomes. As experienced engineering consultants, we customize Revit processes to meet your project-specific requirements.",
+      title: "Revit Services",
+      description:
+        "Leverage Revits parametric features for accurate and flexible design solutions. Our workflows enhance coordination and consistency across all disciplines, reducing rework and improving outcomes. As experienced engineering consultants, we customize Revit processes to meet your project-specific requirements.",
       image: "/rndServices/reviteBring.jpg",
       link: "/fire-saftey",
     },
     {
-      title: "Engineering-Driven CAD Services for Optimal Results",
-      description: "Harness our advanced CAD capabilities to deliver precise and innovative design solutions across industries. We produce detailed, accurate drawings to ensure every aspect aligns with your project goals. Enhance efficiency and innovation with our expert engineering services.",
+      title: "CAD Services",
+      description:
+        "Harness our advanced CAD capabilities to deliver precise and innovative design solutions across industries. We produce detailed, accurate drawings to ensure every aspect aligns with your project goals. Enhance efficiency and innovation with our expert engineering services.",
       image: "/rndServices/cad.webp",
       link: "/fire-saftey",
     },
     {
-      title: "Accurate CAD Document Conversion Services",
-      description: "Transform legacy documents into digital formats while maintaining full data integrity. Our conversion solutions preserve design accuracy and improve accessibility for seamless collaboration. Stay ahead with efficient and reliable CAD modernization services.",
+      title: "CAD Conversion Services",
+      description:
+        "Transform legacy documents into digital formats while maintaining full data integrity. Our conversion solutions preserve design accuracy and improve accessibility for seamless collaboration. Stay ahead with efficient and reliable CAD modernization services.",
       image: "/rndServices/cadConversationServices.jpg",
       link: "/fire-saftey",
     },
     {
-      title: "Expert 2D Drafting for Clear Project Communication",
-      description: "Deliver clear and accurate 2D technical drawings to form a solid foundation for your projects. Our high-quality plans ensure stakeholders remain aligned and informed. Streamline workflows and enhance project efficiency with our expert drafting services.",
+      title: "2D Drafting Services",
+      description:
+        "Deliver clear and accurate 2D technical drawings to form a solid foundation for your projects. Our high-quality plans ensure stakeholders remain aligned and informed. Streamline workflows and enhance project efficiency with our expert drafting services.",
       image: "/rndServices/2ddraftin.webp",
       link: "/fire-saftey",
     },
     {
-      title: "Precision MEP Modeling for Efficient Buildings",
-      description: "Deliver precise MEP designs that meet all regulatory standards while optimizing building performance. Our solutions enhance efficiency, sustainability, and system reliability. Achieve seamless infrastructure management with our expert MEP services.",
+      title: "MEP Services",
+      description:
+        "Deliver precise MEP designs that meet all regulatory standards while optimizing building performance. Our solutions enhance efficiency, sustainability, and system reliability. Achieve seamless infrastructure management with our expert MEP services.",
       image: "/rndServices/mepServices.jpg",
       link: "/fire-saftey",
     },
     {
-      title: "Engineering-Driven 3D Modeling for Manufacturers",
-      description: "Leverage our detailed 3D models to accelerate development and production while ensuring every part meets industry standards. We combine accuracy and creativity to keep you competitive in the market. Enhance your manufacturing processes with our expert outsourced engineering services.",
+      title: "3D Modeling Services for OEM Manufacturers",
+      description:
+        "Leverage our detailed 3D models to accelerate development and production while ensuring every part meets industry standards. We combine accuracy and creativity to keep you competitive in the market. Enhance your manufacturing processes with our expert outsourced engineering services.",
       image: "/rndServices/3dStructuralModeling.webp",
       link: "/fire-saftey",
     },
     {
-      title: "3D Modeling Solutions for Visual Merchandising",
-      description: "Design compelling 3D displays that enhance product presentation and captivate customers. Our visually accurate models drive engagement and increase sales potential. Maximize retail impact with our trusted 3D modeling services.",
+      title: "3D Modeling Services for Visual Merchandising Manufacturers",
+      description:
+        "Design compelling 3D displays that enhance product presentation and captivate customers. Our visually accurate models drive engagement and increase sales potential. Maximize retail impact with our trusted 3D modeling services.",
       image: "/rndServices/Architectural3DModeling,.jpg",
       link: "/fire-saftey",
     },
     {
-      title: "Professional AutoCAD Drafting & Engineering Support",
-      description: "Produce detailed technical drawings with our precise AutoCAD drafting processes, ensuring accurate project execution. Our solutions enhance efficiency, reduce errors, and minimize delays. Achieve successful outcomes with our professional outsourced engineering and dedicated support services.",
+      title: "AutoCAD Drafting Services",
+      description:
+        "Produce detailed technical drawings with our precise AutoCAD drafting processes, ensuring accurate project execution. Our solutions enhance efficiency, reduce errors, and minimize delays. Achieve successful outcomes with our professional outsourced engineering and dedicated support services.",
       image: "/rndServices/AutoCADDrafting.jpg",
       link: "/fire-saftey",
     },
     {
-      title: "Tailored CAD Design Services for Project Success",
-      description: "Drive innovation with our advanced CAD design solutions, tailored to your project requirements. Each design is optimized for practicality and performance, ensuring project success. Bring your design visions to life with our expert CAD services.",
+      title: "CAD Design Services",
+      description:
+        "Drive innovation with our advanced CAD design solutions, tailored to your project requirements. Each design is optimized for practicality and performance, ensuring project success. Bring your design visions to life with our expert CAD services.",
       image: "/rndServices/cadDesignNDrafting.webp",
       link: "/fire-saftey",
     },
- 
-
   ];
 
   return (
@@ -114,7 +145,7 @@ export default function RndServicesNew() {
       {/* Heading + Arrows */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mx-auto mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center">
-         Cost-Effective Engineering Services
+          Cost-Effective Engineering Services
         </h2>
         <div className="flex items-center justify-center gap-2 mt-4 md:mt-0">
           <button

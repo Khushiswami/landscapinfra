@@ -1,14 +1,14 @@
 "use client";
 
 const SOLUTIONS = [
-  { id: 1, title: "Pre Engineered Buildings", img: "/solu.png" },
-  { id: 2, title: "EPC Solutions", img: "/solu.png" },
-  { id: 3, title: "Structural Engineering", img: "/solu.png" },
-  { id: 4, title: "Renewable Energy", img: "/solu.png" },
-  { id: 5, title: "Construction Management", img: "/solu.png" },
-  { id: 6, title: "Industrial Design", img: "/solu.png" },
-  { id: 7, title: "Infrastructure Planning", img:"/solu.png" },
-  { id: 8, title: "Other Solutions", img: "/solu.png" },
+  { id: 1, title: "Pre Engineered Buildings", img: "/solutionimages/one.jpg" },
+  { id: 2, title: "EPC Solutions", img: "/solutionimages/two.jpg" },
+  { id: 3, title: "Structural Engineering", img: "/solutionimages/three.jpg" },
+  { id: 4, title: "Renewable Energy", img: "/solutionimages/four.jpg" },
+  { id: 5, title: "Construction Management", img: "/solutionimages/five.jpg" },
+  { id: 6, title: "Industrial Design", img: "/solutionimages/six.jpg" },
+  { id: 7, title: "Infrastructure Planning", img: "/solutionimages/seven.jpg" },
+  { id: 8, title: "Other Solutions", img: "/solutionimages/eight.jpg" },
 ];
 
 export default function OurSolutions() {

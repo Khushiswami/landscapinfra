@@ -21,9 +21,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";
 import Brand from "yes/Components/Brand";
 import PlatformP from "yes/Components/PlatformP";
+import Pebheader from "yes/Components/Pebheader";
 
 export default function Coldstorageandwarehouse() {
   interface FAQ {
@@ -298,7 +298,7 @@ export default function Coldstorageandwarehouse() {
 
   return (
     <>
-      <IndustryHeader />
+      <Pebheader />
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video
