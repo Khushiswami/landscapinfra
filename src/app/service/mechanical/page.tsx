@@ -40,6 +40,8 @@ import Rndheader from "yes/Components/Rndheader";
 import Link from "next/link";
 import Rndfooter from "yes/Components/Rndfooter";
 import Brand from "yes/Components/ClientP";
+import ContactSection from "yes/Components/ContactSection";
+import Rndtestimonial from "yes/Components/Rndtestimonial";
 
 type CardProps = {
   icon: ReactNode;
@@ -260,7 +262,7 @@ export default function Mechanical() {
             )
           : []
       );
-    setCardsToShow(sliced);
+    // setCardsToShow(sliced);
   }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {
@@ -298,7 +300,40 @@ export default function Mechanical() {
       link: "#",
     },
   ];
-
+  const faqs: FAQ[] = [
+    {
+      question: "What is a factory building?",
+      answer:
+        "A factory building is a structure designed to house manufacturing or production operations.",
+    },
+    {
+      question: "What materials are used in factory building construction?",
+      answer:
+        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
+    },
+    {
+      question: "What are the benefits of prefabricated factory buildings?",
+      answer:
+        "They are faster to build, cost-effective, customizable, and more sustainable.",
+    },
+    {
+      question:
+        "How does a pre-engineered factory building differ from traditional buildings?",
+      answer:
+        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+    },
+    {
+      question: "Can factory buildings be customized?",
+      answer:
+        "Yes, they can be tailored to specific design, size, and operational requirements.",
+    },
+    {
+      question:
+        "How long does it take to construct a prefabricated factory building?",
+      answer:
+        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
+    },
+  ];
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   const stats = [
@@ -327,7 +362,9 @@ export default function Mechanical() {
       icon: <FaCertificate className="text-[#000080] text-xl" />,
     },
   ];
-
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <Rndheader />
@@ -360,7 +397,7 @@ export default function Mechanical() {
               success.
             </p>
 
-            <Link href="/contact">
+            <Link href="/rnd-contact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
@@ -630,9 +667,50 @@ export default function Mechanical() {
           ))}
         </div>
       </section>
-      <Brand />
-      {/* Heading */}
 
+      <Brand />
+      {/* faqss */}
+      <section className=" mx-auto px-4 py-12 md:px-15 ">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
+            Frequently Asked Questions
+          </h2>
+          {/* Yellow divider line */}
+          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
+        </div>
+
+        {/* FAQ Items */}
+        <div className="border-t border-gray-200">
+          {faqs.map((faq: FAQ, index: number) => (
+            <div key={index} className="border-b border-gray-200">
+              {/* Question */}
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
+              >
+                <span
+                  className={`font-medium transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000080]" : "text-gray-800"
+                  }`}
+                >
+                  {faq.question}
+                </span>
+                <span className="text-gray-500 text-sm">
+                  {openIndex === index ? "▲" : "▼"}
+                </span>
+              </button>
+
+              {/* Answer */}
+              {openIndex === index && (
+                <div className="pb-4 text-gray-600">{faq.answer}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* Heading */}
+      <Rndtestimonial />
       <Rndfooter />
     </>
   );
