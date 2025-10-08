@@ -41,7 +41,7 @@ const CleanRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-[28px] text-[#000080] font-bold mb-4">
                 High-Precision Controlled Environments
               </h3>
               <p className="text-gray-700 mb-4">
@@ -68,7 +68,7 @@ const CleanRoom = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
                 Why Choose Us for Clean Room Construction?
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
@@ -127,7 +127,7 @@ const CleanRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-[28px] text-[#000080] font-bold mb-4">
                 Industries Served by Us
               </h3>
               <ul className=" list-disc text-gray-700 mb-4 space-y-1">
@@ -147,7 +147,7 @@ const CleanRoom = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
                 Essential Features of LANDSKING Clean Rooms
               </h3>
 
@@ -175,7 +175,7 @@ const CleanRoom = () => {
 
           {/* Centered Heading + Paragraph */}
           <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
+            <h2 className="text-2xl  md:text-[28px]font-bold mb-4 text-[#000080]">
               Let’s Build Your Clean Room – The Smarter Way
             </h2>
             <p className="text-gray-700 text-lg">
@@ -183,14 +183,14 @@ const CleanRoom = () => {
               affordable, and regulation-compliant solution, executed with
               accuracy and expertise.
               <br />
-              📩 Contact us today for expert consultation on your clean room
+              Contact us today for expert consultation on your clean room
               project.
             </p>
           </div>
 
           {/* FAQ Section */}
           <div className=" mx-auto mt-16">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+            <h2 className="text-2xl md:text-[28px] text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4 text-[#000080]">

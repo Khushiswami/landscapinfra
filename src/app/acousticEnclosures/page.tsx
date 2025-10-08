@@ -42,7 +42,7 @@ const AcousticEnclosures = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl  md:text-[28px] text-[#000080] font-bold mb-4">
                 Effective Noise Control Solutions For Industrial Spaces
               </h3>
               <p className="text-gray-700 mb-4">
@@ -66,7 +66,7 @@ const AcousticEnclosures = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl   md:text-[28px] font-bold mb-4 text-[#000080]">
                 Advantages of LANDSKING Prefab Acoustic Enclosures
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
@@ -117,7 +117,7 @@ const AcousticEnclosures = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl   md:text-[28px] font-bold mb-4 text-[#000080]">
                 Applications
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1 list-disc">
@@ -150,7 +150,7 @@ const AcousticEnclosures = () => {
 
           {/* Centered Heading + Paragraph */}
           <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
+            <h2 className="text-2xl   md:text-[28px] font-bold mb-4 text-[#000080]">
               Manufacturing Excellence
             </h2>
             <p className="text-gray-700 text-lg">
@@ -167,7 +167,7 @@ const AcousticEnclosures = () => {
 
           {/* FAQ Section */}
           <div className=" mx-auto mt-16 md:px-9">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+            <h2 className="text-2xl   md:text-[28px] text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4 text-[#000080]">

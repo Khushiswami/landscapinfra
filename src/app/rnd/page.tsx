@@ -2,14 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Play,
-  Pause,
-  GraduationCap,
-  Users,
-  Lightbulb,
-  Wrench,
-} from "lucide-react";
+import { Play, Pause } from "lucide-react";
+import { Wrench, Lightbulb, Puzzle, Network } from "lucide-react";
+
 import { IoIosArrowForward } from "react-icons/io";
 import { useRouter } from "next/navigation";
 
@@ -32,49 +27,55 @@ export default function Rnd() {
 
   const links = [
     {
-      title: "CADFEM Service",
-      subtitle: "SUPPORT & ENGINEERING",
-      icon: <Wrench size={20} />,
-      url: "/service",
+      title: "CASE STUDY",
+      subtitle: "Engineering in Action",
+      icon: <Wrench size={20} />, // Wrench = Engineering / Practical Work
+      url: "/casestudy",
     },
     {
-      title: "Simulation-Trends",
-      subtitle: "DIE ZUKUNFT ENTDECKEN",
-      icon: <Lightbulb size={20} />,
+      title: "TRENDS & INSIGHTS",
+      subtitle: "Future. Innovation. Now.",
+      icon: <Lightbulb size={20} />, // Lightbulb = Ideas / Innovation
       url: "/trends",
     },
     {
-      title: "Studenten-Portal",
-      subtitle: "DEIN GRATIS ANGEBOT",
-      icon: <GraduationCap size={20} />,
-      url: "/students",
+      title: "OUR SOLUTIONS",
+      subtitle: "Smart. Simple. Effective.",
+      icon: <Puzzle size={20} />, // Puzzle = Solutions / Problem-Solving
+      url: "/solutions",
     },
     {
-      title: "Starkes Netzwerk",
-      subtitle: "WELTWEIT SIMULIEREN",
-      icon: <Users size={20} />,
+      title: "STRONG NETWORK",
+      subtitle: "Global. Connected. Strong.",
+      icon: <Network size={20} />, // Network = Connections / Collaboration
       url: "/network",
     },
   ];
 
   const slides = [
     {
-      title: "CAD / CAM / CAE Services",
-      desc: "Delivering precise construction projects using advanced CAD, CAM, and CAE tools.",
-      image: "/rndimages/Construction Sector.jpg",
-      link: "/cadservices",
+      title: "Engineering Services",
+      desc: "Providing innovative and sustainable engineering solutions tailored to modern real estate and infrastructure challenges.",
+      image: "/rndimages/analog-city-landscape-with-buildings-daylight.jpg",
+      link: "/civil-engineering",
     },
     {
-      title: "Design Engineering Services",
-      desc: "Innovative and sustainable engineering solutions for modern real estate needs.",
-      image: "/rndimages/analog-city-landscape-with-buildings-daylight.jpg",
-      link: "/real-estate",
+      title: "Mechanical Service",
+      desc: "Empowering industries with precision-driven mechanical design, fabrication, and automation solutions using cutting-edge technologies.",
+      image: "/rndimages/Construction Sector.jpg",
+      link: "/mechanical",
+    },
+    {
+      title: "CAE Simulation",
+      desc: "Enhancing product performance and reliability through advanced computer-aided engineering simulations and virtual testing.",
+      image: "/rndimages/Construction Sector.jpg",
+      link: "/cae-simulation",
     },
     {
       title: "Product Engineering",
-      desc: "Designing and optimizing products with quality, innovation, and efficiency.",
+      desc: "Transforming ideas into market-ready products through innovative design, analysis, and manufacturing excellence.",
       image: "/rndimages/Construction Sector.jpg",
-      link: "/preEngineeredBuildings",
+      link: "/productengineering",
     },
   ];
 
@@ -201,13 +202,13 @@ export default function Rnd() {
       <Rndproduct />
       <Rndaboutus />
       {/* <Rndservice /> */}
-      <RndServicesNew/>
+      <RndServicesNew />
       <Rndexplore />
-      <Rndsolution />
+      {/* <Rndsolution /> */}
       <Rndplatform />
       <Rndstories />
       <QuickLinks heading="Quick Links" links={links} />
-      <Rndslider />
+      {/* <Rndslider /> */}
       <PebBrandP />
       <Rndfooter />
     </>

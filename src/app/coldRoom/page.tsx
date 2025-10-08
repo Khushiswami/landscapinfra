@@ -40,7 +40,7 @@ const ColdRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-[28px] text-[#000080] font-bold mb-4">
                 LANDSKING – Leading Cold Storage and Cold Room Solutions
                 Provider in India
               </h3>
@@ -65,7 +65,7 @@ const ColdRoom = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
                 Reasons to Choose LANDSKING for Your Cold Storage and Cold Room
                 Needs
               </h3>
@@ -116,7 +116,7 @@ const ColdRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
                 Key Features of LANDSKING Cold Storage and Cold Room Solutions
               </h3>
               <p className="text-gray-700 mb-4">
@@ -148,7 +148,7 @@ const ColdRoom = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl  md:text-[28px] font-bold mb-4 text-[#000080]">
                 Cold Storage Manufacturing Technology
               </h3>
               <p className="text-gray-700 mb-4">
@@ -195,7 +195,7 @@ const ColdRoom = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
                 Applications of Cold Room and Cold Storage Solutions
               </h3>
               <p className="text-gray-700 mb-4">
@@ -225,7 +225,7 @@ const ColdRoom = () => {
 
           {/* Centered Heading + Paragraph */}
           <div className=" mx-auto">
-            <h2 className="text-center text-3xl font-bold mb-4 text-[#000080]">
+            <h2 className="text-center text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
               What Makes LANDSKING Cold Room Panels Exceptional
             </h2>
             <p className="text-gray-700 text-lg">
@@ -279,7 +279,7 @@ const ColdRoom = () => {
 
           {/* FAQ Section */}
           <div className=" mx-auto mt-16">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+            <h2 className="text-2xl md:text-[28px] text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4 text-[#000080]">

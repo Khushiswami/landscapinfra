@@ -75,14 +75,14 @@
 //                 alt={c.name}
 //                 className="w-20 h-20 rounded-full mb-3"
 //               />
-//               <h3 className="text-[#000080] font-semibold mb-1">{c.title}</h3>
+//               <h3 className="text-[#fff] font-semibold mb-1">{c.title}</h3>
 //               <p className="font-medium">{c.name}</p>
 //               <div className="flex items-center gap-2 mt-2">
-//                 <FaPhoneAlt className="text-[#000080]" />
+//                 <FaPhoneAlt className="text-[#fff]" />
 //                 <span>{c.phone}</span>
 //               </div>
 //               <div className="flex items-center gap-2 mt-1">
-//                 <FaEnvelope className="text-[#000080]" />
+//                 <FaEnvelope className="text-[#fff]" />
 //                 <span>{c.email}</span>
 //               </div>
 //             </div>
@@ -98,7 +98,7 @@
 //         </div>
 
 //         {/* Social icons */}
-//         <div className="flex justify-center gap-6 text-[#000080] text-xl mb-12">
+//         <div className="flex justify-center gap-6 text-[#fff] text-xl mb-12">
 //           <FaLinkedin className="cursor-pointer hover:text-[#8080FF] transition" />
 //           <FaYoutube className="cursor-pointer hover:text-red-600 transition" />
 //         </div>
@@ -107,7 +107,7 @@
 //         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center md:text-left">
 //           {columns.map((col, i) => (
 //             <div key={i}>
-//               <h4 className="font-semibold text-[#000080] mb-3">
+//               <h4 className="font-semibold text-[#fff] mb-3">
 //                 {col.heading}
 //               </h4>
 //               <ul className="space-y-2">
@@ -142,7 +142,7 @@ import {
 
 interface Contact {
   title: string;
-  name: string;
+  // name: string;
   phone: string;
   email: string;
   img: string;
@@ -155,36 +155,39 @@ interface Column {
 
 const contacts: Contact[] = [
   {
-    title: "Customer Success",
-    name: "Emily Carter",
-    phone: "+1 (123) 456-7890",
-    email: "emily@company.com",
+    title: "Customer Support",
+    // name: "Emily Carter",
+    phone: "877-017-9094",
+    email: "landskinginfra@gmail.com",
     img: "industry.jpg",
   },
   {
     title: "Technical Support",
-    name: "Liam Rodriguez",
-    phone: "+1 (987) 654-3210",
-    email: "liam@company.com",
+    // name: "Liam Rodriguez",
+    phone: " 9981813922",
+    email: "info@landsking.com",
     img: "industry.jpg",
   },
   {
-    title: "Training & Education",
-    name: "Sophia Nguyen",
-    phone: "+1 (555) 222-3333",
-    email: "sophia@company.com",
+    title: "Our Support",
+    // name: "Sophia Nguyen",
+    phone: " 9981813922 ",
+    email: " landskinginfra@gmail.com",
     img: "industry.jpg",
   },
 ];
 
 const columns: Column[] = [
   {
-    heading: "Products",
+    heading: "Services",
     links: [
-      "Analytics Platform",
-      "Mobile App",
+      "Mechanical Engineering",
+      "Civil Engineering",
       "Cloud Services",
-      "API Documentation",
+      "CAE Simulation Services",
+      "CAD / CAM / CAE Services",
+      "Product Engineering",
+      "Simulation Design for Manufacturing",
     ],
   },
   {
@@ -192,22 +195,20 @@ const columns: Column[] = [
     links: ["Enterprise", "Small Business", "Education", "Non-Profit"],
   },
   {
-    heading: "Resources",
-    links: ["Blog", "Guides", "Webinars", "Customer Stories"],
+    heading: "Insights",
+    links: ["Blog", "Brouchers", "Whitepapers", "Carrers"],
   },
-  { heading: "Company", links: ["About Us", "Team", "Careers", "Press"] },
+  {
+    heading: "About us",
+    links: ["Our History", "Innovation", "Our Mission", "Leadership"],
+  },
   {
     heading: "Support",
-    links: ["Help Center", "Community Forum", "Contact Us", "FAQs"],
+    links: ["Contact Us"],
   },
   {
     heading: "Legal",
-    links: [
-      "Privacy Policy",
-      "Terms of Service",
-      "Cookie Policy",
-      "Compliance",
-    ],
+    links: ["Privacy Policy", "Terms of Service"],
   },
 ];
 
@@ -219,7 +220,7 @@ const Rndfooter: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#f5f7fb] text-slate-700 text-sm">
+    <footer className="bg-[#000080] text-white text-sm">
       <div className="mx-auto px-6 py-12">
         {/* Contacts + Newsletter */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -227,17 +228,17 @@ const Rndfooter: React.FC = () => {
             <div key={i} className="flex flex-col items-center text-center">
               <img
                 src={c.img}
-                alt={c.name}
+                // alt={c.name}
                 className="w-20 h-20 rounded-full mb-3"
               />
-              <h3 className="text-[#000080] font-semibold mb-1">{c.title}</h3>
-              <p className="font-medium">{c.name}</p>
+              <h3 className="text-[#fff] font-semibold mb-1">{c.title}</h3>
+              {/* <p className="font-medium">{c.name}</p> */}
               <div className="flex items-center gap-2 mt-2">
-                <FaPhoneAlt className="text-[#000080]" />
+                <FaPhoneAlt className="text-[#fff]" />
                 <span>{c.phone}</span>
               </div>
               <div className="flex items-center gap-2 mt-1">
-                <FaEnvelope className="text-[#000080]" />
+                <FaEnvelope className="text-[#fff]" />
                 <span>{c.email}</span>
               </div>
             </div>
@@ -245,24 +246,24 @@ const Rndfooter: React.FC = () => {
 
           <div className="flex flex-col items-center justify-center text-center rounded-xl p-6">
             <p className="mb-3 font-medium">Landsking Infr Pvt Limited</p>
-            <button className="px-6 py-2 bg-[#000080] text-white rounded-xl shadow hover:bg-[#5c78b8] transition">
+            <button className="px-6 py-2 bg-[#fff] text-[#000080] rounded-xl shadow hover:bg-[#5c78b8] transition">
               Landsking Infr
             </button>
           </div>
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-6 text-[#000080] text-xl mb-12">
+        {/* <div className="flex justify-center gap-6 text-[#fff] text-xl mb-12">
           <FaLinkedin className="cursor-pointer hover:text-[#8080FF] transition" />
           <FaYoutube className="cursor-pointer hover:text-red-600 transition" />
-        </div>
+        </div> */}
 
         {/* Links with mobile dropdowns for all headings */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-left md:text-left">
           {columns.map((col, i) => (
             <div key={i} className=" md:border-none md:pb-0 pb-2">
               <h4
-                className="font-semibold text-[#000080] mb-3 flex justify-between items-left cursor-pointer md:cursor-default"
+                className="font-semibold text-[14px] md:text-[17px] text-[#fff] mb-3 flex justify-between items-left cursor-pointer md:cursor-default"
                 onClick={() => toggleDropdown(i)}
               >
                 {col.heading}

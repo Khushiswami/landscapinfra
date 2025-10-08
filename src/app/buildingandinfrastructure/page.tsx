@@ -147,55 +147,55 @@ export default function Buildingandinfrastructure() {
       title: "Collaborative Analysis",
       description:
         "Detailed study of the building design with open discussions alongside your in-house team to align goals.",
-      icon: <FaUsers className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaUsers className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "Opportunity Discovery",
       description:
         "Careful research to uncover new opportunities that add measurable value to your project.",
-      icon: <FaSearch className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaSearch className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "Concept Development",
       description:
         "Generating findings to create a customized concept tailored to your operational needs.",
-      icon: <FaLightbulb className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaLightbulb className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "BIM Prototyping",
       description:
         "Presenting a BIM prototype that addresses all critical project parameters in detail.",
-      icon: <FaProjectDiagram className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaProjectDiagram className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "3D Visualization",
       description:
         "Crafting high-precision 3D models to support global marketing and streamlined construction execution.",
-      icon: <FaCube className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaCube className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "Risk Mitigation & Support",
       description:
         "Continuous product analysis to minimize risks, avoid potential failures, and ensure smooth delivery.",
-      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaShieldAlt className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "Onsite Troubleshooting",
       description:
         "Expert support for troubleshooting and adjustments after the project goes live, ensuring long-term reliability.",
-      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaTools className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "Integrated Collaboration",
       description:
         "Seamless work with architects, engineers, contractors, and manufacturers— all components unified in a single BIM model.",
-      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaCogs className="text-[#000080] text-[28px] mb-4" />,
     },
     {
       title: "Progress Tracking",
       description:
         "Clients can access REVIT libraries to monitor progress, marking completion of each phase efficiently.",
-      icon: <FaChartLine className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaChartLine className="text-[#000080] text-[28px] mb-4" />,
     },
   ];
 
@@ -355,7 +355,7 @@ export default function Buildingandinfrastructure() {
         <div className="relative z-10 container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Text */}
           <div className="text-center lg:text-left px-4 sm:px-6 lg:px-0 pt-20 sm:pt-24 lg:pt-32">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
+            <h1 className="text-[28px] sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
               Pre Engineered Buildings
             </h1>
             <p className="text-base sm:text-lg md:text-xl max-w-full sm:max-w-lg mx-auto lg:mx-0">
@@ -413,7 +413,7 @@ export default function Buildingandinfrastructure() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl  md:text-[28px] font-extrabold text-[#000080] leading-snug  ">
               Buildings{" "}
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
@@ -463,7 +463,7 @@ export default function Buildingandinfrastructure() {
       {/* keyfetaure */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-2xl  md:text-[28px] font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
               Landsking Infra Pvt. Ltd. PEB Structures
@@ -494,7 +494,7 @@ export default function Buildingandinfrastructure() {
       </section>
       {/* explore conettt */}
       <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+        <h2 className="text-2xl  md:text-[28px] font-bold text-blue-900 mb-8">
           Pre Engineered Products
         </h2>
 
@@ -609,7 +609,7 @@ export default function Buildingandinfrastructure() {
           {/* Right Side - Content */}
           <div>
             <div className="flex items-center mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              <h2 className="text-2xl  md:text-[28px] font-bold text-gray-800">
                 Our Manufacturing Capabilities
               </h2>
             </div>
@@ -647,7 +647,7 @@ export default function Buildingandinfrastructure() {
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+          <h2 className="text-2xl  md:text-[28px] font-bold text-center mb-6">
             Inclusive Services{" "}
           </h2>
 
@@ -691,7 +691,7 @@ export default function Buildingandinfrastructure() {
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl  md:text-[28px] font-bold text-[#000080] text-center mb-8">
             Steel Tubes for Building and Infrastructure
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
@@ -758,7 +758,7 @@ export default function Buildingandinfrastructure() {
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
+          <h2 className="text-2xl md:text-[28px] font-bold text-[#000080] text-center mb-12">
             Our Support
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
@@ -870,10 +870,10 @@ export default function Buildingandinfrastructure() {
 
       {/* why choose us */}
       <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 flex items-center">
+            <h2 className="text-2xl md:text-[28px] font-bold text-gray-800 mb-6 flex items-center">
               Become a Customer
             </h2>
 
@@ -886,7 +886,7 @@ export default function Buildingandinfrastructure() {
               for seamless compatibility. This ensures durability, efficiency,
               and performance across every project we deliver.
             </p>
-            <Link href="/contact">
+            <Link href="/peb-contact">
               <button className="border border-[#000080] mt-4 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>

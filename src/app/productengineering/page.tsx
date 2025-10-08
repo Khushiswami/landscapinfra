@@ -157,7 +157,6 @@ export default function Productengineering() {
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Product engineering service
             </h2>
-            <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-1 gap-8 items-center">
@@ -263,7 +262,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
       </main>
       {/* Core Expertise Section */}
       <section className="bg-white">
-        <div className=" ">
+        <div>
           <div className="text-center mt-5 py-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Landsking’s Core Expertise for this Industry Includes:
@@ -278,30 +277,66 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
                 idx % 2 === 0 ? "bg-[#f2f2f2]" : "bg-[#fff]"
               } px-9 py-12 md:px-19`}
             >
-              <div className="grid md:grid-cols-2 gap-12 w-full">
-                <div className="flex flex-col items-start justify-center">
-                  <h1 className="text-7xl font-bold text-[#000080]">
-                    {String(idx + 1).padStart(2, "0")}
-                  </h1>
-                  <span className="mt-2 font-semibold text-[#000080] text-3xl md:text-5xl">
-                    {sec.title}
-                  </span>
-                </div>
-                <div className="flex flex-col justify-center space-y-6">
-                  <p className="text-[#737373] text-lg md:text-[18px]">
-                    {sec.description}
-                  </p>
-                  <img
-                    src={sec.image}
-                    alt={sec.title}
-                    className="w-full h-52 md:h-64 object-cover rounded-lg"
-                  />
-                </div>
+              <div
+                className={`grid md:grid-cols-2 gap-12 w-full items-center ${
+                  idx % 2 === 1 ? "md:flex-row-reverse" : ""
+                }`}
+              >
+                {/* Left/Right Alternating Block */}
+                {idx % 2 === 0 ? (
+                  <>
+                    {/* Left: Text */}
+                    <div className="flex flex-col items-start justify-center">
+                      <h1 className="text-7xl font-bold text-[#000080]">
+                        {String(idx + 1).padStart(2, "0")}
+                      </h1>
+                      <span className="mt-2 font-semibold text-[#000080] text-3xl md:text-5xl">
+                        {sec.title}
+                      </span>
+                      <p className="text-[#737373] text-lg md:text-[18px] mt-4">
+                        {sec.description}
+                      </p>
+                    </div>
+                    {/* Right: Image */}
+                    <div className="flex justify-center">
+                      <img
+                        src={sec.image}
+                        alt={sec.title}
+                        className="w-full h-52 md:h-64 object-cover rounded-lg"
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    {/* Left: Image */}
+                    <div className="flex justify-center">
+                      <img
+                        src={sec.image}
+                        alt={sec.title}
+                        className="w-full h-52 md:h-92 object-cover rounded-lg"
+                      />
+                    </div>
+                    {/* Right: Text */}
+                    <div className="flex flex-col items-start justify-center">
+                      <h1 className="text-7xl font-bold text-[#000080]">
+                        {String(idx + 1).padStart(2, "0")}
+                      </h1>
+                      <span className="mt-2 font-semibold text-[#000080] text-3xl md:text-4xl">
+                        {sec.title}
+                      </span>
+                      <p className="text-[#737373] text-lg md:text-[18px] mt-4">
+                        {sec.description}
+                      </p>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
         </div>
       </section>
+
+      {/* okk */}
       <section
         className="relative w-full h-[420px] md:h-[450px] flex items-center justify-center bg-cover bg-center"
         style={{

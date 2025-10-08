@@ -69,7 +69,7 @@ export default function Rndexplore() {
   const selectedArea = areas.find((area) => area.id === selectedId);
 
   return (
-    <section className=" mx-auto px-4 py-10 md:px-14">
+    <section className=" mx-auto px-4 py-10 md:px-19">
       <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
         Engineering Solutions
       </h2>

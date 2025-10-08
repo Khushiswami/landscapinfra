@@ -25,7 +25,7 @@ const Rndheader = () => {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
 
   const navItems: NavItem[] = [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/rnd" },
     {
       label: "Services",
       dropdown: [
@@ -100,7 +100,7 @@ const Rndheader = () => {
       <div className="mx-auto px-4 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <Link href="/" className="flex items-center">
+          <Link href="/rnd" className="flex items-center">
             <img src="/logo.jpeg" alt="Logo" className="h-15 w-auto p-1" />
           </Link>
         </div>

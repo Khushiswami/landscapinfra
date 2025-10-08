@@ -113,9 +113,9 @@ export default function Rndplatform() {
       </div>
 
       {/* Content Card */}
-      <div className="max-w-6xl mx-auto px-4">
+      <div className=" mx-auto px-4 md:mx-17">
         <div className="mt-8 flex justify-center">
-          <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full md:w-[90%] lg:w-[80%]">
+          <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full  ">
             <div className="relative w-full h-[340px] md:h-[460px]">
               <Image
                 src={TABS[active].img}
