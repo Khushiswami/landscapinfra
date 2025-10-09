@@ -4,6 +4,9 @@ import { useRef, useState, ReactNode, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FaTools, FaBolt, FaShieldAlt, FaLeaf, FaExpand } from "react-icons/fa";
 
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/navigation";
 import {
   FaAward,
   FaGlobeAsia,
@@ -42,13 +45,26 @@ import Rndfooter from "yes/Components/Rndfooter";
 import Brand from "yes/Components/ClientP";
 import ContactSection from "yes/Components/ContactSection";
 import Rndtestimonial from "yes/Components/Rndtestimonial";
-
+import {
+  Construction,
+  Building2,
+  Plug,
+  Landmark,
+  Cuboid,
+  FileText,
+  Flame,
+} from "lucide-react";
 type CardProps = {
   icon: ReactNode;
   title: string;
   description: string;
 };
-
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+}
 // ✅ Card Component
 function Card({ icon, title, description }: CardProps) {
   return (
@@ -145,6 +161,50 @@ export default function Civil() {
         "We offer Expert engineering and sustainability services to optimize designs and reduce costs. Our solutions include design optimization, lightweighting, material substitution, and energy efficiency improvements.We also ensure compliance with environmental regulations like RoHS and REACH, supporting sustainable and efficient product development.",
       description: "",
       image: "/menupageimg/mod12.jpg",
+    },
+  ];
+  const servicesing = [
+    {
+      id: 1,
+      icon: <Construction className="w-7 h-7 text-white" aria-hidden="true" />,
+      title: "Civil Engineering Services",
+      desc: "Landscapinfra offers reliable and affordable civil engineering support for site layout, infrastructure, and urban projects. We work on roads, bridges, drainage, and land development to ensure strong and lasting results.",
+    },
+    {
+      id: 2,
+      icon: <Building2 className="w-7 h-7 text-white" aria-hidden="true" />,
+      title: "Structural Engineering Services",
+      desc: "We design and plan safe, stable, and efficient structures for all kinds of projects. From industrial buildings to heavy foundations, our team ensures strength and performance in every design.",
+    },
+    {
+      id: 3,
+      icon: <Plug className="w-7 h-7 text-white" aria-hidden="true" />,
+      title: "Electrical Engineering Services",
+      desc: "Our team provides practical electrical design solutions for power systems, control panels, and automation setups. We help industries keep their operations safe, efficient, and well-connected.",
+    },
+    {
+      id: 4,
+      icon: <Landmark className="w-7 h-7 text-white" aria-hidden="true" />,
+      title: "Infrastructure Engineering Services",
+      desc: "We handle complete infrastructure planning and coordination for utilities, transport systems, and plant layouts. Every design is precise, clear, and ready for construction.",
+    },
+    {
+      id: 5,
+      icon: <Cuboid className="w-7 h-7 text-white" aria-hidden="true" />,
+      title: "BIM Services",
+      desc: "Our Building Information Modeling (BIM) helps reduce errors and improve project speed. We use smart 3D models to plan, estimate, and coordinate work more effectively.",
+    },
+    {
+      id: 6,
+      icon: <FileText className="w-7 h-7 text-white" aria-hidden="true" />,
+      title: "Technical Manuals & Engineering Documentation",
+      desc: "We create clear and accurate manuals, SOPs, and datasheets to support training, operations, and audits. Each document is simple, useful, and reliable.",
+    },
+    {
+      id: 7,
+      icon: <Flame className="w-7 h-7 text-white" aria-hidden="true" />,
+      title: "Fire Protection Engineering Services",
+      desc: "We design effective fire protection systems with accurate planning and safety checks. Our service helps ensure protection for industrial plants, offices, and public buildings.",
     },
   ];
 
@@ -262,7 +322,7 @@ export default function Civil() {
             )
           : []
       );
-    // setCardsToShow(sliced);
+    setCardsToShow(sliced);
   }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {
@@ -362,9 +422,102 @@ export default function Civil() {
       icon: <FaCertificate className="text-[#000080] text-xl" />,
     },
   ];
+  const projects: Project[] = [
+    {
+      id: 1,
+      title: "High-Rise Building Design",
+      description:
+        "At Landsking Infra, we design safe, efficient, and elegant high-rise structures that meet international engineering standards. Our team performs detailed load analysis and material optimization to achieve the perfect balance between strength, cost, and aesthetics, ensuring long-lasting performance and visual appeal.",
+      image: "/civil/high-rise building design.jpeg",
+    },
+    {
+      id: 2,
+      title: "Structural Design Services",
+      description:
+        "Our structural design solutions combine precision with creativity. We conduct feasibility studies, load assessments, and risk analysis while working closely with architects to blend safety and beauty seamlessly. Every design we deliver supports efficient construction and long-term durability.",
+      image: "/civil/Structural Design Services.jpeg",
+    },
+    {
+      id: 3,
+      title: "Industrial Structure Design",
+      description:
+        "We craft robust designs for warehouses, factories, and manufacturing plants that prioritize safety, efficiency, and space utilization. By understanding each industry’s workflow and environmental challenges, Landsking Infra ensures every structure performs reliably under demanding conditions.",
+      image: "/civil/Industrial Structure Design.jpeg",
+    },
+    {
+      id: 4,
+      title: "Peer Review Services",
+      description:
+        "Our independent peer review services provide a detailed check of your project’s design accuracy and compliance with industry codes. We help identify risks early, refine design efficiency, and improve overall project quality through technical validation and constructive insights.",
+      image: "/civil/design accuracy.jpeg",
+    },
+    {
+      id: 5,
+      title: "Structural Shop Drawing Services",
+      description:
+        "We prepare high-precision shop drawings that translate design concepts into fabrication-ready blueprints. These drawings minimize on-site errors, support accurate cost estimation, and improve communication between design, fabrication, and construction teams.",
+      image: "/civil/Structural Shop Drawing Services.jpeg",
+    },
+    {
+      id: 5,
+      title: "Structural BIM Modeling",
+      description:
+        "Through advanced BIM modeling, we create intelligent 3D representations that enhance collaboration and accuracy. Landsking Infra’s BIM solutions reduce design conflicts, improve visualization, and streamline the entire construction workflow from planning to execution.",
+      image: "/civil/.jpeg",
+    },
+    {
+      id: 5,
+      title: "Fabrication Drawing",
+      description:
+        "Our fabrication drawings serve as the foundation for accurate manufacturing and assembly. Each detail is crafted with precision to reduce material waste, prevent rework, and ensure smooth fabrication.",
+      image: "/civil/Fabrication Drawing.jpeg",
+    },
+    {
+      id: 5,
+      title: "Facade Engineering",
+      description:
+        "We combine art and engineering to design facades that are visually striking and environmentally efficient. Our experts choose the right materials, thermal properties, and finishes to enhance durability, insulation, and maintenance ease.",
+      image: "/civil/Facade Engineering.jpeg",
+    },
+    {
+      id: 5,
+      title: "Sustainable Design",
+      description:
+        "Sustainability is at the heart of our engineering. We design eco-friendly structures that reduce environmental impact, improve energy efficiency, and comply with green building standards. Each project promotes material reuse, water conservation, and carbon-conscious design.",
+      image: "/civil/Sustainable Design.jpg",
+    },
+    {
+      id: 5,
+      title: "Seismic Design",
+      description:
+        "Our seismic engineering services ensure that structures withstand earthquakes and ground motion effectively. Using advanced modeling and retrofitting techniques, we enhance building resilience and safeguard lives and investments.",
+      image: "/civil/seismic design.jpg",
+    },
+    {
+      id: 5,
+      title: "Structural Steel Detailing",
+      description:
+        "We offer accurate steel detailing services that form the backbone of efficient construction. Each drawing meets global standards, ensuring fabrication accuracy, faster erection, and consistent project flow.",
+      image: "/civil/Structural Steel Detailing.jpeg",
+    },
+    {
+      id: 5,
+      title: "Construction Documentation",
+      description:
+        "Our comprehensive construction documentation covers every project detail—from drawings and materials to schedules and cost tracking. This documentation ensures compliance, clarity, and complete coordination between teams and authorities.",
+      image: "/civil/Construction Documentation.jpeg",
+    },
+  ];
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+  const [activeOverlay, setActiveOverlay] = useState<number | null>(null);
+
+  const handleOverlayToggle = (id: number) => {
+    if (activeOverlay === id) setActiveOverlay(null);
+    else setActiveOverlay(id);
+  };
+
   return (
     <>
       <Rndheader />
@@ -375,26 +528,22 @@ export default function Civil() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Mechanical Design and Simulation Services for Faster
-              Time-to-Market{" "}
+              Civil services
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              At landscapinfra, we eliminate design inefficiencies and
-              accelerate product development through high-fidelity mechanical
-              engineering services. By combining AI-powered design automation,
-              performance-based material optimization, and sustainability-driven
-              frameworks, we help manufacturers avoid costly reworks, delays,
-              and compliance issues. Our experienced engineers serve aerospace,
-              automotive, and industrial sectors—ensuring every design aligns
-              with ISO, ASME, and global quality standards. From advanced CAD
-              modeling to precise FEA and CFD simulations, we create
-              production-ready designs that reduce prototyping time, enhance
-              reliability, and support faster market launches. With Flatworld
-              Solutions, you gain not just engineering precision but a trusted
-              partner committed to innovation, performance, and long-term
-              success.
+              Innovative Civil Engineering Services for Modern Infrastructure At
+              Landscapinfra, we bring innovation, precision, and sustainability
+              together to craft the future of infrastructure. Our civil
+              engineering services are designed to improve design efficiency,
+              optimize construction processes, and ensure every project stands
+              the test of time. Our expert engineers have successfully delivered
+              projects across highways, bridges, drainage systems, land
+              development, and large-scale infrastructure works — all designed
+              to meet ISO, IRC, and international standards. From detailed
+              structural analysis to real-time project coordination, we ensure
+              every design is precise, practical, and ready for construction.
             </p>
 
             <Link href="/rnd-contact">
@@ -419,215 +568,267 @@ export default function Civil() {
         <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
             <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
-              Our Services
+              MEP Design & Drafting Services
             </h1>
-            <p className="text-black  text-lg md:text-2xl max-w-2xl">
-              We provide high-quality mechanical engineering services tailored
-              to meet your project needs.
+            <p className="text-black  text-lg md:text-md">
+              At Landsking Infra, we create complete MEP design and drafting
+              solutions that bring precision and performance together With deep
+              expertise in system integration and load analysis, we make your
+              project execution smooth and compliant with global standards. Our
+              engineers plan and design mechanical, electrical, and plumbing
+              systems tailored to your building’s needs, ensuring comfort,
+              efficiency, and safety.
             </p>
           </div>
 
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
               icon={<FaPencilRuler size={34} className="text-white" />} // Pencil + ruler = drafting
-              title="2D Drafting Services"
-              description="Produce modern, productive, ISO-compliant technical drawings for architectural, mechanical, and construction projects, empowering smooth design iterations. Our expert CAD drafting accelerates product development while ensuring efficiency."
+              title="Construction Drawing Solutions"
+              description="Our HVAC design services ensure your spaces stay comfortable, efficient, and eco-friendly. From small commercial setups to large industrial facilities, Landsking Infra designs all aligned with international safety and performance standards. To optimize heating, ventilation, and air conditioning systems that balance airflow, energy use, and cost. We also provide load calculations, equipment layout, duct design, and control diagrams
+"
             />
 
             <Card
               icon={<FaCube size={34} className="text-white" />} // Cube = 3D modeling
-              title="3D CAD Modeling Services"
-              description="Create accurate 3D models to visualize components, test tolerances, detect interferences, and enhance collaboration across engineering, architecture, and manufacturing teams."
+              title="HVAC Design Services
+"
+              description="Our HVAC design services ensure your spaces stay comfortable, efficient, and eco-friendly. From small commercial setups to large industrial facilities, Landsking Infra designs all aligned with international safety and performance standards. To optimize heating, ventilation, and air conditioning systems that balance airflow, energy use, and cost. We also provide load calculations, equipment layout, duct design, and control diagrams"
             />
 
             <Card
               icon={<FaCogs size={34} className="text-white" />} // Cogs = mechanical design
-              title="CAD Design Services"
-              description="Comprehensive CAD design solutions covering concept development, CAE integration, fixture and mold design, prototyping, and manufacturing, backed by expert mechanical engineering knowledge."
+              title="Drainage Design Services
+"
+              description="Landsking Infra delivers intelligent and dependable drainage system designs to ensure smooth water flow and prevent flooding or leakage. Our team of civil engineers and CAD experts develops detailed dewatering layouts, stormwater systems, and site drainage plans suited to any terrain. we help you manage runoff, protect structures, and meet compliance requirements"
             />
 
             <Card
               icon={<FaUndoAlt size={34} className="text-white" />} // Undo = reverse engineering
-              title="Reverse Engineering Services"
-              description="Accurately recreate digital models from physical parts using 3D scanning, parametric modeling, and benchmarking to support system upgrades and in-depth competitor analysis."
+              title="Construction Scheduling & Tracking
+"
+              description="we produce highly detailed construction drawings that guide each phase of the project—from foundation to finishing. Our experts collaborate with architects and contractors to prepare plans, elevations, sections, and shop drawings that align perfectly with site requirements.This structured approach ensures your project stays on track, avoids delays, and meets key milestones — improving overall efficiency from planning to completion.
+"
             />
 
             <Card
               icon={<FaLightbulb size={34} className="text-white" />} // Lightbulb = innovation, ideas
-              title="Product Design & Development"
-              description="End-to-end product lifecycle support—from concept and prototyping to testing and manufacturing—ensures compliance, accelerates time-to-market, and drives innovation."
+              title="Civil Information Modeling (CIM) Services"
+              description="Landsking Infra leads the way in Civil Information Modeling (CIM) services, extending the power of BIM to revolutionize infrastructure design and construction. We offer intelligent CIM models that seamlessly integrate design, data, and documentation to significantly enhance collaboration and minimize costly errors. Our advanced solutions, ideal for projects like roads, bridges, drainage networks, and utilities, identify potential issues early. This improved coordination between teams ensures smoother project execution and leads to lower overall costs."
             />
 
             <Card
               icon={<FaIndustry size={34} className="text-white" />} // Industry = manufacturing optimization
-              title="Design for Manufacturing & Value Engineering"
-              description="Optimize designs for manufacturability through part standardization, material efficiency, and cost-benefit engineering, enabling scalable, efficient, and high-quality production."
-            />
-
-            <Card
-              icon={<FaFlask size={34} className="text-white" />} // Flask = testing, prototyping
-              title="Rapid Prototyping & Testing Support"
-              description="Speed up product validation with fast-turn prototypes and simulation-driven testing to ensure performance and reliability before full-scale production."
-            />
-            <Card
-              icon={<FaDraftingCompass size={34} className="text-white" />} // Compass = design conversion precision
-              title="CAD Conversion Services"
-              description="Transform outdated blueprints into accurate, editable CAD models that modernize your design and manufacturing workflow. Our CAD conversion services help reduce project costs, enhance collaboration, and improve design precision. Our skilled engineers and advanced tools ensure seamless interactivity, ISO-compliant accuracy, and faster product development with minimal errors."
+              title="Geospatial Solutions
+"
+              description="We offer 2D & 3D mapping, GIS analysis, drone surveying, and digital elevation modeling that support surveying, land development, and infrastructure design Whether for civil, environmental, or industrial projects, our geospatial solutions deliver clarity and confidence.
+.Our Services include photogrammetry, topographic mapping, drone surveys, and GIS analysis to ensure every inch of your site is mapped accurately for informed engineering decisions.
+"
             />
           </div>
         </section>
       </main>
       {/* endcapill */}
-      <section className=" mx-auto md:mx-12 px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Our Products
-        </h2>
+      <section className="max-w-7xl mx-auto px-5 py-10">
+        <header className="text-center mb-6">
+          <h2 className="text-2xl sm:text-3xl text-[#000080] font-extrabold">
+            More Engineering Services
+          </h2>
+          <p className="mt-2 text-sm text-black">
+            Expert solutions across every discipline of engineering excellence.
+          </p>
+        </header>
 
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
-          <div className="w-full md:w-1/4">
-            {/* Mobile Dropdown */}
-            <div className="md:hidden mb-0">
-              <button
-                onClick={() => setOpen(!open)}
-                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
+        {/* Mobile: horizontal scroll with snapping */}
+        <div className="block sm:hidden">
+          <div className="-mx-4 px-4 overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-4">
+            {servicesing.map((s) => (
+              <article
+                key={s.id}
+                className="snap-center min-w-[78%] flex-shrink-0 bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-md focus:outline-none focus:ring-4 focus:ring-indigo-200"
+                role="article"
               >
-                {areas.find((a) => a.id === selectedId)?.title}
-                <svg
-                  className="w-5 h-5 text-[#8080FF]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
-                  />
-                </svg>
-              </button>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 bg-[#000080]">
+                  {s.icon}
+                </div>
 
-              {open && (
-                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
-                  {areas.map((area) => (
-                    <button
-                      key={area.id}
-                      onClick={() => {
-                        setSelectedId(area.id);
-                        setOpen(false);
-                      }}
-                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
-                        selectedId === area.id ? "text-white font-semibold" : ""
+                <h3 className="text-lg font-semibold text-[#000080]">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-sm text-black">{s.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        {/* Tablet / Desktop */}
+        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {servicesing.map((s) => (
+            <article
+              key={s.id}
+              className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow focus:shadow-lg outline-none focus:ring-4 focus:ring-indigo-200"
+            >
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-[#000080]">
+                {s.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-[#000080]">
+                {s.title}
+              </h3>
+              <p className="mt-2 text-sm text-black">{s.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      {/* sectorss */}
+      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
+        <section className="w-full py-8 md:pt-16 bg-white relative">
+          <div className="mx-auto px-2 sm:px-4 relative">
+            <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
+              Structural Engineering Services
+            </h2>
+
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
+              loop={true}
+              centeredSlides={false} // default false
+              breakpoints={{
+                0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
+                640: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 20,
+                  centeredSlides: true,
+                },
+                768: {
+                  slidesPerView: 2.2,
+                  spaceBetween: 24,
+                  centeredSlides: true,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  centeredSlides: true,
+                },
+              }}
+            >
+              {projects.map((project) => (
+                <SwiperSlide key={project.id}>
+                  {({ isActive }) => (
+                    <div
+                      className={`relative text-center transition-all duration-500 group ${
+                        isActive ? "scale-105" : "scale-90 opacity-70"
                       }`}
                     >
-                      {area.title}
-                    </button>
-                  ))}
-                </div>
-              )}
+                      <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
+                        <div className="relative w-full h-full">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-cover w-full h-full rounded-lg"
+                          />
+
+                          {/* Bottom title bar */}
+                          <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-sm font-semibold">
+                            {project.title}
+                          </div>
+
+                          {/* Overlay */}
+                          <div
+                            onClick={() => handleOverlayToggle(project.id)}
+                            className={`
+                                 absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
+                                 rounded-lg transition-opacity duration-500 cursor-pointer
+                                 ${
+                                   activeOverlay === project.id
+                                     ? "opacity-100"
+                                     : "opacity-0"
+                                 }
+                                 md:opacity-0 md:group-hover:opacity-100 md:cursor-default
+                               `}
+                          >
+                            <h3 className="text-sm md:text-sm font-semibold mb-2">
+                              {project.title}
+                            </h3>
+                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                              {project.description}
+                            </p>
+                            <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
+                              Know More
+                            </button>
+                          </div>
+
+                          {/* Mobile arrows */}
+                          <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="#000080"
+                              strokeWidth="1.5"
+                            >
+                              <line x1="20" y1="12" x2="4" y2="12" />
+                              <polyline points="12 4 4 12 12 20" />
+                            </svg>
+                          </div>
+
+                          <div className="custom-next absolute top-1/2 right-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="#1c398e"
+                              strokeWidth="1.5"
+                            >
+                              <line x1="4" y1="12" x2="20" y2="12" />
+                              <polyline points="12 4 20 12 12 20" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Desktop arrows */}
+            <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 md:h-8 md:w-9"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#000080"
+                strokeWidth="1.5"
+              >
+                <line x1="20" y1="12" x2="4" y2="12" />
+                <polyline points="12 4 4 12 12 20" />
+              </svg>
             </div>
 
-            {/* Desktop Menu */}
-            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3">
-              {areas.map((area, idx) => (
-                <button
-                  key={area.id}
-                  onClick={() => setSelectedId(area.id)}
-                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                    selectedId === area.id
-                      ? " font-bold"
-                      : "hover: text-gray-300"
-                  }`}
-                >
-                  <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <span>{area.title}</span>
-                </button>
-              ))}
+            <div className="custom-next absolute top-1/2 -translate-y-1/2 right-2 md:-right-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 md:h-8 md:w-9"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#1c398e"
+                strokeWidth="1.5"
+              >
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <polyline points="12 4 20 12 12 20" />
+              </svg>
             </div>
           </div>
-
-          {/* Right Content */}
-          {selectedArea && (
-            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
-            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-              <div
-                className="
-    p-6 flex flex-col justify-center w-full md:w-1/2
-    rounded-lg                
-    md:rounded-none          
-    md:rounded-tl-lg md:rounded-bl-lg
-    shadow border border-[#808080] md:border-r-0
-  "
-              >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-                  {selectedArea.subtitle}
-                </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                  More{" "}
-                  <span className=" p-1 rounded-full text-[#000080]">→</span>
-                </button>
-              </div>
-
-              {/* Image */}
-              <div className="w-full md:w-1/2">
-                <img
-                  src={selectedArea.image}
-                  alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-155 object-cover"
-                />
-              </div>
-            </div>
-          )}
-        </div>
+        </section>
       </section>
       {/* explore content */}
       {/* business benifts */}
-      <section className="text-black py-10 md:mx-8">
-        <div className="mx-auto px-3 md:px-4">
-          <h2 className="text-2xl md:text-3xl font-bold  text-center mb-10 text-[#000080]">
-            Why Choose Us as Your Mechanical
-            <br /> Engineering Services Company?
-          </h2>
 
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center">
-            {cardsToShow.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
-              >
-                <img src={item.image} className="w-full object-cover " />
-                <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
-                    {item.subtitle}
-                  </p>
-                  <p className="text-sm text-black">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="flex justify-center mt-6 gap-4">
-            <button
-              onClick={prevSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronLeft className="w-6 h-6 text-[#fff]" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronRight className="w-6 h-6 text-[#fff]" />
-            </button>
-          </div>
-        </div>
-      </section>
       {/* our process */}
       <section className="py-16 ">
         {/* Heading Row */}

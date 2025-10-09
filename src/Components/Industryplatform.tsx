@@ -89,12 +89,12 @@ export default function Industryplatform() {
                   }}
                   onClick={() => setActive(i)}
                   className={`pb-3 font-medium whitespace-nowrap transition-colors
-                        ${
-                          active === i
-                            ? "text-[#272727]"
-                            : "text-gray-600 hover:text-[#000080]"
-                        }
-                        text-[13px] sm:text-sm md:text-[16px]`}
+                           ${
+                             active === i
+                               ? "text-[#272727]"
+                               : "text-gray-600 hover:text-[#000080]"
+                           }
+                           text-[13px] sm:text-sm md:text-[16px]`}
                 >
                   {t.title}
                 </button>
@@ -112,9 +112,9 @@ export default function Industryplatform() {
       </div>
 
       {/* Content Card */}
-      <div className=" mx-auto px-4 md:px-18">
+      <div className=" mx-auto px-4 md:mx-17">
         <div className="mt-8 flex justify-center">
-          <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full md:w-[90%] lg:w-[80%]">
+          <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full  ">
             <div className="relative w-full h-[340px] md:h-[460px]">
               <Image
                 src={TABS[active].img}

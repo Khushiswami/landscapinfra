@@ -21,6 +21,15 @@ import {
   FaIndustry,
   FaFlask,
 } from "react-icons/fa";
+import {
+  Construction,
+  Building2,
+  Plug,
+  Landmark,
+  Cuboid,
+  FileText,
+  Flame,
+} from "lucide-react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,6 +45,7 @@ import {
   FaHandshake, // Delivery & Support
 } from "react-icons/fa";
 import Rndheader from "yes/Components/Rndheader";
+import { ArrowRight } from "lucide-react";
 
 import Link from "next/link";
 import Rndfooter from "yes/Components/Rndfooter";
@@ -141,9 +151,9 @@ export default function Mechanical() {
     {
       id: 8,
       title: " Engineering & Sustainability Services",
-      subtitle:
+      description:
         "We offer Expert engineering and sustainability services to optimize designs and reduce costs. Our solutions include design optimization, lightweighting, material substitution, and energy efficiency improvements.We also ensure compliance with environmental regulations like RoHS and REACH, supporting sustainable and efficient product development.",
-      description: "",
+      subtitle: "Engineering & Sustainability Services",
       image: "/menupageimg/mod12.jpg",
     },
   ];
@@ -262,7 +272,7 @@ export default function Mechanical() {
             )
           : []
       );
-    // setCardsToShow(sliced);
+    setCardsToShow(sliced);
   }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {
@@ -302,36 +312,116 @@ export default function Mechanical() {
   ];
   const faqs: FAQ[] = [
     {
-      question: "What is a factory building?",
+      question:
+        " What are the benefits of outsourcing mechanical engineering services?",
       answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
-    },
-    {
-      question: "What materials are used in factory building construction?",
-      answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
-    },
-    {
-      question: "What are the benefits of prefabricated factory buildings?",
-      answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
+        "Outsourcing mechanical design allows faster delivery, reduced overhead costs, and access to expert CAD engineers without the need for expensive in-house teams.",
     },
     {
       question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
+        "Why should I choose LandsKing Infra for mechanical design services?",
       answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+        " LandsKing Infra combines expert CAD modeling, product design, and prototyping to deliver precise, ISO-compliant engineering solutions that minimize cost and development time",
     },
     {
-      question: "Can factory buildings be customized?",
+      question: "How does 3D CAD modeling improve product development?",
       answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
+        " 3D CAD modeling helps visualize designs, check tolerances, detect interference, and ensure perfect component fit before manufacturing.",
+    },
+    {
+      question: " What industries does LandsKing Infra serve?",
+      answer:
+        " We work with clients across manufacturing, automotive, construction, and industrial design sectors, ensuring precision and efficiency in every project.",
+    },
+    {
+      question: " What is reverse engineering and why is it important?",
+      answer:
+        "Reverse engineering recreates 3D digital models from physical parts to help improve performance, create replacements, or study competitors’ products.",
+    },
+    {
+      question: "How does CAD conversion improve legacy data management?",
+      answer:
+        "CAD conversion transforms old blueprints or paper drawings into accurate digital files that are easier to edit, store, and reuse across projects.",
+    },
+    {
+      question: "Does LandsKing Infra offer both 2D drafting and 3D modeling?",
+      answer:
+        " Yes, our team provides complete design support—from detailed 2D drafting to realistic 3D CAD modeling for mechanical, architectural, and industrial projects.",
+    },
+    {
+      question: "How does CAD conversion improve legacy data management?",
+      answer:
+        "CAD conversion transforms old blueprints or paper drawings into accurate digital files that are easier to edit, store, and reuse across projects.",
+    },
+    {
+      question: "What software tools are used for CAD and simulation services?",
+      answer:
+        "We use industry-leading software like SolidWorks, AutoCAD, CATIA, and ANSYS to deliver high-precision modeling, analysis, and design validation.",
+    },
+    {
+      question: "What makes structural engineering design services essential?",
+      answer:
+        " Structural engineering ensures stability, safety, and load-bearing capacity for industrial, commercial, and residential construction projects",
+    },
+    {
+      question: "How does LandsKing Infra ensure data confidentiality?",
+      answer:
+        " All project files are handled under strict NDA agreements and transferred through secure, encrypted cloud systems to maintain complete data protection.",
     },
     {
       question:
-        "How long does it take to construct a prefabricated factory building?",
+        "What is included in your product design and development services?",
       answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
+        "Our product design covers concept creation, 3D modeling, prototyping, material selection, and manufacturing assistance—all under one roof.",
+    },
+    {
+      question: "How does BIM modeling improve construction planning?",
+      answer:
+        " BIM modeling integrates architecture, structure, and MEP designs, helping detect clashes early and streamline the entire project workflow.",
+    },
+    {
+      question: " How do electrical engineering design services add value?",
+      answer:
+        " Electrical design services improve system safety, ensure power efficiency, and provide accurate control panel layouts for industrial and utility sectors.",
+    },
+    {
+      question: "How do I start a project with LandsKing Infra?",
+      answer:
+        "Simply share your requirements and design files, and our team will prepare a customized proposal with timelines, cost, and deliverables.",
+    },
+    {
+      question: " What is the advantage of simulation and analysis in design?",
+      answer:
+        "Simulation predicts how components behave under stress, heat, and vibration, reducing the need for multiple physical prototypes.",
+    },
+    {
+      question: " Do you provide value engineering and cost optimization?",
+      answer:
+        "Yes,we help reduce material costs, simplify assemblies, and improve production efficiency without compromising design quality.",
+    },
+    {
+      question:
+        " Why is fire protection engineering important for industrial facilities?",
+      answer:
+        " Fire protection design ensures NFPA compliance and safety through accurate system layout, hydraulic calculations, and hazard analysis.",
+    },
+    {
+      question:
+        "  Do you assist with technical documentation and compliance reports?",
+      answer:
+        "Yes, we create professional manuals, QC protocols, and CE/UL documentation to ensure your project meets international standards.",
+    },
+    {
+      question:
+        "What are the key benefits of outsourcing civil engineering services?",
+      answer:
+        "Outsourcing civil projects saves time, ensures accuracy in design layouts, and helps manage infrastructure development efficiently.",
+    },
+    {
+      question:
+        "  How can simulation and prototyping reduce product development time?",
+      answer:
+        "By testing and validating virtually before production, companies avoid costly rework and achieve faster, error-free product launches.",
     },
   ];
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -360,6 +450,50 @@ export default function Mechanical() {
       value: 100,
       suffix: "%",
       icon: <FaCertificate className="text-[#000080] text-xl" />,
+    },
+  ];
+  const servicesing = [
+    {
+      id: 1,
+      icon: <Construction className="w-7 h-7" aria-hidden="true" />,
+      title: "Civil Engineering Services",
+      desc: "Landscapinfra offers reliable and affordable civil engineering support for site layout, infrastructure, and urban projects. We work on roads, bridges, drainage, and land development to ensure strong and lasting results.",
+    },
+    {
+      id: 2,
+      icon: <Building2 className="w-7 h-7" aria-hidden="true" />,
+      title: "Structural Engineering Services",
+      desc: "We design and plan safe, stable, and efficient structures for all kinds of projects. From industrial buildings to heavy foundations, our team ensures strength and performance in every design.",
+    },
+    {
+      id: 3,
+      icon: <Plug className="w-7 h-7" aria-hidden="true" />,
+      title: "Electrical Engineering Services",
+      desc: "Our team provides practical electrical design solutions for power systems, control panels, and automation setups. We help industries keep their operations safe, efficient, and well-connected.",
+    },
+    {
+      id: 4,
+      icon: <Landmark className="w-7 h-7" aria-hidden="true" />,
+      title: "Infrastructure Engineering Services",
+      desc: "We handle complete infrastructure planning and coordination for utilities, transport systems, and plant layouts. Every design is precise, clear, and ready for construction.",
+    },
+    {
+      id: 5,
+      icon: <Cuboid className="w-7 h-7" aria-hidden="true" />,
+      title: "BIM Services",
+      desc: "Our Building Information Modeling (BIM) helps reduce errors and improve project speed. We use smart 3D models to plan, estimate, and coordinate work more effectively.",
+    },
+    {
+      id: 6,
+      icon: <FileText className="w-7 h-7" aria-hidden="true" />,
+      title: "Technical Manuals & Engineering Documentation",
+      desc: "We create clear and accurate manuals, SOPs, and datasheets to support training, operations, and audits. Each document is simple, useful, and reliable.",
+    },
+    {
+      id: 7,
+      icon: <Flame className="w-7 h-7" aria-hidden="true" />,
+      title: "Fire Protection Engineering Services",
+      desc: "We design effective fire protection systems with accurate planning and safety checks. Our service helps ensure protection for industrial plants, offices, and public buildings.",
     },
   ];
   const toggleFAQ = (index: number) => {
@@ -477,20 +611,21 @@ export default function Mechanical() {
           </div>
         </section>
       </main>
+
       {/* endcapill */}
-      <section className=" mx-auto md:mx-12 px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-          Our Products
+      <section className=" mx-auto px-4 py-10 md:px-19">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
+          Our Products{" "}
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Menu */}
-          <div className="w-full md:w-1/4">
+          <div className="w-full md:w-2/4">
             {/* Mobile Dropdown */}
             <div className="md:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
-                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
+                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-left bg-[#000080]"
               >
                 {areas.find((a) => a.id === selectedId)?.title}
                 <svg
@@ -509,7 +644,7 @@ export default function Mechanical() {
               </button>
 
               {open && (
-                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
+                <div className="mt-0 w-full bg-[#000080] rounded-b-lg ">
                   {areas.map((area) => (
                     <button
                       key={area.id}
@@ -529,7 +664,8 @@ export default function Mechanical() {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3">
+            {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
+            <div className="hidden md:flex h-[70vh] flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
               {areas.map((area, idx) => (
                 <button
                   key={area.id}
@@ -550,34 +686,38 @@ export default function Mechanical() {
           </div>
 
           {/* Right Content */}
+          {/* Right Content */}
           {selectedArea && (
-            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
-            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
+              {/* ✅ Left Text Section */}
               <div
                 className="
-    p-6 flex flex-col justify-center w-full md:w-1/2
-    rounded-lg                
-    md:rounded-none          
-    md:rounded-tl-lg md:rounded-bl-lg
-    shadow border border-[#808080] md:border-r-0
-  "
+        p-6 flex flex-col justify-center w-full md:w-1/2
+        rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
+      "
               >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                  More{" "}
-                  <span className=" p-1 rounded-full text-[#000080]">→</span>
-                </button>
+                <p className="text-gray-700 mb-5 text-center md:text-left">
+                  {selectedArea.description}
+                </p>
+                <div className="flex justify-center md:justify-start">
+                  <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
+                    More{" "}
+                    <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
+                      <ArrowRight className="w-4 h-4 text-white" />
+                    </div>
+                  </button>
+                </div>
               </div>
 
-              {/* Image */}
-              <div className="w-full md:w-1/2">
+              {/* ✅ Image Section (centered vertically) */}
+              <div className="w-full md:w-1/2 flex  bg-white pe-2">
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-155 object-cover"
+                  className="w-full max-w-[500px] h-64 md:h-80 object-cover rounded-lg md:rounded-none"
                 />
               </div>
             </div>
@@ -585,6 +725,55 @@ export default function Mechanical() {
         </div>
       </section>
       {/* explore content */}
+      {/* more servies */}
+      <section className="max-w-7xl mx-auto px-5 py-10">
+        <header className="text-center mb-6">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
+            More Engineering Services
+          </h2>
+          <p className="mt-2 text-sm text-slate-500">
+            Expert solutions across every discipline of engineering excellence.
+          </p>
+        </header>
+
+        {/* Mobile: horizontal scroll with snapping */}
+        <div className="block sm:hidden">
+          <div className="-mx-4 px-4 overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-4">
+            {servicesing.map((s) => (
+              <article
+                key={s.id}
+                className="snap-center min-w-[78%] flex-shrink-0 bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-md focus:outline-none focus:ring-4 focus:ring-indigo-200"
+                role="article"
+              >
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 bg-indigo-50">
+                  {s.icon}
+                </div>
+
+                <h3 className="text-lg  text-[#000080] *:font-semibold">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-base text-black">{s.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        {/* Tablet / Desktop */}
+        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {servicesing.map((s) => (
+            <article
+              key={s.id}
+              className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow focus:shadow-lg outline-none focus:ring-4 focus:ring-indigo-200"
+            >
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-indigo-50">
+                {s.icon}
+              </div>
+              <h3 className="text-lg font-semibold">{s.title}</h3>
+              <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
       {/* business benifts */}
       <section className="text-black py-10 md:mx-8">
         <div className="mx-auto px-3 md:px-4">

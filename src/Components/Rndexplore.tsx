@@ -150,14 +150,14 @@ export default function Rndexplore() {
         rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
       "
             >
-              <h3 className="text-2xl font-semibold text-blue-900 mb-3 text-center md:text-left">
+              <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
                 {selectedArea.subtitle}
               </h3>
               <p className="text-gray-700 mb-5 text-center md:text-left">
                 {selectedArea.description}
               </p>
               <div className="flex justify-center md:justify-start">
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
                     <ArrowRight className="w-4 h-4 text-white" />

@@ -89,12 +89,12 @@ export default function PlatformP() {
                   }}
                   onClick={() => setActive(i)}
                   className={`pb-3 font-medium whitespace-nowrap transition-colors
-                        ${
-                          active === i
-                            ? "text-[#272727]"
-                            : "text-gray-600 hover:text-[#000080]"
-                        }
-                        text-[13px] sm:text-sm md:text-[16px]`}
+                            ${
+                              active === i
+                                ? "text-[#272727]"
+                                : "text-gray-600 hover:text-[#000080]"
+                            }
+                            text-[13px] sm:text-sm md:text-[16px]`}
                 >
                   {t.title}
                 </button>
@@ -112,9 +112,9 @@ export default function PlatformP() {
       </div>
 
       {/* Content Card */}
-      <div className="max-w-6xl mx-auto px-4">
+      <div className=" mx-auto px-4 md:mx-17">
         <div className="mt-8 flex justify-center">
-          <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full md:w-[90%] lg:w-[80%]">
+          <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full  ">
             <div className="relative w-full h-[340px] md:h-[460px]">
               <Image
                 src={TABS[active].img}
@@ -127,7 +127,7 @@ export default function PlatformP() {
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full p-6 md:p-10">
                   <div className="text-white text-left md:text-left mx-auto">
-                    <h2 className="text-xl md:text-3xl font-semibold leading-tight">
+                    <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
                       {TABS[active].headline}
                     </h2>
                     <p className="mt-4 text-sm md:text-[15px] text-gray-200">
