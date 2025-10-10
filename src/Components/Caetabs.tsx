@@ -7,64 +7,55 @@ export default function Caetabs() {
 
   const tabs = [
     {
-      title: "FEA",
-      heading: "Finite Element Analysis (FEA)",
+      title: "Crash Analysis ",
+      heading: "Crash Analysis (Dynamic Simulation)",
       paragraph:
-        "Finite Element Analysis (FEA) is a computational technique used to simulate how products will respond to real-world physical effects such as vibration, heat, fluid flow, and other external forces. It enables engineers to identify weak points, predict material behavior, and validate designs before physical prototyping. By leveraging FEA, businesses can minimize production costs, accelerate product development, and ensure higher reliability in demanding applications.",
-      image: "/images/fea.jpg",
-    },
-    {
-      title: "Optimisation",
-      heading: "Design Optimisation",
-      paragraph:
-        "Design Optimisation focuses on improving a product’s performance, efficiency, and sustainability by fine-tuning design parameters. Engineers use computational models and algorithms to identify the most effective combination of materials, geometry, and manufacturing processes. This results in lightweight yet robust designs that meet functional requirements while minimizing resource usage and cost. Optimisation ultimately leads to innovation and competitive advantage in the market.",
+        "Dynamic simulation is essential for testing vehicle crashworthiness and aviation safety—scenarios that are impractical to test repeatedly in the physical world. For cars, our analysis accurately models everything from passenger dummies and restraints to fuel systems and airbags, achieving near-perfect real-world validation. In aerospace, this ensures the structural resilience of aircraft under various flight conditions, including the extreme stress of an emergency landing.",
       image: "/industry.jpg",
     },
     {
-      title: "Structural",
-      heading: "Structural Analysis",
+      title: "Managing Noise, Vibration, Harshness",
+      heading: "Managing Noise, Vibration, Harshness (NVH)",
       paragraph:
-        "Structural Analysis evaluates how loads and forces affect the strength, stability, and integrity of structures and components. Using advanced simulation tools, engineers can study stress distribution, deformation, and potential failure points. This process helps ensure that products and buildings can withstand real-world conditions such as pressure, temperature changes, and dynamic forces. Structural analysis is crucial in civil, automotive, and aerospace engineering for ensuring safety and performance.",
+        "LandsKingInfra delivers vital Computer-Aided Engineering (CAE) insight that boosts product comfort, long-term dependability, and market perception. Our NVH service reliably pinpoints and resolves disruptive noise and vibration issues within mechanical systems. We move from initial analysis to advanced simulation to uncover the root cause of these disturbances, then develop effective strategies to reduce or eliminate them entirely.",
       image: "/industry.jpg",
     },
     {
-      title: "Fluid",
-      heading: "Fluid Dynamics",
+      title: "The Power of Model-Based Definition ",
+      heading: "The Power of Model-Based Definition (MBD)",
       paragraph:
-        "Fluid Dynamics involves studying the movement of liquids and gases to predict their impact on product design and performance. Engineers apply Computational Fluid Dynamics (CFD) simulations to analyze flow rates, pressure distribution, turbulence, and heat transfer. This enables the development of efficient cooling systems, aerodynamic surfaces, and energy-optimized equipment. Fluid dynamics is essential across industries such as HVAC, automotive, marine, and renewable energy.",
+        "The core purpose of Model-Based Definition (MBD) is to establish a singular, authoritative digital record utilized across the entire product lifecycle—from initial concept through production, quality control, and servicing. This unified digital stream greatly improves team collaboration, drastically cuts down on manufacturing errors caused by misread drawings, and streamlines the whole production process. MBD is a leading component of the industry's shift to digital modernization, a field where LandsKingInfra is pioneering practices like the Digital Twin.",
       image: "/industry.jpg",
     },
     {
-      title: "Thermal",
-      heading: "Thermal Analysis",
+      title: "Precision Mesh Generation",
+      heading: "Precision Mesh Generation",
       paragraph:
-        "Thermal Analysis examines temperature distribution, heat transfer, and thermal stresses in systems and components. Engineers use thermal simulation to ensure optimal heat management, energy efficiency, and material longevity. It helps prevent overheating, thermal expansion, and performance degradation in electronic devices, engines, and industrial machinery. Through accurate thermal modeling, engineers can enhance product reliability and operational safety across multiple industries.",
+        "LandsKingInfra excels at generating accurate and efficient meshes that perfectly conform to the intricate shapes of any project, guaranteeing the highest possible reliability in your simulations. We handle all types of meshes—structured, unstructured, hybrid, or adaptive—using the newest methods to customize the process for your specific requirements. Since a top-tier mesh is the bedrock of successful simulation, our commitment is to provide unmatched precision and effectiveness for all your engineering challenges.",
       image: "/industry.jpg",
     },
   ];
 
   return (
-    <div className=" mx-auto px-6 py-12 md:px-18">
+    <div className="mx-auto px-6 py-12 md:px-18">
       <div className="mx-auto px-4 pt-12 pb-8 text-center">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
-          Comprehensive Infrastructure Solutions
+          Our Expertise
         </h1>
-        <p className="mt-4 text-[14px] font-light md:text-[16px] text-black">
-          From design and engineering to execution and management, we deliver
-          integrated solutions that shape industries and build a stronger
-          future.
-        </p>
       </div>
-      <div className="flex flex-wrap justify-between border-b border-gray-300 mb-6">
+
+      {/* Tabs */}
+      <div className="flex flex-wrap justify-between gap-2 border-b border-gray-300 mb-6">
         {tabs.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`py-2 px-4 md:px-6 font-medium transition-colors text-sm sm:text-base ${
-              activeIndex === index
-                ? "border-b-2 border-blue-600 text-blue-600"
-                : "text-gray-600 hover:text-blue-600"
-            }`}
+            className={`py-2 px-4 md:px-6 font-medium transition-all duration-200 text-sm sm:text-base rounded-md
+              ${
+                activeIndex === index
+                  ? "bg-[#000080] text-white md:bg-transparent md:text-[#000080] md:border-b-2 md:border-[#000080]"
+                  : "bg-gray-200 text-gray-700 hover:bg-[#000080] hover:text-white"
+              }`}
           >
             {tab.title}
           </button>
@@ -73,10 +64,10 @@ export default function Caetabs() {
 
       {/* Active Tab Content */}
       <div className="space-y-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
           {tabs[activeIndex].heading}
         </h2>
-        <p className="text-gray-700 text-base md:text-lg">
+        <p className="text-[#000] text-base md:text-lg">
           {tabs[activeIndex].paragraph}
         </p>
         <img

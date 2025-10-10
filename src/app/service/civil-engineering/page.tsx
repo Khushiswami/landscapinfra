@@ -54,6 +54,8 @@ import {
   FileText,
   Flame,
 } from "lucide-react";
+import Rndcivil from "yes/Components/Rndcivil";
+import Civilservice from "yes/Components/Civilservice";
 type CardProps = {
   icon: ReactNode;
   title: string;
@@ -258,31 +260,31 @@ export default function Civil() {
       subtitle: "Global Standard Infrastructure",
       description:
         "Our team uses advanced CAD workstations, simulation software, secure data centers, and redundant communication networks",
-      image: "/choose/global.png",
+      image: "/choose/global.jpg",
     },
     {
       subtitle: "Precision-Engineered Mechanical Services",
       description:
         "Using industry-standard tools like SolidWorks, AutoCAD, and Creo, we deliver models, assemblies, and components with unmatched accuracy, fidelity, and manufacturability.",
-      image: "/choose/precsion.jpg",
+      image: "/choose/precision.jpg",
     },
     {
       subtitle: "Multiple Quality Checks",
       description:
         "Every deliverable undergoes multi-stage quality inspections, guided by Lean Six Sigma principles, to detect and resolve even minor errors, ensuring all mechanical engineering services meet strict technical standards.",
-      image: "/choose/qualitycheck.png",
+      image: "/choose/quality.jpg",
     },
     {
       subtitle: "Compliance with Industry Standards",
       description:
         "All designs adhere to global protocols such as ASME, ISO, ASTM, SAE, BS, DIN, ANSI, and MIL, guaranteeing designs meet tolerancing, material specifications, and documentation requirements",
-      image: "/choose/compliance.jpg",
+      image: "/choose/Data security.jpg",
     },
     {
       subtitle: "Quick Turnaround Time",
       description:
         "Our 10+ global delivery centers offer fast project execution and 24/48-hour response times while maintaining high accuracy, scalability, and service quality.",
-      image: "/choose/quick.png",
+      image: "/choose/quick.jpg",
     },
     {
       subtitle: "Flexible Pricing Options",
@@ -444,13 +446,7 @@ export default function Civil() {
         "We craft robust designs for warehouses, factories, and manufacturing plants that prioritize safety, efficiency, and space utilization. By understanding each industry’s workflow and environmental challenges, Landsking Infra ensures every structure performs reliably under demanding conditions.",
       image: "/civil/Industrial Structure Design.jpeg",
     },
-    {
-      id: 4,
-      title: "Peer Review Services",
-      description:
-        "Our independent peer review services provide a detailed check of your project’s design accuracy and compliance with industry codes. We help identify risks early, refine design efficiency, and improve overall project quality through technical validation and constructive insights.",
-      image: "/civil/design accuracy.jpeg",
-    },
+
     {
       id: 5,
       title: "Structural Shop Drawing Services",
@@ -463,21 +459,21 @@ export default function Civil() {
       title: "Structural BIM Modeling",
       description:
         "Through advanced BIM modeling, we create intelligent 3D representations that enhance collaboration and accuracy. Landsking Infra’s BIM solutions reduce design conflicts, improve visualization, and streamline the entire construction workflow from planning to execution.",
-      image: "/civil/.jpeg",
+      image: "/civil/Industrial Structure Design.jpeg",
     },
     {
       id: 5,
       title: "Fabrication Drawing",
       description:
         "Our fabrication drawings serve as the foundation for accurate manufacturing and assembly. Each detail is crafted with precision to reduce material waste, prevent rework, and ensure smooth fabrication.",
-      image: "/civil/Fabrication Drawing.jpeg",
+      image: "/civil/Fabrication Drawing.JPG",
     },
     {
       id: 5,
       title: "Facade Engineering",
       description:
         "We combine art and engineering to design facades that are visually striking and environmentally efficient. Our experts choose the right materials, thermal properties, and finishes to enhance durability, insulation, and maintenance ease.",
-      image: "/civil/Facade Engineering.jpeg",
+      image: "/civil/Facade .jpeg",
     },
     {
       id: 5,
@@ -521,7 +517,7 @@ export default function Civil() {
   return (
     <>
       <Rndheader />
-      <RNDMechanicalCom />
+      <Rndcivil />
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-15">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -834,7 +830,7 @@ export default function Civil() {
         {/* Heading Row */}
         <div className="text-center mb-12 px-3 md:px-0">
           <h1 className="text-2xl md:text-3xl font-bold text-[#000080]">
-            Our Mechanical Engineering Service workflow
+            Our Civil Engineering Service Workflow
           </h1>
           <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
             At landscapinfra, we utilize a standardized workflow to streamline
@@ -845,7 +841,6 @@ export default function Civil() {
           </p>
         </div>
 
-        {/* Boxes Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 px-1 md:px-12">
           {services.map((service, index) => (
             <div
@@ -868,48 +863,9 @@ export default function Civil() {
           ))}
         </div>
       </section>
-
+      <Civilservice />
       <Brand />
-      {/* faqss */}
-      <section className=" mx-auto px-4 py-12 md:px-15 ">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
-            Frequently Asked Questions
-          </h2>
-          {/* Yellow divider line */}
-          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
-        </div>
-
-        {/* FAQ Items */}
-        <div className="border-t border-gray-200">
-          {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
-              {/* Question */}
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
-              >
-                <span
-                  className={`font-medium transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
-                  }`}
-                >
-                  {faq.question}
-                </span>
-                <span className="text-gray-500 text-sm">
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
-
-              {/* Answer */}
-              {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* structure */}
       {/* Heading */}
       <Rndtestimonial />
       <Rndfooter />

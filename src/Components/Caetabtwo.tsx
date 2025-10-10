@@ -1,0 +1,67 @@
+"use client";
+
+import { useState } from "react";
+
+export default function Caetabtwo() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const tabs = [
+    {
+      title: " Multi-Physics",
+      heading: " Multi-Physics: Modeling the Real World",
+      paragraph:
+        "Multi-Physics (or Coupled) simulation is our advanced method for solving several complex engineering equations simultaneously. Instead of studying isolated components, this technique lets us model how different phenomena—like heat, fluid flow, and structural stress—all interact within your system.This holistic approach is critical for holistic system analysis. By allowing these factors to influence each other digitally, we gain a precise, comprehensive view of your product's behavior. LandsKingInfra uses this power to solve major engineering problems, giving you a deeper grasp of how materials and structures perform under real, interconnected conditions, significantly boosting your optimization results.",
+      image: "/industry.jpg",
+    },
+    {
+      title: " Computational Fluid Dynamics (CFD)",
+      heading: " Computational Fluid Dynamics (CFD): Mastering Flow",
+      paragraph:
+        "Computational Fluid Dynamics (CFD) is the digital science of understanding how gases and liquids move around your designs. By merging fluid science with thermodynamics, CFD generates detailed insights into complex airflow, thermal management, and fluid momentum.",
+      image: "/industry.jpg",
+    },
+  ];
+
+  return (
+    <div className="mx-auto px-6 py-12 md:px-18">
+      <div className="mx-auto px-4 pt-12 pb-8 text-center">
+        <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
+          Our Expertise
+        </h1>
+      </div>
+
+      {/* Tabs */}
+      <div className="flex flex-wrap justify-between gap-2 border-b border-gray-300 mb-6">
+        {tabs.map((tab, index) => (
+          <button
+            key={index}
+            onClick={() => setActiveIndex(index)}
+            className={`py-2 px-4 md:px-6 font-medium transition-all duration-200 text-sm sm:text-base rounded-md
+              ${
+                activeIndex === index
+                  ? "bg-[#000080] text-white md:bg-transparent md:text-[#000080] md:border-b-2 md:border-[#000080]"
+                  : "bg-gray-200 text-gray-700 hover:bg-[#000080] hover:text-white"
+              }`}
+          >
+            {tab.title}
+          </button>
+        ))}
+      </div>
+
+      {/* Active Tab Content */}
+      <div className="space-y-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+          {tabs[activeIndex].heading}
+        </h2>
+        <p className="text-[#000] text-base md:text-lg">
+          {tabs[activeIndex].paragraph}
+        </p>
+        <img
+          src={tabs[activeIndex].image}
+          alt={tabs[activeIndex].heading}
+          className="w-full h-auto rounded-lg object-cover"
+        />
+      </div>
+    </div>
+  );
+}

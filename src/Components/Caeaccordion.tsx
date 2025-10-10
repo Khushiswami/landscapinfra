@@ -13,21 +13,33 @@ interface AccordionItem {
 const items: AccordionItem[] = [
   {
     id: 1,
-    title: "Engineering (E)",
+    title: "Competitive Solutions Through Smarter Thinking",
     content:
-      "The Blueprint of Your Solar System Engineering is the critical foundation of every Solar EPC project. At Manufyn, our EPC engineers begin with meticulous site assessments.This includes detailed energy audits,load profiling,and shadow analysis. We use this essential data to create a highly customized solar system design. This design is always optimized for your site's solar potential, climate, and electrical load. Our EPC experts ensure the layout maximizes energy production while strictly adhering to safety and local compliance standards. By combining advanced software simulations with on-site inspections, we deliver precise, efficient, and future-ready solar solutions. This proactive engineering approach reduces operational risks and guarantees long-term solar system performance.",
+      "Building competitive solutions starts with asking a fundamental question: How can this be done better? At Landscapinfra, we analyze user needs and efficiency to engineer market advantage. Our mandate is to create systems that don't just work, but that perform, adapt, and last, ensuring our clients consistently stay ahead. This insight-driven approach leads to smarter solutions shaped by innovation.",
   },
   {
     id: 2,
-    title: "Procurement(P)",
+    title: " Redefining Time-to-Market",
     content:
-      "Sourcing Quality for Your Solar System Procurement is the assurance that every single component of your solar system meets the highest quality standards. Manufyn sources all critical materials—solar panels, inverters, batteries, and mounting structures—exclusively from certified Tier-1 suppliers. We enforce strict quality checks throughout our procurement process to guarantee the durability, efficiency, and optimal performance of your solar system under all local weather conditions. Our focus is on providing cost-effective, reliable, and scalable solar solutions. Choosing high-grade components through rigorous EPC procurement allows for lower maintenance costs, a longer system life, and consistent energy output. This commitment cements us as a trusted choice among solar EPC companies in India.",
+      "In modern industries, reducing time-to-market is critical, but we guarantee speed without sacrificing precision. Our model focuses on intelligent workflow using digital prototyping and synchronized teamwork. A project leaving our desk is refined, not rushed. The result is an efficient development cycle that delivers long-term reliability.",
   },
   {
     id: 3,
-    title: "Construction (C)",
+    title: " Creating Value Through Cost Optimization",
     content:
-      "Bringing Your Solar System to Life Construction is the phase where our precise engineering design is realized with professionalism. Our certified EPC contractors meticulously manage every aspect: site preparation, civil work, module mounting, electrical wiring, and system interconnections. Every step of construction follows strict safety protocols and industry standards. Following installation, rigorous testing ensures the entire solar system operates efficiently and safely. We provide full commissioning, comprehensive documentation, and essential maintenance guidance, offering clients a seamless turnkey EPC experience. By combining engineering accuracy with expert construction execution, Manufyn delivers solar projects that are reliable, durable, and high-performing, securing our position as one of India’s leading solar EPC companies.",
+      "Our commitment is simple: Value must be greater than cost. We gain this by optimizing all our resources, design, and workflow instead of simply cutting costs and limiting potential. Through energy-efficient processes and strategic sourcing, we maintain a perfect balance between economy and excellence, turning cost control into a powerful competitive edge.",
+  },
+  {
+    id: 4,
+    title: "  Quality as the Core of Every Decision",
+    content:
+      "The world is rapidly moving toward electrification, making transformation essential for future success. At Landscapinfra, we see this as an opportunity, aligning engineering with environmental goals to help clients transition to sustainable infrastructure. This design innovation results in a cleaner, future-ready product portfolio built to power tomorrow's industries.",
+  },
+  {
+    id: 5,
+    title: " Creating Value Through Cost Optimization",
+    content:
+      "Quality is not an end stage at Landscapinfra; it is a principle woven into every phase of what we build. From the first concept sketch to final delivery, every element is tested and optimized. This approach ensures high performance is engineered with intention. Our clients receive reliable structures built on purpose, precision, and pride.",
   },
 ];
 
@@ -57,7 +69,7 @@ export default function Caeaccordion() {
               className="w-full flex justify-between items-center py-4 text-left"
             >
               <div className="flex items-center space-x-2">
-                <span className="text-blue-500 font-bold text-3xl">
+                <span className="text-blue-500 font-bold md:text-3xl text-lg">
                   {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`}
                 </span>
                 <span className="text-gray-900 text-3xl ">{item.title}</span>

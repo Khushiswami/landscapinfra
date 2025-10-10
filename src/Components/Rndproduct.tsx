@@ -11,21 +11,21 @@ const exploreItems = [
     subtitle: "Mechanical Engineering Design",
     description:
       "Custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
-    image: "/rndimages/semiconductor.jpg",
+    image: "/civil/mechenical enginer.jpg",
     link: "/service/mechanical", // 🔗 URL
   },
   {
     subtitle: "Civil Engineering Design",
     description:
       "Safe, sustainable, and future-ready—our civil designs balance strength with environmental care. From Indore’s growing roads to India's urban skylines, structural integrity is not just a choice, it’s a necessity.",
-    image: "/rndimages/Material Intelligence.jpg",
+    image: "/civil/civil engineer.JPG",
     link: "/service/civil-engineering", // 🔗 URL
   },
   {
     subtitle: "CAE Simulation Services",
     description:
       "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
-    image: "/rndimages/systems engineering software.jpg",
+    image: "/civil/Cae service.jpg",
     link: "/service/cae-simulation", // 🔗 URL
   },
 ];

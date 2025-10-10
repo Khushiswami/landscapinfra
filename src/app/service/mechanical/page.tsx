@@ -202,37 +202,37 @@ export default function Mechanical() {
       subtitle: "100% Data security",
       description:
         "We implement ISO-certified data protection protocols to ensure confidentiality at every stage. A signed NDA backs every project, safeguarding your data against breaches, downtime, or unauthorized access.",
-      image: "/choose/choseone.webp",
+      image: "/choose/draf.png",
     },
     {
       subtitle: "Global Standard Infrastructure",
       description:
         "Our team uses advanced CAD workstations, simulation software, secure data centers, and redundant communication networks",
-      image: "/choose/global.png",
+      image: "/choose/global.jpg",
     },
     {
       subtitle: "Precision-Engineered Mechanical Services",
       description:
         "Using industry-standard tools like SolidWorks, AutoCAD, and Creo, we deliver models, assemblies, and components with unmatched accuracy, fidelity, and manufacturability.",
-      image: "/choose/precsion.jpg",
+      image: "/choose/precision.jpg",
     },
     {
       subtitle: "Multiple Quality Checks",
       description:
         "Every deliverable undergoes multi-stage quality inspections, guided by Lean Six Sigma principles, to detect and resolve even minor errors, ensuring all mechanical engineering services meet strict technical standards.",
-      image: "/choose/qualitycheck.png",
+      image: "/choose/quality.jpg",
     },
     {
       subtitle: "Compliance with Industry Standards",
       description:
         "All designs adhere to global protocols such as ASME, ISO, ASTM, SAE, BS, DIN, ANSI, and MIL, guaranteeing designs meet tolerancing, material specifications, and documentation requirements",
-      image: "/choose/compliance.jpg",
+      image: "/choose/Data security.jpg",
     },
     {
       subtitle: "Quick Turnaround Time",
       description:
         "Our 10+ global delivery centers offer fast project execution and 24/48-hour response times while maintaining high accuracy, scalability, and service quality.",
-      image: "/choose/quick.png",
+      image: "/choose/quick.jpg",
     },
     {
       subtitle: "Flexible Pricing Options",
@@ -778,8 +778,7 @@ export default function Mechanical() {
       <section className="text-black py-10 md:mx-8">
         <div className="mx-auto px-3 md:px-4">
           <h2 className="text-2xl md:text-3xl font-bold  text-center mb-10 text-[#000080]">
-            Why Choose Us as Your Mechanical
-            <br /> Engineering Services Company?
+            Why Choose Us
           </h2>
 
           {/* Cards Grid */}
@@ -789,7 +788,7 @@ export default function Mechanical() {
                 key={idx}
                 className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                <img src={item.image} className="w-full object-cover " />
+                <img src={item.image} className=" w-full h-[26vh] " />
                 <div className="p-4">
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}

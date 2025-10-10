@@ -11,6 +11,8 @@ import Caeaccordion from "yes/Components/Caeaccordion";
 import Caesector from "yes/Components/Caesector";
 import Caetabs from "yes/Components/Caetabs";
 import Rndtestimonial from "yes/Components/Rndtestimonial";
+import Caeaccordionone from "yes/Components/Caeaccordionone";
+import Caetabtwo from "yes/Components/Caetabtwo";
 
 const Caesimulation = () => {
   const router = useRouter();
@@ -177,6 +179,8 @@ const Caesimulation = () => {
       <Caeaccordion />
       <Caesector />
       <Caetabs />
+      <Caeaccordionone />
+      <Caetabtwo />
       <Rndtestimonial />
       <Rndfooter />
     </>
