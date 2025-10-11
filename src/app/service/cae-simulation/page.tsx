@@ -40,19 +40,19 @@ const Caesimulation = () => {
     {
       title: "Crash Analysis",
       desc: "Simulating real-world impact scenarios to enhance vehicle safety and structural integrity using advanced FEA tools.",
-      image: "/civil/",
+      image: "/servicecivil/banone.jpg",
       link: "/rnd-contact",
     },
     {
       title: "Managing Noise, Vibration, and Harshness (NVH)",
       desc: "Reducing unwanted sound and vibration through acoustic simulation and modal analysis for optimal comfort and performance.",
-      image: "/civil/product.mp4",
+      image: "/servicecivil/banone.jpg",
       link: "/rnd-contact",
     },
     {
       title: "Multi-Physics Simulation",
       desc: "Integrating structural, thermal, and fluid analyses to accurately predict real-world product performance and reliability.",
-      image: "/civil/product.mp4",
+      image: "/servicecivil/banone.jpg",
       link: "/rnd-contact",
     },
   ];
@@ -156,7 +156,7 @@ const Caesimulation = () => {
             <p className="text-gray-700 mb-4 leading-relaxed">
               CAE is where every great product begins—not with physical tests,
               but with a fundamental question: Can this be designed better,
-              faster, and smarter? As one of the world's foremost technical
+              faster, and smarter? As one of the worlds foremost technical
               simulation companies, we leverage advanced Computer-Aided
               Engineering (CAE) to answer that question before any material is
               sourced. By utilizing the power of simulation, we eliminate the
