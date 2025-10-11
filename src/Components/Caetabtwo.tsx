@@ -20,16 +20,17 @@ export default function Caetabtwo() {
         "Computational Fluid Dynamics (CFD) is the digital science of understanding how gases and liquids move around your designs. By merging fluid science with thermodynamics, CFD generates detailed insights into complex airflow, thermal management, and fluid momentum.",
       image: "/industry.jpg",
     },
+    {
+      title: "Finite Element Analysis (FEA)",
+      heading: "Finite Element Analysis (FEA): Guaranteeing Strength",
+      paragraph:
+        "Finite Element Analysis (FEA) is the cornerstone of structural validation, predicting exactly how your design will endure forces like heat, vibration, and static loads. This method meticulously dissects complex geometries into a precise digital mesh, allowing us to calculate and map out every point of stress, strain, and displacement. FEA doesn't just check designs; it optimizes them. We use the results to guide material removal for lighter components and eliminate hidden failure risks, ensuring your products are robust and cost-effective from the outset.",
+      image: "/industry.jpg",
+    },
   ];
 
   return (
     <div className="mx-auto px-6 py-12 md:px-18">
-      <div className="mx-auto px-4 pt-12 pb-8 text-center">
-        <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
-          Our Expertise
-        </h1>
-      </div>
-
       {/* Tabs */}
       <div className="flex flex-wrap justify-between gap-2 border-b border-gray-300 mb-6">
         {tabs.map((tab, index) => (
@@ -40,7 +41,7 @@ export default function Caetabtwo() {
               ${
                 activeIndex === index
                   ? "bg-[#000080] text-white md:bg-transparent md:text-[#000080] md:border-b-2 md:border-[#000080]"
-                  : "bg-gray-200 text-gray-700 hover:bg-[#000080] hover:text-white"
+                  : "bg-gray-200 text-gray-700 md:bg-white hover:bg-[#000080] hover:text-white"
               }`}
           >
             {tab.title}

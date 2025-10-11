@@ -13,13 +13,7 @@ export default function Caeaccordionone() {
         "Dynamic simulation is how we model your product's performance against real-world chaos, like high-speed impacts or intense, time-varying forces. We generate precise digital replays of these events, offering engineers immediate, deep insight into system behavior. This capability is used to test and refine critical components—like engines and drivetrains—before any physical materials are committed. By catching flaws early, we slash prototype costs and rapidly confirm your product's reliability and safety across diverse industries.",
       image: "/industry.jpg",
     },
-    {
-      title: "Finite Element Analysis (FEA)",
-      heading: "Finite Element Analysis (FEA): Guaranteeing Strength",
-      paragraph:
-        "Finite Element Analysis (FEA) is the cornerstone of structural validation, predicting exactly how your design will endure forces like heat, vibration, and static loads. This method meticulously dissects complex geometries into a precise digital mesh, allowing us to calculate and map out every point of stress, strain, and displacement. FEA doesn't just check designs; it optimizes them. We use the results to guide material removal for lighter components and eliminate hidden failure risks, ensuring your products are robust and cost-effective from the outset.",
-      image: "/industry.jpg",
-    },
+
     {
       title: "Multi-Body Simulation",
       heading: "Multi-Body Simulation (MBS): Mastering Interconnected Systems",
@@ -45,12 +39,6 @@ export default function Caeaccordionone() {
 
   return (
     <div className="mx-auto px-6 py-12 md:px-18">
-      <div className="mx-auto px-4 pt-12 pb-8 text-center">
-        <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
-          Our Expertise
-        </h1>
-      </div>
-
       {/* Tabs */}
       <div className="flex flex-wrap justify-between gap-2 border-b border-gray-300 mb-6">
         {tabs.map((tab, index) => (
@@ -61,7 +49,7 @@ export default function Caeaccordionone() {
               ${
                 activeIndex === index
                   ? "bg-[#000080] text-white md:bg-transparent md:text-[#000080] md:border-b-2 md:border-[#000080]"
-                  : "bg-gray-200 text-gray-700 hover:bg-[#000080] hover:text-white"
+                  : "bg-gray-200 text-gray-700 md:bg-white hover:bg-[#000080] hover:text-white"
               }`}
           >
             {tab.title}

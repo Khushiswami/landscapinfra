@@ -19,28 +19,40 @@ const Caesimulation = () => {
 
   const slides = [
     {
-      title: "CAE-SIMULATION",
-      desc: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
-      video: "/video.mp4",
-      link: "/preEngineeredBuildings",
+      title: "Crash Analysis",
+      desc: "Simulating real-world impact scenarios to enhance vehicle safety and structural integrity using advanced FEA tools.",
+      video: "/civil/product.mp4",
+      link: "/rnd-contact",
     },
     {
-      title: "Structural Steel",
-      desc: "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
-      video: "/video.mp4",
-      link: "/structuralsteel",
+      title: "Managing Noise, Vibration, and Harshness (NVH)",
+      desc: "Reducing unwanted sound and vibration through acoustic simulation and modal analysis for optimal comfort and performance.",
+      video: "/civil/product.mp4",
+      link: "/rnd-contact",
     },
     {
-      title: " EPC Solutions ",
-      desc: "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
-      video: "/video.mp4",
-      link: "/epcsolutions",
+      title: "Multi-Physics Simulation",
+      desc: "Integrating structural, thermal, and fluid analyses to accurately predict real-world product performance and reliability.",
+      video: "/civil/product.mp4",
+      link: "/rnd-contact",
     },
     {
-      title: "Project Management Consultancy",
-      desc: "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
-      video: "/video.mp4",
-      link: "/projectmanagementconsultancy",
+      title: "Computational Fluid Dynamics (CFD)",
+      desc: "Analyzing fluid flow, heat transfer, and aerodynamics to optimize performance and efficiency across applications.",
+      video: "/civil/product.mp4",
+      link: "/rnd-contact",
+    },
+    {
+      title: "Finite Element Analysis (FEA)",
+      desc: "Evaluating stress, strain, and fatigue to ensure safer, stronger, and more efficient product designs.",
+      video: "/civil/product.mp4",
+      link: "/rnd-contact",
+    },
+    {
+      title: "Multi-Body Simulation (MBS)",
+      desc: "Modeling dynamic motion and load transfer in mechanical systems to improve accuracy and reduce prototyping time.",
+      video: "/civil/product.mp4",
+      link: "/rnd-contact",
     },
   ];
 
@@ -92,7 +104,7 @@ const Caesimulation = () => {
                 onClick={() => router.push(slides[active].link)}
                 className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
               >
-                <span>Learn More</span>
+                <span>Contact</span>
                 <IoIosArrowForward className="w-5 h-5" />
               </button>
             </motion.div>

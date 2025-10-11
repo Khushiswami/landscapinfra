@@ -54,7 +54,7 @@ export default function Caetabs() {
               ${
                 activeIndex === index
                   ? "bg-[#000080] text-white md:bg-transparent md:text-[#000080] md:border-b-2 md:border-[#000080]"
-                  : "bg-gray-200 text-gray-700 hover:bg-[#000080] hover:text-white"
+                  : "bg-gray-200 text-gray-700 md:bg-white hover:bg-[#000080] hover:text-white"
               }`}
           >
             {tab.title}
