@@ -72,13 +72,15 @@ function Card({ icon, title, description }: CardProps) {
   return (
     <div className="bg-[#f5f7fb] shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
       {/* Image with centered icon */}
-      <div className="relative w-full h-48 sm:h-56 overflow-hidden flex items-center justify-center">
-        {/* Centered Icon */}
-        <div className="absolute flex items-center justify-center bg-blue-900 p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
-          {icon}
+      <div className="relative w-full h-40 sm:h-46 overflow-hidden flex items-center justify-center">
+        {/* Centered Image */}
+        <div className="absolute flex p-2 sm:p-4">
+          <img
+            src="/path-to-your-image.png" // Replace with your image path
+            alt="Drafting"
+            className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+          />
         </div>
-
-        {/* Hover underline effect */}
       </div>
 
       {/* Text */}
@@ -579,10 +581,15 @@ export default function Civil() {
 
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
-              icon={<FaPencilRuler size={34} className="text-white" />} // Pencil + ruler = drafting
+              icon={
+                <img
+                  src="/servicecivil/Civil.jpg"
+                  alt="Drafting"
+                  className=""
+                />
+              }
               title="Construction Drawing Solutions"
-              description="Our HVAC design services ensure your spaces stay comfortable, efficient, and eco-friendly. From small commercial setups to large industrial facilities, Landsking Infra designs all aligned with international safety and performance standards. To optimize heating, ventilation, and air conditioning systems that balance airflow, energy use, and cost. We also provide load calculations, equipment layout, duct design, and control diagrams
-"
+              description="Our HVAC design services ensure your spaces stay comfortable, efficient, and eco-friendly. From small commercial setups to large industrial facilities, Landsking Infra designs all aligned with international safety and performance standards. To optimize heating, ventilation, and air conditioning systems that balance airflow, energy use, and cost. We also provide load calculations, equipment layout, duct design, and control diagrams"
             />
 
             <Card

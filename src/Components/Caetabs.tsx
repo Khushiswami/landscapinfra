@@ -20,18 +20,19 @@ export default function Caetabs() {
         "LandsKingInfra delivers vital Computer-Aided Engineering (CAE) insight that boosts product comfort, long-term dependability, and market perception. Our NVH service reliably pinpoints and resolves disruptive noise and vibration issues within mechanical systems. We move from initial analysis to advanced simulation to uncover the root cause of these disturbances, then develop effective strategies to reduce or eliminate them entirely.",
       image: "/industry.jpg",
     },
-    {
-      title: "The Power of Model-Based Definition ",
-      heading: "The Power of Model-Based Definition (MBD)",
-      paragraph:
-        "The core purpose of Model-Based Definition (MBD) is to establish a singular, authoritative digital record utilized across the entire product lifecycle—from initial concept through production, quality control, and servicing. This unified digital stream greatly improves team collaboration, drastically cuts down on manufacturing errors caused by misread drawings, and streamlines the whole production process. MBD is a leading component of the industry's shift to digital modernization, a field where LandsKingInfra is pioneering practices like the Digital Twin.",
-      image: "/industry.jpg",
-    },
+
     {
       title: "Precision Mesh Generation",
       heading: "Precision Mesh Generation",
       paragraph:
         "LandsKingInfra excels at generating accurate and efficient meshes that perfectly conform to the intricate shapes of any project, guaranteeing the highest possible reliability in your simulations. We handle all types of meshes—structured, unstructured, hybrid, or adaptive—using the newest methods to customize the process for your specific requirements. Since a top-tier mesh is the bedrock of successful simulation, our commitment is to provide unmatched precision and effectiveness for all your engineering challenges.",
+      image: "/industry.jpg",
+    },
+    {
+      title: "Thermal",
+      heading: "Thermal Analysis",
+      paragraph:
+        "Thermal Analysis examines temperature distribution, heat transfer, and thermal stresses in systems and components. Engineers use thermal simulation to ensure optimal heat management, energy efficiency, and material longevity. It helps prevent overheating, thermal expansion, and performance degradation in electronic devices, engines, and industrial machinery. Through accurate thermal modeling, engineers can enhance product reliability and operational safety across multiple industries.",
       image: "/industry.jpg",
     },
   ];

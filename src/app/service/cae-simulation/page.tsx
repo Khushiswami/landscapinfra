@@ -19,39 +19,40 @@ const Caesimulation = () => {
 
   const slides = [
     {
+      title: "Motion Simulation",
+      desc: "Modeling and analyzing movement dynamics to optimize mechanical systems and improve performance.",
+      image: "/servicecivil/bk.jpg",
+      link: "/rnd-contact",
+    },
+    {
+      title: "Thermal Simulation",
+      desc: "Simulating heat transfer and temperature effects to enhance safety, efficiency, and product reliability.",
+      image: "/servicecivil/bantwo.jpg",
+      link: "/rnd-contact",
+    },
+    {
+      title: "Precision Mesh Generation",
+      desc: "Creating high-quality computational meshes to ensure accurate simulations and faster design iterations.",
+      image: "/servicecivil/banone.jpg",
+      link: "/rnd-contact",
+    },
+
+    {
       title: "Crash Analysis",
       desc: "Simulating real-world impact scenarios to enhance vehicle safety and structural integrity using advanced FEA tools.",
-      video: "/civil/product.mp4",
+      image: "/civil/",
       link: "/rnd-contact",
     },
     {
       title: "Managing Noise, Vibration, and Harshness (NVH)",
       desc: "Reducing unwanted sound and vibration through acoustic simulation and modal analysis for optimal comfort and performance.",
-      video: "/civil/product.mp4",
+      image: "/civil/product.mp4",
       link: "/rnd-contact",
     },
     {
       title: "Multi-Physics Simulation",
       desc: "Integrating structural, thermal, and fluid analyses to accurately predict real-world product performance and reliability.",
-      video: "/civil/product.mp4",
-      link: "/rnd-contact",
-    },
-    {
-      title: "Computational Fluid Dynamics (CFD)",
-      desc: "Analyzing fluid flow, heat transfer, and aerodynamics to optimize performance and efficiency across applications.",
-      video: "/civil/product.mp4",
-      link: "/rnd-contact",
-    },
-    {
-      title: "Finite Element Analysis (FEA)",
-      desc: "Evaluating stress, strain, and fatigue to ensure safer, stronger, and more efficient product designs.",
-      video: "/civil/product.mp4",
-      link: "/rnd-contact",
-    },
-    {
-      title: "Multi-Body Simulation (MBS)",
-      desc: "Modeling dynamic motion and load transfer in mechanical systems to improve accuracy and reduce prototyping time.",
-      video: "/civil/product.mp4",
+      image: "/civil/product.mp4",
       link: "/rnd-contact",
     },
   ];
@@ -69,14 +70,10 @@ const Caesimulation = () => {
     <>
       <Rndheader />
       {/* rnd banner */}
-      <section className="relative w-full h-[70vh] sm:h-[99vh] overflow-hidden">
+      <section className="relative w-full   h-[60vh] sm:h-[99vh] overflow-hidden">
         {/* Background Video */}
-        <video
-          src={slides[active].video}
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src={slides[active].image}
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
 
@@ -152,15 +149,22 @@ const Caesimulation = () => {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Mechanical Design and Simulation Services for Faster
-              Time-to-Market{" "}
+              CAE Certainty: Engineering Excellence for Product Development
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              At landscapinfra, we eliminate design inefficiencies and
-              accelerate product development through high-fidelity mechanical
-              engineering services. success.
+              CAE is where every great product begins—not with physical tests,
+              but with a fundamental question: Can this be designed better,
+              faster, and smarter? As one of the world's foremost technical
+              simulation companies, we leverage advanced Computer-Aided
+              Engineering (CAE) to answer that question before any material is
+              sourced. By utilizing the power of simulation, we eliminate the
+              reliance on expensive, slow physical testing and development. This
+              insight-first philosophy translates directly into tangible
+              benefits for our clients: reduced costs, shorter lead times, and
+              demonstrably superior results compared to traditional engineering
+              practices. .
             </p>
             <ul className="grid grid-cols-2 list-disc pl-5 gap-2">
               <li>Finite Element Analysis (FEA)</li>

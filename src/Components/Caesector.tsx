@@ -17,38 +17,74 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Rooftop Solar for Manufacturing",
+    title: "Concept Designing",
     description:
       "Transform your idle roof space into a high-performance asset. Slash your operational costs and reduce reliance on the grid with a custom rooftop solar system built for your manufacturing facility.",
-    image: "/realstate/three.webp",
+    image: "/servicecivil/concept.png",
   },
   {
     id: 2,
-    title: "Ground-Mounted Solar for Industrial Estates",
+    title: "Shop floor / Scheduling",
     description:
       "Get uninterrupted, large-scale power with our ground-mounted solar solutions, designed for the vast energy needs of industrial estates.",
-    image: "/realstate/two.jpg",
+    image: "/servicecivil/shop.jpg",
   },
   {
     id: 3,
-    title: "On-Grid & Hybrid Solar Installations",
+    title: "Designing",
     description:
       "Choose a solar system that fits your power needs and business goals. Our on-grid systems sync with the utility grid, allowing you to benefit from net metering. For ultimate power reliability, our hybrid installations combine grid power with battery backup, ensuring your operations never stop, even during a blackout. We make it easy to transition to a more stable and cost-effective energy supply.",
-    image: "/realstate/one.webp",
+    image: "/servicecivil/designing.jpg",
   },
   {
     id: 4,
-    title: "Net Metering & Open Access Support",
+    title: "Prototyping",
     description:
       "Navigating the complexities of solar regulations is our job. We provide expert support with net metering and open access policies, handling all the paperwork, government approvals, and utility company coordination to ensure a smooth and hassle-free setup.",
-    image: "/realstate/fourS.webp",
+    image: "/servicecivil/prototyping.jpg",
   },
   {
     id: 5,
-    title: "Battery-Integrated Solar for Power Reliability",
+    title: "Tooling",
     description:
       "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
-    image: "/realstate/fiveS.webp",
+    image: "/servicecivil/tooling.jpg",
+  },
+  {
+    id: 5,
+    title: "Future Life Experience Training / Support",
+    description:
+      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    image: "/servicecivil/future.jpg",
+  },
+  {
+    id: 5,
+    title: "Analysis / Simulations",
+    description:
+      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    image: "/servicecivil/anylsis.png",
+  },
+  {
+    id: 5,
+    title: "Manufacturing",
+    description:
+      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    image: "/servicecivil/manu.jpg",
+  },
+
+  {
+    id: 5,
+    title: "Concept Validation",
+    description:
+      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    image: "/servicecivil/kk.jpg",
+  },
+  {
+    id: 5,
+    title: "Mathematical Calculation",
+    description:
+      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    image: "/servicecivil/calcualtion.png",
   },
 ];
 

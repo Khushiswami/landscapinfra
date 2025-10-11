@@ -28,11 +28,12 @@ export default function Caeaccordionone() {
         "Optimisation uses advanced mathematical intelligence to create the best possible version of your product. Instead of settling for “good enough,” we apply powerful algorithms that simultaneously enhance performance, reduce costs, and minimize risk. This scientific approach identifies the perfect balance among design parameters, resulting in superior efficiency—products that are faster to develop and more cost-effective to operate—while maintaining exceptional quality through early detection of potential weaknesses. The outcome is a design that ensures lasting reliability and is inherently robust against failure.",
       image: "/industry.jpg",
     },
+
     {
-      title: "Thermal",
-      heading: "Thermal Analysis",
+      title: "The Power of Model-Based Definition ",
+      heading: "The Power of Model-Based Definition (MBD)",
       paragraph:
-        "Thermal Analysis examines temperature distribution, heat transfer, and thermal stresses in systems and components. Engineers use thermal simulation to ensure optimal heat management, energy efficiency, and material longevity. It helps prevent overheating, thermal expansion, and performance degradation in electronic devices, engines, and industrial machinery. Through accurate thermal modeling, engineers can enhance product reliability and operational safety across multiple industries.",
+        "The core purpose of Model-Based Definition (MBD) is to establish a singular, authoritative digital record utilized across the entire product lifecycle—from initial concept through production, quality control, and servicing. This unified digital stream greatly improves team collaboration, drastically cuts down on manufacturing errors caused by misread drawings, and streamlines the whole production process. MBD is a leading component of the industry's shift to digital modernization, a field where LandsKingInfra is pioneering practices like the Digital Twin.",
       image: "/industry.jpg",
     },
   ];
