@@ -6,12 +6,13 @@ import { useRouter } from "next/navigation";
 
 const TABS = [
   {
-    title: "Pre Engineered Buildings",
-    headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings. Each structure is designed for strength, flexibility, and long-lasting performance, tailored to meet diverse industrial and commercial needs.",
+    title: "Industrial Turnkey Projects",
+    headline: "Industrial Turnkey Projects",
+    body: "Delivering end-to-end industrial solutions — from concept design and engineering to installation and commissioning. Our turnkey approach ensures seamless project execution, optimized performance, and on-time delivery across manufacturing, energy, and infrastructure sectors.",
+
     img: "/about.png",
     buttonText: "VIEW MORE",
-    url: "/menupageimg/peb2.jpg",
+    url: "/Industrialtrunckyprojects",
   },
   {
     title: "EPC Solutions",
