@@ -11,7 +11,7 @@ export default function Caeaccordionone() {
       heading: "Dynamic Simulation: Testing the Unthinkable",
       paragraph:
         "Dynamic simulation is how we model your product's performance against real-world chaos, like high-speed impacts or intense, time-varying forces. We generate precise digital replays of these events, offering engineers immediate, deep insight into system behavior. This capability is used to test and refine critical components—like engines and drivetrains—before any physical materials are committed. By catching flaws early, we slash prototype costs and rapidly confirm your product's reliability and safety across diverse industries.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
 
     {
@@ -19,14 +19,14 @@ export default function Caeaccordionone() {
       heading: "Multi-Body Simulation (MBS): Mastering Interconnected Systems",
       paragraph:
         "Multi-Body Simulation (MBS) solves the puzzle of complex mechanical systems that have multiple moving, linked parts. By defining components as rigid bodies connected by specific joints and constraints, MBS accurately forecasts motion, forces, and internal stresses as the system operates. This predictive modeling is non-negotiable for refining automotive suspensions, robotics, and complex machinery. MBS empowers engineers to fine-tune performance, comfort, and safety characteristics virtually, guaranteeing reliable function in the final product.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
     {
       title: "Optimisation",
       heading: "Optimisation: Engineering for Peak Efficiency",
       paragraph:
         "Optimisation uses advanced mathematical intelligence to create the best possible version of your product. Instead of settling for “good enough,” we apply powerful algorithms that simultaneously enhance performance, reduce costs, and minimize risk. This scientific approach identifies the perfect balance among design parameters, resulting in superior efficiency—products that are faster to develop and more cost-effective to operate—while maintaining exceptional quality through early detection of potential weaknesses. The outcome is a design that ensures lasting reliability and is inherently robust against failure.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
 
     {
@@ -34,7 +34,7 @@ export default function Caeaccordionone() {
       heading: "The Power of Model-Based Definition (MBD)",
       paragraph:
         "The core purpose of Model-Based Definition (MBD) is to establish a singular, authoritative digital record utilized across the entire product lifecycle—from initial concept through production, quality control, and servicing. This unified digital stream greatly improves team collaboration, drastically cuts down on manufacturing errors caused by misread drawings, and streamlines the whole production process. MBD is a leading component of the industry's shift to digital modernization, a field where LandsKingInfra is pioneering practices like the Digital Twin.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
   ];
 
@@ -66,9 +66,12 @@ export default function Caeaccordionone() {
         <p className="text-[#000] text-base md:text-lg">
           {tabs[activeIndex].paragraph}
         </p>
-        <img
-          src={tabs[activeIndex].image}
-          alt={tabs[activeIndex].heading}
+        <video
+          src={tabs[activeIndex].video}
+          controls
+          autoPlay
+          loop
+          muted
           className="w-full h-auto rounded-lg object-cover"
         />
       </div>

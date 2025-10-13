@@ -7,33 +7,32 @@ export default function Caetabs() {
 
   const tabs = [
     {
-      title: "Crash Analysis ",
+      title: "Crash Analysis",
       heading: "Crash Analysis (Dynamic Simulation)",
       paragraph:
         "Dynamic simulation is essential for testing vehicle crashworthiness and aviation safety—scenarios that are impractical to test repeatedly in the physical world. For cars, our analysis accurately models everything from passenger dummies and restraints to fuel systems and airbags, achieving near-perfect real-world validation. In aerospace, this ensures the structural resilience of aircraft under various flight conditions, including the extreme stress of an emergency landing.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
     {
       title: "Managing Noise, Vibration, Harshness",
       heading: "Managing Noise, Vibration, Harshness (NVH)",
       paragraph:
         "LandsKingInfra delivers vital Computer-Aided Engineering (CAE) insight that boosts product comfort, long-term dependability, and market perception. Our NVH service reliably pinpoints and resolves disruptive noise and vibration issues within mechanical systems. We move from initial analysis to advanced simulation to uncover the root cause of these disturbances, then develop effective strategies to reduce or eliminate them entirely.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
-
     {
       title: "Precision Mesh Generation",
       heading: "Precision Mesh Generation",
       paragraph:
         "LandsKingInfra excels at generating accurate and efficient meshes that perfectly conform to the intricate shapes of any project, guaranteeing the highest possible reliability in your simulations. We handle all types of meshes—structured, unstructured, hybrid, or adaptive—using the newest methods to customize the process for your specific requirements. Since a top-tier mesh is the bedrock of successful simulation, our commitment is to provide unmatched precision and effectiveness for all your engineering challenges.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
     {
       title: "Thermal",
       heading: "Thermal Analysis",
       paragraph:
         "Thermal Analysis examines temperature distribution, heat transfer, and thermal stresses in systems and components. Engineers use thermal simulation to ensure optimal heat management, energy efficiency, and material longevity. It helps prevent overheating, thermal expansion, and performance degradation in electronic devices, engines, and industrial machinery. Through accurate thermal modeling, engineers can enhance product reliability and operational safety across multiple industries.",
-      image: "/industry.jpg",
+      video: "/choose/exprt.mp4",
     },
   ];
 
@@ -71,9 +70,14 @@ export default function Caetabs() {
         <p className="text-[#000] text-base md:text-lg">
           {tabs[activeIndex].paragraph}
         </p>
-        <img
-          src={tabs[activeIndex].image}
-          alt={tabs[activeIndex].heading}
+
+        {/* Video Display */}
+        <video
+          src={tabs[activeIndex].video}
+          controls
+          autoPlay
+          loop
+          muted
           className="w-full h-auto rounded-lg object-cover"
         />
       </div>
