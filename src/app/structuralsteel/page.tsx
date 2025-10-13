@@ -1,24 +1,5 @@
 "use client";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
-import {
-  FaAward,
-  FaGlobeAsia,
-  FaDraftingCompass,
-  FaCertificate,
-  FaClock,
-  FaProjectDiagram,
-} from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -28,7 +9,7 @@ import Footer from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 import Brand from "yes/Components/Brand";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 export default function Structuralsteel() {
   const features = [
     {
@@ -146,7 +127,7 @@ export default function Structuralsteel() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-56 sm:h-72 object-cover"
@@ -187,7 +168,7 @@ export default function Structuralsteel() {
                 key={index}
                 className="p-6 bg-gray-50 hover:bg-gray-100 rounded-2xl shadow-md transition-all duration-300 flex flex-col items-center text-center"
               >
-                <img
+                <Image
                   src={feature.image}
                   alt={feature.title}
                   className="w-40 h-40 object-contain mb-4"
@@ -218,32 +199,32 @@ export default function Structuralsteel() {
             viewport={{ once: true }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            <img
+            <Image
               src="/industry.jpg"
               alt="Project 1"
               className="rounded-lg shadow-md w-full h-64 object-cover"
             />
-            <img
+            <Image
               src="/industry.jpg"
               alt="Project 2"
               className="rounded-lg shadow-md w-full h-64 object-cover"
             />
-            <img
+            <Image
               src="/industry.jpg"
               alt="Project 3"
               className="rounded-lg shadow-md w-full h-64 object-cover"
             />
-            <img
+            <Image
               src="/industry.jpg"
               alt="Project 4"
               className="rounded-lg shadow-md w-full h-64 object-cover"
             />
-            <img
+            <Image
               src="/industry.jpg"
               alt="Project 5"
               className="rounded-lg shadow-md w-full h-64 object-cover"
             />
-            <img
+            <Image
               src="/industry.jpg"
               alt="Project 6"
               className="rounded-lg shadow-md w-full h-64 object-cover"
@@ -258,7 +239,7 @@ export default function Structuralsteel() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/menupageimg/peb8.jpg"
               alt="Manufacturing Facility"
               width={700}

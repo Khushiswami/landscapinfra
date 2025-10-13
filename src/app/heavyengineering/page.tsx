@@ -7,9 +7,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import IndustryHeader from "yes/Components/Industryheader";
-import ProjectSlider from "yes/Components/ProjectSlider";
+
 import ServicesSlider from "yes/Components/ServicesSlider";
 import Explore from "yes/Components/Explore";
 import Footer from "../../Components/Footer";
@@ -151,24 +149,14 @@ const sectors = [
   },
 ];
 
-const stats = [
-  { number: "4,000+", label: "employees" },
-  { number: "250+", label: "active projects" },
-  { number: "17", label: "states with active projects" },
-  { number: "15+", label: "years in business" },
-  { number: "$7.4", label: "billion in projected annual revenue" },
-];
-
 export default function HeavyEngineering() {
   const router = useRouter();
 
   const [activeSlide, setActiveSlide] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const [activeTab, setActiveTab] = useState(0);
-  const [current, setCurrent] = useState(0);
+  const [, setProgress] = useState(0);
+  const [, setCurrent] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
-  const prevRef = useRef<HTMLDivElement>(null);
-  const nextRef = useRef<HTMLDivElement>(null);
+
   const [active, setActive] = useState(0);
   const [underlineStyle, setUnderlineStyle] = useState<{
     width: number;
@@ -222,7 +210,6 @@ export default function HeavyEngineering() {
         left: el.offsetLeft,
       });
 
-      // Only scroll tabs on mobile
       if (window.innerWidth < 768) {
         el.scrollIntoView({
           behavior: "smooth",

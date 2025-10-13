@@ -11,7 +11,6 @@ import { MdOutlineCleanHands } from "react-icons/md";
 
 import Footer from "../../Components/Footer";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";
 import PebheaderW from "yes/Components/PebheaderW";
 
 // Card Props Type

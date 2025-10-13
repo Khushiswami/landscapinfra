@@ -3,9 +3,6 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FaTools, FaShieldAlt, FaCogs } from "react-icons/fa";
 import {
-  FaAward,
-  FaGlobeAsia,
-  FaCertificate,
   FaProjectDiagram,
   FaUsers,
   FaSearch,
@@ -13,17 +10,14 @@ import {
   FaCube,
   FaChartLine,
 } from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Link from "next/link";
-
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
 
 import Pebheader from "yes/Components/Pebheader";
@@ -300,37 +294,9 @@ export default function Buildingandinfrastructure() {
         : []
     );
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggleFAQ = (index: number) =>
     setOpenIndex(openIndex === index ? null : index);
-
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
 
   return (
     <>
@@ -383,7 +349,7 @@ export default function Buildingandinfrastructure() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[250px]">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-72 object-cover"
@@ -451,7 +417,7 @@ export default function Buildingandinfrastructure() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -577,7 +543,7 @@ export default function Buildingandinfrastructure() {
 
                 {/* Image */}
                 <div className="w-full md:w-1/2">
-                  <img
+                  <Image
                     src={selectedArea.image}
                     alt={selectedArea.subtitle}
                     className="w-full h-64 md:h-full object-cover"
@@ -597,7 +563,7 @@ export default function Buildingandinfrastructure() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/menupageimg/peb8.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
@@ -742,7 +708,7 @@ export default function Buildingandinfrastructure() {
             {/* Right: Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
+              <Image
                 src="/menupageimg/peb9.jpeg"
                 alt="Steel tubes infrastructure"
                 width={600}
@@ -896,7 +862,7 @@ export default function Buildingandinfrastructure() {
           {/* Right Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}

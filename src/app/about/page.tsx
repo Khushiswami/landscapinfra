@@ -1,17 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
-// import Pebexpertise from "../pebexpertise/page"
-// import Aboutpeb from "../Aboutpeb/page";
-// import Platform from "../platform/page"
-// import Totalsolution from "../totalsolution/page"
+
 import PlatformP from "../../Components/PlatformP";
 import AboutPebP from "../../Components/AboutPebP";
 
 import Footer from "../../Components/Footer";
-// import PebCode from "../../Components/PebCode"
 
 import { IoCallOutline } from "react-icons/io5";
-// import ImageSlider from "../../Components/ImageSlider";
 import ContactSection from "../../Components/ContactSection";
 import TripleBottomAccordion from "../../Components/TripleBottomAccordion";
 import ReviewsSection from "../../Components/ReviewsSection";

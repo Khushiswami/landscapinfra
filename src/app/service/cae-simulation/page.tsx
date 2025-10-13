@@ -13,7 +13,7 @@ import Caetabs from "yes/Components/Caetabs";
 import Rndtestimonial from "yes/Components/Rndtestimonial";
 import Caeaccordionone from "yes/Components/Caeaccordionone";
 import Caetabtwo from "yes/Components/Caetabtwo";
-
+import Image from "next/image";
 const Caesimulation = () => {
   const router = useRouter();
 
@@ -184,7 +184,7 @@ const Caesimulation = () => {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/mod13.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"

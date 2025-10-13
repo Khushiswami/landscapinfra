@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import Industryheader from "yes/Components/Industryheader";
+
 import Footer from "../../Components/Footer";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
@@ -502,7 +501,7 @@ export default function Simulationservice() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-83 object-cover"

@@ -8,13 +8,7 @@ import {
   FaLeaf,
   FaCogs,
   FaExpand,
-  FaAward,
-  FaGlobeAsia,
-  FaCertificate,
-  FaProjectDiagram,
 } from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -24,7 +18,7 @@ import Footer from "../../Components/Footer";
 import Brand from "yes/Components/Brand";
 import PlatformP from "yes/Components/PlatformP";
 import Pebheader from "yes/Components/Pebheader";
-
+import Image from "next/image";
 export default function Coldstorageandwarehouse() {
   interface FAQ {
     question: string;
@@ -236,33 +230,6 @@ export default function Coldstorageandwarehouse() {
     { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
 
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
-
   // ===== State =====
   const [selectedId, setSelectedId] = useState(areas[0].id);
   const selectedArea = areas.find((a) => a.id === selectedId);
@@ -293,8 +260,6 @@ export default function Coldstorageandwarehouse() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggleFAQ = (index: number) =>
     setOpenIndex(openIndex === index ? null : index);
-
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <>
@@ -343,7 +308,7 @@ export default function Coldstorageandwarehouse() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-56 sm:h-72 object-cover"
@@ -402,7 +367,7 @@ export default function Coldstorageandwarehouse() {
             </button>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -529,7 +494,7 @@ export default function Coldstorageandwarehouse() {
 
                 {/* Image */}
                 <div className="w-full md:w-1/2">
-                  <img
+                  <Image
                     src={selectedArea.image}
                     alt={selectedArea.subtitle}
                     className="w-full h-64 md:h-full object-cover"
@@ -632,7 +597,7 @@ export default function Coldstorageandwarehouse() {
             {/* Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
+              <Image
                 src="/menupageimg/peb9.jpeg"
                 alt="PUF panels in industrial shed"
                 width={600}

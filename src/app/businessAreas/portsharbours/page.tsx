@@ -1,20 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-import PlatformP from "../../../Components/PlatformP";
 import Footer from "../../../Components/Footer";
-import { IoCallOutline } from "react-icons/io5";
-import ProjectSlider from "../../../Components/ProjectSlider";
-import KeyFeatures from "../../../Components/KeyFeatures";
-import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import PebheaderW from "../../../Components/PebheaderW";
-import Accolades from "../../../Components/Accolades";
+
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
-import PreEngineeredProductsB, {
-  Area,
-} from "../../../Components/businessAreas/PreEngineeredProductsB";
-import PlatformSectionB from "../../../Components/businessAreas/PlatformSection";
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
@@ -39,73 +29,29 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Decades of Marine Construction",
+    title: "Green Belt Development",
     description:
-      "Experience in building civil and naval port projects across India and the Middle East on an EPC basis.",
+      "Designing and implementing eco-friendly green belts around reactor and auxiliary buildings to enhance environmental safety and air quality.",
   },
   {
-    title: "Pan-India Coastal Presence",
+    title: "Site Landscaping for Turbine Generator Buildings",
     description:
-      "Executed projects along the entire Indian coastline with integrated road and rail connectivity.",
+      "Developing sustainable landscapes that improve aesthetics and contribute to site safety near turbine halls.",
   },
   {
-    title: "Complete Marine Infrastructure",
+    title: "Balance of Plant Landscaping",
     description:
-      "Specialized in berths, jetties, tanker terminals, wharfs, dry docks, breakwaters, and sea-links.",
+      "Comprehensive landscaping solutions across balance of plant areas to support operational efficiency and environmental compliance.",
   },
-];
-
-const areasData: Area[] = [
   {
-    id: 1,
-    title: "Prefabricated",
-    subtitle: "Prefabricated Multi-Storey Building Manufacturer",
+    title: "Coastal and Sea-water Intake Landscaping",
     description:
-      "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
-    image: "/industry.jpg",
+      "Plantation and erosion control measures around sea-water intake systems to protect sensitive marine interface zones..",
   },
   {
-    id: 2,
-    title: "Warehouse",
-    subtitle: "Warehouse Solutions",
+    title: "Pumphouse and Cooling Tower Green Zones",
     description:
-      "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions.",
-    image: "/expertise/third.png",
-  },
-];
-
-const HOME_TABS = [
-  {
-    title: "Pre Engineered Buildings",
-    headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
-    img: "/about.png",
-    buttonText: "VIEW MORE",
-    url: "/menupage",
-  },
-  {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
-  },
-  {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
-  },
-  {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
+      "Creating green buffers and landscaped zones to mitigate heat and improve visual impact near pumphouses and cooling towers.",
   },
 ];
 
@@ -155,8 +101,6 @@ const HOME_PROJECTS = [
 ];
 
 export default function Portsharbours() {
-  const [active, setActive] = useState(0);
-
   const links = [
     {
       title: "CADFEM Service",
@@ -188,39 +132,26 @@ export default function Portsharbours() {
     <>
       <Industryheader />
       <ContactSectionB
-        title="Ports & Harbours"
+        title="About NuclearPower Infra"
         subtitle="Building trust with every project"
-        description="Turnkey experts in marine and metro infrastructure across India."
+        description="Specialized landscaping solutions for secure and sustainable nuclear power sites."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/Bussinessareaimg/port.jpg"
+        bgImage="/product/s2.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="Marine & Port Infrastructure"
-        highlight="LandSking Infra Capabilities"
+        heading="Expert Landscaping for Nuclear Facilities"
+        highlight=""
         image={{
-          src: "/Bussinessareaimg/port2.jpg",
+          src: "/Bussinessareaimg/nucl.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="With extensive experience in port construction, LandSking Infra delivers end-to-end marine infrastructure solutions across India and abroad. From core port facilities to complex marine structures, we offer turnkey execution with precision and reliability."
+        description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
         features={featuresData}
       />
-
-      {/* <PreEngineeredProductsB
-        heading="Our Expertise"
-        subheading="What We Build"
-        description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
-        areas={areasData}
-      />
-
-      <PlatformSectionB
-        heading="Comprehensive Infrastructure Solutions"
-        subheading="From design and engineering to execution and management..."
-        tabs={HOME_TABS}
-      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

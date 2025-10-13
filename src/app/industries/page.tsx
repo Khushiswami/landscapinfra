@@ -12,7 +12,6 @@ import Pebheader from "yes/Components/Pebheader";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 
-// Card Props Type
 type CardProps = {
   image: string;
   icon: ReactNode;

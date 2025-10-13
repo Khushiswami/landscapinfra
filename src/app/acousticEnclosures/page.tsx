@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";
 import PedFooter from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 

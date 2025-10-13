@@ -13,7 +13,6 @@ import {
   FaCertificate,
   FaProjectDiagram,
 } from "react-icons/fa";
-import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -21,11 +20,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";
 import Brand from "yes/Components/Brand";
 import PlatformP from "yes/Components/PlatformP";
 import Navbar from "yes/Components/Navbar";
-
+import Image from "next/image";
 export default function Expertisecoldstorage() {
   interface FAQ {
     question: string;
@@ -311,7 +309,7 @@ export default function Expertisecoldstorage() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-56 sm:h-72 object-cover"
@@ -371,7 +369,7 @@ export default function Expertisecoldstorage() {
             </button>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -496,7 +494,7 @@ export default function Expertisecoldstorage() {
 
                 {/* Image */}
                 <div className="w-full md:w-1/2">
-                  <img
+                  <Image
                     src={selectedArea.image}
                     alt={selectedArea.subtitle}
                     className="w-full h-64 md:h-full object-cover"
@@ -599,7 +597,7 @@ export default function Expertisecoldstorage() {
             {/* Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
+              <Image
                 src="/menupageimg/peb9.jpeg"
                 alt="PUF panels in industrial shed"
                 width={600}

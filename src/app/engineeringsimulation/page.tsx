@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, ReactNode } from "react";
+import { useRef, ReactNode } from "react";
 import {
   FaWarehouse,
   FaIndustry,
@@ -62,18 +62,10 @@ function Card({ image, icon, title, description }: CardProps) {
 // ✅ Main Page Component
 export default function Enigneerningandsimulationservice() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
 
   return (
     <>
-      <IndustryHeader/>
+      <IndustryHeader />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
@@ -85,7 +77,8 @@ export default function Enigneerningandsimulationservice() {
         >
           <div className="text-white text-center relative z-10">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-Energy, Natural Resources & Chemicals            </h1>
+              Energy, Natural Resources & Chemicals
+            </h1>
           </div>
         </div>
       </section>
@@ -191,8 +184,8 @@ Energy, Natural Resources & Chemicals            </h1>
       {/* Info Section */}
       <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-16 text-center mb-12">
         <h2 className="text-xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
-T&D Engineering & Simulation
-  </h2>
+          T&D Engineering & Simulation
+        </h2>
         <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, ReactNode } from "react";
+import { ReactNode } from "react";
 import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
 import Image from "next/image";
@@ -55,24 +55,9 @@ function Card({ image, icon, title, description }: CardProps) {
 
 // ✅ Main Page Component
 export default function Rndexplore() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
-
-  
-  const [selectedId, setSelectedId] = useState(3);
-  const [open, setOpen] = useState(false);
-
-
   return (
     <>
-<Rndheader/>
+      <Rndheader />
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
         <div
@@ -92,10 +77,10 @@ export default function Rndexplore() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-12">
         <div className="container mx-auto px-4">
-            
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-Precision CFD & CAE Services            </h2>
+              Precision CFD & CAE Services{" "}
+            </h2>
             <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
           </div>
 
@@ -109,11 +94,16 @@ Precision CFD & CAE Services            </h2>
               />
             </div>
             <div>
-            
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-               Harness the combined power of Computational Fluid Dynamics (CFD) and Computer-Aided Engineering (CAE) to simulate, analyze, and refine designs long before physical prototypes exist. By creating a digital twin of real-world conditions, engineers can visualize performance, reduce trial-and-error, and unlock smarter product development.From fluid flow and heat transfer to structural durability and system behavior, CFD and CAE enable manufacturers to predict outcomes, minimize risks, and cut down production costs—all while accelerating time-to-market.
-
-
+                Harness the combined power of Computational Fluid Dynamics (CFD)
+                and Computer-Aided Engineering (CAE) to simulate, analyze, and
+                refine designs long before physical prototypes exist. By
+                creating a digital twin of real-world conditions, engineers can
+                visualize performance, reduce trial-and-error, and unlock
+                smarter product development.From fluid flow and heat transfer to
+                structural durability and system behavior, CFD and CAE enable
+                manufacturers to predict outcomes, minimize risks, and cut down
+                production costs—all while accelerating time-to-market.
               </p>
 
               <div className="flex items-center gap-4">
@@ -122,178 +112,175 @@ Precision CFD & CAE Services            </h2>
                 </button>
               </div>
             </div>
-
-            
           </div>
         </div>
       </section>
 
       {/* SLIDER */}
       <main className="bg-white px-4 sm:px-6 md:px-12">
-  <section className="py-12 px-4 sm:px-6 md:px-12">
-    <div className="text-center mb-10">
+        <section className="py-12 px-4 sm:px-6 md:px-12">
+          <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-Advanced CAE Services
+              Advanced CAE Services
             </h2>
           </div>
-    <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <Card
-        image="/industry.jpg"
-        icon={<FaIndustry size={38} className="text-white" />}
-        title="Static Structural Analysis"
-        description="Evaluates the response of components under steady forces, loads, and constraints. Identifies high-stress regions and ensures compliance with safety standards. Prevents overdesign while maintaining structural reliability. Critical for validating designs before manufacturing."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<FaWarehouse size={38} className="text-white" />}
-        title="Explicit Dynamic Analysis"
-        description="Simulates short-duration, high-impact events such as crashes or explosions. Captures complex nonlinear material and contact behaviors under sudden loads. Provides insight into system resilience under extreme conditions. Essential for industries prioritizing safety and risk mitigation."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<MdOutlineCleanHands size={38} className="text-white" />}
-        title="Fatigue & Durability Analysis"
-        description="Predicts the service life of parts under repeated cyclic stresses. Determines when and where cracks or failures may initiate. Reduces downtime, warranty issues, and maintenance costs. Ensures long-term reliability and consistent product performance."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<FaIndustry size={38} className="text-white" />}
-        title="NVH (Noise, Vibration & Harshness)"
-        description="Analyzes vibration, acoustic, and harshness behavior in mechanical systems. Helps identify and minimize unwanted noise sources. Improves comfort, safety, and user perception of product quality. Crucial for automotive, aerospace, and consumer product design."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<FaSnowflake size={38} className="text-white" />}
-        title="Thermal & Heat Transfer Analysis"
-        description="Examines the influence of temperature on components and assemblies. Predicts heat buildup, thermal stresses, and cooling requirements. Supports thermal protection strategies and material optimization. Ensures efficiency, safety, and extended system life."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<FaIndustry size={38} className="text-white" />}
-        title="Multi-Body Dynamic Simulation"
-        description="Models the motion and interaction of interconnected mechanical parts. Captures kinematics, forces, and energy transfer in real-time operation. Optimizes performance, wear resistance, and system integration. Widely applied in automotive, robotics, and machinery design."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<FaWarehouse size={38} className="text-white" />}
-        title="Aerodynamic & Aeroelastic Studies (CFD + CAE)"
-        description="Analyzes airflow interaction with structures for performance improvement. Evaluates drag, lift, and vibration-induced instabilities. Supports stable, fuel-efficient, and safe product development. Critical in aerospace, automotive, and renewable energy sectors."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<MdOutlineCleanHands size={38} className="text-white" />}
-        title="Hydraulic & Pneumatic System Analysis"
-        description="Simulates fluid-powered systems for efficiency and reliability. Optimizes pressure flow, energy use, and operational safety. Identifies cavitation, leakage risks, and power loss points. Widely applied in industrial, aerospace, and automotive systems."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<FaIndustry size={38} className="text-white" />}
-        title="Fluid-Structure Interaction (FSI)"
-        description="Studies the mutual influence between fluid flow and solid deformation. Predicts stresses, deflection, and fatigue caused by fluid forces. Supports design of pipelines, ships, turbines, and aerospace systems. Ensures structural safety under complex flow environments."
-      />
-      <Card
-        image="/industry.jpg"
-        icon={<FaWarehouse size={38} className="text-white" />}
-        title="Combustion & Thermal Management"
-        description="Models combustion behavior for engines, turbines, and reactors. Optimizes fuel efficiency, emission reduction, and flame stability. Combines with thermal management for cooling critical systems. Enables safer and more energy-efficient product development."
-      />
-    </div>
-  </section>
-</main>
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="Static Structural Analysis"
+              description="Evaluates the response of components under steady forces, loads, and constraints. Identifies high-stress regions and ensures compliance with safety standards. Prevents overdesign while maintaining structural reliability. Critical for validating designs before manufacturing."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaWarehouse size={38} className="text-white" />}
+              title="Explicit Dynamic Analysis"
+              description="Simulates short-duration, high-impact events such as crashes or explosions. Captures complex nonlinear material and contact behaviors under sudden loads. Provides insight into system resilience under extreme conditions. Essential for industries prioritizing safety and risk mitigation."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              title="Fatigue & Durability Analysis"
+              description="Predicts the service life of parts under repeated cyclic stresses. Determines when and where cracks or failures may initiate. Reduces downtime, warranty issues, and maintenance costs. Ensures long-term reliability and consistent product performance."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="NVH (Noise, Vibration & Harshness)"
+              description="Analyzes vibration, acoustic, and harshness behavior in mechanical systems. Helps identify and minimize unwanted noise sources. Improves comfort, safety, and user perception of product quality. Crucial for automotive, aerospace, and consumer product design."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaSnowflake size={38} className="text-white" />}
+              title="Thermal & Heat Transfer Analysis"
+              description="Examines the influence of temperature on components and assemblies. Predicts heat buildup, thermal stresses, and cooling requirements. Supports thermal protection strategies and material optimization. Ensures efficiency, safety, and extended system life."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="Multi-Body Dynamic Simulation"
+              description="Models the motion and interaction of interconnected mechanical parts. Captures kinematics, forces, and energy transfer in real-time operation. Optimizes performance, wear resistance, and system integration. Widely applied in automotive, robotics, and machinery design."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaWarehouse size={38} className="text-white" />}
+              title="Aerodynamic & Aeroelastic Studies (CFD + CAE)"
+              description="Analyzes airflow interaction with structures for performance improvement. Evaluates drag, lift, and vibration-induced instabilities. Supports stable, fuel-efficient, and safe product development. Critical in aerospace, automotive, and renewable energy sectors."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              title="Hydraulic & Pneumatic System Analysis"
+              description="Simulates fluid-powered systems for efficiency and reliability. Optimizes pressure flow, energy use, and operational safety. Identifies cavitation, leakage risks, and power loss points. Widely applied in industrial, aerospace, and automotive systems."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="Fluid-Structure Interaction (FSI)"
+              description="Studies the mutual influence between fluid flow and solid deformation. Predicts stresses, deflection, and fatigue caused by fluid forces. Supports design of pipelines, ships, turbines, and aerospace systems. Ensures structural safety under complex flow environments."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaWarehouse size={38} className="text-white" />}
+              title="Combustion & Thermal Management"
+              description="Models combustion behavior for engines, turbines, and reactors. Optimizes fuel efficiency, emission reduction, and flame stability. Combines with thermal management for cooling critical systems. Enables safer and more energy-efficient product development."
+            />
+          </div>
+        </section>
+      </main>
 
       {/* END SLIDERR */}
 
       {/* ✅ Cards Section */}
       <main className="bg-white px-4 sm:px-6 md:px-12">
         <section className=" py-12 px-4 sm:px-6 md:px-12">
-           <div className="text-center mb-10">
+          <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-Advanced CFD Services
+              Advanced CFD Services
             </h2>
           </div>
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-           <Card
-  image="/industry.jpg"
-  icon={<FaIndustry size={38} className="text-white" />}
-  title="Hypersonic & High-Mach Flows"
-  description="Simulates extreme high-speed aerodynamic conditions. Ensures performance and safety of aerospace and defense systems."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<FaWarehouse size={38} className="text-white" />}
-  title="Low-Speed & Ventilation Flows"
-  description="Optimizes air distribution in ventilation, wind tunnels, and environmental systems. Enhances energy efficiency and indoor comfort."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<MdOutlineCleanHands size={38} className="text-white" />}
-  title="Reactive & Chemical Flows"
-  description="Models chemically reacting systems such as fuel combustion, gasification, and industrial reactors. Improves efficiency and reduces emissions."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<FaIndustry size={38} className="text-white" />}
-  title="Turbulence & Transition Modeling"
-  description="Captures flow instabilities, vortices, and turbulence phenomena. Provides accurate predictions for aircraft wings, turbines, and industrial designs."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<FaSnowflake size={38} className="text-white" />}
-  title="Droplet & Spray Dynamics"
-  description="Analyzes droplet breakup, atomization, and spray distribution. Supports applications in fuel injection, agriculture, and pharmaceuticals."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<FaIndustry size={38} className="text-white" />}
-  title="Cooling & Heat Exchange Systems"
-  description="Simulates air and liquid cooling in exchangers, condensers, and industrial systems. Improves thermal regulation and energy use."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<FaWarehouse size={38} className="text-white" />}
-  title="Flow-Induced Vibration Analysis"
-  description="Studies vibrations caused by fluid interaction with structures. Prevents fatigue, noise, and failures in piping and offshore systems."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<MdOutlineCleanHands size={38} className="text-white" />}
-  title="Environmental & Pollution Dispersion"
-  description="Predicts how pollutants, smoke, or particles spread in natural or urban environments. Helps design sustainable and regulatory-compliant solutions."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<FaIndustry size={38} className="text-white" />}
-  title="Propulsion & Jet Flow Studies"
-  description="Models exhausts, jet engines, and propulsion systems. Enhances thrust efficiency and reduces noise in aerospace and defense."
-/>
-<Card
-  image="/industry.jpg"
-  icon={<FaWarehouse size={38} className="text-white" />}
-  title="Cavitation & Multiphase Phenomena"
-  description="Analyzes vapor formation, bubble collapse, and fluid cavitation. Ensures reliability in pumps, turbines, and marine systems."
-/>
-
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="Hypersonic & High-Mach Flows"
+              description="Simulates extreme high-speed aerodynamic conditions. Ensures performance and safety of aerospace and defense systems."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaWarehouse size={38} className="text-white" />}
+              title="Low-Speed & Ventilation Flows"
+              description="Optimizes air distribution in ventilation, wind tunnels, and environmental systems. Enhances energy efficiency and indoor comfort."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              title="Reactive & Chemical Flows"
+              description="Models chemically reacting systems such as fuel combustion, gasification, and industrial reactors. Improves efficiency and reduces emissions."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="Turbulence & Transition Modeling"
+              description="Captures flow instabilities, vortices, and turbulence phenomena. Provides accurate predictions for aircraft wings, turbines, and industrial designs."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaSnowflake size={38} className="text-white" />}
+              title="Droplet & Spray Dynamics"
+              description="Analyzes droplet breakup, atomization, and spray distribution. Supports applications in fuel injection, agriculture, and pharmaceuticals."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="Cooling & Heat Exchange Systems"
+              description="Simulates air and liquid cooling in exchangers, condensers, and industrial systems. Improves thermal regulation and energy use."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaWarehouse size={38} className="text-white" />}
+              title="Flow-Induced Vibration Analysis"
+              description="Studies vibrations caused by fluid interaction with structures. Prevents fatigue, noise, and failures in piping and offshore systems."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              title="Environmental & Pollution Dispersion"
+              description="Predicts how pollutants, smoke, or particles spread in natural or urban environments. Helps design sustainable and regulatory-compliant solutions."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaIndustry size={38} className="text-white" />}
+              title="Propulsion & Jet Flow Studies"
+              description="Models exhausts, jet engines, and propulsion systems. Enhances thrust efficiency and reduces noise in aerospace and defense."
+            />
+            <Card
+              image="/industry.jpg"
+              icon={<FaWarehouse size={38} className="text-white" />}
+              title="Cavitation & Multiphase Phenomena"
+              description="Analyzes vapor formation, bubble collapse, and fluid cavitation. Ensures reliability in pumps, turbines, and marine systems."
+            />
           </div>
         </section>
       </main>
 
       {/* Info Section */}
-    <section className="bg-gray-50 py-16 px-4 sm:px-8 md:px-16 text-center mb-12">
-  <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
-    Driving Innovation with Advanced Engineering Solutions
-  </h2>
-  <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
-    <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
-  </div>
-  <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
-    Transform ideas into reality with our cutting-edge CFD and CAE expertise. 
-    From performance validation to thermal and structural optimization, 
-    we deliver precise simulations that enhance efficiency, reliability, 
-    and innovation across every stage of product development.
-  </p>
-</section>
+      <section className="bg-gray-50 py-16 px-4 sm:px-8 md:px-16 text-center mb-12">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
+          Driving Innovation with Advanced Engineering Solutions
+        </h2>
+        <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
+          <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
+        </div>
+        <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+          Transform ideas into reality with our cutting-edge CFD and CAE
+          expertise. From performance validation to thermal and structural
+          optimization, we deliver precise simulations that enhance efficiency,
+          reliability, and innovation across every stage of product development.
+        </p>
+      </section>
 
-      <Rndfooter/>
+      <Rndfooter />
     </>
   );
 }

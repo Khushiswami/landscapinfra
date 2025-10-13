@@ -13,65 +13,23 @@ import {
   FaCube,
   FaChartLine,
 } from "react-icons/fa";
-import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Link from "next/link";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
 
 export default function Otherindustries() {
-  interface FAQ {
-    question: string;
-    answer: string;
-  }
+  // interface FAQ {
+  //   question: string;
+  //   answer: string;
+  // }
 
-  // ===== FAQ =====
-  const faqs: FAQ[] = [
-    {
-      question: "What is a factory building?",
-      answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
-    },
-    {
-      question: "What materials are used in factory building construction?",
-      answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
-    },
-    {
-      question: "What are the benefits of prefabricated factory buildings?",
-      answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
-    },
-    {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
-      answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
-    },
-    {
-      question: "Can factory buildings be customized?",
-      answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
-    },
-    {
-      question:
-        "How long does it take to construct a prefabricated factory building?",
-      answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
-    },
-  ];
-
-  // ===== Pre-engineered product possibilities =====
   const possibilities = [
     {
       subtitle: "Concept & Detailed Engineering",
@@ -272,7 +230,6 @@ export default function Otherindustries() {
     },
   ];
 
-  // ===== States =====
   const [selectedId, setSelectedId] = useState(areas[0].id);
   const selectedArea = areas.find((a) => a.id === selectedId);
   const [open, setOpen] = useState(false);
@@ -300,108 +257,80 @@ export default function Otherindustries() {
         : []
     );
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) =>
-    setOpenIndex(openIndex === index ? null : index);
-
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
+  // const toggleFAQ = (index: number) =>
+  //   setOpenIndex(openIndex === index ? null : index);
 
   return (
     <>
       <Navbar />
-     <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
-  {/* Background video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Optional dark overlay for better text contrast */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        {/* Optional dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Content */}
-  <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    {/* Text */}
-    <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-        Pre Engineered Buildings
-      </h1>
-      <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-        Pre-Engineered Buildings (PEBs) are modern steel structures designed,
-        fabricated, and assembled using standardized components for faster
-        construction.
-      </p>
-    </div>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Text */}
+          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+              Pre Engineered Buildings
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+              Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction.
+            </p>
+          </div>
 
-    {/* Slider */}
-    <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop
-        className="pb-10 max-w-[240px] sm:max-w-sm"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-48 sm:h-72 object-cover"
-              />
-              <div className="p-3 text-center">
-                <h3 className="text-base sm:text-lg font-semibold">
-                  {slide.title}
-                </h3>
-                <a
-                  href={slide.link}
-                  className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                >
-                  Read more →
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  </div>
-</section>
+          {/* Slider */}
+          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop
+              className="pb-10 max-w-[240px] sm:max-w-sm"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-48 sm:h-72 object-cover"
+                    />
+                    <div className="p-3 text-center">
+                      <h3 className="text-base sm:text-lg font-semibold">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.link}
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
 
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
@@ -453,8 +382,7 @@ export default function Otherindustries() {
           </div>
         </div>
       </section>
-      {/* end description */}
-      {/* keyfetaure */}
+
       <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
         <div className=" mx-auto text-center md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -486,16 +414,13 @@ export default function Otherindustries() {
           </div>
         </div>
       </section>
-      {/* explore conettt */}
       <section className=" mx-auto px-4 py-10 md:px-23">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
           Our Products
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
           <div className="w-full md:w-1/4">
-            {/* Mobile Dropdown */}
             <div className="md:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}

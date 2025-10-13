@@ -1,23 +1,14 @@
 "use client";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
+
 import {
   FaAward,
   FaGlobeAsia,
-  FaDraftingCompass,
   FaCertificate,
-  FaClock,
   FaProjectDiagram,
 } from "react-icons/fa";
-import CountUp from "react-countup";
+
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";

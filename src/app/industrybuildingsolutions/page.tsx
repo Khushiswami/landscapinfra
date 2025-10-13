@@ -1,33 +1,12 @@
 "use client";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
-import {
-  FaAward,
-  FaGlobeAsia,
-  FaDraftingCompass,
-  FaCertificate,
-  FaClock,
-  FaProjectDiagram,
-} from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
-import Pebheader from "yes/Components/Pebheader";
 import Brand from "yes/Components/Brand";
-import { motion } from "framer-motion";
 import Navbar from "yes/Components/Navbar";
 
 export default function Industrybuildingsolutions() {

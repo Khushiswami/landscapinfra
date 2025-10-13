@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { FaTools, FaShieldAlt, FaCogs } from "react-icons/fa";
+
 import {
   FaAward,
   FaGlobeAsia,
@@ -11,21 +10,17 @@ import {
   FaSearch,
   FaLightbulb,
   FaCube,
-  FaChartLine,
 } from "react-icons/fa";
-import CountUp from "react-countup";
+import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Link from "next/link";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
 
@@ -36,42 +31,7 @@ export default function Greenbuilding() {
   }
 
   // ===== FAQ =====
-  const faqs: FAQ[] = [
-    {
-      question: "What is a factory building?",
-      answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
-    },
-    {
-      question: "What materials are used in factory building construction?",
-      answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
-    },
-    {
-      question: "What are the benefits of prefabricated factory buildings?",
-      answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
-    },
-    {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
-      answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
-    },
-    {
-      question: "Can factory buildings be customized?",
-      answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
-    },
-    {
-      question:
-        "How long does it take to construct a prefabricated factory building?",
-      answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
-    },
-  ];
 
-  // ===== Pre-engineered product possibilities =====
   const possibilities = [
     {
       subtitle: "Concept & Detailed Engineering",
@@ -247,64 +207,34 @@ export default function Greenbuilding() {
   ];
 
   // ===== States =====
-  const [selectedId, setSelectedId] = useState(areas[0].id);
-  const selectedArea = areas.find((a) => a.id === selectedId);
-  const [open, setOpen] = useState(false);
 
-  const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4;
+  // const [startIndex, setStartIndex] = useState(0);
+  // const visibleCards = 4;
 
-  const prevSlide = () =>
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  const nextSlide = () =>
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
+  // const prevSlide = () =>
+  //   setStartIndex((prev) =>
+  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
+  //   );
+  // const nextSlide = () =>
+  //   setStartIndex((prev) =>
+  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
+  //   );
 
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
-    );
+  // const cardsToShow = possibilities
+  //   .slice(startIndex, startIndex + visibleCards)
+  //   .concat(
+  //     startIndex + visibleCards > possibilities.length
+  //       ? possibilities.slice(
+  //           0,
+  //           (startIndex + visibleCards) % possibilities.length
+  //         )
+  //       : []
+  //   );
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) =>
-    setOpenIndex(openIndex === index ? null : index);
-
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
+  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  // const [openIndex, setOpenIndex] = useState<number | null>(null);
+  // const toggleFAQ = (index: number) =>
+  //   setOpenIndex(openIndex === index ? null : index);
 
   return (
     <>
@@ -353,7 +283,7 @@ export default function Greenbuilding() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-48 sm:h-72 object-cover"
@@ -411,7 +341,7 @@ export default function Greenbuilding() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"

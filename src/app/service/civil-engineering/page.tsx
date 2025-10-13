@@ -1,8 +1,5 @@
 "use client";
-import { useRef, useState, ReactNode, useEffect } from "react";
-
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { FaTools, FaBolt, FaShieldAlt, FaLeaf, FaExpand } from "react-icons/fa";
+import { useState, ReactNode, useEffect } from "react";
 
 import Image from "next/image";
 import "swiper/css";
@@ -11,12 +8,10 @@ import {
   FaAward,
   FaGlobeAsia,
   FaCertificate,
-  FaClock,
   FaProjectDiagram,
 } from "react-icons/fa";
 import {
   FaDraftingCompass,
-  FaPencilRuler,
   FaCube,
   FaCogs,
   FaUndoAlt,
@@ -24,14 +19,12 @@ import {
   FaIndustry,
   FaFlask,
 } from "react-icons/fa";
-import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import RNDMechanicalCom from "yes/Components/RNDMechanicalCom";
 import {
   FaSearch, // Requirement Analysis
   FaMapMarkedAlt, // Strategic Planning
@@ -43,7 +36,6 @@ import Rndheader from "yes/Components/Rndheader";
 import Link from "next/link";
 import Rndfooter from "yes/Components/Rndfooter";
 import Brand from "yes/Components/ClientP";
-import ContactSection from "yes/Components/ContactSection";
 import Rndtestimonial from "yes/Components/Rndtestimonial";
 import {
   Construction,
@@ -68,7 +60,7 @@ interface Project {
   image: string;
 }
 // ✅ Card Component
-function Card({ icon, title, description }: CardProps) {
+function Card({ title, description }: CardProps) {
   return (
     <div className="bg-[#f5f7fb] shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
       {/* Image with centered icon */}
@@ -342,7 +334,6 @@ export default function Civil() {
   };
   const [selectedId, setSelectedId] = useState(3);
 
-  const [open, setOpen] = useState(false);
   const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 

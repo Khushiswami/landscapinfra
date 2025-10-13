@@ -3,7 +3,6 @@
 import { FaMapMarkerAlt, FaEnvelope, FaCommentDots } from "react-icons/fa";
 import Footer from "yes/Components/Footer";
 import Industryheader from "yes/Components/Industryheader";
-import Navbar from "yes/Components/Navbar";
 
 export default function Industrycontact() {
   return (

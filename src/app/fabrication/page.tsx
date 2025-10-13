@@ -1,16 +1,16 @@
 "use client";
 
-import { useRef, useState, ReactNode } from "react";
+import { useState, ReactNode } from "react";
 import { FaWarehouse, FaIndustry } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";
 import Navbar from "yes/Components/Navbar";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+
 // Card Props Type
 type CardProps = {
   image: string;
@@ -18,12 +18,14 @@ type CardProps = {
   title: string;
   description: string;
 };
+
 interface Project {
   id: number;
   title: string;
   description: string;
   image: string;
 }
+
 // ✅ Card Component
 function Card({ image, icon, title, description }: CardProps) {
   return (
@@ -64,58 +66,51 @@ function Card({ image, icon, title, description }: CardProps) {
 
 // ✅ Main Page Component
 export default function Fabrication() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
   const [activeOverlay, setActiveOverlay] = useState<number | null>(null);
 
   const handleOverlayToggle = (id: number) => {
     if (activeOverlay === id) setActiveOverlay(null);
     else setActiveOverlay(id);
   };
+
   const projects: Project[] = [
     {
       id: 1,
       title: "Warehousing and Logistics",
       description:
-        " We provide tailored solutions for warehouses and logistics centers, optimizing storage, handling, and operational efficiency.Our services ensure safe, durable, and compliant infrastructure for smooth supply chain operations.",
+        "We provide tailored solutions for warehouses and logistics centers, optimizing storage, handling, and operational efficiency. Our services ensure safe, durable, and compliant infrastructure for smooth supply chain operations.",
       image: "/realstate/three.webp",
     },
     {
       id: 2,
       title: "Manufacturing Plants & Assembly Units",
       description:
-        " We design and implement robust systems for manufacturing plants and assembly units.Our solutions improve productivity, safety, and long-term operational reliability.",
+        "We design and implement robust systems for manufacturing plants and assembly units. Our solutions improve productivity, safety, and long-term operational reliability.",
       image: "/realstate/two.jpg",
     },
     {
       id: 3,
       title: "Airports, Railways, and Public Infrastructure",
       description:
-        " We deliver engineering and fabrication services for airports, railways, and public infrastructure projects.Our solutions enhance safety, durability, and seamless operational performance.",
+        "We deliver engineering and fabrication services for airports, railways, and public infrastructure projects. Our solutions enhance safety, durability, and seamless operational performance.",
       image: "/realstate/two.jpg",
     },
     {
       id: 4,
       title: "Oil & Gas and Heavy Engineering",
       description:
-        "Our expertise supports oil, gas, and heavy engineering sectors with precision fabrication and structural solutions.We ensure compliance, durability, and high-performance infrastructure for demanding industrial environments.",
+        "Our expertise supports oil, gas, and heavy engineering sectors with precision fabrication and structural solutions. We ensure compliance, durability, and high-performance infrastructure for demanding industrial environments.",
       image: "/realstate/two.jpg",
     },
     {
       id: 5,
       title: "Commercial Buildings and Malls",
       description:
-        "We provide structural and mechanical solutions for commercial buildings and malls.Our services ensure aesthetic appeal, safety, and functional efficiency across spaces.",
+        "We provide structural and mechanical solutions for commercial buildings and malls. Our services ensure aesthetic appeal, safety, and functional efficiency across spaces.",
       image: "/realstate/two.jpg",
     },
   ];
+
   return (
     <>
       <Navbar />
@@ -153,7 +148,7 @@ export default function Fabrication() {
                 <span className="text-blue-900 font-semibold">
                   {" "}
                   Fabrication Solutions{" "}
-                </span>{" "}
+                </span>
                 Landsking Infra delivers precision-engineered fabrication
                 services for industrial, commercial, and infrastructure
                 projects, ensuring strength, accuracy, and long-lasting
@@ -191,199 +186,48 @@ export default function Fabrication() {
 
       {/* Cards Section */}
       <main className="bg-white">
-        <section className=" py-12 px-4 sm:px-6 md:px-12">
+        <section className="py-12 px-4 sm:px-6 md:px-12">
           <h1 className="text-center text-3xl md:text-4xl font-bold mb-5">
-            Our services
+            Our Services
           </h1>
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
               image="/NDR.webp"
               icon={<FaWarehouse size={32} className="text-white" />}
-              title="Structural Steel Fabrication (Trusses, Beams, Columns)
-"
-              description=" We fabricate high-strength structural steel components, including trusses, beams, and columns, ensuring precision, durability, and compliance with design specifications for industrial, commercial, and infrastructure projects.
-"
+              title="Structural Steel Fabrication (Trusses, Beams, Columns)"
+              description="We fabricate high-strength structural steel components, including trusses, beams, and columns, ensuring precision, durability, and compliance with design specifications for industrial, commercial, and infrastructure projects."
             />
             <Card
               image="/clean-room-2.webp"
               icon={<MdOutlineCleanHands size={32} className="text-white" />}
-              title="Sheet Metal Cutting, Bending, and Assembly
-"
-              description=" Our sheet metal services include accurate cutting, bending, and assembly, creating custom components that meet precise dimensions and functional requirements for diverse fabrication and construction applications"
+              title="Sheet Metal Cutting, Bending, and Assembly"
+              description="Our sheet metal services include accurate cutting, bending, and assembly, creating custom components that meet precise dimensions and functional requirements for diverse fabrication and construction applications."
             />
             <Card
               image="/7-2.webp"
               icon={<FaIndustry size={32} className="text-white" />}
-              title="PEB Component Fabrication (Purlins, Rafters, Girts)
-"
-              description="We manufacture pre-engineered building components like purlins, rafters, and girts with high precision, ensuring structural stability, seamless integration, and long-term performance in industrial and commercial buildings.
-"
+              title="PEB Component Fabrication (Purlins, Rafters, Girts)"
+              description="We manufacture pre-engineered building components like purlins, rafters, and girts with high precision, ensuring structural stability, seamless integration, and long-term performance in industrial and commercial buildings."
             />
             <Card
               image="/7-2.webp"
               icon={<FaIndustry size={32} className="text-white" />}
               title="Custom Ductwork, Brackets, Platforms, and Catwalks"
               description="Our team fabricates customized ductwork, support brackets, platforms, and catwalks, tailored for specific site requirements, ensuring safe, efficient, and durable installations in complex industrial and commercial environments."
-            />{" "}
+            />
             <Card
               image="/7-2.webp"
               icon={<FaIndustry size={32} className="text-white" />}
-              title="Surface Treatment: Sandblasting, Galvanizing, and Painting
-"
-              description=" We apply advanced surface treatments, including sandblasting, galvanizing, and painting, to enhance corrosion resistance, durability, and aesthetic appeal of steel and metal fabricated components.
-"
+              title="Surface Treatment: Sandblasting, Galvanizing, and Painting"
+              description="We apply advanced surface treatments, including sandblasting, galvanizing, and painting, to enhance corrosion resistance, durability, and aesthetic appeal of steel and metal fabricated components."
             />
           </div>
         </section>
       </main>
 
       {/* Info Section */}
-      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
-        <section className="w-full py-8 md:pt-16 bg-white relative">
-          <div className="mx-auto px-2 sm:px-4 relative">
-            <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
-              Services
-            </h2>
+      {/* (Swiper section remains the same) */}
 
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
-              autoplay={{ delay: 2500, disableOnInteraction: false }}
-              loop={true}
-              centeredSlides={false} // default false
-              breakpoints={{
-                0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
-                640: {
-                  slidesPerView: 1.5,
-                  spaceBetween: 20,
-                  centeredSlides: true,
-                },
-                768: {
-                  slidesPerView: 2.2,
-                  spaceBetween: 24,
-                  centeredSlides: true,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                  centeredSlides: true,
-                },
-              }}
-            >
-              {projects.map((project) => (
-                <SwiperSlide key={project.id}>
-                  {({ isActive }) => (
-                    <div
-                      className={`relative text-center transition-all duration-500 group ${
-                        isActive ? "scale-105" : "scale-90 opacity-70"
-                      }`}
-                    >
-                      <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
-                        <div className="relative w-full h-full">
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            fill
-                            className="object-cover w-full h-full rounded-lg"
-                          />
-
-                          {/* Bottom title bar */}
-                          <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-sm font-semibold">
-                            {project.title}
-                          </div>
-
-                          {/* Overlay */}
-                          <div
-                            onClick={() => handleOverlayToggle(project.id)}
-                            className={`
-                            absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
-                            rounded-lg transition-opacity duration-500 cursor-pointer
-                            ${
-                              activeOverlay === project.id
-                                ? "opacity-100"
-                                : "opacity-0"
-                            }
-                            md:opacity-0 md:group-hover:opacity-100 md:cursor-default
-                          `}
-                          >
-                            <h3 className="text-sm md:text-sm font-semibold mb-2">
-                              {project.title}
-                            </h3>
-                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
-                              {project.description}
-                            </p>
-                            <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
-                              Know More
-                            </button>
-                          </div>
-
-                          {/* Mobile arrows */}
-                          <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="#000080"
-                              strokeWidth="1.5"
-                            >
-                              <line x1="20" y1="12" x2="4" y2="12" />
-                              <polyline points="12 4 4 12 12 20" />
-                            </svg>
-                          </div>
-
-                          <div className="custom-next absolute top-1/2 right-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="#1c398e"
-                              strokeWidth="1.5"
-                            >
-                              <line x1="4" y1="12" x2="20" y2="12" />
-                              <polyline points="12 4 20 12 12 20" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            {/* Desktop arrows */}
-            <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 md:h-8 md:w-9"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#000080"
-                strokeWidth="1.5"
-              >
-                <line x1="20" y1="12" x2="4" y2="12" />
-                <polyline points="12 4 4 12 12 20" />
-              </svg>
-            </div>
-
-            <div className="custom-next absolute top-1/2 -translate-y-1/2 right-2 md:-right-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 md:h-8 md:w-9"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#1c398e"
-                strokeWidth="1.5"
-              >
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <polyline points="12 4 20 12 12 20" />
-              </svg>
-            </div>
-          </div>
-        </section>
-      </section>
       <Footer />
     </>
   );

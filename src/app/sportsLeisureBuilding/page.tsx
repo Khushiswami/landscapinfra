@@ -1,13 +1,7 @@
 "use client";
 
 import { useRef, useState, ReactNode } from "react";
-import {
-  FaWarehouse,
-  FaIndustry,
-  FaSnowflake,
-  FaShieldAlt,
-} from "react-icons/fa";
-import { MdOutlineCleanHands } from "react-icons/md";
+import { FaWarehouse } from "react-icons/fa";
 import Pebheader from "yes/Components/Pebheader";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
@@ -58,7 +52,6 @@ function Card({ image, icon, title, description }: CardProps) {
   );
 }
 
-// ✅ Main Page Component
 export default function SportsLeisureBuilding() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);

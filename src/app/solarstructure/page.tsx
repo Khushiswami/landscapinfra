@@ -4,7 +4,6 @@ import { useRef, useState, ReactNode } from "react";
 import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import IndustryHeader from "yes/Components/Industryheader";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 import Header from "yes/Components/Header";

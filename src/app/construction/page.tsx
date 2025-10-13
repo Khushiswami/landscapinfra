@@ -6,8 +6,6 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import Pebheader from "yes/Components/Pebheader";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
-import Link from "next/link";
-
 // Card Props Type
 type CardProps = {
   image: string;
@@ -56,14 +54,14 @@ function Card({ image, icon, title, description, link }: CardProps) {
 // ✅ Main Page Component
 export default function Construction() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [, setIsPlaying] = useState(false);
 
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
+  // const handleVideoClick = () => {
+  //   if (videoRef.current) {
+  //     videoRef.current.play();
+  //     setIsPlaying(true);
+  //   }
+  // };
 
   return (
     <>

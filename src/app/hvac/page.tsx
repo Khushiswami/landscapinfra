@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { FaTools, FaShieldAlt, FaCogs } from "react-icons/fa";
 import {
   FaAward,
   FaGlobeAsia,
@@ -10,22 +9,17 @@ import {
   FaUsers,
   FaSearch,
   FaLightbulb,
-  FaCube,
-  FaChartLine,
 } from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Link from "next/link";
-
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
 
@@ -36,40 +30,6 @@ export default function Hvac() {
   }
 
   // ===== FAQ =====
-  const faqs: FAQ[] = [
-    {
-      question: "What is a factory building?",
-      answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
-    },
-    {
-      question: "What materials are used in factory building construction?",
-      answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
-    },
-    {
-      question: "What are the benefits of prefabricated factory buildings?",
-      answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
-    },
-    {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
-      answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
-    },
-    {
-      question: "Can factory buildings be customized?",
-      answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
-    },
-    {
-      question:
-        "How long does it take to construct a prefabricated factory building?",
-      answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
-    },
-  ];
 
   // ===== Pre-engineered product possibilities =====
   const possibilities = [
@@ -212,37 +172,37 @@ export default function Hvac() {
         : []
     );
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) =>
-    setOpenIndex(openIndex === index ? null : index);
+  // const toggleFAQ = (index: number) =>
+  //   setOpenIndex(openIndex === index ? null : index);
 
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
+  // const stats = [
+  //   {
+  //     label: "Years of Expertise",
+  //     value: 20,
+  //     suffix: "+",
+  //     icon: <FaAward className="text-[#000080] text-xl" />,
+  //   },
+  //   {
+  //     label: "Projects Delivered",
+  //     value: 500,
+  //     suffix: "+",
+  //     icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
+  //   },
+  //   {
+  //     label: "Nationwide Presence",
+  //     value: 25,
+  //     suffix: "+ States",
+  //     icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
+  //   },
+  //   {
+  //     label: "Certified Processes",
+  //     value: 100,
+  //     suffix: "%",
+  //     icon: <FaCertificate className="text-[#000080] text-xl" />,
+  //   },
+  // ];
 
   return (
     <>
@@ -350,7 +310,7 @@ export default function Hvac() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -483,7 +443,7 @@ export default function Hvac() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-98 object-cover"
@@ -571,7 +531,7 @@ export default function Hvac() {
           {/* Right Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}

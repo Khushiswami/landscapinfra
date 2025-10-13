@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
-
+import Image from "next/image";
 const areas = [
   {
     id: 1,
@@ -144,7 +144,7 @@ export default function Trunkeytpes() {
 
             {/* ✅ Image Section (centered vertically) */}
             <div className="w-full md:w-1/2 flex  bg-white pe-2">
-              <img
+              <Image
                 src={selectedArea.image}
                 alt={selectedArea.subtitle}
                 className="w-full max-w-[500px] h-64 md:h-80 object-cover rounded-lg md:rounded-none"

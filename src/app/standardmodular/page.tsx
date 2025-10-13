@@ -1,20 +1,11 @@
 "use client";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
+
 import {
   FaAward,
   FaGlobeAsia,
-  FaDraftingCompass,
   FaCertificate,
-  FaClock,
   FaProjectDiagram,
 } from "react-icons/fa";
 import CountUp from "react-countup";
@@ -29,7 +20,7 @@ import Brand from "../../Components/Brand";
 
 import Pebheader from "yes/Components/Pebheader";
 import Footer from "../../Components/Footer";
-
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Standardmodular() {
@@ -300,7 +291,7 @@ export default function Standardmodular() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[250px]">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-50 sm:h-72 object-cover"
@@ -358,7 +349,7 @@ export default function Standardmodular() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/industry.jpg"
               alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -373,7 +364,7 @@ export default function Standardmodular() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
-            <img
+            <Image
               src="/PEB.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
@@ -518,7 +509,7 @@ export default function Standardmodular() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-73 object-cover"
@@ -585,7 +576,7 @@ export default function Standardmodular() {
             {/* Image Section (Left Side) */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
+              <Image
                 src="/industry.jpg"
                 alt="PUF panels in industrial shed"
                 width={600}
@@ -668,7 +659,7 @@ export default function Standardmodular() {
           {/* Right Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}

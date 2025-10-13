@@ -1,32 +1,14 @@
 "use client";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
+
 import Link from "next/link";
 
-import {
-  FaAward,
-  FaGlobeAsia,
-  FaDraftingCompass,
-  FaCertificate,
-  FaClock,
-  FaProjectDiagram,
-} from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import Image from "next/image";
 import Brand from "../../Components/Brand";
 
 import Footer from "../../Components/Footer";
@@ -156,17 +138,17 @@ export default function Lightguage() {
   const visibleCards = 4; // Show 4 cards per row
   const [open, setOpen] = useState(false); // for mobile dropdown
 
-  const prevSlide = () => {
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  };
+  // const prevSlide = () => {
+  //   setStartIndex((prev) =>
+  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
+  //   );
+  // };
 
-  const nextSlide = () => {
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
-  };
+  // const nextSlide = () => {
+  //   setStartIndex((prev) =>
+  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
+  //   );
+  // };
 
   // Slice visible cards and wrap around if needed
   const cardsToShow = possibilities
@@ -206,34 +188,7 @@ export default function Lightguage() {
     },
   ];
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
+  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <>
@@ -282,7 +237,7 @@ export default function Lightguage() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-48 sm:h-72 object-cover"
@@ -343,7 +298,7 @@ export default function Lightguage() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/lgs1.jpeg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -358,7 +313,7 @@ export default function Lightguage() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
-            <img
+            <Image
               src="/menupageimg/lgs2.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
@@ -509,7 +464,7 @@ export default function Lightguage() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-85 object-cover"
@@ -557,7 +512,7 @@ export default function Lightguage() {
             {/* Image Section (Left Side) */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
+              <Image
                 src="/menupageimg/lgs5.png"
                 alt="PUF panels in industrial shed"
                 width={600}
@@ -651,7 +606,7 @@ export default function Lightguage() {
           {/* Right Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}

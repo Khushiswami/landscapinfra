@@ -12,27 +12,22 @@ import {
 import {
   FaAward,
   FaGlobeAsia,
-  FaDraftingCompass,
   FaCertificate,
-  FaClock,
   FaProjectDiagram,
 } from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import Platform from "../platform/page";
-// import Footer from "../Footer/page";
+
 import Footer from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 import Brand from "yes/Components/Brand";
-import Products from "yes/Components/Products";
-import Bectelslider from "yes/Components/Bectelslider";
-import Link from "next/link";
 
+import Link from "next/link";
+import Image from "next/image";
 export default function Menupage() {
   interface FAQ {
     question: string;
@@ -280,34 +275,7 @@ export default function Menupage() {
     },
   ];
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
+  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <>
@@ -325,7 +293,6 @@ export default function Menupage() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Optional dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
@@ -417,7 +384,7 @@ export default function Menupage() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -555,7 +522,7 @@ export default function Menupage() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-97 object-cover"
@@ -574,7 +541,7 @@ export default function Menupage() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/menupageimg/peb8.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
@@ -709,7 +676,7 @@ export default function Menupage() {
             {/* Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
+              <Image
                 src="/menupageimg/peb9.jpeg"
                 alt="PUF panels in industrial shed"
                 width={600}
@@ -740,33 +707,6 @@ export default function Menupage() {
               professionals End-to-End Turnkey Solutions covering design,
               fabrication, delivery, and installation
             </p>
-
-            {/* Animated Counters */}
-            {/* <div
-              ref={ref}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
-            >
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center bg-white shadow-lg p-3 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <div className="text-blue-600 text-base">{stat.icon}</div>
-                  <h3 className="text-base font-extrabold text-gray-900 mt-2">
-                    {inView && (
-                      <CountUp
-                        end={stat.value}
-                        duration={2}
-                        suffix={stat.suffix}
-                      />
-                    )}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 mt-1 text-center">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div> */}
           </div>
 
           {/* Right Image */}

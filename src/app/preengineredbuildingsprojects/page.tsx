@@ -4,7 +4,7 @@ import { useState } from "react";
 import Footer from "yes/Components/Footer";
 import ContactSection from "yes/Components/ContactSection";
 import Pebheader from "yes/Components/Pebheader";
-
+import Image from "next/image";
 // ---------------- Types ----------------
 type Project = {
   id: number;
@@ -298,7 +298,7 @@ export default function Preengineredbuildingsprojects() {
                 onClick={() => handleClick(id)}
               >
                 {/* Image */}
-                <img
+                <Image
                   src={img}
                   alt={location}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Footer from "yes/Components/Footer";
-import Pebheader from "yes/Components/Pebheader";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
 
@@ -207,7 +206,7 @@ export default function Projects() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">

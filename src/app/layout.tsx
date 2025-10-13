@@ -1,7 +1,6 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { inter } from "../lib/fonts";
 
 export const metadata: Metadata = {
   title: "Landsking Infra",

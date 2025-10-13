@@ -2,7 +2,6 @@
 "use client";
 
 import ProjectsSection from "../../Components/RealState/ProjectsSection";
-import Header from "../../Components/Header";
 import VideoSection from "../../Components/RealState/VideoSection";
 import ZigzagSection from "../../Components/RealState/ZigzagSection";
 import OurLineage from "../../Components/RealState/OurLineage";

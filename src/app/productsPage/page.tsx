@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
 import Footer from "../../Components/Footer";
-// import Pebcall from "../pebcall/page";
-import IndustryHeader from "yes/Components/Industryheader";import Brand from "../../Components/Brand";
-
+import IndustryHeader from "yes/Components/Industryheader";
+import Brand from "../../Components/Brand";
 
 import { ArrowUpRight } from "lucide-react";
 
@@ -131,8 +130,7 @@ export default function Page() {
 
   return (
     <>
-     
-      <  IndustryHeader/>
+      <IndustryHeader />
       <section>
         {/* Hero */}
 

@@ -13,65 +13,20 @@ import {
   FaCube,
   FaChartLine,
 } from "react-icons/fa";
-import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Link from "next/link";
-
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Brand from "../../Components/Brand";
 import Footer from "../../Components/Footer";
-import IndustryHeader from "yes/Components/Industryheader";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
 
 export default function Miningandmetals() {
-  interface FAQ {
-    question: string;
-    answer: string;
-  }
-
-  // ===== FAQ =====
-  const faqs: FAQ[] = [
-    {
-      question: "What is a factory building?",
-      answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
-    },
-    {
-      question: "What materials are used in factory building construction?",
-      answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
-    },
-    {
-      question: "What are the benefits of prefabricated factory buildings?",
-      answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
-    },
-    {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
-      answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
-    },
-    {
-      question: "Can factory buildings be customized?",
-      answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
-    },
-    {
-      question:
-        "How long does it take to construct a prefabricated factory building?",
-      answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
-    },
-  ];
-
-  // ===== Pre-engineered product possibilities =====
   const possibilities = [
     {
       subtitle: "Concept & Detailed Engineering",
@@ -300,108 +255,81 @@ export default function Miningandmetals() {
         : []
     );
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) =>
-    setOpenIndex(openIndex === index ? null : index);
-
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
+  // const toggleFAQ = (index: number) =>
+  //   setOpenIndex(openIndex === index ? null : index);
 
   return (
     <>
       <Navbar />
-     <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
-  {/* Background video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Optional dark overlay for better text contrast */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        {/* Optional dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Content */}
-  <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    {/* Text */}
-    <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-        Pre Engineered Buildings
-      </h1>
-      <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-        Pre-Engineered Buildings (PEBs) are modern steel structures designed,
-        fabricated, and assembled using standardized components for faster
-        construction.
-      </p>
-    </div>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Text */}
+          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+              Pre Engineered Buildings
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+              Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction.
+            </p>
+          </div>
 
-    {/* Slider */}
-    <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop
-        className="pb-10 max-w-[240px] sm:max-w-sm"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-48 sm:h-72 object-cover"
-              />
-              <div className="p-3 text-center">
-                <h3 className="text-base sm:text-lg font-semibold">
-                  {slide.title}
-                </h3>
-                <a
-                  href={slide.link}
-                  className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                >
-                  Read more →
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  </div>
-</section>
+          {/* Slider */}
+          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop
+              className="pb-10 max-w-[240px] sm:max-w-sm"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                    <Image
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-48 sm:h-72 object-cover"
+                    />
+                    <div className="p-3 text-center">
+                      <h3 className="text-base sm:text-lg font-semibold">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.link}
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
 
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
@@ -445,7 +373,7 @@ export default function Miningandmetals() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -584,7 +512,7 @@ export default function Miningandmetals() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-98 object-cover"
@@ -602,7 +530,7 @@ export default function Miningandmetals() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/menupageimg/peb8.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
@@ -747,7 +675,7 @@ export default function Miningandmetals() {
             {/* Right: Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
+              <Image
                 src="/menupageimg/peb9.jpeg"
                 alt="Steel tubes infrastructure"
                 width={600}
@@ -901,7 +829,7 @@ export default function Miningandmetals() {
           {/* Right Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <img
+            <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}

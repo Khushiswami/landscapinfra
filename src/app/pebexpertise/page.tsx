@@ -7,7 +7,7 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ArrowUpRight } from "lucide-react";
-
+import Image from "next/image";
 type Slide = {
   id: number;
   location?: string; // made optional since you didn’t provide values
@@ -81,7 +81,7 @@ export default function Pebexpertise() {
           <SwiperSlide key={slide.id}>
             <div className="relative rounded-xl overflow-hidden shadow-lg group h-[500px]">
               {/* Image */}
-              <img
+              <Image
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-full object-cover"

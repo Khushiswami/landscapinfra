@@ -1,20 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
 
-import PlatformP from "../../../Components/PlatformP";
 import Footer from "../../../Components/Footer";
-import { IoCallOutline } from "react-icons/io5";
-import ProjectSlider from "../../../Components/ProjectSlider";
-import KeyFeatures from "../../../Components/KeyFeatures";
-import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import PebheaderW from "../../../Components/PebheaderW";
-import Accolades from "../../../Components/Accolades";
+
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
-import PreEngineeredProductsB, {
-  Area,
-} from "../../../Components/businessAreas/PreEngineeredProductsB";
-import PlatformSectionB from "../../../Components/businessAreas/PlatformSection";
+
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
@@ -52,60 +42,6 @@ const featuresData = [
     title: "Proven Execution Track Record",
     description:
       "LandSking Infra has successfully completed over 100 water and sewage treatment plants and constructed more than 30 km of water supply and sewerage tunnels. The company possesses extensive expertise in building gravity dams and bulk water transfer systems, delivering large-scale water infrastructure projects for both public and private sector clients.",
-  },
-];
-
-const areasData: Area[] = [
-  {
-    id: 1,
-    title: "Prefabricated",
-    subtitle: "Prefabricated Multi-Storey Building Manufacturer",
-    description:
-      "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
-    image: "/industry.jpg",
-  },
-  {
-    id: 2,
-    title: "Warehouse",
-    subtitle: "Warehouse Solutions",
-    description:
-      "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions.",
-    image: "/expertise/third.png",
-  },
-];
-
-const HOME_TABS = [
-  {
-    title: "Pre Engineered Buildings",
-    headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
-    img: "/about.png",
-    buttonText: "VIEW MORE",
-    url: "/menupage",
-  },
-  {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
-  },
-  {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
-  },
-  {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
   },
 ];
 
@@ -155,8 +91,6 @@ const HOME_PROJECTS = [
 ];
 
 export default function WaterSupplySanitation() {
-  const [active, setActive] = useState(0);
-
   const links = [
     {
       title: "CADFEM Service",

@@ -2,12 +2,10 @@
 
 import { useState } from "react";
 import Footer from "yes/Components/Footer";
-import Pebheader from "yes/Components/Pebheader";
 import ContactSection from "yes/Components/ContactSection";
-import Rndheader from "yes/Components/Rndheader";
-import Rndfooter from "yes/Components/Rndfooter";
-import Industryheader from "yes/Components/Industryheader";
 
+import Industryheader from "yes/Components/Industryheader";
+import Image from "next/image";
 // ---------------- Types ----------------
 type Project = {
   id: number;
@@ -302,7 +300,7 @@ export default function Industryinstallationprojects() {
                 onClick={() => handleClick(id)}
               >
                 {/* Image */}
-                <img
+                <Image
                   src={img}
                   alt={location}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"

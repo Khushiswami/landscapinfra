@@ -1,5 +1,3 @@
-// pages/contact.jsx
-
 import { FaMapMarkerAlt, FaEnvelope, FaCommentDots } from "react-icons/fa";
 import Footer from "yes/Components/Footer";
 import Navbar from "yes/Components/Navbar";

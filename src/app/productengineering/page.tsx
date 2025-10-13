@@ -1,10 +1,8 @@
 "use client";
 
-import { ShieldCheck, Layers, PencilRuler, Building2 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useRef, useState, ReactNode } from "react";
-import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
-import { MdOutlineCleanHands } from "react-icons/md";
+import { useState } from "react";
+
 import { ArrowRight } from "lucide-react";
 import Rndheader from "yes/Components/Rndheader";
 import Rndfooter from "yes/Components/Rndfooter";
@@ -299,7 +297,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
                     </div>
                     {/* Right: Image */}
                     <div className="flex justify-center">
-                      <img
+                      <Image
                         src={sec.image}
                         alt={sec.title}
                         className="w-full h-52 md:h-64 object-cover rounded-lg"
@@ -310,7 +308,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
                   <>
                     {/* Left: Image */}
                     <div className="flex justify-center">
-                      <img
+                      <Image
                         src={sec.image}
                         alt={sec.title}
                         className="w-full h-52 md:h-92 object-cover rounded-lg"

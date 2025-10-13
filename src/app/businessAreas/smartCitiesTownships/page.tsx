@@ -1,20 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-import PlatformP from "../../../Components/PlatformP";
 import Footer from "../../../Components/Footer";
-import { IoCallOutline } from "react-icons/io5";
-import ProjectSlider from "../../../Components/ProjectSlider";
-import KeyFeatures from "../../../Components/KeyFeatures";
-import PreEngineeredProducts from "../../../Components/PreEngineeredProducts";
-import PebheaderW from "../../../Components/PebheaderW";
-import Accolades from "../../../Components/Accolades";
+
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
 import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
-import PreEngineeredProductsB, {
-  Area,
-} from "../../../Components/businessAreas/PreEngineeredProductsB";
-import PlatformSectionB from "../../../Components/businessAreas/PlatformSection";
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
@@ -39,78 +29,29 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title:
-      "Residential, Commercial, Social, and Recreational infrastructure development",
-    description: "",
-  },
-  {
-    title:
-      "Geographic Information System (GIS) integration for efficient city planning and management",
-    description: "",
-  },
-  {
-    title:
-      "Environmentally conscious master planning focused on sustainability",
-    description: "",
-  },
-  {
-    title:
-      "Advanced, scalable IT infrastructure supporting smart city operations",
-    description: "",
-  },
-];
-
-const areasData: Area[] = [
-  {
-    id: 1,
-    title: "Prefabricated",
-    subtitle: "Prefabricated Multi-Storey Building Manufacturer",
+    title: "Green Belt Development",
     description:
-      "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
-    image: "/industry.jpg",
+      "Designing and implementing eco-friendly green belts around reactor and auxiliary buildings to enhance environmental safety and air quality.",
   },
   {
-    id: 2,
-    title: "Warehouse",
-    subtitle: "Warehouse Solutions",
+    title: "Site Landscaping for Turbine Generator Buildings",
     description:
-      "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions.",
-    image: "/expertise/third.png",
-  },
-];
-
-const HOME_TABS = [
-  {
-    title: "Pre Engineered Buildings",
-    headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
-    img: "/about.png",
-    buttonText: "VIEW MORE",
-    url: "/menupage",
+      "Developing sustainable landscapes that improve aesthetics and contribute to site safety near turbine halls.",
   },
   {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
+    title: "Balance of Plant Landscaping",
+    description:
+      "Comprehensive landscaping solutions across balance of plant areas to support operational efficiency and environmental compliance.",
   },
   {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
+    title: "Coastal and Sea-water Intake Landscaping",
+    description:
+      "Plantation and erosion control measures around sea-water intake systems to protect sensitive marine interface zones..",
   },
   {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/solution/stell.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
+    title: "Pumphouse and Cooling Tower Green Zones",
+    description:
+      "Creating green buffers and landscaped zones to mitigate heat and improve visual impact near pumphouses and cooling towers.",
   },
 ];
 
@@ -159,9 +100,7 @@ const HOME_PROJECTS = [
   },
 ];
 
-export default function SmartCitiesTownships() {
-  const [active, setActive] = useState(0);
-
+export default function smartCitiesTownships() {
   const links = [
     {
       title: "CADFEM Service",
@@ -192,41 +131,27 @@ export default function SmartCitiesTownships() {
   return (
     <>
       <Industryheader />
-
       <ContactSectionB
-        title="Smart Cities & Townships"
+        title="About NuclearPower Infra"
         subtitle="Building trust with every project"
-        description="From warehouses to custom structures, we ensure quality and timely delivery."
+        description="Specialized landscaping solutions for secure and sustainable nuclear power sites."
         buttonText="Know More"
         buttonLink="/about"
-        bgImage="/Bussinessareaimg/smartcity.jpg"
+        bgImage="/product/s2.jpg"
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="Smart Cities & Townships"
+        heading="Expert Landscaping for Nuclear Facilities"
         highlight=""
         image={{
-          src: "/Bussinessareaimg/smart.jpg",
+          src: "/Bussinessareaimg/nucl.jpg",
           alt: "Custom Cold Storage",
           width: 700,
           height: 500,
         }}
-        description="In response to the growing demand for intelligent and sustainable urban living, Landscape Infra embraces the development of smart cities. Our journey began with the landmark project of Lavasa, an innovative urban township spread across 25,000 acres near Pune, comprising five distinct towns: Dasve, Mugaon, Dhamanohol, Gadle, and Sakhri-Wadavli."
+        description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
         features={featuresData}
       />
-
-      {/* <PreEngineeredProductsB
-        heading="Our Expertise"
-        subheading="What We Build"
-        description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
-        areas={areasData}
-      />
-
-      <PlatformSectionB
-        heading="Comprehensive Infrastructure Solutions"
-        subheading="From design and engineering to execution and management..."
-        tabs={HOME_TABS}
-      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"
@@ -236,6 +161,7 @@ export default function SmartCitiesTownships() {
       <QuickLinks heading="Quick Links" links={links} />
 
       <Brand />
+
       <Footer />
     </>
   );

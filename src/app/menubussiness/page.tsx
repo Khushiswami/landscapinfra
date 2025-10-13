@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
+import Image from "next/image";
 const possibilities = [
   {
     title: "Fluids",
@@ -30,7 +30,7 @@ const possibilities = [
     subtitle: "Semiconductor Design Software",
     description:
       "Semiconductor software solutions for design, simulation, and verification.",
-     image: "/industry.jpg",
+    image: "/industry.jpg",
   },
   {
     title: "Thermal",
@@ -90,7 +90,7 @@ export default function Menubussiness() {
               key={idx}
               className="bg-gray-900 rounded-lg overflow-hidden shadow-lg"
             >
-              <img
+              <Image
                 src={item.image}
                 alt={item.title}
                 className="w-full h-44 object-cover"

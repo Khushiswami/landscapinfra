@@ -1,10 +1,8 @@
 "use client";
 import { useState } from "react";
 import Footer from "../../Components/Footer";
-// import Pebcall from "../pebcall/page";
 import PebheaderW from "yes/Components/PebheaderW";
-import Brand from "../../Components/Brand";
-
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 // Product interface
@@ -31,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     key={index}
     className="relative bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition"
   >
-    <img
+    <Image
       src={product.img}
       alt={product.title}
       className="w-full h-56 object-contain bg-white"
@@ -164,7 +162,7 @@ export default function Page() {
 
         {/* Banner Image */}
         <div className="w-full ">
-          <img
+          <Image
             src="/solutionsBannerPebsteel.jpg"
             alt="Hero Image"
             className="w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] object-cover "
@@ -195,7 +193,7 @@ export default function Page() {
 
         <div className="grid  grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-12">
           <div className="bg-white  shadow text-start pl-2 flex flex-col">
-            <img
+            <Image
               src="/Square1.png"
               alt="Structural Steel"
               className="mx-auto w-full h-56 object-cover"
@@ -218,7 +216,7 @@ export default function Page() {
           </div>
 
           <div className="bg-white shadow  text-start pl-2 flex flex-col">
-            <img
+            <Image
               src="/Square2.jpg"
               alt="Pre-Engineered Buildings"
               className="mx-auto w-full h-56 object-cover"

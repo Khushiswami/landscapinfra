@@ -8,7 +8,8 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
-import IndustryHeader from "yes/Components/Industryheader";import Footer from "../../Components/Footer";
+import IndustryHeader from "yes/Components/Industryheader";
+import Footer from "../../Components/Footer";
 import Image from "next/image";
 
 // Card Props Type
@@ -60,7 +61,8 @@ function Card({ image, icon, title, description }: CardProps) {
 // ✅ Main Page Component
 export default function Energy() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  // const [isPlaying, setIsPlaying] = useState(false);
+  const [, setIsPlaying] = useState(false);
 
   const handleVideoClick = () => {
     if (videoRef.current) {
@@ -71,7 +73,7 @@ export default function Energy() {
 
   return (
     <>
-      <IndustryHeader/>
+      <IndustryHeader />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
@@ -83,7 +85,8 @@ export default function Energy() {
         >
           <div className="text-white text-center relative z-10">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-Energy, Natural Resources & Chemicals            </h1>
+              Energy, Natural Resources & Chemicals{" "}
+            </h1>
           </div>
         </div>
       </section>

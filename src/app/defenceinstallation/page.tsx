@@ -1,59 +1,16 @@
 "use client";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-  FaAward,
-  FaGlobeAsia,
-  FaCertificate,
-  FaProjectDiagram,
-} from "react-icons/fa";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
+import Image from "next/image";
 
-import Brand from "yes/Components/Brand";
-import PlatformP from "yes/Components/PlatformP";
 import ContactSection from "yes/Components/ContactSection";
 import IndustryHeader from "yes/Components/Industryheader";
 
 export default function Defenceinstallation() {
-  interface FAQ {
-    question: string;
-    answer: string;
-  }
-
   // ===== Data =====
-
-  const slides = [
-    {
-      image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Industrial Enclosures",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
-      link: "#",
-    },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
-  ];
 
   return (
     <>
@@ -122,7 +79,7 @@ export default function Defenceinstallation() {
             </button>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"

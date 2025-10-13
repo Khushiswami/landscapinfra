@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import Footer from "yes/Components/Footer";
 import IndustryHead from "yes/Components/Industryheader";
 import BusinessPractices from "yes/Components/missionComponent/BusinessPractices";
@@ -10,8 +9,6 @@ import MissionBanner from "yes/Components/missionComponent/MissionBanner";
 import Sustainability from "yes/Components/missionComponent/Sustainability";
 
 export default function Mission() {
-  const [active, setActive] = useState(0);
-
   return (
     <>
       <IndustryHead />

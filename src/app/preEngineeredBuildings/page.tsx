@@ -1,6 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 import PlatformP from "../../Components/PlatformP";
 import AboutPebP from "../../Components/AboutPebP";

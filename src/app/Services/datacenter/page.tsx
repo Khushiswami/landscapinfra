@@ -7,8 +7,7 @@ import Image from "next/image";
 import Footer from "yes/Components/RealState/FooterReal";
 import Realstateheader from "yes/Components/Realstateheader";
 import Insights from "yes/Components/Insights";
-import ZigzagSection from "yes/Components/RealState/ZigzagSection";
-import ContactSection from "yes/Components/ContactSection";
+
 import QuickLinks from "yes/Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
 // Card Props Type

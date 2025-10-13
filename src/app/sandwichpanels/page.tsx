@@ -1,20 +1,11 @@
 "use client";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
+
 import {
   FaAward,
   FaGlobeAsia,
-  FaDraftingCompass,
   FaCertificate,
-  FaClock,
   FaProjectDiagram,
 } from "react-icons/fa";
 import CountUp from "react-countup";
@@ -24,7 +15,6 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import Platform from "../platform/page";
 import Brand from "../../Components/Brand";
 
 import Footer from "../../Components/Footer";
