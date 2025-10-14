@@ -2,39 +2,38 @@
 
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 const areas = [
   {
     id: 1,
     title: "Manufacturing Plant Setup",
     subtitle: "End-to-End Industrial Manufacturing Plant Solutions",
     description:
-      "We deliver turnkey manufacturing plant solutions — from site selection and design to equipment installation and commissioning. Our automation, robotics, and IoT systems ensure efficient, real-time production performance.",
-    image: "/industry.jpg",
+      "We deliver complete turnkey manufacturing plant solutions. Our service covers every stage, from initial site selection and detailed design to final equipment installation and full commissioning. We integrate advanced automation, robotics, and IoT systems to ensure your plant achieves efficient, real-time production performance.",
+    image: "/platform/manfone.jpg",
   },
   {
     id: 2,
     title: "Process Plant Construction",
     subtitle: "Specialized Process Plant Engineering & Construction",
     description:
-      "We design and build advanced process plants for chemical, pharma, and food sectors. Using modular and AI-driven systems, we ensure top-tier quality, flexibility, and resource efficiency.",
-    image: "/industry.jpg",
+      "We ensure comprehensive expertise in designing and building advanced process plants. Our offerings assist the demanding requirements of the chemical, pharma, and food sectors. By incorporating modular and AI-driven systems, we make sure that clients achieve top-tier quality, operational flexibility, and maximized resource efficiency in their facilities.",
+    image: "/platform/process.jpg",
   },
   {
     id: 3,
     title: "Godown & Logistics Facility Development",
     subtitle: "Warehousing and Logistics Infrastructure Solutions",
     description:
-      "We develop high-performance warehouses and logistics centers with AS/RS, AMRs, and WMS technologies for optimized storage, automation, and smart inventory management.",
-    image: "/industry.jpg",
+      "We possess specialized competence in establishing high-capacity warehouses and logistics hubs. Our design philosophy incorporates sophisticated technologies like AS/RS, AMRs, and WMS platforms. This technical integration guarantees clients achieve streamlined storage, maximum operational automation, and highly accurate, intelligent inventory control.",
+    image: "/platform/Logistics.jpg",
   },
   {
     id: 4,
     title: "Basic Structure Development",
     subtitle: "Comprehensive Infrastructure & Utility Development",
     description:
-      "We offer complete infrastructure solutions including power, water, and waste systems. Our sustainable designs use renewable energy, smart grids, and advanced recycling technologies.",
-    image: "/industry.jpg",
+      "We are providing complete utility solutions encompassing necessary services like power distribution, potable water supply, and comprehensive waste management systems. Our foundational design strategy champions sustainability, integrating modern features such as renewable energy sources, smart grid technology, and state-of-the-art recycling platforms to future-proof your capital investments.",
+    image: "/platform/development.jpg",
   },
 ];
 
@@ -45,7 +44,7 @@ export default function Trunkeytpes() {
   const selectedArea = areas.find((area) => area.id === selectedId);
 
   return (
-    <section className=" mx-auto px-4 py-10 md:px-12">
+    <section className=" mx-auto px-4 py-10 md:px-19">
       <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
         Types of Industrial Turnkey Projects
       </h2>
@@ -97,7 +96,7 @@ export default function Trunkeytpes() {
 
           {/* Desktop Menu */}
           {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
-          <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
+          <div className="hidden md:flex flex-col py-9 bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
             {areas.map((area, idx) => (
               <button
                 key={area.id}
@@ -122,9 +121,9 @@ export default function Trunkeytpes() {
             {/* ✅ Left Text Section */}
             <div
               className="
-        p-6 flex flex-col justify-center w-full md:w-1/2
-        rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
-      "
+           p-6 flex flex-col justify-center w-full md:w-1/2
+           rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
+         "
             >
               <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
                 {selectedArea.subtitle}
@@ -144,10 +143,10 @@ export default function Trunkeytpes() {
 
             {/* ✅ Image Section (centered vertically) */}
             <div className="w-full md:w-1/2 flex  bg-white pe-2">
-              <Image
+              <img
                 src={selectedArea.image}
                 alt={selectedArea.subtitle}
-                className="w-full max-w-[500px] h-64 md:h-80 object-cover rounded-lg md:rounded-none"
+                className="w-full max-w-[500px] h-64 md:h-70 object-cover rounded-lg md:rounded-none"
               />
             </div>
           </div>

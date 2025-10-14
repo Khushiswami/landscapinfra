@@ -16,19 +16,19 @@ const slides = [
     title: "Power",
     desc: "Delivering cutting-edge power generation and transmission solutions that ensure energy efficiency, reliability, and sustainable growth for industries and communities.",
     video: "/video.mp4",
-    link: "/menupage",
+    link: "/",
   },
   {
     title: "Transportation",
     desc: "Building world-class highways, railways, metros, and airports that redefine connectivity, reduce travel time, and power economic development.",
     video: "/video.mp4",
-    link: "/epcsolutions",
+    link: "/",
   },
   {
     title: "Water",
     desc: "Designing and implementing smart water supply, wastewater treatment, and desalination projects to secure clean water and sustainable management for the future.",
     video: "/video.mp4",
-    link: "/project-management",
+    link: "/",
   },
   {
     title: "Industrial & Buildings",
@@ -91,7 +91,7 @@ export default function Industryinstallation() {
                 onClick={() => router.push(slides[active].link)}
                 className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
               >
-                <span>Learn More</span>
+                <span>Contact Us</span>
                 <IoIosArrowForward className="w-5 h-5" />
               </button>
             </motion.div>

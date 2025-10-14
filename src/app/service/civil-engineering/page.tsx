@@ -10,15 +10,7 @@ import {
   FaCertificate,
   FaProjectDiagram,
 } from "react-icons/fa";
-import {
-  FaDraftingCompass,
-  FaCube,
-  FaCogs,
-  FaUndoAlt,
-  FaLightbulb,
-  FaIndustry,
-  FaFlask,
-} from "react-icons/fa";
+
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -32,7 +24,13 @@ import {
   FaHandshake, // Delivery & Support
 } from "react-icons/fa";
 import Rndheader from "yes/Components/Rndheader";
-
+import {
+  FaIndustry,
+  FaDraftingCompass, // Construction Drawing
+  FaSnowflake, // HVAC
+  FaWater, // Drainage
+  FaBuilding, // Civil Information Modeling (CIM)
+} from "react-icons/fa";
 import Link from "next/link";
 import Rndfooter from "yes/Components/Rndfooter";
 import Brand from "yes/Components/ClientP";
@@ -60,22 +58,20 @@ interface Project {
   image: string;
 }
 // ✅ Card Component
-function Card({ title, description }: CardProps) {
+function Card({ title, description, icon }: CardProps) {
   return (
     <div className="bg-[#f5f7fb] shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
-      {/* Image with centered icon */}
+      {/* Icon section */}
       <div className="relative w-full h-40 sm:h-46 overflow-hidden flex items-center justify-center">
-        {/* Centered Image */}
-        <div className="absolute flex p-2 sm:p-4">
-          <img
-            src="/path-to-your-image.png" // Replace with your image path
-            alt="Drafting"
-            className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
-          />
+        <div className="flex items-center justify-center p-4">
+          {/* ✅ Render the passed icon */}
+          <div className="text-[#2d2d5a] group-hover:text-[#4a4aff] transition-colors duration-300">
+            {icon}
+          </div>
         </div>
       </div>
 
-      {/* Text */}
+      {/* Text section */}
       <div className="px-4 sm:px-5 pb-6 flex-1 flex flex-col mt-4">
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
@@ -569,57 +565,51 @@ export default function Civil() {
               efficiency, and safety.
             </p>
           </div>
-
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* Construction Drawing Solutions */}
             <Card
-              icon={
-                <img
-                  src="/servicecivil/Civil.jpg"
-                  alt="Drafting"
-                  className=""
-                />
-              }
+              icon={<FaDraftingCompass size={40} className="text-[#4a4aff]" />}
               title="Construction Drawing Solutions"
-              description="Our HVAC design services ensure your spaces stay comfortable, efficient, and eco-friendly. From small commercial setups to large industrial facilities, Landsking Infra designs all aligned with international safety and performance standards. To optimize heating, ventilation, and air conditioning systems that balance airflow, energy use, and cost. We also provide load calculations, equipment layout, duct design, and control diagrams"
+              description="We produce highly detailed construction drawings guiding each phase of a project—from foundation to finishing—ensuring precision, clarity, and coordination with site requirements."
             />
 
+            {/* HVAC Design Services */}
             <Card
-              icon={<FaCube size={34} className="text-white" />} // Cube = 3D modeling
-              title="HVAC Design Services
-"
-              description="Our HVAC design services ensure your spaces stay comfortable, efficient, and eco-friendly. From small commercial setups to large industrial facilities, Landsking Infra designs all aligned with international safety and performance standards. To optimize heating, ventilation, and air conditioning systems that balance airflow, energy use, and cost. We also provide load calculations, equipment layout, duct design, and control diagrams"
+              icon={<FaSnowflake size={40} className="text-[#4a4aff]" />}
+              title="HVAC Design Services"
+              description="We deliver efficient, sustainable HVAC system designs with optimized airflow, energy use, and safety—covering load calculations, layouts, and control diagrams."
             />
 
+            {/* Drainage Design Services */}
             <Card
-              icon={<FaCogs size={34} className="text-white" />} // Cogs = mechanical design
-              title="Drainage Design Services
-"
-              description="Landsking Infra delivers intelligent and dependable drainage system designs to ensure smooth water flow and prevent flooding or leakage. Our team of civil engineers and CAD experts develops detailed dewatering layouts, stormwater systems, and site drainage plans suited to any terrain. we help you manage runoff, protect structures, and meet compliance requirements"
+              icon={<FaWater size={40} className="text-[#4a4aff]" />}
+              title="Drainage Design Services"
+              description="Our experts design reliable drainage and stormwater systems that prevent flooding, ensure flow efficiency, and meet environmental compliance standards."
             />
 
+            {/* Construction Scheduling & Tracking */}
             <Card
-              icon={<FaUndoAlt size={34} className="text-white" />} // Undo = reverse engineering
-              title="Construction Scheduling & Tracking
-"
-              description="we produce highly detailed construction drawings that guide each phase of the project—from foundation to finishing. Our experts collaborate with architects and contractors to prepare plans, elevations, sections, and shop drawings that align perfectly with site requirements.This structured approach ensures your project stays on track, avoids delays, and meets key milestones — improving overall efficiency from planning to completion.
-"
+              icon={<FaProjectDiagram size={40} className="text-[#4a4aff]" />}
+              title="Construction Scheduling & Tracking"
+              description="We offer structured scheduling and tracking solutions that help teams stay on time, minimize delays, and achieve milestones efficiently across project phases."
             />
 
+            {/* Civil Information Modeling (CIM) Services */}
             <Card
-              icon={<FaLightbulb size={34} className="text-white" />} // Lightbulb = innovation, ideas
+              icon={<FaBuilding size={40} className="text-[#4a4aff]" />}
               title="Civil Information Modeling (CIM) Services"
-              description="Landsking Infra leads the way in Civil Information Modeling (CIM) services, extending the power of BIM to revolutionize infrastructure design and construction. We offer intelligent CIM models that seamlessly integrate design, data, and documentation to significantly enhance collaboration and minimize costly errors. Our advanced solutions, ideal for projects like roads, bridges, drainage networks, and utilities, identify potential issues early. This improved coordination between teams ensures smoother project execution and leads to lower overall costs."
+              description="Landsking Infra pioneers CIM integration, enabling smarter infrastructure design through data-rich 3D modeling, improved collaboration, and reduced rework."
             />
 
+            {/* Geospatial Solutions */}
             <Card
-              icon={<FaIndustry size={34} className="text-white" />} // Industry = manufacturing optimization
-              title="Geospatial Solutions
-"
-              description="We offer 2D & 3D mapping, GIS analysis, drone surveying, and digital elevation modeling that support surveying, land development, and infrastructure design Whether for civil, environmental, or industrial projects, our geospatial solutions deliver clarity and confidence.
-.Our Services include photogrammetry, topographic mapping, drone surveys, and GIS analysis to ensure every inch of your site is mapped accurately for informed engineering decisions.
-"
+              icon={<FaMapMarkedAlt size={40} className="text-[#4a4aff]" />}
+              title="Geospatial Solutions"
+              description="We provide GIS mapping, drone surveying, and 3D terrain modeling to empower civil, environmental, and industrial projects with accurate spatial insights."
             />
           </div>
+
+          {/* carddd */}
         </section>
       </main>
       {/* endcapill */}

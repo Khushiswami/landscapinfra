@@ -14,14 +14,14 @@ const sections: Section[] = [
     id: 1,
     title: "Industrial, Warehouse & PEB Projects",
     description:
-      "LandsKing Infra Pvt. Ltd. is a leading industrial construction company in Chennai, specializing in delivering top-notch industrial and warehouse projects. We provide end-to-end infrastructure solutions under one roof, incorporating advanced automation and innovative construction models. With over two decades of experience, our team ensures timely project delivery with world-class standards, meeting global client expectations. Our reputation is backed by strong client testimonials and successful project completions across India.",
+      "LandsKing Infra Pvt. Ltd. is a leading industrial construction company in Chennai, specializing in delivering top-notch industrial and warehouse projects.We offer far more than conventional construction; we act as your dedicated partner for integrated infrastructure solutions. Our firm seamlessly merges decades of mechanical engineering services expertise with advanced automation and innovative construction models. We incorporate expert practices like CAD modeling early in the development lifecycle to ensure every structure, particularly our PEB (Pre-Engineered Building) systems, delivers optimized performance and adheres to strict ISO compliance. With our proven approach, you receive world-class standards and guaranteed timely project delivery across India, supported by verified authority and expertise.",
     images: ["/industry.jpg", "/industry.jpg", "/industry.jpg"],
   },
   {
     id: 2,
     title: "Commercial, Pharma & Hotel Projects",
     description:
-      "LandsKing Infra Pvt. Ltd. has extensive experience in executing commercial projects, including office complexes, restaurants, pharma facilities, and hotels. Our professional team ensures high-quality construction, end-to-end infrastructure planning, and effective project management. Over the past 20 years, we have consistently delivered projects that meet global standards, providing clients with reliable, timely, and efficient solutions for all commercial infrastructure needs in Chennai.",
+      "LandsKing Infra Pvt. Ltd. has extensive experience in executing commercial projects, including office complexes, restaurants, pharma facilities, and hotels.We offer specialized expertise for every commercial endeavor, acting as your dedicated partner for integrated infrastructure planning. Our professional team ensures high-quality construction and effective project management. With over two decades of experience, we consistently deliver projects—from sensitive pharma facilities to premium hotels—that meet global standards, providing clients with reliable, timely, and and efficient solutions for all commercial infrastructure needs.",
     images: [
       "/industry.jpg",
       "/industry.jpg",
@@ -34,14 +34,14 @@ const sections: Section[] = [
     id: 3,
     title: "Institutional & Educational Projects",
     description:
-      "At LandsKing Infra Pvt. Ltd., we specialize in building institutional projects, including educational institutions, community centers, and marriage halls. Our team of experts delivers top-grade facilities while fostering innovation in construction technology. Beyond building structures, we also offer career opportunities in construction management and business development, empowering professionals to contribute to societal growth while shaping inspiring educational and institutional spaces.",
+      "We provide comprehensive engineering, procurement, and construction (EPC) solutions for both specialized healthcare and educational facilities. Our expertise encompasses advanced medical campuses, specialized academic blocks, and allied residential complexes, ensuring resilient platforms for future health and learning. We partner with clients across diverse global industries to design, build, and maintain their vital capital projects.",
     images: ["/industry.jpg", "/industry.jpg", "/industry.jpg"],
   },
   {
     id: 4,
     title: "Residential, Resorts & Villas",
     description:
-      "LandsKing Infra Pvt. Ltd. excels in designing and constructing luxury residences, resorts, and villas. With in-house licensed architects, interior designers, structural engineers, and MEP contractors, we provide a seamless, end-to-end construction experience. Our focus on safety, quality, and world-class architectural design ensures that every residential project reflects excellence, comfort, and enduring value for our clients.",
+      "We provide complete solutions for residential and community infrastructure. This includes large-scale integrated township development, multi-storied housing, and essential allied facilities like hospital augmentation and environmental parks. We also handle specialized design-build contracts for sensitive sites such as naval bases.Integrated Township Development,Specialized Housing & Allied Facilities,Naval Base Infrastructure",
     images: ["/industry.jpg", "/industry.jpg", "/industry.jpg"],
   },
   {
@@ -77,51 +77,76 @@ export default function Industryplatformtab() {
   };
 
   return (
-    <div className="flex flex-col  gap-7 md:gap-16  mx-5 md:mx-13">
-      {sections.map((section, idx) => {
-        const isEven = idx % 2 === 0;
-        return (
-          <div
-            key={section.id}
-            className={`flex flex-col md:flex-row items-center gap-8 ${
-              isEven ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
-          >
-            {/* Slider */}
-            <div className="relative w-full md:w-1/2">
-              <Image
-                src={section.images[currentSlides[idx]]}
-                alt={section.title}
-                width={600}
-                height={400}
-                className=" shadow-lg"
-              />
-              <button
-                onClick={() => handlePrev(idx)}
-                className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
-              >
-                &#8592;
-              </button>
-              <button
-                onClick={() => handleNext(idx)}
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
-              >
-                &#8594;
-              </button>
-            </div>
+    <>
+      <div className=" mx-5 md:mx-13 ">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
+          Leading with Expertise: Our Turnkey Industrial Model
+        </h2>
+        <p className="text-gray-700 mb-4 leading-relaxed">
+          At LandsKing Infrarem Pvt. Ltd., we view every new structure as an
+          investment in our clients future success. Our core strategy goes
+          beyond only construction; it is about fusing impactful innovation with
+          conventional execution, placing our clients unique needs at the
+          forefront of every project. We operate on a foundation of
+          uncompromising quality, advanced engineering standards, and complete
+          operational transparency, solidifying our reputation as a highly
+          reliable partner.
+        </p>
+        <p className="text-gray-700 mb-4 leading-relaxed">
+          Our commitment is to be the sector leader by offering integrated,
+          comprehensive solutions where accountability is guaranteed. We provide
+          specialized turnkey services covering the full spectrum of heavy
+          industry, including Minerals & Metals, Power Generation, Bulk Material
+          Handling, Green Energy, and specialized Petrochemical and Chemical
+          Plants.
+        </p>
+      </div>
+      <div className="flex flex-col  gap-7 md:gap-16  mx-5 md:mx-13">
+        {sections.map((section, idx) => {
+          const isEven = idx % 2 === 0;
+          return (
+            <div
+              key={section.id}
+              className={`flex flex-col md:flex-row items-center gap-8 ${
+                isEven ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
+            >
+              {/* Slider */}
+              <div className="relative w-full md:w-1/2">
+                <Image
+                  src={section.images[currentSlides[idx]]}
+                  alt={section.title}
+                  width={600}
+                  height={400}
+                  className=" shadow-lg"
+                />
+                <button
+                  onClick={() => handlePrev(idx)}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                >
+                  &#8592;
+                </button>
+                <button
+                  onClick={() => handleNext(idx)}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                >
+                  &#8594;
+                </button>
+              </div>
 
-            {/* Content */}
-            <div className="w-full md:w-1/2">
-              <h2 className="text-xl md:text-3xl font-bold mb-4 text-[#000080]">
-                {section.title}
-              </h2>
-              <p className="text-black  text-base md:text-medium ">
-                {section.description}
-              </p>
+              {/* Content */}
+              <div className="w-full md:w-1/2">
+                <h2 className="text-xl md:text-3xl font-bold mb-4 text-[#000080]">
+                  {section.title}
+                </h2>
+                <p className="text-black  text-base md:text-medium ">
+                  {section.description}
+                </p>
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </>
   );
 }

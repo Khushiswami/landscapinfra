@@ -8,27 +8,26 @@ const TABS = [
   {
     title: "Industrial Turnkey Projects",
     headline: "Industrial Turnkey Projects",
-    body: "Delivering end-to-end industrial solutions — from concept design and engineering to installation and commissioning. Our turnkey approach ensures seamless project execution, optimized performance, and on-time delivery across manufacturing, energy, and infrastructure sectors.",
-
+    body: "We transcend complexity, providing complete industrial solutions that guarantee certainty across every stage, from initial engineering design to final project commissioning. Our turnkey approach ensures streamlined execution and optimized performance across crucial sectors like manufacturing, energy, and infrastructure",
     img: "/about.png",
     buttonText: "VIEW MORE",
     url: "/Industrialtrunckyprojects",
   },
   {
-    title: "EPC Solutions",
+    title: "Plant Engineering",
     headline: "End-to-End EPC Solutions",
     body: "From concept to commissioning, our EPC solutions ensure seamless project execution with a strong focus on quality, cost-efficiency, and sustainability. We integrate advanced technologies and global standards to deliver world-class infrastructure.",
     img: "/solution/stell.jpg",
     buttonText: "VIEW MORE",
-    url: "/PEB.jpg",
+    url: "/plantengineering",
   },
   {
-    title: "Structural Engineering Services",
+    title: "Manufacturer Engineering ",
     headline: "Excellence in Structural Engineering",
     body: "Our expert engineers provide innovative structural design and analysis services. With advanced tools and decades of expertise, we ensure the highest safety, efficiency, and performance standards for every project we deliver.",
     img: "/Square2.jpg",
     buttonText: "VIEW MORE",
-    url: "/structuralsteel",
+    url: "/manufacturerengineering",
   },
 ];
 
@@ -71,9 +70,14 @@ export default function Industryplatform() {
           Comprehensive Infrastructure Solutions
         </h1>
         <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
-          From design and engineering to execution and management, we deliver
-          integrated solutions that shape industries and build a stronger
-          future.
+          Drawing on deep experience, we manage every step of complex projects,
+          offering absolute certainty from the initial concept definition to the
+          final asset handover. Our EPC (Engineering, Procurement, and
+          Construction) solutions integrate sophisticated technology and
+          rigorous global standards. Structural Engineering Services Unlocking
+          performance begins with absolute structural integrity. Our expert
+          engineers utilize advanced tools and decades of expertise to deliver
+          innovative structural design and analysis services
         </p>
       </div>
 

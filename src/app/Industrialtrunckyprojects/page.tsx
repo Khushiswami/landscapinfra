@@ -24,38 +24,66 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Rooftop Solar for Manufacturing",
+    title: "HT / LT Electrical Works",
     description:
-      "Transform your idle roof space into a high-performance asset. Slash your operational costs and reduce reliance on the grid with a custom rooftop solar system built for your manufacturing facility.",
-    image: "/realstate/three.webp",
+      "We engineer and install high- and low-tension power systems, serving as the essential backbone for your entire facility.",
+    image: "/platform/htlt.jpg",
   },
   {
     id: 2,
-    title: "Ground-Mounted Solar for Industrial Estates",
+    title: "MEP Services",
     description:
-      "Get uninterrupted, large-scale power with our ground-mounted solar solutions, designed for the vast energy needs of industrial estates.",
-    image: "/realstate/two.jpg",
+      "Our licensed in-house team handles the seamless integration of all Mechanical, Electrical, and Plumbing systems required for your project.",
+    image: "/platform/mep.jpg",
   },
   {
     id: 3,
-    title: "On-Grid & Hybrid Solar Installations",
+    title: "Control Systems & Lifts",
     description:
-      "Choose a solar system that fits your power needs and business goals. Our on-grid systems sync with the utility grid, allowing you to benefit from net metering. For ultimate power reliability, our hybrid installations combine grid power with battery backup, ensuring your operations never stop, even during a blackout.",
-    image: "/realstate/one.webp",
+      "We integrate smart technology for precise operational control and ensure vertical mobility systems (lifts) function with flawless safety and reliability.",
+    image: "/platform/control.jpg",
   },
   {
     id: 4,
-    title: "Net Metering & Open Access Support",
+    title: "Air Conditioning",
     description:
-      "Navigating the complexities of solar regulations is our job. We provide expert support with net metering and open access policies, handling all the paperwork, government approvals, and utility company coordination to ensure a smooth and hassle-free setup.",
-    image: "/realstate/fourS.webp",
+      "We design and implement robust HVAC solutions that guarantee optimal climate control and air quality throughout your commercial space.",
+    image: "/platform/air",
   },
   {
     id: 5,
-    title: "Battery-Integrated Solar for Power Reliability",
+    title: "Fire Fighting Systems",
     description:
-      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
-    image: "/realstate/fiveS.webp",
+      "We deliver critical, code-compliant fire suppression and protection systems built to safeguard your assets and personnel instantly.",
+    image: "/platform/firefight",
+  },
+  {
+    id: 6,
+    title: "All Statutory Approval Co-Ordinations",
+    description:
+      "We simplify complex project timelines by expertly managing and coordinating every necessary governmental and statutory clearance.",
+    image: "/platform/",
+  },
+  {
+    id: 7,
+    title: "DG Systems",
+    description:
+      "We install powerful Diesel Generator (DG) systems, providing reliable, continuous backup power to maintain zero operational downtime.",
+    image: "/platform/dg.jpg",
+  },
+  {
+    id: 5,
+    title: "Water & Waste Water Treatment Systems",
+    description:
+      "We engineer complete, sustainable solutions for managing and treating all water and effluent needs within your industrial footprint.",
+    image: "/platform/watewater.jpg",
+  },
+  {
+    id: 5,
+    title: "Office Interior Works & Finishes",
+    description:
+      "We execute fit-out projects, transforming commercial spaces with premium finishes and functional designs that reflect your corporate identity.",
+    image: "/platform/office.jpg",
   },
 ];
 
@@ -83,28 +111,17 @@ const Page = () => {
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              At Landsking Infrarem Pvt. Ltd., we are recognized across the
-              industry for our expertise in both traditional and advanced
-              construction techniques. Our approach blends innovative thinking
-              with precision-driven delivery processes, always centered around
-              fulfilling our clients unique needs.
+              We transcend complexity, providing complete industrial solutions
+              that guarantee certainty across every stage, from initial
+              engineering design to final project commissioning.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Since our inception, we have upheld the highest standards of
-              quality, customer-centric values, modern engineering excellence,
-              ethical business practices, and transparency in every aspect of
-              our operations. These principles have earned us the reputation of
-              being a trusted and preferred construction partner.
-            </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Our goal is to lead the commercial and industrial construction
-              sector by offering personalized, end-to-end solutions across
-              various domains of construction and infrastructure management.
-              Landsking Infrarem Pvt. Ltd. provides turnkey solutions to
-              industrial projects with expertise in Minerals & Metals, Power,
-              Bulk Material Handling Facilities in Ports & Mines, Fertilizers,
-              Petrochemicals, Chemical Plants, Cement, Green Energy and other
-              Industrial Plants.
+              We offer full-spectrum mechanical engineering services,
+              guaranteeing a turnkey approach across manufacturing, energy, and
+              infrastructure. Our process uses precise CAD modeling for robust
+              product development, ensuring optimized performance and ISO
+              compliance. This results in seamless execution and predictable
+              delivery.
             </p>
 
             <Link href="/industry-contact">
@@ -116,10 +133,18 @@ const Page = () => {
 
           {/* Right Image */}
           <div className="flex justify-center">
-            <Image
+            {/* <Image
               src="/menupageimg/mod13.jpg"
               alt="EPACK Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md w[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+            /> */}
+
+            <Image
+              src="/platform/maining.jpg"
+              alt="EPACK Prefab Industrial Building"
+              width={600}
+              height={400}
+              className="rounded-md shadow-md object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>
