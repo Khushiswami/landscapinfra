@@ -61,9 +61,9 @@ function Card({ icon, title, description }: CardProps) {
   return (
     <div className="bg-[#f5f7fb] shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
       {/* Image with centered icon */}
-      <div className="relative w-full h-48 sm:h-56 overflow-hidden flex items-center justify-center">
+      <div className="relative w-full h-25 sm:h-25 overflow-hidden flex items-center justify-center">
         {/* Centered Icon */}
-        <div className="absolute flex items-center justify-center bg-blue-900 p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
+        <div className="absolute flex items-center justify-center bg-white p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
           {icon}
         </div>
 
@@ -71,7 +71,7 @@ function Card({ icon, title, description }: CardProps) {
       </div>
 
       {/* Text */}
-      <div className="px-4 sm:px-5 pb-6 flex-1 flex flex-col mt-4">
+      <div className="px-4 sm:px-5 pb-6 flex-1 flex flex-col mt-0">
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
@@ -452,43 +452,43 @@ export default function Mechanical() {
   const servicesing = [
     {
       id: 1,
-      icon: <Construction className="w-7 h-7" aria-hidden="true" />,
+      icon: <Construction className="w-8 h-8 text-white" aria-hidden="true" />,
       title: "Civil Engineering Services",
       desc: "Landscapinfra offers reliable and affordable civil engineering support for site layout, infrastructure, and urban projects. We work on roads, bridges, drainage, and land development to ensure strong and lasting results.",
     },
     {
       id: 2,
-      icon: <Building2 className="w-7 h-7" aria-hidden="true" />,
+      icon: <Building2 className="w-8 h-8 text-white" aria-hidden="true" />,
       title: "Structural Engineering Services",
       desc: "We design and plan safe, stable, and efficient structures for all kinds of projects. From industrial buildings to heavy foundations, our team ensures strength and performance in every design.",
     },
     {
       id: 3,
-      icon: <Plug className="w-7 h-7" aria-hidden="true" />,
+      icon: <Plug className="w-8 h-8 text-white " aria-hidden="true" />,
       title: "Electrical Engineering Services",
       desc: "Our team provides practical electrical design solutions for power systems, control panels, and automation setups. We help industries keep their operations safe, efficient, and well-connected.",
     },
     {
       id: 4,
-      icon: <Landmark className="w-7 h-7" aria-hidden="true" />,
+      icon: <Landmark className="w-8 h-8 text-white" aria-hidden="true" />,
       title: "Infrastructure Engineering Services",
       desc: "We handle complete infrastructure planning and coordination for utilities, transport systems, and plant layouts. Every design is precise, clear, and ready for construction.",
     },
     {
       id: 5,
-      icon: <Cuboid className="w-7 h-7" aria-hidden="true" />,
+      icon: <Cuboid className="w-8 h-8 text-white" aria-hidden="true" />,
       title: "BIM Services",
       desc: "Our Building Information Modeling (BIM) helps reduce errors and improve project speed. We use smart 3D models to plan, estimate, and coordinate work more effectively.",
     },
     {
       id: 6,
-      icon: <FileText className="w-7 h-7" aria-hidden="true" />,
+      icon: <FileText className="w-8 h-8 text-white" aria-hidden="true" />,
       title: "Technical Manuals & Engineering Documentation",
       desc: "We create clear and accurate manuals, SOPs, and datasheets to support training, operations, and audits. Each document is simple, useful, and reliable.",
     },
     {
       id: 7,
-      icon: <Flame className="w-7 h-7" aria-hidden="true" />,
+      icon: <Flame className="w-8 h-8 text-white" aria-hidden="true" />,
       title: "Fire Protection Engineering Services",
       desc: "We design effective fire protection systems with accurate planning and safety checks. Our service helps ensure protection for industrial plants, offices, and public buildings.",
     },
@@ -560,48 +560,48 @@ export default function Mechanical() {
 
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
-              icon={<FaPencilRuler size={34} className="text-white" />} // Pencil + ruler = drafting
+              icon={<FaPencilRuler size={38} className="text-[#8080FF]" />} // Pencil + ruler = drafting
               title="2D Drafting Services"
               description="Produce modern, productive, ISO-compliant technical drawings for architectural, mechanical, and construction projects, empowering smooth design iterations. Our expert CAD drafting accelerates product development while ensuring efficiency."
             />
 
             <Card
-              icon={<FaCube size={34} className="text-white" />} // Cube = 3D modeling
+              icon={<FaCube size={34} className="text-[#8080FF]" />} // Cube = 3D modeling
               title="3D CAD Modeling Services"
               description="Create accurate 3D models to visualize components, test tolerances, detect interferences, and enhance collaboration across engineering, architecture, and manufacturing teams."
             />
 
             <Card
-              icon={<FaCogs size={34} className="text-white" />} // Cogs = mechanical design
+              icon={<FaCogs size={34} className="text-[#8080FF]" />} // Cogs = mechanical design
               title="CAD Design Services"
               description="Comprehensive CAD design solutions covering concept development, CAE integration, fixture and mold design, prototyping, and manufacturing, backed by expert mechanical engineering knowledge."
             />
 
             <Card
-              icon={<FaUndoAlt size={34} className="text-white" />} // Undo = reverse engineering
+              icon={<FaUndoAlt size={34} className="text-[#8080FF]" />} // Undo = reverse engineering
               title="Reverse Engineering Services"
               description="Accurately recreate digital models from physical parts using 3D scanning, parametric modeling, and benchmarking to support system upgrades and in-depth competitor analysis."
             />
 
             <Card
-              icon={<FaLightbulb size={34} className="text-white" />} // Lightbulb = innovation, ideas
+              icon={<FaLightbulb size={34} className="text-[#8080FF]" />} // Lightbulb = innovation, ideas
               title="Product Design & Development"
               description="End-to-end product lifecycle support—from concept and prototyping to testing and manufacturing—ensures compliance, accelerates time-to-market, and drives innovation."
             />
 
             <Card
-              icon={<FaIndustry size={34} className="text-white" />} // Industry = manufacturing optimization
+              icon={<FaIndustry size={34} className="text-[#8080FF]" />} // Industry = manufacturing optimization
               title="Design for Manufacturing & Value Engineering"
               description="Optimize designs for manufacturability through part standardization, material efficiency, and cost-benefit engineering, enabling scalable, efficient, and high-quality production."
             />
 
             <Card
-              icon={<FaFlask size={34} className="text-white" />} // Flask = testing, prototyping
+              icon={<FaFlask size={34} className="text-[#8080FF]" />} // Flask = testing, prototyping
               title="Rapid Prototyping & Testing Support"
               description="Speed up product validation with fast-turn prototypes and simulation-driven testing to ensure performance and reliability before full-scale production."
             />
             <Card
-              icon={<FaDraftingCompass size={34} className="text-white" />} // Compass = design conversion precision
+              icon={<FaDraftingCompass size={34} className="text-[#8080FF]" />} // Compass = design conversion precision
               title="CAD Conversion Services"
               description="Transform outdated blueprints into accurate, editable CAD models that modernize your design and manufacturing workflow. Our CAD conversion services help reduce project costs, enhance collaboration, and improve design precision. Our skilled engineers and advanced tools ensure seamless interactivity, ISO-compliant accuracy, and faster product development with minimal errors."
             />
@@ -739,10 +739,10 @@ export default function Mechanical() {
             {servicesing.map((s) => (
               <article
                 key={s.id}
-                className="snap-center min-w-[78%] flex-shrink-0 bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-md focus:outline-none focus:ring-4 focus:ring-indigo-200"
+                className="snap-center min-w-[78%] flex-shrink-0 bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-md focus:outline-none focus:ring-4 focus:ring-[#000080]"
                 role="article"
               >
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 bg-indigo-50">
+                <div className="w-16 h-16 text- white rounded-full flex items-center justify-center mx-auto mb-3 bg-[#000080]">
                   {s.icon}
                 </div>
 
@@ -762,7 +762,7 @@ export default function Mechanical() {
               key={s.id}
               className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow focus:shadow-lg outline-none focus:ring-4 focus:ring-indigo-200"
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-indigo-50">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-[#000080]">
                 {s.icon}
               </div>
               <h3 className="text-lg font-semibold">{s.title}</h3>

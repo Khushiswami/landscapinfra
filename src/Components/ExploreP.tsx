@@ -17,7 +17,7 @@ const areas = [
     subtitle: "Proyectos de Ingeniería",
     description:
       "Diseñamos y desarrollamos proyectos de ingeniería de alta complejidad, garantizando calidad y eficiencia.",
-     image: "/green.png",
+    image: "/green.png",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export default function ExploreP() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
         Áreas de negocio
       </h2>
 
@@ -57,8 +57,8 @@ export default function ExploreP() {
               onClick={() => setSelectedId(area.id)}
               className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                 selectedId === area.id
-                  ? "bg-blue-800 font-bold"
-                  : "hover:bg-blue-800 text-gray-300"
+                  ? "bg-[#000080] font-bold"
+                  : "hover:bg-[#000080] text-gray-300"
               }`}
             >
               <span className="text-sm opacity-70">
@@ -74,13 +74,13 @@ export default function ExploreP() {
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
             {/* Text Content */}
             <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+              <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-              <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                VER MÁS
-                <span className="bg-yellow-400 p-1 rounded-full text-black">
+              <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
+                More{" "}
+                <span className="bg-[#000080] p-1 rounded-full text-black">
                   →
                 </span>
               </button>

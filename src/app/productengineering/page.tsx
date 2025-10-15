@@ -168,7 +168,7 @@ export default function Productengineering() {
         <section className=" py-12 px-2 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
-              image="/sectorimg/pt.jpg"
+              image="/rnd/prodcution.jpg"
               title="Production-Ready High-Quality Plastic & Composite Solutions
 "
               description="For end-users, first impressions are everything. We specialize in engineering high-grade plastic and composite components that are not just durable and functional, but also visually and tactilely appealing. Our team delivers production-ready designs for the parts that end-users see, touch, and engage with, ensuring a flawless final product.
@@ -180,9 +180,9 @@ Function Development & Expertise Support: We develop and validate the functional
 "
             />
             <Card
-              image="/sectorimg/por.jpg"
+              image="/rnd/electronics.jpg"
               title="Electronics & Electrical Design Services
-r"
+"
               description=" Your innovative ideas deserve the right hardware to bring them to life. We offer a comprehensive suite of electronics and electrical design services, taking your concept from initial design to a small series production run. Our expertise spans the entire spectrum, from advanced microchips to intricate wiring.
 "
               titlenew="What We Do:"
@@ -191,7 +191,7 @@ Build-2-Spec Electronics Development: Our team specializes in custom electronics
 Prototype Electrical Design: We handle all aspects of prototype electrical design, from crafting the optimal system architecture to designing wiring harnesses and ensuring EMC compliance and thermal management"
             />
             <Card
-              image="/sectorimg/pt.jpg"
+              image="/rnd/simulation.jpg"
               title=" Simulation & Analysis for Complex Structures (FEM Modeling)
 "
               description="Building complex structures requires precision and foresight. Our simulation and analysis services use a cutting-edge DevOps approach to create large, detailed Finite Element Method (FEM) models. This enables rapid, cost-effective, and highly accurate analysis, so you can validate designs and prevent costly errors before production begins."
@@ -202,7 +202,7 @@ Structural Analysis & Validation: Our team conducts in-depth structural analysis
 Methods & Tools Development: We develop and optimize custom methods and tools to streamline your engineering workflow."
             />
             <Card
-              image="/sectorimg/pt.jpg"
+              image="/rnd/flying.jpg"
               title="Flying Engineers for Embedded Systems
 "
               description=" When a critical issue arises in the field, you can’t afford to wait. Our Flying Engineers for embedded systems are a dedicated rapid-response team. We travel worldwide to provide on-site, emergency diagnostics, troubleshooting, testing, and commissioning services for critical embedded systems in transportation and electronic products.
@@ -215,7 +215,7 @@ Expert Testing & Commissioning: We ensure your systems are thoroughly tested and
 "
             />
             <Card
-              image="/sectorimg/pt.jpg"
+              image="/rnd/saftey.jpg"
               title="RAMS & Functional Safety (FuSa) Analysis for Complex Systems
 "
               description="Safety and reliability are non-negotiable. We provide comprehensive Reliability, Availability, Maintainability, and Safety (RAMS) and Functional Safety (FuSa) analysis services. Our rigorous process helps you proactively identify, reduce, and manage risks in your products and systems, ensuring they meet the highest standards of dependability.
@@ -228,14 +228,14 @@ Strategic Audits & Cost Estimation: Our expert audits and cost estimations provi
 "
             />
             <Card
-              image="/sectorimg/lg.jpeg"
+              image="/rnd/future.jpg"
               title="Innovating with Software-Defined Systems & Products"
               description="The future is flexible and adaptable. In a world where customer expectations are constantly evolving, a software-defined approach allows your products to evolve with them. We help you design and develop systems where new features and continuous updates are delivered effortlessly through software, providing a superior and lasting customer experience."
               titlenew="What We Do:"
               moredata="Systems Engineering for Software-Defined Products: We lay the foundational architecture that enables your products to be adaptable and scalable. Embedded & Offboard Software Development: Our team creates the intelligent software that powers your products, both on the device itself and in the cloud, ensuring seamless integration and functionality."
             />
             <Card
-              image="/sectorimg/lh.webp"
+              image="/rnd/desi.jpeg"
               title="Model-Based Systems Engineering (MBSE) & Design (MBD) Services
 "
               description="Complexity is no longer a challenge with our Model-Based Systems Engineering (MBSE) and Model-Based Design (MBD) expertise. We transform your development lifecycle, replacing traditional, document-heavy processes with a visual, model-based approach that guarantees consistency, quality, and full traceability from concept to completion"
@@ -245,7 +245,7 @@ Robust Systems Architecture Design: Our MBSE-driven approach ensures your system
 Efficient Embedded Software Development: We leverage MBD to create embedded software that is not only high-quality but also developed with maximum efficiency and reliability."
             />
             <Card
-              image="/sectorimg/prefab.jpg"
+              image="/rnd/hvac"
               title="End-to-End Embedded System Design & Validation Services"
               description="At the heart of every smart product, from advanced vehicles to cutting-edge aerospace systems, is a perfectly engineered embedded system. We specialize in bringing your most ambitious ideas to life, offering a seamless, end-to-end embedded system development process. From initial architecture to final validation, we design intelligent, reliable, and high-performance solutions that power the future."
               titlenew="What We Do:"
@@ -297,7 +297,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
                     </div>
                     {/* Right: Image */}
                     <div className="flex justify-center">
-                      <Image
+                      <img
                         src={sec.image}
                         alt={sec.title}
                         className="w-full h-52 md:h-64 object-cover rounded-lg"
@@ -308,7 +308,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
                   <>
                     {/* Left: Image */}
                     <div className="flex justify-center">
-                      <Image
+                      <img
                         src={sec.image}
                         alt={sec.title}
                         className="w-full h-52 md:h-92 object-cover rounded-lg"

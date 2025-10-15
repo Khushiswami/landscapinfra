@@ -61,18 +61,18 @@ interface Project {
 function Card({ title, description, icon }: CardProps) {
   return (
     <div className="bg-[#f5f7fb] shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
-      {/* Icon section */}
-      <div className="relative w-full h-40 sm:h-46 overflow-hidden flex items-center justify-center">
-        <div className="flex items-center justify-center p-4">
-          {/* ✅ Render the passed icon */}
-          <div className="text-[#2d2d5a] group-hover:text-[#4a4aff] transition-colors duration-300">
-            {icon}
-          </div>
+      {/* Image with centered icon */}
+      <div className="relative w-full h-25 sm:h-35 overflow-hidden flex items-center justify-center">
+        {/* Centered Icon */}
+        <div className="absolute flex items-center justify-center bg-white p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
+          {icon}
         </div>
+
+        {/* Hover underline effect */}
       </div>
 
-      {/* Text section */}
-      <div className="px-4 sm:px-5 pb-6 flex-1 flex flex-col mt-4">
+      {/* Text */}
+      <div className="px-4 sm:px-5 pb-6 flex-1 flex flex-col mt-0">
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
@@ -568,42 +568,42 @@ export default function Civil() {
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* Construction Drawing Solutions */}
             <Card
-              icon={<FaDraftingCompass size={40} className="text-[#4a4aff]" />}
+              icon={<FaDraftingCompass size={40} className="text-[#8080FF]" />}
               title="Construction Drawing Solutions"
               description="We produce highly detailed construction drawings guiding each phase of a project—from foundation to finishing—ensuring precision, clarity, and coordination with site requirements."
             />
 
             {/* HVAC Design Services */}
             <Card
-              icon={<FaSnowflake size={40} className="text-[#4a4aff]" />}
+              icon={<FaSnowflake size={40} className="text-[#8080FF]" />}
               title="HVAC Design Services"
               description="We deliver efficient, sustainable HVAC system designs with optimized airflow, energy use, and safety—covering load calculations, layouts, and control diagrams."
             />
 
             {/* Drainage Design Services */}
             <Card
-              icon={<FaWater size={40} className="text-[#4a4aff]" />}
+              icon={<FaWater size={40} className="text-[#8080FF]" />}
               title="Drainage Design Services"
               description="Our experts design reliable drainage and stormwater systems that prevent flooding, ensure flow efficiency, and meet environmental compliance standards."
             />
 
             {/* Construction Scheduling & Tracking */}
             <Card
-              icon={<FaProjectDiagram size={40} className="text-[#4a4aff]" />}
+              icon={<FaProjectDiagram size={40} className="text-[#8080FF]" />}
               title="Construction Scheduling & Tracking"
               description="We offer structured scheduling and tracking solutions that help teams stay on time, minimize delays, and achieve milestones efficiently across project phases."
             />
 
             {/* Civil Information Modeling (CIM) Services */}
             <Card
-              icon={<FaBuilding size={40} className="text-[#4a4aff]" />}
+              icon={<FaBuilding size={40} className="text-[#8080FF]" />}
               title="Civil Information Modeling (CIM) Services"
               description="Landsking Infra pioneers CIM integration, enabling smarter infrastructure design through data-rich 3D modeling, improved collaboration, and reduced rework."
             />
 
             {/* Geospatial Solutions */}
             <Card
-              icon={<FaMapMarkedAlt size={40} className="text-[#4a4aff]" />}
+              icon={<FaMapMarkedAlt size={40} className="text-[#8080FF]" />}
               title="Geospatial Solutions"
               description="We provide GIS mapping, drone surveying, and 3D terrain modeling to empower civil, environmental, and industrial projects with accurate spatial insights."
             />

@@ -211,7 +211,7 @@ export default function Solutionservice() {
           <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-19">
             <div className="grid md:grid-cols-2 gap-12  w-full">
               {/* Left */}
-              <div className="flex flex-col items-start justify-center text-blue-700 font-bold">
+              <div className="flex flex-col items-start justify-center text-[#000080] font-bold">
                 <h1 className="text-9xl font-bold text-[#000080]">05</h1>
                 <h2 className="mt-2  font-semibold text-[#000080] text-4xl  md:text-6xl">
                   Fabrication
@@ -267,7 +267,7 @@ export default function Solutionservice() {
         <div className="flex items-center justify-center bg-[#fff] px-9 py-12 md:px-19">
           <div className="grid md:grid-cols-2 gap-12  w-full">
             {/* Left */}
-            <div className="flex flex-col items-start justify-center text-blue-700 font-bold">
+            <div className="flex flex-col items-start justify-center text-[#000080] font-bold">
               <h1 className="text-9xl font-bold text-[#000080]">06</h1>
               <h2 className="mt-2  font-semibold text-[#000080] text-4xl  md:text-6xl">
                 Erection
@@ -311,7 +311,7 @@ export default function Solutionservice() {
         <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-19">
           <div className="grid md:grid-cols-2 gap-12  w-full">
             {/* Left */}
-            <div className="flex flex-col items-start justify-center text-blue-700 font-bold">
+            <div className="flex flex-col items-start justify-center text-[#000080] font-bold">
               <h1 className="text-9xl font-bold text-[#000080]">07</h1>
               <h2 className="mt-2  font-semibold text-[#000080] text-4xl  md:text-6xl">
                 Warranty
@@ -327,7 +327,7 @@ export default function Solutionservice() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {/* Card 1 */}
                 <div className="flex flex-col items-start">
-                  <div className="bg-blue-800 text-white p-4 rounded">
+                  <div className="bg-[#000080] text-white p-4 rounded">
                     <ShieldCheck className="w-8 h-8" />
                   </div>
                   <h3 className="font-medium mt-2 text-left text-[23px]">
@@ -341,7 +341,7 @@ export default function Solutionservice() {
 
                 {/* Card 2 */}
                 <div className="flex flex-col items-start">
-                  <div className="bg-blue-800 text-white p-4 rounded">
+                  <div className="bg-[#000080] text-white p-4 rounded">
                     <Layers className="w-8 h-8" />
                   </div>
                   <h3 className="font-medium mt-2 text-left text-[23px]">

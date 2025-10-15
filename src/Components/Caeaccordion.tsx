@@ -70,7 +70,7 @@ export default function Caeaccordion() {
             >
               <div className="flex items-center space-x-2">
                 <span className="text-blue-500 font-bold md:text-3xl text-lg">
-                  {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`}
+                  {/* {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`} */}
                 </span>
                 <span className="text-gray-900 text-3xl ">{item.title}</span>
               </div>

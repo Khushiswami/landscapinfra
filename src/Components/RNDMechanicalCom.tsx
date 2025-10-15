@@ -8,7 +8,7 @@ export default function RNDMechanicalCom() {
     {
       title: "Next-Generation Mechanical Design & Engineering Solutions",
       desc: "Transform concepts into high-performance products with advanced CAD, FEA, and thermal modeling. Our mechanical design expertise ensures precise engineering, seamless manufacturability, and optimized system performance.",
-      video: "/civil/mech.mp4",
+      video: "/video/mechenical.mp4",
     },
   ];
 

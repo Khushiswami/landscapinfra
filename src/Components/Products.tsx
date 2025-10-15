@@ -74,7 +74,7 @@ export default function Products() {
             {/* Selected button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center gap-3 px-5 py-4 text-left w-full transition bg-blue-800 font-bold"
+              className="flex items-center gap-3 px-5 py-4 text-left w-full transition bg-[#000080] font-bold"
             >
               <span className="text-sm opacity-70">
                 {String(
@@ -96,8 +96,8 @@ export default function Products() {
                     }}
                     className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                       selectedId === area.id
-                        ? "bg-blue-800 font-bold"
-                        : "hover:bg-blue-800 text-gray-300"
+                        ? "bg-[#000080] font-bold"
+                        : "hover:bg-[#000080] text-gray-300"
                     }`}
                   >
                     <span className="text-sm opacity-70">
@@ -118,8 +118,8 @@ export default function Products() {
                 onClick={() => setSelectedId(area.id)}
                 className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                   selectedId === area.id
-                    ? "bg-blue-800 font-bold"
-                    : "hover:bg-blue-800 text-gray-300"
+                    ? "bg-[#000080] font-bold"
+                    : "hover:bg-[#000080] text-gray-300"
                 }`}
               >
                 <span className="text-sm opacity-70">

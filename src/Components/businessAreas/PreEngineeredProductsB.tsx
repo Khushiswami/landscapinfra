@@ -50,8 +50,8 @@
 //               onClick={() => setSelectedId(area.id)}
 //               className={`flex items-center gap-3 px-5 py-4 text-left transition ${
 //                 selectedId === area.id
-//                   ? "bg-blue-800 font-bold"
-//                   : "hover:bg-blue-800 text-gray-300"
+//                   ? "bg-[#000080] font-bold"
+//                   : "hover:bg-[#000080] text-gray-300"
 //               }`}
 //             >
 //               <span className="text-sm opacity-70">
@@ -164,7 +164,7 @@ export default function PreEngineeredProducts({
                     className={`w-full text-left px-4 py-3 transition font-medium ${
                       selectedId === area.id
                         ? "text-blue-400 bg-blue-900"
-                        : "text-white hover:bg-blue-800"
+                        : "text-white hover:bg-[#000080]"
                     }`}
                   >
                     {area.title}
@@ -175,15 +175,15 @@ export default function PreEngineeredProducts({
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex flex-col bg-blue-900 text-white rounded-lg">
+          <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg">
             {areas.map((area, idx) => (
               <button
                 key={area.id}
                 onClick={() => setSelectedId(area.id)}
                 className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                   selectedId === area.id
-                    ? "bg-blue-800 font-bold"
-                    : "hover:bg-blue-800 text-gray-300"
+                    ? "bg-[#000080] font-bold"
+                    : "hover:bg-[#000080] text-gray-300"
                 }`}
               >
                 <span className="text-sm opacity-70">
