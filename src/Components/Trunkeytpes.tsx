@@ -96,7 +96,7 @@ export default function Trunkeytpes() {
 
           {/* Desktop Menu */}
           {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
-          <div className="hidden md:flex flex-col py-9 bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
+          <div className="hidden md:flex flex-col  bg-[#000080] text-white rounded-lg pt-[68px] pb-[68px] px-[5px]">
             {areas.map((area, idx) => (
               <button
                 key={area.id}

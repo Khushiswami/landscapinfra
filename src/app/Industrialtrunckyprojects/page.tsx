@@ -13,6 +13,8 @@ import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
+import Brand from "yes/Components/Brand";
+import Industrycall from "yes/Components/Industrycall";
 
 interface Project {
   id: number;
@@ -269,7 +271,7 @@ const Page = () => {
           </div>
         </section>
       </section>
-
+      <Industrycall />
       <Footer />
     </>
   );

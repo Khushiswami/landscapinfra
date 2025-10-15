@@ -10,7 +10,7 @@ const areas = [
     subtitle: "Comprehensive Mechanical Design & Development Solutions",
     description:
       "We provide end-to-end mechanical design and development solutions, combining innovation, precision, and engineering expertise. Our offerings include mechanical concept design, detailed CAD design and development, machine and sheet metal design, as well as advanced 3D modeling using SolidWorks, Autodesk Inventor, and CATIA. We specialize in assembly modeling, parametric 3D design, and the creation of tools, jigs, and fixtures to streamline manufacturing. Additionally, we support legacy data conversion, product lifecycle management, and weldment and frame design, ensuring every project achieves optimal performance, manufacturability, and reliability.",
-    image: "/rndimages/Mechanical/coreMachanical.webp",
+    image: "/rnd/design.jpg",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const areas = [
     subtitle: "Virtual Testing & Performance Analysis Services",
     description:
       "We deliver comprehensive simulation, analysis, and virtual testing services to ensure optimal product performance and reliability. Our expertise covers finite element analysis (FEA), fatigue, crash, impact, and structural stress analysis, along with computational fluid dynamics, thermal modeling, vibration analysis, and tolerance assessments. Through virtual prototyping, failure analysis, and load testing simulations, we help engineers predict performance, identify risks, and optimize designs before physical production, saving time and reducing costly errors.",
-    image: "/rndimages/Mechanical/specialist.jpg",
+    image: "/rnd/Virtual.jpg",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const areas = [
     subtitle: "End-to-End Industrial Design & Automation Services",
     description:
       "We provide comprehensive industrial design and engineering automation services to streamline manufacturing and optimize production processes. Our offerings include casting and vacuum casting design, process planning and automation, CNC programming, tooling and die design, and assembly line optimization. We also support engineering fabrication, production cost estimation, proposal review, bid management, engineering change orders, and tolerance analysis for machining. Leveraging advanced project management tools and industrial automation, we help businesses improve efficiency, reduce errors, and achieve high-quality, cost-effective manufacturing outcomes.",
-    image: "/rndimages/Mechanical/industrial.jpeg",
+    image: "/rnd/automation.jpg",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const areas = [
     subtitle: "Comprehensive Piping, Plant & HVAC Design",
     description:
       "We deliver end-to-end plant, piping, and HVAC design services, ensuring efficient and compliant facility layouts. Our expertise includes plant design engineering, modular plant services, and piping design and drafting. We also provide HVAC ducting, plumbing, firefighting, and fire protection engineering solutions. With precise design and coordination, we help optimize operations and enhance system reliability.",
-    image: "/rndimages/Mechanical/plant.jpeg",
+    image: "/rnd/hvac.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const areas = [
     subtitle: "Tailored Design Solutions for Specialized Sectors",
     description:
       "We provide specialized design services for diverse sectors, including tower engineering, ship deck drafting, and consumer electronics product design. Our solutions combine precision, compliance, and innovative approaches to meet unique industry requirements. Deliver high-quality, optimized designs that enhance performance and functionality across specialized applications.",
-    image: "/rndimages/Mechanical/specialist.jpg",
+    image: "/rnd/tailor.jpg",
   },
   {
     id: 6,
@@ -150,14 +150,14 @@ export default function Rndexplore() {
         rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
       "
             >
-              <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
+              <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-left md:text-left">
                 {selectedArea.subtitle}
               </h3>
-              <p className="text-gray-700 mb-5 text-center md:text-left">
+              <p className="text-gray-700 mb-5 text-left md:text-left">
                 {selectedArea.description}
               </p>
-              <div className="flex justify-center md:justify-start">
-                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
+              <div className="flex justify-start md:justify-start">
+                <button className="flex  items:left md:items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
                     <ArrowRight className="w-4 h-4 text-white" />

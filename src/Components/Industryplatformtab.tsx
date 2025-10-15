@@ -1,6 +1,7 @@
 // components/AlternatingSections.tsx
 import Image from "next/image";
 import { useState } from "react";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi"; // <- import chevrons
 
 interface Section {
   id: number;
@@ -53,6 +54,28 @@ const sections: Section[] = [
   },
 ];
 
+// export default function Industryplatformtab() {
+//   const [currentSlides, setCurrentSlides] = useState<number[]>(
+//     sections.map(() => 0)
+//   );
+
+//   const handleNext = (index: number) => {
+//     setCurrentSlides((prev) =>
+//       prev.map((slide, i) =>
+//         i === index ? (slide + 1) % sections[i].images.length : slide
+//       )
+//     );
+//   };
+
+//   const handlePrev = (index: number) => {
+//     setCurrentSlides((prev) =>
+//       prev.map((slide, i) =>
+//         i === index
+//           ? (slide - 1 + sections[i].images.length) % sections[i].images.length
+//           : slide
+//       )
+//     );
+//   };
 export default function Industryplatformtab() {
   const [currentSlides, setCurrentSlides] = useState<number[]>(
     sections.map(() => 0)
@@ -78,32 +101,22 @@ export default function Industryplatformtab() {
 
   return (
     <>
-      <div className=" mx-5 md:mx-13 ">
+      <div className="mx-5 md:mx-13">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
           Leading with Expertise: Our Turnkey Industrial Model
         </h2>
         <p className="text-gray-700 mb-4 leading-relaxed">
           At LandsKing Infrarem Pvt. Ltd., we view every new structure as an
-          investment in our clients future success. Our core strategy goes
-          beyond only construction; it is about fusing impactful innovation with
-          conventional execution, placing our clients unique needs at the
-          forefront of every project. We operate on a foundation of
-          uncompromising quality, advanced engineering standards, and complete
-          operational transparency, solidifying our reputation as a highly
-          reliable partner.
-        </p>
-        <p className="text-gray-700 mb-4 leading-relaxed">
-          Our commitment is to be the sector leader by offering integrated,
-          comprehensive solutions where accountability is guaranteed. We provide
-          specialized turnkey services covering the full spectrum of heavy
-          industry, including Minerals & Metals, Power Generation, Bulk Material
-          Handling, Green Energy, and specialized Petrochemical and Chemical
-          Plants.
+          investment in our clients’ future success. Our strategy goes beyond
+          construction — it’s about combining impactful innovation with solid
+          execution, placing our clients’ unique needs at the forefront.
         </p>
       </div>
-      <div className="flex flex-col  gap-7 md:gap-16  mx-5 md:mx-13">
+
+      <div className="flex flex-col gap-7 md:gap-16 mx-5 md:mx-13">
         {sections.map((section, idx) => {
           const isEven = idx % 2 === 0;
+
           return (
             <div
               key={section.id}
@@ -111,35 +124,43 @@ export default function Industryplatformtab() {
                 isEven ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >
-              {/* Slider */}
-              <div className="relative w-full md:w-1/2">
-                <Image
-                  src={section.images[currentSlides[idx]]}
-                  alt={section.title}
-                  width={600}
-                  height={400}
-                  className=" shadow-lg"
-                />
+              {/* Image Slider with Fade Animation */}
+              <div className="relative w-full md:w-1/2 overflow-hidden rounded-lg shadow-lg">
+                <div className="relative h-[300px] md:h-[400px]">
+                  {section.images.map((img, i) => (
+                    <Image
+                      key={i}
+                      src={img}
+                      alt={section.title}
+                      fill
+                      className={`object-cover transition-opacity duration-700 ease-in-out ${
+                        i === currentSlides[idx] ? "opacity-100" : "opacity-0"
+                      }`}
+                    />
+                  ))}
+                </div>
+
+                {/* Arrows */}
                 <button
                   onClick={() => handlePrev(idx)}
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white "
                 >
-                  &#8592;
+                  <HiChevronLeft size={34} />
                 </button>
                 <button
                   onClick={() => handleNext(idx)}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white "
                 >
-                  &#8594;
+                  <HiChevronRight size={34} />
                 </button>
               </div>
 
-              {/* Content */}
+              {/* Text Content */}
               <div className="w-full md:w-1/2">
                 <h2 className="text-xl md:text-3xl font-bold mb-4 text-[#000080]">
                   {section.title}
                 </h2>
-                <p className="text-black  text-base md:text-medium ">
+                <p className="text-black text-base md:text-medium">
                   {section.description}
                 </p>
               </div>

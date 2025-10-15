@@ -14,6 +14,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import Plant from "yes/Components/Plant";
+import Planttabs from "yes/Components/Planttabs";
 
 interface Project {
   id: number;
@@ -100,7 +101,6 @@ const Page = () => {
     <>
       <Industryheader />
       <Plant />
-
       {/* Intro Section */}
       <section className="bg-white py-12 px-4 md:px-15">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -144,10 +144,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-
-      <Industryplatformtab />
-
-      {/* Services Section */}
+      <Planttabs /> {/* Services Section */}
       <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
@@ -262,7 +259,6 @@ const Page = () => {
           </div>
         </section>
       </section>
-
       <Footer />
     </>
   );
