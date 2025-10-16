@@ -3,21 +3,24 @@
 @import "swiper/css/effect-coverflow";
 @import "swiper/css/pagination";
 
-:root {
+/* :root {
   color-scheme: light;
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
 
-  /* font-family: "Poppins", Arial, sans-serif; */
+  font-family: "Nunito Sans", Arial, sans-serif;
 }
-/* h1,
-h2 {
-  font-family: "Poppins", Arial, sans-serif;
-  
-} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", Arial, sans-serif;
+}
 .swiper-wrapper {
   margin-bottom: 52px;
 }

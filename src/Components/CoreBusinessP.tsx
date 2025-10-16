@@ -7,7 +7,7 @@ import { useRef, useEffect, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import type { NavigationOptions } from "swiper/types";
 
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -36,8 +36,12 @@ export default function CoreBusiness() {
     const navigation = swiper.params.navigation as NavigationOptions;
 
     const isMobile = window.innerWidth < 768;
-    navigation.prevEl = isMobile ? prevMobileRef.current : prevDesktopRef.current;
-    navigation.nextEl = isMobile ? nextMobileRef.current : nextDesktopRef.current;
+    navigation.prevEl = isMobile
+      ? prevMobileRef.current
+      : prevDesktopRef.current;
+    navigation.nextEl = isMobile
+      ? nextMobileRef.current
+      : nextDesktopRef.current;
 
     swiper.navigation.destroy();
     swiper.navigation.init();
@@ -45,8 +49,12 @@ export default function CoreBusiness() {
 
     const handleResize = () => {
       const mobile = window.innerWidth < 768;
-      navigation.prevEl = mobile ? prevMobileRef.current : prevDesktopRef.current;
-      navigation.nextEl = mobile ? nextMobileRef.current : nextDesktopRef.current;
+      navigation.prevEl = mobile
+        ? prevMobileRef.current
+        : prevDesktopRef.current;
+      navigation.nextEl = mobile
+        ? nextMobileRef.current
+        : nextDesktopRef.current;
 
       swiper.navigation.destroy();
       swiper.navigation.init();
@@ -58,7 +66,7 @@ export default function CoreBusiness() {
   }, []);
 
   return (
-    <section className="py-4 md:py-16 bg-white md:px-10">
+    <section className="py-4 md:py-16 bg-white md:px-15">
       <h2 className="text-2xl font-bold mt-5 text-center text-[#000080] mb-2 md:mb-12 md:text-3xl">
         Core Business
       </h2>
@@ -109,8 +117,15 @@ export default function CoreBusiness() {
                   </h3>
 
                   {/* 🔵 Blue circular background arrow */}
-                  <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
+                  {/* <div className=" hidden bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
                     <ArrowRight className="w-4 h-4 text-white" />
+                  </div> */}
+
+                  <div className=" hidden md:block bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#1a1aff] w-8 h-8">
+                    {/* Default icon */}
+                    <ArrowUpRight className="w-4 h-4 text-white group-hover:hidden" />
+                    {/* Hover icon */}
+                    <ChevronRight className="w-4 h-4 text-white hidden group-hover:block" />
                   </div>
                 </div>
               </div>

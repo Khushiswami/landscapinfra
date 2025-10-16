@@ -44,7 +44,7 @@ export default function Pebheader() {
   };
 
   const navLinks: MenuItem[] = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/preEngineeredBuildings" },
     { name: "Solutions", href: "/system" },
     {
       name: "Products",
@@ -149,11 +149,11 @@ export default function Pebheader() {
         }`}
       >
         <div
-          className={`max-w-[1400px] mx-auto flex items-center justify-between px-6 transition-all duration-300 ${
+          className={` mx-auto flex items-center justify-between px-6 transition-all duration-300 md:mx-22 ${
             scrolled ? "py-4" : "md:py-6"
           }`}
         >
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/preEngineeredBuildings" className="flex-shrink-0">
             <Image
               src={scrolled ? "/finallogo.png" : "/whitelogo.png"}
               alt="Logo"
@@ -168,50 +168,170 @@ export default function Pebheader() {
 
           {/* Desktop Nav */}
           <nav className="flex items-center space-x-8">
- {navLinks.map((link) => (
-            <div key={link.name} className="relative group">
-              <Link
-                href={link.href || "#"}
-                className={`font-semibold text-lg ${
-                  scrolled ? "text-black" : "text-white"
-                } hover:text-[#000080]`}
-              >
-                {link.name}
-              </Link>
+            {navLinks.map((link) => (
+              <div key={link.name} className="relative group">
+                <Link
+                  href={link.href || "#"}
+                  className={`font-semibold text-lg ${
+                    scrolled ? "text-black" : "text-white"
+                  } hover:text-[#000080]`}
+                >
+                  {link.name}
+                </Link>
 
-              {"subItems" in link && link.subItems?.length ? (
-                <div
-                  className={`absolute left-0 mt-2 w-56 rounded-b-3xl opacity-0 invisible
+                {"subItems" in link && link.subItems?.length ? (
+                  <div
+                    className={`absolute left-0 mt-2 w-56 rounded-b-3xl opacity-0 invisible
                     group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out
                     backdrop-blur-md z-50 ${
-                      scrolled ? "bg-white" : "bg-white/20"
+                      scrolled ? "bg-white" : "bg-white"
                     }`}
+                  >
+                    <ul className="py-2">
+                      {link.name === "Products"
+                        ? (link as ProductMenu).subItems?.map((item) => (
+                            <li key={item.title} className="relative group/sub">
+                              <Link
+                                href={item.href}
+                                className="px-4 py-2 block hover:text-[#000080] text-black"
+                              >
+                                {item.title}
+                              </Link>
+                              {item.subMenu && (
+                                <div className="absolute left-full top-0 ml-2 w-64 bg-white rounded-b-3xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all">
+                                  <ul className="py-2">
+                                    {item.subMenu.map((sub) => (
+                                      <li key={sub.name}>
+                                        <Link
+                                          href={sub.href}
+                                          className="block px-4 py-2 hover:text-[#000080] text-black"
+                                        >
+                                          {sub.name}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+                            </li>
+                          ))
+                        : (link as NormalMenu).subItems?.map((item) => (
+                            <li key={item.name}>
+                              <Link
+                                href={item.href}
+                                className="block px-4 py-2 hover:text-[#000080] text-black"
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
+                    </ul>
+                  </div>
+                ) : null}
+              </div>
+            ))}{" "}
+          </nav>
+        </div>
+      </div>
+
+      {/* Mobile Header (static, white, shadow) */}
+      {/* Mobile Header (static, white, shadow) */}
+      <div className="lg:hidden fixed top-0 z-50 w-full bg-white shadow-md px-4 py-1 flex items-center justify-between">
+        <Link href="/" className="flex-shrink-0">
+          <Image src="/finallogo.png" alt="Logo" width={150} height={50} />
+        </Link>
+        <button onClick={toggleMobileMenu} className="text-3xl text-black">
+          {mobileMenuOpen ? <HiX /> : <HiMenu />}
+        </button>
+      </div>
+
+      {/* Mobile Sliding Menu */}
+      <div
+        className={`fixed top-0 left-0 h-full w-full z-40 transform transition-transform duration-300 ${
+          mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        } bg-[#000080] text-white shadow-lg hover:text-[#8080FF]`}
+      >
+        <ul className="mt-20 px-4 space-y-4">
+          {navLinks.map((link) => (
+            <li key={link.name} className="flex flex-col">
+              <div className="flex justify-between items-center">
+                <Link
+                  href={link.href || "#"}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="font-semibold text-lg hover:text-[#8080FF]"
                 >
-                  <ul className="py-2">
+                  {link.name}
+                </Link>
+
+                {["Products", "Sectors"].includes(link.name) && (
+                  <button
+                    onClick={() =>
+                      setOpenMobileSubMenu(
+                        openMobileSubMenu === link.name ? null : link.name
+                      )
+                    }
+                    className="text-white"
+                  >
+                    {openMobileSubMenu === link.name ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M14.77 12.79a.75.75 0 01-1.06-.02L10 9.06 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.25a.75.75 0 011.08 0l4.25 4.25a.75.75 0 01.02 1.04z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    )}
+                  </button>
+                )}
+              </div>
+
+              {/* Submenu */}
+              {"subItems" in link &&
+                openMobileSubMenu === link.name &&
+                link.subItems && (
+                  <ul className="ml-4 mt-2 space-y-2">
                     {link.name === "Products"
                       ? (link as ProductMenu).subItems?.map((item) => (
-                          <li key={item.title} className="relative group/sub">
+                          <li key={item.title} className="flex flex-col">
                             <Link
                               href={item.href}
-                              className="px-4 py-2 block hover:text-[#000080] text-black"
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="font-medium text-white hover:text-[#8080FF]"
                             >
                               {item.title}
                             </Link>
                             {item.subMenu && (
-                              <div className="absolute left-full top-0 ml-2 w-64 bg-white rounded-b-3xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all">
-                                <ul className="py-2">
-                                  {item.subMenu.map((sub) => (
-                                    <li key={sub.name}>
-                                      <Link
-                                        href={sub.href}
-                                        className="block px-4 py-2 hover:text-[#000080] text-black"
-                                      >
-                                        {sub.name}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
+                              <ul className="ml-4 mt-1 space-y-1">
+                                {item.subMenu.map((sub) => (
+                                  <li key={sub.name}>
+                                    <Link
+                                      href={sub.href}
+                                      onClick={() => setMobileMenuOpen(false)}
+                                      className="text-sm text-white hover:text-[#8080FF]"
+                                    >
+                                      {sub.name}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
                             )}
                           </li>
                         ))
@@ -219,139 +339,19 @@ export default function Pebheader() {
                           <li key={item.name}>
                             <Link
                               href={item.href}
-                              className="block px-4 py-2 hover:text-[#000080] text-black"
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="text-white"
                             >
                               {item.name}
                             </Link>
                           </li>
                         ))}
                   </ul>
-                </div>
-              ) : null}
-            </div>
-          ))}          </nav>
-        </div>
+                )}
+            </li>
+          ))}
+        </ul>
       </div>
-
-      {/* Mobile Header (static, white, shadow) */}
-      {/* Mobile Header (static, white, shadow) */}
-<div className="lg:hidden fixed top-0 z-50 w-full bg-white shadow-md px-4 py-1 flex items-center justify-between">
-  <Link href="/" className="flex-shrink-0">
-    <Image src="/finallogo.png" alt="Logo" width={150} height={50} />
-  </Link>
-  <button onClick={toggleMobileMenu} className="text-3xl text-black">
-    {mobileMenuOpen ? <HiX /> : <HiMenu />}
-  </button>
-</div>
-
-{/* Mobile Sliding Menu */}
-<div
-  className={`fixed top-0 left-0 h-full w-full z-40 transform transition-transform duration-300 ${
-    mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-  } bg-[#000080] text-white shadow-lg hover:text-[#8080FF]`}
->
-  <ul className="mt-20 px-4 space-y-4">
-    {navLinks.map((link) => (
-      <li key={link.name} className="flex flex-col">
-        <div className="flex justify-between items-center">
-          <Link
-            href={link.href || "#"}
-            onClick={() => setMobileMenuOpen(false)}
-            className="font-semibold text-lg hover:text-[#8080FF]"
-          >
-            {link.name}
-          </Link>
-
-          {["Products", "Sectors"].includes(link.name) && (
-            <button
-              onClick={() =>
-                setOpenMobileSubMenu(
-                  openMobileSubMenu === link.name ? null : link.name
-                )
-              }
-              className="text-white"
-            >
-              {openMobileSubMenu === link.name ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.27a.75.75 0 01-.02-1.06z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M14.77 12.79a.75.75 0 01-1.06-.02L10 9.06 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.25a.75.75 0 011.08 0l4.25 4.25a.75.75 0 01.02 1.04z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              )}
-            </button>
-          )}
-        </div>
-
-        {/* Submenu */}
-        {"subItems" in link &&
-          openMobileSubMenu === link.name &&
-          link.subItems && (
-            <ul className="ml-4 mt-2 space-y-2">
-              {link.name === "Products"
-                ? (link as ProductMenu).subItems?.map((item) => (
-                    <li key={item.title} className="flex flex-col">
-                      <Link
-                        href={item.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="font-medium text-white hover:text-[#8080FF]"
-                      >
-                        {item.title}
-                      </Link>
-                      {item.subMenu && (
-                        <ul className="ml-4 mt-1 space-y-1">
-                          {item.subMenu.map((sub) => (
-                            <li key={sub.name}>
-                              <Link
-                                href={sub.href}
-                                onClick={() => setMobileMenuOpen(false)}
-                                className="text-sm text-white hover:text-[#8080FF]"
-                              >
-                                {sub.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))
-                : (link as NormalMenu).subItems?.map((item) => (
-                    <li key={item.name}>
-                      <Link
-                        href={item.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="text-white"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-            </ul>
-          )}
-      </li>
-    ))}
-  </ul>
-</div>
-
     </header>
   );
 }

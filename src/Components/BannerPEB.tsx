@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -34,7 +33,6 @@ export default function BannerPEB() {
       video: "/video.mp4",
       link: "/projectmanagementconsultancy",
     },
-    
   ];
 
   const [active, setActive] = useState(0);
@@ -63,7 +61,7 @@ export default function BannerPEB() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Slide Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full  mx-auto px-6  text-left md:px-16">
+      <div className="relative z-10 flex flex-col justify-center h-full  mx-auto px-6  text-left md:px-26">
         <AnimatePresence mode="wait">
           <motion.div
             key={slides[active].title}
@@ -92,7 +90,7 @@ export default function BannerPEB() {
 
       {/* Bottom Navigation */}
       <div className="absolute bottom-0 w-full ">
-        <div className="max-w-7xl mx-auto flex justify-center sm:justify-start gap-6 px-6 py-4 overflow-x-auto">
+        <div className=" mx-auto flex justify-start sm:justify-start gap-6 px-6 py-4 overflow-x-auto md:mx-19">
           {/* Desktop Tabs */}
           <div className="hidden sm:flex gap-6">
             {slides.map((s, i) => (

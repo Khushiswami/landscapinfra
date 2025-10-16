@@ -1,4 +1,3 @@
-
 "use client";
 import { useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa";
@@ -19,7 +18,7 @@ export default function AboutP() {
     <section className="w-full min-h-[500px] flex flex-col md:flex-row">
       {/* Left Column (Text) */}
       <div
-        className="flex-1 flex items-center justify-center p-9 md:p-16 bg-cover bg-center relative"
+        className="flex-1 flex items-center justify-center p-9 md:p-18 bg-cover bg-center relative"
         style={{
           backgroundImage: `linear-gradient(0deg, rgba(33,71,95,0.90) 0%, rgba(22,46,68,.97) 100%), url('/aboutright.jpeg')`,
         }}
@@ -31,28 +30,27 @@ export default function AboutP() {
             Lands King Infra works with Clients in diverse industries around the
             world to design, construct and maintain their capital projects.
           </h1> */}
-<h1
-  className="text-xl md:text-[25px] font-semibold"
-  style={{
-    fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
-  }}
->
-  &quot;Lands king Infra works with Clients in diverse industries around the world 
-  to design, construct and maintain their capital projects.&quot;
-</h1>
-
+          <h1
+            className="text-xl md:text-[25px] font-semibold"
+            style={{
+              fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
+            }}
+          >
+            &quot;Lands king Infra works with Clients in diverse industries
+            around the world to design, construct and maintain their capital
+            projects.&quot;
+          </h1>
 
           <p
-  className="text-[15px] md:text-[16px] font-[500px] text-white"
-  style={{
-    fontFamily: "'DM Sans', Arial, sans-serif",
-  }}
->
-  Landsking Infra is one of India’s fastest growing companies as an
-  Industrial Solution Provider. It works on engineering, procurement,
-  construction (EPC) and maintenance companies.
-</p>
-
+            className="text-[15px] md:text-[16px] font-[500px] text-white"
+            style={{
+              fontFamily: "'DM Sans', Arial, sans-serif",
+            }}
+          >
+            Landsking Infra is one of India’s fastest growing companies as an
+            Industrial Solution Provider. It works on engineering, procurement,
+            construction (EPC) and maintenance companies.
+          </p>
         </div>
       </div>
 

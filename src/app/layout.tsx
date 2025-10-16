@@ -1,12 +1,11 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 
-const poppins = Poppins({
+const nunito = Nunito_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-nunito",
 });
 
 export const metadata: Metadata = {
@@ -23,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body className="font-poppins">{children}</body>
+    <html lang="en" className={nunito.variable}>
+      <body className="font-nunito">{children}</body>
     </html>
   );
 }

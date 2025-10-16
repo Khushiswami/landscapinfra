@@ -87,7 +87,7 @@ export default function Banner() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Slide Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full mx-auto px-6 sm:px-16 text-left ">
+      <div className="relative z-10 flex flex-col justify-center h-full mx-auto px-6 sm:px-20 text-left ">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSlide.title}

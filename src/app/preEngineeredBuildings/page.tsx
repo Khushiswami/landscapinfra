@@ -13,6 +13,8 @@ import BannerPEB from "../../Components/BannerPEB";
 import Pebsolution from "yes/Components/Pebsolution";
 import Pebinsight from "yes/Components/Pebinsight";
 import Renewableslider from "yes/Components/Renewable/Renewableslider";
+import Pebslider from "yes/Components/Pebslider";
+import Pebfooter from "yes/Components/Pebfooter";
 
 // import ClientP from "../Components/ClientP";
 
@@ -30,12 +32,12 @@ export default function PreEngineeredBuildings() {
       <Servicesone />
       <PlatformP />
       <Pebsolution />
-      <Renewableslider />
+      <Pebslider />
       <Pebinsight />
       <MediaP />
       <PebBrandP />
       <ContactSection />
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

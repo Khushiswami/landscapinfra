@@ -88,7 +88,7 @@ export default function Insights() {
   }, []);
 
   return (
-    <div className="relative px-6 md:px-13 pb-6  md:py-10">
+    <div className="relative px-6 md:px-25 pb-6  md:py-10">
       {/* Heading */}
       <h1 className="text-center text-3xl font-bold my-10 text-[#000080]">
         Our Latest Insights
@@ -133,7 +133,7 @@ export default function Insights() {
               </div>
 
               {/* Desktop version with hover */}
-              <div className="hidden sm:block h-[470px]">
+              <div className="hidden sm:block h-[590px]">
                 <div className="absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#000080] text-[#fff]">
                   {card.tag}
                 </div>

@@ -49,12 +49,12 @@ export default function AboutPebP() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16 px-4 md:px-27 overflow-hidden">
+    <section className="relative py-16 px-4 md:px-10 overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10">
+      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:mx-14 ">
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
