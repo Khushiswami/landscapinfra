@@ -39,7 +39,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className=" mx-auto mt-10 p-4 md:px-15">
+    <div className=" mx-auto mt-10 p-4 md:px-29">
       <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2>
       <h1 className="text-2xl font-semibold mb-6 text-[#000080] md:text-3xl">
         Your Solar EPC Partner Landsking Infra{" "}
@@ -47,14 +47,8 @@ export default function Accordion() {
       <p className="text-lg  mb-6 md:text-xl">
         Solar EPC (Engineering, Procurement & Construction) is the ultimate
         turnkey solution for your solar energy needs. When you choose a single
-        company to manage every stage—from initial design to final
+        company to manage every stage from initial design to final
         commissioning—you guarantee efficiency, cost control, and reliability.
-        This is why the Solar EPC model is the preferred choice for businesses
-        in India. At Manufyn, as a leading Solar EPC contractor, we handle all
-        phases under one roof. This integrated approach minimizes delays,
-        streamlines processes, and delivers a solar system perfectly tailored to
-        your specific energy needs. Trust us as your complete Solar EPC company
-        for a seamless experience.
       </p>
       {/* <h1 className="text-3xl font-semibold mb-6">
         How we approach the triple bottom line
@@ -68,7 +62,7 @@ export default function Accordion() {
             >
               <div className="flex items-center space-x-2">
                 <span className="text-blue-500 font-bold text-3xl">
-                  {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`}
+                  {/* {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`} */}
                 </span>
                 <span className="text-gray-900 text-3xl ">{item.title}</span>
               </div>

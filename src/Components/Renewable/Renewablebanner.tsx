@@ -10,32 +10,26 @@ export default function Renewablebanner() {
 
   const slides = [
     {
-      title: "Rooftop Solar",
+      title: "Residential Solar",
       desc: "Turn your rooftop into a clean energy source and cut electricity costs.",
       video: "/video.mp4",
       link: "/contact",
     },
     {
-      title: "Ground-Mounted Solar",
+      title: "Commercial Solar",
       desc: "Harness open land to generate large-scale, cost-effective solar power.",
       video: "/video.mp4",
       link: "/contact",
     },
     {
-      title: "On-Grid & Hybrid Solar",
+      title: "Industrial Solar",
       desc: "Blend grid power with solar for reliable, sustainable energy solutions.",
       video: "/video.mp4",
       link: "/contact",
     },
     {
-      title: "Net Metering & Open Access",
-      desc: "Export surplus solar power and save through net metering benefits.",
-      video: "/video.mp4",
-      link: "/contact",
-    },
-    {
-      title: "Battery-Integrated Solar",
-      desc: "Store excess solar energy for round-the-clock power and resilience.",
+      title: "Infrastructure & Maintenance",
+      desc: "Blend grid power with solar for reliable, sustainable energy solutions.",
       video: "/video.mp4",
       link: "/contact",
     },
@@ -67,7 +61,7 @@ export default function Renewablebanner() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Slide Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full max-w-7xl mx-auto px-6 text-left">
+      <div className="relative z-10 flex flex-col justify-center h-full  mx-auto px-6 text-left md:mx-22">
         <AnimatePresence mode="wait">
           <motion.div
             key={slides[active].title}
@@ -76,18 +70,24 @@ export default function Renewablebanner() {
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.7 }}
           >
-            <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-snug">
+            <h1 className="text-3xl  max-w-5xl md:text-6xl font-bold text-white mb-6 leading-snug">
+              Powering Industries with Precision Solar EPC Excellence{" "}
+            </h1>
+            <h1 className=" hidden text-3xl md:text-6xl font-bold text-white mb-6 leading-snug">
               {slides[active].title}
             </h1>
-            <p className="text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+            <p className=" hidden text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
               {slides[active].desc}
             </p>
-
+            <p className="  text-base md:text-xl text-gray-200 mb-8 max-w-4xl leading-relaxed">
+              Your trusted EPC partner for high-performance, utility-scale, and
+              large industrial solar power projects.
+            </p>
             <button
               onClick={() => router.push(slides[active].link)}
               className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
             >
-              <span>More</span>
+              <span>Get a Free Solar Audit Today!</span>
               <IoIosArrowForward className="w-5 h-5" />
             </button>
           </motion.div>
@@ -95,15 +95,15 @@ export default function Renewablebanner() {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="absolute bottom-0 w-full ">
-        <div className="max-w-7xl mx-auto flex justify-center sm:justify-start gap-6 px-6 py-4 overflow-x-auto">
+      <div className="absolute bottom-0 w-full">
+        <div className="px-6 py-4 w-full">
           {/* Desktop Tabs */}
-          <div className="hidden sm:flex gap-6">
+          <div className="hidden sm:flex w-full">
             {slides.map((s, i) => (
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`pb-1 text-sm sm:text-base font-medium border-b-2 transition ${
+                className={`flex-1 text-center pb-1 text-sm sm:text-base font-medium border-b-2 transition ${
                   active === i
                     ? "text-[#8080FF] border-[#8080FF]"
                     : "text-gray-300 border-transparent hover:text-white"

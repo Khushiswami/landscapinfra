@@ -10,44 +10,39 @@ import "swiper/css/navigation";
 interface Project {
   id: number;
   title: string;
-  description: string;
+
   image: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Rooftop Solar for Manufacturing",
-    description:
-      "Transform your idle roof space into a high-performance asset. Slash your operational costs and reduce reliance on the grid with a custom rooftop solar system built for your manufacturing facility.",
+    title: "PETROL PUMPS",
     image: "/realstate/three.webp",
   },
   {
     id: 2,
-    title: "Ground-Mounted Solar for Industrial Estates",
-    description:
-      "Get uninterrupted, large-scale power with our ground-mounted solar solutions, designed for the vast energy needs of industrial estates.",
+    title: "INSTITUTIONAL",
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
-    title: "On-Grid & Hybrid Solar Installations",
-    description:
-      "Choose a solar system that fits your power needs and business goals. Our on-grid systems sync with the utility grid, allowing you to benefit from net metering. For ultimate power reliability, our hybrid installations combine grid power with battery backup, ensuring your operations never stop, even during a blackout. We make it easy to transition to a more stable and cost-effective energy supply.",
+    title: "INDUSTRIAL",
     image: "/realstate/one.webp",
   },
   {
     id: 4,
-    title: "Net Metering & Open Access Support",
-    description:
-      "Navigating the complexities of solar regulations is our job. We provide expert support with net metering and open access policies, handling all the paperwork, government approvals, and utility company coordination to ensure a smooth and hassle-free setup.",
+    title: "RURAL ELECTRIFICATION",
     image: "/realstate/fourS.webp",
   },
   {
     id: 5,
-    title: "Battery-Integrated Solar for Power Reliability",
-    description:
-      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    title: "Turnkey Solar PV Solutions",
+    image: "/realstate/fiveS.webp",
+  },
+  {
+    id: 5,
+    title: "Solar Solutions for Essential Needs",
     image: "/realstate/fiveS.webp",
   },
 ];
@@ -61,11 +56,11 @@ export default function RenewableSector() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:px-28 pt-1 md:pt-16 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
-            Services
+            Features We Have Which Enhance Us{" "}
           </h2>
 
           <Swiper
@@ -129,15 +124,9 @@ export default function RenewableSector() {
                             md:opacity-0 md:group-hover:opacity-100 md:cursor-default
                           `}
                         >
-                          <h3 className="text-sm md:text-sm font-semibold mb-2">
+                          <h3 className="text-sm md:text-xl font-semibold mb-2">
                             {project.title}
                           </h3>
-                          <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
-                            {project.description}
-                          </p>
-                          <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
-                            Know More
-                          </button>
                         </div>
 
                         {/* Mobile arrows */}

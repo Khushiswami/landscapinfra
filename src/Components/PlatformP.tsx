@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { HiChevronRight } from "react-icons/hi";
 
 const TABS = [
   {
@@ -63,11 +64,11 @@ export default function PlatformP() {
   }, [active]);
 
   return (
-    <section className="w-full">
+    <section className="w-full md:px-28">
       {/* Top heading + subheading */}
-      <div className="mx-auto px-4 pt-12 text-center">
+      <div className="mx-auto px-4 pt-12 text-center ">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
-          Comprehensive Infrastructure Solutions
+          Pre-Engineered Solutions
         </h1>
         <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
           From design and engineering to execution and management, we deliver
@@ -77,7 +78,7 @@ export default function PlatformP() {
       </div>
 
       {/* Tabs */}
-      <div className="mt-8">
+      <div className="mt-8 ">
         <div className="mx-auto px-4">
           <div className="relative">
             <div className="flex md:justify-center gap-4 md:gap-10 overflow-x-auto md:overflow-x-visible relative">
@@ -112,10 +113,10 @@ export default function PlatformP() {
       </div>
 
       {/* Content Card */}
-      <div className=" mx-auto px-4 md:mx-17">
+      <div className="  mx-auto px-4 md:mx-17">
         <div className="mt-8 flex justify-center">
-          <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full  ">
-            <div className="relative w-full h-[340px] md:h-[460px]">
+          <div className="relative rounded-[5px] overflow-hidden  w-full  ">
+            <div className="relative  h-[340px] md:h-[460px]">
               <Image
                 src={TABS[active].img}
                 alt={TABS[active].title}
@@ -125,7 +126,7 @@ export default function PlatformP() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent rounded-[5px]" />
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full p-6 md:p-10">
+                <div className=" w-full md:max-w-4xl p-6 md:p-18">
                   <div className="text-white text-left md:text-left mx-auto">
                     <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
                       {TABS[active].headline}
@@ -134,10 +135,11 @@ export default function PlatformP() {
                       {TABS[active].body}
                     </p>
                     <button
-                      className="mt-6 border border-[#fff] rounded-lg text-[13px] hover:bg-[#272727] text-white font-semibold px-4 py-2"
+                      className="mt-6 border border-[#fff] text-white rounded-lg text-[13px] hover:bg-[#fff] hover:text-[#000080] font-semibold px-4 py-2 flex items-center gap-2"
                       onClick={() => router.push(TABS[active].url)}
                     >
                       {TABS[active].buttonText}
+                      <HiChevronRight className="w-4 h-4" />
                     </button>
                   </div>
                 </div>

@@ -131,7 +131,7 @@ export default function Rndexplore() {
                 }`}
               >
                 <span className="text-sm opacity-70">
-                  {String(idx + 1).padStart(2, "0")}
+                  {/* {String(idx + 1).padStart(2, "0")} */}
                 </span>
                 <span>{area.title}</span>
               </button>
@@ -158,7 +158,7 @@ export default function Rndexplore() {
               </p>
               <div className="flex justify-start md:justify-start">
                 <button className="flex  items:left md:items-center gap-2 text-[#000080] font-semibold hover:underline">
-                  More{" "}
+                  Contact{" "}
                   <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
                     <ArrowRight className="w-4 h-4 text-white" />
                   </div>

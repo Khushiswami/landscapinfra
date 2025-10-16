@@ -5,42 +5,50 @@ import { useState } from "react";
 const areas = [
   {
     id: 1,
-    title: "Site Assessment & Feasibility Study",
-    subtitle: "Site Assessment & Feasibility Study",
+    title: "Feasibility & Assessment (E-Phase)",
+    subtitle: "Feasibility & Assessment (E-Phase)",
     description:
-      " Every project begins with a detailed site survey to evaluate solar potential, land or rooftop conditions, and shading impact. We review electricity usage patterns, structural stability, and compliance requirements, including permits and DISCOM approvals. This step lays the technical and regulatory foundation for a sustainable and profitable solar  power project",
+      "In-depth site survey, detailed energy consumption analysis, financial modeling (ROI, PBP), and regulatory compliance check",
     image: "/green.png",
   },
   {
     id: 2,
-    title: "System Design & Financial Modelling",
-    subtitle: "System Design & Financial Modelling",
+    title: "Design & Engineering (E-Phase)",
+    subtitle: "Design & Engineering (E-Phase)",
     description:
-      "Our engineering team prepares optimized layouts for electrical, structural, and mechanical integration. Using advanced simulation tools, we forecast energy generation, design system capacity, and calculate ROI. We provide clear payback timelines, ensuring your project is both technically robust and financially rewarding.",
+      "Precision electrical, civil, and structural design. Single-line diagrams, plant layout, and structural certification to meet all industrial standards.",
     image: "/green.png",
   },
   {
     id: 3,
-    title: "Procurement & Logistics",
-    subtitle: "Procurement & Logistics",
+    title: "Procurement & Logistics (P-Phase)",
+    subtitle: "Procurement & Logistics (P-Phase)",
     description:
-      "As one of the reliable solar EPC companies in India, LandscapInfra maintains strong vendor networks for Tier-1 panels, inverters, and BOS equipment. Our procurement strategy ensures certified quality components, while our logistics team manages delivery schedules efficiently—so every project remains on track without unnecessary delays.",
+      "Sourcing Tier-1 components at competitive prices. Rigorous quality control, secure supply chain management, and optimized logistics for timely delivery.",
     image: "/green.png",
   },
   {
     id: 4,
-    title: "Construction & Commissioning",
-    subtitle: "Construction & Commissioning",
+    title: "Construction & Installation (C-Phase)",
+    subtitle: "Construction & Installation (C-Phase)",
     description:
-      "Our expert site team executes civil works, racking structures, cabling, inverter setup, and grid synchronization with strict adherence to IEC and safety standards. Each installation undergoes thorough quality testing to ensure long-term durability and stable energy output. We hand over a system that is reliable from day one.",
+      "Professional, safe, and efficient on-site execution by certified teams, adhering to strict industrial safety and quality standards.",
     image: "/green.png",
   },
   {
     id: 5,
-    title: "Monitoring & Maintenance",
-    subtitle: "Monitoring & Maintenance",
+    title: "Testing & Commissioning",
+    subtitle: "Testing & Commissioning",
     description:
-      "Our responsibility doesn’t end at commissioning. With advanced monitoring platforms, clients get real-time insights into system performance. Our AMC packages include preventive maintenance, module cleaning, system audits, and timely troubleshooting. LandscapInfra ensures your solar plant delivers consistent results year after year.",
+      "Comprehensive performance testing (PR & Yield), grid synchronization, and final certification by regulatory bodies before commercial operation.",
+    image: "/green.png",
+  },
+  {
+    id: 6,
+    title: "Operation & Maintenance (O&M)",
+    subtitle: "Operation & Maintenance (O&M)",
+    description:
+      "Long-term asset management, preventive maintenance, 24/7 remote monitoring, and guaranteed performance to maximize your power output.",
     image: "/green.png",
   },
 ];
@@ -52,9 +60,9 @@ export default function Explore() {
   const selectedArea = areas.find((area) => area.id === selectedId);
 
   return (
-    <section className=" mx-auto px-4 py-10 md:px-16">
+    <section className=" mx-auto px-4 py-10 md:px-28">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
-        Our Process as a Solar EPC Contractors
+        Landsking Infra EPC Process{" "}
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
@@ -114,7 +122,7 @@ export default function Explore() {
                 }`}
               >
                 <span className="text-sm opacity-70">
-                  {String(idx + 1).padStart(2, "0")}
+                  {/* {String(idx + 1).padStart(2, "0")} */}
                 </span>
                 <span>{area.title}</span>
               </button>
@@ -140,7 +148,8 @@ export default function Explore() {
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>
               <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                More <span className=" p-1 rounded-full text-[#000080]">→</span>
+                Contact{" "}
+                <span className=" p-1 rounded-full text-[#000080]">→</span>
               </button>
             </div>
 
@@ -149,7 +158,7 @@ export default function Explore() {
               <img
                 src={selectedArea.image}
                 alt={selectedArea.subtitle}
-                className="w-full h-64 md:h-70 object-cover"
+                className="w-full h-64 md:h-116 object-cover "
               />
             </div>
           </div>

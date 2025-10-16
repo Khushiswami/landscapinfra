@@ -92,12 +92,14 @@ export default function Pebfooter() {
       ],
     },
     {
-      title: "Solutions",
+      title: "Sectors",
       external: true,
       items: [
-        { name: "System", href: "/system" },
-        { name: "Service", href: "/solutionservice" },
-        { name: "Product", href: "/system#products-section" },
+        { name: "Construction Sector", href: "/construction" },
+        { name: "Infrastructure Sector", href: "/InfrastructureSector" },
+        { name: "Institutional Sector", href: "/InstitutionalSector" },
+        { name: "Sports & Leisure", href: "/sportsLeisureBuilding" },
+        { name: "Special Buildings", href: "/specialBuilding" },
       ],
     },
     {

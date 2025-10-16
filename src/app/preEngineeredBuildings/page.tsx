@@ -15,6 +15,7 @@ import Pebinsight from "yes/Components/Pebinsight";
 import Renewableslider from "yes/Components/Renewable/Renewableslider";
 import Pebslider from "yes/Components/Pebslider";
 import Pebfooter from "yes/Components/Pebfooter";
+import Insights from "yes/Components/Insights";
 
 // import ClientP from "../Components/ClientP";
 
@@ -33,7 +34,7 @@ export default function PreEngineeredBuildings() {
       <PlatformP />
       <Pebsolution />
       <Pebslider />
-      <Pebinsight />
+      <Insights />
       <MediaP />
       <PebBrandP />
       <ContactSection />

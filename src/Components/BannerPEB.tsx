@@ -81,7 +81,7 @@ export default function BannerPEB() {
               onClick={() => router.push(slides[active].link)}
               className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
             >
-              <span>Learn More</span>
+              <span> More Info</span>
               <IoIosArrowForward className="w-5 h-5" />
             </button>
           </motion.div>
@@ -89,15 +89,15 @@ export default function BannerPEB() {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="absolute bottom-0 w-full ">
-        <div className=" mx-auto flex justify-start sm:justify-start gap-6 px-6 py-4 overflow-x-auto md:mx-19">
+      <div className="absolute bottom-0 w-full">
+        <div className="px-6 py-4 w-full">
           {/* Desktop Tabs */}
-          <div className="hidden sm:flex gap-6">
+          <div className="hidden sm:flex w-full">
             {slides.map((s, i) => (
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`pb-1 text-sm sm:text-base font-medium border-b-2 transition ${
+                className={`flex-1 text-center pb-1 text-sm sm:text-base font-medium border-b-2 transition ${
                   active === i
                     ? "text-[#8080FF] border-[#8080FF]"
                     : "text-gray-300 border-transparent hover:text-white"

@@ -3,18 +3,33 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { CountUp } from "countup.js";
-import { Ruler, Building2, Globe, Factory } from "lucide-react";
+import { Ruler, Building2, Globe, Users } from "lucide-react";
 
 export default function Renewableabout() {
   const stats = [
-    { value: 1.2e6, suffix: "+", label: "Sq. Ft. Area Delivered", icon: Ruler },
-    { value: 200, suffix: "+", label: "Project Executed", icon: Building2 },
-    { value: 55, suffix: "+", label: "Global Clients", icon: Globe },
     {
-      value: 7,
+      value: 50,
       suffix: "+",
-      label: "Years Manufacturing Experience",
-      icon: Factory,
+      label: "MW Installed Capacity",
+      icon: Ruler, // Ruler fits capacity / measurement
+    },
+    {
+      value: 120,
+      suffix: "+",
+      label: "Industrial & Commercial Projects",
+      icon: Building2, // Building icon fits commercial/industrial projects
+    },
+    {
+      value: 10,
+      suffix: "+",
+      label: "Years of Team Experience",
+      icon: Globe, // Globe works for global experience; optionally could use Users for team
+    },
+    {
+      value: 98,
+      suffix: "%",
+      label: "Client Retention Rate",
+      icon: Users, // Users icon better represents clients/people
     },
   ];
 
@@ -49,16 +64,16 @@ export default function Renewableabout() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16 px-4 md:px-10 overflow-hidden">
+    <section className="relative py-16  overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10">
+      <div className="relative container px-5 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:mx-28">
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
-          <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-110 overflow-hidden  hover: transition-all duration-500">
+          <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-118 overflow-hidden  hover: transition-all duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -68,43 +83,32 @@ export default function Renewableabout() {
               className="w-full h-full object-cover"
             />
           </div>
-
-          {/* Two Images in a Row */}
-          {/* <div className="grid grid-cols-2 gap-1">
-            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
-              <Image
-                src="/engineer.jpg"
-                alt="Building 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
-              <Image
-                src="/cut.png"
-                alt="Building 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div> */}
         </div>
 
         {/* Right Section - About Us */}
         <div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 mt-9 sm:mb-6">
+          <h5 className="text-xl sm:text-2xl font-bold text-[#000080] mb-1 mt-9 sm:mb-6">
             ABOUT US
+          </h5>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 mt-0 sm:mb-6">
+            Building Tomorrow’s Energy Infrastructure — Today.
           </h2>
 
           <p className="text-gray-700 mb-4 sm:mb-5 leading-relaxed text-sm sm:text-base">
-            LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More
-            than 120MT Capacity Rice mill Plant, 350 Minor and Major Bridge and
-            Super Structure, 26 KM MS Pipe line upto 3.8m dia, and 410KM HDPE
-            pipeline Excavation and laying, 6,76,000Sqft PEB Erection Work,
-            15.5MW solar plant in Its Portfolio. We combine our expertise with
-            purposeful technology, deploying innovations like digital
-            engineering and AI to produce powerful results.
+            Landsking Infra is a leading Solar EPC & Industrial Infrastructure
+            company specializing in complete design-to-delivery solutions. We
+            combine engineering precision, project management excellence, and
+            green innovation to create reliable solar power systems for
+            industrial, commercial, and residential clients.
           </p>
+          <div className="flex flex-wrap items-center gap-4 mb-5">
+            <h6 className="text-xl sm:text-2xl font-bold text-[#000080]">
+              Core Values:
+            </h6>
+            <p className="text-gray-700 text-sm sm:text-base">
+              Integrity | Innovation | Reliability | Sustainability
+            </p>
+          </div>
 
           {/* Stats with Icons */}
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">

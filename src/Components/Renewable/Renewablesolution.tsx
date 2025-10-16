@@ -1,34 +1,41 @@
-
 import Image from "next/image";
 import { ChevronRight, ArrowUpRight } from "lucide-react";
 
 export default function Renewablesolution() {
   const items = [
     {
-      title: "System",
+      title: "Residential Solar",
       description:
         "We provide solutions for Pre-Engineered Steel Buildings and Structural Steel.",
       img: "/system.jpg",
-      link: "/system",
+      link: "/residential-solar",
     },
     {
-      title: "Service",
+      title: "Commercial Solar",
       description:
         "We stand by our customers at every stage of the building project process.",
       img: "/service.jpg",
-      link: "/system",
+      link: "/commercial-solar",
     },
     {
-      title: "Product",
+      title: "Industrial Solar",
       description: "Designed for sustainability and world-class quality.",
       img: "/product.jpg",
-      link: "/system",
+      link: "/industrial-solar",
+    },
+
+    {
+      title: "Infrastructure & Maintenance",
+      description:
+        "Blend grid power with solar for reliable, sustainable energy solutions.",
+      img: "/product.jpg",
+      link: "/industrial-solar",
     },
   ];
 
   return (
     <section className="w-full py-15 mt-15 bg-[#f2f2f2] ">
-      <div className=" mx-auto px-4 py-5 md:mx-12 md:py-8">
+      <div className=" mx-auto px-4 py-5 md:mx-25 md:py-8">
         {/* Heading and Description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-8 ">
           <h2 className="text-3xl font-bold md:text-4xl">
@@ -42,7 +49,7 @@ export default function Renewablesolution() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-4">
           {items.map((item, idx) => (
             <div
               key={idx}
