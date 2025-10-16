@@ -10,44 +10,39 @@ import "swiper/css/navigation";
 interface Project {
   id: number;
   title: string;
-  description: string;
   image: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Rooftop Solar for Manufacturing",
-    description:
-      "Transform your idle roof space into a high-performance asset. Slash your operational costs and reduce reliance on the grid with a custom rooftop solar system built for your manufacturing facility.",
+    title: "Hvac",
     image: "/realstate/three.webp",
   },
   {
     id: 2,
-    title: "Ground-Mounted Solar for Industrial Estates",
-    description:
-      "Get uninterrupted, large-scale power with our ground-mounted solar solutions, designed for the vast energy needs of industrial estates.",
+    title: "Other Industries",
+
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
-    title: "On-Grid & Hybrid Solar Installations",
-    description:
-      "Choose a solar system that fits your power needs and business goals. Our on-grid systems sync with the utility grid, allowing you to benefit from net metering. For ultimate power reliability, our hybrid installations combine grid power with battery backup, ensuring your operations never stop, even during a blackout. We make it easy to transition to a more stable and cost-effective energy supply.",
+    title: "Fire Safety",
     image: "/realstate/one.webp",
   },
   {
     id: 4,
-    title: "Net Metering & Open Access Support",
-    description:
-      "Navigating the complexities of solar regulations is our job. We provide expert support with net metering and open access policies, handling all the paperwork, government approvals, and utility company coordination to ensure a smooth and hassle-free setup.",
+    title: "Industrial & Buildings",
     image: "/realstate/fourS.webp",
   },
   {
     id: 5,
-    title: "Battery-Integrated Solar for Power Reliability",
-    description:
-      "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
+    title: "Water",
+    image: "/realstate/fiveS.webp",
+  },
+  {
+    id: 5,
+    title: "Transportation",
     image: "/realstate/fiveS.webp",
   },
 ];
@@ -129,15 +124,15 @@ export default function Industrysectors() {
                             md:opacity-0 md:group-hover:opacity-100 md:cursor-default
                           `}
                         >
-                          <h3 className="text-sm md:text-sm font-semibold mb-2">
+                          <h3 className="text-sm md:text-lg font-semibold mb-2">
                             {project.title}
                           </h3>
-                          <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                          {/* <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
                             {project.description}
-                          </p>
-                          <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
+                          </p> */}
+                          {/* <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
                             Know More
-                          </button>
+                          </button> */}
                         </div>
 
                         {/* Mobile arrows */}

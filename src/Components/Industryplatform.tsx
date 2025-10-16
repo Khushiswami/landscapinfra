@@ -15,20 +15,20 @@ const TABS = [
     url: "/Industrialtrunckyprojects",
   },
   {
-    title: "Plant Engineering",
+    title: "Construction",
     headline: "Customized Plant Engineering for Optimal Performance",
     body: "Our plant engineering services cover design, implementation, and optimization of industrial plants. We combine cutting-edge technologies with proven engineering practices to ensure high-quality, cost-effective, and sustainable solutions.",
     img: "/solution/stell.jpg",
     buttonText: "VIEW MORE",
-    url: "/plantengineering",
+    url: "/construction",
   },
   {
-    title: "Manufacturer Engineering",
+    title: "Industry Installation",
     headline: "Innovative Engineering for Manufacturing Excellence",
     body: "We deliver advanced structural and manufacturing engineering solutions tailored to your production needs. Our expertise ensures safety, efficiency, and superior performance in every manufacturing project we undertake.",
     img: "/Square2.jpg",
     buttonText: "VIEW MORE",
-    url: "/manufacturerengineering",
+    url: "/industry-installation",
   },
 ];
 
@@ -64,9 +64,9 @@ export default function Industryplatform() {
   }, [active]);
 
   return (
-    <section className="w-full">
+    <section className="w-full md:px-28">
       {/* Top heading + subheading */}
-      <div className="mx-auto px-4 pt-12 text-center">
+      <div className="mx-auto px-4 pt-12 text-center md:px-30">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Comprehensive Infrastructure Solutions
         </h1>
