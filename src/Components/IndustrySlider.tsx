@@ -104,7 +104,7 @@ export default function Renewableslider() {
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3" />
       </div>
 
-      <div className="mx-auto md:my-7 px-4 md:px-18 my-1">
+      <div className="mx-auto md:my-7 px-4 md:px-31 my-1">
         {/* Mobile Slider */}
         <div className="lg:hidden space-y-2">
           {categories.map((cat, idx) => (

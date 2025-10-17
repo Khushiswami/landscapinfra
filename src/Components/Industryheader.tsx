@@ -174,7 +174,7 @@ export default function Industryheader() {
       }`}
     >
       <div
-        className={`mx-auto flex items-center justify-between px-6 md:px-20 ${
+        className={`mx-auto flex items-center justify-between px-6 md:px-30 ${
           isDesktop ? (scrolled ? "py-3" : "py-5") : "py-3"
         }`}
       >

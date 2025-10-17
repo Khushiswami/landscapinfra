@@ -659,33 +659,6 @@ export default function Modular() {
               professionals End-to-End Turnkey Solutions covering design,
               fabrication, delivery, and installation
             </p>
-
-            {/* Animated Counters */}
-            {/* <div
-              ref={ref}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
-            >
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center bg-white shadow-lg p-3 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <div className="text-blue-600 text-base">{stat.icon}</div>
-                  <h3 className="text-base font-extrabold text-gray-900 mt-2">
-                    {inView && (
-                      <CountUp
-                        end={stat.value}
-                        duration={2}
-                        suffix={stat.suffix}
-                      />
-                    )}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 mt-1 text-center">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div> */}
           </div>
 
           {/* Right Image */}

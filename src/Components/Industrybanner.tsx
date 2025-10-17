@@ -83,7 +83,7 @@ export default function Industrybanner() {
   };
 
   return (
-    <section className="relative h-[100vh] w-full overflow-hidden flex items-center text-white">
+    <section className="relative h-[100vh] w-full overflow-hidden flex items-center text-white md:px-3">
       {/* Background */}
       <AnimatePresence mode="wait">
         <motion.div

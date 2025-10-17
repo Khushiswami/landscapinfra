@@ -103,7 +103,7 @@ const Page = () => {
       <Trunkey />
 
       {/* Intro Section */}
-      <section className="bg-white py-12 px-4 md:px-15">
+      <section className="bg-white py-12 px-4 md:px-32">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
@@ -156,7 +156,7 @@ const Page = () => {
       <Trunkeytpes />
 
       {/* Services Section */}
-      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
+      <section className="text-center px-4 sm:px-6 md:px-29 pt-1 md:pt-16 bg-white">
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
@@ -270,6 +270,64 @@ const Page = () => {
             </div>
           </div>
         </section>
+      </section>
+      {/* why choose us */}
+      <section className="w-full bg-white py-16 px-6 md:px-26 lg:px-28">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 ">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
+              Why Choose Our EPC / Turnkey Services
+            </h2>
+
+            <ul className="space-y-4 list-disc list-inside text-black md:text-lg text-base leading-relaxed font-semibold">
+              <li>
+                <span className="font-bold text-[#000080]">
+                  Single point responsibility –
+                </span>{" "}
+                No coordination headache for clients.
+              </li>
+              <li>
+                <span className="font-bold text-[#000080]">
+                  End-to-End control –
+                </span>{" "}
+                Engineering, materials & commissioning by one team.
+              </li>
+              <li>
+                <span className="font-bold text-[#000080]">
+                  Faster project execution –
+                </span>{" "}
+                Integrated planning & execution reduce downtime.
+              </li>
+              <li>
+                <span className="font-bold text-[#000080]">
+                  Quality & Compliance –
+                </span>{" "}
+                Follows ISO & industrial safety standards.
+              </li>
+              <li>
+                <span className="font-bold text-[#000080]">Scalable –</span>{" "}
+                Suitable for small to large industrial projects.
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex justify-center">
+            {/* <Image
+              src="/menupageimg/mod13.jpg"
+              alt="EPACK Prefab Industrial Building"
+              className="rounded-md shadow-md w[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+            /> */}
+
+            <Image
+              src="/platform/maining.jpg"
+              alt="EPACK Prefab Industrial Building"
+              width={600}
+              height={400}
+              className="rounded-md shadow-md object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+            />
+          </div>
+        </div>
       </section>
       <Industrycall />
       <Footer />

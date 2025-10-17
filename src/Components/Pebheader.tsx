@@ -48,7 +48,7 @@ export default function Pebheader() {
     { name: "Solutions", href: "/system" },
     {
       name: "Products",
-      href: "",
+      href: "/products",
       subItems: [
         {
           title: "Pre Engineered Buildings",

@@ -84,7 +84,7 @@ export default function Industryplatform() {
 
       {/* Tabs */}
       <div className="mt-8 ">
-        <div className="mx-auto px-4">
+        <div className="mx-auto px-4 ">
           <div className="relative">
             <div className="flex md:justify-center gap-4 md:gap-10 overflow-x-auto md:overflow-x-visible relative">
               {TABS.map((t, i) => (
@@ -118,7 +118,7 @@ export default function Industryplatform() {
       </div>
 
       {/* Content Card */}
-      <div className="  mx-auto px-4 md:mx-17">
+      <div className="  mx-auto px-4 md:mx-25">
         <div className="mt-8 flex justify-center">
           <div className="relative rounded-[5px] overflow-hidden  w-full  ">
             <div className="relative  h-[340px] md:h-[460px]">

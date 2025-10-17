@@ -101,7 +101,7 @@ export default function Industryplatformtab() {
 
   return (
     <>
-      <div className="mx-5 md:mx-13">
+      <div className="mx-5 md:mx-30">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
           Leading with Expertise: Our Turnkey Industrial Model
         </h2>
@@ -113,7 +113,7 @@ export default function Industryplatformtab() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-7 md:gap-16 mx-5 md:mx-13">
+      <div className="flex flex-col gap-7 md:gap-16 mx-5 md:mx-30">
         {sections.map((section, idx) => {
           const isEven = idx % 2 === 0;
 

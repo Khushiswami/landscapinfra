@@ -54,7 +54,7 @@ export default function Industryabout() {
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10">
+      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:mx-12">
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
@@ -68,26 +68,6 @@ export default function Industryabout() {
               className="w-full h-full object-cover"
             />
           </div>
-
-          {/* Two Images in a Row */}
-          {/* <div className="grid grid-cols-2 gap-1">
-            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
-              <Image
-                src="/engineer.jpg"
-                alt="Building 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
-              <Image
-                src="/cut.png"
-                alt="Building 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div> */}
         </div>
 
         {/* Right Section - About Us */}

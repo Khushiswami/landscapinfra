@@ -133,7 +133,7 @@ export default function Insights() {
               </div>
 
               {/* Desktop version with hover */}
-              <div className="hidden sm:block h-[590px]">
+              <div className="hidden sm:block h-[560px]">
                 <div className="absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-md bg-[#000080] text-[#fff]">
                   {card.tag}
                 </div>
