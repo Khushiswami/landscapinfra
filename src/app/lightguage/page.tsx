@@ -40,74 +40,41 @@ export default function Lightguage() {
 
   const faqs: FAQ[] = [
     {
-      question: "What is Light Gauge Steel (LGS)?",
-      answer:
-        "Light Gauge Steel (LGS) consists of thin, cold-formed steel components commonly used in lightweight structural construction. It offers an excellent strength-to-weight ratio, resists corrosion effectively, and is highly suitable for prefabricated building systems.",
-    },
-    {
       question: "What is Light Gauge Steel Framing (LGSF)?",
       answer:
-        "LGSF is a modern construction method that utilizes light gauge steel sections to form the structural framework for walls, floors, and roofs in modular and prefabricated buildings. These steel frames are pre-manufactured in a factory setting and assembled efficiently at the construction site.",
+        "It is a digitally modelled, cold-formed structural system where members are manufactured off-site with sub−millimeter precision for bolt-together assembly.",
     },
     {
-      question: "How is LGSF different from structural steel?",
+      question:
+        "How does LGSF fundamentally outperform wood in structural longevity?",
       answer:
-        "Structural steel is typically hot-rolled and used in large-scale projects like bridges and multi-storey buildings, whereas LGSF involves cold-formed steel sections ideal for lightweight and rapid construction, including prefabricated homes, office spaces, and villas.",
+        "LGSF ensures permanent structural integrity because the galvanized steel is immune to biological decay, moisture absorption, and the costly maintenance associated with wood rot or termites.",
     },
     {
-      question: "What are the main advantages of LGSF construction?",
+      question: "What is the key project management gain from using LGSF?",
       answer:
-        "LGSF offers numerous advantages, including fast installation and shorter project timelines, thanks to its off-site fabrication. Despite being lightweight, the structure is strong and durable, with built-in fire and pest resistance. It allows for high design flexibility, making it suitable for a variety of architectural needs. Additionally, LGSF uses eco-friendly, recyclable materials and delivers cost efficiency, especially for low-rise and mid-rise construction projects.",
+        "The system's predictable, factory-cut components drastically reduce the need for on−site rework or cutting, guaranteeing project phases align perfectly with the original, compressed schedule.",
     },
     {
-      question: "What are the typical applications of LGSF?",
+      question:
+        "Does LGSF introduce thermal bridging issues compared to timber framing?",
       answer:
-        "LGSF is widely applied across a range of sectors due to its versatility and speed of construction. It is commonly used in prefabricated villas and sample flats, on-site offices, and worker accommodations. The technology is also ideal for modular hospitals, clinics, and educational buildings such as schools. Additionally, LGSF serves effectively in the construction of cold storage units, warehouse enclosures, and compact commercial cabins.",
+        "Myth: Steel conducts heat excessively. Fact: Modern LGSF designs incorporate thermal break strips and optimized insulation strategies, effectively mitigating thermal transfer far beyond older steel standards.",
     },
     {
-      question: "Is LGSF suitable for multi-storey buildings?",
+      question: "How does LGSF enhance building safety during a fire?",
       answer:
-        "Yes, LGSF is suitable for G+3 and G+4 structures, and can even be used for taller buildings, depending on engineering design, structural analysis, and compliance with local building codes.",
+        "Unlike wood which contributes fuel, LGSF is inherently non−combustible. When paired with rated gypsum board, it achieves superior fire−resistance ratings that protect occupants.",
     },
     {
-      question: "What is the lifespan of an LGSF structure?",
+      question: "What makes LGSF a superior choice in high seismic zones?",
       answer:
-        "With adequate maintenance and effective corrosion protection, LGSF buildings can have a lifespan of over 50 years, making them comparable to traditional RCC structures in terms of durability.",
+        "The framing’s engineered connections and the steel's natural high ductility allow the structure to flex and absorb severe kinetic energy, minimizing damage during major dynamic events.",
     },
     {
-      question: "Who is the leading LGSF structures manufacturer in India?",
+      question: "How does LGSF influence foundation requirements?",
       answer:
-        "Landsking Infra is among the leading providers of LGSF structures in India, recognized for its state-of-the-art manufacturing facilities and efficient project execution across the nation.",
-    },
-    {
-      question: "Can LGSF buildings be customized?",
-      answer:
-        "Yes, Landsking Infra provides fully tailored LGSF solutions customized to your architectural requirements, project scale, and budget.",
-    },
-    {
-      question: "Can LGSF structures withstand extreme weather conditions?",
-      answer:
-        "LGSF structures boast exceptional durability, designed to resist strong winds, seismic activity, and challenging weather conditions.",
-    },
-    {
-      question: "How cost-effective is light gauge steel framing??",
-      answer:
-        "LGSF lowers construction expenses by enabling quicker assembly, requiring less labor, and minimizing material waste.",
-    },
-    {
-      question: "What is the lifespan of an LGSF building?",
-      answer:
-        "With proper upkeep, LGSF buildings are engineered for durability and can have a lifespan exceeding 50 years.",
-    },
-    {
-      question: "Can light gauge steel be used in multi-storey buildings?",
-      answer:
-        "Yes, LGSF is ideal for multi-storey constructions, providing lightweight yet robust and efficient structural solutions.",
-    },
-    {
-      question: "How does LGSF contribute to sustainable construction?",
-      answer:
-        "LGSF promotes sustainability through the use of recyclable materials, lowering carbon footprints, and enhancing energy efficiency throughout the construction process.",
+        "Due to the steel's exceptional strength-to-weight ratio, LGSF results in a significantly lighter total building mass, often enabling simpler and more economical shallow foundations.",
     },
   ];
 
@@ -214,12 +181,11 @@ export default function Lightguage() {
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Pre Engineered Buildings
+              Light Gauge Steel Framing
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-              Pre-Engineered Buildings (PEBs) are modern steel structures
-              designed, fabricated, and assembled using standardized components
-              for faster construction.
+              Build smarter with our Light Gauge Steel Framing. Offsite
+              precision meets on-site speed and reliability.
             </p>
           </div>
 
@@ -237,7 +203,7 @@ export default function Lightguage() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <Image
+                    <img
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-48 sm:h-72 object-cover"
@@ -262,7 +228,7 @@ export default function Lightguage() {
       </section>
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -298,7 +264,7 @@ export default function Lightguage() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/lgs1.jpeg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -313,7 +279,7 @@ export default function Lightguage() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
-            <Image
+            <img
               src="/menupageimg/lgs2.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
@@ -360,16 +326,12 @@ export default function Lightguage() {
               production and prefabrication reduce both labor expenses and
               material waste.
             </p>
-
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
           </div>
         </div>
       </section>
       {/* endcapill */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+      <section className=" mx-auto px-4 py-10">
+        <h2 className="text-3xl md:text-4xl font-bold text- mb-8">
           Our Products
         </h2>
 
@@ -464,7 +426,7 @@ export default function Lightguage() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <Image
+                <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-85 object-cover"
@@ -477,7 +439,7 @@ export default function Lightguage() {
       {/* explore content */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Our LGSF Manufacturing Capabilities
           </h2>
@@ -501,7 +463,7 @@ export default function Lightguage() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className=" mx-auto px-6 md:px-12">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Applications of LGSF Structures
@@ -529,25 +491,25 @@ export default function Lightguage() {
               </p>
               <ul>
                 <li className="mb-3">
-                  <strong>✅Modern Prefab Villas</strong>
+                  <strong>350Modern Prefab Villas</strong>
                 </li>
                 <li className="mb-3">
-                  <strong>✅Show Flats & Marketing Suites</strong>
+                  <strong>350Show Flats & Marketing Suites</strong>
                 </li>
                 <li className="mb-3">
-                  <strong>✅On-Site Office Setups</strong>
+                  <strong>350On-Site Office Setups</strong>
                 </li>
                 <li className="mb-3">
-                  <strong>✅Modular Classrooms & Educational Buildings</strong>
+                  <strong>350Modular Classrooms & Educational Buildings</strong>
                 </li>
                 <li className="mb-3">
-                  <strong>✅Clinics, Hospitals & Medical Units</strong>
+                  <strong>350Clinics, Hospitals & Medical Units</strong>
                 </li>
                 <li className="mb-3">
-                  <strong>✅Staff Housing & Worker Dormitories</strong>
+                  <strong>350Staff Housing & Worker Dormitories</strong>
                 </li>
                 <li className="mb-3">
-                  <strong>✅Commercial Units & Retail Outlets</strong>
+                  <strong>350Commercial Units & Retail Outlets</strong>
                 </li>
               </ul>
             </div>
@@ -557,7 +519,7 @@ export default function Lightguage() {
       {/* end special section */}
       {/* why choose us */}
       <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
@@ -574,33 +536,6 @@ export default function Lightguage() {
               professionals End-to-End Turnkey Solutions covering design,
               fabrication, delivery, and installation
             </p>
-
-            {/* Animated Counters */}
-            {/* <div
-              ref={ref}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
-            >
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center bg-white shadow-lg p-3 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <div className="text-blue-600 text-base">{stat.icon}</div>
-                  <h3 className="text-base font-extrabold text-gray-900 mt-2">
-                    {inView && (
-                      <CountUp
-                        end={stat.value}
-                        duration={2}
-                        suffix={stat.suffix}
-                      />
-                    )}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 mt-1 text-center">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div> */}
           </div>
 
           {/* Right Image */}
@@ -629,7 +564,7 @@ export default function Lightguage() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
+        <div className="border-t border-gray-200">
           {faqs.map((faq: FAQ, index: number) => (
             <div key={index} className="border-b border-gray-200">
               {/* Question */}
@@ -638,13 +573,13 @@ export default function Lightguage() {
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
               >
                 <span
-                  className={`font-medium font-bold transition-colors duration-200 ${
+                  className={`font-medium transition-colors duration-200 ${
                     openIndex === index ? "text-[#000080]" : "text-gray-800"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-sm font-bold">
+                <span className="text-gray-500 text-sm">
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>

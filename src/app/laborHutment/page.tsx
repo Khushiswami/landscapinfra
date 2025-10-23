@@ -1,9 +1,70 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
 import PedFooter from "../../Components/Footer";
+import Pebfooter from "yes/Components/Pebfooter";
 
-const LaborHutment = () => {
+const LaborHutment: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is a prefabricated labour hutment?",
+      answer:
+        "It is a modular worker welfare unit built for quick assembly, providing safe, comfortable, and hygienic temporary accommodation for on-site personnel.",
+    },
+    {
+      question: "Which materials are used in prefabricated labour hutments?",
+      answer:
+        "They use durable lightweight steel frames, insulated composite panels (ISPs), and specialized flooring, guaranteeing structural sturdiness and thermal efficiency.",
+    },
+    {
+      question: "What are the key advantages of prefabricated labour hutments?",
+      answer:
+        "Benefits include accelerated workforce mobilization, compliance with welfare mandates, and enhanced site comfort, driving higher overall project efficiency.",
+    },
+    {
+      question: "Can labour hutments be customized?",
+      answer:
+        "Yes, internal layouts are fully adaptable for staff amenities, medical centers, or kitchen facilities, ensuring the space perfectly fits the project's operational requirements.",
+    },
+    {
+      question: "How much time does it take to install a labour hutment?",
+      answer:
+        "Installation is very fast, often achieving full readiness within days or a couple of weeks, sharply reducing the non-productive time during project startup.",
+    },
+    {
+      question: "Are prefabricated labour hutments durable?",
+      answer:
+        "Yes, these units possess the structural resilience to endure continuous heavy usage and severe weather across multiple long-duration construction cycles.",
+    },
+    {
+      question: "Where can prefabricated labour hutments be used?",
+      answer:
+        "They are essential for remote construction sites, mining operations, large infrastructure projects, and disaster response needing immediate, scalable housing solutions.",
+    },
+    {
+      question: "Are labour hutments easy to relocate?",
+      answer:
+        "Absolutely. Their modularity allows for straightforward dismantling and re-erection, preserving the unit's value and enabling efficient asset redeployment.",
+    },
+    {
+      question: "Are prefabricated hutments eco-friendly?",
+      answer:
+        "Yes, their production minimizes on-site material waste, and their portability avoids the need to build and later demolish permanent facilities at every location.",
+    },
+    {
+      question: "Why choose LANDSKING for labour hutments?",
+      answer:
+        "We supply swift, high-quality, welfare-assured accommodation, ensuring worker comfort, maximizing site productivity, and providing long-term value through asset mobility.",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -20,7 +81,7 @@ const LaborHutment = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
                 Labor Hutment
               </h1>
             </div>
@@ -31,16 +92,16 @@ const LaborHutment = () => {
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/labour-hutment-2.jpg"
                 alt="Row 1"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Durable, Clean, And Affordable Accommodation For Labor
               </h3>
               <p className="text-gray-700 mb-4">
@@ -50,7 +111,10 @@ const LaborHutment = () => {
                 systems to furniture and bunk beds, we provide everything needed
                 to create comfortable and safe accommodations for your teams.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
+              <button
+                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                onClick={() => (window.location.href = "/peb-contact")}
+              >
                 Get a Quote
               </button>
             </div>
@@ -59,7 +123,7 @@ const LaborHutment = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Key Features
               </h3>
               <p className="text-gray-700 mb-4">
@@ -80,28 +144,28 @@ const LaborHutment = () => {
                 ● Built to last, retaining high value over time
               </p>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/labour-hutment-3.webp"
                 alt="Row 2"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/labour-hutment-4.webp"
                 alt="Row 3"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Technical Specifications
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
@@ -117,90 +181,48 @@ const LaborHutment = () => {
                   included
                 </li>
               </ul>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
-                Learn More
-              </button>
             </div>
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+          <div className="mx-auto md:mt-22">
+            <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4 text-[#000080]">
-              {[
-                {
-                  question: "What is a prefabricated labour hutment?",
-                  answer:
-                    "A prefabricated labour hutment is a modular housing solution created for workers at construction sites or remote locations, ensuring safe, comfortable, and hygienic living spaces.",
-                },
-                {
-                  question:
-                    "Which materials are used in prefabricated labour hutments?",
-                  answer:
-                    "These hutments are constructed using high-grade insulated panels, sturdy steel frames, and durable roofing materials, ensuring strength, long life, and resistance to harsh weather.",
-                },
-                {
-                  question: "Key advantages of prefabricated labour hutments",
-                  answer:
-                    "They’re fast to install, easy to relocate, budget-friendly, and environmentally conscious — the perfect solution for safe and efficient temporary housing.",
-                },
-                {
-                  question: "Can labour hutments be customized?",
-                  answer:
-                    "Absolutely! These units can be designed to match your exact needs — from size and room layouts to ventilation, electrical fittings, and sanitation features.",
-                },
-                {
-                  question:
-                    "How much time it take to install a labour hutment?",
-                  answer:
-                    "Installation is fast and efficient, most hutments are ready in just a few days, while larger or more complex units may take a couple of weeks.",
-                },
-                {
-                  question: "Are prefabricated labour hutments durable?",
-                  answer:
-                    "Absolutely! LANDSKING’s prefabricated hutments are built tough to handle extreme weather while providing safe and durable housing for years.",
-                },
-                {
-                  question: "Where can prefabricated labour hutments be used?",
-                  answer:
-                    "These hutments are widely used at construction sites, mining zones, infrastructure development projects, and remote locations where temporary housing is needed.",
-                },
-                {
-                  question: "Are labour hutments easy to relocate?",
-                  answer:
-                    "Absolutely! These portable units can be quickly dismantled, transported, and reinstalled wherever your project takes you.",
-                },
-                {
-                  question: "Are prefabricated hutments eco-friendly?",
-                  answer:
-                    "Absolutely! These hutments are designed to cut down on construction waste and energy consumption, offering a greener, more sustainable way to house your workforce.",
-                },
-                {
-                  question: "Why choose LANDSKING for labour hutments?",
-                  answer:
-                    "With LANDSKING, you get durable, comfortable, and tailor-made hutments delivered on schedule — all at a cost-effective price.",
-                },
-              ].map((faq, idx) => (
-                <details
-                  key={idx}
-                  className="bg-white rounded-lg shadow p-4 cursor-pointer group"
-                >
-                  <summary className="flex justify-between items-center font-semibold text-lg list-none">
+
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="bg-white p-4 rounded-md shadow-sm">
+                  <button
+                    onClick={() => handleToggle(idx)}
+                    className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
+                  >
                     {faq.question}
-                    <span className="transition-transform duration-300 group-open:rotate-90">
+                    <span
+                      className={`transition-transform duration-300 ${
+                        openIndex === idx ? "rotate-90" : ""
+                      }`}
+                    >
                       ▶
                     </span>
-                  </summary>
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
-                </details>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
+                    }`}
+                  >
+                    <p className="text-gray-600 text-base md:text-md">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </section>
+        <Pebfooter />
       </div>
-      <PedFooter />
     </>
   );
 };

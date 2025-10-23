@@ -1,13 +1,68 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
-import IndustryHeader from "yes/Components/Industryheader";
-import PedFooter from "../../Components/Footer";
+import Pebheader from "yes/Components/Pebheader";
+import Pebfooter from "yes/Components/Pebfooter";
 
-const PrefabSiteOffice = () => {
+const PrefabSiteOffice: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is a prefab site office?",
+      answer:
+        "It is a pre-engineered, modular command unit where components are factory-built, guaranteeing rapid asset deployment as a durable, operational headquarters for any remote project site.",
+    },
+    {
+      question: "What materials are used to build prefab offices?",
+      answer:
+        "Construction utilizes light-gauge C-section steel framing coupled with high-density, Insulated Sandwich Panels (ISPs), forming a superior, integrated structural and thermal envelope.",
+    },
+    {
+      question: "What are the key benefits of using prefab site offices?",
+      answer:
+        "They deliver strategic advantages through accelerated operational readiness and predictable scheduling, maximizing resource utility while eliminating traditional site construction delays.",
+    },
+    {
+      question: "Are prefab site offices energy efficient?",
+      answer:
+        "Yes. The high thermal resistance of the ISP envelope drastically minimizes thermal bridging and external heat load, resulting in substantial operational cost reductions for climate control.",
+    },
+    {
+      question: "Can prefab site offices be relocated?",
+      answer:
+        "Absolutely. Their modular architecture facilitates exceptional asset portability, allowing them to be efficiently disassembled and reassembled, thereby extending the utility and retaining investment value.",
+    },
+    {
+      question: "How long does it take to install a prefab site office?",
+      answer:
+        "Final erection is highly accelerated, often achieving full occupancy status within days or two short weeks, a timeline that significantly compresses the typical critical path scheduling.",
+    },
+    {
+      question: "Which industries commonly use prefab site offices?",
+      answer:
+        "They are indispensable for sectors requiring swift, robust administration, including large-scale infrastructure projects, remote mining operations, energy exploration, and capital construction programs.",
+    },
+    {
+      question: "Can prefab site offices handle extreme weather conditions?",
+      answer:
+        "Yes, they are robustly engineered to meet site-specific climatic demands (wind, snow, heat), ensuring a structurally sound and comfortable environment under punishing external conditions.",
+    },
+    {
+      question: "Are prefab site offices customizable?",
+      answer:
+        "Yes, the modular system allows complete control over layout partitioning, technology integration, and utility routing, ensuring the final build perfectly matches the operational mandate.",
+    },
+  ];
+
   return (
     <>
       <div>
-        <IndustryHeader />
+        <Pebheader />
 
         {/* Hero Section */}
         <section className="w-full min-h-[300px] md:min-h-[500px] flex flex-col md:flex-row">
@@ -21,7 +76,7 @@ const PrefabSiteOffice = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
                 Prefab Site Office
               </h1>
             </div>
@@ -32,16 +87,16 @@ const PrefabSiteOffice = () => {
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-3.jpg"
                 alt="Row 1"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Efficiently Designed Modular Site Offices for Quick Deployment
               </h3>
               <p className="text-gray-700 mb-4">
@@ -69,7 +124,10 @@ const PrefabSiteOffice = () => {
                 wide range of clients across India, earning a reputation for
                 reliability, cost-efficiency, and long-lasting performance.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
+              <button
+                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                onClick={() => (window.location.href = "/peb-contact")}
+              >
                 Get a Quote
               </button>
             </div>
@@ -78,7 +136,7 @@ const PrefabSiteOffice = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of LandsKing Modular Site Offices
               </h3>
               <p className="text-gray-700 mb-4">
@@ -86,40 +144,40 @@ const PrefabSiteOffice = () => {
                 and LGSF structures for superior strength and efficiency.
               </p>
               <p className="text-gray-700 mb-4">
-                📏 Flexible Wall Heights - Available in various heights with
-                solid construction, offering adaptability across different site
+                Flexible Wall Heights - Available in various heights with solid
+                construction, offering adaptability across different site
                 requirements.
               </p>
               <p className="text-gray-700 mb-4">
-                🏗️ Lightweight & Easy to Install - OModular panels are quick to
+                Lightweight & Easy to Install - OModular panels are quick to
                 assemble and ideal for roof extensions with minimal structural
                 load.
               </p>
               <p className="text-gray-700 mb-4">
-                🪟 Supports Modern Glazing - Compatible with large glass panels
-                and insulated doors for a clean, professional look.
+                Supports Modern Glazing - Compatible with large glass panels and
+                insulated doors for a clean, professional look.
               </p>
               <p className="text-gray-700 mb-4">
-                🔒 Enhanced Safety & Comfort - Built-in provisions for smoke
+                Enhanced Safety & Comfort - Built-in provisions for smoke
                 detectors, fire safety, and air-conditioning to ensure a secure
                 and comfortable workspace.
               </p>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-4.jpg"
                 alt="Row 2"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Centered Heading + Paragraph */}
           <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
+            <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
               Flexible Applications for Every Need
-            </h2>
+            </h3>
             <p className="text-gray-700 text-lg">
               LandsKing offers flexible and innovative design solutions for a
               variety of applications. Our modular site offices and construction
@@ -140,198 +198,162 @@ const PrefabSiteOffice = () => {
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-2.jpeg"
                 alt="Row 3"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose LandsKing Prefab Site Offices?
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
                 <li>
-                  ✔️ Sturdy, ergonomic structures designed to withstand harsh
+                  390 Sturdy, ergonomic structures designed to withstand harsh
                   and extreme conditions.
                 </li>
                 <li>
-                  ✔️ Insulated construction for improved energy efficiency and
+                  390 Insulated construction for improved energy efficiency and
                   enhanced comfort.
                 </li>
                 <li>
-                  ✔️ Fast and straightforward dry construction method allowing
+                  390 Fast and straightforward dry construction method allowing
                   rapid assembly.
                 </li>
                 <li>
-                  ✔️ Flexible fascia panel choices tailored to the specific
+                  390 Flexible fascia panel choices tailored to the specific
                   needs of the site.
                 </li>
                 <li>
-                  ✔️ Modular design enabling easy expansion and relocation when
+                  390 Modular design enabling easy expansion and relocation when
                   required.
                 </li>
                 <li>
-                  ✔️ Weather-resistant and thermally insulated to maintain
+                  390 Weather-resistant and thermally insulated to maintain
                   durability and indoor climate control.
                 </li>
               </ul>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
-                Learn More
-              </button>
             </div>
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Benefits of Choosing LandsKing Prefab Solutions
               </h3>
 
               <ul className="space-y-1">
                 <li>
-                  🔹 Enhanced insulation for superior energy efficiency and
+                  Enhanced insulation for superior energy efficiency and
                   comfort, even in extreme environments.
                 </li>
                 <li>
-                  🔹 Rapid, dry construction methods paired with adaptable
-                  design options.
+                  Rapid, dry construction methods paired with adaptable design
+                  options.
                 </li>
                 <li>
-                  🔹 Modular units that can be easily expanded or relocated as
+                  Modular units that can be easily expanded or relocated as
                   project needs evolve.
                 </li>
                 <li>
-                  🔹 Durable, weather-resistant structures built for reliable,
+                  Durable, weather-resistant structures built for reliable,
                   all-season performance.
                 </li>
                 <li>
-                  🔹 Minimal site disruption thanks to off-site manufacturing
-                  and clean installation.
+                  Minimal site disruption thanks to off-site manufacturing and
+                  clean installation.
                 </li>
                 <li>
-                  🔹 Reduced construction waste with efficient material usage
-                  and eco-friendly processes.
+                  Reduced construction waste with efficient material usage and
+                  eco-friendly processes.
                 </li>
                 <li>
-                  🔹 Quick project turnaround to meet tight deadlines and
+                  Quick project turnaround to meet tight deadlines and
                   accelerate delivery.
                 </li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-7.png"
                 alt="Row 4"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Row 5 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-9.jpg"
                 alt="Row 5"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Landsking Infra Pvt Ltd Prefab?
               </h3>
               <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
+                <li>390 Trusted Expertise Since 1999</li>
+                <li>390 Comprehensive Turnkey Project Solutions</li>
+                <li>390 Pan-India Project Delivery & Implementation</li>
+                <li>
+                  390 Fully Integrated Design & Manufacturing Capabilities
+                </li>
+                <li>
+                  390 Dedicated Commitment to Quality and On-Time Delivery
+                </li>
               </ul>
             </div>
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+          <div className="mx-auto md:mt-22">
+            <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
+
             <div className="space-y-4">
-              {[
-                {
-                  question: "What is a prefab site office?",
-                  answer:
-                    "A prefab site office is a pre-manufactured, modular workspace designed for quick installation at construction sites, industrial zones, or remote project locations. These offices are built off-site and assembled on-site, offering a fast and flexible alternative to traditional buildings.",
-                },
-                {
-                  question:
-                    "What materials are typically used to build prefab site offices?",
-                  answer:
-                    "Prefab site offices are commonly constructed using insulated panels such as PUF (Polyurethane Foam) or EPS (Expanded Polystyrene), along with Light Gauge Steel Framing (LGSF) for structural support. These materials offer strength, thermal insulation, and durability.",
-                },
-                {
-                  question:
-                    "What are the key benefits of using prefab site offices?",
-                  answer:
-                    "They offer quick installation, cost-efficiency, minimal on-site disruption, and flexibility in design. Prefab offices are ideal for fast-track projects and provide all essential office amenities in a compact, functional form.",
-                },
-                {
-                  question: "Are prefab site offices energy efficient?",
-                  answer:
-                    "Yes, they are designed with insulation materials that help regulate indoor temperatures, reducing the need for excessive heating or cooling and contributing to overall energy savings.",
-                },
-                {
-                  question: "Can prefab site offices be relocated?",
-                  answer:
-                    "Absolutely. Prefab site offices are modular and portable, making them easy to disassemble, transport, and reinstall at a new location without structural damage.",
-                },
-                {
-                  question:
-                    "How long does it take to install a prefab site office?",
-                  answer:
-                    "Depending on size and customization, installation typically takes a few days to a couple of weeks — significantly faster than traditional construction methods.",
-                },
-                {
-                  question:
-                    "Which industries commonly use prefab site offices?",
-                  answer:
-                    "They are widely used in construction, infrastructure development, mining, oil & gas, manufacturing, and event management industries — essentially wherever temporary or remote office space is needed.",
-                },
-                {
-                  question:
-                    "Can prefab site offices handle extreme weather conditions?",
-                  answer:
-                    "Yes, they are engineered to be weather-resistant and can perform well under harsh climates, including extreme heat, cold, wind, and rain.",
-                },
-                {
-                  question: "Are prefab site offices customizable?",
-                  answer:
-                    "Yes, they can be fully tailored in terms of size, layout, materials, doors, windows, electrical fittings, HVAC, and more — to meet specific project needs and branding requirements.",
-                },
-              ].map((faq, idx) => (
-                <details
-                  key={idx}
-                  className="bg-white rounded-lg shadow p-4 cursor-pointer group"
-                >
-                  <summary className="flex justify-between items-center font-semibold text-lg list-none">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="bg-white p-4 rounded-md ">
+                  <button
+                    onClick={() => handleToggle(idx)}
+                    className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
+                  >
                     {faq.question}
-                    <span className="transition-transform duration-300 group-open:rotate-90">
+                    <span
+                      className={`transition-transform duration-300 ${
+                        openIndex === idx ? "rotate-90" : ""
+                      }`}
+                    >
                       ▶
                     </span>
-                  </summary>
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
-                </details>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
+                    }`}
+                  >
+                    <p className="text-gray-600 text-base md:text-md">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </section>
       </div>
-      <PedFooter />
+      <Pebfooter />
     </>
   );
 };

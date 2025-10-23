@@ -290,16 +290,16 @@ export default function Modular() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-15 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Pre Engineered Buildings
+              Modular Building Solutions
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-              Pre-Engineered Buildings (PEBs) are modern steel structures
-              designed, fabricated, and assembled using standardized components
-              for faster construction.
+              Build your project offsite with fast accuracy and quality. Enjoy
+              faster completion and effortless on-site assembly for seamless
+              results.
             </p>
           </div>
 
@@ -341,8 +341,8 @@ export default function Modular() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-12">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -441,7 +441,7 @@ export default function Modular() {
         </div>
       </section>
       {/* endcapill */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className=" mx-auto px-4 py-10 md:mx-8">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
           Our Products
         </h2>
@@ -550,7 +550,7 @@ export default function Modular() {
       {/* explore content */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Benefits of Pre-Engineered Buildings
           </h2>

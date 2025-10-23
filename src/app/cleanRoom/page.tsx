@@ -1,9 +1,54 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
-import PedFooter from "../../Components/Footer";
+import Pebfooter from "yes/Components/Pebfooter";
 
-const CleanRoom = () => {
+const CleanRoom: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is a modular clean room building?",
+      answer:
+        "It is a pre-engineered, contamination-controlled facility built with insulated panels and precision sealing, guaranteeing the required atmospheric purity for sensitive manufacturing or research.",
+    },
+    {
+      question: "What materials are used in modular clean room construction?",
+      answer:
+        "Construction uses pharmaceutical-grade panels, aluminum framing, and specialized anti-static flooring, ensuring ease of sanitation, hygiene compliance, and zero particle shedding.",
+    },
+    {
+      question: "What industries require clean rooms?",
+      answer:
+        "They are essential in biotechnology, pharmaceutical production, microelectronics, and advanced food processing, where maintaining specific air quality and environmental control is mandatory.",
+    },
+    {
+      question: "How are clean rooms classified based on cleanliness?",
+      answer:
+        "Clean rooms are precisely categorized according to ISO 14644 standards, which dictates the maximum concentration of particulates allowed per cubic meter of air.",
+    },
+    {
+      question: "What systems are integrated inside a clean room?",
+      answer:
+        "Integrated systems include multi-stage filtration with HEPA/ULPA filters, differential air pressure control, and smart monitoring to sustain consistent temperature and particulate purity.",
+    },
+    {
+      question: "What are the benefits of modular clean room construction?",
+      answer:
+        "Modular construction provides accelerated commissioning, built-in future scalability, and superior risk mitigation by minimizing on-site contamination exposure during the build phase.",
+    },
+    {
+      question: "Why choose LANDSKING for clean room construction?",
+      answer:
+        "We deliver custom-engineered clean rooms that exceed ISO, GMP, and FDA performance thresholds, providing turnkey solutions for verifiable purity and long-term asset reliability.",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -21,7 +66,7 @@ const CleanRoom = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
                 Clean Room
               </h1>
             </div>
@@ -32,16 +77,16 @@ const CleanRoom = () => {
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-2.jpg"
                 alt="Row 1"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-[28px] text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 High-Precision Controlled Environments
               </h3>
               <p className="text-gray-700 mb-4">
@@ -59,7 +104,10 @@ const CleanRoom = () => {
                 excellent hygiene, thermal performance, and contamination
                 control.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
+              <button
+                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                onClick={() => (window.location.href = "/peb-contact")}
+              >
                 Get a Quote
               </button>
             </div>
@@ -68,7 +116,7 @@ const CleanRoom = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Us for Clean Room Construction?
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
@@ -106,28 +154,28 @@ const CleanRoom = () => {
                 </li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-3.jpg"
                 alt="Row 2"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-4.jpg"
                 alt="Row 3"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-[28px] text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Industries Served by Us
               </h3>
               <ul className=" list-disc text-gray-700 mb-4 space-y-1">
@@ -138,16 +186,13 @@ const CleanRoom = () => {
                 <li>Medical, Lab & Research Centers</li>
                 <li>Aerospace & Defense Sectors</li>
               </ul>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
-                Learn More
-              </button>
             </div>
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Essential Features of LANDSKING Clean Rooms
               </h3>
 
@@ -163,120 +208,54 @@ const CleanRoom = () => {
                 <li>Long-lasting, maintenance-free design</li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-5.avif"
                 alt="Row 4"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-          <div className="text-center mx-auto">
-            <h2 className="text-2xl  md:text-[28px]font-bold mb-4 text-[#000080]">
-              Let’s Build Your Clean Room – The Smarter Way
-            </h2>
-            <p className="text-gray-700 text-lg">
-              Planning to set up a clean room? LANDSKING offers a flexible,
-              affordable, and regulation-compliant solution, executed with
-              accuracy and expertise.
-              <br />
-              Contact us today for expert consultation on your clean room
-              project.
-            </p>
-          </div>
-
-          {/* FAQ Section */}
-          <div className=" mx-auto mt-16">
-            <h2 className="text-2xl md:text-[28px] text-[#000080] font-bold text-center mb-8">
+          <div className="mx-auto md:mt-22">
+            <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4 text-[#000080]">
-              {[
-                {
-                  question: "What is a cleanroom?",
-                  answer:
-                    "A cleanroom is a specially designed space that minimizes airborne pollutants, including dust, microbes, and particles, ensuring the cleanest possible environment. They are widely used in sectors such as electronics, pharma, and medical equipment production.",
-                },
-                {
-                  question: "What are ISO cleanrooms?",
-                  answer:
-                    "ISO cleanrooms are rated by air cleanliness. In the U.S. Federal Standard 209, the class is defined by the number of particles 0.5 microns or larger present in each cubic foot of air.",
-                },
-                {
-                  question: "Which types of cleanrooms are commonly used?",
-                  answer:
-                    "The two main types of cleanrooms are turbulently ventilated (non-unidirectional) and unidirectional flow cleanrooms. Prefabricated versions of both types are available.",
-                },
-                {
-                  question: "What is the cost of a cleanroom in India?",
-                  answer:
-                    "In India, the cost of modular cleanrooms ranges from less than 7,000 INR to more than 70,000 INR per square foot. LANDSKING delivers competitively priced cleanroom solutions with free-standing walls and robust load-bearing ceilings.",
-                },
-                {
-                  question: "Who uses cleanrooms?",
-                  answer: (
-                    <div>
-                      <ul className="list-disc pl-5 text-gray-700 mb-4">
-                        <li>Pharmaceuticals & Nutraceuticals</li>
-                        <li>Research Labs & Laboratories</li>
-                        <li>Hospitals & Healthcare Facilities</li>
-                        <li>Food Processing Industries</li>
-                        <li>Cosmetics & Perfume Manufacturing</li>
-                        <li>Medical Cannabis Production</li>
-                        <li>Sustainable Energy Supply Industries</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "Who manufactures cleanrooms?",
-                  answer:
-                    "LANDSKING is a leading provider of modular cleanroom systems, offering complete design, manufacturing, and installation services to meet specific industry requirements.",
-                },
-                {
-                  question:
-                    "Which cleanroom standard is commonly followed in India?",
-                  answer:
-                    "In India, ISO 7 is a typical cleanroom classification, allowing under 352,000 particles >0.5 microns per cubic meter and mandating 60 HEPA-filtered air changes per hour. This is equivalent to the Federal Standard Class 10,000.",
-                },
-                {
-                  question: "How are pharmaceutical cleanrooms classified?",
-                  answer:
-                    "Pharmaceutical cleanrooms are categorized based on the number of airborne particles per cubic meter. This classification ensures the environment complies with pharmaceutical standards. Common ISO classes for pharmaceutical cleanrooms are ISO 7 and ISO 8, corresponding to Class 10,000 and Class 100,000 in the older Federal Standard 209E.",
-                },
-                {
-                  question:
-                    "What is the recommended ceiling coverage for a cleanroom?",
-                  answer:
-                    "Ceiling coverage refers to the portion of the ceiling equipped with HEPA (high-efficiency particulate air) and ULPA (ultra-low penetration air) filters. For an ISO Class 1 cleanroom, which is the highest cleanliness level, 500–750 air changes per hour are recommended, with 80–100% ceiling coverage.",
-                },
-                {
-                  question: "How are cleanrooms used in pharma?",
-                  answer:
-                    "A pharmaceutical cleanroom is a specially controlled space where air is supplied, filtered, and circulated under strict monitoring. It ensures that products remain free from dust, microbes, and other pollutants.",
-                },
-              ].map((faq, idx) => (
-                <details
-                  key={idx}
-                  className="bg-white rounded-lg shadow p-4 cursor-pointer group"
-                >
-                  <summary className="flex justify-between items-center font-semibold text-lg list-none">
+
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="bg-white p-4 rounded-md ">
+                  <button
+                    onClick={() => handleToggle(idx)}
+                    className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
+                  >
                     {faq.question}
-                    <span className="transition-transform duration-300 group-open:rotate-90">
+                    <span
+                      className={`transition-transform duration-300 ${
+                        openIndex === idx ? "rotate-90" : ""
+                      }`}
+                    >
                       ▶
                     </span>
-                  </summary>
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
-                </details>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
+                    }`}
+                  >
+                    <p className="text-gray-600 text-base md:text-md">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </section>
       </div>
-      <PedFooter />
+      <Pebfooter />
     </>
   );
 };

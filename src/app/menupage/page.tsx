@@ -86,19 +86,21 @@ export default function Menupage() {
 
   const faqs: FAQ[] = [
     {
-      question: "What is a factory building?",
+      question: "Is a Pre-Engineered Building a permanent structure?",
       answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
+        "Yes, modern PEBs are classified as capital-grade, permanent structures with a service life of 50–75 years or more, matching conventional longevity.",
     },
     {
-      question: "What materials are used in factory building construction?",
+      question:
+        "What is the typical maintenance cost difference between a PEB and a conventional building? ",
       answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
+        "The durable, coated steel and specialized roofing inherently resist pests and weather. This results in an estimated 30–40% lower long-term maintenance cost compared to masonry or wood alternatives, securing your operational budget.",
     },
     {
-      question: "What are the benefits of prefabricated factory buildings?",
+      question:
+        "Beyond durability, how does the PEB's material choice impact its environmental footprint?",
       answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
+        "The primary material, steel, contains a high percentage of recycled content and is fully recyclable. Choosing a PEB is a commitment to a resource-efficient, lower-impact construction lifecycle.",
     },
     {
       question:
@@ -107,15 +109,16 @@ export default function Menupage() {
         "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
     },
     {
-      question: "Can factory buildings be customized?",
+      question:
+        "Can I easily install a bridge or overhead crane system in a Pre-Engineered Metal Building?",
       answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
+        "Yes, PEBs are holistically engineered for heavy operational requirements. Columns and rafters are custom-designed during fabrication to safely bear the dynamic loads of overhead equipment.",
     },
     {
       question:
-        "How long does it take to construct a prefabricated factory building?",
+        "Do PEBs typically require a lighter or shallower foundation than traditional construction? ",
       answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
+        " Due to optimized design and lighter material weight, PEBs generally require a simpler and more economical foundation, accelerating the project’s earliest phase.",
     },
   ];
   const possibilities = [
@@ -296,7 +299,7 @@ export default function Menupage() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-15 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
@@ -348,8 +351,8 @@ export default function Menupage() {
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-12">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -384,7 +387,7 @@ export default function Menupage() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -395,7 +398,7 @@ export default function Menupage() {
       {/* end description */}
       {/* keyfetaure */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className=" mx-auto text-center ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
@@ -426,7 +429,7 @@ export default function Menupage() {
         </div>
       </section>
       {/*neww  explore conettt */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className=" mx-auto px-4 py-10 md:mx-8">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
           Our Products
         </h2>
@@ -522,7 +525,7 @@ export default function Menupage() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <Image
+                <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-97 object-cover"
@@ -536,11 +539,11 @@ export default function Menupage() {
       {/*  end new explore content */}
 
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-12">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
+            <div className="absolute -bottom-4 -right-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/menupageimg/peb8.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
@@ -689,8 +692,8 @@ export default function Menupage() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-12">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
@@ -711,7 +714,7 @@ export default function Menupage() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"

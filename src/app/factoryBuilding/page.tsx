@@ -1,9 +1,65 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Footer from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 
-const FactoryBuilding = () => {
+const FactoryBuilding: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is a modern factory building?",
+      answer:
+        "It stands as a mission-critical asset, meticulously engineered to enclose specific production protocols while maximizing unobstructed internal volume, load capacity, and process flow efficiency.",
+    },
+    {
+      question:
+        "What materials are used in advanced factory building construction?",
+      answer:
+        "The established norm is high-tensile structural steel (typically Pre-Engineered) for the framework, complemented by specialized metal roofing and high-performance insulated panel systems for the envelope.",
+    },
+    {
+      question:
+        "What are the key benefits of choosing prefabricated factory buildings?",
+      answer:
+        "They deliver a significantly expedited market entry (boosting ROI) and ensure superior budget certainty, thanks to stringent, precise fabrication control over all modular elements.",
+    },
+    {
+      question:
+        "How does a pre-engineered factory building differ from a traditional building?",
+      answer:
+        "PEB facilities utilize an optimized, fully integrated construction methodology where components are manufactured off-site, thereby dramatically lowering on-site erection time and minimizing material wastage.",
+    },
+    {
+      question:
+        "How long does it typically take to construct a prefabricated factory building?",
+      answer:
+        "Owing to the strategy of concurrent engineering and manufacturing, the on-site construction duration is often 30–50% shorter than standard methods, rapidly achieving operational status.",
+    },
+    {
+      question: "Are prefabricated factory buildings durable and long-lasting?",
+      answer:
+        "Absolutely. They are structurally designed as permanent, high-value capital assets. The utilization of durable, quality-controlled steel guarantees a functional service life of five decades or more.",
+    },
+    {
+      question:
+        "What is the strategic role of insulation in factory buildings?",
+      answer:
+        "Insulation is vital for sustaining exact internal climatic conditions, which sharply reduces energy expenditure for environmental control and fosters a more comfortable, productive space for equipment and staff.",
+    },
+    {
+      question:
+        "What are the maintenance requirements for prefabricated factory buildings?",
+      answer:
+        "Maintenance is characteristically minimal and highly predictable, primarily involving routine inspections and cleaning, enabled by the use of corrosion-resistant coated steel and durable cladding materials.",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -11,7 +67,6 @@ const FactoryBuilding = () => {
 
         {/* Hero Section */}
         <section className="w-full min-h-[500px] flex flex-col md:flex-row">
-          {/* Left Column */}
           <div
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
@@ -19,9 +74,8 @@ const FactoryBuilding = () => {
                 "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/menupagetwo/fac-1.jpg')",
             }}
           >
-            {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
                 Factory Building
               </h1>
             </div>
@@ -30,18 +84,18 @@ const FactoryBuilding = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
-          {/* Row 1 - Image Left, Content Right */}
+          {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/fac-3.jpeg"
-                alt="Row 1"
+                alt="Prefabricated Factory Building"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Prefabricated Factory Buildings Designed for Industrial
                 Applications
               </h3>
@@ -52,172 +106,129 @@ const FactoryBuilding = () => {
                 Their solutions offer fast installation, energy savings, and
                 long-term reliability—all while keeping costs optimized.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
+              <button
+                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                onClick={() => (window.location.href = "/peb-contact")}
+              >
                 Get a Quote
               </button>
             </div>
           </div>
 
-          {/* Row 2 - Content Left, Image Right */}
+          {/* Row 2 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Prefab Factory Building Manufacturing Techniques and Technology
-              </h3>
+              </h2>
               <p className="text-gray-700 mb-4">
-                🚀 Material Quality - Uses premium steel and insulated panels
-                for durability and thermal efficiency.
+                Material Quality - Uses premium steel and insulated panels for
+                durability and thermal efficiency.
               </p>
               <p className="text-gray-700 mb-4">
-                💰Structural Design: - Features strong columns, beams, and
-                trusses to guarantee stability and precision.
+                Structural Design - Features strong columns, beams, and trusses
+                to guarantee stability and precision.
               </p>
               <p className="text-gray-700 mb-4">
-                🏢Flexible Construction - Offsite fabrication reduces on-site
+                Flexible Construction - Offsite fabrication reduces on-site
                 disruptions and accelerates the installation process.
               </p>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/factory3.jpg"
-                alt="Row 2"
+                alt="Manufacturing Techniques"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-
-          {/* Row 3 - Image Left, Content Right */}
+          {/* Row 3 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/fac-4.jpeg"
-                alt="Row 3"
+                alt="Factory Applications"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Key Applications of Prefabricated Factory Buildings
-              </h3>
-              <p>
+              </h2>
+              <p className="text-gray-700 mb-4">
                 Landsking Infra’s factory buildings cater to a wide range of
                 industrial requirements, such as:
               </p>
-              <ul className="text-gray-700 mb-4 space-y-1">
-                <li>🏭 Production plants and manufacturing units</li>
-                <li>📦 Warehouses and distribution centers</li>
-                <li>🧪 Testing and quality assurance labs</li>
-                <li>🛡️ Industrial enclosures</li>
-                <li>🔍 Assembly and inspection zones</li>
+              <ul className="text-gray-700 mb-4 space-y-1 list-disc pl-6">
+                <li>Production plants and manufacturing units</li>
+                <li>Warehouses and distribution centers</li>
+                <li>Testing and quality assurance labs</li>
+                <li>Industrial enclosures</li>
+                <li>Assembly and inspection zones</li>
               </ul>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
-                Learn More
-              </button>
             </div>
           </div>
 
-          {/* Row 4 - Content Left, Image Right */}
-
-          {/* Row 5 - Image Left, Content Right */}
+          {/* Row 5 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Landsking Infra?
               </h3>
-              <ul className="space-y-1">
-                <li>✔️ Trusted Expertise Since 1999</li>
-                <li>✔️ Comprehensive Turnkey Project Solutions</li>
-                <li>✔️ Pan-India Project Delivery & Implementation</li>
-                <li>✔️ Fully Integrated Design & Manufacturing Capabilities</li>
-                <li>✔️ Dedicated Commitment to Quality and On-Time Delivery</li>
+              <ul className="space-y-1 list-disc pl-6 text-gray-700">
+                <li>Trusted Expertise Since 1999</li>
+                <li>Comprehensive Turnkey Project Solutions</li>
+                <li>Pan-India Project Delivery & Implementation</li>
+                <li>Fully Integrated Design & Manufacturing Capabilities</li>
+                <li>Dedicated Commitment to Quality and On-Time Delivery</li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/fac-5.jpeg"
-                alt="Row 5"
+                alt="Why Choose Us"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* FAQ Section */}
-          <div className=" mx-auto mt-16">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+          <div className="mx-auto md:mt-22">
+            <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
+
             <div className="space-y-4">
-              {[
-                {
-                  question: "What is a factory building?",
-                  answer:
-                    "A factory building is a facility constructed to accommodate industrial activities like manufacturing, assembly, storage, and other related processes.",
-                },
-                {
-                  question:
-                    "What materials are used in factory building construction?",
-                  answer:
-                    "Factory buildings are commonly built with steel, prefabricated panels, reinforced concrete, and insulated materials to ensure strength, durability, and energy efficiency.",
-                },
-                {
-                  question:
-                    "What are the benefits of prefabricated factory buildings?",
-                  answer:
-                    "Prefabricated factory buildings provide quicker construction times, cost savings, design flexibility, and a lower environmental footprint.",
-                },
-                {
-                  question:
-                    "How does a pre-engineered factory building differ from traditional buildings?",
-                  answer:
-                    "Pre-engineered buildings (PEBs) utilize pre-designed components for rapid assembly, whereas traditional buildings involve on-site construction that typically takes more time.",
-                },
-                {
-                  question:
-                    "How long does it take to construct a prefabricated factory building?",
-                  answer:
-                    "Construction time can vary but is generally much shorter than traditional methods, often finishing within just a few weeks.",
-                },
-                {
-                  question: "Are prefabricated factory buildings durable?",
-                  answer:
-                    "Exactly! These buildings are engineered for durability, capable of enduring tough environmental conditions and supporting heavy industrial loads over the long term.",
-                },
-                {
-                  question:
-                    "What is the cost of constructing a factory building in India?",
-                  answer:
-                    "The cost varies based on factors such as size, design, materials, and location, but prefabricated buildings are typically more budget-friendly compared to traditional construction.",
-                },
-                {
-                  question:
-                    "What is the role of insulation in factory buildings?",
-                  answer:
-                    "Insulation improves energy efficiency, helps regulate temperature, and minimizes noise within factory buildings.",
-                },
-                {
-                  question:
-                    "What are the maintenance requirements for prefabricated factory buildings?",
-                  answer:
-                    " These buildings need minimal upkeep, mainly routine inspections and small repairs to ensure their structural soundness.",
-                },
-              ].map((faq, idx) => (
-                <details
-                  key={idx}
-                  className="bg-white rounded-lg shadow p-4 cursor-pointer group"
-                >
-                  <summary className="flex justify-between items-center font-semibold text-lg list-none">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="bg-white p-4 rounded-md shadow-sm">
+                  <button
+                    onClick={() => handleToggle(idx)}
+                    className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
+                  >
                     {faq.question}
-                    <span className="transition-transform duration-300 group-open:rotate-90">
+                    <span
+                      className={`transition-transform duration-300 ${
+                        openIndex === idx ? "rotate-90" : ""
+                      }`}
+                    >
                       ▶
                     </span>
-                  </summary>
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
-                </details>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
+                    }`}
+                  >
+                    <p className="text-gray-600 text-base md:text-md">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>

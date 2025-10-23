@@ -1,9 +1,54 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
-import PedFooter from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
+import Pebfooter from "yes/Components/Pebfooter";
 
-const RailwayShelters = () => {
+const RailwayShelters: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is a modular railway shelter?",
+      answer:
+        "It is a pre-engineered infrastructure module built using factory-made components, designed for fast, large-scale deployment to enhance passenger comfort and safety at stations.",
+    },
+    {
+      question: "What materials ensure durability and low maintenance?",
+      answer:
+        "Construction relies on galvanized steel frameworks, high-spec protective panels, and anti-corrosion treatments to guarantee minimal lifecycle cost and superior resistance to weather and wear.",
+    },
+    {
+      question: "What are the primary advantages of modular railway shelters?",
+      answer:
+        "They enable exceptionally fast project turnaround, are easily scalable, and critically enhance passenger well-being by providing immediate, reliable environmental protection.",
+    },
+    {
+      question: "Can these public transit shelters be customized?",
+      answer:
+        "Yes, designs are bespoke tailored to integrate with local architectural identity, accommodate specific traffic flow, and feature integrated digital signage and full accessibility solutions.",
+    },
+    {
+      question: "How quickly can a modular railway shelter be installed?",
+      answer:
+        "Deployment is highly accelerated, typically requiring only 2–7 days. Factory fabrication ensures a clean, fast process that results in a highly cost-efficient project completion model.",
+    },
+    {
+      question: "Are these shelters durable enough for continuous public use?",
+      answer:
+        "Yes. High-grade steel and robust panel systems ensure the units withstand continuous public use and environmental stress, guaranteeing long-term public utility with minimal upkeep.",
+    },
+    {
+      question: "Why choose LANDSKING for railway infrastructure projects?",
+      answer:
+        "We supply precision-engineered modules built with verified materials, ensuring unmatched public safety, asset longevity, and enhanced passenger environments through reliable turnkey execution.",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -20,7 +65,7 @@ const RailwayShelters = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
                 Railway Shelters
               </h1>
             </div>
@@ -31,16 +76,16 @@ const RailwayShelters = () => {
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-2.jpg"
                 alt="Row 1"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Durable and Highly Functional Shelters
               </h3>
               <p className="text-gray-700 mb-4">
@@ -55,7 +100,10 @@ const RailwayShelters = () => {
                 lightweight design ensures quick installation, cost savings, and
                 long-lasting performance.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
+              <button
+                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                onClick={() => (window.location.href = "/peb-contact")}
+              >
                 Get a Quote
               </button>
             </div>
@@ -64,7 +112,7 @@ const RailwayShelters = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of Prefabricated Shelters
               </h3>
               <p className="text-gray-700">
@@ -98,28 +146,28 @@ const RailwayShelters = () => {
                 </li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-3.jpg"
                 alt="Row 2"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-4.jpeg"
                 alt="Row 3"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Advanced Manufacturing Technology
               </h3>
               <p className="text-gray-700 mb-4">
@@ -131,16 +179,13 @@ const RailwayShelters = () => {
                 long-term protection from dust, moisture, and corrosion,
                 ensuring dependable performance.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
-                Learn More
-              </button>
             </div>
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Uses of Prefabricated Shelters
               </h3>
 
@@ -156,121 +201,57 @@ const RailwayShelters = () => {
                 <li>Temporary Shelters</li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-5.jpg"
                 alt="Row 4"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Centered Heading + Paragraph */}
-          <div className=" mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080] text-center">
-              Benefits of Landsking Prefab Shelters
-            </h2>
-            <p className="text-gray-700 text-lg">
-              With expertise and precise engineering, LANDSKING is a leading
-              choice for railway and telecom shelters. Renowned for prompt
-              delivery and installation, our shelters provide the following
-              benefits:
-              <br />
-              <br />
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li>Fully Waterproof: Built to withstand outdoor conditions</li>
-                <li>
-                  Corrosion Resistant: Can endure severe weather conditions
-                </li>
-                <li>Portable and Lightweight: Easy to move and set up</li>
-                <li>Strong Load Capacity: Built for durability</li>
-                <li>Maintenance-Free: Ensures extended life span</li>
-              </ul>
-            </p>
-          </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mt-16">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+          <div className="mx-auto md:mt-22">
+            <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4 text-[#000080]">
-              {[
-                {
-                  question: "What is a railway shelter used for?",
-                  answer:
-                    "A railway shelter is a prefabricated structure that offers passengers protection and comfort at railway stations, keeping them safe from weather conditions.",
-                },
-                {
-                  question: "What is a telecom shelter used for?",
-                  answer:
-                    "A telecom shelter is a modular, weather-resistant structure that houses telecom equipment such as batteries, servers, and transmission units, safeguarding them from external conditions.",
-                },
-                {
-                  question:
-                    "Which materials are used in railway and telecom shelters?",
-                  answer:
-                    "Railway and telecom shelters are constructed using durable components like steel frameworks, insulated panels, and finishes that resist harsh weather, providing extended service life.",
-                },
-                {
-                  question:
-                    "Why choose prefabricated railway and telecom shelters?",
-                  answer:
-                    "These shelters are quick to set up, economical, energy-efficient, and adaptable to specific needs, offering robust protection for equipment and infrastructure.",
-                },
-                {
-                  question: "Are these shelters suitable for harsh weather?",
-                  answer:
-                    "Absolutely, LANDSKING’s railway and telecom shelters are built to endure challenging weather conditions such as heavy rainfall, high winds, and extreme heat.",
-                },
-                {
-                  question: "Can these shelters be customized?",
-                  answer:
-                    "Yes, LANDSKING delivers customizable shelters, allowing adjustments in dimensions, insulation, and added features to cater to the exact requirements of railway and telecom sites.",
-                },
-                {
-                  question:
-                    "How do telecom shelters keep equipment in optimal conditions?",
-                  answer:
-                    "These shelters include insulation, proper ventilation, and humidity management to maintain ideal conditions for delicate telecom equipment.",
-                },
-                {
-                  question: "What is the expected lifespan of these shelters?",
-                  answer:
-                    "When maintained correctly, these shelters can serve reliably for more than 20 years while retaining their durability and functionality.",
-                },
-                {
-                  question:
-                    "How quickly can a railway or telecom shelter be installed?",
-                  answer:
-                    "Thanks to prefabrication, LANDSKING’s shelters can be installed much faster than traditional structures, with most projects completed within a few weeks.",
-                },
-                {
-                  question:
-                    "Why choose LANDSKING for railway and telecom shelters?",
-                  answer:
-                    "LANDSKING delivers high-quality, durable, and customizable shelters, specifically designed to meet industry requirements, all at competitive prices.",
-                },
-              ].map((faq, idx) => (
-                <details
-                  key={idx}
-                  className="bg-white rounded-lg shadow p-4 cursor-pointer group"
-                >
-                  <summary className="flex justify-between items-center font-semibold text-lg list-none">
+
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="bg-white p-4 rounded-md ">
+                  <button
+                    onClick={() => handleToggle(idx)}
+                    className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
+                  >
                     {faq.question}
-                    <span className="transition-transform duration-300 group-open:rotate-90">
+                    <span
+                      className={`transition-transform duration-300 ${
+                        openIndex === idx ? "rotate-90" : ""
+                      }`}
+                    >
                       ▶
                     </span>
-                  </summary>
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
-                </details>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
+                    }`}
+                  >
+                    <p className="text-gray-600 text-base md:text-md">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </section>
       </div>
-      <PedFooter />
+      <Pebfooter />
     </>
   );
 };

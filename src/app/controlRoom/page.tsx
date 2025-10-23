@@ -1,9 +1,58 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
-import PedFooter from "../../Components/Footer";
+import Pebfooter from "yes/Components/Pebfooter";
 
-const ControlRoom = () => {
+const ControlRoom: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is a modular control room building?",
+      answer:
+        "A modular control room is a pre-engineered structure designed to securely house monitoring and control operations for industrial plants, delivering rapid installation, mobility, and high safety standards.",
+    },
+    {
+      question: "What materials are used in modular control room construction?",
+      answer:
+        "Construction uses galvanized steel frames, insulated PUF/PIR panels, and acoustic linings to ensure superior strength, precise temperature control, and effective noise isolation.",
+    },
+    {
+      question: "How long does it take to build a modular control room?",
+      answer:
+        "Since components are factory-fabricated, on-site assembly is exceptionally fast, allowing control rooms to be fully operational within 5–10 days, minimizing site disruption.",
+    },
+    {
+      question:
+        "What are the key benefits of modular control room construction?",
+      answer:
+        "They offer flexibility, high relocatability, and simple expansion, providing a comfortable, controlled, and safe workspace for operators in demanding industrial settings.",
+    },
+    {
+      question:
+        "How are modular control rooms designed for safety and comfort?",
+      answer:
+        "Features include fire-rated walls, vibration resistance, and robust thermal insulation, with advanced HVAC and noise control ensuring a stable, productive atmosphere.",
+    },
+    {
+      question:
+        "Can modular control rooms be customized for specific industries?",
+      answer:
+        "Yes, layouts, windows, and console placements are custom-designed to meet the exact operational and regulatory needs of power plants, steel mills, and oil & gas facilities.",
+    },
+    {
+      question:
+        "Why should we choose your company for control rooms and pulpits?",
+      answer:
+        "We deliver high-performance, turnkey modular control rooms built with precision engineering and premium materials, guaranteeing reliability, safety, and rapid execution for lasting value.",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -21,7 +70,7 @@ const ControlRoom = () => {
           >
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
-              <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
                 Control Room
               </h1>
             </div>
@@ -32,16 +81,16 @@ const ControlRoom = () => {
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/control-room-2.jpg"
                 alt="Row 1"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl text-[#000080] font-bold mb-4">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Advanced Engineering Solutions for Control Rooms
               </h3>
               <p className="text-gray-700 mb-4">
@@ -52,7 +101,10 @@ const ControlRoom = () => {
                 non-lift-on variants and can be customized with or without steel
                 frameworks.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
+              <button
+                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                onClick={() => (window.location.href = "/peb-contact")}
+              >
                 Get a Quote
               </button>
             </div>
@@ -61,7 +113,7 @@ const ControlRoom = () => {
           {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of Control Rooms
               </h3>
               <p className="text-gray-700 mb-4">
@@ -86,28 +138,28 @@ const ControlRoom = () => {
                 such as smoke detection and fire suppression systems.
               </p>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/control-room-3.jpg"
                 alt="Row 2"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/control-room-4.jfif"
+                src="/new-images/control-room-1.jpg"
                 alt="Row 3"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Manufacturing Technology
               </h3>
               <p className="text-gray-700 mb-4">
@@ -117,16 +169,13 @@ const ControlRoom = () => {
                 control rooms comply with regulatory approvals and satisfy both
                 commercial and safety standards.
               </p>
-              <button className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition">
-                Learn More
-              </button>
             </div>
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Applications
               </h3>
               <p className="text-gray-700 mb-4">
@@ -148,146 +197,57 @@ const ControlRoom = () => {
                 </li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/control-room-5.jpg"
                 alt="Row 4"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
 
           {/* Centered Heading + Paragraph */}
-          <div className=" mx-auto">
-            <h2 className="text-center text-3xl font-bold mb-4 text-[#000080]">
-              Benefits of LANDSKING Control Rooms
-            </h2>
-            <p className="text-gray-700 text-lg">
-              Key benefits of LANDSKING control rooms include:
-              <br />
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li>
-                  Enhanced thermal insulation for better energy management and
-                  comfort
-                </li>
-                <li>
-                  Strong, long-lasting structures for safe operation in
-                  challenging environments
-                </li>
-                <li>Rapid dry construction, eliminating the need for water</li>
-                <li>
-                  Panels that can be customized to site-specific conditions
-                </li>
-                <li>Easily adaptable for relocation or expansion</li>
-                <li>
-                  All-weather construction for reliable and consistent
-                  performance
-                </li>
-              </ul>
-            </p>
-          </div>
 
           {/* FAQ Section */}
-          <div className=" mx-auto mt-16">
-            <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
+          <div className="mx-auto md:mt-22">
+            <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4 text-[#000080]">
-              {[
-                {
-                  question: "What is a control pulpit?",
-                  answer:
-                    "A control pulpit is a specialized modular structure that houses industrial control panels and monitoring systems, providing a safe and organized workspace.",
-                },
-                {
-                  question:
-                    "How does a control room relate to a control pulpit?",
-                  answer:
-                    "A control room serves as the main hub for process monitoring and management, while a control pulpit is a compact version, customized for particular equipment or sections within an industrial setup.",
-                },
-                {
-                  question:
-                    "What sectors rely on control pulpits or control rooms?",
-                  answer:
-                    "Industries such as power generation, steel production, manufacturing, and process-heavy operations commonly use control rooms and pulpits.",
-                },
-                {
-                  question:
-                    "Which features define a modern control room or control pulpit?",
-                  answer:
-                    "Key features include ergonomically designed workspaces, state-of-the-art monitoring equipment, climate control, acoustic insulation, and tailored layouts to optimize workflow.",
-                },
-                {
-                  question:
-                    "How do control pulpits differ from traditional control rooms?",
-                  answer:
-                    "Control pulpits are compact, localized units designed for specific equipment, whereas control rooms oversee broader, plant-wide operations.",
-                },
-                {
-                  question:
-                    "Can control pulpits be customized for control room applications?",
-                  answer:
-                    "Yes, LANDSKING provides tailored solutions to suit control room needs, including advanced insulation, integrated equipment, and HVAC systems.",
-                },
-                {
-                  question: "How are control rooms and pulpits constructed?",
-                  answer:
-                    "Steel structures, insulated panels, fire-retardant materials, and specialized flooring are used to construct control rooms and pulpits, providing robustness and safety.",
-                },
-                {
-                  question:
-                    "Are control rooms and pulpits built for extreme industrial environments?",
-                  answer:
-                    "LANDSKING’s control rooms and pulpits are designed to handle high heat, vibrations, and industrial noise, ensuring reliable functionality.",
-                },
-                {
-                  question:
-                    "How does LANDSKING ensure safety in control rooms and pulpits?",
-                  answer:
-                    "Control rooms and pulpits from LANDSKING are equipped with fire-resistant components, soundproofing, anti-static flooring, and advanced ventilation systems to guarantee a safe working environment.",
-                },
-                {
-                  question: "Can control rooms be moved like control pulpits?",
-                  answer:
-                    "While control pulpits are generally portable, larger control rooms can be designed modularly for relocation or future expansion.",
-                },
-                {
-                  question: "How long do control rooms and pulpits last?",
-                  answer:
-                    "With proper maintenance, LANDSKING control rooms and pulpits can last over 20 years while maintaining optimal performance.",
-                },
-                {
-                  question:
-                    "Why choose LANDSKING for control rooms and pulpits?",
-                  answer:
-                    "LANDSKING offers durable, customizable, and cost-effective solutions designed to meet industry-specific requirements while ensuring safety and reliability.",
-                },
-                {
-                  question:
-                    "How long does it take to install control rooms and pulpits?",
-                  answer:
-                    "Installation times vary depending on project size and complexity, but LANDSKING’s prefabricated solutions ensure faster delivery compared to conventional construction methods.",
-                },
-              ].map((faq, idx) => (
-                <details
-                  key={idx}
-                  className="bg-white rounded-lg shadow p-4 cursor-pointer group"
-                >
-                  <summary className="flex justify-between items-center font-semibold text-lg list-none">
+
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="bg-white p-4 rounded-md ">
+                  <button
+                    onClick={() => handleToggle(idx)}
+                    className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
+                  >
                     {faq.question}
-                    <span className="transition-transform duration-300 group-open:rotate-90">
+                    <span
+                      className={`transition-transform duration-300 ${
+                        openIndex === idx ? "rotate-90" : ""
+                      }`}
+                    >
                       ▶
                     </span>
-                  </summary>
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
-                </details>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
+                    }`}
+                  >
+                    <p className="text-gray-600 text-base md:text-md">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </section>
       </div>
-      <PedFooter />
+      <Pebfooter />
     </>
   );
 };
