@@ -116,7 +116,7 @@ export default function ProjectSlider() {
         {/* Left Arrow */}
         <div
           ref={prevRef}
-          className="absolute top-1/2 -left-2 -translate-y-1/2 bg-blue-900 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
+          className="absolute top-1/2 -left-2 -translate-y-1/2 bg-[#000080] text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
         >
           ◀
         </div>
@@ -124,7 +124,7 @@ export default function ProjectSlider() {
         {/* Right Arrow */}
         <div
           ref={nextRef}
-          className="absolute top-1/2 -right-2 -translate-y-1/2 bg-blue-900 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
+          className="absolute top-1/2 -right-2 -translate-y-1/2 bg-[#000080] text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-blue-700 transition z-10"
         >
           ▶
         </div>

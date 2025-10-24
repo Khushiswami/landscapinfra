@@ -2,7 +2,12 @@
 
 import Image from "next/image";
 import { ReactNode } from "react";
-import { FaWarehouse, FaIndustry, FaSnowflake, FaShieldAlt } from "react-icons/fa";
+import {
+  FaWarehouse,
+  FaIndustry,
+  FaSnowflake,
+  FaShieldAlt,
+} from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
 
 // Props type for Card
@@ -70,7 +75,7 @@ function Card({ image, icon, title, description }: CardProps) {
       </div>
 
       {/* Icon */}
-      <div className="relative -mt-8 ml-auto mr-4 bg-blue-900 p-3 rounded shadow-lg flex items-center justify-center">
+      <div className="relative -mt-8 ml-auto mr-4 bg-[#000080] p-3 rounded shadow-lg flex items-center justify-center">
         {icon}
       </div>
 
@@ -88,7 +93,7 @@ function Card({ image, icon, title, description }: CardProps) {
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             READ MORE
           </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-blue-900 transition-all duration-500 ease-out group-hover:w-full"></span>
+          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
         </a>
       </div>
     </div>

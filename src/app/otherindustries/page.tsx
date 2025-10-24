@@ -281,7 +281,7 @@ export default function Otherindustries() {
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Pre Engineered Buildings
+              Other Industries
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
               Pre-Engineered Buildings (PEBs) are modern steel structures
@@ -329,8 +329,8 @@ export default function Otherindustries() {
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-19">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -379,7 +379,7 @@ export default function Otherindustries() {
         </div>
       </section>
 
-      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-13">
         <div className=" mx-auto text-center md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
@@ -410,7 +410,7 @@ export default function Otherindustries() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-4 py-10 md:px-23">
+      <section className=" mx-auto px-4 py-10 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
@@ -522,7 +522,6 @@ export default function Otherindustries() {
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <img
               src="/menupageimg/peb8.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
@@ -571,7 +570,7 @@ export default function Otherindustries() {
       </section>
       {/* endcapill */}
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10 md:px-35">
+      <section className="bg-[#000080] text-white py-10 md:px-17">
         <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Inclusive Services{" "}
@@ -615,7 +614,7 @@ export default function Otherindustries() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-20">
+        <div className=" mx-auto px-6 md:px-17">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Steel Tubes for Building and Infrastructure
@@ -682,7 +681,7 @@ export default function Otherindustries() {
 
       {/* end special section */}
       <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-20">
+        <div className=" mx-auto px-6 md:px-17">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
             Our Support
@@ -821,7 +820,6 @@ export default function Otherindustries() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"

@@ -1,488 +1,564 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { IoIosArrowForward } from "react-icons/io";
-
-import Image from "next/image";
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  FaTools,
+  FaBolt,
+  FaShieldAlt,
+  FaLeaf,
+  FaCogs,
+  FaExpand,
+} from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
-import ServicesSlider from "yes/Components/ServicesSlider";
-import Explore from "yes/Components/Explore";
+import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
-import IndustrySlider from "yes/Components/IndustrySlider";
+import Brand from "yes/Components/Brand";
+import PlatformP from "yes/Components/PlatformP";
+import Pebheader from "yes/Components/Pebheader";
+import Image from "next/image";
+import ServicesSlider from "yes/Components/ServicesSlider";
 import Navbar from "yes/Components/Navbar";
-import { motion, AnimatePresence } from "framer-motion";
-import Heavysector from "yes/Components/Heavysector";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-const projects = [
-  {
-    id: 1,
-    title: "Rejuve 360",
-    status: "Ongoing",
-    image: "/realstate/three.webp",
-    location: "Mulund, Mumbai",
-  },
-  {
-    id: 2,
-    title: "West Square",
-    status: "Ongoing",
-    image: "/realstate/two.jpg",
-    location: "Seawoods, Navi Mumbai",
-  },
-  {
-    id: 3,
-    title: "Veridian",
-    status: "Completed",
-    image: "/realstate/one.webp",
-    location: "Powai, Mumbai",
-  },
-  {
-    id: 4,
-    title: "Veridian",
-    status: "Completed",
-    image: "/realstate/one.webp",
-    location: "Powai, Mumbai",
-  },
-];
-
-const TABS = [
-  {
-    title: "Pre Engineered Buildings",
-    headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings.",
-    img: "/about.png",
-    buttonText: "VIEW MORE",
-    url: "/menupage",
-  },
-  {
-    title: "EPC Solutions",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution.",
-    img: "/industry.jpg",
-    buttonText: "VIEW MORE",
-    url: "/epcsolutions",
-  },
-  {
-    title: "Structural Engineering Services",
-    headline: "Excellence in Structural Engineering",
-    body: "Our expert engineers provide innovative structural design and analysis services.",
-    img: "/fourth.png",
-    buttonText: "VIEW MORE",
-    url: "/structural-engineering",
-  },
-  {
-    title: "Project Consultancy & Management",
-    headline: "Trusted Project Consultancy & Management",
-    body: "We provide end-to-end project consultancy and management services.",
-    img: "/about.png",
-    buttonText: "VIEW MORE",
-    url: "/project-consultancy",
-  },
-];
-
-const slides = [
-  {
-    title: "PRE ENGINEERED BUILDINGS",
-    desc: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
-    video: "/video.mp4",
-    link: "/menupage",
-  },
-  {
-    title: "EPC Solutions",
-    desc: "Delivering end-to-end Engineering, Procurement, and Construction solutions.",
-    video: "/video.mp4",
-    link: "/epcsolutions",
-  },
-  {
-    title: "Project Management Consultancy",
-    desc: "Providing expert project management guidance.",
-    video: "/video.mp4",
-    link: "/project-management",
-  },
-  {
-    title: "Structural Engineering Services",
-    desc: "Offering innovative structural engineering solutions.",
-    video: "/homeslider.mp4",
-    link: "/solutionservice",
-  },
-];
-
-const sectors = [
-  {
-    id: 1,
-    title: "Buildings and Infrastructure",
-    image: "/industry.jpg",
-    url: "/manufacturing",
-    description:
-      "We deliver cutting-edge buildings and infrastructure solutions.",
-  },
-  {
-    id: 2,
-    title: "Warehouses",
-    image: "/industry.jpg",
-    url: "/urban",
-    description: "We construct modern warehouses optimized for logistics.",
-  },
-  {
-    id: 3,
-    title: "Building Information Modeling",
-    image: "/industry.jpg",
-    url: "/advanced",
-    description: "We leverage BIM to transform construction workflows.",
-  },
-  {
-    id: 4,
-    title: "PLANT & PRODUCT ENGINEERING SERVICES",
-    image: "/industry.jpg",
-    url: "/oil",
-    description:
-      "Our engineering services cover every aspect of plant and product development.",
-  },
-  {
-    id: 5,
-    title: "Water",
-    image: "/industry.jpg",
-    url: "/water",
-    description: "We provide advanced water management solutions.",
-  },
-];
-
-export default function HeavyEngineering() {
-  const router = useRouter();
-
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [, setProgress] = useState(0);
-  const [, setCurrent] = useState(0);
-  const [itemsPerView, setItemsPerView] = useState(3);
-
-  const [active, setActive] = useState(0);
-  const [underlineStyle, setUnderlineStyle] = useState<{
-    width: number;
-    left: number;
-  }>({ width: 0, left: 0 });
-  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-  useEffect(() => {
-    setProgress(0);
-    const progressTimer = setInterval(
-      () => setProgress((prev) => Math.min(prev + 2, 100)),
-      100
-    );
-    const slideTimer = setTimeout(
-      () => setActiveSlide((prev) => (prev + 1) % slides.length),
-      5000
-    );
-    return () => {
-      clearInterval(progressTimer);
-      clearTimeout(slideTimer);
-    };
-  }, [activeSlide]);
+export default function Heavyengineering() {
+  interface FAQ {
+    question: string;
+    answer: string;
+  }
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  // ===== Data =====
+  const areas = [
+    {
+      id: 1,
+      title: "Prefabricated",
+      subtitle: "Prefabricated Multi-Storey Building Manufacturer",
+      description:
+        "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
+      image: "/menupageimg/peb3.jpg",
+    },
+    {
+      id: 2,
+      title: "Warehouse",
+      subtitle: "Warehouse",
+      description:
+        "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions to meet industrial and commercial demands.",
+      image: "/menupageimg/peb4.png",
+    },
+    {
+      id: 3,
+      title: "Industrial Shed",
+      subtitle: "Prefabricated Industrial Shed Manufacturers",
+      description:
+        "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
+      image: "/menupageimg/peb5.png",
+    },
+    {
+      id: 4,
+      title: "Factory Building",
+      subtitle: "Factory Building Solutions",
+      description:
+        "Our factory buildings are designed to provide a safe, efficient, and scalable infrastructure for manufacturing operations across multiple sectors.",
+      image: "/menupageimg/peb8.jpg",
+    },
+    {
+      id: 5,
+      title: "Industrial Enclosures",
+      subtitle: "Industrial Enclosures",
+      description:
+        "We deliver customized industrial enclosures that ensure safety, reliability, and protection of equipment while optimizing operational performance.",
+      image: "/menupageimg/peb6.jpg",
+    },
+    {
+      id: 6,
+      title: "Cold Storage",
+      subtitle: "Cold Storage & Cold Room Manufacturer",
+      description:
+        "Our advanced cold storage and cold room solutions are engineered to maintain precise temperatures, ensuring freshness and quality for perishable goods.",
+      image: "/menupageimg/peb7.jpg",
+    },
+  ];
 
-  useEffect(() => {
-    const updateItems = () => setItemsPerView(window.innerWidth < 768 ? 1 : 3);
-    updateItems();
-    window.addEventListener("resize", updateItems);
-    return () => window.removeEventListener("resize", updateItems);
-  }, []);
+  const faqs: FAQ[] = [
+    {
+      question: "What is a factory building?",
+      answer:
+        "A factory building is a structure designed to house manufacturing or production operations.",
+    },
+    {
+      question: "What materials are used in factory building construction?",
+      answer:
+        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
+    },
+    {
+      question: "What are the benefits of prefabricated factory buildings?",
+      answer:
+        "They are faster to build, cost-effective, customizable, and more sustainable.",
+    },
+    {
+      question:
+        "How does a pre-engineered factory building differ from traditional buildings?",
+      answer:
+        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+    },
+    {
+      question: "Can factory buildings be customized?",
+      answer:
+        "Yes, they can be tailored to specific design, size, and operational requirements.",
+    },
+    {
+      question:
+        "How long does it take to construct a prefabricated factory building?",
+      answer:
+        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
+    },
+  ];
 
-  useEffect(() => {
-    if (itemsPerView > 1) {
-      const timer = setInterval(
-        () => setCurrent((c) => (c + 1) % sectors.length),
-        5000
-      );
-      return () => clearInterval(timer);
-    }
-  }, [itemsPerView]);
-  useEffect(() => {
-    const el = tabRefs.current[active];
-    if (el) {
-      setUnderlineStyle({
-        width: el.offsetWidth,
-        left: el.offsetLeft,
-      });
+  const possibilities = [
+    {
+      subtitle: "Quick Installation & Lightweight Construction",
+      description:
+        "Pre-engineered buildings (PEBs) allow for fast installation and easy erection due to their lightweight construction, reducing both time and labor costs.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Low Maintenance",
+      description:
+        "With superior materials and a meticulous manufacturing process, PEB structures are low-maintenance and built to last, offering durability with minimal upkeep.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Resistance to Corrosive Elements",
+      description:
+        "PEBs are resistant to corrosive elements and can withstand severe weather conditions, including high winds, ensuring longevity and structural integrity.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Energy Efficiency & Weatherproofing",
+      description:
+        "Insulated walls and facades make these buildings energy-efficient and weather-resistant, providing comfortable living or working environments in adverse weather conditions.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Aesthetic Flexibility",
+      description:
+        "PEBs offer a variety of finishing options that enhance their aesthetic appeal, making them suitable for diverse applications and architectural preferences.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Customizable Design & Layouts",
+      description:
+        "The flexibility of design and construction enables a wide range of layout possibilities, catering to specific client requirements, whether for industrial or commercial use.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Safety Features",
+      description:
+        "Pre-engineered buildings can easily accommodate safety and comfort features such as smoke detectors, firefighting equipment, and air conditioning units.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Ideal for Off-Site & Site Construction",
+      description:
+        "These buildings are widely used for construction sites and off-site projects, providing a quick, durable solution for setting up accommodation or infrastructure.",
+      image: "/industry.jpg",
+    },
+    {
+      subtitle: "Expertise & Innovation",
+      description:
+        "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
+      image: "/industry.jpg",
+    },
+  ];
 
-      if (window.innerWidth < 768) {
-        el.scrollIntoView({
-          behavior: "smooth",
-          inline: "center",
-          block: "nearest",
-        });
-      }
-    }
-  }, [active]);
+  const features = [
+    {
+      title: "Custom-Built Design",
+      description:
+        "Fully tailored to your operational and architectural requirements, ensuring precision and efficiency.",
+      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Quick Installation",
+      description:
+        "Factory-engineered components allow rapid onsite assembly, saving both time and labor costs.",
+      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Cost-Efficient Construction",
+      description:
+        "Optimized designs reduce material waste and overall construction expenses.",
+      icon: <FaBolt className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Durable and Low Maintenance",
+      description:
+        "Built to withstand harsh weather and seismic conditions with minimal upkeep.",
+      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Energy Efficient",
+      description:
+        "Insulated wall and roof panels provide excellent temperature control and energy savings.",
+      icon: <FaLeaf className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Expandable & Flexible",
+      description:
+        "Easily scalable and adaptable to meet future growth and business requirements.",
+      icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
+    },
+  ];
+
+  const slides = [
+    {
+      image: "/expertise/third.png",
+      title: "Prefabricated Multi-Storey Building Manufacturer",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Industrial Enclosures",
+      link: "#",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Cold Storage & Cold Room Manufacturer",
+      link: "#",
+    },
+    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
+    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
+  ];
+
+  // ===== State =====
+  const [selectedId, setSelectedId] = useState(areas[0].id);
+  const selectedArea = areas.find((a) => a.id === selectedId);
+
+  const [startIndex, setStartIndex] = useState(0);
+  const visibleCards =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
   const prevSlide = () =>
-    setCurrent((c) => (c - 1 + sectors.length) % sectors.length);
-  const nextSlide = () => setCurrent((c) => (c + 1) % sectors.length);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActive((prev) => (prev + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [slides.length]);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    setStartIndex((prev) =>
+      prev === 0 ? possibilities.length - visibleCards : prev - 1
+    );
+  const nextSlide = () =>
+    setStartIndex((prev) =>
+      prev + visibleCards >= possibilities.length ? 0 : prev + 1
+    );
+
+  const cardsToShow = possibilities
+    .slice(startIndex, startIndex + visibleCards)
+    .concat(
+      startIndex + visibleCards > possibilities.length
+        ? possibilities.slice(
+            0,
+            (startIndex + visibleCards) % possibilities.length
+          )
+        : []
+    );
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const toggleFAQ = (index: number) =>
+    setOpenIndex(openIndex === index ? null : index);
+
   return (
     <>
       <Navbar />
-
-      {/* Hero Section */}
-      <section className="relative w-full h-[70vh] sm:h-[99vh] overflow-hidden">
-        {/* Background Video */}
+      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
+        {/* Background video */}
         <video
-          src={slides[active].video}
           autoPlay
-          muted
           loop
+          muted
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        />
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60" />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Slide Content */}
-        <div className="relative z-10 flex flex-col justify-center h-full  mx-auto px-6  text-left md:px-16">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={slides[active].title}
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -40 }}
-              transition={{ duration: 0.7 }}
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Left Text */}
+          <div className="text-center lg:text-left order-1">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+              Heavy Engineering
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+              Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction.
+            </p>
+          </div>
+
+          {/* Right Slider */}
+          <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop
+              className="pb-10 max-w-[260px] sm:max-w-sm"
             >
-              <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-snug">
-                {slides[active].title}
-              </h1>
-              <p className="text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
-                {slides[active].desc}
-              </p>
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-56 sm:h-72 object-cover"
+                    />
+                    <div className="p-3 text-center">
+                      <h3 className="text-base sm:text-lg font-semibold">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.link}
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
 
-              <button
-                onClick={() => router.push(slides[active].link)}
-                className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
+      {/* description */}
+      <section className="bg-white py-12 px-4 md:px-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+              Smart Construction. Faster Delivery. Reliable Performance{" "}
+            </h2>
+            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
+              of Pre-Engineered Buildings (PEBs), delivering complete solutions
+              for industrial, commercial, and institutional structures. Our
+              buildings are designed with advanced engineering and
+              prefabrication technology, ensuring faster project delivery, cost
+              efficiency, and customized designs for diverse applications.
+            </p>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              What is a Pre-Engineered Building?{" "}
+              <span className="font-bold">Landsking Infra pvt.ltd</span> A
+              Pre-Engineered Building (PEB) is a steel structure based on a
+              structural framework of primary framing (columns and rafters),
+              secondary framing (purlins and girts), along with roof and wall
+              sheeting, and other components. All parts are pre-fabricated in
+              factories and assembled on-site, drastically reducing construction
+              time compared to conventional methods.
+            </p>
+
+            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+              GET A QUOTE
+            </button>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/menupageimg/peb2.jpg"
+              alt="EPACK Prefab Industrial Building"
+              className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      {/* end description */}
+      {/* keyfetaure */}
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Key Features of{" "}
+            <span className="text-[#000080]">
+              Landsking Infra Pvt. Ltd. PEB Structures
+            </span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+            Our Pre-Engineered Buildings are designed with innovation,
+            durability, and efficiency at the core—providing solutions that meet
+            modern industrial and commercial needs.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="p-6 bg-gray-50 hover:bg-gray-100 rounded-2xl shadow-md transition-all duration-300 flex flex-col items-center text-center"
               >
-                <span>Learn More</span>
-                <IoIosArrowForward className="w-5 h-5" />
-              </button>
-            </motion.div>
-          </AnimatePresence>
+                {feature.icon}
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* business benifts */}
+      <section className="bg-[#000080] text-white py-10">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+            Benefits of Heavy Engineering
+          </h2>
+
+          {/* Cards Row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {cardsToShow.map((item, idx) => (
+              <div
+                key={idx}
+                className=" bg-white rounded-lg overflow-hidden shadow-lg"
+              >
+                <img src={item.image} className="w-full h-44 object-cover" />
+                <div className="p-4">
+                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                    {item.subtitle}
+                  </p>
+                  <p className="text-sm text-black">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Navigation Buttons Below */}
+          <div className="flex justify-center mt-6 gap-4">
+            <button
+              onClick={prevSlide}
+              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+            >
+              <ChevronLeft className="w-6 h-6 text-white" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+            >
+              <ChevronRight className="w-6 h-6 text-white" />
+            </button>
+          </div>
+        </div>
+      </section>
+      {/* benefits end */}
+      {/* special section */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Title */}
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
+            SPECIFICATIONS OF INDUSTRIAL SHED COMPONENTS
+            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            {/* Text Section */}
+            <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
+              <li>
+                <span className="font-bold">Wall:</span> PUF / EPS insulated
+                sandwich panels of 50 / 60mm with PPGI sheet on both sides.
+              </li>
+              <li>
+                <span className="font-bold">Roof:</span> PUF / EPS insulated
+                sandwich panels of 30 / 40 mm or PPGI roofing sheets.
+              </li>
+              <li>
+                <span className="font-bold">Doors:</span> Insulated doors with
+                all accessories will be provided from our manufacturing setup.
+              </li>
+              <li>
+                <span className="font-bold">Windows:</span> Aluminum anodized
+                sliding windows will be provided from our manufacturing setup.
+              </li>
+              <li>
+                <span className="font-bold">Structure and Accessories:</span>{" "}
+                All required supporting accessories and structures will be
+                provided before project delivery.
+              </li>
+              <li>
+                <span className="font-bold">
+                  Electrical fittings, sanitary fittings, beds, etc.,
+                </span>{" "}
+                will be provided as per client requirements and fitted as per
+                the contract.
+              </li>
+            </ul>
+
+            {/* Image Section */}
+            <div className="relative">
+              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
+              <img
+                src="/menupageimg/peb9.jpeg"
+                alt="PUF panels in industrial shed"
+                width={600}
+                height={400}
+                className="rounded-md shadow-md relative z-20"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end special section */}
+      <ServicesSlider />
+      <Brand />
+
+      {/* faqs */}
+      <section className=" mx-auto px-4 py-12 md:mx-10 ">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
+            Frequently Asked Questions
+          </h2>
+          {/* Yellow divider line */}
+          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
         </div>
 
-        {/* Bottom Navigation */}
-        <div className="absolute bottom-0 w-full ">
-          <div className="max-w-7xl mx-auto flex justify-center sm:justify-start gap-6 px-6 py-4 overflow-x-auto">
-            {/* Desktop Tabs */}
-            <div className="hidden sm:flex gap-6">
-              {slides.map((s, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActive(i)}
-                  className={`pb-1 text-sm sm:text-base font-medium border-b-2 transition ${
-                    active === i
-                      ? "text-[#8080FF] border-[#8080FF]"
-                      : "text-gray-300 border-transparent hover:text-white"
+        {/* FAQ Items */}
+        <div className="border-t border-gray-200 ">
+          {faqs.map((faq: FAQ, index: number) => (
+            <div key={index} className="border-b border-gray-200">
+              {/* Question */}
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
+              >
+                <span
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
                   }`}
                 >
-                  {s.title}
-                </button>
-              ))}
-            </div>
+                  {faq.question}
+                </span>
+                <span className="text-black text-lg font-bold">
+                  {openIndex === index ? "▲" : "▼"}
+                </span>
+              </button>
 
-            {/* Mobile Dots */}
-            <div className="flex sm:hidden justify-center w-full gap-2">
-              {slides.map((_, i) => (
-                <span
-                  key={i}
-                  onClick={() => setActive(i)}
-                  className={`w-2 h-2 rounded-full cursor-pointer transition ${
-                    active === i ? "bg-#8080FF" : "bg-[#fff]"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-      <Heavysector />
-      {/* Tabs */}
-      <section className="w-full">
-        {/* Top heading + subheading */}
-        <div className="mx-auto px-4 pt-12 text-center">
-          <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
-            Comprehensive Infrastructure Solutions
-          </h1>
-          <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
-            From design and engineering to execution and management, we deliver
-            integrated solutions that shape industries and build a stronger
-            future.
-          </p>
-        </div>
-
-        {/* Tabs */}
-        <div className="mt-8">
-          <div className="mx-auto px-4">
-            <div className="relative">
-              <div className="flex md:justify-center gap-4 md:gap-10 overflow-x-auto md:overflow-x-visible relative">
-                {TABS.map((t, i) => (
-                  <button
-                    key={t.title}
-                    ref={(el) => {
-                      tabRefs.current[i] = el;
-                    }}
-                    onClick={() => setActive(i)}
-                    className={`pb-3 font-medium whitespace-nowrap transition-colors
-                         ${
-                           active === i
-                             ? "text-[#272727]"
-                             : "text-gray-600 hover:text-[#000080]"
-                         }
-                         text-[13px] sm:text-sm md:text-[16px]`}
-                  >
-                    {t.title}
-                  </button>
-                ))}
-
-                {/* Underline */}
-                <span
-                  className="absolute bottom-0 block h-0.5 bg-[#000080] transition-all duration-300"
-                  style={underlineStyle}
-                />
-              </div>
-              {/* <div className="h-px bg-gray-200 mt-0.5 w-full"></div> */}
-            </div>
-          </div>
-        </div>
-
-        {/* Content Card */}
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="mt-8 flex justify-center">
-            <div className="relative rounded-[5px] overflow-hidden shadow-lg w-full md:w-[90%] lg:w-[80%]">
-              <div className="relative w-full h-[340px] md:h-[460px]">
-                <Image
-                  src={TABS[active].img}
-                  alt={TABS[active].title}
-                  fill
-                  priority
-                  className="object-cover rounded-[5px]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent rounded-[5px]" />
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full p-6 md:p-10">
-                    <div className="text-white text-center md:text-left mx-auto">
-                      <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
-                        {TABS[active].headline}
-                      </h2>
-                      <p className="mt-4 text-sm md:text-[15px] text-gray-200">
-                        {TABS[active].body}
-                      </p>
-                      <button
-                        className="mt-6 border border-[#fff] rounded-lg text-[13px] hover:bg-[#272727] text-white font-semibold px-4 py-2"
-                        onClick={() => router.push(TABS[active].url)}
-                      >
-                        {TABS[active].buttonText}
-                      </button>
-                    </div>
-                  </div>
+              {/* Answer */}
+              {openIndex === index && (
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
                 </div>
-              </div>
+              )}
             </div>
-          </div>
+          ))}
         </div>
       </section>
-      {/* project slider */}
-      <section className="w-full py-12 md:py-16 bg-white relative">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#000080] mb-8 md:mb-10">
-          DISCOVER OUR PROJECTS
-        </h2>
+      {/* end faqs */}
 
-        <div className=" mx-auto sm:px-4 px-2 relative md:mx-25">
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            navigation={{
-              nextEl: ".custom-next",
-              prevEl: ".custom-prev",
-            }}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            spaceBetween={16}
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 1.2, spaceBetween: 20 },
-              768: { slidesPerView: 2, spaceBetween: 24 },
-              1024: { slidesPerView: 3, spaceBetween: 30 },
-            }}
-            className="pb-10" // ⬅️ niche dots ke liye jagah
-          >
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
-                <div className="text-center">
-                  <h3 className="text-base md:text-lg font-semibold text-[#000080]">
-                    {project.title}
-                  </h3>
-                  <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-4">
-                    ({project.status})
-                  </p>
-
-                  {/* Image + Button */}
-                  <div className="relative w-full h-52 sm:h-60 md:h-64 flex justify-center">
-                    <div className="relative w-[85%] sm:w-[90%] md:w-full h-full">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover rounded-lg"
-                      />
-                      <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-[#000080] text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-black hover:text-white transition">
-                        KNOW MORE
-                      </button>
-                    </div>
-                  </div>
-
-                  <p className="text-sm md:text-base text-gray-700 mt-2 md:mt-3">
-                    {project.location}
-                  </p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* Navigation buttons */}
-          <div className="custom-prev absolute left-2 md:-left-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
-              fill="#000080"
-              viewBox="0 0 24 24"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </div>
-          <div className="custom-next absolute right-2 md:-right-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
-              fill="#000080"
-              viewBox="0 0 24 24"
-            >
-              <path d="M9 6l6 6-6 6" />
-            </svg>
-          </div>
-        </div>
-      </section>
-      {/* end project slider */}
-      <IndustrySlider />
-      <ServicesSlider />
-      <Explore />
       <Footer />
     </>
   );

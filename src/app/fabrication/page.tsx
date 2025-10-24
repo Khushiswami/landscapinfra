@@ -37,7 +37,7 @@ function Card({ image, icon, title, description }: CardProps) {
       </div>
 
       {/* Icon */}
-      <div className="relative -mt-8 ml-auto mr-4 bg-blue-900 p-3 rounded shadow-lg flex items-center justify-center w-fit">
+      <div className="relative -mt-8 ml-auto mr-4 bg-[#000080] p-3 rounded shadow-lg flex items-center justify-center w-fit">
         {icon}
       </div>
 
@@ -50,15 +50,15 @@ function Card({ image, icon, title, description }: CardProps) {
           {description}
         </p>
 
-        <a
+        {/* <a
           href="#"
           className="relative border border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
         >
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             READ MORE
           </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-blue-900 transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a>
+          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
+        </a> */}
       </div>
     </div>
   );
@@ -138,7 +138,7 @@ export default function Fabrication() {
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Landsking Infra Fabrication Solutions
             </h2>
-            <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
+            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -166,7 +166,7 @@ export default function Fabrication() {
               </p>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>

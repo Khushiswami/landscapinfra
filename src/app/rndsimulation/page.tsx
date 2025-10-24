@@ -55,7 +55,7 @@ export default function Rndsimulation() {
               Simulation Design for Manufacturing: Streamlining Production with
               CAD/CAE{" "}
             </h2>
-            <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
+            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-1 gap-8 items-center">
@@ -73,7 +73,7 @@ export default function Rndsimulation() {
               </p>
 
               <div className="flex items-center gap-4">
-                <button className="border rounded-md text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border rounded-md text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -243,7 +243,7 @@ export default function Rndsimulation() {
               </p>
 
               <div className="flex items-center gap-4">
-                <button className="border text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -276,8 +276,8 @@ export default function Rndsimulation() {
           <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-white uppercase">
             Get in Touch
           </h2>
-          <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
-            <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
+          <div className="w-12 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative">
+            <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-[#000080]"></span>
           </div>
           <p className="text-white text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
             We had love to hear from you. Here is how you can reach us.

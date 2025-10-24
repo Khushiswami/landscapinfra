@@ -56,7 +56,7 @@ function Card({ icon, title, description }: CardProps) {
       {/* Image with centered icon */}
       <div className="relative w-full h-48 sm:h-56 overflow-hidden flex items-center justify-center">
         {/* Centered Icon */}
-        <div className="absolute flex items-center justify-center bg-blue-900 p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
+        <div className="absolute flex items-center justify-center bg-[#000080] p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
           {icon}
         </div>
 

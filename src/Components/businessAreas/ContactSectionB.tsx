@@ -46,15 +46,15 @@ export default function ContactSectionB({
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-         <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
-            <p className="text-lg font-semibold text-white mb-3">{subtitle}</p>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
+          <p className="text-lg font-semibold text-white mb-3">{subtitle}</p>
           <div className="h-1 w-[100%] bg-[#8080FF] mb-4"></div>
           <p className="mb-6 text-gray-200">{description}</p>
 
           <a href={buttonLink}>
             <button className="bg-[#000080] text-white px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-yellow-400 transition">
               {buttonText}
-              <span className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900">
+              <span className="w-8 h-8 flex items-center justify-center rounded-full bg-[#000080]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

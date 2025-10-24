@@ -68,7 +68,7 @@ export default function Products() {
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* LEFT MENU */}
-        <div className="bg-blue-900 text-white rounded-lg w-full md:w-1/4">
+        <div className="bg-[#000080] text-white rounded-lg w-full md:w-1/4">
           {/* Mobile Dropdown */}
           <div className="md:hidden">
             {/* Selected button */}

@@ -38,12 +38,12 @@
 //           {heading}
 //         </h2>
 //         <p className="text-gray-600 mt-3 max-w-2xl mx-auto">{description}</p>
-//         <div className="w-20 h-1 bg-blue-900 mx-auto mt-4 rounded-full" />
+//         <div className="w-20 h-1 bg-[#000080] mx-auto mt-4 rounded-full" />
 //       </div>
 
 //       <div className="flex flex-col md:flex-row gap-6">
 //         {/* Left Menu */}
-//         <div className="bg-blue-900 text-white rounded-lg flex flex-col w-full md:w-1/4">
+//         <div className="bg-[#000080] text-white rounded-lg flex flex-col w-full md:w-1/4">
 //           {areas.map((area, idx) => (
 //             <button
 //               key={area.id}
@@ -163,7 +163,7 @@ export default function PreEngineeredProducts({
                     }}
                     className={`w-full text-left px-4 py-3 transition font-medium ${
                       selectedId === area.id
-                        ? "text-blue-400 bg-blue-900"
+                        ? "text-blue-400 bg-[#000080]"
                         : "text-white hover:bg-[#000080]"
                     }`}
                   >

@@ -42,7 +42,7 @@ function Card({
       </div>
 
       {/* Icon */}
-      <div className="relative -mt-8 ml-auto mr-3 sm:mr-4 bg-blue-900 p-2 sm:p-3 rounded shadow-lg flex items-center justify-center">
+      <div className="relative -mt-8 ml-auto mr-3 sm:mr-4 bg-[#000080] p-2 sm:p-3 rounded shadow-lg flex items-center justify-center">
         {icon}
       </div>
 
@@ -62,7 +62,7 @@ function Card({
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             {linkText}
           </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-blue-900 transition-all duration-500 ease-out group-hover:w-full"></span>
+          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
         </a>
       </div>
     </div>

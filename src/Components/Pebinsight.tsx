@@ -18,8 +18,7 @@ const cards = [
     title: "How AI is Driving the Next Era of Mobility",
     description:
       "The mobility industry experts at LTTS engaged in an extensive analysis of these trends, across three domains – Product Development Life Cycle, Software Development Life Cycle and User Experience.",
-        image: "/news2.jpeg",
-
+    image: "/news2.jpeg",
   },
   {
     id: 2,
@@ -121,7 +120,7 @@ export default function Pebinsight() {
                 <p className="text-sm text-gray-600 tracking-widest mb-4">
                   {card.description}
                 </p>
-                <button className="mb-4 bg-blue-900 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition">
+                <button className="mb-4 bg-[#000080] text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition">
                   Know More
                 </button>
                 <Image
@@ -163,7 +162,7 @@ export default function Pebinsight() {
                   <div>
                     <div className="flex justify-end">
                       <button
-                        className="bg-blue-900 text-sm text-[#fff] px-4 py-2 rounded-lg font-medium 
+                        className="bg-[#000080] text-sm text-[#fff] px-4 py-2 rounded-lg font-medium 
                         hover:bg-[#] hover:text-[#000080] 
                         transition"
                       >

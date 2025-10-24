@@ -308,7 +308,7 @@ export default function Coldstorageandwarehouse() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <Image
+                    <img
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-56 sm:h-72 object-cover"
@@ -367,7 +367,7 @@ export default function Coldstorageandwarehouse() {
             </button>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -494,7 +494,7 @@ export default function Coldstorageandwarehouse() {
 
                 {/* Image */}
                 <div className="w-full md:w-1/2">
-                  <Image
+                  <img
                     src={selectedArea.image}
                     alt={selectedArea.subtitle}
                     className="w-full h-64 md:h-full object-cover"
@@ -597,7 +597,7 @@ export default function Coldstorageandwarehouse() {
             {/* Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <Image
+              <img
                 src="/menupageimg/peb9.jpeg"
                 alt="PUF panels in industrial shed"
                 width={600}

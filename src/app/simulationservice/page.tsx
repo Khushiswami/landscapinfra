@@ -232,15 +232,12 @@ export default function Simulationservice() {
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">
             Read more
           </button> */}
-          <a
-            href="#"
-            className="group relative border mt-6 border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
+          <button
+            className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+            onClick={() => (window.location.href = "/contact")}
           >
-            <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-              READ MORE
-            </span>
-            <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-          </a>
+            Get a Quote
+          </button>
         </div>
 
         <div className="flex justify-center">
@@ -257,7 +254,7 @@ export default function Simulationservice() {
       </section>
 
       {/* Sectors Carousel */}
-      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
+      <section className="text-center px-4 sm:px-6 md:px-20 pt-1 md:pt-16 bg-white">
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
@@ -325,15 +322,12 @@ export default function Simulationservice() {
                                  md:opacity-0 md:group-hover:opacity-100 md:cursor-default
                                `}
                           >
-                            <h3 className="text-sm md:text-sm font-semibold mb-2">
+                            <h3 className="text-sm md:text-lg font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                            <p className="text-[10px] md:text-sm mb-4 line-clamp-3">
                               {project.description}
                             </p>
-                            <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
-                              Know More
-                            </button>
                           </div>
 
                           {/* Mobile arrows */}
@@ -404,7 +398,7 @@ export default function Simulationservice() {
         </section>
       </section>
       {/* esplore */}
-      <section className=" mx-auto px-4 py-10 md:px-23">
+      <section className=" mx-auto px-4 py-10 md:px-21">
         <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Sectors{" "}
         </h2>
@@ -468,7 +462,7 @@ export default function Simulationservice() {
                   }`}
                 >
                   <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
+                    {/* {String(idx + 1).padStart(2, "0")} */}
                   </span>
                   <span>{area.title}</span>
                 </button>
@@ -501,10 +495,10 @@ export default function Simulationservice() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <Image
+                <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-83 object-cover"
+                  className="w-full h-64 md:h-129 object-cover"
                 />
               </div>
             </div>

@@ -50,7 +50,7 @@ export default function ExploreP() {
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
-        <div className="bg-blue-900 text-white rounded-lg flex flex-col w-full md:w-1/4">
+        <div className="bg-[#000080] text-white rounded-lg flex flex-col w-full md:w-1/4">
           {areas.map((area, idx) => (
             <button
               key={area.id}

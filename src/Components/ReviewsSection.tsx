@@ -193,7 +193,7 @@ export default function ReviewsSection() {
                   <p className="text-sm mb-4">{review.text}</p>
                   <p className="font-semibold">{review.name}</p>
                   <p className="text-gray-500 text-xs">{review.location}</p>
-                  <span className="mt-2 inline-block bg-blue-900 text-white px-2 py-1 rounded text-xs">
+                  <span className="mt-2 inline-block bg-[#000080] text-white px-2 py-1 rounded text-xs">
                     Verified Customer
                   </span>
                 </div>

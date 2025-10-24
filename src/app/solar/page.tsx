@@ -8,6 +8,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import Footer from "../../Components/Footer";
 import ContactSection from "yes/Components/ContactSection";
 import Navbar from "yes/Components/Navbar";
+import Link from "next/link";
 interface Project {
   id: number;
   title: string;
@@ -186,15 +187,11 @@ export default function Solar() {
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">
             Read more
           </button> */}
-          <a
-            href="#"
-            className="group relative border mt-6 border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
-          >
-            <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-              READ MORE
-            </span>
-            <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-          </a>
+          <Link href="/contact">
+            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+              GET A QUOTE
+            </button>
+          </Link>
         </div>
 
         <div className="flex justify-center">
@@ -251,7 +248,7 @@ export default function Solar() {
                         isActive ? "scale-105" : "scale-90 opacity-70"
                       }`}
                     >
-                      <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
+                      <div className="relative w-full h-48 sm:h-56 md:h-70 flex justify-center">
                         <div className="relative w-full h-full">
                           <Image
                             src={project.image}
@@ -279,15 +276,12 @@ export default function Solar() {
                                  md:opacity-0 md:group-hover:opacity-100 md:cursor-default
                                `}
                           >
-                            <h3 className="text-sm md:text-sm font-semibold mb-2">
+                            <h3 className="text-sm md:text-lg font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                            <p className="text-[10px] md:text-[18px] mb-4 ">
                               {project.description}
                             </p>
-                            <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
-                              Know More
-                            </button>
                           </div>
 
                           {/* Mobile arrows */}

@@ -24,6 +24,7 @@ import Brand from "yes/Components/Brand";
 import PlatformP from "yes/Components/PlatformP";
 import Navbar from "yes/Components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 export default function Expertisecoldstorage() {
   interface FAQ {
     question: string;
@@ -186,21 +187,25 @@ export default function Expertisecoldstorage() {
   const slides = [
     {
       image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
+      title: "Turnkey Cold Storage Facility Construction",
       link: "#",
     },
     {
       image: "/expertise/third.png",
-      title: "Industrial Enclosures",
+      title: "Temperature-Controlled Warehouse Design",
       link: "#",
     },
     {
       image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
+      title: "Refrigeration System Integration",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
+    { image: "/expertise/third.png", title: "Thermal Insulation", link: "#" },
+    {
+      image: "/expertise/third.png",
+      title: "Fire Safety, MEP, and Automation Systems",
+      link: "#",
+    },
   ];
 
   const stats = [
@@ -256,7 +261,8 @@ export default function Expertisecoldstorage() {
         : []
     );
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false); // for mobile dropdown
+
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const toggleFAQ = (index: number) =>
     setOpenIndex(openIndex === index ? null : index);
@@ -309,7 +315,7 @@ export default function Expertisecoldstorage() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <Image
+                    <img
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-56 sm:h-72 object-cover"
@@ -318,10 +324,7 @@ export default function Expertisecoldstorage() {
                       <h3 className="text-base sm:text-lg font-semibold">
                         {slide.title}
                       </h3>
-                      <a
-                        href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
-                      >
+                      <a className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base">
                         Read more →
                       </a>
                     </div>
@@ -364,12 +367,14 @@ export default function Expertisecoldstorage() {
               time compared to conventional methods.
             </p>
 
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
+            <Link href="/contact">
+              <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+                GET A QUOTE
+              </button>
+            </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -410,64 +415,70 @@ export default function Expertisecoldstorage() {
       </section>
 
       {/* slider section */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className=" mx-auto px-4 py-10 md:mx-12">
         <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
-          Our services
+          Our Services
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Left menu / Dropdown */}
-          <div className="bg-[#000080] text-white rounded-lg w-full md:w-1/4">
-            {/* Mobile */}
-            <div className="md:hidden">
+          {/* Left Menu */}
+          <div className="w-full md:w-1/4">
+            {/* Mobile Dropdown */}
+            <div className="md:hidden mb-0">
               <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-3 px-5 py-4 text-left w-full transition bg-blue-800 font-bold"
+                onClick={() => setOpen(!open)}
+                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
               >
-                <span className="text-sm opacity-70">
-                  {String(
-                    areas.findIndex((a) => a.id === selectedId) + 1
-                  ).padStart(2, "0")}
-                </span>
-                <span>{selectedArea?.title}</span>
+                {areas.find((a) => a.id === selectedId)?.title}
+                <svg
+                  className="w-5 h-5 text-[#8080FF]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+                  />
+                </svg>
               </button>
 
-              {isOpen &&
-                areas.map((area, idx) => (
-                  <button
-                    key={area.id}
-                    onClick={() => {
-                      setSelectedId(area.id);
-                      setIsOpen(false);
-                    }}
-                    className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                      selectedId === area.id
-                        ? "bg-[#000080]  font-bold"
-                        : "hover:bg-[#000080]  text-gray-300"
-                    }`}
-                  >
-                    <span className="text-sm opacity-70">
-                      {String(idx + 1).padStart(2, "0")}
-                    </span>
-                    <span>{area.title}</span>
-                  </button>
-                ))}
+              {open && (
+                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
+                  {areas.map((area) => (
+                    <button
+                      key={area.id}
+                      onClick={() => {
+                        setSelectedId(area.id);
+                        setOpen(false);
+                      }}
+                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
+                        selectedId === area.id ? "text-white font-semibold" : ""
+                      }`}
+                    >
+                      {area.title}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
-            {/* Desktop */}
-            <div className="hidden md:flex flex-col">
+            {/* Desktop Menu */}
+            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3">
               {areas.map((area, idx) => (
                 <button
                   key={area.id}
                   onClick={() => setSelectedId(area.id)}
                   className={`flex items-center gap-3 px-5 py-4 text-left transition ${
                     selectedId === area.id
-                      ? "bg-[#000080]  font-bold"
-                      : "hover:bg-[#000080]  text-gray-300"
+                      ? " font-bold"
+                      : "hover: text-gray-300"
                   }`}
                 >
                   <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
+                    {/* {String(idx + 1).padStart(2, "0")} */}
                   </span>
                   <span>{area.title}</span>
                 </button>
@@ -475,31 +486,36 @@ export default function Expertisecoldstorage() {
             </div>
           </div>
 
-          {/* Right content */}
+          {/* Right Content */}
           {selectedArea && (
-            <div className="bg-white rounded-lg shadow overflow-hidden w-full md:w-3/4 mt-4 md:mt-0">
-              <div className="flex flex-col md:flex-row">
-                {/* Text */}
-                <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-                  <h3 className="text-2xl font-semibold text-[#000080] mb-3">
-                    {selectedArea.subtitle}
-                  </h3>
-                  <p className="text-gray-700 mb-5">
-                    {selectedArea.description}
-                  </p>
-                  <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-                    GET A QUOTE
-                  </button>
-                </div>
+            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
+            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
+              <div
+                className="
+    p-6 flex flex-col justify-center w-full md:w-1/2
+    rounded-lg                
+    md:rounded-none          
+    md:rounded-tl-lg md:rounded-bl-lg
+    shadow border border-[#808080] md:border-r-0
+  "
+              >
+                <h3 className="text-2xl font-semibold text-[#000080] mb-3">
+                  {selectedArea.subtitle}
+                </h3>
+                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
+                  More{" "}
+                  <span className=" p-1 rounded-full text-[#000080]">→</span>
+                </button>
+              </div>
 
-                {/* Image */}
-                <div className="w-full md:w-1/2">
-                  <Image
-                    src={selectedArea.image}
-                    alt={selectedArea.subtitle}
-                    className="w-full h-64 md:h-full object-cover"
-                  />
-                </div>
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src={selectedArea.image}
+                  alt={selectedArea.subtitle}
+                  className="w-full h-64 md:h-106 object-cover"
+                />
               </div>
             </div>
           )}
@@ -511,7 +527,7 @@ export default function Expertisecoldstorage() {
       {/* endcapill */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className=" mx-auto px-4 md:mx-12">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Industries We Serve{" "}
           </h2>
@@ -521,7 +537,7 @@ export default function Expertisecoldstorage() {
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
-                className=" bg-white rounded-lg overflow-hidden shadow-lg"
+                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
@@ -538,15 +554,15 @@ export default function Expertisecoldstorage() {
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronLeft className="w-6 h-6 text-white" />
+              <ChevronLeft className="w-6 h-6 text-[#000080]" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <ChevronRight className="w-6 h-6 text-white" />
+              <ChevronRight className="w-6 h-6 text-[#000080]" />
             </button>
           </div>
         </div>
@@ -609,13 +625,12 @@ export default function Expertisecoldstorage() {
         </div>
       </section>
       {/* end special section */}
-      <PlatformP />
       <section className="mb-10"></section>
       {/* end why choose us */}
       <Brand />
 
       {/* faqs */}
-      <section className=" mx-auto px-4 py-12 md:px-13 ">
+      <section className=" mx-auto px-4 py-12 md:mx-13 ">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
@@ -626,7 +641,7 @@ export default function Expertisecoldstorage() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200">
+        <div className="border-t border-gray-200 ">
           {faqs.map((faq: FAQ, index: number) => (
             <div key={index} className="border-b border-gray-200">
               {/* Question */}
@@ -635,20 +650,22 @@ export default function Expertisecoldstorage() {
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
               >
                 <span
-                  className={`font-medium transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-sm">
+                <span className="text-black text-lg font-bold">
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}

@@ -31,7 +31,7 @@ function Card({ image, icon, title, description }: CardProps) {
       </div>
 
       {/* Icon */}
-      <div className="relative -mt-8 ml-auto mr-4 bg-blue-900 p-3 rounded shadow-lg flex items-center justify-center">
+      <div className="relative -mt-8 ml-auto mr-4 bg-[#000080] p-3 rounded shadow-lg flex items-center justify-center">
         {icon}
       </div>
 
@@ -51,7 +51,7 @@ function Card({ image, icon, title, description }: CardProps) {
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             READ MORE
           </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-blue-900 transition-all duration-500 ease-out group-hover:w-full"></span>
+          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
         </a>
       </div>
     </div>
@@ -99,7 +99,7 @@ export default function Energy() {
               LANDSKING INFRA PVT LTD: CUSTOMIZED PREFABRICATED SOLUTIONS FOR
               INDUSTRIAL BUILDINGS
             </h2>
-            <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
+            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -127,7 +127,7 @@ export default function Energy() {
                 and efficient solutions.
               </p>
               <div className="flex items-center gap-4">
-                <button className="border text-[#000080] border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-[#000080] hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -194,8 +194,8 @@ export default function Energy() {
         <h2 className="text-xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
           Custom-Designed Buildings to Match Your Business Goals
         </h2>
-        <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
-          <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
+        <div className="w-12 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative">
+          <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-[#000080]"></span>
         </div>
         <p className="text-gray-700 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
           The{" "}

@@ -171,7 +171,9 @@ export default function Firesafety() {
   const [open, setOpen] = useState(false);
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4;
+  // const visibleCards = 4;
+  const visibleCards =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
 
   const prevSlide = () =>
     setStartIndex((prev) =>
@@ -251,7 +253,7 @@ export default function Firesafety() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →
@@ -266,8 +268,8 @@ export default function Firesafety() {
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-21">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -448,7 +450,7 @@ export default function Firesafety() {
       {/* capiablites */}
 
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10 md:px-35">
+      <section className="bg-[#000080] text-white py-10 md:px-18">
         <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Inclusive Services{" "}

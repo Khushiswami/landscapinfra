@@ -28,7 +28,7 @@ function Card({ image, icon, title, description }: CardProps) {
       </div>
 
       {/* Icon */}
-      <div className="relative -mt-8 ml-auto mr-4 bg-blue-900 p-3 rounded shadow-lg flex items-center justify-center w-fit">
+      <div className="relative -mt-8 ml-auto mr-4 bg-[#000080] p-3 rounded shadow-lg flex items-center justify-center w-fit">
         {icon}
       </div>
 
@@ -48,7 +48,7 @@ function Card({ image, icon, title, description }: CardProps) {
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             READ MORE
           </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-blue-900 transition-all duration-500 ease-out group-hover:w-full"></span>
+          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
         </a>
       </div>
     </div>

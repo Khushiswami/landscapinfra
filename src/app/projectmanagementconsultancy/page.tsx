@@ -25,7 +25,7 @@ function Card({ image, icon, title, description }: CardProps) {
       </div>
 
       {/* Icon */}
-      <div className="relative -mt-8 ml-auto mr-4 bg-blue-900 p-3 rounded shadow-lg flex items-center justify-center w-fit">
+      <div className="relative -mt-8 ml-auto mr-4 bg-[#000080] p-3 rounded shadow-lg flex items-center justify-center w-fit">
         {icon}
       </div>
 
@@ -45,7 +45,7 @@ function Card({ image, icon, title, description }: CardProps) {
           <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
             READ MORE
           </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-blue-900 transition-all duration-500 ease-out group-hover:w-full"></span>
+          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
         </a>
       </div>
     </div>
@@ -91,7 +91,7 @@ export default function Projectmanagementconsultancy() {
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Project Management Consultancy
             </h2>
-            <div className="w-12 h-1 bg-blue-900 mt-3 mx-auto"></div>
+            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -133,7 +133,7 @@ export default function Projectmanagementconsultancy() {
                 </li>
               </ul>
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -194,7 +194,7 @@ export default function Projectmanagementconsultancy() {
               </li>
             </ul>
             <div className="flex items-center justify-center md:justify-start gap-4">
-              <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+              <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
                 GET A QUOTE
               </button>
             </div>
@@ -208,7 +208,7 @@ export default function Projectmanagementconsultancy() {
         <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-black uppercase">
           Expert Construction Management Solutions{" "}
         </h2>
-        <div className="w-30 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative md:w-150"></div>
+        <div className="w-30 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative md:w-150"></div>
         <p className="text-gray-700 text-sm sm:text-base md:text-lg  leading-relaxed">
           <span className="text-[#000080] font-semibold">Landsking Infra</span>{" "}
           provides expert construction project consultancy, ensuring that every

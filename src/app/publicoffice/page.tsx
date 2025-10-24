@@ -559,7 +559,7 @@ export default function Publicoffice() {
                         isActive ? "scale-105" : "scale-90 opacity-70"
                       }`}
                     >
-                      <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
+                      <div className="relative w-full h-48 sm:h-56 md:h-70 flex justify-center">
                         <div className="relative w-full h-full">
                           <Image
                             src={project.image}
@@ -585,15 +585,12 @@ export default function Publicoffice() {
                               }
                               md:opacity-0 md:group-hover:opacity-100 md:cursor-default`}
                           >
-                            <h3 className="text-sm md:text-sm font-semibold mb-2">
+                            <h3 className="text-sm md:text-lg font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                            <p className="text-[10px] md:text-[17px] mb-4 ">
                               {project.description}
                             </p>
-                            <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
-                              Know More
-                            </button>
                           </div>
                         </div>
                       </div>

@@ -120,7 +120,7 @@ export default function Insights() {
                 <p className="text-sm text-gray-600 tracking-widest mb-4">
                   {card.description}
                 </p>
-                <button className="mb-4 bg-blue-900 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition">
+                <button className="mb-4 bg-[#000080] text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition">
                   Know More
                 </button>
                 <Image
@@ -162,7 +162,7 @@ export default function Insights() {
                   <div>
                     <div className="flex justify-end">
                       <button
-                        className="bg-blue-900 text-sm text-[#fff] px-4 py-2 rounded-lg font-medium 
+                        className="bg-[#000080] text-sm text-[#fff] px-4 py-2 rounded-lg font-medium 
                         hover:bg-[#] hover:text-[#000080] 
                         transition"
                       >

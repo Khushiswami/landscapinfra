@@ -91,20 +91,24 @@ export default function Hvac() {
   const slides = [
     {
       image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
+      title: "System Design & 3D Modelingr",
       link: "#",
     },
     {
       image: "/expertise/third.png",
-      title: "Industrial Enclosures",
+      title: "Energy-Efficient System Integration",
       link: "#",
     },
     {
       image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
+      title: "Installation & Commissioning",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
+    {
+      image: "/expertise/third.png",
+      title: "AMC & Performance Monitoring",
+      link: "#",
+    },
     { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
 
@@ -150,7 +154,8 @@ export default function Hvac() {
   const [open, setOpen] = useState(false);
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4;
+  const visibleCards =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
 
   const prevSlide = () =>
     setStartIndex((prev) =>
@@ -262,7 +267,7 @@ export default function Hvac() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →
@@ -276,8 +281,8 @@ export default function Hvac() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-22">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -310,7 +315,7 @@ export default function Hvac() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -320,7 +325,7 @@ export default function Hvac() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
+      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-18">
         <div className=" mx-auto text-center md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Why Choose{" "}
@@ -443,7 +448,7 @@ export default function Hvac() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <Image
+                <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-98 object-cover"
@@ -457,7 +462,7 @@ export default function Hvac() {
 
       {/* endcapill */}
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10 md:px-35">
+      <section className="bg-[#000080] text-white py-10 md:px-18">
         <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Key Features Of HVAC
@@ -530,7 +535,6 @@ export default function Hvac() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"

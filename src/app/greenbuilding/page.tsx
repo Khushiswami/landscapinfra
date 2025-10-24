@@ -283,7 +283,7 @@ export default function Greenbuilding() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <Image
+                    <img
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-48 sm:h-72 object-cover"
@@ -308,8 +308,8 @@ export default function Greenbuilding() {
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-18">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -341,7 +341,7 @@ export default function Greenbuilding() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -351,8 +351,8 @@ export default function Greenbuilding() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
-        <div className=" mx-auto text-center md:px-6">
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-15">
+        <div className=" mx-auto text-center md:px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Services of{" "}
             <span className="text-[#000080]">Landsking Infra Pvt. Ltd.</span>

@@ -65,7 +65,7 @@
 //                   />
 
 //                   {/* Hover Overlay */}
-//                   <div className="absolute inset-0 bg-blue-900/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+//                   <div className="absolute inset-0 bg-[#000080]/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 //                     <div className="absolute inset-6 border border-white opacity-0 group-hover:opacity-100 scale-75 group-hover:scale-100 transition-all duration-500 ease-in-out"></div>
 //                     <p className="text-white text-lg font-semibold text-center px-2 break-words opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 //                       {project.title}
@@ -157,7 +157,7 @@ export default function LandmarkProjects() {
                   />
 
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-blue-900/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-[#000080]/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="absolute inset-6 border border-white opacity-0 group-hover:opacity-100 scale-75 group-hover:scale-100 transition-all duration-500 ease-in-out"></div>
                     <p className="text-white text-lg font-semibold text-center px-2 break-words opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       {project.title}

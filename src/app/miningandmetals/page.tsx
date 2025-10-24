@@ -233,8 +233,8 @@ export default function Miningandmetals() {
   const [open, setOpen] = useState(false);
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4;
-
+  const visibleCards =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
   const prevSlide = () =>
     setStartIndex((prev) =>
       prev === 0 ? possibilities.length - visibleCards : prev - 1
@@ -284,7 +284,7 @@ export default function Miningandmetals() {
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Pre Engineered Buildings
+              Mining and Metals
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
               Pre-Engineered Buildings (PEBs) are modern steel structures
@@ -307,7 +307,7 @@ export default function Miningandmetals() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <Image
+                    <img
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-48 sm:h-72 object-cover"
@@ -332,12 +332,12 @@ export default function Miningandmetals() {
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-20">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Green Buildings{" "}
+              Mining and Metals{" "}
             </h2>
 
             <p className="text-gray-700 mb-4 leading-relaxed mt-3">
@@ -373,7 +373,7 @@ export default function Miningandmetals() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
@@ -383,7 +383,7 @@ export default function Miningandmetals() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
+      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-15">
         <div className=" mx-auto text-center md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
@@ -415,7 +415,7 @@ export default function Miningandmetals() {
         </div>
       </section>
       {/* explore conettt */}
-      <section className=" mx-auto px-4 py-10 md:px-23">
+      <section className=" mx-auto px-4 py-10 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
@@ -512,7 +512,7 @@ export default function Miningandmetals() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <Image
+                <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-98 object-cover"
@@ -529,8 +529,7 @@ export default function Miningandmetals() {
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <Image
+            <img
               src="/menupageimg/peb8.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
@@ -578,7 +577,7 @@ export default function Miningandmetals() {
       </section>
       {/* endcapill */}
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10 md:px-35">
+      <section className="bg-[#000080] text-white py-10 md:px-16">
         <div className=" mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Inclusive Services{" "}
@@ -675,7 +674,7 @@ export default function Miningandmetals() {
             {/* Right: Image Section */}
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <Image
+              <img
                 src="/menupageimg/peb9.jpeg"
                 alt="Steel tubes infrastructure"
                 width={600}
@@ -828,8 +827,7 @@ export default function Miningandmetals() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <Image
+            <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}
