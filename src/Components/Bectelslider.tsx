@@ -7,7 +7,7 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 const cards = [
   {
     img: "/cards/nuclear.jpg",
-    title: "Rebuilding America's Leadership In Nuclear Power",
+    title: "Rebuilding Americas Leadership In Nuclear Power",
     link: "#",
   },
   {

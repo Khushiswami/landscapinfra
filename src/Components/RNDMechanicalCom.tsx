@@ -13,8 +13,8 @@ export default function RNDMechanicalCom() {
   ];
 
   const [active, setActive] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsPlaying] = useState(true);
+  const [, setIsMobile] = useState(false);
 
   // Detect mobile
   useEffect(() => {

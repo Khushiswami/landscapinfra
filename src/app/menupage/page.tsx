@@ -28,6 +28,7 @@ import Brand from "yes/Components/Brand";
 
 import Link from "next/link";
 import Image from "next/image";
+import Pebfooter from "yes/Components/Pebfooter";
 export default function Menupage() {
   interface FAQ {
     question: string;
@@ -48,7 +49,7 @@ export default function Menupage() {
       subtitle: "Warehouse",
       description:
         "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions to meet industrial and commercial demands.",
-      image: "/menupageimg/peb4.png",
+      image: "/preimages/ware.jpg",
     },
     {
       id: 3,
@@ -98,7 +99,7 @@ export default function Menupage() {
     },
     {
       question:
-        "Beyond durability, how does the PEB's material choice impact its environmental footprint?",
+        "Beyond durability, how does the PEBs material choice impact its environmental footprint?",
       answer:
         "The primary material, steel, contains a high percentage of recycled content and is fully recyclable. Choosing a PEB is a commitment to a resource-efficient, lower-impact construction lifecycle.",
     },
@@ -126,55 +127,55 @@ export default function Menupage() {
       subtitle: "Quick Installation & Lightweight Construction",
       description:
         "Pre-engineered buildings (PEBs) allow for fast installation and easy erection due to their lightweight construction, reducing both time and labor costs.",
-      image: "/industry.jpg",
+      image: "/preimages/quick.jpg",
     },
     {
       subtitle: "Low Maintenance",
       description:
         "With superior materials and a meticulous manufacturing process, PEB structures are low-maintenance and built to last, offering durability with minimal upkeep.",
-      image: "/industry.jpg",
+      image: "/preimages/low.jpg",
     },
     {
       subtitle: "Resistance to Corrosive Elements",
       description:
         "PEBs are resistant to corrosive elements and can withstand severe weather conditions, including high winds, ensuring longevity and structural integrity.",
-      image: "/industry.jpg",
+      image: "/preimages/corrosion.jpg",
     },
     {
       subtitle: "Energy Efficiency & Weatherproofing",
       description:
         "Insulated walls and facades make these buildings energy-efficient and weather-resistant, providing comfortable living or working environments in adverse weather conditions.",
-      image: "/industry.jpg",
+      image: "/preimages/energy.jpg",
     },
     {
       subtitle: "Aesthetic Flexibility",
       description:
         "PEBs offer a variety of finishing options that enhance their aesthetic appeal, making them suitable for diverse applications and architectural preferences.",
-      image: "/industry.jpg",
+      image: "/preimages/aesthetic.jpg",
     },
     {
       subtitle: "Customizable Design & Layouts",
       description:
         "The flexibility of design and construction enables a wide range of layout possibilities, catering to specific client requirements, whether for industrial or commercial use.",
-      image: "/industry.jpg",
+      image: "/design.jpeg",
     },
     {
       subtitle: "Safety Features",
       description:
         "Pre-engineered buildings can easily accommodate safety and comfort features such as smoke detectors, firefighting equipment, and air conditioning units.",
-      image: "/industry.jpg",
+      image: "/preimages/factory.jpg",
     },
     {
       subtitle: "Ideal for Off-Site & Site Construction",
       description:
         "These buildings are widely used for construction sites and off-site projects, providing a quick, durable solution for setting up accommodation or infrastructure.",
-      image: "/industry.jpg",
+      image: "/preimages/wood.jpg",
     },
     {
       subtitle: "Expertise & Innovation",
       description:
         "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
-      image: "/industry.jpg",
+      image: "/preimages/construction Phase.jpeg",
     },
   ];
   const features = [
@@ -252,33 +253,27 @@ export default function Menupage() {
   };
   const slides = [
     {
-      image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Industrial Enclosures",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Factory Building",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
+      image: "/preimages/ware.jpg",
       title: "Warehouse",
-      link: "#",
+      link: "/warehouse",
+    },
+
+    {
+      image: "/expertise/fourth.png",
+      title: "Industrial Shed",
+      link: "/industrialShed",
+    },
+    {
+      image: "/preimages/factory.jpg",
+      title: "Factory Building",
+      link: "/factoryBuilding",
+    },
+    {
+      image: "/expertiseimages/Cold Storage and warehouse.jpg",
+      title: "Coldstorage",
+      link: "/coldStorage",
     },
   ];
-
-  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <>
@@ -292,7 +287,7 @@ export default function Menupage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/peb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -302,10 +297,10 @@ export default function Menupage() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-15 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto md:mx-10">
               Pre Engineered Buildings
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto md:mx-10">
               Pre-Engineered Buildings (PEBs) are modern steel structures
               designed, fabricated, and assembled using standardized components
               for faster construction.
@@ -430,7 +425,7 @@ export default function Menupage() {
       </section>
       {/*neww  explore conettt */}
       <section className=" mx-auto px-4 py-10 md:mx-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
 
@@ -492,7 +487,7 @@ export default function Menupage() {
                   }`}
                 >
                   <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
+                    {/* {String(idx + 1).padStart(2, "0")} */}
                   </span>
                   <span>{area.title}</span>
                 </button>
@@ -513,11 +508,11 @@ export default function Menupage() {
     shadow border border-[#808080] md:border-r-0
   "
               >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <span className=" p-1 rounded-full text-[#000080]">→</span>
                 </button>
@@ -528,7 +523,7 @@ export default function Menupage() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-97 object-cover"
+                  className="w-full h-64 md:h-100 object-cover"
                 />
               </div>
             </div>
@@ -729,7 +724,7 @@ export default function Menupage() {
       <Brand />
 
       {/* faqs */}
-      <section className="max-w-7xl mx-auto px-4 py-12 ">
+      <section className=" mx-auto px-4 py-12 md:mx-10 ">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
@@ -740,7 +735,7 @@ export default function Menupage() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200">
+        <div className="border-t border-gray-200 ">
           {faqs.map((faq: FAQ, index: number) => (
             <div key={index} className="border-b border-gray-200">
               {/* Question */}
@@ -749,20 +744,22 @@ export default function Menupage() {
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
               >
                 <span
-                  className={`font-medium transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-sm">
+                <span className="text-black text-lg font-bold">
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}
@@ -770,7 +767,7 @@ export default function Menupage() {
       </section>
       {/* end faqs */}
 
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

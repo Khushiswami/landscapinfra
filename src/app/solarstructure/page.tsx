@@ -183,7 +183,7 @@ export default function Solarstructure() {
                 and efficient solutions.
               </p>
               <div className="flex items-center gap-4">
-                <button className="border text-blue-900 border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -246,7 +246,8 @@ export default function Solarstructure() {
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
         </div>
         <p className="text-gray-700 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
-          The <span className="text-blue-900 font-semibold">Landscapinfra</span>{" "}
+          The{" "}
+          <span className="text-[#000080] font-semibold">Landscapinfra</span>{" "}
           Landscapinfra delivers a wide portfolio of Solar Mounting Structures
           engineered for multiple applications across the renewable energy
           landscape. Our solutions are tailored for rooftops, ground-mounted

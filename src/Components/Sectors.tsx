@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const sectors = [
   {
@@ -107,7 +108,7 @@ export default function Sectors() {
                 >
                   <div className="relative group overflow-hidden rounded-lg cursor-pointer">
                     {/* Image */}
-                    <img
+                    <Image
                       src={sector.image}
                       alt={sector.title}
                       className={`w-full h-60 object-cover transition-opacity ${

@@ -133,7 +133,7 @@ export default function Projectmanagementconsultancy() {
                 </li>
               </ul>
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-blue-900 border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -194,7 +194,7 @@ export default function Projectmanagementconsultancy() {
               </li>
             </ul>
             <div className="flex items-center justify-center md:justify-start gap-4">
-              <button className="border text-blue-900 border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+              <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
                 GET A QUOTE
               </button>
             </div>
@@ -210,7 +210,7 @@ export default function Projectmanagementconsultancy() {
         </h2>
         <div className="w-30 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative md:w-150"></div>
         <p className="text-gray-700 text-sm sm:text-base md:text-lg  leading-relaxed">
-          <span className="text-blue-900 font-semibold">Landsking Infra</span>{" "}
+          <span className="text-[#000080] font-semibold">Landsking Infra</span>{" "}
           provides expert construction project consultancy, ensuring that every
           project is executed efficiently and successfully. Our consultancy
           services follow a systematic, step-by-step approach designed to

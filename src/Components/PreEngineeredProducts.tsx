@@ -73,7 +73,7 @@ export default function PreEngineeredProducts() {
         <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
           What We Do
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#000080]">
           Our Activities
         </h2>
         <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
@@ -110,7 +110,7 @@ export default function PreEngineeredProducts() {
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
             {/* Text Content */}
             <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+              <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>

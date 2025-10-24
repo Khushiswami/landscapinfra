@@ -57,7 +57,7 @@ export default function ProjectSlider() {
 
   return (
     <section className="py-12 relative">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold text-blue-900 mb-8">
+      <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
         DISCOVER OUR PROJECTS
       </h2>
 
@@ -89,7 +89,7 @@ export default function ProjectSlider() {
             {projects.map((project, idx) => (
               <SwiperSlide key={idx}>
                 <div className="flex flex-col items-center text-center">
-                  <h3 className="text-lg font-semibold text-blue-900">
+                  <h3 className="text-lg font-semibold text-[#000080]">
                     {project.title}
                   </h3>
                   <p className="text-gray-500 text-sm mb-2">

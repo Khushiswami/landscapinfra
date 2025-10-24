@@ -241,7 +241,7 @@ Strategic Audits & Cost Estimation: Our expert audits and cost estimations provi
               description="Complexity is no longer a challenge with our Model-Based Systems Engineering (MBSE) and Model-Based Design (MBD) expertise. We transform your development lifecycle, replacing traditional, document-heavy processes with a visual, model-based approach that guarantees consistency, quality, and full traceability from concept to completion"
               titlenew="What We Do:"
               moredata="We use MBSE to manage and trace requirements with unparalleled clarity and precision.
-Robust Systems Architecture Design: Our MBSE-driven approach ensures your system's architecture is robust, reusable, and ready for future iterations.
+Robust Systems Architecture Design: Our MBSE-driven approach ensures your systems architecture is robust, reusable, and ready for future iterations.
 Efficient Embedded Software Development: We leverage MBD to create embedded software that is not only high-quality but also developed with maximum efficiency and reliability."
             />
             <Card

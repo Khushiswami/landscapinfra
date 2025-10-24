@@ -119,7 +119,7 @@ export default function Enigneerningandsimulationservice() {
                 and efficient solutions.
               </p>
               <div className="flex items-center gap-4">
-                <button className="border text-blue-900 border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -191,7 +191,7 @@ export default function Enigneerningandsimulationservice() {
         </div>
         <p className="text-gray-700 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
           The{" "}
-          <span className="text-blue-900 font-semibold">
+          <span className="text-[#000080] font-semibold">
             pre engineered building
           </span>{" "}
           technology has gained strong recognition worldwide. Across India, more

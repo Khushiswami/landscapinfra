@@ -112,7 +112,7 @@ export default function IndustrialBuildingsConstruction() {
               </p>
 
               <div className="flex items-center gap-3 sm:gap-4">
-                <button className="border text-blue-900 border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>

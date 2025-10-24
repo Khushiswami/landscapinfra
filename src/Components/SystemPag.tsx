@@ -4,11 +4,12 @@ import Footer from "../Components/Footer";
 
 import { ArrowUpRight } from "lucide-react";
 import IndustryHeader from "./Industryheader";
+import Image from "next/image";
 
 export default function SystemPage() {
   return (
     <>
-    <IndustryHeader/>
+      <IndustryHeader />
       <section>
         {/* Hero Section */}
         <div className="w-full mb-6 py-8 pt-32">
@@ -16,7 +17,7 @@ export default function SystemPage() {
             {/* Left Heading */}
             <div>
               <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-black">
-                Our Complete 
+                Our Complete
               </h1>
               <h1 className="text-2xl sm:text-4xl mt-3 md:text-5xl font-bold text-black">
                 Solutions
@@ -25,10 +26,11 @@ export default function SystemPage() {
             {/* Right Description */}
             <div>
               <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-                We provide complete solutions for structural steel, pre-engineered 
-                buildings, sheeting, and accessories. Our products are designed to 
-                meet the highest standards of durability and performance, helping 
-                you build with confidence and efficiency.
+                We provide complete solutions for structural steel,
+                pre-engineered buildings, sheeting, and accessories. Our
+                products are designed to meet the highest standards of
+                durability and performance, helping you build with confidence
+                and efficiency.
               </p>
             </div>
           </div>
@@ -36,7 +38,7 @@ export default function SystemPage() {
 
         {/* Banner Image */}
         <div className="w-full ">
-          <img
+          <Image
             src="/solutionsBannerPebsteel.jpg"
             alt="Hero Image"
             className="w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] object-cover "

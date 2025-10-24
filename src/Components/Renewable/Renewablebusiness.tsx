@@ -102,22 +102,27 @@ export default function Renewablebusiness() {
         >
           {coreBusinessData.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="flex flex-col items-center justify-start">
-                {/* ✅ Title */}
-                <h3
-                  className="relative md:mb-4 text-[19px] font-medium text-black text-center w-full  flex items-center justify-center px-2 transition-colors duration-500 group-hover:text-[#000080] pb-2"
-                  style={{
-                    fontFamily:
-                      "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
-                  }}
-                >
-                  {item.title}
-                  <span className="absolute left-0 right-0 -bottom-1 mx-auto h-[2px] w-0 bg-[#8080FF] transition-all duration-500 group-hover:w-full"></span>
-                </h3>
-
-                {/* ✅ Image container */}
+              <div className="flex flex-col items-center justify-start h-full">
+                {/* Fixed height title container */}
                 <div
-                  className="relative w-full h-[200px] md:h-[200px] overflow-hidden cursor-pointer group"
+                  className="w-full text-center mb-2"
+                  style={{ minHeight: "50px" }}
+                >
+                  <h3
+                    className="text-[19px] font-medium text-black transition-colors duration-500 group-hover:text-[#000080]"
+                    style={{
+                      fontFamily:
+                        "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
+                    }}
+                  >
+                    {item.title}
+                  </h3>
+                  <span className="block h-[2px] w-0 bg-[#8080FF] transition-all duration-500 group-hover:w-full"></span>
+                </div>
+
+                {/* Image container with fixed height */}
+                <div
+                  className="relative w-full h-[200px] overflow-hidden cursor-pointer group"
                   onClick={() =>
                     setActiveIndex(activeIndex === idx ? null : idx)
                   }

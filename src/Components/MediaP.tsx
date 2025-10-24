@@ -25,7 +25,7 @@ export default function MediaP() {
                 className="mb-4"
               />
               <p className="text-sm text-gray-700 font-semibold">
-                Landsking Infra is one of India’s Fastest Growing Company as an
+                Landsking Infra is one of Indias Fastest Growing Company as an
                 Industrial Solution Provider, It works on engineering,
                 procurement, construction (EPC) and maintenance companies.
               </p>
@@ -34,7 +34,7 @@ export default function MediaP() {
             {/* Card 2 */}
             <div className="border-[#bfbbbb] rounded-lg shadow-sm p-4 hover:shadow-lg transition">
               <Image
-                src="/PEB.jpg"
+                src="/preimages/pref.jpg"
                 alt="IPO"
                 width={350}
                 height={130}
@@ -61,7 +61,7 @@ export default function MediaP() {
           <ul className="space-y-6">
             <li className="flex items-start space-x-4">
               <Image
-                src="/PEB.jpg"
+                src="/preimages/ware.jpg"
                 alt="Event 1"
                 width={80}
                 height={60}
@@ -78,7 +78,7 @@ export default function MediaP() {
 
             <li className="flex items-start space-x-4">
               <Image
-                src="/PEB.jpg"
+                src="/preimages/construction Phase.jpeg"
                 alt="Event 2"
                 width={80}
                 height={60}
@@ -87,14 +87,14 @@ export default function MediaP() {
               <div>
                 <p className="text-sm text-gray-500">Jun 17, 2025</p>
                 <p className="text-gray-800 font-semibold">
-                  Landsking Infra Prefab Recognised at ISDA’s IIN Awards 2025
+                  Landsking Infra Prefab Recognised at ISDAs IIN Awards 2025
                 </p>
               </div>
             </li>
 
             <li className="flex items-start space-x-4">
               <Image
-                src="/PEB.jpg"
+                src="/preimages/factory.jpg"
                 alt="Event 3"
                 width={80}
                 height={60}

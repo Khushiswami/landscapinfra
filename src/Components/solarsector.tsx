@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const sectors = [
   {
@@ -111,7 +112,7 @@ export default function Solarsector() {
                   >
                     <div className="relative group overflow-hidden rounded-lg cursor-pointer">
                       {/* Image */}
-                      <img
+                      <Image
                         src={sector.image}
                         alt={sector.title}
                         className={`w-full h-60 object-cover transition-opacity ${
@@ -150,7 +151,7 @@ export default function Solarsector() {
             // Mobile: show only active image without effect
             <div className="flex justify-center">
               <div className="relative group overflow-hidden rounded-lg cursor-pointer w-full">
-                <img
+                <Image
                   src={sectors[current].image}
                   alt={sectors[current].title}
                   className="w-full h-60 object-cover"

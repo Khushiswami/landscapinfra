@@ -4,6 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -92,7 +93,7 @@ export default function Rndtestimonial() {
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-black/50 text-white rounded-2xl overflow-hidden relative h-[320px]">
                   {/* Left Image */}
                   <div className="relative h-full">
-                    <img
+                    <Image
                       src={item.img}
                       alt={item.name}
                       className="w-full h-full object-cover opacity-90"

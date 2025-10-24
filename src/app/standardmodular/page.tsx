@@ -196,48 +196,19 @@ export default function Standardmodular() {
   const slides = [
     {
       image: "/expertise/third.png",
-      title: "Prefabricated Structure",
-      link: "#",
+      title: "Mi-Homes",
+      link: "mi-homes",
     },
 
     {
       image: "/expertise/third.png",
-      title: "Labor Hutment",
-      link: "#",
+      title: " Portable Cabins",
+      link: "/porta-cabins",
     },
     {
       image: "/expertise/third.png",
-      title: "Control Room",
-      link: "#",
-    },
-  ];
-
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
+      title: "K-House",
+      link: "k-house",
     },
   ];
 
@@ -253,7 +224,7 @@ export default function Standardmodular() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/home.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -264,10 +235,10 @@ export default function Standardmodular() {
         <div className="relative z-10 container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Text */}
           <div className="text-center lg:text-left">
-            <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-9 md:mx-5">
               Standard Modular Solutions
             </h1>
-            <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-9">
               Prefabricated structures are buildings or components manufactured
               in a factory and then transported to the site for quick assemblly.{" "}
             </p>
@@ -291,7 +262,7 @@ export default function Standardmodular() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[250px]">
-                    <Image
+                    <img
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-50 sm:h-72 object-cover"
@@ -317,8 +288,8 @@ export default function Standardmodular() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-16">
+        <div className="l mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -349,7 +320,7 @@ export default function Standardmodular() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/industry.jpg"
               alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -359,8 +330,8 @@ export default function Standardmodular() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="w-full bg-white py-12 px-6 md:px-13 lg:px-16">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
@@ -382,40 +353,37 @@ export default function Standardmodular() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>✅ Quick Installation:</strong> Delivered in
+              <strong> Quick Installation:</strong> Delivered in
               ready-to-assemble modules, reducing construction time by up to
               60%..
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>✅ Superior Build Quality:</strong> Manufactured in our
+              <strong> Superior Build Quality:</strong> Manufactured in our
               controlled facility using high-grade materials and precision
               processes.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>✅ Cost-Effective: </strong> Saves time, labor, and
-              overhead costs while ensuring consistent quality.
+              <strong> Cost-Effective: </strong> Saves time, labor, and overhead
+              costs while ensuring consistent quality.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>✅ Portable & Relocatable: </strong> Easily dismantled and
+              <strong> Portable & Relocatable: </strong> Easily dismantled and
               reassembled at new locations.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>✅ Durable & Weather-Resistant : </strong> Built to
+              <strong> Durable & Weather-Resistant : </strong> Built to
               withstand diverse environmental conditions and heavy usage.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>✅ Custom Configurations: </strong> While standard in
+              <strong> Custom Configurations: </strong> While standard in
               design, they can be tweaked as per your operational needs.
             </p>
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
           </div>
         </div>
       </section>
       {/* endcapill */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+      <section className="md:mx-12 mx-auto px-4 py-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
 
@@ -497,11 +465,11 @@ export default function Standardmodular() {
     shadow border border-[#808080] md:border-r-0
   "
               >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <span className=" p-1 rounded-full text-[#000080]">→</span>
                 </button>
@@ -509,7 +477,7 @@ export default function Standardmodular() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <Image
+                <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-64 md:h-73 object-cover"
@@ -522,7 +490,7 @@ export default function Standardmodular() {
       {/* explore content */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className=" mx-auto px-4 md:mx-12">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Applications of Our Modular Solutions
           </h2>
@@ -565,19 +533,17 @@ export default function Standardmodular() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="md:mx-8 mx-auto px-6 md:px-10">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Engineered to Support Your Fast-Paced Projects
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <Image
-                src="/industry.jpg"
+                src="/menupageimg/mod13.jpg" // replace with your image
                 alt="PUF panels in industrial shed"
                 width={600}
                 height={400}
@@ -609,8 +575,9 @@ export default function Standardmodular() {
       </section>
       {/* end special section */}
       {/* why choose us */}
+      {/* why choose us */}
       <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
@@ -629,36 +596,11 @@ export default function Standardmodular() {
             </p>
 
             {/* Animated Counters */}
-            <div
-              ref={ref}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
-            >
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center bg-white shadow-lg p-3 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <div className="text-blue-600 text-base">{stat.icon}</div>
-                  <h3 className="text-base font-extrabold text-gray-900 mt-2">
-                    {inView && (
-                      <CountUp
-                        end={stat.value}
-                        duration={2}
-                        suffix={stat.suffix}
-                      />
-                    )}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 mt-1 text-center">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
@@ -671,7 +613,7 @@ export default function Standardmodular() {
       </section>
       {/* end why choose us */}
       <Brand /> {/* faqs */}
-      <section className="max-w-7xl mx-auto px-4 py-12 ">
+      <section className=" mx-auto px-4 py-12 md:mx-10 ">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
@@ -691,20 +633,22 @@ export default function Standardmodular() {
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
               >
                 <span
-                  className={`font-medium font-bold transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-sm font-bold">
+                <span className="text-black text-lg font-bold">
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}

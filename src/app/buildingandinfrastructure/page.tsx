@@ -460,7 +460,7 @@ export default function Buildingandinfrastructure() {
       </section>
       {/* explore conettt */}
       <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-2xl  md:text-[28px] font-bold text-blue-900 mb-8">
+        <h2 className="text-2xl  md:text-[28px] font-bold text-[#000080] mb-8">
           Pre Engineered Products
         </h2>
 
@@ -530,7 +530,7 @@ export default function Buildingandinfrastructure() {
               <div className="flex flex-col md:flex-row">
                 {/* Text */}
                 <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
-                  <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                  <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                     {selectedArea.subtitle}
                   </h3>
                   <p className="text-gray-700 mb-5">

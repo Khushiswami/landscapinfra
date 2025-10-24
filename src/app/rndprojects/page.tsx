@@ -32,7 +32,7 @@ const projects: Project[] = [
     id: 3,
     img: "/new1.png",
     location: "Maa Narmada Ware House, Pipriya",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const projects: Project[] = [
     id: 6,
     img: "/industry.jpg",
     location: "Devisingh Patel Ware House, Raisen",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 7,
@@ -94,7 +94,7 @@ const projects: Project[] = [
     id: 13,
     img: "/industry.jpg",
     location: "Trivani Crop Science Pvt Ltd, Factory Shed, Bhopal MP",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 14,
@@ -118,31 +118,31 @@ const projects: Project[] = [
     id: 17,
     img: "/industry.jpg",
     location: "PMAY, Indore",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 18,
     img: "/industry.jpg",
     location: "Kundaliyalift Irrigation, Nalkheda",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 19,
     img: "/industry.jpg",
     location: "DFCC Site Tata Project, Ankleshwar, Gujarat",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 20,
     img: "/industry.jpg",
     location: "ROB, Hoshangabad MP",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 21,
     img: "/industry.jpg",
     location: "O2 Power, 200MW Solar Pilework, Agar MP",
-    category: "Government & PSU's",
+    category: "Government & PSUs",
   },
   {
     id: 22,
@@ -171,7 +171,7 @@ const categories = [
   "Clean Room",
   "Commercial Building",
   "Factory Buildings",
-  "Government & PSU's",
+  "Government & PSUs",
 ];
 
 export default function Rndprojects() {

@@ -416,7 +416,7 @@ export default function Miningandmetals() {
       </section>
       {/* explore conettt */}
       <section className=" mx-auto px-4 py-10 md:px-23">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
 
@@ -500,11 +500,11 @@ export default function Miningandmetals() {
     shadow border border-[#808080] md:border-r-0
   "
               >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <span className=" p-1 rounded-full text-[#000080]">→</span>
                 </button>

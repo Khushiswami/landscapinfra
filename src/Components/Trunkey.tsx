@@ -13,7 +13,7 @@ export default function Trunkey() {
   ];
 
   const [active, setActive] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsMobile] = useState(false);
 
   // Detect mobile
   useEffect(() => {

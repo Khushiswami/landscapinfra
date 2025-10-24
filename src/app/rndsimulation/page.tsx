@@ -73,7 +73,7 @@ export default function Rndsimulation() {
               </p>
 
               <div className="flex items-center gap-4">
-                <button className="border rounded-md text-blue-900 border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border rounded-md text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>
@@ -85,7 +85,7 @@ export default function Rndsimulation() {
       {/* new section */}
       <section className="bg-gray-50 py-16 px-4 sm:px-8 md:px-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#000080]">
             Our Simulation Services
           </h2>
 
@@ -243,7 +243,7 @@ export default function Rndsimulation() {
               </p>
 
               <div className="flex items-center gap-4">
-                <button className="border text-blue-900 border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>

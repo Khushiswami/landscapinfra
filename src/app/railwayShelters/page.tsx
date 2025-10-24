@@ -35,7 +35,7 @@ const RailwayShelters: React.FC = () => {
     {
       question: "How quickly can a modular railway shelter be installed?",
       answer:
-        "Deployment is highly accelerated, typically requiring only 2–7 days. Factory fabrication ensures a clean, fast process that results in a highly cost-efficient project completion model.",
+        "Deployment is highly accelerated, typically requiring only 2 to 7 days. Factory fabrication ensures a clean, fast process that results in a highly cost-efficient project completion model.",
     },
     {
       question: "Are these shelters durable enough for continuous public use?",
@@ -116,7 +116,7 @@ const RailwayShelters: React.FC = () => {
                 Key Features of Prefabricated Shelters
               </h3>
               <p className="text-gray-700">
-                LANDSKING’s railway and telecom shelters are built using
+                LANDSKINGs railway and telecom shelters are built using
                 high-quality materials, delivering superior performance. Key
                 features include:
               </p>

@@ -54,7 +54,6 @@ export default function Pebheader() {
           title: "Pre Engineered Buildings",
           href: "/menupage",
           subMenu: [
-            { name: "Multi-Storey Building", href: "/multiStoryBuilding" },
             { name: "Warehouse", href: "/warehouse" },
             { name: "Industrial Shed", href: "/industrialShed" },
             { name: "Factory Building", href: "/factoryBuilding" },
@@ -66,36 +65,39 @@ export default function Pebheader() {
           title: "Modular Buildings",
           href: "/modular",
           subMenu: [
+            // { name: "Multi-Storey Building", href: "/multiStoryBuilding" },
+
             { name: "Prefab Site Office", href: "/prefabSiteOffice" },
-            { name: "Cold Room", href: "/coldRoom" },
+            { name: "Industrial Enclosures", href: "/industrialEnclosures" },
+
+            // { name: "Cold Room", href: "/coldRoom" },
             { name: "Control Room", href: "/controlRoom" },
             { name: "Clean Room", href: "/cleanRoom" },
             { name: "Railway Shelters", href: "/railwayShelters" },
-            { name: "Labor Hutment", href: "/laborHutment" },
+            // { name: "Labor Hutment", href: "/laborHutment" },
             {
               name: "Prefabricated Site Infrastructure Solutions",
               href: "/prefabricatedSite",
             },
-            { name: "Low Cost Housing", href: "/lowCostHousing" },
+            // { name: "Low Cost Housing", href: "/lowCostHousing" },
             { name: "Acoustic Enclosures", href: "/acousticEnclosures" },
-            {
-              name: "Portable Security Guard Cabins",
-              href: "/security-cabins",
-            },
           ],
         },
         {
           title: "Light Gauge Steel Framing",
           href: "/lightguage",
-          subMenu: [{ name: "Prefab School", href: "/prefabSiteOffice" }],
+          subMenu: [
+            { name: "Prefab School", href: "/prefabschool" },
+            { name: "Multi-Storey Building", href: "/multiStoryBuilding" },
+          ],
         },
         {
           title: "Sandwich Panels",
           href: "/sandwichpanels",
           subMenu: [
-            { name: "PUF Panels", href: "/puf" },
-            { name: "EPS Panels", href: "/eps" },
-            { name: "Rockwool Panel", href: "/rockwool" },
+            { name: "PUF Panels", href: "/puf-panels" },
+            { name: "EPS Panels", href: "/eps-panels" },
+            { name: "Rockwool Panel", href: "/rockwoolpanel" },
             { name: "Glass Wool Panels", href: "/glasswool" },
           ],
         },
@@ -103,10 +105,10 @@ export default function Pebheader() {
           title: "Standard Modular Solutions",
           href: "/standardmodular",
           subMenu: [
-            { name: "Porta Cabins", href: "/portacabins" },
-            { name: "Liftable Cabin", href: "/liftablecabin" },
-            { name: "Mi Homes", href: "/mihomes" },
-            { name: "K-House", href: "/khouse" },
+            { name: "Porta Cabins", href: "/porta-cabins" },
+            { name: "Security Guard Cabin", href: "/security-guard-cabins" },
+            { name: "Mi Homes", href: "/mi-homes" },
+            { name: "K-House", href: "/k-house" },
           ],
         },
         { title: "EPC Solutions", href: "/epcsolutions" },

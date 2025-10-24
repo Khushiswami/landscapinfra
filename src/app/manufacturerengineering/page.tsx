@@ -4,12 +4,6 @@ import { useState, ReactNode, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import {
-  FaAward,
-  FaGlobeAsia,
-  FaCertificate,
-  FaProjectDiagram,
-} from "react-icons/fa";
-import {
   FaDraftingCompass,
   FaPencilRuler,
   FaCube,

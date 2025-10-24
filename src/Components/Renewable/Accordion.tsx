@@ -15,7 +15,7 @@ const items: AccordionItem[] = [
     id: 1,
     title: "Engineering (E)",
     content:
-      "The Blueprint of Your Solar System Engineering is the critical foundation of every Solar EPC project. At Manufyn, our EPC engineers begin with meticulous site assessments.This includes detailed energy audits,load profiling,and shadow analysis. We use this essential data to create a highly customized solar system design. This design is always optimized for your site's solar potential, climate, and electrical load. Our EPC experts ensure the layout maximizes energy production while strictly adhering to safety and local compliance standards. By combining advanced software simulations with on-site inspections, we deliver precise, efficient, and future-ready solar solutions. This proactive engineering approach reduces operational risks and guarantees long-term solar system performance.",
+      "The Blueprint of Your Solar System Engineering is the critical foundation of every Solar EPC project. At Manufyn, our EPC engineers begin with meticulous site assessments.This includes detailed energy audits,load profiling,and shadow analysis. We use this essential data to create a highly customized solar system design. This design is always optimized for your sites solar potential, climate, and electrical load. Our EPC experts ensure the layout maximizes energy production while strictly adhering to safety and local compliance standards. By combining advanced software simulations with on-site inspections, we deliver precise, efficient, and future-ready solar solutions. This proactive engineering approach reduces operational risks and guarantees long-term solar system performance.",
   },
   {
     id: 2,

@@ -12,6 +12,7 @@ import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function RndServicesNew() {
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -196,7 +197,7 @@ export default function RndServicesNew() {
                 }}
               >
                 <div className="w-full h-90 md:h-80 overflow-hidden">
-                  <img
+                  <Image
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover"

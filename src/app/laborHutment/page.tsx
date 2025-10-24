@@ -31,7 +31,7 @@ const LaborHutment: React.FC = () => {
     {
       question: "Can labour hutments be customized?",
       answer:
-        "Yes, internal layouts are fully adaptable for staff amenities, medical centers, or kitchen facilities, ensuring the space perfectly fits the project's operational requirements.",
+        "Yes, internal layouts are fully adaptable for staff amenities, medical centers, or kitchen facilities, ensuring the space perfectly fits the projects operational requirements.",
     },
     {
       question: "How much time does it take to install a labour hutment?",
@@ -51,7 +51,7 @@ const LaborHutment: React.FC = () => {
     {
       question: "Are labour hutments easy to relocate?",
       answer:
-        "Absolutely. Their modularity allows for straightforward dismantling and re-erection, preserving the unit's value and enabling efficient asset redeployment.",
+        "Absolutely. Their modularity allows for straightforward dismantling and re-erection, preserving the units value and enabling efficient asset redeployment.",
     },
     {
       question: "Are prefabricated hutments eco-friendly?",

@@ -205,7 +205,7 @@ const IndustrialShed: React.FC = () => {
                 <li>
                   <strong>Interiors (Optional):</strong> Electrical fittings,
                   sanitary fittings, and furniture will be supplied and
-                  installed as per the client’s requirements.
+                  installed as per the clients requirements.
                 </li>
               </ul>
             </div>

@@ -14,7 +14,7 @@ const AcousticEnclosures: React.FC = () => {
     {
       question: "What is an acoustic enclosure?",
       answer:
-        "It's essentially a specialized, modular noise shield engineered to safely contain excessive machine sound, ensuring your site remains quiet enough for regulatory compliance and worker comfort.",
+        "Its essentially a specialized, modular noise shield engineered to safely contain excessive machine sound, ensuring your site remains quiet enough for regulatory compliance and worker comfort.",
     },
     {
       question: "What is the fundamental purpose of an acoustic enclosure?",

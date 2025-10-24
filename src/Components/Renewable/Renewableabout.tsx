@@ -69,7 +69,7 @@ export default function Renewableabout() {
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container px-5 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:mx-28">
+      <div className="relative container px-5  grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:px-32">
         {/* Left Section - Video & Two Images */}
         <div className="space-y-6">
           {/* Video */}
@@ -87,9 +87,9 @@ export default function Renewableabout() {
 
         {/* Right Section - About Us */}
         <div>
-          <h5 className="text-xl sm:text-2xl font-bold text-[#000080] mb-1 mt-9 sm:mb-6">
+          {/* <h5 className="text-xl sm:text-2xl font-bold text-[#000080] mb-1 mt-9 sm:mb-6">
             ABOUT US
-          </h5>
+          </h5> */}
           <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 mt-0 sm:mb-6">
             Building Tomorrow’s Energy Infrastructure — Today.
           </h2>

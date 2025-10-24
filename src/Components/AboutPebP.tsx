@@ -60,7 +60,7 @@ export default function AboutPebP() {
           {/* Video */}
           <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-110 overflow-hidden  hover: transition-all duration-500">
             <video
-              src="/homeslider.mp4"
+              src="/video/peb.mp4"
               autoPlay
               loop
               muted

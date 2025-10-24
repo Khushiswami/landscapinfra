@@ -14,6 +14,7 @@ import Footer from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 
 import Link from "next/link";
+import Pebfooter from "yes/Components/Pebfooter";
 
 export default function Modular() {
   interface FAQ {
@@ -59,7 +60,7 @@ export default function Modular() {
       subtitle: "Clean Room",
       description:
         "offers advanced cleanroom solutions for controlled environments in industries like pharmaceuticals, electronics, and biotechnology. Our cleanrooms are designed with precision to meet stringent hygiene, airflow, and temperature control standards, ensuring optimal conditions for sensitive operations.",
-      image: "/menupageimg/mod9.png",
+      image: "/menupageimg/mod13.jpg",
     },
     {
       id: 6,
@@ -71,7 +72,7 @@ export default function Modular() {
     },
     {
       id: 7,
-      title: "Prefab Porta Cabins Manufacturer",
+      title: "Prefab Porta Cabins",
       subtitle: "Prefab Porta Cabins Manufacturer",
       description:
         "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
@@ -180,37 +181,37 @@ export default function Modular() {
       subtitle: "High Tolerance & Durability",
       description:
         "Engineered with high tolerance, corrosion resistance, and exceptional durability to ensure reliable long-term performance.",
-      image: "/industry.jpg",
+      image: "/preimages/",
     },
     {
       subtitle: "Dimensional Accuracy",
       description:
         "Precision manufacturing guarantees exact dimensional accuracy, ensuring the final product meets and exceeds client expectations.",
-      image: "/industry.jpg",
+      image: "/preimages/",
     },
     {
       subtitle: "Quick Erection & Installation",
       description:
         "Designed for rapid erection, enabling swift installation even in complex or challenging site conditions.",
-      image: "/industry.jpg",
+      image: "/preimages/quick.png",
     },
     {
       subtitle: "Thermal Efficiency",
       description:
         "Insulated panels maintain a 5–7°C temperature difference, significantly enhancing energy efficiency and comfort.",
-      image: "/industry.jpg",
+      image: "/preimages/",
     },
     {
       subtitle: "Accelerated Project Timelines",
       description:
         "Optimized production and installation processes ensure timely delivery, meeting tight project schedules.",
-      image: "/industry.jpg",
+      image: "/preimages/",
     },
     {
       subtitle: "Robust Construction",
       description:
         "Strong and sturdy construction ensures long service life, structural stability, and reliable performance.",
-      image: "/industry.jpg",
+      image: "/preimages/",
     },
   ];
 
@@ -252,19 +253,33 @@ export default function Modular() {
   const slides = [
     {
       image: "/expertise/third.png",
-      title: "Prefabricated Structure",
-      link: "#",
+      title: "Pre-fab Office",
+      link: "/prefabricatedSite",
     },
-
     {
       image: "/expertise/third.png",
-      title: "Labor Hutment",
-      link: "#",
+      title: "Industrial Enclousers",
+      link: "/industrialEnclousers",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Railway Shelters",
+      link: "/railwayShelters",
     },
     {
       image: "/expertise/third.png",
       title: "Control Room",
-      link: "#",
+      link: "/coldRoom",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Clean Room",
+      link: "/cleanRoom",
+    },
+    {
+      image: "/expertise/third.png",
+      title: "Acoustic Enclosure",
+      link: "/",
     },
   ];
 
@@ -282,7 +297,7 @@ export default function Modular() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/modular.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -293,10 +308,10 @@ export default function Modular() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-15 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-10">
               Modular Building Solutions
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-10">
               Build your project offsite with fast accuracy and quality. Enjoy
               faster completion and effortless on-site assembly for seamless
               results.
@@ -317,7 +332,7 @@ export default function Modular() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <Image
+                    <img
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-48 sm:h-72 object-cover"
@@ -341,7 +356,7 @@ export default function Modular() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-12">
+      <section className="bg-white py-12 px-4 md:px-16">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
@@ -376,7 +391,7 @@ export default function Modular() {
             </Link>
           </div>
           <div className="flex justify-center">
-            <Image
+            <img
               src="/menupageimg/mod13.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -387,7 +402,7 @@ export default function Modular() {
       {/* end description */}
       {/* capiablites */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
@@ -441,8 +456,8 @@ export default function Modular() {
         </div>
       </section>
       {/* endcapill */}
-      <section className=" mx-auto px-4 py-10 md:mx-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+      <section className=" mx-auto px-4 py-10 md:mx-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
 
@@ -504,7 +519,7 @@ export default function Modular() {
                   }`}
                 >
                   <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
+                    {/* {String(idx + 1).padStart(2, "0")} */}
                   </span>
                   <span>{area.title}</span>
                 </button>
@@ -525,11 +540,11 @@ export default function Modular() {
     shadow border border-[#808080] md:border-r-0
   "
               >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <span className=" p-1 rounded-full text-[#000080]">→</span>
                 </button>
@@ -537,10 +552,10 @@ export default function Modular() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <Image
+                <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-163 object-cover"
+                  className="w-full h-64 md:h-164 object-cover"
                 />
               </div>
             </div>
@@ -550,9 +565,9 @@ export default function Modular() {
       {/* explore content */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4">
+        <div className=" mx-auto px-4 md:mx-12">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits of Pre-Engineered Buildings
+            Benefits of Prefabricated Modular
           </h2>
 
           {/* Cards Row */}
@@ -593,18 +608,16 @@ export default function Modular() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="md:mx-16 mx-auto px-6 md:px-0">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Accelerate Construction with Prefabrication – Save Up to 60% Time
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <Image
+              <img
                 src="/menupageimg/mod16.jpg"
                 alt="PUF panels in industrial shed"
                 width={600}
@@ -641,8 +654,8 @@ export default function Modular() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="w-full bg-white py-16 px-6 md:px-16 ">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
@@ -663,8 +676,8 @@ export default function Modular() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
-            <Image
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
+            <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}
@@ -676,7 +689,7 @@ export default function Modular() {
       </section>
       {/* end why choose us */}
       <Brand /> {/* faqs */}
-      <section className="max-w-7xl mx-auto px-4 py-12 ">
+      <section className=" mx-auto px-4 py-12 md:mx-13 ">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
@@ -696,27 +709,28 @@ export default function Modular() {
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
               >
                 <span
-                  className={`font-medium font-bold transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-sm font-bold">
+                <span className="text-black text-lg font-bold">
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}
         </div>
       </section>
-      {/* end faqs */}
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

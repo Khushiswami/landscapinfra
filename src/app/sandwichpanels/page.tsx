@@ -63,80 +63,42 @@ export default function Sandwichpanels() {
 
   const faqs: FAQ[] = [
     {
-      question: "What are sandwich panels?",
+      question: "What is an Insulated Sandwich Panel (ISP)?",
       answer:
-        "Sandwich panels consist of two metal layers with an insulating core in between, offering superior thermal insulation and structural strength.",
+        "It is a lightweight, factory-engineered composite utilizing a high-density insulating medium (like PIR or PUF) securely bonded between two rigid, corrosion-resistant steel facings.",
     },
     {
-      question: "What materials are used in sandwich panels?",
+      question: "What is the main structural advantage of using ISPs?",
       answer:
-        "Sandwich panels usually feature outer layers made of galvanized or coated steel, while the core insulation is commonly composed of materials such as EPS (Expanded Polystyrene), PUF (Polyurethane Foam), Rockwool, or Glasswool.",
+        "ISPs offer an exceptional weight-to-span capability, requiring fewer foundational supports and allowing for rapid deployment while preserving high rigidity against lateral forces.",
     },
     {
-      question: "What are the applications of sandwich panels?",
+      question: "How effective are ISPs at thermal insulation?",
       answer:
-        "Due to their excellent thermal and sound insulation properties, sandwich panels are extensively used in industrial facilities, cold storage units, clean rooms, site offices, warehouses, and various prefabricated structures.",
+        "Due to the cores low Lambda value, ISPs establish a continuous thermal barrier, guaranteeing peak energy efficiency and drastically reducing the operational load on HVAC systems.",
     },
     {
-      question: "What are the advantages of sandwich panels?",
+      question: "Which types of insulation cores are considered high-grade?",
       answer:
-        "The main advantages include effective thermal and acoustic insulation, lightweight design, fast installation, fire resistance (depending on the core material), and overall cost-effectiveness.",
-    },
-    {
-      question: "How durable are sandwich panels?",
-      answer:
-        "Sandwich panels offer high durability and are resistant to corrosion, moisture, and physical impact, with an average lifespan ranging from 15 to 25 years, depending on the core material and application.",
-    },
-    {
-      question: "Are sandwich panels fire-resistant?",
-      answer:
-        "Rockwool and Glasswool panels provide outstanding fire resistance, while PUF and EPS panels offer moderate protection and are available in fire-retardant variants.",
-    },
-    {
-      question: "Can sandwich panels withstand harsh weather conditions?",
-      answer:
-        "Ladsking Infra’s sandwich panels are engineered to endure extreme weather conditions such as high temperatures, humidity, heavy rainfall, and wind loads, when installed properly.",
-    },
-    {
-      question: "What is the installation process for sandwich panels?",
-      answer:
-        "At Ladsking Infra, installation involves securely mounting the panels onto a steel or prefabricated framework using specialized fasteners, sealants, and edge protectors to ensure a durable and leak-proof finish.",
-    },
-    {
-      question: "What is the lifespan of sandwich panels?",
-      answer:
-        "When installed and maintained correctly, Ladsking Infra’s sandwich panels can provide reliable performance for up to 25 years, delivering outstanding long-term value and energy efficiency.",
-    },
-    {
-      question: "What industries use sandwich panels the most?",
-      answer:
-        "Sectors like warehousing, logistics, food processing, pharmaceuticals, agriculture, and construction extensively depend on sandwich panels.",
-    },
-    {
-      question: "What are Sandwich Panels in construction?",
-      answer:
-        "Sandwich Panels are prefabricated wall and roof panels with an insulating core between two metal sheets, offering excellent thermal efficiency and durability.",
-    },
-    {
-      question: "What are the benefits of Sandwich Panels?",
-      answer:
-        "They provide superior insulation, reduce energy costs, are lightweight, easy to install, and suitable for cold storage, industrial sheds, and modular units.",
-    },
-    {
-      question: "How energy-efficient are sandwich panels?",
-      answer:
-        "Sandwich panels help cut energy expenses by limiting heat transfer, keeping indoor temperatures stable, and lowering the need for air conditioning or heating",
+        "Industry leaders prioritize PIR (Polyisocyanurate) cores due to their molecular structure, which provides a significantly enhanced fire resistance rating over standard PUF alternatives.",
     },
     {
       question:
-        "Do sandwich panels meet building code and safety standards in India?",
+        "Are sandwich panels effective for soundproofing industrial facilities?",
       answer:
-        "Ladsking Infra’s sandwich panels meet all applicable IS standards and fire safety regulations, guaranteeing structural strength and reliable performance.",
+        "Yes. The dense, multi-layered assembly contributes to superior Sound Reduction Index performance, making them essential for mitigating machinery noise and improving worker welfare.",
     },
     {
-      question: "Are sandwich panels environmentally friendly?",
+      question:
+        "How does an ISP contribute to a buildings fire safety profile?",
       answer:
-        "Sandwich panels are both energy-efficient and recyclable. Ladsking Infra manufactures its panels using environmentally friendly processes that minimize waste.",
+        "The use of a PIR core is critical for risk mitigation; these panels are rigorously tested to ensure low smoke emission and controlled burn characteristics compliant with safety codes.",
+    },
+    {
+      question:
+        "What makes ISPs ideal for specialized applications like cold storage?",
+      answer:
+        "Their engineered precision sealing systems prevent moisture migration and temperature fluctuation, making them the most reliable solution for maintaining critical environmental setpoints.",
     },
   ];
 
@@ -145,31 +107,31 @@ export default function Sandwichpanels() {
       subtitle: "Industrial & Commercial Use",
       description:
         "Ideal for prefabricated industrial buildings, warehouses, and commercial setups—sandwich panels offer strong structural integrity and excellent insulation for long-term use.",
-      image: "/industry.jpg",
+      image: "/menupagetwo/ind-2.jpeg",
     },
     {
       subtitle: "Cold Storage & Clean Rooms",
       description:
         "Perfect for cold storage units, clean rooms, and temperature-sensitive environments, thanks to their superior thermal performance and airtight sealing.",
-      image: "/industry.jpg",
+      image: "/new-images/cold-room-2.jpg",
     },
     {
       subtitle: "Site & Workforce Facilities",
       description:
         "Used extensively in site offices, worker accommodations, and modular cabins for their quick installation, durability, and low-maintenance design.",
-      image: "/industry.jpg",
+      image: "/preimages/low.jpg",
     },
     {
       subtitle: "Institutional & Temporary Structures",
       description:
         "Well-suited for healthcare units, schools, and both temporary and permanent setups—combining speed, safety, and energy efficiency in one solution.",
-      image: "/industry.jpg",
+      image: "/aboutright.jpeg",
     },
     {
       subtitle: "Residential & Modular Housing",
       description:
         "Sandwich panels are a smart choice for modular homes, prefab villas, and residential extensions, offering energy efficiency, speed of construction, and lasting comfort.",
-      image: "/industry.jpg",
+      image: "/menupageimg/mod13.jpg",
     },
     {
       subtitle: "Agricultural & Livestock Facilities",
@@ -235,33 +197,6 @@ export default function Sandwichpanels() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [open, setOpen] = useState(false);
 
-  const stats = [
-    {
-      label: "Years of Expertise",
-      value: 20,
-      suffix: "+",
-      icon: <FaAward className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Projects Delivered",
-      value: 500,
-      suffix: "+",
-      icon: <FaProjectDiagram className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Nationwide Presence",
-      value: 25,
-      suffix: "+ States",
-      icon: <FaGlobeAsia className="text-[#000080] text-xl" />,
-    },
-    {
-      label: "Certified Processes",
-      value: 100,
-      suffix: "%",
-      icon: <FaCertificate className="text-[#000080] text-xl" />,
-    },
-  ];
-
   return (
     <>
       <Pebheader />
@@ -274,7 +209,7 @@ export default function Sandwichpanels() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/sandwich.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -285,13 +220,13 @@ export default function Sandwichpanels() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Pre Engineered Buildings
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-9 md:mx-5">
+              Sandwich Panels
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
-              Pre-Engineered Buildings (PEBs) are modern steel structures
-              designed, fabricated, and assembled using standardized components
-              for faster construction.
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-9">
+              Sandwich panels are high-performance construction materials
+              comprising two outer metal sheets and an inner insulating core
+              made of PUR/PIR, EPS, Rockwool, or Glasswoo
             </p>
           </div>
 
@@ -333,8 +268,8 @@ export default function Sandwichpanels() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-16">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -376,8 +311,8 @@ export default function Sandwichpanels() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="w-full bg-white py-12 px-6 md:px-13 lg:px-16">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
@@ -418,16 +353,13 @@ export default function Sandwichpanels() {
               requirements, they serve as a highly efficient alternative to
               conventional masonry in contemporary construction.
             </p>
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
           </div>
         </div>
       </section>
       {/* endcapill */}
       {/* explore conettt */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+      <section className="md:mx-12 mx-auto px-4 py-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
 
@@ -489,7 +421,7 @@ export default function Sandwichpanels() {
                   }`}
                 >
                   <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
+                    {/* {String(idx + 1).padStart(2, "0")} */}
                   </span>
                   <span>{area.title}</span>
                 </button>
@@ -510,11 +442,11 @@ export default function Sandwichpanels() {
     shadow border border-[#808080] md:border-r-0
   "
               >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
+                <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
+                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <span className=" p-1 rounded-full text-[#000080]">→</span>
                 </button>
@@ -535,7 +467,7 @@ export default function Sandwichpanels() {
       {/* explore content */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className=" mx-auto px-4 md:mx-12">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Applications of Sandwich Panels
           </h2>
@@ -578,7 +510,7 @@ export default function Sandwichpanels() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="md:mx-8 mx-auto px-6 md:px-10">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Why Choose Landsking Infra Sandwich Panels?
@@ -588,7 +520,6 @@ export default function Sandwichpanels() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <img
                 src="/menupageimg/sp3.jpg"
                 alt="PUF panels in industrial shed"
@@ -621,7 +552,7 @@ export default function Sandwichpanels() {
       {/* end special section */}
       {/* why choose us */}
       <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
@@ -640,36 +571,11 @@ export default function Sandwichpanels() {
             </p>
 
             {/* Animated Counters */}
-            <div
-              ref={ref}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"
-            >
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center bg-white shadow-lg p-3 rounded-2xl border border-gray-100 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <div className="text-blue-600 text-base">{stat.icon}</div>
-                  <h3 className="text-base font-extrabold text-gray-900 mt-2">
-                    {inView && (
-                      <CountUp
-                        end={stat.value}
-                        duration={2}
-                        suffix={stat.suffix}
-                      />
-                    )}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 mt-1 text-center">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
@@ -682,7 +588,7 @@ export default function Sandwichpanels() {
       </section>
       {/* end why choose us */}
       <Brand /> {/* faqs */}
-      <section className="max-w-7xl mx-auto px-4 py-12 ">
+      <section className=" mx-auto px-4 py-12 md:mx-10 ">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
@@ -702,20 +608,22 @@ export default function Sandwichpanels() {
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
               >
                 <span
-                  className={`font-medium font-bold transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-sm font-bold">
+                <span className="text-black text-lg font-bold">
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}

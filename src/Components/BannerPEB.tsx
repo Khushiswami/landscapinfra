@@ -12,25 +12,25 @@ export default function BannerPEB() {
     {
       title: "PRE ENGINEERED BUILDINGS",
       desc: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
-      video: "/video.mp4",
+      video: "/video/home.mp4",
       link: "/preEngineeredBuildings",
     },
     {
       title: "Structural Steel",
       desc: "Delivering end-to-end Engineering, Procurement, and Construction solutions, we turn ambitious visions into iconic structures with precision and innovation.",
-      video: "/video.mp4",
+      video: "/video/steel.mp4",
       link: "/structuralsteel",
     },
     {
       title: " EPC Solutions ",
       desc: "Offering innovative structural engineering solutions, we design safe, durable, and efficient frameworks that form the backbone of iconic projects.",
-      video: "/video.mp4",
+      video: "/video/epc.mp4",
       link: "/epcsolutions",
     },
     {
       title: "Project Management Consultancy",
       desc: "Providing expert project management guidance, we ensure projects are delivered on time, within budget, and to the highest standards of quality.",
-      video: "/video.mp4",
+      video: "/video/structure.mp4",
       link: "/projectmanagementconsultancy",
     },
   ];

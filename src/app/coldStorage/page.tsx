@@ -91,9 +91,9 @@ const ColdStorage: React.FC = () => {
                 ROOM MANUFACTURING IN INDIA
               </h3>
               <p className="text-gray-700 mb-4">
-                Did you know that 40-50% of India’s fresh produce is wasted
-                every year due to insufficient cold chain infrastructure,
-                resulting in losses worth USD 440 billion?
+                Did you know that 40-50% of Indias fresh produce is wasted every
+                year due to insufficient cold chain infrastructure, resulting in
+                losses worth USD 440 billion?
               </p>
               <p className="text-gray-700 mb-4">
                 At Landsking Infra, we offer advanced cold storage and cold room

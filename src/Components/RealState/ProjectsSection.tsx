@@ -81,7 +81,7 @@ export default function ProjectsSection() {
                       fill
                       className="object-cover rounded-lg"
                     />
-                    <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-blue-900 text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-black hover:text-white transition">
+                    <button className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 bg-white text-[#000080] text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-900 hover:bg-black hover:text-white transition">
                       KNOW MORE
                     </button>
                   </div>

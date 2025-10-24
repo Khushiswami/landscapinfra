@@ -145,7 +145,7 @@ export default function Fabrication() {
             <div>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
                 Landsking Infra delivers sturdy and cost-efficient
-                <span className="text-blue-900 font-semibold">
+                <span className="text-[#000080] font-semibold">
                   {" "}
                   Fabrication Solutions{" "}
                 </span>
@@ -166,7 +166,7 @@ export default function Fabrication() {
               </p>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-blue-900 border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
+                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
                   GET A QUOTE
                 </button>
               </div>

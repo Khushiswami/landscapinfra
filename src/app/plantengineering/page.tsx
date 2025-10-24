@@ -4,10 +4,8 @@ import { useState } from "react";
 import React from "react";
 import Footer from "yes/Components/Footer";
 import Industryheader from "yes/Components/Industryheader";
-import Trunkey from "yes/Components/Trunkey";
 import Link from "next/link";
-import Trunkeytpes from "yes/Components/Trunkeytpes";
-import Industryplatformtab from "yes/Components/Industryplatformtab";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";

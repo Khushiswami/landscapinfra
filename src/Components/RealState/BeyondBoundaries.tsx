@@ -1,34 +1,33 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const cards = [
   {
     id: 1,
-    src: '/realstate/three.webp',
-    alt: 'Making a positive social impact',
-    title: 'Making a positive social impact',
-    buttonText: 'CSR',
+    src: "/realstate/three.webp",
+    alt: "Making a positive social impact",
+    title: "Making a positive social impact",
+    buttonText: "CSR",
   },
   {
     id: 2,
-    src: '/realstate/three.webp', 
-    alt: 'Celebrating Diwali at L&T Realty Raintree Boulevard',
-    title: 'Celebrating Diwali at L&T Realty Raintree Boulevard',
-    buttonText: 'Community celebrations',
+    src: "/realstate/three.webp",
+    alt: "Celebrating Diwali at L&T Realty Raintree Boulevard",
+    title: "Celebrating Diwali at L&T Realty Raintree Boulevard",
+    buttonText: "Community celebrations",
   },
   {
     id: 3,
-    src: '/realstate/three.webp', 
-    alt: 'Promoting the cultural and musical heritage of India',
-    title: 'Promoting the cultural and musical heritage of India',
-    buttonText: 'Events',
+    src: "/realstate/three.webp",
+    alt: "Promoting the cultural and musical heritage of India",
+    title: "Promoting the cultural and musical heritage of India",
+    buttonText: "Events",
   },
 ];
 
 const BeyondBoundaries = () => {
   return (
     <section className="py-16 px-6 md:px-20 bg-white text-center">
-      
-      <h2 className="text-3xl md:text-2xl font-black tracking-wide text-blue-900 uppercase mb-12">
+      <h2 className="text-3xl md:text-2xl font-black tracking-wide text-[#000080] uppercase mb-12">
         Beyond Boundaries
       </h2>
 
@@ -40,12 +39,12 @@ const BeyondBoundaries = () => {
                 src={src}
                 alt={alt}
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
                 priority={id === 1} // Priority loading first image
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
-            <p className="text-blue-900 font-semibold mb-6 max-w-xs">
+            <p className="text-[#000080] font-semibold mb-6 max-w-xs">
               {title}
             </p>
             <button className="relative inline-flex items-center border-2 border-blue-700 text-blue-700 font-semibold px-6 py-2 hover:bg-blue-700 hover:text-white transition-colors duration-300">

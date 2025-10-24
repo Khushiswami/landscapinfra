@@ -5,6 +5,8 @@ import { FaWarehouse } from "react-icons/fa";
 import Pebheader from "yes/Components/Pebheader";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
+import Link from "next/link";
+import Pebfooter from "yes/Components/Pebfooter";
 
 // Card Props Type
 type CardProps = {
@@ -76,7 +78,7 @@ export default function SportsLeisureBuilding() {
           }}
         >
           <div className="text-white text-center relative z-10">
-            <h1 className="text-3xl md:text-4xl font-bold leading-snug tracking-wide">
+            <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
               Sports & Leisure
             </h1>
           </div>
@@ -87,9 +89,8 @@ export default function SportsLeisureBuilding() {
       <section className="w-full bg-white py-10 sm:py-12 px-4 sm:px-8 md:px-12">
         <div className="container mx-auto px-2 sm:px-4">
           <div className="text-center mb-8 sm:mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Pre-Engineered Building Solutions for Sports and Recreation
-              Facilities
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold leading-snug max-w-4xl text-[#000080] mx-auto">
+              Sports and Recreation Facilities
             </h2>
           </div>
 
@@ -112,9 +113,11 @@ export default function SportsLeisureBuilding() {
               </p>
 
               <div className="flex items-center gap-3 sm:gap-4">
-                <button className="border text-blue-900 border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-blue-900 hover:text-white transition">
-                  GET A QUOTE
-                </button>
+                <Link href="/peb-contact">
+                  <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+                    GET A QUOTE
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -146,12 +149,10 @@ export default function SportsLeisureBuilding() {
 
       {/* Info Section */}
       <section className="bg-gray-50 py-12 sm:py-16 px-4 sm:px-6 md:px-16 text-center mb-10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
           Modern Designs with Flexible Customization Options
         </h2>
-        <div className="w-12 h-[2px] bg-blue-900 mx-auto mt-3 mb-6 relative">
-          <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-blue-900"></span>
-        </div>
+        <div className="w-12 h-[2px]  mx-auto mt-3 mb-6 relative"></div>
         <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           Pre-engineered building (PEB) technology has achieved global
           recognition and is rapidly being embraced by various industries in
@@ -164,7 +165,7 @@ export default function SportsLeisureBuilding() {
         </p>
       </section>
 
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

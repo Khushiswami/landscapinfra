@@ -7,17 +7,12 @@ import MediaP from "../../Components/MediaP";
 import PebBrandP from "../../Components/PebBrandP";
 import ContactSection from "../../Components/ContactSection";
 import Servicesone from "yes/Components/Servicesone";
-import Footer from "../../Components/Footer";
 import Pebheader from "yes/Components/Pebheader";
 import BannerPEB from "../../Components/BannerPEB";
 import Pebsolution from "yes/Components/Pebsolution";
-import Pebinsight from "yes/Components/Pebinsight";
-import Renewableslider from "yes/Components/Renewable/Renewableslider";
 import Pebslider from "yes/Components/Pebslider";
 import Pebfooter from "yes/Components/Pebfooter";
 import Insights from "yes/Components/Insights";
-
-// import ClientP from "../Components/ClientP";
 
 export default function PreEngineeredBuildings() {
   useEffect(() => {

@@ -21,7 +21,7 @@
 //       <div className=" ml-auto pr-6 pl-6 md:pr-0 md:pl-0">
 //         {/* Header */}
 //         <div className="flex justify-between items-center mb-8">
-//           <h2 className="text-2xl md:text-3xl font-bold text-blue-900">
+//           <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
 //             Landmark Projects
 //           </h2>
 //           <a
@@ -111,7 +111,7 @@ export default function LandmarkProjects() {
       <div className="ml-auto pr-6 pl-6 md:pr-0 md:pl-0">
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-900">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
             Landmark Projects
           </h2>
 

@@ -159,7 +159,7 @@ const FactoryBuilding: React.FC = () => {
                 Key Applications of Prefabricated Factory Buildings
               </h2>
               <p className="text-gray-700 mb-4">
-                Landsking Infra’s factory buildings cater to a wide range of
+                Landsking Infras factory buildings cater to a wide range of
                 industrial requirements, such as:
               </p>
               <ul className="text-gray-700 mb-4 space-y-1 list-disc pl-6">

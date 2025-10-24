@@ -73,7 +73,7 @@ const Warehouse: React.FC = () => {
               </h2>
               <p className="text-gray-700 mb-4">
                 Boost your industrial storage and logistics efficiency with
-                LandsKing Infra’s pre-fabricated warehouse and godown structures
+                LandsKing Infras pre-fabricated warehouse and godown structures
                 — engineered for strength, quick deployment, and
                 cost-effectiveness.
               </p>
@@ -131,7 +131,7 @@ const Warehouse: React.FC = () => {
           {/* Turnkey Solutions */}
           <div className="text-center mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              LandsKing Infra’s Complete Turnkey Warehouse Solutions Include:
+              LandsKing Infras Complete Turnkey Warehouse Solutions Include:
             </h2>
             <p className="text-gray-700 text-lg">
               Our turnkey warehouse solutions start with expert design and

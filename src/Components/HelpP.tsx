@@ -37,7 +37,7 @@ export default function HelpP() {
       {/* Topics */}
       <div className="mt-10 max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between mb-6">
-          <h3 className="text-xl font-semibold text-blue-900">
+          <h3 className="text-xl font-semibold text-[#000080]">
             Most Searched Topics
           </h3>
           <button className="text-blue-600 hover:underline">View All</button>
@@ -52,7 +52,7 @@ export default function HelpP() {
               className={`flex flex-col items-center justify-center border rounded-lg py-8 cursor-pointer transition ${
                 activeIndex === index
                   ? "bg-blue-600 text-white"
-                  : "bg-white text-blue-900 hover:shadow-lg"
+                  : "bg-white text-[#000080] hover:shadow-lg"
               }`}
             >
               <div className="mb-3">{topic.icon}</div>

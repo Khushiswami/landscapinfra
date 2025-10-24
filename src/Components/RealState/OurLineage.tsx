@@ -9,17 +9,17 @@ import "swiper/css/navigation";
 const projects = [
   {
     id: 1,
-    title: "World's LONGEST cross country conveyor, India-Bangladesh",
+    title: "Worlds LONGEST cross country conveyor, India-Bangladesh",
     image: "/realstate/three.webp",
   },
   {
     id: 2,
-    title: "World's most iconic places of worship, Delhi",
+    title: "Worlds most iconic places of worship, Delhi",
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
-    title: "World's largest PPP in the metro sector, Hyderabad",
+    title: "Worlds largest PPP in the metro sector, Hyderabad",
     image: "/realstate/one.webp",
   },
   {

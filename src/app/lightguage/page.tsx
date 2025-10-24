@@ -53,7 +53,7 @@ export default function Lightguage() {
     {
       question: "What is the key project management gain from using LGSF?",
       answer:
-        "The system's predictable, factory-cut components drastically reduce the need for on−site rework or cutting, guaranteeing project phases align perfectly with the original, compressed schedule.",
+        "The systems predictable, factory-cut components drastically reduce the need for on−site rework or cutting, guaranteeing project phases align perfectly with the original, compressed schedule.",
     },
     {
       question:
@@ -69,32 +69,36 @@ export default function Lightguage() {
     {
       question: "What makes LGSF a superior choice in high seismic zones?",
       answer:
-        "The framing’s engineered connections and the steel's natural high ductility allow the structure to flex and absorb severe kinetic energy, minimizing damage during major dynamic events.",
+        "The framings engineered connections and the steels natural high ductility allow the structure to flex and absorb severe kinetic energy, minimizing damage during major dynamic events.",
     },
     {
       question: "How does LGSF influence foundation requirements?",
       answer:
-        "Due to the steel's exceptional strength-to-weight ratio, LGSF results in a significantly lighter total building mass, often enabling simpler and more economical shallow foundations.",
+        "Due to the steels exceptional strength-to-weight ratio, LGSF results in a significantly lighter total building mass, often enabling simpler and more economical shallow foundations.",
     },
   ];
 
   const possibilities = [
     {
+      subtitle: "Expert Design & Planning",
       description:
         "Dedicated in-house team for design, engineering, and detailed planning",
-      image: "/industry.jpg",
+      image: "/fast installation .jpg",
     },
     {
+      subtitle: "Fabrication & Delivery",
       description:
         "Complete fabrication and delivery solutions for LGSF structures",
       image: "/industry.jpg",
     },
     {
+      subtitle: "Nationwide Execution",
       description:
         "Nationwide project execution and ongoing support across India",
       image: "/industry.jpg",
     },
     {
+      subtitle: "Quality & Standards",
       description:
         "Adherence to Indian Standards (IS) and global quality norms",
       image: "/industry.jpg",
@@ -139,23 +143,16 @@ export default function Lightguage() {
   const slides = [
     {
       image: "/expertise/third.png",
-      title: "Prefabricated Structure",
-      link: "#",
+      title: "Prefab School",
+      link: "/prefabschool",
     },
 
     {
       image: "/expertise/third.png",
-      title: "Labor Hutment",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Control Room",
-      link: "#",
+      title: "Multistorey Building",
+      link: "/multiStoryBuilding",
     },
   ];
-
-  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <>
@@ -169,7 +166,7 @@ export default function Lightguage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/light.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -180,10 +177,10 @@ export default function Lightguage() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto md:mx-10">
               Light Gauge Steel Framing
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto md:mx-10">
               Build smarter with our Light Gauge Steel Framing. Offsite
               precision meets on-site speed and reliability.
             </p>
@@ -227,7 +224,7 @@ export default function Lightguage() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
+      <section className="bg-white py-12 px-4 md:px-16">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
@@ -274,8 +271,8 @@ export default function Lightguage() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-17">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
@@ -297,149 +294,42 @@ export default function Lightguage() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>🔧 Accelerated Project Delivery</strong> With components
+              <strong> Accelerated Project Delivery</strong> With components
               manufactured off-site and assembled quickly on-site, construction
               timelines are drastically shortened.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>🏗️ Exceptional Strength & Stability</strong> Steel
+              <strong> Exceptional Strength & Stability</strong> Steel
               structures offer superior load-bearing capabilities and perform
               reliably in seismic zones.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>🔄 Flexible Design Capabilities</strong>Perfect for
+              <strong> Flexible Design Capabilities</strong>Perfect for
               intricate architectural styles, curved forms, multi-level
               buildings, and adaptable layouts.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>♻️ Environmentally Responsible</strong> Steel is fully
+              <strong> Environmentally Responsible</strong> Steel is fully
               recyclable and produces minimal waste, supporting green
               construction goals.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>🔥 Built-In Resistance to Fire & Pests</strong> Steel
+              <strong> Built-In Resistance to Fire & Pests</strong> Steel
               framing resists termites, rot, warping, and delivers excellent
               fire protection.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>💰 Optimized Cost Efficiency</strong>Standardized
-              production and prefabrication reduce both labor expenses and
-              material waste.
+              <strong> Optimized Cost Efficiency</strong>Standardized production
+              and prefabrication reduce both labor expenses and material waste.
             </p>
           </div>
         </div>
       </section>
       {/* endcapill */}
-      <section className=" mx-auto px-4 py-10">
-        <h2 className="text-3xl md:text-4xl font-bold text- mb-8">
-          Our Products
-        </h2>
-
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
-          <div className="w-full md:w-1/4">
-            {/* Mobile Dropdown */}
-            <div className="md:hidden mb-0">
-              <button
-                onClick={() => setOpen(!open)}
-                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
-              >
-                {areas.find((a) => a.id === selectedId)?.title}
-                <svg
-                  className="w-5 h-5 text-[#8080FF]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
-                  />
-                </svg>
-              </button>
-
-              {open && (
-                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
-                  {areas.map((area) => (
-                    <button
-                      key={area.id}
-                      onClick={() => {
-                        setSelectedId(area.id);
-                        setOpen(false);
-                      }}
-                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
-                        selectedId === area.id ? "text-white font-semibold" : ""
-                      }`}
-                    >
-                      {area.title}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[74px] pb-[74px] px-[5px]">
-              {areas.map((area, idx) => (
-                <button
-                  key={area.id}
-                  onClick={() => setSelectedId(area.id)}
-                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                    selectedId === area.id
-                      ? " font-bold"
-                      : "hover: text-gray-300"
-                  }`}
-                >
-                  <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <span>{area.title}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Content */}
-          {selectedArea && (
-            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
-            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-              <div
-                className="
-    p-6 flex flex-col justify-center w-full md:w-1/2
-    rounded-lg                
-    md:rounded-none          
-    md:rounded-tl-lg md:rounded-bl-lg
-    shadow border border-[#808080] md:border-r-0
-  "
-              >
-                <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-                  {selectedArea.subtitle}
-                </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-blue-900 font-semibold hover:underline">
-                  More{" "}
-                  <span className=" p-1 rounded-full text-[#000080]">→</span>
-                </button>
-              </div>
-
-              {/* Image */}
-              <div className="w-full md:w-1/2">
-                <img
-                  src={selectedArea.image}
-                  alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-85 object-cover"
-                />
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
       {/* explore content */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4">
+        <div className=" mx-auto px-4 md:mx-12">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Our LGSF Manufacturing Capabilities
           </h2>
@@ -453,6 +343,9 @@ export default function Lightguage() {
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
+                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                    {item.subtitle}
+                  </p>
                   <p className="text-sm text-black">{item.description}</p>
                 </div>
               </div>
@@ -463,17 +356,15 @@ export default function Lightguage() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-12">
+        <div className="md:mx-16 mx-auto px-6 md:px-0">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             Applications of LGSF Structures
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <Image
                 src="/menupageimg/lgs5.png"
                 alt="PUF panels in industrial shed"
@@ -489,7 +380,7 @@ export default function Lightguage() {
                 Landsking Infra provides customized LGSF structures to suit a
                 broad spectrum of industry needs:
               </p>
-              <ul>
+              <ul className="text-gray-700 ">
                 <li className="mb-3">
                   <strong>350Modern Prefab Villas</strong>
                 </li>
@@ -518,7 +409,7 @@ export default function Lightguage() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white py-16 px-6 md:px-16 ">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -540,7 +431,7 @@ export default function Lightguage() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
@@ -553,7 +444,7 @@ export default function Lightguage() {
       </section>
       {/* end why choose us */}
       <Brand /> {/* faqs */}
-      <section className="max-w-7xl mx-auto px-4 py-12 ">
+      <section className=" mx-auto px-4 py-12 md:mx-13 ">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
@@ -564,7 +455,7 @@ export default function Lightguage() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200">
+        <div className="border-t border-gray-200 ">
           {faqs.map((faq: FAQ, index: number) => (
             <div key={index} className="border-b border-gray-200">
               {/* Question */}
@@ -573,20 +464,22 @@ export default function Lightguage() {
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
               >
                 <span
-                  className={`font-medium transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000080]" : "text-gray-800"
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-sm">
+                <span className="text-black text-lg font-bold">
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}

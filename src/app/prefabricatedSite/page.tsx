@@ -97,7 +97,7 @@ const PrefabricatedSite: React.FC = () => {
                 making them ideal for temporary high-performance setups.
                 <br />
                 <br />
-                Whether it’s a site office, worker accommodation, toilet block,
+                Whether its a site office, worker accommodation, toilet block,
                 or storage unit, LANDSKING provides complete, ready-to-use
                 solutions that minimize downtime and keep your projects running
                 seamlessly.

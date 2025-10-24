@@ -12,6 +12,7 @@ import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ExpertiseP() {
   const prevRef = useRef<HTMLButtonElement>(null);

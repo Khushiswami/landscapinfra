@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const SOLUTIONS = [
   { id: 1, title: "Pre Engineered Buildings", img: "/solutionimages/one.jpg" },
   { id: 2, title: "EPC Solutions", img: "/solutionimages/two.jpg" },
@@ -24,7 +26,7 @@ export default function OurSolutions() {
             key={sol.id}
             className="flex flex-col items-center overflow-hidden hover:scale-105 transition-transform duration-300"
           >
-            <img
+            <Image
               src={sol.img}
               alt={sol.title}
               className="w-full h-32 md:h-40 object-cover"

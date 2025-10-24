@@ -41,7 +41,7 @@ export default function PebheaderW() {
   };
 
   const navLinks: MenuItem[] = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/preEngineeredBuildings" },
     { name: "Solutions", href: "/system" },
     {
       name: "Products",
@@ -51,7 +51,6 @@ export default function PebheaderW() {
           title: "Pre Engineered Buildings",
           href: "/menupage",
           subMenu: [
-            { name: "Multi-Storey Building", href: "/multiStoryBuilding" },
             { name: "Warehouse", href: "/warehouse" },
             { name: "Industrial Shed", href: "/industrialShed" },
             { name: "Factory Building", href: "/factoryBuilding" },
@@ -63,27 +62,52 @@ export default function PebheaderW() {
           title: "Modular Buildings",
           href: "/modular",
           subMenu: [
+            // { name: "Multi-Storey Building", href: "/multiStoryBuilding" },
+
             { name: "Prefab Site Office", href: "/prefabSiteOffice" },
-            { name: "Cold Room", href: "/coldRoom" },
+            { name: "Industrial Enclosures", href: "/industrialEnclosures" },
+
+            // { name: "Cold Room", href: "/coldRoom" },
             { name: "Control Room", href: "/controlRoom" },
             { name: "Clean Room", href: "/cleanRoom" },
             { name: "Railway Shelters", href: "/railwayShelters" },
-            { name: "Labor Hutment", href: "/labor-hutment" },
+            // { name: "Labor Hutment", href: "/laborHutment" },
             {
               name: "Prefabricated Site Infrastructure Solutions",
-              href: "/site-infra",
+              href: "/prefabricatedSite",
             },
-            { name: "Low Cost Housing", href: "/low-cost-housing" },
-            { name: "Acoustic Enclosures", href: "/acoustic-enclosures" },
-            {
-              name: "Portable Security Guard Cabins",
-              href: "/security-cabins",
-            },
+            // { name: "Low Cost Housing", href: "/lowCostHousing" },
+            { name: "Acoustic Enclosures", href: "/acousticEnclosures" },
           ],
         },
-        { title: "Light Gauge Steel Framing", href: "/lightguage" },
-        { title: "Sandwich Panels", href: "/sandwichpanels" },
-        { title: "Standard Modular Solutions", href: "/standardmodular" },
+        {
+          title: "Light Gauge Steel Framing",
+          href: "/lightguage",
+          subMenu: [
+            { name: "Prefab School", href: "/prefabschool" },
+            { name: "Multi-Storey Building", href: "/multiStoryBuilding" },
+          ],
+        },
+        {
+          title: "Sandwich Panels",
+          href: "/sandwichpanels",
+          subMenu: [
+            { name: "PUF Panels", href: "/puf-panels" },
+            { name: "EPS Panels", href: "/eps-panels" },
+            { name: "Rockwool Panel", href: "/rockwoolpanel" },
+            { name: "Glass Wool Panels", href: "/glasswool" },
+          ],
+        },
+        {
+          title: "Standard Modular Solutions",
+          href: "/standardmodular",
+          subMenu: [
+            { name: "Porta Cabins", href: "/porta-cabins" },
+            { name: "Security Guard Cabin", href: "/security-guard-cabins" },
+            { name: "Mi Homes", href: "/mi-homes" },
+            { name: "K-House", href: "/k-house" },
+          ],
+        },
         { title: "EPC Solutions", href: "/epcsolutions" },
       ],
     },
@@ -100,10 +124,18 @@ export default function PebheaderW() {
     },
     { name: "Projects", href: "/preengineredbuildingsprojects" },
     { name: "Insights", href: "/insight" },
-    { name: "About", href: "/about" },
+    {
+      name: "About",
+      href: "/about",
+      subItems: [
+        { name: "Our Leadership", href: "/pebabout/leadership" },
+        { name: "Our History", href: "/pebabout/history" },
+        { name: "Our Mission", href: "/pebabout/mission" },
+        { name: "Innovation", href: "/pebabout/innovation" },
+      ],
+    },
     { name: "Contact", href: "/contact" },
   ];
-
   return (
     <header className="fixed top-0 z-50 w-full bg-white shadow-lg">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4">

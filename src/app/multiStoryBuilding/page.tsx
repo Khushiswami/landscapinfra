@@ -15,7 +15,7 @@ const MultiStoryBuilding: React.FC = () => {
     {
       question: "What Exactly is a Prefab Multi-Storey Building?",
       answer:
-        "It's an engineering shift. Instead of constructing entirely on-site, a prefab multi-storey building uses precision-engineered components manufactured in a controlled factory environment. These large, high-quality sections are then rapidly and cleanly assembled vertically at your location.",
+        "Its an engineering shift. Instead of constructing entirely on-site, a prefab multi-storey building uses precision-engineered components manufactured in a controlled factory environment. These large, high-quality sections are then rapidly and cleanly assembled vertically at your location.",
     },
     {
       question:
