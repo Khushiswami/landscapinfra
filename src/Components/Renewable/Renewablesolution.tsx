@@ -29,7 +29,7 @@ export default function Renewablesolution() {
       description:
         "Blend grid power with solar for reliable, sustainable energy solutions.",
       img: "/product.jpg",
-      link: "/industrial-solar",
+      link: "/infrastructure-maintanence",
     },
   ];
 

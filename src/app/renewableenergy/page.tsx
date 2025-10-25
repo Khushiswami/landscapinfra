@@ -19,6 +19,9 @@ import Renewablesolution from "yes/Components/Renewable/Renewablesolution";
 import Renewablenews from "yes/Components/Renewable/Renewablenews";
 import Renewableheader from "yes/Components/Renewableheader";
 import Links from "yes/Components/Links";
+import Form from "yes/Components/Renewable/Form";
+import Operational from "yes/Components/Renewable/Operational";
+import Vision from "yes/Components/Renewable/Vision";
 
 export default function Renewableenergy() {
   const [active, setActive] = useState(0);
@@ -61,8 +64,11 @@ export default function Renewableenergy() {
       <RenewableBusiness />
       <RenewableSector />
       <Renewableabout />
+      <Form />
       <Accordion />
       <Renewableslider />
+      <Operational />
+      <Vision />
       <Explore />
       <Renewableplatform />
 

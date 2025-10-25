@@ -41,7 +41,7 @@ export default function Menupage() {
       subtitle: "Prefabricated Multi-Storey Building Manufacturer",
       description:
         "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
-      image: "/menupageimg/peb3.jpg",
+      image: "/preimages/build.jpg",
     },
     {
       id: 2,
@@ -73,7 +73,7 @@ export default function Menupage() {
       subtitle: "Industrial Enclosures",
       description:
         "We deliver customized industrial enclosures that ensure safety, reliability, and protection of equipment while optimizing operational performance.",
-      image: "/menupageimg/peb6.jpg",
+      image: "/preiamges/en.png",
     },
     {
       id: 6,

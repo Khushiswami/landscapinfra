@@ -20,7 +20,7 @@ const TABS = [
     body: "Our plant engineering services cover design, implementation, and optimization of industrial plants. We combine cutting-edge technologies with proven engineering practices to ensure high-quality, cost-effective, and sustainable solutions.",
     img: "/solution/stell.jpg",
     buttonText: "VIEW MORE",
-    url: "/construction",
+    url: "/industry-construction",
   },
   {
     title: "Industry Installation",
@@ -64,9 +64,9 @@ export default function Industryplatform() {
   }, [active]);
 
   return (
-    <section className="w-full md:px-25">
+    <section className="w-full md:px-16">
       {/* Top heading + subheading */}
-      <div className="mx-auto px-4 pt-12 text-center md:px-25">
+      <div className="mx-auto px-4 pt-12 text-center md:px-15">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Comprehensive Infrastructure Solutions
         </h1>
@@ -84,7 +84,7 @@ export default function Industryplatform() {
 
       {/* Tabs */}
       <div className="mt-8 ">
-        <div className="mx-auto px-4 ">
+        <div className="mx-auto px-4 md:px-2 ">
           <div className="relative">
             <div className="flex md:justify-center gap-4 md:gap-10 overflow-x-auto md:overflow-x-visible relative">
               {TABS.map((t, i) => (
@@ -118,7 +118,7 @@ export default function Industryplatform() {
       </div>
 
       {/* Content Card */}
-      <div className="  mx-auto px-4 md:mx-4">
+      <div className="  mx-auto px-4 md:mx-22">
         <div className="mt-8 flex justify-center">
           <div className="relative rounded-[5px] overflow-hidden  w-full  ">
             <div className="relative  h-[340px] md:h-[460px]">

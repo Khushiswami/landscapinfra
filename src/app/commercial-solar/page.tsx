@@ -6,7 +6,7 @@ import Pebfooter from "yes/Components/Pebfooter";
 import Navbar from "yes/Components/Navbar";
 import Footer from "yes/Components/Footer";
 
-const Residentialsolar: React.FC = () => {
+const Commercialsolar: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
@@ -277,4 +277,4 @@ const Residentialsolar: React.FC = () => {
   );
 };
 
-export default Residentialsolar;
+export default Commercialsolar;

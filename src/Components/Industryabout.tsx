@@ -49,10 +49,8 @@ export default function Industryabout() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16 px-4 md:px-23 overflow-hidden">
+    <section className="relative py-16 px-4 md:px-31 overflow-hidden">
       {/* Decorative Background */}
-      <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
-      <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
       <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start z-10">
         {/* Left Section - Video */}

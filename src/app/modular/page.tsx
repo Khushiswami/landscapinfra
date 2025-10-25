@@ -49,7 +49,7 @@ export default function Modular() {
     {
       id: 4,
       title: "Portable Security Guard Cabins",
-      subtitle: "FPortable Security Guard Cabins",
+      subtitle: "Portable Security Guard Cabins",
       description:
         "Portable Security Guard Cabins are compact, movable structures designed to provide a safe, comfortable, and functional workspace for security personnel. Built with durable materials such as steel, aluminum, or high-quality insulated panels, these cabins are weather-resistant and sturdy, ensuring long-lasting use in both indoor and outdoor environments.",
       image: "/menupageimg/mod8.jpg",
@@ -401,13 +401,13 @@ export default function Modular() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white py-4 md:py-12 px-6 md:px-12 lg:px-20">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
             <Image
-              src="/menupageimg/mod14.png" // replace with your real factory image
+              src="/preimages/define.png" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
               height={450}
@@ -449,7 +449,7 @@ export default function Modular() {
               functionality, making them ideal for a wide range of residential,
               commercial, and industrial applications
             </p>
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+            <button className="border border-[#000080] px-6 py-2 mt-3 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
               GET A QUOTE
             </button>
           </div>
@@ -555,7 +555,7 @@ export default function Modular() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-164 object-cover"
+                  className="w-full h-64 md:h-150 object-cover"
                 />
               </div>
             </div>
