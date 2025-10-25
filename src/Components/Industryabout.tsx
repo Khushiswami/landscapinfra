@@ -49,18 +49,17 @@ export default function Industryabout() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16 px-4 md:px-20 overflow-hidden">
+    <section className="relative py-16 px-4 md:px-23 overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:mx-12">
-        {/* Left Section - Video & Two Images */}
-        <div className="space-y-6">
-          {/* Video */}
-          <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-110 overflow-hidden  hover: transition-all duration-500">
+      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start z-10">
+        {/* Left Section - Video */}
+        <div className="space-y-6 flex flex-col justify-center">
+          <div className="relative rounded-lg w-full h-64 sm:h-80 md:h-[500px] overflow-hidden hover:scale-105 transition-transform duration-500">
             <video
-              src="/homeslider.mp4"
+              src="/video/peb.mp4"
               autoPlay
               loop
               muted
@@ -71,12 +70,12 @@ export default function Industryabout() {
         </div>
 
         {/* Right Section - About Us */}
-        <div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 mt-9 sm:mb-6">
+        <div className="flex flex-col justify-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
             ABOUT US
           </h2>
 
-          <p className="text-gray-700 mb-4 sm:mb-5 leading-relaxed text-sm sm:text-base">
+          <p className="text-gray-700 mb-6 leading-relaxed text-base md:text-md">
             LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More
             than 120MT Capacity Rice mill Plant, 350 Minor and Major Bridge and
             Super Structure, 26 KM MS Pipe line upto 3.8m dia, and 410KM HDPE
@@ -86,28 +85,28 @@ export default function Industryabout() {
             engineering and AI to produce powerful results.
           </p>
 
-          {/* Stats with Icons */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+          {/* Stats */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
               return (
                 <div
                   key={i}
-                  className="flex items-center gap-3 bg-white/80 backdrop-blur-lg p-3 sm:p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
+                  className="flex items-center gap-4 bg-white/80 backdrop-blur-lg p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
                 >
-                  <div className="p-2 sm:p-3 bg-[#000080] rounded-full text-white shadow-lg">
-                    <Icon size={20} className="sm:w-5 sm:h-5" />
+                  <div className="p-3 bg-[#000080] rounded-full text-white shadow-lg flex items-center justify-center">
+                    <Icon size={24} />
                   </div>
                   <div>
                     <h3
                       ref={(el) => {
                         numberRefs.current[i] = el;
                       }}
-                      className="text-md sm:text-2xl font-bold text-[#000080]"
+                      className="text-xl md:text-2xl font-bold text-[#000080]"
                     >
                       0
                     </h3>
-                    <p className="text-gray-600 text-xs sm:text-sm">
+                    <p className="text-gray-600 text-sm md:text-base">
                       {stat.label}
                     </p>
                   </div>

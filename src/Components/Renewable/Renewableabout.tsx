@@ -64,16 +64,15 @@ export default function Renewableabout() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16  overflow-hidden">
+    <section className="relative py-16">
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
-      <div className="relative container px-5  grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:px-32">
-        {/* Left Section - Video & Two Images */}
-        <div className="space-y-6">
-          {/* Video */}
-          <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-118 overflow-hidden  hover: transition-all duration-500">
+      <div className="relative container mx-auto px-5 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start z-10">
+        {/* Left Section - Video */}
+        <div className="space-y-6 flex flex-col justify-center">
+          <div className="relative rounded-lg w-full h-64 sm:h-80 md:h-[535px] overflow-hidden hover:scale-105 transition-transform duration-500">
             <video
               src="/homeslider.mp4"
               autoPlay
@@ -86,52 +85,50 @@ export default function Renewableabout() {
         </div>
 
         {/* Right Section - About Us */}
-        <div>
-          {/* <h5 className="text-xl sm:text-2xl font-bold text-[#000080] mb-1 mt-9 sm:mb-6">
-            ABOUT US
-          </h5> */}
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 mt-0 sm:mb-6">
+        <div className="flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6">
             Building Tomorrow’s Energy Infrastructure — Today.
           </h2>
 
-          <p className="text-gray-700 mb-4 sm:mb-5 leading-relaxed text-sm sm:text-base">
+          <p className="text-gray-700 mb-6 leading-relaxed text-base md:text-md">
             Landsking Infra is a leading Solar EPC & Industrial Infrastructure
             company specializing in complete design-to-delivery solutions. We
             combine engineering precision, project management excellence, and
             green innovation to create reliable solar power systems for
             industrial, commercial, and residential clients.
           </p>
-          <div className="flex flex-wrap items-center gap-4 mb-5">
-            <h6 className="text-xl sm:text-2xl font-bold text-[#000080]">
+
+          <div className="flex flex-wrap items-center gap-4 mb-6">
+            <h6 className="text-xl md:text-2xl font-bold text-[#000080]">
               Core Values:
             </h6>
-            <p className="text-gray-700 text-sm sm:text-base">
+            <p className="text-gray-700 text-sm md:text-base">
               Integrity | Innovation | Reliability | Sustainability
             </p>
           </div>
 
           {/* Stats with Icons */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
               return (
                 <div
                   key={i}
-                  className="flex items-center gap-3 bg-white/80 backdrop-blur-lg p-3 sm:p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
+                  className="flex items-center gap-3 bg-white/80 backdrop-blur-lg p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
                 >
-                  <div className="p-2 sm:p-3 bg-[#000080] rounded-full text-white shadow-lg">
-                    <Icon size={20} className="sm:w-5 sm:h-5" />
+                  <div className="p-3 bg-[#000080] rounded-full text-white shadow-lg flex items-center justify-center">
+                    <Icon size={24} />
                   </div>
                   <div>
                     <h3
                       ref={(el) => {
                         numberRefs.current[i] = el;
                       }}
-                      className="text-md sm:text-2xl font-bold text-[#000080]"
+                      className="text-xl md:text-2xl font-bold text-[#000080]"
                     >
                       0
                     </h3>
-                    <p className="text-gray-600 text-xs sm:text-sm">
+                    <p className="text-gray-600 text-sm md:text-base">
                       {stat.label}
                     </p>
                   </div>
