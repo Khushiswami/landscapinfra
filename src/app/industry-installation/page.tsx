@@ -39,6 +39,7 @@ import {
   FileText,
   Flame,
 } from "lucide-react";
+import Industryfooter from "yes/Components/Industryfooter";
 type CardProps = {
   icon: ReactNode;
   title: string;
@@ -925,7 +926,7 @@ const Page = () => {
           ))}
         </div>
       </section>
-      <Footer />
+      <Industryfooter />
     </>
   );
 };

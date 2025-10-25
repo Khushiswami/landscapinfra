@@ -11,9 +11,10 @@ import PreEngineeredProductsB, {
 import PlatformSectionB from "../../../Components/businessAreas/PlatformSection";
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
-import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
 import Brand from "yes/Components/Brand";
 import Industryheader from "yes/Components/Industryheader";
+import { Factory, Droplets, Truck, Building2 } from "lucide-react";
+import Industryfooter from "yes/Components/Industryfooter";
 
 const testimonialsData = [
   {
@@ -163,28 +164,28 @@ export default function CommercialInstitutional() {
 
   const links = [
     {
-      title: "CADFEM Service",
-      subtitle: "SUPPORT & ENGINEERING",
-      icon: <Wrench size={20} />,
-      url: "/service",
+      title: "Industrial Installation",
+      subtitle: "Smart manufacturing",
+      icon: <Factory size={26} />,
+      url: "/businessAreas/industrialinstallation",
     },
     {
-      title: "Simulation-Trends",
-      subtitle: "DIE ZUKUNFT ENTDECKEN",
-      icon: <Lightbulb size={20} />,
-      url: "/trends",
+      title: "Water Technology",
+      subtitle: "Pure and sustainable",
+      icon: <Droplets size={26} />,
+      url: "/businessAreas/water-technology",
     },
     {
-      title: "Studenten-Portal",
-      subtitle: "DEIN GRATIS ANGEBOT",
-      icon: <GraduationCap size={20} />,
-      url: "/students",
+      title: "Transport & Mobility",
+      subtitle: "Efficient movement",
+      icon: <Truck size={26} />,
+      url: "/businessAreas/transport-mobility",
     },
     {
-      title: "Starkes Netzwerk",
-      subtitle: "WELTWEIT SIMULIEREN",
-      icon: <Users size={20} />,
-      url: "/network",
+      title: "Industry & Buildings",
+      subtitle: "Energy smart design",
+      icon: <Building2 size={26} />,
+      url: "/businessAreas/industry-building",
     },
   ];
 
@@ -204,13 +205,11 @@ export default function CommercialInstitutional() {
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="Commercial & Institutional"
+        heading="Manufacturing & Process Plants"
         highlight=""
-        image={{
-          src: "/Bussinessareaimg/commercialInstitutional.jpg",
+        img={{
+          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
           alt: "Custom Cold Storage",
-          width: 700,
-          height: 500,
         }}
         description="Landscape Infra delivers complete construction services for all kinds of Commercial and Institutional buildings. Our experience covers Residential, Commercial, and Institutional projects, offering full-spectrum solutions including structural work, electrical systems, HVAC, and interior finishes. We also specialize in integrated campus development, involving multiple buildings with supporting infrastructure, along with sustainable Green Building construction."
         features={featuresData}
@@ -237,7 +236,7 @@ export default function CommercialInstitutional() {
       <QuickLinks heading="Quick Links" links={links} />
 
       <Brand />
-      <Footer />
+      <Industryfooter />
     </>
   );
 }

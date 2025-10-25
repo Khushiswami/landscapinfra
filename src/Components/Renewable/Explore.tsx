@@ -9,7 +9,7 @@ const areas = [
     subtitle: "Feasibility & Assessment (E-Phase)",
     description:
       "In-depth site survey, detailed energy consumption analysis, financial modeling (ROI, PBP), and regulatory compliance check",
-    image: "/green.png",
+    image: "/preimages/photovoltaic-system-2742304_1280.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,8 @@ const areas = [
     subtitle: "Design & Engineering (E-Phase)",
     description:
       "Precision electrical, civil, and structural design. Single-line diagrams, plant layout, and structural certification to meet all industrial standards.",
-    image: "/green.png",
+    image:
+      "/preimages/Solar Farm Electrical Testing and Commissioning_ Checklist and Procedures.jpg",
   },
   {
     id: 3,
@@ -33,7 +34,7 @@ const areas = [
     subtitle: "Construction & Installation (C-Phase)",
     description:
       "Professional, safe, and efficient on-site execution by certified teams, adhering to strict industrial safety and quality standards.",
-    image: "/green.png",
+    image: "/preimages/construction Phase.jpeg",
   },
   {
     id: 5,
@@ -41,7 +42,7 @@ const areas = [
     subtitle: "Testing & Commissioning",
     description:
       "Comprehensive performance testing (PR & Yield), grid synchronization, and final certification by regulatory bodies before commercial operation.",
-    image: "/green.png",
+    image: "/preimages/testing.png",
   },
   {
     id: 6,
@@ -49,7 +50,8 @@ const areas = [
     subtitle: "Operation & Maintenance (O&M)",
     description:
       "Long-term asset management, preventive maintenance, 24/7 remote monitoring, and guaranteed performance to maximize your power output.",
-    image: "/green.png",
+    image:
+      "/preimages/ES Foundry to Supply 300MW of US-Made Solar Cells to Bila Solar.jpg",
   },
 ];
 
@@ -158,7 +160,7 @@ export default function Explore() {
               <img
                 src={selectedArea.image}
                 alt={selectedArea.subtitle}
-                className="w-full h-64 md:h-116 object-cover "
+                className="w-full h-64 md:h-139 object-cover "
               />
             </div>
           </div>

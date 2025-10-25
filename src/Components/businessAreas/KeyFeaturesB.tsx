@@ -11,11 +11,9 @@ interface KeyFeaturesProps {
   heading?: string;
   highlight?: string;
   subHeading?: string;
-  image?: {
+  img?: {
     src: string;
     alt: string;
-    width?: number;
-    height?: number;
   };
   description?: string;
   features?: Feature[];
@@ -24,15 +22,11 @@ interface KeyFeaturesProps {
 export default function KeyFeaturesB({
   heading = "KEY FEATURES",
   highlight = "OF LANDSKING INFRA PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS",
-  image = {
+  img = {
     src: "/industry.jpg",
     alt: "Cold Storage by LANDSKING INFRA",
-    width: 600,
-    height: 400,
   },
-  description = `At LANDSKING INFRA PVT LTD, we deliver state-of-the-art cold storage systems and energy-efficient cold rooms. 
-  Our solutions are designed to maintain product freshness, reduce energy costs, and ensure long-lasting durability 
-  for industries like food processing, pharmaceuticals, agriculture, and logistics.`,
+  description = `At LANDSKING INFRA PVT LTD, we deliver state-of-the-art cold storage systems and energy-efficient cold rooms.`,
   features = [],
 }: KeyFeaturesProps) {
   return (
@@ -45,21 +39,23 @@ export default function KeyFeaturesB({
         <span className="block sm:inline">{highlight}</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
         {/* Left Image */}
-        <div className="w-full">
+        <div className="order-2 md:order-1 w-full">
           <Image
-            src={image.src}
-            alt={image.alt}
-            width={image.width || 600}
-            height={image.height || 400}
-            className="w-full h-auto rounded-lg shadow-md object-cover "
+            src={img.src}
+            alt={img.alt}
+            width={700}
+            height={500}
+            className="rounded-2xl shadow-md object-cover w-full h-auto"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 700px"
+            priority
           />
         </div>
 
         {/* Right Content */}
-        <div className="space-y-6">
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
+        <div className="order-1 md:order-2 space-y-6">
+          <p className="text-gray-700  text-base sm:text-[18px]">
             {description}
           </p>
 
@@ -70,7 +66,7 @@ export default function KeyFeaturesB({
                 <h4 className="font-semibold text-gray-800 text-base sm:text-lg">
                   • {feature.title}
                 </h4>
-                <p className="text-gray-600 text-sm sm:text-base">
+                <p className="text-gray-700 text-sm sm:text-[18px]">
                   {feature.description}
                 </p>
               </div>

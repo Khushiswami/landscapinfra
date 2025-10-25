@@ -67,7 +67,7 @@ export default function Industryheader() {
       subItems: [
         {
           title: "Industryinstallation",
-          href: "/industry-installation",
+          href: "/businessAreas/industrialinstallation",
           subMenu: [
             {
               name: "EPC Turnkey Solutions",
@@ -84,7 +84,7 @@ export default function Industryheader() {
         },
         {
           title: "Transportation",
-          href: "/transportation",
+          href: "/businessAreas/transport-mobility",
           subMenu: [
             {
               name: "Highways, Roads & Bridges",
@@ -100,7 +100,7 @@ export default function Industryheader() {
         },
         {
           title: "Water",
-          href: "/water",
+          href: "/businessAreas/water-technology",
           subMenu: [
             {
               name: "Water Supply & Sanitation",
@@ -111,7 +111,7 @@ export default function Industryheader() {
         },
         {
           title: "Industrial & Buildings",
-          href: "/businessAreas/mrts",
+          href: "/businessAreas/industry-building",
           subMenu: [
             {
               name: "Manufacturing & Process Plants",

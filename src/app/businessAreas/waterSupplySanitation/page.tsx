@@ -1,5 +1,6 @@
 "use client";
 
+import Industryfooter from "yes/Components/Industryfooter";
 import Footer from "../../../Components/Footer";
 
 import ContactSectionB from "../../../Components/businessAreas/ContactSectionB";
@@ -7,7 +8,7 @@ import KeyFeaturesB from "../../../Components/businessAreas/KeyFeaturesB";
 
 import ProjectSliderB from "../../../Components/businessAreas/ProjectSliderB";
 import QuickLinks from "../../../Components/businessAreas/QuickLinks";
-import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
+import { Factory, Droplets, Truck, Building2 } from "lucide-react";
 import Brand from "yes/Components/Brand";
 import Industryheader from "yes/Components/Industryheader";
 
@@ -93,28 +94,28 @@ const HOME_PROJECTS = [
 export default function WaterSupplySanitation() {
   const links = [
     {
-      title: "CADFEM Service",
-      subtitle: "SUPPORT & ENGINEERING",
-      icon: <Wrench size={20} />,
-      url: "/service",
+      title: "Industrial Installation",
+      subtitle: "Smart manufacturing",
+      icon: <Factory size={26} />,
+      url: "/businessAreas/industrialinstallation",
     },
     {
-      title: "Simulation-Trends",
-      subtitle: "DIE ZUKUNFT ENTDECKEN",
-      icon: <Lightbulb size={20} />,
-      url: "/trends",
+      title: "Water Technology",
+      subtitle: "Pure and sustainable",
+      icon: <Droplets size={26} />,
+      url: "/businessAreas/water-technology",
     },
     {
-      title: "Studenten-Portal",
-      subtitle: "DEIN GRATIS ANGEBOT",
-      icon: <GraduationCap size={20} />,
-      url: "/students",
+      title: "Transport & Mobility",
+      subtitle: "Efficient movement",
+      icon: <Truck size={26} />,
+      url: "/businessAreas/transport-mobility",
     },
     {
-      title: "Starkes Netzwerk",
-      subtitle: "WELTWEIT SIMULIEREN",
-      icon: <Users size={20} />,
-      url: "/network",
+      title: "Industry & Buildings",
+      subtitle: "Energy smart design",
+      icon: <Building2 size={26} />,
+      url: "/businessAreas/industry-building",
     },
   ];
 
@@ -134,13 +135,11 @@ export default function WaterSupplySanitation() {
         testimonials={testimonialsData}
       />
       <KeyFeaturesB
-        heading="Water Supply & Sanitation"
+        heading="Manufacturing & Process Plants"
         highlight=""
-        image={{
-          src: "/Bussinessareaimg/waterr.jpg",
+        img={{
+          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
           alt: "Custom Cold Storage",
-          width: 700,
-          height: 500,
         }}
         description=""
         features={featuresData}
@@ -167,7 +166,7 @@ export default function WaterSupplySanitation() {
       <QuickLinks heading="Quick Links" links={links} />
 
       <Brand />
-      <Footer />
+      <Industryfooter />
     </>
   );
 }

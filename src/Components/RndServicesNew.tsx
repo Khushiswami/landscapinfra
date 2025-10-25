@@ -197,7 +197,7 @@ export default function RndServicesNew() {
                 }}
               >
                 <div className="w-full h-90 md:h-80 overflow-hidden">
-                  <Image
+                  <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover"

@@ -18,32 +18,32 @@ const projects: Project[] = [
   {
     id: 1,
     title: "PETROL PUMPS",
-    image: "/realstate/three.webp",
+    image: "/preimages/pump.png",
   },
   {
     id: 2,
     title: "INSTITUTIONAL",
-    image: "/realstate/two.jpg",
+    image: "/preimages/inst.png",
   },
   {
     id: 3,
     title: "INDUSTRIAL",
-    image: "/realstate/one.webp",
+    image: "/preimages/industry.png",
   },
   {
     id: 4,
     title: "RURAL ELECTRIFICATION",
-    image: "/realstate/fourS.webp",
+    image: "/preimages/person.jpg",
   },
   {
     id: 5,
     title: "Turnkey Solar PV Solutions",
-    image: "/realstate/fiveS.webp",
+    image: "/preimages/trunky.png",
   },
   {
     id: 5,
     title: "Solar Solutions for Essential Needs",
-    image: "/realstate/fiveS.webp",
+    image: "/preimages/solutions.png",
   },
 ];
 

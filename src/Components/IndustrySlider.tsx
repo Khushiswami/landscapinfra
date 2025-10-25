@@ -16,34 +16,28 @@ interface Category {
 
 const categories: Category[] = [
   {
-    title: "Infrastructure Sector",
+    title: "Industry Installation",
     images: ["/industry.jpg", "/about.png", "/about.png"],
     description:
       "LandsKingInfra Pvt.Ltd offers durable, custom-designed Pre-Engineered Buildings (PEBs) to protect and enhance your organization. We design, manufacture, and build infrastructure solutions that support long-term business growth and deliver strong returns on investment.",
   },
   {
-    title: "Sports & Leisure",
+    title: "Water",
     images: ["/about.png", "/about.png", "/about.png"],
     description:
       "We design and deliver high-quality sports complexes, stadiums, and recreational facilities. Our prefabricated solutions ensure modern aesthetics, fast construction, and durability, creating spaces that encourage active and healthy lifestyles.",
   },
   {
-    title: "Institutional Sector",
+    title: "Transport ",
     images: ["/about.png", "/about.png"],
     description:
       "We specialize in large institutional buildings such as schools, hospitals, and offices. Prefabrication is increasingly recognized as a reliable alternative to traditional construction, offering faster delivery, cost efficiency, and enhanced sustainability.",
   },
   {
-    title: "Special Buildings",
+    title: "Industrial & Buildings",
     images: ["/about.png", "/about.png"],
     description:
       "From landmark structures to custom-designed special-purpose buildings, our solutions combine modern engineering with sustainability. We deliver unique projects that stand out for their design, durability, and environmental responsibility.",
-  },
-  {
-    title: "Industrial Buildings Construction",
-    images: ["/about.png", "/about.png"],
-    description:
-      "We deliver robust industrial buildings and factories designed for efficiency and long-term performance. With advanced prefabrication technology and landscaping integration, our solutions ensure operational excellence and sustainable growth.",
   },
 ];
 

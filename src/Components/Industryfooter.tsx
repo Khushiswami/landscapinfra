@@ -95,27 +95,19 @@ export default function Industryfooter() {
       ],
     },
     {
-      title: "Expertise",
+      title: "Building Solutions",
       external: true,
       items: [
-        { name: "Heavy Engineering", href: "/heavyengineering" },
-        { name: "Office Space", href: "/officespace" },
-        { name: "Public Office", href: "/publicoffice" },
-        { name: "Water Infrastructure", href: "/waterinfrastructure" },
-        { name: "Industry Building Solutions", href: "/structuralsteel" },
-        { name: "Other Industries", href: "/otherindustries" },
-        { name: "Simulation Service", href: "/simulationservice" },
+        { name: "Industrial buildings" },
+        { name: "Commercial buildings" },
+        { name: "Housing projects" },
+        { name: "IT parks" },
+        { name: "Institutional buildings" },
+        { name: "Sports complexes" },
+        { name: "Hospitals Buildings" },
         {
-          name: "Factories Installation",
-          href: "https://staging.landsking.com/fabrication/",
+          name: "Stadiums Ground",
         },
-        { name: "Cold Storage & Warehouse", href: "/coldstorageandwarehouse" },
-        { name: "Solar Services", href: "/solar" },
-        { name: "HVAC Services", href: "/hvac" },
-        { name: "Fabrication", href: "/fabrication" },
-        { name: "Fire Safety", href: "/fire-safety" },
-        { name: "Green Building", href: "/greenbuilding" },
-        { name: "Mining and Metals", href: "/miningandmetals" },
       ],
     },
     {
@@ -153,7 +145,7 @@ export default function Industryfooter() {
       className="py-12 px-6 md:px-17 text-[14px] text-white"
       style={{
         backgroundColor: "#0d1d52",
-        fontFamily: `"DM Sans", Arial, sans-serif !important`,
+        // fontFamily: `"DM Sans", Arial, sans-serif !important`,
       }}
     >
       {/* Desktop grid */}
@@ -332,7 +324,7 @@ export default function Industryfooter() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         {/* Top section */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-white/20 pb-6 mb-6">
           {/* Logo */}
