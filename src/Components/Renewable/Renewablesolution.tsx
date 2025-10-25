@@ -38,7 +38,7 @@ export default function Renewablesolution() {
       <div className=" mx-auto px-4 py-5 md:mx-25 md:py-8">
         {/* Heading and Description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-8 ">
-          <h2 className="text-3xl font-bold md:text-4xl">
+          <h2 className="text-3xl font-bold md:text-4xl text-[#000080]">
             A total solution provider
           </h2>
           <p className="text-gray-600">

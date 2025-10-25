@@ -66,8 +66,6 @@ export default function Renewableabout() {
   return (
     <section className="relative py-16">
       {/* Decorative Background */}
-      <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
-      <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
       <div className="relative container mx-auto px-5 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start z-10">
         {/* Left Section - Video */}
@@ -108,7 +106,7 @@ export default function Renewableabout() {
           </div>
 
           {/* Stats with Icons */}
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
               return (
@@ -116,7 +114,7 @@ export default function Renewableabout() {
                   key={i}
                   className="flex items-center gap-3 bg-white/80 backdrop-blur-lg p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
                 >
-                  <div className="p-3 bg-[#000080] rounded-full text-white shadow-lg flex items-center justify-center">
+                  <div className="p-1 bg-[#000080] rounded-full text-white shadow-lg flex items-center justify-center md:p-3">
                     <Icon size={24} />
                   </div>
                   <div>
@@ -124,7 +122,7 @@ export default function Renewableabout() {
                       ref={(el) => {
                         numberRefs.current[i] = el;
                       }}
-                      className="text-xl md:text-2xl font-bold text-[#000080]"
+                      className="text-md md:text-2xl font-bold text-[#000080]"
                     >
                       0
                     </h3>

@@ -90,18 +90,18 @@ export default function Vision() {
   ];
 
   return (
-    <section className="bg-white py-20 px-6 md:px-24 text-center">
+    <section className="bg-white py-15 md:py-20 px-4 md:px-37 text-center">
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8 md:mb-15">
         Vision and Mission
       </h2>
 
       {/* Boxes */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 mx-auto px-10 md:px-0">
         {items.map((item) => (
           <div
             key={item.id}
-            className="relative bg-white  border-t border-b border-r border-[#000080] border-l-[2px] border-l-[#000080] px-8 py-10 text-left"
+            className="relative bg-white  border-t border-b border-r border-[#000080] border-l-[2px] border-l-[#000080] px-6 py-6 md:px-8 md:py-10 text-left"
           >
             {/* Icon - aligned on left near border */}
             <div className="absolute -left-12 top-10 bg-white flex items-center justify-center">

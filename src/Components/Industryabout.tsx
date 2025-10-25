@@ -84,15 +84,15 @@ export default function Industryabout() {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
               return (
                 <div
                   key={i}
-                  className="flex items-center gap-4 bg-white/80 backdrop-blur-lg p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
+                  className="flex items-center gap-3 bg-white/80 backdrop-blur-lg p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-500"
                 >
-                  <div className="p-3 bg-[#000080] rounded-full text-white shadow-lg flex items-center justify-center">
+                  <div className="p-1 bg-[#000080] rounded-full text-white shadow-lg flex items-center justify-center md:p-3">
                     <Icon size={24} />
                   </div>
                   <div>
@@ -100,7 +100,7 @@ export default function Industryabout() {
                       ref={(el) => {
                         numberRefs.current[i] = el;
                       }}
-                      className="text-xl md:text-2xl font-bold text-[#000080]"
+                      className="text-md md:text-2xl font-bold text-[#000080]"
                     >
                       0
                     </h3>

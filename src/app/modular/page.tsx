@@ -44,7 +44,7 @@ export default function Modular() {
       subtitle: "Prefabricated Industrial Shed Manufacturers",
       description:
         "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
-      image: "/menupageimg/mod3.jpg",
+      image: "/preimages/shed.jpg",
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ export default function Modular() {
       subtitle: "Clean Room",
       description:
         "offers advanced cleanroom solutions for controlled environments in industries like pharmaceuticals, electronics, and biotechnology. Our cleanrooms are designed with precision to meet stringent hygiene, airflow, and temperature control standards, ensuring optimal conditions for sensitive operations.",
-      image: "/menupageimg/mod13.jpg",
+      image: "/preimages/cleanroomk.jpg",
     },
     {
       id: 6,
@@ -68,7 +68,7 @@ export default function Modular() {
       subtitle: "Prefabricated Toilet",
       description:
         "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-      image: "/menupageimg/mod10.png",
+      image: "/preimages/toilet.jpg",
     },
     {
       id: 7,
@@ -76,7 +76,7 @@ export default function Modular() {
       subtitle: "Prefab Porta Cabins Manufacturer",
       description:
         "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-      image: "/menupageimg/mod11.jpeg",
+      image: "/preimages/porta.jpg",
     },
     {
       id: 8,
@@ -181,13 +181,13 @@ export default function Modular() {
       subtitle: "High Tolerance & Durability",
       description:
         "Engineered with high tolerance, corrosion resistance, and exceptional durability to ensure reliable long-term performance.",
-      image: "/preimages/",
+      image: "/preimages/benone.jpg",
     },
     {
       subtitle: "Dimensional Accuracy",
       description:
         "Precision manufacturing guarantees exact dimensional accuracy, ensuring the final product meets and exceeds client expectations.",
-      image: "/preimages/",
+      image: "/preimages/bentwo.jpg",
     },
     {
       subtitle: "Quick Erection & Installation",
@@ -199,7 +199,7 @@ export default function Modular() {
       subtitle: "Thermal Efficiency",
       description:
         "Insulated panels maintain a 5–7°C temperature difference, significantly enhancing energy efficiency and comfort.",
-      image: "/preimages/",
+      image: "/preimages/benthree.jpg",
     },
     {
       subtitle: "Accelerated Project Timelines",
@@ -252,32 +252,32 @@ export default function Modular() {
   };
   const slides = [
     {
-      image: "/expertise/third.png",
+      image: "/preimages/",
       title: "Pre-fab Office",
       link: "/prefabricatedSite",
     },
     {
-      image: "/expertise/third.png",
+      image: "/preimages/industrial encloset.jpg",
       title: "Industrial Enclousers",
       link: "/industrialEnclousers",
     },
     {
-      image: "/expertise/third.png",
+      image: "/preimages/",
       title: "Railway Shelters",
       link: "/railwayShelters",
     },
     {
-      image: "/expertise/third.png",
+      image: "/preimages/",
       title: "Control Room",
       link: "/coldRoom",
     },
     {
-      image: "/expertise/third.png",
+      image: "/preimages/cleanroomk.jpg",
       title: "Clean Room",
       link: "/cleanRoom",
     },
     {
-      image: "/expertise/third.png",
+      image: "/preimages/",
       title: "Acoustic Enclosure",
       link: "/",
     },

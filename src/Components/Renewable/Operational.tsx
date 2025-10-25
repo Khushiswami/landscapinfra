@@ -219,7 +219,7 @@ export default function Operational() {
   }, []);
 
   return (
-    <section className="bg-white py-16 px-4 md:px-20 text-center relative overflow-hidden">
+    <section className="bg-white py:15 md:py-16 px-4 md:px-20 text-center relative overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
         Operational Highlights
       </h2>
