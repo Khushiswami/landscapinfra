@@ -1133,7 +1133,279 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="md:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
-          {/* Mobile menu content unchanged */}
+          <Link href="/" className="block py-2 border-b border-gray-200">
+            HOME
+          </Link>
+
+          {/* Industries collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("industries")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              INDUSTRIES
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
+            </button>
+
+            {openDropdown === "industries" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="/industryinstallation"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Industry Installation and Construction
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/preEngineeredBuildings"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Pre Engineered Building
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="/rnd"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Engineering R&D
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="/renewableenergy"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Renewable Energy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/realStateDevlopment"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Real EState Development
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          {/* Expertise collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("expertise")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              EXPERTISE
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
+            </button>
+
+            {openDropdown === "expertise" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="/heavyengineering"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Heavy Engineering
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/officespace"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Office Space
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/publicoffice"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Public Office
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/waterinfrastructure"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Water Infrastructure
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/structuralsteel"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Industry Building Solutions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/otherindustries"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Other Industries
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/simulationservice"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Simulation Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/fabrication"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Fabrication
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/firesaftey"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Fire Safety
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/greenbuilding"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Green Building
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/miningandmetals"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Mining and Metals
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/coldstorageandwarehouse"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Cold Storage &amp; Warehouse
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/solar"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Solar Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/hvac"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    HVAC Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/factoriesinstallation"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Factories Installation
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          <Link
+            href="/projects"
+            className="block py-2 border-b border-gray-200"
+          >
+            PROJECTS
+          </Link>
+          <Link href="#" className="block py-2 border-b border-gray-200">
+            INSIGHTS
+          </Link>
+          <Link href="/media" className="block py-2 border-b border-gray-200">
+            MEDIA
+          </Link>
+          {/* About collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("about")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              ABOUT
+              <span>
+                {openDropdown === "about" ? <FaChevronUp /> : <FaChevronDown />}
+              </span>{" "}
+            </button>
+
+            {openDropdown === "about" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="/company"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Our History
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/leadership"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Leadership
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/mission"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Our Mission
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/innovation"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Innovation
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          <Link href="/contact" className="block py-2 border-b border-gray-200">
+            Contact Us
+          </Link>
         </nav>
       )}
     </header>

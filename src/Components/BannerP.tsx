@@ -64,7 +64,7 @@ export default function Banner() {
   }, [isPlaying, slides.length]);
 
   // Mobile tabs grouping
-  const groupSize = 2;
+  const groupSize = 1;
   const startIndex = isMobile ? Math.floor(active / groupSize) * groupSize : 0;
   const visibleTabs = isMobile
     ? slides.slice(startIndex, startIndex + groupSize)

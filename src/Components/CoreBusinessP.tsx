@@ -67,7 +67,7 @@ export default function CoreBusiness() {
 
   return (
     <section className="py-4 md:py-16 bg-white md:px-15">
-      <h2 className="text-2xl font-bold mt-5 text-center text-[#000080] mb-2 md:mb-12 md:text-3xl">
+      <h2 className="text-2xl font-bold  text-center text-[#000080] mb-5 md:mb-12 md:text-3xl">
         Core Business
       </h2>
 
@@ -116,11 +116,6 @@ export default function CoreBusiness() {
                     {item.title}
                   </h3>
 
-                  {/* 🔵 Blue circular background arrow */}
-                  {/* <div className=" hidden bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
-                    <ArrowRight className="w-4 h-4 text-white" />
-                  </div> */}
-
                   <div className=" hidden md:block bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#1a1aff] w-8 h-8">
                     {/* Default icon */}
                     <ArrowUpRight className="w-4 h-4 text-white group-hover:hidden" />
@@ -139,13 +134,13 @@ export default function CoreBusiness() {
             ref={prevMobileRef}
             className="bg-[#000080] rounded-full p-2 flex items-center justify-center cursor-pointer shadow-lg"
           >
-            <ChevronLeft className="text-white w-6 h-6" />
+            <ChevronLeft className="text-white w-5 h-5" />
           </div>
           <div
             ref={nextMobileRef}
-            className="bg-[#000080] rounded-full p-2 flex items-center justify-center cursor-pointer shadow-lg"
+            className="bg-[#000080] mb-2 rounded-full p-2 flex items-center justify-center cursor-pointer shadow-lg"
           >
-            <ChevronRight className="text-white w-6 h-6" />
+            <ChevronRight className="text-white w-5 h-5" />
           </div>
         </div>
 
