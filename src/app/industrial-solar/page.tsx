@@ -1,354 +1,280 @@
 "use client";
-
 import React, { useState } from "react";
+import Image from "next/image";
+import Pebheader from "yes/Components/Pebheader";
+import Pebfooter from "yes/Components/Pebfooter";
 import Footer from "yes/Components/Footer";
-import Renewableheader from "yes/Components/Renewableheader";
-import Epc from "yes/Components/Epc";
+import Navbar from "yes/Components/Navbar";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import { useRouter } from "next/navigation";
-import { PencilRuler, Building2 } from "lucide-react";
-import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
-  FaCogs,
-  FaExpand,
-} from "react-icons/fa";
-
-export default function Industrialsolar() {
-  interface FAQ {
-    question: string;
-    answer: string;
-  }
-
-  const [activeTab, setActiveTab] = useState(1);
-  const [animateArrow, setAnimateArrow] = useState(false);
-  const router = useRouter();
+const Industrialsolar: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [open, setOpen] = useState(false); // for mobile dropdown
 
-  // ✅ FIXED: close function properly
-  const handleClick = () => {
-    setAnimateArrow(!animateArrow);
-    router.push("/system");
-  };
-  const toggleFAQ = (index: number) => {
+  const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-  // ✅ Moved slides & features outside of handleClick
-  const slides = [
-    {
-      image: "/preimages/office.jpg",
-      title: "Pre-fab Office",
-      link: "/prefabricatedSite",
-    },
-    {
-      image: "/preimages/industrial-enclosure.jpg",
-      title: "Industrial Enclosures",
-      link: "/industrialEnclosures",
-    },
-    {
-      image: "/preimages/railway-shelter.jpg",
-      title: "Railway Shelters",
-      link: "/railwayShelters",
-    },
-    {
-      image: "/preimages/control-room.jpg",
-      title: "Control Room",
-      link: "/controlRoom",
-    },
-    {
-      image: "/preimages/cleanroomk.jpg",
-      title: "Clean Room",
-      link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/acoustic.jpg",
-      title: "Acoustic Enclosure",
-      link: "/acousticEnclosure",
-    },
-  ];
 
-  const features = [
-    {
-      title: "Custom-Built Design",
-      description:
-        "Fully tailored to your operational and architectural requirements, ensuring precision and efficiency.",
-      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Quick Installation",
-      description:
-        "Factory-engineered components allow rapid onsite assembly, saving both time and labor costs.",
-      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Cost-Efficient Construction",
-      description:
-        "Optimized designs reduce material waste and overall construction expenses.",
-      icon: <FaBolt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Durable and Low Maintenance",
-      description:
-        "Built to withstand harsh weather and seismic conditions with minimal upkeep.",
-      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Energy Efficient",
-      description:
-        "Insulated wall and roof panels provide excellent temperature control and energy savings.",
-      icon: <FaLeaf className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Expandable & Flexible",
-      description:
-        "Easily scalable and adaptable to meet future growth and business requirements.",
-      icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
-    },
-  ];
-  const faqs: FAQ[] = [
-    {
-      question: "Is a Pre-Engineered Building a permanent structure?",
-      answer:
-        "Yes, modern PEBs are classified as capital-grade, permanent structures with a service life of 50–75 years or more, matching conventional longevity.",
-    },
-    {
-      question:
-        "What is the typical maintenance cost difference between a PEB and a conventional building? ",
-      answer:
-        "The durable, coated steel and specialized roofing inherently resist pests and weather. This results in an estimated 30–40% lower long-term maintenance cost compared to masonry or wood alternatives, securing your operational budget.",
-    },
-    {
-      question:
-        "Beyond durability, how does the PEBs material choice impact its environmental footprint?",
-      answer:
-        "The primary material, steel, contains a high percentage of recycled content and is fully recyclable. Choosing a PEB is a commitment to a resource-efficient, lower-impact construction lifecycle.",
-    },
-    {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
-      answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
-    },
-    {
-      question:
-        "Can I easily install a bridge or overhead crane system in a Pre-Engineered Metal Building?",
-      answer:
-        "Yes, PEBs are holistically engineered for heavy operational requirements. Columns and rafters are custom-designed during fabrication to safely bear the dynamic loads of overhead equipment.",
-    },
-    {
-      question:
-        "Do PEBs typically require a lighter or shallower foundation than traditional construction? ",
-      answer:
-        " Due to optimized design and lighter material weight, PEBs generally require a simpler and more economical foundation, accelerating the project’s earliest phase.",
-    },
-  ];
   return (
     <>
-      <Renewableheader />
+      <div>
+        <Navbar />
 
-      {/* ===== Hero Section ===== */}
-      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/video/modular.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Text Section */}
-          <div className="text-center lg:text-left mt-16 lg:mt-0">
-            <h1 className="text-4xl md:text-5xl font-bold leading-snug mb-4">
-              Ground Mounted{" "}
-            </h1>
-            <p className="text-lg max-w-md mx-auto lg:mx-0">
-              Build your project offsite with precision and speed. Enjoy faster
-              completion and effortless on-site assembly for seamless results.
-            </p>
-          </div>
-
-          {/* Swiper Section */}
-          <div className="flex justify-center mt-8 lg:mt-0">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
-              loop
-              className="pb-10 max-w-[280px]"
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center">
-                    <img
-                      src={slide.image}
-                      alt={slide.title}
-                      className="w-full h-56 object-cover"
-                    />
-                    <div className="p-4 text-center">
-                      <h3 className="text-lg font-semibold">{slide.title}</h3>
-                      <a
-                        href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline"
-                      >
-                        Read more →
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </section>
-      <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Landsking Infra Fabrication Solutions
-            </h2>
-            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Landsking Infra delivers sturdy and cost-efficient
-                <span className="text-[#000080] font-semibold">
-                  {" "}
-                  Fabrication Solutions{" "}
-                </span>
-                Landsking Infra delivers precision-engineered fabrication
-                services for industrial, commercial, and infrastructure
-                projects, ensuring strength, accuracy, and long-lasting
-                performance. Our expertise covers heavy steel structures,
-                customized sheet metal works, and complex assemblies tailored to
-                client requirements. Equipped with an ISO-compliant fabrication
-                facility, we maintain stringent quality standards while ensuring
-                timely project delivery and smooth onsite erection. Our team of
-                skilled welders and certified fabrication engineers works
-                closely with civil and structural teams to guarantee seamless
-                project execution. From design coordination to final
-                installation, Landsking Infra provides reliable, efficient, and
-                high-quality fabrication solutions that meet industry standards
-                and project timelines.
-              </p>
-
-              <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
-              </div>
+        {/* Hero Section */}
+        <section className="w-full min-h-[300px] md:min-h-[500px] flex flex-col md:flex-row">
+          {/* Left Column */}
+          <div
+            className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/menupagetwo/pso-1.jpg')",
+            }}
+          >
+            {/* Centered Text */}
+            <div className="text-white text-center relative z-10">
+              <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
+                Prefab Site Office
+              </h1>
             </div>
+          </div>
+        </section>
 
-            <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
-              <img
-                src="/Industrial-Buildings-Construction.webp"
-                alt="Industrial Building"
-                className="object-cover rounded-lg shadow-lg"
+        {/* Main Content */}
+        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+          {/* Row 1 - Image Left, Content Right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px]">
+              <Image
+                src="/menupagetwo/pso-3.jpg"
+                alt="Row 1"
+                fill
+                className="object-cover rounded-lg "
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+                Efficiently Designed Modular Site Offices for Quick Deployment
+              </h3>
+              <p className="text-gray-700 mb-4">
+                LandsKing Prefab delivers modular site office solutions using
+                advanced building materials like PUF insulated panels, EPS
+                insulated panels, and Light Gauge Steel Framing (LGSF). Designed
+                for rapid deployment, our prefab site offices are the perfect
+                solution for projects requiring a quick and efficient setup.
+              </p>
+              <p className="text-gray-700 mb-4">
+                From design and fabrication to production and installation, our
+                end-to-end turnkey services ensure a smooth and streamlined
+                experience.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Engineered to withstand extreme weather conditions, our
+                insulated cabins offer exceptional thermal performance. With
+                prefabricated components manufactured off-site, project
+                timelines are significantly shortened—cutting construction time
+                by up to 40%—and minimizing delays caused by weather or other
+                site-related challenges.
+              </p>
+              <p className="text-gray-700 mb-4">
+                LandsKing has successfully delivered modular site offices to a
+                wide range of clients across India, earning a reputation for
+                reliability, cost-efficiency, and long-lasting performance.
+              </p>
+              <button
+                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                onClick={() => (window.location.href = "/peb-contact")}
+              >
+                Get a Quote
+              </button>
+            </div>
+          </div>
+
+          {/* Row 2 - Content Left, Image Right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+                Key Features of LandsKing Modular Site Offices
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Tailored to your project needs using PUF/EPS insulated panels
+                and LGSF structures for superior strength and efficiency.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Flexible Wall Heights - Available in various heights with solid
+                construction, offering adaptability across different site
+                requirements.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Lightweight & Easy to Install - OModular panels are quick to
+                assemble and ideal for roof extensions with minimal structural
+                load.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Supports Modern Glazing - Compatible with large glass panels and
+                insulated doors for a clean, professional look.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Enhanced Safety & Comfort - Built-in provisions for smoke
+                detectors, fire safety, and air-conditioning to ensure a secure
+                and comfortable workspace.
+              </p>
+            </div>
+            <div className="relative w-full h-80 md:h-[390px]">
+              <Image
+                src="/menupagetwo/pso-4.jpg"
+                alt="Row 2"
+                fill
+                className="object-cover rounded-lg "
               />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ===== Steps Section ===== */}
-
-      {/* ===== CTA Section ===== */}
-
-      {/* ===== Key Features ===== */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Key Features of{" "}
-            <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
-            </span>
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            Our Pre-Engineered Buildings are designed for innovation,
-            durability, and efficiency.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="p-6 bg-gray-50 hover:bg-gray-100 rounded-2xl shadow-md transition-all duration-300 flex flex-col items-center text-center"
-              >
-                {feature.icon}
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
+          {/* Centered Heading + Paragraph */}
+          <div className="text-center mx-auto">
+            <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+              Flexible Applications for Every Need
+            </h3>
+            <p className="text-gray-700 text-lg">
+              LandsKing offers flexible and innovative design solutions for a
+              variety of applications. Our modular site offices and construction
+              site office cabins provide efficient and durable workspaces that
+              can be quickly installed to support your project needs. Designed
+              for adaptability, these prefab units ensure reliable performance
+              across different environments and timelines.
+              <br />
+              <br />
+              Beyond site offices, LandsKing also supplies temporary office
+              cabins ideal for events and other short-term uses. Our
+              prefabricated sales and marketing offices, along with multi-storey
+              modular buildings, offer scalable and cost-effective solutions
+              tailored to meet the evolving demands of your business without
+              compromising on quality or installation speed.
+            </p>
           </div>
-        </div>
-      </section>
-      <Industrialsolar />
-      <section className=" mx-auto px-4 py-12 md:mx-10 ">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
-            Frequently Asked Questions
-          </h2>
-          {/* Yellow divider line */}
-          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
-        </div>
 
-        {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
-          {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
-              {/* Question */}
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
-              >
-                <span
-                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
-                    openIndex === index ? "text-[#000000]" : "text-black"
-                  }`}
-                >
-                  {faq.question}
-                </span>
-                <span className="text-black text-lg font-bold">
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
-
-              {/* Answer */}
-              {openIndex === index && (
-                <div className="pb-4 text-gray-600  text-base md:text-md">
-                  {faq.answer}
-                </div>
-              )}
+          {/* Row 3 - Image Left, Content Right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px]">
+              <Image
+                src="/menupagetwo/pso-2.jpeg"
+                alt="Row 3"
+                fill
+                className="object-cover rounded-lg "
+              />
             </div>
-          ))}
-        </div>
-      </section>
+            <div>
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+                Why Choose LandsKing Prefab Site Offices?
+              </h3>
+              <ul className="text-gray-700 mb-4 space-y-1">
+                <li>
+                  390 Sturdy, ergonomic structures designed to withstand harsh
+                  and extreme conditions.
+                </li>
+                <li>
+                  390 Insulated construction for improved energy efficiency and
+                  enhanced comfort.
+                </li>
+                <li>
+                  390 Fast and straightforward dry construction method allowing
+                  rapid assembly.
+                </li>
+                <li>
+                  390 Flexible fascia panel choices tailored to the specific
+                  needs of the site.
+                </li>
+                <li>
+                  390 Modular design enabling easy expansion and relocation when
+                  required.
+                </li>
+                <li>
+                  390 Weather-resistant and thermally insulated to maintain
+                  durability and indoor climate control.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Row 4 - Content Left, Image Right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+                Benefits of Choosing LandsKing Prefab Solutions
+              </h3>
+
+              <ul className="space-y-1">
+                <li>
+                  Enhanced insulation for superior energy efficiency and
+                  comfort, even in extreme environments.
+                </li>
+                <li>
+                  Rapid, dry construction methods paired with adaptable design
+                  options.
+                </li>
+                <li>
+                  Modular units that can be easily expanded or relocated as
+                  project needs evolve.
+                </li>
+                <li>
+                  Durable, weather-resistant structures built for reliable,
+                  all-season performance.
+                </li>
+                <li>
+                  Minimal site disruption thanks to off-site manufacturing and
+                  clean installation.
+                </li>
+                <li>
+                  Reduced construction waste with efficient material usage and
+                  eco-friendly processes.
+                </li>
+                <li>
+                  Quick project turnaround to meet tight deadlines and
+                  accelerate delivery.
+                </li>
+              </ul>
+            </div>
+            <div className="relative w-full h-80 md:h-[390px]">
+              <Image
+                src="/menupagetwo/pso-7.png"
+                alt="Row 4"
+                fill
+                className="object-cover rounded-lg "
+              />
+            </div>
+          </div>
+
+          {/* Row 5 - Image Left, Content Right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px]">
+              <Image
+                src="/menupagetwo/pso-9.jpg"
+                alt="Row 5"
+                fill
+                className="object-cover rounded-lg "
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+                Why Landsking Infra Pvt Ltd Prefab?
+              </h3>
+              <ul className="space-y-1">
+                <li>390 Trusted Expertise Since 1999</li>
+                <li>390 Comprehensive Turnkey Project Solutions</li>
+                <li>390 Pan-India Project Delivery & Implementation</li>
+                <li>
+                  390 Fully Integrated Design & Manufacturing Capabilities
+                </li>
+                <li>
+                  390 Dedicated Commitment to Quality and On-Time Delivery
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+        </section>
+      </div>
       <Footer />
     </>
   );
-}
+};
+
+export default Industrialsolar;
