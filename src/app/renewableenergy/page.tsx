@@ -2,15 +2,13 @@
 import { useState, useEffect } from "react";
 
 import Footer from "yes/Components/Footer";
-import QuickLinks from "../../Components/businessAreas/QuickLinks";
-import RenewableBusiness from "yes/Components/Renewable/Renewablebusiness";
+
 import RenewableSector from "yes/Components/Renewable/Renewablesector";
 import Accordion from "yes/Components/Renewable/Accordion";
 import PebBrandP from "yes/Components/PebBrandP";
 import Explore from "yes/Components/Renewable/Explore";
 import { Wrench, Building2, Home, Users } from "lucide-react";
 
-import Navbar from "yes/Components/Navbar";
 import Renewablebanner from "yes/Components/Renewable/Renewablebanner";
 import Renewableplatform from "yes/Components/Renewable/Renewableplatform";
 import Renewableslider from "yes/Components/Renewable/Renewableslider";
@@ -18,10 +16,9 @@ import Renewableabout from "yes/Components/Renewable/Renewableabout";
 import Renewablesolution from "yes/Components/Renewable/Renewablesolution";
 import Renewablenews from "yes/Components/Renewable/Renewablenews";
 import Renewableheader from "yes/Components/Renewableheader";
-import Links from "yes/Components/Links";
 import Form from "yes/Components/Renewable/Form";
-import Operational from "yes/Components/Renewable/Operational";
-import Vision from "yes/Components/Renewable/Vision";
+
+import Solarservices from "yes/Components/Solarservices";
 
 export default function Renewableenergy() {
   const [active, setActive] = useState(0);
@@ -61,21 +58,21 @@ export default function Renewableenergy() {
     <>
       <Renewableheader />
       <Renewablebanner />
-      <RenewableBusiness />
+      <Solarservices />
       <RenewableSector />
       <Renewableabout />
       <Form />
       <Accordion />
       <Renewableslider />
-      <Operational />
-      <Vision />
+      {/* <Operational />
+      <Vision /> */}
       <Explore />
       <Renewableplatform />
 
       <Renewablesolution />
 
       <Renewablenews />
-      <Links heading="Quick Links" links={links} />
+      {/* <Links heading="Quick Links" links={links} /> */}
       <PebBrandP />
       <Footer />
     </>

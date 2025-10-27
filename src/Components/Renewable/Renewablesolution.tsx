@@ -10,26 +10,19 @@ export default function Renewablesolution() {
       img: "/system.jpg",
       link: "/residential-solar",
     },
-    {
-      title: "Commercial Solar",
-      description:
-        "We stand by our customers at every stage of the building project process.",
-      img: "/service.jpg",
-      link: "/commercial-solar",
-    },
+
     {
       title: "Industrial Solar",
       description: "Designed for sustainability and world-class quality.",
       img: "/product.jpg",
       link: "/industrial-solar",
     },
-
     {
-      title: "Infrastructure & Maintenance",
+      title: "Commercial Solar",
       description:
-        "Blend grid power with solar for reliable, sustainable energy solutions.",
-      img: "/product.jpg",
-      link: "/infrastructure-maintanence",
+        "We stand by our customers at every stage of the building project process.",
+      img: "/service.jpg",
+      link: "/commercial-solar",
     },
   ];
 
@@ -49,7 +42,7 @@ export default function Renewablesolution() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-3">
           {items.map((item, idx) => (
             <div
               key={idx}

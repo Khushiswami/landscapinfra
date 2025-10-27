@@ -22,7 +22,7 @@ import {
   FaExpand,
 } from "react-icons/fa";
 
-export default function Industrialsolar() {
+export default function Groundmounted() {
   interface FAQ {
     question: string;
     answer: string;
@@ -269,6 +269,7 @@ export default function Industrialsolar() {
           </div>
         </div>
       </section>
+      <Epc />
 
       {/* ===== Steps Section ===== */}
 
@@ -306,7 +307,6 @@ export default function Industrialsolar() {
           </div>
         </div>
       </section>
-      <Industrialsolar />
       <section className=" mx-auto px-4 py-12 md:mx-10 ">
         {/* Heading */}
         <div className="text-center mb-10">

@@ -55,7 +55,7 @@ const areas = [
   },
 ];
 
-export default function Explore() {
+export default function Designsolar() {
   const [selectedId, setSelectedId] = useState(3);
   const [open, setOpen] = useState(false); // for mobile dropdown
 
@@ -64,7 +64,7 @@ export default function Explore() {
   return (
     <section className=" mx-auto px-4 py-10 md:px-28">
       <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
-        Landsking Infra EPC Process{" "}
+        Our Solar Design Process
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">

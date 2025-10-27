@@ -39,8 +39,8 @@ export default function Accordion() {
   };
 
   return (
-    <div className=" mx-auto mt-10 p-4 md:px-29">
-      <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2>
+    <div className=" mx-auto mt-10 p-4 md:px-45">
+      {/* <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2> */}
       <h1 className="text-2xl font-semibold mb-6 text-[#000080] md:text-3xl">
         Your Solar EPC Partner Landsking Infra{" "}
       </h1>
@@ -61,8 +61,8 @@ export default function Accordion() {
               className="w-full flex justify-between items-center py-4 text-left"
             >
               <div className="flex items-center space-x-2">
-                <span className="text-blue-500 font-bold text-3xl">
-                  {/* {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`} */}
+                <span className="text-[#000080] font-bold text-3xl">
+                  {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`}
                 </span>
                 <span className="text-gray-900 text-3xl ">{item.title}</span>
               </div>

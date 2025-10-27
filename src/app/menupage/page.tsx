@@ -9,13 +9,7 @@ import {
   FaCogs,
   FaExpand,
 } from "react-icons/fa";
-import {
-  FaAward,
-  FaGlobeAsia,
-  FaCertificate,
-  FaProjectDiagram,
-} from "react-icons/fa";
-// import { useInView } from "react-intersection-observer";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
