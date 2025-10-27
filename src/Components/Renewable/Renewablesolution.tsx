@@ -6,22 +6,23 @@ export default function Renewablesolution() {
     {
       title: "Residential Solar",
       description:
-        "We provide solutions for Pre-Engineered Steel Buildings and Structural Steel.",
-      img: "/system.jpg",
+        "Helps homeowners reduce electricity bills and embrace a sustainable, self-powered lifestyle.",
+      img: "/solar/resd.JPG",
       link: "/residential-solar",
     },
 
     {
       title: "Industrial Solar",
-      description: "Designed for sustainability and world-class quality.",
-      img: "/product.jpg",
+      description:
+        " Supports industries in cutting operational costs while ensuring stable, eco-friendly energy supply.",
+      img: "/solar/industrial solar (2).jpg",
       link: "/industrial-solar",
     },
     {
       title: "Commercial Solar",
       description:
-        "We stand by our customers at every stage of the building project process.",
-      img: "/service.jpg",
+        "Enables businesses to achieve long-term savings and sustainability through reliable solar power.",
+      img: "/solar/commercial solar (2).jpg",
       link: "/commercial-solar",
     },
   ];
@@ -35,9 +36,8 @@ export default function Renewablesolution() {
             A total solution provider
           </h2>
           <p className="text-gray-600">
-            We are a solution-driven company that handles all aspects of a
-            project from concept to erection, employing optimized solutions and
-            value engineering.
+            From blueprint to execution, we make solar simple — get your custom
+            solution today.
           </p>
         </div>
 

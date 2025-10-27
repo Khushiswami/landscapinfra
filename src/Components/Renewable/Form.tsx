@@ -57,7 +57,7 @@ const Form = () => {
             </div>
             <div className="md:col-span-4">
               <label className="block text-black font-light mb-1">
-                Address*
+                Address
               </label>
               <input
                 type="text"
@@ -69,7 +69,7 @@ const Form = () => {
             </div>
             <div className="md:col-span-4">
               <label className="block text-black font-light mb-1">
-                Phone Number*
+                Phone Number
               </label>
               <input
                 type="tel"
@@ -83,7 +83,7 @@ const Form = () => {
 
             <div className="md:col-span-4">
               <label className="block text-black font-light mb-1">
-                Location / City*
+                Location / City
               </label>
               <input
                 type="text"
@@ -130,7 +130,7 @@ const Form = () => {
             </div>
             <div className="md:col-span-4">
               <label className="block text-black font-light mb-1">
-                Required Capacity (kW)*
+                Required Capacity (kW)
               </label>
               <input
                 type="text"

@@ -27,6 +27,7 @@ import {
   FaCogs,
   FaExpand,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Epcsolutions() {
   const [activeTab, setActiveTab] = useState(1);
@@ -137,11 +138,11 @@ export default function Epcsolutions() {
           {/* Text Section */}
           <div className="text-center lg:text-left mt-16 lg:mt-0">
             <h1 className="text-4xl md:text-5xl font-bold leading-snug mb-4">
-              Modular Building Solutions
+              Our Solar EPC Solutions for a Greener Tomorrow
             </h1>
             <p className="text-lg max-w-md mx-auto lg:mx-0">
-              Build your project offsite with precision and speed. Enjoy faster
-              completion and effortless on-site assembly for seamless results.
+              LandsKing Infra delivers advanced solar EPC solutions, from
+              ideation to commissioning, driving renewable energy innovation.
             </p>
           </div>
 
@@ -192,25 +193,20 @@ export default function Epcsolutions() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Landsking Infra delivers sturdy and cost-efficient
-                <span className="text-[#000080] font-semibold">
-                  {" "}
-                  Fabrication Solutions{" "}
-                </span>
-                Landsking Infra delivers precision-engineered fabrication
-                services for industrial, commercial, and infrastructure
-                projects, ensuring strength, accuracy, and long-lasting
-                performance. Our expertise covers heavy steel structures,
-                customized sheet metal works, and complex assemblies tailored to
-                client requirements. Equipped with an ISO-compliant fabrication
-                facility, we maintain stringent quality standards while ensuring
-                timely project delivery and smooth onsite erection. Our team of
-                skilled welders and certified fabrication engineers works
-                closely with civil and structural teams to guarantee seamless
-                project execution. From design coordination to final
-                installation, Landsking Infra provides reliable, efficient, and
-                high-quality fabrication solutions that meet industry standards
-                and project timelines.
+                Landsking Infra delivers sturdy and cost-efficient Landsking
+                Infra delivers precision-engineered fabrication services for
+                industrial, commercial, and infrastructure projects, ensuring
+                strength, accuracy, and long-lasting performance. Our expertise
+                covers heavy steel structures, customized sheet metal works, and
+                complex assemblies tailored to client requirements. Equipped
+                with an ISO-compliant fabrication facility, we maintain
+                stringent quality standards while ensuring timely project
+                delivery and smooth onsite erection. Our team of skilled welders
+                and certified fabrication engineers works closely with civil and
+                structural teams to guarantee seamless project execution. From
+                design coordination to final installation, Landsking Infra
+                provides reliable, efficient, and high-quality fabrication
+                solutions that meet industry standards and project timelines.
               </p>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
@@ -233,62 +229,36 @@ export default function Epcsolutions() {
       <Epc />
 
       {/* ===== Steps Section ===== */}
-      <div className="hidden md:grid bg-[#d9d9d9] px-[60px] grid-cols-2 md:grid-cols-7 text-sm md:text-base font-medium text-gray-800">
-        {[
-          "Conceptual Design",
-          "Proposal Drawings",
-          "Contract Awarded",
-          "Detail Drawings",
-          "Fabrication",
-          "Erection",
-          "Warranty",
-        ].map((step, idx) => (
-          <button
-            key={idx}
-            className="px-3 py-8 text-center font-semibold text-[#000000]"
-          >
-            {idx + 1}. {step}
-          </button>
-        ))}
+
+      <div className="text-center mx-auto  mb-6 md:mb-8 md:mt-7">
+        <h2 className="text-xl text-[#000080] md:text-3xl font-bold ">
+          Steps of EPC Approach
+        </h2>
       </div>
 
       {/* ===== Example Step Section ===== */}
       <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-19">
         <div className="grid md:grid-cols-2 gap-12 w-full">
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-9xl font-bold text-[#000080]">
+            <h1 className="text-6xl font-bold text-[#000080]">
               {activeTab.toString().padStart(2, "0")}
             </h1>
-            <h2 className="mt-2 text-4xl md:text-6xl font-semibold text-[#000080]">
-              Conceptual Design
+            <h2 className="mt-2 text-3xl  md:text-5xl font-semibold text-[#000080]">
+              Solar Project Analysis Services
             </h2>
           </div>
           <div>
-            <h3 className="text-3xl font-bold mb-4">
-              Turn your ideas into reality
-            </h3>
-            <p className="text-[#737373] mb-6">
-              We begin with your ideas, then propose a fast and binding plan in
-              terms of design, fabrication, erection, costs, and timeframe.
+            <p className="text-[#737373] mb-6 text-[19px]">
+              At LandsKing Infra, every successful solar project begins with
+              precision planning. Our expert business development team
+              thoroughly assesses your energy requirements, identifies the most
+              efficient site locations, and evaluates multiple performance
+              scenarios. We then create a detailed preliminary site plan,
+              propose optimal capital investment options, and assist you in
+              drafting clear, result-driven contracts for a seamless project
+              kickoff.
             </p>
-            <div className="flex gap-10 mb-6">
-              <div className="flex flex-col items-center">
-                <div className="px-8 py-6 bg-[#000080] text-white">
-                  <PencilRuler className="w-11 h-11 mb-2" />
-                </div>
-                <span className="font-medium mt-2 text-xl">
-                  Standard Design
-                </span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="px-8 py-6 bg-[#000080] text-white">
-                  <Building2 className="w-11 h-11 mb-2" />
-                </div>
-                <span className="font-medium mt-2 text-xl">
-                  Premium Products
-                </span>
-              </div>
-            </div>
+
             <img
               src="/product/s3.jpg"
               alt="Conceptual Design"
@@ -301,40 +271,27 @@ export default function Epcsolutions() {
         <div className="grid md:grid-cols-2 gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-9xl font-bold text-[#000080]">02</h1>
+            <h1 className="text-6xl font-bold text-[#000080]">02</h1>
 
-            <span className="mt-2  font-semibold text-[#000080] text-4xl  md:text-6xl">
-              Proposal <br /> Drawings
+            <span className="mt-2  font-semibold text-[#000080] text-3xl  md:text-5xl">
+              System Designs
             </span>
           </div>
 
           {/* Right */}
           <div className="flex flex-col justify-center space-y-6">
             <div>
-              <h3 className="font-medium text-[23px] text-[#000000]">
-                ▪ Optimum Solutions
-              </h3>
-              <p className="text-[#a6a6a6] text-[23px]">
-                Energy efficiency and resistance to corrosion and severe weather
-                conditions.
+              <p className="text-[#000000] text-[19px]">
+                We transform insights into intelligent solar design. Using
+                advanced simulation software, our engineers optimize every
+                system parameter to ensure maximum energy output and long-term
+                reliability. From selecting premium modules and inverters to
+                finalizing cables and components, our design process is built
+                for efficiency, precision, and performance before moving into
+                procurement.
               </p>
             </div>
-            <div>
-              <h3 className="font-medium text-[23px] text-[#000000]">
-                ▪ Optimum Construction Costs
-              </h3>
-              <p className="text-[#a6a6a6] text-[23px]">
-                For a clear view of the details of your buildings.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-[23px] text-[#000000]">
-                ▪ A Committed Schedule
-              </h3>
-              <p className="text-[#a6a6a6] text-[23px]">
-                For the best utilization of your budget and project management.
-              </p>
-            </div>
+
             <div className="mt-6 mb-3">
               <img
                 src="/product/s1.jpg"
@@ -351,17 +308,23 @@ export default function Epcsolutions() {
         <div className="grid md:grid-cols-2 gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-9xl font-bold text-[#000080]">03</h1>
-            <span className="mt-2  font-semibold text-[#000080] text-4xl  md:text-6xl">
-              Contract <br /> Awarded
+            <h1 className="text-6xl font-bold text-[#000080]">03</h1>
+            <span className="mt-2  font-semibold text-[#000080]text-3xl  md:text-5xl">
+              Construction{" "}
             </span>
           </div>
 
           {/* Right */}
           <div className="flex flex-col justify-center space-y-6">
-            <h3 className="font-semibold text-[30px] text-black">
-              Signing of contract to execute the construction
-            </h3>
+            <p className="text-[#000000] text-[19px]">
+              Built with precision, powered by expertise. Once the layout is
+              finalized, our construction team prepares the site, installs
+              mounting structures, and integrates all system components
+              according to the engineered design. Each stage of
+              installation—right from groundwork to final wiring—is executed
+              under strict quality and safety standards to ensure flawless
+              delivery.
+            </p>
             <div className="mt-1 mb-3">
               <img
                 src="/service.jpg"
@@ -378,23 +341,24 @@ export default function Epcsolutions() {
         <div className="grid md:grid-cols-2 gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-9xl font-bold text-[#000080]">04</h1>
-            <span className="mt-2  font-semibold text-[#000080] text-4xl  md:text-6xl">
-              Detail <br /> Drawings
+            <h1 className="text-6xl font-bold text-[#000080]">04</h1>
+            <span className="mt-2  font-semibold text-[#000080] text-3xl  md:text-5xl">
+              Testing and
+              <br /> Commissioning
             </span>
           </div>
 
           {/* Right */}
           <div className="flex flex-col justify-center space-y-6 mt-8">
-            <h3 className="font-medium text-[23px] text-[#000000]">
-              ▪ Outstanding Design Ability
-            </h3>
-            <h3 className="font-medium text-[23px] text-[#000000]">
-              ▪ High Engineering Capabilities
-            </h3>
-            <h3 className="font-medium text-[23px] text-[#000000]">
-              ▪ 100+ Talented In-house Engineers
-            </h3>
+            <p className="text-[#000000] text-[19px]">
+              We ensure every system performs at its peak from day one.After
+              installation, our specialists conduct thorough mechanical and
+              electrical testing, including checks on structural integrity,
+              grounding, and connectivity. Once verified, the system is
+              seamlessly integrated with the grid (or off-grid network),
+              ensuring stable, safe, and optimized energy flow for years to
+              come.
+            </p>
           </div>
         </div>
       </div>
@@ -403,41 +367,28 @@ export default function Epcsolutions() {
       {/* ===== Key Features ===== */}
       <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12">
         <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Landsking Infra Fabrication Solutions
-            </h2>
-            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
-          </div>
+          <div className="text-center mb-10"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
+              <h2 className="text-xl md:mb-5 sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
+                Why Choose Landsking Infra for Solar EPC?
+              </h2>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Landsking Infra delivers sturdy and cost-efficient
-                <span className="text-[#000080] font-semibold">
-                  {" "}
-                  Fabrication Solutions{" "}
-                </span>
-                Landsking Infra delivers precision-engineered fabrication
-                services for industrial, commercial, and infrastructure
-                projects, ensuring strength, accuracy, and long-lasting
-                performance. Our expertise covers heavy steel structures,
-                customized sheet metal works, and complex assemblies tailored to
-                client requirements. Equipped with an ISO-compliant fabrication
-                facility, we maintain stringent quality standards while ensuring
-                timely project delivery and smooth onsite erection. Our team of
-                skilled welders and certified fabrication engineers works
-                closely with civil and structural teams to guarantee seamless
-                project execution. From design coordination to final
-                installation, Landsking Infra provides reliable, efficient, and
-                high-quality fabrication solutions that meet industry standards
-                and project timelines.
+                Building Tomorrows Energy Infrastructure — Today. We specialize
+                in complete design-to-delivery solutions backed by engineering
+                precision, project management excellence, and sustainable
+                innovation. With over 50+ MW of installed capacity, 120+
+                completed projects, and a 98% client retention rate, we deliver
+                reliability and performance you can trust
               </p>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
+                <Link href="/solar-contact">
+                  <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
+                    GET A QUOTE
+                  </button>
+                </Link>
               </div>
             </div>
 

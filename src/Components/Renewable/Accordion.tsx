@@ -15,19 +15,19 @@ const items: AccordionItem[] = [
     id: 1,
     title: "Engineering (E)",
     content:
-      "The Blueprint of Your Solar System Engineering is the critical foundation of every Solar EPC project. At Manufyn, our EPC engineers begin with meticulous site assessments.This includes detailed energy audits,load profiling,and shadow analysis. We use this essential data to create a highly customized solar system design. This design is always optimized for your sites solar potential, climate, and electrical load. Our EPC experts ensure the layout maximizes energy production while strictly adhering to safety and local compliance standards. By combining advanced software simulations with on-site inspections, we deliver precise, efficient, and future-ready solar solutions. This proactive engineering approach reduces operational risks and guarantees long-term solar system performance.",
+      "Engineering forms the foundation of every solar project at LandsKing Infra. Our experts perform in-depth site assessments, energy audits, and shadow analysis to design systems that are optimized, compliant, and performance-driven. Using advanced simulations and on-site precision, we ensure every project achieves maximum efficiency, safety, and long-term reliability.",
   },
   {
     id: 2,
     title: "Procurement(P)",
     content:
-      "Sourcing Quality for Your Solar System Procurement is the assurance that every single component of your solar system meets the highest quality standards. Manufyn sources all critical materials—solar panels, inverters, batteries, and mounting structures—exclusively from certified Tier-1 suppliers. We enforce strict quality checks throughout our procurement process to guarantee the durability, efficiency, and optimal performance of your solar system under all local weather conditions. Our focus is on providing cost-effective, reliable, and scalable solar solutions. Choosing high-grade components through rigorous EPC procurement allows for lower maintenance costs, a longer system life, and consistent energy output. This commitment cements us as a trusted choice among solar EPC companies in India.",
+      "Procurement at LandsKing Infra powers each solar project with quality and trust. We source panels, inverters, and structures exclusively from certified Tier-1 suppliers, backed by rigorous quality checks for strength and efficiency. Our cost-effective, scalable procurement strategy ensures long system life, minimal maintenance, and consistent energy output.",
   },
   {
     id: 3,
     title: "Construction (C)",
     content:
-      "Bringing Your Solar System to Life Construction is the phase where our precise engineering design is realized with professionalism. Our certified EPC contractors meticulously manage every aspect: site preparation, civil work, module mounting, electrical wiring, and system interconnections. Every step of construction follows strict safety protocols and industry standards. Following installation, rigorous testing ensures the entire solar system operates efficiently and safely. We provide full commissioning, comprehensive documentation, and essential maintenance guidance, offering clients a seamless turnkey EPC experience. By combining engineering accuracy with expert construction execution, Manufyn delivers solar projects that are reliable, durable, and high-performing, securing our position as one of India’s leading solar EPC companies.",
+      "Construction transforms vision into reality at LandsKing Infra. Our skilled EPC team executes every phase — from site preparation to system integration — with precision, safety, and adherence to global standards. Each project undergoes complete testing and commissioning, ensuring durable, efficient, and high-performing solar installations built to last.",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function Accordion() {
         Solar EPC (Engineering, Procurement & Construction) is the ultimate
         turnkey solution for your solar energy needs. When you choose a single
         company to manage every stage from initial design to final
-        commissioning—you guarantee efficiency, cost control, and reliability.
+        commissioning.
       </p>
       {/* <h1 className="text-3xl font-semibold mb-6">
         How we approach the triple bottom line

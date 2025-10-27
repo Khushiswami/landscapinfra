@@ -17,32 +17,32 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "PETROL PUMPS",
+    title: "Solar Parks",
     image: "/preimages/pump.png",
   },
   {
     id: 2,
-    title: "INSTITUTIONAL",
+    title: "Commercial & Industrial (C&I) Installations",
     image: "/preimages/inst.png",
   },
   {
     id: 3,
-    title: "INDUSTRIAL",
+    title: "Wind & Solar Hybrid Systems",
     image: "/preimages/industry.png",
   },
   {
     id: 4,
-    title: "RURAL ELECTRIFICATION",
+    title: "Turnkey Projects",
     image: "/preimages/person.jpg",
   },
   {
     id: 5,
-    title: "Turnkey Solar PV Solutions",
+    title: "Captive and Group Captive Models",
     image: "/preimages/trunky.png",
   },
   {
     id: 5,
-    title: "Solar Solutions for Essential Needs",
+    title: "Battery Energy Storage System (BESS)",
     image: "/preimages/solutions.png",
   },
 ];
@@ -56,11 +56,17 @@ export default function Epc() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-28 pt-1 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:px-28 pt-1 md:pt-6 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
             Our Solar EPC Services
+          </h2>
+          <h2 className="text-base md:text-md font-medium text-start text-gray-700  mb-6">
+            LandsKing Infra delivers end-to-end Solar EPC solutions — from
+            detailed project analysis and design to construction and performance
+            monitoring. We are committed to excellence, efficiency, and
+            reliability in every step of your renewable energy journey.
           </h2>
 
           <Swiper

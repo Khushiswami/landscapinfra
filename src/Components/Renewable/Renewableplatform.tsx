@@ -8,25 +8,26 @@ import { HiChevronRight } from "react-icons/hi";
 const TABS = [
   {
     title: "Epc solutions",
-    headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings. Each structure is designed for strength, flexibility, and long-lasting performance, tailored to meet diverse industrial and commercial needs.",
-    img: "/about.png",
+    headline: "Turning Complex Solar Projects into Simple Success Stories",
+    body: " We deliver complete EPC solutions — from design and procurement to installation and commissioning — ensuring seamless project execution. Every system is optimized for performance, built with precision, and backed by proven reliability for long-term solar success.",
+    img: "/solar/epc solution.jpg",
     buttonText: "VIEW MORE",
     url: "/epc-solutions",
   },
   {
     title: "Ground mounted",
-    headline: "End-to-End EPC Solutions",
-    body: "From concept to commissioning, our EPC solutions ensure seamless project execution with a strong focus on quality, cost-efficiency, and sustainability. We integrate advanced technologies and global standards to deliver world-class infrastructure.",
-    img: "/solution/stell.jpg",
+    headline: "High-Yield Energy from the Ground Up",
+    body: "Our ground-mounted solar systems combine durability and performance for industrial, commercial, and utility-scale projects. Designed to adapt to diverse terrains and climates, they deliver high energy yield with minimal maintenance and maximum efficiency.",
+    img: "/solar/ground mounted solar (2).jpg",
     buttonText: "VIEW MORE",
     url: "/groundmounted",
   },
   {
     title: "Solar design",
-    headline: "Excellence in Structural Engineering",
-    body: "Our expert engineers provide innovative structural design and analysis services. With advanced tools and decades of expertise, we ensure the highest safety, efficiency, and performance standards for every project we deliver.",
-    img: "/Square2.jpg",
+    headline: "Smart Designs for Maximum Solar Output",
+    body: "We craft data-driven solar layouts tailored to each site’s unique conditions. Using advanced simulation and engineering precision, we ensure optimal energy output, structural integrity, and sustainable performance — right from blueprint to execution.",
+
+    img: "/solar/solar design.jpg",
     buttonText: "VIEW MORE",
     url: "/soalr-design",
   },
@@ -65,12 +66,11 @@ export default function Renewableplatform() {
       {/* Top heading + subheading */}
       <div className="mx-auto px-4 pt-12 text-center">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
-          Comprehensive Infrastructure Solutions
+          Powering Progress with Solar Precision{" "}
         </h1>
         <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
-          From design and engineering to execution and management, we deliver
-          integrated solutions that shape industries and build a stronger
-          future.
+          Complete solar infrastructure solutions designed to perform, endure,
+          and evolve.
         </p>
       </div>
 

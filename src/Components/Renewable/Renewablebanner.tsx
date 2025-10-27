@@ -10,26 +10,33 @@ export default function Renewablebanner() {
 
   const slides = [
     {
+      titling: " Power Your Home—Before Prices Go Up Again!",
       title: "Residential Solar",
-      desc: "Turn your rooftop into a clean energy source and cut electricity costs.",
+      desc: " Empowering homeowners with affordable, high-efficiency solar systems built for long-term savings and sustainability.",
       video: "/video.mp4",
       link: "/contact",
     },
     {
       title: "Commercial Solar",
-      desc: "Harness open land to generate large-scale, cost-effective solar power.",
+      titling: "Join the Solar Revolution—Before Incentives Run Out.",
+
+      desc: "Your trusted partner in transforming commercial spaces into energy-efficient, cost-saving, and eco-smart power hubs.",
       video: "/video.mp4",
       link: "/contact",
     },
     {
       title: "Industrial Solar",
-      desc: "Blend grid power with solar for reliable, sustainable energy solutions.",
+      titling: "Fuel Your Industry with the Sun—Before Costs Skyrocket.",
+
+      desc: "Delivering robust solar solutions designed for large-scale industries seeking reliability, performance, and maximum ROI.",
       video: "/video.mp4",
       link: "/contact",
     },
     {
       title: "Infrastructure & Maintenance",
-      desc: "Blend grid power with solar for reliable, sustainable energy solutions.",
+      titling: "Secure Solar Supply for Your Next Project.",
+
+      desc: "Your trusted EPC partner for high-performance, utility-scale, and large industrial solar power projects.",
       video: "/video.mp4",
       link: "/contact",
     },
@@ -70,12 +77,10 @@ export default function Renewablebanner() {
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.7 }}
           >
-            <h1 className="text-3xl  max-w-5xl md:text-6xl font-bold text-white mb-6 leading-snug">
-              Powering Industries with Precision Solar EPC Excellence{" "}
+            <h1 className="text-xl  max-w-5xl md:text-5xl font-bold text-white mb-6 leading-snug">
+              {slides[active].titling}
             </h1>
-            <h1 className=" hidden text-3xl md:text-6xl font-bold text-white mb-6 leading-snug">
-              {slides[active].title}
-            </h1>
+
             <p className=" hidden text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
               {slides[active].desc}
             </p>

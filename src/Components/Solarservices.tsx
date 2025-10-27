@@ -8,60 +8,46 @@ import Link from "next/link"; // 🔗 add Link
 
 const exploreItems = [
   {
-    subtitle: "Residential Solar",
-    description:
-      "Custom machinery to piping layouts, we bring concepts to life with cutting-edge CAD/CAM tools. Ever wondered how Indian industries keep scaling with precision? The answer lies in smart engineering like this.",
-    image: "/civil/mechenical enginer.jpg",
-    link: "/service/mechanical",
-  },
-  {
     subtitle: "Industrial Solar",
     description:
-      "Safe, sustainable, and future-ready—our civil designs balance strength with environmental care. From Indore’s growing roads to India's urban skylines, structural integrity is not just a choice, it’s a necessity.",
-    image: "/civil/civil engineer.JPG",
-    link: "/service/civil-engineering",
+      "Powering industries with large-scale solar installations designed for efficiency and reliability.Reduce your operational costs while achieving sustainability goals.Built to deliver uninterrupted energy for heavy-duty performance.",
+    image: "/solar/industrial solar.jpg",
   },
   {
     subtitle: "Commercial Solar",
     description:
-      "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
-    image: "/civil/Cae service.jpg",
-    link: "/service/cae-simulation",
+      "Engineered for maximum sunlight capture and long-term stability.Perfect for large open areas that demand high-output energy systems.A smart investment for sustainable, large-scale power generation.",
+    image: "/solar/commercial solar.jpg",
   },
   {
-    subtitle: "GROUND-MOUNTED SOLAR",
+    subtitle: " Ground-Mounted Solar",
     description:
-      "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
-    image: "/civil/Cae service.jpg",
-    link: "/service/cae-simulation",
+      "Engineered for maximum sunlight capture and long-term stability.Perfect for large open areas that demand high-output energy systems.A smart investment for sustainable, large-scale power generation.",
+    image: "/solar/ground mounted solar.jpg",
   },
   {
-    subtitle: " ROOFTOP SOLAR",
+    subtitle: "  Rooftop Solar",
     description:
-      "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
-    image: "/civil/Cae service.jpg",
-    link: "/service/cae-simulation",
+      "Turn idle roof space into a powerhouse of clean, renewable energy.Slash your electricity bills and boost your property’s value.Custom-designed systems for homes, offices, and factories alike.",
+    image: "/solar/rooftop solar.jpg",
   },
   {
-    subtitle: " Residential & Housing Societies",
+    subtitle: " Residential Solar",
     description:
-      "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
-    image: "/civil/Cae service.jpg",
-    link: "/service/cae-simulation",
+      "Empower your home with cost-effective solar technology.Enjoy energy independence and long-term savings effortlessly.Sleek, durable panels designed to blend with your modern lifestyle.",
+    image: "/solar/residential solar.jpg",
   },
   {
-    subtitle: " Solar Carport ",
+    subtitle: " Carport Solar ",
     description:
-      "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
-    image: "/civil/Cae service.jpg",
-    link: "/service/cae-simulation",
+      "Transform your parking space into a productive energy source.Provide shade while generating clean, renewable power.Ideal for homes, businesses, and commercial complexes.",
+    image: "/solar/carport solar.jpg",
   },
   {
-    subtitle: " Solar Parks",
+    subtitle: "Parks Solar",
     description:
-      "Why wait for failures when you can predict them early? With FEA, CFD, and advanced simulations, we help Indian manufacturers optimize products, cut costs, and stay ahead in a competitive market.",
-    image: "/civil/Cae service.jpg",
-    link: "/service/cae-simulation",
+      "Power public spaces sustainably with environment-friendly solar systems.Blend clean energy with aesthetics to support community initiatives.Perfect for green zones, recreational areas, and eco-parks.",
+    image: "/solar/park soalr.jpg",
   },
 ];
 
@@ -104,7 +90,7 @@ export default function Solarservices() {
 
   return (
     <section className="py-12 px-6 md:px-23 relative">
-      <h2 className="text-black text-3xl md:text-4xl font-bold mb-10 text-center">
+      <h2 className="text-[#000080] text-2xl md:text-3xl font-bold mb-10 text-center">
         Solar Solutions Services
       </h2>
 
@@ -115,9 +101,8 @@ export default function Solarservices() {
         }`}
       >
         {visibleItems.map((item, index) => (
-          <Link
+          <div
             key={index}
-            href={item.link} // 🔗 dynamic link
             className="relative rounded-xl overflow-hidden group cursor-pointer block"
           >
             <Image
@@ -131,9 +116,9 @@ export default function Solarservices() {
               <h4 className="text-white font-bold text-xl mb-2">
                 {item.subtitle}
               </h4>
-              <p className="text-gray-300 text-sm mb-3">{item.description}</p>
+              <p className="text-gray-300 text-md mb-3">{item.description}</p>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
 

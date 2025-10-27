@@ -8,7 +8,7 @@ const areas = [
     title: "Feasibility & Assessment (E-Phase)",
     subtitle: "Feasibility & Assessment (E-Phase)",
     description:
-      "In-depth site survey, detailed energy consumption analysis, financial modeling (ROI, PBP), and regulatory compliance check",
+      " Engineering (E) Phase starts with a detailed site inspection and energy analysis to figure out the best technical plan. We then calculate the Return on Investment (ROI) and Payback Period (PBP) to prove the financial benefit, making sure the entire project is set up for success and complies with all regulations.",
     image: "/preimages/photovoltaic-system-2742304_1280.jpg",
   },
   {
@@ -16,7 +16,7 @@ const areas = [
     title: "Design & Engineering (E-Phase)",
     subtitle: "Design & Engineering (E-Phase)",
     description:
-      "Precision electrical, civil, and structural design. Single-line diagrams, plant layout, and structural certification to meet all industrial standards.",
+      "Our engineering specialists craft comprehensive electrical, structural, and mechanical plans specific to your energy needs. We use advanced simulation tools to accurately forecast the energy yield, calculate your Return on Investment (ROI), and define clear payback schedules. This step guarantees your EPC solution is perfectly designed, both technically and financially optimized.",
     image:
       "/preimages/Solar Farm Electrical Testing and Commissioning_ Checklist and Procedures.jpg",
   },
@@ -25,7 +25,7 @@ const areas = [
     title: "Procurement & Logistics (P-Phase)",
     subtitle: "Procurement & Logistics (P-Phase)",
     description:
-      "Sourcing Tier-1 components at competitive prices. Rigorous quality control, secure supply chain management, and optimized logistics for timely delivery.",
+      "The Procurement (P) Phase focuses on securing Tier-1 components at highly competitive prices. We implement rigorous quality control and manage a secure supply chain, optimizing logistics to ensure all equipment arrives safely and precisely when needed.",
     image: "/green.png",
   },
   {
@@ -33,7 +33,7 @@ const areas = [
     title: "Construction & Installation (C-Phase)",
     subtitle: "Construction & Installation (C-Phase)",
     description:
-      "Professional, safe, and efficient on-site execution by certified teams, adhering to strict industrial safety and quality standards.",
+      "The Construction (C) Phase ensures professional execution by our certified teams. We manage the installation safely and efficiently on-site, strictly following all industrial safety and rigorous quality standards until the system is successfully energized.",
     image: "/preimages/construction Phase.jpeg",
   },
   {
@@ -41,7 +41,7 @@ const areas = [
     title: "Testing & Commissioning",
     subtitle: "Testing & Commissioning",
     description:
-      "Comprehensive performance testing (PR & Yield), grid synchronization, and final certification by regulatory bodies before commercial operation.",
+      "This stage involves rigorous Testing & Commissioning. Our experts conduct comprehensive performance ratio (PR) and energy yield tests to validate efficiency metrics against the design, followed by seamless grid synchronization. This phase culminates with securing the final necessary certification from regulatory bodies, officially clearing the system for commercial operation.",
     image: "/preimages/testing.png",
   },
   {
@@ -49,7 +49,7 @@ const areas = [
     title: "Operation & Maintenance (O&M)",
     subtitle: "Operation & Maintenance (O&M)",
     description:
-      "Long-term asset management, preventive maintenance, 24/7 remote monitoring, and guaranteed performance to maximize your power output.",
+      "The final step, Operation and Maintenance (O&M), ensures your asset's longevity. This involves long-term management and preventive maintenance, supported by remote monitoring to maximize power output and guarantee performance throughout the system's lifespan",
     image:
       "/preimages/ES Foundry to Supply 300MW of US-Made Solar Cells to Bila Solar.jpg",
   },
@@ -149,7 +149,7 @@ export default function Explore() {
                 {selectedArea.subtitle}
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-              <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
+              <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold ">
                 Contact{" "}
                 <span className=" p-1 rounded-full text-[#000080]">→</span>
               </button>

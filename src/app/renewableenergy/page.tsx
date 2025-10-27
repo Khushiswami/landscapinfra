@@ -19,6 +19,7 @@ import Renewableheader from "yes/Components/Renewableheader";
 import Form from "yes/Components/Renewable/Form";
 
 import Solarservices from "yes/Components/Solarservices";
+import Solarcontact from "yes/Components/Solarcontact";
 
 export default function Renewableenergy() {
   const [active, setActive] = useState(0);
@@ -64,16 +65,15 @@ export default function Renewableenergy() {
       <Form />
       <Accordion />
       <Renewableslider />
-      {/* <Operational />
-      <Vision /> */}
+
       <Explore />
       <Renewableplatform />
 
       <Renewablesolution />
 
       <Renewablenews />
-      {/* <Links heading="Quick Links" links={links} /> */}
       <PebBrandP />
+      <Solarcontact />
       <Footer />
     </>
   );

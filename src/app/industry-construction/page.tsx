@@ -193,7 +193,6 @@ export default function IndustryConstruction() {
           pre-engineered buildings are becoming increasingly popular.
         </p>
       </section>
-
       <Industryfooter />
     </>
   );
