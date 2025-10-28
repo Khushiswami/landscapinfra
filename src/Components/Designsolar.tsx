@@ -5,53 +5,43 @@ import { useState } from "react";
 const areas = [
   {
     id: 1,
-    title: "Feasibility & Assessment (E-Phase)",
-    subtitle: "Feasibility & Assessment (E-Phase)",
+    title: "Step 1: Site & Feasibility Analysis",
+    subtitle: "Site & Feasibility Analysis",
     description:
-      "In-depth site survey, detailed energy consumption analysis, financial modeling (ROI, PBP), and regulatory compliance check",
-    image: "/preimages/photovoltaic-system-2742304_1280.jpg",
+      "We begin by conducting a detailed feasibility study to evaluate the site’s solar potential, including irradiance levels, terrain, shading, and weather conditions. Using precise tools and satellite data, we calculate expected energy output and identify the best panel placement strategy. This ensures your project design is accurate, cost-efficient, and performance-driven. Every decision at this stage lays the groundwork for long-term reliability.",
+    image: "/solardesign/site audit.jpg",
   },
   {
     id: 2,
-    title: "Design & Engineering (E-Phase)",
-    subtitle: "Design & Engineering (E-Phase)",
+    title: "Step 2: System Configuration & Engineering Design",
+    subtitle: "System Configuration & Engineering Design",
     description:
-      "Precision electrical, civil, and structural design. Single-line diagrams, plant layout, and structural certification to meet all industrial standards.",
-    image:
-      "/preimages/Solar Farm Electrical Testing and Commissioning_ Checklist and Procedures.jpg",
+      "Once the site parameters are finalized, our engineers develop a customized solar system configuration using advanced design software and 3D modeling tools. Each component — from PV modules to inverters and cabling — is selected based on energy demand, space, and project objectives. The goal is to balance technical precision with operational efficiency. Our designs ensure seamless integration with your existing electrical infrastructure.",
+    image: "/solardesign/System Configuration.jpg",
   },
   {
     id: 3,
-    title: "Procurement & Logistics (P-Phase)",
-    subtitle: "Procurement & Logistics (P-Phase)",
+    title: "Step 3: Structural & Electrical Drawings",
+    subtitle: "Structural & Electrical Drawings",
     description:
-      "Sourcing Tier-1 components at competitive prices. Rigorous quality control, secure supply chain management, and optimized logistics for timely delivery.",
-    image: "/green.png",
+      "We create detailed construction-ready layouts covering the module mounting structures, electrical wiring, cable routing, and grounding systems. Every design follows IEC and IS standards for safety, durability, and regulatory compliance. Our technical documentation enables clear communication between engineering and on-site teams. This ensures smooth execution and reduced construction errors during installation.",
+    image: "/solardesign/Structural & Electrical Drawings .jpg",
   },
   {
     id: 4,
-    title: "Construction & Installation (C-Phase)",
-    subtitle: "Construction & Installation (C-Phase)",
+    title: "Step 4: Performance Optimization",
+    subtitle: "Performance Optimization",
     description:
-      "Professional, safe, and efficient on-site execution by certified teams, adhering to strict industrial safety and quality standards.",
-    image: "/preimages/construction Phase.jpeg",
+      "Before final delivery, we simulate energy generation scenarios to identify potential inefficiencies and optimize performance parameters. Our team refines system orientation, tilt angles, and cable paths to enhance power output. This data-driven optimization improves both yield and stability over the system’s lifetime. The result is a future-ready solar solution that operates at peak efficiency throughout its lifecycle.",
+    image: "/solardesign/Performance Optimization.jpg",
   },
   {
     id: 5,
-    title: "Testing & Commissioning",
-    subtitle: "Testing & Commissioning",
+    title: "Step 5: Documentation & Delivery",
+    subtitle: "Documentation & Delivery",
     description:
-      "Comprehensive performance testing (PR & Yield), grid synchronization, and final certification by regulatory bodies before commercial operation.",
-    image: "/preimages/testing.png",
-  },
-  {
-    id: 6,
-    title: "Operation & Maintenance (O&M)",
-    subtitle: "Operation & Maintenance (O&M)",
-    description:
-      "Long-term asset management, preventive maintenance, 24/7 remote monitoring, and guaranteed performance to maximize your power output.",
-    image:
-      "/preimages/ES Foundry to Supply 300MW of US-Made Solar Cells to Bila Solar.jpg",
+      "At the final stage, we compile complete design documentation — including single-line diagrams, bills of materials, compliance reports, and performance data sheets. These documents are structured for EPC execution, tenders, or direct implementation. We ensure total transparency and technical clarity for all stakeholders. With a ready-to-execute design package, your project moves seamlessly toward construction.",
+    image: "/solardesign/documentation.jpg",
   },
 ];
 
@@ -64,7 +54,7 @@ export default function Designsolar() {
   return (
     <section className=" mx-auto px-4 py-10 md:px-28">
       <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
-        Our Solar Design Process
+        Our Solar Design Process — From Insight to Implementation{" "}
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">

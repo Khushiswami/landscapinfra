@@ -177,20 +177,17 @@ export default function Sandwichpanels() {
   };
   const slides = [
     {
-      image: "/expertise/third.png",
-      title: "Prefabricated Structure",
-      link: "#",
+      image: "/menupageimg/sap-pub.jpg",
+      title: "PUF Panels",
     },
 
     {
-      image: "/expertise/third.png",
-      title: "Labor Hutment",
-      link: "#",
+      image: "/menupageimg/sp-eps.png",
+      title: "EPC Panels",
     },
     {
-      image: "/expertise/third.png",
-      title: "Control Room",
-      link: "#",
+      image: "/menupageimg/sp-Rockwool-Panel.jpg",
+      title: "Rockwool Panel",
     },
   ];
 
@@ -254,7 +251,7 @@ export default function Sandwichpanels() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →

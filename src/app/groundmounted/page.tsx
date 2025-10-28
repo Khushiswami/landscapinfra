@@ -170,7 +170,7 @@ export default function Groundmounted() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video/modular.mp4" type="video/mp4" />
+          <source src="/solarvideo/Ground mounted solar (1)" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/40"></div>
 

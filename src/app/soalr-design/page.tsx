@@ -12,15 +12,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { useRouter } from "next/navigation";
-import { PencilRuler, Building2 } from "lucide-react";
 import {
-  FaTools,
-  FaBolt,
-  FaShieldAlt,
-  FaLeaf,
   FaCogs,
-  FaExpand,
+  FaCheckCircle,
+  FaChartLine,
+  FaBolt,
+  FaProjectDiagram,
+  FaGlobeAmericas,
 } from "react-icons/fa";
+
 import Designsolar from "yes/Components/Designsolar";
 
 export default function Solardesign() {
@@ -46,86 +46,63 @@ export default function Solardesign() {
   // ✅ Moved slides & features outside of handleClick
   const slides = [
     {
-      image: "/preimages/office.jpg",
-      title: "Pre-fab Office",
-      link: "/prefabricatedSite",
+      image: "/solardesign/asur.jpg",
+      title: "Assured Compliance",
     },
     {
-      image: "/preimages/industrial-enclosure.jpg",
-      title: "Industrial Enclosures",
-      link: "/industrialEnclosures",
-    },
-    {
-      image: "/preimages/railway-shelter.jpg",
-      title: "Railway Shelters",
-      link: "/railwayShelters",
-    },
-    {
-      image: "/preimages/control-room.jpg",
-      title: "Control Room",
-      link: "/controlRoom",
-    },
-    {
-      image: "/preimages/cleanroomk.jpg",
-      title: "Clean Room",
-      link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/acoustic.jpg",
-      title: "Acoustic Enclosure",
-      link: "/acousticEnclosure",
+      image: "/solardesign/prd.jpg",
+      title: "Precision-Driven Designs",
     },
   ];
 
   const features = [
     {
-      title: "Custom-Built Design",
+      title: "Precision-Driven Design",
       description:
-        "Fully tailored to your operational and architectural requirements, ensuring precision and efficiency.",
+        "Every design is tailored using site-specific data for maximum solar efficiency and performance.",
       icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Quick Installation",
+      title: "Assured Compliance",
       description:
-        "Factory-engineered components allow rapid onsite assembly, saving both time and labor costs.",
-      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
+        "All systems meet IEC, NEC, and local DISCOM standards for safety and reliability.",
+      icon: <FaCheckCircle className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Cost-Efficient Construction",
+      title: "Optimized Investment",
       description:
-        "Optimized designs reduce material waste and overall construction expenses.",
+        "Smart layouts minimize cost, material usage, and maintenance over time.",
+      icon: <FaChartLine className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Rapid Project Delivery",
+      description:
+        "Get accurate designs and reports in days to accelerate your project timeline.",
       icon: <FaBolt className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Durable and Low Maintenance",
+      title: "Seamless Integration Support",
       description:
-        "Built to withstand harsh weather and seismic conditions with minimal upkeep.",
-      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
+        "Solar + storage solutions ensure uninterrupted power and lower peak energy costs.",
+      icon: <FaProjectDiagram className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Energy Efficient",
+      title: "Global-Grade Standards",
       description:
-        "Insulated wall and roof panels provide excellent temperature control and energy savings.",
-      icon: <FaLeaf className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Expandable & Flexible",
-      description:
-        "Easily scalable and adaptable to meet future growth and business requirements.",
-      icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
+        "Each solution meets international benchmarks for quality, durability, and efficiency.",
+      icon: <FaGlobeAmericas className="text-[#000080] text-3xl mb-4" />,
     },
   ];
   const faqs: FAQ[] = [
     {
-      question: "Is a Pre-Engineered Building a permanent structure?",
+      question: "What is included in LandsKing Infra’s solar design services?",
       answer:
-        "Yes, modern PEBs are classified as capital-grade, permanent structures with a service life of 50–75 years or more, matching conventional longevity.",
+        "LandsKing Infra’s solar design services include everything from initial site feasibility studies and shadow analysis to detailed 3D modeling, electrical layouts, and performance simulations. We create optimized system designs that ensure maximum energy generation and long-term reliability. Our team also prepares complete documentation for DISCOM and regulatory approvals. Each project is tailored to meet client goals and on-site conditions. ",
     },
     {
-      question:
-        "What is the typical maintenance cost difference between a PEB and a conventional building? ",
+      question: "Who are your solar design services best suited for?",
       answer:
-        "The durable, coated steel and specialized roofing inherently resist pests and weather. This results in an estimated 30–40% lower long-term maintenance cost compared to masonry or wood alternatives, securing your operational budget.",
+        " We work with EPC firms, project developers, consultants, and industries looking for reliable, cost-effective, and high-performance solar design solutions tailored to their specific energy and site requirements.",
     },
     {
       question:
@@ -134,22 +111,29 @@ export default function Solardesign() {
         "The primary material, steel, contains a high percentage of recycled content and is fully recyclable. Choosing a PEB is a commitment to a resource-efficient, lower-impact construction lifecycle.",
     },
     {
-      question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
+      question: " How long does it take to complete a solar design?",
       answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+        " Most solar design projects are completed within 3 to 7 working days, depending on system scale and complexity.Our team uses automated workflows and advanced modeling tools to speed up delivery without compromising quality.This ensures your project moves from concept to approval faster and more efficiently.",
     },
     {
-      question:
-        "Can I easily install a bridge or overhead crane system in a Pre-Engineered Metal Building?",
+      question: "How do you ensure accuracy and compliance?",
       answer:
-        "Yes, PEBs are holistically engineered for heavy operational requirements. Columns and rafters are custom-designed during fabrication to safely bear the dynamic loads of overhead equipment.",
+        " Every design is created using advanced simulation tools and verified against IEC, NEC, and DISCOM regulations. Multiple quality checks ensure full technical accuracy and approval-ready documentation.",
     },
     {
-      question:
-        "Do PEBs typically require a lighter or shallower foundation than traditional construction? ",
+      question: " Do you offer design support beyond initial project planning?",
       answer:
-        " Due to optimized design and lighter material weight, PEBs generally require a simpler and more economical foundation, accelerating the project’s earliest phase.",
+        " Yes. We provide ongoing technical support, performance optimization, and design revisions during project execution to ensure your solar system performs exactly as planned.",
+    },
+    {
+      question: "Can LandsKing Infra assist with tender or bid submissions?",
+      answer:
+        " Absolutely. We deliver detailed design packages — including single-line diagrams, BOM, and yield reports — that help EPCs and developers submit competitive and technically sound solar tenders.",
+    },
+    {
+      question: "Do you provide international solar design support?",
+      answer:
+        "Yes, we serve clients worldwide with solar designs tailored to regional conditions, grid standards, and compliance codes.Our team adapts layouts for diverse terrains, climates, and regulatory frameworks  Whether your project is in India or overseas, we ensure globally benchmarked quality and precision.",
     },
   ];
   return (
@@ -165,7 +149,7 @@ export default function Solardesign() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video/modular.mp4" type="video/mp4" />
+          <source src="/solarvideo/design.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -173,15 +157,15 @@ export default function Solardesign() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container  px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mx-auto md:mx-18">
           {/* Text Section */}
           <div className="text-center lg:text-left mt-16 lg:mt-0">
             <h1 className="text-4xl md:text-5xl font-bold leading-snug mb-4">
-              Ground Mounted{" "}
+              Solar Design & Engineering
             </h1>
             <p className="text-lg max-w-md mx-auto lg:mx-0">
-              Build your project offsite with precision and speed. Enjoy faster
-              completion and effortless on-site assembly for seamless results.
+              Crafting Intelligent Energy Systems that Balance Performance,
+              Aesthetics, and Sustainability.
             </p>
           </div>
 
@@ -207,7 +191,7 @@ export default function Solardesign() {
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-semibold">{slide.title}</h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline"
                       >
                         Read more →
@@ -223,49 +207,23 @@ export default function Solardesign() {
       <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Landsking Infra Fabrication Solutions
+            <h2 className="text-xl sm:text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
+              Tailored Solar Design Solutions
             </h2>
-            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-1 mx-auto md:mx-30 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Landsking Infra delivers sturdy and cost-efficient
-                <span className="text-[#000080] font-semibold">
-                  {" "}
-                  Fabrication Solutions{" "}
-                </span>
-                Landsking Infra delivers precision-engineered fabrication
-                services for industrial, commercial, and infrastructure
-                projects, ensuring strength, accuracy, and long-lasting
-                performance. Our expertise covers heavy steel structures,
-                customized sheet metal works, and complex assemblies tailored to
-                client requirements. Equipped with an ISO-compliant fabrication
-                facility, we maintain stringent quality standards while ensuring
-                timely project delivery and smooth onsite erection. Our team of
-                skilled welders and certified fabrication engineers works
-                closely with civil and structural teams to guarantee seamless
-                project execution. From design coordination to final
-                installation, Landsking Infra provides reliable, efficient, and
-                high-quality fabrication solutions that meet industry standards
-                and project timelines.
+              <p className="text-gray-700 text-center mb-4 text-sm sm:text-base">
+                At LandsKing Infra, we believe every solar project deserves a
+                design as unique as its environment. Our team crafts customized
+                solar layouts built around your site’s conditions, energy goals,
+                and financial objectives. From rooftop structures to large-scale
+                ground systems, every design is optimized for maximum
+                efficiency, safety, and long-term reliability. We don’t just
+                create solar plans — we engineer intelligent energy ecosystems
+                that deliver measurable performance and enduring value.
               </p>
-
-              <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
-              </div>
-            </div>
-
-            <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
-              <img
-                src="/Industrial-Buildings-Construction.webp"
-                alt="Industrial Building"
-                className="object-cover rounded-lg shadow-lg"
-              />
             </div>
           </div>
         </div>
@@ -276,17 +234,20 @@ export default function Solardesign() {
       {/* ===== CTA Section ===== */}
 
       {/* ===== Key Features ===== */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-29">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Key Features of{" "}
+            Why Choose
             <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
+              LandsKing Infra for Solar Engineering Design
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            Our Pre-Engineered Buildings are designed for innovation,
-            durability, and efficiency.
+            The foundation of every successful solar project lies in its
+            design.At LandsKing Infra, we blend precision engineering with
+            real-world insights to build efficient, compliant, and future-ready
+            systems. Our expertise reduces rework, speeds up approvals, and
+            drives higher project returns.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -307,7 +268,7 @@ export default function Solardesign() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-4 py-12 md:mx-10 ">
+      <section className=" mx-auto px-4 py-12 md:mx-22 ">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">

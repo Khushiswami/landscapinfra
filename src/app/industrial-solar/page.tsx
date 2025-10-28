@@ -4,13 +4,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Footer from "yes/Components/Footer";
 import {
-  Construction,
-  Building2,
-  Plug,
-  Landmark,
-  Cuboid,
-  FileText,
-  Flame,
+  MapPin,
+  Wrench,
+  FileSpreadsheet,
+  CheckCircle,
+  Power,
+  PlugZap,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -34,156 +33,139 @@ export default function Industrial() {
   const areas = [
     {
       id: 1,
-      title: "Prefab Site Infrastructure ",
-      subtitle: "Prefab Site Infrastructure Solutions",
+      title: "Custom System Design ",
+      subtitle: "Custom System Design",
       description:
-        "At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
-      image: "/menupageimg/mod15.png",
+        "We conduct a detailed site assessment and load analysis to design solar systems that are precisely aligned with your operational requirements. Each solution is engineered to maximize energy output, optimize ROI, and ensure long-term operational reliability, reflecting a strategic approach to sustainable energy adoption.",
+      image: "/industryimg/",
+    },
+
+    {
+      id: 1,
+      title: "End-to-End Delivery ",
+      subtitle: "End-to-End Delivery",
+      description:
+        "From feasibility assessment and detailed engineering to procurement, installation, and commissioning, we manage the entire project lifecycle as a single accountable entity. This integrated approach guarantees seamless execution, timely delivery, and superior quality performance without requiring you to coordinate multiple vendors.",
+      image: "/industryimg/",
     },
     {
-      id: 2,
-      title: "Prefab Site Office",
-      subtitle: "Prefab Site Office",
+      id: 1,
+      title: "Regulatory & Net-Metering Support ",
+      subtitle: "Regulatory & Net-Metering Support",
       description:
-        "At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
-      image: "/menupageimg/mod4.png",
+        "We navigate the complexities of regulatory compliance, approvals, and net-metering on your behalf, making it easier for your business to adopt solar energy smoothly and benefit from government incentives.",
+      image: "/industryimg/",
     },
     {
-      id: 3,
-      title: "Labor Hutments",
-      subtitle: "Prefabricated Industrial Shed Manufacturers",
+      id: 1,
+      title: "Flexible Financing ",
+      subtitle: "Flexible Financing",
       description:
-        "We manufacture high-quality prefabricated industrial sheds that are strong, versatile, and tailored to meet the specific requirements of various industries.",
-      image: "/preimages/shed.jpg",
+        "We offer multiple financing options to suit different business models and budgets, including CAPEX (capital investment), OPEX (operating expenditure), and zero-investment RESCO models.we empower organizations to deploy solar infrastructure with minimal financial friction while achieving strategic energy and sustainability goals.",
+      image: "/industryimg/",
     },
     {
-      id: 4,
-      title: "Portable Security Guard Cabins",
-      subtitle: "Portable Security Guard Cabins",
+      id: 1,
+      title: "Asset Management & Monitoring ",
+      subtitle: "Asset Management & Monitoring",
       description:
-        "Portable Security Guard Cabins are compact, movable structures designed to provide a safe, comfortable, and functional workspace for security personnel. Built with durable materials such as steel, aluminum, or high-quality insulated panels, these cabins are weather-resistant and sturdy, ensuring long-lasting use in both indoor and outdoor environments.",
-      image: "/menupageimg/mod8.jpg",
-    },
-    {
-      id: 5,
-      title: "Clean Room",
-      subtitle: "Clean Room",
-      description:
-        "offers advanced cleanroom solutions for controlled environments in industries like pharmaceuticals, electronics, and biotechnology. Our cleanrooms are designed with precision to meet stringent hygiene, airflow, and temperature control standards, ensuring optimal conditions for sensitive operations.",
-      image: "/preimages/cleanroomk.jpg",
-    },
-    {
-      id: 6,
-      title: "Prefabricated Toilet",
-      subtitle: "Prefabricated Toilet",
-      description:
-        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-      image: "/preimages/toilet.jpg",
-    },
-    {
-      id: 7,
-      title: "Prefab Porta Cabins",
-      subtitle: "Prefab Porta Cabins Manufacturer",
-      description:
-        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
-      image: "/preimages/porta.jpg",
-    },
-    {
-      id: 8,
-      title: "Railway Shelters",
-      subtitle: "Railway Shelters",
-      description:
-        "Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
-      image: "/menupageimg/mod12.jpg",
-    },
-    {
-      id: 9,
-      title: "Cold Storage & Cold Room Manufacturer",
-      subtitle: "Railway Shelters",
-      description:
-        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
-      image: "/menupageimg/cold4.png",
+        "Through advanced real-time monitoring, predictive maintenance, and proactive performance optimization to safeguard your solar assets. Continuous tracking and proactive management ensure maximum energy yield, minimize downtime, and extend the lifespan of your solar system.",
+      image: "/industryimg/",
     },
   ];
   const servicesing = [
     {
       id: 1,
-      icon: <Construction className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Civil Engineering Services",
-      desc: "Landscapinfra offers reliable and affordable civil engineering support for site layout, infrastructure, and urban projects. We work on roads, bridges, drainage, and land development to ensure strong and lasting results.",
+      icon: <MapPin className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Step 1: Site Evaluation",
+      desc: "We start by inspecting your rooftop to analyze energy needs, structure, orientation, and shading to ensure it can support an efficient solar system.",
     },
     {
       id: 2,
-      icon: <Building2 className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Structural Engineering Services",
-      desc: "We design and plan safe, stable, and efficient structures for all kinds of projects. From industrial buildings to heavy foundations, our team ensures strength and performance in every design.",
+      icon: (
+        <FileSpreadsheet className="w-8 h-8 text-white" aria-hidden="true" />
+      ),
+      title: "Step 2: Customized System Design",
+      desc: "A tailored solar solution designed to match your energy needs, roof layout, and power supply — balancing safety, efficiency, and long-term reliability.",
     },
     {
       id: 3,
-      icon: <Plug className="w-8 h-8 text-white " aria-hidden="true" />,
-      title: "Electrical Engineering Services",
-      desc: "Our team provides practical electrical design solutions for power systems, control panels, and automation setups. We help industries keep their operations safe, efficient, and well-connected.",
+      icon: <CheckCircle className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Step 3: Approvals & Metering",
+      desc: "We handle all necessary approvals and metering so your solar system integrates seamlessly with the grid without delays or hurdles.",
     },
     {
       id: 4,
-      icon: <Landmark className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Infrastructure Engineering Services",
-      desc: "We handle complete infrastructure planning and coordination for utilities, transport systems, and plant layouts. Every design is precise, clear, and ready for construction.",
+      icon: <Wrench className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Step 4: Installation & Construction",
+      desc: "Our skilled engineers follow best practices to install panels and connections, ensuring safety, durability, and peak performance.",
     },
     {
       id: 5,
-      icon: <Cuboid className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "BIM Services",
-      desc: "Our Building Information Modeling (BIM) helps reduce errors and improve project speed. We use smart 3D models to plan, estimate, and coordinate work more effectively.",
+      icon: <Power className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Step 5: System Commissioning",
+      desc: "Before going live, every system undergoes rigorous testing to confirm stability, efficiency, and seamless operation.",
     },
     {
       id: 6,
-      icon: <FileText className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Technical Manuals & Engineering Documentation",
-      desc: "We create clear and accurate manuals, SOPs, and datasheets to support training, operations, and audits. Each document is simple, useful, and reliable.",
-    },
-    {
-      id: 7,
-      icon: <Flame className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Fire Protection Engineering Services",
-      desc: "We design effective fire protection systems with accurate planning and safety checks. Our service helps ensure protection for industrial plants, offices, and public buildings.",
+      icon: <PlugZap className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Step 6: Grid Connection & Net Metering",
+      desc: "Once connected, your rooftop starts working as a full-fledged power plant, reducing costs and exporting surplus energy for extra savings.",
     },
   ];
   const possibilities = [
     {
-      subtitle: "High Tolerance & Durability",
+      subtitle: "Profit with Sunshine",
       description:
-        "Engineered with high tolerance, corrosion resistance, and exceptional durability to ensure reliable long-term performance.",
+        "Harness solar energy to generate returns quickly, often within two years.",
       image: "/preimages/benone.jpg",
     },
     {
-      subtitle: "Dimensional Accuracy",
+      subtitle: "Effortless Upkeep",
       description:
-        "Precision manufacturing guarantees exact dimensional accuracy, ensuring the final product meets and exceeds client expectations.",
+        "Minimize routine maintenance and free resources for essential business needs.",
       image: "/preimages/bentwo.jpg",
     },
     {
-      subtitle: "Quick Erection & Installation",
+      subtitle: "Predictable Energy Costs",
       description:
-        "Designed for rapid erection, enabling swift installation even in complex or challenging site conditions.",
+        "Take charge of your electricity expenses with self-produced power.",
       image: "/preimages/quick.png",
     },
     {
-      subtitle: "Thermal Efficiency",
+      subtitle: "Enhance Asset Value",
       description:
-        "Insulated panels maintain a 5–7°C temperature difference, significantly enhancing energy efficiency and comfort.",
+        "Solar installations increase property worth and make facilities more appealing.",
       image: "/preimages/benthree.jpg",
     },
     {
-      subtitle: "Accelerated Project Timelines",
+      subtitle: "Tax Advantages & Depreciation",
       description:
-        "Optimized production and installation processes ensure timely delivery, meeting tight project schedules.",
+        "Benefit from annual 40% depreciation and other tax incentives for smarter investments.",
       image: "/preimages/",
     },
     {
-      subtitle: "Robust Construction",
+      subtitle: "Eco-Leverage Your Brand",
       description:
-        "Strong and sturdy construction ensures long service life, structural stability, and reliable performance.",
+        "Showcase sustainability and environmental responsibility to strengthen your brand image.",
+      image: "/preimages/",
+    },
+    {
+      subtitle: "Cooler Workspaces",
+      description:
+        "Solar panels help reduce shed temperatures by approximately 4°C.",
+      image: "/preimages/",
+    },
+    {
+      subtitle: "Protection for Structures",
+      description:
+        "Extend the lifespan of sheds and RCC buildings by shielding them from direct sunlight.",
+      image: "/preimages/",
+    },
+    {
+      subtitle: "Future-Proof Your Energy Bills",
+      description:
+        "Safeguard your operations against rising electricity tariffs with reliable solar power.",
       image: "/preimages/",
     },
   ];
@@ -289,7 +271,7 @@ export default function Industrial() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video/modular.mp4" type="video/mp4" />
+          <source src="/solarvideo/industrial solar.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -348,35 +330,30 @@ export default function Industrial() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-16">
+      <section className="bg-white py-12 px-4 md:px-25">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Smart and Flexible Solutions for Modern Building{" "}
+              Industrial Solar
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Lightweight, durable, relocatable, economical, and
-              energy-efficient, prefabricated structures are increasingly
-              recognized as a modern and sustainable alternative to conventional
-              construction methods. These innovative solutions meet all the
-              functional requirements of traditional buildings while offering
-              added advantages such as faster execution, cost savings, and
-              design flexibility.{" "}
+              LandsKing Infra is one of India’s most trusted names in industrial
+              solar rooftop solutions, delivering high-performance, sustainable
+              energy systems. From design to installation, our customized solar
+              solutions are engineered to optimize energy efficiency for
+              industries across the country. By adopting LandsKing Infra’s solar
+              systems, businesses not only achieve significant cost savings and
+              reduced grid dependency but also demonstrate a strong commitment
+              to environmental stewardship and sustainable growth. At LandsKing
+              Infra, we believe that powering businesses with clean energy is
+              more than a technical solution—it is a strategic investment in a
+              resilient, greener future.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              At Landsking Infra Pvt. Ltd, we specialize in delivering
-              high-quality prefabricated structures tailored to diverse
-              applications. Our dry construction process enables quicker project
-              timelines and greater efficiency. Manufactured with premium-grade
-              steel frames and insulated panels, our modular solutions are
-              engineered for long-lasting durability and ease of installation.{" "}
-            </p>
-
-            <Link href="/peb-contact">
+            <Link href="/solar-contact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
@@ -391,9 +368,9 @@ export default function Industrial() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-4 py-10 md:mx-12">
+      <section className=" mx-auto px-4 py-10 md:mx-23">
         <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
-          Offering
+          Offerings
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
@@ -489,14 +466,14 @@ export default function Industrial() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-150 object-cover"
+                  className="w-full h-64 md:h-80 object-cover"
                 />
               </div>
             </div>
           )}
         </div>
       </section>
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#000080]">
             Steps EPC Approach
@@ -523,12 +500,12 @@ export default function Industrial() {
             ))}
           </div>
         </div>
-      </section>
-
+      </section> */}
+      {/* imaeg */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4 md:mx-12">
+        <div className=" mx-auto px-4 md:mx-23">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits
+            Benefits for Industries with landsking infra
           </h2>
 
           {/* Cards Row */}
@@ -566,13 +543,16 @@ export default function Industrial() {
           </div>
         </div>
       </section>
-      <section className="max-w-7xl mx-auto px-5 py-10">
+      <section className=" mx-auto px-5 py-10 md:mx-22">
         <header className="text-center mb-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
-            Steps
+            How we Can Help Your Industry Benefit from Custom Solar?
           </h2>
           <p className="mt-2 text-sm text-slate-500">
-            Expert solutions across every discipline of engineering excellence.
+            At LandsKing Infra, we specialize in industrial rooftop solar
+            solutions, starting from 150 kW. Our team analyzes your facility to
+            design customized systems that maximize efficiency, reduce energy
+            costs, and deliver long-term sustainable value.
           </p>
         </header>
 

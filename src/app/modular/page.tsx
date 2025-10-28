@@ -252,34 +252,25 @@ export default function Modular() {
   };
   const slides = [
     {
-      image: "/preimages/",
+      image: "/menupagetwo/pso-7.png",
       title: "Pre-fab Office",
       link: "/prefabricatedSite",
     },
     {
-      image: "/preimages/industrial encloset.jpg",
+      image: "/menupagetwo/ind-1.jpg",
       title: "Industrial Enclousers",
       link: "/industrialEnclousers",
     },
     {
-      image: "/preimages/",
+      image: "/new-images/railway-shelters-1.jpg",
       title: "Railway Shelters",
       link: "/railwayShelters",
     },
-    {
-      image: "/preimages/",
-      title: "Control Room",
-      link: "/coldRoom",
-    },
+
     {
       image: "/preimages/cleanroomk.jpg",
       title: "Clean Room",
       link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/",
-      title: "Acoustic Enclosure",
-      link: "/",
     },
   ];
 

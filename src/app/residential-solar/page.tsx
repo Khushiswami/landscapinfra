@@ -4,13 +4,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Footer from "yes/Components/Footer";
 import {
-  Construction,
-  Building2,
-  Plug,
-  Landmark,
-  Cuboid,
+  MapPin,
+  FileSpreadsheet,
+  Users,
+  CheckCircle,
   FileText,
-  Flame,
+  FileSignature,
+  ClipboardCheck,
+  Wrench,
+  Banknote,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -27,6 +29,10 @@ import Renewableheader from "yes/Components/Renewableheader";
 import Solarcontact from "yes/Components/Solarcontact";
 
 export default function Residential() {
+  interface FAQ {
+    question: string;
+    answer: string;
+  }
   const areas = [
     {
       id: 1,
@@ -104,45 +110,61 @@ export default function Residential() {
   const servicesing = [
     {
       id: 1,
-      icon: <Construction className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Civil Engineering Services",
-      desc: "Landscapinfra offers reliable and affordable civil engineering support for site layout, infrastructure, and urban projects. We work on roads, bridges, drainage, and land development to ensure strong and lasting results.",
+      icon: <MapPin className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Site Assessment",
+      desc: "Our experts visit your location to evaluate the roof’s strength, sunlight exposure, and solar suitability.",
     },
     {
       id: 2,
-      icon: <Building2 className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Structural Engineering Services",
-      desc: "We design and plan safe, stable, and efficient structures for all kinds of projects. From industrial buildings to heavy foundations, our team ensures strength and performance in every design.",
+      icon: (
+        <FileSpreadsheet className="w-8 h-8 text-white" aria-hidden="true" />
+      ),
+      title: "Proposal & Design",
+      desc: "We share a customized quotation and detailed solar layout designed for maximum performance.",
     },
     {
       id: 3,
-      icon: <Plug className="w-8 h-8 text-white " aria-hidden="true" />,
-      title: "Electrical Engineering Services",
-      desc: "Our team provides practical electrical design solutions for power systems, control panels, and automation setups. We help industries keep their operations safe, efficient, and well-connected.",
+      icon: <Users className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Community Approval",
+      desc: "A meeting with your society or building members ensures smooth approval for installation.",
     },
     {
       id: 4,
-      icon: <Landmark className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Infrastructure Engineering Services",
-      desc: "We handle complete infrastructure planning and coordination for utilities, transport systems, and plant layouts. Every design is precise, clear, and ready for construction.",
+      icon: <CheckCircle className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Final Confirmation",
+      desc: "Once approved, our team finalizes all technical and structural details before installation begins.",
     },
     {
       id: 5,
-      icon: <Cuboid className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "BIM Services",
-      desc: "Our Building Information Modeling (BIM) helps reduce errors and improve project speed. We use smart 3D models to plan, estimate, and coordinate work more effectively.",
+      icon: <FileText className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Document Submission",
+      desc: "Submit basic documents like ID proof, tax bill, and bank details to initiate the process.",
     },
     {
       id: 6,
-      icon: <FileText className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Technical Manuals & Engineering Documentation",
-      desc: "We create clear and accurate manuals, SOPs, and datasheets to support training, operations, and audits. Each document is simple, useful, and reliable.",
+      icon: <FileSignature className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Rooftop Agreement",
+      desc: "A formal agreement is signed with all owners to authorize solar setup on the terrace.",
     },
     {
       id: 7,
-      icon: <Flame className="w-8 h-8 text-white" aria-hidden="true" />,
-      title: "Fire Protection Engineering Services",
-      desc: "We design effective fire protection systems with accurate planning and safety checks. Our service helps ensure protection for industrial plants, offices, and public buildings.",
+      icon: (
+        <ClipboardCheck className="w-8 h-8 text-white" aria-hidden="true" />
+      ),
+      title: "DISCOM Inspection",
+      desc: "The DISCOM representative reviews and approves the site before grid connection.",
+    },
+    {
+      id: 8,
+      icon: <Wrench className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Installation Day",
+      desc: "Our skilled team installs the solar system with precision and ensures safety compliance.",
+    },
+    {
+      id: 9,
+      icon: <Banknote className="w-8 h-8 text-white" aria-hidden="true" />,
+      title: "Government Subsidy",
+      desc: "After activation, eligible subsidies are directly credited to the homeowner’s bank account.",
     },
   ];
   const possibilities = [
@@ -221,38 +243,52 @@ export default function Residential() {
   };
   const slides = [
     {
-      image: "/preimages/",
-      title: "Pre-fab Office",
-      link: "/prefabricatedSite",
+      image: "/resi/ongrid.png",
+      title: "On grid",
     },
     {
-      image: "/preimages/industrial encloset.jpg",
-      title: "Industrial Enclousers",
-      link: "/industrialEnclousers",
+      image: "/resi/hybrid.png",
+      title: "Hybrid Rooftops",
     },
     {
-      image: "/preimages/",
-      title: "Railway Shelters",
-      link: "/railwayShelters",
-    },
-    {
-      image: "/preimages/",
-      title: "Control Room",
-      link: "/coldRoom",
-    },
-    {
-      image: "/preimages/cleanroomk.jpg",
-      title: "Clean Room",
-      link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/",
-      title: "Acoustic Enclosure",
-      link: "/",
+      image: "/resi/off.png",
+      title: "Off-grid rooftops",
     },
   ];
-
-  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const faqs: FAQ[] = [
+    {
+      question: "How does rooftop solar help the environment?",
+      answer:
+        "Switching to solar power means reducing your carbon footprint and cutting down on fossil fuel use. Every rooftop system helps prevent tons of CO₂ emissions annually—making your business greener and more sustainable.",
+    },
+    {
+      question: "How can solar power lower business expenses?",
+      answer:
+        "With rooftop solar, your business can generate its own electricity, reducing monthly power bills and dependence on the grid. Over time, the savings easily outweigh the initial investment, turning solar into a smart financial decision.",
+    },
+    {
+      question:
+        "How does LandsKing Infra support large industrial solar projects?",
+      answer:
+        "At LandsKing Infra, we handle everything—from detailed site studies and engineering design to installation and maintenance. Our team ensures each system is tailored to your site, maximizing output while maintaining safety and compliance.",
+    },
+    {
+      question:
+        "Are there any government incentives for industrial rooftop solar in India?",
+      answer:
+        "Yes, industries can benefit from net metering, accelerated depreciation, and various state-level subsidy programs. These incentives help reduce upfront costs and improve the overall return on investment for solar adoption.",
+    },
+    {
+      question: "What kind of warranty and after-sales service do I get?",
+      answer:
+        "Solar panels usually come with a 25-year performance warranty, while inverters are covered for 5–10 years. At LandsKing Infra, we go beyond installation with maintenance support, regular system check-ups, and performance monitoring.",
+    },
+    {
+      question: "Can solar panels be installed on any type of roof?",
+      answer:
+        "Absolutely. Whether your roof is RCC, metal, or tiled, our mounting systems are designed to fit perfectly. Each setup is customized for strength, safety, and the best possible sunlight exposure for higher energy generation.",
+    },
+  ];
 
   return (
     <>
@@ -266,7 +302,7 @@ export default function Residential() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video/modular.mp4" type="video/mp4" />
+          <source src="/solarvideo/residential solar.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -278,12 +314,12 @@ export default function Residential() {
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-10">
-              Modular Building Solutions
+              Residential solar
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-10">
-              Build your project offsite with fast accuracy and quality. Enjoy
-              faster completion and effortless on-site assembly for seamless
-              results.
+              Get up to ₹1 Lakh in total savings — including exclusive LandsKing
+              Infra benefits and government subsidies. Power your home with
+              clean energy while reducing costs from day one.
             </p>
           </div>
 
@@ -311,7 +347,7 @@ export default function Residential() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →
@@ -324,38 +360,53 @@ export default function Residential() {
           </div>
         </div>
       </section>
+      {/* newss */}
+      <section className="bg-white py-12 px-4 md:px-26">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-1  items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-2xl text-center md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+              Residential Solar
+            </h2>
+
+            <p className="text-gray-700 mb-4 leading-relaxed text-center">
+              We Are One of India’s Most Reliable Rooftop Solar Solution
+              Providers LandsKing Infra stands among India’s leading rooftop
+              solar companies, trusted by thousands of homeowners and businesses
+              for dependable, high-quality solar installations. With years of
+              expertise and a nationwide presence, we deliver end-to-end solar
+              solutions — from design and installation to support and
+              maintenance. Backed by MNRE empanelment and flexible financing
+              options, LandsKing Infra is committed to making clean, affordable
+              energy accessible to every rooftop.
+            </p>
+          </div>
+        </div>
+      </section>
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-16">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Smart and Flexible Solutions for Modern Building{" "}
+              Grid-connected rooftop solar system
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Lightweight, durable, relocatable, economical, and
-              energy-efficient, prefabricated structures are increasingly
-              recognized as a modern and sustainable alternative to conventional
-              construction methods. These innovative solutions meet all the
-              functional requirements of traditional buildings while offering
-              added advantages such as faster execution, cost savings, and
-              design flexibility.{" "}
-            </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              At Landsking Infra Pvt. Ltd, we specialize in delivering
-              high-quality prefabricated structures tailored to diverse
-              applications. Our dry construction process enables quicker project
-              timelines and greater efficiency. Manufactured with premium-grade
-              steel frames and insulated panels, our modular solutions are
-              engineered for long-lasting durability and ease of installation.{" "}
+              A grid-connected rooftop solar system lets you enjoy the best of
+              both worlds — clean solar energy and reliable grid support.With
+              net metering, any extra power you generate is sent back to the
+              grid, earning you credits or reducing your electricity bill. A
+              bi-directional meter tracks both the energy you consume and the
+              energy you export, ensuring accurate billing.At LandsKing Infra,
+              we make this process simple by offering customized rooftop solar
+              solutions that suit your energy needs and give you the best value
+              for your investment.
             </p>
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/mod13.jpg"
+              src="/resi/ongrid.png"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
@@ -370,7 +421,7 @@ export default function Residential() {
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
             <Image
-              src="/preimages/define.png" // replace with your real factory image
+              src="/resi/hybrid.png" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
               height={450}
@@ -382,72 +433,48 @@ export default function Residential() {
           <div>
             <div className="flex items-center mb-4">
               <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
-                Redefining Modern Infrastructure with Prefabricated Buildings
+                Hybrid Rooftop Solar System{" "}
               </h2>
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              <strong>Landsking Infra Pvt. Ltd.</strong> we believe that the
-              true value of prefabricated buildings lies in their innovative
-              design, structural integrity, and flawless execution. Each project
-              begins with a carefully engineered design, which is then
-              integrated into advanced automated production systems to ensure
-              precision, uniformity, and uncompromised quality.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Our infrastructure is powered by a highly skilled team of
-              engineers, supported with state-of-the-art CNC machinery, robotic
-              welding systems, and high-capacity fabrication tools. These
-              advanced resources enable us to deliver large-scale{" "}
-              <span className="font-semibold">steel structures</span> with
-              precision and efficiency.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed">
-              Our prefabricated structures are pre-engineered and pre-assembled
-              at the factory, reducing on-site work and ensuring quick, seamless
-              installation. This approach delivers not only efficiency and
-              durability, but also an elegant balance of aesthetics and
-              functionality, making them ideal for a wide range of residential,
-              commercial, and industrial applications
+              A hybrid rooftop solar system gives you the best of both— clean
+              solar power and reliable battery backup. During the day, it powers
+              your home directly from the sun and stores surplus energy in
+              advanced lithium batteries for use at night or during power cuts.
+              Even on cloudy days or during high energy demand, the system
+              automatically draws power from the grid, ensuring a smooth and
+              uninterrupted electricity supply. With a bi-directional meter,
+              your power usage and savings are accurately tracked — so you only
+              pay for what you truly consume.
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-white py-12 px-4 md:px-16">
+      <section className="bg-white py-12 px-4 md:px-28">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Smart and Flexible Solutions for Modern Building{" "}
+              Off-grid rooftop solar system
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Lightweight, durable, relocatable, economical, and
-              energy-efficient, prefabricated structures are increasingly
-              recognized as a modern and sustainable alternative to conventional
-              construction methods. These innovative solutions meet all the
-              functional requirements of traditional buildings while offering
-              added advantages such as faster execution, cost savings, and
-              design flexibility.{" "}
-            </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              At Landsking Infra Pvt. Ltd, we specialize in delivering
-              high-quality prefabricated structures tailored to diverse
-              applications. Our dry construction process enables quicker project
-              timelines and greater efficiency. Manufactured with premium-grade
-              steel frames and insulated panels, our modular solutions are
-              engineered for long-lasting durability and ease of installation.{" "}
+              An off-grid rooftop solar system is perfect for those homes or
+              businesses who are located in remote areas with limited or no
+              access to the main power grid. It provides total energy
+              independence, allowing you to generate and store your own
+              electricity through high-efficiency lithium battery systems.
+              Designed to work completely offline, it ensures a reliable power
+              supply day and night — even in areas with frequent outages or no
+              grid connection at all.
             </p>
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/mod13.jpg"
+              src="/resi/off.png"
               alt="EPACK Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md w-[600px] h-[430px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>
@@ -456,14 +483,11 @@ export default function Residential() {
 
       {/* explore content */}
       {/* business benifts */}
-      <section className="max-w-7xl mx-auto px-5 py-10">
+      <section className="  px-5 py-10 mx-auto md:mx-22">
         <header className="text-center mb-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
-            Steps
+            Key BenefitS
           </h2>
-          <p className="mt-2 text-sm text-slate-500">
-            Expert solutions across every discipline of engineering excellence.
-          </p>
         </header>
 
         {/* Mobile: horizontal scroll with snapping */}
@@ -501,6 +525,47 @@ export default function Residential() {
               <h3 className="text-lg font-semibold">{s.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
             </article>
+          ))}
+        </div>
+      </section>
+      <section className=" mx-auto px-4 py-12 md:mx-22 ">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
+            Frequently Asked Questions
+          </h2>
+          {/* Yellow divider line */}
+          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
+        </div>
+
+        {/* FAQ Items */}
+        <div className="border-t border-gray-200 ">
+          {faqs.map((faq: FAQ, index: number) => (
+            <div key={index} className="border-b border-gray-200">
+              {/* Question */}
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
+              >
+                <span
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
+                  }`}
+                >
+                  {faq.question}
+                </span>
+                <span className="text-black text-lg font-bold">
+                  {openIndex === index ? "▲" : "▼"}
+                </span>
+              </button>
+
+              {/* Answer */}
+              {openIndex === index && (
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </section>

@@ -13,7 +13,7 @@ export default function Renewablebanner() {
       titling: " Power Your Home—Before Prices Go Up Again!",
       title: "Residential Solar",
       desc: " Empowering homeowners with affordable, high-efficiency solar systems built for long-term savings and sustainability.",
-      video: "/video.mp4",
+      video: "/solarvideo/residential solar.mp4",
       link: "/contact",
     },
     {
@@ -21,7 +21,7 @@ export default function Renewablebanner() {
       titling: "Join the Solar Revolution—Before Incentives Run Out.",
 
       desc: "Your trusted partner in transforming commercial spaces into energy-efficient, cost-saving, and eco-smart power hubs.",
-      video: "/video.mp4",
+      video: "/solarvideo/commercial solar.mp4",
       link: "/contact",
     },
     {
@@ -29,7 +29,7 @@ export default function Renewablebanner() {
       titling: "Fuel Your Industry with the Sun—Before Costs Skyrocket.",
 
       desc: "Delivering robust solar solutions designed for large-scale industries seeking reliability, performance, and maximum ROI.",
-      video: "/video.mp4",
+      video: "/solarvideo/industrial solar.mp4",
       link: "/contact",
     },
     {
@@ -37,7 +37,7 @@ export default function Renewablebanner() {
       titling: "Secure Solar Supply for Your Next Project.",
 
       desc: "Your trusted EPC partner for high-performance, utility-scale, and large industrial solar power projects.",
-      video: "/video.mp4",
+      video: "/solarvideo/.mp4",
       link: "/contact",
     },
   ];

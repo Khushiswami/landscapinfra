@@ -59,7 +59,7 @@ const IndustrialShed: React.FC = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/menupagetwo/is-2.jpg')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/shed/Industrial Shed (2).jpeg')",
             }}
           >
             <div className="text-white text-center relative z-10">
@@ -74,9 +74,9 @@ const IndustrialShed: React.FC = () => {
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
           {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+            <div className="relative w-full h-80 md:h-[470px]">
               <Image
-                src="/menupagetwo/is-3.png"
+                src="/shed/three.jpg"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg "
@@ -154,9 +154,9 @@ const IndustrialShed: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[390px]">
+            <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/menupagetwo/is-4.jpg"
+                src="/shed/two.jpeg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg "
@@ -166,9 +166,9 @@ const IndustrialShed: React.FC = () => {
 
           {/* Row 3 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+            <div className="relative w-full h-80 md:h-[450px]">
               <Image
-                src="/menupagetwo/is-6.jpeg"
+                src="/shed/five.jpeg"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg "
@@ -230,9 +230,9 @@ const IndustrialShed: React.FC = () => {
                 <li>Commercial & Retail Outlets</li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[390px]">
+            <div className="relative w-full h-80 md:h-[330px]">
               <Image
-                src="/menupagetwo/is-5.png"
+                src="/shed/for.png"
                 alt="Row 4"
                 fill
                 className="object-cover rounded-lg "
@@ -242,7 +242,7 @@ const IndustrialShed: React.FC = () => {
 
           {/* Row 5 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+            <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/menupagetwo/is-7.png"
                 alt="Row 5"

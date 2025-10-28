@@ -83,25 +83,25 @@ export default function Lightguage() {
       subtitle: "Expert Design & Planning",
       description:
         "Dedicated in-house team for design, engineering, and detailed planning",
-      image: "/fast installation .jpg",
+      image: "/light/in-house team for design, engineering.jpeg",
     },
     {
       subtitle: "Fabrication & Delivery",
       description:
         "Complete fabrication and delivery solutions for LGSF structures",
-      image: "/industry.jpg",
+      image: "/light/delivery solutions for LGSF structures (2).jpg",
     },
     {
       subtitle: "Nationwide Execution",
       description:
         "Nationwide project execution and ongoing support across India",
-      image: "/industry.jpg",
+      image: "/light/Nationwide project execution.png",
     },
     {
       subtitle: "Quality & Standards",
       description:
         "Adherence to Indian Standards (IS) and global quality norms",
-      image: "/industry.jpg",
+      image: "/light/qu.jpg",
     },
   ];
 

@@ -46,16 +46,14 @@ export default function Solarcontact() {
             Landsking Infra Pvt Ltd
           </h1>
           <p className="text-lg font-semibold text-white mb-3">
-            Get in touch with us – we are always ready to help with your
-            project.
+            Power Your Space with the Sun
           </p>
           <div className="h-1 w-[100%] bg-[#8080FF] mb-4"></div>
           <p className="mb-6 text-gray-200">
-            Whether you need a basic or elaborate steel building, Landsking
-            Infra will ensure your project is designed, manufactured, and
-            delivered on time.
+            Ready to go solar? Connect with our experts today and get a free
+            site assessment.
           </p>
-          <a href="/contact">
+          <a href="/solar-contact">
             <button className="bg-[#000080] text-white px-6 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-[#000] transition">
               Contact Us
               <span className="w-8 h-8 flex items-center justify-center rounded-full bg-white">
