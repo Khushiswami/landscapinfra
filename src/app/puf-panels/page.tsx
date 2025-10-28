@@ -1,51 +1,83 @@
 "use client";
-import React, { useState } from "react";
+import { useState, ReactNode } from "react";
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
 import Pebfooter from "yes/Components/Pebfooter";
-
+import { FaWarehouse, FaIndustry } from "react-icons/fa";
+import { MdOutlineCleanHands } from "react-icons/md";
+type CardProps = {
+  image: string;
+  icon: ReactNode;
+  title: string;
+  description: string;
+};
 const Pufpanels: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+  function Card({ image, icon, title, description }: CardProps) {
+    return (
+      <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
+        {/* Image */}
+        <div className="relative w-full h-48 sm:h-56 overflow-hidden">
+          <Image src={image} alt={title} fill className="object-cover" />
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-0 bg-black opacity-0 transition-all duration-500 group-hover:w-[88%] group-hover:opacity-100"></div>
+        </div>
 
+        {/* Icon */}
+        <div className="relative -mt-8 ml-auto mr-4 bg-[#000080] p-3 rounded shadow-lg flex items-center justify-center w-fit">
+          {icon}
+        </div>
+
+        {/* Text */}
+        <div className="px-5 pb-6 flex-1 flex flex-col text-center sm:text-left">
+          <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
+            {title}
+          </h3>
+          <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+            {description}
+          </p>
+        </div>
+      </div>
+    );
+  }
   const faqs = [
     {
-      question: "What is a modular clean room building?",
+      question: "What are EPS panels?",
       answer:
-        "It is a pre-engineered, contamination-controlled facility built with insulated panels and precision sealing, guaranteeing the required atmospheric purity for sensitive manufacturing or research.",
+        "EPS (Expanded Polystyrene) panels are lightweight sandwich panels with an EPS core between metal sheets, designed for insulation, cladding, and partition applications. LandsKing Infra manufactures these panels with precision to ensure consistent quality and performance.",
     },
     {
-      question: "What materials are used in modular clean room construction?",
+      question: "What are the benefits of using EPS panels?",
       answer:
-        "Construction uses pharmaceutical-grade panels, aluminum framing, and specialized anti-static flooring, ensuring ease of sanitation, hygiene compliance, and zero particle shedding.",
+        "They offer thermal efficiency, sound insulation, moisture resistance, lightweight construction, and cost-effective installation. LandsKing Infra EPS panels also ensure durability and long-lasting performance for commercial, industrial, and interior projects.",
     },
     {
-      question: "What industries require clean rooms?",
+      question: "How are EPS panels used in construction?",
       answer:
-        "They are essential in biotechnology, pharmaceutical production, microelectronics, and advanced food processing, where maintaining specific air quality and environmental control is mandatory.",
+        "EPS panels are widely used for interior partitions, wall and roof cladding, cold storage interiors, temporary structures, and industrial or commercial buildings.",
     },
     {
-      question: "How are clean rooms classified based on cleanliness?",
+      question: "Are EPS panels environmentally friendly?",
       answer:
-        "Clean rooms are precisely categorized according to ISO 14644 standards, which dictates the maximum concentration of particulates allowed per cubic meter of air.",
+        "Yes, EPS is recyclable and contributes to energy-efficient buildings, making it a sustainable choice for modern construction.",
     },
     {
-      question: "What systems are integrated inside a clean room?",
+      question: "How are EPS panels installed?",
       answer:
-        "Integrated systems include multi-stage filtration with HEPA/ULPA filters, differential air pressure control, and smart monitoring to sustain consistent temperature and particulate purity.",
+        "Panels are designed for quick and easy installation, typically joined with mechanical fasteners, adhesives, or overlap methods depending on the application. LandsKing Infra provides technical support to ensure proper installation.",
     },
     {
-      question: "What are the benefits of modular clean room construction?",
+      question: "Can EPS panels be used in all climates?",
       answer:
-        "Modular construction provides accelerated commissioning, built-in future scalability, and superior risk mitigation by minimizing on-site contamination exposure during the build phase.",
+        "They are suitable for mild to moderate climates and controlled interior environments; for extreme conditions, panel specifications can be customized.",
     },
     {
-      question: "Why choose LANDSKING for clean room construction?",
+      question: "What are the fire safety considerations for EPS panels?",
       answer:
-        "We deliver custom-engineered clean rooms that exceed ISO, GMP, and FDA performance thresholds, providing turnkey solutions for verifiable purity and long-term asset reliability.",
+        "EPS panels meet standard fire safety norms when properly treated; additional coatings or fire-retardant additives can enhance safety for specific applications. LandsKing Infra ensures all panels comply with industry safety standards.",
     },
   ];
 
@@ -67,7 +99,7 @@ const Pufpanels: React.FC = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-                Clean Room
+                Puf-panels
               </h1>
             </div>
           </div>
@@ -87,22 +119,16 @@ const Pufpanels: React.FC = () => {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                High-Precision Controlled Environments
+                PUF/PIR Panels – Smart Insulation for Modern Infrastructure
               </h3>
               <p className="text-gray-700 mb-4">
-                Clean rooms are specialized environments created to keep
-                airborne particles, contaminants, and pollutants at extremely
-                low levels. They are critical for sectors such as
-                pharmaceuticals, electronics, biotechnology, food processing,
-                and medical devices, where even tiny particles can compromise
-                product quality. <br />
-                <br />
-                LANDSKING excels in designing and producing modular clean room
-                solutions using premium PUF, EPS, and Rockwool sandwich panels.
-                Leveraging more than 25 years of prefabrication expertise, our
-                systems comply with rigorous international standards, offering
-                excellent hygiene, thermal performance, and contamination
-                control.
+                PUF and PIR panels are specially designed insulated wall and
+                roof panels that keep interiors cooler, safer, and
+                energy-efficient. At LandsKing Infra, we produce these panels
+                with high accuracy to ensure strong durability and fast on-site
+                installation. Perfect for cold storage, clean rooms, and large
+                commercial or industrial buildings, they help reduce power
+                consumption while offering long-lasting performance.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -112,60 +138,27 @@ const Pufpanels: React.FC = () => {
               </button>
             </div>
           </div>
-
-          {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Choose Us for Clean Room Construction?
+                Types of PUF/PIR Sandwich Panels We Provide
               </h3>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li>
-                  <strong>
-                    Comprehensive In-House Design & Manufacturing:
-                  </strong>{" "}
-                  LANDSKING offers complete clean room solutions from concept
-                  design to commissioning, tailored for your industry’s needs.
-                </li>
-                <li>
-                  <strong>Premium Modular Panels:</strong> Constructed using
-                  insulated sandwich panels for high strength, thermal
-                  efficiency, and airtight performance.
-                </li>
-                <li>
-                  <strong>Flexible Configurations:</strong> ISO-class compliant
-                  clean rooms with modular layouts that can be easily expanded
-                  or reconfigured.
-                </li>
-                <li>
-                  <strong>Rapid Delivery:</strong> State-of-the-art production
-                  facilities enable fast manufacturing and installation,
-                  covering over 6,800 sqm daily.
-                </li>
-                <li>
-                  <strong>Nationwide Project Execution:</strong> Delivering to
-                  pharma hubs, industrial zones, and R&D centers across India
-                  with a reliable logistics network.
-                </li>
-                <li>
-                  <strong>Standards & Compliance:</strong> Designed to adhere to
-                  GMP, FDA, ISO, and WHO guidelines depending on project
-                  specifications.
-                </li>
+              <p className="text-gray-700 mb-4">
+                We offer a versatile range of insulated sandwich panels
+                engineered to meet diverse structural, thermal, and industrial
+                requirements. Choose from the following panel categories based
+                on your project application:
+              </p>
+              <ul className=" list-disc text-gray-700 mb-4 space-y-1">
+                <ul className="list-disc pl-5 text-gray-700 mb-4">
+                  <li>Roof Panels</li>
+                  <li>Wall Panels</li>
+                  <li>Cold Room Panels</li>
+                  <li>Cold Storage Panels</li>
+                  <li>Clean Room Panels</li>
+                </ul>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[370px]">
-              <Image
-                src="/new-images/clean-room-3.jpg"
-                alt="Row 2"
-                fill
-                className="object-cover rounded-lg "
-              />
-            </div>
-          </div>
-
-          {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-4.jpg"
@@ -174,38 +167,83 @@ const Pufpanels: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Industries Served by Us
-              </h3>
-              <ul className=" list-disc text-gray-700 mb-4 space-y-1">
-                <li>Pharmaceutical & API Manufacturing Units</li>
-                <li>Biotechnology & Life Science Industries</li>
-                <li>Food & Beverage Manufacturing</li>
-                <li>Electronics and Semiconductor Assembly</li>
-                <li>Medical, Lab & Research Centers</li>
-                <li>Aerospace & Defense Sectors</li>
-              </ul>
-            </div>
           </div>
 
-          {/* Row 4 - Content Left, Image Right */}
+          <main className="bg-white">
+            <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
+              <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <Card
+                  image="/NDR.webp"
+                  icon={<FaWarehouse size={32} className="text-white" />}
+                  title="Railway Shelters"
+                  description="Durable railway and telecom shelters, built to endure harsh conditions. Quick installation, low maintenance, and long-lasting reliability."
+                />
+                <Card
+                  image="/sectorimg/inf.jpeg"
+                  icon={
+                    <MdOutlineCleanHands size={32} className="text-white" />
+                  }
+                  title="Prefabricated Multi-Storey Buildings"
+                  description="Designed for superior strength and cost-effectiveness, suitable for commercial and residential projects."
+                />
+                <Card
+                  image="/sectorimg/airport.jpg"
+                  icon={<FaIndustry size={32} className="text-white" />}
+                  title="Airport Terminal Buildings"
+                  description="Prefabricated structures for staff accommodations, worker housing, and more."
+                />
+              </div>
+            </section>
+          </main>
+
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Essential Features of LANDSKING Clean Rooms
+                Best-in-Class PUF/PIR Panel Features & Benefits
               </h3>
 
               <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li>Leak-proof, continuous construction</li>
-                <li>Excellent thermal and sound insulation</li>
-                <li>Panels that resist fire and corrosion</li>
-                <li>Easy-to-clean, hygienic finishes</li>
-                <li>Fully compatible with HVAC and filtration systems</li>
                 <li>
-                  Lower energy consumption thanks to high-performance insulation
+                  Thermal Insulation: Maintains optimal temperatures; reduces
+                  energy consumption.
                 </li>
-                <li>Long-lasting, maintenance-free design</li>
+                <li>
+                  Fire Resistance: Self-extinguishing properties ensure safety
+                  in industrial & commercial setups.
+                </li>
+                <li>
+                  Durability: High structural strength for long-lasting
+                  performance.
+                </li>
+                <li>
+                  Airtight Construction: Minimizes energy loss and enhances
+                  insulation efficiency.
+                </li>
+                <li>
+                  Custom Dimensions: Panels available in various thicknesses and
+                  widths to fit project requirements.
+                </li>
+                <li>
+                  Water & Vapor Resistance: Protects against moisture and
+                  weather-related damage.
+                </li>
+                <li>
+                  Hygienic & Seamless Finish: Concealed screws and Camlock
+                  systems ensure clean, aesthetic surfaces.
+                </li>
+                <li>
+                  Versatile Applications: Suitable for cold storage, clean
+                  rooms, warehouses, prefabricated buildings, and modular
+                  structures.
+                </li>
+                <li>
+                  Eco-Friendly: Manufactured from environmentally safe
+                  materials.
+                </li>
+                <li>
+                  Low Maintenance: Quick installation with minimal upkeep,
+                  providing long-term operational savings.
+                </li>
               </ul>
             </div>
             <div className="relative w-full h-80 md:h-[370px]">

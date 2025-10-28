@@ -93,7 +93,7 @@ export default function PebheaderW() {
           href: "/sandwichpanels",
           subMenu: [
             { name: "PUF Panels", href: "/puf-panels" },
-            { name: "EPS Panels", href: "/eps-panels" },
+            { name: "EPS Panels", href: "/epc-panels" },
             { name: "Rockwool Panel", href: "/rockwoolpanel" },
             { name: "Glass Wool Panels", href: "/glasswool" },
           ],
