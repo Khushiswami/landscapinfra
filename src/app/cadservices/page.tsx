@@ -38,16 +38,6 @@ function Card({ image, icon, title, description }: CardProps) {
         <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
-
-        <a
-          href="#"
-          className="relative border border-[#000080] text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit overflow-hidden"
-        >
-          <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
-            READ MORE
-          </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080]transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a>
       </div>
     </div>
   );
@@ -125,7 +115,7 @@ export default function Rndexplore() {
           </div>
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
-              image="/cadservice/"
+              image="/cad/static.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Static Structural Analysis"
               description="Evaluates the response of components under steady forces, loads, and constraints. Identifies high-stress regions and ensures compliance with safety standards. Prevents overdesign while maintaining structural reliability. Critical for validating designs before manufacturing."
@@ -143,7 +133,7 @@ export default function Rndexplore() {
               description="Predicts the service life of parts under repeated cyclic stresses. Determines when and where cracks or failures may initiate. Reduces downtime, warranty issues, and maintenance costs. Ensures long-term reliability and consistent product performance."
             />
             <Card
-              image="/cadservice/NHS.PNG"
+              image="/cad/nvh.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="NVH (Noise, Vibration & Harshness)"
               description="Analyzes vibration, acoustic, and harshness behavior in mechanical systems. Helps identify and minimize unwanted noise sources. Improves comfort, safety, and user perception of product quality. Crucial for automotive, aerospace, and consumer product design."
@@ -161,13 +151,13 @@ export default function Rndexplore() {
               description="Models the motion and interaction of interconnected mechanical parts. Captures kinematics, forces, and energy transfer in real-time operation. Optimizes performance, wear resistance, and system integration. Widely applied in automotive, robotics, and machinery design."
             />
             <Card
-              image="/cadservice/"
+              image="/cad/aero.jpg"
               icon={<FaWarehouse size={38} className="text-white" />}
               title="Aerodynamic & Aeroelastic Studies (CFD + CAE)"
               description="Analyzes airflow interaction with structures for performance improvement. Evaluates drag, lift, and vibration-induced instabilities. Supports stable, fuel-efficient, and safe product development. Critical in aerospace, automotive, and renewable energy sectors."
             />
             <Card
-              image="/cadservice/"
+              image="/cad/hydra.jpg"
               icon={<MdOutlineCleanHands size={38} className="text-white" />}
               title="Hydraulic & Pneumatic System Analysis"
               description="Simulates fluid-powered systems for efficiency and reliability. Optimizes pressure flow, energy use, and operational safety. Identifies cavitation, leakage risks, and power loss points. Widely applied in industrial, aerospace, and automotive systems."
@@ -179,13 +169,13 @@ export default function Rndexplore() {
               description="Studies the mutual influence between fluid flow and solid deformation. Predicts stresses, deflection, and fatigue caused by fluid forces. Supports design of pipelines, ships, turbines, and aerospace systems. Ensures structural safety under complex flow environments."
             />
             <Card
-              image="/cadservice/"
+              image="/cad/th.jpg"
               icon={<FaWarehouse size={38} className="text-white" />}
               title="Combustion & Thermal Management"
               description="Models combustion behavior for engines, turbines, and reactors. Optimizes fuel efficiency, emission reduction, and flame stability. Combines with thermal management for cooling critical systems. Enables safer and more energy-efficient product development."
             />
             <Card
-              image="/cadservice/"
+              image="/cad/sonic.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Hypersonic & High-Mach Flows"
               description="Simulates extreme high-speed aerodynamic conditions. Ensures performance and safety of aerospace and defense systems."
@@ -227,19 +217,19 @@ export default function Rndexplore() {
               description="Studies vibrations caused by fluid interaction with structures. Prevents fatigue, noise, and failures in piping and offshore systems."
             />
             <Card
-              image="/cadservice/"
+              image="/cad/pol.png"
               icon={<MdOutlineCleanHands size={38} className="text-white" />}
               title="Environmental & Pollution Dispersion"
               description="Predicts how pollutants, smoke, or particles spread in natural or urban environments. Helps design sustainable and regulatory-compliant solutions."
             />
             <Card
-              image="/cadservice/"
+              image="/cad/prop.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Propulsion & Jet Flow Studies"
               description="Models exhausts, jet engines, and propulsion systems. Enhances thrust efficiency and reduces noise in aerospace and defense."
             />
             <Card
-              image="/cadservice/"
+              image="/cad/cav.png"
               icon={<FaWarehouse size={38} className="text-white" />}
               title="Cavitation & Multiphase Phenomena"
               description="Analyzes vapor formation, bubble collapse, and fluid cavitation. Ensures reliability in pumps, turbines, and marine systems."

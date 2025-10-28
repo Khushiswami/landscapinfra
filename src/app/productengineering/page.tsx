@@ -126,7 +126,7 @@ export default function Productengineering() {
       title: "Virtual Benchmarking",
       description:
         "Compare competitors’ full products, vehicle components, and sub-systems. Provide CAE models for direct comparison to identify performance targets and reduce development costs.",
-      image: "/rndimages/virtual bookmaking.png",
+      image: "/footer/virt.jpg",
     },
   ];
 
@@ -151,7 +151,7 @@ export default function Productengineering() {
       </section>
       <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-10">
+          <div className="text-center mb-1">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Product engineering service
             </h2>
@@ -165,7 +165,7 @@ export default function Productengineering() {
         </div>
       </section>
       <main className="bg-white px-4 sm:px-8 md:px-12">
-        <section className=" py-12 px-2 sm:px-6 md:px-12">
+        <section className=" py-12 px-2 sm:px-6 md:px-12 md:py-5">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               image="/rnd/prodcution.jpg"
@@ -245,7 +245,7 @@ Robust Systems Architecture Design: Our MBSE-driven approach ensures your system
 Efficient Embedded Software Development: We leverage MBD to create embedded software that is not only high-quality but also developed with maximum efficiency and reliability."
             />
             <Card
-              image="/rnd/hvac"
+              image="/footer/embed.jpg"
               title="End-to-End Embedded System Design & Validation Services"
               description="At the heart of every smart product, from advanced vehicles to cutting-edge aerospace systems, is a perfectly engineered embedded system. We specialize in bringing your most ambitious ideas to life, offering a seamless, end-to-end embedded system development process. From initial architecture to final validation, we design intelligent, reliable, and high-performance solutions that power the future."
               titlenew="What We Do:"
@@ -261,8 +261,8 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
       {/* Core Expertise Section */}
       <section className="bg-white">
         <div>
-          <div className="text-center mt-5 py-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center md:mt-10 mt-5 py-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
               Landsking’s Core Expertise for this Industry Includes:
             </h2>
           </div>

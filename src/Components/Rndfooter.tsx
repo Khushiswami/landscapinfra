@@ -27,21 +27,21 @@ const contacts: Contact[] = [
     // name: "Emily Carter",
     phone: "877-017-9094",
     email: "landskinginfra@gmail.com",
-    img: "industry.jpg",
+    img: "/footer/cust.png",
   },
   {
     title: "Technical Support",
     // name: "Liam Rodriguez",
     phone: " 9981813922",
     email: "info@landsking.com",
-    img: "industry.jpg",
+    img: "/footer/tech.png",
   },
   {
     title: "Our Support",
     // name: "Sophia Nguyen",
     phone: " 9981813922 ",
     email: " landskinginfra@gmail.com",
-    img: "industry.jpg",
+    img: "/footer/support.png",
   },
 ];
 
