@@ -176,10 +176,10 @@ export default function Groundmounted() {
 
         <div className="relative z-10 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left mt-16 lg:mt-0">
-            <h1 className="text-4xl md:text-5xl font-bold leading-snug mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
               Ground-Mounted Solar Solutions
             </h1>
-            <p className="text-lg max-w-md mx-auto lg:mx-0">
+            <p className="md:text-lg max-w-md mx-auto lg:mx-0 text-md">
               Transforming Open Land into a Source of Reliable, Clean Energy.
             </p>
           </div>
@@ -223,7 +223,7 @@ export default function Groundmounted() {
       <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12">
         <div className="container mx-auto">
           <div className="text-center mb-6">
-            <h2 className="text-3xl text-[#000080] font-bold">
+            <h2 className=" text-2xl md:text-3xl text-[#000080] font-bold">
               Ground-Mounted Solar Solutions
             </h2>
           </div>

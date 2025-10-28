@@ -28,7 +28,7 @@ const testimonials = [
 
 export default function Solarcontact() {
   return (
-    <div className="relative text-white mt-20">
+    <div className="relative text-white mt-10 md:mt-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"

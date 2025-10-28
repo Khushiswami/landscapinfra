@@ -64,7 +64,7 @@ export default function Renewableabout() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16">
+    <section className="relative py-4 md:py-16">
       {/* Decorative Background */}
 
       <div className="relative container mx-auto px-5 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start z-10">

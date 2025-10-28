@@ -207,7 +207,8 @@ export default function Residential() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
+  const visibleCards =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
   const [open, setOpen] = useState(false); // for mobile dropdown
 
   const prevSlide = () => {
@@ -365,7 +366,7 @@ export default function Residential() {
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-1  items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl text-center md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl mb-5 text-center md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Residential Solar
             </h2>
 
@@ -388,7 +389,7 @@ export default function Residential() {
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl mb-5  md:text-3xl font-bold text-[#000080] leading-snug  ">
               Grid-connected rooftop solar system
             </h2>
 
@@ -431,7 +432,7 @@ export default function Residential() {
 
           {/* Right Side - Content */}
           <div>
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-5">
               <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Hybrid Rooftop Solar System{" "}
               </h2>
@@ -455,7 +456,7 @@ export default function Residential() {
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl mb-5 md:text-3xl font-bold text-[#000080] leading-snug  ">
               Off-grid rooftop solar system
             </h2>
 
@@ -492,21 +493,17 @@ export default function Residential() {
 
         {/* Mobile: horizontal scroll with snapping */}
         <div className="block sm:hidden">
-          <div className="-mx-4 px-4 overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-4">
+          <div className=" grid grid-cols-1  gap-8">
             {servicesing.map((s) => (
               <article
                 key={s.id}
-                className="snap-center min-w-[78%] flex-shrink-0 bg-white/90 backdrop-blur-sm rounded-2xl p-6 text-center shadow-md focus:outline-none focus:ring-4 focus:ring-[#000080]"
-                role="article"
+                className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow focus:shadow-lg outline-none focus:ring-4 focus:ring-indigo-200"
               >
-                <div className="w-16 h-16 text- white rounded-full flex items-center justify-center mx-auto mb-3 bg-[#000080]">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-[#000080]">
                   {s.icon}
                 </div>
-
-                <h3 className="text-lg  text-[#000080] *:font-semibold">
-                  {s.title}
-                </h3>
-                <p className="mt-2 text-base text-black">{s.desc}</p>
+                <h3 className="text-lg font-semibold">{s.title}</h3>
+                <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
               </article>
             ))}
           </div>

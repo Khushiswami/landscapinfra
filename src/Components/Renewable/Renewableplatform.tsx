@@ -78,7 +78,7 @@ export default function Renewableplatform() {
       <div className="mt-8 ">
         <div className="mx-auto px-4">
           <div className="relative">
-            <div className="flex md:justify-center gap-4 md:gap-10 overflow-x-auto md:overflow-x-visible relative">
+            <div className=" mx-10 md:mx-0 flex md:justify-center gap-4 md:gap-10 overflow-x-auto md:overflow-x-visible relative">
               {TABS.map((t, i) => (
                 <button
                   key={t.title}

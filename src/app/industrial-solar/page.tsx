@@ -171,7 +171,9 @@ export default function Industrial() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
+  // const visibleCards = 4; // Show 4 cards per row
+  const visibleCards =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
   const [open, setOpen] = useState(false); // for mobile dropdown
 
   const prevSlide = () => {
@@ -544,11 +546,11 @@ export default function Industrial() {
         </div>
       </section>
       <section className=" mx-auto px-5 py-10 md:mx-22">
-        <header className="text-center mb-6">
+        <header className="text-center mt-10 mb-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
             How we Can Help Your Industry Benefit from Custom Solar?
           </h2>
-          <p className="mt-2 text-sm text-slate-500">
+          <p className=" mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15 ">
             At LandsKing Infra, we specialize in industrial rooftop solar
             solutions, starting from 150 kW. Our team analyzes your facility to
             design customized systems that maximize efficiency, reduce energy
@@ -558,7 +560,7 @@ export default function Industrial() {
 
         {/* Mobile: horizontal scroll with snapping */}
         <div className="block sm:hidden">
-          <div className="-mx-4 px-4 overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-4">
+          <div className=" grid grid-cols-1  gap-6">
             {servicesing.map((s) => (
               <article
                 key={s.id}
@@ -579,7 +581,7 @@ export default function Industrial() {
         </div>
 
         {/* Tablet / Desktop */}
-        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-7">
           {servicesing.map((s) => (
             <article
               key={s.id}
