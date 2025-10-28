@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Footer from "yes/Components/Footer";
 import Renewableheader from "yes/Components/Renewableheader";
 import Epc from "yes/Components/Epc";
+import Applications from "yes/Components/Applications";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -12,14 +13,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { useRouter } from "next/navigation";
-import { PencilRuler, Building2 } from "lucide-react";
+import Image from "next/image";
 import {
+  FaSolarPanel,
+  FaRupeeSign,
+  FaHandsHelping,
+  FaChartLine,
   FaTools,
-  FaBolt,
-  FaShieldAlt,
   FaLeaf,
-  FaCogs,
-  FaExpand,
 } from "react-icons/fa";
 
 export default function Groundmounted() {
@@ -30,127 +31,132 @@ export default function Groundmounted() {
 
   const [activeTab, setActiveTab] = useState(1);
   const [animateArrow, setAnimateArrow] = useState(false);
-  const router = useRouter();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [open, setOpen] = useState(false); // for mobile dropdown
+  const router = useRouter();
 
-  // ✅ FIXED: close function properly
   const handleClick = () => {
     setAnimateArrow(!animateArrow);
     router.push("/system");
   };
+
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-  // ✅ Moved slides & features outside of handleClick
+
+  // ===== Hero Slider =====
   const slides = [
+    { image: "/preimages/office.jpg", title: "Open Access for Solar Parks" },
+    { image: "/preimages/industrial-enclosure.jpg", title: "Turnkey Projects" },
+    { image: "/preimages/railway-shelter.jpg", title: "Railway Shelters" },
+    { image: "/preimages/control-room.jpg", title: "Large-scale Solar Farms" },
+  ];
+
+  // ===== Card Section (with images) =====
+  const featured = [
     {
-      image: "/preimages/office.jpg",
-      title: "Pre-fab Office",
-      link: "/prefabricatedSite",
+      image: "/groundmounted/Traditional Ground-Mounted Solar Systems.png",
+      title: "Traditional Ground-Mounted Solar Systems",
+      content:
+        "Ground-mounted solar panels have stood the test of time as a reliable way to harness clean energy.Ground-mounted solar panels make this possible, starting with a careful look at the land itself—its soil, climate, and available space—to pick the right foundation, whether steel beams, ground screws, helical piles, or concrete blocks for challenging sites like brownfields. With precision installation by our experienced team, these systems deliver long-term durability, efficiency, and sustainability for any scale of project.",
     },
     {
-      image: "/preimages/industrial-enclosure.jpg",
-      title: "Industrial Enclosures",
-      link: "/industrialEnclosures",
+      image: "/groundmounted/Ground-Mounted Solar Tracking Systems.png",
+      title: "Ground-Mounted Solar Tracking Systems",
+      content:
+        "We provide expert installation of tracking systems for ground-mounted solar panels that maximize energy production throughout the day. Using motorized mounts, panels follow the sun, while secure racking tables ensure stability and precise alignment. Choose single-axis or dual-axis trackers for optimal energy capture. Expertly installed for efficiency, reliability, and long-term performance, our solutions turn sunlight into power—consistently and confidently.",
     },
     {
-      image: "/preimages/railway-shelter.jpg",
-      title: "Railway Shelters",
-      link: "/railwayShelters",
-    },
-    {
-      image: "/preimages/control-room.jpg",
-      title: "Control Room",
-      link: "/controlRoom",
-    },
-    {
-      image: "/preimages/cleanroomk.jpg",
-      title: "Clean Room",
-      link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/acoustic.jpg",
-      title: "Acoustic Enclosure",
-      link: "/acousticEnclosure",
+      image: "/groundmounted/Carports and canopies.png",
+      title: "Carports and canopies",
+      content:
+        "Our solar carports and canopies are designed to do more than just shelter vehicles—they turn your parking spaces into clean energy sources. With strong steel frames and reinforced foundations, they’re built to last. Choose from different sizes and configurations, and even Add EV charging stations for maximum functionality. Expertly designed and installed, these carports deliver efficient, reliable solar energy right where you need it.",
     },
   ];
 
   const features = [
     {
-      title: "Custom-Built Design",
+      title: "Beyond Rooftop Limits",
       description:
-        "Fully tailored to your operational and architectural requirements, ensuring precision and efficiency.",
-      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
+        "Unlock greater solar potential by installing large-scale ground-mounted systems that deliver higher energy output than traditional rooftop setups.",
+      icon: <FaSolarPanel className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Quick Installation",
+      title: "Enjoy Low, Fixed-Cost Power",
       description:
-        "Factory-engineered components allow rapid onsite assembly, saving both time and labor costs.",
+        "Lock in affordable solar energy rates at ₹3–₹4 per unit for up to 25 years, ensuring long-term savings and cost stability.",
+      icon: <FaRupeeSign className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Hassle-Free Turnkey Execution",
+      description:
+        "Experience a smooth, end-to-end project journey — from design and installation to commissioning — managed entirely by our expert team.",
+      icon: <FaHandsHelping className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Maximize Financial Returns",
+      description:
+        "Leverage a 40% accelerated depreciation benefit to boost ROI and optimize your solar investment.",
+      icon: <FaChartLine className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Reliable Maintenance & Support",
+      description:
+        "Gain peace of mind with dedicated O&M and after-sales service, ensuring consistent performance year after year.",
       icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
     },
     {
-      title: "Cost-Efficient Construction",
+      title: "Preserve Valuable Land for Growth",
       description:
-        "Optimized designs reduce material waste and overall construction expenses.",
-      icon: <FaBolt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Durable and Low Maintenance",
-      description:
-        "Built to withstand harsh weather and seismic conditions with minimal upkeep.",
-      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Energy Efficient",
-      description:
-        "Insulated wall and roof panels provide excellent temperature control and energy savings.",
+        "Install solar systems on underutilized areas while keeping your main property free for business expansion or future development.",
       icon: <FaLeaf className="text-[#000080] text-3xl mb-4" />,
     },
-    {
-      title: "Expandable & Flexible",
-      description:
-        "Easily scalable and adaptable to meet future growth and business requirements.",
-      icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
-    },
   ];
+
+  // ===== FAQs =====
   const faqs: FAQ[] = [
     {
-      question: "Is a Pre-Engineered Building a permanent structure?",
+      question: "What is a ground-mounted solar system?",
       answer:
-        "Yes, modern PEBs are classified as capital-grade, permanent structures with a service life of 50–75 years or more, matching conventional longevity.",
+        "A ground-mounted solar system is a solar power setup installed directly on the ground instead of rooftops. It uses strong mounting structures to hold solar panels at the ideal tilt and direction, ensuring maximum sunlight capture and higher power generation. These systems are ideal for industries, commercial sites, and utility-scale projects with open land availability.",
     },
     {
       question:
-        "What is the typical maintenance cost difference between a PEB and a conventional building? ",
+        "How long does LandsKing Infra take to install a ground-mounted solar system?",
       answer:
-        "The durable, coated steel and specialized roofing inherently resist pests and weather. This results in an estimated 30–40% lower long-term maintenance cost compared to masonry or wood alternatives, securing your operational budget.",
+        "Depending on size and site, we complete projects within 3–6 months from concept to commissioning. Our turnkey EPC model ensures smooth execution — from civil works to grid synchronization.",
     },
     {
       question:
-        "Beyond durability, how does the PEBs material choice impact its environmental footprint?",
+        "What are the government incentives for ground-mounted solar in India?",
       answer:
-        "The primary material, steel, contains a high percentage of recycled content and is fully recyclable. Choosing a PEB is a commitment to a resource-efficient, lower-impact construction lifecycle.",
+        "LandsKing Infra helps clients leverage Accelerated Depreciation (40%), GST benefits, and net metering advantages. We also guide businesses in claiming Renewable Energy Certificates (RECs) to maximize financial returns.",
     },
     {
       question:
-        "How does a pre-engineered factory building differ from traditional buildings?",
+        "What is the difference between ground-mounted solar and rooftop solar?",
       answer:
-        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+        "The key difference lies in installation and scalability. Rooftop solar systems are mounted on building roofs, making them suitable for homes or small businesses with limited space. Ground-mounted solar systems, on the other hand, are installed on open land, allowing for optimal orientation, better cooling, easier maintenance, and higher power output — perfect for large-scale energy needs.",
     },
     {
       question:
-        "Can I easily install a bridge or overhead crane system in a Pre-Engineered Metal Building?",
+        "How can LandsKing Infra’s ground-mounted solar systems reduce grid energy use?",
       answer:
-        "Yes, PEBs are holistically engineered for heavy operational requirements. Columns and rafters are custom-designed during fabrication to safely bear the dynamic loads of overhead equipment.",
+        "By generating clean, on-site electricity, LandsKing Infra systems significantly cut grid dependency and energy costs. They ensure stable, renewable power for 25+ years — supporting both savings and sustainability.",
     },
     {
       question:
-        "Do PEBs typically require a lighter or shallower foundation than traditional construction? ",
+        "Which businesses can benefit most from ground-mounted solar installations?",
       answer:
-        " Due to optimized design and lighter material weight, PEBs generally require a simpler and more economical foundation, accelerating the project’s earliest phase.",
+        "Manufacturing plants, warehouses, schools, hospitals, and commercial complexes with open land benefit the most. These setups help reduce long-term electricity costs and meet green energy goals efficiently.",
+    },
+    {
+      question:
+        "How can we increase solar energy generation with a ground-mounted solar system?",
+      answer:
+        "You can enhance output by using single or dual-axis tracking systems, optimal tilt angles, and high-efficiency panels. Proper site analysis and minimal shading are key to consistent, high-yield performance.",
     },
   ];
+
   return (
     <>
       <Renewableheader />
@@ -165,26 +171,20 @@ export default function Groundmounted() {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/video/modular.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
-
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Text Section */}
           <div className="text-center lg:text-left mt-16 lg:mt-0">
             <h1 className="text-4xl md:text-5xl font-bold leading-snug mb-4">
-              Ground Mounted{" "}
+              Ground-Mounted Solar Solutions
             </h1>
             <p className="text-lg max-w-md mx-auto lg:mx-0">
-              Build your project offsite with precision and speed. Enjoy faster
-              completion and effortless on-site assembly for seamless results.
+              Transforming Open Land into a Source of Reliable, Clean Energy.
             </p>
           </div>
 
-          {/* Swiper Section */}
+          {/* Swiper Slider */}
           <div className="flex justify-center mt-8 lg:mt-0">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -198,19 +198,18 @@ export default function Groundmounted() {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={slide.title}
+                      width={300}
+                      height={220}
                       className="w-full h-56 object-cover"
                     />
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-semibold">{slide.title}</h3>
-                      <a
-                        href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline"
-                      >
+                      <span className="mt-2 inline-block text-[#000080] hover:underline cursor-pointer">
                         Read more →
-                      </a>
+                      </span>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -219,74 +218,59 @@ export default function Groundmounted() {
           </div>
         </div>
       </section>
+
+      {/* ===== Overview Section ===== */}
       <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12">
         <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Landsking Infra Fabrication Solutions
+          <div className="text-center mb-6">
+            <h2 className="text-3xl text-[#000080] font-bold">
+              Ground-Mounted Solar Solutions
             </h2>
-            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
+          <p className="text-gray-700 mb-12 text-sm sm:text-base text-center max-w-3xl mx-auto">
+            At LandsKing Infra, we help you make the best use of your unused
+            land by turning it into a beneficial source of solar energy. Our
+            systems are designed to save on electricity costs, reduce
+            environmental impact, and give you long-term energy independence.
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                Landsking Infra delivers sturdy and cost-efficient
-                <span className="text-[#000080] font-semibold">
-                  {" "}
-                  Fabrication Solutions{" "}
-                </span>
-                Landsking Infra delivers precision-engineered fabrication
-                services for industrial, commercial, and infrastructure
-                projects, ensuring strength, accuracy, and long-lasting
-                performance. Our expertise covers heavy steel structures,
-                customized sheet metal works, and complex assemblies tailored to
-                client requirements. Equipped with an ISO-compliant fabrication
-                facility, we maintain stringent quality standards while ensuring
-                timely project delivery and smooth onsite erection. Our team of
-                skilled welders and certified fabrication engineers works
-                closely with civil and structural teams to guarantee seamless
-                project execution. From design coordination to final
-                installation, Landsking Infra provides reliable, efficient, and
-                high-quality fabrication solutions that meet industry standards
-                and project timelines.
-              </p>
-
-              <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
+          {/* ✅ 3-Column Responsive Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featured.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative w-full h-48 mb-4">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover rounded-xl"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-[#000080]">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm">{item.content}</p>
               </div>
-            </div>
-
-            <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
-              <img
-                src="/Industrial-Buildings-Construction.webp"
-                alt="Industrial Building"
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      <Epc />
 
-      {/* ===== Steps Section ===== */}
-
-      {/* ===== CTA Section ===== */}
-
-      {/* ===== Key Features ===== */}
+      {/* ===== Features Section ===== */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
+              LandsKing Infra Pvt. Ltd. Ground Mounted
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            Our Pre-Engineered Buildings are designed for innovation,
-            durability, and efficiency.
+            Our Ground-Mounted Solar Systems are built for unmatched strength,
+            efficiency, and long-term performance under every condition.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -307,21 +291,21 @@ export default function Groundmounted() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-4 py-12 md:mx-10 ">
-        {/* Heading */}
+
+      <Applications />
+
+      {/* ===== FAQs Section ===== */}
+      <section className="mx-auto px-4 py-12 md:mx-10">
         <div className="text-center mb-10">
-          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
+          <h2 className="text-2xl text-[#000080] md:text-3xl font-bold mb-2">
             Frequently Asked Questions
           </h2>
-          {/* Yellow divider line */}
           <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
         </div>
 
-        {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
-          {faqs.map((faq: FAQ, index: number) => (
+        <div className="border-t border-gray-200">
+          {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-200">
-              {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}
                 className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
@@ -337,10 +321,8 @@ export default function Groundmounted() {
                   {openIndex === index ? "▲" : "▼"}
                 </span>
               </button>
-
-              {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600  text-base md:text-md">
+                <div className="pb-4 text-gray-600 text-base md:text-md">
                   {faq.answer}
                 </div>
               )}
@@ -348,6 +330,7 @@ export default function Groundmounted() {
           ))}
         </div>
       </section>
+
       <Footer />
     </>
   );
