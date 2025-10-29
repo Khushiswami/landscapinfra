@@ -119,49 +119,49 @@ export default function Commercial() {
       subtitle: "Energy Savings, Better Business",
       description:
         "Reduce electricity expenses and increase profitability with efficient solar power.",
-      image: "/preimages/benone.jpg",
+      image: "/commercial/",
     },
     {
       subtitle: "Utilize Your Rooftop Smartly",
       description:
         "Convert unused rooftop space into a consistent source of clean energy.",
-      image: "/preimages/bentwo.jpg",
+      image: "/commercial/Utilize Your Rooftop Smartly.jpg",
     },
     {
       subtitle: "Stable Energy Costs",
       description:
         "Protect your business from rising electricity tariffs and unpredictable billing.",
-      image: "/preimages/quick.png",
+      image: "/commercial/Stable Energy Costs.jpg",
     },
     {
       subtitle: "Reliable Performance, Long-Term Value",
       description:
         "High-quality systems built to deliver dependable output for years.",
-      image: "/preimages/benthree.jpg",
+      image: "/commercial/Reliable Performance.jpg",
     },
     {
       subtitle: "Sustainable Energy, Strong Brand Image",
       description:
         "Show your commitment to the environment and enhance your corporate identity.",
-      image: "/preimages/",
+      image: "/commercial/",
     },
     {
       subtitle: "Fast Return on Investment",
       description:
         "Achieve payback in 3–4 years and enjoy long-term savings thereafter.",
-      image: "/preimages/",
+      image: "/commercial/",
     },
     {
       subtitle: "Smart Financing Options",
       description:
         "Access flexible, collateral-free financing designed for MSMEs and enterprises.",
-      image: "/preimages/",
+      image: "/commercial/",
     },
     {
       subtitle: "Invest Once, Benefit for Decades",
       description:
         "Replace lifetime electricity bills with manageable EMIs and secure lasting financial gains.",
-      image: "/preimages/",
+      image: "/commercial/",
     },
   ];
 
@@ -204,34 +204,16 @@ export default function Commercial() {
   };
   const slides = [
     {
-      image: "/preimages/",
+      image: "/commercial/",
       title: "Pre-fab Office",
-      link: "/prefabricatedSite",
     },
     {
-      image: "/preimages/industrial encloset.jpg",
+      image: "/commercial/",
       title: "Industrial Enclousers",
-      link: "/industrialEnclousers",
     },
     {
-      image: "/preimages/",
+      image: "/commercial/",
       title: "Railway Shelters",
-      link: "/railwayShelters",
-    },
-    {
-      image: "/preimages/",
-      title: "Control Room",
-      link: "/coldRoom",
-    },
-    {
-      image: "/preimages/cleanroomk.jpg",
-      title: "Clean Room",
-      link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/",
-      title: "Acoustic Enclosure",
-      link: "/",
     },
   ];
   const steps = [
@@ -313,7 +295,7 @@ export default function Commercial() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →
@@ -352,7 +334,7 @@ export default function Commercial() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/mod13.jpg"
+              src="/commercial/Energy Savings, Better Business.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />

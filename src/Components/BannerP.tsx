@@ -19,19 +19,19 @@ export default function Banner() {
     {
       title: "Engineering & RND Services",
       desc: "Committed to advancing innovation, fairness, equity, and quality in assessment.",
-      video: "/homeslider.mp4",
+      video: "/video/engineer.mp4",
       link: "/rnd",
     },
     {
       title: "Renewable Energy Solution Provider",
       desc: "Explore innovation in industrial equipment with green technologies.",
-      video: "/homeslider.mp4",
+      video: "/solarvideo/design.mp4",
       link: "/renewableenergy",
     },
     {
       title: "Pre-Engineered Buildings",
       desc: "Modular and pre-engineered structures tailored for efficiency and scalability.",
-      video: "/homeslider.mp4",
+      video: "/video/peb.mp4",
       link: "/preEngineeredBuildings",
     },
     {

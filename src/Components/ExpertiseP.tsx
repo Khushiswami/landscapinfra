@@ -41,7 +41,7 @@ export default function ExpertiseP() {
     { title: "HVAC", image: "/expertiseimages/HVAC.jpg", link: "/hvac" },
     {
       title: "Fire and Safety",
-      image: "/industry.jpg",
+      image: "/expertiseimages/f.jpeg",
       link: "/firesaftey",
     },
     {

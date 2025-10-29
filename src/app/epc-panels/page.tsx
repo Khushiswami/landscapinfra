@@ -114,7 +114,7 @@ const Epcpanels: React.FC = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-                Puf-panels
+                EPS Panels
               </h1>
             </div>
           </div>
@@ -134,16 +134,17 @@ const Epcpanels: React.FC = () => {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                PUF/PIR Panels – Smart Insulation for Modern Infrastructure
+                Lightweight & Efficient Solutions for Modern Spaces
               </h3>
               <p className="text-gray-700 mb-4">
-                PUF and PIR panels are specially designed insulated wall and
-                roof panels that keep interiors cooler, safer, and
-                energy-efficient. At LandsKing Infra, we produce these panels
-                with high accuracy to ensure strong durability and fast on-site
-                installation. Perfect for cold storage, clean rooms, and large
-                commercial or industrial buildings, they help reduce power
-                consumption while offering long-lasting performance.
+                EPS (Expanded Polystyrene) panels, also called thermocol
+                sandwich panels, provide a smart, cost-effective solution for
+                cladding, partitions, and thermal insulation. At EPACK Prefab,
+                we craft these panels with precision for easy installation,
+                reliable durability, and reduced heat transfer. Ideal for
+                interior layouts, non-structural partitions, and
+                temperature-moderated spaces, they combine lightweight
+                convenience with practical efficiency.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -156,21 +157,35 @@ const Epcpanels: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Types of PUF/PIR Sandwich Panels We Provide
+                Applications of EPS Panels
               </h3>
-              <p className="text-gray-700 mb-4">
-                We offer a versatile range of insulated sandwich panels
-                engineered to meet diverse structural, thermal, and industrial
-                requirements. Choose from the following panel categories based
-                on your project application:
-              </p>
+
               <ul className=" list-disc text-gray-700 mb-4 space-y-1">
                 <ul className="list-disc pl-5 text-gray-700 mb-4">
-                  <li>Roof Panels</li>
-                  <li>Wall Panels</li>
-                  <li>Cold Room Panels</li>
-                  <li>Cold Storage Panels</li>
-                  <li>Clean Room Panels</li>
+                  <li>
+                    <strong>Interior Walls & Partitions:</strong> Lightweight
+                    and easy to install, perfect for non-load-bearing spaces.
+                  </li>
+                  <li>
+                    <strong>Ceilings & Decorative Cladding:</strong> Offers
+                    seamless finishes while reducing structural weight.
+                  </li>
+                  <li>
+                    <strong>Roofing & Wall Systems:</strong> Provides insulation
+                    and durability for moderate climate structures.
+                  </li>
+                  <li>
+                    <strong>Cold Storage Interiors:</strong> Maintains
+                    temperature efficiently in less critical storage areas.
+                  </li>
+                  <li>
+                    <strong>Temporary & Modular Structures:</strong> Quick to
+                    deploy, ideal for short-term or movable setups.
+                  </li>
+                  <li>
+                    <strong>Warehouses & Industrial Facilities:</strong>{" "}
+                    Cost-effective solution for large-scale construction needs.
+                  </li>
                 </ul>
               </ul>
             </div>
@@ -186,26 +201,20 @@ const Epcpanels: React.FC = () => {
 
           <main className="bg-white">
             <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
-              <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                 <Card
                   image="/NDR.webp"
                   icon={<FaWarehouse size={32} className="text-white" />}
-                  title="Railway Shelters"
-                  description="Durable railway and telecom shelters, built to endure harsh conditions. Quick installation, low maintenance, and long-lasting reliability."
+                  title="EPS wall panels"
+                  description="Our EPS wall panels are designed for durability, thermal efficiency, and easy installation, ideal for both interior and exterior use. Featuring Standard Rib or Micro Rib finishes and a high-quality EPS core, they provide lightweight insulation with strong performance. Available in thicknesses from 40 to 150 mm and a 1170 mm panel width, they ensure efficient coverage and minimal joints. Produced on a continuous line for precision and quality, these panels are perfect for partitions, cladding, industrial buildings, and cold storage interiors."
                 />
                 <Card
                   image="/sectorimg/inf.jpeg"
                   icon={
                     <MdOutlineCleanHands size={32} className="text-white" />
                   }
-                  title="Prefabricated Multi-Storey Buildings"
-                  description="Designed for superior strength and cost-effectiveness, suitable for commercial and residential projects."
-                />
-                <Card
-                  image="/sectorimg/airport.jpg"
-                  icon={<FaIndustry size={32} className="text-white" />}
-                  title="Airport Terminal Buildings"
-                  description="Prefabricated structures for staff accommodations, worker housing, and more."
+                  title="EPS Roof Panels"
+                  description="Our EPS roof panels combine strength, thermal efficiency, and fast installation, making them ideal for lightweight roofing in moderate climates. Featuring a Micro Rib surface finish for durability and a modern look, they use a high-quality EPS core to ensure excellent insulation and reduced heat transfer. Available in thicknesses from 50 to 150 mm with a 1000 mm panel width and overlap joint system, they offer secure weather protection and easy assembly. Manufactured on a continuous line for consistent quality, these panels are perfect for roofing systems, industrial sheds, warehouses, and modular or temporary structures."
                 />
               </div>
             </section>
@@ -214,50 +223,37 @@ const Epcpanels: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Best-in-Class PUF/PIR Panel Features & Benefits
+                Discover EPS Solutions Key Advantages:
               </h3>
 
               <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>
-                  Thermal Insulation: Maintains optimal temperatures; reduces
-                  energy consumption.
+                  <strong>Lightweight Construction:</strong> Simplifies
+                  handling, logistics, and accelerates installation timelines.
                 </li>
                 <li>
-                  Fire Resistance: Self-extinguishing properties ensure safety
-                  in industrial & commercial setups.
+                  <strong>Economical Solution:</strong> Delivers high
+                  performance while optimizing material and labor costs.
                 </li>
                 <li>
-                  Durability: High structural strength for long-lasting
-                  performance.
+                  <strong>Thermal Performance:</strong> EPS core reduces heat
+                  transfer, enhancing energy efficiency.
                 </li>
                 <li>
-                  Airtight Construction: Minimizes energy loss and enhances
-                  insulation efficiency.
+                  <strong>Resilient & Low Maintenance:</strong> Resistant to
+                  moisture, pests, and decay for long-term reliability.
                 </li>
                 <li>
-                  Custom Dimensions: Panels available in various thicknesses and
-                  widths to fit project requirements.
+                  <strong>Acoustic Comfort:</strong> Provides effective noise
+                  attenuation for quieter interiors.
                 </li>
                 <li>
-                  Water & Vapor Resistance: Protects against moisture and
-                  weather-related damage.
+                  <strong>Architectural Flexibility:</strong> Available in
+                  diverse finishes and profiles to match design requirements.
                 </li>
                 <li>
-                  Hygienic & Seamless Finish: Concealed screws and Camlock
-                  systems ensure clean, aesthetic surfaces.
-                </li>
-                <li>
-                  Versatile Applications: Suitable for cold storage, clean
-                  rooms, warehouses, prefabricated buildings, and modular
-                  structures.
-                </li>
-                <li>
-                  Eco-Friendly: Manufactured from environmentally safe
-                  materials.
-                </li>
-                <li>
-                  Low Maintenance: Quick installation with minimal upkeep,
-                  providing long-term operational savings.
+                  <strong>Sustainable Choice:</strong> Recyclable material that
+                  supports environmentally responsible construction.
                 </li>
               </ul>
             </div>

@@ -37,7 +37,7 @@ export default function Industrial() {
       subtitle: "Custom System Design",
       description:
         "We conduct a detailed site assessment and load analysis to design solar systems that are precisely aligned with your operational requirements. Each solution is engineered to maximize energy output, optimize ROI, and ensure long-term operational reliability, reflecting a strategic approach to sustainable energy adoption.",
-      image: "/industryimg/",
+      image: "/industryimg/Custom System Design.jpg",
     },
 
     {
@@ -46,7 +46,7 @@ export default function Industrial() {
       subtitle: "End-to-End Delivery",
       description:
         "From feasibility assessment and detailed engineering to procurement, installation, and commissioning, we manage the entire project lifecycle as a single accountable entity. This integrated approach guarantees seamless execution, timely delivery, and superior quality performance without requiring you to coordinate multiple vendors.",
-      image: "/industryimg/",
+      image: "/industryimg/End-to-End Delivery.jpg",
     },
     {
       id: 1,
@@ -54,7 +54,7 @@ export default function Industrial() {
       subtitle: "Regulatory & Net-Metering Support",
       description:
         "We navigate the complexities of regulatory compliance, approvals, and net-metering on your behalf, making it easier for your business to adopt solar energy smoothly and benefit from government incentives.",
-      image: "/industryimg/",
+      image: "/industryimg/Regulatory & Net-Metering Support.jpg",
     },
     {
       id: 1,
@@ -62,7 +62,7 @@ export default function Industrial() {
       subtitle: "Flexible Financing",
       description:
         "We offer multiple financing options to suit different business models and budgets, including CAPEX (capital investment), OPEX (operating expenditure), and zero-investment RESCO models.we empower organizations to deploy solar infrastructure with minimal financial friction while achieving strategic energy and sustainability goals.",
-      image: "/industryimg/",
+      image: "/industryimg/Flexible Financing.jpg",
     },
     {
       id: 1,
@@ -70,7 +70,7 @@ export default function Industrial() {
       subtitle: "Asset Management & Monitoring",
       description:
         "Through advanced real-time monitoring, predictive maintenance, and proactive performance optimization to safeguard your solar assets. Continuous tracking and proactive management ensure maximum energy yield, minimize downtime, and extend the lifespan of your solar system.",
-      image: "/industryimg/",
+      image: "/industryimg/Asset Management & Monitoring.jpg",
     },
   ];
   const servicesing = [
@@ -118,55 +118,55 @@ export default function Industrial() {
       subtitle: "Profit with Sunshine",
       description:
         "Harness solar energy to generate returns quickly, often within two years.",
-      image: "/preimages/benone.jpg",
+      image: "/industryimg/Profit with Sunshine.jpg",
     },
     {
       subtitle: "Effortless Upkeep",
       description:
         "Minimize routine maintenance and free resources for essential business needs.",
-      image: "/preimages/bentwo.jpg",
+      image: "/industryimg/Effortless Upkeep.JPG",
     },
     {
       subtitle: "Predictable Energy Costs",
       description:
         "Take charge of your electricity expenses with self-produced power.",
-      image: "/preimages/quick.png",
+      image: "/industryimg/Predictable Energy Costs.jpg",
     },
     {
       subtitle: "Enhance Asset Value",
       description:
         "Solar installations increase property worth and make facilities more appealing.",
-      image: "/preimages/benthree.jpg",
+      image: "/industryimg/Enhance Asset Value.jpg",
     },
     {
       subtitle: "Tax Advantages & Depreciation",
       description:
         "Benefit from annual 40% depreciation and other tax incentives for smarter investments.",
-      image: "/preimages/",
+      image: "/industryimg/Tax Advantages.jpg",
     },
     {
       subtitle: "Eco-Leverage Your Brand",
       description:
         "Showcase sustainability and environmental responsibility to strengthen your brand image.",
-      image: "/preimages/",
+      image: "/industryimg/eco lavrage.jpg",
     },
     {
       subtitle: "Cooler Workspaces",
       description:
         "Solar panels help reduce shed temperatures by approximately 4°C.",
-      image: "/preimages/",
+      image: "/industryimg/Cooler Workspaces.jpg",
     },
     {
       subtitle: "Protection for Structures",
       description:
         "Extend the lifespan of sheds and RCC buildings by shielding them from direct sunlight.",
-      image: "/preimages/",
+      image: "/industryimg/Protection for Structures.jpg",
     },
     {
       subtitle: "Future-Proof Your Energy Bills",
       description:
         "Safeguard your operations against rising electricity tariffs with reliable solar power.",
-      image: "/preimages/",
+      image: "/industryimg/fr.jpg",
     },
   ];
 
@@ -188,7 +188,6 @@ export default function Industrial() {
     );
   };
 
-  // Slice visible cards and wrap around if needed
   const cardsToShow = possibilities
     .slice(startIndex, startIndex + visibleCards)
     .concat(
@@ -209,34 +208,12 @@ export default function Industrial() {
   };
   const slides = [
     {
-      image: "/preimages/",
-      title: "Pre-fab Office",
-      link: "/prefabricatedSite",
+      image: "/industryimg/Enhance Asset Value.jpg",
+      title: "Enhance Asset Value",
     },
     {
-      image: "/preimages/industrial encloset.jpg",
-      title: "Industrial Enclousers",
-      link: "/industrialEnclousers",
-    },
-    {
-      image: "/preimages/",
-      title: "Railway Shelters",
-      link: "/railwayShelters",
-    },
-    {
-      image: "/preimages/",
-      title: "Control Room",
-      link: "/coldRoom",
-    },
-    {
-      image: "/preimages/cleanroomk.jpg",
-      title: "Clean Room",
-      link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/",
-      title: "Acoustic Enclosure",
-      link: "/",
+      image: "/industryimg/Effortless Upkeep.JPG",
+      title: "Effortless Upkeep",
     },
   ];
   const steps = [
@@ -318,7 +295,7 @@ export default function Industrial() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →
@@ -468,7 +445,7 @@ export default function Industrial() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-80 object-cover"
+                  className="w-full h-64 md:h-106 object-cover"
                 />
               </div>
             </div>

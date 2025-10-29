@@ -98,7 +98,7 @@ export default function Pebheader() {
             { name: "PUF Panels", href: "/puf-panels" },
             { name: "EPS Panels", href: "/epc-panels" },
             { name: "Rockwool Panel", href: "/rockwoolpanel" },
-            { name: "Glass Wool Panels", href: "/glasswool" },
+            { name: "Glass Wool Panels", href: "/glass-wool-panels" },
           ],
         },
         {

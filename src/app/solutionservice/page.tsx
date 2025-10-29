@@ -95,7 +95,7 @@ export default function Solutionservice() {
                 </div>
 
                 <img
-                  src="/product/s3.jpg"
+                  src="/solutionserviceimg/Conceptual Design.jpg"
                   alt="Conceptual Design"
                   className="w-full h-52 object-cover "
                 />
@@ -144,10 +144,10 @@ export default function Solutionservice() {
                   </p>
                 </div>
                 <div className="mt-6 mb-3">
-                  <Image
-                    src="/product/s1.jpg"
+                  <img
+                    src="/solutionserviceimg/Proposal.jpg"
                     alt="Proposal Drawings"
-                    className="w-full h-48 object-cover"
+                    className="w-full h-40 md:h-75 object-cover"
                   />
                 </div>
               </div>
@@ -171,10 +171,10 @@ export default function Solutionservice() {
                   Signing of contract to execute the construction
                 </h3>
                 <div className="mt-1 mb-3">
-                  <Image
-                    src="/service.jpg"
+                  <img
+                    src="/solutionserviceimg/Contract.jpg"
                     alt="Contract Awarded"
-                    className="w-full h-69 object-cover"
+                    className="w-full h-60 md:70 object-cover"
                   />
                 </div>
               </div>
@@ -237,10 +237,10 @@ export default function Solutionservice() {
                 </ul>
 
                 <div className="mt-6 mb-3">
-                  <Image
-                    src="/industry.jpg"
+                  <img
+                    src="/solutionserviceimg/det.jpg"
                     alt="Fabrication"
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 md:h-60 object-cover"
                   />
                 </div>
 
@@ -297,10 +297,10 @@ export default function Solutionservice() {
                 </li>
               </ul>
               <div className="mt-6 mb-3">
-                <Image
-                  src="/square1.png"
+                <img
+                  src="/solutionserviceimg/Erection.jpg"
                   alt="Fabrication"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48  md:h-60 object-cover"
                 />
               </div>
             </div>

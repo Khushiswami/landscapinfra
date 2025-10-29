@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 import PebheaderW from "yes/Components/PebheaderW";
 
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
+
 // Product interface
 interface Product {
   title: string;
@@ -29,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     key={index}
     className="relative bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition"
   >
-    <Image
+    <img
       src={product.img}
       alt={product.title}
       className="w-full h-56 object-contain bg-white"
@@ -164,11 +164,13 @@ export default function System() {
           </div>
         </div>
 
-        {/* Banner Image */}
+        {/* Banner  img
+         */}
         <div className="w-full ">
-          <Image
+          <img
             src="/solutionsBannerPebsteel.jpg"
-            alt="Hero Image"
+            alt="Hero  img
+"
             className="w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] object-cover "
           />
         </div>
@@ -205,14 +207,14 @@ export default function System() {
             <h2 className="mt-4 text-lg sm:text-3xl font-semibold">
               Structural Steel
             </h2>
-            <p className="mt-2 text-sm sm:text-base text-gray-600 flex-grow">
+            <p className="mt-2 text-sm sm:text-lg text-gray-600 flex-grow">
               Pebsteel utilizes Structural Steel (S.T.S) for complex and
               large-scale projects, including skyscrapers, airport terminals,
               and oil and gas facilities, among others.
             </p>
             <a
               href="#"
-              className="mt-4 inline-flex items-center p-6 gap-2 text-[#000080] font-bold hover:underline"
+              className="mt-4 inline-flex text-lg items-center p-6 gap-2 text-[#000080] font-bold hover:underline"
             >
               Explore more
               <ArrowUpRight className="w-4 h-4" />
@@ -220,7 +222,7 @@ export default function System() {
           </div>
 
           <div className="bg-white shadow  text-start pl-2 flex flex-col">
-            <Image
+            <img
               src="/Square2.jpg"
               alt="Pre-Engineered Buildings"
               className="mx-auto w-full h-56 object-cover"

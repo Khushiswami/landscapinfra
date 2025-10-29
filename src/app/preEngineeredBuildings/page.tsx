@@ -22,7 +22,6 @@ export default function PreEngineeredBuildings() {
   return (
     <>
       <Pebheader />
-      {/* <PebheaderW/> */}
       <BannerPEB />
       <AboutPebP />
       <Servicesone />

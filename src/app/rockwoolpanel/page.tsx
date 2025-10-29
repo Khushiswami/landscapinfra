@@ -1,51 +1,108 @@
 "use client";
-import React, { useState } from "react";
+import { useState, ReactNode } from "react";
+
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
 import Pebfooter from "yes/Components/Pebfooter";
+import {
+  FaWarehouse,
+  FaSnowflake,
+  FaBuilding,
+  FaTools,
+  FaHome,
+} from "react-icons/fa";
 
+type CardProps = {
+  image: string;
+  icon: ReactNode;
+  title: string;
+  description: string;
+};
 const Portacabins: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+  function Card({ image, icon, title, description }: CardProps) {
+    return (
+      <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
+        {/* Image */}
+        <div className="relative w-full h-48 sm:h-56 overflow-hidden">
+          <Image src={image} alt={title} fill className="object-cover" />
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-0 bg-black opacity-0 transition-all duration-500 group-hover:w-[88%] group-hover:opacity-100"></div>
+        </div>
 
+        {/* Icon */}
+        <div className="relative -mt-8 ml-auto mr-4 bg-[#000080] p-3 rounded shadow-lg flex items-center justify-center w-fit">
+          {icon}
+        </div>
+
+        {/* Text */}
+        <div className="px-5 pb-6 flex-1 flex flex-col text-center sm:text-left">
+          <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
+            {title}
+          </h3>
+          <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+            {description}
+          </p>
+        </div>
+      </div>
+    );
+  }
   const faqs = [
     {
-      question: "What is a modular clean room building?",
+      question: "What are Rockwool Sandwich Panels?",
       answer:
-        "It is a pre-engineered, contamination-controlled facility built with insulated panels and precision sealing, guaranteeing the required atmospheric purity for sensitive manufacturing or research.",
+        "Rockwool panels are high-performance sandwich panels with a rigid stone wool core (from molten basalt rock) bonded between durable metal sheets. LandsKing Infra manufactures these panels to deliver superior fire resistance, thermal insulation, and acoustic control in one efficient solution.",
     },
     {
-      question: "What materials are used in modular clean room construction?",
+      question: "What is the fire rating of Rockwool panels?",
       answer:
-        "Construction uses pharmaceutical-grade panels, aluminum framing, and specialized anti-static flooring, ensuring ease of sanitation, hygiene compliance, and zero particle shedding.",
+        "Rockwool panels are inherently non-combustible and provide exceptional fire resistance, making them suitable for applications requiring high safety standards.",
     },
     {
-      question: "What industries require clean rooms?",
+      question: "Are Rockwool panels good for soundproofing?",
       answer:
-        "They are essential in biotechnology, pharmaceutical production, microelectronics, and advanced food processing, where maintaining specific air quality and environmental control is mandatory.",
+        "Yes. The dense stone wool core offers excellent acoustic insulation, reducing noise transmission between rooms and from external sources.",
     },
     {
-      question: "How are clean rooms classified based on cleanliness?",
+      question: "Where are Rockwool panels commonly used?",
       answer:
-        "Clean rooms are precisely categorized according to ISO 14644 standards, which dictates the maximum concentration of particulates allowed per cubic meter of air.",
+        "They are widely used in industrial buildings, commercial facilities, cold storage units, clean rooms, and areas where fire safety and sound insulation are critical.",
     },
     {
-      question: "What systems are integrated inside a clean room?",
+      question:
+        "What are the benefits of using Rockwool panels over other types?",
       answer:
-        "Integrated systems include multi-stage filtration with HEPA/ULPA filters, differential air pressure control, and smart monitoring to sustain consistent temperature and particulate purity.",
+        "Rockwool panels provide superior fire resistance, acoustic performance, thermal insulation, and durability compared to EPS or standard PUF panels.",
     },
     {
-      question: "What are the benefits of modular clean room construction?",
+      question: "What thickness and density options are available?",
       answer:
-        "Modular construction provides accelerated commissioning, built-in future scalability, and superior risk mitigation by minimizing on-site contamination exposure during the build phase.",
+        "LandsKing Infra offers a range of thicknesses and densities to meet diverse structural, thermal, and acoustic requirements. Panels can be customized based on project needs.",
     },
     {
-      question: "Why choose LANDSKING for clean room construction?",
+      question: "Are Rockwool panels environmentally friendly?",
       answer:
-        "We deliver custom-engineered clean rooms that exceed ISO, GMP, and FDA performance thresholds, providing turnkey solutions for verifiable purity and long-term asset reliability.",
+        "Yes. Rockwool is made from natural basalt rock and recycled materials, and the panels are fully recyclable, supporting sustainable building practices.",
+    },
+    {
+      question: "Can Rockwool panels be used for cold storage?",
+      answer:
+        "Absolutely. Their thermal insulation properties make them suitable for cold storage units and temperature-controlled environments.",
+    },
+    {
+      question:
+        "How does LandsKing Infra ensure the quality of its Rockwool panels?",
+      answer:
+        "All panels are produced under strict quality control in advanced facilities, ensuring consistent density, performance, and compliance with fire and safety standards.",
+    },
+    {
+      question:
+        "Why should I choose LandsKing Infra as my Rockwool panel supplier?",
+      answer:
+        "With decades of expertise, nationwide delivery, technical support, and a commitment to quality, LandsKing Infra provides reliable Rockwool panel solutions for all construction and industrial applications.",
     },
   ];
 
@@ -67,7 +124,7 @@ const Portacabins: React.FC = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-                Clean Room
+                Rockwool Sandwich Panels
               </h1>
             </div>
           </div>
@@ -87,22 +144,16 @@ const Portacabins: React.FC = () => {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                High-Precision Controlled Environments
+                Rockwool Sandwich Panels
               </h3>
               <p className="text-gray-700 mb-4">
-                Clean rooms are specialized environments created to keep
-                airborne particles, contaminants, and pollutants at extremely
-                low levels. They are critical for sectors such as
-                pharmaceuticals, electronics, biotechnology, food processing,
-                and medical devices, where even tiny particles can compromise
-                product quality. <br />
-                <br />
-                LANDSKING excels in designing and producing modular clean room
-                solutions using premium PUF, EPS, and Rockwool sandwich panels.
-                Leveraging more than 25 years of prefabrication expertise, our
-                systems comply with rigorous international standards, offering
-                excellent hygiene, thermal performance, and contamination
-                control.
+                Rockwool Panels – Certifiable Fire Resistance and Thermal
+                Integrity Engineered to withstand extreme temperatures, our
+                Rockwool Sandwich Panels offer stable thermal performance
+                alongside the highest fire safety classifications. The robust
+                stone wool core, secured by durable facings, ensures reliable
+                insulation and regulatory compliance, making them essential for
+                high-hazard and temperature-controlled facilities.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -117,40 +168,33 @@ const Portacabins: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Choose Us for Clean Room Construction?
+                Key Technical Specifications
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>
-                  <strong>
-                    Comprehensive In-House Design & Manufacturing:
-                  </strong>{" "}
-                  LANDSKING offers complete clean room solutions from concept
-                  design to commissioning, tailored for your industry’s needs.
+                  <strong>Core & Fire Safety:</strong> Non-combustible stone
+                  wool (rockwool) core ensures superior fire resistance,
+                  structural stability, and safety under high temperatures.
                 </li>
                 <li>
-                  <strong>Premium Modular Panels:</strong> Constructed using
-                  insulated sandwich panels for high strength, thermal
-                  efficiency, and airtight performance.
+                  <strong>Thermal Efficiency:</strong> Delivers excellent
+                  insulation performance with low K-values (typically
+                  0.024–0.080 W/m·K), customizable by density and thickness.
                 </li>
                 <li>
-                  <strong>Flexible Configurations:</strong> ISO-class compliant
-                  clean rooms with modular layouts that can be easily expanded
-                  or reconfigured.
+                  <strong>Dimensions:</strong> Available in thicknesses from 50
+                  mm to 150 mm (customizable) with standard panel widths and
+                  various metal facings such as PPGI and Galvalume.
                 </li>
                 <li>
-                  <strong>Rapid Delivery:</strong> State-of-the-art production
-                  facilities enable fast manufacturing and installation,
-                  covering over 6,800 sqm daily.
+                  <strong>Structural Integrity:</strong> Engineered for strength
+                  and stability with high compressive and flexural performance
+                  and durable surface compression zones.
                 </li>
                 <li>
-                  <strong>Nationwide Project Execution:</strong> Delivering to
-                  pharma hubs, industrial zones, and R&D centers across India
-                  with a reliable logistics network.
-                </li>
-                <li>
-                  <strong>Standards & Compliance:</strong> Designed to adhere to
-                  GMP, FDA, ISO, and WHO guidelines depending on project
-                  specifications.
+                  <strong>Acoustics & Durability:</strong> Provides excellent
+                  sound absorption and noise dampening, featuring proper facings
+                  and seals for superior moisture and weather resistance.
                 </li>
               </ul>
             </div>
@@ -176,47 +220,64 @@ const Portacabins: React.FC = () => {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Industries Served by Us
+                Rockwool Panel Applications
               </h3>
-              <ul className=" list-disc text-gray-700 mb-4 space-y-1">
-                <li>Pharmaceutical & API Manufacturing Units</li>
-                <li>Biotechnology & Life Science Industries</li>
-                <li>Food & Beverage Manufacturing</li>
-                <li>Electronics and Semiconductor Assembly</li>
-                <li>Medical, Lab & Research Centers</li>
-                <li>Aerospace & Defense Sectors</li>
-              </ul>
+              <p className="text-gray-700 mb-4">
+                Rockwool panels are ideal for safety-critical structures,
+                providing fire-rated walls and roofs for high-occupancy and
+                industrial facilities. They excel in noise management, forming
+                effective acoustic enclosures for generators, turbines, and
+                sensitive control rooms. Designed to maintain operational
+                integrity, these panels insulate HVAC systems and machine rooms,
+                minimizing both energy loss and noise. Their superior fire
+                resistance and hygiene properties also make them suitable for
+                specialized environments such as clean rooms, laboratories, and
+                cold storage applications.
+              </p>
             </div>
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Essential Features of LANDSKING Clean Rooms
-              </h3>
+          <main className="bg-white">
+            <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
+              <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card
+                  image="/NDR.webp"
+                  icon={<FaBuilding size={32} className="text-white" />}
+                  title="Wall Panel (Single Groove)"
+                  description="The standard fire and sound barrier for facades and internal partitions in commercial buildings. 50 mm thickness with 1150 mm width, providing a dependable, non-combustible core. Simple design, maximum essential protection."
+                />
 
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
-                <li>Leak-proof, continuous construction</li>
-                <li>Excellent thermal and sound insulation</li>
-                <li>Panels that resist fire and corrosion</li>
-                <li>Easy-to-clean, hygienic finishes</li>
-                <li>Fully compatible with HVAC and filtration systems</li>
-                <li>
-                  Lower energy consumption thanks to high-performance insulation
-                </li>
-                <li>Long-lasting, maintenance-free design</li>
-              </ul>
-            </div>
-            <div className="relative w-full h-80 md:h-[370px]">
-              <Image
-                src="/new-images/clean-room-5.avif"
-                alt="Row 4"
-                fill
-                className="object-cover rounded-lg "
-              />
-            </div>
-          </div>
+                <Card
+                  image="/NDR.webp"
+                  icon={<FaSnowflake size={32} className="text-white" />}
+                  title="Wall Panel (Double Groove)"
+                  description="Perfect for airtight, climate-controlled spaces like cold storage and data centers. Features a specialized double tongue & groove seal for certified thermal and fire integrity. Where precision climate control is the priority."
+                />
+
+                <Card
+                  image="/NDR.webp"
+                  icon={<FaHome size={32} className="text-white" />}
+                  title="Hidden Screw Wall Panel"
+                  description="Creates a clean, uninterrupted aesthetic for showrooms and commercial spaces by concealing all fasteners. Available in the widest range of thicknesses (up to 150 mm) for high-performance visual appeal. Style meets certified substance."
+                />
+
+                <Card
+                  image="/NDR.webp"
+                  icon={<FaTools size={32} className="text-white" />}
+                  title="Camlock Wall Panels"
+                  description="Designed for quick assembly and re-deployment in modular structures using fast, mechanical Camlock connections. 1170 mm width and varied thicknesses ensure robust, flexible, and time-saving construction. Time is money, and these panels save both."
+                />
+
+                <Card
+                  image="/NDR.webp"
+                  icon={<FaWarehouse size={32} className="text-white" />}
+                  title="Roof Panel"
+                  description="A structural roofing solution for industrial and PEB sheds with a corrugated profile for optimal water run-off. Offers high load-bearing capacity and a strong thermal barrier in 50 mm or 80 mm thickness. Security and efficiency from the top down."
+                />
+              </div>
+            </section>
+          </main>
 
           <div className="mx-auto md:mt-22">
             <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">

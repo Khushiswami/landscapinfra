@@ -35,7 +35,7 @@ export default function Standardmodular() {
       subtitle: "Liftable Cabin",
       description:
         "Ladsking Infra’s liftable cabins offer a versatile and convenient solution for a wide range of temporary or portable space requirements. Featuring an innovative design and easy lifting mechanism, these cabins provide mobility and flexibility without sacrificing comfort or functionality.",
-      image: "/industry.jpg",
+      image: "/standard/",
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ export default function Standardmodular() {
       subtitle: "Mi Homes",
       description:
         "Ladsking Infra’s MI Homes are innovative, sustainable, and budget-friendly modular homes crafted for rapid installation and lasting durability. Perfect for residential, commercial, and emergency use, these homes provide comfortable living spaces equipped with modern amenities.",
-      image: "/expertise/third.png",
+      image: "/standard/",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ export default function Standardmodular() {
       subtitle: "K-House",
       description:
         "K-House is a state-of-the-art solution for contemporary living, blending sustainability and innovation in its design. Featuring modular construction and energy-efficient elements, K-House provides a comfortable and eco-friendly lifestyle for individuals and families committed to a greener future.",
-      image: "/expertise/third.png",
+      image: "/standard/",
     },
   ];
 
@@ -124,42 +124,43 @@ export default function Standardmodular() {
       subtitle: "On-site Project Offices",
       description:
         "Quick-to-install office spaces at construction or industrial sites, providing a functional and comfortable working environment for project teams.",
-      image: "/industry.jpg",
+      image: "/standard/On-site Project Offices.jpg",
     },
     {
       subtitle: "Employee Housing Units",
       description:
         "Durable and secure accommodation units for workers, designed to ensure comfort and privacy during long-term site deployments.",
-      image: "/industry.jpg",
+      image: "/standard/Employee Housing Units.jpg",
     },
     {
       subtitle: "Portable Restrooms & Washrooms",
       description:
         "Hygienic, ready-to-use sanitation units that can be quickly installed at remote locations or project sites with limited infrastructure.",
-      image: "/industry.jpg",
+      image: "/standard/Portable Restrooms & Washrooms.jpg",
     },
     {
       subtitle: "Modular Educational Classrooms",
       description:
         "Flexible and scalable classrooms ideal for schools, training centers, or temporary learning spaces, built for quick deployment and durability.",
-      image: "/industry.jpg",
+      image: "/standard/Modular Educational Classrooms.jpg",
     },
     {
       subtitle: "Security Booths",
       description:
         "Compact and sturdy cabins for security personnel, strategically placed at entry points or perimeters to monitor and control access.",
-      image: "/industry.jpg",
+      image: "/standard/Security Booths.jpg",
     },
     {
       subtitle: "Model Apartments & Villas",
       description:
         "Fully functional sample flats and villas used for real estate demos, built with speed and precision to showcase final project layouts.",
-      image: "/industry.jpg",
+      image: "/standard/modern Apartments & Villas india.jpg",
     },
   ];
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
+  const visibleCards =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
   const [open, setOpen] = useState(false);
 
   const prevSlide = () => {
@@ -195,18 +196,18 @@ export default function Standardmodular() {
   };
   const slides = [
     {
-      image: "/expertise/third.png",
+      image: "/standard/",
       title: "Mi-Homes",
       link: "mi-homes",
     },
 
     {
-      image: "/expertise/third.png",
+      image: "/standard/",
       title: " Portable Cabins",
       link: "/porta-cabins",
     },
     {
-      image: "/expertise/third.png",
+      image: "/standard/",
       title: "K-House",
       link: "k-house",
     },
@@ -313,7 +314,7 @@ export default function Standardmodular() {
               performance.{" "}
             </p>
 
-            <Link href="/contact">
+            <Link href="/peb-contact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
@@ -321,7 +322,7 @@ export default function Standardmodular() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/industry.jpg"
+              src="/standard/modular building three.jpg"
               alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
@@ -334,9 +335,8 @@ export default function Standardmodular() {
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
             <Image
-              src="/PEB.jpg" // replace with your real factory image
+              src="/standard/modular building two.jpg"
               alt="Manufacturing Facility"
               width={700}
               height={450}
@@ -543,7 +543,7 @@ export default function Standardmodular() {
             {/* Image Section (Left Side) */}
             <div className="relative">
               <Image
-                src="/menupageimg/mod13.jpg" // replace with your image
+                src="/standard/"
                 alt="PUF panels in industrial shed"
                 width={600}
                 height={400}
