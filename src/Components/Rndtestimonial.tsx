@@ -93,7 +93,7 @@ export default function Rndtestimonial() {
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-black/50 text-white rounded-2xl overflow-hidden relative h-[320px]">
                   {/* Left Image */}
                   <div className="relative h-full">
-                    <Image
+                    <img
                       src={item.img}
                       alt={item.name}
                       className="w-full h-full object-cover opacity-90"

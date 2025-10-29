@@ -22,77 +22,42 @@ const projects: Project[] = [
     title: "Rooftop Solar for Manufacturing",
     description:
       "We design and install both rooftop and ground-mounted solar systems.Each project is customized for optimal energy generation and space utilization.High-quality components and precision installation maximize efficiency and reliability.",
-    image: "/realstate/three.webp",
+    image: "/expertisesoalr/Hybrid Rooftop Solar System..png",
   },
   {
     id: 2,
     title: "On-Grid, Off-Grid & Hybrid System Design",
     description:
       "Our team delivers on-grid, off-grid, and hybrid solar solutions tailored to your needs.We ensure reliable power supply, energy independence, and system scalability.Smart design and monitoring guarantee optimal performance and ROI.",
-    image: "/realstate/two.jpg",
+    image: "/expertisesoalr/Off-Grid Rooftop Solar System.png",
   },
   {
     id: 3,
     title: "Solar Panel Supply, Structure Erection & Cabling",
     description:
       "We supply high-quality solar panels and complete mounting structures.Our technicians handle precise erection, secure cabling, and safe connections.Every system is installed for durability, efficiency, and regulatory compliance.",
-    image: "/realstate/one.webp",
+    image: "/expertisesoalr/solar supply.jpeg",
   },
   {
     id: 4,
     title: "Net Metering & Open Access Support",
     description:
       " We assist with net metering setup to enable energy export and savings.Our team guides clients through subsidy applications and government incentives.This ensures maximum financial benefits and faster project ROI.",
-    image: "/realstate/fourS.webp",
+    image: "/expertisesoalr/Open Access for Solar Parks.png",
   },
   {
     id: 5,
     title: "Battery-Integrated Solar for Power Reliability",
     description:
       "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
-    image: "/realstate/fiveS.webp",
+    image: "/expertisesoalr/battery integrated solar.jpg",
   },
   {
     id: 6,
     title: "Turnkey EPC for Solar PV Systems",
     description:
       "We provide complete end-to-end EPC solutions for solar PV projects.From design to installation, we handle every step for seamless execution.Our technique ensures cost-efficiency, compliance, and long-term system performance.",
-    image: "/realstate/fiveS.webp",
-  },
-];
-
-const sectors = [
-  {
-    id: 1,
-    title: "Integrated Design & Fit-outs",
-    image: "/industry.jpg",
-    url: "/manufacturing",
-    description:
-      "We handle all space planning, interior finishes, and seamless integration of all mechanical, electrical, and plumbing systems.",
-  },
-  {
-    id: 2,
-    title: "Smart Automation",
-    image: "/industry.jpg",
-    url: "/urban",
-    description:
-      "We install smart systems for lighting, HVAC, and access control to create efficient and automated offices.",
-  },
-  {
-    id: 3,
-    title: "Specialized Interiors",
-    image: "/industry.jpg",
-    url: "/advanced",
-    description:
-      "We provide modular partitions, acoustic designs, and energy-efficient solutions for a functional and comfortable workspace.",
-  },
-  {
-    id: 4,
-    title: "Sustainable Green Offices",
-    image: "/industry.jpg",
-    url: "/oil",
-    description:
-      "We develop green offices that are certified by LEED and IGBC, focusing on eco-friendly and healthy environments.",
+    image: "/expertisesoalr/Industrial Turnkey Solar Projects (1).png",
   },
 ];
 
@@ -119,18 +84,6 @@ export default function Solar() {
   }, []);
 
   // Autoplay (only for desktop)
-  useEffect(() => {
-    if (itemsPerView > 1) {
-      const timer = setInterval(() => {
-        setCurrent((c) => (c + 1) % sectors.length);
-      }, 5000);
-      return () => clearInterval(timer);
-    }
-  }, [itemsPerView]);
-
-  const prevSlide = () =>
-    setCurrent((c) => (c - 1 + sectors.length) % sectors.length);
-  const nextSlide = () => setCurrent((c) => (c + 1) % sectors.length);
 
   return (
     <>
@@ -139,7 +92,7 @@ export default function Solar() {
       {/* Hero Banner */}
       <div className="relative w-full h-[70vh] flex items-center justify-center bg-gray-900">
         <Image
-          src="/images/banner.jpg"
+          src="/expertisesoalr/renewwable three.jpg"
           alt="Renewable Energy"
           fill
           className="object-cover opacity-60"
@@ -197,7 +150,7 @@ export default function Solar() {
         <div className="flex justify-center">
           <div className="relative rounded-lg overflow-hidden shadow-lg w-full ">
             <Image
-              src="/industry.jpg"
+              src="/expertisesoalr/renewwable two.jpg"
               alt="Office Sample"
               width={500}
               height={450}
@@ -279,7 +232,7 @@ export default function Solar() {
                             <h3 className="text-sm md:text-lg font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-[18px] mb-4 ">
+                            <p className="text-[10px] md:text-[16px] mb-4 ">
                               {project.description}
                             </p>
                           </div>

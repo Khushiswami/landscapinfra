@@ -51,21 +51,21 @@ const projects: Project[] = [
     image: "/servicecivil/tooling.jpg",
   },
   {
-    id: 5,
+    id: 6,
     title: "Future Life Experience Training / Support",
     description:
       "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
     image: "/servicecivil/future.jpg",
   },
   {
-    id: 5,
+    id: 7,
     title: "Analysis / Simulations",
     description:
       "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
     image: "/servicecivil/anylsis.png",
   },
   {
-    id: 5,
+    id: 8,
     title: "Manufacturing",
     description:
       "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
@@ -73,14 +73,14 @@ const projects: Project[] = [
   },
 
   {
-    id: 5,
+    id: 9,
     title: "Concept Validation",
     description:
       "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
     image: "/servicecivil/kk.jpg",
   },
   {
-    id: 5,
+    id: 10,
     title: "Mathematical Calculation",
     description:
       "Ensure continuous power for your business with a smart, battery-integrated solar system. Store excess energy to eliminate peak-hour costs and protect your operations from unexpected outages.",
@@ -139,10 +139,9 @@ export default function Caesector() {
                   >
                     <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
                       <div className="relative w-full h-full">
-                        <Image
+                        <img
                           src={project.image}
                           alt={project.title}
-                          fill
                           className="object-cover w-full h-full rounded-lg"
                         />
 

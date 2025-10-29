@@ -49,14 +49,14 @@ export default function Rndaboutus() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16 px-4 md:px-10 overflow-hidden">
+    <section className="relative  py-4 md:py-16 px-4 md:px-10 overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
       <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start z-10 md:mx-11 ">
         {/* Left Section - Video & Two Images */}
-        <div className="space-y-6">
+        <div className="space-y-2  md:space-y-6">
           {/* Video */}
           <div className="relative  rounded-lg mt-10 w-full h-64 sm:h-72 md:h-110 overflow-hidden  hover: transition-all duration-500">
             <video

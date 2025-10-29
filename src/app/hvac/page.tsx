@@ -37,25 +37,25 @@ export default function Hvac() {
       subtitle: "Centralized HVAC Systems",
       description:
         "Efficient centralized HVAC systems provide consistent climate control across large commercial and industrial facilities.",
-      image: "/industry.jpg",
+      image: "/hvac/HVAC three.jpg",
     },
     {
       subtitle: "VRF/VRV Technology",
       description:
         " Advanced VRF/VRV systems offer flexible, energy-efficient heating and cooling for varied spaces",
-      image: "/industry.jpg",
+      image: "/hvac/VRFVRV Technology.png",
     },
     {
       subtitle: "Chillers and Cooling Towers",
       description:
         "High-performance chillers and cooling towers ensure reliable temperature regulation and optimized energy usage.",
-      image: "/industry.jpg",
+      image: "/hvac/Chillers and Cooling Towers.jpg",
     },
     {
       subtitle: "AHUs and Ventilation Systems",
       description:
         " Air handling units and ventilation systems maintain air quality and comfortable indoor environments.",
-      image: "/industry.jpg",
+      image: "/hvac/AHUs and Ventilation Systems.jpg",
     },
   ];
 
@@ -90,26 +90,25 @@ export default function Hvac() {
   // ===== Slides for Swiper =====
   const slides = [
     {
-      image: "/expertise/third.png",
+      image: "/hvac/System Design & 3D Modeling.jpg",
       title: "System Design & 3D Modelingr",
       link: "#",
     },
     {
-      image: "/expertise/third.png",
+      image: "/hvac/Energy-Efficient System Integration (1).jpg",
       title: "Energy-Efficient System Integration",
       link: "#",
     },
     {
-      image: "/expertise/third.png",
+      image: "/hvac/Installation & Commissioning.jpg",
       title: "Installation & Commissioning",
       link: "#",
     },
     {
-      image: "/expertise/third.png",
+      image: "/hvac/AMC & Performance Monitoring.jpg",
       title: "AMC & Performance Monitoring",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
 
   // ===== Areas for dropdown =====
@@ -120,7 +119,7 @@ export default function Hvac() {
       subtitle: "System Design & 3D Modeling",
       description:
         "We create precise HVAC system designs using 3D modeling, enabling accurate visualization, seamless integration, and efficient planning for diverse commercial and industrial projects.",
-      image: "/menupageimg/peb3.jpg",
+      image: "/hvac/System Design & 3D Modeling.jpg",
     },
     {
       id: 2,
@@ -128,7 +127,7 @@ export default function Hvac() {
       subtitle: "Energy-Efficient System Integration",
       description:
         " Our solutions integrate high-performance, energy-efficient HVAC systems that reduce operational costs, improve climate control, and optimize indoor air quality across facilities",
-      image: "/menupageimg/peb4.png",
+      image: "/hvac/Energy-Efficient System Integration.jpg",
     },
     {
       id: 3,
@@ -136,7 +135,7 @@ export default function Hvac() {
       subtitle: "Installation & Commissioning",
       description:
         "Certified engineers handle professional installation and commissioning of HVAC systems, ensuring reliability, compliance with standards, and smooth, hassle-free project execution",
-      image: "/menupageimg/peb5.png",
+      image: "/hvac/Installation & Commissioning.jpg",
     },
     {
       id: 4,
@@ -144,7 +143,7 @@ export default function Hvac() {
       subtitle: "AMC & Performance Monitoring",
       description:
         " We provide annual maintenance contracts (AMC) and continuous performance monitoring to maintain efficiency, prevent downtime, and extend the lifespan of HVAC systems",
-      image: "/menupageimg/peb8.jpg",
+      image: "/hvac/AMC & Performance Monitoring.jpg",
     },
   ];
 
@@ -316,7 +315,7 @@ export default function Hvac() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/peb2.jpg"
+              src="/hvac/HVAC one.JPG"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
@@ -536,7 +535,7 @@ export default function Hvac() {
           {/* Right Image */}
           <div className="relative">
             <Image
-              src="/industry.jpg" // replace with your image
+              src="/hvac/HVAC two.jpg"
               alt="Why Choose Us"
               width={700}
               height={450}

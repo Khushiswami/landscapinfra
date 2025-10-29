@@ -181,10 +181,10 @@ export default function Epcsolutions() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12">
+      <section className="w-full bg-white py-6 md:py-12 px-4 sm:px-6 md:px-12">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold  max-w-4xl mx-auto">
+            <h2 className="text-xl text-[#000080] sm:text-2xl md:text-3xl font-bold  max-w-4xl mx-auto">
               Landsking Infra Fabrication Solutions
             </h2>
           </div>
@@ -364,11 +364,11 @@ export default function Epcsolutions() {
       {/* ===== CTA Section ===== */}
 
       {/* ===== Key Features ===== */}
-      <section className="w-full bg-white  md:py-12 px-4 sm:px-6 md:px-12">
+      <section className="w-full bg-white  md:py-12 px-5 sm:px-6 md:px-12">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl md:mb-5  md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
+              <h2 className=" text-[#000080] text-2xl md:mb-5  md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
                 Why Choose Landsking Infra for Solar EPC?
               </h2>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">

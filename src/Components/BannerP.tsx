@@ -13,7 +13,7 @@ export default function Banner() {
     {
       title: "Industry Installation and Construction",
       desc: "Quality Construction Project Delivery on time with customer satisfaction.",
-      video: "/homeslider.mp4",
+      video: "/rndvideo/industry instalation.mp4",
       link: "/industryinstallation",
     },
     {
@@ -37,7 +37,7 @@ export default function Banner() {
     {
       title: "Real Estate Development",
       desc: "Innovative real estate solutions designed for modern needs and sustainable growth.",
-      video: "/homeslider.mp4",
+      video: "/rndvideo/real  estate.mp4",
       link: "/realStateDevlopment",
     },
   ];

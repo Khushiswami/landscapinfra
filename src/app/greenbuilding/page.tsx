@@ -138,23 +138,20 @@ export default function Greenbuilding() {
   const slides = [
     {
       image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
+      title: "Eco-resorts",
       link: "#",
     },
     {
       image: "/expertise/third.png",
-      title: "Industrial Enclosures",
+      title: "Smart Buildings",
       link: "#",
     },
     {
       image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
+      title: "Hospitals & Public Buildings",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
-
   const areas = [
     {
       id: 1,
@@ -293,7 +290,7 @@ export default function Greenbuilding() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
                       >
                         Read more →
@@ -342,7 +339,7 @@ export default function Greenbuilding() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/peb2.jpg"
+              src="/water/Green Building Solutions.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />

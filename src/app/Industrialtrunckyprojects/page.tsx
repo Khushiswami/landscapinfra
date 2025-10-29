@@ -110,7 +110,6 @@ const Page = () => {
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug">
               Industrial Turnkey Projects
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               We transcend complexity, providing complete industrial solutions

@@ -149,18 +149,16 @@ export default function Productengineering() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-12">
+      <section className="w-full bg-white  text-[#000080] py-5 md:py-12 px-4 sm:px-8 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-1">
+          <div className="text-center md:mb-1">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Product engineering service
             </h2>
           </div>
 
           <div className="grid md:grid-cols-1 gap-8 items-center">
-            <div>
-              <div className="flex items-center gap-4"></div>
-            </div>
+            <div></div>
           </div>
         </div>
       </section>

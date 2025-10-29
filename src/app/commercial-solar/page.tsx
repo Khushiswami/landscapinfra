@@ -316,7 +316,6 @@ export default function Commercial() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Commercial Solar
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               Our commercial solar solutions keep your operations powered and

@@ -21,35 +21,36 @@ const projects: Projectsector[] = [
     title: "Water & Sewage Plants",
     description:
       " Design and implement WTP and STP systems ensuring safe water supply, effective wastewater treatment, and regulatory compliance.",
-    image: "/realstate/three.webp",
+    image:
+      "/water/Soluciones integrales en la gestión de aguas y efluentes.jpeg",
   },
   {
     id: 2,
     title: "Rainwater Harvesting Systems",
     description:
       "Develop rainwater harvesting and recharge solutions to conserve water, reduce runoff, and support sustainable urban water management.",
-    image: "/realstate/two.jpg",
+    image: "/water/rain water harvesting.jpg",
   },
   {
     id: 3,
     title: "Stormwater & Drainage",
     description:
       " Plan and construct stormwater and drainage infrastructure to prevent flooding, ensure efficient runoff, and maintain urban safety.",
-    image: "/realstate/one.webp",
+    image: "/water/strom water.jpg",
   },
   {
     id: 4,
     title: "Pumping Stations & Reservoirs",
     description:
       " Design pumping stations and underground reservoirs to provide reliable water storage, pressure, and distribution for communities and industries.",
-    image: "/realstate/fourS.webp",
+    image: "/water/plumbing stain and reservarious.jpg",
   },
   {
     id: 5,
     title: "Pipeline Networks & Distribution",
     description:
       "Implement pipeline networks and distribution systems ensuring seamless water delivery, minimal leakage, and optimized operational efficiency.",
-    image: "/realstate/fiveS.webp",
+    image: "/water/py.jpg",
   },
 ];
 
@@ -57,7 +58,7 @@ const sectors = [
   {
     id: 1,
     title: "Integrated Design & Fit-outs",
-    image: "/industry.jpg",
+    image: "/water/",
     url: "/manufacturing",
     description:
       "We handle all space planning, interior finishes, and seamless integration of all mechanical, electrical, and plumbing systems.",
@@ -65,7 +66,7 @@ const sectors = [
   {
     id: 2,
     title: "Smart Automation",
-    image: "/industry.jpg",
+    image: "/water/",
     url: "/urban",
     description:
       "We install smart systems for lighting, HVAC, and access control to create efficient and automated offices.",
@@ -73,7 +74,7 @@ const sectors = [
   {
     id: 3,
     title: "Specialized Interiors",
-    image: "/industry.jpg",
+    image: "/water/",
     url: "/advanced",
     description:
       "We provide modular partitions, acoustic designs, and energy-efficient solutions for a functional and comfortable workspace.",
@@ -81,7 +82,7 @@ const sectors = [
   {
     id: 4,
     title: "Sustainable Green Offices",
-    image: "/industry.jpg",
+    image: "/water/",
     url: "/oil",
     description:
       "We develop green offices that are certified by LEED and IGBC, focusing on eco-friendly and healthy environments.",

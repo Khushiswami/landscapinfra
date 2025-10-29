@@ -41,7 +41,7 @@ export default function Expertisecoldstorage() {
       subtitle: "Turnkey Cold Storage Facility Construction",
       description:
         " We deliver end-to-end cold storage construction, handling each and everything from design to final handover.Our turnkey approach ensures timely delivery, true cost, and operational readiness.",
-      image: "/menupageimg/peb3.jpg",
+      image: "/expertisecold/Turnkey Cold Storage Facility Construction.jpg",
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ export default function Expertisecoldstorage() {
       subtitle: "Temperature-Controlled Warehouse Design",
       description:
         " We design warehouses with precise temperature control to preserve product quality and shelf life.Our designs optimize workflow, storage capacity, and energy efficiency for smooth operations",
-      image: "/menupageimg/peb4.png",
+      image: "/expertisecold/Temperature-Controlled Warehouse Design.jpg",
     },
     {
       id: 3,
@@ -57,7 +57,7 @@ export default function Expertisecoldstorage() {
       subtitle: "Refrigeration System Integration",
       description:
         " We integrate advanced refrigeration systems customised to your storage requirements.Our solutions include blast freezers, chillers, and cooling units for consistent temperature control.",
-      image: "/menupageimg/peb5.png",
+      image: "/expertisecold/Refrigeration System Integration.jpg",
     },
     {
       id: 4,
@@ -65,7 +65,7 @@ export default function Expertisecoldstorage() {
       subtitle: "Thermal Insulation",
       description:
         " We use high-quality PUF panels, thermal insulation, and vapor barriers to maintain optimum conditions.These materials improve energy efficiency and protect goods from environmental fluctuations",
-      image: "/menupageimg/peb8.jpg",
+      image: "/expertisecold/Thermal Insulation.jpeg",
     },
     {
       id: 5,
@@ -73,7 +73,7 @@ export default function Expertisecoldstorage() {
       subtitle: "Fire Safety, MEP, and Automation Systems",
       description:
         " We incorporate fire safety measures, MEP systems, and automation for secure, efficient operations.Our smart systems ensure compliance, safety, and streamlined warehouse management.",
-      image: "/menupageimg/peb6.jpg",
+      image: "/expertisecold/Fire Safety.jpg",
     },
   ];
 
@@ -117,31 +117,31 @@ export default function Expertisecoldstorage() {
       subtitle: "Food Processing & Dairy",
       description:
         "Pre-engineered buildings (PEBs) allow for fast installation and easy erection due to their lightweight construction, reducing both time and labor costs.",
-      image: "/industry.jpg",
+      image: "/expertisecold/food processing.jpg",
     },
     {
       subtitle: "Pharmaceuticals & Life Sciences",
       description:
         "Our cold storage facilities preserve sensitive pharmaceuticals and life sciences products while maintaining regulatory compliance and efficacy.",
-      image: "/industry.jpg",
+      image: "/expertisecold/Pharmaceuticals & Life Sciences.jpg",
     },
     {
       subtitle: "Horticulture & Floriculture",
       description:
         "We design cold storage systems that maintain flowers, fruits, and vegetables fresh by optimisation temperature, humidity, and airflow.",
-      image: "/industry.jpg",
+      image: "/expertisecold/Horticulture & Floriculture.jpg",
     },
     {
       subtitle: "Frozen Meat & Seafood Logistics",
       description:
         " Our integrated cold storage and logistics solutions maintain constant temperatures to ensure the safety and quality of frozen meat and seafood.",
-      image: "/industry.jpg",
+      image: "/expertisecold/Frozen Meat & Seafood Logistics.jpg",
     },
     {
       subtitle: "E-commerce Cold Chain and Distribution",
       description:
         "We build smart, temperature-controlled warehouses for e-commerce cold chain products, ensuring timely delivery and product integrity.",
-      image: "/industry.jpg",
+      image: "/expertisecold/E-commerce Cold Chain and Distribution.jpeg",
     },
   ];
 
@@ -181,30 +181,6 @@ export default function Expertisecoldstorage() {
       description:
         " We deliver energy-efficient, IoT-enabled facilities that grow with your business while reducing costs.",
       icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
-    },
-  ];
-
-  const slides = [
-    {
-      image: "/expertise/third.png",
-      title: "Turnkey Cold Storage Facility Construction",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Temperature-Controlled Warehouse Design",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Refrigeration System Integration",
-      link: "#",
-    },
-    { image: "/expertise/third.png", title: "Thermal Insulation", link: "#" },
-    {
-      image: "/expertise/third.png",
-      title: "Fire Safety, MEP, and Automation Systems",
-      link: "#",
     },
   ];
 
@@ -286,65 +262,30 @@ export default function Expertisecoldstorage() {
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12   items-center">
           {/* Left Text */}
-          <div className="text-center lg:text-left order-1">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Cold Storage{" "}
+          <div className="flex flex-col items-center justify-center text-center order-1">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md">
+              Cold Storage
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-sm">
               Landsking Infra specializes in advanced cold storage and warehouse
               infrastructure solutions.
             </p>
-          </div>
-
-          {/* Right Slider */}
-          <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
-              loop
-              className="pb-10 max-w-[260px] sm:max-w-sm"
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
-                    <img
-                      src={slide.image}
-                      alt={slide.title}
-                      className="w-full h-56 sm:h-72 object-cover"
-                    />
-                    <div className="p-3 text-center">
-                      <h3 className="text-base sm:text-lg font-semibold">
-                        {slide.title}
-                      </h3>
-                      <a className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base">
-                        Read more →
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
           </div>
         </div>
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-23">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Cold Storage{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               Landsking Infra specializes in advanced cold storage and warehouse
@@ -375,7 +316,7 @@ export default function Expertisecoldstorage() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/peb2.jpg"
+              src="/expertisecold/cold storage one.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
@@ -384,7 +325,7 @@ export default function Expertisecoldstorage() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Why chose us{" "}
@@ -415,7 +356,7 @@ export default function Expertisecoldstorage() {
       </section>
 
       {/* slider section */}
-      <section className=" mx-auto px-4 py-10 md:mx-12">
+      <section className=" mx-auto px-4 py-10 md:mx-16">
         <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
           Our Services
         </h2>
@@ -527,7 +468,7 @@ export default function Expertisecoldstorage() {
       {/* endcapill */}
       {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4 md:mx-12">
+        <div className=" mx-auto px-4 md:mx-16">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Industries We Serve{" "}
           </h2>
@@ -570,7 +511,7 @@ export default function Expertisecoldstorage() {
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="max-w-7xl mx-auto px-6 md:px-16">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
             SPECIFICATIONS OF INDUSTRIAL SHED COMPONENTS
@@ -614,7 +555,7 @@ export default function Expertisecoldstorage() {
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <Image
-                src="/menupageimg/peb9.jpeg"
+                src="/expertisecold/cold storage three.jpg"
                 alt="PUF panels in industrial shed"
                 width={600}
                 height={400}

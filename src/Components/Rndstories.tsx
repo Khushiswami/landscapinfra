@@ -58,11 +58,11 @@ export default function Rndstories() {
               className="w-full h-40 md:h-48 object-cover"
             />
             <div className="p-4 flex flex-col justify-between flex-grow">
-              <h3 className="text-[#000000] font-medium text-sm md:text-lg mb-3">
+              <h3 className="text-[#000080] font-medium text-sm md:text-lg mb-3">
                 {story.title}
               </h3>
               <p className=" text-[#545353] mb-3">{story.Subtitle}</p>
-              <button
+              {/* <button
                 onClick={() => router.push(story.url)}
                 className="flex items-center text-sm md:text-base font-medium text-[#000080] hover:text-[#ff0000] mt-auto"
               >
@@ -70,7 +70,7 @@ export default function Rndstories() {
                 <span className="ml-1 inline-block transform transition-transform group-hover:translate-x-1">
                   →
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
         ))}

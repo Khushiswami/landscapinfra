@@ -50,7 +50,7 @@ export default function IndustryHead() {
   };
 
   const navLinks: MenuItem[] = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/industryinstallation" },
     {
       name: "Business Areas",
       href: "#",
@@ -166,7 +166,7 @@ export default function IndustryHead() {
         }`}
       >
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
+        <Link href="/industryinstallation" className="flex-shrink-0">
           <Image
             src={scrolled ? "/finallogo.png" : "/whitelogo.png"}
             alt="Logo"

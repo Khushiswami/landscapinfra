@@ -42,18 +42,27 @@ export default function Industryheadsecond() {
   };
 
   const navLinks: MenuItem[] = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/industryinstallation" },
     {
       name: "Business Areas",
       href: "#",
       subItems: [
         {
-          title: "Power",
-          href: "/buildingandinfrastructure",
+          title: "Industryinstallation",
+          // href: "/businessAreas/industrialinstallation",
+          href: "/industry-installation",
           subMenu: [
-            { name: "Hydro Power", href: "/businessAreas/hydropower" },
-            { name: "Nuclear Power", href: "/businessAreas/nuclearpower" },
-            { name: "Thermal Power", href: "/businessAreas/thermalpower" },
+            {
+              name: "EPC Turnkey Solutions",
+              href: "/Industrialtrunckyprojects",
+            },
+            {
+              name: "Construction Works",
+              href: "/construction",
+            },
+            { name: "HVAC", href: "/hvac" },
+            { name: "  Other Industries", href: "/otherindustries" },
+            { name: " Fire Saftey", href: "/firesaftey" },
           ],
         },
         {
@@ -141,7 +150,7 @@ export default function Industryheadsecond() {
     <header className="fixed top-0 z-50 bg-white w-full shadow-md">
       <div className="mx-auto flex items-center justify-between px-6 md:px-20 py-4">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
+        <Link href="/industryinstallation" className="flex-shrink-0">
           <Image
             src="/finallogo.png"
             alt="Logo"

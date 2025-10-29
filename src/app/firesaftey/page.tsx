@@ -31,31 +31,31 @@ export default function Firesafety() {
       subtitle: "Manufacturing and Warehouses",
       description:
         " We provide tailored solutions for efficient, safe, and durable manufacturing and warehouse facilities.",
-      image: "/industry.jpg",
+      image: "/saftey/Manufacturing and Warehouses.jpg",
     },
     {
       subtitle: "Commercial Complexes & Malls",
       description:
         " Our services enhance safety, functionality, and comfort in commercial complexes and shopping malls.",
-      image: "/industry.jpg",
+      image: "/saftey/Commercial Complexes & Malls.jpg",
     },
     {
       subtitle: "Educational Institutions & Hospitals",
       description:
         " We deliver reliable systems ensuring safety, compliance, and efficiency for schools, colleges, and hospitals.",
-      image: "/industry.jpg",
+      image: "/saftey/Educational Institutions & Hospitals.jpg",
     },
     {
       subtitle: "Data Centers & Server Rooms",
       description:
         " Specialized solutions maintain optimal conditions, security, and uninterrupted operations for data centers.",
-      image: "/industry.jpg",
+      image: "/saftey/Data Centers & Server Rooms.jpg",
     },
     {
       subtitle: "High-Rise Residential & Hotels",
       description:
         " We implement systems that ensure safety, comfort, and efficiency in high-rise residences and hotels.",
-      image: "/industry.jpg",
+      image: "/saftey/High-Rise Residential & Hotels.png",
     },
   ];
 
@@ -103,22 +103,22 @@ export default function Firesafety() {
   // ===== Slides for Swiper =====
   const slides = [
     {
-      image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
+      image: "/saftey/Hydrant & Sprinkler Systems.jpg",
+
+      title: "Hydrant & Sprinkler Systems",
       link: "#",
     },
     {
-      image: "/expertise/third.png",
-      title: "Industrial Enclosures",
+      image: "/saftey/fire-alarm-switch.jpg",
+
+      title: "Fire Alarm & Sensors",
       link: "#",
     },
     {
-      image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
+      image: "/saftey/Turnkey Fire Systems.jpg",
+      title: "Turnkey Fire Systems",
       link: "#",
     },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
 
   // ===== Areas for dropdown =====
@@ -129,7 +129,7 @@ export default function Firesafety() {
       subtitle: "Turnkey Fire Systems",
       description:
         "We provide end-to-end fire detection and suppression installation, ensuring safety, compliance, and rapid response for industrial and commercial spaces.",
-      image: "/menupageimg/peb3.jpg",
+      image: "/saftey/Turnkey Fire Systems.jpg",
     },
     {
       id: 2,
@@ -137,7 +137,7 @@ export default function Firesafety() {
       subtitle: "Fire Alarm & Sensors",
       description:
         " Advanced fire alarm panels, smoke and heat detectors, and gas leak sensors for reliable early warning and risk mitigation.",
-      image: "/menupageimg/peb4.png",
+      image: "/saftey/fire-alarm-switch.jpg",
     },
     {
       id: 3,
@@ -145,7 +145,7 @@ export default function Firesafety() {
       subtitle: "Hydrant & Sprinkler Systems",
       description:
         "Installation of fire hydrants, sprinklers, and mist systems to protect property, assets, and personnel efficiently.",
-      image: "/menupageimg/peb5.png",
+      image: "/saftey/Hydrant & Sprinkler Systems.jpg",
     },
     {
       id: 4,
@@ -153,7 +153,7 @@ export default function Firesafety() {
       subtitle: "Emergency Lighting & Evacuation",
       description:
         " Emergency lighting, exit signage, and evacuation solutions designed to guide occupants safely during fire incidents.",
-      image: "/menupageimg/peb8.jpg",
+      image: "/saftey/Emergency Lighting & Evacuation.jpg",
     },
     {
       id: 5,
@@ -161,7 +161,7 @@ export default function Firesafety() {
       subtitle: "Fire Audit & Training",
       description:
         "Comprehensive fire audits, risk assessments, and safety training programs to ensure preparedness, regulatory compliance, and minimized hazards.",
-      image: "/menupageimg/peb6.jpg",
+      image: "/saftey/Fire Audit & Training.jpg",
     },
   ];
 
@@ -301,7 +301,7 @@ export default function Firesafety() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/peb2.jpg"
+              src="/saftey/"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
@@ -438,7 +438,7 @@ export default function Firesafety() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-98 object-cover"
+                  className="w-full h-64 md:h-110 object-cover"
                 />
               </div>
             </div>

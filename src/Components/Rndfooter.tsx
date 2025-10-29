@@ -91,13 +91,13 @@ const Rndfooter: React.FC = () => {
     <footer className="bg-[#000080] text-white text-sm">
       <div className="mx-auto px-6 py-12">
         {/* Contacts + Newsletter */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="  hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {contacts.map((c, i) => (
             <div key={i} className="flex flex-col items-center text-center">
               <img
                 src={c.img}
                 // alt={c.name}
-                className="w-20 h-20 rounded-full mb-3"
+                className="w-10 h-10 rounded-full mb-3"
               />
               <h3 className="text-[#fff] font-semibold mb-1">{c.title}</h3>
               {/* <p className="font-medium">{c.name}</p> */}

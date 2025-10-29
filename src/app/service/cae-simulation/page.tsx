@@ -19,34 +19,22 @@ const Caesimulation = () => {
 
   const slides = [
     {
-      title: "Thermal Simulation",
-      desc: "Simulating heat transfer and temperature effects to enhance safety, efficiency, and product reliability.",
-      image: "/servicecivil/bantwo.jpg",
+      title: "Advanced Thermal Analysis.",
+      desc: "Achieve superior energy performance and product longevity by accurately predicting heat transfer and thermal stress.",
+      image: "/servicecivil/Thermal Analysis..jpg",
       link: "/rnd-contact",
     },
     {
       title: "Precision Mesh Generation",
-      desc: "Creating high-quality computational meshes to ensure accurate simulations and faster design iterations.",
-      image: "/servicecivil/banone.jpg",
+      desc: "Ensure unwavering safety and optimal material use by accurately assessing load impacts and structural integrity.",
+      image: "/servicecivil/Structural Analysis.jpg",
       link: "/rnd-contact",
     },
 
     {
-      title: "Crash Analysis",
-      desc: "Simulating real-world impact scenarios to enhance vehicle safety and structural integrity using advanced FEA tools.",
-      image: "/servicecivil/banone.jpg",
-      link: "/rnd-contact",
-    },
-    {
-      title: "Managing Noise, Vibration, and Harshness (NVH)",
-      desc: "Reducing unwanted sound and vibration through acoustic simulation and modal analysis for optimal comfort and performance.",
-      image: "/servicecivil/banone.jpg",
-      link: "/rnd-contact",
-    },
-    {
-      title: "Multi-Physics Simulation",
-      desc: "Integrating structural, thermal, and fluid analyses to accurately predict real-world product performance and reliability.",
-      image: "/servicecivil/banone.jpg",
+      title: "Dynamic performance ",
+      desc: "Achieve flawless dynamic performance with our Motion Simulation.",
+      image: "/servicecivil/dynamic performance.jpg",
       link: "/rnd-contact",
     },
   ];

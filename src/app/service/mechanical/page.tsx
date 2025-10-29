@@ -509,7 +509,6 @@ export default function Mechanical() {
               Mechanical Design and Simulation Services for Faster
               Time-to-Market{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               At landscapinfra, we eliminate design inefficiencies and
@@ -547,7 +546,7 @@ export default function Mechanical() {
 
       {/* mechanical services */}
       <main className="bg-white px-4 sm:px-6 md:px-6">
-        <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
+        <section className="bg-white py-4 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
             <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
               Our Services
@@ -735,7 +734,7 @@ export default function Mechanical() {
 
         {/* Mobile: horizontal scroll with snapping */}
         <div className="block sm:hidden">
-          <div className="-mx-4 px-4 overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-4">
+          <div className=" grid grid-cols-1  gap-8">
             {servicesing.map((s) => (
               <article
                 key={s.id}

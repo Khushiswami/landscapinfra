@@ -81,7 +81,7 @@ export default function Renewableslider() {
 
             return (
               <div key={idx} className="shadow-md overflow-hidden relative">
-                <div className="relative w-full h-64">
+                <div className="relative w-full h-50">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={mobIndex}

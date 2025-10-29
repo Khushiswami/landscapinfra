@@ -11,7 +11,7 @@ export default function Caetabs() {
       heading: "Crash Analysis (Dynamic Simulation)",
       paragraph:
         "Dynamic simulation is essential for testing vehicle crashworthiness and aviation safety—scenarios that are impractical to test repeatedly in the physical world. For cars, our analysis accurately models everything from passenger dummies and restraints to fuel systems and airbags, achieving near-perfect real-world validation. In aerospace, this ensures the structural resilience of aircraft under various flight conditions, including the extreme stress of an emergency landing.",
-      video: "/choose/exprt.mp4",
+      video: "/rndvideo/Crash Analysis video.mp4",
     },
     {
       title: "Managing Noise, Vibration, Harshness",

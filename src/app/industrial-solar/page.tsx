@@ -24,6 +24,7 @@ import Link from "next/link";
 import Pebfooter from "yes/Components/Pebfooter";
 import Renewableheader from "yes/Components/Renewableheader";
 import Solarcontact from "yes/Components/Solarcontact";
+import Inds from "yes/Components/Inds";
 
 export default function Industrial() {
   interface FAQ {
@@ -175,7 +176,9 @@ export default function Industrial() {
   const visibleCards =
     typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
   const [open, setOpen] = useState(false); // for mobile dropdown
+  const [selectedId, setSelectedId] = useState(3);
 
+  const selectedArea = areas.find((area) => area.id === selectedId);
   const prevSlide = () => {
     setStartIndex((prev) =>
       prev === 0 ? possibilities.length - visibleCards : prev - 1
@@ -198,9 +201,7 @@ export default function Industrial() {
           )
         : []
     );
-  const [selectedId, setSelectedId] = useState(3);
 
-  const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -316,7 +317,6 @@ export default function Industrial() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Industrial Solar
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               LandsKing Infra is one of India’s most trusted names in industrial
@@ -347,111 +347,7 @@ export default function Industrial() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-4 py-10 md:mx-23">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
-          Offerings
-        </h2>
-
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
-          <div className="w-full md:w-1/4">
-            {/* Mobile Dropdown */}
-            <div className="md:hidden mb-0">
-              <button
-                onClick={() => setOpen(!open)}
-                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
-              >
-                {areas.find((a) => a.id === selectedId)?.title}
-                <svg
-                  className="w-5 h-5 text-[#8080FF]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={open ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
-                  />
-                </svg>
-              </button>
-
-              {open && (
-                <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
-                  {areas.map((area) => (
-                    <button
-                      key={area.id}
-                      onClick={() => {
-                        setSelectedId(area.id);
-                        setOpen(false);
-                      }}
-                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
-                        selectedId === area.id ? "text-white font-semibold" : ""
-                      }`}
-                    >
-                      {area.title}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3">
-              {areas.map((area, idx) => (
-                <button
-                  key={area.id}
-                  onClick={() => setSelectedId(area.id)}
-                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                    selectedId === area.id
-                      ? " font-bold"
-                      : "hover: text-gray-300"
-                  }`}
-                >
-                  <span className="text-sm opacity-70">
-                    {/* {String(idx + 1).padStart(2, "0")} */}
-                  </span>
-                  <span>{area.title}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {selectedArea && (
-            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
-            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-              <div
-                className="
-    p-6 flex flex-col justify-center w-full md:w-1/2
-    rounded-lg                
-    md:rounded-none          
-    md:rounded-tl-lg md:rounded-bl-lg
-    shadow border border-[#808080] md:border-r-0
-  "
-              >
-                <h3 className="text-2xl font-semibold text-[#000080] mb-3">
-                  {selectedArea.subtitle}
-                </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
-                  More{" "}
-                  <span className=" p-1 rounded-full text-[#000080]">→</span>
-                </button>
-              </div>
-
-              {/* Image */}
-              <div className="w-full md:w-1/2">
-                <img
-                  src={selectedArea.image}
-                  alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-106 object-cover"
-                />
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
+      <Inds />
       {/* <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#000080]">

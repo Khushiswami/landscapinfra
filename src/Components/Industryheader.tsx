@@ -71,7 +71,7 @@ export default function Industryheader() {
           subMenu: [
             {
               name: "EPC Turnkey Solutions",
-              href: "/businessAreas/hydropower",
+              href: "/Industrialtrunckyprojects",
             },
             {
               name: "Construction Works",

@@ -120,7 +120,7 @@ export default function Fabrication() {
         <div
           className="flex-1 flex items-center justify-center p-6 md:p-8 bg-cover bg-center relative"
           style={{
-            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/aboutright.jpeg')`,
+            backgroundImage: `linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/fabrication/Fabrication Solutions.png')`,
           }}
         >
           <div className="text-white text-center relative z-10 px-4">
@@ -138,7 +138,6 @@ export default function Fabrication() {
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Landsking Infra Fabrication Solutions
             </h2>
-            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -174,7 +173,7 @@ export default function Fabrication() {
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
-                src="/Industrial-Buildings-Construction.webp"
+                src="/fabrication/fabrication.jpg"
                 alt="Industrial Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -192,31 +191,31 @@ export default function Fabrication() {
           </h1>
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
-              image="/NDR.webp"
+              image="/fabrication/Structural Steel Fabrication (2).png"
               icon={<FaWarehouse size={32} className="text-white" />}
               title="Structural Steel Fabrication (Trusses, Beams, Columns)"
               description="We fabricate high-strength structural steel components, including trusses, beams, and columns, ensuring precision, durability, and compliance with design specifications for industrial, commercial, and infrastructure projects."
             />
             <Card
-              image="/clean-room-2.webp"
+              image="/fabrication/Sheet Metal Cutting.png"
               icon={<MdOutlineCleanHands size={32} className="text-white" />}
               title="Sheet Metal Cutting, Bending, and Assembly"
               description="Our sheet metal services include accurate cutting, bending, and assembly, creating custom components that meet precise dimensions and functional requirements for diverse fabrication and construction applications."
             />
             <Card
-              image="/7-2.webp"
+              image="/fabrication/Surface Treatment.png"
               icon={<FaIndustry size={32} className="text-white" />}
               title="PEB Component Fabrication (Purlins, Rafters, Girts)"
               description="We manufacture pre-engineered building components like purlins, rafters, and girts with high precision, ensuring structural stability, seamless integration, and long-term performance in industrial and commercial buildings."
             />
             <Card
-              image="/7-2.webp"
+              image="/fabrication/Custom Ductwork.png"
               icon={<FaIndustry size={32} className="text-white" />}
               title="Custom Ductwork, Brackets, Platforms, and Catwalks"
               description="Our team fabricates customized ductwork, support brackets, platforms, and catwalks, tailored for specific site requirements, ensuring safe, efficient, and durable installations in complex industrial and commercial environments."
             />
             <Card
-              image="/7-2.webp"
+              image="/fabrication/Surface Treatment.png"
               icon={<FaIndustry size={32} className="text-white" />}
               title="Surface Treatment: Sandblasting, Galvanizing, and Painting"
               description="We apply advanced surface treatments, including sandblasting, galvanizing, and painting, to enhance corrosion resistance, durability, and aesthetic appeal of steel and metal fabricated components."

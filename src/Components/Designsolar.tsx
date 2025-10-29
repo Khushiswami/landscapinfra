@@ -5,7 +5,7 @@ import { useState } from "react";
 const areas = [
   {
     id: 1,
-    title: "Step 1: Site & Feasibility Analysis",
+    title: " Site & Feasibility Analysis",
     subtitle: "Site & Feasibility Analysis",
     description:
       "We begin by conducting a detailed feasibility study to evaluate the site’s solar potential, including irradiance levels, terrain, shading, and weather conditions. Using precise tools and satellite data, we calculate expected energy output and identify the best panel placement strategy. This ensures your project design is accurate, cost-efficient, and performance-driven. Every decision at this stage lays the groundwork for long-term reliability.",
@@ -13,7 +13,7 @@ const areas = [
   },
   {
     id: 2,
-    title: "Step 2: System Configuration & Engineering Design",
+    title: " System Configuration & Engineering Design",
     subtitle: "System Configuration & Engineering Design",
     description:
       "Once the site parameters are finalized, our engineers develop a customized solar system configuration using advanced design software and 3D modeling tools. Each component — from PV modules to inverters and cabling — is selected based on energy demand, space, and project objectives. The goal is to balance technical precision with operational efficiency. Our designs ensure seamless integration with your existing electrical infrastructure.",
@@ -21,7 +21,7 @@ const areas = [
   },
   {
     id: 3,
-    title: "Step 3: Structural & Electrical Drawings",
+    title: " Structural & Electrical Drawings",
     subtitle: "Structural & Electrical Drawings",
     description:
       "We create detailed construction-ready layouts covering the module mounting structures, electrical wiring, cable routing, and grounding systems. Every design follows IEC and IS standards for safety, durability, and regulatory compliance. Our technical documentation enables clear communication between engineering and on-site teams. This ensures smooth execution and reduced construction errors during installation.",
@@ -29,7 +29,7 @@ const areas = [
   },
   {
     id: 4,
-    title: "Step 4: Performance Optimization",
+    title: " Performance Optimization",
     subtitle: "Performance Optimization",
     description:
       "Before final delivery, we simulate energy generation scenarios to identify potential inefficiencies and optimize performance parameters. Our team refines system orientation, tilt angles, and cable paths to enhance power output. This data-driven optimization improves both yield and stability over the system’s lifetime. The result is a future-ready solar solution that operates at peak efficiency throughout its lifecycle.",
@@ -37,7 +37,7 @@ const areas = [
   },
   {
     id: 5,
-    title: "Step 5: Documentation & Delivery",
+    title: " Documentation & Delivery",
     subtitle: "Documentation & Delivery",
     description:
       "At the final stage, we compile complete design documentation — including single-line diagrams, bills of materials, compliance reports, and performance data sheets. These documents are structured for EPC execution, tenders, or direct implementation. We ensure total transparency and technical clarity for all stakeholders. With a ready-to-execute design package, your project moves seamlessly toward construction.",
