@@ -106,14 +106,14 @@ export default function Rndexplore() {
       </section>
 
       {/* SLIDER */}
-      <main className="bg-white px-4 sm:px-6 md:px-12">
+      <main className="bg-white px-4 sm:px-6 lg:px-12 md:mx-7">
         <section className="py-12 px-4 sm:px-6 md:px-12">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Advanced CAE Services
             </h2>
           </div>
-          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
             <Card
               image="/cad/static.jpg"
               icon={<FaIndustry size={38} className="text-white" />}

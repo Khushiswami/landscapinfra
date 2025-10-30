@@ -23,10 +23,13 @@ export default function CoreBusiness() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const coreBusinessData = [
-    { title: "Industry Installation and Construction", image: "/industry.jpg" },
+    {
+      title: "Industry Installation and Construction",
+      image: "/home/industry installation,jpeg",
+    },
     { title: "Engineering and R&D Services", image: "/engineer.jpg" },
     { title: "Renewable Energy Solution Provider", image: "/renewable.jpg" },
-    { title: "Real Estate Development", image: "/realstate.png" },
+    { title: "Real Estate Development", image: "/home/real estate.jpeg" },
   ];
 
   useEffect(() => {

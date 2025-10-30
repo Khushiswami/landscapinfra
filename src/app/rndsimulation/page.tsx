@@ -93,7 +93,7 @@ export default function Rndsimulation() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Column 1 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="Durability Analysis"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -110,7 +110,7 @@ export default function Rndsimulation() {
 
             {/* Column 2 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="Multi-Body Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -127,7 +127,7 @@ export default function Rndsimulation() {
 
             {/* Column 3 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="Optimisation"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -142,7 +142,7 @@ export default function Rndsimulation() {
 
             {/* Column 4 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="Dynamic Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -157,7 +157,7 @@ export default function Rndsimulation() {
 
             {/* Column 5 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="NVH Analysis"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -172,7 +172,7 @@ export default function Rndsimulation() {
 
             {/* Column 6 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="CFD"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -187,7 +187,7 @@ export default function Rndsimulation() {
 
             {/* Column 7 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="Multi-Physics Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -203,7 +203,7 @@ export default function Rndsimulation() {
 
             {/* Column 8 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
-              <Image
+              <img
                 src="/Profiles/PebWall.png"
                 alt="System Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
@@ -250,10 +250,9 @@ export default function Rndsimulation() {
             </div>
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
-              <Image
+              <img
                 src="/sectorimg/ins.jpg"
                 alt="Industrial Building"
-                fill
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -263,7 +262,7 @@ export default function Rndsimulation() {
       {/* end image content */}
       {/* Info Section */}
       <section
-        className="relative w-full py-16 px-4 sm:px-8 md:px-16 text-center mb-12 bg-cover bg-center"
+        className="relative w-full py-16 px-4 sm:px-8 md:px-16 text-center mb-12 md:mb-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/industry.jpg')",
         }}

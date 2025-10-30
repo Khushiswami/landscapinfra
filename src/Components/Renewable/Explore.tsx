@@ -205,7 +205,7 @@ const areas = [
     subtitle: "Construction & Installation (C-Phase)",
     description:
       "The Construction (C) Phase ensures professional execution by our certified teams. We manage the installation safely and efficiently on-site, strictly following all industrial safety and rigorous quality standards until the system is successfully energized.",
-    image: "/preimages/construction Phase.jpeg",
+    image: "/solar construction.png",
   },
   {
     id: 5,

@@ -62,7 +62,7 @@ export default function Realstateheader() {
       title: "Services",
       text: "Unlock the value in every dimension of your real estate with integrated, data-led Services that support your overall business strategy.",
       buttonText: "See Overview",
-      buttonLink: "/Services",
+      buttonLink: "/needs",
       image: "/solar.jpg",
       linkText: "Sustainability Solutions",
       linkHref: "/Services/sustainability",
@@ -70,26 +70,22 @@ export default function Realstateheader() {
     needs: [
       {
         label: "Invest, Finance & Value",
-        href: "/Services/investfinancevalue",
+        href: "/needs",
       },
-      { label: "Plan, Lease & Occupy", href: "/Services/planleaseoccupy" },
-      { label: "Design & Build", href: "/Services/media" },
+      { label: "Plan, Lease & Occupy", href: "/needs" },
       {
         label: "Manage Properties & Portfolios",
-        href: "/Services/managepropertiesportfolios",
-      },
-      {
-        label: "Transform Business Outcomes",
-        href: "/Services/transformbusinessoutcomes",
+        href: "/needs",
       },
     ],
     propertyTypes: [
-      { label: "Office", href: "/Services/office" },
-      { label: "Retail", href: "/Services/retail" },
-      { label: "Industrial", href: "/Services/industriesproperties" },
-      { label: "Multifamily", href: "/Services/multifamily" },
-      { label: "Hotels", href: "/Services/hotels" },
+      { label: "Logistics & Industrial", href: "/property-types" },
+      { label: "Retail", href: "/property-types" },
+      { label: "Residential", href: "/property-types" },
+      { label: "Retail", href: "/property-types" },
+      { label: "Hotels", href: "/property-types" },
     ],
+
     industries: [
       { label: "Data Center", href: "/Services/datacenter" },
       { label: "Life Sciences", href: "/Services/lifescience" },
@@ -104,7 +100,7 @@ export default function Realstateheader() {
       title: "Properties",
       text: "Find the right property for your business from our extensive listings of office, retail, and industrial spaces.",
       buttonText: "Browse All Properties",
-      buttonLink: "/properties",
+      buttonLink: "/property-types",
       image: "/office.jpg",
       linkText: "Leasing Opportunities",
       linkHref: "/properties/leasing",

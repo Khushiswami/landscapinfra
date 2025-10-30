@@ -41,7 +41,7 @@ const areas = [
     subtitle: "Documentation & Delivery",
     description:
       "At the final stage, we compile complete design documentation — including single-line diagrams, bills of materials, compliance reports, and performance data sheets. These documents are structured for EPC execution, tenders, or direct implementation. We ensure total transparency and technical clarity for all stakeholders. With a ready-to-execute design package, your project moves seamlessly toward construction.",
-    image: "/solardesign/documentation.jpg",
+    image: "/documentation.jpg",
   },
 ];
 

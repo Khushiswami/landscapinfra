@@ -38,11 +38,11 @@ export default function Industrial() {
       subtitle: "Custom System Design",
       description:
         "We conduct a detailed site assessment and load analysis to design solar systems that are precisely aligned with your operational requirements. Each solution is engineered to maximize energy output, optimize ROI, and ensure long-term operational reliability, reflecting a strategic approach to sustainable energy adoption.",
-      image: "/industryimg/Custom System Design.jpg",
+      image: "/solar panel system instalation.png",
     },
 
     {
-      id: 1,
+      id: 2,
       title: "End-to-End Delivery ",
       subtitle: "End-to-End Delivery",
       description:
@@ -50,7 +50,7 @@ export default function Industrial() {
       image: "/industryimg/End-to-End Delivery.jpg",
     },
     {
-      id: 1,
+      id: 3,
       title: "Regulatory & Net-Metering Support ",
       subtitle: "Regulatory & Net-Metering Support",
       description:
@@ -58,20 +58,20 @@ export default function Industrial() {
       image: "/industryimg/Regulatory & Net-Metering Support.jpg",
     },
     {
-      id: 1,
+      id: 4,
       title: "Flexible Financing ",
       subtitle: "Flexible Financing",
       description:
         "We offer multiple financing options to suit different business models and budgets, including CAPEX (capital investment), OPEX (operating expenditure), and zero-investment RESCO models.we empower organizations to deploy solar infrastructure with minimal financial friction while achieving strategic energy and sustainability goals.",
-      image: "/industryimg/Flexible Financing.jpg",
+      image: "/flexible solar financing.png",
     },
     {
-      id: 1,
+      id: 5,
       title: "Asset Management & Monitoring ",
       subtitle: "Asset Management & Monitoring",
       description:
         "Through advanced real-time monitoring, predictive maintenance, and proactive performance optimization to safeguard your solar assets. Continuous tracking and proactive management ensure maximum energy yield, minimize downtime, and extend the lifespan of your solar system.",
-      image: "/industryimg/Asset Management & Monitoring.jpg",
+      image: "/industryimg/Flexible Financing.jpg",
     },
   ];
   const servicesing = [
@@ -378,7 +378,7 @@ export default function Industrial() {
       </section> */}
       {/* imaeg */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4 md:px-18 lg:mx-23">
+        <div className=" mx-auto px-4 md:px-18 lg:mx-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Benefits for Industries with landsking infra
           </h2>
@@ -418,7 +418,7 @@ export default function Industrial() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-5 py-10 md:px-18 lg:mx-22">
+      <section className=" mx-auto px-5 py-10 md:px-4 lg:mx-22">
         <header className="text-center mt-10 mb-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
             How Can we Help Your Industry Benefit from Custom Solar?

@@ -448,7 +448,7 @@ export default function Civil() {
       title: "Structural BIM Modeling",
       description:
         "Through advanced BIM modeling, we create intelligent 3D representations that enhance collaboration and accuracy. Landsking Infra’s BIM solutions reduce design conflicts, improve visualization, and streamline the entire construction workflow from planning to execution.",
-      image: "/civil/Industrial Structure Design.jpeg",
+      image: "/structure bmi moduling.jpg",
     },
     {
       id: 5,
@@ -538,7 +538,7 @@ export default function Civil() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/mod13.jpg"
+              src="/industrial soalr.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
@@ -564,7 +564,7 @@ export default function Civil() {
               efficiency, and safety.
             </p>
           </div>
-          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Construction Drawing Solutions */}
             <Card
               icon={<FaDraftingCompass size={40} className="text-[#8080FF]" />}
@@ -828,7 +828,7 @@ export default function Civil() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 px-1 md:px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-6 gap-6 px-1 md:px-12">
           {services.map((service, index) => (
             <div
               key={index}

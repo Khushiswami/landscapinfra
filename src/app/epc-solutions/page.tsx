@@ -192,20 +192,18 @@ export default function Epcsolutions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-base md:text-lg font-medium text-start text-gray-700  mb-6">
-                Landsking Infra delivers sturdy and cost-efficient Landsking
-                Infra delivers precision-engineered fabrication services for
-                industrial, commercial, and infrastructure projects, ensuring
-                strength, accuracy, and long-lasting performance. Our expertise
-                covers heavy steel structures, customized sheet metal works, and
-                complex assemblies tailored to client requirements. Equipped
-                with an ISO-compliant fabrication facility, we maintain
-                stringent quality standards while ensuring timely project
-                delivery and smooth onsite erection. Our team of skilled welders
-                and certified fabrication engineers works closely with civil and
-                structural teams to guarantee seamless project execution. From
-                design coordination to final installation, Landsking Infra
-                provides reliable, efficient, and high-quality fabrication
-                solutions that meet industry standards and project timelines.
+                At LandsKing Infra, we offer complete Solar EPC (Engineering,
+                Procurement & Construction) solutions designed to transform
+                clean energy vision into high-performing reality. Our
+                experienced team handles every stage — from detailed site
+                evaluation and system engineering to material sourcing,
+                installation, and commissioning. We focus on precision,
+                efficiency, and seamless project execution. Each solar plant is
+                engineered to deliver maximum energy output with minimal
+                maintenance, ensuring reliability and long-term operational
+                value. With strong quality standards, technical excellence, and
+                on-time delivery, we build solar systems that work smarter, last
+                longer, and perform stronger — year after year.
               </h2>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
@@ -217,7 +215,7 @@ export default function Epcsolutions() {
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <img
-                src="/Industrial-Buildings-Construction.webp"
+                src="/testing.jpg"
                 alt="Industrial Building"
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -389,11 +387,11 @@ export default function Epcsolutions() {
               </div>
             </div>
 
-            <div className="relative w-full h-64 sm:h-80 md:h-[450px] md:mb-0 mb-14">
+            <div className="relative w-full h-64 sm:h-80 md:h-[450px] md:mb-0 mb-14 ">
               <img
-                src="/Industrial-Buildings-Construction.webp"
+                src="/solar epc.jpeg"
                 alt="Industrial Building"
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover "
               />
             </div>
           </div>

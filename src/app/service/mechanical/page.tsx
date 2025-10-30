@@ -101,7 +101,7 @@ export default function Mechanical() {
       subtitle: "Comprehensive Mechanical Design & Development Services",
       description:
         "We offer complete mechanical engineering solutions, including core design, analysis, CAD modeling, and product development services across industries. Our expertise covers machine design, sheet metal, assembly modeling, parametric 3D modeling, and tools, fixtures, and jigs design. Using advanced platforms like SolidWorks, CATIA, and Autodesk Inventor, we deliver Global Standard services and manufacturable designs. From legacy conversion to full product lifecycle support, our services enhance collaboration, accelerate development, ensure compliance, and drive innovation at every stage.",
-      image: "/menupageimg/mod15.png",
+      image: "/mk/Mechanical Design & Development Service.jpg",
     },
     {
       id: 2,
@@ -109,7 +109,7 @@ export default function Mechanical() {
       subtitle: "Advanced Simulation, Analysis & Virtual Testing Services",
       description:
         "We deliver comprehensive simulation, analysis, and virtual testing services to improve engineering accuracy and product reliability. Our expertise spans finite element analysis (FEA), fatigue, crash and impact, CAE modal, structural, stress, thermal, vibration, and computational fluid dynamics simulations. Additionally, we provide failure, tolerance, and load testing analyses along with virtual prototyping services. Leveraging advanced simulation engineering tools, our solutions help validate designs, reduce defects, ensure compliance, and accelerate product development across industries.",
-      image: "/menupageimg/mod4.png",
+      image: "/mk/Advanced Simulation, Analysis.jpg",
     },
     {
       id: 3,
@@ -117,7 +117,7 @@ export default function Mechanical() {
       subtitle: "Industrial Design & Engineering Automation Services",
       description:
         "We provide end-to-end industrial design and engineering automation services to optimize manufacturing processes and product quality. Our expertise includes casting design, vacuum casting, CNC programming, tooling and die design, assembly line optimization, and tolerance analysis for machining. As well, we support process planning, engineering fabrication, production cost estimation, project management, proposal review, bid management, and engineering change orders. Taking advantage of advanced automation tools and best practices, we help industries improve efficiency, reduce errors, ensure compliance, and accelerate production timelines",
-      image: "/menupageimg/mod3.jpg",
+      image: "/mk/Industrial Design & Engineering Automation Services.jpg",
     },
     {
       id: 4,
@@ -126,7 +126,7 @@ export default function Mechanical() {
       description:
         "We provide complete plant, piping, and HVAC design services to optimize operational efficiency, safety, and compliance. Our offerings include plant design engineering, Plant Design Management System (PDMS), modular plant design, piping design and drafting, HVAC ducting design, plumbing, firefighting, and fire protection engineering services. Leveraging advanced CAD and simulation tools, our expert team ensures accuracy in ISO-compliant designs that streamline construction, reduce errors, and enhance overall system performance across industries.",
 
-      image: "/menupageimg/mod8.jpg",
+      image: "/mk/Plant, Piping & HVAC Design Services.jpg",
     },
 
     {
@@ -135,7 +135,7 @@ export default function Mechanical() {
       subtitle: "Specialized Sector Design Services",
       description:
         "We offer specialized design services across niche industries to meet unique technical and functional requirements. We are experts in assisting industries with our services. like tower design, ship deck design and drafting, and consumer electronics product design. Using advanced CAD tools and industry best practices, we deliver precise, ISO-compliant, and manufacturable designs that enhance performance, ensure compliance, and accelerate product development for specialized sectors.",
-      image: "/menupageimg/mod10.png",
+      image: "/mk/Specialized Sector Design Services.jpeg",
     },
     {
       id: 7,
@@ -143,7 +143,7 @@ export default function Mechanical() {
       subtitle: "Product Lifecycle & Documentation Services",
       description:
         "We provide each and every product lifecycle and documentation services to support efficient development, compliance, and operations. We are experts in PLM implementation and customization, technical publications, installation and maintenance manuals, engineering change documentation, CE/UL certification support, and material compliance reports. Leveraging industry best practices and advanced tools, we ensure accurate, ISO-compliant documentation that enhances traceability, reduces errors, and accelerates product launching.",
-      image: "/menupageimg/mod11.jpeg",
+      image: "/mk/Product Lifecycle & Documentation Services.jpg",
     },
     {
       id: 8,
@@ -151,7 +151,7 @@ export default function Mechanical() {
       description:
         "We offer Expert engineering and sustainability services to optimize designs and reduce costs. Our solutions include design optimization, lightweighting, material substitution, and energy efficiency improvements.We also ensure compliance with environmental regulations like RoHS and REACH, supporting sustainable and efficient product development.",
       subtitle: "Engineering & Sustainability Services",
-      image: "/menupageimg/mod12.jpg",
+      image: "/mk/Engineering & Sustainability Services.jpg",
     },
   ];
 
@@ -535,7 +535,7 @@ export default function Mechanical() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/menupageimg/mod13.jpg"
+              src="/mechenical design.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
@@ -557,7 +557,7 @@ export default function Mechanical() {
             </p>
           </div>
 
-          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="container mx-auto grid grid-cols-1  md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               icon={<FaPencilRuler size={38} className="text-[#8080FF]" />} // Pencil + ruler = drafting
               title="2D Drafting Services"
@@ -609,7 +609,7 @@ export default function Mechanical() {
       </main>
 
       {/* endcapill */}
-      <section className=" mx-auto px-4 py-10 md:px-19">
+      <section className=" mx-auto px-4 py-10 md:px-17 lg:px-19">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
           Our Products{" "}
         </h2>
@@ -722,7 +722,7 @@ export default function Mechanical() {
       </section>
       {/* explore content */}
       {/* more servies */}
-      <section className="max-w-7xl mx-auto px-5 py-10">
+      <section className=" mx-auto px-5 py-10 md:mx-10 lg:mx-18">
         <header className="text-center mb-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
             More Engineering Services
@@ -771,14 +771,14 @@ export default function Mechanical() {
         </div>
       </section>
       {/* business benifts */}
-      <section className="text-black py-10 md:mx-8">
+      <section className="text-black py-10 md:mx-14 lg:mx-8">
         <div className="mx-auto px-3 md:px-4">
           <h2 className="text-2xl md:text-3xl font-bold  text-center mb-10 text-[#000080]">
             Why Choose Us
           </h2>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}

@@ -60,28 +60,28 @@ export default function Productengineering() {
       id: "01",
       title: "Design and Engineering",
       description:
-        "Development to quickly take a product from concept phases through to full production. From design space layout [packaging] to detailed design for manufacture.",
+        "End-to-end product development support from concept to final production. Includes layout planning, packaging design, and detailed manufacturing-ready engineering.",
       image: "/rndimages/Design and Engineering.jpg",
     },
     {
       id: "02",
       title: "Durability Analysis",
       description:
-        "Highlight and eliminate weak points, reveal weight/cost optimization opportunities, minimize physical tests and reduce warranty claims. Analysis ranges from individual abuse tests to full-life fatigue.",
+        "Identify and eliminate weak points, optimize weight and cost, and reduce physical testing requirements. Ensures long-term reliability and reduced warranty issues.",
       image: "/rndimages/Durability Analysis.jpeg",
     },
     {
       id: "03",
       title: "Multi-Body System Simulation",
       description:
-        "Simulate kinematic systems to check mechanism motion and forces. Forces can then be applied to components to check stress levels and suitability.",
+        "Simulate the motion and interaction of interconnected components to verify movement, forces, and stress suitability before physical prototyping.",
       image: "/rndimages/Multi-Body System Simulation.jpg",
     },
     {
       id: "04",
       title: "Optimisation",
       description:
-        "Make a component fulfill objectives without exceeding weight/cost unnecessarily. Includes material, shape, size, and manufacturing constraints. Multi-disciplinary optimization (MDO) can consider NVH, strength, durability, and more.",
+        "Enhance product efficiency without unnecessary weight or cost. Covers material selection, geometry refinement, size adjustments, and manufacturability improvement.",
       image:
         "/rndimages/equipment-data-center-workplace-used-monitoring-performance.jpg",
     },
@@ -89,14 +89,14 @@ export default function Productengineering() {
       id: "05",
       title: "Dynamic Simulation",
       description:
-        "Analyse dynamic, high-energy, or highly non-linear events to assess component or system performance. Examples include impact analysis and user safety during collisions.",
+        "Analyze performance under high-load, rapid impact, or non-linear operational conditions to validate safety and durability in real-world use scenarios.",
       image: "/rndimages/Gemini_Generated_Image_slbcwrslbcwrslbc.png",
     },
     {
       id: "06",
       title: "NVH (Noise, Vibration & Harshness)",
       description:
-        "Predict occupant experience regarding feel and noise, including road vibrations, squeak & rattle, and aeroacoustics. Develop products to minimize undesirable effects.",
+        "Evaluate and improve product comfort and user experience by minimizing noise, vibration, and operational harshness across components and assemblies.",
       image:
         "/rndimages/technologist-protective-uniform-operating-industrial-machine-factory-production-line.jpg",
     },
@@ -104,28 +104,28 @@ export default function Productengineering() {
       id: "07",
       title: "Computational Fluid Dynamics (CFD)",
       description:
-        "Calculate fluid and heat flow over or through a vehicle/component, including aerodynamics, powertrain heat management, HVAC, brake cooling, defrosting/de-icing, water fording, and contamination simulations.",
+        "Simulate airflow, fluid movement, and heat transfer for improved cooling, ventilation, thermal performance, and contamination control across systems.",
       image: "/rndimages/Material Intelligence.jpg",
     },
     {
       id: "08",
       title: "Coupled / Multi-Physics Simulation",
       description:
-        "Join multiple simulation types so outputs from one affect another, e.g., CFD pressure applied to structural model and fed back. Can include MBS, structural, and particle models.",
+        "Combine different simulation domains where one affects the other, such as fluid pressure influencing structural integrity, or dynamic forces affecting material behavior.",
       image: "/rndimages/Gemini_Generated_Image_h0dp20h0dp20h0dp.png",
     },
     {
       id: "09",
       title: "System Simulation",
       description:
-        "Examine complex systems where multiple components/sub-systems interact. Ensure optimal performance for interactions like electrical control of cooling systems.",
+        "Analyze complex systems with interacting sub-systems to ensure optimal synchronization, energy efficiency, control responsiveness, and stable performance.",
       image: "/rndimages/System Simulation.jpg",
     },
     {
       id: "10",
       title: "Virtual Benchmarking",
       description:
-        "Compare competitors’ full products, vehicle components, and sub-systems. Provide CAE models for direct comparison to identify performance targets and reduce development costs.",
+        "Compare products or system-level performance against competitors through virtual modeling to set improvement targets and reduce development costs.",
       image: "/footer/virt.jpg",
     },
   ];

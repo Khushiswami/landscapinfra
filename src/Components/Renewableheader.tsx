@@ -132,7 +132,7 @@ export default function Renewableheader() {
             )}
           </div>
 
-          <Link href="/epc-solution" className="hover:opacity-80">
+          <Link href="/epc-solutions" className="hover:opacity-80">
             epc solar{" "}
           </Link>
 
