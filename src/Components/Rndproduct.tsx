@@ -37,12 +37,13 @@ export default function ExploreSection() {
   // ✅ Responsive itemsPerPage
   useEffect(() => {
     const updateItemsPerPage = () => {
-      if (window.innerWidth < 768) {
-        setItemsPerPage(1); // mobile
+      if (window.innerWidth < 1025) {
+        setItemsPerPage(1); // Mobile + iPads
       } else {
-        setItemsPerPage(3); // desktop
+        setItemsPerPage(3); // Desktop only
       }
     };
+
     updateItemsPerPage();
     window.addEventListener("resize", updateItemsPerPage);
     return () => window.removeEventListener("resize", updateItemsPerPage);
@@ -68,7 +69,7 @@ export default function ExploreSection() {
   );
 
   return (
-    <section className="py-12 px-6 md:px-23 relative">
+    <section className="py-12 px-6 lg:px-23 relative">
       <h2 className="text-black text-3xl md:text-4xl font-bold mb-10 text-center">
         Explore Services
       </h2>
@@ -90,7 +91,7 @@ export default function ExploreSection() {
               alt={item.subtitle}
               width={500}
               height={600}
-              className="object-cover w-full h-[350px] transition-transform duration-500 group-hover:scale-105 md:h-[400px]"
+              className="object-cover w-full h-[550px] lg:h-[350px] transition-transform duration-500 group-hover:scale-105 md:h-[490px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
               <h4 className="text-white font-bold text-xl mb-2">

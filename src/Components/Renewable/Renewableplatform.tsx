@@ -62,7 +62,7 @@ export default function Renewableplatform() {
   }, [active]);
 
   return (
-    <section className="w-full md:px-28">
+    <section className="w-full  md:10 lg:px-28">
       {/* Top heading + subheading */}
       <div className="mx-auto px-4 pt-12 text-center">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">

@@ -76,21 +76,17 @@ export default function Epc() {
             loop={true}
             centeredSlides={false} // default false
             breakpoints={{
-              0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
-              640: {
-                slidesPerView: 1.5,
-                spaceBetween: 20,
-                centeredSlides: true,
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
               },
-              768: {
-                slidesPerView: 2.2,
-                spaceBetween: 24,
-                centeredSlides: true,
+              640: {
+                slidesPerView: 2, // ✅ iPad Mini / iPad Air / Tablets
+                spaceBetween: 16,
               },
               1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                centeredSlides: true,
+                slidesPerView: 3, // ✅ Desktop/Laptop
+                spaceBetween: 24,
               },
             }}
           >

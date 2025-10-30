@@ -56,7 +56,7 @@ export default function AboutP() {
 
       {/* Right Column (Video) */}
       <div
-        className="flex-1 relative flex items-center justify-center p-6 bg-cover bg-center"
+        className="flex-1 relative flex items-center justify-center p-5 md:p-5 lg:p-17 bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(0deg, rgba(33,71,95,0.90) 0%, rgba(22,46,68,0.97) 100%), url('/aboutleft.jpeg')`,
         }}

@@ -181,15 +181,15 @@ export default function Epcsolutions() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-white py-6 md:py-12 px-4 sm:px-6 md:px-12">
+      <section className="w-full bg-white py-6 md:py-12 px-4 sm:px-6 md:px-25 lg:px-12">
         <div className="container mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-xl text-[#000080] sm:text-2xl md:text-3xl font-bold  max-w-4xl mx-auto">
-              Landsking Infra Fabrication Solutions
+              Landsking Infra Epc Solutions
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-base md:text-lg font-medium text-start text-gray-700  mb-6">
                 Landsking Infra delivers sturdy and cost-efficient Landsking
@@ -236,14 +236,15 @@ export default function Epcsolutions() {
       </div>
 
       {/* ===== Example Step Section ===== */}
-      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2 md:gap-12 w-full">
           <div className="flex flex-col items-start justify-center">
             <h1 className="text-6xl font-bold text-[#000080]">
               {activeTab.toString().padStart(2, "0")}
             </h1>
             <h2 className="mt-2  mb-6 md:mb-0 text-3xl  md:text-5xl font-semibold text-[#000080]">
-              Solar Project Analysis Services
+              Solar Project
+              <br /> Analysis Services
             </h2>
           </div>
           <div>
@@ -266,7 +267,7 @@ export default function Epcsolutions() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center bg-[#fff] px-9 py-12 md:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2  md:gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
@@ -303,7 +304,7 @@ export default function Epcsolutions() {
       </div>
 
       {/* 03 - Contract Awarded */}
-      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2 md:gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
@@ -336,14 +337,13 @@ export default function Epcsolutions() {
       </div>
 
       {/* 04 - Detail Drawings */}
-      <div className="flex items-center justify-center bg-[#fff] px-9 py-12 md:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2 md:gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
             <h1 className="text-6xl font-bold text-[#000080]">04</h1>
             <span className="mt-2 mb-6 md:mb-0 font-semibold text-[#000080] text-3xl  md:text-5xl">
-              Testing and
-              <br /> Commissioning
+              Testing
             </span>
           </div>
 
@@ -364,9 +364,9 @@ export default function Epcsolutions() {
       {/* ===== CTA Section ===== */}
 
       {/* ===== Key Features ===== */}
-      <section className="w-full bg-white  md:py-12 px-5 sm:px-6 md:px-12">
+      <section className="w-full bg-white py-6 md:py-12 px-4 sm:px-6 md:px-25 lg:px-12">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className=" text-[#000080] text-2xl md:mb-5  md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
                 Why Choose Landsking Infra for Solar EPC?
@@ -382,7 +382,7 @@ export default function Epcsolutions() {
 
               <div className="flex items-center justify-center md:justify-start gap-4">
                 <Link href="/solar-contact">
-                  <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
+                  <button className="border text-[#000080] border-[#000080] px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
                     GET A QUOTE
                   </button>
                 </Link>

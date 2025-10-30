@@ -73,7 +73,8 @@ export default function Banner() {
   const activeSlide = slides[active];
 
   return (
-    <section className="relative w-full h-[500px] sm:h-[380px] md:h-[100vh] overflow-hidden">
+    <section className="relative w-full h-[500px] sm:h-[380px] md:h-[85vh] lg:h-[100vh] overflow-hidden">
+      {/* // <section className="relative w-full h-[500px] sm:h-[380px] md:h-[100vh] overflow-hidden"> */}
       {/* Background Video */}
       <video
         src={activeSlide.video}
@@ -114,7 +115,9 @@ export default function Banner() {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="absolute bottom-6 left-0 sm:left-1/2 sm:-translate-x-1/2 w-full px-6 z-10">
+
+      <div className="absolute bottom-10 sm:bottom-6 left-0 sm:left-1/2 sm:-translate-x-1/2 w-full px-6 z-10">
+        {/* <div className="absolute bottom-6 left-0 sm:left-1/2 sm:-translate-x-1/2 w-full px-6 z-10"> */}
         <div
           className={`flex gap-4 sm:gap-8 justify-start sm:justify-center items-center ${
             !isMobile ? "flex-nowrap" : ""

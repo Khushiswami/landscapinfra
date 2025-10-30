@@ -65,7 +65,7 @@ export default function Rndplatform() {
   }, [active]);
 
   return (
-    <section className="w-full md:px-28">
+    <section className="w-full  md:px-20 lg:px-28">
       {/* Top heading + subheading */}
       <div className="mx-auto px-4 pt-12 text-center ">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
@@ -113,7 +113,7 @@ export default function Rndplatform() {
       </div>
 
       {/* Content Card */}
-      <div className="  mx-auto px-4 md:mx-17">
+      <div className="  mx-auto px-4  md:mx-10 lg:mx-17">
         <div className="mt-8 flex justify-center">
           <div className="relative rounded-[5px] overflow-hidden  w-full  ">
             <div className="relative  h-[340px] md:h-[460px]">

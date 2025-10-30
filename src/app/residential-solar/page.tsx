@@ -385,8 +385,8 @@ export default function Residential() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-26 lg:px-16">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl mb-5  md:text-3xl font-bold text-[#000080] leading-snug  ">
@@ -416,8 +416,8 @@ export default function Residential() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white py-4 md:py-12 px-6 md:px-12 lg:px-20">
-        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="bg-white py-12 px-4 md:px-26 lg:px-16">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
@@ -452,8 +452,8 @@ export default function Residential() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-12 px-4 md:px-28">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-26 lg:px-16">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl mb-5 md:text-3xl font-bold text-[#000080] leading-snug  ">

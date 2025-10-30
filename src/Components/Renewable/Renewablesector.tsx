@@ -56,8 +56,8 @@ export default function RenewableSector() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-28 pt-1 md:pt-16 bg-white">
-      <section className="w-full py-8 md:pt-16 bg-white relative">
+    <section className="text-center px-4 sm:px-6 md:px-15 lg:px-28 pt-0 lg:pt-16 bg-white">
+      <section className="w-full py-8 lg:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
             Features We Have Which Enhance Us{" "}
@@ -70,21 +70,17 @@ export default function RenewableSector() {
             loop={true}
             centeredSlides={false} // default false
             breakpoints={{
-              0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
-              640: {
-                slidesPerView: 1.5,
-                spaceBetween: 20,
-                centeredSlides: true,
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
               },
-              768: {
-                slidesPerView: 2.2,
-                spaceBetween: 24,
-                centeredSlides: true,
+              640: {
+                slidesPerView: 2, // ✅ iPad Mini / iPad Air / Tablets
+                spaceBetween: 16,
               },
               1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                centeredSlides: true,
+                slidesPerView: 3, // ✅ Desktop/Laptop
+                spaceBetween: 24,
               },
             }}
           >

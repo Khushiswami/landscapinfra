@@ -310,8 +310,8 @@ export default function Industrial() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-25">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4  md:px-20 lg:px-25">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -378,7 +378,7 @@ export default function Industrial() {
       </section> */}
       {/* imaeg */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4 md:mx-23">
+        <div className=" mx-auto px-4 md:px-18 lg:mx-23">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Benefits for Industries with landsking infra
           </h2>
@@ -418,10 +418,10 @@ export default function Industrial() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-5 py-10 md:mx-22">
+      <section className=" mx-auto px-5 py-10 md:px-18 lg:mx-22">
         <header className="text-center mt-10 mb-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
-            How we Can Help Your Industry Benefit from Custom Solar?
+            How Can we Help Your Industry Benefit from Custom Solar?
           </h2>
           <p className=" mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15 ">
             At LandsKing Infra, we specialize in industrial rooftop solar

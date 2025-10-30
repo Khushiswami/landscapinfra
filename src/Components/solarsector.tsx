@@ -54,12 +54,21 @@ export default function Solarsector() {
   // Responsive itemsPerView
   useEffect(() => {
     const updateItems = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth <= 640) {
         setItemsPerView(1);
       } else {
         setItemsPerView(3);
       }
     };
+
+    // const updateItems = () => {
+    //   if (window.innerWidth < 1025) {
+    //     setItemsPerView(1); // Mobile + All iPads
+    //   } else {
+    //     setItemsPerView(3); // Desktop
+    //   }
+    // };
+
     updateItems();
     window.addEventListener("resize", updateItems);
     return () => window.removeEventListener("resize", updateItems);

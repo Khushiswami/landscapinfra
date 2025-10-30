@@ -309,8 +309,8 @@ export default function Commercial() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-25">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-20 lg:px-25">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -342,7 +342,7 @@ export default function Commercial() {
       </section>
 
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4 md:mx-23">
+        <div className=" mx-auto px-4 lg:mx-23 md:mx-18">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Benefits of commercial solar with Landsking infra
           </h2>
@@ -382,7 +382,7 @@ export default function Commercial() {
           </div>
         </div>
       </section>
-      <section className=" mx-auto px-5 py-10 md:mx-22">
+      <section className=" mx-auto px-5 py-10 lg:mx-22 md:mx-18">
         <header className="text-center mt-10 mb-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
             How Can we Help Your Industry Benefit from Custom Solar?

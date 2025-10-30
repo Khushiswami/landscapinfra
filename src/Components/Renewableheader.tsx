@@ -227,7 +227,7 @@ export default function Renewableheader() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
+        <nav className="xl:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
           <Link
             href="/renewableenergy"
             className="block py-2 border-b border-gray-200"

@@ -64,11 +64,11 @@ export default function Renewableslider() {
   }, [activeCategory]);
 
   return (
-    <div className="px-auto py-5 mt-6 mb-5 bg-[#f0f1f5] md:mb-0 md:px-9">
+    <div className="px-auto py-5 mt-6 mb-5 bg-[#f0f1f5] md:mb-0 md:px-15 lg:px-9">
       {/* Section Title */}
       <div className="text-center mb-6"></div>
 
-      <div className="mx-auto my-8 px-4 md:px-20">
+      <div className="mx-auto my-8 px-4 lg:px-20">
         {/* ✅ Mobile Slider */}
         <div className="lg:hidden space-y-2">
           {categories.map((cat, idx) => {

@@ -67,7 +67,7 @@ export default function Renewableabout() {
     <section className="relative py-4 md:py-16">
       {/* Decorative Background */}
 
-      <div className="relative container mx-auto px-5 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start z-10">
+      <div className="relative container mx-auto px-5 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start z-10">
         {/* Left Section - Video */}
         <div className="space-y-6 flex flex-col justify-center">
           <div className="relative rounded-lg w-full h-64 sm:h-80 md:h-[535px] overflow-hidden hover:scale-105 transition-transform duration-500">

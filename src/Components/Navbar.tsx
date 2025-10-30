@@ -39,7 +39,6 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <img src="/finallogo.png" alt="Logo" className="h-15 w-auto" />
         </Link>
-
         {/* Mobile Icons */}
         <div className="flex items-center space-x-3 md:hidden">
           <button>
@@ -55,9 +54,8 @@ export default function Navbar() {
             {language}
           </button>
         </div>
-
-        {/* Desktop Navigation */}
         <nav className="hidden capitalize xl:flex items-center space-x-6 font-medium text-lg xl:text-xl relative">
+          {/* <nav className="hidden capitalize lg:flex items-center space-x-6 font-medium text-lg xl:text-xl relative"> */}
           {/* <nav className="hidden capitalize md:flex items-center space-x-6 font-medium text-lg  md:text-xl relative"> */}
           <Link href="/" className="hover:opacity-80">
             Home
@@ -391,7 +389,6 @@ export default function Navbar() {
             )}
           </div>
         </nav>
-
         {/* Desktop Right Icons */}
         {/* <div className="hidden md:flex items-center space-x-4"> */}
         <div className="hidden xl:flex items-center space-x-4">
@@ -414,11 +411,14 @@ export default function Navbar() {
             CONTACT US
           </Link>
         </div>
-
         {/* Mobile Menu Button */}
         {/* <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-black"
+        > */}
+        {/* <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="lg:hidden text-black"
         > */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -434,7 +434,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
+        <nav className="xl:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
           <Link href="/" className="block py-2 border-b border-gray-200">
             HOME
           </Link>

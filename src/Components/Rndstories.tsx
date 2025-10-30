@@ -46,7 +46,7 @@ export default function Rndstories() {
         Success Stories
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6">
         {STORIES.map((story) => (
           <div
             key={story.id}
@@ -57,20 +57,11 @@ export default function Rndstories() {
               alt={story.title}
               className="w-full h-40 md:h-48 object-cover"
             />
-            <div className="p-4 flex flex-col justify-between flex-grow">
+            <div className="p-4 flex flex-col justify-between ">
               <h3 className="text-[#000080] font-medium text-sm md:text-lg mb-3">
                 {story.title}
               </h3>
               <p className=" text-[#545353] mb-3">{story.Subtitle}</p>
-              {/* <button
-                onClick={() => router.push(story.url)}
-                className="flex items-center text-sm md:text-base font-medium text-[#000080] hover:text-[#ff0000] mt-auto"
-              >
-                Explore success story
-                <span className="ml-1 inline-block transform transition-transform group-hover:translate-x-1">
-                  →
-                </span>
-              </button> */}
             </div>
           </div>
         ))}
