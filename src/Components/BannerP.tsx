@@ -84,7 +84,7 @@ export default function Banner() {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/70" />
 
       {/* Slide Content */}
       <div className="relative z-10 flex flex-col justify-center h-full mx-auto px-6 sm:px-20 text-left ">

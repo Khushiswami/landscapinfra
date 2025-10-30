@@ -104,12 +104,12 @@ export default function Pebheader() {
         {
           title: "Standard Modular Solutions",
           href: "/standardmodular",
-          subMenu: [
-            { name: "Porta Cabins", href: "/porta-cabins" },
-            { name: "Security Guard Cabin", href: "/security-guard-cabins" },
-            { name: "Mi Homes", href: "/mi-homes" },
-            { name: "K-House", href: "/k-house" },
-          ],
+          // subMenu: [
+          //   { name: "Porta Cabins", href: "/porta-cabins" },
+          //   { name: "Security Guard Cabin", href: "/security-guard-cabins" },
+          //   { name: "Mi Homes", href: "/mi-homes" },
+          //   { name: "K-House", href: "/k-house" },
+          // ],
         },
         { title: "EPC Solutions", href: "/epcsolutions" },
       ],

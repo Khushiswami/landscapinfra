@@ -20,6 +20,7 @@ import Form from "yes/Components/Renewable/Form";
 
 import Solarservices from "yes/Components/Solarservices";
 import Solarcontact from "yes/Components/Solarcontact";
+import Renewfooter from "yes/Components/Renewable/Renewfooter";
 
 export default function Renewableenergy() {
   const [active, setActive] = useState(0);
@@ -74,7 +75,7 @@ export default function Renewableenergy() {
       <Renewablenews />
       <PebBrandP />
       <Solarcontact />
-      <Footer />
+      <Renewfooter />
     </>
   );
 }

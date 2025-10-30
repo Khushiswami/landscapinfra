@@ -10,6 +10,7 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function Renewableheader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,7 +57,8 @@ export default function Renewableheader() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden capitalize md:flex items-center space-x-6 font-medium text-lg  md:text-xl relative">
+        <nav className="hidden capitalize xl:flex items-center space-x-6 font-medium text-lg xl:text-xl relative">
+          {/* <nav className="hidden capitalize md:flex items-center space-x-6 font-medium text-lg  md:text-xl relative"> */}
           <Link href="/renewableenergy" className="hover:opacity-80">
             Home
           </Link>
@@ -67,7 +69,7 @@ export default function Renewableheader() {
               onClick={() => handleDropdownClick("industry")}
               className="flex items-center hover:opacity-80"
             >
-              Industry
+              Our Solutions
               {openDropdown === "industry" ? (
                 <ChevronUpIcon className="h-4 w-4 inline ml-1" />
               ) : (
@@ -83,16 +85,16 @@ export default function Renewableheader() {
                 <div className="w-1/3 text-white p-6 space-y-4">
                   <button
                     onMouseEnter={() => handleImageChange("/industry.jpg")}
-                    onClick={() =>
-                      (window.location.href = "/industryinstallation")
-                    }
+                    onClick={() => (window.location.href = "/groundmounted")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Ground Mounted Solutions
                   </button>
                   <button
                     onMouseEnter={() => handleImageChange("/engineer.jpg")}
-                    onClick={() => (window.location.href = "/rnd")}
+                    onClick={() =>
+                      (window.location.href = "/residential-solar")
+                    }
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Residential & Housing Society Solutions
@@ -110,9 +112,7 @@ export default function Renewableheader() {
                   </button>
                   <button
                     onMouseEnter={() => handleImageChange("/pebone.jpeg")}
-                    onClick={() =>
-                      (window.location.href = "/preEngineeredBuildings")
-                    }
+                    onClick={() => (window.location.href = "/commercial-solar")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Commercial Solutions{" "}
@@ -180,17 +180,15 @@ export default function Renewableheader() {
           <Link href="" className="hover:opacity-80">
             Downloads
           </Link>
-          <Link href="" className="hover:opacity-80">
+          {/* <Link href="" className="hover:opacity-80">
             Solar Calculator{" "}
-          </Link>
-          <Link href="/renewable-contact" className="hover:opacity-80">
-            Contact{" "}
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Desktop Right Icons */}
-        <div className="hidden md:flex items-center space-x-4">
-          <button>
+        <div className="hidden xl:flex items-center space-x-4">
+          {/* <div className="hidden md:flex items-center space-x-4"> */}
+          {/* <button>
             <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
           </button>
           <button>
@@ -201,7 +199,7 @@ export default function Renewableheader() {
             className="px-2 py-1 border rounded text-sm hover:bg-gray-100"
           >
             {language}
-          </button>
+          </button> */}
           <Link
             href="/contact"
             className="bg-[#000080] text-white px-4 py-2 rounded hover:bg-black font-semibold"
@@ -211,9 +209,13 @@ export default function Renewableheader() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
+        {/* <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-black"
+        > */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="xl:hidden text-black"
         >
           {menuOpen ? (
             <XMarkIcon className="h-7 w-7" />
@@ -226,7 +228,94 @@ export default function Renewableheader() {
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="md:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
-          {/* Mobile menu content unchanged */}
+          <Link
+            href="/renewableenergy"
+            className="block py-2 border-b border-gray-200"
+          >
+            HOME
+          </Link>
+
+          {/* Industries collapsible */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleDropdown("industries")}
+              className="w-full text-left font-semibold flex justify-between items-center"
+            >
+              SOLUTIONS
+              <span>
+                {openDropdown === "industries" ? (
+                  <FaChevronUp />
+                ) : (
+                  <FaChevronDown />
+                )}
+              </span>{" "}
+            </button>
+
+            {openDropdown === "industries" && (
+              <ul className="pl-4 mt-2 space-y-1">
+                <li>
+                  <Link
+                    href="/groundmounted"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Ground Mounted Solutions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/residential-solar"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Residential & Housing Society Solutions
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="/industrial-solar"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Industrial Solutions{" "}
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="/commercial-solar"
+                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                  >
+                    Commercial Solutions{" "}
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          {/* Expertise collapsible */}
+          <Link
+            href="/projects"
+            className="block py-2 border-b border-gray-200"
+          >
+            EPC SOLAR
+          </Link>
+          <Link
+            href="/projects"
+            className="block py-2 border-b border-gray-200"
+          >
+            PROJECTS
+          </Link>
+          <Link href="#" className="block py-2 border-b border-gray-200">
+            INSIGHTS
+          </Link>
+          <Link href="#" className="block py-2 border-b border-gray-200">
+            DOWNLOADS
+          </Link>
+          {/* About collapsible */}
+
+          <Link
+            href="/renewable-contact"
+            className="block py-2 border-b border-gray-200"
+          >
+            Contact Us
+          </Link>
         </nav>
       )}
     </header>
