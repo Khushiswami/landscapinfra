@@ -204,16 +204,16 @@ export default function Commercial() {
   };
   const slides = [
     {
-      image: "/commercial/",
-      title: "Pre-fab Office",
+      image: "/commercial/Stable Energy Costs.jpg",
+      title: "Stable Energy Costs",
     },
     {
-      image: "/commercial/",
-      title: "Industrial Enclousers",
+      image: "/commercial/Reliable Performance.jpg",
+      title: "Sustainable Energy",
     },
     {
-      image: "/commercial/",
-      title: "Railway Shelters",
+      image: "/images/step1.jpg",
+      title: "Smart Financing Options",
     },
   ];
   const steps = [

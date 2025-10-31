@@ -45,10 +45,18 @@ export default function Groundmounted() {
 
   // ===== Hero Slider =====
   const slides = [
-    { image: "/preimages/office.jpg", title: "Open Access for Solar Parks" },
-    { image: "/preimages/industrial-enclosure.jpg", title: "Turnkey Projects" },
-    { image: "/preimages/railway-shelter.jpg", title: "Railway Shelters" },
-    { image: "/preimages/control-room.jpg", title: "Large-scale Solar Farms" },
+    {
+      image: "/groundmounted/Open Access for Solar Parks.png",
+      title: "Open Access for Solar Parks",
+    },
+    {
+      image: "/groundmounted/Open Access for Solar Parks.jpg",
+      title: "Turnkey Projects",
+    },
+    {
+      image: "/groundmounted/Large-scale solar farms.jpg",
+      title: "Large-scale Solar Farms",
+    },
   ];
 
   // ===== Card Section (with images) =====

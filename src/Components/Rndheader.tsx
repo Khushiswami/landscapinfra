@@ -96,17 +96,17 @@ const Rndheader = () => {
   ];
 
   return (
-    <header className="w-full border-b bg-white shadow-sm fixed top-0 left-0 z-50 md:px-15">
-      <div className="mx-auto px-4 lg:px-8 flex items-center justify-between h-16">
+    <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50 md:px-15">
+      <div className="mx-auto px-4 lg:px-8 flex items-center justify-between h-20">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <Link href="/rnd" className="flex items-center">
-            <img src="/logo.jpeg" alt="Logo" className="h-15 w-auto p-1" />
+            <img src="/logo.jpeg" alt="Logo" className="h-18 w-auto p-3" />
           </Link>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex space-x-6 font-medium text-gray-800">
+        <nav className="hidden lg:flex space-x-6 font-medium text-black md:text-lg lg:text-lg">
           {navItems.map((item, idx) =>
             item.dropdown ? (
               <div key={idx} className="relative">
@@ -123,7 +123,7 @@ const Rndheader = () => {
 
                 {/* Mega menu */}
                 {openDropdown === idx && (
-                  <div className="fixed left-0 top-16 w-screen bg-white border-t shadow-xl z-50">
+                  <div className="fixed left-0 top-16 w-screen bg-white  shadow-xl z-50">
                     {/* About & Insights */}
                     {item.label === "About" || item.label === "Insights" ? (
                       <div className="max-w-7xl mx-auto px-8 py-12 flex flex-wrap items-center justify-between gap-8">
@@ -221,7 +221,7 @@ const Rndheader = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t shadow-md p-4 space-y-4">
+        <div className="lg:hidden bg-white  shadow-md p-4 space-y-4">
           {navItems.map((item, idx) =>
             item.dropdown ? (
               <div key={idx}>

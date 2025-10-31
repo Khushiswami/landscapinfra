@@ -43,34 +43,12 @@ export default function Epcsolutions() {
   // ✅ Moved slides & features outside of handleClick
   const slides = [
     {
-      image: "/preimages/office.jpg",
-      title: "Pre-fab Office",
-      link: "/prefabricatedSite",
+      image: "/solar epc.jpeg",
+      title: "Solar Epc",
     },
     {
-      image: "/preimages/industrial-enclosure.jpg",
-      title: "Industrial Enclosures",
-      link: "/industrialEnclosures",
-    },
-    {
-      image: "/preimages/railway-shelter.jpg",
-      title: "Railway Shelters",
-      link: "/railwayShelters",
-    },
-    {
-      image: "/preimages/control-room.jpg",
-      title: "Control Room",
-      link: "/controlRoom",
-    },
-    {
-      image: "/preimages/cleanroomk.jpg",
-      title: "Clean Room",
-      link: "/cleanRoom",
-    },
-    {
-      image: "/preimages/acoustic.jpg",
-      title: "Acoustic Enclosure",
-      link: "/acousticEnclosure",
+      image: "/product/s3.jpg",
+      title: "Analysis Service",
     },
   ];
 
@@ -168,7 +146,7 @@ export default function Epcsolutions() {
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-semibold">{slide.title}</h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline"
                       >
                         Read more →

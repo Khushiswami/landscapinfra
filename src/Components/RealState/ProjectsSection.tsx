@@ -44,7 +44,7 @@ export default function ProjectsSection() {
         DISCOVER OUR PROJECTS
       </h2>
 
-      <div className=" mx-auto sm:px-4 px-2 relative md:mx-25">
+      <div className=" mx-auto sm:px-4 px-2 relative lg:mx-25 md:mx-20">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation={{

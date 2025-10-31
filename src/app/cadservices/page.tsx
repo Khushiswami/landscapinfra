@@ -1,13 +1,37 @@
 "use client";
 
 import { ReactNode } from "react";
-import { FaWarehouse, FaIndustry, FaSnowflake } from "react-icons/fa";
-import { MdOutlineCleanHands } from "react-icons/md";
 import Image from "next/image";
 import Rndheader from "yes/Components/Rndheader";
 import Rndfooter from "yes/Components/Rndfooter";
 
-// Card Props Type
+// ✅ Import Icons
+import {
+  FaCogs,
+  FaBolt,
+  FaTools,
+  FaWind,
+  FaFireAlt,
+  FaWater,
+  FaRocket,
+  FaFan,
+  FaTachometerAlt,
+  FaRegSnowflake,
+  FaWaveSquare,
+  FaProjectDiagram,
+  FaRadiation,
+} from "react-icons/fa";
+import {
+  GiVibratingShield,
+  GiHeatHaze,
+  GiChemicalDrop,
+  GiWaterDrop,
+  GiSmokeBomb,
+  GiJetFighter,
+  GiPressureCooker,
+} from "react-icons/gi";
+
+// ✅ Card Props Type
 type CardProps = {
   image: string;
   icon: ReactNode;
@@ -48,6 +72,7 @@ export default function Rndexplore() {
   return (
     <>
       <Rndheader />
+
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[590px] flex flex-col md:flex-row">
         <div
@@ -69,7 +94,7 @@ export default function Rndexplore() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Precision CFD & CAE Services{" "}
+              Precision CFD & CAE Services
             </h2>
           </div>
 
@@ -89,8 +114,8 @@ export default function Rndexplore() {
                 refine designs long before physical prototypes exist. By
                 creating a digital twin of real-world conditions, engineers can
                 visualize performance, reduce trial-and-error, and unlock
-                smarter product development.From fluid flow and heat transfer to
-                structural durability and system behavior, CFD and CAE enable
+                smarter product development. From fluid flow and heat transfer
+                to structural durability and system behavior, CFD and CAE enable
                 manufacturers to predict outcomes, minimize risks, and cut down
                 production costs—all while accelerating time-to-market.
               </p>
@@ -113,134 +138,132 @@ export default function Rndexplore() {
               Advanced CAE Services
             </h2>
           </div>
-          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* ✅ Each Card with relevant icon */}
             <Card
               image="/cad/static.jpg"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<FaCogs size={38} className="text-white" />}
               title="Static Structural Analysis"
-              description="Evaluates the response of components under steady forces, loads, and constraints. Identifies high-stress regions and ensures compliance with safety standards. Prevents overdesign while maintaining structural reliability. Critical for validating designs before manufacturing."
+              description="Evaluates the response of components under steady forces, loads, and constraints. Identifies high-stress regions and ensures compliance with safety standards."
             />
             <Card
               image="/cadservice/explt.png"
-              icon={<FaWarehouse size={38} className="text-white" />}
+              icon={<FaBolt size={38} className="text-white" />}
               title="Explicit Dynamic Analysis"
-              description="Simulates short-duration, high-impact events such as crashes or explosions. Captures complex nonlinear material and contact behaviors under sudden loads. Provides insight into system resilience under extreme conditions. Essential for industries prioritizing safety and risk mitigation."
+              description="Simulates short-duration, high-impact events such as crashes or explosions, capturing complex nonlinear behaviors."
             />
             <Card
               image="/cadservice/fatigue.jpg"
-              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              icon={<FaTools size={38} className="text-white" />}
               title="Fatigue & Durability Analysis"
-              description="Predicts the service life of parts under repeated cyclic stresses. Determines when and where cracks or failures may initiate. Reduces downtime, warranty issues, and maintenance costs. Ensures long-term reliability and consistent product performance."
+              description="Predicts service life of parts under cyclic stresses, minimizing failures and ensuring long-term reliability."
             />
             <Card
               image="/cad/nvh.jpg"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<GiVibratingShield size={38} className="text-white" />}
               title="NVH (Noise, Vibration & Harshness)"
-              description="Analyzes vibration, acoustic, and harshness behavior in mechanical systems. Helps identify and minimize unwanted noise sources. Improves comfort, safety, and user perception of product quality. Crucial for automotive, aerospace, and consumer product design."
+              description="Analyzes vibration, acoustic, and harshness behavior to improve comfort, safety, and product quality."
             />
             <Card
               image="/cadservice/thermal.jpeg"
-              icon={<FaSnowflake size={38} className="text-white" />}
+              icon={<GiHeatHaze size={38} className="text-white" />}
               title="Thermal & Heat Transfer Analysis"
-              description="Examines the influence of temperature on components and assemblies. Predicts heat buildup, thermal stresses, and cooling requirements. Supports thermal protection strategies and material optimization. Ensures efficiency, safety, and extended system life."
+              description="Examines temperature influence, predicts thermal stresses, and supports cooling optimization."
             />
             <Card
               image="/cadservice/body.jpeg"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<FaProjectDiagram size={38} className="text-white" />}
               title="Multi-Body Dynamic Simulation"
-              description="Models the motion and interaction of interconnected mechanical parts. Captures kinematics, forces, and energy transfer in real-time operation. Optimizes performance, wear resistance, and system integration. Widely applied in automotive, robotics, and machinery design."
+              description="Models the motion and interaction of mechanical parts for performance and efficiency."
             />
             <Card
               image="/cad/aero.jpg"
-              icon={<FaWarehouse size={38} className="text-white" />}
+              icon={<FaWind size={38} className="text-white" />}
               title="Aerodynamic & Aeroelastic Studies (CFD + CAE)"
-              description="Analyzes airflow interaction with structures for performance improvement. Evaluates drag, lift, and vibration-induced instabilities. Supports stable, fuel-efficient, and safe product development. Critical in aerospace, automotive, and renewable energy sectors."
+              description="Analyzes airflow and vibration-induced instabilities to improve performance and stability."
             />
             <Card
               image="/cad/hydra.jpg"
-              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              icon={<GiPressureCooker size={38} className="text-white" />}
               title="Hydraulic & Pneumatic System Analysis"
-              description="Simulates fluid-powered systems for efficiency and reliability. Optimizes pressure flow, energy use, and operational safety. Identifies cavitation, leakage risks, and power loss points. Widely applied in industrial, aerospace, and automotive systems."
+              description="Simulates fluid-powered systems for efficiency, pressure control, and reliability."
             />
             <Card
               image="/cadservice/fluid.png"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<FaWaveSquare size={38} className="text-white" />}
               title="Fluid-Structure Interaction (FSI)"
-              description="Studies the mutual influence between fluid flow and solid deformation. Predicts stresses, deflection, and fatigue caused by fluid forces. Supports design of pipelines, ships, turbines, and aerospace systems. Ensures structural safety under complex flow environments."
+              description="Studies mutual influence between fluid flow and solid deformation to ensure design safety."
             />
             <Card
               image="/cad/th.jpg"
-              icon={<FaWarehouse size={38} className="text-white" />}
+              icon={<FaFireAlt size={38} className="text-white" />}
               title="Combustion & Thermal Management"
-              description="Models combustion behavior for engines, turbines, and reactors. Optimizes fuel efficiency, emission reduction, and flame stability. Combines with thermal management for cooling critical systems. Enables safer and more energy-efficient product development."
+              description="Models combustion behavior and optimizes fuel efficiency and cooling strategies."
             />
             <Card
               image="/cad/sonic.jpg"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<GiJetFighter size={38} className="text-white" />}
               title="Hypersonic & High-Mach Flows"
-              description="Simulates extreme high-speed aerodynamic conditions. Ensures performance and safety of aerospace and defense systems."
+              description="Simulates extreme aerodynamic conditions for aerospace and defense applications."
             />
             <Card
               image="/cadservice/speed.jpg"
-              icon={<FaWarehouse size={38} className="text-white" />}
+              icon={<FaFan size={38} className="text-white" />}
               title="Low-Speed & Ventilation Flows"
-              description="Optimizes air distribution in ventilation, wind tunnels, and environmental systems. Enhances energy efficiency and indoor comfort."
+              description="Optimizes air distribution in ventilation and environmental systems."
             />
             <Card
               image="/cadservice/model.jpg"
-              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              icon={<GiChemicalDrop size={38} className="text-white" />}
               title="Reactive & Chemical Flows"
-              description="Models chemically reacting systems such as fuel combustion, gasification, and industrial reactors. Improves efficiency and reduces emissions."
+              description="Models combustion, gasification, and industrial chemical reactors for efficiency."
             />
             <Card
               image="/cadservice/turb.jpeg"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<FaTachometerAlt size={38} className="text-white" />}
               title="Turbulence & Transition Modeling"
-              description="Captures flow instabilities, vortices, and turbulence phenomena. Provides accurate predictions for aircraft wings, turbines, and industrial designs."
+              description="Captures flow instabilities and turbulence phenomena for accurate aerodynamic predictions."
             />
             <Card
               image="/cadservice/droplet.jpg"
-              icon={<FaSnowflake size={38} className="text-white" />}
+              icon={<GiWaterDrop size={38} className="text-white" />}
               title="Droplet & Spray Dynamics"
-              description="Analyzes droplet breakup, atomization, and spray distribution. Supports applications in fuel injection, agriculture, and pharmaceuticals."
+              description="Analyzes droplet breakup and spray distribution for fuel, agriculture, and pharma uses."
             />
             <Card
               image="/cadservice/cooling.jpg"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<FaRegSnowflake size={38} className="text-white" />}
               title="Cooling & Heat Exchange Systems"
-              description="Simulates air and liquid cooling in exchangers, condensers, and industrial systems. Improves thermal regulation and energy use."
+              description="Simulates air and liquid cooling systems to improve energy use and thermal control."
             />
             <Card
               image="/cadservice/vibration.JPG"
-              icon={<FaWarehouse size={38} className="text-white" />}
+              icon={<FaRadiation size={38} className="text-white" />}
               title="Flow-Induced Vibration Analysis"
-              description="Studies vibrations caused by fluid interaction with structures. Prevents fatigue, noise, and failures in piping and offshore systems."
+              description="Studies fluid-induced vibrations to prevent fatigue and noise in mechanical systems."
             />
             <Card
               image="/cad/pol.png"
-              icon={<MdOutlineCleanHands size={38} className="text-white" />}
+              icon={<GiSmokeBomb size={38} className="text-white" />}
               title="Environmental & Pollution Dispersion"
-              description="Predicts how pollutants, smoke, or particles spread in natural or urban environments. Helps design sustainable and regulatory-compliant solutions."
+              description="Predicts pollutant and smoke dispersion to support sustainable, compliant designs."
             />
             <Card
               image="/cad/prop.jpg"
-              icon={<FaIndustry size={38} className="text-white" />}
+              icon={<FaRocket size={38} className="text-white" />}
               title="Propulsion & Jet Flow Studies"
-              description="Models exhausts, jet engines, and propulsion systems. Enhances thrust efficiency and reduces noise in aerospace and defense."
+              description="Models jet engines and propulsion systems to improve thrust and noise control."
             />
             <Card
               image="/cad/cav.png"
-              icon={<FaWarehouse size={38} className="text-white" />}
+              icon={<FaWater size={38} className="text-white" />}
               title="Cavitation & Multiphase Phenomena"
-              description="Analyzes vapor formation, bubble collapse, and fluid cavitation. Ensures reliability in pumps, turbines, and marine systems."
+              description="Analyzes vapor formation, bubble collapse, and fluid cavitation for reliability."
             />
           </div>
         </section>
       </main>
-
-      {/* END SLIDERR */}
-
-      {/* ✅ Cards Section */}
 
       {/* Info Section */}
       <section className="bg-gray-50 py-16 px-4 sm:px-8 md:px-16 text-center mb-12">

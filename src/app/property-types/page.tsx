@@ -7,31 +7,33 @@ import { IoIosArrowForward } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import Realstateheader from "yes/Components/Realstateheader";
 import FooterReal from "yes/Components/RealState/FooterReal";
+import Link from "next/link";
+import Offer from "yes/Components/Offer";
 
 export default function Propertytypes() {
   const router = useRouter();
 
   const slides = [
     {
-      title: "Engineering Services",
+      title: " Retail Strategy",
       desc: "Providing innovative and sustainable engineering solutions tailored to modern real estate and infrastructure challenges.",
       image: "/video/engineer.mp4",
       link: "/civil-engineering",
     },
     {
-      title: "Mechanical Service",
+      title: "Logistic",
       desc: "Empowering industries with precision-driven mechanical design, fabrication, and automation solutions using cutting-edge technologies.",
       image: "/video/mechenical.mp4",
       link: "/mechanical",
     },
     {
-      title: "CAE Simulation",
+      title: "Residential Strategy",
       desc: "Enhancing product performance and reliability through advanced computer-aided engineering simulations and virtual testing.",
       image: "/video/cae.mp4",
       link: "/cae-simulation",
     },
     {
-      title: "Product Engineering",
+      title: " Office Strategy",
       desc: "Transforming ideas into market-ready products through innovative design, analysis, and manufacturing excellence.",
       image: "/video/product.mp4",
       link: "/productengineering",
@@ -174,6 +176,46 @@ export default function Propertytypes() {
           </div>
         </div>
       </section>
+
+      <section className="bg-white py-12 px-4 md:px-15">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+              Property-Types
+            </h2>
+            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              CAE is where every great product begins—not with physical tests,
+              but with a fundamental question: Can this be designed better,
+              faster, and smarter? As one of the worlds foremost technical
+              simulation companies, we leverage advanced Computer-Aided
+              Engineering (CAE) to answer that question before any material is
+              sourced. By utilizing the power of simulation, we eliminate the
+              reliance on expensive, slow physical testing and development. This
+              insight-first philosophy translates directly into tangible
+              benefits for our clients: reduced costs, shorter lead times, and
+              demonstrably superior results compared to traditional engineering
+              practices. .
+            </p>
+
+            <Link href="/realestate-contact">
+              <button className="border border-[#000080]  mt-9 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+                GET A QUOTE
+              </button>
+            </Link>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/cae.png"
+              alt="EPACK Prefab Industrial Building"
+              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+            />
+          </div>
+        </div>
+      </section>
+      <Offer />
       <FooterReal />
       {/* Other Sections */}
     </>

@@ -128,7 +128,7 @@ const Needs = () => {
       </section>
       {/* end rnd banner */}
       <section className="bg-white py-12 px-4 md:px-15">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">

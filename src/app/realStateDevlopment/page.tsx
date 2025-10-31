@@ -31,7 +31,6 @@ export default function RealStateDevlopment() {
       <ClientReal />
       <NewsCorner />
       <AccoladesSlider />
-      {/* <BeyondBoundaries /> */}
       <FooterReal />
     </>
   );

@@ -494,7 +494,7 @@ const Form = () => {
             {/* <button className="px-6 py-3 w-full rounded-full border border-[#000080] text-black font-medium hover:bg-black hover:text-white transition">
               Submit Inquiry →
             </button> */}
-            <button className="px-6 py-3 w-full rounded-full border border-[#000080] text-black font-medium hover:bg-black hover:text-white transition">
+            <button className="px-1 py-2  h-10 mt-5 lg:mt-10 md:mt-15 rounded-xl font-bold border border-[#000080] text-[#000080] font-medium hover:bg-black hover:text-white transition hover:border-black">
               Submit Inquiry →
             </button>
           </div>

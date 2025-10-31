@@ -1,6 +1,12 @@
 "use client";
 import { useState } from "react";
-import { ChevronDown, Building2, BedDouble, MapPin, Hammer } from "lucide-react";
+import {
+  ChevronDown,
+  Building2,
+  BedDouble,
+  MapPin,
+  Hammer,
+} from "lucide-react";
 
 const TABS = ["BUY", "RENT", "COMMERCIAL"];
 
@@ -26,13 +32,14 @@ const PropertySearch = () => {
   const [selectedBedroom, setSelectedBedroom] = useState("");
 
   return (
-    <section className="w-full bg-gray-50 py-12 px-6 md:px-20">
+    <section className="w-full bg-gray-50 py-12 px-6 lg:px-22 md:px-15">
       <div className=" mx-auto grid grid-cols-1 md:grid-cols-[30%_70%] gap-10 items-start">
         {/* Left Text */}
         <div>
           <h2 className="text-2xl md:text-3xl font-light text-[#000080] leading-snug">
             Find the most <br />
-            <span className="font-semibold">reliable & appreciating</span> <br />
+            <span className="font-semibold">reliable & appreciating</span>{" "}
+            <br />
             Real Estate Properties
           </h2>
         </div>
@@ -58,7 +65,6 @@ const PropertySearch = () => {
 
           {/* Filters Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
-
             {/* Project Type */}
             {(activeTab === "BUY" || activeTab === "RENT") && (
               <div className="relative">
@@ -97,7 +103,9 @@ const PropertySearch = () => {
             )}
 
             {/* Location */}
-            {(activeTab === "BUY" || activeTab === "RENT" || activeTab === "COMMERCIAL") && (
+            {(activeTab === "BUY" ||
+              activeTab === "RENT" ||
+              activeTab === "COMMERCIAL") && (
               <div className="relative">
                 <label className="sr-only">Location</label>
                 <div
@@ -208,12 +216,16 @@ const PropertySearch = () => {
             )}
 
             {/* Last Row: Price Range + Button side by side */}
-            {(activeTab === "BUY" || activeTab === "RENT" || activeTab === "COMMERCIAL") && (
+            {(activeTab === "BUY" ||
+              activeTab === "RENT" ||
+              activeTab === "COMMERCIAL") && (
               <>
                 {/* Price Range only for BUY & RENT */}
                 {(activeTab === "BUY" || activeTab === "RENT") && (
                   <div className="flex flex-col">
-                    <label className="block text-gray-700 font-light mb-2">Price Range</label>
+                    <label className="block text-gray-700 font-light mb-2">
+                      Price Range
+                    </label>
                     <div className="flex items-center justify-between text-sm text-gray-600 mb-1">
                       <span>{price[0]} Cr</span>
                       <span>{price[1]} Cr</span>
@@ -231,7 +243,7 @@ const PropertySearch = () => {
 
                 {/* Button */}
                 <div className="flex items-end">
-                  <button className="px-6 py-3 w-full md:w-auto rounded-full border border-[#000080] text-gray-800 font-medium flex items-center justify-center gap-2 hover:bg-gray-900 hover:text-white transition">
+                  <button className="px-1 py-2 md:h-20 lg:h-10 mt-5 lg:mt-10 md:mt-15 rounded-xl font-bold border border-[#000080] text-[#000080] font-medium hover:bg-black hover:text-white transition hover:border-black">
                     0 PROJECTS FOUND →
                   </button>
                 </div>
