@@ -49,10 +49,10 @@ export default function Industryabout() {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="relative py-16 px-4 md:px-31 overflow-hidden">
+    <section className="relative py-16 px-4 md:px-20 lg:px-31 overflow-hidden">
       {/* Decorative Background */}
 
-      <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start z-10">
+      <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start z-10">
         {/* Left Section - Video */}
         <div className="space-y-6 flex flex-col justify-center">
           <div className="relative rounded-lg w-full h-64 sm:h-80 md:h-[500px] overflow-hidden hover:scale-105 transition-transform duration-500">

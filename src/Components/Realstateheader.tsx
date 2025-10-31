@@ -160,7 +160,7 @@ export default function Realstateheader() {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-900">
+          <nav className="hidden md:flex space-x-8 text-md font-medium text-black">
             {menuItems.map((item) => {
               const hasMega =
                 item.label === "Services" ||

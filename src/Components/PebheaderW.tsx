@@ -227,7 +227,7 @@ export default function PebheaderW() {
           mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } bg-[#000080] text-white shadow-lg hover:text-[#8080FF]`}
       >
-        <ul className="mt-20 px-4 space-y-4">
+        <ul className="mt-20 px-6 space-y-4">
           {navLinks.map((link) => (
             <li key={link.name} className="flex flex-col">
               <div className="flex justify-between items-center">

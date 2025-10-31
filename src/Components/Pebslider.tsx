@@ -92,7 +92,7 @@ export default function Pebslider() {
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3" />
       </div>
 
-      <div className="mx-auto my-8 px-4 md:px-20">
+      <div className="mx-auto my-8 px-4 lg:px-20 md:px-15">
         {/* ✅ Mobile Slider */}
         <div className="lg:hidden space-y-2">
           {categories.map((cat, idx) => {

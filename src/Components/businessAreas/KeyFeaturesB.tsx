@@ -39,7 +39,7 @@ export default function KeyFeaturesB({
         <span className="block sm:inline">{highlight}</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center">
         {/* Left Image */}
         <div className="order-2 md:order-1 w-full">
           <Image

@@ -64,9 +64,9 @@ export default function Industryplatform() {
   }, [active]);
 
   return (
-    <section className="w-full md:px-16">
+    <section className="w-full md:px-6 lg:px-16">
       {/* Top heading + subheading */}
-      <div className="mx-auto px-4 pt-12 text-center md:px-15">
+      <div className="mx-auto px-4 pt-12 text-center md:px-13 lg:px-15">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Comprehensive Infrastructure Solutions
         </h1>

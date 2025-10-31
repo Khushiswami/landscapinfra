@@ -56,7 +56,7 @@ export default function Industrysectors() {
   };
 
   return (
-    <section className="text-center px-4 sm:px-6 md:px-27 pt-1 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:px-20 lg:px-27 pt-1 md:pt-16 bg-white">
       <section className="w-full py-8 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">

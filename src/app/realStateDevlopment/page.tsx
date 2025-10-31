@@ -15,6 +15,7 @@ import FooterReal from "../../Components/RealState/FooterReal";
 import ClientReal from "../../Components/RealState/ClientReal";
 import Realstateheader from "yes/Components/Realstateheader";
 import Realabout from "yes/Components/RealState/Realabout";
+import Contact from "yes/Components/RealState/Contact";
 
 export default function RealStateDevlopment() {
   return (
@@ -31,6 +32,7 @@ export default function RealStateDevlopment() {
       <ClientReal />
       <NewsCorner />
       <AccoladesSlider />
+      <Contact />
       <FooterReal />
     </>
   );

@@ -81,7 +81,7 @@ export default function ExpertiseP() {
   }, [swiper]);
 
   return (
-    <section className="py-12 px-6 bg-white mx-0 md:mx-1 lg:mx-1 md:px-22">
+    <section className="py-12 px-6 bg-white mx-0 md:mx-1 lg:mx-1 md:px-15">
       {/* Heading + Arrows */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mx-auto mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center">

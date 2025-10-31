@@ -9,6 +9,7 @@ import Realstateheader from "yes/Components/Realstateheader";
 import FooterReal from "yes/Components/RealState/FooterReal";
 import Link from "next/link";
 import Offer from "yes/Components/Offer";
+import Contact from "yes/Components/RealState/Contact";
 
 export default function Propertytypes() {
   const router = useRouter();
@@ -216,6 +217,7 @@ export default function Propertytypes() {
         </div>
       </section>
       <Offer />
+      <Contact />
       <FooterReal />
       {/* Other Sections */}
     </>

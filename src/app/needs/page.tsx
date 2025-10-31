@@ -18,6 +18,8 @@ import FooterReal from "yes/Components/RealState/FooterReal";
 import Realstateheader from "yes/Components/Realstateheader";
 import Needtab from "yes/Components/Needtab";
 import { desc } from "framer-motion/client";
+import Contact from "yes/Components/RealState/Contact";
+
 const Needs = () => {
   const router = useRouter();
 
@@ -137,19 +139,19 @@ const Needs = () => {
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              CAE is where every great product begins—not with physical tests,
-              but with a fundamental question: Can this be designed better,
-              faster, and smarter? As one of the worlds foremost technical
-              simulation companies, we leverage advanced Computer-Aided
-              Engineering (CAE) to answer that question before any material is
-              sourced. By utilizing the power of simulation, we eliminate the
-              reliance on expensive, slow physical testing and development. This
-              insight-first philosophy translates directly into tangible
-              benefits for our clients: reduced costs, shorter lead times, and
-              demonstrably superior results compared to traditional engineering
-              practices. .
+              Needs Addressing Your Real Estate Needs. To Maximizing Your
+              Returns. LANDSKING INFRA manages the complete asset lifecycle,
+              offering unparalleled authority across Residential, Commercial,
+              and Industrial sectors. Your specific property needs—whether they
+              involve complex acquisition, strategic disposition, or optimizing
+              operational efficiency—are met by our integrated expert team. As
+              India's market evolves, we equip you to not just respond, but to
+              lead. Whether your immediate need involves strategic Leasing &
+              Occupancy or proactive Property Management, we translate market
+              complexity into simple, profitable results, solidifying our
+              partnership in your success across the Indian subcontinent.
             </p>
-            <ul className="grid grid-cols-2 list-disc pl-5 gap-2">
+            {/* <ul className="grid grid-cols-2 list-disc pl-5 gap-2">
               <li>Finite Element Analysis (FEA)</li>
               <li>Structural Analysis</li>
               <li>Optimisation</li>
@@ -158,9 +160,9 @@ const Needs = () => {
               <li>Vibration Analysis</li>
               <li>Finite Element Method (FEM)</li>
               <li>Computer-Aided Engineering (CAE)</li>
-            </ul>
+            </ul> */}
 
-            <Link href="/rnd-contact">
+            <Link href="/renewable-contact">
               <button className="border border-[#000080]  mt-9 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
@@ -176,6 +178,7 @@ const Needs = () => {
         </div>
       </section>
       <Needtab />
+      <Contact />
       <FooterReal />
     </>
   );

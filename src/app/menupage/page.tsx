@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {
   FaTools,
@@ -211,31 +211,61 @@ export default function Menupage() {
     },
   ];
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
+  const [visibleCards, setVisibleCards] = useState(4);
 
-  const prevSlide = () => {
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) setVisibleCards(1); // mobile
+      else if (width < 1024) setVisibleCards(3); // tablet
+      else setVisibleCards(4); // desktop
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const nextSlide = () => {
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
+    setStartIndex((prev) => (prev + 1 >= possibilities.length ? 0 : prev + 1));
   };
 
-  // Slice visible cards and wrap around if needed
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
+  const prevSlide = () => {
+    setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
+  };
+
+  // slice visible cards dynamically
+  const cardsToShow = possibilities.slice(
+    startIndex,
+    startIndex + visibleCards
+  );
+  if (cardsToShow.length < visibleCards) {
+    cardsToShow.push(
+      ...possibilities.slice(0, visibleCards - cardsToShow.length)
     );
+  }
+  // const prevSlide = () => {
+  //   setStartIndex((prev) =>
+  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
+  //   );
+  // };
+
+  // const nextSlide = () => {
+  //   setStartIndex((prev) =>
+  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
+  //   );
+  // };
+
+  // // Slice visible cards and wrap around if needed
+  // const cardsToShow = possibilities
+  //   .slice(startIndex, startIndex + visibleCards)
+  //   .concat(
+  //     startIndex + visibleCards > possibilities.length
+  //       ? possibilities.slice(
+  //           0,
+  //           (startIndex + visibleCards) % possibilities.length
+  //         )
+  //       : []
+  //   );
   const [selectedId, setSelectedId] = useState(3);
 
   const selectedArea = areas.find((area) => area.id === selectedId);
@@ -272,7 +302,7 @@ export default function Menupage() {
   return (
     <>
       <Pebheader />
-      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
+      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video
           autoPlay
@@ -285,16 +315,17 @@ export default function Menupage() {
           Your browser does not support the video tag.
         </video>
 
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-15 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
-          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto md:mx-10">
+          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
               Pre Engineered Buildings
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto md:mx-10">
+            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               Pre-Engineered Buildings (PEBs) are modern steel structures
               designed, fabricated, and assembled using standardized components
               for faster construction.
@@ -302,7 +333,7 @@ export default function Menupage() {
           </div>
 
           {/* Slider */}
-          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
+          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -310,23 +341,23 @@ export default function Menupage() {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop
-              className="pb-10 max-w-[240px] sm:max-w-sm"
+              className="pb-10 max-w-[260px] sm:max-w-sm md:max-w-md"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[240px] sm:w-[280px] md:w-[320px]">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 sm:h-72 object-cover"
+                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
                     />
-                    <div className="p-3 text-center">
-                      <h3 className="text-base sm:text-lg font-semibold">
+                    <div className="p-4 text-center">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold">
                         {slide.title}
                       </h3>
                       <a
                         href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
                       >
                         Read more →
                       </a>
@@ -341,7 +372,7 @@ export default function Menupage() {
 
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-12">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className=" mx-auto grid grid-cols-1  lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -375,11 +406,13 @@ export default function Menupage() {
               </button>
             </Link>
           </div>
-          <div className="flex justify-center">
+          <div className="relative">
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
+
             <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
+              className="rounded-md shadow-md  object-cover"
             />
           </div>
         </div>
@@ -581,6 +614,7 @@ export default function Menupage() {
       </section>
       {/* endcapill */}
       {/* business benifts */}
+      {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
@@ -588,13 +622,17 @@ export default function Menupage() {
           </h2>
 
           {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 transition-all duration-500">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                <img src={item.image} className="w-full h-44 object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.subtitle}
+                  className="w-full h-44 object-cover"
+                />
                 <div className="p-4">
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
@@ -605,23 +643,25 @@ export default function Menupage() {
             ))}
           </div>
 
-          {/* Navigation Buttons Below */}
+          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-black"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
               <ChevronLeft className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-black"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
               <ChevronRight className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
           </div>
         </div>
       </section>
+      {/* end business benifts */}
+
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
@@ -632,7 +672,7 @@ export default function Menupage() {
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Text Section */}
             <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
               <li>
@@ -665,15 +705,14 @@ export default function Menupage() {
               </li>
             </ul>
 
-            {/* Image Section */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <Image
+              <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
+              <img
                 src="/menupageimg/peb9.jpeg"
-                alt="PUF panels in industrial shed"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md relative z-20"
+                alt="Why Choose Us"
+                width={700}
+                height={450}
+                className="relative  rounded-xl"
               />
             </div>
           </div>

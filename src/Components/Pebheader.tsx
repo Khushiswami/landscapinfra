@@ -238,7 +238,7 @@ export default function Pebheader() {
 
       {/* Mobile Header (static, white, shadow) */}
       {/* Mobile Header (static, white, shadow) */}
-      <div className="lg:hidden fixed top-0 z-50 w-full bg-white shadow-md px-4 py-1 flex items-center justify-between">
+      <div className="lg:hidden fixed top-0 z-50 w-full bg-white shadow-md px-6 py-1 flex items-center justify-between">
         <Link href="/" className="flex-shrink-0">
           <Image src="/finallogo.png" alt="Logo" width={150} height={50} />
         </Link>
