@@ -23,7 +23,7 @@ type MegaMenu = {
   };
   needs: MenuLink[];
   propertyTypes: MenuLink[];
-  industries: MenuLink[];
+  // industries: MenuLink[];
 };
 
 export default function Realstateheader() {
@@ -50,7 +50,7 @@ export default function Realstateheader() {
   }, []);
 
   const menuItems = [
-    { label: "Services", href: "/Services" },
+    { label: "Services", href: "/needs" },
     { label: "Properties", href: "/properties" },
     { label: "People & Offices", href: "/people" },
     { label: "Insights", href: "/insights" },
@@ -85,13 +85,13 @@ export default function Realstateheader() {
       { label: "Office", href: "/property-types" },
     ],
 
-    industries: [
-      { label: "Data Center", href: "/Services/datacenter" },
-      { label: "Life Sciences", href: "/Services/lifescience" },
-      { label: "Banking & Financial Services", href: "/Services/banking" },
-      { label: "Tech, Media & Telecommunications", href: "/Services/tech" },
-      { label: "Healthcare", href: "/Services/healthcare" },
-    ],
+    // industries: [
+    //   { label: "Data Center", href: "/Services/datacenter" },
+    //   { label: "Life Sciences", href: "/Services/lifescience" },
+    //   { label: "Banking & Financial Services", href: "/Services/banking" },
+    //   { label: "Tech, Media & Telecommunications", href: "/Services/tech" },
+    //   { label: "Healthcare", href: "/Services/healthcare" },
+    // ],
   };
 
   const propertiesMenu: MegaMenu = {
@@ -99,25 +99,23 @@ export default function Realstateheader() {
       title: "Properties",
       text: "Find the right property for your business from our extensive listings of office, retail, and industrial spaces.",
       buttonText: "Browse All Properties",
-      buttonLink: "/property-types",
+      buttonLink: "/properties",
       image: "/office.jpg",
       linkText: "Leasing Opportunities",
-      linkHref: "/properties/leasing",
+      linkHref: "/properties",
     },
-    needs: [
-      { label: "Properties for Lease", href: "/Services/propertiesforlease" },
-    ],
+    needs: [{ label: "Properties for Lease", href: "/properties" }],
     propertyTypes: [
       {
         label: "Properties for Sale",
-        href: "/Services/propertiesforsale",
+        href: "/properties",
       },
       {
         label: "Investment Property For Sale",
-        href: "/Services/propertiesforinvestment",
+        href: "/properties",
       },
     ],
-    industries: [{ label: "Hospitality", href: "/Services/hospitality" }],
+    // industries: [{ label: "Hospitality", href: "/Services/hospitality" }],
   };
 
   const peopleMenu: MegaMenu = {
@@ -132,7 +130,7 @@ export default function Realstateheader() {
     },
     needs: [],
     propertyTypes: [],
-    industries: [],
+    // industries: [],
   };
 
   const activeMenu: MegaMenu | null =
@@ -310,7 +308,7 @@ export default function Realstateheader() {
             )}
 
             {/* INDUSTRIES */}
-            {activeMenu.industries.length > 0 && (
+            {/* {activeMenu.industries.length > 0 && (
               <div>
                 <h3 className="text-gray-800 font-semibold border-b pb-2 mb-3">
                   Industries
@@ -328,7 +326,7 @@ export default function Realstateheader() {
                   ))}
                 </ul>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       )}
@@ -460,7 +458,7 @@ export default function Realstateheader() {
                       )}
 
                       {/* INDUSTRIES */}
-                      {activeMobileMenu.industries.length > 0 && (
+                      {/* {activeMobileMenu.industries.length > 0 && (
                         <div>
                           <h4 className="font-semibold mb-1">Industries</h4>
                           <ul className="space-y-1">
@@ -479,7 +477,7 @@ export default function Realstateheader() {
                             )}
                           </ul>
                         </div>
-                      )}
+                      )} */}
                     </div>
                   )}
                 </div>
