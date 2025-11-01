@@ -7,13 +7,14 @@ export default function () {
 
   const tabs = [
     {
-      title: "Retail Strategy",
-      heading: "Retail Strategy: Place, Profit, and People",
+      title: "Retail ",
+      heading: "Retail : Place, Profit, and People",
       subheading: "What we do",
+      subline: "How we work",
 
       paragraph:
         "LANDSKING INFRA specializes in retail real estate environments, from high-street markets to integrated shopping malls. Given India's dynamic consumer shifts and competitive pressures, optimal location decisions are paramount. Our expert consultants leverage data-driven insights to ensure your retail presence not only achieves business success but also strategically integrates with the local community. We create environments where brands flourish and vibrant communities grow together, driving sustainable value for all stakeholders across India.",
-      img: "realstate/videobanner.webp",
+      img: "realstate/Retail hww (1).jpg",
       boxes: [
         {
           title: "Retail Property Leasing",
@@ -39,13 +40,14 @@ export default function () {
     },
 
     {
-      title: "Office Strategy",
+      title: "Office ",
       heading: " Location, Productivity, and Performance",
       subheading: "What we do",
+      subline: "How we work",
 
       paragraph:
         "Make your real estate strategy a powerful competitive advantage. Our analytical expertise and proprietary local intelligence empower occupiers and owners to anticipate market opportunities and execute strategies that directly drive business results across India's diverse sectors.",
-      img: "realstate/videobanner.webp",
+      img: "realstate/Office Space hww (1).jpg",
       boxes: [
         {
           title: "Occupier Advisory & Portfolio Strategy",
@@ -76,7 +78,8 @@ export default function () {
       subheading: "What we do",
       paragraph:
         "LANDSKING INFRA specializes in industrial and logistics real estate solutions, from large-scale warehouses to mission-critical manufacturing units. In India's evolving supply chain landscape, where efficiency and time-to-market define success, choosing the right operational footprint is critical.Our expert advisors combine market intelligence with logistics strategy to help organizations optimize space utilization, secure the supply chain, and elevate operational performance. We create industrial environments that guarantee efficiency, accommodate expansion, and drive long-term profit for enterprises across India.",
-      img: "realstate/videobanner.webp",
+      img: "realstate/Logistics & Industrial Facilities hww (1).jpg",
+
       boxes: [
         {
           title: "Logistics Property Leasing",
@@ -101,12 +104,12 @@ export default function () {
       ],
     },
     {
-      title: "Residential Strategy",
+      title: "Residential ",
       heading: "Value, Finance, and Lifestyle",
       subheading: "What we do",
       paragraph:
         "LANDSKING INFRA specializes in the Residential sector, offering comprehensive advisory to investors, developers, and high-net-worth landowners. We are dedicated to maximizing the value of residential assets across India.Whether you are seeking strategic investment opportunities, optimizing development finance, or aiming for a seamless transaction, our expert team is here to guide every step of the way, ensuring maximum residential asset value and long-term security.",
-      img: "realstate/videobanner.webp",
+      img: "realstate/Residential hww (1).jpg",
       boxes: [
         {
           title: "Residential Brokering & Acquisition",
@@ -175,10 +178,15 @@ export default function () {
             </div>
           ))}
         </div>
+        <div className=" lg:pt-10 md:pt-5">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] ">
+            How we work
+          </h2>
+        </div>
         <img
           src={tabs[activeIndex].img}
           alt={tabs[activeIndex].heading}
-          className="w-full h-auto rounded-lg object-cover shadow-md"
+          className="w-full h-auto object-cover "
         />
       </div>
     </div>

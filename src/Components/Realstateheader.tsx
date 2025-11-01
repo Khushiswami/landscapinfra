@@ -82,7 +82,7 @@ export default function Realstateheader() {
       { label: "Logistics & Industrial", href: "/property-types" },
       { label: "Retail", href: "/property-types" },
       { label: "Residential", href: "/property-types" },
-      { label: "Hotels", href: "/property-types" },
+      { label: "Office", href: "/property-types" },
     ],
 
     industries: [

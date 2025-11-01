@@ -161,7 +161,6 @@ export default function Standardmodular() {
   const [startIndex, setStartIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(4);
 
-  // Responsive visible card logic
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -182,7 +181,7 @@ export default function Standardmodular() {
     setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
   };
 
-  // Slice visible cards and wrap around if needed
+  // slice visible cards dynamically
   const cardsToShow = possibilities.slice(
     startIndex,
     startIndex + visibleCards
@@ -192,7 +191,29 @@ export default function Standardmodular() {
       ...possibilities.slice(0, visibleCards - cardsToShow.length)
     );
   }
+  // const prevSlide = () => {
+  //   setStartIndex((prev) =>
+  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
+  //   );
+  // };
 
+  // const nextSlide = () => {
+  //   setStartIndex((prev) =>
+  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
+  //   );
+  // };
+
+  // // Slice visible cards and wrap around if needed
+  // const cardsToShow = possibilities
+  //   .slice(startIndex, startIndex + visibleCards)
+  //   .concat(
+  //     startIndex + visibleCards > possibilities.length
+  //       ? possibilities.slice(
+  //           0,
+  //           (startIndex + visibleCards) % possibilities.length
+  //         )
+  //       : []
+  //   );
   const [selectedId, setSelectedId] = useState(3);
 
   const selectedArea = areas.find((area) => area.id === selectedId);
@@ -241,7 +262,7 @@ export default function Standardmodular() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
           <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
@@ -292,13 +313,12 @@ export default function Standardmodular() {
       </section>
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-16">
-        <div className="l mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="l mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Flexible, Expandable, and Quick-to-Deploy Modular Solutions”{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               At Ladsking Infra, we recognize the demand for fast, flexible, and
@@ -326,7 +346,7 @@ export default function Standardmodular() {
             <img
               src="/standard/modular building three.jpg"
               alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>
@@ -342,7 +362,7 @@ export default function Standardmodular() {
               alt="Manufacturing Facility"
               width={700}
               height={450}
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
 
@@ -541,15 +561,15 @@ export default function Standardmodular() {
             Engineered to Support Your Fast-Paced Projects
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
             <div className="relative">
               <Image
                 src="/standard/"
                 alt="PUF panels in industrial shed"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+                width={700}
+                height={450}
+                className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
               />
             </div>
 
@@ -578,7 +598,7 @@ export default function Standardmodular() {
       {/* end special section */}
       {/* why choose us */}
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16 px-6 md:px-15 lg:px-20">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -601,14 +621,14 @@ export default function Standardmodular() {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative mb-5 md:mb-0 lg:mb-0">
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}
               height={450}
-              className="relative rounded-2xl shadow-lg"
+              className="relative rounded-md shadow-lg"
             />
           </div>
         </div>

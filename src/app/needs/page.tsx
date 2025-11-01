@@ -26,19 +26,19 @@ const Needs = () => {
   const slides = [
     {
       title: "Invest, Finance & Value",
-      desc: "",
-      image: "/real/",
+      desc: "We leverage your investments thrive from acquisition to exit with our real-time market intelligence",
+      image: "/realstate/",
     },
     {
       title: "Plan, Lease & Occupy",
-      desc: "",
-      image: "/real/",
+      desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
+      image: "/realstate/",
     },
 
     {
       title: "Manage Properties & Portfolios ",
-      desc: "",
-      image: "/real/",
+      desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
+      image: "/realstate/",
     },
   ];
 
@@ -134,15 +134,15 @@ const Needs = () => {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              CAE Certainty: Engineering Excellence for Product Development
+              Needs Addressing Your Real Estate Needs. To Maximizing Your
+              Returns
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Needs Addressing Your Real Estate Needs. To Maximizing Your
-              Returns. LANDSKING INFRA manages the complete asset lifecycle,
-              offering unparalleled authority across Residential, Commercial,
-              and Industrial sectors. Your specific property needs—whether they
+              LANDSKING INFRA manages the complete asset lifecycle, offering
+              unparalleled authority across Residential, Commercial, and
+              Industrial sectors. Your specific property needs—whether they
               involve complex acquisition, strategic disposition, or optimizing
               operational efficiency—are met by our integrated expert team. As
               India's market evolves, we equip you to not just respond, but to
@@ -151,16 +151,6 @@ const Needs = () => {
               complexity into simple, profitable results, solidifying our
               partnership in your success across the Indian subcontinent.
             </p>
-            {/* <ul className="grid grid-cols-2 list-disc pl-5 gap-2">
-              <li>Finite Element Analysis (FEA)</li>
-              <li>Structural Analysis</li>
-              <li>Optimisation</li>
-              <li>Fluid Dynamics</li>
-              <li>Thermal Analysis</li>
-              <li>Vibration Analysis</li>
-              <li>Finite Element Method (FEM)</li>
-              <li>Computer-Aided Engineering (CAE)</li>
-            </ul> */}
 
             <Link href="/renewable-contact">
               <button className="border border-[#000080]  mt-9 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">

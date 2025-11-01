@@ -71,12 +71,6 @@ export default function Rndsimulation() {
                 a concise overview of how CAD/CAE drives manufacturing
                 excellence. Engineering Solutions
               </p>
-
-              <div className="flex items-center gap-4">
-                <button className="border rounded-md text-[#000080] border-blue-900 px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -94,7 +88,7 @@ export default function Rndsimulation() {
             {/* Column 1 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/Durability Analysis.jpg"
                 alt="Durability Analysis"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
@@ -111,7 +105,7 @@ export default function Rndsimulation() {
             {/* Column 2 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/Multi-Body Dynamic Simulation (1).jpg"
                 alt="Multi-Body Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
@@ -128,7 +122,7 @@ export default function Rndsimulation() {
             {/* Column 3 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/Optimisation.png"
                 alt="Optimisation"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
@@ -143,7 +137,7 @@ export default function Rndsimulation() {
             {/* Column 4 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/dynamic.png"
                 alt="Dynamic Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
@@ -158,7 +152,7 @@ export default function Rndsimulation() {
             {/* Column 5 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/NVH Analysis.png"
                 alt="NVH Analysis"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
@@ -173,7 +167,7 @@ export default function Rndsimulation() {
             {/* Column 6 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/CFD.png"
                 alt="CFD"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
@@ -188,7 +182,7 @@ export default function Rndsimulation() {
             {/* Column 7 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/Multi-Physics Simulation.png"
                 alt="Multi-Physics Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />
@@ -204,7 +198,7 @@ export default function Rndsimulation() {
             {/* Column 8 */}
             <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
               <img
-                src="/Profiles/PebWall.png"
+                src="/simulation/system simulation.jpeg"
                 alt="System Simulation"
                 className="w-full h-40 object-cover rounded-md mb-4"
               />

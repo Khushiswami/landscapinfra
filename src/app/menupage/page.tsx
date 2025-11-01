@@ -378,7 +378,6 @@ export default function Menupage() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
@@ -571,7 +570,7 @@ export default function Menupage() {
               alt="Manufacturing Facility"
               width={700}
               height={450}
-              className="relative rounded-2xl shadow-lg"
+              className="relative rounded-md shadow-lg"
             />
           </div>
 
@@ -712,7 +711,7 @@ export default function Menupage() {
                 alt="Why Choose Us"
                 width={700}
                 height={450}
-                className="relative  rounded-xl"
+                className="relative  rounded-md"
               />
             </div>
           </div>
@@ -720,7 +719,7 @@ export default function Menupage() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-12">
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16  px-6 md:px-12 lg:px-12">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -741,14 +740,14 @@ export default function Menupage() {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative mb-5 md:mb-0 lg:mb-0">
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}
               height={450}
-              className="relative rounded-2xl shadow-lg"
+              className="relative rounded-md shadow-lg"
             />
           </div>
         </div>

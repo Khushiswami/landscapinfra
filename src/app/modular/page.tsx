@@ -355,15 +355,13 @@ export default function Modular() {
           </div>
         </div>
       </section>
-      {/* description */}
-      <section className="bg-white py-12 px-4 md:px-16">
+      <section className="bg-white py-12 px-4  md:px-15 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Smart and Flexible Solutions for Modern Building{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               Lightweight, durable, relocatable, economical, and
@@ -406,13 +404,13 @@ export default function Modular() {
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/preimages/define.png" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
               height={450}
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
 
@@ -624,7 +622,7 @@ export default function Modular() {
                 alt="PUF panels in industrial shed"
                 width={600}
                 height={400}
-                className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+                className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
               />
             </div>
 
@@ -656,7 +654,7 @@ export default function Modular() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-16 ">
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-166 px-6 md:px-16 ">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -677,14 +675,14 @@ export default function Modular() {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative mb-5 md:mb-0 lg:mb-0">
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}
               height={450}
-              className="relative rounded-2xl shadow-lg"
+              className="relative rounded-md shadow-lg"
             />
           </div>
         </div>

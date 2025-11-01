@@ -17,25 +17,25 @@ export default function Propertytypes() {
   const slides = [
     {
       title: " Retail Strategy",
-      desc: "Providing innovative and sustainable engineering solutions tailored to modern real estate and infrastructure challenges.",
+      desc: "Transform your market presence into a competitive advantage before a competitor defines the future of that zone.",
       image: "/video/engineer.mp4",
       link: "/civil-engineering",
     },
     {
-      title: "Logistic",
-      desc: "Empowering industries with precision-driven mechanical design, fabrication, and automation solutions using cutting-edge technologies.",
+      title: "Logistic & Industry",
+      desc: "We leverage real-time intelligence to track optimal infrastructure and land acquisition. Secure your next operational hub now, before the next cycle locks you out of profit.",
       image: "/video/mechenical.mp4",
       link: "/mechanical",
     },
     {
       title: "Residential Strategy",
-      desc: "Enhancing product performance and reliability through advanced computer-aided engineering simulations and virtual testing.",
+      desc: "Value, Finance, and LifestyleSecure your family’s financial and legal legacy by acquiring a lawyer-certified property",
       image: "/video/cae.mp4",
       link: "/cae-simulation",
     },
     {
-      title: " Office Strategy",
-      desc: "Transforming ideas into market-ready products through innovative design, analysis, and manufacturing excellence.",
+      title: " Office",
+      desc: "Make the non-negotiable decision to secure the flexible, performance-driven space that will retain talent and solidify your brand dominance.",
       image: "/video/product.mp4",
       link: "/productengineering",
     },

@@ -145,31 +145,31 @@ export default function Epcsolutions() {
 
   const possibilities = [
     {
-      subtitle: "🏭 Industrial & Manufacturing Units",
+      subtitle: " Industrial & Manufacturing Units",
       description:
         "Robust structures designed to support heavy-duty industrial operations and production lines.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "🏢 Commercial & Institutional Buildings",
+      subtitle: " Commercial & Institutional Buildings",
       description:
         "Modular spaces for offices, educational institutions, healthcare, and retail environments.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "🏗️ Warehouses & Logistics Parks",
+      subtitle: " Warehouses & Logistics Parks",
       description:
         "Efficient storage and distribution facilities built for scalability and fast operations.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "🌱 Agro & Cold Storage Solutions",
+      subtitle: " Agro & Cold Storage Solutions",
       description:
         "Temperature-controlled, durable structures for agricultural produce and perishable goods.",
       image: "/industry.jpg",
     },
     {
-      subtitle: "⚡ Power & Energy Sector Infrastructure",
+      subtitle: " Power & Energy Sector Infrastructure",
       description:
         "Custom-built solutions for power plants, substations, and energy sector facilities.",
       image: "/industry.jpg",
@@ -340,14 +340,13 @@ export default function Epcsolutions() {
 
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-16">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               EPC Solutions – Comprehensive Turnkey Project Management by
               Ladsking Infra{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               At Ladsking Infra, we deliver complete EPC (Engineering,
@@ -368,7 +367,7 @@ export default function Epcsolutions() {
             <img
               src="/industry.jpg"
               alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>
@@ -565,7 +564,7 @@ export default function Epcsolutions() {
             Why Choose Ladsking Infra for Your EPC Projects?
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
             <div className="relative">
               <img
@@ -573,7 +572,7 @@ export default function Epcsolutions() {
                 alt="PUF panels in industrial shed"
                 width={600}
                 height={400}
-                className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+                className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
               />
             </div>
 

@@ -144,7 +144,6 @@ export default function Sandwichpanels() {
   const [startIndex, setStartIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(4);
 
-  // Responsive visible card logic
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -165,7 +164,7 @@ export default function Sandwichpanels() {
     setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
   };
 
-  // Slice visible cards and wrap around if needed
+  // slice visible cards dynamically
   const cardsToShow = possibilities.slice(
     startIndex,
     startIndex + visibleCards
@@ -274,14 +273,13 @@ export default function Sandwichpanels() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-16">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4  md:px-12 lg:px-16">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Premium Insulation Panels Designed for Modern Construction{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               Landsking Infra stands as one of India s top manufacturers of
@@ -309,15 +307,17 @@ export default function Sandwichpanels() {
           <div className="flex justify-center">
             <img
               src="/menupageimg/sp1.jpg"
+              width={700}
+              height={450}
               alt="EPACK Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-13 lg:px-16">
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
@@ -327,7 +327,7 @@ export default function Sandwichpanels() {
               alt="Manufacturing Facility"
               width={700}
               height={450}
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
 
@@ -523,15 +523,15 @@ export default function Sandwichpanels() {
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
             <div className="relative">
               <img
                 src="/menupageimg/sp3.jpg"
                 alt="PUF panels in industrial shed"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+                width={700}
+                height={450}
+                className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
               />
             </div>
 
@@ -557,7 +557,7 @@ export default function Sandwichpanels() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16 px-6 md:px-12 lg:px-20">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -580,14 +580,14 @@ export default function Sandwichpanels() {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative mb-5 md:mb-0 lg:mb-0">
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}
               height={450}
-              className="relative rounded-2xl shadow-lg"
+              className="relative rounded-md shadow-lg"
             />
           </div>
         </div>

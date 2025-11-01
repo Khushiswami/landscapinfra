@@ -193,22 +193,25 @@ export default function System() {
         </div>
 
         {/* Intro */}
-        <div className="p-6 " id="system-section">
-          <h2 className="text-5xl font-bold mb-6 text-center">System</h2>
+        <div
+          className=" px- 5  mt-5 md:mt-10 md:px-5 lg:px-0 lg:mt-10 "
+          id="system-section"
+        >
+          <h2 className="text-5xl font-bold   mb-6 text-center">System</h2>
         </div>
 
-        <div className="grid  grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-12">
-          <div className="bg-white  shadow text-start pl-2 flex flex-col">
+        <div className="grid  grid-cols-1 md:grid-cols-2 gap-6   mb-12 mx-4 lg:mx-15 md:mx-10">
+          <div className="bg-white  shadow text-start  flex flex-col">
             <img
               src="/Square1.png"
               alt="Structural Steel"
               className="mx-auto w-full h-56 object-cover"
             />
-            <h2 className="mt-4 text-lg sm:text-3xl font-semibold">
+            <h2 className="mt-4 p-2 text-lg sm:text-3xl font-semibold">
               Structural Steel
             </h2>
-            <p className="mt-2 text-sm sm:text-lg text-gray-600 flex-grow">
-              Pebsteel utilizes Structural Steel (S.T.S) for complex and
+            <p className="mt-2  p-2 text-sm sm:text-lg text-gray-600 flex-grow">
+              Landsking Infra utilizes Structural Steel (S.T.S) for complex and
               large-scale projects, including skyscrapers, airport terminals,
               and oil and gas facilities, among others.
             </p>
@@ -221,20 +224,19 @@ export default function System() {
             </a>
           </div>
 
-          <div className="bg-white shadow  text-start pl-2 flex flex-col">
+          <div className="bg-white shadow  text-start  flex flex-col">
             <img
               src="/Square2.jpg"
               alt="Pre-Engineered Buildings"
               className="mx-auto w-full h-56 object-cover"
             />
-            <h2 className="mt-4 text-lg sm:text-3xl font-semibold">
+            <h2 className="mt-4 p-2 text-lg sm:text-3xl font-semibold">
               Pre-Engineered Buildings
             </h2>
-            <p className="mt-2 text-sm sm:text-lg text-gray-600 flex-grow">
+            <p className="mt-2 p-2 text-sm sm:text-lg text-gray-600 flex-grow">
               Pre-engineered Buildings (PEB), also known as Prefabricated Steel
               Buildings, are widely used for factories, warehouses, hangars, and
-              more. Their flexible design allows us to optimize functionality,
-              enhance aesthetics, and improve the end-user experience.
+              more.
             </p>
             <a
               href="#"
