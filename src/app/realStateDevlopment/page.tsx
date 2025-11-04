@@ -16,12 +16,14 @@ import ClientReal from "../../Components/RealState/ClientReal";
 import Realstateheader from "yes/Components/Realstateheader";
 import Realabout from "yes/Components/RealState/Realabout";
 import Contact from "yes/Components/RealState/Contact";
+import Services from "yes/Components/RealState/Services";
 
 export default function RealStateDevlopment() {
   return (
     <>
       <Realstateheader />
       <VideoSection />
+      <Services />
       <ProjectsSection />
       <ZigzagSection />
       <Realabout />

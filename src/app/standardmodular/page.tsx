@@ -35,7 +35,7 @@ export default function Standardmodular() {
       subtitle: "Liftable Cabin",
       description:
         "Ladsking Infra’s liftable cabins offer a versatile and convenient solution for a wide range of temporary or portable space requirements. Featuring an innovative design and easy lifting mechanism, these cabins provide mobility and flexibility without sacrificing comfort or functionality.",
-      image: "/standard/",
+      image: "/modular/Liftable Cabin.jpg",
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ export default function Standardmodular() {
       subtitle: "Mi Homes",
       description:
         "Ladsking Infra’s MI Homes are innovative, sustainable, and budget-friendly modular homes crafted for rapid installation and lasting durability. Perfect for residential, commercial, and emergency use, these homes provide comfortable living spaces equipped with modern amenities.",
-      image: "/standard/",
+      image: "/modular/Mi Homes.jpg",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ export default function Standardmodular() {
       subtitle: "K-House",
       description:
         "K-House is a state-of-the-art solution for contemporary living, blending sustainability and innovation in its design. Featuring modular construction and energy-efficient elements, K-House provides a comfortable and eco-friendly lifestyle for individuals and families committed to a greener future.",
-      image: "/standard/",
+      image: "/modular/K-House.png",
     },
   ];
 
@@ -344,7 +344,7 @@ export default function Standardmodular() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/standard/modular building three.jpg"
+              src="/modular/Modular Solutions (2).jpg"
               alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
               className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
@@ -358,7 +358,7 @@ export default function Standardmodular() {
           {/* Left Side - Image */}
           <div className="relative">
             <Image
-              src="/standard/modular building two.jpg"
+              src="/modular/Modular Solutions.jpg"
               alt="Manufacturing Facility"
               width={700}
               height={450}
@@ -551,7 +551,7 @@ export default function Standardmodular() {
             {/* Image Section (Left Side) */}
             <div className="relative">
               <Image
-                src="/standard/"
+                src="/modular/Modular Solutions.png"
                 alt="PUF panels in industrial shed"
                 width={700}
                 height={450}

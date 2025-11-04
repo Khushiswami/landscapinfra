@@ -230,7 +230,11 @@ interface Category {
 const categories: Category[] = [
   {
     title: "Industry Installation",
-    images: ["/industryhome/Institutional Sector (1).jpg", "/industryhome/"],
+    images: [
+      "/industryhome/iione.jpg",
+      "/industryhome/iitwo.jpg",
+      "/industryhome/iith.jpg",
+    ],
     description:
       "LandsKingInfra Pvt.Ltd offers durable, custom-designed Pre-Engineered Buildings (PEBs) to protect and enhance your organization. We design, manufacture, and build infrastructure solutions that support long-term business growth and deliver strong returns on investment.",
   },
@@ -238,8 +242,8 @@ const categories: Category[] = [
     title: "Water",
     images: [
       "/industryhome/water.jpeg",
-      "/industryhome/water (5).jpg",
-      "/industryhome/Water Supply & Sanitation.jpg",
+      "/industryhome/watertwo.jpg",
+      "/industryhome/wthree.jpg",
     ],
     description:
       "We design and deliver high-quality sports complexes, stadiums, and recreational facilities. Our prefabricated solutions ensure modern aesthetics, fast construction, and durability, creating spaces that encourage active and healthy lifestyles.",
@@ -247,19 +251,16 @@ const categories: Category[] = [
   {
     title: "Transport ",
     images: [
-      "/industryhome/Transport (3) (1).jpg",
-      "/industryhome/Transport (5).JPG",
-      "/industryhome/Transport (4).jpg",
+      "/industryhome/tt.jpg",
+      "/industryhome/th.JPG",
+      "/industryhome/tone.jpg",
     ],
     description:
       "We specialize in large institutional buildings such as schools, hospitals, and offices. Prefabrication is increasingly recognized as a reliable alternative to traditional construction, offering faster delivery, cost efficiency, and enhanced sustainability.",
   },
   {
     title: "Industrial & Buildings",
-    images: [
-      "/industry.jpg",
-      "/industryhome/Industrial & Buildings (2) (1).jpg",
-    ],
+    images: ["/industryhome/one.jpg", "/industryhome/two.jpg"],
 
     description:
       "From landmark structures to custom-designed special-purpose buildings, our solutions combine modern engineering with sustainability. We deliver unique projects that stand out for their design, durability, and environmental responsibility.",
@@ -311,7 +312,7 @@ export default function Industryslider() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0.6 }}
+                      transition={{ duration: 0.2 }}
                       className="absolute inset-0 bg-cover bg-center"
                       style={{
                         backgroundImage: `url(${cat.images[mobIndex]})`,

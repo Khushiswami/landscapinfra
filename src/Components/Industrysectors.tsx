@@ -37,7 +37,7 @@ const projects: Project[] = [
   {
     id: 5,
     title: "Fire Safety",
-    image: "/industryhome/",
+    image: "/industryhome/ff.jpg",
   },
   {
     id: 6,

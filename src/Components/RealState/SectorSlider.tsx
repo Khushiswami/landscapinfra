@@ -19,28 +19,28 @@ const projects: Project[] = [
     id: 1,
     title: "Commercial Construction",
     description:
-      "Transform your idle roof space into a high-performance asset. Slash your operational costs and reduce reliance on the grid with a custom rooftop solar system built for your manufacturing facility.",
+      "Commercial construction include industrial construction, warehouse, water treatment plant and intake well construction.",
     image: "/realstate/three.webp",
   },
   {
     id: 2,
     title: "Project Consultancy",
     description:
-      "Get uninterrupted, large-scale power with our ground-mounted solar solutions, designed for the vast energy needs of industrial estates.",
+      "Project Consultancy includes Architectural and structural design, Interior, Supervision, Project management consultancy.",
     image: "/realstate/two.jpg",
   },
   {
     id: 3,
     title: "Real Estate",
     description:
-      "Choose a solar system that fits your power needs and business goals. Our on-grid systems sync with the utility grid, allowing you to benefit from net metering. For ultimate power reliability, our hybrid installations combine grid power with battery backup, ensuring your operations never stop, even during a blackout. We make it easy to transition to a more stable and cost-effective energy supply.",
+      "Real estate includes Sales, Purchase, Consultancy for Residential, commercial, industrial and agriculture land.",
     image: "/realstate/one.webp",
   },
   {
     id: 4,
     title: "Residential Construction",
     description:
-      "Navigating the complexities of solar regulations is our job. We provide expert support with net metering and open access policies, handling all the paperwork, government approvals, and utility company coordination to ensure a smooth and hassle-free setup.",
+      "This includes Bungalow Construction, Farmhouse, Row houses, villa construction including conventional and modern technologies both.",
     image: "/realstate/fourS.webp",
   },
 ];
@@ -118,12 +118,12 @@ export default function SectorSlider() {
                             md:opacity-0 md:group-hover:opacity-100 md:cursor-default
                           `}
                         >
-                          <h3 className="text-sm md:text-sm font-semibold mb-2">
+                          <h3 className="text-sm md:text-lg font-semibold mb-2">
                             {project.title}
                           </h3>
-                          {/* <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                          <p className="text-[10px] md:text-[17px] mb-4 ">
                             {project.description}
-                          </p> */}
+                          </p>
                           {/* <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
                             Know More
                           </button> */}
