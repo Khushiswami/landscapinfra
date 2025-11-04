@@ -338,16 +338,16 @@ export default function Firesafety() {
         </div>
       </section>
       {/* explore conettt */}
-      <section className=" mx-auto px-4 py-10 md:px-23">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
-          Our services
+      <section className="mx-auto px-4 py-10 md:px-20 lg:px-28">
+        <h2 className="text-2xl lg:text-3xl font-bold text-[#000080] mb-8">
+          Our Services
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
-          <div className="w-full md:w-1/4">
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Left Sidebar */}
+          <div className="w-full lg:w-1/4">
             {/* Mobile Dropdown */}
-            <div className="md:hidden mb-0">
+            <div className="lg:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
                 className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
@@ -377,7 +377,7 @@ export default function Firesafety() {
                         setSelectedId(area.id);
                         setOpen(false);
                       }}
-                      className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
+                      className={`w-full text-left px-4 py-3 text-[#8080FF] ${
                         selectedId === area.id ? "text-white font-semibold" : ""
                       }`}
                     >
@@ -388,23 +388,17 @@ export default function Firesafety() {
               )}
             </div>
 
-            {/* Desktop Menu */}
-            {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
-            <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
-              {areas.map((area, idx) => (
+            {/* Desktop Sidebar */}
+            <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
+              {areas.map((area) => (
                 <button
                   key={area.id}
                   onClick={() => setSelectedId(area.id)}
                   className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                    selectedId === area.id
-                      ? " font-bold"
-                      : "hover: text-gray-300"
+                    selectedId === area.id ? "font-bold" : "hover:text-gray-300"
                   }`}
                 >
-                  <span className="text-sm opacity-70">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <span>{area.title}</span>
+                  {area.title}
                 </button>
               ))}
             </div>
@@ -412,83 +406,29 @@ export default function Firesafety() {
 
           {/* Right Content */}
           {selectedArea && (
-            // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
-            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-              <div
-                className="
-    p-6 flex flex-col justify-center w-full md:w-1/2
-    rounded-lg                
-    md:rounded-none          
-    md:rounded-tl-lg md:rounded-bl-lg
-    shadow border border-[#808080] md:border-r-0
-  "
-              >
+            <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full border border-gray-300">
+              {/* Text Section */}
+              <div className="p-6 flex flex-col justify-center w-full md:w-1/2 border-t md:border-t-0 md:border-r border-gray-300">
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
-                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
-                  More{" "}
-                  <span className=" p-1 rounded-full text-[#000080]">→</span>
+                <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
+                  Contact{" "}
+                  <span className="p-1 rounded-full text-[#000080]">→</span>
                 </button>
               </div>
 
-              {/* Image */}
-              <div className="w-full md:w-1/2">
+              {/* Image Section (fills height automatically) */}
+              <div className="w-full md:w-1/2 relative">
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-64 md:h-110 object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
           )}
-        </div>
-      </section>
-      {/* explore content */}
-
-      {/* capiablites */}
-
-      {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10 md:px-18">
-        <div className=" mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Inclusive Services{" "}
-          </h2>
-
-          {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            {cardsToShow.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg overflow-hidden shadow-lg"
-              >
-                <img src={item.image} className="w-full h-44 object-cover" />
-                <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
-                    {item.subtitle}
-                  </p>
-                  <p className="text-sm text-black">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Buttons Below */}
-          <div className="flex justify-center mt-6 gap-4">
-            <button
-              onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronLeft className="w-6 h-6 text-black" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronRight className="w-6 h-6 text-black" />
-            </button>
-          </div>
         </div>
       </section>
       {/* benefits end */}

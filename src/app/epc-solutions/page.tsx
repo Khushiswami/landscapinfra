@@ -286,7 +286,7 @@ export default function Epcsolutions() {
           <div className="flex flex-col items-start justify-center">
             <h1 className="text-6xl font-bold text-[#000080]">03</h1>
             <span className="mt-2 md:mb-0 mb-6 text-[#000080] font-semibold text-3xl  md:text-5xl">
-              Construction{" "}
+              Construct
             </span>
           </div>
 

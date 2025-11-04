@@ -7,6 +7,7 @@ import CounterP from "../Components/CounterP";
 import AboutP from "../Components/AboutP";
 import BannerP from "../Components/BannerP";
 import Navbar from "../Components/Navbar";
+import Extra from "yes/Components/Extra";
 export default function Home() {
   return (
     <>

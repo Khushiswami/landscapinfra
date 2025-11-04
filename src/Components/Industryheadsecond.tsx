@@ -61,7 +61,7 @@ export default function Industryheadsecond() {
               href: "/construction",
             },
             { name: "HVAC", href: "/hvac" },
-            { name: "  Other Industries", href: "/otherindustries" },
+            { name: "  Other Industries", href: "/industry-otherindustriess" },
             { name: " Fire Saftey", href: "/firesaftey" },
           ],
         },

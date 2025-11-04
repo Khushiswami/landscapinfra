@@ -96,7 +96,7 @@ const Properties = () => {
 
         {/* Bottom Navigation */}
         <div className="absolute bottom-0 w-full ">
-          <div className="max-w-7xl mx-auto flex justify-center sm:justify-start gap-6 px-6 py-4 overflow-x-auto">
+          <div className=" mx-auto flex justify-center sm:justify-start gap-6 px-6 py-4 overflow-x-auto">
             {/* Desktop Tabs */}
             <div className="hidden sm:flex gap-6">
               {slides.map((s, i) => (

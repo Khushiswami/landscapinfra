@@ -141,7 +141,7 @@ const Page = () => {
             /> */}
 
             <Image
-              src="/platform/maining.jpg"
+              src="/industry/Industrial Turnkey Projects.png"
               alt="EPACK Prefab Industrial Building"
               width={600}
               height={400}

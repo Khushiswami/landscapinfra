@@ -10,7 +10,7 @@ const areas = [
     subtitle: "Construction Support Services",
     description:
       "Our experienced engineers deliver accurate and timely construction support services using the latest modeling and analysis tools. Whether it’s reviewing blueprints, providing on-site technical guidance, or leveraging next-gen engineering tools, we help your project move forward smoothly. ",
-    image: "/rndimages/Mechanical/coreMachanical.webp",
+    image: "/tabs/construction service.png",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const areas = [
     subtitle: "Storm and Sewer Drainage Design",
     description:
       "We design efficient storm and sewer drainage systems that minimize flooding and environmental impact.Our engineers blend innovation with practicality, ensuring your drainage design performs flawlessly under real-world conditions. we create cost-effective and eco-friendly drainage solutions. Trust our team for reliable storm and sewer drainage design that ensures long-term resilience and regulatory compliance.",
-    image: "/rndimages/Mechanical/specialist.jpg",
+    image: "/tabs/drainage.jpg",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const areas = [
     subtitle: "Highway Engineering Services",
     description:
       "From expressways to pedestrian systems, our highway engineering services deliver safety, efficiency, and future-readiness. We design highway routes, pedestrian lighting, and interstate signage with a focus on performance and safety. Backed by years of infrastructure experience, we deliver practical, standards-compliant, and sustainable highway engineering solutions that improve mobility and minimize maintenance costs.",
-    image: "/rndimages/Mechanical/industrial.jpeg",
+    image: "/tabs/highway.jpg",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const areas = [
     subtitle: "Land Development Designing Solutions",
     description:
       "We provide sustainable land development design solutions that include site planning, due diligence, and master layout design.From master planning to site layout, we ensure every plot evolves into a functional, compliant, and beautiful space. With a focus on sustainability, efficiency, and local regulations, our land development design services turn your vision into reality—responsibly and effectively.",
-    image: "/rndimages/Mechanical/plant.jpeg",
+    image: "/tabs/Land Development Designing.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const areas = [
     subtitle: "BIM for Civil and Infrastructure Projects",
     description:
       "We integrate BIM for civil and infrastructure projects to streamline construction from design to execution.We use progressive Building Information Modeling (BIM) tools to create accurate 3D models for bridges, roads, and urban structures. This enables efficient coordination, clash detection, and streamlined construction workflows. ",
-    image: "/rndimages/Mechanical/specialist.jpg",
+    image: "/tabs/",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const areas = [
     subtitle: "Product Data, Compliance & Lifecycle Management Services",
     description:
       "We deliver fatigue and durability analysis to predict product lifespan under repeated stresses, ensuring long-term reliability. Using stress-life, strain-life, crack growth, and vibration fatigue methods, we help prevent failures and extend component life.",
-    image: "/rndimages/Mechanical/plm.jpeg",
+    image: "/tabs/Product Data, Compliance.jpg",
   },
   {
     id: 7,
@@ -58,7 +58,7 @@ const areas = [
     subtitle: "Efficient, Compliant & Sustainable Product Design",
     description:
       "We provide value engineering and sustainability services focused on cost-efficient, high-performance designs. Our expertise includes design optimization, lightweighting, material substitution, and energy efficiency improvements. We ensure compliance with environmental standards such as RoHS and REACH. By integrating sustainability into engineering processes, we help reduce costs, improve performance, and support environmentally responsible product development.",
-    image: "/rndimages/Mechanical/value.jpg",
+    image: "/tabs/",
   },
 ];
 

@@ -44,19 +44,19 @@ export default function Trunkeytpes() {
   const selectedArea = areas.find((area) => area.id === selectedId);
 
   return (
-    <section className=" mx-auto px-4 py-10 md:px-29">
-      <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
-        Types of Industrial Turnkey Projects
+    <section className="mx-auto px-4 py-10 md:px-20 lg:px-28">
+      <h2 className="text-2xl lg:text-3xl font-bold text-[#000080] mb-8">
+        Types Of Industrial Trunkey Projects
       </h2>
 
-      <div className="flex flex-col md:flex-row gap-6">
-        {/* Left Menu */}
-        <div className="w-full md:w-2/4">
+      <div className="flex flex-col lg:flex-row gap-6">
+        {/* Left Sidebar */}
+        <div className="w-full lg:w-1/4">
           {/* Mobile Dropdown */}
-          <div className="md:hidden mb-0">
+          <div className="lg:hidden mb-0">
             <button
               onClick={() => setOpen(!open)}
-              className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-left bg-[#000080]"
+              className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-center bg-[#000080]"
             >
               {areas.find((a) => a.id === selectedId)?.title}
               <svg
@@ -75,7 +75,7 @@ export default function Trunkeytpes() {
             </button>
 
             {open && (
-              <div className="mt-0 w-full bg-[#000080] rounded-b-lg ">
+              <div className="mt-0 w-full bg-[#000080] rounded-b-lg shadow">
                 {areas.map((area) => (
                   <button
                     key={area.id}
@@ -83,7 +83,7 @@ export default function Trunkeytpes() {
                       setSelectedId(area.id);
                       setOpen(false);
                     }}
-                    className={`w-full text-left px-4 py-3 text-[#8080FF]  ${
+                    className={`w-full text-left px-4 py-3 text-[#8080FF] ${
                       selectedId === area.id ? "text-white font-semibold" : ""
                     }`}
                   >
@@ -94,59 +94,43 @@ export default function Trunkeytpes() {
             )}
           </div>
 
-          {/* Desktop Menu */}
-          {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
-          <div className="hidden md:flex flex-col  bg-[#000080] text-white rounded-lg pt-[68px] pb-[68px] px-[5px]">
-            {areas.map((area, idx) => (
+          {/* Desktop Sidebar */}
+          <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
+            {areas.map((area) => (
               <button
                 key={area.id}
                 onClick={() => setSelectedId(area.id)}
                 className={`flex items-center gap-3 px-5 py-4 text-left transition ${
-                  selectedId === area.id ? " font-bold" : "hover: text-gray-300"
+                  selectedId === area.id ? "font-bold" : "hover:text-gray-300"
                 }`}
               >
-                <span className="text-sm opacity-70">
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
-                <span>{area.title}</span>
+                {area.title}
               </button>
             ))}
           </div>
         </div>
 
         {/* Right Content */}
-        {/* Right Content */}
         {selectedArea && (
-          <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
-            {/* ✅ Left Text Section */}
-            <div
-              className="
-           p-6 flex flex-col justify-center w-full md:w-1/2
-           rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
-         "
-            >
-              <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
+          <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full border border-gray-300">
+            {/* Text Section */}
+            <div className="p-6 flex flex-col justify-center w-full md:w-1/2 border-t md:border-t-0 md:border-r border-gray-300">
+              <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
               </h3>
-              <p className="text-gray-700 mb-5 text-center md:text-left">
-                {selectedArea.description}
-              </p>
-              <div className="flex justify-center md:justify-start">
-                <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
-                  More{" "}
-                  <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
-                    <ArrowRight className="w-4 h-4 text-white" />
-                  </div>
-                </button>
-              </div>
+              <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+              <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
+                Contact{" "}
+                <span className="p-1 rounded-full text-[#000080]">→</span>
+              </button>
             </div>
 
-            {/* ✅ Image Section (centered vertically) */}
-            <div className="w-full md:w-1/2 flex  bg-white pe-2">
+            {/* Image Section (fills height automatically) */}
+            <div className="w-full md:w-1/2 relative">
               <img
                 src={selectedArea.image}
                 alt={selectedArea.subtitle}
-                className="w-full max-w-[500px] h-64 md:h-70 object-cover rounded-lg md:rounded-none"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

@@ -131,7 +131,7 @@ export default function Industryinstallationconstruction() {
     },
 
     {
-      id: 6,
+      id: 5,
       title: "Specialized  Design Services",
       subtitle: "Specialized Sector Design Services",
       description:
@@ -139,7 +139,7 @@ export default function Industryinstallationconstruction() {
       image: "/menupageimg/mod10.png",
     },
     {
-      id: 7,
+      id: 6,
       title: "Product  Services",
       subtitle: "Product Lifecycle & Documentation Services",
       description:
@@ -147,7 +147,7 @@ export default function Industryinstallationconstruction() {
       image: "/menupageimg/mod11.jpeg",
     },
     {
-      id: 8,
+      id: 7,
       title: " Engineering & Sustainability Services",
       subtitle:
         "We offer Expert engineering and sustainability services to optimize designs and reduce costs. Our solutions include design optimization, lightweighting, material substitution, and energy efficiency improvements.We also ensure compliance with environmental regulations like RoHS and REACH, supporting sustainable and efficient product development.",

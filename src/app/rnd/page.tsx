@@ -25,25 +25,21 @@ export default function Rnd() {
       title: "CASE STUDY",
       subtitle: "Engineering in Action",
       icon: <Wrench size={20} />,
-      url: "/casestudy",
     },
     {
       title: "TRENDS & INSIGHTS",
       subtitle: "Future. Innovation. Now.",
       icon: <Lightbulb size={20} />,
-      url: "/trends",
     },
     {
       title: "OUR SOLUTIONS",
       subtitle: "Smart. Simple. Effective.",
       icon: <Puzzle size={20} />,
-      url: "/solutions",
     },
     {
       title: "STRONG NETWORK",
       subtitle: "Global. Connected. Strong.",
       icon: <Network size={20} />,
-      url: "/network",
     },
   ];
 
@@ -92,7 +88,6 @@ export default function Rnd() {
   return (
     <>
       <Rndheader />
-
       {/* Banner Section */}
       <section className="relative w-full h-[55vh] md:h-[96vh] overflow-hidden md:px-17">
         {/* Background (video or image) */}
@@ -210,7 +205,6 @@ export default function Rnd() {
           </div>
         </div>
       </section>
-
       {/* Other Sections */}
       <Rndproduct />
       <Rndaboutus />
@@ -218,7 +212,7 @@ export default function Rnd() {
       <Rndexplore />
       <Rndplatform />
       <Rndstories />
-      <QuickLinks heading="Quick Links" links={links} />
+      <QuickLinks heading="Quick Links" links={links} />;
       <PebBrandP />
       <Rndfooter />
     </>

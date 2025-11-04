@@ -51,13 +51,12 @@ export default function ExpertiseP() {
     },
     {
       title: "Infrastructure, Energy & Materials Civil Services",
-      image:
-        "/expertiseimages/Infrastructure, Energy & Materials Civil Services.jpg",
+      image: "/infrastructure.png",
       link: "/energyandnaturalresource",
     },
     {
       title: "Heavy Engineering",
-      image: "/expertiseimages/Heavy Engineering.jpg",
+      image: "/heavy engineering.png",
       link: "/heavyengineering",
     },
     {
@@ -67,7 +66,7 @@ export default function ExpertiseP() {
     },
     {
       title: "Factories Installation",
-      image: "/expertiseimages/Factories Installation.jpg",
+      image: "/factory installation.png",
       link: "/factoriesinstallation",
     },
     {
