@@ -33,13 +33,13 @@ const Properties = () => {
     {
       title: "Properties for Lease",
       desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
-      image: "/realstate/",
+      image: "/realstate/leas.jpg",
     },
 
     {
       title: "Land & Investment Assets for Sale ",
       desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
-      image: "/realstate/",
+      image: "/realstate/investment.jpg",
     },
   ];
 

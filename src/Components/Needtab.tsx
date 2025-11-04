@@ -49,7 +49,7 @@ export default function Needtab() {
 
       paragraph:
         "Make your real estate strategy a powerful competitive advantage. Our analytical expertise and proprietary local intelligence empower occupiers and owners to anticipate market opportunities and execute strategies that directly drive business results across India's diverse sectors.",
-      img: "realstate/videobanner.webp",
+      img: "realstate/leas.jpg",
       boxes: [
         {
           title: "Transaction & Risk Services",
@@ -100,7 +100,7 @@ export default function Needtab() {
       subheading: "Business Areas",
       paragraph:
         "LandsKing Infra Take complete operational control of your real estate assets. Our experts leverage proprietary local supply chain expertise and innovative technology to manage every aspect, from daily operations and accounting to efficiency and energy consumption, ensuring you reduce costs and increase efficiencies. That ensuring your portfolio runs optimally and delivers sustained cost reduction and value.",
-      img: "realstate/videobanner.webp",
+      img: "realstate/manage properties.jpg",
       boxes: [
         {
           title: "Integrated Asset Management",

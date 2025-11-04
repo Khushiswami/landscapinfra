@@ -243,29 +243,7 @@ export default function Menupage() {
       ...possibilities.slice(0, visibleCards - cardsToShow.length)
     );
   }
-  // const prevSlide = () => {
-  //   setStartIndex((prev) =>
-  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
-  //   );
-  // };
 
-  // const nextSlide = () => {
-  //   setStartIndex((prev) =>
-  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
-  //   );
-  // };
-
-  // // Slice visible cards and wrap around if needed
-  // const cardsToShow = possibilities
-  //   .slice(startIndex, startIndex + visibleCards)
-  //   .concat(
-  //     startIndex + visibleCards > possibilities.length
-  //       ? possibilities.slice(
-  //           0,
-  //           (startIndex + visibleCards) % possibilities.length
-  //         )
-  //       : []
-  //   );
   const [selectedId, setSelectedId] = useState(3);
 
   const selectedArea = areas.find((area) => area.id === selectedId);

@@ -18,25 +18,25 @@ export default function Propertytypes() {
     {
       title: " Retail Strategy",
       desc: "Transform your market presence into a competitive advantage before a competitor defines the future of that zone.",
-      image: "/video/engineer.mp4",
+      image: "/realstate/retail.mp4",
       link: "/civil-engineering",
     },
     {
       title: "Logistic & Industry",
       desc: "We leverage real-time intelligence to track optimal infrastructure and land acquisition. Secure your next operational hub now, before the next cycle locks you out of profit.",
-      image: "/video/mechenical.mp4",
+      image: "/realstate/retail.mp4",
       link: "/mechanical",
     },
     {
       title: "Residential Strategy",
       desc: "Value, Finance, and LifestyleSecure your family’s financial and legal legacy by acquiring a lawyer-certified property",
-      image: "/video/cae.mp4",
+      image: "/realstate/retail.mp4",
       link: "/cae-simulation",
     },
     {
       title: " Office",
       desc: "Make the non-negotiable decision to secure the flexible, performance-driven space that will retain talent and solidify your brand dominance.",
-      image: "/video/product.mp4",
+      image: "/realstate/office.mp4",
       link: "/productengineering",
     },
   ];

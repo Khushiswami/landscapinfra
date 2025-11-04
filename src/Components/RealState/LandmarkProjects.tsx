@@ -176,7 +176,7 @@ export default function LandmarkProjects() {
         {/* ✅ Header (Stacked Layout) */}
         <div className="mb-8 text-center md:text-left">
           <h2 className="text-center text-3xl font-bold text-[#000080] mb-10">
-            Landmark Projects
+            Brokerage Services: Expert Transaction Management
           </h2>
 
           <p className="text-gray-700  text-base md:text-lg  ">

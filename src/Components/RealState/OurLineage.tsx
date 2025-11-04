@@ -5,6 +5,14 @@ import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
+import {
+  Target,
+  MapPin,
+  Scale,
+  FileSignature,
+  ShieldCheck,
+  Lightbulb,
+} from "lucide-react";
 
 const projects = [
   {
@@ -33,102 +41,83 @@ const projects = [
     image: "/realstate/fiveS.webp",
   },
 ];
-
+const features = [
+  {
+    title: "Define Strategy",
+    description:
+      "We begin with a deep-dive consultation to lock in your objectives and constraints. This step creates a precise, measurable project scope, ensuring our focus is aligned perfectly with your long-term vision.",
+    icon: <Lightbulb className="text-[#000080] text-4xl mb-4" />,
+  },
+  {
+    title: "Filter Options",
+    description:
+      "We use our market data and insights to filter options, presenting only verified, high-potential assets. This streamlined approach ensures you review only the absolute best matches, saving time and mitigating risk.",
+    icon: <Target className="text-[#000080] text-4xl mb-4" />,
+  },
+  {
+    title: "Site Validation",
+    description:
+      "Your dedicated expert manages and coordinates all property inspections and on-site analysis. We provide technical validation and informed assessment of infrastructure and physical condition during every visit.",
+    icon: <MapPin className="text-[#000080] text-4xl mb-4" />,
+  },
+  {
+    title: "Strategic Negotiation",
+    description:
+      "We leverage transactional experience and market intelligence to secure the asset at the 'Right Price' under the most advantageous terms. Our goal is to achieve the optimal financial agreement while protecting your interests.",
+    icon: <Scale className="text-[#000080] text-4xl  mb-4 " />,
+  },
+  {
+    title: "Deal Formalization",
+    description:
+      "We oversee the preparation and binding of all formal agreements (LOI/Agreement to Sell). This step securely formalizes the commitment between all parties and locks in the transaction parameters.",
+    icon: <FileSignature className="text-[#000080] text-4xl mb-4" />,
+  },
+  {
+    title: "Legal Closure",
+    description:
+      "Our team manages rigorous due diligence, title verification, and transfer process to ensure zero ambiguity. The transaction is fully closed and legally clear, guaranteeing you undisputed ownership.",
+    icon: <ShieldCheck className="text-[#000080] text-4xl mb-4" />,
+  },
+];
 export default function OurLineage() {
   return (
     <section className="text-center px-4 sm:px-6 md:mx-15 lg:mx-20 pt-12 md:pt-16 bg-white">
       {/* Heading */}
-      <h2 className="text-2xl md:text-3xl font-black tracking-wide text-[#000080] uppercase mb-6 md:mb-8">
-        Our Lineage
+      <h2 className="text-2xl md:text-4xl font-black tracking-wide text-[#000080] uppercase mb-6 md:mb-8">
+        How We Work: The Strategic Process
       </h2>
 
       {/* Paragraph */}
       <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed max-w-6xl mx-auto mb-8 md:mb-10 text-justify md:text-center">
-        Landscap Infra is a trusted name in the field of infrastructure, real
-        estate and urban development. With years of expertise and a
-        forward-looking vision, we have consistently delivered projects that
-        combine innovation, quality and sustainability. Our presence spans
-        across key sectors such as residential developments, commercial spaces,
-        infrastructure projects, and green initiatives that contribute to
-        shaping modern communities.
+        We’ve engineered a process that converts client needs into realized
+        assets, ensuring strategic simplicity from start to finish. Our method
+        is designed to provide end-to-end clarity, seamless communication, and a
+        result-driven experience for every client.
         <br />
         <br />
-        Guided by strong values, professional excellence and a commitment to
-        customer satisfaction, Landscap Infra continues to create landmarks that
-        redefine city skylines and improve quality of life. Our legacy is built
-        on trust, long-term relationships and a passion for building the future
-        responsibly.
+        The Landsking Workflow: We initiate by understanding your precise
+        requirement and move systematically through shortlisting, site
+        organization, negotiation, and deal finalization, concluding with
+        complete legal documentation. Every step is managed by your dedicated
+        real estate expert.
       </p>
 
-      {/* Button */}
-      <button className="relative inline-flex items-center border-2 border-[#000080] text-[#000080] font-semibold px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-black hover:text-white transition-colors duration-300 group mb-8">
-        Know More
-        <span className="ml-2 text-[#8080FF] text-lg sm:text-xl transform transition-transform duration-300 group-hover:translate-x-1">
-          →
-        </span>
-      </button>
-
-      {/* Projects Slider */}
-      <section className="w-full py-8 md:pt-16 bg-white relative">
-        <div className="max-w-6xl mx-auto px-2 sm:px-4 relative">
-          <Swiper
-            modules={[Navigation]}
-            navigation={{
-              nextEl: ".custom-next",
-              prevEl: ".custom-prev",
-            }}
-            spaceBetween={16}
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 1.2, spaceBetween: 20 },
-              768: { slidesPerView: 2, spaceBetween: 24 },
-              1024: { slidesPerView: 3, spaceBetween: 30 },
-            }}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-3 mb-10">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="p-6 bg-white hover:bg-gray-100 rounded-2xl shadow-md transition-all duration-300 flex flex-col items-center text-center"
           >
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
-                <div className="text-center">
-                  <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
-                    <div className="relative w-[85%] sm:w-[90%] md:w-full h-full">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover rounded-lg"
-                      />
-                    </div>
-                  </div>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-2 md:mt-3 px-2">
-                    {project.title}
-                  </p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* Custom Navigation Buttons */}
-          <div className="custom-prev absolute -left-4 sm:-left-6 md:-left-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
-              fill="#000080"
-              viewBox="0 0 24 24"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
+            {feature.icon}
+            <h3 className="text-xl md:text-[23px] font-semibold text-[#000080] mb-3">
+              {feature.title}
+            </h3>
+            <p className="text-gray-600 text-md md:text-base leading-relaxed">
+              {feature.description}
+            </p>
           </div>
-          <div className="custom-next absolute -right-4 sm:-right-6 md:-right-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
-              fill="#000080"
-              viewBox="0 0 24 24"
-            >
-              <path d="M9 6l6 6-6 6" />
-            </svg>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
     </section>
   );
 }

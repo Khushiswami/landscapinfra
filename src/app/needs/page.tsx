@@ -38,7 +38,7 @@ const Needs = () => {
     {
       title: "Manage Properties & Portfolios ",
       desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
-      image: "/realstate/",
+      image: "/realstate/manage properties.jpg",
     },
   ];
 
@@ -152,7 +152,7 @@ const Needs = () => {
               partnership in your success across the Indian subcontinent.
             </p>
 
-            <Link href="/renewable-contact">
+            <Link href="/realestate-contact">
               <button className="border border-[#000080]  mt-9 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
