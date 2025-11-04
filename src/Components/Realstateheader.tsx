@@ -189,25 +189,6 @@ export default function Realstateheader() {
           </nav>
 
           {/* Right Side */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="p-2 text-gray-700 hover:text-[#000080]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z"
-                />
-              </svg>
-            </button>
-            <Image src="/us-flag.png" alt="US Flag" width={20} height={14} />
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -245,7 +226,7 @@ export default function Realstateheader() {
                 {activeMenu.left.buttonText}
               </Link>
               {activeMenu.left.image && (
-                <div className="flex flex-col space-y-2">
+                <div className="flex items-center gap-4 mt-2">
                   <Image
                     src={activeMenu.left.image}
                     alt="Promo"
@@ -456,28 +437,6 @@ export default function Realstateheader() {
                           </ul>
                         </div>
                       )}
-
-                      {/* INDUSTRIES */}
-                      {/* {activeMobileMenu.industries.length > 0 && (
-                        <div>
-                          <h4 className="font-semibold mb-1">Industries</h4>
-                          <ul className="space-y-1">
-                            {activeMobileMenu.industries.map(
-                              (link: MenuLink) => (
-                                <li key={link.label}>
-                                  <Link
-                                    href={link.href}
-                                    className="block hover:text-[#000080] transition"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                  >
-                                    {link.label}
-                                  </Link>
-                                </li>
-                              )
-                            )}
-                          </ul>
-                        </div>
-                      )} */}
                     </div>
                   )}
                 </div>

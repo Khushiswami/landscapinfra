@@ -16,34 +16,88 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Hvac",
-    image: "/realstate/three.webp",
+    title: "Industrial Turnkey Solutions",
+    image: "/industryhome/",
   },
   {
     id: 2,
-    title: "Other Industries",
-
-    image: "/realstate/two.jpg",
+    title: "Construction Works",
+    image: "/industryhome/",
   },
   {
     id: 3,
-    title: "Fire Safety",
-    image: "/realstate/one.webp",
+    title: "HVAC",
+    image: "/industryhome/",
   },
   {
     id: 4,
-    title: "Industrial & Buildings",
-    image: "/realstate/fourS.webp",
+    title: "Other Industries",
+    image: "/industryhome/",
   },
   {
     id: 5,
-    title: "Water",
-    image: "/realstate/fiveS.webp",
+    title: "Fire Safety",
+    image: "/industryhome/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Transportation",
-    image: "/realstate/fiveS.webp",
+    image: "/industryhome/Transport (4).jpg",
+  },
+  {
+    id: 7,
+    title: "Highways, Roads & Bridges",
+    image: "/industryhome/highway.jpg",
+  },
+  {
+    id: 8,
+    title: "Railways",
+    image: "/industryhome/railway.jpg",
+  },
+  {
+    id: 9,
+    title: "Mass Rapid Transit Systems",
+    image: "/industryhome/",
+  },
+  {
+    id: 10,
+    title: "Ports & Harbours",
+    image: "/industryhome/portsharbours.jpg",
+  },
+  {
+    id: 11,
+    title: "Water",
+    image: "/industryhome/water (5).jpg",
+  },
+  {
+    id: 12,
+    title: "Water Supply & Sanitation",
+    image: "/industryhome/Water Supply & Sanitation.jpg",
+  },
+  {
+    id: 13,
+    title: "Irrigation",
+    image: "/industryhome/irrigation.jpg",
+  },
+  {
+    id: 14,
+    title: "Industrial & Buildings",
+    image: "/industryhome/Industrial & Buildings (2) (4).jpg",
+  },
+  {
+    id: 15,
+    title: "Manufacturing & Process Plants",
+    image: "/industryhome/Manufacturing & Process.jpg",
+  },
+  {
+    id: 16,
+    title: "Commercial & Institutional",
+    image: "/industryhome/Institutional Sector (1).jpg",
+  },
+  {
+    id: 17,
+    title: "Smart Cities & Townships",
+    image: "/industryhome/township.jpg",
   },
 ];
 
@@ -102,7 +156,7 @@ export default function Industrysectors() {
                         />
 
                         {/* Bottom title bar */}
-                        <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-sm font-semibold">
+                        <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-md font-semibold">
                           {project.title}
                         </div>
 

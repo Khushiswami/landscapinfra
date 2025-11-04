@@ -17,6 +17,7 @@ import {
 import Footer from "../../Components/Footer";
 import Brand from "yes/Components/Brand";
 import Navbar from "yes/Components/Navbar";
+import Industrybrand from "yes/Components/Industrybrand";
 
 export default function Industrybuildingsolutions() {
   const features = [
@@ -180,7 +181,7 @@ export default function Industrybuildingsolutions() {
         </div>
       </section>
 
-      <Brand />
+      <Industrybrand />
       <Footer />
     </>
   );

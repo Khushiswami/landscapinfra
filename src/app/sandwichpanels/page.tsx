@@ -415,7 +415,7 @@ export default function Sandwichpanels() {
             </div>
 
             {/* Desktop Sidebar */}
-            <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
+            <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-15 pb-15">
               {areas.map((area) => (
                 <button
                   key={area.id}

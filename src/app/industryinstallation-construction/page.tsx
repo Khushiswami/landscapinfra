@@ -46,6 +46,9 @@ import {
 } from "lucide-react";
 import Rndcivil from "yes/Components/Rndcivil";
 import Civilservice from "yes/Components/Civilservice";
+import Industrybrand from "yes/Components/Industrybrand";
+import Industryservice from "yes/Components/Industryservice";
+import Construct from "yes/Components/Construct";
 type CardProps = {
   icon: ReactNode;
   title: string;
@@ -95,66 +98,6 @@ export default function Industryinstallationconstruction() {
     image: string;
   }
 
-  const areas = [
-    {
-      id: 1,
-      title: "  Design & Development Services ",
-      subtitle: "Comprehensive Mechanical Design & Development Services",
-      description:
-        "We offer complete mechanical engineering solutions, including core design, analysis, CAD modeling, and product development services across industries. Our expertise covers machine design, sheet metal, assembly modeling, parametric 3D modeling, and tools, fixtures, and jigs design. Using advanced platforms like SolidWorks, CATIA, and Autodesk Inventor, we deliver Global Standard services and manufacturable designs. From legacy conversion to full product lifecycle support, our services enhance collaboration, accelerate development, ensure compliance, and drive innovation at every stage.",
-      image: "/menupageimg/mod15.png",
-    },
-    {
-      id: 2,
-      title: "Advanced Simulation Services",
-      subtitle: "Advanced Simulation, Analysis & Virtual Testing Services",
-      description:
-        "We deliver comprehensive simulation, analysis, and virtual testing services to improve engineering accuracy and product reliability. Our expertise spans finite element analysis (FEA), fatigue, crash and impact, CAE modal, structural, stress, thermal, vibration, and computational fluid dynamics simulations. Additionally, we provide failure, tolerance, and load testing analyses along with virtual prototyping services. Leveraging advanced simulation engineering tools, our solutions help validate designs, reduce defects, ensure compliance, and accelerate product development across industries.",
-      image: "/menupageimg/mod4.png",
-    },
-    {
-      id: 3,
-      title: "Industrial Design  Services",
-      subtitle: "Industrial Design & Engineering Automation Services",
-      description:
-        "We provide end-to-end industrial design and engineering automation services to optimize manufacturing processes and product quality. Our expertise includes casting design, vacuum casting, CNC programming, tooling and die design, assembly line optimization, and tolerance analysis for machining. As well, we support process planning, engineering fabrication, production cost estimation, project management, proposal review, bid management, and engineering change orders. Taking advantage of advanced automation tools and best practices, we help industries improve efficiency, reduce errors, ensure compliance, and accelerate production timelines",
-      image: "/menupageimg/mod3.jpg",
-    },
-    {
-      id: 4,
-      title: "Plant, Piping & HVAC Design Services",
-      subtitle: "Plant, Piping & HVAC Design Services",
-      description:
-        "We provide complete plant, piping, and HVAC design services to optimize operational efficiency, safety, and compliance. Our offerings include plant design engineering, Plant Design Management System (PDMS), modular plant design, piping design and drafting, HVAC ducting design, plumbing, firefighting, and fire protection engineering services. Leveraging advanced CAD and simulation tools, our expert team ensures accuracy in ISO-compliant designs that streamline construction, reduce errors, and enhance overall system performance across industries.",
-
-      image: "/menupageimg/mod8.jpg",
-    },
-
-    {
-      id: 5,
-      title: "Specialized  Design Services",
-      subtitle: "Specialized Sector Design Services",
-      description:
-        "We offer specialized design services across niche industries to meet unique technical and functional requirements. We are experts in assisting industries with our services. like tower design, ship deck design and drafting, and consumer electronics product design. Using advanced CAD tools and industry best practices, we deliver precise, ISO-compliant, and manufacturable designs that enhance performance, ensure compliance, and accelerate product development for specialized sectors.",
-      image: "/menupageimg/mod10.png",
-    },
-    {
-      id: 6,
-      title: "Product  Services",
-      subtitle: "Product Lifecycle & Documentation Services",
-      description:
-        "We provide each and every product lifecycle and documentation services to support efficient development, compliance, and operations. We are experts in PLM implementation and customization, technical publications, installation and maintenance manuals, engineering change documentation, CE/UL certification support, and material compliance reports. Leveraging industry best practices and advanced tools, we ensure accurate, ISO-compliant documentation that enhances traceability, reduces errors, and accelerates product launching.",
-      image: "/menupageimg/mod11.jpeg",
-    },
-    {
-      id: 7,
-      title: " Engineering & Sustainability Services",
-      subtitle:
-        "We offer Expert engineering and sustainability services to optimize designs and reduce costs. Our solutions include design optimization, lightweighting, material substitution, and energy efficiency improvements.We also ensure compliance with environmental regulations like RoHS and REACH, supporting sustainable and efficient product development.",
-      description: "",
-      image: "/menupageimg/mod12.jpg",
-    },
-  ];
   const servicesing = [
     {
       id: 1,
@@ -330,7 +273,6 @@ export default function Industryinstallationconstruction() {
   };
   const [selectedId, setSelectedId] = useState(3);
 
-  const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const slides = [
@@ -416,81 +358,53 @@ export default function Industryinstallationconstruction() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "High-Rise Building Design",
+      title: "Steel & Cement Plants",
       description:
-        "At Landsking Infra, we design safe, efficient, and elegant high-rise structures that meet international engineering standards. Our team performs detailed load analysis and material optimization to achieve the perfect balance between strength, cost, and aesthetics, ensuring long-lasting performance and visual appeal.",
+        "We undertake the construction of heavy-duty industrial plants designed to support large-scale and continuous operations. Our expertise includes structural steel fabrication, equipment foundations, material handling infrastructure, and utility systems. With precise planning and on-site coordination, we deliver robust, safe, and workflow-optimized production environments.",
       image: "/civil/high-rise building design.jpeg",
     },
     {
       id: 2,
-      title: "Structural Design Services",
+      title: "Food & Beverages",
       description:
-        "Our structural design solutions combine precision with creativity. We conduct feasibility studies, load assessments, and risk analysis while working closely with architects to blend safety and beauty seamlessly. Every design we deliver supports efficient construction and long-term durability.",
+        "We build hygiene-compliant production facilities for food and beverage processing, ensuring sterile layouts, contamination-free material flow, and temperature-controlled environments. Our construction approach aligns with FSSAI and industry quality norms, enabling efficient operations and long-term facility sustainability.",
       image: "/civil/Structural Design Services.jpeg",
     },
     {
       id: 3,
-      title: "Industrial Structure Design",
+      title: "Pharma & Chemical Units",
       description:
-        "We craft robust designs for warehouses, factories, and manufacturing plants that prioritize safety, efficiency, and space utilization. By understanding each industry’s workflow and environmental challenges, Landsking Infra ensures every structure performs reliably under demanding conditions.",
+        "We construct high-standard manufacturing units, cleanrooms, laboratories, and utility blocks that adhere to GMP, ISO, and regulated safety protocols. Our systems ensure controlled environments, chemical handling safety, waste management, and seamless integration with production equipment for reliable operational performance.",
       image: "/civil/Industrial Structure Design.jpeg",
     },
 
     {
-      id: 5,
-      title: "Structural Shop Drawing Services",
+      id: 4,
+      title: "Oil & Gas",
       description:
-        "We prepare high-precision shop drawings that translate design concepts into fabrication-ready blueprints. These drawings minimize on-site errors, support accurate cost estimation, and improve communication between design, fabrication, and construction teams.",
+        "Landsking Infra undertakes construction for refineries, terminals, storage tanks, and pipeline support infrastructure. With strict compliance to HSE (Health, Safety & Environment) standards, we ensure secure execution under high-risk conditions. Our approach focuses on structural stability, fire protection systems, and operational safety integrity.",
       image: "/civil/Structural Shop Drawing Services.jpeg",
     },
     {
       id: 5,
-      title: "Structural BIM Modeling",
+      title: "Power Plants (Thermal / Solar / Hydro)",
       description:
-        "Through advanced BIM modeling, we create intelligent 3D representations that enhance collaboration and accuracy. Landsking Infra’s BIM solutions reduce design conflicts, improve visualization, and streamline the entire construction workflow from planning to execution.",
+        "We execute the civil, structural, and equipment installation works required for power generation facilities. Our capabilities include foundation works, turbine & boiler structures, cooling systems, PV panel infrastructure, and hydro support structures. We ensure high reliability and performance efficiency throughout the plant lifecycle.",
       image: "/civil/Industrial Structure Design.jpeg",
     },
     {
-      id: 5,
-      title: "Fabrication Drawing",
+      id: 6,
+      title: "Warehouses & Logistic Parksg",
       description:
-        "Our fabrication drawings serve as the foundation for accurate manufacturing and assembly. Each detail is crafted with precision to reduce material waste, prevent rework, and ensure smooth fabrication.",
+        "We develop large-scale logistics infrastructure with optimized internal layouts, high load-bearing structures, dock levels, internal roads, stormwater systems, and racking compatibility. Our warehouses are built for efficient movement, safety compliance, and future expansion, meeting modern supply chain demands.",
       image: "/civil/Fabrication Drawing.JPG",
     },
     {
-      id: 5,
-      title: "Facade Engineering",
+      id: 7,
+      title: "Real Estate & Industrial Parksg",
       description:
-        "We combine art and engineering to design facades that are visually striking and environmentally efficient. Our experts choose the right materials, thermal properties, and finishes to enhance durability, insulation, and maintenance ease.",
+        "We plan and construct residential, commercial, and multi-industry development zones with integrated infrastructure facilities including roads, drainage, utilities, landscaping, and building structures. Our execution ensures sustainable development, organized layouts, and long-term asset value for developers and end users.",
       image: "/civil/Facade .jpeg",
-    },
-    {
-      id: 5,
-      title: "Sustainable Design",
-      description:
-        "Sustainability is at the heart of our engineering. We design eco-friendly structures that reduce environmental impact, improve energy efficiency, and comply with green building standards. Each project promotes material reuse, water conservation, and carbon-conscious design.",
-      image: "/civil/Sustainable Design.jpg",
-    },
-    {
-      id: 5,
-      title: "Seismic Design",
-      description:
-        "Our seismic engineering services ensure that structures withstand earthquakes and ground motion effectively. Using advanced modeling and retrofitting techniques, we enhance building resilience and safeguard lives and investments.",
-      image: "/civil/seismic design.jpg",
-    },
-    {
-      id: 5,
-      title: "Structural Steel Detailing",
-      description:
-        "We offer accurate steel detailing services that form the backbone of efficient construction. Each drawing meets global standards, ensuring fabrication accuracy, faster erection, and consistent project flow.",
-      image: "/civil/Structural Steel Detailing.jpeg",
-    },
-    {
-      id: 5,
-      title: "Construction Documentation",
-      description:
-        "Our comprehensive construction documentation covers every project detail—from drawings and materials to schedules and cost tracking. This documentation ensures compliance, clarity, and complete coordination between teams and authorities.",
-      image: "/civil/Construction Documentation.jpeg",
     },
   ];
   const toggleFAQ = (index: number) => {
@@ -506,32 +420,26 @@ export default function Industryinstallationconstruction() {
   return (
     <>
       <Rndheader />
-      <Rndcivil />
+      <Construct />
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-15">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Civil Construction Works
+              Building Spaces That Last
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Innovative Civil Engineering Services for Modern Infrastructure At
-              Landscapinfra, we bring innovation, precision, and sustainability
-              together to craft the future of infrastructure. Our civil
-              engineering services are designed to improve design efficiency,
-              optimize construction processes, and ensure every project stands
-              the test of time. Our expert engineers have successfully delivered
-              projects across highways, bridges, drainage systems, land
-              development, and large-scale infrastructure works — all designed
-              to meet ISO, IRC, and international standards. From detailed
-              structural analysis to real-time project coordination, we ensure
-              every design is precise, practical, and ready for construction.
+              Our teams follow a centralized planning and monitoring system to
+              ensure efficiency, quality, and transparency at every stage. We
+              maintain strong coordination among clients, architects, and
+              project teams. Strict safety standards and trained supervisors
+              ensure a safe and organized jobsite.
             </p>
 
-            <Link href="/rnd-contact">
+            <Link href="/industrycontact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
@@ -553,191 +461,65 @@ export default function Industryinstallationconstruction() {
         <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
             <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
-              Civil Construction Services
+              Why is LandsKing Infra BEST CONTRACTOR FOR construction PROJECTS?
             </h1>
             <p className="text-black  text-lg md:text-md">
-              At Landsking Infra, we create complete MEP design and drafting
-              solutions that bring precision and performance together With deep
-              expertise in system integration and load analysis, we make your
-              project execution smooth and compliant with global standards. Our
-              engineers plan and design mechanical, electrical, and plumbing
-              systems tailored to your building’s needs, ensuring comfort,
-              efficiency, and safety.
+              Landsking Infra understands the unique requirements of each
+              industrial sector and delivers customized, end-to-end construction
+              solutions. Our approach ensures efficient, safe, and
+              high-performance facilities that maximize operational value and
+              long-term reliability.
             </p>
           </div>
-          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 gap-6">
             {/* Construction Drawing Solutions */}
             <Card
               icon={<FaDraftingCompass size={40} className="text-[#8080FF]" />}
-              title="Construction Drawing Solutions"
-              description="We produce highly detailed construction drawings guiding each phase of a project—from foundation to finishing—ensuring precision, clarity, and coordination with site requirements."
+              title="Proven Industrial Expertise"
+              description=" Over 10 years delivering 280+ successful projects across industrial and commercial sectors."
             />
 
             {/* HVAC Design Services */}
             <Card
               icon={<FaSnowflake size={40} className="text-[#8080FF]" />}
-              title="HVAC Design Services"
-              description="We deliver efficient, sustainable HVAC system designs with optimized airflow, energy use, and safety—covering load calculations, layouts, and control diagrams."
+              title="Modern Construction Technology
+"
+              description=" Leverages advanced machinery, precision tools, and turnkey EPC solutions for efficient execution."
+            />
+            <Card
+              icon={<FaDraftingCompass size={40} className="text-[#8080FF]" />}
+              title="ISO-Certified Quality Assurance"
+              description="Ensures top-quality delivery with ISO 9001:2015 standards and strict safety protocols."
+            />
+
+            {/* HVAC Design Services */}
+            <Card
+              icon={<FaSnowflake size={40} className="text-[#8080FF]" />}
+              title="On-Time Project Delivery"
+              description=" Projects are completed within schedule and budget without compromising quality.
+"
+            />
+            <Card
+              icon={<FaDraftingCompass size={40} className="text-[#8080FF]" />}
+              title="Seamless Turnkey Management
+"
+              description=" Provides end-to-end project coordination, flexible execution, and hassle-free client experience.
+"
+            />
+
+            <Card
+              icon={<FaSnowflake size={40} className="text-[#8080FF]" />}
+              title="Global Client Satisfaction"
+              description="Trusted by 55+ clients worldwide for reliable, high-performance construction solutions.
+"
             />
           </div>
-
-          {/* carddd */}
         </section>
       </main>
-      {/* endcapill */}
 
-      {/* sectorss */}
-      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
-        <section className="w-full py-8 md:pt-16 bg-white relative">
-          <div className="mx-auto px-2 sm:px-4 relative">
-            <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
-              Structural Engineering Services
-            </h2>
+      <Industryservice />
+      <Industrybrand />
 
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
-              autoplay={{ delay: 2500, disableOnInteraction: false }}
-              loop={true}
-              centeredSlides={false} // default false
-              breakpoints={{
-                0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
-                640: {
-                  slidesPerView: 1.5,
-                  spaceBetween: 20,
-                  centeredSlides: true,
-                },
-                768: {
-                  slidesPerView: 2.2,
-                  spaceBetween: 24,
-                  centeredSlides: true,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                  centeredSlides: true,
-                },
-              }}
-            >
-              {projects.map((project) => (
-                <SwiperSlide key={project.id}>
-                  {({ isActive }) => (
-                    <div
-                      className={`relative text-center transition-all duration-500 group ${
-                        isActive ? "scale-105" : "scale-90 opacity-70"
-                      }`}
-                    >
-                      <div className="relative w-full h-48 sm:h-56 md:h-64 flex justify-center">
-                        <div className="relative w-full h-full">
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            fill
-                            className="object-cover w-full h-full rounded-lg"
-                          />
-
-                          {/* Bottom title bar */}
-                          <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-sm font-semibold">
-                            {project.title}
-                          </div>
-
-                          {/* Overlay */}
-                          <div
-                            onClick={() => handleOverlayToggle(project.id)}
-                            className={`
-                                 absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
-                                 rounded-lg transition-opacity duration-500 cursor-pointer
-                                 ${
-                                   activeOverlay === project.id
-                                     ? "opacity-100"
-                                     : "opacity-0"
-                                 }
-                                 md:opacity-0 md:group-hover:opacity-100 md:cursor-default
-                               `}
-                          >
-                            <h3 className="text-sm md:text-sm font-semibold mb-2">
-                              {project.title}
-                            </h3>
-                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
-                              {project.description}
-                            </p>
-                            <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
-                              Know More
-                            </button>
-                          </div>
-
-                          {/* Mobile arrows */}
-                          <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="#000080"
-                              strokeWidth="1.5"
-                            >
-                              <line x1="20" y1="12" x2="4" y2="12" />
-                              <polyline points="12 4 4 12 12 20" />
-                            </svg>
-                          </div>
-
-                          <div className="custom-next absolute top-1/2 right-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="#1c398e"
-                              strokeWidth="1.5"
-                            >
-                              <line x1="4" y1="12" x2="20" y2="12" />
-                              <polyline points="12 4 20 12 12 20" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            {/* Desktop arrows */}
-            <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 md:h-8 md:w-9"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#000080"
-                strokeWidth="1.5"
-              >
-                <line x1="20" y1="12" x2="4" y2="12" />
-                <polyline points="12 4 4 12 12 20" />
-              </svg>
-            </div>
-
-            <div className="custom-next absolute top-1/2 -translate-y-1/2 right-2 md:-right-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 md:h-8 md:w-9"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#1c398e"
-                strokeWidth="1.5"
-              >
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <polyline points="12 4 20 12 12 20" />
-              </svg>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <Civilservice />
-      <Brand />
-      {/* structure */}
-      {/* Heading */}
       <Rndtestimonial />
       <Rndfooter />
     </>

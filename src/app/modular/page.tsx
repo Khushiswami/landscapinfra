@@ -638,9 +638,7 @@ export default function Modular() {
           </div>
         </div>
       </section>
-      {/* end special section */}
-      {/* why choose us */}
-      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-166 px-6 md:px-16 ">
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16 px-6 md:px-16 ">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>

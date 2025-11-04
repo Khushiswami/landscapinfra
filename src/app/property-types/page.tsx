@@ -19,25 +19,21 @@ export default function Propertytypes() {
       title: " Retail Strategy",
       desc: "Transform your market presence into a competitive advantage before a competitor defines the future of that zone.",
       image: "/realstate/retail.mp4",
-      link: "/civil-engineering",
     },
     {
       title: "Logistic & Industry",
       desc: "We leverage real-time intelligence to track optimal infrastructure and land acquisition. Secure your next operational hub now, before the next cycle locks you out of profit.",
-      image: "/realstate/retail.mp4",
-      link: "/mechanical",
+      image: "/realstate/industrial.mp4",
     },
     {
       title: "Residential Strategy",
       desc: "Value, Finance, and LifestyleSecure your family’s financial and legal legacy by acquiring a lawyer-certified property",
       image: "/realstate/retail.mp4",
-      link: "/cae-simulation",
     },
     {
       title: " Office",
       desc: "Make the non-negotiable decision to secure the flexible, performance-driven space that will retain talent and solidify your brand dominance.",
       image: "/realstate/office.mp4",
-      link: "/productengineering",
     },
   ];
 
@@ -117,7 +113,7 @@ export default function Propertytypes() {
 
               <div className="flex justify-start">
                 <button
-                  onClick={() => router.push(slides[active].link)}
+                  // onClick={() => router.push(slides[active].link)}
                   className="flex items-center gap-3 text-white font-semibold text-xs sm:text-base md:text-lg group"
                 >
                   <span>Launch the experience</span>
@@ -209,7 +205,7 @@ export default function Propertytypes() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/cae.png"
+              src="/realstate/property.jpg"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />

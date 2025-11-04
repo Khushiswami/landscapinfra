@@ -14,51 +14,48 @@ interface Option {
 const options: Option[] = [
   {
     label: "Industrial",
-    image:
-      "https://images.unsplash.com/photo-1581091215367-59ab6d2a9a15?auto=format&fit=crop&w=1600&q=80",
-    link: "/advisory-services",
+    image: "",
+    link: "/industrycontact",
   },
   {
     label: "Warehouse",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
-    link: "/alternative-project-delivery",
+    image: "",
+    link: "/industrycontact",
   },
   {
     label: "Commercial ",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
-    link: "/architecture",
+    image: "",
+    link: "/industrycontact",
   },
   {
     label: "Institutional",
     image: "/industry.jpg",
-    link: "/aviation",
+    link: "/industrycontact",
   },
   {
     label: "Hotels ",
-    image: "/industry.jpg",
-    link: "/aviation",
+    image: "",
+    link: "/industrycontact",
   },
   {
     label: "Pharma Projects",
-    image: "/industry.jpg",
-    link: "/aviation",
+    image: "",
+    link: "/industrycontact",
   },
   {
     label: "Hospital",
-    image: "/industry.jpg",
-    link: "/aviation",
+    image: "",
+    link: "/industrycontact",
   },
   {
     label: "Marriage Halls",
-    image: "/industry.jpg",
-    link: "/aviation",
+    image: "",
+    link: "/industrycontact",
   },
   {
     label: "Resorts & Solar Project",
-    image: "/industry.jpg",
-    link: "/aviation",
+    image: "",
+    link: "/industrycontact",
   },
 ];
 

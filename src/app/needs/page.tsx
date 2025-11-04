@@ -27,12 +27,12 @@ const Needs = () => {
     {
       title: "Invest, Finance & Value",
       desc: "We leverage your investments thrive from acquisition to exit with our real-time market intelligence",
-      image: "/realstate/",
+      image: "/realstate/invest (2).jpg",
     },
     {
       title: "Plan, Lease & Occupy",
       desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
-      image: "/realstate/",
+      image: "/realstate/leas.jpg",
     },
 
     {
@@ -160,7 +160,7 @@ const Needs = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="/cae.png"
+              src="/realstate/need.png"
               alt="EPACK Prefab Industrial Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />

@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 import Header from "yes/Components/Header";
+import Navbar from "yes/Components/Navbar";
 
 // Card Props Type
 type CardProps = {
@@ -128,7 +129,7 @@ export default function Solarstructure() {
 
   return (
     <>
-      <Header />
+      <Navbar />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">

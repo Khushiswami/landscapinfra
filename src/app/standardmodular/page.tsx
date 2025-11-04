@@ -455,7 +455,7 @@ export default function Standardmodular() {
             </div>
 
             {/* Desktop Sidebar */}
-            <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
+            <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-19 pb-19">
               {areas.map((area) => (
                 <button
                   key={area.id}
