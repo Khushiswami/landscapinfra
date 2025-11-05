@@ -115,7 +115,7 @@ const Glasswool: React.FC = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/clean-room-1.png')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/glass/glasS wool PANEL.webp')",
             }}
           >
             {/* Centered Text */}
@@ -133,7 +133,7 @@ const Glasswool: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-2.jpg"
+                src="/glass/glasswool.jpg"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg "
@@ -200,7 +200,7 @@ const Glasswool: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-3.jpg"
+                src="/glass/GLASSWOOL.jpeg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg "
@@ -212,7 +212,7 @@ const Glasswool: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-4.jpg"
+                src="/glass/glasswool panel.jpg"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg "

@@ -12,14 +12,11 @@ const services = [
     desc: (
       <>
         <p className="font-medium">
-          <span className="font-extrabold  ">
-            We fast-track project success by comparing your plan against
-            thousands of similar projects.
+          <span className="font-bold block  ">
+            Project Programming Services We leverage
           </span>
-          This information allows us to build a budget and plan that fits your
-          needs, translates easily into design, and reduces costly rework. By
-          leveraging proven insights, we help you make informed decisions
-          quickly, ensuring your project stays on time and on budget.
+          insights from thousands of projects to build accurate budgets and
+          plans, reducing costly rework.
         </p>
       </>
     ),
@@ -29,13 +26,11 @@ const services = [
     desc: (
       <>
         <p className="font-medium">
-          <span className="font-extrabold block ">
-            The earlier we get involved, the better the outcome—and design is
-            where it all begins.
+          <span className="font-bold block ">
+            Design Management Our early involvement using
           </span>
-          Using tried and true methods like integrated project delivery and
-          design-build, we operate at a higher level and deliver a streamlined,
-          stress-free process with your goals as our guide.
+          methods like design-build delivers a streamlined, stress-free process
+          focused on your goals.
         </p>{" "}
       </>
     ),
@@ -45,12 +40,12 @@ const services = [
     desc: (
       <>
         <p className="font-medium">
-          <span className="font-extrabold block ">
-            Our engineers are prepared to come up with creative solutions and
-            lead design-build efforts for complex projects.
+          <span className="font-bold block ">
+            Engineering Services By embedding our engineers with construction
+            teams,
           </span>
-          By working with our construction teams, we are uniquely empowered to
-          offer innovative solutions.
+          we deliver creative, practical solutions for complex design-build
+          projects.
         </p>{" "}
       </>
     ),
@@ -60,14 +55,10 @@ const services = [
     desc: (
       <>
         <p className="font-medium">
-          <span className="font-extrabold block ">
-            Our engineers are prepared to come up with creative solutions and
-            lead design-build efforts for complex projects.
+          <span className="font-bold block ">
+            Offsite Manufacturing Our Landsking Infra Centre of Excellence in
           </span>
-          We have invested in modern machines to create the Landsking Infra
-          Centre of Excellence for Modern Construction in India. We believe in
-          new tech-updated machinery that will produce lower carbon products for
-          future projects.
+          India uses modern, low-carbon machinery for next-generation projects.
         </p>
       </>
     ),
@@ -77,15 +68,11 @@ const services = [
     desc: (
       <>
         <p className="font-medium">
-          <span className="font-extrabold block ">
-            Revolutionizing construction with precision-engineered components,
-            our offsite manufacturing facilities combine advanced machinery with
-            sustainable practices.
+          <span className="font-bold block ">
+            Modern Offsite Manufacturing We deliver faster, smarter,
           </span>
-          This approach reduces onsite construction time, minimizes waste, and
-          ensures consistent quality for every project. By leveraging technology
-          and innovation, we deliver faster, smarter, and eco-friendly solutions
-          tailored to your project needs.
+          eco-friendly solutions by creating precision components offsite to
+          reduce construction time and waste.
         </p>
       </>
     ),
