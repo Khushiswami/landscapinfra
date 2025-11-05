@@ -108,7 +108,7 @@ const Epcpanels: React.FC = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/clean-room-1.png')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/epcimg/eps panel.png')",
             }}
           >
             {/* Centered Text */}
@@ -126,7 +126,7 @@ const Epcpanels: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-2.jpg"
+                src="/epcimg/eps panel (2).png"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg "
@@ -191,7 +191,7 @@ const Epcpanels: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-4.jpg"
+                src="/epcimg/eps panel (3).jpg"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg "
@@ -203,13 +203,13 @@ const Epcpanels: React.FC = () => {
             <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
               <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                 <Card
-                  image="/NDR.webp"
+                  image="/epcimg/eps panel.jpg"
                   icon={<FaWarehouse size={32} className="text-white" />}
                   title="EPS wall panels"
                   description="Our EPS wall panels are designed for durability, thermal efficiency, and easy installation, ideal for both interior and exterior use. Featuring Standard Rib or Micro Rib finishes and a high-quality EPS core, they provide lightweight insulation with strong performance. Available in thicknesses from 40 to 150 mm and a 1170 mm panel width, they ensure efficient coverage and minimal joints. Produced on a continuous line for precision and quality, these panels are perfect for partitions, cladding, industrial buildings, and cold storage interiors."
                 />
                 <Card
-                  image="/sectorimg/inf.jpeg"
+                  image="/epcimg/eps panel (2).png.jpg "
                   icon={
                     <MdOutlineCleanHands size={32} className="text-white" />
                   }
@@ -259,7 +259,7 @@ const Epcpanels: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-5.avif"
+                src="/epcimg/eps panel (4).jpg"
                 alt="Row 4"
                 fill
                 className="object-cover rounded-lg "

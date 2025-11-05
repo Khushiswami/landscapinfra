@@ -49,6 +49,8 @@ import Civilservice from "yes/Components/Civilservice";
 import Industrybrand from "yes/Components/Industrybrand";
 import Industryservice from "yes/Components/Industryservice";
 import Construct from "yes/Components/Construct";
+import Industryheader from "yes/Components/Industryheader";
+import Industryfooter from "yes/Components/Industryfooter";
 type CardProps = {
   icon: ReactNode;
   title: string;
@@ -419,7 +421,7 @@ export default function Industryinstallationconstruction() {
 
   return (
     <>
-      <Rndheader />
+      <Industryheader />
       <Construct />
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-15">
@@ -521,7 +523,7 @@ export default function Industryinstallationconstruction() {
       <Industrybrand />
 
       <Rndtestimonial />
-      <Rndfooter />
+      <Industryfooter />
     </>
   );
 }

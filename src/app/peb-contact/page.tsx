@@ -1,5 +1,6 @@
 import { FaMapMarkerAlt, FaEnvelope, FaCommentDots } from "react-icons/fa";
 import Footer from "yes/Components/Footer";
+import Pebfooter from "yes/Components/Pebfooter";
 import PebheaderW from "yes/Components/PebheaderW";
 
 export default function Pebcontact() {
@@ -122,7 +123,7 @@ export default function Pebcontact() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

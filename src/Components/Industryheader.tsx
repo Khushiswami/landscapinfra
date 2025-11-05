@@ -77,7 +77,7 @@ export default function Industryheader() {
               name: "Construction Works",
               href: "/industryinstallation-construction",
             },
-            { name: "HVAC", href: "/hvac" },
+            // { name: "HVAC", href: "/hvac" },
             { name: "  Other Industries", href: "/industry-otherindustries" },
             { name: " Fire Saftey", href: "/businessAreas/fire-saftey" },
           ],

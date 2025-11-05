@@ -15,6 +15,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Brand from "yes/Components/Brand";
 import Industrycall from "yes/Components/Industrycall";
+import Industryfooter from "yes/Components/Industryfooter";
 
 interface Project {
   id: number;
@@ -125,7 +126,7 @@ const Page = () => {
               delivery.
             </p>
 
-            <Link href="/industry-contact">
+            <Link href="/industrycontact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
@@ -329,7 +330,7 @@ const Page = () => {
         </div>
       </section>
       <Industrycall />
-      <Footer />
+      <Industryfooter />
     </>
   );
 };

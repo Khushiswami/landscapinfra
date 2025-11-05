@@ -93,7 +93,7 @@ const Pufpanels: React.FC = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/clean-room-1.png')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/puf/puf panel.jpg')",
             }}
           >
             {/* Centered Text */}
@@ -111,7 +111,7 @@ const Pufpanels: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-2.jpg"
+                src="/puf/puf panel.png"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg "
@@ -161,7 +161,7 @@ const Pufpanels: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-4.jpg"
+                src="/puf/Types of PUFPIR.png"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg "
@@ -173,13 +173,13 @@ const Pufpanels: React.FC = () => {
             <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
               <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <Card
-                  image="/NDR.webp"
+                  image="/puf/puf panel rail shelter.png"
                   icon={<FaWarehouse size={32} className="text-white" />}
                   title="Railway Shelters"
                   description="Durable railway and telecom shelters, built to endure harsh conditions. Quick installation, low maintenance, and long-lasting reliability."
                 />
                 <Card
-                  image="/sectorimg/inf.jpeg"
+                  image="/puf/puf panel peb building.jpg"
                   icon={
                     <MdOutlineCleanHands size={32} className="text-white" />
                   }
@@ -187,7 +187,7 @@ const Pufpanels: React.FC = () => {
                   description="Designed for superior strength and cost-effectiveness, suitable for commercial and residential projects."
                 />
                 <Card
-                  image="/sectorimg/airport.jpg"
+                  image="/puf/puf panel airport.jpg"
                   icon={<FaIndustry size={32} className="text-white" />}
                   title="Airport Terminal Buildings"
                   description="Prefabricated structures for staff accommodations, worker housing, and more."
@@ -248,7 +248,7 @@ const Pufpanels: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-5.avif"
+                src="/puf/"
                 alt="Row 4"
                 fill
                 className="object-cover rounded-lg "

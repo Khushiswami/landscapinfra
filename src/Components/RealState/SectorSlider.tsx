@@ -20,28 +20,28 @@ const projects: Project[] = [
     title: "Commercial Construction",
     description:
       "Commercial construction include industrial construction, warehouse, water treatment plant and intake well construction.",
-    image: "/realstate/three.webp",
+    image: "/realstate/commercial construction.jpg",
   },
   {
     id: 2,
     title: "Project Consultancy",
     description:
       "Project Consultancy includes Architectural and structural design, Interior, Supervision, Project management consultancy.",
-    image: "/realstate/two.jpg",
+    image: "/realstate/project concutancy.jpg",
   },
   {
     id: 3,
     title: "Real Estate",
     description:
       "Real estate includes Sales, Purchase, Consultancy for Residential, commercial, industrial and agriculture land.",
-    image: "/realstate/one.webp",
+    image: "/realstate/real estate.jpg",
   },
   {
     id: 4,
     title: "Residential Construction",
     description:
       "This includes Bungalow Construction, Farmhouse, Row houses, villa construction including conventional and modern technologies both.",
-    image: "/realstate/fourS.webp",
+    image: "/realstate/residentail construction.jpg",
   },
 ];
 
@@ -66,18 +66,18 @@ export default function SectorSlider() {
             navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             loop={true}
-            centeredSlides={false} // default false
+            centeredSlides={false}
             breakpoints={{
               0: {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
               640: {
-                slidesPerView: 2, // ✅ iPad Mini / iPad Air / Tablets
+                slidesPerView: 2,
                 spaceBetween: 16,
               },
               1024: {
-                slidesPerView: 3, // ✅ Desktop/Laptop
+                slidesPerView: 3,
                 spaceBetween: 24,
               },
             }}

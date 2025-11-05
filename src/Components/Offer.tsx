@@ -14,7 +14,7 @@ export default function () {
 
       paragraph:
         "LANDSKING INFRA specializes in retail real estate environments, from high-street markets to integrated shopping malls. Given India's dynamic consumer shifts and competitive pressures, optimal location decisions are paramount. Our expert consultants leverage data-driven insights to ensure your retail presence not only achieves business success but also strategically integrates with the local community. We create environments where brands flourish and vibrant communities grow together, driving sustainable value for all stakeholders across India.",
-      img: "realstate/Retail hww (2).jpg",
+      img: "realstate/Retail hww (3).jpg",
       boxes: [
         {
           title: "Retail Property Leasing",

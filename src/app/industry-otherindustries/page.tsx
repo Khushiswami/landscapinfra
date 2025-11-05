@@ -365,7 +365,7 @@ export default function Industriestherindustries() {
               automated 2D and 3D CAD drawings.
             </p>
 
-            <Link href="/contact">
+            <Link href="/industrycontact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>

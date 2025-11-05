@@ -185,9 +185,12 @@ export default function Epcsolutions() {
               </h2>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
+                <Link
+                  href="/renewable-contact"
+                  className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors inline-block"
+                >
                   GET A QUOTE
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -236,7 +239,7 @@ export default function Epcsolutions() {
             </p>
 
             <img
-              src="/product/s3.jpg"
+              src="/realstate/solar project analysis service.jpg"
               alt="Conceptual Design"
               className="w-full h-52 object-cover"
             />

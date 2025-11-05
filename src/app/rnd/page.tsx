@@ -2,7 +2,15 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Play, Pause, Wrench, Lightbulb, Puzzle, Network } from "lucide-react";
+import {
+  Play,
+  Pause,
+  Wrench,
+  Lightbulb,
+  Puzzle,
+  Network,
+  Link,
+} from "lucide-react";
 import { IoIosArrowForward } from "react-icons/io";
 import { useRouter } from "next/navigation";
 
@@ -144,15 +152,17 @@ export default function Rnd() {
               </p>
 
               <div className="flex justify-start">
-                <button
-                  onClick={() => router.push(slides[active].link)}
-                  className="flex items-center gap-3 text-white font-semibold text-xs sm:text-base md:text-lg group"
-                >
-                  <span>Launch the experience</span>
-                  <span className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border-2 border-white">
-                    <IoIosArrowForward className="w-3 h-3 sm:w-4 sm:h-4" />
-                  </span>
-                </button>
+                <Link href="/rnd-contact">
+                  <button
+                    // onClick={() => router.push(slides[active].link)}
+                    className="flex items-center gap-3 text-white font-semibold text-xs sm:text-base md:text-lg group"
+                  >
+                    <span>Contact Us</span>
+                    <span className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border-2 border-white">
+                      <IoIosArrowForward className="w-3 h-3 sm:w-4 sm:h-4" />
+                    </span>
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>

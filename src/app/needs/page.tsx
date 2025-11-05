@@ -32,13 +32,13 @@ const Needs = () => {
     {
       title: "Plan, Lease & Occupy",
       desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
-      image: "/realstate/leas.jpg",
+      image: "/realstate/manage properties.jpg",
     },
 
     {
       title: "Manage Properties & Portfolios ",
       desc: "Secure the optimal location and strategic terms for your business before a competitor defines the future of that zone.",
-      image: "/realstate/manage properties.jpg",
+      image: "/realstate/mange properties new.jpg",
     },
   ];
 
@@ -81,14 +81,12 @@ const Needs = () => {
               <p className="text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
                 {slides[active].desc}
               </p>
-
-              <button
-                // onClick={() => router.push(slides[active].link)}
-                className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2"
-              >
-                <span>Contact</span>
-                <IoIosArrowForward className="w-5 h-5" />
-              </button>
+              <Link href="/realestate-contact">
+                <button className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-md shadow-lg hover:bg-[#000080]  hover:text-white transition flex items-center gap-2">
+                  <span>Contact</span>
+                  <IoIosArrowForward className="w-5 h-5" />
+                </button>
+              </Link>
             </motion.div>
           </AnimatePresence>
         </div>

@@ -509,7 +509,6 @@ export default function Mechanical() {
               Mechanical Design and Simulation Services for Faster
               Time-to-Market{" "}
             </h2>
-
             <p className="text-gray-700 mb-4 leading-relaxed">
               At landscapinfra, we eliminate design inefficiencies and
               accelerate product development through high-fidelity mechanical
@@ -526,11 +525,16 @@ export default function Mechanical() {
               partner committed to innovation, performance, and long-term
               success.
             </p>
-
-            <Link href="/rnd-contact">
+            {/* <Link href="/rnd-contact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
+            </Link> */}
+            <Link
+              href="/rnd-contact"
+              className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors inline-block"
+            >
+              GET A QUOTE
             </Link>
           </div>
           <div className="flex justify-center">

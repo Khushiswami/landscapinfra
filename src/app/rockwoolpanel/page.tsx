@@ -118,7 +118,7 @@ const Portacabins: React.FC = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/clean-room-1.png')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/rockwool/rockwool panel.jpg')",
             }}
           >
             {/* Centered Text */}
@@ -136,7 +136,7 @@ const Portacabins: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-2.jpg"
+                src="'/rockwool/rockwool panel (1).jpg"
                 alt="Row 1"
                 fill
                 className="object-cover rounded-lg "
@@ -200,7 +200,7 @@ const Portacabins: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-3.jpg"
+                src="'/rockwool/rockwool panel (2).jpg"
                 alt="Row 2"
                 fill
                 className="object-cover rounded-lg "
@@ -212,7 +212,7 @@ const Portacabins: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-4.jpg"
+                src="'/rockwool/rockwool panel (3).jpg"
                 alt="Row 3"
                 fill
                 className="object-cover rounded-lg "
@@ -242,35 +242,35 @@ const Portacabins: React.FC = () => {
             <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
               <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card
-                  image="/NDR.webp"
+                  image="'/rockwool/rockwool wall panel (single groove).jpg"
                   icon={<FaBuilding size={32} className="text-white" />}
                   title="Wall Panel (Single Groove)"
                   description="The standard fire and sound barrier for facades and internal partitions in commercial buildings. 50 mm thickness with 1150 mm width, providing a dependable, non-combustible core. Simple design, maximum essential protection."
                 />
 
                 <Card
-                  image="/NDR.webp"
+                  image="'/rockwool/rockwool double grove panel.jpg"
                   icon={<FaSnowflake size={32} className="text-white" />}
                   title="Wall Panel (Double Groove)"
                   description="Perfect for airtight, climate-controlled spaces like cold storage and data centers. Features a specialized double tongue & groove seal for certified thermal and fire integrity. Where precision climate control is the priority."
                 />
 
                 <Card
-                  image="/NDR.webp"
+                  image="'/rockwool/rockwool Hidden Screw Wall Panel.jpg"
                   icon={<FaHome size={32} className="text-white" />}
                   title="Hidden Screw Wall Panel"
                   description="Creates a clean, uninterrupted aesthetic for showrooms and commercial spaces by concealing all fasteners. Available in the widest range of thicknesses (up to 150 mm) for high-performance visual appeal. Style meets certified substance."
                 />
 
                 <Card
-                  image="/NDR.webp"
+                  image="'/rockwool/rockwool panel (4).jpg"
                   icon={<FaTools size={32} className="text-white" />}
                   title="Camlock Wall Panels"
                   description="Designed for quick assembly and re-deployment in modular structures using fast, mechanical Camlock connections. 1170 mm width and varied thicknesses ensure robust, flexible, and time-saving construction. Time is money, and these panels save both."
                 />
 
                 <Card
-                  image="/NDR.webp"
+                  image="'/rockwool/rockwool roof panel.webp"
                   icon={<FaWarehouse size={32} className="text-white" />}
                   title="Roof Panel"
                   description="A structural roofing solution for industrial and PEB sheds with a corrugated profile for optimal water run-off. Offers high load-bearing capacity and a strong thermal barrier in 50 mm or 80 mm thickness. Security and efficiency from the top down."

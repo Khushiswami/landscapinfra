@@ -7,7 +7,7 @@ const VideoSection = () => {
       <div className="w-full ">
         <video
           className="w-full "
-          src="realstate.mp4" 
+          src="/realstate/my.mp4"
           autoPlay
           loop
           muted

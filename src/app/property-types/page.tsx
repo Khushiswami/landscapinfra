@@ -28,7 +28,7 @@ export default function Propertytypes() {
     {
       title: "Residential Strategy",
       desc: "Value, Finance, and LifestyleSecure your family’s financial and legal legacy by acquiring a lawyer-certified property",
-      image: "/realstate/retail.mp4",
+      image: "/realstate/residential.mp4",
     },
     {
       title: " Office",
@@ -112,15 +112,17 @@ export default function Propertytypes() {
               </p>
 
               <div className="flex justify-start">
-                <button
-                  // onClick={() => router.push(slides[active].link)}
-                  className="flex items-center gap-3 text-white font-semibold text-xs sm:text-base md:text-lg group"
-                >
-                  <span>Launch the experience</span>
-                  <span className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border-2 border-white">
-                    <IoIosArrowForward className="w-3 h-3 sm:w-4 sm:h-4" />
-                  </span>
-                </button>
+                <Link href="/realestate-contact">
+                  <button
+                    // onClick={() => router.push(slides[active].link)}
+                    className="flex items-center gap-3 text-white font-semibold text-xs sm:text-base md:text-lg group"
+                  >
+                    <span>Contact Us</span>
+                    <span className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border-2 border-white">
+                      <IoIosArrowForward className="w-3 h-3 sm:w-4 sm:h-4" />
+                    </span>
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>

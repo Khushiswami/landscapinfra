@@ -24,13 +24,13 @@ export default function RealStateDevlopment() {
       <Realstateheader />
       <VideoSection />
       <Services />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       <ZigzagSection />
       <Realabout />
       <OurLineage />
       <PropertySearch />
       <SectorSlider />
-      <LandmarkProjects />
+      {/* <LandmarkProjects /> */}
       <ClientReal />
       <NewsCorner />
       <AccoladesSlider />

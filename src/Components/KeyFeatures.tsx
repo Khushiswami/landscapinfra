@@ -13,14 +13,14 @@ export default function KeyFeatures() {
         OF LANDSKING INFRA PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="grid lg:grid-cols-2 gap-10 items-center">
         {/* Left Image */}
         <div className="w-full">
           <Image
             src="/industry.jpg"
             alt="Cold Storage by LANDSKING INFRA"
-            width={600}
-            height={400}
+            width={700}
+            height={450}
             className="rounded-lg shadow-md"
           />
         </div>
@@ -28,12 +28,17 @@ export default function KeyFeatures() {
         {/* Right Content */}
         <div className="space-y-6">
           <p className="text-gray-600 leading-relaxed">
-            At <span className="font-semibold">LANDSKING INFRA PVT LTD</span>, we deliver 
-            <span className="font-semibold"> state-of-the-art cold storage systems</span> and 
-            <span className="font-semibold"> energy-efficient cold rooms</span>. 
-            Our solutions are designed to maintain product freshness, reduce energy costs, 
-            and ensure long-lasting durability for industries like food processing, 
-            pharmaceuticals, agriculture, and logistics.
+            At <span className="font-semibold">LANDSKING INFRA PVT LTD</span>,
+            we deliver
+            <span className="font-semibold">
+              {" "}
+              state-of-the-art cold storage systems
+            </span>{" "}
+            and
+            <span className="font-semibold"> energy-efficient cold rooms</span>.
+            Our solutions are designed to maintain product freshness, reduce
+            energy costs, and ensure long-lasting durability for industries like
+            food processing, pharmaceuticals, agriculture, and logistics.
           </p>
 
           {/* Feature Points */}
@@ -43,7 +48,7 @@ export default function KeyFeatures() {
                 • Factory-Fabricated Panels:
               </h4>
               <p className="text-gray-600">
-                Precision-engineered insulated panels ensure airtight sealing, 
+                Precision-engineered insulated panels ensure airtight sealing,
                 excellent thermal efficiency, and unmatched durability.
               </p>
             </div>
@@ -53,8 +58,9 @@ export default function KeyFeatures() {
                 • Advanced Insulation Technology:
               </h4>
               <p className="text-gray-600">
-                Incorporation of <span className="font-semibold">PUF / EPS panels</span> 
-                and continuous line production methods for superior cooling, 
+                Incorporation of{" "}
+                <span className="font-semibold">PUF / EPS panels</span>
+                and continuous line production methods for superior cooling,
                 reduced heat loss, and energy savings.
               </p>
             </div>
@@ -64,9 +70,9 @@ export default function KeyFeatures() {
                 • Reliable Engineering & Design:
               </h4>
               <p className="text-gray-600">
-                Built with advanced structural design and engineering, 
-                our cold rooms guarantee consistent performance and 
-                compliance with global industry standards.
+                Built with advanced structural design and engineering, our cold
+                rooms guarantee consistent performance and compliance with
+                global industry standards.
               </p>
             </div>
 
@@ -75,9 +81,9 @@ export default function KeyFeatures() {
                 • Energy Efficiency & Cost Savings:
               </h4>
               <p className="text-gray-600">
-                Optimized refrigeration systems that minimize power consumption 
-                while delivering maximum cooling efficiency, reducing operational costs 
-                over the long term.
+                Optimized refrigeration systems that minimize power consumption
+                while delivering maximum cooling efficiency, reducing
+                operational costs over the long term.
               </p>
             </div>
 
@@ -86,9 +92,9 @@ export default function KeyFeatures() {
                 • Hygiene & Easy Maintenance:
               </h4>
               <p className="text-gray-600">
-                Designed with smooth, easy-to-clean surfaces and proper ventilation 
-                systems to maintain strict hygiene, making them ideal for food and 
-                pharma applications.
+                Designed with smooth, easy-to-clean surfaces and proper
+                ventilation systems to maintain strict hygiene, making them
+                ideal for food and pharma applications.
               </p>
             </div>
           </div>

@@ -84,6 +84,7 @@ const Rndheader = () => {
     { label: "Media", href: "/media" },
     {
       label: "About",
+      href: "/rndaboutus/about",
       dropdown: [
         {
           title: "Resources",
@@ -109,7 +110,7 @@ const Rndheader = () => {
             onClick={handleLinkClick} // 🟢 Close dropdowns when clicking logo
             className="flex items-center"
           >
-            <img src="/logo.jpeg" alt="Logo" className="h-18 w-auto p-3" />
+            <img src="/finallogo.png" alt="Logo" className="h-18 w-auto p-3" />
           </Link>
         </div>
 

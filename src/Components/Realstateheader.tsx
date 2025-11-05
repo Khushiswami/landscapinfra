@@ -54,14 +54,15 @@ export default function Realstateheader() {
     { label: "Properties", href: "/properties" },
     { label: "People & Offices", href: "/people" },
     { label: "Insights", href: "/insights" },
-    { label: "About Us", href: "/about" },
+    { label: "About Us", href: "/real-estate-about" },
+    { label: "Contact Us", href: "/realestate-contact" },
   ];
 
   const ServicesMenu: MegaMenu = {
     left: {
       title: "Services",
       text: "Unlock the value in every dimension of your real estate with integrated, data-led Services that support your overall business strategy.",
-      buttonText: "See Overview",
+      buttonText: "Explore",
       buttonLink: "/needs",
       image: "/solar.jpg",
       linkText: "Sustainability Solutions",
@@ -84,15 +85,27 @@ export default function Realstateheader() {
       { label: "Residential", href: "/property-types" },
       { label: "Office", href: "/property-types" },
     ],
-
-    // industries: [
-    //   { label: "Data Center", href: "/Services/datacenter" },
-    //   { label: "Life Sciences", href: "/Services/lifescience" },
-    //   { label: "Banking & Financial Services", href: "/Services/banking" },
-    //   { label: "Tech, Media & Telecommunications", href: "/Services/tech" },
-    //   { label: "Healthcare", href: "/Services/healthcare" },
-    // ],
   };
+  // const aboutMenu: MegaMenu = {
+  //   left: {
+  //     title: "About Us",
+  //     text: "Learn more about who we are, our leadership, and our values that drive excellence in real estate.",
+  //     buttonText: " More",
+  //     buttonLink: "/",
+  //     image: "/about-banner.jpg",
+  //     linkText: "Corporate Responsibility",
+  //     linkHref: "/",
+  //   },
+  //   needs: [
+  //     { label: "Our Mission", href: "/real-estate/mission" },
+
+  //     { label: "Our History", href: "/real-estate/history" },
+  //   ],
+  //   propertyTypes: [
+  //     { label: "Our Mission", href: "/real-estate/mission" },
+  //     { label: "Innovation", href: "/real-estate/innovation" },
+  //   ],
+  // };
 
   const propertiesMenu: MegaMenu = {
     left: {
@@ -140,30 +153,35 @@ export default function Realstateheader() {
       ? propertiesMenu
       : megaMenuOpen === "People & Offices"
       ? peopleMenu
-      : null;
+      : // : megaMenuOpen === "About Us"
+        // ? aboutMenu
+        null;
 
   return (
     <header className="w-full border-b border-gray-200 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
+        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
+        <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.jpeg"
+              src="/finallogo.png"
               alt="CBRE Logo"
               width={100}
-              height={30}
+              height={40}
               priority
             />
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8 text-md font-medium text-black">
+          <nav className="hidden lg:flex space-x-8 text-md font-medium text-black">
+            {/* <nav className="hidden lg:flex space-x-8 text-md font-medium text-black"> */}
+            {/* <nav className="hidden md:flex space-x-8 text-md font-medium text-black"> */}
             {menuItems.map((item) => {
               const hasMega =
                 item.label === "Services" ||
                 item.label === "Properties" ||
                 item.label === "People & Offices";
+
               return (
                 <div key={item.label} className="relative top-nav-item">
                   <Link
@@ -192,7 +210,7 @@ export default function Realstateheader() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700"
+            className="lg:hidden text-gray-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
@@ -210,7 +228,8 @@ export default function Realstateheader() {
           id="mega-menu-container"
           className="absolute left-0 w-full bg-white border-t border-gray-200 shadow-lg z-50"
         >
-          <div className="max-w-7xl mx-auto px-8 py-8 grid grid-cols-4 gap-8">
+          {/* <div className="max-w-7xl mx-auto px-8 py-8 grid grid-cols-4 gap-8"> */}
+          <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* LEFT COLUMN */}
             <div className="col-span-1">
               <h2 className="text-2xl font-semibold text-gray-800 mb-3">

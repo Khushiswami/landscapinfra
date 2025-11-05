@@ -8,35 +8,35 @@ import Image from "next/image";
 const exploreItems = [
   {
     subtitle: "Industrial Real Estate",
-    title: "🧭 Trusted by top logistics, FMCG, and manufacturing brands.",
+    title: " Trusted by top logistics, FMCG, and manufacturing brands.",
     one: "Buy/Sell/Lease of Industrial Plots, Warehouses & Logistic Parks",
     two: "Built-to-Suit Solutions for Manufacturing Units",
     three: "Government-Approved Industrial Lands",
-    image: "/realstate/",
+    image: "/realstate/Industrial Real Estate.jpg",
   },
   {
     subtitle: "Commercial & Retail",
-    title: "💡 Premium properties in top commercial zones.",
+    title: " Premium properties in top commercial zones.",
     one: "Leasing of High-Street Shops & Malls",
     two: "Office Spaces, Business Parks, Co-working Solution",
     three: "Corporate Expansion & Investment Opportunities",
-    image: "/realstate/",
+    image: "/realstate/Commercial & Retail.jpg",
   },
   {
     subtitle: "Residential Brokerage",
-    title: "🏡 Your dream home, simplified",
+    title: " Your dream home, simplified",
     one: "Luxury Apartments • Plots • Farmhouses",
     two: "Developer Tie-ups for New Launches & Pre-Sales",
     three: "Home Loan & Legal Assistance",
-    image: "/realstate/",
+    image: "/realstate/residential.jpg",
   },
   {
     subtitle: "Land & Investment Advisory",
-    title: "💰 Land that grows in value — every day.",
+    title: " Land that grows in value — every day.",
     one: "Investor Portfolio Management",
     two: "Market Research & ROI Analysis",
     three: "Land Acquisition / Joint Ventures / Builder Collaboration",
-    image: "/realstate/",
+    image: "/realstate/investment advisory.jpg",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function Services() {
               </h4>
 
               {/* one, two, three — stacked vertically */}
-              <ul className="text-gray-300 text-sm space-y-1 mb-3">
+              <ul className="text-white text-sm md:text-[16px] space-y-1 mb-3">
                 {item.one && <li>• {item.one}</li>}
                 {item.two && <li>• {item.two}</li>}
                 {item.three && <li>• {item.three}</li>}

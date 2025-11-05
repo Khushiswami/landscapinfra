@@ -51,7 +51,7 @@ export default function Standardmodular() {
       subtitle: "K-House",
       description:
         "K-House is a state-of-the-art solution for contemporary living, blending sustainability and innovation in its design. Featuring modular construction and energy-efficient elements, K-House provides a comfortable and eco-friendly lifestyle for individuals and families committed to a greener future.",
-      image: "/modular/K-House.png",
+      image: "/modular/K-House (1).png",
     },
   ];
 
@@ -225,18 +225,20 @@ export default function Standardmodular() {
   };
   const slides = [
     {
-      image: "/standard/",
+      image: "/modular/Mi Homes.jpg",
+
       title: "Mi-Homes",
       link: "mi-homes",
     },
 
     {
-      image: "/standard/",
-      title: " Portable Cabins",
+      image: "/modular/Liftable Cabin.jpg",
+      title: " Liftable Cabins",
       link: "/porta-cabins",
     },
     {
-      image: "/standard/",
+      image: "/modular/K-House (1).png",
+
       title: "K-House",
       link: "k-house",
     },
@@ -298,7 +300,7 @@ export default function Standardmodular() {
                         {slide.title}
                       </h3>
                       <a
-                        href={slide.link}
+                        // href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
                       >
                         Read more →
@@ -555,7 +557,7 @@ export default function Standardmodular() {
                 alt="PUF panels in industrial shed"
                 width={700}
                 height={450}
-                className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+                className="rounded-md     "
               />
             </div>
 
