@@ -136,8 +136,8 @@ export default function Portsharbours() {
         title="About NuclearPower Infra"
         subtitle="Building trust with every project"
         description="Specialized landscaping solutions for secure and sustainable nuclear power sites."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/product/s2.jpg"
         testimonials={testimonialsData}
       />
@@ -145,7 +145,7 @@ export default function Portsharbours() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/portsharbours.jpg",
           alt: "Custom Cold Storage",
         }}
         description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."

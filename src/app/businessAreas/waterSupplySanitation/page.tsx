@@ -129,8 +129,8 @@ export default function WaterSupplySanitation() {
         title="Water Supply & Sanitation"
         subtitle="Building trust with every project"
         description="Expert providers of complete water infrastructure solutions across India."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/water.webp"
         testimonials={testimonialsData}
       />
@@ -138,7 +138,7 @@ export default function WaterSupplySanitation() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/Water Supply & Sanitation.jpg",
           alt: "Custom Cold Storage",
         }}
         description=""

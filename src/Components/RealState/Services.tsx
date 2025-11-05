@@ -50,7 +50,7 @@ export default function Services() {
       if (window.innerWidth < 1025) {
         setItemsPerPage(1); // Mobile + iPads
       } else {
-        setItemsPerPage(3); // Desktop only
+        setItemsPerPage(4); // Desktop only
       }
     };
 
@@ -86,7 +86,7 @@ export default function Services() {
 
       <div
         className={`grid gap-6 w-full mx-auto mb-6 ${
-          itemsPerPage === 1 ? "grid-cols-1" : "grid-cols-3"
+          itemsPerPage === 1 ? "grid-cols-1" : "grid-cols-4"
         }`}
       >
         {visibleItems.map((item, index) => (
@@ -121,7 +121,7 @@ export default function Services() {
       </div>
 
       {/* Prev/Next buttons */}
-      <div className="flex justify-center gap-6">
+      <div className=" md:hidden flex justify-center gap-6">
         <button
           onClick={handlePrev}
           className="bg-black/60 hover:bg-black/80 p-3 rounded-full border-2 border-white shadow-lg transition-colors duration-300"

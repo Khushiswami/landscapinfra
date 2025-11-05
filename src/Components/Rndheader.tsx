@@ -23,7 +23,10 @@ interface NavItem {
 const Rndheader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
-
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+    setOpenDropdown(null);
+  };
   const navItems: NavItem[] = [
     { label: "Home", href: "/rnd" },
     {
@@ -93,6 +96,7 @@ const Rndheader = () => {
         },
       ],
     },
+    { label: "Contact", href: "/rnd-contact" },
   ];
 
   return (
@@ -100,7 +104,11 @@ const Rndheader = () => {
       <div className="mx-auto px-4 lg:px-8 flex items-center justify-between h-20">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <Link href="/rnd" className="flex items-center">
+          <Link
+            href="/rnd"
+            onClick={handleLinkClick} // 🟢 Close dropdowns when clicking logo
+            className="flex items-center"
+          >
             <img src="/logo.jpeg" alt="Logo" className="h-18 w-auto p-3" />
           </Link>
         </div>
@@ -137,6 +145,7 @@ const Rndheader = () => {
                                 {link.href ? (
                                   <Link
                                     href={link.href}
+                                    onClick={handleLinkClick} // 🟢 Close after click
                                     className="block hover:text-[#000080] transition text-base font-medium"
                                   >
                                     {link.label}
@@ -169,6 +178,7 @@ const Rndheader = () => {
                                   {link.href ? (
                                     <Link
                                       href={link.href}
+                                      onClick={handleLinkClick} // 🟢 Close after click
                                       className="block hover:text-[#000080] transition"
                                     >
                                       <div className="text-base font-medium">
@@ -199,6 +209,7 @@ const Rndheader = () => {
               <Link
                 key={idx}
                 href={item.href || "/"}
+                onClick={handleLinkClick} // 🟢 Close after click
                 className="hover:text-[#000080] transition"
               >
                 {item.label}
@@ -244,6 +255,7 @@ const Rndheader = () => {
                               {link.href ? (
                                 <Link
                                   href={link.href}
+                                  onClick={handleLinkClick} // 🟢 Close after click
                                   className="block text-gray-700 hover:text-[#000080] text-sm"
                                 >
                                   {link.label}
@@ -303,6 +315,7 @@ const Rndheader = () => {
               <Link
                 key={idx}
                 href={item.href || "/"}
+                onClick={handleLinkClick} // 🟢 Close after click
                 className="block hover:text-[#000080]"
               >
                 {item.label}

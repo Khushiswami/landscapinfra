@@ -55,7 +55,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:text-white">
+                  <a href="/peb-contactt" className="hover:text-white">
                     Contact
                   </a>
                 </li>

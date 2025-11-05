@@ -379,8 +379,8 @@ export default function ManufacturingProcessPlants() {
         title="Manufacturing & Process Plants"
         subtitle="Building trust with every project"
         description="Leading provider of customized industrial infrastructure and fabrication solutions."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/manufacturingProcessPlants.jpg"
         testimonials={testimonialsData}
       />
@@ -389,7 +389,7 @@ export default function ManufacturingProcessPlants() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/Manufacturing & Process.jpg",
           alt: "Custom Cold Storage",
         }}
         description="Landsking Infra is a leading industrial infrastructure provider with extensive experience in building process plants, auxiliary facilities, factories, workshops, and pumping stations. We also specialize in establishing on-site fabrication units tailored to meet highly specific and customized project needs."

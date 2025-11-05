@@ -199,8 +199,8 @@ export default function CommercialInstitutional() {
         title="Commercial & Institutional"
         subtitle="Building trust with every project"
         description="End-to-end expert construction solutions for commercial, institutional, and sustainable building projects."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/Commercial-Industry.webp"
         testimonials={testimonialsData}
       />
@@ -208,7 +208,7 @@ export default function CommercialInstitutional() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/Institutional Sector (1).jpg",
           alt: "Custom Cold Storage",
         }}
         description="Landscape Infra delivers complete construction services for all kinds of Commercial and Institutional buildings. Our experience covers Residential, Commercial, and Institutional projects, offering full-spectrum solutions including structural work, electrical systems, HVAC, and interior finishes. We also specialize in integrated campus development, involving multiple buildings with supporting infrastructure, along with sustainable Green Building construction."

@@ -136,8 +136,8 @@ export default function smartCitiesTownships() {
         title="About NuclearPower Infra"
         subtitle="Building trust with every project"
         description="Specialized landscaping solutions for secure and sustainable nuclear power sites."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/product/s2.jpg"
         testimonials={testimonialsData}
       />
@@ -145,7 +145,7 @@ export default function smartCitiesTownships() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/township.jpg",
           alt: "Custom Cold Storage",
         }}
         description="Landsking Infra is a leading industrial infrastructure provider with extensive experience in building process plants, auxiliary facilities, factories, workshops, and pumping stations. We also specialize in establishing on-site fabrication units tailored to meet highly specific and customized project needs."

@@ -195,8 +195,8 @@ export default function MassRapidTransitSystems() {
         title="Mass Rapid Transit Systems"
         subtitle="Building trust with every project"
         description="Design and construction of elevated rail corridors to suit congested urban environments."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/metroo.jpg"
         testimonials={testimonialsData}
       />
@@ -205,7 +205,7 @@ export default function MassRapidTransitSystems() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/transmit.jpg",
           alt: "Custom Cold Storage",
         }}
         description=""

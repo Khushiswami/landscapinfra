@@ -57,7 +57,7 @@ const projects: Project[] = [
   {
     id: 9,
     title: "Mass Rapid Transit Systems",
-    image: "/industryhome/",
+    image: "/industryhome/transmit.jpg",
   },
   {
     id: 10,

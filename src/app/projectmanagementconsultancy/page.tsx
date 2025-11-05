@@ -5,6 +5,7 @@ import { useRef, useState, ReactNode } from "react";
 import Pebheader from "yes/Components/Pebheader";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
+import { Link } from "lucide-react";
 
 // Card Props Type
 type CardProps = {
@@ -38,7 +39,7 @@ function Card({ image, icon, title, description }: CardProps) {
           {description}
         </p>
 
-        <a
+        {/* <a
           href="#"
           className="relative border border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
         >
@@ -46,7 +47,7 @@ function Card({ image, icon, title, description }: CardProps) {
             READ MORE
           </span>
           <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a>
+        </a> */}
       </div>
     </div>
   );
@@ -133,9 +134,11 @@ export default function Projectmanagementconsultancy() {
                 </li>
               </ul>
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
+                <Link href="/peb-contact">
+                  <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
+                    GET A QUOTE
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -194,9 +197,11 @@ export default function Projectmanagementconsultancy() {
               </li>
             </ul>
             <div className="flex items-center justify-center md:justify-start gap-4">
-              <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                GET A QUOTE
-              </button>
+              <Link href="/peb-contact">
+                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
+                  GET A QUOTE
+                </button>
+              </Link>
             </div>
           </div>
         </div>

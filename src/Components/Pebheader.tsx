@@ -137,7 +137,7 @@ export default function Pebheader() {
         { name: "Innovation", href: "/pebabout/innovation" },
       ],
     },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/peb-contact" },
   ];
 
   return (

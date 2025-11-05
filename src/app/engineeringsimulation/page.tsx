@@ -12,6 +12,8 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 import IndustryHeader from "yes/Components/Industryheader";
+import { Link } from "lucide-react";
+import Navbar from "yes/Components/Navbar";
 
 // Card Props Type
 type CardProps = {
@@ -45,7 +47,7 @@ function Card({ image, icon, title, description }: CardProps) {
           {description}
         </p>
 
-        <a
+        {/* <a
           href="#"
           className="relative border border-blue-900 text-sm md:text-lg tracking-wider text-black px-4 md:px-5 py-2 font-semibold w-fit overflow-hidden"
         >
@@ -53,7 +55,7 @@ function Card({ image, icon, title, description }: CardProps) {
             READ MORE
           </span>
           <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a>
+        </a> */}
       </div>
     </div>
   );
@@ -65,7 +67,7 @@ export default function Enigneerningandsimulationservice() {
 
   return (
     <>
-      <IndustryHeader />
+      <Navbar />
 
       {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
@@ -119,9 +121,14 @@ export default function Enigneerningandsimulationservice() {
                 and efficient solutions.
               </p>
               <div className="flex items-center gap-4">
-                <button className="border text-[#000080] border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
+                <Link href="/contact">
+                  <button
+                    className="border text-[#000080] border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-[#000080] hover:text-white transition
+                "
+                  >
+                    GET A QUOTE
+                  </button>
+                </Link>
               </div>
             </div>
 

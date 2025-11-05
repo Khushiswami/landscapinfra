@@ -97,7 +97,9 @@ export default function ExploreSection() {
               <h4 className="text-white font-bold text-xl mb-2">
                 {item.subtitle}
               </h4>
-              <p className="text-gray-300 text-sm mb-3">{item.description}</p>
+              <p className="text-gray-300 text-sm md:text-md mb-3">
+                {item.description}
+              </p>
             </div>
           </Link>
         ))}

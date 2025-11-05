@@ -18,7 +18,7 @@ const areas = [
     subtitle: "Virtual Testing & Performance Analysis Services",
     description:
       "We deliver comprehensive simulation, analysis, and virtual testing services to ensure optimal product performance and reliability. Our expertise covers finite element analysis (FEA), fatigue, crash, impact, and structural stress analysis, along with computational fluid dynamics, thermal modeling, vibration analysis, and tolerance assessments. Through virtual prototyping, failure analysis, and load testing simulations, we help engineers predict performance, identify risks, and optimize designs before physical production, saving time and reducing costly errors.",
-    image: "/rnd/Virtual.jpg",
+    image: "/rnd/ok.jpg",
   },
   {
     id: 3,
@@ -157,8 +157,17 @@ export default function Rndexplore() {
                 {selectedArea.description}
               </p>
               <div className="flex justify-start md:justify-start">
-                <button className="flex  items:left md:items-center gap-2 text-[#000080] font-semibold hover:underline">
+                {/* <button className="flex  items:left md:items-center gap-2 text-[#000080] font-semibold hover:underline">
                   Contact{" "}
+                  <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
+                    <ArrowRight className="w-4 h-4 text-white" />
+                  </div>
+                </button> */}
+                <button
+                  onClick={() => (window.location.href = "/rnd-contact")}
+                  className="flex items-left md:items-center gap-2 text-[#000080] font-semibold "
+                >
+                  Contact
                   <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
                     <ArrowRight className="w-4 h-4 text-white" />
                   </div>

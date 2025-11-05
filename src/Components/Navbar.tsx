@@ -55,8 +55,6 @@ export default function Navbar() {
           </button>
         </div>
         <nav className="hidden capitalize xl:flex items-center space-x-6 font-medium text-lg xl:text-xl relative">
-          {/* <nav className="hidden capitalize lg:flex items-center space-x-6 font-medium text-lg xl:text-xl relative"> */}
-          {/* <nav className="hidden capitalize md:flex items-center space-x-6 font-medium text-lg  md:text-xl relative"> */}
           <Link href="/" className="hover:opacity-80">
             Home
           </Link>
@@ -82,7 +80,9 @@ export default function Navbar() {
                 {/* Left Section */}
                 <div className="w-1/3 text-white p-6 space-y-4">
                   <button
-                    onMouseEnter={() => handleImageChange("/industry.jpg")}
+                    onMouseEnter={() =>
+                      handleImageChange("/home/industry installation.jpeg")
+                    }
                     onClick={() =>
                       (window.location.href = "/industryinstallation")
                     }
@@ -118,7 +118,9 @@ export default function Navbar() {
                     Pre Engineered Building
                   </button>
                   <button
-                    onMouseEnter={() => handleImageChange("/realstate.png")}
+                    onMouseEnter={() =>
+                      handleImageChange("/home/real estate.jpeg")
+                    }
                     onClick={() =>
                       (window.location.href = "/realStateDevlopment")
                     }
@@ -187,7 +189,9 @@ export default function Navbar() {
                     Public Office
                   </button>
                   <button
-                    onMouseEnter={() => handleImageChange("/new2.png")}
+                    onMouseEnter={() =>
+                      handleImageChange("/industryhome/water.jpeg")
+                    }
                     onClick={() =>
                       (window.location.href = "/waterinfrastructure")
                     }
@@ -202,7 +206,8 @@ export default function Navbar() {
                       )
                     }
                     onClick={() =>
-                      (window.location.href = "/industrybuildingsolutions")
+                      (window.location.href =
+                        "/industryhome/Industrial & Buildings (3) (2).jpg")
                     }
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
@@ -210,7 +215,7 @@ export default function Navbar() {
                   </button>
                   <button
                     onMouseEnter={() =>
-                      handleImageChange("/expertiseimages/Green buildings.png")
+                      handleImageChange("/water/Green Building Solutions.jpg")
                     }
                     onClick={() => (window.location.href = "/greenbuilding")}
                     className="hover:text-[#8080FF] block text-left w-full"
@@ -411,15 +416,7 @@ export default function Navbar() {
             CONTACT US
           </Link>
         </div>
-        {/* Mobile Menu Button */}
-        {/* <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-black"
-        > */}
-        {/* <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-black"
-        > */}
+
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="xl:hidden text-black"

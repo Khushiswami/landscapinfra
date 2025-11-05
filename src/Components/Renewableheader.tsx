@@ -105,7 +105,7 @@ export default function Renewableheader() {
                 <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-4 rounded-md">
                   <button
                     onMouseEnter={() => handleImageChange("/renewable.jpg")}
-                    onClick={() => (window.location.href = "/renewableenergy")}
+                    onClick={() => (window.location.href = "/industrial-solar")}
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
                     Industrial Solutions
@@ -201,7 +201,7 @@ export default function Renewableheader() {
             {language}
           </button> */}
           <Link
-            href="/contact"
+            href="/renewable-contact"
             className="bg-[#000080] text-white px-4 py-2 rounded hover:bg-black font-semibold"
           >
             CONTACT US

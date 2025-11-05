@@ -62,7 +62,7 @@ export default function Industryheadsecond() {
             },
             { name: "HVAC", href: "/hvac" },
             { name: "  Other Industries", href: "/industry-otherindustriess" },
-            { name: " Fire Saftey", href: "/firesaftey" },
+            { name: " Fire Saftey", href: "/businessAreas/fire-saftey" },
           ],
         },
         {

@@ -27,7 +27,7 @@ export default function ContactSectionB({
   subtitle = "Get in touch with us – we are always ready to help with your project.",
   description = "Whether you need a basic or elaborate steel building, we will ensure your project is designed, manufactured, and delivered on time.",
   buttonText = "Contact Us",
-  buttonLink = "/contact",
+  buttonLink = "/industrycontact",
   bgImage = "/product/s3.jpg",
   testimonials = [],
 }: ContactSectionProps) {

@@ -192,8 +192,8 @@ export default function Irrigation() {
         title="Irrigation"
         subtitle="Building trust with every project"
         description="Specialists in executing advanced, multidisciplinary irrigation projects with sustainable solutions."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact us"
+        buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/irrigations.png"
         testimonials={testimonialsData}
       />
@@ -201,18 +201,11 @@ export default function Irrigation() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/irrigation.jpg",
           alt: "Custom Cold Storage",
         }}
         description="Landsking Infra has been instrumental in executing large-scale and complex irrigation projects that have reshaped landscapes across India. Our portfolio includes dams, barrages, extensive networks of major and minor canals, as well as advanced lift irrigation systems."
         features={featuresData}
-      />
-
-      <PreEngineeredProductsB
-        heading="Our Expertise"
-        subheading="What We Build"
-        description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
-        areas={areasData}
       />
 
       <PlatformSectionB

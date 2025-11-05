@@ -41,7 +41,7 @@ function Card({ image, icon, title, description }: CardProps) {
           {description}
         </p>
 
-        <a
+        {/* <a
           href="#"
           className="relative border border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
         >
@@ -49,7 +49,7 @@ function Card({ image, icon, title, description }: CardProps) {
             READ MORE
           </span>
           <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a>
+        </a> */}
       </div>
     </div>
   );

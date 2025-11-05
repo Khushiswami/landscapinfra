@@ -195,8 +195,8 @@ export default function HydroPower() {
         title="Hydro Power"
         subtitle="Building trust with every project"
         description="Hydro power is the generation of electricity using the energy of flowing water."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/hydro.jpg"
         testimonials={testimonialsData}
       />

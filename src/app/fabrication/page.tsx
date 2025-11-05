@@ -6,6 +6,8 @@ import { MdOutlineCleanHands } from "react-icons/md";
 import Footer from "../../Components/Footer";
 import Image from "next/image";
 import Navbar from "yes/Components/Navbar";
+import { Link } from "lucide-react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -165,9 +167,11 @@ export default function Fabrication() {
               </p>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
-                </button>
+                <Link href="/contact">
+                  <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
+                    GET A QUOTE
+                  </button>
+                </Link>
               </div>
             </div>
 

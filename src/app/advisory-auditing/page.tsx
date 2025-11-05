@@ -45,7 +45,7 @@ function Card({ image, icon, title, description }: CardProps) {
           {description}
         </p>
 
-        <a
+        {/* <a
           href="#"
           className="relative border border-blue-900 text-sm md:text-lg tracking-wider text-black px-4 md:px-5 py-2 font-semibold w-fit overflow-hidden"
         >
@@ -53,7 +53,7 @@ function Card({ image, icon, title, description }: CardProps) {
             READ MORE
           </span>
           <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a>
+        </a> */}
       </div>
     </div>
   );
@@ -127,7 +127,10 @@ export default function Advisoryauditing() {
                 and efficient solutions.
               </p>
               <div className="flex items-center gap-4">
-                <button className="border text-[#000080] border-blue-900 px-5 py-2 text-sm md:text-base hover:bg-[#000080] hover:text-white transition">
+                <button
+                  className="border text-[#000080] border-[#000080] px-5 py-2 text-sm md:text-base hover:bg-[#000080] hover:text-white transition"
+                  onClick={() => (window.location.href = "/peb-contact")}
+                >
                   GET A QUOTE
                 </button>
               </div>

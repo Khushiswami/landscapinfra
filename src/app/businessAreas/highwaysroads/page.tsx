@@ -188,8 +188,8 @@ export default function HighwaysRoads() {
         title="Highways, Roads & Bridges"
         subtitle="Building trust with every project"
         description="Landsking also undertakes elevated landscaping projects executed on a design-build model."
-        buttonText="Know More"
-        buttonLink="/about"
+        buttonText="Contact Us"
+        buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/higg.png"
         testimonials={testimonialsData}
       />
@@ -197,7 +197,7 @@ export default function HighwaysRoads() {
         heading="Manufacturing & Process Plants"
         highlight=""
         img={{
-          src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
+          src: "/industryhome/highway.jpg",
           alt: "Custom Cold Storage",
         }}
         description="Landsking is a complete landscaping solutions provider, having executed terrain-specific and climate-responsive green projects including urban gardens, highway landscaping, vertical greenery, and sustainable irrigation systems. We have mastered the art of designing and delivering landscapes in complex environments ranging from rugged hills to congested cityscapes."
