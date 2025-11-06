@@ -13,6 +13,7 @@ import AcquisitionsSection from "yes/Components/companyComponent/AcquisitionsSec
 import Industryheader from "yes/Components/Industryheader";
 import IndustryHeaderW from "yes/Components/PebheaderW";
 import Industryheadsecond from "yes/Components/Industryheadsecond";
+import Industryfooter from "yes/Components/Industryfooter";
 
 export default function Company() {
   const [active, setActive] = useState(0);
@@ -25,7 +26,7 @@ export default function Company() {
       <ProgressSection />
       <AcquisitionsSection />
 
-      <Footer />
+      <Industryfooter />
     </>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import Footer from "yes/Components/Footer";
+import Industryfooter from "yes/Components/Industryfooter";
 import IndustryHead from "yes/Components/Industryheader";
 import BusinessPractices from "yes/Components/missionComponent/BusinessPractices";
 import CustomerStories from "yes/Components/missionComponent/CustomerStories";
@@ -18,7 +19,7 @@ export default function Mission() {
       <CustomerStories />
       <BusinessPractices />
       <InterestedSection />
-      <Footer />
+      <Industryfooter />
     </>
   );
 }

@@ -14,47 +14,47 @@ interface Option {
 const options: Option[] = [
   {
     label: "Industrial",
-    image: "",
+    image: "/industry/industrial realestate (1).jpg",
     link: "/industrycontact",
   },
   {
     label: "Warehouse",
-    image: "",
+    image: "/industry/w-4.webp",
     link: "/industrycontact",
   },
   {
     label: "Commercial ",
-    image: "",
+    image: "/industry/Commercial-Pharma (3) (1).jpg",
     link: "/industrycontact",
   },
   {
     label: "Institutional",
-    image: "/industry.jpg",
+    image: "/industry/Institutional.jpg",
     link: "/industrycontact",
   },
   {
     label: "Hotels ",
-    image: "",
+    image: "/industry/",
     link: "/industrycontact",
   },
   {
     label: "Pharma Projects",
-    image: "",
+    image: "/industry/pharma.jpg",
     link: "/industrycontact",
   },
   {
     label: "Hospital",
-    image: "",
+    image: "/industry/hpspital.jpeg",
     link: "/industrycontact",
   },
   {
     label: "Marriage Halls",
-    image: "",
+    image: "/industry/marrige hals.jpg",
     link: "/industrycontact",
   },
   {
     label: "Resorts & Solar Project",
-    image: "",
+    image: "/industry/resort.jpg",
     link: "/industrycontact",
   },
 ];

@@ -1,4 +1,3 @@
-// components/TimelineTabs.tsx
 "use client";
 
 import { useState } from "react";

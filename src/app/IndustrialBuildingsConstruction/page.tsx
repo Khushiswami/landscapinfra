@@ -12,6 +12,7 @@ import Footer from "../../Components/Footer";
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
 import { Link } from "lucide-react";
+import Pebfooter from "yes/Components/Pebfooter";
 
 // Card Props Type
 type CardProps = {
@@ -44,16 +45,6 @@ function Card({ image, icon, title, description }: CardProps) {
         <p className="text-gray-600 text-sm md:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
-
-        {/* <a
-          href="#"
-          className="relative border border-blue-900 text-sm md:text-lg tracking-wider text-black px-4 md:px-5 py-2 font-semibold w-fit overflow-hidden"
-        >
-          <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-            READ MORE
-          </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a> */}
       </div>
     </div>
   );
@@ -196,9 +187,7 @@ export default function IndustrialBuildingsConstruction() {
         <h2 className="text-xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
           Custom-Designed Buildings to Match Your Business Goals
         </h2>
-        <div className="w-12 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative">
-          <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-[#000080]"></span>
-        </div>
+        <div className="w-12 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative"></div>
         <p className="text-gray-700 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
           The{" "}
           <span className="text-[#000080] font-semibold">
@@ -213,7 +202,7 @@ export default function IndustrialBuildingsConstruction() {
         </p>
       </section>
 
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

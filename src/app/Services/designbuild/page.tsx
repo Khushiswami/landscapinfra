@@ -11,7 +11,6 @@ import ZigzagSection from "yes/Components/RealState/ZigzagSection";
 import ContactSection from "yes/Components/ContactSection";
 import QuickLinks from "yes/Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-// Card Props Type
 type CardProps = {
   image: string;
   icon: ReactNode;

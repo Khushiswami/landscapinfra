@@ -65,7 +65,6 @@ export default function Buildingandinfrastructure() {
     },
   ];
 
-  // ===== Pre-engineered product possibilities =====
   const possibilities = [
     {
       subtitle: "Concept & Detailed Engineering",
@@ -135,7 +134,6 @@ export default function Buildingandinfrastructure() {
     },
   ];
 
-  // ===== Features =====
   const features = [
     {
       title: "Collaborative Analysis",
@@ -366,10 +364,6 @@ export default function Buildingandinfrastructure() {
                   </div>
                 </SwiperSlide>
               ))}
-
-              {/* Navigation Buttons */}
-              {/* <div className="swiper-button-prev !text-white !top-1/2 !-translate-y-1/2 !left-0"></div>
-            <div className="swiper-button-next !text-white !top-1/2 !-translate-y-1/2 !right-0"></div> */}
             </Swiper>
           </div>
         </div>

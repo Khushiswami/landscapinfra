@@ -32,27 +32,34 @@ export default function InterestedSection() {
   ];
 
   return (
-    <section className="w-full bg-white md:py-16">
-      <div className="md:mx-20 mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-10">
+    <section className="w-full bg-white py-12 sm:py-14 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-[#000080] mb-8 sm:mb-10">
           You Might Also Be Interested In…
         </h2>
 
-        {/* Grid */}
-        <div className="grid md:grid-cols-4 gap-6">
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((item) => (
             <div
               key={item.id}
-              className="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col hover:shadow-lg transition"
+              className="bg-gray-50 rounded-lg shadow-sm p-5 sm:p-6 flex flex-col hover:shadow-md transition duration-300"
             >
-              <h3 className="text-lg font-bold text-gray-800 mb-3">
+              <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-3">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm mb-6 flex-1">{item.desc}</p>
+              <p className="text-gray-600 text-sm sm:text-base mb-6 flex-1 leading-relaxed">
+                {item.desc}
+              </p>
 
+              {/* Responsive Button */}
               <a
                 href={item.link}
-                className="inline-block border border-[#000080] text-[#000080] px-5 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition"
+                className="inline-block text-center border border-[#000080] text-[#000080] 
+                  px-5 sm:px-6 md:px-7 py-2 sm:py-2.5 md:py-3 
+                  text-sm sm:text-base font-semibold rounded-full 
+                  hover:bg-[#000080] hover:text-white transition duration-300 
+                  w-full sm:w-auto"
               >
                 {item.btn}
               </a>

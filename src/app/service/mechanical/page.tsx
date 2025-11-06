@@ -269,7 +269,7 @@ export default function Mechanical() {
             )
           : []
       );
-    setCardsToShow(sliced);
+    // setCardsToShow(sliced);
   }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {

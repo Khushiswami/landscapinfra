@@ -203,19 +203,6 @@ export default function HighwaysRoads() {
         description="Landsking is a complete landscaping solutions provider, having executed terrain-specific and climate-responsive green projects including urban gardens, highway landscaping, vertical greenery, and sustainable irrigation systems. We have mastered the art of designing and delivering landscapes in complex environments ranging from rugged hills to congested cityscapes."
         features={featuresData}
       />
-      {/* 
-      <PreEngineeredProductsB
-        heading="Our Expertise"
-        subheading="What We Build"
-        description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
-        areas={areasData}
-      />
-
-      <PlatformSectionB
-        heading="Comprehensive Infrastructure Solutions"
-        subheading="From design and engineering to execution and management..."
-        tabs={HOME_TABS}
-      /> */}
 
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"

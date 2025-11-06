@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Footer from "yes/Components/Footer";
+import Industryfooter from "yes/Components/Industryfooter";
 import Industryheader from "yes/Components/Industryheader";
 import IndustryHead from "yes/Components/Industryheader";
 import Industryheadsecond from "yes/Components/Industryheadsecond";
@@ -14,7 +15,7 @@ export default function Innovation() {
     <>
       <Industryheadsecond />
       <InnovationImpact />
-      <Footer />
+      <Industryfooter />
     </>
   );
 }

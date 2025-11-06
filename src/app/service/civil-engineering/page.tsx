@@ -314,7 +314,7 @@ export default function Civil() {
             )
           : []
       );
-    setCardsToShow(sliced);
+    // setCardsToShow(sliced);
   }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {
@@ -437,7 +437,7 @@ export default function Civil() {
     },
 
     {
-      id: 5,
+      id: 4,
       title: "Structural Shop Drawing Services",
       description:
         "We prepare high-precision shop drawings that translate design concepts into fabrication-ready blueprints. These drawings minimize on-site errors, support accurate cost estimation, and improve communication between design, fabrication, and construction teams.",
@@ -451,42 +451,42 @@ export default function Civil() {
       image: "/structure bmi moduling.jpg",
     },
     {
-      id: 5,
+      id: 6,
       title: "Fabrication Drawing",
       description:
         "Our fabrication drawings serve as the foundation for accurate manufacturing and assembly. Each detail is crafted with precision to reduce material waste, prevent rework, and ensure smooth fabrication.",
       image: "/civil/Fabrication Drawing.JPG",
     },
     {
-      id: 5,
+      id: 7,
       title: "Facade Engineering",
       description:
         "We combine art and engineering to design facades that are visually striking and environmentally efficient. Our experts choose the right materials, thermal properties, and finishes to enhance durability, insulation, and maintenance ease.",
       image: "/civil/Facade .jpeg",
     },
     {
-      id: 5,
+      id: 8,
       title: "Sustainable Design",
       description:
         "Sustainability is at the heart of our engineering. We design eco-friendly structures that reduce environmental impact, improve energy efficiency, and comply with green building standards. Each project promotes material reuse, water conservation, and carbon-conscious design.",
       image: "/civil/Sustainable Design.jpg",
     },
     {
-      id: 5,
+      id: 9,
       title: "Seismic Design",
       description:
         "Our seismic engineering services ensure that structures withstand earthquakes and ground motion effectively. Using advanced modeling and retrofitting techniques, we enhance building resilience and safeguard lives and investments.",
       image: "/civil/seismic design.jpg",
     },
     {
-      id: 5,
+      id: 10,
       title: "Structural Steel Detailing",
       description:
         "We offer accurate steel detailing services that form the backbone of efficient construction. Each drawing meets global standards, ensuring fabrication accuracy, faster erection, and consistent project flow.",
       image: "/civil/Structural Steel Detailing.jpeg",
     },
     {
-      id: 5,
+      id: 11,
       title: "Construction Documentation",
       description:
         "Our comprehensive construction documentation covers every project detail—from drawings and materials to schedules and cost tracking. This documentation ensures compliance, clarity, and complete coordination between teams and authorities.",
@@ -698,6 +698,11 @@ export default function Civil() {
               {projects.map((project) => (
                 <SwiperSlide key={project.id}>
                   {({ isActive }) => (
+                    // <div
+                    //   className={`relative text-center transition-all duration-500 group ${
+                    //     isActive ? "scale-105" : "scale-90 opacity-70"
+                    //   }`}
+                    // >
                     <div
                       className={`relative text-center transition-all duration-500 group ${
                         isActive ? "scale-105" : "scale-90 opacity-70"

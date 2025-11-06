@@ -10,7 +10,6 @@ import Insights from "yes/Components/Insights";
 
 import QuickLinks from "yes/Components/businessAreas/QuickLinks";
 import { GraduationCap, Users, Lightbulb, Wrench } from "lucide-react";
-// Card Props Type
 type CardProps = {
   image: string;
   icon: ReactNode;

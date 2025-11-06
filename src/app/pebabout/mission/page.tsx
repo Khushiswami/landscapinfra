@@ -6,6 +6,7 @@ import HumanInnovation from "yes/Components/missionComponent/HumanInnovation";
 import InterestedSection from "yes/Components/missionComponent/InterestedSection";
 import MissionBanner from "yes/Components/missionComponent/MissionBanner";
 import Sustainability from "yes/Components/missionComponent/Sustainability";
+import Pebfooter from "yes/Components/Pebfooter";
 import Pebheader from "yes/Components/Pebheader";
 
 export default function Mission() {
@@ -18,7 +19,7 @@ export default function Mission() {
       <CustomerStories />
       <BusinessPractices />
       <InterestedSection />
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

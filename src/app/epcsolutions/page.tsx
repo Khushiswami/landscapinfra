@@ -115,7 +115,7 @@ export default function Epcsolutions() {
       subtitle: " Engineering & Design",
       description:
         "We offer detailed project planning, thorough structural analysis, and innovative design solutions tailored to project requirements. Leveraging advanced engineering tools such as BIM and 3D modeling, we ensure precision, efficiency, and seamless coordination. All our processes strictly adhere to both national and international quality and safety standards.",
-      image: "/industry.jpg",
+      image: "/mainepc/eps panel (2).jpg",
     },
     {
       id: 2,
@@ -123,7 +123,7 @@ export default function Epcsolutions() {
       subtitle: "Construction & Execution",
       description:
         "Our end-to-end site management and project coordination ensure smooth execution at every stage. Using modern construction techniques, we enable efficient and fast-track installations. With minimal on-site disruptions, we guarantee quick project turnaround without compromising quality or safety.",
-      image: "/expertise/third.png",
+      image: "/mainepc/eps panel.png",
     },
     {
       id: 3,
@@ -131,7 +131,7 @@ export default function Epcsolutions() {
       subtitle: "Procurement & Manufacturing",
       description:
         "We source only high-quality raw materials and components to ensure reliability from the ground up. Our in-house manufacturing capabilities cover PEB structures, prefabricated buildings, and sandwich panels—delivering consistent quality and faster timelines. We prioritize sustainable, cost-effective materials that offer long-term durability and performance.",
-      image: "/expertise/third.png",
+      image: "/mainepc/eps panel (3).jpg",
     },
     {
       id: 4,
@@ -139,7 +139,7 @@ export default function Epcsolutions() {
       subtitle: "Quality & Safety Compliance",
       description:
         "We implement stringent quality control measures at every stage of the project to ensure flawless execution and reliable performance. All our processes comply with ISO, IS, and global safety standards, reflecting our commitment to excellence. With a strong focus on sustainable construction, we utilize eco-friendly materials to minimize environmental impact while maximizing long-term value.",
-      image: "/expertise/third.png",
+      image: "/mainepc/eps panel (4).jpg",
     },
   ];
 
@@ -148,31 +148,37 @@ export default function Epcsolutions() {
       subtitle: " Industrial & Manufacturing Units",
       description:
         "Robust structures designed to support heavy-duty industrial operations and production lines.",
-      image: "/industry.jpg",
+      image: "/preimages/Manufacturing Capabilities.jpg",
     },
     {
       subtitle: " Commercial & Institutional Buildings",
       description:
         "Modular spaces for offices, educational institutions, healthcare, and retail environments.",
-      image: "/industry.jpg",
+      image: "/industry/Commercial.jpg",
     },
     {
       subtitle: " Warehouses & Logistics Parks",
       description:
         "Efficient storage and distribution facilities built for scalability and fast operations.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: " Agro & Cold Storage Solutions",
-      description:
-        "Temperature-controlled, durable structures for agricultural produce and perishable goods.",
-      image: "/industry.jpg",
+      image: "/menupagetwo/w-5.png",
     },
     {
       subtitle: " Power & Energy Sector Infrastructure",
       description:
         "Custom-built solutions for power plants, substations, and energy sector facilities.",
-      image: "/industry.jpg",
+      image: "/commercial/Energy Savings, Better Business.jpg",
+    },
+    {
+      subtitle: " Agro & Cold Storage Solutions",
+      description:
+        "Temperature-controlled, durable structures for agricultural produce and perishable goods.",
+      image: "/preimages/cold room manufacturer in industry.jpeg",
+    },
+    {
+      subtitle: " Power & Energy Sector Infrastructure",
+      description:
+        "Custom-built solutions for power plants, substations, and energy sector facilities.",
+      image: "/commercial/Energy Savings, Better Business.jpg",
     },
   ];
 
@@ -365,7 +371,7 @@ export default function Epcsolutions() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/industry.jpg"
+              src="/mainepc/eps panel.jpg"
               alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
@@ -379,7 +385,7 @@ export default function Epcsolutions() {
           {/* Left Side - Image */}
           <div className="relative">
             <img
-              src="/PEB.jpg" // replace with your real factory image
+              src="/mainepc/eps panel (2).png" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
               height={450}
@@ -413,7 +419,7 @@ export default function Epcsolutions() {
 
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Left Sidebar */}
-          <div className="w-full lg:w-1/4">
+          <div className="w-full  lg:w-1/4">
             {/* Mobile Dropdown */}
             <div className="lg:hidden mb-0">
               <button
@@ -457,7 +463,7 @@ export default function Epcsolutions() {
             </div>
 
             {/* Desktop Sidebar */}
-            <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
+            <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-19 pb-19">
               {areas.map((area) => (
                 <button
                   key={area.id}

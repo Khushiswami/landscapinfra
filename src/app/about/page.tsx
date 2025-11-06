@@ -6,21 +6,15 @@ import AboutPebP from "../../Components/AboutPebP";
 
 import Footer from "../../Components/Footer";
 
-import { IoCallOutline } from "react-icons/io5";
-import ContactSection from "../../Components/ContactSection";
 import TripleBottomAccordion from "../../Components/TripleBottomAccordion";
 import ReviewsSection from "../../Components/ReviewsSection";
 import Timeline from "../../Components/Timeline";
-import ProjectSlider from "../../Components/ProjectSlider";
-import KeyFeatures from "../../Components/KeyFeatures";
 import ServicesSlider from "../../Components/ServicesSlider";
-import PreEngineeredProducts from "../../Components/PreEngineeredProducts";
 import BuildHistory from "../../Components/BuildHistory";
 import Accolades from "../../Components/Accolades";
 import Navbar from "yes/Components/Navbar";
 import Renewableslider from "yes/Components/Renewable/Renewableslider";
-import Brand from "yes/Components/ClientP";
-import Industrybrand from "yes/Components/Industrybrand";
+
 import Aboutbrand from "yes/Components/Aboutbrand";
 import Aboutplatform from "yes/Components/Aboutplatform";
 import Aboutproduct from "yes/Components/Aboutproduct";

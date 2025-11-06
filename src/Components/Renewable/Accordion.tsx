@@ -1,4 +1,3 @@
-// components/TripleBottomAccordion.tsx
 "use client";
 
 import { useState } from "react";

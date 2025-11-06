@@ -7,7 +7,6 @@ export default function NewsCorner() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* LEFT SIDE - NEWS LIST (scrollable, 5 items visible) */}
         <div className="h-85 overflow-y-auto pl-4 pr-2 scrollbar-left-blue">
           <ul className="space-y-6">
             <li className="pb-2 border-b border-[#ccc]">

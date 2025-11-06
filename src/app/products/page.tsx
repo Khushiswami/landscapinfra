@@ -127,7 +127,7 @@ export default function Products() {
         <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
-              image="/sectorimg/preengineered.jpg"
+              image="/menupageimg/peb2.jpg"
               icon={<FaIndustry size={34} className="text-white" />}
               title="Pre Engineered Buildings"
               description="Customized steel structures designed for quick assembly and durability, ideal for warehouses, factories, and commercial spaces."
@@ -145,7 +145,7 @@ export default function Products() {
             />
 
             <Card
-              image="/sectorimg/lgsf.jpg"
+              image="/menupageimg/lgs1.jpeg"
               icon={<FaHome size={34} className="text-white" />}
               title="Light Gauge Steel Framing (LGSF) Solutions"
               description="Lightweight steel structures suitable for residential and commercial buildings, offering design flexibility and rapid construction."
@@ -154,7 +154,7 @@ export default function Products() {
             />
 
             <Card
-              image="/sectorimg/sandwich.jpg"
+              image="/menupageimg/sp2.png"
               icon={<FaCube size={34} className="text-white" />}
               title="Sandwich Panels"
               description="Insulated panels used for walls and roofs, providing thermal efficiency and structural strength."
@@ -163,10 +163,18 @@ export default function Products() {
             />
 
             <Card
-              image="/sectorimg/standard.jpg"
+              image="/modular/K-House%20(1).png"
               icon={<FaBoxOpen size={34} className="text-white" />}
               title="Standard Modular Solutions"
               description="Ready-to-use modular units like porta cabins and liftable cabins for immediate deployment."
+              linkText="Read more"
+              linkUrl="/standardmodular"
+            />
+            <Card
+              image="/epcimg/eps panel.jpg"
+              icon={<FaBoxOpen size={34} className="text-white" />}
+              title="Epc Solutions"
+              description="EPC Solutions specializes in providing end-to-end Engineering, Procurement, and Construction (EPC) services across diverse industries. We deliver comprehensive project solutions — from initial design and engineering to material sourcing, construction, and commissioning."
               linkText="Read more"
               linkUrl="/standardmodular"
             />

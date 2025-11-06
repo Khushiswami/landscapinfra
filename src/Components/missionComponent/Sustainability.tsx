@@ -1,4 +1,3 @@
-// app/components/Sustainability.tsx
 import Image from "next/image";
 
 export default function Sustainability() {
@@ -7,8 +6,8 @@ export default function Sustainability() {
       {/* Top Heading */}
       <div className="max-w-5xl mx-auto text-center px-4 mb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#000080]">
-          We Help Businesses and People Innovate Sustainably to Address
-          the Worlds Challenges
+          We Help Businesses and People Innovate Sustainably to Address the
+          Worlds Challenges
         </h2>
         <p className="text-gray-600 leading-relaxed">
           Since our inception, sustainable business practices have been a
@@ -23,7 +22,7 @@ export default function Sustainability() {
           {/* Left Image */}
           <div className="relative w-full h-[300px] md:h-[350px] rounded-lg overflow-hidden">
             <Image
-              src="/company/about.webp" 
+              src="/company/about.webp"
               alt="Sustainability"
               fill
               className="object-cover"
@@ -47,10 +46,10 @@ export default function Sustainability() {
               robotics, energy, mobility and more.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
-              We strongly believe that{" "}
-              <strong>virtual universes</strong> are a key enabler to imagine,
-              design and test new products, materials and manufacturing
-              processes needed for <strong>social progress</strong> and{" "}
+              We strongly believe that <strong>virtual universes</strong> are a
+              key enabler to imagine, design and test new products, materials
+              and manufacturing processes needed for{" "}
+              <strong>social progress</strong> and{" "}
               <strong>tomorrows more sustainable economy</strong>.
             </p>
             <a
@@ -66,16 +65,28 @@ export default function Sustainability() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left Text */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-[#000080]">Our Impact</h3>
+            <h3 className="text-2xl font-bold mb-4 text-[#000080]">
+              Our Impact
+            </h3>
             <p className="text-gray-700 leading-relaxed">
-             Were in the business of innovation. Our aim is to build a new development model to address the major challenges facing the world today. Whether its manufacturers virtualizing their operations to improve data sharing and collaboration across their organization or the healthcare industry using virtualization to create more precise experiences for people as part of prevention, treatment and follow up, virtual twins help our clients experiment in real-time and improve their products and processes. We are proud to support all those who imagine and innovate and have been proudly watching our customers transform the world for the past 40+ years.
+              Were in the business of innovation. Our aim is to build a new
+              development model to address the major challenges facing the world
+              today. Whether its manufacturers virtualizing their operations to
+              improve data sharing and collaboration across their organization
+              or the healthcare industry using virtualization to create more
+              precise experiences for people as part of prevention, treatment
+              and follow up, virtual twins help our clients experiment in
+              real-time and improve their products and processes. We are proud
+              to support all those who imagine and innovate and have been
+              proudly watching our customers transform the world for the past
+              40+ years.
             </p>
           </div>
 
           {/* Right Image */}
           <div className="relative w-full h-[300px] md:h-[350px] rounded-lg overflow-hidden">
             <Image
-              src="/company/about.webp" 
+              src="/company/about.webp"
               alt="Our Impact"
               fill
               className="object-cover"

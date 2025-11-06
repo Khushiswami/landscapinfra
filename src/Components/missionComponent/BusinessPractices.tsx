@@ -30,35 +30,39 @@ export default function BusinessPractices() {
   ];
 
   return (
-    <section className="w-full bg-white py-16">
-      <div className="md:mx-20 mx-auto px-6">
+    <section className="w-full bg-white py-12 sm:py-14 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Parent Grid */}
         <div className="grid gap-10 md:grid-cols-4 items-start">
           {/* Left Side Text */}
           <div className="md:col-span-1 flex flex-col justify-center text-center md:text-left">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4 text-[#000080]">
-              Our Principles Guide Our <br /> Business Practices
+            <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-[#000080] mb-4">
+              Our Principles Guide Our <br className="hidden md:block" />{" "}
+              Business Practices
             </h2>
-            <p className="text-gray-600 mb-6">
-              We have policies in place to ensure that our business practices and values are aligned.
+            <p className="text-gray-600 mb-6 text-sm sm:text-base">
+              We have policies in place to ensure that our business practices
+              and values are aligned.
             </p>
             <a
               href="#"
-              className="inline-block border border-[#000080] text-[#000080] px-6 py-2 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition"
+              className="inline-block w-full sm:w-auto border border-[#000080] text-[#000080] 
+                px-5 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm sm:text-base font-semibold 
+                hover:bg-[#000080] hover:text-white transition duration-300"
             >
               Read our policies
             </a>
           </div>
 
           {/* Right Side Cards */}
-          <div className="md:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {policies.map((policy) => (
               <div
                 key={policy.id}
-                className="bg-gray-50 rounded-lg shadow-sm overflow-hidden flex flex-col hover:shadow-lg transition"
+                className="bg-gray-50 rounded-lg shadow-sm overflow-hidden flex flex-col hover:shadow-md transition"
               >
                 {/* Card Image */}
-                <div className="relative w-full h-40">
+                <div className="relative w-full h-44 sm:h-40">
                   <Image
                     src={policy.image}
                     alt={policy.title}
@@ -68,15 +72,19 @@ export default function BusinessPractices() {
                 </div>
 
                 {/* Card Content */}
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
+                <div className="p-5 sm:p-6 flex flex-col flex-1 text-center sm:text-left">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
                     {policy.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 flex-1">{policy.desc}</p>
+                  <p className="text-gray-600 text-sm sm:text-base mb-4 flex-1 leading-relaxed">
+                    {policy.desc}
+                  </p>
 
                   <a
                     href={policy.link}
-                    className="self-start border border-[#000080] text-[#000080] px-4 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition"
+                    className="inline-block w-full sm:w-auto border border-[#000080] text-[#000080] 
+                      px-5 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm sm:text-base font-semibold 
+                      hover:bg-[#000080] hover:text-white transition duration-300"
                   >
                     {policy.btn}
                   </a>

@@ -1,4 +1,3 @@
-// components/QuickLinks.tsx
 "use client";
 
 import { ReactNode } from "react";

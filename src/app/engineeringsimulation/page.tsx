@@ -46,16 +46,6 @@ function Card({ image, icon, title, description }: CardProps) {
         <p className="text-gray-600 text-sm md:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
-
-        {/* <a
-          href="#"
-          className="relative border border-blue-900 text-sm md:text-lg tracking-wider text-black px-4 md:px-5 py-2 font-semibold w-fit overflow-hidden"
-        >
-          <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-            READ MORE
-          </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a> */}
       </div>
     </div>
   );

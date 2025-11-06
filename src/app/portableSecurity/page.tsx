@@ -29,7 +29,6 @@ const PortableSecurity = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
-          {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
@@ -65,7 +64,6 @@ const PortableSecurity = () => {
             </div>
           </div>
 
-          {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4 text-[#000080]">
@@ -253,7 +251,6 @@ const PortableSecurity = () => {
             </p>
           </div>
 
-          {/* FAQ Section */}
           <div className="max-w-4xl mx-auto mt-16">
             <h2 className="text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions

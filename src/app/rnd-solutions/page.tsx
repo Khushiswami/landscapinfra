@@ -15,7 +15,6 @@ import {
 } from "react-icons/fa";
 import { MdOutlineEngineering } from "react-icons/md";
 import { SiAutodesk, SiBim } from "react-icons/si";
-// Card Props Type
 type CardProps = {
   image: string;
   icon: ReactNode;

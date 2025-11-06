@@ -110,7 +110,6 @@ const ControlRoom: React.FC = () => {
             </div>
           </div>
 
-          {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
@@ -209,7 +208,6 @@ const ControlRoom: React.FC = () => {
 
           {/* Centered Heading + Paragraph */}
 
-          {/* FAQ Section */}
           <div className="mx-auto md:mt-22">
             <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions

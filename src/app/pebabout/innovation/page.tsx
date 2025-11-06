@@ -2,6 +2,7 @@
 import Footer from "yes/Components/Footer";
 
 import InnovationImpact from "yes/Components/innovationComponent/InnovationImpact";
+import Pebfooter from "yes/Components/Pebfooter";
 import PebheaderW from "yes/Components/PebheaderW";
 
 export default function Innovation() {
@@ -11,7 +12,7 @@ export default function Innovation() {
     <>
       <PebheaderW />
       <InnovationImpact />
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

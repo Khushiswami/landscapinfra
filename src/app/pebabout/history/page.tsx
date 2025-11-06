@@ -10,6 +10,7 @@ import TimelineTabs from "yes/Components/companyComponent/TimelineTabs";
 import ProgressSection from "yes/Components/companyComponent/ProgressSection";
 import AcquisitionsSection from "yes/Components/companyComponent/AcquisitionsSection";
 import PebheaderW from "yes/Components/PebheaderW";
+import Pebfooter from "yes/Components/Pebfooter";
 
 export default function History() {
   // const [active, setActive] = useState(0);
@@ -22,7 +23,7 @@ export default function History() {
       <ProgressSection />
       <AcquisitionsSection />
 
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

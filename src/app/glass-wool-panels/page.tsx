@@ -162,7 +162,6 @@ const Glasswool: React.FC = () => {
             </div>
           </div>
 
-          {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">

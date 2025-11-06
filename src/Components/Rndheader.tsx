@@ -23,26 +23,25 @@ interface NavItem {
 const Rndheader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+
   const handleLinkClick = () => {
-    setMobileMenuOpen(false);
-    setOpenDropdown(null);
+    requestAnimationFrame(() => {
+      setMobileMenuOpen(false);
+      setOpenDropdown(null);
+    });
   };
+
   const navItems: NavItem[] = [
     { label: "Home", href: "/rnd" },
     {
       label: "Services",
+      href: "#",
       dropdown: [
         {
           title: "",
           items: [
-            {
-              label: "Mechanical Engineering ",
-              href: "/service/mechanical",
-            },
-            {
-              label: "Civil Engineering",
-              href: "/service/civil-engineering",
-            },
+            { label: "Mechanical Engineering", href: "/service/mechanical" },
+            { label: "Civil Engineering", href: "/service/civil-engineering" },
             {
               label: "CAE Simulation Services",
               href: "/service/cae-simulation",
@@ -52,10 +51,7 @@ const Rndheader = () => {
         {
           title: "",
           items: [
-            {
-              label: "CAD / CAM / CAE Services",
-              href: "/cadservices",
-            },
+            { label: "CAD / CAM / CAE Services", href: "/cadservices" },
             { label: "Product Engineering", href: "/productengineering" },
             {
               label: "Simulation Design for Manufacturing",
@@ -69,6 +65,7 @@ const Rndheader = () => {
     { label: "Projects", href: "/rndprojects" },
     {
       label: "Insights",
+      href: "/insights",
       dropdown: [
         {
           title: "Resources",
@@ -76,7 +73,7 @@ const Rndheader = () => {
             { label: "Blogs", href: "/blogs" },
             { label: "Brouchers", href: "/brouchers" },
             { label: "Whitepaper", href: "/whitepaper" },
-            { label: "Carrers", href: "/carrers" },
+            { label: "Careers", href: "/careers" },
           ],
         },
       ],
@@ -101,13 +98,13 @@ const Rndheader = () => {
   ];
 
   return (
-    <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50 md:px-15">
+    <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
       <div className="mx-auto px-4 lg:px-8 flex items-center justify-between h-20">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <Link
             href="/rnd"
-            onClick={handleLinkClick} // 🟢 Close dropdowns when clicking logo
+            onClick={handleLinkClick}
             className="flex items-center"
           >
             <img src="/finallogo.png" alt="Logo" className="h-18 w-auto p-3" />
@@ -115,102 +112,64 @@ const Rndheader = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex space-x-6 font-medium text-black md:text-lg lg:text-lg">
+        <nav className="hidden lg:flex space-x-6 font-medium text-black md:text-lg">
           {navItems.map((item, idx) =>
             item.dropdown ? (
-              <div key={idx} className="relative">
-                {/* CLICK TO OPEN */}
-                <button
-                  onClick={() =>
-                    setOpenDropdown(openDropdown === idx ? null : idx)
-                  }
-                  className="flex items-center space-x-1 hover:text-[#000080] transition"
-                >
-                  <span>{item.label}</span>
-                  <ChevronDown size={16} />
-                </button>
+              <div key={idx} className="relative group">
+                <div className="flex items-center space-x-1">
+                  {/* Main link is clickable */}
+                  <Link
+                    href={item.href || "#"}
+                    onClick={handleLinkClick}
+                    className="hover:text-[#000080] transition"
+                  >
+                    {item.label}
+                  </Link>
 
-                {/* Mega menu */}
+                  {/* Chevron toggle for dropdown */}
+                  <button
+                    onClick={() =>
+                      setOpenDropdown(openDropdown === idx ? null : idx)
+                    }
+                    className="hover:text-[#000080] transition"
+                  >
+                    <ChevronDown size={16} />
+                  </button>
+                </div>
+
+                {/* Dropdown menu */}
                 {openDropdown === idx && (
-                  <div className="fixed left-0 top-16 w-screen bg-white  shadow-xl z-50">
-                    {/* About & Insights */}
-                    {item.label === "About" || item.label === "Insights" ? (
-                      <div className="max-w-7xl mx-auto px-8 py-12 flex flex-wrap items-center justify-between gap-8">
-                        {item.dropdown.map((section, i) => (
-                          <ul
-                            key={i}
-                            className="flex flex-wrap items-center justify-between gap-8 w-full"
-                          >
+                  <div className="fixed left-0 top-16 w-screen bg-white shadow-xl z-50">
+                    <div className="max-w-7xl mx-auto px-8 py-12 grid grid-cols-3 gap-12">
+                      {item.dropdown.map((section, i) => (
+                        <div key={i}>
+                          <h4 className="text-xs font-semibold text-gray-500 tracking-wide mb-4 uppercase">
+                            {section.title}
+                          </h4>
+                          <ul className="space-y-4">
                             {section.items.map((link, j) => (
                               <li key={j}>
-                                {link.href ? (
-                                  <Link
-                                    href={link.href}
-                                    onClick={handleLinkClick} // 🟢 Close after click
-                                    className="block hover:text-[#000080] transition text-base font-medium"
-                                  >
-                                    {link.label}
-                                  </Link>
-                                ) : (
-                                  <span className="block text-base font-medium">
-                                    {link.label}
-                                  </span>
-                                )}
-                                {link.sub && (
-                                  <div className="text-sm text-gray-500 leading-tight">
-                                    {link.sub}
-                                  </div>
-                                )}
+                                <Link
+                                  href={link.href || "#"}
+                                  onClick={handleLinkClick}
+                                  className="block hover:text-[#000080] transition text-base font-medium"
+                                >
+                                  {link.label}
+                                </Link>
                               </li>
                             ))}
                           </ul>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="max-w-7xl mx-auto px-8 py-12 grid grid-cols-3 gap-12">
-                        {item.dropdown.map((section, i) => (
-                          <div key={i}>
-                            <h4 className="text-xs font-semibold text-gray-500 tracking-wide mb-4 uppercase">
-                              {section.title}
-                            </h4>
-                            <ul className="space-y-4">
-                              {section.items.map((link, j) => (
-                                <li key={j}>
-                                  {link.href ? (
-                                    <Link
-                                      href={link.href}
-                                      onClick={handleLinkClick} // 🟢 Close after click
-                                      className="block hover:text-[#000080] transition"
-                                    >
-                                      <div className="text-base font-medium">
-                                        {link.label}
-                                      </div>
-                                      {link.sub && (
-                                        <div className="text-sm text-gray-500 leading-tight">
-                                          {link.sub}
-                                        </div>
-                                      )}
-                                    </Link>
-                                  ) : (
-                                    <span className="block text-base font-medium">
-                                      {link.label}
-                                    </span>
-                                  )}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
-                    )}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
             ) : (
               <Link
                 key={idx}
-                href={item.href || "/"}
-                onClick={handleLinkClick} // 🟢 Close after click
+                href={item.href || "#"}
+                onClick={handleLinkClick}
                 className="hover:text-[#000080] transition"
               >
                 {item.label}
@@ -219,7 +178,7 @@ const Rndheader = () => {
           )}
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle */}
         <button
           className="lg:hidden p-2 text-gray-700"
           onClick={() => {
@@ -233,90 +192,49 @@ const Rndheader = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white  shadow-md p-4 space-y-4">
+        <div className="lg:hidden bg-white shadow-md p-4 space-y-4">
           {navItems.map((item, idx) =>
             item.dropdown ? (
               <div key={idx}>
-                <button
-                  onClick={() =>
-                    setOpenDropdown(openDropdown === idx ? null : idx)
-                  }
-                  className="flex justify-between w-full text-left font-medium"
-                >
-                  {item.label} <ChevronDown size={16} />
-                </button>
+                <div className="flex justify-between items-center">
+                  <Link
+                    href={item.href || "#"}
+                    onClick={handleLinkClick}
+                    className="font-medium hover:text-[#000080]"
+                  >
+                    {item.label}
+                  </Link>
+                  <button
+                    onClick={() =>
+                      setOpenDropdown(openDropdown === idx ? null : idx)
+                    }
+                  >
+                    <ChevronDown size={16} />
+                  </button>
+                </div>
 
                 {openDropdown === idx && (
-                  <>
-                    {item.label === "About" || item.label === "Insights" ? (
-                      <div className="mt-2 flex flex-wrap items-center justify-between gap-4">
-                        {item.dropdown.map((section, i) =>
-                          section.items.map((link, j) => (
-                            <div key={j} className="text-sm">
-                              {link.href ? (
-                                <Link
-                                  href={link.href}
-                                  onClick={handleLinkClick} // 🟢 Close after click
-                                  className="block text-gray-700 hover:text-[#000080] text-sm"
-                                >
-                                  {link.label}
-                                </Link>
-                              ) : (
-                                <span className="block text-gray-700 text-sm">
-                                  {link.label}
-                                </span>
-                              )}
-                              {link.sub && (
-                                <p className="text-xs text-gray-500 pl-2">
-                                  {link.sub}
-                                </p>
-                              )}
-                            </div>
-                          ))
-                        )}
-                      </div>
-                    ) : (
-                      <div className="mt-2 space-y-6">
-                        {item.dropdown.map((section, i) => (
-                          <div key={i}>
-                            <h4 className="text-[#000080] font-semibold">
-                              {section.title}
-                            </h4>
-                            <ul className="space-y-2 pl-2">
-                              {section.items.map((link, j) => (
-                                <li key={j}>
-                                  {link.href ? (
-                                    <Link
-                                      href={link.href}
-                                      className="block text-gray-700 hover:text-[#000080] text-sm"
-                                    >
-                                      {link.label}
-                                    </Link>
-                                  ) : (
-                                    <span className="block text-gray-700 text-sm">
-                                      {link.label}
-                                    </span>
-                                  )}
-                                  {link.sub && (
-                                    <p className="text-xs text-gray-500 pl-2">
-                                      {link.sub}
-                                    </p>
-                                  )}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
+                  <div className="mt-2 pl-4 space-y-2">
+                    {item.dropdown.map((section, i) =>
+                      section.items.map((link, j) => (
+                        <Link
+                          key={j}
+                          href={link.href || "#"}
+                          onClick={handleLinkClick}
+                          className="block text-gray-700 hover:text-[#000080] text-sm"
+                        >
+                          {link.label}
+                        </Link>
+                      ))
                     )}
-                  </>
+                  </div>
                 )}
               </div>
             ) : (
               <Link
                 key={idx}
-                href={item.href || "/"}
-                onClick={handleLinkClick} // 🟢 Close after click
+                href={item.href || "#"}
+                onClick={handleLinkClick}
                 className="block hover:text-[#000080]"
               >
                 {item.label}

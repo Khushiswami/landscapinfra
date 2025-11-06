@@ -7,7 +7,6 @@ import Rndfooter from "yes/Components/Rndfooter";
 import Rndheader from "yes/Components/Rndheader";
 import Image from "next/image";
 
-// Card Props Type
 type CardProps = {
   image: string;
   icon: ReactNode;

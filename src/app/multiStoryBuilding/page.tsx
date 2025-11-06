@@ -113,7 +113,6 @@ const MultiStoryBuilding: React.FC = () => {
             </div>
           </div>
 
-          {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#000080]">

@@ -215,19 +215,6 @@ export default function CommercialInstitutional() {
         features={featuresData}
       />
 
-      {/* <PreEngineeredProductsB
-        heading="Our Expertise"
-        subheading="What We Build"
-        description="From warehouses to industrial sheds, we design reliable prefabricated solutions for every industry."
-        areas={areasData}
-      />
-
-      <PlatformSectionB
-        heading="Comprehensive Infrastructure Solutions"
-        subheading="From design and engineering to execution and management..."
-        tabs={HOME_TABS}
-      /> */}
-
       <ProjectSliderB
         heading="DISCOVER OUR PROJECTS"
         projects={HOME_PROJECTS}

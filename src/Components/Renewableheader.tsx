@@ -291,15 +291,12 @@ export default function Renewableheader() {
 
           {/* Expertise collapsible */}
           <Link
-            href="/projects"
+            href="/epc-solutions"
             className="block py-2 border-b border-gray-200"
           >
             EPC SOLAR
           </Link>
-          <Link
-            href="/projects"
-            className="block py-2 border-b border-gray-200"
-          >
+          <Link href="#" className="block py-2 border-b border-gray-200">
             PROJECTS
           </Link>
           <Link href="#" className="block py-2 border-b border-gray-200">

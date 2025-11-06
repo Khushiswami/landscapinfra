@@ -192,7 +192,6 @@ const ColdStorage: React.FC = () => {
             </div>
           </div>
 
-          {/* FAQ Section */}
           <div className="mx-auto md:mt-22">
             <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions

@@ -84,9 +84,7 @@ const AcousticEnclosures: React.FC = () => {
           </div>
         </section>
 
-        {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
-          {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
@@ -121,7 +119,6 @@ const AcousticEnclosures: React.FC = () => {
             </div>
           </div>
 
-          {/* Row 2 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
@@ -164,7 +161,6 @@ const AcousticEnclosures: React.FC = () => {
             </div>
           </div>
 
-          {/* Row 3 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
@@ -203,9 +199,6 @@ const AcousticEnclosures: React.FC = () => {
             </div>
           </div>
 
-          {/* Centered Heading + Paragraph */}
-
-          {/* FAQ Section */}
           <div className="mx-auto md:mt-22">
             <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
               Frequently Asked Questions

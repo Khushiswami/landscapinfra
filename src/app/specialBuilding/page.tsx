@@ -7,7 +7,6 @@ import Footer from "../../Components/Footer";
 import Image from "next/image";
 import { Link } from "lucide-react";
 
-// Card Props Type
 type CardProps = {
   image: string;
   icon: ReactNode;
