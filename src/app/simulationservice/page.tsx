@@ -211,7 +211,7 @@ export default function Simulationservice() {
       </div>
 
       {/* Image + Text Section */}
-      <section className=" mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-cente md:px-20">
+      <section className=" mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-cente md:px-20">
         <div>
           <h2 className="text-3xl md:text-3xl font-bold  text-[#000080] ">
             SIMULATION SERVICE{" "}
@@ -254,7 +254,7 @@ export default function Simulationservice() {
       </section>
 
       {/* Sectors Carousel */}
-      <section className="text-center px-4 sm:px-6 md:px-20 pt-1 md:pt-16 bg-white">
+      <section className="text-center px-4 sm:px-6 md:px-20 pt-1 lg:pt-16 bg-white">
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">

@@ -210,39 +210,73 @@ export default function Expertisecoldstorage() {
       icon: <FaCertificate className="text-[#000080] text-xl" />,
     },
   ];
+  const slides = [
+    {
+      image: "/preimages/ware.jpg",
+      title: "Warehouse",
+      link: "/warehouse",
+    },
 
-  // ===== State =====
-  const [selectedId, setSelectedId] = useState(areas[0].id);
-  const selectedArea = areas.find((a) => a.id === selectedId);
+    {
+      image: "/expertise/fourth.png",
+      title: "Industrial Shed",
+      link: "/industrialShed",
+    },
+    {
+      image: "/preimages/factory.jpg",
+      title: "Factory Building",
+      link: "/factoryBuilding",
+    },
+    {
+      image: "/expertiseimages/Cold Storage and warehouse.jpg",
+      title: "Coldstorage",
+      link: "/coldStorage",
+    },
+  ];
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4; // Show 4 cards per row
-  const prevSlide = () =>
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  const nextSlide = () =>
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
+  const [visibleCards, setVisibleCards] = useState(4);
 
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
-    );
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) setVisibleCards(1); // mobile
+      else if (width < 1024) setVisibleCards(3); // tablet
+      else setVisibleCards(4); // desktop
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
+  const nextSlide = () => {
+    setStartIndex((prev) => (prev + 1 >= possibilities.length ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
+  };
+
+  // slice visible cards dynamically
+  const cardsToShow = possibilities.slice(
+    startIndex,
+    startIndex + visibleCards
+  );
+  if (cardsToShow.length < visibleCards) {
+    cardsToShow.push(
+      ...possibilities.slice(0, visibleCards - cardsToShow.length)
+    );
+  }
+
+  const [selectedId, setSelectedId] = useState(3);
+
+  const selectedArea = areas.find((area) => area.id === selectedId);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [open, setOpen] = useState(false); // for mobile dropdown
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) =>
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
-
+  };
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
@@ -257,30 +291,67 @@ export default function Expertisecoldstorage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/peb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12   items-center">
-          {/* Left Text */}
-          <div className="flex flex-col items-center justify-center text-center order-1">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+          {/* Text */}
+          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
               Cold Storage
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm">
+            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               Landsking Infra specializes in advanced cold storage and warehouse
-              infrastructure solutions.
+              infrastructure solutions
             </p>
+          </div>
+
+          {/* Slider */}
+          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop
+              className="pb-10 max-w-[260px] sm:max-w-sm md:max-w-md"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[240px] sm:w-[280px] md:w-[320px]">
+                    <img
+                      src={slide.image}
+                      alt={slide.title}
+                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
+                    />
+                    <div className="p-4 text-center">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.link}
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
+                      >
+                        Read more →
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-23">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-15 lg:px-23">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -453,21 +524,24 @@ export default function Expertisecoldstorage() {
       {/* capiablites */}
 
       {/* endcapill */}
-      {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4 md:mx-16">
+        <div className=" mx-auto px-4 md:mx-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Industries We Serve{" "}
           </h2>
 
           {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 transition-all duration-500">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                <img src={item.image} className="w-full h-44 object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.subtitle}
+                  className="w-full h-44 object-cover"
+                />
                 <div className="p-4">
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
@@ -478,19 +552,19 @@ export default function Expertisecoldstorage() {
             ))}
           </div>
 
-          {/* Navigation Buttons Below */}
+          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
-              <ChevronLeft className="w-6 h-6 text-[#000080]" />
+              <ChevronLeft className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
-              <ChevronRight className="w-6 h-6 text-[#000080]" />
+              <ChevronRight className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
           </div>
         </div>
@@ -505,7 +579,7 @@ export default function Expertisecoldstorage() {
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Text Section */}
             <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
               <li>

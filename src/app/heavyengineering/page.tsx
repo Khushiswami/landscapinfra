@@ -9,27 +9,26 @@ import {
   FaCogs,
   FaExpand,
 } from "react-icons/fa";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 import Footer from "../../Components/Footer";
-import Brand from "yes/Components/Brand";
-import PlatformP from "yes/Components/PlatformP";
 import Pebheader from "yes/Components/Pebheader";
+import Brand from "yes/Components/Brand";
+
+import Link from "next/link";
 import Image from "next/image";
-import ServicesSlider from "yes/Components/ServicesSlider";
+import Pebfooter from "yes/Components/Pebfooter";
 import Navbar from "yes/Components/Navbar";
 export default function Heavyengineering() {
   interface FAQ {
     question: string;
     answer: string;
   }
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  // ===== Data =====
   const areas = [
     {
       id: 1,
@@ -37,7 +36,7 @@ export default function Heavyengineering() {
       subtitle: "Prefabricated Multi-Storey Building Manufacturer",
       description:
         "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
-      image: "/menupageimg/peb3.jpg",
+      image: "/preimages/build.jpg",
     },
     {
       id: 2,
@@ -45,7 +44,7 @@ export default function Heavyengineering() {
       subtitle: "Warehouse",
       description:
         "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions to meet industrial and commercial demands.",
-      image: "/menupageimg/peb4.png",
+      image: "/preimages/ware.jpg",
     },
     {
       id: 3,
@@ -69,7 +68,7 @@ export default function Heavyengineering() {
       subtitle: "Industrial Enclosures",
       description:
         "We deliver customized industrial enclosures that ensure safety, reliability, and protection of equipment while optimizing operational performance.",
-      image: "/menupageimg/peb6.jpg",
+      image: "/preiamges/en.png",
     },
     {
       id: 6,
@@ -83,19 +82,21 @@ export default function Heavyengineering() {
 
   const faqs: FAQ[] = [
     {
-      question: "What is a factory building?",
+      question: "Is a Pre-Engineered Building a permanent structure?",
       answer:
-        "A factory building is a structure designed to house manufacturing or production operations.",
+        "Yes, modern PEBs are classified as capital-grade, permanent structures with a service life of 50–75 years or more, matching conventional longevity.",
     },
     {
-      question: "What materials are used in factory building construction?",
+      question:
+        "What is the typical maintenance cost difference between a PEB and a conventional building? ",
       answer:
-        "Factory buildings are typically constructed using steel, prefabricated panels, reinforced concrete, and insulated materials for durability and efficiency.",
+        "The durable, coated steel and specialized roofing inherently resist pests and weather. This results in an estimated 30–40% lower long-term maintenance cost compared to masonry or wood alternatives, securing your operational budget.",
     },
     {
-      question: "What are the benefits of prefabricated factory buildings?",
+      question:
+        "Beyond durability, how does the PEBs material choice impact its environmental footprint?",
       answer:
-        "They are faster to build, cost-effective, customizable, and more sustainable.",
+        "The primary material, steel, contains a high percentage of recycled content and is fully recyclable. Choosing a PEB is a commitment to a resource-efficient, lower-impact construction lifecycle.",
     },
     {
       question:
@@ -104,75 +105,74 @@ export default function Heavyengineering() {
         "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
     },
     {
-      question: "Can factory buildings be customized?",
+      question:
+        "Can I easily install a bridge or overhead crane system in a Pre-Engineered Metal Building?",
       answer:
-        "Yes, they can be tailored to specific design, size, and operational requirements.",
+        "Yes, PEBs are holistically engineered for heavy operational requirements. Columns and rafters are custom-designed during fabrication to safely bear the dynamic loads of overhead equipment.",
     },
     {
       question:
-        "How long does it take to construct a prefabricated factory building?",
+        "Do PEBs typically require a lighter or shallower foundation than traditional construction? ",
       answer:
-        "Construction time depends on the size and complexity but is generally much faster than traditional methods.",
+        " Due to optimized design and lighter material weight, PEBs generally require a simpler and more economical foundation, accelerating the project’s earliest phase.",
     },
   ];
-
   const possibilities = [
     {
       subtitle: "Quick Installation & Lightweight Construction",
       description:
         "Pre-engineered buildings (PEBs) allow for fast installation and easy erection due to their lightweight construction, reducing both time and labor costs.",
-      image: "/industry.jpg",
+      image: "/preimages/quick.jpg",
     },
     {
       subtitle: "Low Maintenance",
       description:
         "With superior materials and a meticulous manufacturing process, PEB structures are low-maintenance and built to last, offering durability with minimal upkeep.",
-      image: "/industry.jpg",
+      image: "/preimages/low.jpg",
     },
     {
       subtitle: "Resistance to Corrosive Elements",
       description:
         "PEBs are resistant to corrosive elements and can withstand severe weather conditions, including high winds, ensuring longevity and structural integrity.",
-      image: "/industry.jpg",
+      image: "/preimages/corrosion.jpg",
     },
     {
       subtitle: "Energy Efficiency & Weatherproofing",
       description:
         "Insulated walls and facades make these buildings energy-efficient and weather-resistant, providing comfortable living or working environments in adverse weather conditions.",
-      image: "/industry.jpg",
+      image: "/preimages/energy.jpg",
     },
     {
       subtitle: "Aesthetic Flexibility",
       description:
         "PEBs offer a variety of finishing options that enhance their aesthetic appeal, making them suitable for diverse applications and architectural preferences.",
-      image: "/industry.jpg",
+      image: "/preimages/aesthetic.jpg",
     },
     {
       subtitle: "Customizable Design & Layouts",
       description:
         "The flexibility of design and construction enables a wide range of layout possibilities, catering to specific client requirements, whether for industrial or commercial use.",
-      image: "/industry.jpg",
+      image: "/design.jpeg",
     },
     {
       subtitle: "Safety Features",
       description:
         "Pre-engineered buildings can easily accommodate safety and comfort features such as smoke detectors, firefighting equipment, and air conditioning units.",
-      image: "/industry.jpg",
+      image: "/preimages/factory.jpg",
     },
     {
       subtitle: "Ideal for Off-Site & Site Construction",
       description:
         "These buildings are widely used for construction sites and off-site projects, providing a quick, durable solution for setting up accommodation or infrastructure.",
-      image: "/industry.jpg",
+      image: "/preimages/wood.jpg",
     },
     {
       subtitle: "Expertise & Innovation",
       description:
         "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
-      image: "/industry.jpg",
+      image: "/preimages/construction Phase.jpeg",
     },
   ];
-
   const features = [
     {
       title: "Custom-Built Design",
@@ -208,61 +208,75 @@ export default function Heavyengineering() {
       title: "Expandable & Flexible",
       description:
         "Easily scalable and adaptable to meet future growth and business requirements.",
-      icon: <FaExpand className="text-[#000080] text-3xl mb-4" />,
+      icon: <FaExpand className="text-[#000080]text-3xl mb-4" />,
     },
   ];
+  const [startIndex, setStartIndex] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(4);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) setVisibleCards(1); // mobile
+      else if (width < 1024) setVisibleCards(3); // tablet
+      else setVisibleCards(4); // desktop
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const nextSlide = () => {
+    setStartIndex((prev) => (prev + 1 >= possibilities.length ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
+  };
+
+  // slice visible cards dynamically
+  const cardsToShow = possibilities.slice(
+    startIndex,
+    startIndex + visibleCards
+  );
+  if (cardsToShow.length < visibleCards) {
+    cardsToShow.push(
+      ...possibilities.slice(0, visibleCards - cardsToShow.length)
+    );
+  }
+
+  const [selectedId, setSelectedId] = useState(3);
+
+  const selectedArea = areas.find((area) => area.id === selectedId);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [open, setOpen] = useState(false); // for mobile dropdown
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   const slides = [
     {
-      image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
-      link: "#",
+      image: "/preimages/ware.jpg",
+      title: "Warehouse",
+      link: "/warehouse",
+    },
+
+    {
+      image: "/expertise/fourth.png",
+      title: "Industrial Shed",
+      link: "/industrialShed",
     },
     {
-      image: "/expertise/third.png",
-      title: "Industrial Enclosures",
-      link: "#",
+      image: "/preimages/factory.jpg",
+      title: "Factory Building",
+      link: "/factoryBuilding",
     },
     {
-      image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
-      link: "#",
+      image: "/expertiseimages/Cold Storage and warehouse.jpg",
+      title: "Coldstorage",
+      link: "/coldStorage",
     },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
   ];
-
-  // ===== State =====
-  const [selectedId, setSelectedId] = useState(areas[0].id);
-  const selectedArea = areas.find((a) => a.id === selectedId);
-
-  const [startIndex, setStartIndex] = useState(0);
-  const visibleCards =
-    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
-  const prevSlide = () =>
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  const nextSlide = () =>
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
-
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
-    );
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index: number) =>
-    setOpenIndex(openIndex === index ? null : index);
 
   return (
     <>
@@ -276,29 +290,29 @@ export default function Heavyengineering() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/peb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Text */}
-          <div className="text-center lg:text-left order-1">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Heavy Engineering
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+          {/* Text */}
+          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
+              Pre Engineered Buildings
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               Pre-Engineered Buildings (PEBs) are modern steel structures
               designed, fabricated, and assembled using standardized components
               for faster construction.
             </p>
           </div>
 
-          {/* Right Slider */}
-          <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
+          {/* Slider */}
+          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -306,23 +320,23 @@ export default function Heavyengineering() {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop
-              className="pb-10 max-w-[260px] sm:max-w-sm"
+              className="pb-10 max-w-[260px] sm:max-w-sm md:max-w-md"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[240px] sm:w-[280px] md:w-[320px]">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-56 sm:h-72 object-cover"
+                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
                     />
-                    <div className="p-3 text-center">
-                      <h3 className="text-base sm:text-lg font-semibold">
+                    <div className="p-4 text-center">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold">
                         {slide.title}
                       </h3>
                       <a
                         href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
                       >
                         Read more →
                       </a>
@@ -336,14 +350,13 @@ export default function Heavyengineering() {
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-12">
+        <div className=" mx-auto grid grid-cols-1  lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
@@ -365,15 +378,19 @@ export default function Heavyengineering() {
               time compared to conventional methods.
             </p>
 
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-              GET A QUOTE
-            </button>
+            <Link href="/peb-contact">
+              <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+                GET A QUOTE
+              </button>
+            </Link>
           </div>
-          <div className="flex justify-center">
+          <div className="relative">
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
+
             <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
+              className="rounded-md shadow-md  object-cover"
             />
           </div>
         </div>
@@ -381,7 +398,7 @@ export default function Heavyengineering() {
       {/* end description */}
       {/* keyfetaure */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className=" mx-auto text-center ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
@@ -416,17 +433,21 @@ export default function Heavyengineering() {
       <section className="bg-[#000080] text-white py-10">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits of Heavy Engineering
+            Benefits of Pre-Engineered Buildings
           </h2>
 
           {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 transition-all duration-500">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
-                className=" bg-white rounded-lg overflow-hidden shadow-lg"
+                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                <img src={item.image} className="w-full h-44 object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.subtitle}
+                  className="w-full h-44 object-cover"
+                />
                 <div className="p-4">
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
@@ -437,23 +458,25 @@ export default function Heavyengineering() {
             ))}
           </div>
 
-          {/* Navigation Buttons Below */}
+          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
-              <ChevronLeft className="w-6 h-6 text-white" />
+              <ChevronLeft className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
-              <ChevronRight className="w-6 h-6 text-white" />
+              <ChevronRight className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
           </div>
         </div>
       </section>
+      {/* end business benifts */}
+
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
@@ -464,7 +487,7 @@ export default function Heavyengineering() {
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Text Section */}
             <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
               <li>
@@ -497,22 +520,55 @@ export default function Heavyengineering() {
               </li>
             </ul>
 
-            {/* Image Section */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
+              <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
               <img
                 src="/menupageimg/peb9.jpeg"
-                alt="PUF panels in industrial shed"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md relative z-20"
+                alt="Why Choose Us"
+                width={700}
+                height={450}
+                className="relative  rounded-md"
               />
             </div>
           </div>
         </div>
       </section>
       {/* end special section */}
-      <ServicesSlider />
+      {/* why choose us */}
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16  px-6 md:px-12 lg:px-12">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
+              Why Choose Landsking Infra Pvt. Ltd for PEBs?
+            </h2>
+
+            <p>
+              25+ Years of Expertise in prefabricated and steel building
+              solutions Nationwide Presence with a strong logistics and project
+              execution network In-House Design & Engineering powered by 3D
+              modeling and load optimization Certified Manufacturing Standards
+              ensuring compliance with IS codes and quality benchmarks Timely
+              Project Delivery backed by structured planning and skilled
+              professionals End-to-End Turnkey Solutions covering design,
+              fabrication, delivery, and installation
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative mb-5 md:mb-0 lg:mb-0">
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
+            <img
+              src="/industry.jpg" // replace with your image
+              alt="Why Choose Us"
+              width={700}
+              height={450}
+              className="relative rounded-md shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      {/* end why choose us */}
       <Brand />
 
       {/* faqs */}

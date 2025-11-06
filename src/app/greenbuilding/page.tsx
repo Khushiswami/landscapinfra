@@ -203,40 +203,10 @@ export default function Greenbuilding() {
     },
   ];
 
-  // ===== States =====
-
-  // const [startIndex, setStartIndex] = useState(0);
-  // const visibleCards = 4;
-
-  // const prevSlide = () =>
-  //   setStartIndex((prev) =>
-  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
-  //   );
-  // const nextSlide = () =>
-  //   setStartIndex((prev) =>
-  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
-  //   );
-
-  // const cardsToShow = possibilities
-  //   .slice(startIndex, startIndex + visibleCards)
-  //   .concat(
-  //     startIndex + visibleCards > possibilities.length
-  //       ? possibilities.slice(
-  //           0,
-  //           (startIndex + visibleCards) % possibilities.length
-  //         )
-  //       : []
-  //   );
-
-  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-  // const [openIndex, setOpenIndex] = useState<number | null>(null);
-  // const toggleFAQ = (index: number) =>
-  //   setOpenIndex(openIndex === index ? null : index);
-
   return (
     <>
       <Navbar />
-      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
+      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
         {/* Background video */}
         <video
           autoPlay
@@ -245,21 +215,21 @@ export default function Greenbuilding() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/peb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Optional dark overlay for better text contrast */}
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
-          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Green Building Solutions
+          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
+            <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
+              Green Buildings
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               Landsking Infra is dedicated to delivering eco-friendly,
               energy-efficient, and sustainable infrastructure that minimizes
               environmental impact.
@@ -267,7 +237,7 @@ export default function Greenbuilding() {
           </div>
 
           {/* Slider */}
-          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
+          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -275,23 +245,23 @@ export default function Greenbuilding() {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop
-              className="pb-10 max-w-[240px] sm:max-w-sm"
+              className="pb-10 max-w-[260px] sm:max-w-sm md:max-w-md"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[240px] sm:w-[280px] md:w-[320px]">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 sm:h-72 object-cover"
+                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
                     />
-                    <div className="p-3 text-center">
-                      <h3 className="text-base sm:text-lg font-semibold">
+                    <div className="p-4 text-center">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold">
                         {slide.title}
                       </h3>
                       <a
                         // href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
                       >
                         Read more →
                       </a>

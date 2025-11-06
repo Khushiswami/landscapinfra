@@ -206,8 +206,7 @@ export default function Navbar() {
                       )
                     }
                     onClick={() =>
-                      (window.location.href =
-                        "/industryhome/Industrial & Buildings (3) (2).jpg")
+                      (window.location.href = "/industrybuildingsolutions")
                     }
                     className="hover:text-[#8080FF] block text-left w-full"
                   >
@@ -432,7 +431,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="xl:hidden bg-[#000080] text-white px-4 py-4 shadow-lg max-h-screen overflow-auto">
-          <Link href="/" className="block py-2 border-b border-gray-200">
+          <Link
+            href="/"
+            className="block py-2 border-b border-gray-200 hover:text-black"
+          >
             HOME
           </Link>
 
@@ -457,7 +459,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/industryinstallation"
-                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                    className="block hover:bg-gray-100 hover:text-black px-2 py-1 rounded"
                   >
                     Industry Installation and Construction
                   </Link>
@@ -465,7 +467,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/preEngineeredBuildings"
-                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                    className="block hover:bg-gray-100  hover:text-black px-2 py-1 rounded"
                   >
                     Pre Engineered Building
                   </Link>
@@ -473,7 +475,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/rnd"
-                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                    className="block hover:bg-gray-100 hover:text-black px-2 py-1 rounded"
                   >
                     Engineering R&D
                   </Link>
@@ -481,7 +483,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/renewableenergy"
-                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                    className="block hover:bg-gray-100 hover:text-black px-2 py-1 rounded"
                   >
                     Renewable Energy
                   </Link>
@@ -489,7 +491,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/realStateDevlopment"
-                    className="block hover:bg-gray-100 px-2 py-1 rounded"
+                    className="block hover:bg-gray-100  hover:text-black px-2 py-1 rounded"
                   >
                     Real EState Development
                   </Link>
@@ -519,7 +521,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/heavyengineering"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Heavy Engineering
                   </Link>
@@ -527,7 +529,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/officespace"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Office Space
                   </Link>
@@ -535,7 +537,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/publicoffice"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Public Office
                   </Link>
@@ -543,7 +545,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/waterinfrastructure"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Water Infrastructure
                   </Link>
@@ -551,7 +553,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/structuralsteel"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Industry Building Solutions
                   </Link>
@@ -559,7 +561,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/otherindustries"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Other Industries
                   </Link>
@@ -567,7 +569,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/simulationservice"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Simulation Service
                   </Link>
@@ -575,7 +577,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/fabrication"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Fabrication
                   </Link>
@@ -583,7 +585,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/firesaftey"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Fire Safety
                   </Link>
@@ -591,7 +593,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/greenbuilding"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Green Building
                   </Link>
@@ -599,15 +601,15 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/miningandmetals"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Mining and Metals
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/coldstorageandwarehouse"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    href="/expertisecoldstorage"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Cold Storage &amp; Warehouse
                   </Link>
@@ -615,7 +617,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/solar"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Solar Services
                   </Link>
@@ -623,33 +625,39 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/hvac"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     HVAC Services
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="/factoriesinstallation"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Factories Installation
                   </Link>
-                </li>
+                </li> */}
               </ul>
             )}
           </div>
 
           <Link
             href="/projects"
-            className="block py-2 border-b border-gray-200"
+            className="block py-2 border-b border-gray-200 hover:text-black"
           >
             PROJECTS
           </Link>
-          <Link href="#" className="block py-2 border-b border-gray-200">
+          <Link
+            href="#"
+            className="block py-2 border-b border-gray-200 hover:text-black"
+          >
             INSIGHTS
           </Link>
-          <Link href="/media" className="block py-2 border-b border-gray-200">
+          <Link
+            href="/media"
+            className="block py-2 border-b border-gray-200 hover:text-black"
+          >
             MEDIA
           </Link>
           {/* About collapsible */}
@@ -669,7 +677,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/company"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Our History
                   </Link>
@@ -677,7 +685,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/leadership"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Leadership
                   </Link>
@@ -685,7 +693,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/mission"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Our Mission
                   </Link>
@@ -693,7 +701,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/innovation"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 hover:text-black"
                   >
                     Innovation
                   </Link>
@@ -702,7 +710,10 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/contact" className="block py-2 border-b border-gray-200">
+          <Link
+            href="/contact"
+            className="block py-2 border-b border-gray-200 hover:text-black"
+          >
             Contact Us
           </Link>
         </nav>

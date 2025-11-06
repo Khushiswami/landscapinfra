@@ -1,180 +1,34 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { FaTools, FaShieldAlt, FaCogs } from "react-icons/fa";
 import {
-  FaProjectDiagram,
-  FaUsers,
-  FaSearch,
-  FaLightbulb,
-  FaCube,
-  FaChartLine,
+  FaTools,
+  FaBolt,
+  FaShieldAlt,
+  FaLeaf,
+  FaCogs,
+  FaExpand,
 } from "react-icons/fa";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 import Footer from "../../Components/Footer";
-import ContactSection from "yes/Components/ContactSection";
+import Pebheader from "yes/Components/Pebheader";
+import Brand from "yes/Components/Brand";
+
+import Link from "next/link";
+import Image from "next/image";
+import Pebfooter from "yes/Components/Pebfooter";
 import Navbar from "yes/Components/Navbar";
-
 export default function Otherindustries() {
-  // interface FAQ {
-  //   question: string;
-  //   answer: string;
-  // }
-
-  const possibilities = [
-    {
-      subtitle: "Concept & Detailed Engineering",
-      description:
-        "We provide complete engineering support from concept designs to detailed engineering, ensuring accuracy and reliability across the entire design cycle.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "2D Drawings",
-      description:
-        "Creation of precise 2D drawings using AutoCAD to establish the foundation for engineering and construction workflows.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Assembly Drawings",
-      description:
-        "Development of assembly drawings for walls, columns, and beams using REVIT for clarity and construction accuracy.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Fabrication & Piping Layouts",
-      description:
-        "Generation of fabrication drawings in 2D and piping layouts for HVAC using AutoCAD and other advanced software.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Family Creation",
-      description:
-        "REVIT-based family creation to streamline design elements, making models reusable and efficient.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Design Automation Sheets",
-      description:
-        "Automating repetitive design tasks with iLOGIC sheets to enhance efficiency and reduce turnaround time.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "3D CAD Models",
-      description:
-        "Creation of highly detailed 3D CAD models using miscellaneous advanced software for visualization and precision.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "BIM Content Development",
-      description:
-        "Building rich BIM content to support project collaboration and ensure accurate digital representation.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "BIM Coordination",
-      description:
-        "Using NAVISWORKS for BIM coordination, enabling smooth integration between multidisciplinary teams.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "Advanced BIM Dimensions",
-      description:
-        "Providing 4D, 5D, 6D, and 7D BIM capabilities using miscellaneous platforms for comprehensive project lifecycle management.",
-      image: "/industry.jpg",
-    },
-    {
-      subtitle: "As-Built Designs & Technical Publications",
-      description:
-        "Delivering accurate as-built designs and supporting documentation through technical publications for long-term project reliability.",
-      image: "/industry.jpg",
-    },
-  ];
-
-  // ===== Features =====
-  const features = [
-    {
-      title: "Collaborative Analysis",
-      description:
-        "Detailed study of the building design with open discussions alongside your in-house team to align goals.",
-      icon: <FaUsers className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Opportunity Discovery",
-      description:
-        "Careful research to uncover new opportunities that add measurable value to your project.",
-      icon: <FaSearch className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Concept Development",
-      description:
-        "Generating findings to create a customized concept tailored to your operational needs.",
-      icon: <FaLightbulb className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "BIM Prototyping",
-      description:
-        "Presenting a BIM prototype that addresses all critical project parameters in detail.",
-      icon: <FaProjectDiagram className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "3D Visualization",
-      description:
-        "Crafting high-precision 3D models to support global marketing and streamlined construction execution.",
-      icon: <FaCube className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Risk Mitigation & Support",
-      description:
-        "Continuous product analysis to minimize risks, avoid potential failures, and ensure smooth delivery.",
-      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Onsite Troubleshooting",
-      description:
-        "Expert support for troubleshooting and adjustments after the project goes live, ensuring long-term reliability.",
-      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Integrated Collaboration",
-      description:
-        "Seamless work with architects, engineers, contractors, and manufacturers— all components unified in a single BIM model.",
-      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
-    },
-    {
-      title: "Progress Tracking",
-      description:
-        "Clients can access REVIT libraries to monitor progress, marking completion of each phase efficiently.",
-      icon: <FaChartLine className="text-[#000080] text-3xl mb-4" />,
-    },
-  ];
-
-  // ===== Slides for Swiper =====
-  const slides = [
-    {
-      image: "/expertise/third.png",
-      title: "Prefabricated Multi-Storey Building Manufacturer",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Industrial Enclosures",
-      link: "#",
-    },
-    {
-      image: "/expertise/third.png",
-      title: "Cold Storage & Cold Room Manufacturer",
-      link: "#",
-    },
-    { image: "/expertise/third.png", title: "Factory Building", link: "#" },
-    { image: "/expertise/third.png", title: "Warehouse", link: "#" },
-  ];
-
-  // ===== Areas for dropdown =====
+  interface FAQ {
+    question: string;
+    answer: string;
+  }
   const areas = [
     {
       id: 1,
@@ -182,7 +36,7 @@ export default function Otherindustries() {
       subtitle: "Prefabricated Multi-Storey Building Manufacturer",
       description:
         "We specialize in designing and delivering prefabricated multi-storey buildings that ensure durability, faster construction, and cost-effectiveness for diverse applications.",
-      image: "/menupageimg/peb3.jpg",
+      image: "/preimages/build.jpg",
     },
     {
       id: 2,
@@ -190,7 +44,7 @@ export default function Otherindustries() {
       subtitle: "Warehouse",
       description:
         "Our warehouses are engineered for maximum space utilization, robust structure, and efficient storage solutions to meet industrial and commercial demands.",
-      image: "/menupageimg/peb4.png",
+      image: "/preimages/ware.jpg",
     },
     {
       id: 3,
@@ -214,7 +68,7 @@ export default function Otherindustries() {
       subtitle: "Industrial Enclosures",
       description:
         "We deliver customized industrial enclosures that ensure safety, reliability, and protection of equipment while optimizing operational performance.",
-      image: "/menupageimg/peb6.jpg",
+      image: "/preiamges/en.png",
     },
     {
       id: 6,
@@ -226,42 +80,209 @@ export default function Otherindustries() {
     },
   ];
 
-  const [selectedId, setSelectedId] = useState(areas[0].id);
-  const selectedArea = areas.find((a) => a.id === selectedId);
-  const [open, setOpen] = useState(false);
-
+  const faqs: FAQ[] = [
+    {
+      question: "Is a Pre-Engineered Building a permanent structure?",
+      answer:
+        "Yes, modern PEBs are classified as capital-grade, permanent structures with a service life of 50–75 years or more, matching conventional longevity.",
+    },
+    {
+      question:
+        "What is the typical maintenance cost difference between a PEB and a conventional building? ",
+      answer:
+        "The durable, coated steel and specialized roofing inherently resist pests and weather. This results in an estimated 30–40% lower long-term maintenance cost compared to masonry or wood alternatives, securing your operational budget.",
+    },
+    {
+      question:
+        "Beyond durability, how does the PEBs material choice impact its environmental footprint?",
+      answer:
+        "The primary material, steel, contains a high percentage of recycled content and is fully recyclable. Choosing a PEB is a commitment to a resource-efficient, lower-impact construction lifecycle.",
+    },
+    {
+      question:
+        "How does a pre-engineered factory building differ from traditional buildings?",
+      answer:
+        "Pre-engineered buildings are manufactured off-site and assembled on-site, reducing construction time and cost.",
+    },
+    {
+      question:
+        "Can I easily install a bridge or overhead crane system in a Pre-Engineered Metal Building?",
+      answer:
+        "Yes, PEBs are holistically engineered for heavy operational requirements. Columns and rafters are custom-designed during fabrication to safely bear the dynamic loads of overhead equipment.",
+    },
+    {
+      question:
+        "Do PEBs typically require a lighter or shallower foundation than traditional construction? ",
+      answer:
+        " Due to optimized design and lighter material weight, PEBs generally require a simpler and more economical foundation, accelerating the project’s earliest phase.",
+    },
+  ];
+  const possibilities = [
+    {
+      subtitle: "Quick Installation & Lightweight Construction",
+      description:
+        "Pre-engineered buildings (PEBs) allow for fast installation and easy erection due to their lightweight construction, reducing both time and labor costs.",
+      image: "/preimages/quick.jpg",
+    },
+    {
+      subtitle: "Low Maintenance",
+      description:
+        "With superior materials and a meticulous manufacturing process, PEB structures are low-maintenance and built to last, offering durability with minimal upkeep.",
+      image: "/preimages/low.jpg",
+    },
+    {
+      subtitle: "Resistance to Corrosive Elements",
+      description:
+        "PEBs are resistant to corrosive elements and can withstand severe weather conditions, including high winds, ensuring longevity and structural integrity.",
+      image: "/preimages/corrosion.jpg",
+    },
+    {
+      subtitle: "Energy Efficiency & Weatherproofing",
+      description:
+        "Insulated walls and facades make these buildings energy-efficient and weather-resistant, providing comfortable living or working environments in adverse weather conditions.",
+      image: "/preimages/energy.jpg",
+    },
+    {
+      subtitle: "Aesthetic Flexibility",
+      description:
+        "PEBs offer a variety of finishing options that enhance their aesthetic appeal, making them suitable for diverse applications and architectural preferences.",
+      image: "/preimages/aesthetic.jpg",
+    },
+    {
+      subtitle: "Customizable Design & Layouts",
+      description:
+        "The flexibility of design and construction enables a wide range of layout possibilities, catering to specific client requirements, whether for industrial or commercial use.",
+      image: "/design.jpeg",
+    },
+    {
+      subtitle: "Safety Features",
+      description:
+        "Pre-engineered buildings can easily accommodate safety and comfort features such as smoke detectors, firefighting equipment, and air conditioning units.",
+      image: "/preimages/factory.jpg",
+    },
+    {
+      subtitle: "Ideal for Off-Site & Site Construction",
+      description:
+        "These buildings are widely used for construction sites and off-site projects, providing a quick, durable solution for setting up accommodation or infrastructure.",
+      image: "/preimages/wood.jpg",
+    },
+    {
+      subtitle: "Expertise & Innovation",
+      description:
+        "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
+      image: "/preimages/construction Phase.jpeg",
+    },
+  ];
+  const features = [
+    {
+      title: "Custom-Built Design",
+      description:
+        "Fully tailored to your operational and architectural requirements, ensuring precision and efficiency.",
+      icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Quick Installation",
+      description:
+        "Factory-engineered components allow rapid onsite assembly, saving both time and labor costs.",
+      icon: <FaTools className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Cost-Efficient Construction",
+      description:
+        "Optimized designs reduce material waste and overall construction expenses.",
+      icon: <FaBolt className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Durable and Low Maintenance",
+      description:
+        "Built to withstand harsh weather and seismic conditions with minimal upkeep.",
+      icon: <FaShieldAlt className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Energy Efficient",
+      description:
+        "Insulated wall and roof panels provide excellent temperature control and energy savings.",
+      icon: <FaLeaf className="text-[#000080] text-3xl mb-4" />,
+    },
+    {
+      title: "Expandable & Flexible",
+      description:
+        "Easily scalable and adaptable to meet future growth and business requirements.",
+      icon: <FaExpand className="text-[#000080]text-3xl mb-4" />,
+    },
+  ];
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 4;
+  const [visibleCards, setVisibleCards] = useState(4);
 
-  const prevSlide = () =>
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  const nextSlide = () =>
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) setVisibleCards(1); // mobile
+      else if (width < 1024) setVisibleCards(3); // tablet
+      else setVisibleCards(4); // desktop
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
-    );
+  const nextSlide = () => {
+    setStartIndex((prev) => (prev + 1 >= possibilities.length ? 0 : prev + 1));
+  };
 
-  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const prevSlide = () => {
+    setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
+  };
+
+  // slice visible cards dynamically
+  const cardsToShow = possibilities.slice(
+    startIndex,
+    startIndex + visibleCards
+  );
+  if (cardsToShow.length < visibleCards) {
+    cardsToShow.push(
+      ...possibilities.slice(0, visibleCards - cardsToShow.length)
+    );
+  }
+
+  const [selectedId, setSelectedId] = useState(3);
+
+  const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  // const toggleFAQ = (index: number) =>
-  //   setOpenIndex(openIndex === index ? null : index);
+  const [open, setOpen] = useState(false); // for mobile dropdown
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  const slides = [
+    {
+      image: "/preimages/ware.jpg",
+      title: "Warehouse",
+      link: "/warehouse",
+    },
+
+    {
+      image: "/expertise/fourth.png",
+      title: "Industrial Shed",
+      link: "/industrialShed",
+    },
+    {
+      image: "/preimages/factory.jpg",
+      title: "Factory Building",
+      link: "/factoryBuilding",
+    },
+    {
+      image: "/expertiseimages/Cold Storage and warehouse.jpg",
+      title: "Coldstorage",
+      link: "/coldStorage",
+    },
+  ];
 
   return (
     <>
       <Navbar />
-      <section className="relative min-h-screen sm:min-h-screen flex items-center text-white overflow-hidden">
+      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
+        {/* Background video */}
         <video
           autoPlay
           loop
@@ -269,21 +290,21 @@ export default function Otherindustries() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/peb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Optional dark overlay for better text contrast */}
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
-          <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
-              Other Industries
+          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
+              Pre Engineered Buildings
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-sm mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               Pre-Engineered Buildings (PEBs) are modern steel structures
               designed, fabricated, and assembled using standardized components
               for faster construction.
@@ -291,7 +312,7 @@ export default function Otherindustries() {
           </div>
 
           {/* Slider */}
-          <div className="w-full relative order-2 mt-8 lg:mt-0 mb-4 flex justify-center">
+          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -299,23 +320,23 @@ export default function Otherindustries() {
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop
-              className="pb-10 max-w-[240px] sm:max-w-sm"
+              className="pb-10 max-w-[260px] sm:max-w-sm md:max-w-md"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[220px] sm:w-[280px]">
+                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[240px] sm:w-[280px] md:w-[320px]">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 sm:h-72 object-cover"
+                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
                     />
-                    <div className="p-3 text-center">
-                      <h3 className="text-base sm:text-lg font-semibold">
+                    <div className="p-4 text-center">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold">
                         {slide.title}
                       </h3>
                       <a
                         href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base"
+                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
                       >
                         Read more →
                       </a>
@@ -329,59 +350,56 @@ export default function Otherindustries() {
       </section>
 
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-19">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="bg-white py-12 px-4 md:px-12">
+        <div className=" mx-auto grid grid-cols-1  lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Other Industries
+              Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed mt-3">
-              It is extremely important for CAD architects to understand the
-              concept of building design for public infrastructure. Equally
-              necessary is the alignment of such professionals with service
-              providers possessing extensive knowledge in construction design.
-              We at Landsking Infra Pvt. Ltd. offer a suite of Virtual and
-              Design Construction expertise to clients. Our company collaborates
-              and works across a wide range of construction projects, including
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
+              of Pre-Engineered Buildings (PEBs), delivering complete solutions
+              for industrial, commercial, and institutional structures. Our
+              buildings are designed with advanced engineering and
+              prefabrication technology, ensuring faster project delivery, cost
+              efficiency, and customized designs for diverse applications.
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
+              What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
-              Commercial and High-Rise Buildings,Production Facilities,Data
-              Centres,Health and Educational Constructions,Industrial and
-              Distribution Facilities.When our specialists are entrusted with
-              designing a new facility, they focus on intricate details and
-              specifications according to construction plans. Our engineers are
-              adept at classifying critical processes, raw materials, resources,
-              and value supply chains to create appropriate digital models of
-              proposed buildings. As digitization is essential, we leverage the
-              latest CAD software to generate multifaceted BIM (Building
-              Information Modeling) apparatus. Our experience across industries
-              assists clients in visualizing the final structure through
-              automated 2D and 3D CAD drawings.
+              Pre-Engineered Building (PEB) is a steel structure based on a
+              structural framework of primary framing (columns and rafters),
+              secondary framing (purlins and girts), along with roof and wall
+              sheeting, and other components. All parts are pre-fabricated in
+              factories and assembled on-site, drastically reducing construction
+              time compared to conventional methods.
             </p>
 
-            <Link href="/contact">
+            <Link href="/peb-contact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                 GET A QUOTE
               </button>
             </Link>
           </div>
-          <div className="flex justify-center">
+          <div className="relative">
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
+
             <img
               src="/menupageimg/peb2.jpg"
               alt="EPACK Prefab Industrial Building"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
+              className="rounded-md shadow-md  object-cover"
             />
           </div>
         </div>
       </section>
-
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-13">
-        <div className=" mx-auto text-center md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+      {/* end description */}
+      {/* keyfetaure */}
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
+        <div className=" mx-auto text-center ">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
               Landsking Infra Pvt. Ltd. PEB Structures
@@ -410,6 +428,7 @@ export default function Otherindustries() {
           </div>
         </div>
       </section>
+      {/*neww  explore conettt */}
       <section className="mx-auto px-4 py-10 md:px-20 lg:px-28">
         <h2 className="text-2xl lg:text-3xl font-bold text-[#000080] mb-8">
           Our Products
@@ -503,26 +522,27 @@ export default function Otherindustries() {
           )}
         </div>
       </section>
-      {/* explore content */}
+      {/*  end new explore content */}
 
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-34 lg:px-20">
+      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-12">
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <img
+            <div className="absolute -bottom-4 -right-4 w-full h-full  rounded-2xl"></div>
+            <Image
               src="/menupageimg/peb8.jpg" // replace with your real factory image
               alt="Manufacturing Facility"
               width={700}
               height={450}
-              className="relative rounded-2xl shadow-lg"
+              className="relative rounded-md shadow-lg"
             />
           </div>
 
           {/* Right Side - Content */}
           <div>
-            <div className="flex items-center mb-4 ">
-              <h2 className="text-3xl md:text-3xl font-bold text-[#000080]">
+            <div className="flex items-center mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Our Manufacturing Capabilities
               </h2>
             </div>
@@ -558,20 +578,25 @@ export default function Otherindustries() {
       </section>
       {/* endcapill */}
       {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10 md:px-17">
-        <div className=" mx-auto px-4">
+      {/* business benifts */}
+      <section className="bg-[#000080] text-white py-10">
+        <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Inclusive Services{" "}
+            Benefits of Pre-Engineered Buildings
           </h2>
 
           {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 transition-all duration-500">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg overflow-hidden shadow-lg"
+                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                <img src={item.image} className="w-full h-44 object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.subtitle}
+                  className="w-full h-44 object-cover"
+                />
                 <div className="p-4">
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
@@ -582,245 +607,161 @@ export default function Otherindustries() {
             ))}
           </div>
 
-          {/* Navigation Buttons Below */}
+          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
-              <ChevronLeft className="w-6 h-6 text-black" />
+              <ChevronLeft className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
             >
-              <ChevronRight className="w-6 h-6 text-black" />
+              <ChevronRight className="w-6 h-6 text-[#000080] hover:text-white" />
             </button>
           </div>
         </div>
       </section>
+      {/* end business benifts */}
+
       {/* benefits end */}
       {/* special section */}
       <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-17">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Steel Tubes for Building and Infrastructure
+            SPECIFICATIONS OF INDUSTRIAL SHED COMPONENTS
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Left: Text Section */}
-            <div>
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
-                With the growing adoption of virtual technologies in
-                construction, the role of lean Building Information Models (BIM)
-                and pre-engineering has become vital. Globally, infrastructure
-                upgrades are being driven by robotics, automation, drone-based
-                surveys, and even 3D printing solutions.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Text Section */}
+            <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
+              <li>
+                <span className="font-bold">Wall:</span> PUF / EPS insulated
+                sandwich panels of 50 / 60mm with PPGI sheet on both sides.
+              </li>
+              <li>
+                <span className="font-bold">Roof:</span> PUF / EPS insulated
+                sandwich panels of 30 / 40 mm or PPGI roofing sheets.
+              </li>
+              <li>
+                <span className="font-bold">Doors:</span> Insulated doors with
+                all accessories will be provided from our manufacturing setup.
+              </li>
+              <li>
+                <span className="font-bold">Windows:</span> Aluminum anodized
+                sliding windows will be provided from our manufacturing setup.
+              </li>
+              <li>
+                <span className="font-bold">Structure and Accessories:</span>{" "}
+                All required supporting accessories and structures will be
+                provided before project delivery.
+              </li>
+              <li>
+                <span className="font-bold">
+                  Electrical fittings, sanitary fittings, beds, etc.,
+                </span>{" "}
+                will be provided as per client requirements and fitted as per
+                the contract.
+              </li>
+            </ul>
 
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
-                Key infrastructure sectors where{" "}
-                <span className="font-bold">Landsking Infra Pvt. Ltd.</span>{" "}
-                provides support include:
-              </p>
-
-              <ul className="list-disc ml-6 space-y-2 text-gray-700 text-base leading-relaxed mb-4">
-                <li>Power and Energy</li>
-                <li>
-                  Transportation Hubs (Rail & Metro Stations, Bus Terminals,
-                  Tunnels, Airports)
-                </li>
-                <li>Stadiums and Leisure Centres</li>
-              </ul>
-
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
-                This technological disruption is reshaping the way
-                infrastructure is designed, built, and maintained—ensuring
-                sustainability, efficiency, and safety. Construction firms that
-                embrace these advancements can overcome challenges in delivering
-                modern infrastructure projects.
-              </p>
-
-              <p className="text-gray-700 text-base leading-relaxed">
-                As urban areas continue to transform,{" "}
-                <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
-                earned the trust of clients by offering expertise that minimizes
-                risks, enhances public safety, and integrates automated systems
-                for long-term reliability.
-              </p>
-            </div>
-
-            {/* Right: Image Section */}
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
+              <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
               <img
                 src="/menupageimg/peb9.jpeg"
-                alt="Steel tubes infrastructure"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md relative z-20"
+                alt="Why Choose Us"
+                width={700}
+                height={450}
+                className="relative  rounded-md"
               />
             </div>
           </div>
         </div>
       </section>
-
       {/* end special section */}
-      <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-17">
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
-            Our Support
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
-          </h2>
-
-          {/* Support Rows */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700 text-base leading-relaxed">
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Research & Surveys
-              </h3>
-              <p>
-                Surveys are conducted through testing, research, site
-                inspections, and studying existing infrastructure.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Compliance & Policies
-              </h3>
-              <p>
-                All planning and designing considers compliance standards,
-                including adherence to environmental policies where required.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Collaborative Solutions
-              </h3>
-              <p>
-                Solutions are developed after detailed discussions with internal
-                teams to ensure practical and efficient outcomes.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Safety Standards
-              </h3>
-              <p>
-                Designs are developed to meet safety standards, ensuring
-                properties perform optimally and securely.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">Certifications</h3>
-              <p>
-                Environmental and project-specific certifications are provided
-                to ensure approvals and green signals for commencement.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Energy Sector Support
-              </h3>
-              <p>
-                Evaluations, lifecycle studies, inspections, and regulatory
-                checks are carried out for optimal energy asset performance.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">Virtual Models</h3>
-              <p>
-                Virtual models guide the project seamlessly from the initial
-                stages through to final completion.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                Feasibility Studies
-              </h3>
-              <p>
-                Detailed feasibility studies are conducted for ambitious
-                projects, including large-scale highway developments.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <h3 className="font-bold text-[#000080] mb-2">
-                3D Data & Analysis
-              </h3>
-              <p>
-                We provide advanced 3D geometric designs and data analytics to
-                support successful project execution.
-              </p>
-            </div>
-          </div>
-
-          {/* About Section */}
-          <div className="mt-12 text-center text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            <p>
-              Over the last 40 years,{" "}
-              <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
-              fulfilled its promise to numerous clients across the AEC industry
-              — from contractors and architects to fabricators, consultants, MEP
-              contractors, PEB companies, EPCs, OEMs, solution providers, and
-              system integrators. By partnering with us, you can avoid
-              unnecessary overheads and ensure smooth progress in urban planning
-              and infrastructure projects.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6  lg:px-20 md:px-20">
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16  px-6 md:px-12 lg:px-12">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Become a Customer
+              Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
             <p>
-              Landsking Infra Pvt. Ltd. is your one-stop solution for all
-              building and infrastructure requirements. Our pre-engineered steel
-              buildings are carefully designed and fabricated to match your
-              specific needs. Each structure is built in strict adherence to
-              international standards, with components meticulously engineered
-              for seamless compatibility. This ensures durability, efficiency,
-              and performance across every project we deliver.
+              25+ Years of Expertise in prefabricated and steel building
+              solutions Nationwide Presence with a strong logistics and project
+              execution network In-House Design & Engineering powered by 3D
+              modeling and load optimization Certified Manufacturing Standards
+              ensuring compliance with IS codes and quality benchmarks Timely
+              Project Delivery backed by structured planning and skilled
+              professionals End-to-End Turnkey Solutions covering design,
+              fabrication, delivery, and installation
             </p>
-            <Link href="/contact">
-              <button className="border border-[#000080] mt-4 px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
-                GET A QUOTE
-              </button>
-            </Link>
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative mb-5 md:mb-0 lg:mb-0">
+            <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
               alt="Why Choose Us"
               width={700}
               height={450}
-              className="relative rounded-2xl shadow-lg"
+              className="relative rounded-md shadow-lg"
             />
           </div>
         </div>
       </section>
       {/* end why choose us */}
 
-      <ContactSection />
+      {/* faqs */}
+      <section className=" mx-auto px-4 py-12 md:mx-10 ">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
+            Frequently Asked Questions
+          </h2>
+          {/* Yellow divider line */}
+          <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
+        </div>
+
+        {/* FAQ Items */}
+        <div className="border-t border-gray-200 ">
+          {faqs.map((faq: FAQ, index: number) => (
+            <div key={index} className="border-b border-gray-200">
+              {/* Question */}
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
+              >
+                <span
+                  className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                    openIndex === index ? "text-[#000000]" : "text-black"
+                  }`}
+                >
+                  {faq.question}
+                </span>
+                <span className="text-black text-lg font-bold">
+                  {openIndex === index ? "▲" : "▼"}
+                </span>
+              </button>
+
+              {/* Answer */}
+              {openIndex === index && (
+                <div className="pb-4 text-gray-600  text-base md:text-md">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* end faqs */}
 
       <Footer />
     </>
