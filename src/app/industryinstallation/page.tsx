@@ -9,12 +9,15 @@ import IndustryaboutUs from "yes/Components/Industryabout";
 import ServicesSlider from "yes/Components/ServicesSlider";
 import Explore from "yes/Components/Explore";
 import { motion, AnimatePresence } from "framer-motion";
-import { IoIosArrowForward } from "react-icons/io";
 import IndustrySector from "yes/Components/Industrysectors";
 import Industrybanner from "yes/Components/Industrybanner";
 import Industryfooter from "yes/Components/Industryfooter";
 
 export default function Industryinstallation() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Industryheader />

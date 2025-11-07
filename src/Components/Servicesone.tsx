@@ -12,7 +12,6 @@ import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 
 export default function ExpertiseP() {
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -81,7 +80,7 @@ export default function ExpertiseP() {
   }, [swiper]);
 
   return (
-    <section className="py-12 px-6 bg-white mx-0 md:mx-1 lg:mx-1 md:px-15">
+    <section className=" py-1  md:py-8 lg:py-12 px-6 bg-white mx-0 md:mx-1 lg:mx-1 md:px-15">
       {/* Heading + Arrows */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mx-auto mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center">

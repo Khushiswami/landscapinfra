@@ -98,13 +98,11 @@ export default function Renewableplatform() {
                 </button>
               ))}
 
-              {/* Underline */}
               <span
-                className="absolute bottom-0 block h-0.5 bg-[#000080] transition-all duration-300"
+                className="absolute bottom-0 block h-0.5 md:bg-[#000080] transition-all duration-300"
                 style={underlineStyle}
               />
             </div>
-            {/* <div className="h-px bg-gray-200 mt-0.5 w-full"></div> */}
           </div>
         </div>
       </div>

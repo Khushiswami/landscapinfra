@@ -1,5 +1,6 @@
 // components/NewsSection.jsx
 import Image from "next/image";
+import { ImGit } from "react-icons/im";
 
 export default function MediaP() {
   return (
@@ -68,8 +69,10 @@ export default function MediaP() {
                 className="rounded"
               />
               <div>
-                <p className="text-sm text-gray-500">Jun 26, 2025</p>
-                <p className="text-gray-800 font-semibold">
+                <p className=" text-base md:text-sm text-gray-500">
+                  Jun 26, 2025
+                </p>
+                <p className="text-gray-800 text-[14px] md:text-md font-semibold">
                   Landsking Infra Prefab Participated In India Warehousing Show
                   2025 – Yashobhoomi, Dwarka
                 </p>
@@ -77,16 +80,18 @@ export default function MediaP() {
             </li>
 
             <li className="flex items-start space-x-4">
-              <Image
-                src="/preimages/construction Phase.jpeg"
+              <img
+                src="about.png"
                 alt="Event 2"
                 width={80}
                 height={60}
                 className="rounded"
               />
               <div>
-                <p className="text-sm text-gray-500">Jun 17, 2025</p>
-                <p className="text-gray-800 font-semibold">
+                <p className=" text-base md:text-sm text-gray-500">
+                  Jun 17, 2025
+                </p>
+                <p className="text-gray-800 text-[14px] md:text-md font-semibold">
                   Landsking Infra Prefab Recognised at ISDAs IIN Awards 2025
                 </p>
               </div>
@@ -101,8 +106,10 @@ export default function MediaP() {
                 className="rounded"
               />
               <div>
-                <p className="text-sm text-gray-500">Apr 26, 2025</p>
-                <p className="text-gray-800 font-semibold">
+                <p className=" text-base md:text-sm text-gray-500">
+                  Apr 26, 2025
+                </p>
+                <p className="text-gray-800 text-[14px] md:text-md font-semibold">
                   Landsking Infra Prefab Participated In Roof India Exhibition,
                   Mumbai 2025–26
                 </p>

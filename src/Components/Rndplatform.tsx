@@ -103,7 +103,7 @@ export default function Rndplatform() {
 
               {/* Underline */}
               <span
-                className="absolute bottom-0 block h-0.5 bg-[#000080] transition-all duration-300"
+                className="absolute bottom-0 block h-0.5 md:bg-[#000080] transition-all duration-300"
                 style={underlineStyle}
               />
             </div>
