@@ -5,6 +5,7 @@ import Footer from "yes/Components/Footer";
 import ContactSection from "yes/Components/ContactSection";
 import Pebheader from "yes/Components/Pebheader";
 import Image from "next/image";
+import Pebfooter from "yes/Components/Pebfooter";
 // ---------------- Types ----------------
 type Project = {
   id: number;
@@ -207,7 +208,6 @@ export default function Preengineredbuildingsprojects() {
   return (
     <>
       <Pebheader />
-      {/* Hero Section */}
       <section className="w-full min-h-[400px] md:min-h-[500px] flex flex-col md:flex-row">
         <div
           className="flex-1 flex items-center justify-center p-6 sm:p-8 bg-cover bg-center relative"
@@ -223,7 +223,6 @@ export default function Preengineredbuildingsprojects() {
         </div>
       </section>
 
-      {/* Projects Grid */}
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="text-center my-8">
           <h1 className="text-3xl font-bold">OUR RECENT WORKS</h1>
@@ -232,28 +231,7 @@ export default function Preengineredbuildingsprojects() {
           </p>
         </div>
 
-        {/* Filter + Showing count */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-          {/* Left - Browse by Category */}
-          {/* <div className="flex items-center space-x-2">
-            <label className="text-gray-700 font-medium">
-              Browse by Category:
-            </label>
-            <select
-              value={selectedCategory}
-              onChange={(e) => {
-                setSelectedCategory(e.target.value);
-                setCurrentPage(1);
-              }}
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm"
-            >
-              {categories.map((cat) => (
-                <option key={cat} value={cat}>
-                  {cat}
-                </option>
-              ))}
-            </select>
-          </div> */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-2 w-full">
             <label className="text-gray-700 font-medium text-sm sm:text-base mb-2 sm:mb-0">
               Browse by Category:
@@ -279,7 +257,6 @@ export default function Preengineredbuildingsprojects() {
             </select>
           </div>
 
-          {/* Right - Showing count */}
           <div className="hidden md:block text-gray-600 text-sm">
             Showing {indexOfFirstProject + 1}–
             {Math.min(indexOfLastProject, filteredProjects.length)} of{" "}
@@ -287,7 +264,6 @@ export default function Preengineredbuildingsprojects() {
           </div>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {currentProjects.map(({ id, img, location }) => {
             const isActive = selectedId === id;
@@ -298,13 +274,12 @@ export default function Preengineredbuildingsprojects() {
                 onClick={() => handleClick(id)}
               >
                 {/* Image */}
-                <Image
+                <img
                   src={img}
                   alt={location}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Overlay background */}
                 <div
                   className={`absolute inset-0 bg-[#000080] transition-opacity duration-500 ${
                     isActive
@@ -313,7 +288,6 @@ export default function Preengineredbuildingsprojects() {
                   }`}
                 ></div>
 
-                {/* Sliding text container */}
                 <div
                   className={`absolute inset-0 flex items-center justify-center text-white text-center px-4 text-lg font-semibold transform transition-transform duration-500 ease-in-out ${
                     isActive
@@ -328,7 +302,6 @@ export default function Preengineredbuildingsprojects() {
           })}
         </div>
 
-        {/* Pagination */}
         <div className="flex justify-center mt-8 space-x-3">
           {[...Array(totalPages)].map((_, idx) => {
             const pageNum = idx + 1;
@@ -350,7 +323,7 @@ export default function Preengineredbuildingsprojects() {
       </div>
 
       <ContactSection />
-      <Footer />
+      <Pebfooter />
     </>
   );
 }

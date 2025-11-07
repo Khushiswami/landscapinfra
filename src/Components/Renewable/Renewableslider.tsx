@@ -13,31 +13,31 @@ interface Category {
 const categories: Category[] = [
   {
     title: "Solar EPC Solutions",
-    images: ["/industry.jpg", "/about.png", "/about.png"],
+    images: ["/rehome/epcone.jpg", "/rehome/epct.jpg", "/rehome/epcth.jpg"],
     description:
       " We provide complete turnkey Solar EPC services, managing everything from design and procurement to construction, testing, and commissioning for projects ranging between 10 kW and multi-megawatt scale. Backed by optimized engineering, top-tier components, and a focus on long-term performance, our solar systems are designed for reliability and sustainability.",
   },
   {
     title: "Commercial Solar Installation",
-    images: ["/about.png", "/about.png", "/about.png"],
+    images: ["/rehome/cone.jpg", "/rehome/ctwo.jpg", "/rehome/cth.jpg"],
     description:
       " Enhance your businesss energy efficiency with tailor-made solar setups for factories, offices, hospitals, and logistics centers. Offering net metering, zero-down payment options, and 24×7 monitoring, our solutions make solar adoption simple, profitable, and future-focused.",
   },
   {
     title: "Industrial Turnkey Solar Projects",
-    images: ["/about.png", "/about.png"],
+    images: ["/rehome/itt.jpg", "/rehome/itth.jpg", "/rehome/itone.jpg"],
     description:
       " Fuel industrial growth with large-scale, fully integrated solar installations covering civil, mechanical, and electrical works. Whether grid-tied or off-grid, our projects deliver seamless execution, high performance, and long-term operational savings.",
   },
   {
     title: "Residential Solar",
-    images: ["/about.png", "/about.png"],
+    images: ["/rehome/rone.jpg", "/rehome/rth.png", "/rehome/rtwo.jpg"],
     description:
       "Bring clean energy home with our smart rooftop solar systems, designed for efficiency, affordability, and ease of use. With flexible financing, remote tracking, and smart metering, we make switching to solar effortless and cost-effective.",
   },
   {
     title: "Infrastructure & Maintenance",
-    images: ["/about.png", "/about.png"],
+    images: ["/rehome/it.jpg", "/rehome/ith.jpg"],
     description:
       " We handle every aspect of solar site infrastructure — from civil and electrical works to landscaping — along with annual maintenance, cleaning, and monitoring. Our team ensures your EPC and industrial projects run smoothly, safely, and efficiently all year round.",
   },
@@ -155,7 +155,7 @@ export default function Renewableslider() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 0.1 }}
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                   backgroundImage: `url(${activeCategory.images[currentIndex]})`,

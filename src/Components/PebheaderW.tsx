@@ -49,7 +49,7 @@ export default function PebheaderW() {
       subItems: [
         {
           title: "Pre Engineered Buildings",
-          href: "/menupage",
+          href: "/peb",
           subMenu: [
             { name: "Warehouse", href: "/warehouse" },
             { name: "Industrial Shed", href: "/industrialShed" },
@@ -123,7 +123,7 @@ export default function PebheaderW() {
       ],
     },
     { name: "Projects", href: "/preengineredbuildingsprojects" },
-    { name: "Insights", href: "/insight" },
+    { name: "Insights", href: "#" },
     {
       name: "About",
       href: "/about",

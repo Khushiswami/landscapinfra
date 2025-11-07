@@ -290,11 +290,11 @@ export default function Civil() {
   useEffect(() => {
     const updateVisibleCards = () => {
       if (window.innerWidth < 768) {
-        setVisibleCards(1); // 📱 mobile
+        setVisibleCards(1);
       } else if (window.innerWidth < 1024) {
-        setVisibleCards(2); // 💻 tablet
+        setVisibleCards(2);
       } else {
-        setVisibleCards(4); // 🖥 desktop
+        setVisibleCards(4);
       }
     };
 
@@ -507,7 +507,6 @@ export default function Civil() {
     <>
       <Rndheader />
       <Rndcivil />
-      {/* description */}
       <section className="bg-white py-12 px-4 md:px-15">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
@@ -545,9 +544,7 @@ export default function Civil() {
           </div>
         </div>
       </section>
-      {/* end description */}
 
-      {/* mechanical services */}
       <main className="bg-white px-4 sm:px-6 md:px-6">
         <section className="bg-white py-4 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
@@ -698,11 +695,6 @@ export default function Civil() {
               {projects.map((project) => (
                 <SwiperSlide key={project.id}>
                   {({ isActive }) => (
-                    // <div
-                    //   className={`relative text-center transition-all duration-500 group ${
-                    //     isActive ? "scale-105" : "scale-90 opacity-70"
-                    //   }`}
-                    // >
                     <div
                       className={`relative text-center transition-all duration-500 group ${
                         isActive ? "scale-105" : "scale-90 opacity-70"
@@ -857,8 +849,6 @@ export default function Civil() {
       </section>
       <Civilservice />
       <Brand />
-      {/* structure */}
-      {/* Heading */}
       <Rndtestimonial />
       <Rndfooter />
     </>

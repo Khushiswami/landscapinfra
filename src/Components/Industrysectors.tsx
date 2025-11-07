@@ -17,22 +17,22 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Industrial Turnkey Solutions",
-    image: "/industryhome/",
+    image: "/platform/mep.jpg",
   },
   {
     id: 2,
     title: "Construction Works",
-    image: "/industryhome/",
+    image: "/menupageimg/mod13.jpg",
   },
   {
     id: 3,
     title: "HVAC",
-    image: "/industryhome/",
+    image: "/expertiseimages/HVAC.jpg",
   },
   {
     id: 4,
     title: "Other Industries",
-    image: "/industryhome/",
+    image: "/menupageimg/peb9.jpeg",
   },
   {
     id: 5,
@@ -67,12 +67,12 @@ const projects: Project[] = [
   {
     id: 11,
     title: "Water",
-    image: "/industryhome/water (5).jpg",
+    image: "/industryhome/water.jpeg",
   },
   {
     id: 12,
     title: "Water Supply & Sanitation",
-    image: "/industryhome/Water Supply & Sanitation.jpg",
+    image: "/industryhome/wthree.jpg",
   },
   {
     id: 13,

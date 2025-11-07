@@ -647,7 +647,7 @@ export default function Navbar() {
             INSIGHTS
           </Link>
           <Link
-            href="/media"
+            href="#"
             className="block py-2 border-b border-gray-200 hover:text-[#8080FF]"
           >
             MEDIA

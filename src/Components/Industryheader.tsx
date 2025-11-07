@@ -129,10 +129,10 @@ export default function Industryheader() {
         },
       ],
     },
-    { name: "Projects", href: "/projects" },
+    { name: "Projects", href: "/industryinstallationprojects" },
     {
       name: "Insights",
-      href: "/insight",
+      href: "#",
       subItems: [
         { name: "Blogs", href: "/projects/pre-engineered" },
         { name: "Brouchers", href: "/projects/prefab" },
@@ -142,7 +142,7 @@ export default function Industryheader() {
     },
     {
       name: "Media",
-      href: "/insight",
+      href: "#",
       subItems: [
         { name: "Latest News", href: "/projects/pre-engineered" },
         { name: "Gallery", href: "/projects/prefab" },

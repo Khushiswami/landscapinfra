@@ -14,7 +14,7 @@ interface Option {
 const options: Option[] = [
   {
     label: "Industrial",
-    image: "/industry/industrial realestate (1).jpg",
+    image: "/industry/ir.jpg",
     link: "/industrycontact",
   },
   {
@@ -69,7 +69,7 @@ export default function Industrybanner() {
     const interval = setInterval(() => {
       const nextIndex = (options.indexOf(selected) + 1) % options.length;
       setSelected(options[nextIndex]);
-    }, 6000);
+    }, 1000);
     return () => clearInterval(interval);
   }, [selected]);
 

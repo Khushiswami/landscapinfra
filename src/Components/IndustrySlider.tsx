@@ -95,7 +95,7 @@ export default function Industryslider() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0.2 }}
+                      transition={{ duration: 0.1 }}
                       className="absolute inset-0 bg-cover bg-center"
                       style={{
                         backgroundImage: `url(${cat.images[mobIndex]})`,

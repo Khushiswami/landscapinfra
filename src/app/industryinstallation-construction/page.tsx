@@ -259,7 +259,7 @@ export default function Industryinstallationconstruction() {
             )
           : []
       );
-    setCardsToShow(sliced);
+    // setCardsToShow(sliced);
   }, [startIndex, visibleCards, possibilities]);
 
   const prevSlide = () => {

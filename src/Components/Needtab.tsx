@@ -13,7 +13,7 @@ export default function Needtab() {
 
       paragraph:
         "India’s emerging real estate powerhouse., LANDSKING INFRA is your strategic partner for maximizing investment performance across the entire asset lifecycle. Our advisors leverage proprietary, real-time intelligence to connect you with the right capital and high-growth opportunities in every market and property sector across India, ensuring your portfolio thrives.",
-      img: "realstate/videobanner.webp",
+      img: "real/invest.png",
       boxes: [
         {
           title: "Investment & Capital Solutions",

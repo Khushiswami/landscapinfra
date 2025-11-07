@@ -704,10 +704,16 @@ export default function Mechanical() {
                 </p>
                 <div className="flex justify-start md:justify-start">
                   <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
-                    More{" "}
-                    <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
+                    <a
+                      href="/renewable-contact"
+                      className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold "
+                    >
+                      Contact{" "}
+                      <span className="p-1 rounded-full text-[#000080]">→</span>
+                    </a>
+                    {/* <div className="bg-[#000080] rounded-full p-1.5 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#1a1aff]">
                       <ArrowRight className="w-4 h-4 text-white" />
-                    </div>
+                    </div> */}
                   </button>
                 </div>
               </div>

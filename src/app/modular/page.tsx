@@ -531,12 +531,16 @@ export default function Modular() {
                 </h3>
                 <p className="text-gray-700 mb-5">{selectedArea.description}</p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
-                  Contact{" "}
-                  <span className="p-1 rounded-full text-[#000080]">→</span>
+                  <a
+                    href="/peb-contact"
+                    className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold "
+                  >
+                    Contact{" "}
+                    <span className="p-1 rounded-full text-[#000080]">→</span>
+                  </a>{" "}
                 </button>
               </div>
 
-              {/* Image Section (fills height automatically) */}
               <div className="w-full md:w-1/2 relative">
                 <img
                   src={selectedArea.image}
@@ -548,7 +552,6 @@ export default function Modular() {
           )}
         </div>
       </section>
-      {/* business benifts */}
       <section className="bg-[#000080] text-white py-10">
         <div className=" mx-auto px-4 md:mx-12">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
@@ -600,7 +603,6 @@ export default function Modular() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            {/* Image Section (Left Side) */}
             <div className="relative">
               <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
               <img
@@ -612,7 +614,6 @@ export default function Modular() {
               />
             </div>
 
-            {/* Text Section (Right Side) */}
             <div>
               <p className="text-gray-700 leading-relaxed">
                 With advanced prefabrication technology,{" "}

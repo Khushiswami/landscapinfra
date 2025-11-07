@@ -49,8 +49,7 @@ export default function Industryheadsecond() {
       subItems: [
         {
           title: "Industryinstallation",
-          // href: "/businessAreas/industrialinstallation",
-          href: "/industry-installation",
+          href: "/businessAreas/industrialinstallation",
           subMenu: [
             {
               name: "EPC Turnkey Solutions",
@@ -58,10 +57,10 @@ export default function Industryheadsecond() {
             },
             {
               name: "Construction Works",
-              href: "/construction",
+              href: "/industryinstallation-construction",
             },
-            { name: "HVAC", href: "/hvac" },
-            { name: "  Other Industries", href: "/industry-otherindustriess" },
+            // { name: "HVAC", href: "/hvac" },
+            { name: "  Other Industries", href: "/industry-otherindustries" },
             { name: " Fire Saftey", href: "/businessAreas/fire-saftey" },
           ],
         },
@@ -112,10 +111,10 @@ export default function Industryheadsecond() {
         },
       ],
     },
-    { name: "Projects", href: "/projects" },
+    { name: "Projects", href: "/industryinstallationprojects" },
     {
       name: "Insights",
-      href: "/insight",
+      href: "#",
       subItems: [
         { name: "Blogs", href: "/projects/pre-engineered" },
         { name: "Brouchers", href: "/projects/prefab" },
@@ -125,7 +124,7 @@ export default function Industryheadsecond() {
     },
     {
       name: "Media",
-      href: "/insight",
+      href: "#",
       subItems: [
         { name: "Latest News", href: "/projects/pre-engineered" },
         { name: "Gallery", href: "/projects/prefab" },

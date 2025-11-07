@@ -1,48 +1,34 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Construct() {
   const slides = [
     {
-      title: " Building Spaces That Last",
-      desc: "We transform your ideas into high-quality built environments with precision, planning, and timely execution. Landsking Infra utilizes modern construction technologies, precision equipment,and structured methodologies to deliver reliable civil infrastructure.",
-      video: "/civil/enginer.mov",
+      title: "Building Spaces That Last",
+      desc: "We transform your ideas into high-quality built environments with precision, planning, and timely execution. Landsking Infra utilizes modern construction technologies, precision equipment, and structured methodologies to deliver reliable civil infrastructure.",
+      image: "/civil/Fabrication Drawing.JPG",
     },
   ];
 
   const [active, setActive] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Detect mobile
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 640);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const activeSlide = slides[active];
 
   return (
     <section className="relative w-full h-[500px] sm:h-[380px] md:h-[70vh] overflow-hidden flex items-center justify-center text-center">
-      {/* Background Video */}
-      <video
-        src={activeSlide.video}
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
+      {/* Background Image */}
+      <img
+        src={activeSlide.image}
+        alt={activeSlide.title}
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />
 
-      {/* Black Blur Overlay */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-[3px]" />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-[3px] z-10" />
 
-      {/* Content */}
-      <div className="relative z-10 px-6 sm:px-10 md:px-20 max-w-4xl mx-auto">
+      {/* Text Content */}
+      <div className="relative z-20 px-6 sm:px-10 md:px-20 max-w-4xl mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSlide.title}

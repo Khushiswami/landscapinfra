@@ -138,8 +138,15 @@ export default function Explore() {
               </h3>
               <p className="text-gray-700 mb-5">{selectedArea.description}</p>
               <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
-                Contact{" "}
-                <span className="p-1 rounded-full text-[#000080]">→</span>
+                {/* Contact{" "}
+                <span className="p-1 rounded-full text-[#000080]">→</span> */}
+                <a
+                  href="/renewable-contact"
+                  className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold "
+                >
+                  Contact{" "}
+                  <span className="p-1 rounded-full text-[#000080]">→</span>
+                </a>
               </button>
             </div>
 

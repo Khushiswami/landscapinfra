@@ -121,8 +121,11 @@ export default function Rndexplore() {
               </p>
 
               <div className="flex items-center gap-4">
-                <button className="border text-[#000080] border-[#000080] px-4 sm:px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                  GET A QUOTE
+                <button
+                  className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                  onClick={() => (window.location.href = "/rnd-contact")}
+                >
+                  Get a Quote
                 </button>
               </div>
             </div>

@@ -52,8 +52,8 @@ export default function Realstateheader() {
   const menuItems = [
     { label: "Services", href: "/needs" },
     { label: "Properties", href: "/properties" },
-    { label: "People & Offices", href: "/people" },
-    { label: "Insights", href: "/insights" },
+    // { label: "People & Offices", href: "/people" },
+    { label: "Insights", href: "#" },
     { label: "About Us", href: "/real-estate-about" },
     { label: "Contact Us", href: "/realestate-contact" },
   ];
@@ -64,9 +64,9 @@ export default function Realstateheader() {
       text: "Unlock the value in every dimension of your real estate with integrated, data-led Services that support your overall business strategy.",
       buttonText: "Explore",
       buttonLink: "/needs",
-      image: "/solar.jpg",
-      linkText: "Sustainability Solutions",
-      linkHref: "/Services/sustainability",
+      image: "/real/Plan, Lease & Occupy.jpg",
+      linkText: "More",
+      linkHref: "/needs",
     },
     needs: [
       {
@@ -113,8 +113,8 @@ export default function Realstateheader() {
       text: "Find the right property for your business from our extensive listings of office, retail, and industrial spaces.",
       buttonText: "Browse All Properties",
       buttonLink: "/properties",
-      image: "/office.jpg",
-      linkText: "Leasing Opportunities",
+      image: "/real/properties.jpg",
+      linkText: "More",
       linkHref: "/properties",
     },
     needs: [{ label: "Properties for Lease", href: "/properties" }],
@@ -128,7 +128,6 @@ export default function Realstateheader() {
         href: "/properties",
       },
     ],
-    // industries: [{ label: "Hospitality", href: "/Services/hospitality" }],
   };
 
   const peopleMenu: MegaMenu = {
@@ -143,7 +142,6 @@ export default function Realstateheader() {
     },
     needs: [],
     propertyTypes: [],
-    // industries: [],
   };
 
   const activeMenu: MegaMenu | null =
