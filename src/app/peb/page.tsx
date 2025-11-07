@@ -23,7 +23,7 @@ import Brand from "yes/Components/Brand";
 import Link from "next/link";
 import Image from "next/image";
 import Pebfooter from "yes/Components/Pebfooter";
-export default function Menupage() {
+export default function Peb() {
   interface FAQ {
     question: string;
     answer: string;
