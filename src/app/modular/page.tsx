@@ -392,7 +392,7 @@ export default function Modular() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/menupageimg/mod13.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>

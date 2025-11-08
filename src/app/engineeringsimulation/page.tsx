@@ -125,7 +125,8 @@ export default function Enigneerningandsimulationservice() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/Industrial-Buildings-Construction.webp"
-                alt="Industrial Building"
+                alt="PREFABRICATED SOLUTIONS FOR
+              INDUSTRIAL BUILDINGS"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

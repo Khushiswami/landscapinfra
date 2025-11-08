@@ -78,13 +78,13 @@ const ControlRoom: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/control-room-2.jpg"
-                alt="Row 1"
+                alt="  Advanced Engineering Solutions for Control Rooms"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -93,7 +93,7 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Advanced Engineering Solutions for Control Rooms
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING offers prefabricated control rooms using high-quality
                 PUF-insulated panels, serving sectors like steel plants, mining,
                 power generation, and beyond. Designed for strength and
@@ -115,11 +115,11 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of Control Rooms
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Control rooms are engineered for superior performance in
                 industrial environments, Key features are:
               </p>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>Pre-engineered construction using PUF-insulated panels</li>
                 <li>
                   Variety of exterior finishes, such as PPGS/PPGS, PPGS/ACP, and
@@ -132,7 +132,7 @@ const ControlRoom: React.FC = () => {
                 </li>
                 <li>Raised flooring for organized cable routing</li>
               </ul>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Allows for effortless integration of essential safety equipment,
                 such as smoke detection and fire suppression systems.
               </p>
@@ -140,7 +140,7 @@ const ControlRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/control-room-3.jpg"
-                alt="Row 2"
+                alt="   Control Rooms"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -152,7 +152,7 @@ const ControlRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/control-room-1.jpg"
-                alt="Row 3"
+                alt=" Manufacturing Technology"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -161,7 +161,7 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Manufacturing Technology
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING leads in control room engineering, combining
                 cutting-edge production technology with superior materials.
                 Designed for peak performance in demanding conditions, our
@@ -177,11 +177,11 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Applications
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING provides control room solutions for diverse
                 industries, including:
               </p>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>Industrial manufacturing and production sites</li>
                 <li>Steel plants, smelting operations, and furnace sections</li>
                 <li>Bulk goods handling areas</li>
@@ -199,7 +199,7 @@ const ControlRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/control-room-5.jpg"
-                alt="Row 4"
+                alt="control room applications"
                 fill
                 className="object-cover rounded-lg "
               />

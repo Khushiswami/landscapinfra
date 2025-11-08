@@ -158,7 +158,7 @@ const Properties = () => {
           <div className="flex justify-center">
             <img
               src="/cae.png"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>

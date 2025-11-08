@@ -372,7 +372,7 @@ export default function Epcsolutions() {
           <div className="flex justify-center">
             <img
               src="/mainepc/eps panel.jpg"
-              alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
+              alt="Landsking Infra Pvt Ltd EPC Solutions"
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -558,7 +558,7 @@ export default function Epcsolutions() {
         <div className="md:mx-8 mx-auto px-6 md:px-10">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Why Choose Ladsking Infra for Your EPC Projects?
+            Why Choose Landsking Infra for Your EPC Projects?
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -566,7 +566,7 @@ export default function Epcsolutions() {
             <div className="relative">
               <img
                 src="/industry.jpg"
-                alt="PUF panels in industrial shed"
+                alt="epc projects"
                 width={600}
                 height={400}
                 className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"

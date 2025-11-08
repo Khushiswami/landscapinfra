@@ -205,7 +205,7 @@ export default function HydroPower() {
         highlight=""
         img={{
           src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
-          alt: "Custom Cold Storage",
+          alt: "Hydropower",
         }}
         description="Landsking Infra delivers expert landscaping for hydro power projects, including works in hilly and riverine terrains."
         features={featuresData}

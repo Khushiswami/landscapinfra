@@ -388,7 +388,7 @@ export default function Peb() {
 
             <img
               src="/menupageimg/peb2.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md  object-cover"
             />
           </div>

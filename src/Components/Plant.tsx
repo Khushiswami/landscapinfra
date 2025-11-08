@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // ✅ Needed for routing
-import { motion, AnimatePresence } from "framer-motion"; // ✅ Needed for animations
-import { IoIosArrowForward } from "react-icons/io"; // ✅ For the arrow icon
-import { Play, Pause } from "lucide-react"; // ✅ For play/pause icons
+import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { IoIosArrowForward } from "react-icons/io";
+import { Play, Pause } from "lucide-react";
 
 const slides = [
   {

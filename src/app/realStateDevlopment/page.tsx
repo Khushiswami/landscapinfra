@@ -30,7 +30,7 @@ export default function RealStateDevlopment() {
       <OurLineage />
       <PropertySearch />
       <SectorSlider />
-      {/* <LandmarkProjects /> */}
+      <LandmarkProjects />
       <ClientReal />
       <NewsCorner />
       <AccoladesSlider />

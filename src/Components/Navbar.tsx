@@ -37,18 +37,79 @@ export default function Navbar() {
       <div className="mx-auto flex items-center justify-between px-4 py-3 md:px-19">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img src="/finallogo.png" alt="Logo" className="h-15 w-auto" />
+          <img
+            src="/finallogo.png"
+            alt="Landskinglogo"
+            className="h-15 w-auto"
+          />
         </Link>
         {/* Mobile Icons */}
         <div className="flex items-center space-x-3 md:hidden">
-          <button>
+          {/* <button>
             <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
-          <button>
+          </button> */}
+          <div className="relative">
+            {/* Search Icon */}
+            <button
+              onClick={() => toggleDropdown("search")}
+              className="relative flex items-center justify-center p-2 rounded-md hover:bg-gray-100 transition"
+            >
+              <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
+            </button>
+
+            {/* Dropdown Menu */}
+            {openDropdown === "search" && (
+              <div
+                onMouseLeave={() => setOpenDropdown(null)}
+                className="absolute right-0 mt-2 w-72 sm:w-80 bg-white text-gray-900 rounded-2xl shadow-2xl border border-gray-200 z-50 animate-fadeIn"
+              >
+                <div className="p-3">
+                  <h3 className="text-sm font-semibold text-gray-600 mb-2 px-2">
+                    Explore Industries
+                  </h3>
+                  <div className="flex flex-col divide-y divide-gray-100">
+                    <Link
+                      href="/industryinstallation"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Industry Installation
+                    </Link>
+                    <Link
+                      href="/rnd"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Engineering R&D
+                    </Link>
+                    <Link
+                      href="/renewableenergy"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Renewable Energy
+                    </Link>
+                    <Link
+                      href="/preEngineeredBuildings"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Pre Engineered Building
+                    </Link>
+                    <Link
+                      href="/realStateDevlopment"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Real Estate Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <a href="mailto:info@landsking.com">
             <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
+          </a>
+
           <button
-            onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+            onClick={() => setLanguage(language === "EN" ? "AR" : "")}
             className="px-2 py-1 border rounded text-sm "
           >
             {language}
@@ -134,7 +195,7 @@ export default function Navbar() {
                 <div className="w-1/3 bg-[#2e69c2] p-4 pt-5 pr-8 flex flex-col justify-between text-white">
                   <img
                     src={rightImage}
-                    alt="Dynamic Preview"
+                    alt="Industry"
                     className="rounded-md object-cover h-54 w-full mb-4"
                   />
                   <div></div>
@@ -307,7 +368,7 @@ export default function Navbar() {
                 <div className="w-1/3 bg-[#2e69c2] p-7 pr-8 flex flex-col justify-between text-white">
                   <img
                     src={rightImage}
-                    alt="Dynamic Preview"
+                    alt="Expertise"
                     className="rounded-md object-cover h-59 w-full mb-4"
                   />
                   <div></div>
@@ -396,12 +457,66 @@ export default function Navbar() {
         {/* Desktop Right Icons */}
         {/* <div className="hidden md:flex items-center space-x-4"> */}
         <div className="hidden xl:flex items-center space-x-4">
-          <button>
-            <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
-          <button>
+          <div className="relative">
+            {/* Search Icon */}
+            <button
+              onClick={() => toggleDropdown("search")}
+              className="relative flex items-center justify-center p-2 rounded-md hover:bg-gray-100 transition"
+            >
+              <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
+            </button>
+
+            {/* Dropdown Menu */}
+            {openDropdown === "search" && (
+              <div
+                onMouseLeave={() => setOpenDropdown(null)}
+                className="absolute right-0 mt-2 w-72 sm:w-80 bg-white text-gray-900 rounded-2xl shadow-2xl border border-gray-200 z-50 animate-fadeIn"
+              >
+                <div className="p-3">
+                  <h3 className="text-sm font-semibold text-gray-600 mb-2 px-2">
+                    Explore Industries
+                  </h3>
+                  <div className="flex flex-col divide-y divide-gray-100">
+                    <Link
+                      href="/industryinstallation"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Industry Installation
+                    </Link>
+                    <Link
+                      href="/rnd"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Engineering R&D
+                    </Link>
+                    <Link
+                      href="/renewableenergy"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Renewable Energy
+                    </Link>
+                    <Link
+                      href="/preEngineeredBuildings"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Pre Engineered Building
+                    </Link>
+                    <Link
+                      href="/realStateDevlopment"
+                      className="px-4 py-2 hover:bg-[#f3f4f6] rounded-md transition"
+                    >
+                      Real Estate Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <a href="mailto:info@landsking.com">
             <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
+          </a>
+
           <button
             onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
             className="px-2 py-1 border rounded text-sm "

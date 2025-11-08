@@ -143,7 +143,7 @@ export default function PebheaderW() {
         <Link href="/">
           <Image
             src="/finallogo.png"
-            alt="Logo"
+            alt="peblogo"
             width={90}
             height={40}
             priority

@@ -77,7 +77,7 @@ const IndustrialShed: React.FC = () => {
             <div className="relative w-full h-80 md:h-[470px]">
               <Image
                 src="/shed/three.jpg"
-                alt="Row 1"
+                alt="Pre-engineered Industrial Shed Builders"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -155,7 +155,7 @@ const IndustrialShed: React.FC = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/shed/two.jpeg"
-                alt="Row 2"
+                alt="High resistance"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -167,7 +167,7 @@ const IndustrialShed: React.FC = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/shed/five.jpeg"
-                alt="Row 3"
+                alt="Engineering Specifications for Industrial Shed Components"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -231,7 +231,7 @@ const IndustrialShed: React.FC = () => {
             <div className="relative w-full h-80 md:h-[330px]">
               <Image
                 src="/shed/for.png"
-                alt="Row 4"
+                alt="Transport & Logistics Sector"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -243,7 +243,7 @@ const IndustrialShed: React.FC = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/menupagetwo/is-7.png"
-                alt="Row 5"
+                alt=" Why LandsKing Infra Pvt Ltd for Industrial shed"
                 fill
                 className="object-cover rounded-lg "
               />

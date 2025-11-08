@@ -300,7 +300,7 @@ export default function Pebbuildingservice() {
           <div className="flex justify-center">
             <Image
               src="/pebsix.jpeg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>

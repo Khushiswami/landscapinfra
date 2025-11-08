@@ -18,15 +18,14 @@ export default function SolutionsSection() {
             href="#"
             className="text-blue-700 font-semibold hover:underline inline-flex items-center"
           >
-            Explore our solutions{" "}
-            <span className="ml-1">↗</span>
+            Explore our solutions <span className="ml-1">↗</span>
           </a>
         </div>
 
         <div className="relative w-full h-72 md:h-96 lg:h-[420px] rounded-lg overflow-hidden">
           <Image
-            src="/warehouse.jpg" 
-            alt="Warehouse Roof"
+            src="/warehouse.jpg"
+            alt="solution"
             fill
             className="object-cover"
           />

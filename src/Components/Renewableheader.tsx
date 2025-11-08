@@ -36,8 +36,12 @@ export default function Renewableheader() {
     <header className="fixed top-0 w-full z-50 bg-white shadow-md text-black transition-all duration-300">
       <div className="mx-auto flex items-center justify-between px-4 py-3 md:px-27">
         {/* Logo */}
-        <Link href="/renewableenergy" className="flex items-center">
-          <img src="/finallogo.png" alt="Logo" className="h-15 w-auto" />
+        <Link href="/" className="flex items-center">
+          <img
+            src="/finallogo.png"
+            alt=" Landskinginfra Logo"
+            className="h-15 w-auto"
+          />
         </Link>
 
         {/* Mobile Icons */}
@@ -123,7 +127,7 @@ export default function Renewableheader() {
                 <div className="w-1/3 bg-[#2e69c2] p-4 pt-5 pr-8 flex flex-col justify-between text-white">
                   <img
                     src={rightImage}
-                    alt="Dynamic Preview"
+                    alt="renewableservice"
                     className="rounded-md object-cover h-54 w-full mb-4"
                   />
                   <div></div>

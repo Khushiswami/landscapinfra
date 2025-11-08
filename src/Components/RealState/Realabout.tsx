@@ -75,7 +75,7 @@ export default function Realabout() {
             <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
                 src="/engineer.jpg"
-                alt="Building 1"
+                alt="About Real Estate"
                 fill
                 className="object-cover"
               />
@@ -83,7 +83,7 @@ export default function Realabout() {
             <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
                 src="/cut.png"
-                alt="Building 2"
+                alt="About Landsking Real estate"
                 fill
                 className="object-cover"
               />

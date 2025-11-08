@@ -146,7 +146,7 @@ export default function Portsharbours() {
         highlight=""
         img={{
           src: "/industryhome/portsharbours.jpg",
-          alt: "Custom Cold Storage",
+          alt: "Port ",
         }}
         description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
         features={featuresData}

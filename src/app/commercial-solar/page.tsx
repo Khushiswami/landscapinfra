@@ -335,7 +335,7 @@ export default function Commercial() {
           <div className="flex justify-center">
             <img
               src="/commercial/Energy Savings, Better Business.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" commercial solar"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>

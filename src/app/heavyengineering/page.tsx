@@ -389,7 +389,7 @@ export default function Heavyengineering() {
 
             <img
               src="/menupageimg/peb2.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" heavyengineering"
               className="rounded-md shadow-md  object-cover"
             />
           </div>

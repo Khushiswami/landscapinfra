@@ -9,28 +9,28 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Industrial Real Estate & Logistics ",
-    image: "/realstate/slider.webp",
+    title: "Commercial Construction",
+    image: "/realstate/commercial construction.jpg",
     description:
-      "We deliver government-approved lands and built-to-suit solutions, trusted by top logistics, FMCG, and manufacturing brands. Acquire, divest, or lease industrial plots, warehouses, and logistic parks.",
+      "Commercial construction include industrial construction, warehouse, water treatment plant and intake well construction.",
   },
   {
-    title: "Commercial & Retail",
-    image: "/realstate/silder1.webp",
+    title: "Project Consultancy",
+    image: "/realstate/project concutancy.jpg",
     description:
-      "Secure your presence in top commercial zones, from high-street shops to premium mall spaces. We source offices, business parks, and co-working solutions to power your corporate expansion and investments.",
+      "Project Consultancy includes Architectural and structural design, Interior, Supervision, Project management consultancy.",
   },
   {
-    title: "Residential Brokerage ",
-    image: "/realstate/slider2.webp",
+    title: "Real Estate",
+    image: "/realstate/real estate.jpg",
     description:
-      "From luxury apartments and plots to farmhouses, we simplify your dream home journey. Access exclusive developer tie-ups for new launches, pre-sales, and complete home loan/legal assistance.",
+      "Real estate includes Sales, Purchase, Consultancy for Residential, commercial, industrial and agriculture land.",
   },
   {
-    title: "Land & Investment Advisory",
-    image: "/realstate/slider3.webp",
+    title: "Residential Construction",
+    image: "/realstate/residentail construction.jpg",
     description:
-      "Specialized advisory for land acquisition, joint ventures, and builder collaborations. We offer comprehensive investor portfolio management, backed by market research and ROI analysis to maximize your wealth.",
+      "This includes Bungalow Construction, Farmhouse, Row houses, villa construction including conventional and modern technologies both.",
   },
 ];
 
@@ -41,29 +41,8 @@ export default function LandmarkProjects() {
         {/* ✅ Header (Stacked Layout) */}
         <div className="mb-8 text-center md:text-left">
           <h2 className="text-center text-3xl font-bold text-[#000080] mb-10">
-            Brokerage Services: Expert Transaction Management
+            Our Segements{" "}
           </h2>
-
-          <p className="text-gray-700  text-base md:text-lg  ">
-            Engaging a qualified expert is critical for any successful property
-            acquisition or disposition. Our professionals are product
-            specialists and local market authorities, fluent in all sectors from
-            industrial to residential townships. You can rely on Landsking
-            Infra's team to deploy verified data and cross-sector knowledge to
-            solve complex challenges. We manage everything—sourcing,
-            negotiation, and closure—with precision and legal clarity. This
-            guarantees you make the most informed decision possible, turning
-            challenges into opportunity.
-          </p>
-          {/* Desktop Explore Button */}
-          {/* <div className="hidden md:flex mt-4">
-            <a
-              href="#"
-              className="text-[#000080] font-medium items-center gap-2 underline flex"
-            >
-              Explore Projects →
-            </a>
-          </div> */}
         </div>
 
         {/* ✅ Swiper Slider */}

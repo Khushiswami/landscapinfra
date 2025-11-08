@@ -19,6 +19,7 @@ import Realstateheader from "yes/Components/Realstateheader";
 import Needtab from "yes/Components/Needtab";
 import { desc } from "framer-motion/client";
 import Contact from "yes/Components/RealState/Contact";
+import PropertySearch from "yes/Components/RealState/PropertySearch";
 
 const Needs = () => {
   const router = useRouter();
@@ -159,13 +160,14 @@ const Needs = () => {
           <div className="flex justify-center">
             <img
               src="/realstate/need.png"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>
       </section>
       <Needtab />
+      <PropertySearch />
       <Contact />
       <FooterReal />
     </>

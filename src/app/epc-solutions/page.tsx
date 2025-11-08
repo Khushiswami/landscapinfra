@@ -197,7 +197,7 @@ export default function Epcsolutions() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <img
                 src="/testing.jpg"
-                alt="Industrial Building"
+                alt="Landsking Infra Epc Solutions Solar"
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -240,7 +240,7 @@ export default function Epcsolutions() {
 
             <img
               src="/realstate/solar project analysis service.jpg"
-              alt="Conceptual Design"
+              alt=" Solar Project"
               className="w-full h-52 object-cover"
             />
           </div>
@@ -274,7 +274,7 @@ export default function Epcsolutions() {
             <div className="mt-6 mb-3">
               <img
                 src="/product/s1.jpg"
-                alt="Proposal Drawings"
+                alt="system design"
                 className="w-full h-48 object-cover"
               />
             </div>
@@ -307,7 +307,7 @@ export default function Epcsolutions() {
             <div className="mt-1 mb-3">
               <img
                 src="/service.jpg"
-                alt="Contract Awarded"
+                alt=" Construct"
                 className="w-full h-69 object-cover"
               />
             </div>
@@ -371,7 +371,7 @@ export default function Epcsolutions() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px] md:mb-0 mb-14 ">
               <img
                 src="/solar epc.jpeg"
-                alt="Industrial Building"
+                alt="  Why Choose Landsking Infra for Solar EPC?"
                 className="object-cover "
               />
             </div>

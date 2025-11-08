@@ -43,7 +43,7 @@ const Glasswool: React.FC = () => {
           <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
             {title}
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+          <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
             {description}
           </p>
         </div>
@@ -128,13 +128,13 @@ const Glasswool: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/glass/glasswool.jpg"
-                alt="Row 1"
+                alt="  Glasswool Panel"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -143,7 +143,7 @@ const Glasswool: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Glasswool Panel
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Glasswool Panels – Mitigating Risk with Acoustic and Fire
                 Excellence Our Glasswool Sandwich Panels deliver a specialized
                 blend of high-level acoustic absorption and certified fire
@@ -200,7 +200,7 @@ const Glasswool: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/glass/GLASSWOOL.jpeg"
-                alt="Row 2"
+                alt=" Key Technical Specifications"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -212,7 +212,7 @@ const Glasswool: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/glass/glasswool panel.jpg"
-                alt="Row 3"
+                alt="core applications glass wool"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -221,7 +221,7 @@ const Glasswool: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Core Applications
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Our Glasswool Panels are the professional standard for critical
                 infrastructure, deployed specifically to enhance safety and
                 performance across various complex builds. Key applications

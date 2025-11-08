@@ -55,7 +55,7 @@ const CleanRoom: React.FC = () => {
         <Pebheader />
 
         {/* Hero Section */}
-        <section className="w-full min-h-[500px] flex flex-col md:flex-row">
+        <section className="w-full min-h-[300px] md:min-h-[500px] flex flex-col md:flex-row">
           {/* Left Column */}
           <div
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
@@ -74,13 +74,13 @@ const CleanRoom: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-2.jpg"
-                alt="Row 1"
+                alt="High-Precision Controlled Environments"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -89,7 +89,7 @@ const CleanRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 High-Precision Controlled Environments
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Clean rooms are specialized environments created to keep
                 airborne particles, contaminants, and pollutants at extremely
                 low levels. They are critical for sectors such as
@@ -118,18 +118,20 @@ const CleanRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Us for Clean Room Construction?
               </h3>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
                 <li>
-                  <strong>
+                  <strong className="text-gray-700 md:text-lg">
                     Comprehensive In-House Design & Manufacturing:
                   </strong>{" "}
                   LANDSKING offers complete clean room solutions from concept
                   design to commissioning, tailored for your industry’s needs.
                 </li>
                 <li>
-                  <strong>Premium Modular Panels:</strong> Constructed using
-                  insulated sandwich panels for high strength, thermal
-                  efficiency, and airtight performance.
+                  <strong className="text-gray-700 md:text-lg">
+                    Premium Modular Panels:
+                  </strong>{" "}
+                  Constructed using insulated sandwich panels for high strength,
+                  thermal efficiency, and airtight performance.
                 </li>
                 <li>
                   <strong>Flexible Configurations:</strong> ISO-class compliant
@@ -156,7 +158,7 @@ const CleanRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-3.jpg"
-                alt="Row 2"
+                alt=" Why Choose Us for Clean Room Construction?"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -168,7 +170,7 @@ const CleanRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-4.jpg"
-                alt="Row 3"
+                alt="  Industries Served by Us"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -177,7 +179,7 @@ const CleanRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Industries Served by Us
               </h3>
-              <ul className=" list-disc text-gray-700 mb-4 space-y-1">
+              <ul className=" list-disc text-gray-700 md:text-lg mb-4 space-y-1">
                 <li>Pharmaceutical & API Manufacturing Units</li>
                 <li>Biotechnology & Life Science Industries</li>
                 <li>Food & Beverage Manufacturing</li>
@@ -192,10 +194,10 @@ const CleanRoom: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Essential Features of LANDSKING Clean Rooms
+                Essential Features of Landskinginfra Clean Rooms
               </h3>
 
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
                 <li>Leak-proof, continuous construction</li>
                 <li>Excellent thermal and sound insulation</li>
                 <li>Panels that resist fire and corrosion</li>
@@ -210,7 +212,7 @@ const CleanRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-5.avif"
-                alt="Row 4"
+                alt=" Essential Features of LANDSKING Clean Rooms"
                 fill
                 className="object-cover rounded-lg "
               />

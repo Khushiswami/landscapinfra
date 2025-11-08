@@ -110,7 +110,7 @@ export default function Transportmobility() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/industryhome/Transport (4).jpg"
-                alt="Industrial Building"
+                alt="TRANSPORT MOBILITY"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

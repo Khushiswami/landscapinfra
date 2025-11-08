@@ -15,49 +15,51 @@ const cards = [
   {
     id: 1,
     tag: "Whitepaper",
-    title: "How AI is Driving the Next Era of Mobility",
+    title: "Transforming Infrastructure Through Innovation",
     description:
-      "The mobility industry experts at LTTS engaged in an extensive analysis of these trends, across three domains – Product Development Life Cycle, Software Development Life Cycle and User Experience.",
+      "Landsking Infra explores how advanced engineering practices and sustainable design principles are redefining the modern infrastructure landscape—bridging technology with long-term societal value.",
     image: "/news2.jpeg",
   },
   {
     id: 2,
     tag: "Whitepaper",
-    title: "EU AI Act is Critical for Innovation",
+    title: "The Future of Smart Cities: A Landsking Infra Perspective",
     description:
-      "The integration of Artificial Intelligence is transforming the medical device industry, facilitating smarter diagnosis, physiological monitoring, and treatment decisions",
+      "From intelligent transport systems to green construction, Landsking Infra delves into the role of digital transformation in building connected, efficient, and resilient urban ecosystems.",
     image: "/engineer.jpg",
   },
   {
     id: 3,
     tag: "Blog",
-    title: "Agentic AI Meets ER&D: Engineering the Next Leap in Autonomy",
+    title: "Engineering Excellence: Building Tomorrow’s Infrastructure Today",
     description:
-      "Agentic AI is redefining autonomy—LTTS fuses AI with engineering to build intelligent, adaptive systems across mobility, manufacturing, and healthcare.",
+      "At Landsking Infra, we combine data-driven design, automation, and sustainable materials to deliver infrastructure solutions that empower communities and drive progress.",
     image: "/new4.jpg",
   },
   {
     id: 4,
-    tag: "Whitepaper Study",
-    title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
+    tag: "Case Study",
+    title:
+      "Reimagining Urban Infrastructure: Landsking Infra’s Landmark Projects",
     description:
-      "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
+      "An in-depth look at how Landsking Infra is transforming skylines through innovative construction methods, smart resource management, and client-first collaboration.",
     image: "/industry.jpg",
   },
   {
     id: 5,
-    tag: "Whitepaper Study",
-    title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
+    tag: "Insight Report",
+    title: "Sustainability and Infrastructure: The Landsking Infra Commitment",
     description:
-      "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
+      "This report highlights how Landsking Infra integrates sustainability into every phase of project development—ensuring environmental responsibility and operational efficiency.",
     image: "/new2.png",
   },
   {
     id: 6,
-    tag: "Whitepaper Study",
-    title: "Everest Group: Unlocking Business Brilliance with GenAI and ...",
+    tag: "Whitepaper",
+    title:
+      "Engineering the Future: Landsking Infra’s Vision for a Connected World",
     description:
-      "The comprehensive playbook to learn how unlock the full potential of gen AI and LLMs to drive your business towards unprecedented success.",
+      "Discover how Landsking Infra is leveraging innovation, technology, and strategic partnerships to redefine the possibilities of modern infrastructure on a global scale.",
     image: "/news2.jpeg",
   },
 ];

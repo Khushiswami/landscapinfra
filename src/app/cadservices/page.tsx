@@ -102,7 +102,8 @@ export default function Rndexplore() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/rnd/cad.jpeg"
-                alt="Industrial Building"
+                alt=" Precision CFD & CAE Services
+            "
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

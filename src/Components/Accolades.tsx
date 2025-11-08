@@ -14,28 +14,28 @@ type Card = {
 const cards: Card[] = [
   {
     id: 1,
-    title: "Best Organizations for Women 2022",
-    desc: "Brigade Group was recognised as one of the Best Organizations for Women by The Economic Times.",
+    title: "Excellence in Cold Storage Infrastructure 2024",
+    desc: "Recognized for delivering high-performance cold storage and refrigeration facilities across India, ensuring superior efficiency and product safety.",
   },
   {
     id: 2,
-    title: "Idea Video/TVC Campaign of the Year 2022",
-    desc: '"We Make Room" campaign won at the Realty+ Indian Digital Excellence Awards.',
+    title: "Innovative Prefabrication Solutions Award",
+    desc: "Honored for innovation in pre-engineered building systems that reduce construction time and enhance long-term durability.",
   },
   {
     id: 3,
-    title: "Pradhan Mantri Awas Yojana Award",
-    desc: "Brigade El Dorado won for affordable housing projects at PMAY - Empowering India Awards 2022.",
+    title: "Sustainable Construction Excellence",
+    desc: "Awarded for integrating energy-efficient and eco-friendly practices in industrial and cold room manufacturing projects.",
   },
   {
     id: 4,
-    title: "Sustainability Champion 2022",
-    desc: "Awarded for outstanding commitment towards sustainable and eco-friendly construction practices.",
+    title: "Trusted Infrastructure Partner of the Year",
+    desc: "Recognized for consistent project delivery, engineering precision, and building long-term partnerships in the industrial and construction sectors.",
   },
   {
     id: 5,
-    title: "Customer Experience Excellence Award",
-    desc: "Recognised for delivering best-in-class customer experience across projects in 2022.",
+    title: "Customer Satisfaction & Quality Assurance Award",
+    desc: "Acknowledged for maintaining the highest standards of quality, safety, and customer satisfaction in every project delivered.",
   },
 ];
 

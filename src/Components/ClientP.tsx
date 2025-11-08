@@ -10,15 +10,13 @@ import "swiper/css/free-mode";
 
 export default function Brand() {
   const images: string[] = [
-    "/client/adani.jpg",
-    "/client/dilip.png",
-    "/client/dv.png",
-    "/client/indore.png",
-    "/client/pp.jpg",
-    "/client/mega.png",
-    "/client/mp.jpg",
-    "/client/praj.png",
-    "/client/tata.jpg",
+    "/praj.png",
+    "/dee vee projects.jpeg",
+    "/mega.jpeg",
+    "/healthcare.jpeg",
+    "/adani foundation.jpeg",
+    "/dilip buildcon.jpeg",
+    "/Muncipal corporation.jpeg",
   ];
 
   const renderRow = (reverse: boolean) => (

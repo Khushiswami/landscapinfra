@@ -502,7 +502,7 @@ export default function Pebheader() {
             scrolled ? "py-4" : "md:py-6"
           }`}
         >
-          <Link href="/preEngineeredBuildings" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0">
             <Image
               src={scrolled ? "/finallogo.png" : "/whitelogo.png"}
               alt="Logo"

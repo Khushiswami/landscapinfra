@@ -28,7 +28,7 @@ export default function AcquisitionsSection() {
           </span>
           <Image
             src="/company/about.webp"
-            alt="Medidata Solutions"
+            alt="About us"
             width={400}
             height={200}
             className="w-full h-44 sm:h-48 object-cover rounded-md mb-4"
@@ -55,7 +55,7 @@ export default function AcquisitionsSection() {
         <div className="bg-white rounded-xl shadow p-6 flex flex-col">
           <Image
             src="/company/about.webp"
-            alt="No Magic"
+            alt="No magic"
             width={400}
             height={200}
             className="w-full h-44 sm:h-48 object-cover rounded-md mb-4"

@@ -11,6 +11,7 @@ const projects = [
     id: 1,
     title: "Rejuve 360",
     status: "Ongoing",
+
     image: "/realstate/three.webp",
     location: "Mulund, Mumbai",
   },

@@ -202,7 +202,7 @@ export default function Irrigation() {
         highlight=""
         img={{
           src: "/industryhome/irrigation.jpg",
-          alt: "Custom Cold Storage",
+          alt: "Irrigation",
         }}
         description="Landsking Infra has been instrumental in executing large-scale and complex irrigation projects that have reshaped landscapes across India. Our portfolio includes dams, barrages, extensive networks of major and minor canals, as well as advanced lift irrigation systems."
         features={featuresData}

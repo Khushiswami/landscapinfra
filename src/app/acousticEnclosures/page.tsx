@@ -84,12 +84,12 @@ const AcousticEnclosures: React.FC = () => {
           </div>
         </section>
 
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
                 src="/new-images/acoustic-enclosures-2.webp"
-                alt="Row 1"
+                alt="Acoustic Enclosure"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -98,7 +98,7 @@ const AcousticEnclosures: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Effective Noise Control Solutions For Industrial Spaces
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Acoustic enclosures play a vital role in controlling noise
                 pollution in industrial and commercial spaces. They block noise
                 from loud equipment and protect interiors from external sounds,
@@ -124,7 +124,7 @@ const AcousticEnclosures: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Advantages of Landsking Prefab Acoustic Enclosures
               </h3>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
                 <li>
                   <strong>Superior Noise Control:</strong> Effectively blocks
                   loud industrial noise for a quieter environment.
@@ -154,7 +154,7 @@ const AcousticEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
                 src="/new-images/acoustic-enclosures-3.jpg"
-                alt="Row 2"
+                alt=" Advantages of Landsking Prefab Acoustic Enclosures"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -165,7 +165,7 @@ const AcousticEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
                 src="/new-images/acoustic-enclosures-4.webp"
-                alt="Row 3"
+                alt="  Landsking Prefab Acoustic Enclosures"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -174,7 +174,7 @@ const AcousticEnclosures: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Applications
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1 list-disc">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>
                   Soundproofing solutions for <strong>recording studios</strong>
                   .

@@ -285,7 +285,7 @@ export default function Hvac() {
           <div className="flex justify-center">
             <img
               src="/hvac/HVAC one.JPG"
-              alt="EPACK Prefab Industrial Building"
+              alt=" hvac"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
@@ -444,7 +444,7 @@ export default function Hvac() {
           <div className="relative">
             <Image
               src="/hvac/HVAC two.jpg"
-              alt="Why Choose Us"
+              alt="Why Choose hvac"
               width={700}
               height={450}
               className="relative rounded-2xl shadow-lg"

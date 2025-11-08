@@ -17,7 +17,12 @@ export default function FooterReal() {
         <div className="flex flex-col md:flex-row gap-12">
           {/* Left: Logo + Social (first on desktop, last on mobile) */}
           <div className="order-2 md:order-1 flex flex-col items-center md:items-start gap-6 w-full md:w-1/4">
-            <Image src="/landsking.png" alt="Logo" width={140} height={80} />
+            <Image
+              src="/landsking.png"
+              alt="landskinginfra"
+              width={140}
+              height={80}
+            />
 
             {/* Social Icons */}
             <div className="flex items-center gap-4">

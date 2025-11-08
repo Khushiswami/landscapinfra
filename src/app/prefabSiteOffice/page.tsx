@@ -84,7 +84,7 @@ const PrefabSiteOffice: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md: space-y-12 md:space-y-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
@@ -98,19 +98,19 @@ const PrefabSiteOffice: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Efficiently Designed Modular Site Offices for Quick Deployment
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LandsKing Prefab delivers modular site office solutions using
                 advanced building materials like PUF insulated panels, EPS
                 insulated panels, and Light Gauge Steel Framing (LGSF). Designed
                 for rapid deployment, our prefab site offices are the perfect
                 solution for projects requiring a quick and efficient setup.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 From design and fabrication to production and installation, our
                 end-to-end turnkey services ensure a smooth and streamlined
                 experience.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Engineered to withstand extreme weather conditions, our
                 insulated cabins offer exceptional thermal performance. With
                 prefabricated components manufactured off-site, project
@@ -118,7 +118,7 @@ const PrefabSiteOffice: React.FC = () => {
                 by up to 40%—and minimizing delays caused by weather or other
                 site-related challenges.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LandsKing has successfully delivered modular site offices to a
                 wide range of clients across India, earning a reputation for
                 reliability, cost-efficiency, and long-lasting performance.
@@ -137,25 +137,25 @@ const PrefabSiteOffice: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of LandsKing Modular Site Offices
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Tailored to your project needs using PUF/EPS insulated panels
                 and LGSF structures for superior strength and efficiency.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Flexible Wall Heights - Available in various heights with solid
                 construction, offering adaptability across different site
                 requirements.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Lightweight & Easy to Install - OModular panels are quick to
                 assemble and ideal for roof extensions with minimal structural
                 load.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Supports Modern Glazing - Compatible with large glass panels and
                 insulated doors for a clean, professional look.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Enhanced Safety & Comfort - Built-in provisions for smoke
                 detectors, fire safety, and air-conditioning to ensure a secure
                 and comfortable workspace.
@@ -208,7 +208,7 @@ const PrefabSiteOffice: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose LandsKing Prefab Site Offices?
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
+              <ul className="text-gray-700 md:text-lg mb-4 space-y-1">
                 <li>
                   390 Sturdy, ergonomic structures designed to withstand harsh
                   and extreme conditions.
@@ -244,7 +244,7 @@ const PrefabSiteOffice: React.FC = () => {
                 Benefits of Choosing LandsKing Prefab Solutions
               </h3>
 
-              <ul className="space-y-1">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>
                   Enhanced insulation for superior energy efficiency and
                   comfort, even in extreme environments.

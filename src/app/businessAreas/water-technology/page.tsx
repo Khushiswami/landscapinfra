@@ -110,7 +110,7 @@ export default function Watertechnology() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/industryhome/water (5).jpg"
-                alt="Industrial Building"
+                alt="water technology"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

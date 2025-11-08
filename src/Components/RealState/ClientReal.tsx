@@ -10,17 +10,14 @@ import "swiper/css/free-mode";
 
 export default function ClientReal() {
   const images: string[] = [
-    "/clientlogo1.png",
-    "/client2.jpeg",
-    "/client3.jpeg",
-    "/client4.jpeg",
-    "/client5.jpeg",
-    "/client6.jpeg",
-    "/client7.jpeg",
-    "/client8.jpeg",
-    "/client9.jpeg",
-    "/client10.jpeg",
-    "/client11.jpeg",
+    "/praj.png",
+    "/dee vee projects.jpeg",
+    "/mega.jpeg",
+    "/tata steel.jpeg",
+    "/healthcare.jpeg",
+    "/adani foundation.jpeg",
+    "/dilip buildcon.jpeg",
+    "/Muncipal corporation.jpeg",
   ];
 
   const renderRow = (reverse: boolean) => (

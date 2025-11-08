@@ -339,11 +339,12 @@ export default function Footer() {
             <Link href="#" className="hover:underline">
               Privacy
             </Link>
-            <Link href="#" className="hover:underline">
-              Sitemap
-            </Link>
-            <Link href="mailto:info@ltts.com" className="hover:underline">
-              info@Landskinginfra .com
+
+            <Link
+              href="mailto:info@landskinginfra.com"
+              className="hover:underline"
+            >
+              info@Landskinginfra.com
             </Link>
           </div>
 

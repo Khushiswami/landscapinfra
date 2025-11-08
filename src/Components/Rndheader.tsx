@@ -103,11 +103,15 @@ const Rndheader = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <Link
-            href="/rnd"
+            href="/"
             onClick={handleLinkClick}
             className="flex items-center"
           >
-            <img src="/finallogo.png" alt="Logo" className="h-18 w-auto p-3" />
+            <img
+              src="/finallogo.png"
+              alt=" Rnd Logo"
+              className="h-18 w-auto p-3"
+            />
           </Link>
         </div>
 

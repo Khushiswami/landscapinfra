@@ -74,28 +74,32 @@ const ColdStorage: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12  md:space-y-16">
           {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/cold4.png"
-                alt="Row 1"
+                alt="  Cold Storage & Cold Room Manufacturer
+              "
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                LANDSKING INFRA: YOUR RELIABLE PARTNER FOR COLD STORAGE AND COLD
-                ROOM MANUFACTURING IN INDIA
-              </h3>
-              <p className="text-gray-700 mb-4">
+              <h2
+                className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl 
+text-transform: capitalize;"
+              >
+                Your Reliable Partner for Cold Storage and Cold Room
+                Manufacturing in India
+              </h2>
+              <p className="text-gray-700 text-lg">
                 Did you know that 40-50% of Indias fresh produce is wasted every
                 year due to insufficient cold chain infrastructure, resulting in
                 losses worth USD 440 billion?
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 At Landsking Infra, we offer advanced cold storage and cold room
                 solutions designed to preserve perishables and minimize waste.
                 With our expertise, commitment to quality, and innovative
@@ -115,25 +119,24 @@ const ColdStorage: React.FC = () => {
           {/* Row 2 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Choose Landsking Infra for Your Cold Storage and Cold Room
-                Needs?
-              </h3>
-              <p className="text-gray-700 mb-4">
+              <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
+                Why Choose Landsking Infra for Your Cold Storage
+              </h2>
+              <p className="text-gray-700 text-lg">
                 Expertise & Experience - Extensive experience delivering
                 customized, high-performance cold storage solutions across
                 diverse industries.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Tailored Designs - Customized solutions to meet your specific
                 storage requirements, maximizing temperature control and space
                 efficiency.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Energy Efficiency - Incorporation of advanced technologies to
                 reduce energy consumption and lower operational costs.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Premium Quality - Use of superior materials and cutting-edge
                 manufacturing processes for enhanced durability and reliability.
               </p>
@@ -141,7 +144,7 @@ const ColdStorage: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/cold2.jpg"
-                alt="Row 2"
+                alt=" Why Choose Landsking Infra for Your Cold Storage"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -153,17 +156,16 @@ const ColdStorage: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/cold6.png"
-                alt="Row 3"
+                alt="Features of Cold Storage and Cold Room Systems"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Core Features of Landsking Infra’s Cold Storage and Cold Room
-                Systems
-              </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
+              <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
+                Features of Cold Storage and Cold Room Systems
+              </h2>
+              <ul className="text-gray-700 md:text-lg mb-4 space-y-1">
                 <li>
                   <strong>Modular and scalable design:</strong> Easily
                   expandable and adaptable to changing storage needs.

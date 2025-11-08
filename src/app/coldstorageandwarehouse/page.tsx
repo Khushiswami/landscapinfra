@@ -369,7 +369,7 @@ export default function Coldstorageandwarehouse() {
           <div className="flex justify-center">
             <img
               src="/menupageimg/peb2.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Pre-Engineered Building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
@@ -599,7 +599,7 @@ export default function Coldstorageandwarehouse() {
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <img
                 src="/menupageimg/peb9.jpeg"
-                alt="PUF panels in industrial shed"
+                alt=" industrial shed"
                 width={600}
                 height={400}
                 className="rounded-md shadow-md relative z-20"

@@ -137,13 +137,13 @@ const Page = () => {
           <div className="flex justify-center">
             {/* <Image
               src="/menupageimg/mod13.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md w[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             /> */}
 
             <Image
               src="/industry/Industrial Turnkey Projects.png"
-              alt="EPACK Prefab Industrial Building"
+              alt="  Industrial Turnkey Projects"
               width={600}
               height={400}
               className="rounded-md shadow-md object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -315,13 +315,13 @@ const Page = () => {
           <div className="flex justify-center">
             {/* <Image
               src="/menupageimg/mod13.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md w[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             /> */}
 
             <Image
               src="/platform/maining.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt="  Industrial Turnkey Projects benefits"
               width={600}
               height={400}
               className="rounded-md shadow-md object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"

@@ -206,7 +206,7 @@ export default function MassRapidTransitSystems() {
         highlight=""
         img={{
           src: "/industryhome/transmit.jpg",
-          alt: "Custom Cold Storage",
+          alt: "Mass Rapid Transit Systems",
         }}
         description=""
         features={featuresData}

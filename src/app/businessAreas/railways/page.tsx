@@ -143,7 +143,7 @@ export default function Railways() {
         highlight=""
         img={{
           src: "/industryhome/railway.jpg",
-          alt: "Custom Cold Storage",
+          alt: "Railways",
         }}
         description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
         features={featuresData}

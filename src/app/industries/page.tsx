@@ -134,7 +134,7 @@ export default function Industries() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/Industrial-Buildings-Construction.webp"
-                alt="Industrial Building"
+                alt="Industrial Buildings"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

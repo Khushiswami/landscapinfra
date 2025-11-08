@@ -73,13 +73,13 @@ const ColdRoom: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/cold-room-2.jpg"
-                alt="Row 1"
+                alt="   Cold Storage & Cold Room Manufacturer"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -89,7 +89,7 @@ const ColdRoom: React.FC = () => {
                 Landsking Leading Cold Storage and Cold Room Solutions Provider
                 in India
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Nearly 40–50% of fresh produce in India goes to waste annually
                 because of inadequate cold chain systems, causing losses worth
                 USD 440 billion. <br />
@@ -116,7 +116,7 @@ const ColdRoom: React.FC = () => {
                 Reasons to Choose landsking for Your Cold Storage and Cold Room
                 Needs
               </h3>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>
                   <strong>Proven Expertise:</strong> Years of experience
                   delivering high-performance, industry-specific cold storage
@@ -145,7 +145,7 @@ const ColdRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/cold-room-3.webp"
-                alt="Row 2"
+                alt="Reasons to Choose landsking"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -157,7 +157,7 @@ const ColdRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/cold-room-4.jpg"
-                alt="Row 3"
+                alt="Key Features of landskingCold Storage"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -166,11 +166,11 @@ const ColdRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of landskingCold Storage and Cold Room Solutions
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Our cold rooms and storage systems combine precision and
                 innovation for optimal operation:
               </p>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>
                   Factory-Engineered Panels: High-quality insulated panels
                   ensure thermal efficiency and durability.
@@ -194,11 +194,11 @@ const ColdRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Cold Storage Manufacturing Technology
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 We use advanced manufacturing technologies to deliver superior
                 quality and performance:
               </p>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>
                   Continuous Line Panels: Newly implemented panels provide
                   consistent quality and are ideal for cold room construction.
@@ -220,7 +220,7 @@ const ColdRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/cold-room-5.jpg"
-                alt="Row 4"
+                alt=" Cold Storage Manufacturing Technology"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -232,7 +232,7 @@ const ColdRoom: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/cold-room-6.avif"
-                alt="Row 5"
+                alt="Applications of Cold Room and Cold Storage Solutions"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -241,11 +241,11 @@ const ColdRoom: React.FC = () => {
               <h3 className="text-2xl md:text-[28px] font-bold mb-4 text-[#000080]">
                 Applications of Cold Room and Cold Storage Solutions
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING’s cold storage and cold room solutions serve a wide
                 range of industries, including:{" "}
               </p>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li>
                   <strong>Food Sector:</strong> Keep perishable food items like
                   fruits, vegetables, dairy, and meat fresh.

@@ -89,7 +89,7 @@ const LaborHutment: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
@@ -104,7 +104,7 @@ const LaborHutment: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Durable, Clean, And Affordable Accommodation For Labor
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING specializes in high-quality prefabricated labour
                 hutments, offering ready-to-install structures tailored to your
                 space and workforce needs. From electrical setups and sanitary
@@ -125,21 +125,21 @@ const LaborHutment: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Key Features
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 ● Custom-built, movable structures to suit your project needs
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 ● Resistant to harsh weather and termites, requiring zero
                 maintenance
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 ● Energy-efficient design with G+1 and G+2 options to maximize
                 space
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 ● Quick setup at an affordable cost
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 ● Built to last, retaining high value over time
               </p>
             </div>

@@ -413,7 +413,7 @@ export default function Buildingandinfrastructure() {
           <div className="flex justify-center">
             <Image
               src="/menupageimg/peb2.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
@@ -704,7 +704,7 @@ export default function Buildingandinfrastructure() {
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <Image
                 src="/menupageimg/peb9.jpeg"
-                alt="Steel tubes infrastructure"
+                alt="Steel Tubes for Building and Infrastructure"
                 width={600}
                 height={400}
                 className="rounded-md shadow-md relative z-20"
@@ -858,7 +858,7 @@ export default function Buildingandinfrastructure() {
             <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
+              alt="building and infrastructure requirements "
               width={700}
               height={450}
               className="relative rounded-2xl shadow-lg"

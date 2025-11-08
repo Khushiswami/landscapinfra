@@ -309,7 +309,7 @@ export default function Sandwichpanels() {
               src="/menupageimg/sp1.jpg"
               width={700}
               height={450}
-              alt="EPACK Prefab Industrial Building"
+              alt=" Buildings"
               className="rounded-md shadow-md transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>

@@ -49,9 +49,7 @@ export default function Accordion() {
         company to manage every stage from initial design to final
         commissioning.
       </p>
-      {/* <h1 className="text-3xl font-semibold mb-6">
-        How we approach the triple bottom line
-      </h1> */}
+
       <div className="space-y-2">
         {items.map((item, index) => (
           <div key={item.id} className="border-b border-gray-300">

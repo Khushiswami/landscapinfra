@@ -371,7 +371,7 @@ export default function Factoriesinstallation() {
           <div className="flex justify-center">
             <Image
               src="/menupageimg/peb2.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" factoriesinstallation"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
@@ -528,7 +528,7 @@ export default function Factoriesinstallation() {
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <Image
               src="/menupageimg/peb8.jpg" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt="Manufacturing Facility of fabrication"
               width={700}
               height={450}
               className="relative rounded-2xl shadow-lg"

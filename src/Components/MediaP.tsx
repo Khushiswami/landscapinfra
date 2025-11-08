@@ -20,7 +20,7 @@ export default function MediaP() {
             <div className="border-[#bfbbbb] rounded-lg shadow-sm p-4 hover:shadow-lg transition">
               <Image
                 src="/Infrastructure.jpg"
-                alt="The Hindu"
+                alt="Event one"
                 width={350}
                 height={130}
                 className="mb-4"
@@ -36,7 +36,7 @@ export default function MediaP() {
             <div className="border-[#bfbbbb] rounded-lg shadow-sm p-4 hover:shadow-lg transition">
               <Image
                 src="/preimages/pref.jpg"
-                alt="IPO"
+                alt="Event two"
                 width={350}
                 height={130}
                 className="mb-4"
@@ -63,7 +63,7 @@ export default function MediaP() {
             <li className="flex items-start space-x-4">
               <Image
                 src="/preimages/ware.jpg"
-                alt="Event 1"
+                alt="Event three"
                 width={80}
                 height={60}
                 className="rounded"
@@ -82,7 +82,7 @@ export default function MediaP() {
             <li className="flex items-start space-x-4">
               <img
                 src="about.png"
-                alt="Event 2"
+                alt="Event four"
                 width={80}
                 height={60}
                 className="rounded"

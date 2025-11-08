@@ -130,7 +130,6 @@ export default function Trunkeytpes() {
               </button>
             </div>
 
-            {/* Image Section (fills height automatically) */}
             <div className="w-full md:w-1/2 relative">
               <img
                 src={selectedArea.image}

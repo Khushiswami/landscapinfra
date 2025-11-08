@@ -128,7 +128,7 @@ export default function Advisoryauditing() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/Industrial-Buildings-Construction.webp"
-                alt="Industrial Building"
+                alt="advisory"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

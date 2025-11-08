@@ -50,10 +50,15 @@ export default function Realstateheader() {
   }, []);
 
   const menuItems = [
+    { label: "Home", href: "/realStateDevlopment" },
+
     { label: "Services", href: "/needs" },
     { label: "Properties", href: "/properties" },
+    { label: "Projects", href: "/real-estate-project" },
+
     // { label: "People & Offices", href: "/people" },
     { label: "Insights", href: "#" },
+
     { label: "About Us", href: "/real-estate-about" },
     { label: "Contact Us", href: "/realestate-contact" },
   ];
@@ -65,8 +70,6 @@ export default function Realstateheader() {
       buttonText: "Explore",
       buttonLink: "/needs",
       image: "/real/Plan, Lease & Occupy.jpg",
-      linkText: "More",
-      linkHref: "/needs",
     },
     needs: [
       {
@@ -114,8 +117,6 @@ export default function Realstateheader() {
       buttonText: "Browse All Properties",
       buttonLink: "/properties",
       image: "/real/properties.jpg",
-      linkText: "More",
-      linkHref: "/properties",
     },
     needs: [{ label: "Properties for Lease", href: "/properties" }],
     propertyTypes: [
@@ -157,7 +158,7 @@ export default function Realstateheader() {
 
   return (
     <header className="w-full border-b border-gray-200 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center">

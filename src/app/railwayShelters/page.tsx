@@ -73,7 +73,7 @@ const RailwayShelters: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md: space-y-12 md:space-y-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
@@ -87,7 +87,7 @@ const RailwayShelters: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Durable and Highly Functional Shelters
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING is recognized as a top manufacturer of prefabricated
                 railway and telecom shelters, delivering dependable, customized
                 turnkey solutions to meet the specific needs of industrial
@@ -119,7 +119,7 @@ const RailwayShelters: React.FC = () => {
                 features include:
               </p>
               <br />
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
                 <li>
                   Excellent thermal resistance for effective temperature
                   management
@@ -168,7 +168,7 @@ const RailwayShelters: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Advanced Manufacturing Technology
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING employs advanced manufacturing techniques and
                 meticulous engineering to create robust, high-quality shelters.
                 Tailored for railway and telecom applications, our shelters are
@@ -187,11 +187,11 @@ const RailwayShelters: React.FC = () => {
                 Uses of Prefabricated Shelters
               </h3>
 
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING offers durable and user-friendly shelters suitable for
                 a variety of temporary or permanent uses, such as:
               </p>
-              <ul className="list-disc pl-5 text-gray-700 mb-4">
+              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
                 <li>Railway Shelters</li>
                 <li>BTS (Base Transceiver Station) Shelters</li>
                 <li>Telecom Shelters</li>

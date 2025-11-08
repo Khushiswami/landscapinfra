@@ -84,23 +84,23 @@ const IndustrialEnclosures: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-1.jpg"
-                alt="Row 1"
+                alt=" Industrial Enclosures"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Industrial Enclosures – Engineered for Equipment Protection and
                 Environmental Management
-              </h3>
-              <p className="text-gray-700 mb-4">
+              </h2>
+              <p className="text-gray-700 text-lg">
                 At Landsking Infra, we excel in crafting innovative
                 prefabricated multi-storey structures that offer unmatched
                 durability, rapid construction, and eco-friendly solutions. With
@@ -110,7 +110,7 @@ const IndustrialEnclosures: React.FC = () => {
                 institutional, or residential applications.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-0 md:mt-5 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote
@@ -120,35 +120,35 @@ const IndustrialEnclosures: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Landsking Infra Industrial Enclosures?
-              </h3>
-              <p className="text-gray-700 mb-4">
+              </h2>
+              <p className="text-gray-700 text-lg">
                 Custom-Engineered Design - Designed to meet your specific
                 operational requirements, industry standards, and spatial
                 constraints.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Robust Construction - Built with high-quality PUF/EPS insulated
                 sandwich panels, ensuring strength, durability, thermal
                 insulation, and weather resistance.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Quick & Modular Installation - Factory-fabricated panels and
                 frames enable faster, hassle-free on-site assembly with minimal
                 disruption.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Thermal & Acoustic Efficiency - Engineered to reduce heat
                 transfer and suppress noise, enhancing overall working
                 conditions.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Corrosion & Fire Resistance - Panels are specially coated and
                 treated to withstand harsh environments and ensure long-lasting
                 safety.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Versatile Applications - Ideal for both indoor and outdoor use
                 across diverse industrial and commercial sectors.
               </p>
@@ -156,7 +156,7 @@ const IndustrialEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-3.jpeg"
-                alt="Row 2"
+                alt="Why Choose Landsking Infra Industrial Enclosures?"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -170,16 +170,16 @@ const IndustrialEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-6.jpg"
-                alt="Row 3"
+                alt=" Applications of Landsking Infra Industrial Enclosures"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Applications of Landsking Infra Industrial Enclosures
-              </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
+              </h2>
+              <ul className="text-gray-700 md:text-lg mb-4 space-y-1">
                 <li> Electrical & Transformer Rooms</li>
                 <li> Compressor & Generator Enclosures</li>
                 <li> CNC Machine Housings & Control Panels</li>
@@ -194,15 +194,15 @@ const IndustrialEnclosures: React.FC = () => {
           {/* Row 4 - Content Left, Image Right */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Complete Turnkey Solutions – From Design to Deployment
-              </h3>
-              <p className="text-gray-700 mb-4">
+              </h2>
+              <p className="text-gray-700 text-lg">
                 At Landsking Infra, we offer complete turnkey solutions — from
                 design consultation and precision manufacturing to delivery and
                 on-site installation.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 With 15+ years of industry expertise and pan-India delivery
                 capabilities, we ensure smooth, timely, and reliable project
                 execution, even in the most remote or challenging locations.
@@ -211,7 +211,7 @@ const IndustrialEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-5.jpeg"
-                alt="Row 4"
+                alt=" Complete Turnkey Solutions – From Design to Deployment"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -223,16 +223,16 @@ const IndustrialEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-4.jpg"
-                alt="Row 5"
+                alt="Advantages of Choosing Landsking Infra Enclosures"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Advantages of Choosing Landsking Infra Enclosures
-              </h3>
-              <ul className="space-y-1">
+              </h2>
+              <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li> Applicable across diverse industrial sectors</li>
                 <li> Constructed from strong and durable materials</li>
                 <li> Fireproof and watertight design</li>

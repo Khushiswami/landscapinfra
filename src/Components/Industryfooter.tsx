@@ -365,11 +365,9 @@ export default function Industryfooter() {
             <Link href="#" className="hover:underline">
               Privacy
             </Link>
-            <Link href="#" className="hover:underline">
-              Sitemap
-            </Link>
-            <Link href="mailto:info@ltts.com" className="hover:underline">
-              info@Landskinginfra .com
+
+            <Link href="info@landskinginfra.com" className="hover:underline">
+              info@landskinginfra.com
             </Link>
           </div>
 

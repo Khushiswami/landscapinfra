@@ -124,7 +124,7 @@ export default function Construction() {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/sectorimg/cons.jpg"
-                alt="Industrial Building"
+                alt="construction"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

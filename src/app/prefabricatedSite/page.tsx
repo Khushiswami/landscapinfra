@@ -73,7 +73,7 @@ const PrefabricatedSite: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[380px]">
               <Image
@@ -88,7 +88,7 @@ const PrefabricatedSite: React.FC = () => {
                 Complete Infrastructure Solutions for Quick, Efficient, and
                 Economical Project Implementation
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 LANDSKING offers customized prefab site infrastructure solutions
                 designed for fast-paced construction, industrial, and
                 infrastructure projects throughout India. Our modular structures
@@ -115,7 +115,7 @@ const PrefabricatedSite: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Essential Site Infrastructure Components We Provide
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 We offer a comprehensive range of prefabricated infrastructure
                 modules, including:
                 <br />
@@ -130,7 +130,7 @@ const PrefabricatedSite: React.FC = () => {
                 <li> Hand Wash and Utility Stations</li>
               </ul>
 
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Each unit is factory-built, pre-engineered, and ready for quick
                 on-site assembly, saving you time, effort, and costs.
               </p>
@@ -193,7 +193,7 @@ const PrefabricatedSite: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Ideal Applications
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 text-lg">
                 Our prefabricated infrastructure solutions are trusted across a
                 wide range of sectors: <br />
                 <br />

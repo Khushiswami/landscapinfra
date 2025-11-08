@@ -58,9 +58,7 @@ export default function Caeaccordion() {
       <h1 className="text-sm font-semibold mb-6 text-[#000] md:text-3xl">
         Solve your business challenges with our RND solutions.
       </h1>
-      {/* <h1 className="text-3xl font-semibold mb-6">
-        How we approach the triple bottom line
-      </h1> */}
+
       <div className="space-y-2">
         {items.map((item, index) => (
           <div key={item.id} className="border-b border-gray-300">

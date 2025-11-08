@@ -310,7 +310,7 @@ export default function Greenbuilding() {
           <div className="flex justify-center">
             <img
               src="/water/Green Building Solutions.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" green building"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>

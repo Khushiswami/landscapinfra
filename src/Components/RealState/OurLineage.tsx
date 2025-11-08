@@ -14,33 +14,6 @@ import {
   Lightbulb,
 } from "lucide-react";
 
-const projects = [
-  {
-    id: 1,
-    title: "Worlds LONGEST cross country conveyor, India-Bangladesh",
-    image: "/realstate/three.webp",
-  },
-  {
-    id: 2,
-    title: "Worlds most iconic places of worship, Delhi",
-    image: "/realstate/two.jpg",
-  },
-  {
-    id: 3,
-    title: "Worlds largest PPP in the metro sector, Hyderabad",
-    image: "/realstate/one.webp",
-  },
-  {
-    id: 4,
-    title: "Mega real estate township project",
-    image: "/realstate/fourS.webp",
-  },
-  {
-    id: 5,
-    title: "Sustainable smart city initiative",
-    image: "/realstate/fiveS.webp",
-  },
-];
 const features = [
   {
     title: "Define Strategy",

@@ -69,7 +69,7 @@ export default function ProjectSliderB({
                   <div className="relative w-full h-[300px] overflow-hidden rounded shadow">
                     <Image
                       src={project.img}
-                      alt="Project Image"
+                      alt="projects"
                       fill
                       className="object-cover"
                     />

@@ -40,7 +40,7 @@ export default function SystemPage() {
         <div className="w-full ">
           <Image
             src="/solutionsBannerPebsteel.jpg"
-            alt="Hero Image"
+            alt="complete solution"
             className="w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] object-cover "
           />
         </div>

@@ -142,7 +142,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-          © 2025 Landsking Infra. All Rights Reserved.
+          © 2025 Landskinginfra. All Rights Reserved.
           <a href="#" className="hover:text-white mx-2">
             Privacy Policy
           </a>{" "}

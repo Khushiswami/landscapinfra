@@ -388,7 +388,7 @@ export default function Expertisecoldstorage() {
           <div className="flex justify-center">
             <img
               src="/expertisecold/cold storage one.jpg"
-              alt="EPACK Prefab Industrial Building"
+              alt=" coldstorage"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
@@ -617,7 +617,7 @@ export default function Expertisecoldstorage() {
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <Image
                 src="/expertisecold/cold storage three.jpg"
-                alt="PUF panels in industrial shed"
+                alt="applications of coldstorage"
                 width={600}
                 height={400}
                 className="rounded-md shadow-md relative z-20"

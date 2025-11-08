@@ -198,7 +198,7 @@ export default function firesafteies() {
         highlight=""
         img={{
           src: "/industryhome/highway.jpg",
-          alt: "Custom Cold Storage",
+          alt: "Fire Saftey",
         }}
         description="Landsking is a complete landscaping solutions provider, having executed terrain-specific and climate-responsive green projects including urban gardens, highway landscaping, vertical greenery, and sustainable irrigation systems. We have mastered the art of designing and delivering landscapes in complex environments ranging from rugged hills to congested cityscapes."
         features={featuresData}

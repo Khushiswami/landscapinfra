@@ -209,7 +209,7 @@ export default function CommercialInstitutional() {
         highlight=""
         img={{
           src: "/industryhome/Institutional Sector (1).jpg",
-          alt: "Custom Cold Storage",
+          alt: "Commercial & Institutional",
         }}
         description="Landscape Infra delivers complete construction services for all kinds of Commercial and Institutional buildings. Our experience covers Residential, Commercial, and Institutional projects, offering full-spectrum solutions including structural work, electrical systems, HVAC, and interior finishes. We also specialize in integrated campus development, involving multiple buildings with supporting infrastructure, along with sustainable Green Building construction."
         features={featuresData}

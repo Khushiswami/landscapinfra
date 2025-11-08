@@ -24,7 +24,7 @@ const ZigzagSection: FC = () => {
 
           <img
             src="realstate/residential (3).jpg"
-            alt="Left"
+            alt="Residential"
             className="w-full h-64 sm:h-72 md:h-80 lg:h-120 object-cover clip-left"
           />
         </motion.div>
@@ -47,13 +47,12 @@ const ZigzagSection: FC = () => {
 
           <img
             src="realstate/Commercial & Retail.jpg"
-            alt="Right"
+            alt="Commercial"
             className="w-full h-64 sm:h-72 md:h-80 lg:h-120 object-cover clip-right"
           />
         </motion.div>
       </div>
 
-      {/* Custom CSS */}
       <style jsx>{`
         /* Mobile: rectangular layout */
         @media (max-width: 767px) {

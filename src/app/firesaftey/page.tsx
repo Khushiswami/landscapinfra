@@ -302,7 +302,7 @@ export default function Firesafety() {
           <div className="flex justify-center">
             <img
               src="/saftey/"
-              alt="EPACK Prefab Industrial Building"
+              alt=" fire-saftey"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
