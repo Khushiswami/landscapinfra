@@ -164,12 +164,13 @@ export default function Banner() {
           <div className="absolute -top-12 right-0 sm:right-6">
             <button
               onClick={() => setIsPlaying(!isPlaying)}
+              aria-label={isPlaying ? "Pause video" : "Play video"}
               className="w-10 h-10 flex items-center justify-center rounded-full border border-white/50 hover:bg-white/10 transition"
             >
               {isPlaying ? (
-                <Pause className="w-5 h-5 text-white" />
+                <Pause className="w-5 h-5 text-white" aria-hidden="true" />
               ) : (
-                <Play className="w-5 h-5 text-white" />
+                <Play className="w-5 h-5 text-white" aria-hidden="true" />
               )}
             </button>
           </div>

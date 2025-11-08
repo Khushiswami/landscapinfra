@@ -80,7 +80,7 @@ const Mihouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-2.jpg"
-                alt="Row 1"
+                alt="mi-homes"
                 fill
                 className="object-cover rounded-lg "
               />

@@ -375,7 +375,7 @@ export default function Miningandmetals() {
           <div className="flex justify-center">
             <img
               src="/menupageimg/peb2.jpg"
-              alt=" Buildings"
+              alt=" Mining and Metals"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
@@ -517,7 +517,7 @@ export default function Miningandmetals() {
           <div className="relative">
             <img
               src="/menupageimg/peb8.jpg" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt=" Mining and Metals Manufacturing Facility"
               width={700}
               height={450}
               className="relative rounded-2xl shadow-lg"

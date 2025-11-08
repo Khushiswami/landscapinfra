@@ -374,7 +374,7 @@ export default function Industriestherindustries() {
           <div className="flex justify-center">
             <img
               src="/menupageimg/peb2.jpg"
-              alt=" Buildings"
+              alt="  Other Industries"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>
@@ -514,7 +514,7 @@ export default function Industriestherindustries() {
           <div className="relative">
             <img
               src="/menupageimg/peb8.jpg" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt="Manufacturing Facility of industries"
               width={700}
               height={450}
               className="relative rounded-2xl shadow-lg"

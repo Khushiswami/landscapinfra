@@ -80,7 +80,7 @@ const Khouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-2.jpg"
-                alt="Row 1"
+                alt="k-house"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -156,7 +156,7 @@ const Khouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-3.jpg"
-                alt="Row 2"
+                alt="why choose k -house"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -168,7 +168,7 @@ const Khouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-4.jpg"
-                alt="Row 3"
+                alt="k -house industires served"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -210,7 +210,7 @@ const Khouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-5.avif"
-                alt="Row 4"
+                alt="Leak-proof continuous construction"
                 fill
                 className="object-cover rounded-lg "
               />

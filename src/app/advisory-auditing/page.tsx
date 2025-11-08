@@ -26,7 +26,13 @@ function Card({ image, icon, title, description }: CardProps) {
     <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col group transition-all duration-500 hover:shadow-lg">
       {/* Image */}
       <div className="relative w-full h-56 sm:h-64 md:h-72 overflow-hidden">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover "
+          loading="lazy"
+        />
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-0 bg-black opacity-0 transition-all duration-500 group-hover:w-[88%] group-hover:opacity-100"></div>
       </div>
 

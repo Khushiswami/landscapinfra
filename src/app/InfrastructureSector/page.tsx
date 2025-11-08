@@ -131,7 +131,7 @@ export default function InfrastructureSector() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/sectorimg/infreaa.jpg"
-                alt="Industrial Building"
+                alt="Infrastructure sector"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

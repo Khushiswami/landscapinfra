@@ -44,7 +44,7 @@ const Infrastructuremaintanence: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-3.jpg"
-                alt="Row 1"
+                alt="Prefab Site Office"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -119,7 +119,7 @@ const Infrastructuremaintanence: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-4.jpg"
-                alt="Row 2"
+                alt=" Key Features of LandsKing Modular Site Offices"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -154,7 +154,7 @@ const Infrastructuremaintanence: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-2.jpeg"
-                alt="Row 3"
+                alt=" Flexible Applications for Every Need"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -233,7 +233,7 @@ const Infrastructuremaintanence: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-7.png"
-                alt="Row 4"
+                alt="why choose prefab"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -245,7 +245,7 @@ const Infrastructuremaintanence: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-9.jpg"
-                alt="Row 5"
+                alt="infrastructure maintanance"
                 fill
                 className="object-cover rounded-lg "
               />

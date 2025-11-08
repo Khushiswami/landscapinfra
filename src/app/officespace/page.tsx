@@ -95,7 +95,7 @@ export default function Officespace() {
       <div className="relative w-full h-[70vh] flex items-center justify-center bg-gray-900">
         <Image
           src="/images/banner.jpg"
-          alt="Renewable Energy"
+          alt="office energy"
           fill
           className="object-cover opacity-60"
         />
@@ -159,7 +159,7 @@ export default function Officespace() {
           <div className="relative rounded-lg overflow-hidden shadow-lg w-full">
             <Image
               src="/industry.jpg"
-              alt="Office Sample"
+              alt="Office "
               width={500}
               height={450}
               className="object-cover w-full h-auto"

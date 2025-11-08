@@ -350,6 +350,7 @@ export default function Buildingandinfrastructure() {
                     <Image
                       src={slide.image}
                       alt={slide.title}
+                      loading="lazy"
                       className="w-full h-72 object-cover"
                     />
                     <div className="p-4 text-center">
@@ -414,6 +415,7 @@ export default function Buildingandinfrastructure() {
             <Image
               src="/menupageimg/peb2.jpg"
               alt=" Buildings"
+              loading="lazy"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover"
             />
           </div>

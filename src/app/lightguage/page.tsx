@@ -262,7 +262,7 @@ export default function Lightguage() {
           <div className="flex justify-center">
             <img
               src="/menupageimg/lgs1.jpeg"
-              alt=" Buildings"
+              alt=" lightguage"
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -277,7 +277,7 @@ export default function Lightguage() {
             <div className="absolute -bottom-4 -right-4 w-full h-full   "></div>
             <img
               src="/menupageimg/lgs2.jpg" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt="Manufacturing Facility of lgsf"
               width={700}
               height={450}
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -366,7 +366,7 @@ export default function Lightguage() {
             <div className="relative">
               <Image
                 src="/menupageimg/lgs5.png"
-                alt="PUF panels in industrial shed"
+                alt=" Applications of LGSF Structures"
                 width={700}
                 height={450}
                 className="rounded-md shadow-md transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -433,7 +433,7 @@ export default function Lightguage() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
+              alt="Why Choose Us as lgsf"
               width={700}
               height={450}
               className="relative rounded-md shadow-lg "

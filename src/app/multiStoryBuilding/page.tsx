@@ -85,7 +85,7 @@ const MultiStoryBuilding: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/msb1.jpg"
-                alt="Row 1"
+                alt="  Prefab Multi-Storey Buildings by Landsking Infra"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -144,7 +144,7 @@ const MultiStoryBuilding: React.FC = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/menupagetwo/msb3.png"
-                alt="Row 2"
+                alt="  Prefab Multi-Storey Buildings "
                 fill
                 className="object-cover rounded-lg"
               />
@@ -156,7 +156,7 @@ const MultiStoryBuilding: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/msb4.jpg"
-                alt="Row 3"
+                alt="Applications of Prefab Multi-Storey Structures"
                 fill
                 className="object-cover rounded-lg"
               />

@@ -91,6 +91,7 @@ const AcousticEnclosures: React.FC = () => {
                 src="/new-images/acoustic-enclosures-2.webp"
                 alt="Acoustic Enclosure"
                 fill
+                loading="lazy"
                 className="object-cover rounded-lg "
               />
             </div>
@@ -156,6 +157,7 @@ const AcousticEnclosures: React.FC = () => {
                 src="/new-images/acoustic-enclosures-3.jpg"
                 alt=" Advantages of Landsking Prefab Acoustic Enclosures"
                 fill
+                loading="lazy"
                 className="object-cover rounded-lg "
               />
             </div>
@@ -167,6 +169,7 @@ const AcousticEnclosures: React.FC = () => {
                 src="/new-images/acoustic-enclosures-4.webp"
                 alt="  Landsking Prefab Acoustic Enclosures"
                 fill
+                loading="lazy"
                 className="object-cover rounded-lg "
               />
             </div>

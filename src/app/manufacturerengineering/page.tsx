@@ -388,7 +388,7 @@ export default function Mechanical() {
           <div className="flex justify-center">
             <img
               src="/menupageimg/mod13.jpg"
-              alt=" Buildings"
+              alt=" manufacturing engineers"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>

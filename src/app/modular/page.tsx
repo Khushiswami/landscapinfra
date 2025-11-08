@@ -392,7 +392,7 @@ export default function Modular() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/menupageimg/mod13.jpg"
-              alt=" Buildings"
+              alt="  Modular Buildings"
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -407,7 +407,7 @@ export default function Modular() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/preimages/define.png" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt=" Modular Manufacturing Facility"
               width={700}
               height={450}
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -607,7 +607,7 @@ export default function Modular() {
               <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
               <img
                 src="/menupageimg/mod16.jpg"
-                alt="PUF panels in industrial shed"
+                alt=" Modular benfits"
                 width={600}
                 height={400}
                 className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -664,7 +664,7 @@ export default function Modular() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
+              alt="Why Choose Us as  Modular Building"
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"

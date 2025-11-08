@@ -52,6 +52,7 @@ export default function Navbar() {
             {/* Search Icon */}
             <button
               onClick={() => toggleDropdown("search")}
+              aria-label="Open search"
               className="relative flex items-center justify-center p-2 rounded-md hover:bg-gray-100 transition"
             >
               <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
@@ -105,11 +106,17 @@ export default function Navbar() {
           </div>
 
           <a href="mailto:info@landsking.com">
-            <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
+            <EnvelopeIcon
+              className="h-6 w-6 hover:opacity-80"
+              aria-label="mail"
+            />
           </a>
 
           <button
             onClick={() => setLanguage(language === "EN" ? "AR" : "")}
+            aria-label={`Switch language to ${
+              language === "EN" ? "Arabic" : "English"
+            }`}
             className="px-2 py-1 border rounded text-sm "
           >
             {language}
@@ -461,6 +468,7 @@ export default function Navbar() {
             {/* Search Icon */}
             <button
               onClick={() => toggleDropdown("search")}
+              aria-label="Open search"
               className="relative flex items-center justify-center p-2 rounded-md hover:bg-gray-100 transition"
             >
               <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
@@ -519,6 +527,9 @@ export default function Navbar() {
 
           <button
             onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
+            aria-label={`Switch language to ${
+              language === "EN" ? "Arabic" : "English"
+            }`}
             className="px-2 py-1 border rounded text-sm "
           >
             {language}

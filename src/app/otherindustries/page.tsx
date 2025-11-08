@@ -389,7 +389,7 @@ export default function Otherindustries() {
 
             <img
               src="/menupageimg/peb2.jpg"
-              alt=" Buildings"
+              alt=" other industries"
               className="rounded-md shadow-md  object-cover"
             />
           </div>
@@ -532,7 +532,7 @@ export default function Otherindustries() {
             <div className="absolute -bottom-4 -right-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/menupageimg/peb8.jpg" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt=" other industries Manufacturing Facility"
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"
@@ -673,7 +673,7 @@ export default function Otherindustries() {
               <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
               <img
                 src="/menupageimg/peb9.jpeg"
-                alt="Why Choose Us"
+                alt="Why Choose Us "
                 width={700}
                 height={450}
                 className="relative  rounded-md"
@@ -709,7 +709,7 @@ export default function Otherindustries() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
+              alt="landsking infra"
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"

@@ -78,7 +78,7 @@ const LowCostHousing: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/low-cost-housing-2.jpg"
-                alt="Row 1"
+                alt="landsking low costing housing"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -136,7 +136,7 @@ const LowCostHousing: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/low-cost-housing-3.jpg"
-                alt="Row 2"
+                alt="low costing housing"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -148,7 +148,7 @@ const LowCostHousing: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/low-cost-housing-4.webp"
-                alt="Row 3"
+                alt="applictaions of low cost housing"
                 fill
                 className="object-cover rounded-lg "
               />

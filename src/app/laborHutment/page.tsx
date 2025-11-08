@@ -95,7 +95,7 @@ const LaborHutment: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/labour-hutment-2.jpg"
-                alt="Row 1"
+                alt="Labour Hutment"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -146,7 +146,7 @@ const LaborHutment: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/labour-hutment-3.webp"
-                alt="Row 2"
+                alt="Key Features of labour Hutment"
                 fill
                 className="object-cover rounded-lg "
               />
