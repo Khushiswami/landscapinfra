@@ -75,17 +75,17 @@ export default function SportsLeisureBuilding() {
       </section>
 
       {/* Company Intro Section */}
-      <section className="w-full bg-white py-10 sm:py-12 px-4 sm:px-8 md:px-12">
-        <div className="container mx-auto px-2 sm:px-4">
-          <div className="text-center mb-8 sm:mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold leading-snug max-w-4xl text-[#000080] mx-auto">
+      <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
+        <div className="container mx-auto px-4">
+          <div className="text-center  mb-5 md:mb-10">
+            <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Sports and Recreation Facilities
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Landsking Infra delivers comprehensive Pre-Engineered Building
                 (PEB) solutions for sports and leisure facilities, combining
                 durability, functionality, and aesthetic appeal. Whether its
@@ -93,7 +93,7 @@ export default function SportsLeisureBuilding() {
                 we offer complete services from design and manufacturing to
                 construction, ensuring seamless project execution.
               </p>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Our PEBs effortlessly blend strong structural integrity with
                 attractive designs, suitable for a wide range of uses including
                 equipment storage and team facilities. Landsking Infra is your
@@ -137,12 +137,12 @@ export default function SportsLeisureBuilding() {
       </main>
 
       {/* Info Section */}
-      <section className="bg-gray-50 py-12 sm:py-16 px-4 sm:px-6 md:px-16 text-center mb-10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
+      <section className="bg-gray-50  py-10 md:py-16 px-6 md:px-16 ">
+        <h2 className="text-2xl text-center md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
           Modern Designs with Flexible Customization Options
         </h2>
         <div className="w-12 h-[2px]  mx-auto mt-3 mb-6 relative"></div>
-        <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-700  text-left md:text-center text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           Pre-engineered building (PEB) technology has achieved global
           recognition and is rapidly being embraced by various industries in
           India. These innovative structures provide resource-efficient and

@@ -99,7 +99,7 @@ const FactoryBuilding: React.FC = () => {
                 Prefabricated Factory Buildings Designed for Industrial
                 Applications
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Landsking Infra delivers durable and efficient prefabricated
                 factory buildings suitable for a wide range of industrial uses,
                 such as warehouses, manufacturing units, and testing centers.
@@ -121,15 +121,15 @@ const FactoryBuilding: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Prefab Factory Building Manufacturing Techniques and Technology
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Material Quality - Uses premium steel and insulated panels for
                 durability and thermal efficiency.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Structural Design - Features strong columns, beams, and trusses
                 to guarantee stability and precision.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Flexible Construction - Offsite fabrication reduces on-site
                 disruptions and accelerates the installation process.
               </p>
@@ -158,11 +158,11 @@ const FactoryBuilding: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Key Applications of Prefabricated Factory Buildings
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Landsking Infras factory buildings cater to a wide range of
                 industrial requirements, such as:
               </p>
-              <ul className="text-gray-700 mb-4 space-y-1 list-disc pl-6">
+              <ul className="text-gray-700 md:text-lg mb-4 space-y-1 list-disc pl-6">
                 <li>Production plants and manufacturing units</li>
                 <li>Warehouses and distribution centers</li>
                 <li>Testing and quality assurance labs</li>
@@ -178,7 +178,7 @@ const FactoryBuilding: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Landsking Infra?
               </h3>
-              <ul className="space-y-1 list-disc pl-6 text-gray-700">
+              <ul className="space-y-1 list-disc pl-6 text-gray-700 md:text-lg">
                 <li>Trusted Expertise Since 1999</li>
                 <li>Comprehensive Turnkey Project Solutions</li>
                 <li>Pan-India Project Delivery & Implementation</li>

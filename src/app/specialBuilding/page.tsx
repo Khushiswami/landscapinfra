@@ -85,17 +85,17 @@ export default function IndustrialBuildingsConstruction() {
       </section>
 
       {/* Company Intro Section */}
-      <section className="w-full bg-white py-10 sm:py-12 px-4 sm:px-8 md:px-12">
-        <div className="container mx-auto px-2 sm:px-4">
-          <div className="text-center mb-8 sm:mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
+      <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
+        <div className="container mx-auto px-4">
+          <div className="text-center  mb-5 md:mb-10">
+            <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Prefab Construction of Specialized Buildings
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 We specialize in the design and manufacturing of versatile
                 prefabricated structures, including K-houses, liftable porta
                 cabins, Mi Homes, control pulpits, and soundproof enclosures.
@@ -103,7 +103,7 @@ export default function IndustrialBuildingsConstruction() {
                 durable, industry-compliant solutions tailored to a wide range
                 of applications.
               </p>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Our capabilities go beyond special structures — offering
                 high-quality prefabricated warehouses, factory buildings,
                 industrial sheds, poultry shelters, cold storage units, and
@@ -177,14 +177,14 @@ export default function IndustrialBuildingsConstruction() {
       </main>
 
       {/* Info Section */}
-      <section className="bg-gray-50 py-12 sm:py-16 px-4 sm:px-6 md:px-16 text-center mb-10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-black uppercase">
+      <section className="bg-gray-50  py-10 md:py-16 px-6 md:px-16 ">
+        <h2 className="text-2xl text-center md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
           Functional Structures Designed for Everyday Life
         </h2>
         <div className="w-12 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative">
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-[#000080]"></span>
         </div>
-        <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-700  text-left md:text-center text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           Our team is professionally trained to deliver quality and excellence,
           proficient at every stage of the manufacturing process—from gathering
           requirements to production and installation.

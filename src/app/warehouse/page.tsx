@@ -55,7 +55,7 @@ const Warehouse: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
@@ -71,13 +71,13 @@ const Warehouse: React.FC = () => {
                 Pre-fabricated Warehouse and Storage Solutions by LandsKing
                 Infra.
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Boost your industrial storage and logistics efficiency with
                 LandsKing Infras pre-fabricated warehouse and godown structures
                 — engineered for strength, quick deployment, and
                 cost-effectiveness.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 LandsKing Infra, a prominent name among warehouse structure
                 manufacturers in India, specializes in delivering pre-engineered
                 warehouses tailored to client-specific demands.
@@ -94,26 +94,26 @@ const Warehouse: React.FC = () => {
           {/* Row 2 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">
+              <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Pre-Engineered Warehouses?
-              </h3>
-              <p className="text-gray-700 mb-4">
+              </h2>
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Rapid Installation - Up to 50% faster construction than
                 traditional methods — enabling quicker operational readiness.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Cost Efficiency - Reduce overall costs with minimal material
                 waste and lower labor requirements.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Customizable Designs - Fully tailored to your specific
                 dimensions, layout, and workflow needs.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Strength & Durability - Built to be earthquake-resistant and
                 weatherproof, ensuring long-term reliability.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4  md:text-lg">
                 Easily Expandable - Designed for future scalability, allowing
                 smooth expansion as your business grows.
               </p>
@@ -129,8 +129,8 @@ const Warehouse: React.FC = () => {
           </div>
 
           {/* Turnkey Solutions */}
-          <div className="text-center mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-[#000080]">
+          <div className=" text-left md:text-center mx-auto">
+            <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
               LandsKing Infras Complete Turnkey Warehouse Solutions Include:
             </h2>
             <p className="text-gray-700 text-lg">
@@ -158,7 +158,7 @@ const Warehouse: React.FC = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4 md:text-[#000080] md:text-3xl">
+              <h3 className="text-2xl font-bold mb-4 text-[#000080] md:text-3xl">
                 Main Advantages of LandsKing Infras Pre-Engineered Warehouses
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
@@ -194,7 +194,7 @@ const Warehouse: React.FC = () => {
           {/* Row 4 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4 md:text-[#000080] md:text-3xl">
+              <h3 className="text-2xl font-bold mb-4 text-[#000080] md:text-3xl">
                 Applications Across Industries
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
@@ -249,10 +249,10 @@ const Warehouse: React.FC = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-4 md:text-[#000080] md:text-3xl">
+              <h3 className="text-2xl font-bold mb-4 text-[#000080] md:text-3xl">
                 Why Landsking Infra Pvt Ltd Prefab?
               </h3>
-              <ul className="space-y-1">
+              <ul className="space-y-1 text-gray-700">
                 <li>Trusted Expertise Since 1999</li>
                 <li>Comprehensive Turnkey Project Solutions</li>
                 <li>Pan-India Project Delivery & Implementation</li>
