@@ -48,7 +48,7 @@ const categories: Category[] = [
       "From landmark structures to custom-designed special-purpose buildings, our solutions combine modern engineering with sustainability. We deliver unique projects that stand out for their design, durability, and environmental responsibility.",
   },
   {
-    title: "Industrial Buildings Construction",
+    title: "Industrial Buildings ",
     images: [
       "/pebslider/i.jpg",
       "/pebslider/ione.jpg",
@@ -105,7 +105,7 @@ export default function Aboutslider() {
 
             return (
               <div key={idx} className="shadow-md overflow-hidden relative">
-                <div className="relative w-full h-64">
+                <div className="relative w-full h-45 md:h-64">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={mobIndex}

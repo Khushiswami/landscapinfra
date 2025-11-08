@@ -126,7 +126,7 @@ export default function PebheaderW() {
     { name: "Insights", href: "#" },
     {
       name: "About",
-      href: "/about",
+      href: "/pebabout/about",
       subItems: [
         { name: "Our Leadership", href: "/pebabout/leadership" },
         { name: "Our History", href: "/pebabout/history" },

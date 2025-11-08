@@ -69,7 +69,7 @@ export default function IndustrialBuildingsConstruction() {
       <Pebheader />
 
       {/* Hero Section */}
-      <section className="w-full min-h-[350px] sm:min-h-[450px] md:min-h-[500px] flex flex-col md:flex-row">
+      <section className="w-full min-h-[300px] md:min-h-[500px] flex flex-col md:flex-row">
         <div
           className="flex-1 flex items-center justify-center p-6 sm:p-8 bg-cover bg-center relative"
           style={{

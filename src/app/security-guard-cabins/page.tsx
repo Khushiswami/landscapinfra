@@ -55,7 +55,7 @@ const Securityguardcabins: React.FC = () => {
         <Pebheader />
 
         {/* Hero Section */}
-        <section className="w-full min-h-[500px] flex flex-col md:flex-row">
+        <section className="w-full min-h-[300px] md:min-h-[500px] flex flex-col md:flex-row">
           {/* Left Column */}
           <div
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
@@ -67,7 +67,7 @@ const Securityguardcabins: React.FC = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-                Clean Room
+                Security Guard Cabins
               </h1>
             </div>
           </div>

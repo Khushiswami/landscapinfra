@@ -48,7 +48,7 @@ const categories: Category[] = [
       "From landmark structures to custom-designed special-purpose buildings, our solutions combine modern engineering with sustainability. We deliver unique projects that stand out for their design, durability, and environmental responsibility.",
   },
   {
-    title: "Industrial Buildings Construction",
+    title: "Industrial Buildings ",
     images: [
       "/pebslider/i.jpg",
       "/pebslider/ione.jpg",
