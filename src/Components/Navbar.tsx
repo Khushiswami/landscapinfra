@@ -522,7 +522,10 @@ export default function Navbar() {
           </div>
 
           <a href="mailto:info@landsking.com">
-            <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
+            <EnvelopeIcon
+              className="h-6 w-6 hover:opacity-80"
+              aria-label="mail"
+            />
           </a>
 
           <button
@@ -545,6 +548,7 @@ export default function Navbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="xl:hidden text-black"
+          aria-label="Menu"
         >
           {menuOpen ? (
             <XMarkIcon className="h-7 w-7" />

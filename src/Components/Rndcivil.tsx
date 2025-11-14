@@ -36,6 +36,7 @@ export default function Rndcivil() {
         loop
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
+        aria-label=""
       />
 
       {/* Black Blur Overlay */}

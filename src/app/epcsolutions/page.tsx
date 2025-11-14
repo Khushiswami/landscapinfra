@@ -285,9 +285,12 @@ export default function Epcsolutions() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label="EPC Solutions video: Engineering, Procurement, and Construction process from concept to completion"
         >
           <source src="/video/epc.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video tag. This video showcases EPC
+          (Engineering, Procurement, and Construction) solutions, highlighting
+          the process from concept to completion.
         </video>
 
         {/* Optional dark overlay for better text contrast */}

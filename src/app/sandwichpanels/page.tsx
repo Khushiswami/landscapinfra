@@ -213,9 +213,15 @@ export default function Sandwichpanels() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label="Sandwich panels video:Sandwich panels are high-performance construction materials
+              comprising two outer metal sheets and an inner insulating core
+              made of PUR/PIR, EPS, Rockwool, or Glasswool"
         >
           <source src="/video/sandwich.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video tag. This video showcases
+          Sandwich panels are high-performance construction materials comprising
+          two outer metal sheets and an inner insulating core made of PUR/PIR,
+          EPS, Rockwool, or Glasswool.
         </video>
 
         {/* Optional dark overlay for better text contrast */}

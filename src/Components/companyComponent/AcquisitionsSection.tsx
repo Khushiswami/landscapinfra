@@ -9,13 +9,13 @@ export default function AcquisitionsSection() {
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-10 text-[#000080]">
-          Our Latest Acquisitions
+          Our Acquisitions
         </h2>
         <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-          We are a growing company! To quickly fulfill our purpose of
-          harmonizing product, nature and life, we have acquired many firms to
-          advance our offerings and add people who share our vision for
-          transforming industry.
+          We are a growing company! To rapidly fulfill our mission of
+          harmonizing product, nature, and life, we have acquired several firms
+          to expand our offerings and bring on board talented individuals who
+          share our vision of transforming the industry.
         </p>
       </div>
 
@@ -34,13 +34,14 @@ export default function AcquisitionsSection() {
             className="w-full h-44 sm:h-48 object-cover rounded-md mb-4"
           />
           <h3 className="text-lg sm:text-xl font-semibold text-[#000080] mb-3 text-center">
-            Medidata Solutions
+            Clinical Research
           </h3>
           <p className="text-gray-600 text-sm leading-relaxed flex-grow text-center">
-            Adds clinical expertise & cloud solutions for smarter development
-            and commercialization of drugs & treatments. Improves how clinical
-            research is designed, conducted & analyzed. Positions Dassault
-            Systèmes to lead the digital transformation in healthcare.
+            Adds clinical expertise and cloud-based solutions to enable smarter
+            development and commercialization of drugs and treatments. Enhances
+            the design, execution, and analysis of clinical research,
+            positioning Dassault Systèmes to lead the digital transformation in
+            healthcare.
           </p>
           <a
             href="#"
@@ -78,7 +79,6 @@ export default function AcquisitionsSection() {
           </a>
         </div>
 
-        {/* Card 3 */}
         <div className="bg-white rounded-xl shadow p-6 flex flex-col">
           <Image
             src="/company/about.webp"

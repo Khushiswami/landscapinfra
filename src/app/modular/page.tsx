@@ -296,9 +296,15 @@ export default function Modular() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label=" Modular Video: Build your project offsite with fast accuracy and quality. Enjoy
+              faster completion and effortless on-site assembly for seamless
+              results."
         >
           <source src="/video/modular.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video tag. This video showcases
+          Modular Build your project offsite with fast accuracy and quality.
+          Enjoy faster completion and effortless on-site assembly for seamless
+          results.
         </video>
 
         {/* Optional dark overlay for better text contrast */}

@@ -288,9 +288,15 @@ export default function Peb() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label="Peb video: Pre-Engineered Buildings (PEBs) are modern steel structures
+              designed, fabricated, and assembled using standardized components
+              for faster construction."
         >
           <source src="/video/peb.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video tag. This video showcases:
+          Pre-Engineered Buildings (PEBs) are modern steel structures designed,
+          fabricated, and assembled using standardized components for faster
+          construction.
         </video>
 
         {/* Dark overlay */}

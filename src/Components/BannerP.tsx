@@ -83,10 +83,13 @@ export default function Banner() {
         loop
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
-      />
+        aria-label={`Video: ${activeSlide.title}. ${activeSlide.desc}`}
+      >
+        Your browser does not support the video. {activeSlide.title}:{" "}
+        {activeSlide.desc}
+      </video>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/70" />
-
       {/* Slide Content */}
       <div className="relative z-10 flex flex-col justify-center h-full mx-auto px-6 sm:px-20 text-left ">
         <AnimatePresence mode="wait">
@@ -113,9 +116,7 @@ export default function Banner() {
           </motion.div>
         </AnimatePresence>
       </div>
-
       {/* Bottom Navigation */}
-
       <div className="absolute bottom-10 sm:bottom-6 left-0 sm:left-1/2 sm:-translate-x-1/2 w-full px-6 z-10">
         {/* <div className="absolute bottom-6 left-0 sm:left-1/2 sm:-translate-x-1/2 w-full px-6 z-10"> */}
         <div

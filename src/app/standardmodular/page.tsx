@@ -255,9 +255,13 @@ export default function Standardmodular() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label="Standardmodular Video:   Prefabricated structures are buildings or components manufactured
+              in a factory and then transported to the site for quick assemblly."
         >
           <source src="/video/structure.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video tag. This video showcases
+          Prefabricated structures are buildings or components manufactured in a
+          factory and then transported to the site for quick assemblly.
         </video>
 
         {/* Optional dark overlay for better text contrast */}

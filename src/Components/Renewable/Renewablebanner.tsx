@@ -62,6 +62,8 @@ export default function Renewablebanner() {
         loop
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
+        aria-label=" Your trusted EPC partner for high-performance, utility-scale, and
+              large industrial solar power projects."
       />
 
       {/* Overlay */}

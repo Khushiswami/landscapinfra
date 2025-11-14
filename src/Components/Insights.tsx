@@ -179,17 +179,18 @@ export default function Insights() {
         ))}
       </Swiper>
 
-      {/* Custom navigation arrows */}
       <div className="flex justify-end gap-3 md:mt-6">
         <button
           ref={prevRef}
           className="bg-white font-light border border-[#000080] text-[#000080] p-2 rounded-[3px] hover:bg-[#8080FF] "
+          aria-label="Previous slide"
         >
           <FaArrowLeft size={16} className="font-light" />
         </button>
         <button
           ref={nextRef}
           className="bg-white border border-[#000080] text-[#000080] p-2 rounded-[3px] hover:bg-[#8080FF]"
+          aria-label="Next slide"
         >
           <FaArrowRight size={16} className="font-light" />
         </button>

@@ -165,9 +165,13 @@ export default function Lightguage() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label="Lightguage video: Build smarter with our Light Gauge Steel Framing. Offsite
+              precision meets on-site speed and reliability."
         >
           <source src="/video/light.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video tag. This video showcases
+          Build smarter with our Light Gauge Steel Framing. Offsite precision
+          meets on-site speed and reliability.
         </video>
 
         {/* Optional dark overlay for better text contrast */}

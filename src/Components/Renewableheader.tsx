@@ -46,15 +46,23 @@ export default function Renewableheader() {
 
         {/* Mobile Icons */}
         <div className="flex items-center space-x-3 md:hidden">
-          <button>
+          {/* <button>
             <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
-          <button>
-            <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
+          </button> */}
+
+          <a href="mailto:info@landsking.com">
+            <EnvelopeIcon
+              className="h-6 w-6 hover:opacity-80"
+              aria-label="mail"
+            />
+          </a>
+
           <button
-            onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
-            className="px-2 py-1 border rounded text-sm hover:bg-gray-100"
+            onClick={() => setLanguage(language === "EN" ? "AR" : "")}
+            aria-label={`Switch language to ${
+              language === "EN" ? "Arabic" : "English"
+            }`}
+            className="px-2 py-1 border rounded text-sm "
           >
             {language}
           </button>
@@ -191,19 +199,6 @@ export default function Renewableheader() {
 
         {/* Desktop Right Icons */}
         <div className="hidden xl:flex items-center space-x-4">
-          {/* <div className="hidden md:flex items-center space-x-4"> */}
-          {/* <button>
-            <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
-          <button>
-            <EnvelopeIcon className="h-6 w-6 hover:opacity-80" />
-          </button>
-          <button
-            onClick={() => setLanguage(language === "EN" ? "AR" : "EN")}
-            className="px-2 py-1 border rounded text-sm hover:bg-gray-100"
-          >
-            {language}
-          </button> */}
           <Link
             href="/renewable-contact"
             className="bg-[#000080] text-white px-4 py-2 rounded hover:bg-black font-semibold"
@@ -220,6 +215,7 @@ export default function Renewableheader() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="xl:hidden text-black"
+          aria-label="Menu"
         >
           {menuOpen ? (
             <XMarkIcon className="h-7 w-7" />
