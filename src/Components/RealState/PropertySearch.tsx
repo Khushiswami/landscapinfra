@@ -36,6 +36,40 @@ const PropertySearch = () => {
   const [projectType, setProjectType] = useState("");
   const [location, setLocation] = useState("");
   const [bedroom, setBedroom] = useState("");
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = async () => {
+    setLoading(true);
+    const payload = {
+      activeTab,
+      projectType,
+      location,
+      bedroom,
+      priceRange: price,
+      constructionStatus: selectedConstruction,
+      buildingType: selectedBuildingType,
+    };
+
+    try {
+      const res = await fetch("/api/realform", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        alert(data.message);
+      } else {
+        alert("Failed to submit form.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong!");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section className="w-full bg-gray-50 py-12 px-6 lg:px-22 md:px-15">
@@ -166,8 +200,12 @@ const PropertySearch = () => {
                 </div>
 
                 <div className="flex items-end">
-                  <button className="px-4 py-5 mt-6 rounded-4xl font-semibold border border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition">
-                    0 PROJECTS FOUND →
+                  <button
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className="px-4 py-5 mt-6 rounded-4xl font-semibold border border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {loading ? "Submitting..." : "0 PROJECTS FOUND →"}
                   </button>
                 </div>
               </>
@@ -238,8 +276,15 @@ const PropertySearch = () => {
                 </div>
 
                 <div className="flex items-end">
-                  <button className="px-4 py-5 mt-6 rounded-4xl font-semibold border border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition">
+                  {/* <button className="px-4 py-5 mt-6 rounded-4xl font-semibold border border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition">
                     0 PROJECTS FOUND →
+                  </button> */}
+                  <button
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className="px-4 py-5 mt-6 rounded-4xl font-semibold border border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {loading ? "Submitting..." : "0 PROJECTS FOUND →"}
                   </button>
                 </div>
               </>
@@ -262,37 +307,6 @@ const PropertySearch = () => {
                   />
                 </div>
 
-                {/* Construction Status */}
-                {/* <div className="relative">
-                  <label className="block text-gray-600 text-sm mb-1 flex items-center gap-1">
-                    <Hammer size={16} /> Construction Status
-                  </label>
-                  <div
-                    className="flex items-center justify-between border-b border-gray-400 py-1 cursor-pointer text-sm text-gray-600"
-                    onClick={() => setConstructionOpen(!constructionOpen)}
-                  >
-                    {selectedConstruction || "Select Construction Status"}
-                    <ChevronDown size={16} />
-                  </div>
-                  {constructionOpen && (
-                    <ul className="absolute bg-white border border-gray-300 mt-1 w-full z-10 shadow-lg">
-                      {CONSTRUCTION_STATUS.map((status) => (
-                        <li
-                          key={status}
-                          className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
-                          onClick={() => {
-                            setSelectedConstruction(status);
-                            setConstructionOpen(false);
-                          }}
-                        >
-                          {status}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div> */}
-
-                {/* Building Type */}
                 <div className="relative">
                   <label className="block text-gray-600 text-sm mb-1 flex items-center gap-1">
                     <Building2 size={16} /> Construction
@@ -323,8 +337,12 @@ const PropertySearch = () => {
                 </div>
 
                 <div className="flex items-end">
-                  <button className="px-4 py-5 mt-6 rounded-4xl font-semibold border border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition">
-                    0 PROJECTS FOUND →
+                  <button
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className="px-4 py-5 mt-6 rounded-4xl font-semibold border border-[#000080] text-[#000080] hover:bg-[#000080] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {loading ? "Submitting..." : "0 PROJECTS FOUND →"}
                   </button>
                 </div>
               </>

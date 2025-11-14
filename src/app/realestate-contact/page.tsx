@@ -1,20 +1,57 @@
+"use client";
+
+import { useState } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaCommentDots } from "react-icons/fa";
 import Footer from "yes/Components/Footer";
-import PebheaderW from "yes/Components/PebheaderW";
+import Navbar from "yes/Components/Navbar";
 import FooterReal from "yes/Components/RealState/FooterReal";
 import Realstateheader from "yes/Components/Realstateheader";
-import Renewableheader from "yes/Components/Renewableheader";
 
-export default function Renewablecontact() {
+export default function Pebcontact() {
+  const [loading, setLoading] = useState(false);
+  const [msg, setMsg] = useState("");
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+    setMsg("");
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+
+    const res = await fetch("/api/contactform", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setMsg("Message sent successfully!");
+      e.target.reset();
+    } else {
+      setMsg("Failed to send message. Try again.");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <>
       <Realstateheader />
+
       {/* Contact Section */}
       <section className="py-12 bg-white mt-20 md:mt-27 md:mx-10">
         <h2 className="text-3xl font-bold text-center text-[#061b49] mb-6 md:text-4xl md:mb-12">
           Contact Us
         </h2>
-        <div className=" mx-auto grid md:grid-cols-2 gap-8 px-4">
+
+        <div className="mx-auto grid md:grid-cols-2 gap-8 px-4">
           {/* Left: Contact Info */}
           <div className="space-y-10">
             {/* Location */}
@@ -67,7 +104,7 @@ export default function Renewablecontact() {
 
           {/* Right: Contact Form */}
           <div>
-            <form action="#" method="POST" className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-gray-700 font-medium">
                   Full Name <span className="text-red-500">*</span>
@@ -79,6 +116,7 @@ export default function Renewablecontact() {
                   required
                 />
               </div>
+
               <div>
                 <label className="block text-gray-700 font-medium">
                   Email Address <span className="text-red-500">*</span>
@@ -90,6 +128,7 @@ export default function Renewablecontact() {
                   required
                 />
               </div>
+
               <div>
                 <label className="block text-gray-700 font-medium">
                   Subject
@@ -100,6 +139,7 @@ export default function Renewablecontact() {
                   className="w-full border-b-2 border-[#061b49] focus:outline-none focus:border-black p-1"
                 />
               </div>
+
               <div>
                 <label className="block text-gray-700 font-medium">
                   Message <span className="text-red-500">*</span>
@@ -112,19 +152,24 @@ export default function Renewablecontact() {
                 />
               </div>
 
+              {/* Message */}
+              {msg && <p className="text-center text-green-600">{msg}</p>}
+
               {/* Button */}
               <div className="flex justify-center">
                 <button
                   type="submit"
                   className="bg-[#000080] hover:bg-black text-white px-8 py-2 rounded transition"
+                  disabled={loading}
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
               </div>
             </form>
           </div>
         </div>
       </section>
+
       <FooterReal />
     </>
   );
