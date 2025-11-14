@@ -45,6 +45,7 @@ export default function Industrybrand() {
             <img
               src={src}
               alt={`Brand ${i + 1}`}
+              loading="lazy"
               className="max-h-full max-w-full object-contain"
             />
           </div>

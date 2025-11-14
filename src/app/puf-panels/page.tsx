@@ -111,7 +111,7 @@ const Pufpanels: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/puf/puf panel.png"
-                alt="Row 1"
+                alt="puf-panels"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -161,7 +161,7 @@ const Pufpanels: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/puf/Types of PUFPIR.png"
-                alt="Row 3"
+                alt="types of puf-panels"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -248,7 +248,7 @@ const Pufpanels: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/puf/"
-                alt="Row 4"
+                alt=" Best-in-Class PUF/PIR Panel Features"
                 fill
                 className="object-cover rounded-lg "
               />

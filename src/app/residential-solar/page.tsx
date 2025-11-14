@@ -409,7 +409,7 @@ export default function Residential() {
           <div className="flex justify-center">
             <img
               src="/resi/ongrid.png"
-              alt=" Buildings"
+              alt="residential-solar"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -424,7 +424,7 @@ export default function Residential() {
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
             <Image
               src="/resi/hybrid.png" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt="Hybrid Rooftop Solar System"
               width={700}
               height={450}
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -475,7 +475,7 @@ export default function Residential() {
           <div className="flex justify-center">
             <img
               src="/resi/off.png"
-              alt=" Buildings"
+              alt=" Off-grid rooftop solar system"
               className="rounded-md shadow-md w-[600px] h-[430px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>

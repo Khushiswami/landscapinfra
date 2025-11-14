@@ -78,7 +78,7 @@ const RailwayShelters: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-2.jpg"
-                alt="Row 1"
+                alt=" Durable and Highly Functional Shelters"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -147,7 +147,7 @@ const RailwayShelters: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-3.jpg"
-                alt="Row 2"
+                alt="Key Features of Prefabricated Shelters"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -159,7 +159,7 @@ const RailwayShelters: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-4.jpeg"
-                alt="Row 3"
+                alt=" Advanced Manufacturing Technology"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -202,7 +202,7 @@ const RailwayShelters: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/railway-shelters-5.jpg"
-                alt="Row 4"
+                alt="  Uses of Prefabricated Shelters"
                 fill
                 className="object-cover rounded-lg "
               />

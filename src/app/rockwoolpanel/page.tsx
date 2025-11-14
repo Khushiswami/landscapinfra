@@ -136,7 +136,7 @@ const Portacabins: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/rockwool/rockwool roof panel.webp"
-                alt="Row 1"
+                alt="rockwool"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -199,7 +199,7 @@ const Portacabins: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/rockwool/rockwool panel (2).jpg"
-                alt="Row 2"
+                alt="Rockwool Sandwich Panels"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -211,7 +211,7 @@ const Portacabins: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/rockwool/rockwool panel (3).jpg"
-                alt="Row 3"
+                alt=" Rockwool Panel Applications"
                 fill
                 className="object-cover rounded-lg "
               />

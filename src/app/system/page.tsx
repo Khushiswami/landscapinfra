@@ -169,7 +169,7 @@ export default function System() {
         <div className="w-full ">
           <img
             src="/solutionsBannerPebsteel.jpg"
-            alt="Hero  img
+            alt="complete solutions
 "
             className="w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] object-cover "
           />

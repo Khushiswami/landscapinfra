@@ -61,7 +61,7 @@ const Warehouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/w-2.jpg"
-                alt="Row 1"
+                alt="warehouse"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -121,7 +121,7 @@ const Warehouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/w-4.jpg"
-                alt="Row 2"
+                alt="warehouses"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -152,7 +152,7 @@ const Warehouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[430px]">
               <Image
                 src="/menupagetwo/w-5.png"
-                alt="Row 3"
+                alt="Main Advantages of LandsKing Infras Pre-Engineered Warehouses"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -231,7 +231,7 @@ const Warehouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/w-6.png"
-                alt="Row 4"
+                alt="  Applications Across Industries"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -243,7 +243,7 @@ const Warehouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/w-7.png"
-                alt="Row 5"
+                alt=" Why Landsking Infra Pvt Ltd Prefab as warehouse"
                 fill
                 className="object-cover rounded-lg"
               />

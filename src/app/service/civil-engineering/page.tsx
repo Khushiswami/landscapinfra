@@ -538,7 +538,7 @@ export default function Civil() {
           <div className="flex justify-center">
             <img
               src="/industrial soalr.jpg"
-              alt=" Buildings"
+              alt=" civil-engineering"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>

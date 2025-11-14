@@ -186,7 +186,7 @@ export default function Simulationservice() {
       <div className="relative w-full h-[70vh] flex items-center justify-center bg-gray-900">
         <Image
           src="/about.png"
-          alt="Renewable Energy"
+          alt="simulation service"
           fill
           className="object-cover opacity-60"
         />
@@ -244,7 +244,7 @@ export default function Simulationservice() {
           <div className="relative rounded-lg overflow-hidden shadow-lg w-full ">
             <Image
               src="/industry.jpg"
-              alt="Office Sample"
+              alt="SIMULATION"
               width={500}
               height={450}
               className="object-cover w-full h-auto"

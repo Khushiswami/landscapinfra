@@ -145,7 +145,7 @@ export default function Projectmanagementconsultancy() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/Crane.jpg"
-                alt="Industrial Building"
+                alt="Project Management Consultancy"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -159,7 +159,7 @@ export default function Projectmanagementconsultancy() {
           <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
             <Image
               src="/Ridge.png"
-              alt="Industrial Building"
+              alt=" Why Landsking Infra Recommends Steel"
               fill
               className="object-cover rounded-lg shadow-lg"
             />

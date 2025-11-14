@@ -347,7 +347,7 @@ export default function Standardmodular() {
           <div className="flex justify-center">
             <img
               src="/modular/Modular Solutions (2).jpg"
-              alt="Landsking Infra Pvt Ltd Prefab Industrial Building"
+              alt="Landsking Infra Pvt Ltd  Quick-to-Deploy Modular Solutions"
               className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -361,7 +361,7 @@ export default function Standardmodular() {
           <div className="relative">
             <Image
               src="/modular/Modular Solutions.jpg"
-              alt="Manufacturing Facility"
+              alt=" Why Choose Ladsking Infra’s Modular Solutions?"
               width={700}
               height={450}
               className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -559,7 +559,7 @@ export default function Standardmodular() {
             <div className="relative">
               <Image
                 src="/modular/Modular Solutions.png"
-                alt="PUF panels in industrial shed"
+                alt="standard modular"
                 width={700}
                 height={450}
                 className="rounded-md     "
@@ -618,7 +618,7 @@ export default function Standardmodular() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
+              alt="Why Choose Landsking Infra Pvt. Ltd for PEBs "
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"

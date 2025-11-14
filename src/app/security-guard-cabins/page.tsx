@@ -79,7 +79,7 @@ const Securityguardcabins: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-2.jpg"
-                alt="Row 1"
+                alt=" Security Guard Cabins"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -155,7 +155,7 @@ const Securityguardcabins: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-3.jpg"
-                alt="Row 2"
+                alt="why choose us Security Guard Cabins"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -167,7 +167,7 @@ const Securityguardcabins: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-4.jpg"
-                alt="Row 3"
+                alt="benfits of peb"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -209,7 +209,7 @@ const Securityguardcabins: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-5.avif"
-                alt="Row 4"
+                alt=" Essential Features of LANDSKING "
                 fill
                 className="object-cover rounded-lg "
               />

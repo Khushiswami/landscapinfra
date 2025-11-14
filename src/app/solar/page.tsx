@@ -151,7 +151,7 @@ export default function Solar() {
           <div className="relative rounded-lg overflow-hidden shadow-lg w-full ">
             <Image
               src="/expertisesoalr/renewwable two.jpg"
-              alt="Office Sample"
+              alt="  Renewable Energy Infrastructure"
               width={500}
               height={450}
               className="object-cover w-full h-auto"

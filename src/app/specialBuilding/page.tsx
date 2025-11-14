@@ -123,7 +123,7 @@ export default function IndustrialBuildingsConstruction() {
             <div className="relative w-full h-60 sm:h-72 md:h-[450px]">
               <Image
                 src="/sectorimg/ste.webp"
-                alt="Industrial Building"
+                alt="special Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

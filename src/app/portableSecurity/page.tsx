@@ -33,7 +33,7 @@ const PortableSecurity = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/new-images/guard-room-2.webp"
-                alt="Row 1"
+                alt="Portable Security Guard Cabins"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -67,7 +67,7 @@ const PortableSecurity = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-4 text-[#000080]">
-                Why Choose Prefab Multi-Storey Buildings?
+                Why Choose Portable Security ?
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>
@@ -103,7 +103,7 @@ const PortableSecurity = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/new-images/guard-room-3.jpg"
-                alt="Row 2"
+                alt="Why Choose Portable Security "
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -115,7 +115,7 @@ const PortableSecurity = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/new-images/guard-room-4.webp"
-                alt="Row 3"
+                alt="  Advanced Manufacturing Technology at EPACK Prefab"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -179,7 +179,7 @@ const PortableSecurity = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/new-images/guard-room-5.avif"
-                alt="Row 4"
+                alt="Uses of Portable Security Guard Cabins"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />
@@ -191,7 +191,7 @@ const PortableSecurity = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/new-images/guard-room-6.webp"
-                alt="Row 5"
+                alt="   Why Choose Portable Security Guard Cabins"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

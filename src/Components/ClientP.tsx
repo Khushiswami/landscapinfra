@@ -50,6 +50,7 @@ export default function Brand() {
           <div className="bg-white border border-gray-200 shadow-sm rounded-lg flex items-center justify-center h-35 w-full p-2 box-border">
             <img
               src={src}
+              loading="lazy"
               alt={`Brand ${i + 1}`}
               className="h-20 w-full object-contain md:h-28"
             />

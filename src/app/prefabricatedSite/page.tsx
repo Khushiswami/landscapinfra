@@ -78,7 +78,7 @@ const PrefabricatedSite: React.FC = () => {
             <div className="relative w-full h-80 md:h-[380px]">
               <Image
                 src="/new-images/prefabricated-2.jfif"
-                alt="Row 1"
+                alt="Prefabricated Site Infrastructure Solutions"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -138,7 +138,7 @@ const PrefabricatedSite: React.FC = () => {
             <div className="relative w-full h-80 md:h-[380px]">
               <Image
                 src="/new-images/prefabricated-3.jpg"
-                alt="Row 2"
+                alt=" Essential Site Infrastructure Components We Provide"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -150,7 +150,7 @@ const PrefabricatedSite: React.FC = () => {
             <div className="relative w-full h-80 md:h-[380px]">
               <Image
                 src="/new-images/prefabricated-4.jpg"
-                alt="Row 3"
+                alt="Why Choose LANDSKING for Modular Infrastructure?"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -210,7 +210,7 @@ const PrefabricatedSite: React.FC = () => {
             <div className="relative w-full h-80 md:h-[380px]">
               <Image
                 src="/new-images/prefabricated-5.jpg"
-                alt="Row 4"
+                alt="Ideal Applications"
                 fill
                 className="object-cover rounded-lg "
               />

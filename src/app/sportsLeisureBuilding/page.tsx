@@ -113,7 +113,7 @@ export default function SportsLeisureBuilding() {
             <div className="relative w-full h-60 sm:h-72 md:h-[450px]">
               <Image
                 src="/sectorimg/sportss.jpeg"
-                alt="Industrial Building"
+                alt="sports leisure Building"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

@@ -156,7 +156,7 @@ const Mihouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-3.jpg"
-                alt="Row 2"
+                alt="High-PrecisionRow 2 mi-house"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -168,7 +168,7 @@ const Mihouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-4.jpg"
-                alt="Row 3"
+                alt="Industries serve"
                 fill
                 className="object-cover rounded-lg "
               />

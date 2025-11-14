@@ -184,7 +184,7 @@ export default function Solarstructure() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/sectorimg/indd.jpg"
-                alt="Industrial Building"
+                alt="  Solar Module Mounting Structures "
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

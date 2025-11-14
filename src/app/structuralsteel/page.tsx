@@ -241,7 +241,7 @@ export default function Structuralsteel() {
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <Image
               src="/menupageimg/peb8.jpg"
-              alt="Manufacturing Facility"
+              alt="Manufacturing Facility of structural steel"
               width={700}
               height={450}
               className="relative rounded-2xl shadow-lg"

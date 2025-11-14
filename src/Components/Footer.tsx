@@ -73,7 +73,7 @@ export default function Footer() {
         { name: "Simulation Service", href: "/simulationservice" },
         {
           name: "Factories Installation",
-          href: "https://staging.landsking.com/fabrication/",
+          href: "/factoriesinstallation",
         },
         { name: "Cold Storage & Warehouse", href: "/coldstorageandwarehouse" },
         { name: "Solar Services", href: "/solar" },
@@ -340,12 +340,20 @@ export default function Footer() {
               Privacy
             </Link>
 
-            <Link
+            {/* <Link
               href="mailto:info@landskinginfra.com"
               className="hover:underline"
             >
+              <a href="mailto:info@landskinginfra.com">info@landskinginfra.com</a>
+
               info@Landskinginfra.com
-            </Link>
+            </Link> */}
+            <a
+              href="mailto:info@landskinginfra.com"
+              className="hover:underline"
+            >
+              info@landskinginfra.com
+            </a>
           </div>
 
           {/* Rights */}

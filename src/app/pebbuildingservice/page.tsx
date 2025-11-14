@@ -460,7 +460,7 @@ export default function Pebbuildingservice() {
               <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
               <Image
                 src="/pebseven.jpeg"
-                alt="PUF panels in industrial shed"
+                alt=" Our Approach to Service"
                 width={600}
                 height={400}
                 className="rounded-md shadow-md relative z-20"
@@ -474,7 +474,7 @@ export default function Pebbuildingservice() {
         <div className="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Image */}
           <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg">
-            <Image src="/cadtool.png" alt="CAD Tools" className="rounded-2xl" />
+            <Image src="/cadtool.png" alt=" Tools" className="rounded-2xl" />
           </div>
 
           {/* Right Content */}
@@ -526,7 +526,7 @@ export default function Pebbuildingservice() {
             <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#000080] rounded-2xl"></div>
             <Image
               src="/peb4.jpeg" // replace with your image
-              alt="Why Choose Us"
+              alt="Why Choose Us as peb"
               width={700}
               height={450}
               className="relative rounded-2xl shadow-lg"

@@ -134,7 +134,7 @@ const Page = () => {
           <div className="flex justify-center">
             <Image
               src="/menupageimg/mod13.jpg"
-              alt=" Buildings"
+              alt=" Plant Engineering"
               width={600}
               height={400}
               className="rounded-md shadow-md object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"

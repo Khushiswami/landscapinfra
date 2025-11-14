@@ -43,6 +43,7 @@ export default function Client() {
               <div className="bg-white border-2 border-gray-300 shadow-md rounded flex items-center justify-center p-4 h-24">
                 <Image
                   src={src}
+                  loading="lazy"
                   alt={`Client ${i + 1}`}
                   className="max-h-full max-w-full object-contain"
                 />

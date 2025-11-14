@@ -309,7 +309,7 @@ export default function Sandwichpanels() {
               src="/menupageimg/sp1.jpg"
               width={700}
               height={450}
-              alt=" Buildings"
+              alt=" Insulation Panels Designed for Modern Construction"
               className="rounded-md shadow-md transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -324,7 +324,7 @@ export default function Sandwichpanels() {
             <div className="absolute -bottom-4 -right-4 w-full h-full   rounded-2xl"></div>
             <img
               src="/menupageimg/sp2.png" // replace with your real factory image
-              alt="Manufacturing Facility"
+              alt=" Advanced Insulating Capabilities of Sandwich Panels"
               width={700}
               height={450}
               className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -519,7 +519,7 @@ export default function Sandwichpanels() {
             <div className="relative">
               <img
                 src="/menupageimg/sp3.jpg"
-                alt="PUF panels in industrial shed"
+                alt=" Sandwich Panels"
                 width={700}
                 height={450}
                 className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
@@ -575,7 +575,7 @@ export default function Sandwichpanels() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Us"
+              alt="Why Choose Us  Sandwich Panels"
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"

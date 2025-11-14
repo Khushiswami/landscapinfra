@@ -79,7 +79,7 @@ const Prefabschool: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-2.jpg"
-                alt="Row 1"
+                alt="prefab-school"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -155,7 +155,7 @@ const Prefabschool: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-3.jpg"
-                alt="Row 2"
+                alt="prefab-school benefits"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -167,7 +167,7 @@ const Prefabschool: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-4.jpg"
-                alt="Row 3"
+                alt="  Industries Served by prefab-school"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -209,7 +209,7 @@ const Prefabschool: React.FC = () => {
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
                 src="/new-images/clean-room-5.avif"
-                alt="Row 4"
+                alt="features of prefab school"
                 fill
                 className="object-cover rounded-lg "
               />
