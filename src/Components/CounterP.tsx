@@ -39,7 +39,7 @@ export default function CounterP() {
   }, []);
 
   return (
-    <section className="py-12 bg-cover bg-center md:px-20 lg:px-40">
+    <section className="py-12 bg-cover bg-center md:px-18 ">
       <div className="mx-[20px] px-5">
         <h2
           className="text-xl md:text-[30px] font-bold text-[#000080] mb-8"
@@ -52,7 +52,7 @@ export default function CounterP() {
         {/* Counter Grid */}
         <div
           className="
-            bg-[#000080] rounded-xl shadow-lg py-5 px-10 md:py-6 md:px-20 lg:px-40
+            bg-[#000080] rounded-xl shadow-lg py-5 px-10 md:py-6 md:px-20 lg:px-30
             grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5
             gap-y-7 justify-items-center
           "
