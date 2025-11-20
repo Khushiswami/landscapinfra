@@ -51,6 +51,7 @@ import Industryservice from "yes/Components/Industryservice";
 import Construct from "yes/Components/Construct";
 import Industryheader from "yes/Components/Industryheader";
 import Industryfooter from "yes/Components/Industryfooter";
+
 type CardProps = {
   icon: ReactNode;
   title: string;

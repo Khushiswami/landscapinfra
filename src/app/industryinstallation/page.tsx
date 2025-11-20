@@ -12,6 +12,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import IndustrySector from "yes/Components/Industrysectors";
 import Industrybanner from "yes/Components/Industrybanner";
 import Industryfooter from "yes/Components/Industryfooter";
+import Head from "next/head";
 
 export default function Industryinstallation() {
   useEffect(() => {
@@ -20,6 +21,13 @@ export default function Industryinstallation() {
 
   return (
     <>
+      <Head>
+        <title>Industry Installation </title>
+        <meta
+          name="Best Industrial Construction Company - Landsking Infra"
+          content="As a leading EPC contractor, Landsking Infra provides complete industrial construction services, including turnkey projects and heavy industrial building construction."
+        />
+      </Head>
       <Industryheader />
       <Industrybanner />
       <IndustrySector />
