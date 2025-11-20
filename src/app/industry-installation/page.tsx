@@ -69,8 +69,6 @@ function Card({ icon, title, description }: CardProps) {
         <div className="absolute flex items-center justify-center bg-[#000080] p-2 sm:p-4 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
           {icon}
         </div>
-
-        {/* Hover underline effect */}
       </div>
 
       {/* Text */}
@@ -78,7 +76,7 @@ function Card({ icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
-        <p className="text-black text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+        <p className="text-black text-justify text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
           {description}
         </p>
       </div>
@@ -429,12 +427,12 @@ const Page = () => {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               We transcend complexity, providing complete industrial solutions
               that guarantee certainty across every stage, from initial
               engineering design to final project commissioning.
             </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               We offer full-spectrum mechanical engineering services,
               guaranteeing a turnkey approach across manufacturing, energy, and
               infrastructure. Our process uses precise CAD modeling for robust
@@ -532,7 +530,7 @@ const Page = () => {
                             <h3 className="text-sm md:text-sm font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                            <p className="text-[10px] text-justify md:text-xs mb-4 line-clamp-3">
                               {project.description}
                             </p>
                             <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
@@ -587,7 +585,7 @@ const Page = () => {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               At landscapinfra, we eliminate design inefficiencies and
               accelerate product development through high-fidelity mechanical
               engineering services. By combining AI-powered design automation,
@@ -770,7 +768,7 @@ const Page = () => {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5 text-center md:text-left">
+                <p className="text-gray-700  mb-5 text-center md:text-left">
                   {selectedArea.description}
                 </p>
                 <div className="flex justify-center md:justify-start">
@@ -823,7 +821,9 @@ const Page = () => {
                 <h3 className="text-lg  text-[#000080] *:font-semibold">
                   {s.title}
                 </h3>
-                <p className="mt-2 text-base text-black">{s.desc}</p>
+                <p className="mt-2 text-base text-justify text-black">
+                  {s.desc}
+                </p>
               </article>
             ))}
           </div>
@@ -840,7 +840,9 @@ const Page = () => {
                 {s.icon}
               </div>
               <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+              <p className="mt-2  text-justify text-sm text-slate-600">
+                {s.desc}
+              </p>
             </article>
           ))}
         </div>
@@ -864,7 +866,9 @@ const Page = () => {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-justify text-black">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -894,7 +898,7 @@ const Page = () => {
           <h1 className="text-2xl md:text-3xl font-bold text-[#000080]">
             Our Mechanical Engineering Service workflow
           </h1>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-justify mt-3 max-w-2xl mx-auto">
             At landscapinfra, we utilize a standardized workflow to streamline
             operations, reduce costs, and provide high-quality mechanical
             engineering services. Our process ensures that every step aligns
@@ -921,7 +925,9 @@ const Page = () => {
               </h2>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <p className="text-gray-600 text-justify text-sm">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>

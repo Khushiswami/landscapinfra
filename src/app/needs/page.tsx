@@ -138,7 +138,7 @@ const Needs = () => {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               LANDSKING INFRA manages the complete asset lifecycle, offering
               unparalleled authority across Residential, Commercial, and
               Industrial sectors. Your specific property needs—whether they

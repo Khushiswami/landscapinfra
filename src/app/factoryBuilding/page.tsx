@@ -99,7 +99,7 @@ const FactoryBuilding: React.FC = () => {
                 Prefabricated Factory Buildings Designed for Industrial
                 Applications
               </h3>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify md:text-lg">
                 Landsking Infra delivers durable and efficient prefabricated
                 factory buildings suitable for a wide range of industrial uses,
                 such as warehouses, manufacturing units, and testing centers.
@@ -121,15 +121,15 @@ const FactoryBuilding: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Prefab Factory Building Manufacturing Techniques and Technology
               </h2>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 Material Quality - Uses premium steel and insulated panels for
                 durability and thermal efficiency.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 Structural Design - Features strong columns, beams, and trusses
                 to guarantee stability and precision.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 Flexible Construction - Offsite fabrication reduces on-site
                 disruptions and accelerates the installation process.
               </p>
@@ -158,7 +158,7 @@ const FactoryBuilding: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Key Applications of Prefabricated Factory Buildings
               </h2>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify md:text-lg">
                 Landsking Infras factory buildings cater to a wide range of
                 industrial requirements, such as:
               </p>
@@ -223,7 +223,7 @@ const FactoryBuilding: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

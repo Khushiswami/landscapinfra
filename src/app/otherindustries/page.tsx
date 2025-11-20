@@ -358,7 +358,7 @@ export default function Otherindustries() {
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
               of Pre-Engineered Buildings (PEBs), delivering complete solutions
               for industrial, commercial, and institutional structures. Our
@@ -367,7 +367,7 @@ export default function Otherindustries() {
               efficiency, and customized designs for diverse applications.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -547,7 +547,7 @@ export default function Otherindustries() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
               fully-integrated PEB manufacturing facility where every stage—
               from design and fabrication to finishing and dispatch—takes place
@@ -555,7 +555,7 @@ export default function Otherindustries() {
               faster delivery, and reliable performance.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our infrastructure is powered by a highly skilled team of
               engineers, supported with state-of-the-art CNC machinery, robotic
               welding systems, and high-capacity fabrication tools. These
@@ -564,7 +564,7 @@ export default function Otherindustries() {
               precision and efficiency.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With strict quality checks at every stage—from automated
               fabrication to final assembly—we ensure that all components meet
               global industry standards. Whether it s a standard warehouse,
@@ -601,7 +601,9 @@ export default function Otherindustries() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-black text-justify">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -692,7 +694,7 @@ export default function Otherindustries() {
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
-            <p>
+            <p className="text-gray-600 text-justify">
               25+ Years of Expertise in prefabricated and steel building
               solutions Nationwide Presence with a strong logistics and project
               execution network In-House Design & Engineering powered by 3D

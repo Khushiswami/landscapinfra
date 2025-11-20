@@ -237,7 +237,7 @@ export default function Lightguage() {
               Infra{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4  text-justify leading-relaxed">
               Landsking Infra is a prominent provider of Light Gauge Steel
               Framing (LGSF) solutions in India, offering strong, sustainable,
               and budget-friendly construction options for diverse applications.
@@ -248,7 +248,7 @@ export default function Lightguage() {
             <h2 className="font-extrabold text-[#000080] leading-snug  ">
               What is Light Gauge Steel Framing (LGSF)?{" "}
             </h2>
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700  text-justify mb-4 leading-relaxed">
               Light Gauge Steel Framing (LGSF) is an advanced construction
               technique that utilizes cold-formed steel components to create
               structural frameworks for various building types. These components
@@ -296,32 +296,32 @@ export default function Lightguage() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong> Accelerated Project Delivery</strong> With components
               manufactured off-site and assembled quickly on-site, construction
               timelines are drastically shortened.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong> Exceptional Strength & Stability</strong> Steel
               structures offer superior load-bearing capabilities and perform
               reliably in seismic zones.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong> Flexible Design Capabilities</strong>Perfect for
               intricate architectural styles, curved forms, multi-level
               buildings, and adaptable layouts.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong> Environmentally Responsible</strong> Steel is fully
               recyclable and produces minimal waste, supporting green
               construction goals.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong> Built-In Resistance to Fire & Pests</strong> Steel
               framing resists termites, rot, warping, and delivers excellent
               fire protection.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong> Optimized Cost Efficiency</strong>Standardized production
               and prefabrication reduce both labor expenses and material waste.
             </p>

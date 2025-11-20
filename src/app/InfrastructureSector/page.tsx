@@ -37,7 +37,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
+        <p className="text-gray-600  text-justify text-base md:text-[17px] tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -98,7 +98,7 @@ export default function InfrastructureSector() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Landsking Infra delivers sturdy and cost-efficient
                 <span className="text-[#000080] font-semibold">
                   {" "}
@@ -110,7 +110,7 @@ export default function InfrastructureSector() {
                 ideal for applications across airports, railways, and various
                 industrial facilities.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Landsking Infra offers flexible, custom-designed Pre-Engineered
                 Buildings tailored to exact specifications, ensuring optimal
                 functionality for diverse applications. Our structures are

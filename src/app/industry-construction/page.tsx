@@ -38,7 +38,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -99,12 +99,12 @@ export default function IndustryConstruction() {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4  text-justify text-sm sm:text-base">
                 Stand out from the competition with cutting-edge and visually
                 appealing Pre-Engineered Institutional Building Solutions from
                 Landsking Infra.
               </p>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4  text-justify text-sm sm:text-base">
                 Our comprehensive range of structures delivers unmatched
                 strength, durability, and elegance. We serve a wide array of
                 sectors, including large-scale Pre-Engineered School Buildings,
@@ -180,7 +180,7 @@ export default function IndustryConstruction() {
           Versatile design options, exceptional quality, and refined aesthetics
         </h2>
         <div className="w-12 h-[2px]  mx-auto mt-3 mb-6 relative"></div>
-        <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-700 text-justify text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           Pre-engineered building technology has gained widespread recognition
           globally. Over time, more and more industries in India are adopting
           this modern technology, which is rapidly becoming mainstream in the

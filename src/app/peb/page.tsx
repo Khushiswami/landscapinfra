@@ -425,7 +425,7 @@ export default function Peb() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-justify text-sm leading-relaxed">
+                <p className="text-gray-600  text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>

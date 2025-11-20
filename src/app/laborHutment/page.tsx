@@ -104,7 +104,7 @@ const LaborHutment: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Durable, Clean, And Affordable Accommodation For Labor
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 LANDSKING specializes in high-quality prefabricated labour
                 hutments, offering ready-to-install structures tailored to your
                 space and workforce needs. From electrical setups and sanitary
@@ -210,7 +210,7 @@ const LaborHutment: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-base md:text-md text-justify">
                       {faq.answer}
                     </p>
                   </div>

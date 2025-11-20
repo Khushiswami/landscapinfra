@@ -358,7 +358,7 @@ export default function Heavyengineering() {
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
               of Pre-Engineered Buildings (PEBs), delivering complete solutions
               for industrial, commercial, and institutional structures. Our
@@ -367,7 +367,7 @@ export default function Heavyengineering() {
               efficiency, and customized designs for diverse applications.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -420,7 +420,7 @@ export default function Heavyengineering() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600  text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -452,7 +452,9 @@ export default function Heavyengineering() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-justify text-black">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}

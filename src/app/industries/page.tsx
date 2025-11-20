@@ -39,7 +39,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg md:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm md:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm md:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -102,14 +102,14 @@ export default function Industries() {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm md:text-base">
+              <p className="text-gray-700 text-justify mb-4 text-sm md:text-base">
                 As modern industrialization continues to expand, prefabrication
                 has emerged as a revolutionary construction technology. It helps
                 in reducing construction timelines and costs, minimizes material
                 waste, and allows for highly flexible and tailored design
                 options to meet diverse project needs.
               </p>
-              <p className="text-gray-700 mb-4 text-sm md:text-base">
+              <p className="text-gray-700 text-justify mb-4 text-sm md:text-base">
                 At{" "}
                 <span className="font-semibold">Landsking Infra Pvt Ltd</span>,
                 we bring over 25 years of expertise in delivering top-quality
@@ -118,7 +118,7 @@ export default function Industries() {
                 sheds, poultry farms, cold storage facilities, clean rooms, and
                 many other specialized structures.
               </p>
-              <p className="text-gray-700 mb-6 text-sm md:text-base">
+              <p className="text-gray-700 text-justify mb-6 text-sm md:text-base">
                 Our skilled team ensures excellence at every stage — from
                 understanding your vision, planning, and design to manufacturing
                 and on-site installation — delivering durable, cost-effective,
@@ -195,7 +195,7 @@ export default function Industries() {
         <div className="w-12 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative">
           <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-[#000080]"></span>
         </div>
-        <p className="text-gray-700 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-700 text-justify text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
           The{" "}
           <span className="text-[#000080] font-semibold">
             pre engineered building

@@ -43,7 +43,7 @@ const Glasswool: React.FC = () => {
           <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
             {title}
           </h3>
-          <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
+          <p className="text-gray-600 text-justify text-base md:text-[17px] tracking-wide mb-5 flex-1">
             {description}
           </p>
         </div>
@@ -143,7 +143,7 @@ const Glasswool: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Glasswool Panel
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Glasswool Panels – Mitigating Risk with Acoustic and Fire
                 Excellence Our Glasswool Sandwich Panels deliver a specialized
                 blend of high-level acoustic absorption and certified fire
@@ -221,7 +221,7 @@ const Glasswool: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Core Applications
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Our Glasswool Panels are the professional standard for critical
                 infrastructure, deployed specifically to enhance safety and
                 performance across various complex builds. Key applications
@@ -264,7 +264,7 @@ const Glasswool: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

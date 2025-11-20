@@ -336,7 +336,7 @@ export default function Factoriesinstallation() {
               Green Buildings{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed mt-3">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed mt-3">
               It is extremely important for CAD architects to understand the
               concept of building design for public infrastructure. Equally
               necessary is the alignment of such professionals with service
@@ -346,7 +346,7 @@ export default function Factoriesinstallation() {
               and works across a wide range of construction projects, including
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 text-justify leading-relaxed">
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Commercial and High-Rise Buildings,Production Facilities,Data
               Centres,Health and Educational Constructions,Industrial and
@@ -402,7 +402,7 @@ export default function Factoriesinstallation() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -499,7 +499,9 @@ export default function Factoriesinstallation() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-700 mb-5 text-justify">
+                  {selectedArea.description}
+                </p>
                 <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                   More{" "}
                   <span className=" p-1 rounded-full text-[#000080]">→</span>
@@ -543,7 +545,7 @@ export default function Factoriesinstallation() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
               fully-integrated PEB manufacturing facility where every stage—
               from design and fabrication to finishing and dispatch—takes place
@@ -551,7 +553,7 @@ export default function Factoriesinstallation() {
               faster delivery, and reliable performance.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               Our infrastructure is powered by a highly skilled team of
               engineers, supported with state-of-the-art CNC machinery, robotic
               welding systems, and high-capacity fabrication tools. These
@@ -560,7 +562,7 @@ export default function Factoriesinstallation() {
               precision and efficiency.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 text-justify leading-relaxed">
               With strict quality checks at every stage—from automated
               fabrication to final assembly—we ensure that all components meet
               global industry standards. Whether it s a standard warehouse,
@@ -589,7 +591,7 @@ export default function Factoriesinstallation() {
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                  <p className="text-sm text-justify text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
                   <p className="text-sm text-black">{item.description}</p>
@@ -628,7 +630,7 @@ export default function Factoriesinstallation() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Left: Text Section */}
             <div>
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
+              <p className="text-gray-700  text-justify text-base leading-relaxed mb-4">
                 With the growing adoption of virtual technologies in
                 construction, the role of lean Building Information Models (BIM)
                 and pre-engineering has become vital. Globally, infrastructure
@@ -636,7 +638,7 @@ export default function Factoriesinstallation() {
                 surveys, and even 3D printing solutions.
               </p>
 
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
+              <p className="text-gray-700  text-justify text-base leading-relaxed mb-4">
                 Key infrastructure sectors where{" "}
                 <span className="font-bold">Landsking Infra Pvt. Ltd.</span>{" "}
                 provides support include:
@@ -651,7 +653,7 @@ export default function Factoriesinstallation() {
                 <li>Stadiums and Leisure Centres</li>
               </ul>
 
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
+              <p className="text-gray-700 text-base text-justify leading-relaxed mb-4">
                 This technological disruption is reshaping the way
                 infrastructure is designed, built, and maintained—ensuring
                 sustainability, efficiency, and safety. Construction firms that
@@ -659,7 +661,7 @@ export default function Factoriesinstallation() {
                 modern infrastructure projects.
               </p>
 
-              <p className="text-gray-700 text-base leading-relaxed">
+              <p className="text-gray-700 text-base  text-justify leading-relaxed">
                 As urban areas continue to transform,{" "}
                 <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
                 earned the trust of clients by offering expertise that minimizes

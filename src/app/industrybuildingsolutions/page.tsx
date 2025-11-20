@@ -159,7 +159,7 @@ export default function Industrybuildingsolutions() {
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6">
             Building & Infrastructure / Industry Building Solutions
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+          <p className="text-gray-600 text-justify max-w-2xl mx-auto mb-12">
             Landsking Infra provides end-to-end construction and infrastructure
             solutions across industrial, commercial, institutional, and public
             sectors, delivering precise engineering, structural integrity, and
@@ -177,7 +177,7 @@ export default function Industrybuildingsolutions() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>

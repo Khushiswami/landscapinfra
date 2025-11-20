@@ -82,7 +82,7 @@ function Card({ title, description, icon }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
-        <p className="text-black text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+        <p className="text-black text-justify text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
           {description}
         </p>
       </div>
@@ -434,7 +434,7 @@ export default function Industryinstallationconstruction() {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               Our teams follow a centralized planning and monitoring system to
               ensure efficiency, quality, and transparency at every stage. We
               maintain strong coordination among clients, architects, and
@@ -464,9 +464,9 @@ export default function Industryinstallationconstruction() {
         <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
             <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
-              Why is LandsKing Infra BEST CONTRACTOR FOR construction PROJECTS?
+              Why is LandsKing Infra Best Contractor for construction Projects?
             </h1>
-            <p className="text-black  text-lg md:text-md">
+            <p className="text-black  text-lg md:text-md text-justify">
               Landsking Infra understands the unique requirements of each
               industrial sector and delivers customized, end-to-end construction
               solutions. Our approach ensures efficient, safe, and

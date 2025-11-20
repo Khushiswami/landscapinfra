@@ -264,7 +264,7 @@ export default function Commercial() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
               Commercial Rooftop Solar Solutions
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
+            <p className="text-sm text-justify sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               At LandsKing Infra delivers industrial-grade rooftop solar
               solutions designed for India’s commercial and manufacturing
               sectors.
@@ -318,7 +318,7 @@ export default function Commercial() {
               Commercial Solar
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               Our commercial solar solutions keep your operations powered and
               your expenses low. With quality, durability, and advanced energy
               management, we ensure long-term savings and seamless solar
@@ -357,10 +357,12 @@ export default function Commercial() {
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                  <p className="text-sm text-justify text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-justify text-black">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -388,7 +390,7 @@ export default function Commercial() {
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
             How Can we Help Your Industry Benefit from Custom Solar?
           </h2>
-          <p className=" mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15 ">
+          <p className=" text-justify mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15 ">
             LandsKing Infra delivers customized rooftop solar solutions for
             India’s commercial and manufacturing sectors. We manage the complete
             process — surveying, designing, installing, and maintaining — to
@@ -413,7 +415,9 @@ export default function Commercial() {
                 <h3 className="text-lg  text-[#000080] *:font-semibold">
                   {s.title}
                 </h3>
-                <p className="mt-2 text-base text-black">{s.desc}</p>
+                <p className=" text-justify mt-2 text-base text-black">
+                  {s.desc}
+                </p>
               </article>
             ))}
           </div>
@@ -430,7 +434,9 @@ export default function Commercial() {
                 {s.icon}
               </div>
               <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+              <p className=" text-justify mt-2 text-sm text-slate-600">
+                {s.desc}
+              </p>
             </article>
           ))}
         </div>

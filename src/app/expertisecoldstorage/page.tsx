@@ -358,7 +358,7 @@ export default function Expertisecoldstorage() {
               Cold Storage{" "}
             </h2>
 
-            <p className="text-gray-700 font-medium mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify font-medium mb-4 leading-relaxed">
               Landsking Infra specializes in advanced cold storage and warehouse
               infrastructure solutions. We design temperature-controlled
               facilities that protect product quality and extend shelf life. Our
@@ -368,7 +368,7 @@ export default function Expertisecoldstorage() {
               provide future-ready storage solutions for diverse industries.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -417,7 +417,7 @@ export default function Expertisecoldstorage() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>

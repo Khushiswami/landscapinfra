@@ -68,7 +68,7 @@ function Card({ icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
-        <p className="text-black text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+        <p className="text-black text-justify text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
           {description}
         </p>
       </div>
@@ -362,7 +362,7 @@ export default function Mechanical() {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               At landscapinfra, we eliminate design inefficiencies and
               accelerate product development through high-fidelity mechanical
               engineering services. By combining AI-powered design automation,
@@ -547,7 +547,7 @@ export default function Mechanical() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5 text-center md:text-left">
+                <p className="text-gray-700 text-justify mb-5 text-center md:text-left">
                   {selectedArea.description}
                 </p>
                 <div className="flex justify-center md:justify-start">
@@ -600,7 +600,9 @@ export default function Mechanical() {
                 <h3 className="text-lg  text-[#000080] *:font-semibold">
                   {s.title}
                 </h3>
-                <p className="mt-2 text-base text-black">{s.desc}</p>
+                <p className="mt-2 text-base text-justify text-black">
+                  {s.desc}
+                </p>
               </article>
             ))}
           </div>
@@ -617,7 +619,9 @@ export default function Mechanical() {
                 {s.icon}
               </div>
               <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+              <p className="mt-2 text-sm text-justify text-slate-600">
+                {s.desc}
+              </p>
             </article>
           ))}
         </div>

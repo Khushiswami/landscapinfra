@@ -112,12 +112,12 @@ const Page = () => {
               Industrial Turnkey Projects
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               We transcend complexity, providing complete industrial solutions
               that guarantee certainty across every stage, from initial
               engineering design to final project commissioning.
             </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               We offer full-spectrum mechanical engineering services,
               guaranteeing a turnkey approach across manufacturing, energy, and
               infrastructure. Our process uses precise CAD modeling for robust
@@ -135,12 +135,6 @@ const Page = () => {
 
           {/* Right Image */}
           <div className="flex justify-center">
-            {/* <Image
-              src="/menupageimg/mod13.jpg"
-              alt=" Buildings"
-              className="rounded-md shadow-md w[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
-            /> */}
-
             <Image
               src="/industry/Industrial Turnkey Projects.png"
               alt="  Industrial Turnkey Projects"
@@ -274,7 +268,6 @@ const Page = () => {
       {/* why choose us */}
       <section className="w-full bg-white py-16 px-6 md:px-26 lg:px-28">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 ">
-          {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
               Why Choose Our EPC / Turnkey Services

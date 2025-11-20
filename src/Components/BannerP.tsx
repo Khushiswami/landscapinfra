@@ -100,7 +100,7 @@ export default function Banner() {
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="text-3xl sm:text-5xl md:text-5xl  font-bold text-white mb-4 sm:mb-6 drop-shadow-lg leading-snug">
+            <h2 className="text-3xl max-w-4xl sm:text-5xl md:text-6xl  font-bold text-white mb-4 sm:mb-6 drop-shadow-lg ">
               {activeSlide.title}
             </h2>
             <p className="text-sm sm:text-lg md:text-xl text-gray-200 mb-6 max-w-xl leading-relaxed">

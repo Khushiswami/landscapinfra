@@ -95,7 +95,7 @@ const MultiStoryBuilding: React.FC = () => {
                 Prefab Multi-Storey Buildings by Landsking Infra
               </h2>
 
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 At Landsking Infra, we excel in crafting innovative
                 prefabricated multi-storey structures that offer unmatched
                 durability, rapid construction, and eco-friendly solutions. With
@@ -118,24 +118,24 @@ const MultiStoryBuilding: React.FC = () => {
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Prefab Multi-Storey Buildings?
               </h2>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Accelerated Build Time – Structural elements are prefabricated
                 off-site and swiftly assembled at the destination, cutting
                 construction time by up to 50% compared to traditional building
                 methods.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Economical Solution – Efficient designs, reduced material waste,
                 and quicker project turnaround help bring down total project
                 costs—without sacrificing quality.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Enhanced Design Versatility – Our buildings offer adaptable
                 layouts, meet varied load-bearing needs, and can be easily
                 expanded in the future—perfect for evolving commercial and
                 institutional spaces.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Eco-Conscious Construction – Off-site manufacturing leads to
                 less on-site disruption, reduced material wastage, and a smaller
                 environmental impact.
@@ -204,7 +204,7 @@ const MultiStoryBuilding: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

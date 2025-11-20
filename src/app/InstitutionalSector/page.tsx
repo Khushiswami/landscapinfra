@@ -36,7 +36,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
+        <p className="text-gray-600  text-justify text-base md:text-[17px] tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -97,12 +97,12 @@ export default function IndustrialBuildingsConstruction() {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 text-justify mb-4  md:text-lg">
                 Stand out from the competition with cutting-edge and visually
                 appealing Pre-Engineered Institutional Building Solutions from
                 Landsking Infra.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 text-justify mb-4  text-justify  md:text-lg">
                 Our comprehensive range of structures delivers unmatched
                 strength, durability, and elegance. We serve a wide array of
                 sectors, including large-scale Pre-Engineered School Buildings,

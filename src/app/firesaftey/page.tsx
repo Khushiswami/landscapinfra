@@ -276,7 +276,7 @@ export default function Firesafety() {
               Fire Safety{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed mt-3">
+            <p className="text-gray-700 mb-4  text-justify leading-relaxed mt-3">
               Landsking Infra delivers comprehensive fire protection and safety
               solutions for industrial, commercial, and institutional
               facilities. Our systems are designed to mitigate risks, safeguard
@@ -329,7 +329,7 @@ export default function Firesafety() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -412,7 +412,9 @@ export default function Firesafety() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-700 text-justify mb-5">
+                  {selectedArea.description}
+                </p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                   Contact{" "}
                   <span className="p-1 rounded-full text-[#000080]">→</span>

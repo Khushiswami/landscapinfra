@@ -244,7 +244,7 @@ export default function Groundmounted() {
               Ground-Mounted Solar Solutions
             </h2>
           </div>
-          <p className="text-gray-700 mb-12 text-sm sm:text-base text-center max-w-3xl mx-auto">
+          <p className="text-gray-700 mb-12 text-justify text-sm sm:text-base text-center max-w-3xl mx-auto">
             At LandsKing Infra, we help you make the best use of your unused
             land by turning it into a beneficial source of solar energy. Our
             systems are designed to save on electricity costs, reduce
@@ -269,7 +269,9 @@ export default function Groundmounted() {
                 <h3 className="text-xl font-semibold mb-2 text-[#000080]">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{item.content}</p>
+                <p className="text-gray-600 text-justify text-sm">
+                  {item.content}
+                </p>
               </div>
             ))}
           </div>
@@ -300,7 +302,7 @@ export default function Groundmounted() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>

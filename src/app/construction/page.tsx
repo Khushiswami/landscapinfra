@@ -34,7 +34,7 @@ function Card({ image, icon, title, description, link }: CardProps) {
       {/* Text */}
       <div className="px-5 pb-6 flex-1 flex flex-col">
         <h3 className="text-xl font-bold tracking-wide mb-3">{title}</h3>
-        <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
+        <p className=" text-justify text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -95,14 +95,14 @@ export default function Construction() {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify md:text-lg">
                 Landsking Infra has successfully delivered numerous
                 infrastructure solutions for the construction sector, including
                 worker accommodations, canteens, site offices, and more. Over
                 the years, we have supported construction companies of all sizes
                 with reliable and efficient prefab solutions.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 With over 7 years of expertise in the prefabricated building
                 industry, Landsking Infra specializes not only in site
                 infrastructure but also in custom-designed warehouses, factory
@@ -182,7 +182,7 @@ export default function Construction() {
           Our Products Serve Prestigious Corporate Leaders
         </h2>
         <div className="w-12 h-[2px]  mx-auto mt-3 mb-6 relative"></div>
-        <p className="text-gray-700  text-left md:text-center text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-700   text-left md:text-center text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           The{" "}
           <span className="text-[#000080] font-semibold">
             pre engineered building

@@ -118,7 +118,7 @@ export default function Epcsolutions() {
             <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
               Our Solar EPC Solutions for a Greener Tomorrow
             </h1>
-            <p className=" text-md md:text-lg max-w-md mx-auto lg:mx-0">
+            <p className="text-md md:text-lg max-w-md mx-auto lg:mx-0">
               LandsKing Infra delivers advanced solar EPC solutions, from
               ideation to commissioning, driving renewable energy innovation.
             </p>
@@ -169,7 +169,7 @@ export default function Epcsolutions() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-base md:text-lg font-medium text-start text-gray-700  mb-6">
+              <h2 className="text-base md:text-lg font-medium text-justify text-gray-700  mb-6">
                 At LandsKing Infra, we offer complete Solar EPC (Engineering,
                 Procurement & Construction) solutions designed to transform
                 clean energy vision into high-performing reality. Our
@@ -205,8 +205,6 @@ export default function Epcsolutions() {
         </div>
       </section>
       <Epc />
-
-      {/* ===== Steps Section ===== */}
 
       <div className="text-center mx-auto  mb-6 md:mb-8 md:mt-7">
         <h2 className="text-2xl text-[#000080] md:text-3xl font-bold ">

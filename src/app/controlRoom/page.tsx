@@ -93,7 +93,7 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Advanced Engineering Solutions for Control Rooms
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="  text-justify text-gray-700 text-lg">
                 LANDSKING offers prefabricated control rooms using high-quality
                 PUF-insulated panels, serving sectors like steel plants, mining,
                 power generation, and beyond. Designed for strength and
@@ -102,7 +102,7 @@ const ControlRoom: React.FC = () => {
                 frameworks.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote

@@ -263,9 +263,9 @@ export default function Industrial() {
           {/* Text */}
           <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
-              Modular Building Solutions
+              Industrial Solar
             </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
+            <p className="text-sm  text-justify sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               Build your project offsite with fast accuracy and quality. Enjoy
               faster completion and effortless on-site assembly for seamless
               results.
@@ -319,7 +319,7 @@ export default function Industrial() {
               Industrial Solar
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               LandsKing Infra is one of India’s most trusted names in industrial
               solar rooftop solutions, delivering high-performance, sustainable
               energy systems. From design to installation, our customized solar
@@ -396,7 +396,9 @@ export default function Industrial() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-black  text-justify">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -424,7 +426,7 @@ export default function Industrial() {
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
             How Can we Help Your Industry Benefit from Custom Solar?
           </h2>
-          <p className=" mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15 ">
+          <p className=" mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15  text-justify">
             At LandsKing Infra, we specialize in industrial rooftop solar
             solutions, starting from 150 kW. Our team analyzes your facility to
             design customized systems that maximize efficiency, reduce energy
@@ -448,7 +450,9 @@ export default function Industrial() {
                 <h3 className="text-lg  text-[#000080] *:font-semibold">
                   {s.title}
                 </h3>
-                <p className="mt-2 text-base text-black">{s.desc}</p>
+                <p className="mt-2 text-base text-black text-justify">
+                  {s.desc}
+                </p>
               </article>
             ))}
           </div>
@@ -465,7 +469,9 @@ export default function Industrial() {
                 {s.icon}
               </div>
               <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+              <p className="mt-2 text-sm text-slate-600 text-justify">
+                {s.desc}
+              </p>
             </article>
           ))}
         </div>

@@ -357,7 +357,7 @@ export default function Epcsolutions() {
               Ladsking Infra{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4  text-justify leading-relaxed">
               At Ladsking Infra, we deliver complete EPC (Engineering,
               Procurement, and Construction) solutions, ensuring a smooth
               process from concept to completion. As a trusted leader in
@@ -404,7 +404,7 @@ export default function Epcsolutions() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               Our comprehensive project management handles every phase of the
               construction process, enabling clients to concentrate on their
               core business while we manage execution. With integrated design,
@@ -529,10 +529,12 @@ export default function Epcsolutions() {
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                  <p className="text-sm text-justify text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-justify text-black">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -578,7 +580,7 @@ export default function Epcsolutions() {
 
             {/* Text Section (Right Side) */}
             <div>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 leading-relaxed mb-4 text-justify">
                 <strong> End-to-End Solutions:</strong> We offer single-point
                 responsibility from design to execution, ensuring seamless
                 project management.

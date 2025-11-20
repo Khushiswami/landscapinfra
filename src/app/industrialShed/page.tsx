@@ -86,14 +86,14 @@ const IndustrialShed: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Pre-engineered Industrial Shed Builders
               </h2>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 As civil construction continues to advance rapidly, the demands
                 on construction sites are growing exponentially. To meet these
                 challenges, prefabricated industrial sheds have gained immense
                 popularity due to their quick installation, easy disassembly,
                 and cost-effectiveness.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 LandsKing Infra, a leading manufacturer of prefabricated
                 structures, delivers top-quality industrial shed solutions at
                 competitive construction costs. The use of pre-engineered
@@ -101,7 +101,7 @@ const IndustrialShed: React.FC = () => {
                 industries, with pre-engineered industrial sheds leading the
                 way.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 With a reputation for reliability and innovation, LandsKing
                 Infra has rapidly become one of the fastest-growing industrial
                 shed manufacturers and suppliers in India, expertly addressing
@@ -122,7 +122,7 @@ const IndustrialShed: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 High-Quality Features of Industrial Sheds
               </h2>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4  text-justify md:text-lg">
                 At LandsKing Infra, we prioritize custom-designed architecture
                 and client-specific construction, ensuring that every
                 prefabricated structure aligns perfectly with your operational
@@ -215,7 +215,7 @@ const IndustrialShed: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Industrial Shed Applications
               </h2>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 LandsKing Infra offers a versatile range of pre-engineered
                 industrial sheds, perfectly suited for construction needs across
                 diverse industries.
@@ -289,7 +289,7 @@ const IndustrialShed: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-base text-justify md:text-md">
                       {faq.answer}
                     </p>
                   </div>

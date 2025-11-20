@@ -89,7 +89,7 @@ const Khouse: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 High-Precision Controlled Environments
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Clean rooms are specialized environments created to keep
                 airborne particles, contaminants, and pollutants at extremely
                 low levels. They are critical for sectors such as
@@ -244,7 +244,7 @@ const Khouse: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-base md:text-md text-justify">
                       {faq.answer}
                     </p>
                   </div>

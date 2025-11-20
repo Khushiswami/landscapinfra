@@ -53,19 +53,19 @@ const Infrastructuremaintanence: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Efficiently Designed Modular Site Offices for Quick Deployment
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 LandsKing Prefab delivers modular site office solutions using
                 advanced building materials like PUF insulated panels, EPS
                 insulated panels, and Light Gauge Steel Framing (LGSF). Designed
                 for rapid deployment, our prefab site offices are the perfect
                 solution for projects requiring a quick and efficient setup.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 From design and fabrication to production and installation, our
                 end-to-end turnkey services ensure a smooth and streamlined
                 experience.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Engineered to withstand extreme weather conditions, our
                 insulated cabins offer exceptional thermal performance. With
                 prefabricated components manufactured off-site, project
@@ -73,7 +73,7 @@ const Infrastructuremaintanence: React.FC = () => {
                 by up to 40%—and minimizing delays caused by weather or other
                 site-related challenges.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 LandsKing has successfully delivered modular site offices to a
                 wide range of clients across India, earning a reputation for
                 reliability, cost-efficiency, and long-lasting performance.
@@ -92,25 +92,25 @@ const Infrastructuremaintanence: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of LandsKing Modular Site Offices
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Tailored to your project needs using PUF/EPS insulated panels
                 and LGSF structures for superior strength and efficiency.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Flexible Wall Heights - Available in various heights with solid
                 construction, offering adaptability across different site
                 requirements.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Lightweight & Easy to Install - OModular panels are quick to
                 assemble and ideal for roof extensions with minimal structural
                 load.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Supports Modern Glazing - Compatible with large glass panels and
                 insulated doors for a clean, professional look.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Enhanced Safety & Comfort - Built-in provisions for smoke
                 detectors, fire safety, and air-conditioning to ensure a secure
                 and comfortable workspace.
@@ -131,21 +131,19 @@ const Infrastructuremaintanence: React.FC = () => {
             <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
               Flexible Applications for Every Need
             </h3>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700 text-lg  text-justify">
               LandsKing offers flexible and innovative design solutions for a
               variety of applications. Our modular site offices and construction
               site office cabins provide efficient and durable workspaces that
               can be quickly installed to support your project needs. Designed
               for adaptability, these prefab units ensure reliable performance
-              across different environments and timelines.
-              <br />
-              <br />
-              Beyond site offices, LandsKing also supplies temporary office
-              cabins ideal for events and other short-term uses. Our
-              prefabricated sales and marketing offices, along with multi-storey
-              modular buildings, offer scalable and cost-effective solutions
-              tailored to meet the evolving demands of your business without
-              compromising on quality or installation speed.
+              across different environments and timelines.Beyond site offices,
+              LandsKing also supplies temporary office cabins ideal for events
+              and other short-term uses. Our prefabricated sales and marketing
+              offices, along with multi-storey modular buildings, offer scalable
+              and cost-effective solutions tailored to meet the evolving demands
+              of your business without compromising on quality or installation
+              speed.
             </p>
           </div>
 

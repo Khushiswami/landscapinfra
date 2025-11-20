@@ -283,7 +283,7 @@ export default function Greenbuilding() {
               Landsking Infra – Green Building Solutions
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed mt-3">
+            <p className="text-gray-700 mb-4 leading-relaxed mt-3 text-justify">
               Landsking Infra is dedicated to delivering eco-friendly,
               energy-efficient, and sustainable infrastructure that minimizes
               environmental impact. Our green building solutions focus on
@@ -298,8 +298,6 @@ export default function Greenbuilding() {
               Landsking Infra creates future-ready, environmentally responsible
               buildings that benefit both people and the planet.
             </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed"></p>
 
             <Link href="/contact">
               <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
@@ -324,7 +322,7 @@ export default function Greenbuilding() {
             Services of{" "}
             <span className="text-[#000080]">Landsking Infra Pvt. Ltd.</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+          <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-justify">
             Our certified green building experts design and retrofit projects to
             meet IGBC, GRIHA, and LEED standards, ensuring long-term energy
             savings and healthier spaces.
@@ -339,7 +337,7 @@ export default function Greenbuilding() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600  text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>

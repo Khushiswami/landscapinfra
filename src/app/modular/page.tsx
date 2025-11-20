@@ -369,7 +369,7 @@ export default function Modular() {
               Smart and Flexible Solutions for Modern Building{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               Lightweight, durable, relocatable, economical, and
               energy-efficient, prefabricated structures are increasingly
               recognized as a modern and sustainable alternative to conventional
@@ -379,7 +379,7 @@ export default function Modular() {
               design flexibility.{" "}
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               At Landsking Infra Pvt. Ltd, we specialize in delivering
               high-quality prefabricated structures tailored to diverse
               applications. Our dry construction process enables quicker project
@@ -428,7 +428,7 @@ export default function Modular() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong>Landsking Infra Pvt. Ltd.</strong> we believe that the
               true value of prefabricated buildings lies in their innovative
               design, structural integrity, and flawless execution. Each project
@@ -437,7 +437,7 @@ export default function Modular() {
               precision, uniformity, and uncompromised quality.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our infrastructure is powered by a highly skilled team of
               engineers, supported with state-of-the-art CNC machinery, robotic
               welding systems, and high-capacity fabrication tools. These
@@ -446,7 +446,7 @@ export default function Modular() {
               precision and efficiency.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Our prefabricated structures are pre-engineered and pre-assembled
               at the factory, reducing on-site work and ensuring quick, seamless
               installation. This approach delivers not only efficiency and
@@ -535,7 +535,9 @@ export default function Modular() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-700 mb-5 text-justify">
+                  {selectedArea.description}
+                </p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                   <a
                     href="/peb-contact"
@@ -576,7 +578,9 @@ export default function Modular() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-justify text-black">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -621,7 +625,7 @@ export default function Modular() {
             </div>
 
             <div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 text-justify leading-relaxed">
                 With advanced prefabrication technology,{" "}
                 <b>Landsking Infra Pvt. Ltd.</b> helps you build smarter and
                 faster. Our modern, fully automated production systems ensure
@@ -629,7 +633,7 @@ export default function Modular() {
                 making prefabrication up to <b>60% quicker</b> than conventional
                 construction methods.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-700 text-justify leading-relaxed mt-4">
                 By cutting down construction timelines, our prefabricated
                 solutions not only <b>speed up project delivery</b> but also
                 guarantee <b>strength, durability, and long-term reliability</b>

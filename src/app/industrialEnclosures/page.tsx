@@ -100,7 +100,7 @@ const IndustrialEnclosures: React.FC = () => {
                 Industrial Enclosures – Engineered for Equipment Protection and
                 Environmental Management
               </h2>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 At Landsking Infra, we excel in crafting innovative
                 prefabricated multi-storey structures that offer unmatched
                 durability, rapid construction, and eco-friendly solutions. With
@@ -123,32 +123,32 @@ const IndustrialEnclosures: React.FC = () => {
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Landsking Infra Industrial Enclosures?
               </h2>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Custom-Engineered Design - Designed to meet your specific
                 operational requirements, industry standards, and spatial
                 constraints.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Robust Construction - Built with high-quality PUF/EPS insulated
                 sandwich panels, ensuring strength, durability, thermal
                 insulation, and weather resistance.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Quick & Modular Installation - Factory-fabricated panels and
                 frames enable faster, hassle-free on-site assembly with minimal
                 disruption.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Thermal & Acoustic Efficiency - Engineered to reduce heat
                 transfer and suppress noise, enhancing overall working
                 conditions.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Corrosion & Fire Resistance - Panels are specially coated and
                 treated to withstand harsh environments and ensure long-lasting
                 safety.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Versatile Applications - Ideal for both indoor and outdoor use
                 across diverse industrial and commercial sectors.
               </p>
@@ -197,12 +197,12 @@ const IndustrialEnclosures: React.FC = () => {
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Complete Turnkey Solutions – From Design to Deployment
               </h2>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 At Landsking Infra, we offer complete turnkey solutions — from
                 design consultation and precision manufacturing to delivery and
                 on-site installation.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 With 15+ years of industry expertise and pan-India delivery
                 capabilities, we ensure smooth, timely, and reliable project
                 execution, even in the most remote or challenging locations.
@@ -273,7 +273,7 @@ const IndustrialEnclosures: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-base text-justify md:text-md">
                       {faq.answer}
                     </p>
                   </div>

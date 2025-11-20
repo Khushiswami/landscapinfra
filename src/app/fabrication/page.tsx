@@ -48,7 +48,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600  text-justify  text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -144,7 +144,7 @@ export default function Fabrication() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4 text-sm sm:text-base text-justify">
                 Landsking Infra delivers sturdy and cost-efficient
                 <span className="text-[#000080] font-semibold">
                   {" "}
@@ -166,7 +166,7 @@ export default function Fabrication() {
                 and project timelines.
               </p>
 
-              <div className="flex items-center justify-center md:justify-start gap-4">
+              <div className=" mt-3 flex items-center justify-center md:justify-start gap-4">
                 <Link href="/contact">
                   <button className="border text-[#000080] border-blue-900 px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
                     GET A QUOTE

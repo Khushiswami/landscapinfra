@@ -36,7 +36,7 @@ const Epcpanels: React.FC = () => {
           <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
             {title}
           </h3>
-          <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
+          <p className=" text-justify text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
             {description}
           </p>
         </div>
@@ -136,7 +136,7 @@ const Epcpanels: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Lightweight & Efficient Solutions for Modern Spaces
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-justify text-lg">
                 EPS (Expanded Polystyrene) panels, also called thermocol
                 sandwich panels, provide a smart, cost-effective solution for
                 cladding, partitions, and thermal insulation. At EPACK Prefab,
@@ -294,7 +294,7 @@ const Epcpanels: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

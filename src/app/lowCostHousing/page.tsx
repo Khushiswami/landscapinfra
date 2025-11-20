@@ -87,7 +87,7 @@ const LowCostHousing: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Innovative and Budget-Friendly Housing with PUF and EPS Panels
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 LANDSKING delivers innovative, budget-friendly housing solutions
                 using PUF and EPS panels, ensuring eco-friendly,
                 energy-efficient, and durable construction. These solutions are
@@ -108,27 +108,27 @@ const LowCostHousing: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Advantages and unique qualities of PUF and EPS panel homes
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Cost-effective construction: Pre-engineered panels minimize
                 labor and installation time, cutting down overall expenses.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Thermal efficiency: Excellent insulation helps maintain indoor
                 comfort while reducing energy usage.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Durability: Built to resist corrosion, pests, fire, and extreme
                 weather for long-lasting performance.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Lightweight and relocatable: Easy to transport and assemble,
                 making them ideal for multiple applications.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Customizable designs: Flexible layouts and finishes tailored to
                 suit varied project needs.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Eco-friendly: Sustainable materials help lower the overall
                 carbon footprint.
               </p>
@@ -213,7 +213,7 @@ const LowCostHousing: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-base text-justify md:text-md">
                       {faq.answer}
                     </p>
                   </div>

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/days-one": "^5.2.7",
+    "@fontsource/lato": "^5.2.7",
     "@fontsource/sofia-sans": "^5.2.8",
     "@fontsource/viga": "^5.2.7",
     "@heroicons/react": "^2.2.0",
