@@ -100,12 +100,12 @@ text-transform: capitalize;"
                 losses worth USD 440 billion?
               </p>
               <p className="text-gray-700 text-lg">
-                At Landsking Infra, we offer advanced cold storage and cold room
-                solutions designed to preserve perishables and minimize waste.
-                With our expertise, commitment to quality, and innovative
-                approach, we are the trusted cold storage manufacturer, cold
-                room manufacturer, and cold room panels supplier for businesses
-                across various industries.
+                At Landsking Infra Infra, we offer advanced cold storage and
+                cold room solutions designed to preserve perishables and
+                minimize waste. With our expertise, commitment to quality, and
+                innovative approach, we are the trusted cold storage
+                manufacturer, cold room manufacturer, and cold room panels
+                supplier for businesses across various industries.
               </p>
               <button
                 className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -120,7 +120,7 @@ text-transform: capitalize;"
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
-                Why Choose Landsking Infra for Your Cold Storage
+                Why Choose Landsking Infra Infra for Your Cold Storage
               </h2>
               <p className="text-gray-700 text-lg text-justify">
                 Expertise & Experience - Extensive experience delivering
@@ -144,7 +144,7 @@ text-transform: capitalize;"
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/cold2.jpg"
-                alt=" Why Choose Landsking Infra for Your Cold Storage"
+                alt=" Why Choose Landsking Infra Infra for Your Cold Storage"
                 fill
                 className="object-cover rounded-lg shadow-lg"
               />

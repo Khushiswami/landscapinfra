@@ -24,19 +24,19 @@ const contacts: Contact[] = [
   {
     title: "Customer Support",
     phone: "877-017-9094",
-    email: "landskinginfra@gmail.com",
+    email: "Landsking Infrainfra@gmail.com",
     img: "/footer/cust.png",
   },
   {
     title: "Technical Support",
     phone: "9981813922",
-    email: "info@landsking.com",
+    email: "info@Landsking Infra.com",
     img: "/footer/tech.png",
   },
   {
     title: "Our Support",
     phone: "9981813922",
-    email: "landskinginfra@gmail.com",
+    email: "Landsking Infrainfra@gmail.com",
     img: "/footer/support.png",
   },
 ];
@@ -112,10 +112,10 @@ const Rndfooter: React.FC = () => {
           {/* ✅ Brand Section */}
           <div className="flex flex-col items-center justify-center text-center p-6 rounded-lg">
             <p className="mb-3 font-medium text-white">
-              Landsking Infr Pvt Limited
+              Landsking Infra Infr Pvt Limited
             </p>
             <button className="px-6 py-2 bg-white text-[#000080] rounded-xl shadow hover:bg-[#5c78b8] hover:text-white transition">
-              Landsking Infr
+              Landsking Infra Infr
             </button>
           </div>
         </div>
@@ -180,7 +180,7 @@ const Rndfooter: React.FC = () => {
 
         {/* ✅ Footer Bottom */}
         <div className="mt-8 text-center text-xs text-gray-300">
-          © {new Date().getFullYear()} Landsking Infra Pvt Ltd. All rights
+          © {new Date().getFullYear()} Landsking Infra Infra Pvt Ltd. All rights
           reserved.
         </div>
       </div>

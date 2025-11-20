@@ -99,7 +99,7 @@ export default function InfrastructureSector() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-justify">
-                Landsking Infra delivers sturdy and cost-efficient
+                Landsking Infra Infra delivers sturdy and cost-efficient
                 <span className="text-[#000080] font-semibold">
                   {" "}
                   Pre-Engineered Buildings (PEBs)
@@ -111,13 +111,14 @@ export default function InfrastructureSector() {
                 industrial facilities.
               </p>
               <p className="text-gray-700 mb-4 text-justify">
-                Landsking Infra offers flexible, custom-designed Pre-Engineered
-                Buildings tailored to exact specifications, ensuring optimal
-                functionality for diverse applications. Our structures are
-                energy-efficient and lightweight, with options for mezzanine
-                floors, EOT cranes, canopies, and more. By integrating advanced
-                technology with innovative design, we deliver reliable solutions
-                that effectively support large-scale infrastructure projects.
+                Landsking Infra Infra offers flexible, custom-designed
+                Pre-Engineered Buildings tailored to exact specifications,
+                ensuring optimal functionality for diverse applications. Our
+                structures are energy-efficient and lightweight, with options
+                for mezzanine floors, EOT cranes, canopies, and more. By
+                integrating advanced technology with innovative design, we
+                deliver reliable solutions that effectively support large-scale
+                infrastructure projects.
               </p>
               <div className="flex items-center gap-4">
                 <Link href="/peb-contact">

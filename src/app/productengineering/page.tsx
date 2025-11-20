@@ -30,13 +30,13 @@ function Card({ image, title, description, titlenew, moredata }: CardProps) {
         <h3 className="text-xl font-bold tracking-wide mb-3 text-[#000080]">
           {title}
         </h3>
-        <p className="text-black text-base tracking-wide mb-5 flex-1">
+        <p className="text-black  text-justify text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
         <h3 className="text-xl font-bold tracking-wide mb-3 text-[#000080]">
           {titlenew}
         </h3>
-        <p className="text-black text-base tracking-wide mb-5 flex-1">
+        <p className="text-black text-justify text-base tracking-wide mb-5 flex-1">
           {moredata}
         </p>
       </div>
@@ -261,7 +261,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
         <div>
           <div className="text-center md:mt-10 mt-5 py-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
-              Landsking’s Core Expertise for this Industry Includes:
+              Landsking Infra’s Core Expertise for this Industry Includes:
             </h2>
           </div>
 
@@ -289,7 +289,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
                       <span className="mt-2 font-semibold text-[#000080] text-3xl md:text-5xl">
                         {sec.title}
                       </span>
-                      <p className="text-[#737373] text-lg md:text-[18px] mt-4">
+                      <p className="text-[#737373] text-justify  text-lg md:text-[18px] mt-4">
                         {sec.description}
                       </p>
                     </div>
@@ -320,7 +320,7 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
                       <span className="mt-2 font-semibold text-[#000080] text-3xl md:text-4xl">
                         {sec.title}
                       </span>
-                      <p className="text-[#737373] text-lg md:text-[18px] mt-4">
+                      <p className="text-[#737373] text-justify text-lg md:text-[18px] mt-4">
                         {sec.description}
                       </p>
                     </div>

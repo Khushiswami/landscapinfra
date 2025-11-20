@@ -43,7 +43,7 @@ export default function Solarcontact() {
         {/* Left Content */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Landsking Infra Pvt Ltd
+            Landsking Infra Infra Pvt Ltd
           </h1>
           <p className="text-lg font-semibold text-white mb-3">
             Power Your Space with the Sun
@@ -106,7 +106,7 @@ export default function Solarcontact() {
                     <span className="text-[#8080FF] text-sm font-semibold mb-3">
                       ★ Verified Customer
                     </span>
-                    <p className="italic text-gray-100 mb-4 line-clamp-4">
+                    <p className="italic text-justify text-gray-100 mb-4 line-clamp-4">
                       “{item.text}”
                     </p>
                     <a

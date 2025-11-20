@@ -54,7 +54,7 @@ const IndustrialEnclosures: React.FC = () => {
     },
     {
       question:
-        "How does Landsking Infra ensure the quality and precision of its enclosures?",
+        "How does Landsking Infra Infra ensure the quality and precision of its enclosures?",
       answer:
         "Quality is assured via stringent, controlled fabrication protocols. This ensures every modular unit maintains perfect dimensional accuracy and adheres to precise structural and airtight specifications.",
     },
@@ -101,7 +101,7 @@ const IndustrialEnclosures: React.FC = () => {
                 Environmental Management
               </h2>
               <p className="text-gray-700 text-lg text-justify">
-                At Landsking Infra, we excel in crafting innovative
+                At Landsking Infra Infra, we excel in crafting innovative
                 prefabricated multi-storey structures that offer unmatched
                 durability, rapid construction, and eco-friendly solutions. With
                 over 20 years of industry experience and advanced production
@@ -121,7 +121,7 @@ const IndustrialEnclosures: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Choose Landsking Infra Industrial Enclosures?
+                Why Choose Landsking Infra Infra Industrial Enclosures?
               </h2>
               <p className="text-gray-700 text-lg text-justify">
                 Custom-Engineered Design - Designed to meet your specific
@@ -156,7 +156,7 @@ const IndustrialEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-3.jpeg"
-                alt="Why Choose Landsking Infra Industrial Enclosures?"
+                alt="Why Choose Landsking Infra Infra Industrial Enclosures?"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -170,14 +170,14 @@ const IndustrialEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-6.jpg"
-                alt=" Applications of Landsking Infra Industrial Enclosures"
+                alt=" Applications of Landsking Infra Infra Industrial Enclosures"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Applications of Landsking Infra Industrial Enclosures
+                Applications of Landsking Infra Infra Industrial Enclosures
               </h2>
               <ul className="text-gray-700 md:text-lg mb-4 space-y-1">
                 <li> Electrical & Transformer Rooms</li>
@@ -198,9 +198,9 @@ const IndustrialEnclosures: React.FC = () => {
                 Complete Turnkey Solutions – From Design to Deployment
               </h2>
               <p className="text-gray-700 text-lg text-justify">
-                At Landsking Infra, we offer complete turnkey solutions — from
-                design consultation and precision manufacturing to delivery and
-                on-site installation.
+                At Landsking Infra Infra, we offer complete turnkey solutions —
+                from design consultation and precision manufacturing to delivery
+                and on-site installation.
               </p>
               <p className="text-gray-700 text-lg text-justify">
                 With 15+ years of industry expertise and pan-India delivery
@@ -223,14 +223,14 @@ const IndustrialEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/ind-4.jpg"
-                alt="Advantages of Choosing Landsking Infra Enclosures"
+                alt="Advantages of Choosing Landsking Infra Infra Enclosures"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Key Advantages of Choosing Landsking Infra Enclosures
+                Key Advantages of Choosing Landsking Infra Infra Enclosures
               </h2>
               <ul className=" text-gray-700 md:text-lg space-y-1">
                 <li> Applicable across diverse industrial sectors</li>

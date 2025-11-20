@@ -61,7 +61,9 @@ export default function Rndstories() {
               <h3 className="text-[#000080] font-medium text-sm md:text-lg mb-3">
                 {story.title}
               </h3>
-              <p className=" text-[#545353] mb-3">{story.Subtitle}</p>
+              <p className=" text-[#545353] text-justify mb-3">
+                {story.Subtitle}
+              </p>
             </div>
           </div>
         ))}

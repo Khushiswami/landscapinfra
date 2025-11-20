@@ -18,8 +18,8 @@ export default function FooterReal() {
           {/* Left: Logo + Social (first on desktop, last on mobile) */}
           <div className="order-2 md:order-1 flex flex-col items-center md:items-start gap-6 w-full md:w-1/4">
             <Image
-              src="/landsking.png"
-              alt="landskinginfra"
+              src="/Landsking Infra.png"
+              alt="Landsking Infrainfra"
               width={140}
               height={80}
             />

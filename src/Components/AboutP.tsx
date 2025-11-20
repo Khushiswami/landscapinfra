@@ -47,9 +47,9 @@ export default function AboutP() {
               fontFamily: "'DM Sans', Arial, sans-serif",
             }}
           >
-            Landsking Infra is one of India’s fastest growing companies as an
-            Industrial Solution Provider. It works on engineering, procurement,
-            construction (EPC) and maintenance companies.
+            Landsking Infra Infra is one of India’s fastest growing companies as
+            an Industrial Solution Provider. It works on engineering,
+            procurement, construction (EPC) and maintenance companies.
           </p>
         </div>
       </div>

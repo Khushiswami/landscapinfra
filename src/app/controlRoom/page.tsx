@@ -94,12 +94,12 @@ const ControlRoom: React.FC = () => {
                 Advanced Engineering Solutions for Control Rooms
               </h3>
               <p className="  text-justify text-gray-700 text-lg">
-                LANDSKING offers prefabricated control rooms using high-quality
-                PUF-insulated panels, serving sectors like steel plants, mining,
-                power generation, and beyond. Designed for strength and
-                reliability, these control rooms come in both lift-on and
-                non-lift-on variants and can be customized with or without steel
-                frameworks.
+                Landsking Infra offers prefabricated control rooms using
+                high-quality PUF-insulated panels, serving sectors like steel
+                plants, mining, power generation, and beyond. Designed for
+                strength and reliability, these control rooms come in both
+                lift-on and non-lift-on variants and can be customized with or
+                without steel frameworks.
               </p>
               <button
                 className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -162,7 +162,7 @@ const ControlRoom: React.FC = () => {
                 Manufacturing Technology
               </h3>
               <p className="text-gray-700 text-lg">
-                LANDSKING leads in control room engineering, combining
+                Landsking Infra leads in control room engineering, combining
                 cutting-edge production technology with superior materials.
                 Designed for peak performance in demanding conditions, our
                 control rooms comply with regulatory approvals and satisfy both
@@ -178,7 +178,7 @@ const ControlRoom: React.FC = () => {
                 Applications
               </h3>
               <p className="text-gray-700 text-lg">
-                LANDSKING provides control room solutions for diverse
+                Landsking Infra provides control room solutions for diverse
                 industries, including:
               </p>
               <ul className=" text-gray-700 md:text-lg space-y-1">

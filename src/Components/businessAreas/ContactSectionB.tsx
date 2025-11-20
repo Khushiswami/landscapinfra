@@ -23,7 +23,7 @@ interface ContactSectionProps {
 }
 
 export default function ContactSectionB({
-  title = "Landsking Infra Pvt Ltd",
+  title = "Landsking Infra Infra Pvt Ltd",
   subtitle = "Get in touch with us – we are always ready to help with your project.",
   description = "Whether you need a basic or elaborate steel building, we will ensure your project is designed, manufactured, and delivered on time.",
   buttonText = "Contact Us",

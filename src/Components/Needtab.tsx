@@ -12,7 +12,7 @@ export default function Needtab() {
       subheading: "Core Capabilities",
 
       paragraph:
-        "India’s emerging real estate powerhouse., LANDSKING INFRA is your strategic partner for maximizing investment performance across the entire asset lifecycle. Our advisors leverage proprietary, real-time intelligence to connect you with the right capital and high-growth opportunities in every market and property sector across India, ensuring your portfolio thrives.",
+        "India’s emerging real estate powerhouse., Landsking Infra Infra is your strategic partner for maximizing investment performance across the entire asset lifecycle. Our advisors leverage proprietary, real-time intelligence to connect you with the right capital and high-growth opportunities in every market and property sector across India, ensuring your portfolio thrives.",
       img: "real/invest.png",
       boxes: [
         {
@@ -99,7 +99,7 @@ export default function Needtab() {
       heading: "Properties & Portfolios",
       subheading: "Business Areas",
       paragraph:
-        "LandsKing Infra Take complete operational control of your real estate assets. Our experts leverage proprietary local supply chain expertise and innovative technology to manage every aspect, from daily operations and accounting to efficiency and energy consumption, ensuring you reduce costs and increase efficiencies. That ensuring your portfolio runs optimally and delivers sustained cost reduction and value.",
+        "Landsking Infra Infra Take complete operational control of your real estate assets. Our experts leverage proprietary local supply chain expertise and innovative technology to manage every aspect, from daily operations and accounting to efficiency and energy consumption, ensuring you reduce costs and increase efficiencies. That ensuring your portfolio runs optimally and delivers sustained cost reduction and value.",
       img: "real/properties.jpg",
       boxes: [
         {
@@ -116,7 +116,7 @@ export default function Needtab() {
         },
         {
           title: "Sustainability & Efficiency Solutions",
-          text: "Learn precisely how Landsking Infra can integrate solutions to significantly reduce operational energy consumption and work toward a net-zero framework. We partner with you to create a sustainable and future-proof asset.",
+          text: "Learn precisely how Landsking Infra Infra can integrate solutions to significantly reduce operational energy consumption and work toward a net-zero framework. We partner with you to create a sustainable and future-proof asset.",
         },
         {
           title: "Fund & Asset Accounting",

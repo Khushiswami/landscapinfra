@@ -95,9 +95,10 @@ export default function Solardesign() {
   ];
   const faqs: FAQ[] = [
     {
-      question: "What is included in LandsKing Infra’s solar design services?",
+      question:
+        "What is included in Landsking Infra Infra’s solar design services?",
       answer:
-        "LandsKing Infra’s solar design services include everything from initial site feasibility studies and shadow analysis to detailed 3D modeling, electrical layouts, and performance simulations. We create optimized system designs that ensure maximum energy generation and long-term reliability. Our team also prepares complete documentation for DISCOM and regulatory approvals. Each project is tailored to meet client goals and on-site conditions. ",
+        "Landsking Infra Infra’s solar design services include everything from initial site feasibility studies and shadow analysis to detailed 3D modeling, electrical layouts, and performance simulations. We create optimized system designs that ensure maximum energy generation and long-term reliability. Our team also prepares complete documentation for DISCOM and regulatory approvals. Each project is tailored to meet client goals and on-site conditions. ",
     },
     {
       question: "Who are your solar design services best suited for?",
@@ -126,7 +127,8 @@ export default function Solardesign() {
         " Yes. We provide ongoing technical support, performance optimization, and design revisions during project execution to ensure your solar system performs exactly as planned.",
     },
     {
-      question: "Can LandsKing Infra assist with tender or bid submissions?",
+      question:
+        "Can Landsking Infra Infra assist with tender or bid submissions?",
       answer:
         " Absolutely. We deliver detailed design packages — including single-line diagrams, BOM, and yield reports — that help EPCs and developers submit competitive and technically sound solar tenders.",
     },
@@ -214,15 +216,16 @@ export default function Solardesign() {
 
           <div className="grid grid-cols-1 md:grid-cols-1 mx-auto md:mx-30 items-center">
             <div>
-              <p className="text-gray-700 text-center mb-4 text-sm sm:text-base">
-                At LandsKing Infra, we believe every solar project deserves a
-                design as unique as its environment. Our team crafts customized
-                solar layouts built around your site’s conditions, energy goals,
-                and financial objectives. From rooftop structures to large-scale
-                ground systems, every design is optimized for maximum
-                efficiency, safety, and long-term reliability. We don’t just
-                create solar plans — we engineer intelligent energy ecosystems
-                that deliver measurable performance and enduring value.
+              <p className="text-gray-700 text-justify  mb-4 text-sm sm:text-base">
+                At Landsking Infra Infra, we believe every solar project
+                deserves a design as unique as its environment. Our team crafts
+                customized solar layouts built around your site’s conditions,
+                energy goals, and financial objectives. From rooftop structures
+                to large-scale ground systems, every design is optimized for
+                maximum efficiency, safety, and long-term reliability. We don’t
+                just create solar plans — we engineer intelligent energy
+                ecosystems that deliver measurable performance and enduring
+                value.
               </p>
             </div>
           </div>
@@ -239,12 +242,12 @@ export default function Solardesign() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Why Choose
             <span className="text-[#000080]">
-              LandsKing Infra for Solar Engineering Design
+              Landsking Infra Infra for Solar Engineering Design
             </span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+          <p className="text-gray-600 text-justify max-w-2xl mx-auto mb-12">
             The foundation of every successful solar project lies in its
-            design.At LandsKing Infra, we blend precision engineering with
+            design.At Landsking Infra Infra, we blend precision engineering with
             real-world insights to build efficient, compliant, and future-ready
             systems. Our expertise reduces rework, speeds up approvals, and
             drives higher project returns.
@@ -260,7 +263,7 @@ export default function Solardesign() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>

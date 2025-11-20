@@ -169,7 +169,7 @@ export default function Otherindustries() {
     {
       subtitle: "Expertise & Innovation",
       description:
-        "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
+        "With decades of expertise, Landsking Infra Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
       image: "/preimages/construction Phase.jpeg",
     },
   ];
@@ -359,17 +359,17 @@ export default function Otherindustries() {
             </h2>
 
             <p className="text-gray-700 mb-4 leading-relaxed text-justify">
-              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
-              of Pre-Engineered Buildings (PEBs), delivering complete solutions
-              for industrial, commercial, and institutional structures. Our
-              buildings are designed with advanced engineering and
-              prefabrication technology, ensuring faster project delivery, cost
-              efficiency, and customized designs for diverse applications.
+              Landsking Infra Infra Pvt. Ltd. is one of India’s leading
+              manufacturers of Pre-Engineered Buildings (PEBs), delivering
+              complete solutions for industrial, commercial, and institutional
+              structures. Our buildings are designed with advanced engineering
+              and prefabrication technology, ensuring faster project delivery,
+              cost efficiency, and customized designs for diverse applications.
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               What is a Pre-Engineered Building?{" "}
-              <span className="font-bold">Landsking Infra pvt.ltd</span> A
+              <span className="font-bold">Landsking Infra Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
               structural framework of primary framing (columns and rafters),
               secondary framing (purlins and girts), along with roof and wall
@@ -402,7 +402,7 @@ export default function Otherindustries() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
+              Landsking Infra Infra Pvt. Ltd. PEB Structures
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -548,11 +548,11 @@ export default function Otherindustries() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4 text-justify">
-              <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
-              fully-integrated PEB manufacturing facility where every stage—
-              from design and fabrication to finishing and dispatch—takes place
-              under one roof. This seamless process ensures superior quality,
-              faster delivery, and reliable performance.
+              <strong>Landsking Infra Infra Pvt. Ltd.</strong> operates a
+              modern, fully-integrated PEB manufacturing facility where every
+              stage— from design and fabrication to finishing and dispatch—takes
+              place under one roof. This seamless process ensures superior
+              quality, faster delivery, and reliable performance.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-4 text-justify">
@@ -569,8 +569,8 @@ export default function Otherindustries() {
               fabrication to final assembly—we ensure that all components meet
               global industry standards. Whether it s a standard warehouse,
               factory building, or a customized industrial project,{" "}
-              <strong>Landsking Infra Pvt. Ltd.</strong> provides dependable,
-              cost-effective, and timely{" "}
+              <strong>Landsking Infra Infra Pvt. Ltd.</strong> provides
+              dependable, cost-effective, and timely{" "}
               <span className="font-semibold">PEB solutions across India.</span>
             </p>
           </div>
@@ -691,7 +691,7 @@ export default function Otherindustries() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Pvt. Ltd for PEBs?
+              Why Choose Landsking Infra Infra Pvt. Ltd for PEBs?
             </h2>
 
             <p className="text-gray-600 text-justify">
@@ -711,7 +711,7 @@ export default function Otherindustries() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <img
               src="/industry.jpg" // replace with your image
-              alt="landsking infra"
+              alt="Landsking Infra Infra"
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"

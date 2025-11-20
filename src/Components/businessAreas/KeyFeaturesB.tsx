@@ -21,12 +21,12 @@ interface KeyFeaturesProps {
 
 export default function KeyFeaturesB({
   heading = "KEY FEATURES",
-  highlight = "OF LANDSKING INFRA PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS",
+  highlight = "OF Landsking Infra Infra PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS",
   img = {
     src: "/industry.jpg",
     alt: "Cold Storage ",
   },
-  description = `At LANDSKING INFRA PVT LTD, we deliver state-of-the-art cold storage systems and energy-efficient cold rooms.`,
+  description = `At Landsking Infra Infra PVT LTD, we deliver state-of-the-art cold storage systems and energy-efficient cold rooms.`,
   features = [],
 }: KeyFeaturesProps) {
   return (

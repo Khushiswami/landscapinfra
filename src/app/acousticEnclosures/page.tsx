@@ -105,7 +105,7 @@ const AcousticEnclosures: React.FC = () => {
                 from loud equipment and protect interiors from external sounds,
                 creating quieter and more productive workplaces.
                 <br /> <br />
-                LANDSKING Prefab specializes in high-performance acoustic
+                Landsking Infra Prefab specializes in high-performance acoustic
                 enclosures made from advanced materials like PUF panels, EPS
                 panels, and Rock Wool. Built for durability and efficiency, our
                 enclosures meet strict noise and safety standards and can be
@@ -123,7 +123,7 @@ const AcousticEnclosures: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
-                Advantages of Landsking Prefab Acoustic Enclosures
+                Advantages of Landsking Infra Prefab Acoustic Enclosures
               </h3>
               <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
                 <li>
@@ -155,7 +155,7 @@ const AcousticEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
                 src="/new-images/acoustic-enclosures-3.jpg"
-                alt=" Advantages of Landsking Prefab Acoustic Enclosures"
+                alt=" Advantages of Landsking Infra Prefab Acoustic Enclosures"
                 fill
                 loading="lazy"
                 className="object-cover rounded-lg "
@@ -167,7 +167,7 @@ const AcousticEnclosures: React.FC = () => {
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
                 src="/new-images/acoustic-enclosures-4.webp"
-                alt="  Landsking Prefab Acoustic Enclosures"
+                alt="  Landsking Infra Prefab Acoustic Enclosures"
                 fill
                 loading="lazy"
                 className="object-cover rounded-lg "

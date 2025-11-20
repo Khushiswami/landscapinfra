@@ -43,11 +43,11 @@ const PortableSecurity = () => {
                 Portable Security Guard Cabins – Strong, Reliable, and Built for
                 Safety
               </h3>
-              <p className="text-gray-700 mb-4">
-                LANDSKING is a trusted manufacturer of prefabricated security
-                cabins and guard rooms. Built with durable PUF or EPS panels,
-                our cabins ensure reliable protection and are among the finest
-                available nationwide. <br />
+              <p className="text-gray-700 mb-4 text-justify">
+                Landsking Infra is a trusted manufacturer of prefabricated
+                security cabins and guard rooms. Built with durable PUF or EPS
+                panels, our cabins ensure reliable protection and are among the
+                finest available nationwide. <br />
                 <br />
                 As a leading name in the industry, we specialize in portable
                 guard cabins designed to provide a safe and comfortable space
@@ -124,11 +124,11 @@ const PortableSecurity = () => {
               <h3 className="text-2xl font-bold mb-4 text-[#000080]">
                 Advanced Manufacturing Technology at EPACK Prefab
               </h3>
-              <p className="text-gray-700 mb-4">
-                At LANDSKING, our manufacturing process allows us to customize
-                the design and structure of each portable security cabin to meet
-                our clients’ specific requirements. This ensures every cabin is
-                tailored and unique for individual needs. <br />
+              <p className="text-gray-700 mb-4 text-justify">
+                At Landsking Infra, our manufacturing process allows us to
+                customize the design and structure of each portable security
+                cabin to meet our clients’ specific requirements. This ensures
+                every cabin is tailored and unique for individual needs. <br />
                 <br />
                 Our cabins are built on a strong steel framework for durability
                 and stability. The walls use composite insulated panels,
@@ -198,7 +198,8 @@ const PortableSecurity = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4 text-[#000080]">
-                Why Choose Portable Security Guard Cabins from Landsking Prefab?
+                Why Choose Portable Security Guard Cabins from Landsking Infra
+                Prefab?
               </h3>
               <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>
@@ -236,11 +237,11 @@ const PortableSecurity = () => {
           {/* Centered Heading + Paragraph */}
           <div className="text-center mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-[#000080]">
-              Why Landsking Prefab?
+              Why Landsking Infra Prefab?
             </h2>
-            <p className="text-gray-700 text-lg">
-              With years of experience in prefabricated solutions, LANDSKING
-              provides portable guard cabins that meet high standards of
+            <p className="text-gray-700 text-lg text-justify">
+              With years of experience in prefabricated solutions, Landsking
+              Infra provides portable guard cabins that meet high standards of
               quality, safety, and efficiency. Our products are designed to
               deliver long-lasting performance and excellent value, reflecting
               our expertise and innovation in the prefab industry.
@@ -315,7 +316,7 @@ const PortableSecurity = () => {
                 {
                   question: "Who manufactures the best acoustic enclosures?",
                   answer:
-                    "LANDSKING has earned a reputation as a trusted acoustic enclosure manufacturer, supplying reliable and effective noise control and soundproofing solutions for multiple applications.",
+                    "Landsking Infra has earned a reputation as a trusted acoustic enclosure manufacturer, supplying reliable and effective noise control and soundproofing solutions for multiple applications.",
                 },
                 {
                   question: "What makes prefabricated security cabins useful?",
@@ -325,7 +326,7 @@ const PortableSecurity = () => {
                 {
                   question: "Who are the top security cabin manufacturers?",
                   answer:
-                    "LANDSKING is a leading PEB security cabin manufacturer in India. The company has partnered with numerous well-known industry brands, providing them with durable and customizable security cabins for a range of applications, ensuring both safety and long-lasting performance.",
+                    "Landsking Infra is a leading PEB security cabin manufacturer in India. The company has partnered with numerous well-known industry brands, providing them with durable and customizable security cabins for a range of applications, ensuring both safety and long-lasting performance.",
                 },
               ].map((faq, idx) => (
                 <details
@@ -338,7 +339,9 @@ const PortableSecurity = () => {
                       ▶
                     </span>
                   </summary>
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
+                  <p className="mt-2 text-justify text-gray-600">
+                    {faq.answer}
+                  </p>
                 </details>
               ))}
             </div>

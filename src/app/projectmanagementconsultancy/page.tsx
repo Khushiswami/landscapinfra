@@ -35,7 +35,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -98,7 +98,7 @@ export default function Projectmanagementconsultancy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                At Landsking Infra, we provide expert Project Management
+                At Landsking Infra Infra, we provide expert Project Management
                 Consultancy services, guiding clients to achieve outstanding
                 results in the field of pre-engineered buildings. Our
                 consultancy focuses on delivering complete construction
@@ -159,14 +159,14 @@ export default function Projectmanagementconsultancy() {
           <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
             <Image
               src="/Ridge.png"
-              alt=" Why Landsking Infra Recommends Steel"
+              alt=" Why Landsking Infra Infra Recommends Steel"
               fill
               className="object-cover rounded-lg shadow-lg"
             />
           </div>
           <div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Why Landsking Infra Recommends Steel{" "}
+              Why Landsking Infra Infra Recommends Steel{" "}
             </h2>
             <p className="text-gray-700 mb-4 text-sm sm:text-base">
               Steel is the preferred choice for construction due to its flexible
@@ -177,7 +177,7 @@ export default function Projectmanagementconsultancy() {
               commercial buildings, hotels, hospitals, schools, and
               universities.
             </p>
-            <h5>Landsking Infra has been a pioneering provider of:</h5>
+            <h5>Landsking Infra Infra has been a pioneering provider of:</h5>
             <ul className="list-disc list-inside text-gray-700 space-y-2 mt-5 mb-5">
               <li>
                 <span className="font-semibold"></span> Architectural and
@@ -214,8 +214,10 @@ export default function Projectmanagementconsultancy() {
           Expert Construction Management Solutions{" "}
         </h2>
         <div className="w-30 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative md:w-150"></div>
-        <p className="text-gray-700 text-sm sm:text-base md:text-lg  leading-relaxed">
-          <span className="text-[#000080] font-semibold">Landsking Infra</span>{" "}
+        <p className="text-gray-700 text-justify text-sm sm:text-base md:text-lg  leading-relaxed">
+          <span className="text-[#000080] font-semibold">
+            Landsking Infra Infra
+          </span>{" "}
           provides expert construction project consultancy, ensuring that every
           project is executed efficiently and successfully. Our consultancy
           services follow a systematic, step-by-step approach designed to

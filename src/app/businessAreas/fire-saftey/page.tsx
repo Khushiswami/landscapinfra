@@ -33,19 +33,20 @@ const testimonialsData = [
 
 const featuresData = [
   {
-    title: "Landsking has developed green spaces in the remotest of locations",
+    title:
+      "Landsking Infra has developed green spaces in the remotest of locations",
     description:
       "facing extremely challenging climatic conditions as well as in densely populated urban areas, along with large-scale beautification around infrastructure projects.",
   },
   {
     title:
-      "Landsking has executed landscaping projects under PPP / BOT formats",
+      "Landsking Infra has executed landscaping projects under PPP / BOT formats",
     description:
       "as well as under EPC contracts, delivering both public and private sector projects efficiently.",
   },
   {
     title:
-      "Landsking also develops elevated gardens, green walls, and podium landscaping",
+      "Landsking Infra also develops elevated gardens, green walls, and podium landscaping",
     description:
       "on a design-build basis, ensuring aesthetics, sustainability, and performance.",
   },
@@ -74,7 +75,7 @@ const HOME_TABS = [
   {
     title: "Pre Engineered Buildings",
     headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
+    body: "Landsking InfraInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
     img: "/about.png",
     buttonText: "VIEW MORE",
     url: "/menupage",
@@ -187,7 +188,7 @@ export default function firesafteies() {
       <ContactSectionB
         title="Fire Saftey"
         subtitle="Building trust with every project"
-        description="Landsking also undertakes elevated landscaping projects executed on a design-build model."
+        description="Landsking Infra also undertakes elevated landscaping projects executed on a design-build model."
         buttonText="Contact Us"
         buttonLink="/industrycontact"
         bgImage="/Bussinessareaimg/higg.png"
@@ -200,7 +201,7 @@ export default function firesafteies() {
           src: "/industryhome/highway.jpg",
           alt: "Fire Saftey",
         }}
-        description="Landsking is a complete landscaping solutions provider, having executed terrain-specific and climate-responsive green projects including urban gardens, highway landscaping, vertical greenery, and sustainable irrigation systems. We have mastered the art of designing and delivering landscapes in complex environments ranging from rugged hills to congested cityscapes."
+        description="Landsking Infra is a complete landscaping solutions provider, having executed terrain-specific and climate-responsive green projects including urban gardens, highway landscaping, vertical greenery, and sustainable irrigation systems. We have mastered the art of designing and delivering landscapes in complex environments ranging from rugged hills to congested cityscapes."
         features={featuresData}
       />
 

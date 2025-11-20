@@ -68,7 +68,7 @@ export default function OurLineage() {
         result-driven experience for every client.
         <br />
         <br />
-        The Landsking Workflow: We initiate by understanding your precise
+        The Landsking Infra Workflow: We initiate by understanding your precise
         requirement and move systematically through shortlisting, site
         organization, negotiation, and deal finalization, concluding with
         complete legal documentation. Every step is managed by your dedicated

@@ -38,7 +38,7 @@ const Form = () => {
         <div>
           <h3 className="text-lg md:text-xl font-medium text-[#000080] mb-6">
             Residential • Commercial • Industrial — Complete Solar EPC Solutions
-            by Landsking Infra.
+            by Landsking Infra Infra.
           </h3>
 
           {/* ✅ Updated Grid Layout */}

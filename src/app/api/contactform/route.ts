@@ -22,7 +22,7 @@ export async function POST(req: Request) {
 
     const mailOptions = {
       from: "Contact Form ",
-      to: "info@landsking.com",
+      to: "info@Landsking Infra.com",
       subject: " Contact Form Submission",
       text: ` Contact Form Submission:
 

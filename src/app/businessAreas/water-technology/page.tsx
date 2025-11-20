@@ -85,17 +85,17 @@ export default function Watertechnology() {
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
                 Stand out from the competition with cutting-edge and visually
                 appealing Pre-Engineered Institutional Building Solutions from
-                Landsking Infra.
+                Landsking Infra Infra.
               </p>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
                 Our comprehensive range of structures delivers unmatched
                 strength, durability, and elegance. We serve a wide array of
                 sectors, including large-scale Pre-Engineered School Buildings,
                 Hostel Complexes, Hospitals, Office Facilities, Exhibition
-                Halls, and more. At Landsking Infra, we collaborate closely with
-                you to develop designs that strike the perfect balance of space,
-                functionality, and flexibility—tailored to meet your
-                institutional and commercial needs.
+                Halls, and more. At Landsking Infra Infra, we collaborate
+                closely with you to develop designs that strike the perfect
+                balance of space, functionality, and flexibility—tailored to
+                meet your institutional and commercial needs.
               </p>
 
               <div className="flex items-center gap-4">
@@ -127,25 +127,25 @@ export default function Watertechnology() {
               image="/sectorimg/h.jpg"
               icon={<FaWarehouse size={38} className="text-white" />}
               title="Prefab School"
-              description="Landsking Infra provides sustainable and cost-effective prefab solutions for schools and healthcare centers. These modular buildings are designed for rapid installation, adaptability, and energy efficiency, making them ideal for educational and medical infrastructure. With customizable layouts and durable construction, our solutions ensure functionality, safety, and comfort to meet diverse institutional needs."
+              description="Landsking Infra Infra provides sustainable and cost-effective prefab solutions for schools and healthcare centers. These modular buildings are designed for rapid installation, adaptability, and energy efficiency, making them ideal for educational and medical infrastructure. With customizable layouts and durable construction, our solutions ensure functionality, safety, and comfort to meet diverse institutional needs."
             />
             <Card
               image="/sectorimg/inf.jpeg"
               icon={<MdOutlineCleanHands size={38} className="text-white" />}
               title="Prefabricated Multi-Storey Building Manufacturer"
-              description="Landsking Infra’s multi-storey buildings are designed to provide exceptional strength, fast construction timelines, and cost-effective solutions. Perfect for commercial and residential projects, these buildings maximize space utilization while ensuring long-term value and reduced construction time."
+              description="Landsking Infra Infra’s multi-storey buildings are designed to provide exceptional strength, fast construction timelines, and cost-effective solutions. Perfect for commercial and residential projects, these buildings maximize space utilization while ensuring long-term value and reduced construction time."
             />
             <Card
               image="/sectorimg/hos.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Prefabricated Hospital"
-              description="Landsking Infra is a pioneer in the manufacturing and installation of prefabricated structures, including staff accommodations, worker housing, labor hutments, and more."
+              description="Landsking Infra Infra is a pioneer in the manufacturing and installation of prefabricated structures, including staff accommodations, worker housing, labor hutments, and more."
             />
             <Card
               image="/sectorimg/roomm.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Clean Room"
-              description="Landsking Infra provides state-of-the-art cleanroom solutions tailored for controlled environments in sectors such as pharmaceuticals, electronics, and biotechnology. Our cleanrooms are meticulously engineered to comply with strict hygiene, airflow, and temperature control requirements, ensuring ideal conditions for sensitive and critical operations."
+              description="Landsking Infra Infra provides state-of-the-art cleanroom solutions tailored for controlled environments in sectors such as pharmaceuticals, electronics, and biotechnology. Our cleanrooms are meticulously engineered to comply with strict hygiene, airflow, and temperature control requirements, ensuring ideal conditions for sensitive and critical operations."
             />
             <Card
               image="/sectorimg/lgg.jpg"

@@ -109,7 +109,7 @@ export default function Footer() {
           {/* 3 - Contact Info */}
           <div className="md:w-1/3 space-y-4">
             <h3 className="text-white font-semibold">
-              Landsking Infra Pvt Ltd Prefab
+              Landsking Infra Infra Pvt Ltd Prefab
             </h3>
             <ul className="text-sm space-y-2">
               <li className="flex items-center gap-2">
@@ -121,10 +121,10 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <FaEnvelope />
                 <a
-                  href="mailto:enquiry@Landsking Infra Pvt Ltd.in"
+                  href="mailto:enquiry@Landsking Infra Infra Pvt Ltd.in"
                   className="hover:text-white"
                 >
-                  enquiry@Landsking Infra Pvt Ltd.in
+                  enquiry@Landsking Infra Infra Pvt Ltd.in
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -155,7 +155,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-          © 2025 Landsking Infra Pvt Ltd Prefab. All Rights Reserved.
+          © 2025 Landsking Infra Infra Pvt Ltd Prefab. All Rights Reserved.
           <a href="#" className="hover:text-white mx-2">
             Privacy Policy
           </a>{" "}

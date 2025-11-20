@@ -92,7 +92,7 @@
 //             Engaging a qualified expert is critical for any successful property
 //             acquisition or disposition. Our professionals are product
 //             specialists and local market authorities, fluent in all sectors from
-//             industrial to residential townships. You can rely on Landsking
+//             industrial to residential townships. You can rely on Landsking Infra
 //             Infra's team to deploy verified data and cross-sector knowledge to
 //             solve complex challenges. We manage everything—sourcing,
 //             negotiation, and closure—with precision and legal clarity. This
@@ -302,7 +302,7 @@ export default function SectorSlider() {
             Engaging a qualified expert is critical for any successful property
             acquisition or disposition. Our professionals are product
             specialists and local market authorities, fluent in all sectors from
-            industrial to residential townships. You can rely on Landsking
+            industrial to residential townships. You can rely on Landsking Infra
             Infra's team to deploy verified data and cross-sector knowledge to
             solve complex challenges. We manage everything—sourcing,
             negotiation, and closure— with precision and legal clarity. This

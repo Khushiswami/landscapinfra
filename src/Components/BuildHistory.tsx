@@ -21,12 +21,18 @@ export default function BuildHistory() {
       {/* Right Side */}
       <div className="text-gray-700 space-y-6">
         <p>
-          Landsking Infra is one of India s Fastest Growing Companies as an Industrial Solution Provider,  Work on engineering, procurement, construction (EPC), and maintenance companies.
-
- Landsking Infra works with Clients in diverse industries around the world to design, construct, and maintain their capital projects.
+          Landsking Infra Infra is one of India s Fastest Growing Companies as
+          an Industrial Solution Provider, Work on engineering, procurement,
+          construction (EPC), and maintenance companies. Landsking Infra Infra
+          works with Clients in diverse industries around the world to design,
+          construct, and maintain their capital projects.
         </p>
         <p>
-          LandsKingInfra Pvt. Ltd. with the Team Combined Experience have More than 350 Minor and Major Bridge and Super Structure and 68KM PMGSY Road work, 26 KM MS Pipe line and 610KM HDPE pipeline Excavation and laying , 4,65,000Sqft PEB Erection Work,3.5MW solar plant in Its Portfolio.
+          Landsking InfraInfra Pvt. Ltd. with the Team Combined Experience have
+          More than 350 Minor and Major Bridge and Super Structure and 68KM
+          PMGSY Road work, 26 KM MS Pipe line and 610KM HDPE pipeline Excavation
+          and laying , 4,65,000Sqft PEB Erection Work,3.5MW solar plant in Its
+          Portfolio.
         </p>
       </div>
     </section>

@@ -15,7 +15,7 @@ const sections: Section[] = [
     id: 1,
     title: "Industrial, Warehouse & PEB Projects",
     description:
-      "LandsKing Infra Pvt. Ltd. is a leading industrial construction company in Chennai, specializing in delivering top-notch industrial and warehouse projects.We offer far more than conventional construction; we act as your dedicated partner for integrated infrastructure solutions. Our firm seamlessly merges decades of mechanical engineering services expertise with advanced automation and innovative construction models. We incorporate expert practices like CAD modeling early in the development lifecycle to ensure every structure, particularly our PEB (Pre-Engineered Building) systems, delivers optimized performance and adheres to strict ISO compliance. With our proven approach, you receive world-class standards and guaranteed timely project delivery across India, supported by verified authority and expertise.",
+      "Landsking Infra Infra Pvt. Ltd. is a leading industrial construction company in Chennai, specializing in delivering top-notch industrial and warehouse projects.We offer far more than conventional construction; we act as your dedicated partner for integrated infrastructure solutions. Our firm seamlessly merges decades of mechanical engineering services expertise with advanced automation and innovative construction models. We incorporate expert practices like CAD modeling early in the development lifecycle to ensure every structure, particularly our PEB (Pre-Engineered Building) systems, delivers optimized performance and adheres to strict ISO compliance. With our proven approach, you receive world-class standards and guaranteed timely project delivery across India, supported by verified authority and expertise.",
     images: [
       "/industry/Industrial.jpg",
       "/industry/warehouse (1).png",
@@ -26,7 +26,7 @@ const sections: Section[] = [
     id: 2,
     title: "Commercial, Pharma & Hotel Projects",
     description:
-      "LandsKing Infra Pvt. Ltd. has extensive experience in executing commercial projects, including office complexes, restaurants, pharma facilities, and hotels.We offer specialized expertise for every commercial endeavor, acting as your dedicated partner for integrated infrastructure planning. Our professional team ensures high-quality construction and effective project management. With over two decades of experience, we consistently deliver projects—from sensitive pharma facilities to premium hotels—that meet global standards, providing clients with reliable, timely, and and efficient solutions for all commercial infrastructure needs.",
+      "Landsking Infra Infra Pvt. Ltd. has extensive experience in executing commercial projects, including office complexes, restaurants, pharma facilities, and hotels.We offer specialized expertise for every commercial endeavor, acting as your dedicated partner for integrated infrastructure planning. Our professional team ensures high-quality construction and effective project management. With over two decades of experience, we consistently deliver projects—from sensitive pharma facilities to premium hotels—that meet global standards, providing clients with reliable, timely, and and efficient solutions for all commercial infrastructure needs.",
     images: [
       "/industry/Commercial (2).jpg",
       "/industry/Commercial.jpg",
@@ -59,7 +59,7 @@ const sections: Section[] = [
     id: 5,
     title: "MEP (Mechanical, Electrical & Plumbing) Projects",
     description:
-      "LandsKing Infra Pvt. Ltd. also offers expert MEP services, including design, planning, and installation of mechanical, electrical, and plumbing networks. Our in-house MEP engineers deliver high-quality, efficient solutions that transform client ideas into sustainable, fully functional infrastructure systems. We focus on precision, reliability, and adherence to world-class standards, ensuring seamless integration of MEP systems in all types of construction projects.",
+      "Landsking Infra Infra Pvt. Ltd. also offers expert MEP services, including design, planning, and installation of mechanical, electrical, and plumbing networks. Our in-house MEP engineers deliver high-quality, efficient solutions that transform client ideas into sustainable, fully functional infrastructure systems. We focus on precision, reliability, and adherence to world-class standards, ensuring seamless integration of MEP systems in all types of construction projects.",
     images: [
       "/industry/MEP services (2).jpg",
       "/industry/MEP services (3).JPG",
@@ -98,8 +98,8 @@ export default function Industryplatformtab() {
           Leading with Expertise: Our Turnkey Industrial Model
         </h2>
         <p className="text-gray-700 mb-4 leading-relaxed">
-          At LandsKing Infrarem Pvt. Ltd., we view every new structure as an
-          investment in our clients’ future success. Our strategy goes beyond
+          At Landsking Infra Infrarem Pvt. Ltd., we view every new structure as
+          an investment in our clients’ future success. Our strategy goes beyond
           construction — it’s about combining impactful innovation with solid
           execution, placing our clients’ unique needs at the forefront.
         </p>

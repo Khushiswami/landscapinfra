@@ -149,7 +149,7 @@ export default function Page() {
             </div>
             {/* Right Description */}
             <div>
-              <p className="text-gray-700 text-sm sm:text-base md:text-lg">
+              <p className="text-gray-600  text-justify text-sm sm:text-base md:text-lg">
                 We provide complete solutions for structural steel,
                 pre-engineered buildings, sheeting, and accessories. Our
                 products are designed to meet the highest standards of
@@ -201,7 +201,7 @@ export default function Page() {
             <h2 className="mt-4 text-lg sm:text-3xl font-semibold">
               Structural Steel
             </h2>
-            <p className="mt-2 text-sm sm:text-base text-gray-600 flex-grow">
+            <p className="mt-2 text-justify  text-sm sm:text-base text-gray-600 flex-grow">
               Pebsteel utilizes Structural Steel (S.T.S) for complex and
               large-scale projects, including skyscrapers, airport terminals,
               and oil and gas facilities, among others.
@@ -224,7 +224,7 @@ export default function Page() {
             <h2 className="mt-4 text-lg sm:text-3xl font-semibold">
               Pre-Engineered Buildings
             </h2>
-            <p className="mt-2 text-sm sm:text-lg text-gray-600 flex-grow">
+            <p className="mt-2  text-justify text-sm sm:text-lg text-gray-600 flex-grow">
               Pre-engineered Buildings (PEB), also known as Prefabricated Steel
               Buildings, are widely used for factories, warehouses, hangars, and
               more. Their flexible design allows us to optimize functionality,

@@ -13,7 +13,7 @@ export default function () {
       subline: "How we work",
 
       paragraph:
-        "LANDSKING INFRA specializes in retail real estate environments, from high-street markets to integrated shopping malls. Given India's dynamic consumer shifts and competitive pressures, optimal location decisions are paramount. Our expert consultants leverage data-driven insights to ensure your retail presence not only achieves business success but also strategically integrates with the local community. We create environments where brands flourish and vibrant communities grow together, driving sustainable value for all stakeholders across India.",
+        "Landsking Infra Infra specializes in retail real estate environments, from high-street markets to integrated shopping malls. Given India's dynamic consumer shifts and competitive pressures, optimal location decisions are paramount. Our expert consultants leverage data-driven insights to ensure your retail presence not only achieves business success but also strategically integrates with the local community. We create environments where brands flourish and vibrant communities grow together, driving sustainable value for all stakeholders across India.",
       img: "realstate/Retail hww (3).jpg",
       boxes: [
         {
@@ -77,7 +77,7 @@ export default function () {
       heading: " Space, Supply Chain, and Profit",
       subheading: "What we do",
       paragraph:
-        "LANDSKING INFRA specializes in industrial and logistics real estate solutions, from large-scale warehouses to mission-critical manufacturing units. In India's evolving supply chain landscape, where efficiency and time-to-market define success, choosing the right operational footprint is critical.Our expert advisors combine market intelligence with logistics strategy to help organizations optimize space utilization, secure the supply chain, and elevate operational performance. We create industrial environments that guarantee efficiency, accommodate expansion, and drive long-term profit for enterprises across India.",
+        "Landsking Infra Infra specializes in industrial and logistics real estate solutions, from large-scale warehouses to mission-critical manufacturing units. In India's evolving supply chain landscape, where efficiency and time-to-market define success, choosing the right operational footprint is critical.Our expert advisors combine market intelligence with logistics strategy to help organizations optimize space utilization, secure the supply chain, and elevate operational performance. We create industrial environments that guarantee efficiency, accommodate expansion, and drive long-term profit for enterprises across India.",
       img: "realstate/Logistics & Industrial Facilities hww (2).jpg",
 
       boxes: [
@@ -108,7 +108,7 @@ export default function () {
       heading: "Value, Finance, and Lifestyle",
       subheading: "What we do",
       paragraph:
-        "LANDSKING INFRA specializes in the Residential sector, offering comprehensive advisory to investors, developers, and high-net-worth landowners. We are dedicated to maximizing the value of residential assets across India.Whether you are seeking strategic investment opportunities, optimizing development finance, or aiming for a seamless transaction, our expert team is here to guide every step of the way, ensuring maximum residential asset value and long-term security.",
+        "Landsking Infra Infra specializes in the Residential sector, offering comprehensive advisory to investors, developers, and high-net-worth landowners. We are dedicated to maximizing the value of residential assets across India.Whether you are seeking strategic investment opportunities, optimizing development finance, or aiming for a seamless transaction, our expert team is here to guide every step of the way, ensuring maximum residential asset value and long-term security.",
       img: "realstate/Residential hww (2).jpg",
       boxes: [
         {

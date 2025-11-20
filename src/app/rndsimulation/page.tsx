@@ -59,7 +59,7 @@ export default function Rndsimulation() {
 
           <div className="grid md:grid-cols-1 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
+              <p className="text-gray-700 mb-4 text-sm sm:text-base text-justify">
                 Simulation Design for Manufacturing: Streamlining Production
                 with CAD/CAE In today s competitive manufacturing landscape,
                 Simulation Design for Manufacturing leverages the power of

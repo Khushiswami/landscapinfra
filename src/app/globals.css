@@ -16,6 +16,7 @@ h5,
 h6 {
   font-family: "Days One", sans-serif;
   font-weight: 400;
+  text-transform: capitalize;
 }
 p {
   font-family: "Lato", sans-serif;

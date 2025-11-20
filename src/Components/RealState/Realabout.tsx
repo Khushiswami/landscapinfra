@@ -83,7 +83,7 @@ export default function Realabout() {
             <div className="relative w-full h-40 sm:h-56 overflow-hidden rounded-sm transform transition-transform duration-700 ">
               <Image
                 src="/cut.png"
-                alt="About Landsking Real estate"
+                alt="About Landsking Infra Real estate"
                 fill
                 className="object-cover"
               />
@@ -98,11 +98,11 @@ export default function Realabout() {
           </h2>
 
           <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
-            LandsKingInfra Pvt.Ltd. with the Team Combined Experience have More
-            LANDSKING INFRA – India’s emerging real estate powerhouse. We
-            specialize in connecting people and properties — from industrial
-            warehouses to retail showrooms, commercial offices to residential
-            townships.Our approach is transparent, data-driven, and
+            Landsking InfraInfra Pvt.Ltd. with the Team Combined Experience have
+            More Landsking Infra Infra – India’s emerging real estate
+            powerhouse. We specialize in connecting people and properties — from
+            industrial warehouses to retail showrooms, commercial offices to
+            residential townships.Our approach is transparent, data-driven, and
             client-first. From property sourcing and negotiations to
             documentation and deal closure — we manage everything with
             professionalism and precision.
@@ -114,9 +114,9 @@ export default function Realabout() {
             That’s not just a tagline, it’s our operating philosophy.
           </p>
           <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
-            With LANDSKING, every transaction is backed by verified listings,
-            legal clarity, and deep market insight — so you can invest, lease,
-            or sell with total confidence.
+            With Landsking Infra, every transaction is backed by verified
+            listings, legal clarity, and deep market insight — so you can
+            invest, lease, or sell with total confidence.
           </p>
           <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
             We don’t just deal in properties — we deliver value, vision, and

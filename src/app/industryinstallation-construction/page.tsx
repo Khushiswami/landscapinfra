@@ -385,7 +385,7 @@ export default function Industryinstallationconstruction() {
       id: 4,
       title: "Oil & Gas",
       description:
-        "Landsking Infra undertakes construction for refineries, terminals, storage tanks, and pipeline support infrastructure. With strict compliance to HSE (Health, Safety & Environment) standards, we ensure secure execution under high-risk conditions. Our approach focuses on structural stability, fire protection systems, and operational safety integrity.",
+        "Landsking Infra Infra undertakes construction for refineries, terminals, storage tanks, and pipeline support infrastructure. With strict compliance to HSE (Health, Safety & Environment) standards, we ensure secure execution under high-risk conditions. Our approach focuses on structural stability, fire protection systems, and operational safety integrity.",
       image: "/civil/Structural Shop Drawing Services.jpeg",
     },
     {
@@ -464,10 +464,11 @@ export default function Industryinstallationconstruction() {
         <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
           <div className="flex flex-col items-center justify-center text-center py-10 bg-white">
             <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
-              Why is LandsKing Infra Best Contractor for construction Projects?
+              Why is Landsking Infra Infra Best Contractor for construction
+              Projects?
             </h1>
             <p className="text-black  text-lg md:text-md text-justify">
-              Landsking Infra understands the unique requirements of each
+              Landsking Infra Infra understands the unique requirements of each
               industrial sector and delivers customized, end-to-end construction
               solutions. Our approach ensures efficient, safe, and
               high-performance facilities that maximize operational value and

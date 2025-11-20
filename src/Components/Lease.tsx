@@ -33,14 +33,14 @@ export default function Lease() {
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#000080] mb-4 leading-snug">
-            Browse Properties with Landsking Infra
+            Browse Properties with Landsking Infra Infra
           </h2>
 
           <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
             The Integrated Gateway for India’s Real Estate — Residential,
-            Commercial, and Industrial. LANDSKING INFRA delivers real estate
-            that is simple, transparent, and profitable. We manage the full
-            spectrum—from acquiring your ideal property and divesting your
+            Commercial, and Industrial. Landsking Infra Infra delivers real
+            estate that is simple, transparent, and profitable. We manage the
+            full spectrum—from acquiring your ideal property and divesting your
             existing land, to securing a critical commercial lease—all under one
             expert roof. Our dedicated team guarantees verified listings,
             genuine clients, and comprehensive legal and end-to-end

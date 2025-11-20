@@ -55,17 +55,17 @@ export default function Defenceinstallation() {
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
-              of Pre-Engineered Buildings (PEBs), delivering complete solutions
-              for industrial, commercial, and institutional structures. Our
-              buildings are designed with advanced engineering and
-              prefabrication technology, ensuring faster project delivery, cost
-              efficiency, and customized designs for diverse applications.
+              Landsking Infra Infra Pvt. Ltd. is one of India’s leading
+              manufacturers of Pre-Engineered Buildings (PEBs), delivering
+              complete solutions for industrial, commercial, and institutional
+              structures. Our buildings are designed with advanced engineering
+              and prefabrication technology, ensuring faster project delivery,
+              cost efficiency, and customized designs for diverse applications.
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
               What is a Pre-Engineered Building?{" "}
-              <span className="font-bold">Landsking Infra pvt.ltd</span> A
+              <span className="font-bold">Landsking Infra Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
               structural framework of primary framing (columns and rafters),
               secondary framing (purlins and girts), along with roof and wall

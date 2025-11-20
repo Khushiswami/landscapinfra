@@ -14,19 +14,19 @@ const items: AccordionItem[] = [
     id: 1,
     title: "Engineering (E)",
     content:
-      "Engineering forms the foundation of every solar project at LandsKing Infra. Our experts perform in-depth site assessments, energy audits, and shadow analysis to design systems that are optimized, compliant, and performance-driven. Using advanced simulations and on-site precision, we ensure every project achieves maximum efficiency, safety, and long-term reliability.",
+      "Engineering forms the foundation of every solar project at Landsking Infra Infra. Our experts perform in-depth site assessments, energy audits, and shadow analysis to design systems that are optimized, compliant, and performance-driven. Using advanced simulations and on-site precision, we ensure every project achieves maximum efficiency, safety, and long-term reliability.",
   },
   {
     id: 2,
     title: "Procurement(P)",
     content:
-      "Procurement at LandsKing Infra powers each solar project with quality and trust. We source panels, inverters, and structures exclusively from certified Tier-1 suppliers, backed by rigorous quality checks for strength and efficiency. Our cost-effective, scalable procurement strategy ensures long system life, minimal maintenance, and consistent energy output.",
+      "Procurement at Landsking Infra Infra powers each solar project with quality and trust. We source panels, inverters, and structures exclusively from certified Tier-1 suppliers, backed by rigorous quality checks for strength and efficiency. Our cost-effective, scalable procurement strategy ensures long system life, minimal maintenance, and consistent energy output.",
   },
   {
     id: 3,
     title: "Construction (C)",
     content:
-      "Construction transforms vision into reality at LandsKing Infra. Our skilled EPC team executes every phase — from site preparation to system integration — with precision, safety, and adherence to global standards. Each project undergoes complete testing and commissioning, ensuring durable, efficient, and high-performing solar installations built to last.",
+      "Construction transforms vision into reality at Landsking Infra Infra. Our skilled EPC team executes every phase — from site preparation to system integration — with precision, safety, and adherence to global standards. Each project undergoes complete testing and commissioning, ensuring durable, efficient, and high-performing solar installations built to last.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function Accordion() {
     <div className=" mx-auto mt-10 p-4 md:px-45">
       {/* <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2> */}
       <h1 className="text-2xl font-semibold mb-6 text-[#000080] md:text-3xl">
-        Your Solar EPC Partner Landsking Infra{" "}
+        Your Solar EPC Partner Landsking Infra Infra{" "}
       </h1>
       <p className="text-lg  mb-6 md:text-xl">
         Solar EPC (Engineering, Procurement & Construction) is the ultimate

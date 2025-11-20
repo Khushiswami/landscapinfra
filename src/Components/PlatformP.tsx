@@ -9,7 +9,7 @@ const TABS = [
   {
     title: "Pre Engineered Buildings",
     headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings. Each structure is designed for strength, flexibility, and long-lasting performance, tailored to meet diverse industrial and commercial needs.",
+    body: "Landsking InfraInfra Pvt. Ltd. delivers modern, durable, and cost-efficient pre-engineered buildings. Each structure is designed for strength, flexibility, and long-lasting performance, tailored to meet diverse industrial and commercial needs.",
     img: "/video/tab.jpg",
     buttonText: "VIEW MORE",
     url: "/menupage",

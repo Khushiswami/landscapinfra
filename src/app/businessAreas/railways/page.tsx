@@ -145,7 +145,7 @@ export default function Railways() {
           src: "/industryhome/railway.jpg",
           alt: "Railways",
         }}
-        description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
+        description="Landsking Infra Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
         features={featuresData}
       />
 

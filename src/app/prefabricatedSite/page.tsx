@@ -88,16 +88,16 @@ const PrefabricatedSite: React.FC = () => {
                 Complete Infrastructure Solutions for Quick, Efficient, and
                 Economical Project Implementation
               </h3>
-              <p className="text-gray-700 text-lg">
-                LANDSKING offers customized prefab site infrastructure solutions
-                designed for fast-paced construction, industrial, and
+              <p className="text-gray-700 text-lg text-justify">
+                Landsking Infra offers customized prefab site infrastructure
+                solutions designed for fast-paced construction, industrial, and
                 infrastructure projects throughout India. Our modular structures
                 are durable, cost-effective, and ready for quick deployment,
                 making them ideal for temporary high-performance setups.
                 <br />
                 <br />
                 Whether its a site office, worker accommodation, toilet block,
-                or storage unit, LANDSKING provides complete, ready-to-use
+                or storage unit, Landsking Infra provides complete, ready-to-use
                 solutions that minimize downtime and keep your projects running
                 seamlessly.
               </p>
@@ -150,14 +150,14 @@ const PrefabricatedSite: React.FC = () => {
             <div className="relative w-full h-80 md:h-[380px]">
               <Image
                 src="/new-images/prefabricated-4.jpg"
-                alt="Why Choose LANDSKING for Modular Infrastructure?"
+                alt="Why Choose Landsking Infra for Modular Infrastructure?"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
-                Why Choose LANDSKING for Modular Infrastructure?
+                Why Choose Landsking Infra for Modular Infrastructure?
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
                 <li>
@@ -244,7 +244,7 @@ const PrefabricatedSite: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

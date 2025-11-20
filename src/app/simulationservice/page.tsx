@@ -217,16 +217,16 @@ export default function Simulationservice() {
             SIMULATION SERVICE{" "}
           </h2>
 
-          <p className="text-gray-700 leading-relaxed mb-6 mt-5">
-            Landsking Infra provides advanced simulation services for complex
-            engineering and infrastructure projects. Our solutions optimize
-            designs, improve efficiency, and lower operational risks with
-            precision. Through digital modeling, we help clients validate ideas
-            before real-world implementation. Simulation tools predict
+          <p className="text-gray-600 leading-relaxed text-justify mb-6 mt-5">
+            Landsking Infra Infra provides advanced simulation services for
+            complex engineering and infrastructure projects. Our solutions
+            optimize designs, improve efficiency, and lower operational risks
+            with precision. Through digital modeling, we help clients validate
+            ideas before real-world implementation. Simulation tools predict
             performance, durability, and long-term reliability of systems. This
             approach ensures cost-effective execution with fewer delays or
-            design errors. With Landsking Infra, innovation meets accuracy for
-            smarter project delivery.
+            design errors. With Landsking Infra Infra, innovation meets accuracy
+            for smarter project delivery.
           </p>
 
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">
@@ -325,7 +325,7 @@ export default function Simulationservice() {
                             <h3 className="text-sm md:text-lg font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-sm mb-4 line-clamp-3">
+                            <p className="text-[10px] text-justify md:text-sm mb-4 line-clamp-3">
                               {project.description}
                             </p>
                           </div>
@@ -472,7 +472,9 @@ export default function Simulationservice() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-600 text-justify mb-5">
+                  {selectedArea.description}
+                </p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                   Contact{" "}
                   <span className="p-1 rounded-full text-[#000080]">→</span>

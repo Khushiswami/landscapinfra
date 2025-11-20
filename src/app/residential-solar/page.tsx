@@ -39,7 +39,7 @@ export default function Residential() {
       title: "Prefab Site Infrastructure ",
       subtitle: "Prefab Site Infrastructure Solutions",
       description:
-        "At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
+        "At Landsking Infra Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
       image: "/menupageimg/mod15.png",
     },
     {
@@ -47,7 +47,7 @@ export default function Residential() {
       title: "Prefab Site Office",
       subtitle: "Prefab Site Office",
       description:
-        "At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
+        "At Landsking Infra Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
       image: "/menupageimg/mod4.png",
     },
     {
@@ -79,7 +79,7 @@ export default function Residential() {
       title: "Prefabricated Toilet",
       subtitle: "Prefabricated Toilet",
       description:
-        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "Landsking Infra Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
       image: "/preimages/toilet.jpg",
     },
     {
@@ -87,7 +87,7 @@ export default function Residential() {
       title: "Prefab Porta Cabins",
       subtitle: "Prefab Porta Cabins Manufacturer",
       description:
-        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "Landsking Infra Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
       image: "/preimages/porta.jpg",
     },
     {
@@ -95,7 +95,7 @@ export default function Residential() {
       title: "Railway Shelters",
       subtitle: "Railway Shelters",
       description:
-        "Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
+        "Landsking Infra Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
       image: "/menupageimg/mod12.jpg",
     },
     {
@@ -103,7 +103,7 @@ export default function Residential() {
       title: "Cold Storage & Cold Room Manufacturer",
       subtitle: "Railway Shelters",
       description:
-        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
+        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
       image: "/menupageimg/cold4.png",
     },
   ];
@@ -269,9 +269,9 @@ export default function Residential() {
     },
     {
       question:
-        "How does LandsKing Infra support large industrial solar projects?",
+        "How does Landsking Infra Infra support large industrial solar projects?",
       answer:
-        "At LandsKing Infra, we handle everything—from detailed site studies and engineering design to installation and maintenance. Our team ensures each system is tailored to your site, maximizing output while maintaining safety and compliance.",
+        "At Landsking Infra Infra, we handle everything—from detailed site studies and engineering design to installation and maintenance. Our team ensures each system is tailored to your site, maximizing output while maintaining safety and compliance.",
     },
     {
       question:
@@ -282,7 +282,7 @@ export default function Residential() {
     {
       question: "What kind of warranty and after-sales service do I get?",
       answer:
-        "Solar panels usually come with a 25-year performance warranty, while inverters are covered for 5–10 years. At LandsKing Infra, we go beyond installation with maintenance support, regular system check-ups, and performance monitoring.",
+        "Solar panels usually come with a 25-year performance warranty, while inverters are covered for 5–10 years. At Landsking Infra Infra, we go beyond installation with maintenance support, regular system check-ups, and performance monitoring.",
     },
     {
       question: "Can solar panels be installed on any type of roof?",
@@ -318,9 +318,9 @@ export default function Residential() {
               Residential solar
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
-              Get up to ₹1 Lakh in total savings — including exclusive LandsKing
-              Infra benefits and government subsidies. Power your home with
-              clean energy while reducing costs from day one.
+              Get up to ₹1 Lakh in total savings — including exclusive Landsking
+              Infra Infra benefits and government subsidies. Power your home
+              with clean energy while reducing costs from day one.
             </p>
           </div>
 
@@ -371,16 +371,16 @@ export default function Residential() {
               Residential Solar
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-center">
+            <p className="text-gray-700  text-justify mb-4 leading-relaxed text-center">
               We Are One of India’s Most Reliable Rooftop Solar Solution
-              Providers LandsKing Infra stands among India’s leading rooftop
-              solar companies, trusted by thousands of homeowners and businesses
-              for dependable, high-quality solar installations. With years of
-              expertise and a nationwide presence, we deliver end-to-end solar
-              solutions — from design and installation to support and
-              maintenance. Backed by MNRE empanelment and flexible financing
-              options, LandsKing Infra is committed to making clean, affordable
-              energy accessible to every rooftop.
+              Providers Landsking Infra Infra stands among India’s leading
+              rooftop solar companies, trusted by thousands of homeowners and
+              businesses for dependable, high-quality solar installations. With
+              years of expertise and a nationwide presence, we deliver
+              end-to-end solar solutions — from design and installation to
+              support and maintenance. Backed by MNRE empanelment and flexible
+              financing options, Landsking Infra Infra is committed to making
+              clean, affordable energy accessible to every rooftop.
             </p>
           </div>
         </div>
@@ -394,16 +394,16 @@ export default function Residential() {
               Grid-connected rooftop solar system
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               A grid-connected rooftop solar system lets you enjoy the best of
               both worlds — clean solar energy and reliable grid support.With
               net metering, any extra power you generate is sent back to the
               grid, earning you credits or reducing your electricity bill. A
               bi-directional meter tracks both the energy you consume and the
-              energy you export, ensuring accurate billing.At LandsKing Infra,
-              we make this process simple by offering customized rooftop solar
-              solutions that suit your energy needs and give you the best value
-              for your investment.
+              energy you export, ensuring accurate billing.At Landsking Infra
+              Infra, we make this process simple by offering customized rooftop
+              solar solutions that suit your energy needs and give you the best
+              value for your investment.
             </p>
           </div>
           <div className="flex justify-center">
@@ -439,7 +439,7 @@ export default function Residential() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A hybrid rooftop solar system gives you the best of both— clean
               solar power and reliable battery backup. During the day, it powers
               your home directly from the sun and stores surplus energy in
@@ -461,7 +461,7 @@ export default function Residential() {
               Off-grid rooftop solar system
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               An off-grid rooftop solar system is perfect for those homes or
               businesses who are located in remote areas with limited or no
               access to the main power grid. It provides total energy
@@ -504,7 +504,9 @@ export default function Residential() {
                   {s.icon}
                 </div>
                 <h3 className="text-lg font-semibold">{s.title}</h3>
-                <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+                <p className="mt-2 text-justify text-sm text-slate-600">
+                  {s.desc}
+                </p>
               </article>
             ))}
           </div>
@@ -521,7 +523,9 @@ export default function Residential() {
                 {s.icon}
               </div>
               <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+              <p className="mt-2 text-justify text-sm text-slate-600">
+                {s.desc}
+              </p>
             </article>
           ))}
         </div>

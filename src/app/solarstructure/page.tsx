@@ -69,7 +69,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg md:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm md:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm md:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
       </div>
@@ -148,7 +148,7 @@ export default function Solarstructure() {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm md:text-base">
+              <p className="text-gray-600 text-justify mb-4 text-sm md:text-base">
                 Landscapinfra designs durable and efficient Solar Module
                 Mounting Structures engineered for rooftops, ground-mounted, and
                 large-scale solar projects. Built with high-quality materials,
@@ -157,16 +157,18 @@ export default function Solarstructure() {
                 innovation and sustainability, we help maximize energy output
                 and support India’s clean energy growth.
               </p>
-              <p className="text-gray-700 mb-4 text-sm md:text-base">
+              <p className="text-gray-600 text-justify mb-4 text-sm md:text-base">
                 At{" "}
-                <span className="font-semibold">Landsking Infra Pvt Ltd</span>,
-                we bring over 7 years of expertise in delivering top-quality
+                <span className="font-semibold">
+                  Landsking Infra Infra Pvt Ltd
+                </span>
+                , we bring over 7 years of expertise in delivering top-quality
                 pre-engineered and prefabricated industrial buildings. Our
                 portfolio includes warehouses, manufacturing units, industrial
                 sheds, poultry farms, cold storage facilities, clean rooms, and
                 many other specialized structures.
               </p>
-              <p className="text-gray-700 mb-6 text-sm md:text-base">
+              <p className="text-gray-600 text-justify mb-6 text-sm md:text-base">
                 Our skilled team ensures excellence at every stage — from
                 understanding your vision, planning, and design to manufacturing
                 and on-site installation — delivering durable, cost-effective,
@@ -275,7 +277,7 @@ export default function Solarstructure() {
                   className="w-full h-44 object-cover"
                 />
                 <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                  <p className="text-sm text-black  text-justify font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
                   <p className="text-sm text-black">{item.description}</p>

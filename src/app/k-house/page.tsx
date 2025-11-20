@@ -43,7 +43,7 @@ const Khouse: React.FC = () => {
         "Modular construction provides accelerated commissioning, built-in future scalability, and superior risk mitigation by minimizing on-site contamination exposure during the build phase.",
     },
     {
-      question: "Why choose LANDSKING for clean room construction?",
+      question: "Why choose Landsking Infra for clean room construction?",
       answer:
         "We deliver custom-engineered clean rooms that exceed ISO, GMP, and FDA performance thresholds, providing turnkey solutions for verifiable purity and long-term asset reliability.",
     },
@@ -97,12 +97,12 @@ const Khouse: React.FC = () => {
                 and medical devices, where even tiny particles can compromise
                 product quality. <br />
                 <br />
-                LANDSKING excels in designing and producing modular clean room
-                solutions using premium PUF, EPS, and Rockwool sandwich panels.
-                Leveraging more than 25 years of prefabrication expertise, our
-                systems comply with rigorous international standards, offering
-                excellent hygiene, thermal performance, and contamination
-                control.
+                Landsking Infra excels in designing and producing modular clean
+                room solutions using premium PUF, EPS, and Rockwool sandwich
+                panels. Leveraging more than 25 years of prefabrication
+                expertise, our systems comply with rigorous international
+                standards, offering excellent hygiene, thermal performance, and
+                contamination control.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -123,8 +123,9 @@ const Khouse: React.FC = () => {
                   <strong>
                     Comprehensive In-House Design & Manufacturing:
                   </strong>{" "}
-                  LANDSKING offers complete clean room solutions from concept
-                  design to commissioning, tailored for your industry’s needs.
+                  Landsking Infra offers complete clean room solutions from
+                  concept design to commissioning, tailored for your industry’s
+                  needs.
                 </li>
                 <li>
                   <strong>Premium Modular Panels:</strong> Constructed using
@@ -192,7 +193,7 @@ const Khouse: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Essential Features of LANDSKING Clean Rooms
+                Essential Features of Landsking Infra Clean Rooms
               </h3>
 
               <ul className="list-disc pl-5 text-gray-700 mb-4">

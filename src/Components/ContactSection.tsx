@@ -43,7 +43,7 @@ export default function ContactSection() {
         {/* Left Content */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Landsking Infra Pvt Ltd
+            Landsking Infra Infra Pvt Ltd
           </h1>
           <p className="text-lg font-semibold text-white mb-3">
             Get in touch with us – we are always ready to help with your
@@ -52,7 +52,7 @@ export default function ContactSection() {
           <div className="h-1 w-[100%] bg-[#8080FF] mb-4"></div>
           <p className="mb-6 text-gray-200">
             Whether you need a basic or elaborate steel building, Landsking
-            Infra will ensure your project is designed, manufactured, and
+            Infra Infra will ensure your project is designed, manufactured, and
             delivered on time.
           </p>
           <a href="/contact">

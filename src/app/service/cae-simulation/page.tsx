@@ -135,7 +135,7 @@ const Caesimulation = () => {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700  text-justify mb-4 leading-relaxed">
               CAE is where every great product begins—not with physical tests,
               but with a fundamental question: Can this be designed better,
               faster, and smarter? As one of the worlds foremost technical

@@ -273,7 +273,7 @@ export default function Renewfooter() {
             {/* <Link href="/" className="flex items-center">
               <img src="/blank.jpg" alt="Logo" className="h-15 w-auto" />
             </Link> */}
-            <span className="font-bold text-lg">Landsking Infra </span>
+            <span className="font-bold text-lg">Landsking Infra Infra </span>
           </div>
 
           {/* Social Icons */}
@@ -307,14 +307,17 @@ export default function Renewfooter() {
               Privacy
             </Link>
 
-            <Link href="info@landskinginfra.com" className="hover:underline">
-              info@landskinginfra.com
+            <Link
+              href="info@Landsking Infrainfra.com"
+              className="hover:underline"
+            >
+              info@Landsking Infrainfra.com
             </Link>
           </div>
 
           {/* Rights */}
           <div className="text-gray-300">
-            © 2025 Landsking Infra Pvt. Limited. All Rights Reserved.
+            © 2025 Landsking Infra Infra Pvt. Limited. All Rights Reserved.
           </div>
         </div>
       </div>

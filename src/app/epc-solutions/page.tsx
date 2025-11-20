@@ -119,7 +119,7 @@ export default function Epcsolutions() {
               Our Solar EPC Solutions for a Greener Tomorrow
             </h1>
             <p className="text-md md:text-lg max-w-md mx-auto lg:mx-0">
-              LandsKing Infra delivers advanced solar EPC solutions, from
+              Landsking Infra Infra delivers advanced solar EPC solutions, from
               ideation to commissioning, driving renewable energy innovation.
             </p>
           </div>
@@ -163,16 +163,16 @@ export default function Epcsolutions() {
         <div className="container mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-xl text-[#000080] sm:text-2xl md:text-3xl font-bold  max-w-4xl mx-auto">
-              Landsking Infra Epc Solutions
+              Landsking Infra Infra Epc Solutions
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-base md:text-lg font-medium text-justify text-gray-700  mb-6">
-                At LandsKing Infra, we offer complete Solar EPC (Engineering,
-                Procurement & Construction) solutions designed to transform
-                clean energy vision into high-performing reality. Our
+                At Landsking Infra Infra, we offer complete Solar EPC
+                (Engineering, Procurement & Construction) solutions designed to
+                transform clean energy vision into high-performing reality. Our
                 experienced team handles every stage — from detailed site
                 evaluation and system engineering to material sourcing,
                 installation, and commissioning. We focus on precision,
@@ -197,7 +197,7 @@ export default function Epcsolutions() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <img
                 src="/testing.jpg"
-                alt="Landsking Infra Epc Solutions Solar"
+                alt="Landsking Infra Infra Epc Solutions Solar"
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -226,8 +226,8 @@ export default function Epcsolutions() {
           </div>
           <div>
             <p className="text-[#737373] mb-6 text-[19px]">
-              At LandsKing Infra, every successful solar project begins with
-              precision planning. Our expert business development team
+              At Landsking Infra Infra, every successful solar project begins
+              with precision planning. Our expert business development team
               thoroughly assesses your energy requirements, identifies the most
               efficient site locations, and evaluates multiple performance
               scenarios. We then create a detailed preliminary site plan,
@@ -346,7 +346,7 @@ export default function Epcsolutions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className=" text-[#000080] text-2xl md:mb-5  md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-                Why Choose Landsking Infra for Solar EPC?
+                Why Choose Landsking Infra Infra for Solar EPC?
               </h2>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
                 Building Tomorrows Energy Infrastructure — Today. We specialize
@@ -369,7 +369,7 @@ export default function Epcsolutions() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px] md:mb-0 mb-14 ">
               <img
                 src="/solar epc.jpeg"
-                alt="  Why Choose Landsking Infra for Solar EPC?"
+                alt="  Why Choose Landsking Infra Infra for Solar EPC?"
                 className="object-cover "
               />
             </div>

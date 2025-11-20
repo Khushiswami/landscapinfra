@@ -78,7 +78,7 @@ const LowCostHousing: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/new-images/low-cost-housing-2.jpg"
-                alt="landsking low costing housing"
+                alt="Landsking Infra low costing housing"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -88,8 +88,8 @@ const LowCostHousing: React.FC = () => {
                 Innovative and Budget-Friendly Housing with PUF and EPS Panels
               </h3>
               <p className="text-gray-700 mb-4 text-justify">
-                LANDSKING delivers innovative, budget-friendly housing solutions
-                using PUF and EPS panels, ensuring eco-friendly,
+                Landsking Infra delivers innovative, budget-friendly housing
+                solutions using PUF and EPS panels, ensuring eco-friendly,
                 energy-efficient, and durable construction. These solutions are
                 designed to meet modern housing needs without compromising on
                 quality or comfort.

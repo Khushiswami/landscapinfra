@@ -36,7 +36,7 @@ const Pufpanels: React.FC = () => {
           <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
             {title}
           </h3>
-          <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
+          <p className="text-gray-600 text-justify text-base md:text-[17px] tracking-wide mb-5 flex-1">
             {description}
           </p>
         </div>
@@ -47,12 +47,12 @@ const Pufpanels: React.FC = () => {
     {
       question: "What are EPS panels?",
       answer:
-        "EPS (Expanded Polystyrene) panels are lightweight sandwich panels with an EPS core between metal sheets, designed for insulation, cladding, and partition applications. LandsKing Infra manufactures these panels with precision to ensure consistent quality and performance.",
+        "EPS (Expanded Polystyrene) panels are lightweight sandwich panels with an EPS core between metal sheets, designed for insulation, cladding, and partition applications. Landsking Infra Infra manufactures these panels with precision to ensure consistent quality and performance.",
     },
     {
       question: "What are the benefits of using EPS panels?",
       answer:
-        "They offer thermal efficiency, sound insulation, moisture resistance, lightweight construction, and cost-effective installation. LandsKing Infra EPS panels also ensure durability and long-lasting performance for commercial, industrial, and interior projects.",
+        "They offer thermal efficiency, sound insulation, moisture resistance, lightweight construction, and cost-effective installation. Landsking Infra Infra EPS panels also ensure durability and long-lasting performance for commercial, industrial, and interior projects.",
     },
     {
       question: "How are EPS panels used in construction?",
@@ -67,7 +67,7 @@ const Pufpanels: React.FC = () => {
     {
       question: "How are EPS panels installed?",
       answer:
-        "Panels are designed for quick and easy installation, typically joined with mechanical fasteners, adhesives, or overlap methods depending on the application. LandsKing Infra provides technical support to ensure proper installation.",
+        "Panels are designed for quick and easy installation, typically joined with mechanical fasteners, adhesives, or overlap methods depending on the application. Landsking Infra Infra provides technical support to ensure proper installation.",
     },
     {
       question: "Can EPS panels be used in all climates?",
@@ -77,7 +77,7 @@ const Pufpanels: React.FC = () => {
     {
       question: "What are the fire safety considerations for EPS panels?",
       answer:
-        "EPS panels meet standard fire safety norms when properly treated; additional coatings or fire-retardant additives can enhance safety for specific applications. LandsKing Infra ensures all panels comply with industry safety standards.",
+        "EPS panels meet standard fire safety norms when properly treated; additional coatings or fire-retardant additives can enhance safety for specific applications. Landsking Infra Infra ensures all panels comply with industry safety standards.",
     },
   ];
 
@@ -120,13 +120,13 @@ const Pufpanels: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 PUF/PIR Panels – Smart Insulation for Modern Infrastructure
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 PUF and PIR panels are specially designed insulated wall and
                 roof panels that keep interiors cooler, safer, and
-                energy-efficient. At LandsKing Infra, we produce these panels
-                with high accuracy to ensure strong durability and fast on-site
-                installation. Perfect for cold storage, clean rooms, and large
-                commercial or industrial buildings, they help reduce power
+                energy-efficient. At Landsking Infra Infra, we produce these
+                panels with high accuracy to ensure strong durability and fast
+                on-site installation. Perfect for cold storage, clean rooms, and
+                large commercial or industrial buildings, they help reduce power
                 consumption while offering long-lasting performance.
               </p>
               <button
@@ -142,7 +142,7 @@ const Pufpanels: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Types of PUF/PIR Sandwich Panels We Provide
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 We offer a versatile range of insulated sandwich panels
                 engineered to meet diverse structural, thermal, and industrial
                 requirements. Choose from the following panel categories based
@@ -282,7 +282,7 @@ const Pufpanels: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600  text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

@@ -34,7 +34,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -95,7 +95,7 @@ export default function IndustrialBuildingsConstruction() {
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-600  text-justify mb-4  md:text-lg">
                 We specialize in the design and manufacturing of versatile
                 prefabricated structures, including K-houses, liftable porta
                 cabins, Mi Homes, control pulpits, and soundproof enclosures.
@@ -103,7 +103,7 @@ export default function IndustrialBuildingsConstruction() {
                 durable, industry-compliant solutions tailored to a wide range
                 of applications.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-700 text-justify mb-4  md:text-lg">
                 Our capabilities go beyond special structures — offering
                 high-quality prefabricated warehouses, factory buildings,
                 industrial sheds, poultry shelters, cold storage units, and

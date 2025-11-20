@@ -258,21 +258,21 @@ export default function Hvac() {
             </h2>
 
             <p className="text-gray-700 mb-4 leading-relaxed mt-3 text-justify">
-              Landsking Infra provides advanced HVAC (Heating, Ventilation, and
-              Air Conditioning) solutions for commercial, industrial, and
-              institutional spaces, delivering precise climate control, improved
-              air quality, and energy efficiency. Our customized, scalable
-              systems cater to diverse facilities, including offices, industrial
-              plants, educational institutions, and healthcare centers. Using
-              BIM (Building Information Modeling), we ensure accurate planning,
-              seamless integration, and efficient execution. Our certified
-              engineers and skilled technicians manage installation,
-              commissioning, and maintenance to guarantee reliable, safe, and
-              long-lasting performance. We also offer energy audits and
-              retrofits to optimize existing systems, reduce costs, and enhance
-              sustainability. At Landsking Infra, we combine technology,
-              expertise, and client-focused solutions to create HVAC systems
-              that are efficient, compliant, and future-ready, providing
+              Landsking Infra Infra provides advanced HVAC (Heating,
+              Ventilation, and Air Conditioning) solutions for commercial,
+              industrial, and institutional spaces, delivering precise climate
+              control, improved air quality, and energy efficiency. Our
+              customized, scalable systems cater to diverse facilities,
+              including offices, industrial plants, educational institutions,
+              and healthcare centers. Using BIM (Building Information Modeling),
+              we ensure accurate planning, seamless integration, and efficient
+              execution. Our certified engineers and skilled technicians manage
+              installation, commissioning, and maintenance to guarantee
+              reliable, safe, and long-lasting performance. We also offer energy
+              audits and retrofits to optimize existing systems, reduce costs,
+              and enhance sustainability. At Landsking Infra Infra, we combine
+              technology, expertise, and client-focused solutions to create HVAC
+              systems that are efficient, compliant, and future-ready, providing
               comfortable and productive environments across industries
             </p>
 
@@ -425,7 +425,7 @@ export default function Hvac() {
             </h2>
 
             <p className="text-justify text-gray-700">
-              Landsking Infra Pvt. Ltd. is your one-stop solution for all
+              Landsking Infra Infra Pvt. Ltd. is your one-stop solution for all
               building and infrastructure requirements. Our pre-engineered steel
               buildings are carefully designed and fabricated to match your
               specific needs. Each structure is built in strict adherence to

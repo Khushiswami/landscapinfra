@@ -7,7 +7,7 @@ export default function Construct() {
   const slides = [
     {
       title: "Building Spaces That Last",
-      desc: "We transform your ideas into high-quality built environments with precision, planning, and timely execution. Landsking Infra utilizes modern construction technologies, precision equipment, and structured methodologies to deliver reliable civil infrastructure.",
+      desc: "We transform your ideas into high-quality built environments with precision, planning, and timely execution. Landsking Infra Infra utilizes modern construction technologies, precision equipment, and structured methodologies to deliver reliable civil infrastructure.",
       image: "/civil/Fabrication Drawing.JPG",
     },
   ];

@@ -43,7 +43,7 @@ const Portacabins: React.FC = () => {
           <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
             {title}
           </h3>
-          <p className="text-gray-600 text-base md:text-[17px] tracking-wide mb-5 flex-1">
+          <p className="text-gray-600 text-justify text-justify text-base md:text-[17px] tracking-wide mb-5 flex-1">
             {description}
           </p>
         </div>
@@ -54,7 +54,7 @@ const Portacabins: React.FC = () => {
     {
       question: "What are Rockwool Sandwich Panels?",
       answer:
-        "Rockwool panels are high-performance sandwich panels with a rigid stone wool core (from molten basalt rock) bonded between durable metal sheets. LandsKing Infra manufactures these panels to deliver superior fire resistance, thermal insulation, and acoustic control in one efficient solution.",
+        "Rockwool panels are high-performance sandwich panels with a rigid stone wool core (from molten basalt rock) bonded between durable metal sheets. Landsking Infra Infra manufactures these panels to deliver superior fire resistance, thermal insulation, and acoustic control in one efficient solution.",
     },
     {
       question: "What is the fire rating of Rockwool panels?",
@@ -80,7 +80,7 @@ const Portacabins: React.FC = () => {
     {
       question: "What thickness and density options are available?",
       answer:
-        "LandsKing Infra offers a range of thicknesses and densities to meet diverse structural, thermal, and acoustic requirements. Panels can be customized based on project needs.",
+        "Landsking Infra Infra offers a range of thicknesses and densities to meet diverse structural, thermal, and acoustic requirements. Panels can be customized based on project needs.",
     },
     {
       question: "Are Rockwool panels environmentally friendly?",
@@ -94,15 +94,15 @@ const Portacabins: React.FC = () => {
     },
     {
       question:
-        "How does LandsKing Infra ensure the quality of its Rockwool panels?",
+        "How does Landsking Infra Infra ensure the quality of its Rockwool panels?",
       answer:
         "All panels are produced under strict quality control in advanced facilities, ensuring consistent density, performance, and compliance with fire and safety standards.",
     },
     {
       question:
-        "Why should I choose LandsKing Infra as my Rockwool panel supplier?",
+        "Why should I choose Landsking Infra Infra as my Rockwool panel supplier?",
       answer:
-        "With decades of expertise, nationwide delivery, technical support, and a commitment to quality, LandsKing Infra provides reliable Rockwool panel solutions for all construction and industrial applications.",
+        "With decades of expertise, nationwide delivery, technical support, and a commitment to quality, Landsking Infra Infra provides reliable Rockwool panel solutions for all construction and industrial applications.",
     },
   ];
 
@@ -145,7 +145,7 @@ const Portacabins: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Rockwool Sandwich Panels
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg text-justify">
                 Rockwool Panels – Certifiable Fire Resistance and Thermal
                 Integrity Engineered to withstand extreme temperatures, our
                 Rockwool Sandwich Panels offer stable thermal performance
@@ -168,7 +168,7 @@ const Portacabins: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Technical Specifications
               </h3>
-              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
+              <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
                 <li>
                   <strong>Core & Fire Safety:</strong> Non-combustible stone
                   wool (rockwool) core ensures superior fire resistance,
@@ -220,7 +220,7 @@ const Portacabins: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Rockwool Panel Applications
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-justify text-lg ">
                 Rockwool panels are ideal for safety-critical structures,
                 providing fire-rated walls and roofs for high-occupancy and
                 industrial facilities. They excel in noise management, forming
@@ -304,7 +304,7 @@ const Portacabins: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

@@ -223,7 +223,7 @@ export default function Page() {
             <h2 className="mt-4 text-lg sm:text-3xl font-semibold">
               Pre-Engineered Buildings
             </h2>
-            <p className="mt-2 text-sm sm:text-lg text-gray-600 flex-grow">
+            <p className="mt-2 text-sm text-justify sm:text-lg text-gray-600 flex-grow">
               Pre-engineered Buildings (PEB), also known as Prefabricated Steel
               Buildings, are widely used for factories, warehouses, hangars, and
               more. Their flexible design allows us to optimize functionality,

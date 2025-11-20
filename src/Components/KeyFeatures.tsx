@@ -10,7 +10,7 @@ export default function KeyFeatures() {
         <span className=" text-[#000080] px-3 py-1 rounded-md mr-2">
           KEY FEATURES
         </span>
-        OF LANDSKING INFRA PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS
+        OF Landsking Infra Infra PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS
       </h2>
 
       <div className="grid lg:grid-cols-2 gap-10 items-center">
@@ -18,7 +18,7 @@ export default function KeyFeatures() {
         <div className="w-full">
           <Image
             src="/industry.jpg"
-            alt="Cold Storage by LANDSKING INFRA"
+            alt="Cold Storage by Landsking Infra Infra"
             width={700}
             height={450}
             className="rounded-lg shadow-md"
@@ -28,8 +28,9 @@ export default function KeyFeatures() {
         {/* Right Content */}
         <div className="space-y-6">
           <p className="text-gray-600 leading-relaxed">
-            At <span className="font-semibold">LANDSKING INFRA PVT LTD</span>,
-            we deliver
+            At{" "}
+            <span className="font-semibold">Landsking Infra Infra PVT LTD</span>
+            , we deliver
             <span className="font-semibold">
               {" "}
               state-of-the-art cold storage systems

@@ -39,7 +39,7 @@ export default function Renewableheader() {
         <Link href="/" className="flex items-center">
           <img
             src="/finallogo.png"
-            alt=" Landskinginfra Logo"
+            alt=" Landsking Infrainfra Logo"
             className="h-15 w-auto"
           />
         </Link>
@@ -50,7 +50,7 @@ export default function Renewableheader() {
             <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
           </button> */}
 
-          <a href="mailto:info@landsking.com">
+          <a href="mailto:info@Landsking Infra.com">
             <EnvelopeIcon
               className="h-6 w-6 hover:opacity-80"
               aria-label="mail"

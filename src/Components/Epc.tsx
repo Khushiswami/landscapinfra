@@ -63,7 +63,7 @@ export default function Epc() {
             Our Solar EPC Services
           </h2>
           <h2 className="text-base md:text-md font-medium text-start text-gray-700  mb-6">
-            LandsKing Infra delivers end-to-end Solar EPC solutions — from
+            Landsking Infra Infra delivers end-to-end Solar EPC solutions — from
             detailed project analysis and design to construction and performance
             monitoring. We are committed to excellence, efficiency, and
             reliability in every step of your renewable energy journey.

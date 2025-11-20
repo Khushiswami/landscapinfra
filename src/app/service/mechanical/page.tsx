@@ -75,7 +75,7 @@ function Card({ icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
-        <p className="text-black text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
           {description}
         </p>
       </div>
@@ -316,9 +316,9 @@ export default function Mechanical() {
     },
     {
       question:
-        "Why should I choose LandsKing Infra for mechanical design services?",
+        "Why should I choose Landsking Infra Infra for mechanical design services?",
       answer:
-        " LandsKing Infra combines expert CAD modeling, product design, and prototyping to deliver precise, ISO-compliant engineering solutions that minimize cost and development time",
+        " Landsking Infra Infra combines expert CAD modeling, product design, and prototyping to deliver precise, ISO-compliant engineering solutions that minimize cost and development time",
     },
     {
       question: "How does 3D CAD modeling improve product development?",
@@ -326,7 +326,7 @@ export default function Mechanical() {
         " 3D CAD modeling helps visualize designs, check tolerances, detect interference, and ensure perfect component fit before manufacturing.",
     },
     {
-      question: " What industries does LandsKing Infra serve?",
+      question: " What industries does Landsking Infra Infra serve?",
       answer:
         " We work with clients across manufacturing, automotive, construction, and industrial design sectors, ensuring precision and efficiency in every project.",
     },
@@ -341,7 +341,8 @@ export default function Mechanical() {
         "CAD conversion transforms old blueprints or paper drawings into accurate digital files that are easier to edit, store, and reuse across projects.",
     },
     {
-      question: "Does LandsKing Infra offer both 2D drafting and 3D modeling?",
+      question:
+        "Does Landsking Infra Infra offer both 2D drafting and 3D modeling?",
       answer:
         " Yes, our team provides complete design support—from detailed 2D drafting to realistic 3D CAD modeling for mechanical, architectural, and industrial projects.",
     },
@@ -361,7 +362,7 @@ export default function Mechanical() {
         " Structural engineering ensures stability, safety, and load-bearing capacity for industrial, commercial, and residential construction projects",
     },
     {
-      question: "How does LandsKing Infra ensure data confidentiality?",
+      question: "How does Landsking Infra Infra ensure data confidentiality?",
       answer:
         " All project files are handled under strict NDA agreements and transferred through secure, encrypted cloud systems to maintain complete data protection.",
     },
@@ -382,7 +383,7 @@ export default function Mechanical() {
         " Electrical design services improve system safety, ensure power efficiency, and provide accurate control panel layouts for industrial and utility sectors.",
     },
     {
-      question: "How do I start a project with LandsKing Infra?",
+      question: "How do I start a project with Landsking Infra Infra?",
       answer:
         "Simply share your requirements and design files, and our team will prepare a customized proposal with timelines, cost, and deliverables.",
     },
@@ -509,7 +510,7 @@ export default function Mechanical() {
               Mechanical Design and Simulation Services for Faster
               Time-to-Market{" "}
             </h2>
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-600 text-justify mb-4 leading-relaxed">
               At landscapinfra, we eliminate design inefficiencies and
               accelerate product development through high-fidelity mechanical
               engineering services. By combining AI-powered design automation,
@@ -699,7 +700,7 @@ export default function Mechanical() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-left md:text-left">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5 text-left md:text-left">
+                <p className="text-gray-600 mb-5 text-left md:text-left">
                   {selectedArea.description}
                 </p>
                 <div className="flex justify-start md:justify-start">
@@ -758,7 +759,9 @@ export default function Mechanical() {
                 <h3 className="text-lg  text-[#000080] *:font-semibold">
                   {s.title}
                 </h3>
-                <p className="mt-2 text-base text-black">{s.desc}</p>
+                <p className="mt-2 text-base text-black text-justify">
+                  {s.desc}
+                </p>
               </article>
             ))}
           </div>
@@ -799,7 +802,9 @@ export default function Mechanical() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-black text-justify">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -829,7 +834,7 @@ export default function Mechanical() {
           <h1 className="text-2xl md:text-3xl font-bold text-[#000080]">
             Our Mechanical Engineering Service workflow
           </h1>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-justify">
             At landscapinfra, we utilize a standardized workflow to streamline
             operations, reduce costs, and provide high-quality mechanical
             engineering services. Our process ensures that every step aligns
@@ -856,7 +861,9 @@ export default function Mechanical() {
               </h2>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <p className="text-gray-600  text-justify text-sm">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
@@ -897,7 +904,9 @@ export default function Mechanical() {
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-gray-600">{faq.answer}</div>
+                <div className="pb-4 text-gray-600 text-justify">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}

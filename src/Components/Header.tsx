@@ -153,7 +153,7 @@ export default function Header() {
                   Simulation Service
                 </Link>
                 <Link
-                  href="https://staging.landsking.com/fabrication/"
+                  href="https://staging.Landsking Infra.com/fabrication/"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Factories Installation

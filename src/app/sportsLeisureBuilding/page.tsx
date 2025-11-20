@@ -35,7 +35,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
       </div>
@@ -85,20 +85,21 @@ export default function SportsLeisureBuilding() {
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4  md:text-lg">
-                Landsking Infra delivers comprehensive Pre-Engineered Building
-                (PEB) solutions for sports and leisure facilities, combining
-                durability, functionality, and aesthetic appeal. Whether its
-                stadiums, gymnasiums, indoor sports complexes, or auditoriums,
-                we offer complete services from design and manufacturing to
-                construction, ensuring seamless project execution.
+              <p className="text-gray-600 text-justify mb-4  md:text-lg">
+                Landsking Infra Infra delivers comprehensive Pre-Engineered
+                Building (PEB) solutions for sports and leisure facilities,
+                combining durability, functionality, and aesthetic appeal.
+                Whether its stadiums, gymnasiums, indoor sports complexes, or
+                auditoriums, we offer complete services from design and
+                manufacturing to construction, ensuring seamless project
+                execution.
               </p>
-              <p className="text-gray-700 mb-4  md:text-lg">
+              <p className="text-gray-600 text-justify mb-4  md:text-lg">
                 Our PEBs effortlessly blend strong structural integrity with
                 attractive designs, suitable for a wide range of uses including
-                equipment storage and team facilities. Landsking Infra is your
-                reliable partner in delivering world-class sports and leisure
-                infrastructure solutions.
+                equipment storage and team facilities. Landsking Infra Infra is
+                your reliable partner in delivering world-class sports and
+                leisure infrastructure solutions.
               </p>
 
               <div className="flex items-center gap-3 sm:gap-4">

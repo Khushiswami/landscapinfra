@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -12,7 +11,7 @@ const categories = [
     title: "Infrastructure Sector",
     images: ["/about.png", "/about.png", "/about.png"],
     description:
-      "LandsKingInfra Pvt.Ltd offers durable, custom-designed Pre-Engineered Buildings (PEBs) to protect and enhance your organization. We design, manufacture, and build infrastructure solutions that support long-term business growth and deliver strong returns on investment.",
+      "Landsking InfraInfra Pvt.Ltd offers durable, custom-designed Pre-Engineered Buildings (PEBs) to protect and enhance your organization. We design, manufacture, and build infrastructure solutions that support long-term business growth and deliver strong returns on investment.",
   },
   {
     title: "Sports & Leisure",
@@ -68,28 +67,27 @@ export default function Slider() {
           {categories.map((cat, idx) => (
             <div key={idx} className="rounded-lg shadow-md overflow-hidden">
               <Swiper
-  navigation={true}
-  modules={[Navigation]}
-  spaceBetween={0}   // ✅ gap hata diya
-  className="w-full h-64 rounded-md overflow-hidden"
->
-  {cat.images.map((img, i) => (
-    <SwiperSlide key={i}>
-      <div
-        className="w-full h-64 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${img})` }}
-      >
-        {/* Overlay title */}
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h3 className="text-lg font-bold text-white text-center px-2">
-            {cat.title}
-          </h3>
-        </div>
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-
+                navigation={true}
+                modules={[Navigation]}
+                spaceBetween={0} // ✅ gap hata diya
+                className="w-full h-64 rounded-md overflow-hidden"
+              >
+                {cat.images.map((img, i) => (
+                  <SwiperSlide key={i}>
+                    <div
+                      className="w-full h-64 bg-cover bg-center relative"
+                      style={{ backgroundImage: `url(${img})` }}
+                    >
+                      {/* Overlay title */}
+                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <h3 className="text-lg font-bold text-white text-center px-2">
+                          {cat.title}
+                        </h3>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           ))}
         </div>
@@ -151,4 +149,3 @@ export default function Slider() {
     </div>
   );
 }
-

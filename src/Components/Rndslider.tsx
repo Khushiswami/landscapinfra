@@ -19,7 +19,7 @@ const categories: Category[] = [
     title: "Infrastructure Sector",
     images: ["/industry.jpg", "/about.png", "/about.png"],
     description:
-      "LandsKingInfra Pvt.Ltd offers durable, custom-designed Pre-Engineered Buildings (PEBs) to protect and enhance your organization. We design, manufacture, and build infrastructure solutions that support long-term business growth and deliver strong returns on investment.",
+      "Landsking InfraInfra Pvt.Ltd offers durable, custom-designed Pre-Engineered Buildings (PEBs) to protect and enhance your organization. We design, manufacture, and build infrastructure solutions that support long-term business growth and deliver strong returns on investment.",
   },
   {
     title: "Sports & Leisure",

@@ -76,7 +76,7 @@ function Card({ title, description, icon }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
-        <p className="text-black text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
           {description}
         </p>
       </div>
@@ -418,7 +418,7 @@ export default function Civil() {
       id: 1,
       title: "High-Rise Building Design",
       description:
-        "At Landsking Infra, we design safe, efficient, and elegant high-rise structures that meet international engineering standards. Our team performs detailed load analysis and material optimization to achieve the perfect balance between strength, cost, and aesthetics, ensuring long-lasting performance and visual appeal.",
+        "At Landsking Infra Infra, we design safe, efficient, and elegant high-rise structures that meet international engineering standards. Our team performs detailed load analysis and material optimization to achieve the perfect balance between strength, cost, and aesthetics, ensuring long-lasting performance and visual appeal.",
       image: "/civil/high-rise building design.jpeg",
     },
     {
@@ -432,7 +432,7 @@ export default function Civil() {
       id: 3,
       title: "Industrial Structure Design",
       description:
-        "We craft robust designs for warehouses, factories, and manufacturing plants that prioritize safety, efficiency, and space utilization. By understanding each industry’s workflow and environmental challenges, Landsking Infra ensures every structure performs reliably under demanding conditions.",
+        "We craft robust designs for warehouses, factories, and manufacturing plants that prioritize safety, efficiency, and space utilization. By understanding each industry’s workflow and environmental challenges, Landsking Infra Infra ensures every structure performs reliably under demanding conditions.",
       image: "/civil/Industrial Structure Design.jpeg",
     },
 
@@ -447,7 +447,7 @@ export default function Civil() {
       id: 5,
       title: "Structural BIM Modeling",
       description:
-        "Through advanced BIM modeling, we create intelligent 3D representations that enhance collaboration and accuracy. Landsking Infra’s BIM solutions reduce design conflicts, improve visualization, and streamline the entire construction workflow from planning to execution.",
+        "Through advanced BIM modeling, we create intelligent 3D representations that enhance collaboration and accuracy. Landsking Infra Infra’s BIM solutions reduce design conflicts, improve visualization, and streamline the entire construction workflow from planning to execution.",
       image: "/structure bmi moduling.jpg",
     },
     {
@@ -515,7 +515,7 @@ export default function Civil() {
               Civil services
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-600  text-justify mb-4 leading-relaxed">
               Innovative Civil Engineering Services for Modern Infrastructure At
               Landscapinfra, we bring innovation, precision, and sustainability
               together to craft the future of infrastructure. Our civil
@@ -551,14 +551,14 @@ export default function Civil() {
             <h1 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
               MEP Design & Drafting Services
             </h1>
-            <p className="text-black  text-lg md:text-md">
-              At Landsking Infra, we create complete MEP design and drafting
-              solutions that bring precision and performance together With deep
-              expertise in system integration and load analysis, we make your
-              project execution smooth and compliant with global standards. Our
-              engineers plan and design mechanical, electrical, and plumbing
-              systems tailored to your building’s needs, ensuring comfort,
-              efficiency, and safety.
+            <p className="text-black text-justify  text-lg md:text-md">
+              At Landsking Infra Infra, we create complete MEP design and
+              drafting solutions that bring precision and performance together
+              With deep expertise in system integration and load analysis, we
+              make your project execution smooth and compliant with global
+              standards. Our engineers plan and design mechanical, electrical,
+              and plumbing systems tailored to your building’s needs, ensuring
+              comfort, efficiency, and safety.
             </p>
           </div>
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -594,7 +594,7 @@ export default function Civil() {
             <Card
               icon={<FaBuilding size={40} className="text-[#8080FF]" />}
               title="Civil Information Modeling (CIM) Services"
-              description="Landsking Infra pioneers CIM integration, enabling smarter infrastructure design through data-rich 3D modeling, improved collaboration, and reduced rework."
+              description="Landsking Infra Infra pioneers CIM integration, enabling smarter infrastructure design through data-rich 3D modeling, improved collaboration, and reduced rework."
             />
 
             {/* Geospatial Solutions */}
@@ -635,7 +635,7 @@ export default function Civil() {
                 <h3 className="text-lg font-semibold text-[#000080]">
                   {s.title}
                 </h3>
-                <p className="mt-2 text-sm text-black">{s.desc}</p>
+                <p className="mt-2 text-sm text-justify text-black">{s.desc}</p>
               </article>
             ))}
           </div>
@@ -654,7 +654,7 @@ export default function Civil() {
               <h3 className="text-lg font-semibold text-[#000080]">
                 {s.title}
               </h3>
-              <p className="mt-2 text-sm text-black">{s.desc}</p>
+              <p className="mt-2 text-sm text-justify text-black">{s.desc}</p>
             </article>
           ))}
         </div>
@@ -731,7 +731,7 @@ export default function Civil() {
                             <h3 className="text-sm md:text-sm font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                            <p className="text-[10px] text-justify md:text-xs mb-4 line-clamp-3">
                               {project.description}
                             </p>
                             <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
@@ -816,7 +816,7 @@ export default function Civil() {
           <h1 className="text-2xl md:text-3xl font-bold text-[#000080]">
             Our Civil Engineering Service Workflow
           </h1>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-justify mt-3 max-w-2xl mx-auto">
             At landscapinfra, we utilize a standardized workflow to streamline
             operations, reduce costs, and provide high-quality mechanical
             engineering services. Our process ensures that every step aligns

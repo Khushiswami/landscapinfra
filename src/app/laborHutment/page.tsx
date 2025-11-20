@@ -59,7 +59,7 @@ const LaborHutment: React.FC = () => {
         "Yes, their production minimizes on-site material waste, and their portability avoids the need to build and later demolish permanent facilities at every location.",
     },
     {
-      question: "Why choose LANDSKING for labour hutments?",
+      question: "Why choose Landsking Infra for labour hutments?",
       answer:
         "We supply swift, high-quality, welfare-assured accommodation, ensuring worker comfort, maximizing site productivity, and providing long-term value through asset mobility.",
     },
@@ -105,7 +105,7 @@ const LaborHutment: React.FC = () => {
                 Durable, Clean, And Affordable Accommodation For Labor
               </h3>
               <p className="text-gray-700 text-lg text-justify">
-                LANDSKING specializes in high-quality prefabricated labour
+                Landsking Infra specializes in high-quality prefabricated labour
                 hutments, offering ready-to-install structures tailored to your
                 space and workforce needs. From electrical setups and sanitary
                 systems to furniture and bunk beds, we provide everything needed

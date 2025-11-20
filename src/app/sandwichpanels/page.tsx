@@ -287,17 +287,17 @@ export default function Sandwichpanels() {
               Premium Insulation Panels Designed for Modern Construction{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra stands as one of India s top manufacturers of
-              sandwich panels, providing a diverse selection of insulated panels
-              designed for superior thermal performance, robust structural
-              strength, and fast installation. Equipped with both continuous and
-              discontinuous production lines, we deliver consistent quality,
-              precision, and adaptability for projects of all sizes—from
-              large-scale developments to custom builds.{" "}
+            <p className="text-gray-600 text-justify mb-4 leading-relaxed text-justify">
+              Landsking Infra Infra stands as one of India s top manufacturers
+              of sandwich panels, providing a diverse selection of insulated
+              panels designed for superior thermal performance, robust
+              structural strength, and fast installation. Equipped with both
+              continuous and discontinuous production lines, we deliver
+              consistent quality, precision, and adaptability for projects of
+              all sizes—from large-scale developments to custom builds.{" "}
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
               Our sandwich panels are widely trusted across various sectors,
               including warehouses, cold storage facilities, agricultural
               buildings, pharmaceutical structures, industrial complexes, and
@@ -345,7 +345,7 @@ export default function Sandwichpanels() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Sandwich panels gain their structural integrity from a core
               insulating layer bonded between two rigid metal sheets. This
               advanced design enhances load-bearing strength while offering
@@ -353,14 +353,14 @@ export default function Sandwichpanels() {
               soundproofing performance.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Sandwich panels reduce heat transfer, helping to maintain stable
               indoor temperatures while lowering energy usage and
               air-conditioning expenses—making them ideal for buildings with
               constant occupancy.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               With fast installation, extended durability, and low maintenance
               requirements, they serve as a highly efficient alternative to
               conventional masonry in contemporary construction.
@@ -444,7 +444,9 @@ export default function Sandwichpanels() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-600 text-justify mb-5">
+                  {selectedArea.description}
+                </p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                   <a
                     href="/peb-contact"
@@ -487,7 +489,9 @@ export default function Sandwichpanels() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-justify text-black">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -516,7 +520,7 @@ export default function Sandwichpanels() {
         <div className="md:mx-8 mx-auto px-6 md:px-10">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Why Choose Landsking Infra Sandwich Panels?
+            Why Choose Landsking Infra Infra Sandwich Panels?
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
@@ -534,10 +538,10 @@ export default function Sandwichpanels() {
 
             {/* Text Section (Right Side) */}
             <div>
-              <p className="text-gray-700 leading-relaxed">
-                Landsking Infra offers advanced sandwich panels manufactured
-                using both continuous and discontinuous production lines to
-                ensure precision and quality. These panels deliver high
+              <p className="text-gray-600 text-justify leading-relaxed">
+                Landsking Infra Infra offers advanced sandwich panels
+                manufactured using both continuous and discontinuous production
+                lines to ensure precision and quality. These panels deliver high
                 insulation performance, offering excellent thermal and acoustic
                 efficiency with low thermal conductivity, resulting in
                 significant energy savings. Lightweight yet highly durable, they
@@ -559,7 +563,7 @@ export default function Sandwichpanels() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Pvt. Ltd for PEBs?
+              Why Choose Landsking Infra Infra Pvt. Ltd for PEBs?
             </h2>
 
             <p>

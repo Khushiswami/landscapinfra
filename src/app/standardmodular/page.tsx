@@ -326,7 +326,7 @@ export default function Standardmodular() {
               Flexible, Expandable, and Quick-to-Deploy Modular Solutions”{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-600 text-justify mb-4 leading-relaxed">
               At Ladsking Infra, we recognize the demand for fast, flexible, and
               premium-quality infrastructure in today’s ever-changing
               environment. Our Standard Modular Solutions are factory-built,
@@ -335,7 +335,7 @@ export default function Standardmodular() {
               savings.{" "}
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-600 text-justify mb-4 leading-relaxed">
               Whether you need site offices, accommodation units, toilets, guard
               cabins, or modular classrooms, our solutions are designed for
               quick deployment, minimal site disturbance, and lasting
@@ -351,7 +351,7 @@ export default function Standardmodular() {
           <div className="flex justify-center">
             <img
               src="/modular/Modular Solutions (2).jpg"
-              alt="Landsking Infra Pvt Ltd  Quick-to-Deploy Modular Solutions"
+              alt="Landsking Infra Infra Pvt Ltd  Quick-to-Deploy Modular Solutions"
               className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -380,29 +380,29 @@ export default function Standardmodular() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong> Quick Installation:</strong> Delivered in
               ready-to-assemble modules, reducing construction time by up to
               60%..
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong> Superior Build Quality:</strong> Manufactured in our
               controlled facility using high-grade materials and precision
               processes.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600  text-justify leading-relaxed mb-4">
               <strong> Cost-Effective: </strong> Saves time, labor, and overhead
               costs while ensuring consistent quality.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong> Portable & Relocatable: </strong> Easily dismantled and
               reassembled at new locations.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong> Durable & Weather-Resistant : </strong> Built to
               withstand diverse environmental conditions and heavy usage.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong> Custom Configurations: </strong> While standard in
               design, they can be tweaked as per your operational needs.
             </p>
@@ -484,7 +484,9 @@ export default function Standardmodular() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-600  text-justify mb-5">
+                  {selectedArea.description}
+                </p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                   <a
                     href="/peb-contact"
@@ -523,7 +525,7 @@ export default function Standardmodular() {
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                  <p className="text-sm text-justify text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
                   <p className="text-sm text-black">{item.description}</p>
@@ -572,7 +574,7 @@ export default function Standardmodular() {
 
             {/* Text Section (Right Side) */}
             <div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-600  text-justify leading-relaxed">
                 Ladsking Infra brings years of expertise in prefab construction,
                 delivering modular solutions that extend far beyond just
                 temporary setups. Our standard modular units are built with the
@@ -580,7 +582,7 @@ export default function Standardmodular() {
                 by a dedicated team that manages everything from design to
                 delivery and installation.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-600  text-justify leading-relaxed mt-4">
                 From leading infrastructure companies to real estate developers,
                 Ladsking Infra has earned trust as a reliable modular
                 construction partner for numerous projects nationwide. Our
@@ -600,10 +602,10 @@ export default function Standardmodular() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Pvt. Ltd for PEBs?
+              Why Choose Landsking Infra Infra Pvt. Ltd for PEBs?
             </h2>
 
-            <p className="text-gray-600 text-justify">
+            <p className="text-gray-600  text-justify">
               25+ years of expertise in prefabricated and steel building
               solutions. Nationwide presence with a strong logistics and project
               execution network. In-house design & engineering powered by 3D
@@ -622,7 +624,7 @@ export default function Standardmodular() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Landsking Infra Pvt. Ltd for PEBs "
+              alt="Why Choose Landsking Infra Infra Pvt. Ltd for PEBs "
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"

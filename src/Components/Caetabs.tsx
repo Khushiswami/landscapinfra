@@ -17,14 +17,14 @@ export default function Caetabs() {
       title: "Managing Noise, Vibration, Harshness",
       heading: "Managing Noise, Vibration, Harshness (NVH)",
       paragraph:
-        "LandsKingInfra delivers vital Computer-Aided Engineering (CAE) insight that boosts product comfort, long-term dependability, and market perception. Our NVH service reliably pinpoints and resolves disruptive noise and vibration issues within mechanical systems. We move from initial analysis to advanced simulation to uncover the root cause of these disturbances, then develop effective strategies to reduce or eliminate them entirely.",
+        "Landsking InfraInfra delivers vital Computer-Aided Engineering (CAE) insight that boosts product comfort, long-term dependability, and market perception. Our NVH service reliably pinpoints and resolves disruptive noise and vibration issues within mechanical systems. We move from initial analysis to advanced simulation to uncover the root cause of these disturbances, then develop effective strategies to reduce or eliminate them entirely.",
       video: "/choose/exprt.mp4",
     },
     {
       title: "Precision Mesh Generation",
       heading: "Precision Mesh Generation",
       paragraph:
-        "LandsKingInfra excels at generating accurate and efficient meshes that perfectly conform to the intricate shapes of any project, guaranteeing the highest possible reliability in your simulations. We handle all types of meshes—structured, unstructured, hybrid, or adaptive—using the newest methods to customize the process for your specific requirements. Since a top-tier mesh is the bedrock of successful simulation, our commitment is to provide unmatched precision and effectiveness for all your engineering challenges.",
+        "Landsking InfraInfra excels at generating accurate and efficient meshes that perfectly conform to the intricate shapes of any project, guaranteeing the highest possible reliability in your simulations. We handle all types of meshes—structured, unstructured, hybrid, or adaptive—using the newest methods to customize the process for your specific requirements. Since a top-tier mesh is the bedrock of successful simulation, our commitment is to provide unmatched precision and effectiveness for all your engineering challenges.",
       video: "/choose/exprt.mp4",
     },
     {

@@ -25,7 +25,7 @@ export default function SystemPage() {
             </div>
             {/* Right Description */}
             <div>
-              <p className="text-gray-700 text-sm sm:text-base md:text-lg">
+              <p className=" text-gray-600 text-justify text-sm sm:text-base md:text-lg">
                 We provide complete solutions for structural steel,
                 pre-engineered buildings, sheeting, and accessories. Our
                 products are designed to meet the highest standards of

@@ -33,7 +33,7 @@ export default function ProductCard() {
             image="/clean-room-2.webp"
             icon={<MdOutlineCleanHands size={38} className="text-white" />}
             title="Clean Room"
-            description="Landsking Infra Pvt Ltd provides advanced cleanroom solutions for controlled environments in pharmaceuticals, electronics, and biotechnology, ensuring top hygiene and quality."
+            description="Landsking Infra Infra Pvt Ltd provides advanced cleanroom solutions for controlled environments in pharmaceuticals, electronics, and biotechnology, ensuring top hygiene and quality."
           />
           <Card
             image="/7-2.webp"
@@ -45,19 +45,19 @@ export default function ProductCard() {
             image="/NDR.webp"
             icon={<FaIndustry size={38} className="text-white" />}
             title="Industrial Shed"
-            description="Designed for reliability and adaptability, Landsking Infra Pvt Ltd’s industrial sheds are perfect for workshops, factories, and heavy-duty operations. They ensure faster setup, superior strength, and scalable configurations tailored to your business."
+            description="Designed for reliability and adaptability, Landsking Infra Infra Pvt Ltd’s industrial sheds are perfect for workshops, factories, and heavy-duty operations. They ensure faster setup, superior strength, and scalable configurations tailored to your business."
           />
           <Card
             image="/clean-room-2.webp"
             icon={<FaSnowflake size={38} className="text-white" />}
             title="Cold Storage & Cold Room Manufacturer"
-            description="Our cold storage solutions are built with precision-insulated panels and advanced cooling systems for unmatched energy efficiency. From pharmaceuticals to perishables, Landsking Infra Pvt Ltd ensures long-lasting preservation and compliance with temperature control standards."
+            description="Our cold storage solutions are built with precision-insulated panels and advanced cooling systems for unmatched energy efficiency. From pharmaceuticals to perishables, Landsking Infra Infra Pvt Ltd ensures long-lasting preservation and compliance with temperature control standards."
           />
           <Card
             image="/7-2.webp"
             icon={<FaShieldAlt size={38} className="text-white" />}
             title="Portable Security Guard Cabins"
-            description="Landsking Infra Pvt Ltd Prefab offers portable security guard cabins, designed for quick installation and mobility. These robust cabins provide a safe and comfortable space for security personnel, made from high-quality materials such as insulated panels. They are ideal for use at construction sites, industrial areas, and other temporary locations requiring secure monitoring stations."
+            description="Landsking Infra Infra Pvt Ltd Prefab offers portable security guard cabins, designed for quick installation and mobility. These robust cabins provide a safe and comfortable space for security personnel, made from high-quality materials such as insulated panels. They are ideal for use at construction sites, industrial areas, and other temporary locations requiring secure monitoring stations."
           />
         </div>
       </section>

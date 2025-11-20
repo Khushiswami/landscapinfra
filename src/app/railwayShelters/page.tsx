@@ -43,7 +43,8 @@ const RailwayShelters: React.FC = () => {
         "Yes. High-grade steel and robust panel systems ensure the units withstand continuous public use and environmental stress, guaranteeing long-term public utility with minimal upkeep.",
     },
     {
-      question: "Why choose LANDSKING for railway infrastructure projects?",
+      question:
+        "Why choose Landsking Infra for railway infrastructure projects?",
       answer:
         "We supply precision-engineered modules built with verified materials, ensuring unmatched public safety, asset longevity, and enhanced passenger environments through reliable turnkey execution.",
     },
@@ -87,17 +88,15 @@ const RailwayShelters: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Durable and Highly Functional Shelters
               </h3>
-              <p className="text-gray-700 text-lg">
-                LANDSKING is recognized as a top manufacturer of prefabricated
-                railway and telecom shelters, delivering dependable, customized
-                turnkey solutions to meet the specific needs of industrial
-                clients. <br />
-                <br />
-                Engineered to endure extreme weather, our railway and telecom
-                shelters safeguard delicate telecom equipment from dust,
-                moisture, and environmental damage. Their portable and
-                lightweight design ensures quick installation, cost savings, and
-                long-lasting performance.
+              <p className="text-gray-700 text-lg text-justify">
+                Landsking Infra is recognized as a top manufacturer of
+                prefabricated railway and telecom shelters, delivering
+                dependable, customized turnkey solutions to meet the specific
+                needs of industrial clients. Engineered to endure extreme
+                weather, our railway and telecom shelters safeguard delicate
+                telecom equipment from dust, moisture, and environmental damage.
+                Their portable and lightweight design ensures quick
+                installation, cost savings, and long-lasting performance.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -114,7 +113,7 @@ const RailwayShelters: React.FC = () => {
                 Key Features of Prefabricated Shelters
               </h3>
               <p className="text-gray-700">
-                LANDSKINGs railway and telecom shelters are built using
+                Landsking Infras railway and telecom shelters are built using
                 high-quality materials, delivering superior performance. Key
                 features include:
               </p>
@@ -168,8 +167,8 @@ const RailwayShelters: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Advanced Manufacturing Technology
               </h3>
-              <p className="text-gray-700 text-lg">
-                LANDSKING employs advanced manufacturing techniques and
+              <p className="text-gray-700 text-lg text-justify">
+                Landsking Infra employs advanced manufacturing techniques and
                 meticulous engineering to create robust, high-quality shelters.
                 Tailored for railway and telecom applications, our shelters are
                 made with superior materials to endure extreme weather
@@ -187,9 +186,9 @@ const RailwayShelters: React.FC = () => {
                 Uses of Prefabricated Shelters
               </h3>
 
-              <p className="text-gray-700 text-lg">
-                LANDSKING offers durable and user-friendly shelters suitable for
-                a variety of temporary or permanent uses, such as:
+              <p className="text-gray-700 text-lg text-justify">
+                Landsking Infra offers durable and user-friendly shelters
+                suitable for a variety of temporary or permanent uses, such as:
               </p>
               <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
                 <li>Railway Shelters</li>
@@ -238,7 +237,7 @@ const RailwayShelters: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-base md:text-md text-justify">
                       {faq.answer}
                     </p>
                   </div>

@@ -74,10 +74,12 @@ export default function Pebcontact() {
                 <FaEnvelope className="text-red-500 text-2xl" />
                 <h3 className="text-lg font-semibold">Our Email</h3>
               </div>
-              <p className="mt-2 text-gray-600">landskinginfra@gmail.com</p>
-              <p className="text-gray-600">info@landsking.com</p>
+              <p className="mt-2 text-gray-600">
+                Landsking Infrainfra@gmail.com
+              </p>
+              <p className="text-gray-600">info@Landsking Infra.com</p>
               <a
-                href="mailto:info@landsking.com"
+                href="mailto:info@Landsking Infra.com"
                 className="text-purple-600 hover:underline text-sm"
               >
                 Send Message ›
@@ -91,8 +93,8 @@ export default function Pebcontact() {
                 <h3 className="text-lg font-semibold">Our Support</h3>
               </div>
               <p className="mt-2 text-gray-600">
-                Main Support : info@landsking.com <br />
-                Sales : landskinginfra@gmail.com
+                Main Support : info@Landsking Infra.com <br />
+                Sales : Landsking Infrainfra@gmail.com
               </p>
               <a href="#" className="text-purple-600 hover:underline text-sm">
                 Open A Ticket ›

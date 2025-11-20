@@ -160,11 +160,12 @@ export default function Industrybuildingsolutions() {
             Building & Infrastructure / Industry Building Solutions
           </h2>
           <p className="text-gray-600 text-justify max-w-2xl mx-auto mb-12">
-            Landsking Infra provides end-to-end construction and infrastructure
-            solutions across industrial, commercial, institutional, and public
-            sectors, delivering precise engineering, structural integrity, and
-            timely execution while tailoring multidisciplinary solutions to meet
-            each project’s unique requirements.
+            Landsking Infra Infra provides end-to-end construction and
+            infrastructure solutions across industrial, commercial,
+            institutional, and public sectors, delivering precise engineering,
+            structural integrity, and timely execution while tailoring
+            multidisciplinary solutions to meet each project’s unique
+            requirements.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

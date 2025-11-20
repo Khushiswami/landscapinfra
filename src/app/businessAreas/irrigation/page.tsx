@@ -78,7 +78,7 @@ const HOME_TABS = [
   {
     title: "Pre Engineered Buildings",
     headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
+    body: "Landsking InfraInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
     img: "/about.png",
     buttonText: "VIEW MORE",
     url: "/menupage",
@@ -204,7 +204,7 @@ export default function Irrigation() {
           src: "/industryhome/irrigation.jpg",
           alt: "Irrigation",
         }}
-        description="Landsking Infra has been instrumental in executing large-scale and complex irrigation projects that have reshaped landscapes across India. Our portfolio includes dams, barrages, extensive networks of major and minor canals, as well as advanced lift irrigation systems."
+        description="Landsking Infra Infra has been instrumental in executing large-scale and complex irrigation projects that have reshaped landscapes across India. Our portfolio includes dams, barrages, extensive networks of major and minor canals, as well as advanced lift irrigation systems."
         features={featuresData}
       />
 

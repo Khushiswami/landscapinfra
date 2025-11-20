@@ -17,15 +17,15 @@ const cards = [
     tag: "Whitepaper",
     title: "Transforming Infrastructure Through Innovation",
     description:
-      "Landsking Infra explores how advanced engineering practices and sustainable design principles are redefining the modern infrastructure landscape—bridging technology with long-term societal value.",
+      "Landsking Infra Infra explores how advanced engineering practices and sustainable design principles are redefining the modern infrastructure landscape—bridging technology with long-term societal value.",
     image: "/news2.jpeg",
   },
   {
     id: 2,
     tag: "Whitepaper",
-    title: "The Future of Smart Cities: A Landsking Infra Perspective",
+    title: "The Future of Smart Cities: A Landsking Infra Infra Perspective",
     description:
-      "From intelligent transport systems to green construction, Landsking Infra delves into the role of digital transformation in building connected, efficient, and resilient urban ecosystems.",
+      "From intelligent transport systems to green construction, Landsking Infra Infra delves into the role of digital transformation in building connected, efficient, and resilient urban ecosystems.",
     image: "/engineer.jpg",
   },
   {
@@ -33,33 +33,34 @@ const cards = [
     tag: "Blog",
     title: "Engineering Excellence: Building Tomorrow’s Infrastructure Today",
     description:
-      "At Landsking Infra, we combine data-driven design, automation, and sustainable materials to deliver infrastructure solutions that empower communities and drive progress.",
+      "At Landsking Infra Infra, we combine data-driven design, automation, and sustainable materials to deliver infrastructure solutions that empower communities and drive progress.",
     image: "/new4.jpg",
   },
   {
     id: 4,
     tag: "Case Study",
     title:
-      "Reimagining Urban Infrastructure: Landsking Infra’s Landmark Projects",
+      "Reimagining Urban Infrastructure: Landsking Infra Infra’s Landmark Projects",
     description:
-      "An in-depth look at how Landsking Infra is transforming skylines through innovative construction methods, smart resource management, and client-first collaboration.",
+      "An in-depth look at how Landsking Infra Infra is transforming skylines through innovative construction methods, smart resource management, and client-first collaboration.",
     image: "/industry.jpg",
   },
   {
     id: 5,
     tag: "Insight Report",
-    title: "Sustainability and Infrastructure: The Landsking Infra Commitment",
+    title:
+      "Sustainability and Infrastructure: The Landsking Infra Infra Commitment",
     description:
-      "This report highlights how Landsking Infra integrates sustainability into every phase of project development—ensuring environmental responsibility and operational efficiency.",
+      "This report highlights how Landsking Infra Infra integrates sustainability into every phase of project development—ensuring environmental responsibility and operational efficiency.",
     image: "/new2.png",
   },
   {
     id: 6,
     tag: "Whitepaper",
     title:
-      "Engineering the Future: Landsking Infra’s Vision for a Connected World",
+      "Engineering the Future: Landsking Infra Infra’s Vision for a Connected World",
     description:
-      "Discover how Landsking Infra is leveraging innovation, technology, and strategic partnerships to redefine the possibilities of modern infrastructure on a global scale.",
+      "Discover how Landsking Infra Infra is leveraging innovation, technology, and strategic partnerships to redefine the possibilities of modern infrastructure on a global scale.",
     image: "/news2.jpeg",
   },
 ];

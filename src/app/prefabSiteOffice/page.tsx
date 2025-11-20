@@ -84,7 +84,7 @@ const PrefabSiteOffice: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md: space-y-12 md:space-y-16">
+        <section className="w-full bg-white py-12 px-4 md:px-12   md: space-y-12 md:space-y-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
@@ -99,8 +99,8 @@ const PrefabSiteOffice: React.FC = () => {
                 Efficiently Designed Modular Site Offices for Quick Deployment
               </h3>
               <p className="text-gray-700 text-lg">
-                LandsKing Prefab delivers modular site office solutions using
-                advanced building materials like PUF insulated panels, EPS
+                Landsking Infra Prefab delivers modular site office solutions
+                using advanced building materials like PUF insulated panels, EPS
                 insulated panels, and Light Gauge Steel Framing (LGSF). Designed
                 for rapid deployment, our prefab site offices are the perfect
                 solution for projects requiring a quick and efficient setup.
@@ -119,9 +119,9 @@ const PrefabSiteOffice: React.FC = () => {
                 site-related challenges.
               </p>
               <p className="text-gray-700 text-lg">
-                LandsKing has successfully delivered modular site offices to a
-                wide range of clients across India, earning a reputation for
-                reliability, cost-efficiency, and long-lasting performance.
+                Landsking Infra has successfully delivered modular site offices
+                to a wide range of clients across India, earning a reputation
+                for reliability, cost-efficiency, and long-lasting performance.
               </p>
               <button
                 className="border  mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -135,7 +135,7 @@ const PrefabSiteOffice: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Key Features of LandsKing Modular Site Offices
+                Key Features of Landsking Infra Modular Site Offices
               </h3>
               <p className="text-gray-700 text-lg">
                 Tailored to your project needs using PUF/EPS insulated panels
@@ -164,7 +164,7 @@ const PrefabSiteOffice: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-4.jpg"
-                alt=" Key Features of LandsKing Modular Site Offices"
+                alt=" Key Features of Landsking Infra Modular Site Offices"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -177,16 +177,16 @@ const PrefabSiteOffice: React.FC = () => {
               Flexible Applications for Every Need
             </h3>
             <p className="text-gray-700 text-lg">
-              LandsKing offers flexible and innovative design solutions for a
-              variety of applications. Our modular site offices and construction
-              site office cabins provide efficient and durable workspaces that
-              can be quickly installed to support your project needs. Designed
-              for adaptability, these prefab units ensure reliable performance
-              across different environments and timelines.
+              Landsking Infra offers flexible and innovative design solutions
+              for a variety of applications. Our modular site offices and
+              construction site office cabins provide efficient and durable
+              workspaces that can be quickly installed to support your project
+              needs. Designed for adaptability, these prefab units ensure
+              reliable performance across different environments and timelines.
               <br />
               <br />
-              Beyond site offices, LandsKing also supplies temporary office
-              cabins ideal for events and other short-term uses. Our
+              Beyond site offices, Landsking Infra also supplies temporary
+              office cabins ideal for events and other short-term uses. Our
               prefabricated sales and marketing offices, along with multi-storey
               modular buildings, offer scalable and cost-effective solutions
               tailored to meet the evolving demands of your business without
@@ -199,14 +199,14 @@ const PrefabSiteOffice: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-2.jpeg"
-                alt="  Why Choose LandsKing Prefab Site Offices?"
+                alt="  Why Choose Landsking Infra Prefab Site Offices?"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Choose LandsKing Prefab Site Offices?
+                Why Choose Landsking Infra Prefab Site Offices?
               </h3>
               <ul className="text-gray-700 md:text-lg mb-4 space-y-1">
                 <li>
@@ -241,7 +241,7 @@ const PrefabSiteOffice: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Benefits of Choosing LandsKing Prefab Solutions
+                Benefits of Choosing Landsking Infra Prefab Solutions
               </h3>
 
               <ul className=" text-gray-700 md:text-lg space-y-1">
@@ -278,7 +278,7 @@ const PrefabSiteOffice: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-7.png"
-                alt=" Benefits of Choosing LandsKing Prefab Solutions"
+                alt=" Benefits of Choosing Landsking Infra Prefab Solutions"
                 fill
                 className="object-cover rounded-lg "
               />
@@ -290,14 +290,14 @@ const PrefabSiteOffice: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/pso-9.jpg"
-                alt="Why Landsking Infra Pvt Ltd Prefab?"
+                alt="Why Landsking Infra Infra Pvt Ltd Prefab?"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Landsking Infra Pvt Ltd Prefab?
+                Why Landsking Infra Infra Pvt Ltd Prefab?
               </h3>
               <ul className="space-y-1">
                 <li>390 Trusted Expertise Since 1999</li>

@@ -262,9 +262,9 @@ export default function Pebbuildingservice() {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra is your one-stop destination for all building
-              requirements, catering to diverse customer needs. Our
+            <p className="text-gray-700 mb-4 text-justify leading-relaxed">
+              Landsking Infra Infra is your one-stop destination for all
+              building requirements, catering to diverse customer needs. Our
               pre-engineered steel buildings are uniquely designed and precisely
               fabricated to suit your specifications. Built in strict adherence
               to international standards, these buildings consist of
@@ -278,13 +278,13 @@ export default function Pebbuildingservice() {
               quality, and reliability. Our buildings are designed for rapid
               delivery and erection, while offering flexibility for future
               expansion. Engineered to withstand the harshest weather
-              conditions, Landsking Infra ensures long-lasting, pre-engineered
-              solutions.
+              conditions, Landsking Infra Infra ensures long-lasting,
+              pre-engineered solutions.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4  text-justify leading-relaxed">
               What is a Pre-Engineered Building?{" "}
-              <span className="font-bold">Landsking Infra pvt.ltd</span> A
+              <span className="font-bold">Landsking Infra Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
               structural framework of primary framing (columns and rafters),
               secondary framing (purlins and girts), along with roof and wall
@@ -327,7 +327,9 @@ export default function Pebbuildingservice() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-black text-justify">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -379,7 +381,7 @@ export default function Pebbuildingservice() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed text-justify">
                   {feature.description}
                 </p>
               </div>
@@ -506,7 +508,7 @@ export default function Pebbuildingservice() {
             </h2>
 
             <p>
-              Landsking Infra Pvt. Ltd. is your one-stop solution for all
+              Landsking Infra Infra Pvt. Ltd. is your one-stop solution for all
               building and infrastructure requirements. Our pre-engineered steel
               buildings are carefully designed and fabricated to match your
               specific needs. Each structure is built in strict adherence to

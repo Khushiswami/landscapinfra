@@ -118,7 +118,9 @@ export default function Trunkeytpes() {
               <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
               </h3>
-              <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+              <p className="text-gray-600 text-justify mb-5">
+                {selectedArea.description}
+              </p>
               <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                 <a
                   href="/renewable-contact"

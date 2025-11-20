@@ -306,8 +306,8 @@ export default function Expertisecoldstorage() {
               Cold Storage
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
-              Landsking Infra specializes in advanced cold storage and warehouse
-              infrastructure solutions
+              Landsking Infra Infra specializes in advanced cold storage and
+              warehouse infrastructure solutions
             </p>
           </div>
 
@@ -359,18 +359,19 @@ export default function Expertisecoldstorage() {
             </h2>
 
             <p className="text-gray-700 text-justify font-medium mb-4 leading-relaxed">
-              Landsking Infra specializes in advanced cold storage and warehouse
-              infrastructure solutions. We design temperature-controlled
-              facilities that protect product quality and extend shelf life. Our
-              smart systems ensure energy efficiency, cost savings, and reliable
-              performance. Every project is delivered in compliance with strict
-              industry and safety standards. From concept to completion, we
-              provide future-ready storage solutions for diverse industries.
+              Landsking Infra Infra specializes in advanced cold storage and
+              warehouse infrastructure solutions. We design
+              temperature-controlled facilities that protect product quality and
+              extend shelf life. Our smart systems ensure energy efficiency,
+              cost savings, and reliable performance. Every project is delivered
+              in compliance with strict industry and safety standards. From
+              concept to completion, we provide future-ready storage solutions
+              for diverse industries.
             </p>
 
             <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               What is a Pre-Engineered Building?{" "}
-              <span className="font-bold">Landsking Infra pvt.ltd</span> A
+              <span className="font-bold">Landsking Infra Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
               structural framework of primary framing (columns and rafters),
               secondary framing (purlins and girts), along with roof and wall
@@ -400,7 +401,9 @@ export default function Expertisecoldstorage() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Why chose us{" "}
-            <span className="text-[#000080]">Landsking Infra Pvt. Ltd.</span>
+            <span className="text-[#000080]">
+              Landsking Infra Infra Pvt. Ltd.
+            </span>
           </h2>
           {/* <p className="text-gray-600 max-w-2xl mx-auto mb-12">
             Our Pre-Engineered Buildings are designed with innovation,

@@ -138,9 +138,9 @@ const Properties = () => {
                 Property Types
               </h2>
 
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                Your property decision defines your next decade. LANDSKING INFRA
-                specializes in all major asset types, viewing each sector
+              <p className="text-gray-700  text-justify mb-4 leading-relaxed">
+                Your property decision defines your next decade. Landsking Infra
+                Infra specializes in all major asset types, viewing each sector
                 through a lens of future-proof design and strategic value.
                 Partner with us across Residential, Commercial, and Industrial
                 represent a complete map of India's market potential. Define

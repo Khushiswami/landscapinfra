@@ -54,7 +54,7 @@ const Glasswool: React.FC = () => {
     {
       question: "What is a Glasswool Panel?",
       answer:
-        "Glasswool panels are lightweight insulation panels with a core made of fine glass fibers, sandwiched between durable metal facings. LandsKing Infra manufactures these panels to provide effective thermal insulation, acoustic control, and fire safety in one solution.",
+        "Glasswool panels are lightweight insulation panels with a core made of fine glass fibers, sandwiched between durable metal facings. Landsking Infra Infra manufactures these panels to provide effective thermal insulation, acoustic control, and fire safety in one solution.",
     },
     {
       question: "What are the benefits of using Glasswool Panels?",
@@ -67,7 +67,7 @@ const Glasswool: React.FC = () => {
         "They are widely used in commercial buildings, industrial facilities, cold storage units, HVAC ducts, and other spaces requiring insulation and sound control.",
     },
     {
-      question: "Are LandsKing Infra Glasswool Panels fire-resistant?",
+      question: "Are Landsking Infra Infra Glasswool Panels fire-resistant?",
       answer:
         "Yes. Glasswool is non-combustible and provides high fire resistance, enhancing safety for all types of installations.",
     },
@@ -84,7 +84,7 @@ const Glasswool: React.FC = () => {
     {
       question: "How are Glasswool Panels installed?",
       answer:
-        "Panels are designed for quick and secure installation using mechanical fasteners or adhesives. LandsKing Infra provides technical guidance to ensure proper on-site installation.",
+        "Panels are designed for quick and secure installation using mechanical fasteners or adhesives. Landsking Infra Infra provides technical guidance to ensure proper on-site installation.",
     },
     {
       question: "What thickness options are available for Glasswool Panels?",
@@ -97,9 +97,9 @@ const Glasswool: React.FC = () => {
         "Absolutely. Their lightweight, fire-resistant, and energy-efficient properties make them suitable for both residential and commercial applications.",
     },
     {
-      question: "Why choose LandsKing Infra for Glasswool Panels?",
+      question: "Why choose Landsking Infra Infra for Glasswool Panels?",
       answer:
-        "LandsKing Infra combines decades of experience, nationwide delivery, technical support, and strict quality control to provide reliable, high-performance Glasswool panel solutions.",
+        "Landsking Infra Infra combines decades of experience, nationwide delivery, technical support, and strict quality control to provide reliable, high-performance Glasswool panel solutions.",
     },
   ];
 
@@ -148,7 +148,7 @@ const Glasswool: React.FC = () => {
                 Excellence Our Glasswool Sandwich Panels deliver a specialized
                 blend of high-level acoustic absorption and certified fire
                 resilience, critical for modern industrial operations. Landsking
-                Infra deploys this rigid core solution to effectively
+                Infra Infra deploys this rigid core solution to effectively
                 compartmentalize noise and guarantee the safety of sensitive
                 areas, ensuring operational continuity and compliance on all
                 major construction fronts.

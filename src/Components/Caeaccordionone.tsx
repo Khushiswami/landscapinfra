@@ -33,7 +33,7 @@ export default function Caeaccordionone() {
       title: "The Power of Model-Based Definition ",
       heading: "The Power of Model-Based Definition (MBD)",
       paragraph:
-        "The core purpose of Model-Based Definition (MBD) is to establish a singular, authoritative digital record utilized across the entire product lifecycle—from initial concept through production, quality control, and servicing. This unified digital stream greatly improves team collaboration, drastically cuts down on manufacturing errors caused by misread drawings, and streamlines the whole production process. MBD is a leading component of the industry's shift to digital modernization, a field where LandsKingInfra is pioneering practices like the Digital Twin.",
+        "The core purpose of Model-Based Definition (MBD) is to establish a singular, authoritative digital record utilized across the entire product lifecycle—from initial concept through production, quality control, and servicing. This unified digital stream greatly improves team collaboration, drastically cuts down on manufacturing errors caused by misread drawings, and streamlines the whole production process. MBD is a leading component of the industry's shift to digital modernization, a field where Landsking InfraInfra is pioneering practices like the Digital Twin.",
       video: "/rndvideo/dynamic simulation video.mp4",
     },
   ];

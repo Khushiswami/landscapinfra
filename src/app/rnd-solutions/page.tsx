@@ -42,7 +42,7 @@ function Card({ image, icon, title, description }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
 

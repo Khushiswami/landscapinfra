@@ -25,7 +25,7 @@ export default function Lightguage() {
       title: "LGSF Homes & Luxury Villas",
       subtitle: "LGSF Homes & Luxury Villas",
       description:
-        "Landsking Infra offers expertly crafted prefabricated homes, designed to be innovative, energy-efficient, and budget-friendly. Constructed using premium materials such as PUF and EPS panels, these homes provide excellent thermal insulation and long-lasting durability. Fully customizable and rapidly installable, they are an ideal solution for a wide range of residential applications.",
+        "Landsking Infra Infra offers expertly crafted prefabricated homes, designed to be innovative, energy-efficient, and budget-friendly. Constructed using premium materials such as PUF and EPS panels, these homes provide excellent thermal insulation and long-lasting durability. Fully customizable and rapidly installable, they are an ideal solution for a wide range of residential applications.",
       image: "/menupageimg/lgs3.jpg",
     },
     {
@@ -33,7 +33,7 @@ export default function Lightguage() {
       title: "Prefab School",
       subtitle: "Prefab School",
       description:
-        " Landsking Infra delivers sustainable and economical prefabricated solutions tailored for schools and healthcare facilities. These modular buildings are engineered for fast deployment, design flexibility, and energy efficiency, making them perfect for educational and medical environments. Built with high-quality, customizable materials, they ensure optimal functionality, safety, and comfort to meet diverse operational needs.",
+        " Landsking Infra Infra delivers sustainable and economical prefabricated solutions tailored for schools and healthcare facilities. These modular buildings are engineered for fast deployment, design flexibility, and energy efficiency, making them perfect for educational and medical environments. Built with high-quality, customizable materials, they ensure optimal functionality, safety, and comfort to meet diverse operational needs.",
       image: "/menupageimg/lgs4.jpg",
     },
   ];
@@ -234,11 +234,11 @@ export default function Lightguage() {
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Innovative Light Gauge Steel Framing (LGSF) Solutions by Landsking
-              Infra{" "}
+              Infra Infra{" "}
             </h2>
 
             <p className="text-gray-700 mb-4  text-justify leading-relaxed">
-              Landsking Infra is a prominent provider of Light Gauge Steel
+              Landsking Infra Infra is a prominent provider of Light Gauge Steel
               Framing (LGSF) solutions in India, offering strong, sustainable,
               and budget-friendly construction options for diverse applications.
               With a strong foundation in engineering expertise and innovation,
@@ -380,8 +380,8 @@ export default function Lightguage() {
             {/* Text Section (Right Side) */}
             <div>
               <p className="text-gray-700 leading-relaxed mb-5">
-                Landsking Infra provides customized LGSF structures to suit a
-                broad spectrum of industry needs:
+                Landsking Infra Infra provides customized LGSF structures to
+                suit a broad spectrum of industry needs:
               </p>
               <ul className="text-gray-700 ">
                 <li className="mb-3">
@@ -417,7 +417,7 @@ export default function Lightguage() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Pvt. Ltd for PEBs?
+              Why Choose Landsking Infra Infra Pvt. Ltd for PEBs?
             </h2>
 
             <p className="text-gray-600 text-justify">

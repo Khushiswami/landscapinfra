@@ -82,7 +82,7 @@ const HOME_TABS = [
   {
     title: "Pre Engineered Buildings",
     headline: "High-Performance Pre-Engineered Steel Buildings",
-    body: "LandsKingInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
+    body: "Landsking InfraInfra delivers modern, durable, and cost-efficient pre-engineered buildings.",
     img: "/about.png",
     buttonText: "VIEW MORE",
     url: "/menupage",
@@ -207,7 +207,7 @@ export default function HydroPower() {
           src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
           alt: "Hydropower",
         }}
-        description="Landsking Infra delivers expert landscaping for hydro power projects, including works in hilly and riverine terrains."
+        description="Landsking Infra Infra delivers expert landscaping for hydro power projects, including works in hilly and riverine terrains."
         features={featuresData}
       />
 

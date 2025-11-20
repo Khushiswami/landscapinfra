@@ -128,12 +128,12 @@ export default function Publicoffice() {
 
           <div className="w-32 h-1 mt-3 mb-6 bg-[#000080]"></div>
 
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className="text-gray-700 leading-relaxed mb-6 text-justify">
             Building your dream office shouldn&apos;t be a nightmare. At
-            Landsking Infra, we turn the complex process of creating a modern
-            workspace into a simple, stress-free journey. We design and build
-            flexible offices that not only reflect your brand&apos;s unique
-            identity but also boost your team&apos;s productivity and
+            Landsking Infra Infra, we turn the complex process of creating a
+            modern workspace into a simple, stress-free journey. We design and
+            build flexible offices that not only reflect your brand&apos;s
+            unique identity but also boost your team&apos;s productivity and
             well-being. <br />
             We manage the entire process, from BIM-based visualization and 3D
             walkthroughs to the final handover. This &quot;design to handover
@@ -226,7 +226,7 @@ export default function Publicoffice() {
                             <h3 className="text-sm md:text-lg font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] md:text-[17px] mb-4 ">
+                            <p className="text-[10px] md:text-[17px] mb-4  text-justify">
                               {project.description}
                             </p>
                           </div>

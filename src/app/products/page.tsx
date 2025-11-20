@@ -51,7 +51,7 @@ function Card({
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base tracking-wide mb-5 flex-1">
+        <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
 
@@ -107,8 +107,8 @@ export default function Products() {
           Modern Designs with Flexible Customization Options
         </h2>
 
-        <p className="text-black text-sm sm:text-base md:text-lg mx-auto leading-relaxed mt-10 max-w-5xl">
-          At Landsking Infra, we specialize in delivering innovative,
+        <p className="text-gray-700 text-justify text-sm sm:text-base md:text-lg mx-auto leading-relaxed mt-10 max-w-5xl">
+          At Landsking Infra Infra, we specialize in delivering innovative,
           sustainable, and efficient prefabricated construction solutions
           designed to meet the evolving needs of industrial, commercial, and
           institutional projects. Our expertise spans Pre-Engineered Buildings

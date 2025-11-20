@@ -32,17 +32,17 @@ const featuresData = [
   {
     title: "Trusted Partner in Water Solutions",
     description:
-      "LandSking Infra has established itself as a reliable name in India’s water infrastructure sector, delivering complex projects from source development to bulk transmission and treatment.",
+      "Landsking Infra Infra has established itself as a reliable name in India’s water infrastructure sector, delivering complex projects from source development to bulk transmission and treatment.",
   },
   {
     title: "End-to-End Capabilities Across the Water Value Chain",
     description:
-      "LandSking Infra provides comprehensive water infrastructure solutions, including source development through dams and barrages, advanced treatment facilities such as water and sewage treatment plants, efficient transmission systems involving tunnels, pipelines, and aqueducts, and integrated water supply schemes catering to both urban and rural areas.",
+      "Landsking Infra Infra provides comprehensive water infrastructure solutions, including source development through dams and barrages, advanced treatment facilities such as water and sewage treatment plants, efficient transmission systems involving tunnels, pipelines, and aqueducts, and integrated water supply schemes catering to both urban and rural areas.",
   },
   {
     title: "Proven Execution Track Record",
     description:
-      "LandSking Infra has successfully completed over 100 water and sewage treatment plants and constructed more than 30 km of water supply and sewerage tunnels. The company possesses extensive expertise in building gravity dams and bulk water transfer systems, delivering large-scale water infrastructure projects for both public and private sector clients.",
+      "Landsking Infra Infra has successfully completed over 100 water and sewage treatment plants and constructed more than 30 km of water supply and sewerage tunnels. The company possesses extensive expertise in building gravity dams and bulk water transfer systems, delivering large-scale water infrastructure projects for both public and private sector clients.",
   },
 ];
 

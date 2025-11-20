@@ -33,7 +33,7 @@ export default function TotalSolutionP() {
             A total solution provider
           </h2>
 
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-justify">
             We are a solution-driven company that handles all aspects of a
             project from concept to erection, employing optimized solutions and
             value engineering.
