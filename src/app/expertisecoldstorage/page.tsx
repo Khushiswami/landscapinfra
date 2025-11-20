@@ -358,7 +358,7 @@ export default function Expertisecoldstorage() {
               Cold Storage{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 font-medium mb-4 leading-relaxed">
               Landsking Infra specializes in advanced cold storage and warehouse
               infrastructure solutions. We design temperature-controlled
               facilities that protect product quality and extend shelf life. Our

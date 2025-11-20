@@ -363,7 +363,7 @@ export default function Peb() {
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
               of Pre-Engineered Buildings (PEBs), delivering complete solutions
               for industrial, commercial, and institutional structures. Our
@@ -372,7 +372,7 @@ export default function Peb() {
               efficiency, and customized designs for diverse applications.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700  text-justify mb-4 leading-relaxed">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -425,7 +425,7 @@ export default function Peb() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -557,7 +557,7 @@ export default function Peb() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
               fully-integrated PEB manufacturing facility where every stage—
               from design and fabrication to finishing and dispatch—takes place
@@ -565,7 +565,7 @@ export default function Peb() {
               faster delivery, and reliable performance.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our infrastructure is powered by a highly skilled team of
               engineers, supported with state-of-the-art CNC machinery, robotic
               welding systems, and high-capacity fabrication tools. These
@@ -574,7 +574,7 @@ export default function Peb() {
               precision and efficiency.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxedtext-justify ">
               With strict quality checks at every stage—from automated
               fabrication to final assembly—we ensure that all components meet
               global industry standards. Whether it s a standard warehouse,
@@ -702,15 +702,15 @@ export default function Peb() {
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
-            <p>
-              25+ Years of Expertise in prefabricated and steel building
-              solutions Nationwide Presence with a strong logistics and project
-              execution network In-House Design & Engineering powered by 3D
-              modeling and load optimization Certified Manufacturing Standards
-              ensuring compliance with IS codes and quality benchmarks Timely
-              Project Delivery backed by structured planning and skilled
-              professionals End-to-End Turnkey Solutions covering design,
-              fabrication, delivery, and installation
+            <p className="text-gray-600 text-justify">
+              25+ years of expertise in prefabricated and steel building
+              solutions. Nationwide presence with a strong logistics and project
+              execution network. In-house design & engineering powered by 3D
+              modeling and load optimization. Certified manufacturing standards
+              ensuring compliance with IS codes and quality benchmarks. Timely
+              project delivery backed by structured planning and skilled
+              professionals. End-to-end turnkey solutions covering design,
+              fabrication, delivery, and installation.
             </p>
           </div>
 

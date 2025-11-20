@@ -89,20 +89,18 @@ const CleanRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 High-Precision Controlled Environments
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg  text-justify">
                 Clean rooms are specialized environments created to keep
                 airborne particles, contaminants, and pollutants at extremely
                 low levels. They are critical for sectors such as
                 pharmaceuticals, electronics, biotechnology, food processing,
                 and medical devices, where even tiny particles can compromise
-                product quality. <br />
-                <br />
-                LANDSKING excels in designing and producing modular clean room
-                solutions using premium PUF, EPS, and Rockwool sandwich panels.
-                Leveraging more than 25 years of prefabrication expertise, our
-                systems comply with rigorous international standards, offering
-                excellent hygiene, thermal performance, and contamination
-                control.
+                product quality. LANDSKING excels in designing and producing
+                modular clean room solutions using premium PUF, EPS, and
+                Rockwool sandwich panels. Leveraging more than 25 years of
+                prefabrication expertise, our systems comply with rigorous
+                international standards, offering excellent hygiene, thermal
+                performance, and contamination control.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -246,7 +244,7 @@ const CleanRoom: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600  text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>

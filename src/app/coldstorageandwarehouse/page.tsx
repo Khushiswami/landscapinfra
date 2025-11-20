@@ -351,7 +351,7 @@ export default function Coldstorageandwarehouse() {
               efficiency, and customized designs for diverse applications.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -362,7 +362,7 @@ export default function Coldstorageandwarehouse() {
               time compared to conventional methods.
             </p>
 
-            <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
+            <button className="border mt-3 border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
               GET A QUOTE
             </button>
           </div>
@@ -385,7 +385,7 @@ export default function Coldstorageandwarehouse() {
               Landsking Infra Pvt. Ltd. PEB Structures
             </span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+          <p className="text-gray-600 text-justify max-w-2xl mx-auto mb-12">
             Our Pre-Engineered Buildings are designed with innovation,
             durability, and efficiency at the core—providing solutions that meet
             modern industrial and commercial needs.
@@ -400,7 +400,7 @@ export default function Coldstorageandwarehouse() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -484,7 +484,7 @@ export default function Coldstorageandwarehouse() {
                   <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                     {selectedArea.subtitle}
                   </h3>
-                  <p className="text-gray-700 mb-5">
+                  <p className="text-gray-700 mb-5 text-justify">
                     {selectedArea.description}
                   </p>
                   <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
@@ -528,7 +528,9 @@ export default function Coldstorageandwarehouse() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-justify text-black">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}

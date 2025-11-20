@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/sofia-sans": "^5.2.8",
+    "@fontsource/viga": "^5.2.7",
     "@heroicons/react": "^2.2.0",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.539.0",

@@ -322,7 +322,7 @@ export default function Buildingandinfrastructure() {
             <h1 className="text-[28px] sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
               Pre Engineered Buildings
             </h1>
-            <p className="text-base sm:text-lg md:text-xl max-w-full sm:max-w-lg mx-auto lg:mx-0">
+            <p className="text-base  text-justify sm:text-lg md:text-xl max-w-full sm:max-w-lg mx-auto lg:mx-0">
               Pre-Engineered Buildings (PEBs) are modern steel structures
               designed, fabricated, and assembled using standardized components
               for faster construction.
@@ -379,7 +379,7 @@ export default function Buildingandinfrastructure() {
             </h2>
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
               It is extremely important for CAD architects to understand the
               concept of building design for public infrastructure. Equally
               necessary is the alignment of such professionals with service
@@ -389,7 +389,7 @@ export default function Buildingandinfrastructure() {
               and works across a wide range of construction projects, including
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700  text-justify mb-4 leading-relaxed">
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Commercial and High-Rise Buildings,Production Facilities,Data
               Centres,Health and Educational Constructions,Industrial and
@@ -446,7 +446,7 @@ export default function Buildingandinfrastructure() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600  text-justify text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -529,7 +529,7 @@ export default function Buildingandinfrastructure() {
                   <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                     {selectedArea.subtitle}
                   </h3>
-                  <p className="text-gray-700 mb-5">
+                  <p className="text-gray-700 mb-5 text-justify">
                     {selectedArea.description}
                   </p>
                   <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
@@ -576,7 +576,7 @@ export default function Buildingandinfrastructure() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
               fully-integrated PEB manufacturing facility where every stage—
               from design and fabrication to finishing and dispatch—takes place
@@ -584,7 +584,7 @@ export default function Buildingandinfrastructure() {
               faster delivery, and reliable performance.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our infrastructure is powered by a highly skilled team of
               engineers, supported with state-of-the-art CNC machinery, robotic
               welding systems, and high-capacity fabrication tools. These
@@ -593,7 +593,7 @@ export default function Buildingandinfrastructure() {
               precision and efficiency.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With strict quality checks at every stage—from automated
               fabrication to final assembly—we ensure that all components meet
               global industry standards. Whether it s a standard warehouse,
@@ -622,7 +622,7 @@ export default function Buildingandinfrastructure() {
               >
                 <img src={item.image} className="w-full h-44 object-cover" />
                 <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                  <p className="text-sm text-justify text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
                   <p className="text-sm text-black">{item.description}</p>
@@ -661,7 +661,7 @@ export default function Buildingandinfrastructure() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Left: Text Section */}
             <div>
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
+              <p className="text-gray-700  text-justify text-base leading-relaxed mb-4">
                 With the growing adoption of virtual technologies in
                 construction, the role of lean Building Information Models (BIM)
                 and pre-engineering has become vital. Globally, infrastructure
@@ -669,7 +669,7 @@ export default function Buildingandinfrastructure() {
                 surveys, and even 3D printing solutions.
               </p>
 
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
+              <p className="text-gray-700 text-justify text-base leading-relaxed mb-4">
                 Key infrastructure sectors where{" "}
                 <span className="font-bold">Landsking Infra Pvt. Ltd.</span>{" "}
                 provides support include:
@@ -692,7 +692,7 @@ export default function Buildingandinfrastructure() {
                 modern infrastructure projects.
               </p>
 
-              <p className="text-gray-700 text-base leading-relaxed">
+              <p className="text-gray-700 text-base leading-relaxed text-justify">
                 As urban areas continue to transform,{" "}
                 <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
                 earned the trust of clients by offering expertise that minimizes
@@ -839,7 +839,7 @@ export default function Buildingandinfrastructure() {
               Become a Customer
             </h2>
 
-            <p>
+            <p className="text-justify text-gray-600">
               Landsking Infra Pvt. Ltd. is your one-stop solution for all
               building and infrastructure requirements. Our pre-engineered steel
               buildings are carefully designed and fabricated to match your

@@ -99,7 +99,7 @@ const AcousticEnclosures: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Effective Noise Control Solutions For Industrial Spaces
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Acoustic enclosures play a vital role in controlling noise
                 pollution in industrial and commercial spaces. They block noise
                 from loud equipment and protect interiors from external sounds,
@@ -229,7 +229,7 @@ const AcousticEnclosures: React.FC = () => {
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-base text-justify md:text-md">
                       {faq.answer}
                     </p>
                   </div>

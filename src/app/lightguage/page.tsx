@@ -420,15 +420,15 @@ export default function Lightguage() {
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
-            <p>
-              25+ Years of Expertise in prefabricated and steel building
-              solutions Nationwide Presence with a strong logistics and project
-              execution network In-House Design & Engineering powered by 3D
-              modeling and load optimization Certified Manufacturing Standards
-              ensuring compliance with IS codes and quality benchmarks Timely
-              Project Delivery backed by structured planning and skilled
-              professionals End-to-End Turnkey Solutions covering design,
-              fabrication, delivery, and installation
+            <p className="text-gray-600 text-justify">
+              25+ years of expertise in prefabricated and steel building
+              solutions. Nationwide presence with a strong logistics and project
+              execution network. In-house design & engineering powered by 3D
+              modeling and load optimization. Certified manufacturing standards
+              ensuring compliance with IS codes and quality benchmarks. Timely
+              project delivery backed by structured planning and skilled
+              professionals. End-to-end turnkey solutions covering design,
+              fabrication, delivery, and installation.
             </p>
           </div>
 

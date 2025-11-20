@@ -108,7 +108,7 @@ text-transform: capitalize;"
                 across various industries.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote
@@ -122,21 +122,21 @@ text-transform: capitalize;"
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Landsking Infra for Your Cold Storage
               </h2>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Expertise & Experience - Extensive experience delivering
                 customized, high-performance cold storage solutions across
                 diverse industries.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Tailored Designs - Customized solutions to meet your specific
                 storage requirements, maximizing temperature control and space
                 efficiency.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Energy Efficiency - Incorporation of advanced technologies to
                 reduce energy consumption and lower operational costs.
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-lg text-justify">
                 Premium Quality - Use of superior materials and cutting-edge
                 manufacturing processes for enhanced durability and reliability.
               </p>
@@ -221,7 +221,7 @@ text-transform: capitalize;"
                       openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
                     }`}
                   >
-                    <p className="text-gray-600 text-base md:text-md">
+                    <p className="text-gray-600 text-justify text-base md:text-md">
                       {faq.answer}
                     </p>
                   </div>
