@@ -344,13 +344,13 @@ export default function Industriestherindustries() {
               concept of building design for public infrastructure. Equally
               necessary is the alignment of such professionals with service
               providers possessing extensive knowledge in construction design.
-              We at Landsking Infra Infra Pvt. Ltd. offer a suite of Virtual and
+              We at Landsking Infra Pvt. Ltd. offer a suite of Virtual and
               Design Construction expertise to clients. Our company collaborates
               and works across a wide range of construction projects, including
             </p>
 
             <p className="text-gray-700 mb-4 text-justify leading-relaxed">
-              <span className="font-bold">Landsking Infra Infra pvt.ltd</span> A
+              <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Commercial and High-Rise Buildings,Production Facilities,Data
               Centres,Health and Educational Constructions,Industrial and
               Distribution Facilities.When our specialists are entrusted with
@@ -386,7 +386,7 @@ export default function Industriestherindustries() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
-              Landsking Infra Infra Pvt. Ltd. PEB Structures
+              Landsking Infra Pvt. Ltd. PEB Structures
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -532,11 +532,11 @@ export default function Industriestherindustries() {
             </div>
 
             <p className="text-gray-600  text-justify leading-relaxed mb-4">
-              <strong>Landsking Infra Infra Pvt. Ltd.</strong> operates a
-              modern, fully-integrated PEB manufacturing facility where every
-              stage— from design and fabrication to finishing and dispatch—takes
-              place under one roof. This seamless process ensures superior
-              quality, faster delivery, and reliable performance.
+              <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
+              fully-integrated PEB manufacturing facility where every stage—
+              from design and fabrication to finishing and dispatch—takes place
+              under one roof. This seamless process ensures superior quality,
+              faster delivery, and reliable performance.
             </p>
 
             <p className="text-gray-600 text-justify leading-relaxed mb-4">
@@ -553,8 +553,8 @@ export default function Industriestherindustries() {
               fabrication to final assembly—we ensure that all components meet
               global industry standards. Whether it s a standard warehouse,
               factory building, or a customized industrial project,{" "}
-              <strong>Landsking Infra Infra Pvt. Ltd.</strong> provides
-              dependable, cost-effective, and timely{" "}
+              <strong>Landsking Infra Pvt. Ltd.</strong> provides dependable,
+              cost-effective, and timely{" "}
               <span className="font-semibold">PEB solutions across India.</span>
             </p>
           </div>
@@ -628,9 +628,7 @@ export default function Industriestherindustries() {
 
               <p className="text-gray-700 text-justify text-base leading-relaxed mb-4">
                 Key infrastructure sectors where{" "}
-                <span className="font-bold">
-                  Landsking Infra Infra Pvt. Ltd.
-                </span>{" "}
+                <span className="font-bold">Landsking Infra Pvt. Ltd.</span>{" "}
                 provides support include:
               </p>
 
@@ -653,12 +651,10 @@ export default function Industriestherindustries() {
 
               <p className="text-gray-700  text-justify text-base leading-relaxed">
                 As urban areas continue to transform,{" "}
-                <span className="font-bold">
-                  Landsking Infra Infra Pvt. Ltd.
-                </span>{" "}
-                has earned the trust of clients by offering expertise that
-                minimizes risks, enhances public safety, and integrates
-                automated systems for long-term reliability.
+                <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
+                earned the trust of clients by offering expertise that minimizes
+                risks, enhances public safety, and integrates automated systems
+                for long-term reliability.
               </p>
             </div>
 
@@ -779,13 +775,13 @@ export default function Industriestherindustries() {
           <div className="mt-12 text-center text-gray-700 leading-relaxed max-w-4xl mx-auto">
             <p>
               Over the last 40 years,{" "}
-              <span className="font-bold">Landsking Infra Infra Pvt. Ltd.</span>{" "}
-              has fulfilled its promise to numerous clients across the AEC
-              industry — from contractors and architects to fabricators,
-              consultants, MEP contractors, PEB companies, EPCs, OEMs, solution
-              providers, and system integrators. By partnering with us, you can
-              avoid unnecessary overheads and ensure smooth progress in urban
-              planning and infrastructure projects.
+              <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
+              fulfilled its promise to numerous clients across the AEC industry
+              — from contractors and architects to fabricators, consultants, MEP
+              contractors, PEB companies, EPCs, OEMs, solution providers, and
+              system integrators. By partnering with us, you can avoid
+              unnecessary overheads and ensure smooth progress in urban planning
+              and infrastructure projects.
             </p>
           </div>
         </div>
@@ -801,7 +797,7 @@ export default function Industriestherindustries() {
             </h2>
 
             <p>
-              Landsking Infra Infra Pvt. Ltd. is your one-stop solution for all
+              Landsking Infra Pvt. Ltd. is your one-stop solution for all
               building and infrastructure requirements. Our pre-engineered steel
               buildings are carefully designed and fabricated to match your
               specific needs. Each structure is built in strict adherence to

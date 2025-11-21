@@ -27,7 +27,7 @@ const items: AccordionItem[] = [
     id: 3,
     title: "Purpose",
     content:
-      "No single organization can create a sustainable future. Sustainability is nurtured within an ecosystem therefore We at Landsking Infra recognize that tackling Scope 3 emissions—those arising from our broader supply chain—is essential to achieving true sustainability in construction. That’s why we are actively engaging with clients, suppliers, and academic partners to drive collaborative solutions. Through our dedicated efforts at the Landsking Infra Infra Centre for Construction Engineering and Technology in Indore, we are investing in cutting-edge research, innovation, and skill development to accelerate the decarbonization of the construction sector and promote environmentally responsible building practices.",
+      "No single organization can create a sustainable future. Sustainability is nurtured within an ecosystem therefore We at Landsking Infra recognize that tackling Scope 3 emissions—those arising from our broader supply chain—is essential to achieving true sustainability in construction. That’s why we are actively engaging with clients, suppliers, and academic partners to drive collaborative solutions. Through our dedicated efforts at the Landsking Infra Centre for Construction Engineering and Technology in Indore, we are investing in cutting-edge research, innovation, and skill development to accelerate the decarbonization of the construction sector and promote environmentally responsible building practices.",
   },
 ];
 

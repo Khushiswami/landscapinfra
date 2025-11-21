@@ -204,7 +204,7 @@ export default function Irrigation() {
           src: "/industryhome/irrigation.jpg",
           alt: "Irrigation",
         }}
-        description="Landsking Infra Infra has been instrumental in executing large-scale and complex irrigation projects that have reshaped landscapes across India. Our portfolio includes dams, barrages, extensive networks of major and minor canals, as well as advanced lift irrigation systems."
+        description="Landsking Infra has been instrumental in executing large-scale and complex irrigation projects that have reshaped landscapes across India. Our portfolio includes dams, barrages, extensive networks of major and minor canals, as well as advanced lift irrigation systems."
         features={featuresData}
       />
 

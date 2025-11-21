@@ -21,10 +21,10 @@ export default function BuildHistory() {
       {/* Right Side */}
       <div className="text-gray-700 space-y-6">
         <p>
-          Landsking Infra Infra is one of India s Fastest Growing Companies as
-          an Industrial Solution Provider, Work on engineering, procurement,
-          construction (EPC), and maintenance companies. Landsking Infra Infra
-          works with Clients in diverse industries around the world to design,
+          Landsking Infra is one of India s Fastest Growing Companies as an
+          Industrial Solution Provider, Work on engineering, procurement,
+          construction (EPC), and maintenance companies. Landsking Infra works
+          with Clients in diverse industries around the world to design,
           construct, and maintain their capital projects.
         </p>
         <p>

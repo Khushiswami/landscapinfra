@@ -224,9 +224,8 @@ export default function Firesafety() {
               Fire Saftey
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
-              Landsking Infra Infra delivers comprehensive fire protection and
-              safety solutions for industrial, commercial, and institutional
-              facilities
+              Landsking Infra delivers comprehensive fire protection and safety
+              solutions for industrial, commercial, and institutional facilities
             </p>
           </div>
 
@@ -278,8 +277,8 @@ export default function Firesafety() {
             </h2>
 
             <p className="text-gray-700 mb-4  text-justify leading-relaxed mt-3">
-              Landsking Infra Infra delivers comprehensive fire protection and
-              safety solutions for industrial, commercial, and institutional
+              Landsking Infra delivers comprehensive fire protection and safety
+              solutions for industrial, commercial, and institutional
               facilities. Our systems are designed to mitigate risks, safeguard
               lives, and protect critical assets through intelligent design and
               rapid response mechanisms. We provide end-to-end services,
@@ -289,7 +288,7 @@ export default function Firesafety() {
               engineers and technicians ensures precise installation,
               maintenance, and monitoring for optimal performance. By combining
               advanced technology, expert engineering, and a client-focused
-              approach, Landsking Infra Infra ensures safe, reliable, and
+              approach, Landsking Infra ensures safe, reliable, and
               code-compliant fire protection solutions tailored to every
               facility’s unique requirements.
             </p>
@@ -316,7 +315,7 @@ export default function Firesafety() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
-              Landsking Infra Infra Pvt. Ltd. Fire Saftey
+              Landsking Infra Pvt. Ltd. Fire Saftey
             </span>
           </h2>
 

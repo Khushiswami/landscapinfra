@@ -65,10 +65,7 @@ export default function Brand() {
       <h2 className="text-3xl md:text-3xl font-bold text-center text-[#000080] mb-8">
         Meet Our Clients
       </h2>
-      <div className="space-y-4">
-        {renderRow(false)}
-        {renderRow(true)}
-      </div>
+      <div className="space-y-4">{renderRow(false)}</div>
     </section>
   );
 }

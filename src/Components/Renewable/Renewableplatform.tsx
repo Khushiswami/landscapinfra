@@ -7,6 +7,15 @@ import { HiChevronRight } from "react-icons/hi";
 
 const TABS = [
   {
+    title: "Solar design",
+    headline: "Smart Designs for Maximum Solar Output",
+    body: "We craft data-driven solar layouts tailored to each site’s unique conditions. Using advanced simulation and engineering precision, we ensure optimal energy output, structural integrity, and sustainable performance — right from blueprint to execution.",
+
+    img: "/solar/solar design.jpg",
+    buttonText: "VIEW MORE",
+    url: "/soalr-design",
+  },
+  {
     title: "Epc solutions",
     headline: "Turning Complex Solar Projects into Simple Success Stories",
     body: " We deliver complete EPC solutions — from design and procurement to installation and commissioning — ensuring seamless project execution. Every system is optimized for performance, built with precision, and backed by proven reliability for long-term solar success.",
@@ -21,15 +30,6 @@ const TABS = [
     img: "/solar/ground mounted solar (2).jpg",
     buttonText: "VIEW MORE",
     url: "/groundmounted",
-  },
-  {
-    title: "Solar design",
-    headline: "Smart Designs for Maximum Solar Output",
-    body: "We craft data-driven solar layouts tailored to each site’s unique conditions. Using advanced simulation and engineering precision, we ensure optimal energy output, structural integrity, and sustainable performance — right from blueprint to execution.",
-
-    img: "/solar/solar design.jpg",
-    buttonText: "VIEW MORE",
-    url: "/soalr-design",
   },
 ];
 
@@ -111,7 +111,7 @@ export default function Renewableplatform() {
       <div className="  mx-auto px-4 md:mx-17">
         <div className="mt-8 flex justify-center">
           <div className="relative rounded-[5px] overflow-hidden  w-full  ">
-            <div className="relative  h-[340px] md:h-[460px]">
+            <div className="relative  h-[390px] md:h-[440px]">
               <Image
                 src={TABS[active].img}
                 alt={TABS[active].title}

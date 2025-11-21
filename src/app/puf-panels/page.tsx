@@ -47,12 +47,12 @@ const Pufpanels: React.FC = () => {
     {
       question: "What are EPS panels?",
       answer:
-        "EPS (Expanded Polystyrene) panels are lightweight sandwich panels with an EPS core between metal sheets, designed for insulation, cladding, and partition applications. Landsking Infra Infra manufactures these panels with precision to ensure consistent quality and performance.",
+        "EPS (Expanded Polystyrene) panels are lightweight sandwich panels with an EPS core between metal sheets, designed for insulation, cladding, and partition applications. Landsking Infra manufactures these panels with precision to ensure consistent quality and performance.",
     },
     {
       question: "What are the benefits of using EPS panels?",
       answer:
-        "They offer thermal efficiency, sound insulation, moisture resistance, lightweight construction, and cost-effective installation. Landsking Infra Infra EPS panels also ensure durability and long-lasting performance for commercial, industrial, and interior projects.",
+        "They offer thermal efficiency, sound insulation, moisture resistance, lightweight construction, and cost-effective installation. Landsking Infra EPS panels also ensure durability and long-lasting performance for commercial, industrial, and interior projects.",
     },
     {
       question: "How are EPS panels used in construction?",
@@ -67,7 +67,7 @@ const Pufpanels: React.FC = () => {
     {
       question: "How are EPS panels installed?",
       answer:
-        "Panels are designed for quick and easy installation, typically joined with mechanical fasteners, adhesives, or overlap methods depending on the application. Landsking Infra Infra provides technical support to ensure proper installation.",
+        "Panels are designed for quick and easy installation, typically joined with mechanical fasteners, adhesives, or overlap methods depending on the application. Landsking Infra provides technical support to ensure proper installation.",
     },
     {
       question: "Can EPS panels be used in all climates?",
@@ -77,7 +77,7 @@ const Pufpanels: React.FC = () => {
     {
       question: "What are the fire safety considerations for EPS panels?",
       answer:
-        "EPS panels meet standard fire safety norms when properly treated; additional coatings or fire-retardant additives can enhance safety for specific applications. Landsking Infra Infra ensures all panels comply with industry safety standards.",
+        "EPS panels meet standard fire safety norms when properly treated; additional coatings or fire-retardant additives can enhance safety for specific applications. Landsking Infra ensures all panels comply with industry safety standards.",
     },
   ];
 
@@ -123,10 +123,10 @@ const Pufpanels: React.FC = () => {
               <p className="text-gray-700 mb-4 text-justify">
                 PUF and PIR panels are specially designed insulated wall and
                 roof panels that keep interiors cooler, safer, and
-                energy-efficient. At Landsking Infra Infra, we produce these
-                panels with high accuracy to ensure strong durability and fast
-                on-site installation. Perfect for cold storage, clean rooms, and
-                large commercial or industrial buildings, they help reduce power
+                energy-efficient. At Landsking Infra, we produce these panels
+                with high accuracy to ensure strong durability and fast on-site
+                installation. Perfect for cold storage, clean rooms, and large
+                commercial or industrial buildings, they help reduce power
                 consumption while offering long-lasting performance.
               </p>
               <button

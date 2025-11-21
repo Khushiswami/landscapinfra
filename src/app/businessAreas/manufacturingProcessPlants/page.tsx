@@ -149,7 +149,7 @@ export default function ManufacturingProcessPlants() {
           src: "/industryhome/Manufacturing & Process.jpg",
           alt: "Manufacturing Plants",
         }}
-        description="Landsking Infra Infra is a leading industrial infrastructure provider with extensive experience in building process plants, auxiliary facilities, factories, workshops, and pumping stations. We also specialize in establishing on-site fabrication units tailored to meet highly specific and customized project needs."
+        description="Landsking Infra is a leading industrial infrastructure provider with extensive experience in building process plants, auxiliary facilities, factories, workshops, and pumping stations. We also specialize in establishing on-site fabrication units tailored to meet highly specific and customized project needs."
         features={featuresData}
       />
 

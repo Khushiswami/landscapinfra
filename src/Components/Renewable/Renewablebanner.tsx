@@ -79,7 +79,7 @@ export default function Renewablebanner() {
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.7 }}
           >
-            <h1 className="text-xl  max-w-5xl md:text-5xl font-bold text-white mb-6 leading-snug">
+            <h1 className="text-xl  max-w-4xl md:text-5xl font-bold text-white mb-6 leading-snug">
               {slides[active].titling}
             </h1>
 

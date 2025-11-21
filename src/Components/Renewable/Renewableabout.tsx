@@ -88,12 +88,12 @@ export default function Renewableabout() {
             Building Tomorrow’s Energy Infrastructure — Today.
           </h2>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-base md:text-md">
-            Landsking Infra Infra is a leading Solar EPC & Industrial
-            Infrastructure company specializing in complete design-to-delivery
-            solutions. We combine engineering precision, project management
-            excellence, and green innovation to create reliable solar power
-            systems for industrial, commercial, and residential clients.
+          <p className="text-gray-600 mb-6 text-justify leading-relaxed text-base md:text-md">
+            Landsking Infra is a leading Solar EPC & Industrial Infrastructure
+            company specializing in complete design-to-delivery solutions. We
+            combine engineering precision, project management excellence, and
+            green innovation to create reliable solar power systems for
+            industrial, commercial, and residential clients.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mb-6">

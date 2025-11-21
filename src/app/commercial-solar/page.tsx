@@ -261,11 +261,11 @@ export default function Commercial() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
           <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-2xl mx-auto md:mx-0">
               Commercial Rooftop Solar Solutions
             </h1>
             <p className="text-sm text-justify sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
-              At Landsking Infra Infra delivers industrial-grade rooftop solar
+              At Landsking Infra delivers industrial-grade rooftop solar
               solutions designed for India’s commercial and manufacturing
               sectors.
             </p>
@@ -345,7 +345,7 @@ export default function Commercial() {
       <section className="bg-[#000080] text-white py-10">
         <div className=" mx-auto px-4 md:px-18 lg:mx-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits for Commercial Solar with Landsking Infra Infra
+            Benefits of Commercial Solar with Landsking Infra
           </h2>
 
           {/* Cards Row */}
@@ -391,11 +391,11 @@ export default function Commercial() {
             How Can we Help Your Industry Benefit from Custom Solar?
           </h2>
           <p className=" text-justify mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15 ">
-            Landsking Infra Infra delivers customized rooftop solar solutions
-            for India’s commercial and manufacturing sectors. We manage the
-            complete process — surveying, designing, installing, and maintaining
-            — to provide long-lasting, efficient, and cost-effective clean
-            energy for your business.
+            Landsking Infra delivers customized rooftop solar solutions for
+            India’s commercial and manufacturing sectors. We manage the complete
+            process — surveying, designing, installing, and maintaining — to
+            provide long-lasting, efficient, and cost-effective clean energy for
+            your business.
           </p>
         </header>
 

@@ -99,7 +99,7 @@ export default function Timeline() {
           decade and a half to deliver certainty for our clients.
         </p>
         <p className="text-gray-600 text-lg">
-          Since 2017 it was founded, Landsking Infra Infra has expanded into new
+          Since 2017 it was founded, Landsking Infra has expanded into new
           markets and strengthened its project delivery capabilities; pioneering
           modern methods of construction, adopting purposeful technologies,
           delivering certainty for clients and constructing some of the most

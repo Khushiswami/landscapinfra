@@ -73,14 +73,14 @@ const Warehouse: React.FC = () => {
               </h2>
               <p className="text-gray-600 text-justify mb-4  md:text-lg">
                 Boost your industrial storage and logistics efficiency with
-                Landsking Infra Infras pre-fabricated warehouse and godown
-                structures — engineered for strength, quick deployment, and
+                Landsking Infras pre-fabricated warehouse and godown structures
+                — engineered for strength, quick deployment, and
                 cost-effectiveness.
               </p>
               <p className="text-gray-600 text-justify mb-4  md:text-lg">
-                Landsking Infra Infra, a prominent name among warehouse
-                structure manufacturers in India, specializes in delivering
-                pre-engineered warehouses tailored to client-specific demands.
+                Landsking Infra, a prominent name among warehouse structure
+                manufacturers in India, specializes in delivering pre-engineered
+                warehouses tailored to client-specific demands.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -131,8 +131,7 @@ const Warehouse: React.FC = () => {
           {/* Turnkey Solutions */}
           <div className=" text-left md:text-center mx-auto">
             <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
-              Landsking Infra Infras Complete Turnkey Warehouse Solutions
-              Include:
+              Landsking Infras Complete Turnkey Warehouse Solutions Include:
             </h2>
             <p className="text-gray-600   text-lg">
               Our turnkey warehouse solutions start with expert design and
@@ -150,15 +149,14 @@ const Warehouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[430px]">
               <Image
                 src="/menupagetwo/w-5.png"
-                alt="Main Advantages of Landsking Infra Infras Pre-Engineered Warehouses"
+                alt="Main Advantages of Landsking Infras Pre-Engineered Warehouses"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4 text-[#000080] md:text-3xl">
-                Main Advantages of Landsking Infra Infras Pre-Engineered
-                Warehouses
+                Main Advantages of Landsking Infras Pre-Engineered Warehouses
               </h3>
               <ul className="text-gray-700 mb-4 space-y-1">
                 <li>
@@ -242,14 +240,14 @@ const Warehouse: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/w-7.png"
-                alt=" Why Landsking Infra Infra Pvt Ltd Prefab as warehouse"
+                alt=" Why Landsking Infra Pvt Ltd Prefab as warehouse"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4 text-[#000080] md:text-3xl">
-                Why Landsking Infra Infra Pvt Ltd Prefab?
+                Why Landsking Infra Pvt Ltd Prefab?
               </h3>
               <ul className="space-y-1 text-gray-700">
                 <li>Trusted Expertise Since 1999</li>

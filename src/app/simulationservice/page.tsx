@@ -218,15 +218,15 @@ export default function Simulationservice() {
           </h2>
 
           <p className="text-gray-600 leading-relaxed text-justify mb-6 mt-5">
-            Landsking Infra Infra provides advanced simulation services for
-            complex engineering and infrastructure projects. Our solutions
-            optimize designs, improve efficiency, and lower operational risks
-            with precision. Through digital modeling, we help clients validate
-            ideas before real-world implementation. Simulation tools predict
+            Landsking Infra provides advanced simulation services for complex
+            engineering and infrastructure projects. Our solutions optimize
+            designs, improve efficiency, and lower operational risks with
+            precision. Through digital modeling, we help clients validate ideas
+            before real-world implementation. Simulation tools predict
             performance, durability, and long-term reliability of systems. This
             approach ensures cost-effective execution with fewer delays or
-            design errors. With Landsking Infra Infra, innovation meets accuracy
-            for smarter project delivery.
+            design errors. With Landsking Infra, innovation meets accuracy for
+            smarter project delivery.
           </p>
 
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">

@@ -146,7 +146,7 @@ export default function Heavysector() {
                           <h3 className="text-sm md:text-sm font-semibold mb-2">
                             {project.title}
                           </h3>
-                          <p className="text-[10px] md:text-xs mb-4 line-clamp-3">
+                          <p className="text-[10px] md:text-xs mb-4 ">
                             {project.description}
                           </p>
                           <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">

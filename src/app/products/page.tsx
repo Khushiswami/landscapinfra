@@ -108,7 +108,7 @@ export default function Products() {
         </h2>
 
         <p className="text-gray-700 text-justify text-sm sm:text-base md:text-lg mx-auto leading-relaxed mt-10 max-w-5xl">
-          At Landsking Infra Infra, we specialize in delivering innovative,
+          At Landsking Infra, we specialize in delivering innovative,
           sustainable, and efficient prefabricated construction solutions
           designed to meet the evolving needs of industrial, commercial, and
           institutional projects. Our expertise spans Pre-Engineered Buildings

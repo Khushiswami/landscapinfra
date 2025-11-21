@@ -24,8 +24,8 @@ export default function Industryinstallation() {
       <Head>
         <title>Industry Installation </title>
         <meta
-          name="Best Industrial Construction Company - Landsking Infra Infra"
-          content="As a leading EPC contractor, Landsking Infra Infra provides complete industrial construction services, including turnkey projects and heavy industrial building construction."
+          name="Best Industrial Construction Company - Landsking Infra"
+          content="As a leading EPC contractor, Landsking Infra provides complete industrial construction services, including turnkey projects and heavy industrial building construction."
         />
       </Head>
       <Industryheader />

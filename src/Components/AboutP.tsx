@@ -31,10 +31,10 @@ export default function AboutP() {
             world to design, construct and maintain their capital projects.
           </h1> */}
           <h1
-            className="text-xl md:text-[25px] font-semibold"
-            style={{
-              fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
-            }}
+            className="text-xl md:text-[25px] font-semibold  text-justify"
+            // style={{
+            //   fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
+            // }}
           >
             &quot;Lands king Infra works with Clients in diverse industries
             around the world to design, construct and maintain their capital
@@ -42,14 +42,14 @@ export default function AboutP() {
           </h1>
 
           <p
-            className="text-[15px] md:text-[16px] font-[500px] text-white"
-            style={{
-              fontFamily: "'DM Sans', Arial, sans-serif",
-            }}
+            className="text-[15px] md:text-[16px] font-[500px] text-white text-justify"
+            // style={{
+            //   fontFamily: "'DM Sans', Arial, sans-serif",
+            // }}
           >
-            Landsking Infra Infra is one of India’s fastest growing companies as
-            an Industrial Solution Provider. It works on engineering,
-            procurement, construction (EPC) and maintenance companies.
+            Landsking Infra is one of India’s fastest growing companies as an
+            Industrial Solution Provider. It works on engineering, procurement,
+            construction (EPC) and maintenance companies.
           </p>
         </div>
       </div>

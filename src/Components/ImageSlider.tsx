@@ -15,7 +15,7 @@ const images = [
   {
     src: "/product/s2.jpg",
     title: "Shed",
-    desc: "Riddhima Builders System offers a variety of quality sheds to its clients. All our sheds are perfect for comprehensive storage solution. Being one of the leading shed manufacturers in the industry, we are able to build industrial sheds in different sizes to meet clients’ varied requirements.",
+    desc: "Landsking Infra  offers a variety of quality sheds to its clients. All our sheds are perfect for comprehensive storage solution. Being one of the leading shed manufacturers in the industry, we are able to build industrial sheds in different sizes to meet clients’ varied requirements.",
   },
   {
     src: "/product/s3.jpg",

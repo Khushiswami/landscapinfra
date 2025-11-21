@@ -47,7 +47,7 @@ const MultiStoryBuilding: React.FC = () => {
     {
       question: "How Do We Guarantee Quality from a Distance?",
       answer:
-        "At Landsking Infra Infra, quality is guaranteed through stringent, factory-controlled QA protocols. Since approximately 90% of the build is off-site, every component is precision-engineered, measured, and inspected under controlled conditions, drastically minimizing human error before reaching your site.",
+        "At Landsking Infra, quality is guaranteed through stringent, factory-controlled QA protocols. Since approximately 90% of the build is off-site, every component is precision-engineered, measured, and inspected under controlled conditions, drastically minimizing human error before reaching your site.",
     },
     {
       question: "Who are the Recognized Leaders in Indian Prefabrication??",
@@ -85,18 +85,18 @@ const MultiStoryBuilding: React.FC = () => {
             <div className="relative w-full h-80 md:h-[390px]">
               <Image
                 src="/menupagetwo/msb1.jpg"
-                alt="  Prefab Multi-Storey Buildings by Landsking Infra Infra"
+                alt="  Prefab Multi-Storey Buildings by Landsking Infra"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Prefab Multi-Storey Buildings by Landsking Infra Infra
+                Prefab Multi-Storey Buildings by Landsking Infra
               </h2>
 
               <p className="text-gray-700 text-lg text-justify">
-                At Landsking Infra Infra, we excel in crafting innovative
+                At Landsking Infra, we excel in crafting innovative
                 prefabricated multi-storey structures that offer unmatched
                 durability, rapid construction, and eco-friendly solutions. With
                 over 20 years of industry experience and advanced production

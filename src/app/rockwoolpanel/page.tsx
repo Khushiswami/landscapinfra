@@ -54,7 +54,7 @@ const Portacabins: React.FC = () => {
     {
       question: "What are Rockwool Sandwich Panels?",
       answer:
-        "Rockwool panels are high-performance sandwich panels with a rigid stone wool core (from molten basalt rock) bonded between durable metal sheets. Landsking Infra Infra manufactures these panels to deliver superior fire resistance, thermal insulation, and acoustic control in one efficient solution.",
+        "Rockwool panels are high-performance sandwich panels with a rigid stone wool core (from molten basalt rock) bonded between durable metal sheets. Landsking Infra manufactures these panels to deliver superior fire resistance, thermal insulation, and acoustic control in one efficient solution.",
     },
     {
       question: "What is the fire rating of Rockwool panels?",
@@ -80,7 +80,7 @@ const Portacabins: React.FC = () => {
     {
       question: "What thickness and density options are available?",
       answer:
-        "Landsking Infra Infra offers a range of thicknesses and densities to meet diverse structural, thermal, and acoustic requirements. Panels can be customized based on project needs.",
+        "Landsking Infra offers a range of thicknesses and densities to meet diverse structural, thermal, and acoustic requirements. Panels can be customized based on project needs.",
     },
     {
       question: "Are Rockwool panels environmentally friendly?",
@@ -94,15 +94,15 @@ const Portacabins: React.FC = () => {
     },
     {
       question:
-        "How does Landsking Infra Infra ensure the quality of its Rockwool panels?",
+        "How does Landsking Infra ensure the quality of its Rockwool panels?",
       answer:
         "All panels are produced under strict quality control in advanced facilities, ensuring consistent density, performance, and compliance with fire and safety standards.",
     },
     {
       question:
-        "Why should I choose Landsking Infra Infra as my Rockwool panel supplier?",
+        "Why should I choose Landsking Infra as my Rockwool panel supplier?",
       answer:
-        "With decades of expertise, nationwide delivery, technical support, and a commitment to quality, Landsking Infra Infra provides reliable Rockwool panel solutions for all construction and industrial applications.",
+        "With decades of expertise, nationwide delivery, technical support, and a commitment to quality, Landsking Infra provides reliable Rockwool panel solutions for all construction and industrial applications.",
     },
   ];
 

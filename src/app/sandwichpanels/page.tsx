@@ -288,13 +288,13 @@ export default function Sandwichpanels() {
             </h2>
 
             <p className="text-gray-600 text-justify mb-4 leading-relaxed text-justify">
-              Landsking Infra Infra stands as one of India s top manufacturers
-              of sandwich panels, providing a diverse selection of insulated
-              panels designed for superior thermal performance, robust
-              structural strength, and fast installation. Equipped with both
-              continuous and discontinuous production lines, we deliver
-              consistent quality, precision, and adaptability for projects of
-              all sizes—from large-scale developments to custom builds.{" "}
+              Landsking Infra stands as one of India s top manufacturers of
+              sandwich panels, providing a diverse selection of insulated panels
+              designed for superior thermal performance, robust structural
+              strength, and fast installation. Equipped with both continuous and
+              discontinuous production lines, we deliver consistent quality,
+              precision, and adaptability for projects of all sizes—from
+              large-scale developments to custom builds.{" "}
             </p>
 
             <p className="text-gray-600 mb-4 leading-relaxed text-justify">
@@ -520,7 +520,7 @@ export default function Sandwichpanels() {
         <div className="md:mx-8 mx-auto px-6 md:px-10">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Why Choose Landsking Infra Infra Sandwich Panels?
+            Why Choose Landsking Infra Sandwich Panels?
             <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
           </h2>
 
@@ -539,9 +539,9 @@ export default function Sandwichpanels() {
             {/* Text Section (Right Side) */}
             <div>
               <p className="text-gray-600 text-justify leading-relaxed">
-                Landsking Infra Infra offers advanced sandwich panels
-                manufactured using both continuous and discontinuous production
-                lines to ensure precision and quality. These panels deliver high
+                Landsking Infra offers advanced sandwich panels manufactured
+                using both continuous and discontinuous production lines to
+                ensure precision and quality. These panels deliver high
                 insulation performance, offering excellent thermal and acoustic
                 efficiency with low thermal conductivity, resulting in
                 significant energy savings. Lightweight yet highly durable, they
@@ -563,7 +563,7 @@ export default function Sandwichpanels() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Infra Pvt. Ltd for PEBs?
+              Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
             <p>

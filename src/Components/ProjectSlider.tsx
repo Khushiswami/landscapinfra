@@ -106,7 +106,7 @@ export default function ProjectSlider() {
                       KNOW MORE
                     </button>
                   </div>
-                  <p className="mt-3 text-gray-700">{project.location}</p>
+                  <p className="mt-3 text-gray-600">{project.location}</p>
                 </div>
               </SwiperSlide>
             ))}

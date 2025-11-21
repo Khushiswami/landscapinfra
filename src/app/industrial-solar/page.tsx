@@ -289,7 +289,7 @@ export default function Industrial() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
+                      className="w-full h-48 sm:h-64 md:h-62 object-cover"
                     />
                     <div className="p-4 text-center">
                       <h3 className="text-base sm:text-lg md:text-xl font-semibold">
@@ -320,18 +320,17 @@ export default function Industrial() {
             </h2>
 
             <p className="text-gray-700 mb-4 leading-relaxed text-justify">
-              Landsking Infra Infra is one of India’s most trusted names in
-              industrial solar rooftop solutions, delivering high-performance,
-              sustainable energy systems. From design to installation, our
-              customized solar solutions are engineered to optimize energy
-              efficiency for industries across the country. By adopting
-              Landsking Infra Infra’s solar systems, businesses not only achieve
-              significant cost savings and reduced grid dependency but also
-              demonstrate a strong commitment to environmental stewardship and
-              sustainable growth. At Landsking Infra Infra, we believe that
-              powering businesses with clean energy is more than a technical
-              solution—it is a strategic investment in a resilient, greener
-              future.
+              Landsking Infra is one of India’s most trusted names in industrial
+              solar rooftop solutions, delivering high-performance, sustainable
+              energy systems. From design to installation, our customized solar
+              solutions are engineered to optimize energy efficiency for
+              industries across the country. By adopting Landsking Infra’s solar
+              systems, businesses not only achieve significant cost savings and
+              reduced grid dependency but also demonstrate a strong commitment
+              to environmental stewardship and sustainable growth. At Landsking
+              Infra, we believe that powering businesses with clean energy is
+              more than a technical solution—it is a strategic investment in a
+              resilient, greener future.
             </p>
 
             <Link href="/solar-contact">
@@ -382,7 +381,7 @@ export default function Industrial() {
       <section className="bg-[#000080] text-white py-10">
         <div className=" mx-auto px-4 md:px-18 lg:mx-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits for Industries with Landsking Infra Infra
+            Benefits for Industries with Landsking Infra
           </h2>
 
           {/* Cards Row */}
@@ -428,7 +427,7 @@ export default function Industrial() {
             How Can we Help Your Industry Benefit from Custom Solar?
           </h2>
           <p className=" mt-5 md:mt-10 text-sm text-slate-500 mb-9 md:mb-15  text-justify">
-            At Landsking Infra Infra, we specialize in industrial rooftop solar
+            At Landsking Infra, we specialize in industrial rooftop solar
             solutions, starting from 150 kW. Our team analyzes your facility to
             design customized systems that maximize efficiency, reduce energy
             costs, and deliver long-term sustainable value.

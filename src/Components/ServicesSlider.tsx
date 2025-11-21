@@ -56,8 +56,7 @@ const services = [
       <>
         <p className="font-medium">
           <span className="font-bold block ">
-            Offsite Manufacturing Our Landsking Infra Infra Centre of Excellence
-            in
+            Offsite Manufacturing Our Landsking Infra Centre of Excellence in
           </span>
           India uses modern, low-carbon machinery for next-generation projects.
         </p>

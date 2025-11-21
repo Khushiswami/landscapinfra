@@ -47,7 +47,7 @@ const Epcpanels: React.FC = () => {
     {
       question: "What are PUF/PIR Sandwich Panels?",
       answer:
-        "PUF (Polyurethane Foam) and PIR (Polyisocyanurate) panels are high-performance insulated sandwich panels with a core of rigid foam between metal sheets. Landsking Infra Infra manufactures these panels to provide superior thermal insulation, strength, and energy efficiency for modern construction.",
+        "PUF (Polyurethane Foam) and PIR (Polyisocyanurate) panels are high-performance insulated sandwich panels with a core of rigid foam between metal sheets. Landsking Infra manufactures these panels to provide superior thermal insulation, strength, and energy efficiency for modern construction.",
     },
     {
       question: "What is the difference between PUF and PIR panels?",
@@ -55,8 +55,7 @@ const Epcpanels: React.FC = () => {
         "While both offer excellent insulation, PIR panels provide higher fire resistance and slightly better thermal efficiency than standard PUF panels, making them suitable for specialized applications.",
     },
     {
-      question:
-        "What types of PUF/PIR panels does Landsking Infra Infra offer?",
+      question: "What types of PUF/PIR panels does Landsking Infra offer?",
       answer:
         "We offer wall and roof panels with various surface finishes, ribbing options, and core densities to meet diverse industrial, commercial, and cold storage requirements.",
     },
@@ -83,7 +82,7 @@ const Epcpanels: React.FC = () => {
     {
       question: "Can PUF/PIR panels be customized?",
       answer:
-        "Yes. Landsking Infra Infra provides panels in customized thicknesses, finishes, profiles, and sizes to suit specific project requirements, ensuring flexibility in design and application.",
+        "Yes. Landsking Infra provides panels in customized thicknesses, finishes, profiles, and sizes to suit specific project requirements, ensuring flexibility in design and application.",
     },
     {
       question: "Can PUF/PIR panels be used for roofing and walls?",
@@ -93,7 +92,7 @@ const Epcpanels: React.FC = () => {
     {
       question: "How are PUF/PIR panels installed?",
       answer:
-        "Panels are designed for quick, secure installation using mechanical fasteners, adhesives, or overlap methods. Landsking Infra Infra also provides technical support and guidance to ensure proper installation on-site.",
+        "Panels are designed for quick, secure installation using mechanical fasteners, adhesives, or overlap methods. Landsking Infra also provides technical support and guidance to ensure proper installation on-site.",
     },
   ];
 

@@ -41,7 +41,7 @@ export default function Rndstories() {
   const router = useRouter();
 
   return (
-    <section className=" mx-auto px-6 md:px-12 py-12 md:mx-11">
+    <section className=" mx-auto px-6 md:px-12 py-5 md:py-12 md:mx-11">
       <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-10">
         Success Stories
       </h2>

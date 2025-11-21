@@ -43,7 +43,7 @@ export default function Solarcontact() {
         {/* Left Content */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Landsking Infra Infra Pvt Ltd
+            Landsking Infra Pvt Ltd
           </h1>
           <h1 className="text-xl md:text-3xl font-bold mb-4">
             Real Estate Moves Fast. Don’t Miss the Next Big Opportunity

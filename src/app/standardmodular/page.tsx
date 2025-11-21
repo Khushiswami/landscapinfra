@@ -351,7 +351,7 @@ export default function Standardmodular() {
           <div className="flex justify-center">
             <img
               src="/modular/Modular Solutions (2).jpg"
-              alt="Landsking Infra Infra Pvt Ltd  Quick-to-Deploy Modular Solutions"
+              alt="Landsking Infra Pvt Ltd  Quick-to-Deploy Modular Solutions"
               className="rounded-md shadow-md   transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
@@ -602,7 +602,7 @@ export default function Standardmodular() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Infra Pvt. Ltd for PEBs?
+              Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
             <p className="text-gray-600  text-justify">
@@ -624,7 +624,7 @@ export default function Standardmodular() {
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/industry.jpg" // replace with your image
-              alt="Why Choose Landsking Infra Infra Pvt. Ltd for PEBs "
+              alt="Why Choose Landsking Infra Pvt. Ltd for PEBs "
               width={700}
               height={450}
               className="relative rounded-md shadow-lg"

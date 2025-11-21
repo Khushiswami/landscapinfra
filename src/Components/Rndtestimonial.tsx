@@ -44,7 +44,7 @@ export default function Rndtestimonial() {
         {/* Left Content */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Landsking Infra Infra Pvt Ltd
+            Landsking Infra Pvt Ltd
           </h1>
           <p className="text-lg font-semibold text-white mb-3">
             Get in touch with us – we are always ready to help with your

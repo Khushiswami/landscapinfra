@@ -23,7 +23,7 @@ interface RndtestimonialProps {
 }
 
 export default function Contactrnd({
-  title = "Landsking Infra Infra Pvt Ltd",
+  title = "Landsking Infra Pvt Ltd",
   subtitle = "Get in touch with us – we are always ready to help with your project.",
   description = "Whether you need a basic or elaborate steel building, we will ensure your project is designed, manufactured, and delivered on time.",
   buttonText = "Contact Us",
@@ -100,7 +100,7 @@ export default function Contactrnd({
                     <span className="text-[#8080FF] text-sm font-semibold mb-3">
                       ★ Verified Customer
                     </span>
-                    <p className="italic text-gray-100 mb-4 line-clamp-4">
+                    <p className="italic text-justify text-gray-100 mb-4 line-clamp-4">
                       “{item.text}”
                     </p>
                     <a

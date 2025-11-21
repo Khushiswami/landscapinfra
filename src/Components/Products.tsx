@@ -140,7 +140,9 @@ export default function Products() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-600 text-justify mb-5">
+                  {selectedArea.description}
+                </p>
                 <button className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors">
                   GET A QUOTE
                 </button>

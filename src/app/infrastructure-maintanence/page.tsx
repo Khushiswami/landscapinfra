@@ -250,7 +250,7 @@ const Infrastructuremaintanence: React.FC = () => {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Landsking Infra Infra Pvt Ltd Prefab?
+                Why Landsking Infra Pvt Ltd Prefab?
               </h3>
               <ul className="space-y-1">
                 <li>390 Trusted Expertise Since 1999</li>

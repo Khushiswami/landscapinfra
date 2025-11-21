@@ -12,7 +12,7 @@ export default function Needtab() {
       subheading: "Core Capabilities",
 
       paragraph:
-        "India’s emerging real estate powerhouse., Landsking Infra Infra is your strategic partner for maximizing investment performance across the entire asset lifecycle. Our advisors leverage proprietary, real-time intelligence to connect you with the right capital and high-growth opportunities in every market and property sector across India, ensuring your portfolio thrives.",
+        "India’s emerging real estate powerhouse., Landsking Infra is your strategic partner for maximizing investment performance across the entire asset lifecycle. Our advisors leverage proprietary, real-time intelligence to connect you with the right capital and high-growth opportunities in every market and property sector across India, ensuring your portfolio thrives.",
       img: "real/invest.png",
       boxes: [
         {
@@ -99,7 +99,7 @@ export default function Needtab() {
       heading: "Properties & Portfolios",
       subheading: "Business Areas",
       paragraph:
-        "Landsking Infra Infra Take complete operational control of your real estate assets. Our experts leverage proprietary local supply chain expertise and innovative technology to manage every aspect, from daily operations and accounting to efficiency and energy consumption, ensuring you reduce costs and increase efficiencies. That ensuring your portfolio runs optimally and delivers sustained cost reduction and value.",
+        "Landsking Infra Take complete operational control of your real estate assets. Our experts leverage proprietary local supply chain expertise and innovative technology to manage every aspect, from daily operations and accounting to efficiency and energy consumption, ensuring you reduce costs and increase efficiencies. That ensuring your portfolio runs optimally and delivers sustained cost reduction and value.",
       img: "real/properties.jpg",
       boxes: [
         {
@@ -116,7 +116,7 @@ export default function Needtab() {
         },
         {
           title: "Sustainability & Efficiency Solutions",
-          text: "Learn precisely how Landsking Infra Infra can integrate solutions to significantly reduce operational energy consumption and work toward a net-zero framework. We partner with you to create a sustainable and future-proof asset.",
+          text: "Learn precisely how Landsking Infra can integrate solutions to significantly reduce operational energy consumption and work toward a net-zero framework. We partner with you to create a sustainable and future-proof asset.",
         },
         {
           title: "Fund & Asset Accounting",
@@ -159,7 +159,7 @@ export default function Needtab() {
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
           {tabs[activeIndex].heading}
         </h2>
-        <p className="text-[#000] text-sm sm:text-base md:text-lg leading-relaxed">
+        <p className="text-justify  text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
           {tabs[activeIndex].paragraph}
         </p>
         <h3 className="text-2xl md:text-3xl font-bold text-[#000080]">
@@ -176,7 +176,7 @@ export default function Needtab() {
               <h4 className="text-lg font-semibold text-[#000080] mb-2">
                 {box.title}
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-600 text-justify text-sm leading-relaxed">
                 {box.text}
               </p>
             </div>
@@ -187,7 +187,7 @@ export default function Needtab() {
         <img
           src={tabs[activeIndex].img}
           alt={tabs[activeIndex].heading}
-          className="w-full h-auto rounded-lg object-cover shadow-md mt-8"
+          className="w-full h-auto rounded-lg shadow-md mt-8"
         />
       </div>
     </div>

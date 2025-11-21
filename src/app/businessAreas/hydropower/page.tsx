@@ -207,7 +207,7 @@ export default function HydroPower() {
           src: "/Bussinessareaimg/manufacturingProcessPlantss.webp",
           alt: "Hydropower",
         }}
-        description="Landsking Infra Infra delivers expert landscaping for hydro power projects, including works in hilly and riverine terrains."
+        description="Landsking Infra delivers expert landscaping for hydro power projects, including works in hilly and riverine terrains."
         features={featuresData}
       />
 

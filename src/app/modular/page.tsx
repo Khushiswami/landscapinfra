@@ -27,7 +27,7 @@ export default function Modular() {
       title: "Prefab Site Infrastructure ",
       subtitle: "Prefab Site Infrastructure Solutions",
       description:
-        "At Landsking Infra Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
+        "At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
       image: "/menupageimg/mod15.png",
     },
     {
@@ -35,7 +35,7 @@ export default function Modular() {
       title: "Prefab Site Office",
       subtitle: "Prefab Site Office",
       description:
-        "At Landsking Infra Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
+        "At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
       image: "/menupageimg/mod4.png",
     },
     {
@@ -67,7 +67,7 @@ export default function Modular() {
       title: "Prefabricated Toilet",
       subtitle: "Prefabricated Toilet",
       description:
-        "Landsking Infra Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
       image: "/preimages/toilet.jpg",
     },
     {
@@ -75,7 +75,7 @@ export default function Modular() {
       title: "Prefab Porta Cabins",
       subtitle: "Prefab Porta Cabins Manufacturer",
       description:
-        "Landsking Infra Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
       image: "/preimages/porta.jpg",
     },
     {
@@ -83,7 +83,7 @@ export default function Modular() {
       title: "Railway Shelters",
       subtitle: "Railway Shelters",
       description:
-        "Landsking Infra Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
+        "Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
       image: "/menupageimg/mod12.jpg",
     },
     {
@@ -91,7 +91,7 @@ export default function Modular() {
       title: "Cold Storage & Cold Room Manufacturer",
       subtitle: "Railway Shelters",
       description:
-        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
+        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
       image: "/menupageimg/cold4.png",
     },
   ];
@@ -380,7 +380,7 @@ export default function Modular() {
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed text-justify">
-              At Landsking Infra Infra Pvt. Ltd, we specialize in delivering
+              At Landsking Infra Pvt. Ltd, we specialize in delivering
               high-quality prefabricated structures tailored to diverse
               applications. Our dry construction process enables quicker project
               timelines and greater efficiency. Manufactured with premium-grade
@@ -429,8 +429,8 @@ export default function Modular() {
             </div>
 
             <p className="text-gray-600 leading-relaxed mb-4 text-justify">
-              <strong>Landsking Infra Infra Pvt. Ltd.</strong> we believe that
-              the true value of prefabricated buildings lies in their innovative
+              <strong>Landsking Infra Pvt. Ltd.</strong> we believe that the
+              true value of prefabricated buildings lies in their innovative
               design, structural integrity, and flawless execution. Each project
               begins with a carefully engineered design, which is then
               integrated into advanced automated production systems to ensure
@@ -627,11 +627,11 @@ export default function Modular() {
             <div>
               <p className="text-gray-700 text-justify leading-relaxed">
                 With advanced prefabrication technology,{" "}
-                <b>Landsking Infra Infra Pvt. Ltd.</b> helps you build smarter
-                and faster. Our modern, fully automated production systems
-                ensure precision, consistency, and reduced dependency on manual
-                labor, making prefabrication up to <b>60% quicker</b> than
-                conventional construction methods.
+                <b>Landsking Infra Pvt. Ltd.</b> helps you build smarter and
+                faster. Our modern, fully automated production systems ensure
+                precision, consistency, and reduced dependency on manual labor,
+                making prefabrication up to <b>60% quicker</b> than conventional
+                construction methods.
               </p>
               <p className="text-gray-700 text-justify leading-relaxed mt-4">
                 By cutting down construction timelines, our prefabricated
@@ -654,7 +654,7 @@ export default function Modular() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
-              Why Choose Landsking Infra Infra Pvt. Ltd for PEBs?
+              Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
             <p className="text-gray-600 text-justify">

@@ -103,7 +103,7 @@ export default function Footer() {
 
           {/* 3 - Contact Info */}
           <div className="md:w-1/3 space-y-4">
-            <h3 className="text-white font-semibold">Landsking Infra Infra</h3>
+            <h3 className="text-white font-semibold">Landsking Infra</h3>
             <ul className="text-sm space-y-2">
               <li className="flex items-center gap-2">
                 <FaPhoneAlt />

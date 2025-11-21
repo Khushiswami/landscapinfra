@@ -94,7 +94,7 @@ const IndustrialShed: React.FC = () => {
                 and cost-effectiveness.
               </p>
               <p className="text-gray-700 mb-4 text-justify  md:text-lg">
-                Landsking Infra Infra, a leading manufacturer of prefabricated
+                Landsking Infra, a leading manufacturer of prefabricated
                 structures, delivers top-quality industrial shed solutions at
                 competitive construction costs. The use of pre-engineered
                 buildings has become a preferred choice across various
@@ -123,10 +123,10 @@ const IndustrialShed: React.FC = () => {
                 High-Quality Features of Industrial Sheds
               </h2>
               <p className="text-gray-700 mb-4  text-justify md:text-lg">
-                At Landsking Infra Infra, we prioritize custom-designed
-                architecture and client-specific construction, ensuring that
-                every prefabricated structure aligns perfectly with your
-                operational needs.
+                At Landsking Infra, we prioritize custom-designed architecture
+                and client-specific construction, ensuring that every
+                prefabricated structure aligns perfectly with your operational
+                needs.
               </p>
               <strong className="text-2xl text-[#000080]">Key Features</strong>
               <ul className="list-disc pl-6 mt-2 text-gray-700 md:text-lg space-y-1">
@@ -216,7 +216,7 @@ const IndustrialShed: React.FC = () => {
                 Industrial Shed Applications
               </h2>
               <p className="text-gray-700 mb-4 text-justify  md:text-lg">
-                Landsking Infra Infra offers a versatile range of pre-engineered
+                Landsking Infra offers a versatile range of pre-engineered
                 industrial sheds, perfectly suited for construction needs across
                 diverse industries.
               </p>
@@ -243,14 +243,14 @@ const IndustrialShed: React.FC = () => {
             <div className="relative w-full h-80 md:h-[450px]">
               <Image
                 src="/menupagetwo/is-7.png"
-                alt=" Why Landsking Infra Infra Pvt Ltd for Industrial shed"
+                alt=" Why Landsking Infra Pvt Ltd for Industrial shed"
                 fill
                 className="object-cover rounded-lg "
               />
             </div>
             <div>
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
-                Why Landsking Infra Infra Pvt Ltd Prefab?
+                Why Landsking Infra Pvt Ltd Prefab?
               </h2>
               <ul className="list-disc pl-6 text-gray-700 md:text-lg space-y-1">
                 <li>Trusted Expertise Since 1999</li>

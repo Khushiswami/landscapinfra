@@ -116,7 +116,7 @@ export default function Rndplatform() {
       <div className="  mx-auto px-4  md:mx-10 lg:mx-17">
         <div className="mt-8 flex justify-center">
           <div className="relative rounded-[5px] overflow-hidden  w-full  ">
-            <div className="relative  h-[340px] md:h-[460px]">
+            <div className="relative  h-[370px] md:h-[460px]">
               <Image
                 src={TABS[active].img}
                 alt={TABS[active].title}
@@ -126,7 +126,7 @@ export default function Rndplatform() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent rounded-[5px]" />
               <div className="absolute inset-0 flex items-center">
-                <div className=" w-full md:max-w-4xl p-6 md:p-18">
+                <div className=" w-full md:max-w-4xl p-5 md:p-18">
                   <div className="text-white text-left md:text-left mx-auto">
                     <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
                       {TABS[active].headline}

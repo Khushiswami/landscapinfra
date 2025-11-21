@@ -42,7 +42,7 @@ export default function RNDMechanicalCom() {
       <div className="absolute inset-0 bg-black/70 backdrop-blur-[3px]" />
 
       {/* Content */}
-      <div className="relative z-10 px-6 sm:px-10 md:px-20 max-w-4xl mx-auto">
+      <div className="relative z-10 px-6 sm:px-8 md:px-20 max-w-5xl mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSlide.title}

@@ -168,7 +168,7 @@ export default function IndustryHead() {
         <Link href="/industryinstallation" className="flex-shrink-0">
           <Image
             src={scrolled ? "/finallogo.png" : "/whitelogo.png"}
-            alt="Landsking Infra Infra "
+            alt="Landsking Infra "
             width={150}
             height={50}
             priority

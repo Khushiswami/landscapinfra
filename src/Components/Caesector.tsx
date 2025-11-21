@@ -98,7 +98,7 @@ export default function Caesector() {
 
   return (
     <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
-      <section className="w-full py-8 md:pt-16 bg-white relative">
+      <section className="w-full py-5 md:pt-16 bg-white relative">
         <div className="mx-auto px-2 sm:px-4 relative">
           <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
             Services at Every Stage of Product Lifecycle

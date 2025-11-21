@@ -39,7 +39,7 @@ export default function Rndsimulation() {
           }}
         >
           <div className="text-white text-center relative z-10">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-snug tracking-wide">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug tracking-wide">
               Simulation Design for Manufacturing
             </h1>
           </div>
@@ -47,28 +47,25 @@ export default function Rndsimulation() {
       </section>
 
       {/* Company Intro Section */}
-      <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-12">
+      <section className="w-full bg-white  py-9 md:py-12 px-4 sm:px-8 md:px-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Simulation Design for Manufacturing: Streamlining Production with
-              CAD/CAE{" "}
+            <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
+              Simulation Design for Manufacturing
             </h2>
-            <div className="w-12 h-1 bg-[#000080] mt-3 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-1 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm sm:text-base text-justify">
-                Simulation Design for Manufacturing: Streamlining Production
-                with CAD/CAE In today s competitive manufacturing landscape,
-                Simulation Design for Manufacturing leverages the power of
-                Computer-Aided Design (CAD) and Computer-Aided Engineering (CAE)
-                to optimize product development and production processes. By
-                integrating advanced simulation tools, manufacturers can reduce
-                costs, minimize errors, and accelerate time-to-market. Below is
-                a concise overview of how CAD/CAE drives manufacturing
-                excellence. Engineering Solutions
+                Streamlining Production with CAD/CAE In today s competitive
+                manufacturing landscape, Simulation Design for Manufacturing
+                leverages the power of Computer-Aided Design (CAD) and
+                Computer-Aided Engineering (CAE) to optimize product development
+                and production processes. By integrating advanced simulation
+                tools, manufacturers can reduce costs, minimize errors, and
+                accelerate time-to-market. Below is a concise overview of how
+                CAD/CAE drives manufacturing excellence. Engineering Solutions
               </p>
             </div>
           </div>
@@ -76,7 +73,7 @@ export default function Rndsimulation() {
       </section>
 
       {/* new section */}
-      <section className="bg-gray-50 py-16 px-4 sm:px-8 md:px-16">
+      <section className="bg-gray-50 py-6 md:py-16 px-4 sm:px-8 md:px-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#000080]">
             Our Simulation Services
@@ -89,7 +86,7 @@ export default function Rndsimulation() {
               <img
                 src="/simulation/Durability Analysis.jpg"
                 alt="Durability Analysis"
-                className="w-full h-40 object-cover rounded-md mb-4"
+                className="w-full h-58 object-cover rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">
                 Durability Analysis
@@ -106,7 +103,7 @@ export default function Rndsimulation() {
               <img
                 src="/simulation/Multi-Body Dynamic Simulation (1).jpg"
                 alt="Multi-Body Simulation"
-                className="w-full h-40 object-cover rounded-md mb-4"
+                className="w-full h-58 object-cover rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">
                 Multi-Body Simulation
@@ -123,7 +120,7 @@ export default function Rndsimulation() {
               <img
                 src="/simulation/Optimisation.png"
                 alt="Optimisation"
-                className="w-full h-40 object-cover rounded-md mb-4"
+                className="w-full h-58 object-cover rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">Optimisation</h3>
               <p className="text-gray-700 text-sm sm:text-base">
@@ -138,7 +135,7 @@ export default function Rndsimulation() {
               <img
                 src="/simulation/dynamic.png"
                 alt="Dynamic Simulation"
-                className="w-full h-40 object-cover rounded-md mb-4"
+                className="w-full h-58 object-cover rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">Dynamic Simulation</h3>
               <p className="text-gray-700 text-sm sm:text-base">
@@ -153,7 +150,7 @@ export default function Rndsimulation() {
               <img
                 src="/simulation/NVH Analysis.png"
                 alt="NVH Analysis"
-                className="w-full h-40 object-cover rounded-md mb-4"
+                className="w-full h-58 object-cover rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">NVH Analysis</h3>
               <p className="text-gray-700 text-sm sm:text-base">
@@ -168,7 +165,7 @@ export default function Rndsimulation() {
               <img
                 src="/simulation/CFD.png"
                 alt="CFD"
-                className="w-full h-40 object-cover rounded-md mb-4"
+                className="w-full h-58 object-cover rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">CFD</h3>
               <p className="text-gray-700 text-sm sm:text-base">
@@ -249,36 +246,6 @@ export default function Rndsimulation() {
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
-          </div>
-        </div>
-      </section>
-      {/* end image content */}
-      {/* Info Section */}
-      <section
-        className="relative w-full py-16 px-4 sm:px-8 md:px-16 text-center mb-12 md:mb-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/industry.jpg')",
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        {/* Content */}
-        <div className="relative z-10">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-white uppercase">
-            Get in Touch
-          </h2>
-          <div className="w-12 h-[2px] bg-[#000080] mx-auto mt-3 mb-6 relative">
-            <span className="absolute -bottom-[3px] left-0 w-6 h-[2px] bg-[#000080]"></span>
-          </div>
-          <p className="text-white text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
-            We had love to hear from you. Here is how you can reach us.
-          </p>
-          <div className="inline-flex items-center gap-3">
-            <button className="border-2 border-white  rounded-lg hover: text-white font-semibold px-5 py-2 rounded-md transition flex items-center gap-3">
-              Contact us
-              <ArrowRight className="w-5 h-5" />
-            </button>
           </div>
         </div>
       </section>

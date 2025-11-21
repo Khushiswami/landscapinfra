@@ -39,7 +39,7 @@ export default function Residential() {
       title: "Prefab Site Infrastructure ",
       subtitle: "Prefab Site Infrastructure Solutions",
       description:
-        "At Landsking Infra Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
+        "At Landsking Infra Pvt. Ltd, we provide comprehensive Prefab Site Infrastructure Solutions designed to meet the evolving needs of modern industries and organizations. Our solutions are engineered to deliver efficiency, durability, and sustainability, ensuring that infrastructure development is completed in significantly reduced timelines without compromising on quality.",
       image: "/menupageimg/mod15.png",
     },
     {
@@ -47,7 +47,7 @@ export default function Residential() {
       title: "Prefab Site Office",
       subtitle: "Prefab Site Office",
       description:
-        "At Landsking Infra Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
+        "At Landsking Infra Pvt. Ltd, we design and deliver durable and functional Labor Hutments that provide safe, comfortable, and cost-effective accommodation for workforce requirements across construction sites, industrial projects, and remote locations.",
       image: "/menupageimg/mod4.png",
     },
     {
@@ -79,7 +79,7 @@ export default function Residential() {
       title: "Prefabricated Toilet",
       subtitle: "Prefabricated Toilet",
       description:
-        "Landsking Infra Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
       image: "/preimages/toilet.jpg",
     },
     {
@@ -87,7 +87,7 @@ export default function Residential() {
       title: "Prefab Porta Cabins",
       subtitle: "Prefab Porta Cabins Manufacturer",
       description:
-        "Landsking Infra Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
+        "Landsking Infra Pvt. Ltd. provides high-quality prefabricated toilet solutions that are durable, easy to install, and efficient for use in a wide range of applications, including construction sites, industrial facilities, public places, and remote locations",
       image: "/preimages/porta.jpg",
     },
     {
@@ -95,7 +95,7 @@ export default function Residential() {
       title: "Railway Shelters",
       subtitle: "Railway Shelters",
       description:
-        "Landsking Infra Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
+        "Landsking Infra Pvt. Ltd. delivers robust and reliable railway and telecom shelters, specially designed to perform in harsh outdoor conditions. Manufactured using premium-grade materials, these shelters ensure maximum safety, durability, and functionality for critical applications",
       image: "/menupageimg/mod12.jpg",
     },
     {
@@ -103,7 +103,7 @@ export default function Residential() {
       title: "Cold Storage & Cold Room Manufacturer",
       subtitle: "Railway Shelters",
       description:
-        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
+        "Our cold storage facilities are designed using high-performance insulated panels and modern refrigeration technology to deliver superior energy efficiency. Suitable for a wide range of applications — from perishable goods to pharmaceuticals —  Landsking Infra Pvt. Ltd. ensures reliable preservation, consistent temperature control, and compliance with industry standards.",
       image: "/menupageimg/cold4.png",
     },
   ];
@@ -207,6 +207,7 @@ export default function Residential() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
+  // const visibleCards = 4; // Show 4 cards per row
   const visibleCards =
     typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
   const [open, setOpen] = useState(false); // for mobile dropdown
@@ -269,9 +270,9 @@ export default function Residential() {
     },
     {
       question:
-        "How does Landsking Infra Infra support large industrial solar projects?",
+        "How does Landsking Infra support large industrial solar projects?",
       answer:
-        "At Landsking Infra Infra, we handle everything—from detailed site studies and engineering design to installation and maintenance. Our team ensures each system is tailored to your site, maximizing output while maintaining safety and compliance.",
+        "At Landsking Infra, we handle everything—from detailed site studies and engineering design to installation and maintenance. Our team ensures each system is tailored to your site, maximizing output while maintaining safety and compliance.",
     },
     {
       question:
@@ -282,7 +283,7 @@ export default function Residential() {
     {
       question: "What kind of warranty and after-sales service do I get?",
       answer:
-        "Solar panels usually come with a 25-year performance warranty, while inverters are covered for 5–10 years. At Landsking Infra Infra, we go beyond installation with maintenance support, regular system check-ups, and performance monitoring.",
+        "Solar panels usually come with a 25-year performance warranty, while inverters are covered for 5–10 years. At Landsking Infra, we go beyond installation with maintenance support, regular system check-ups, and performance monitoring.",
     },
     {
       question: "Can solar panels be installed on any type of roof?",
@@ -341,7 +342,7 @@ export default function Residential() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
+                      className="w-full h-48 sm:h-60 md:h-68 object-cover"
                     />
                     <div className="p-4 text-center">
                       <h3 className="text-base sm:text-lg md:text-xl font-semibold">
@@ -349,7 +350,7 @@ export default function Residential() {
                       </h3>
                       <a
                         // href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
+                        className="mt-2 inline-block text-[#000080] hover: text-sm sm:text-base md:text-lg"
                       >
                         Read more →
                       </a>
@@ -363,7 +364,7 @@ export default function Residential() {
       </section>
 
       {/* newss */}
-      <section className="bg-white py-12 px-4 md:px-26">
+      <section className="bg-white py-5 md:py-12 px-4 md:px-26">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-1  items-center">
           {/* Left Content */}
           <div>
@@ -373,20 +374,20 @@ export default function Residential() {
 
             <p className="text-gray-700  text-justify mb-4 leading-relaxed text-center">
               We Are One of India’s Most Reliable Rooftop Solar Solution
-              Providers Landsking Infra Infra stands among India’s leading
-              rooftop solar companies, trusted by thousands of homeowners and
-              businesses for dependable, high-quality solar installations. With
-              years of expertise and a nationwide presence, we deliver
-              end-to-end solar solutions — from design and installation to
-              support and maintenance. Backed by MNRE empanelment and flexible
-              financing options, Landsking Infra Infra is committed to making
-              clean, affordable energy accessible to every rooftop.
+              Providers Landsking Infra stands among India’s leading rooftop
+              solar companies, trusted by thousands of homeowners and businesses
+              for dependable, high-quality solar installations. With years of
+              expertise and a nationwide presence, we deliver end-to-end solar
+              solutions — from design and installation to support and
+              maintenance. Backed by MNRE empanelment and flexible financing
+              options, Landsking Infra is committed to making clean, affordable
+              energy accessible to every rooftop.
             </p>
           </div>
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-26 lg:px-16">
+      <section className="bg-white py-6  md:py-12 px-4 md:px-26 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
@@ -417,7 +418,7 @@ export default function Residential() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="bg-white py-12 px-4 md:px-26 lg:px-16">
+      <section className="bg-white py-6  md:py-12 px-4 md:px-26 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Side - Image */}
           <div className="relative">
@@ -453,7 +454,7 @@ export default function Residential() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-12 px-4 md:px-26 lg:px-16">
+      <section className="bg-white py-3  md:py-12 px-4 md:px-26 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
@@ -485,49 +486,47 @@ export default function Residential() {
 
       {/* explore content */}
       {/* business benifts */}
-      <section className="  px-5 py-10 mx-auto md:mx-22">
-        <header className="text-center mb-6">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#000080]">
-            Key BenefitS
+      <section className="bg-[#000080] text-white py-10">
+        <div className=" mx-auto px-4 md:px-18 lg:mx-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+            Benefits of Residential Solar
           </h2>
-        </header>
 
-        {/* Mobile: horizontal scroll with snapping */}
-        <div className="block sm:hidden">
-          <div className=" grid grid-cols-1  gap-8">
-            {servicesing.map((s) => (
-              <article
-                key={s.id}
-                className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow focus:shadow-lg outline-none focus:ring-4 focus:ring-indigo-200"
+          {/* Cards Row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {cardsToShow.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-[#000080]">
-                  {s.icon}
+                <img src={item.image} className="w-full h-44 object-cover" />
+                <div className="p-4">
+                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
+                    {item.subtitle}
+                  </p>
+                  <p className="text-sm text-black  text-justify">
+                    {item.description}
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold">{s.title}</h3>
-                <p className="mt-2 text-justify text-sm text-slate-600">
-                  {s.desc}
-                </p>
-              </article>
+              </div>
             ))}
           </div>
-        </div>
 
-        {/* Tablet / Desktop */}
-        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {servicesing.map((s) => (
-            <article
-              key={s.id}
-              className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow focus:shadow-lg outline-none focus:ring-4 focus:ring-indigo-200"
+          {/* Navigation Buttons Below */}
+          <div className="flex justify-center mt-6 gap-4">
+            <button
+              onClick={prevSlide}
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mb-3 bg-[#000080]">
-                {s.icon}
-              </div>
-              <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-justify text-sm text-slate-600">
-                {s.desc}
-              </p>
-            </article>
-          ))}
+              <ChevronLeft className="w-6 h-6 text-[#000080]" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
+            >
+              <ChevronRight className="w-6 h-6 text-[#000080]" />
+            </button>
+          </div>
         </div>
       </section>
       <section className=" mx-auto px-4 py-12 md:mx-22 ">

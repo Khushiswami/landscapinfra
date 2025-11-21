@@ -230,7 +230,7 @@ export default function Greenbuilding() {
               Green Buildings
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
-              Landsking Infra Infra is dedicated to delivering eco-friendly,
+              Landsking Infra is dedicated to delivering eco-friendly,
               energy-efficient, and sustainable infrastructure that minimizes
               environmental impact.
             </p>
@@ -280,11 +280,11 @@ export default function Greenbuilding() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Landsking Infra Infra – Green Building Solutions
+              Landsking Infra – Green Building Solutions
             </h2>
 
             <p className="text-gray-700 mb-4 leading-relaxed mt-3 text-justify">
-              Landsking Infra Infra is dedicated to delivering eco-friendly,
+              Landsking Infra is dedicated to delivering eco-friendly,
               energy-efficient, and sustainable infrastructure that minimizes
               environmental impact. Our green building solutions focus on
               reducing carbon footprint, lowering operational costs, and
@@ -295,8 +295,8 @@ export default function Greenbuilding() {
               goals. Our team also specializes in retrofitting existing
               buildings into high-performance green structures. By prioritizing
               long-term energy savings and health-focused environments,
-              Landsking Infra Infra creates future-ready, environmentally
-              responsible buildings that benefit both people and the planet.
+              Landsking Infra creates future-ready, environmentally responsible
+              buildings that benefit both people and the planet.
             </p>
 
             <Link href="/contact">
@@ -320,9 +320,7 @@ export default function Greenbuilding() {
         <div className=" mx-auto text-center md:px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Services of{" "}
-            <span className="text-[#000080]">
-              Landsking Infra Infra Pvt. Ltd.
-            </span>
+            <span className="text-[#000080]">Landsking Infra Pvt. Ltd.</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12 text-justify">
             Our certified green building experts design and retrofit projects to

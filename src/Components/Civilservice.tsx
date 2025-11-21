@@ -150,10 +150,10 @@ export default function Civilservice() {
         rounded-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg
       "
             >
-              <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-center md:text-left">
+              <h3 className="text-2xl font-semibold text-[#000080] mb-3  md:text-left">
                 {selectedArea.subtitle}
               </h3>
-              <p className="text-gray-700 mb-5 text-center md:text-left">
+              <p className="text-gray-600 text-justify mb-5 text-center md:text-left">
                 {selectedArea.description}
               </p>
               <div className="flex justify-center md:justify-start">

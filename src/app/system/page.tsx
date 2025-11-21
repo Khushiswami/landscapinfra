@@ -211,9 +211,9 @@ export default function System() {
               Structural Steel
             </h2>
             <p className="mt-2  text-justify  p-2 text-sm sm:text-lg text-gray-600 flex-grow">
-              Landsking Infra Infra utilizes Structural Steel (S.T.S) for
-              complex and large-scale projects, including skyscrapers, airport
-              terminals, and oil and gas facilities, among others.
+              Landsking Infra utilizes Structural Steel (S.T.S) for complex and
+              large-scale projects, including skyscrapers, airport terminals,
+              and oil and gas facilities, among others.
             </p>
             <a
               href="#"

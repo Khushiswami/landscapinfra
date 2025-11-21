@@ -316,9 +316,9 @@ export default function Mechanical() {
     },
     {
       question:
-        "Why should I choose Landsking Infra Infra for mechanical design services?",
+        "Why should I choose Landsking Infra for mechanical design services?",
       answer:
-        " Landsking Infra Infra combines expert CAD modeling, product design, and prototyping to deliver precise, ISO-compliant engineering solutions that minimize cost and development time",
+        " Landsking Infra combines expert CAD modeling, product design, and prototyping to deliver precise, ISO-compliant engineering solutions that minimize cost and development time",
     },
     {
       question: "How does 3D CAD modeling improve product development?",
@@ -326,7 +326,7 @@ export default function Mechanical() {
         " 3D CAD modeling helps visualize designs, check tolerances, detect interference, and ensure perfect component fit before manufacturing.",
     },
     {
-      question: " What industries does Landsking Infra Infra serve?",
+      question: " What industries does Landsking Infra serve?",
       answer:
         " We work with clients across manufacturing, automotive, construction, and industrial design sectors, ensuring precision and efficiency in every project.",
     },
@@ -341,8 +341,7 @@ export default function Mechanical() {
         "CAD conversion transforms old blueprints or paper drawings into accurate digital files that are easier to edit, store, and reuse across projects.",
     },
     {
-      question:
-        "Does Landsking Infra Infra offer both 2D drafting and 3D modeling?",
+      question: "Does Landsking Infra offer both 2D drafting and 3D modeling?",
       answer:
         " Yes, our team provides complete design support—from detailed 2D drafting to realistic 3D CAD modeling for mechanical, architectural, and industrial projects.",
     },
@@ -362,7 +361,7 @@ export default function Mechanical() {
         " Structural engineering ensures stability, safety, and load-bearing capacity for industrial, commercial, and residential construction projects",
     },
     {
-      question: "How does Landsking Infra Infra ensure data confidentiality?",
+      question: "How does Landsking Infra ensure data confidentiality?",
       answer:
         " All project files are handled under strict NDA agreements and transferred through secure, encrypted cloud systems to maintain complete data protection.",
     },
@@ -383,7 +382,7 @@ export default function Mechanical() {
         " Electrical design services improve system safety, ensure power efficiency, and provide accurate control panel layouts for industrial and utility sectors.",
     },
     {
-      question: "How do I start a project with Landsking Infra Infra?",
+      question: "How do I start a project with Landsking Infra?",
       answer:
         "Simply share your requirements and design files, and our team will prepare a customized proposal with timelines, cost, and deliverables.",
     },
@@ -626,7 +625,7 @@ export default function Mechanical() {
             <div className="md:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
-                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-left bg-[#000080]"
+                className="w-full p-3 rounded-t-lg text-white font-semibold flex justify-between items-left bg-[#000080] "
               >
                 {areas.find((a) => a.id === selectedId)?.title}
                 <svg
@@ -666,18 +665,18 @@ export default function Mechanical() {
 
             {/* Desktop Menu */}
             {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
-            <div className="hidden md:flex h-[70vh] flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
+            <div className="hidden md:flex h-[89vh] flex-col bg-[#000080] text-white rounded-lg pt-[45px] pb-[45px] px-[5px]">
               {areas.map((area, idx) => (
                 <button
                   key={area.id}
                   onClick={() => setSelectedId(area.id)}
-                  className={`flex items-center gap-3 px-5 py-4 text-left transition ${
+                  className={`flex items-center gap-3 px-4 py-5 text-left transition  ${
                     selectedId === area.id
                       ? " font-bold"
                       : "hover: text-gray-300"
                   }`}
                 >
-                  <span className="text-sm opacity-70">
+                  <span className="text-sm opacity-70 ">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
                   <span>{area.title}</span>
@@ -784,49 +783,7 @@ export default function Mechanical() {
         </div>
       </section>
       {/* business benifts */}
-      <section className="text-black py-10 md:mx-14 lg:mx-8">
-        <div className="mx-auto px-3 md:px-4">
-          <h2 className="text-2xl md:text-3xl font-bold  text-center mb-10 text-[#000080]">
-            Why Choose Us
-          </h2>
 
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
-            {cardsToShow.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
-              >
-                <img src={item.image} className=" w-full h-[26vh] " />
-                <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
-                    {item.subtitle}
-                  </p>
-                  <p className="text-sm text-black text-justify">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="flex justify-center mt-6 gap-4">
-            <button
-              onClick={prevSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronLeft className="w-6 h-6 text-[#fff]" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="bg-[#000080] p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronRight className="w-6 h-6 text-[#fff]" />
-            </button>
-          </div>
-        </div>
-      </section>
       {/* our process */}
       <section className="py-16 ">
         {/* Heading Row */}

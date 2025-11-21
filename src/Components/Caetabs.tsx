@@ -14,12 +14,13 @@ export default function Caetabs() {
       video: "/rndvideo/Crash Analysis video.mp4",
     },
     {
-      title: "Managing Noise, Vibration, Harshness",
-      heading: "Managing Noise, Vibration, Harshness (NVH)",
+      title: "Thermal",
+      heading: "Thermal Analysis",
       paragraph:
-        "Landsking InfraInfra delivers vital Computer-Aided Engineering (CAE) insight that boosts product comfort, long-term dependability, and market perception. Our NVH service reliably pinpoints and resolves disruptive noise and vibration issues within mechanical systems. We move from initial analysis to advanced simulation to uncover the root cause of these disturbances, then develop effective strategies to reduce or eliminate them entirely.",
+        "Thermal Analysis examines temperature distribution, heat transfer, and thermal stresses in systems and components. Engineers use thermal simulation to ensure optimal heat management, energy efficiency, and material longevity. It helps prevent overheating, thermal expansion, and performance degradation in electronic devices, engines, and industrial machinery. Through accurate thermal modeling, engineers can enhance product reliability and operational safety across multiple industries.",
       video: "/choose/exprt.mp4",
     },
+
     {
       title: "Precision Mesh Generation",
       heading: "Precision Mesh Generation",
@@ -28,29 +29,29 @@ export default function Caetabs() {
       video: "/choose/exprt.mp4",
     },
     {
-      title: "Thermal",
-      heading: "Thermal Analysis",
+      title: "Managing Noise, Vibration, Harshness",
+      heading: "Managing Noise, Vibration, Harshness (NVH)",
       paragraph:
-        "Thermal Analysis examines temperature distribution, heat transfer, and thermal stresses in systems and components. Engineers use thermal simulation to ensure optimal heat management, energy efficiency, and material longevity. It helps prevent overheating, thermal expansion, and performance degradation in electronic devices, engines, and industrial machinery. Through accurate thermal modeling, engineers can enhance product reliability and operational safety across multiple industries.",
+        "Landsking InfraInfra delivers vital Computer-Aided Engineering (CAE) insight that boosts product comfort, long-term dependability, and market perception. Our NVH service reliably pinpoints and resolves disruptive noise and vibration issues within mechanical systems. We move from initial analysis to advanced simulation to uncover the root cause of these disturbances, then develop effective strategies to reduce or eliminate them entirely.",
       video: "/choose/exprt.mp4",
     },
   ];
 
   return (
-    <div className="mx-auto px-6 py-12 md:px-18">
-      <div className="mx-auto px-4 pt-12 pb-8 text-center">
+    <div className="mx-auto px-6 py-6 md:py-12 md:px-18">
+      <div className="mx-auto px-4 pt-2 md:pt-12 pb-8 text-center">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Our Expertise
         </h1>
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap justify-between gap-2 border-b border-gray-300 mb-6">
+      <div className="flex flex-wrap text-justify md:justify-between gap-2 border-b border-gray-300 mb-6">
         {tabs.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`py-2 px-4 md:px-6 font-medium transition-all duration-200 text-sm sm:text-base rounded-md
+            className={`py-2 px-4  md:px-6 font-medium transition-all duration-200 text-sm sm:text-base rounded-md
               ${
                 activeIndex === index
                   ? "bg-[#000080] text-white md:bg-transparent md:text-[#000080] md:border-b-2 md:border-[#000080]"
@@ -64,10 +65,10 @@ export default function Caetabs() {
 
       {/* Active Tab Content */}
       <div className="space-y-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+        <h2 className="text-2xl  md:text-3xl font-bold text-[#000080]">
           {tabs[activeIndex].heading}
         </h2>
-        <p className="text-[#000] text-base md:text-lg">
+        <p className="text-gray-600 text-justify text-base md:text-lg">
           {tabs[activeIndex].paragraph}
         </p>
 

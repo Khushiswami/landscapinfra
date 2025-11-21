@@ -60,8 +60,12 @@ export default function Renewablesolution() {
 
               {/* Content */}
               <div className="p-5 flex flex-col flex-1">
-                <h3 className="text-2xl mb-2 md:text-2xl">{item.title}</h3>
-                <p className="text-gray-600 flex-1">{item.description}</p>
+                <h3 className="text-2xl mb-2 md:text-2xl text-[#000080]">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 flex-1 text-justify">
+                  {item.description}
+                </p>
 
                 {/* Explore more with inline arrows */}
                 <a

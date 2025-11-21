@@ -84,7 +84,7 @@ export default function Accolades() {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm">{card.desc}</p>
+              <p className="text-gray-600 text-sm  text-justify">{card.desc}</p>
             </div>
           </SwiperSlide>
         ))}

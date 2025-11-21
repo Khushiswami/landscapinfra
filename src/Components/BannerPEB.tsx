@@ -10,8 +10,8 @@ export default function BannerPEB() {
 
   const slides = [
     {
-      title: "PRE ENGINEERED BUILDINGS",
-      desc: "WE DELIVER HIGH PERFORMANCE PRE ENGINEERED STEEL BUILDINGS.",
+      title: "Pre Engineered Buildings",
+      desc: "We Deliver High Performance Pre Engineered Steel Buildings",
       video: "/video/home.mp4",
       link: "/preEngineeredBuildings",
     },

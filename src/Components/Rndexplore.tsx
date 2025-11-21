@@ -153,7 +153,7 @@ export default function Rndexplore() {
               <h3 className="text-2xl font-semibold text-[#000080] mb-3 text-left md:text-left">
                 {selectedArea.subtitle}
               </h3>
-              <p className="text-gray-700 mb-5 text-left md:text-left">
+              <p className="text-gray-600 text-justify mb-5 text-left md:text-left">
                 {selectedArea.description}
               </p>
               <div className="flex justify-start md:justify-start">

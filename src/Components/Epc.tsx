@@ -62,12 +62,12 @@ export default function Epc() {
           <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
             Our Solar EPC Services
           </h2>
-          <h2 className="text-base md:text-md font-medium text-start text-gray-700  mb-6">
-            Landsking Infra Infra delivers end-to-end Solar EPC solutions — from
+          <p className="text-base md:text-md font-medium text-start text-gray-600  mb-6">
+            Landsking Infra delivers end-to-end Solar EPC solutions — from
             detailed project analysis and design to construction and performance
             monitoring. We are committed to excellence, efficiency, and
             reliability in every step of your renewable energy journey.
-          </h2>
+          </p>
 
           <Swiper
             modules={[Navigation, Autoplay]}

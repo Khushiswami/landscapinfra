@@ -75,7 +75,7 @@ export default function AboutPebP() {
             ABOUT US
           </h2>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-base md:text-md">
+          <p className="text-gray-600  text-justify mb-6 leading-relaxed text-base md:text-md">
             Landsking InfraInfra Pvt.Ltd. with the Team Combined Experience have
             More than 120MT Capacity Rice mill Plant, 350 Minor and Major Bridge
             and Super Structure, 26 KM MS Pipe line upto 3.8m dia, and 410KM

@@ -104,7 +104,7 @@ export default function Inds() {
           </div>
 
           {/* Desktop + Tablet Menu */}
-          <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg py-6 px-2">
+          <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg py-13 px-2">
             {areas.map((area) => (
               <button
                 key={area.id}
@@ -126,7 +126,9 @@ export default function Inds() {
               <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
               </h3>
-              <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+              <p className="text-gray-600 text-justify mb-5">
+                {selectedArea.description}
+              </p>
               <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold ">
                 Contact <span className="p-1 rounded-full">→</span>
               </button>

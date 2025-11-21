@@ -166,7 +166,7 @@ export default function Coldstorageandwarehouse() {
     {
       subtitle: "Expertise & Innovation",
       description:
-        "With decades of expertise, Landsking Infra Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
+        "With decades of expertise, Landsking Infra Pvt. Ltd. has delivered innovative, high-performance prefabricated solutions across India, combining reliability with modern design.",
       image: "/industry.jpg",
     },
   ];
@@ -343,17 +343,17 @@ export default function Coldstorageandwarehouse() {
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Landsking Infra Infra Pvt. Ltd. is one of India’s leading
-              manufacturers of Pre-Engineered Buildings (PEBs), delivering
-              complete solutions for industrial, commercial, and institutional
-              structures. Our buildings are designed with advanced engineering
-              and prefabrication technology, ensuring faster project delivery,
-              cost efficiency, and customized designs for diverse applications.
+              Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
+              of Pre-Engineered Buildings (PEBs), delivering complete solutions
+              for industrial, commercial, and institutional structures. Our
+              buildings are designed with advanced engineering and
+              prefabrication technology, ensuring faster project delivery, cost
+              efficiency, and customized designs for diverse applications.
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed text-justify">
               What is a Pre-Engineered Building?{" "}
-              <span className="font-bold">Landsking Infra Infra pvt.ltd</span> A
+              <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
               structural framework of primary framing (columns and rafters),
               secondary framing (purlins and girts), along with roof and wall
@@ -382,7 +382,7 @@ export default function Coldstorageandwarehouse() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
-              Landsking Infra Infra Pvt. Ltd. PEB Structures
+              Landsking Infra Pvt. Ltd. PEB Structures
             </span>
           </h2>
           <p className="text-gray-600 text-justify max-w-2xl mx-auto mb-12">

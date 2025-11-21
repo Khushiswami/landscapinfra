@@ -180,7 +180,7 @@ const Rndfooter: React.FC = () => {
 
         {/* ✅ Footer Bottom */}
         <div className="mt-8 text-center text-xs text-gray-300">
-          © {new Date().getFullYear()} Landsking Infra Infra Pvt Ltd. All rights
+          © {new Date().getFullYear()} Landsking Infra Pvt Ltd. All rights
           reserved.
         </div>
       </div>

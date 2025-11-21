@@ -152,7 +152,7 @@ export default function Industryheadsecond() {
         <Link href="/industryinstallation" className="flex-shrink-0">
           <Image
             src="/finallogo.png"
-            alt="Landsking Infra Infra logo"
+            alt="Landsking Infra logo"
             width={150}
             height={50}
             priority

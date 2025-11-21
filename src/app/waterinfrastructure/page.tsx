@@ -161,21 +161,21 @@ export default function Waterinfrastructure() {
       <section className=" mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-cente md:px-20">
         <div>
           <h2 className="text-3xl md:text-3xl font-bold  text-[#000080] ">
-            Landsking Infra Infra – Water Infrastructure Solutions
+            Landsking Infra – Water Infrastructure Solutions
           </h2>
 
           <p className="text-gray-600 text-justify leading-relaxed mb-6 mt-5">
-            Landsking Infra Infra specializes in designing and executing
-            advanced water infrastructure systems that promote sustainable urban
-            and industrial development. Our turnkey solutions cover water
-            supply, treatment, and distribution, ensuring efficiency, quality,
-            and long-term environmental compliance. With extensive expertise in
-            both greenfield and brownfield projects, we deliver tailored
-            solutions that meet unique site requirements. Our end-to-end
-            in-house design and execution capabilities allow precise planning
-            and seamless implementation. We emphasize sustainability and water
-            reuse, incorporating innovative technologies to optimize resources.
-            All projects strictly adhere to CPCB, MoEF, and WHO water quality
+            Landsking Infra specializes in designing and executing advanced
+            water infrastructure systems that promote sustainable urban and
+            industrial development. Our turnkey solutions cover water supply,
+            treatment, and distribution, ensuring efficiency, quality, and
+            long-term environmental compliance. With extensive expertise in both
+            greenfield and brownfield projects, we deliver tailored solutions
+            that meet unique site requirements. Our end-to-end in-house design
+            and execution capabilities allow precise planning and seamless
+            implementation. We emphasize sustainability and water reuse,
+            incorporating innovative technologies to optimize resources. All
+            projects strictly adhere to CPCB, MoEF, and WHO water quality
             standards, guaranteeing safe, reliable, and future-ready water
             infrastructure solutions.
           </p>

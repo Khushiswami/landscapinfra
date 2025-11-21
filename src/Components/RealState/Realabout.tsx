@@ -99,10 +99,10 @@ export default function Realabout() {
 
           <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
             Landsking InfraInfra Pvt.Ltd. with the Team Combined Experience have
-            More Landsking Infra Infra – India’s emerging real estate
-            powerhouse. We specialize in connecting people and properties — from
-            industrial warehouses to retail showrooms, commercial offices to
-            residential townships.Our approach is transparent, data-driven, and
+            More Landsking Infra – India’s emerging real estate powerhouse. We
+            specialize in connecting people and properties — from industrial
+            warehouses to retail showrooms, commercial offices to residential
+            townships.Our approach is transparent, data-driven, and
             client-first. From property sourcing and negotiations to
             documentation and deal closure — we manage everything with
             professionalism and precision.

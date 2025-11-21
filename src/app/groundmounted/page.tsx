@@ -129,7 +129,7 @@ export default function Groundmounted() {
     },
     {
       question:
-        "How long does Landsking Infra Infra take to install a ground-mounted solar system?",
+        "How long does Landsking Infra  take to install a ground-mounted solar system?",
       answer:
         "Depending on size and site, we complete projects within 3–6 months from concept to commissioning. Our turnkey EPC model ensures smooth execution — from civil works to grid synchronization.",
     },
@@ -137,7 +137,7 @@ export default function Groundmounted() {
       question:
         "What are the government incentives for ground-mounted solar in India?",
       answer:
-        "Landsking Infra Infra helps clients leverage Accelerated Depreciation (40%), GST benefits, and net metering advantages. We also guide businesses in claiming Renewable Energy Certificates (RECs) to maximize financial returns.",
+        "Landsking Infra  helps clients leverage Accelerated Depreciation (40%), GST benefits, and net metering advantages. We also guide businesses in claiming Renewable Energy Certificates (RECs) to maximize financial returns.",
     },
     {
       question:
@@ -147,9 +147,9 @@ export default function Groundmounted() {
     },
     {
       question:
-        "How can Landsking Infra Infra’s ground-mounted solar systems reduce grid energy use?",
+        "How can Landsking Infra’s ground-mounted solar systems reduce grid energy use?",
       answer:
-        "By generating clean, on-site electricity, Landsking Infra Infra systems significantly cut grid dependency and energy costs. They ensure stable, renewable power for 25+ years — supporting both savings and sustainability.",
+        "By generating clean, on-site electricity, Landsking Infra systems significantly cut grid dependency and energy costs. They ensure stable, renewable power for 25+ years — supporting both savings and sustainability.",
     },
     {
       question:
@@ -215,7 +215,7 @@ export default function Groundmounted() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
+                      className="w-full h-46 sm:h-60 md:h-58 object-cover"
                     />
                     <div className="p-4 text-center">
                       <h3 className="text-base sm:text-lg md:text-xl font-semibold">
@@ -245,9 +245,9 @@ export default function Groundmounted() {
             </h2>
           </div>
           <p className="text-gray-700 mb-12 text-justify text-sm sm:text-base text-center max-w-3xl mx-auto">
-            At Landsking Infra Infra, we help you make the best use of your
-            unused land by turning it into a beneficial source of solar energy.
-            Our systems are designed to save on electricity costs, reduce
+            At Landsking Infra , we help you make the best use of your unused
+            land by turning it into a beneficial source of solar energy. Our
+            systems are designed to save on electricity costs, reduce
             environmental impact, and give you long-term energy independence.
           </p>
 
@@ -284,7 +284,7 @@ export default function Groundmounted() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
-              Landsking Infra Infra Pvt. Ltd. Ground Mounted
+              Landsking Infra Pvt. Ltd. Ground Mounted
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">

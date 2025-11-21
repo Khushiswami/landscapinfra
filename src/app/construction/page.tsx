@@ -96,7 +96,7 @@ export default function Construction() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-justify md:text-lg">
-                Landsking Infra Infra has successfully delivered numerous
+                Landsking Infra has successfully delivered numerous
                 infrastructure solutions for the construction sector, including
                 worker accommodations, canteens, site offices, and more. Over
                 the years, we have supported construction companies of all sizes
@@ -104,7 +104,7 @@ export default function Construction() {
               </p>
               <p className="text-gray-700 mb-4 text-justify  md:text-lg">
                 With over 7 years of expertise in the prefabricated building
-                industry, Landsking Infra Infra specializes not only in site
+                industry, Landsking Infra specializes not only in site
                 infrastructure but also in custom-designed warehouses, factory
                 buildings, industrial sheds, poultry farms, cold storage units,
                 clean rooms, and a wide range of other prefab structures. All
@@ -142,7 +142,7 @@ export default function Construction() {
               icon={<FaWarehouse size={38} className="text-white" />}
               title="Prefab Site Office"
               link="/prefabSiteOffice"
-              description="Landsking Infra Infra offers a wide range of modular prefabricated site office solutions, featuring options like PUF-insulated panels, EPS-insulated panels, and Light Gauge Steel Framing (LGSF). These office units are engineered for quick installation and built to last, making them perfectly suited for use on construction sites and industrial projects."
+              description="Landsking Infra offers a wide range of modular prefabricated site office solutions, featuring options like PUF-insulated panels, EPS-insulated panels, and Light Gauge Steel Framing (LGSF). These office units are engineered for quick installation and built to last, making them perfectly suited for use on construction sites and industrial projects."
             />
             <Card
               image="/sectorimg/lg.jpeg"
@@ -156,21 +156,21 @@ export default function Construction() {
               icon={<FaIndustry size={38} className="text-white" />}
               title="Labor Hutment"
               link="/laborHutment"
-              description="Landsking Infra Infra delivers affordable and long-lasting prefabricated labour accommodations, ideal for rapid deployment at construction sites and industrial locations. Built using insulated panels, these modular units ensure a safe and comfortable environment for workers, while also being easy to transport and assemble."
+              description="Landsking Infra delivers affordable and long-lasting prefabricated labour accommodations, ideal for rapid deployment at construction sites and industrial locations. Built using insulated panels, these modular units ensure a safe and comfortable environment for workers, while also being easy to transport and assemble."
             />
             <Card
               image="/sectorimg/pt.jpg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Prefabricated Toilet"
               link="/"
-              description="Landsking Infra Infra offers premium prefabricated toilet units that are sturdy, easy to set up, and suitable for a wide range of environments such as construction sites, industrial areas, and remote locations. These toilets provide a hygienic and budget-friendly solution for both temporary and permanent use."
+              description="Landsking Infra offers premium prefabricated toilet units that are sturdy, easy to set up, and suitable for a wide range of environments such as construction sites, industrial areas, and remote locations. These toilets provide a hygienic and budget-friendly solution for both temporary and permanent use."
             />
             <Card
               image="/sectorimg/por.jpg"
               icon={<FaSnowflake size={38} className="text-white" />}
               title="Prefab Porta Cabins Manufacturer"
               link="/"
-              description="Landsking Infra Infra produces top-quality, customizable porta cabins tailored to suit different space and functional needs. These portable units are perfect for construction sites, office setups, and other temporary applications, offering strength, ease of installation, and reliable performance."
+              description="Landsking Infra produces top-quality, customizable porta cabins tailored to suit different space and functional needs. These portable units are perfect for construction sites, office setups, and other temporary applications, offering strength, ease of installation, and reliable performance."
             />
           </div>
         </section>

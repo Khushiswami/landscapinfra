@@ -7,7 +7,7 @@ import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
 
 export const metadata: Metadata = {
-  title: "Landsking Infra Infra",
+  title: "Landsking Infra ",
   description: "Global clients partner with us to build projects.",
   icons: {
     icon: "/finallogo.png",

@@ -100,12 +100,11 @@ const FactoryBuilding: React.FC = () => {
                 Applications
               </h3>
               <p className="text-gray-700 mb-4 text-justify md:text-lg">
-                Landsking Infra Infra delivers durable and efficient
-                prefabricated factory buildings suitable for a wide range of
-                industrial uses, such as warehouses, manufacturing units, and
-                testing centers. Their solutions offer fast installation, energy
-                savings, and long-term reliability—all while keeping costs
-                optimized.
+                Landsking Infra delivers durable and efficient prefabricated
+                factory buildings suitable for a wide range of industrial uses,
+                such as warehouses, manufacturing units, and testing centers.
+                Their solutions offer fast installation, energy savings, and
+                long-term reliability—all while keeping costs optimized.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -160,8 +159,8 @@ const FactoryBuilding: React.FC = () => {
                 Key Applications of Prefabricated Factory Buildings
               </h2>
               <p className="text-gray-700 mb-4 text-justify md:text-lg">
-                Landsking Infra Infras factory buildings cater to a wide range
-                of industrial requirements, such as:
+                Landsking Infras factory buildings cater to a wide range of
+                industrial requirements, such as:
               </p>
               <ul className="text-gray-700 md:text-lg mb-4 space-y-1 list-disc pl-6">
                 <li>Production plants and manufacturing units</li>
@@ -177,7 +176,7 @@ const FactoryBuilding: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
-                Why Choose Landsking Infra Infra?
+                Why Choose Landsking Infra?
               </h3>
               <ul className="space-y-1 list-disc pl-6 text-gray-700 md:text-lg">
                 <li>Trusted Expertise Since 1999</li>

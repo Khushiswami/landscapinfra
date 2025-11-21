@@ -13,7 +13,7 @@ export default function () {
       subline: "How we work",
 
       paragraph:
-        "Landsking Infra Infra specializes in retail real estate environments, from high-street markets to integrated shopping malls. Given India's dynamic consumer shifts and competitive pressures, optimal location decisions are paramount. Our expert consultants leverage data-driven insights to ensure your retail presence not only achieves business success but also strategically integrates with the local community. We create environments where brands flourish and vibrant communities grow together, driving sustainable value for all stakeholders across India.",
+        "Landsking Infra specializes in retail real estate environments, from high-street markets to integrated shopping malls. Given India's dynamic consumer shifts and competitive pressures, optimal location decisions are paramount. Our expert consultants leverage data-driven insights to ensure your retail presence not only achieves business success but also strategically integrates with the local community. We create environments where brands flourish and vibrant communities grow together, driving sustainable value for all stakeholders across India.",
       img: "realstate/Retail hww (3).jpg",
       boxes: [
         {
@@ -77,7 +77,7 @@ export default function () {
       heading: " Space, Supply Chain, and Profit",
       subheading: "What we do",
       paragraph:
-        "Landsking Infra Infra specializes in industrial and logistics real estate solutions, from large-scale warehouses to mission-critical manufacturing units. In India's evolving supply chain landscape, where efficiency and time-to-market define success, choosing the right operational footprint is critical.Our expert advisors combine market intelligence with logistics strategy to help organizations optimize space utilization, secure the supply chain, and elevate operational performance. We create industrial environments that guarantee efficiency, accommodate expansion, and drive long-term profit for enterprises across India.",
+        "Landsking Infra specializes in industrial and logistics real estate solutions, from large-scale warehouses to mission-critical manufacturing units. In India's evolving supply chain landscape, where efficiency and time-to-market define success, choosing the right operational footprint is critical.Our expert advisors combine market intelligence with logistics strategy to help organizations optimize space utilization, secure the supply chain, and elevate operational performance. We create industrial environments that guarantee efficiency, accommodate expansion, and drive long-term profit for enterprises across India.",
       img: "realstate/Logistics & Industrial Facilities hww (2).jpg",
 
       boxes: [
@@ -108,7 +108,7 @@ export default function () {
       heading: "Value, Finance, and Lifestyle",
       subheading: "What we do",
       paragraph:
-        "Landsking Infra Infra specializes in the Residential sector, offering comprehensive advisory to investors, developers, and high-net-worth landowners. We are dedicated to maximizing the value of residential assets across India.Whether you are seeking strategic investment opportunities, optimizing development finance, or aiming for a seamless transaction, our expert team is here to guide every step of the way, ensuring maximum residential asset value and long-term security.",
+        "Landsking Infra specializes in the Residential sector, offering comprehensive advisory to investors, developers, and high-net-worth landowners. We are dedicated to maximizing the value of residential assets across India.Whether you are seeking strategic investment opportunities, optimizing development finance, or aiming for a seamless transaction, our expert team is here to guide every step of the way, ensuring maximum residential asset value and long-term security.",
       img: "realstate/Residential hww (2).jpg",
       boxes: [
         {
@@ -155,7 +155,7 @@ export default function () {
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
           {tabs[activeIndex].heading}
         </h2>
-        <p className="text-[#000] text-base md:text-lg leading-relaxed">
+        <p className="text-gray-600 text-justify text-base md:text-lg leading-relaxed">
           {tabs[activeIndex].paragraph}
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
@@ -172,7 +172,7 @@ export default function () {
               <h3 className="text-lg font-semibold text-[#000080] mb-2">
                 {box.title}
               </h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-600 text-justify text-sm leading-relaxed">
                 {box.text}
               </p>
             </div>

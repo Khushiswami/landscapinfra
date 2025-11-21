@@ -77,7 +77,9 @@ export default function ExploreP() {
               <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
               </h3>
-              <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+              <p className="text-gray-600 text-justify mb-5">
+                {selectedArea.description}
+              </p>
               <button className="flex items-center gap-2 text-[#000080] font-semibold hover:underline">
                 More{" "}
                 <span className="bg-[#000080] p-1 rounded-full text-black">

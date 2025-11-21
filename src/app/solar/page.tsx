@@ -125,16 +125,16 @@ export default function Solar() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-6 mt-5 text-justify">
-            Landsking Infra Infra delivers end-to-end solar EPC services,
-            providing clean, cost-effective, and reliable energy solutions for
-            industries and institutions. We design rooftop and ground-mounted
-            solar systems using Helioscope, PVsyst, and AutoCAD for optimal
-            efficiency. Services include site surveys, shadow analysis, BIS &
-            MNRE-compliant procurement, and structured installation by skilled
-            technicians. We use Tier-1 modules and inverters, ensuring high
-            performance, durability, and compliance. With rapid project
-            execution, SCADA-enabled monitoring, AMC support, and finance
-            advisory, we maximize ROI and operational efficiency.
+            Landsking Infra delivers end-to-end solar EPC services, providing
+            clean, cost-effective, and reliable energy solutions for industries
+            and institutions. We design rooftop and ground-mounted solar systems
+            using Helioscope, PVsyst, and AutoCAD for optimal efficiency.
+            Services include site surveys, shadow analysis, BIS & MNRE-compliant
+            procurement, and structured installation by skilled technicians. We
+            use Tier-1 modules and inverters, ensuring high performance,
+            durability, and compliance. With rapid project execution,
+            SCADA-enabled monitoring, AMC support, and finance advisory, we
+            maximize ROI and operational efficiency.
           </p>
 
           {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">

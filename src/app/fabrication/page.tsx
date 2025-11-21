@@ -138,19 +138,19 @@ export default function Fabrication() {
         <div className="container mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Landsking Infra Infra Fabrication Solutions
+              Landsking Infra Fabrication Solutions
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 mb-4 text-sm sm:text-base text-justify">
-                Landsking Infra Infra delivers sturdy and cost-efficient
+                Landsking Infra delivers sturdy and cost-efficient
                 <span className="text-[#000080] font-semibold">
                   {" "}
                   Fabrication Solutions{" "}
                 </span>
-                Landsking Infra Infra delivers precision-engineered fabrication
+                Landsking Infra delivers precision-engineered fabrication
                 services for industrial, commercial, and infrastructure
                 projects, ensuring strength, accuracy, and long-lasting
                 performance. Our expertise covers heavy steel structures,
@@ -161,9 +161,9 @@ export default function Fabrication() {
                 skilled welders and certified fabrication engineers works
                 closely with civil and structural teams to guarantee seamless
                 project execution. From design coordination to final
-                installation, Landsking Infra Infra provides reliable,
-                efficient, and high-quality fabrication solutions that meet
-                industry standards and project timelines.
+                installation, Landsking Infra provides reliable, efficient, and
+                high-quality fabrication solutions that meet industry standards
+                and project timelines.
               </p>
 
               <div className=" mt-3 flex items-center justify-center md:justify-start gap-4">

@@ -148,7 +148,7 @@ export default function Portsharbours() {
           src: "/industryhome/portsharbours.jpg",
           alt: "Port ",
         }}
-        description="Landsking Infra Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
+        description="Landsking Infra provides expert landscaping solutions for Nuclear Power Plants, with proven experience across several critical sites nationwide."
         features={featuresData}
       />
 

@@ -130,10 +130,10 @@ export default function Officespace() {
 
           <p className="text-gray-700 leading-relaxed mb-6 text-justify">
             Building your dream office shouldn&apos;t be a nightmare. At
-            Landsking Infra Infra, we turn the complex process of creating a
-            modern workspace into a simple, stress-free journey. We design and
-            build flexible offices that not only reflect your brand&apos;s
-            unique identity but also boost your team&apos;s productivity and
+            Landsking Infra, we turn the complex process of creating a modern
+            workspace into a simple, stress-free journey. We design and build
+            flexible offices that not only reflect your brand&apos;s unique
+            identity but also boost your team&apos;s productivity and
             well-being. <br />
             We manage the entire process, from BIM-based visualization and 3D
             walkthroughs to the final handover. This &quot;design to handover

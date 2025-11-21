@@ -21,12 +21,12 @@ interface KeyFeaturesProps {
 
 export default function KeyFeaturesB({
   heading = "KEY FEATURES",
-  highlight = "OF Landsking Infra Infra PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS",
+  highlight = "OF Landsking Infra PVT LTD COLD STORAGE & COLD ROOM SOLUTIONS",
   img = {
     src: "/industry.jpg",
     alt: "Cold Storage ",
   },
-  description = `At Landsking Infra Infra PVT LTD, we deliver state-of-the-art cold storage systems and energy-efficient cold rooms.`,
+  description = `At Landsking Infra PVT LTD, we deliver state-of-the-art cold storage systems and energy-efficient cold rooms.`,
   features = [],
 }: KeyFeaturesProps) {
   return (
@@ -55,7 +55,7 @@ export default function KeyFeaturesB({
 
         {/* Right Content */}
         <div className="order-1 md:order-2 space-y-6">
-          <p className="text-gray-700  text-base sm:text-[18px]">
+          <p className="text-gray-600 text-justify  text-base sm:text-[18px]">
             {description}
           </p>
 

@@ -112,14 +112,14 @@ export default function Epcsolutions() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 container mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text Section */}
           <div className="text-center lg:text-left mt-16 lg:mt-0">
-            <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4 ">
               Our Solar EPC Solutions for a Greener Tomorrow
             </h1>
             <p className="text-md md:text-lg max-w-md mx-auto lg:mx-0">
-              Landsking Infra Infra delivers advanced solar EPC solutions, from
+              Landsking Infra delivers advanced solar EPC solutions, from
               ideation to commissioning, driving renewable energy innovation.
             </p>
           </div>
@@ -163,16 +163,16 @@ export default function Epcsolutions() {
         <div className="container mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-xl text-[#000080] sm:text-2xl md:text-3xl font-bold  max-w-4xl mx-auto">
-              Landsking Infra Infra Epc Solutions
+              Landsking Infra Epc Solutions
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-base md:text-lg font-medium text-justify text-gray-700  mb-6">
-                At Landsking Infra Infra, we offer complete Solar EPC
-                (Engineering, Procurement & Construction) solutions designed to
-                transform clean energy vision into high-performing reality. Our
+              <p className="text-base md:text-lg font-medium text-justify text-gray-600  mb-6">
+                At Landsking Infra, we offer complete Solar EPC (Engineering,
+                Procurement & Construction) solutions designed to transform
+                clean energy vision into high-performing reality. Our
                 experienced team handles every stage — from detailed site
                 evaluation and system engineering to material sourcing,
                 installation, and commissioning. We focus on precision,
@@ -182,7 +182,7 @@ export default function Epcsolutions() {
                 value. With strong quality standards, technical excellence, and
                 on-time delivery, we build solar systems that work smarter, last
                 longer, and perform stronger — year after year.
-              </h2>
+              </p>
 
               <div className="flex items-center justify-center md:justify-start gap-4">
                 <Link
@@ -196,8 +196,8 @@ export default function Epcsolutions() {
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <img
-                src="/testing.jpg"
-                alt="Landsking Infra Infra Epc Solutions Solar"
+                src="/preimages/person.jpg"
+                alt="Landsking Infra Epc Solutions Solar"
                 className="object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -213,21 +213,21 @@ export default function Epcsolutions() {
       </div>
 
       {/* ===== Example Step Section ===== */}
-      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-5 md:py-8 md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2 md:gap-12 w-full">
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-6xl font-bold text-[#000080]">
+            <h1 className=" text-5xl md:text-6xl font-bold text-[#000080]">
               {activeTab.toString().padStart(2, "0")}
             </h1>
-            <h2 className="mt-2  mb-6 md:mb-0 text-3xl  md:text-5xl font-semibold text-[#000080]">
+            <h2 className="mt-2  mb-6 md:mb-0 text-2xl  md:text-4xl font-semibold text-[#000080]">
               Solar Project
               <br /> Analysis Services
             </h2>
           </div>
           <div>
             <p className="text-[#737373] mb-6 text-[19px]">
-              At Landsking Infra Infra, every successful solar project begins
-              with precision planning. Our expert business development team
+              At Landsking Infra, every successful solar project begins with
+              precision planning. Our expert business development team
               thoroughly assesses your energy requirements, identifies the most
               efficient site locations, and evaluates multiple performance
               scenarios. We then create a detailed preliminary site plan,
@@ -244,13 +244,15 @@ export default function Epcsolutions() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-5 md:py-8  md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2  md:gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-6xl font-bold text-[#000080]">02</h1>
+            <h1 className=" text-5xl md:text-6xl font-bold text-[#000080]">
+              02
+            </h1>
 
-            <span className="mt-2  mb-6 md:mb-0 font-semibold text-[#000080] text-3xl  md:text-5xl">
+            <span className="mt-2  mb-6 md:mb-0 font-semibold text-[#000080] text-2xl  md:text-4xl">
               System Designs
             </span>
           </div>
@@ -281,19 +283,21 @@ export default function Epcsolutions() {
       </div>
 
       {/* 03 - Contract Awarded */}
-      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-5 md:py-8  md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2 md:gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-6xl font-bold text-[#000080]">03</h1>
-            <span className="mt-2 md:mb-0 mb-6 text-[#000080] font-semibold text-3xl  md:text-5xl">
+            <h1 className=" text-5xl md:text-6xl font-bold text-[#000080]">
+              03
+            </h1>
+            <span className="mt-2 md:mb-0 mb-6 text-[#000080] font-semibold text-2xl  md:text-4xl">
               Construct
             </span>
           </div>
 
           {/* Right */}
           <div className="flex flex-col justify-center space-y-6">
-            <p className="text-[#000000] text-[19px]">
+            <p className="text-[#000000] text-[19px] text-justify">
               Built with precision, powered by expertise. Once the layout is
               finalized, our construction team prepares the site, installs
               mounting structures, and integrates all system components
@@ -314,19 +318,21 @@ export default function Epcsolutions() {
       </div>
 
       {/* 04 - Detail Drawings */}
-      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-12 md:px-29 lg:px-19">
+      <div className="flex items-center justify-center bg-[#f2f2f2] px-9 py-5 md:py-8  md:px-29 lg:px-19">
         <div className="grid md:grid-cols-2 md:gap-12  w-full">
           {/* Left */}
           <div className="flex flex-col items-start justify-center">
-            <h1 className="text-6xl font-bold text-[#000080]">04</h1>
-            <span className="mt-2 mb-6 md:mb-0 font-semibold text-[#000080] text-3xl  md:text-5xl">
+            <h1 className=" text-5xl md:text-6xl font-bold text-[#000080]">
+              04
+            </h1>
+            <span className="mt-2 mb-6 md:mb-0 font-semibold text-[#000080] text-2xl  md:text-4xl">
               Testing
             </span>
           </div>
 
           {/* Right */}
           <div className="flex flex-col justify-center space-y-6 md:mt-8 mt-0">
-            <p className="text-[#000000] text-[19px]">
+            <p className="text-[#000000] text-[19px] text-justify">
               We ensure every system performs at its peak from day one.After
               installation, our specialists conduct thorough mechanical and
               electrical testing, including checks on structural integrity,
@@ -346,7 +352,7 @@ export default function Epcsolutions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className=" text-[#000080] text-2xl md:mb-5  md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-                Why Choose Landsking Infra Infra for Solar EPC?
+                Why Choose Landsking Infra for Solar EPC?
               </h2>
               <p className="text-gray-700 mb-4 text-sm sm:text-base">
                 Building Tomorrows Energy Infrastructure — Today. We specialize
@@ -369,7 +375,7 @@ export default function Epcsolutions() {
             <div className="relative w-full h-64 sm:h-80 md:h-[450px] md:mb-0 mb-14 ">
               <img
                 src="/solar epc.jpeg"
-                alt="  Why Choose Landsking Infra Infra for Solar EPC?"
+                alt="  Why Choose Landsking Infra for Solar EPC?"
                 className="object-cover "
               />
             </div>

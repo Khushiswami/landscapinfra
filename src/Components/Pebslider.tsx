@@ -147,14 +147,14 @@ export default function Pebslider() {
         </div>
 
         {/* ✅ Desktop Section */}
-        <div className="hidden lg:flex w-full h-[550px] overflow-hidden">
+        <div className="hidden lg:flex w-full h-[450px] overflow-hidden">
           {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col border border-gray-300">
             {categories.map((cat, index) => (
               <button
                 key={index}
                 onClick={() => setActiveCategory(cat)}
-                className={`flex-1 text-lg p-8 text-left md:text-[19px] font-medium transition-all duration-300
+                className={`flex-1 text-lg p-4 text-left md:text-[19px] font-medium transition-all duration-300
                   ${
                     activeCategory.title === cat.title
                       ? "bg-white text-black shadow-inner"
@@ -187,10 +187,10 @@ export default function Pebslider() {
               >
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-11/12">
                   <div className="p-8 text-white shadow-lg ">
-                    <h3 className="text-2xl font-bold mb-3 text-center">
+                    <h4 className="text-2xl font-bold mb-3 text-center">
                       {activeCategory.title}
-                    </h3>
-                    <p className="text-sm mb-3 text-center">
+                    </h4>
+                    <p className="text-sm mb-3 text-center ">
                       {activeCategory.description}
                     </p>
                   </div>

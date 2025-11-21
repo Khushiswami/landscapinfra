@@ -133,7 +133,6 @@ const Caesimulation = () => {
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               CAE Certainty: Engineering Excellence for Product Development
             </h2>
-            <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700  text-justify mb-4 leading-relaxed">
               CAE is where every great product begins—not with physical tests,
@@ -167,7 +166,7 @@ const Caesimulation = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="/cae.png"
+              src="/cadservice/body.jpeg"
               alt=" cae-simulation"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />

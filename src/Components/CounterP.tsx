@@ -64,13 +64,14 @@ export default function CounterP() {
                 i === counters.length - 1 ? "col-span-2 lg:col-span-1" : ""
               }`}
             >
-              <p className="text-[25px] font-bold text-white transition-all duration-500 md:text-[52px]">
+              <h5 className="text-[20px] font-bold text-white transition-all duration-500 md:text-[35px]">
                 {counts[i].toFixed(counter.value % 1 !== 0 ? 2 : 0)}
                 {counter.suffix || ""}
-              </p>
-              <p className="text-[#8080FF] text-[16px] md:text-[21px] mt-0">
+              </h5>
+
+              <h6 className="text-[#8080FF] text-[16px] md:text-[19px] mt-0">
                 {counter.label}
-              </p>
+              </h6>
             </div>
           ))}
         </div>

@@ -61,13 +61,10 @@ export default function Brand() {
 
   return (
     <section className="md:py-12 bg-white">
-      <h2 className="text-3xl md:text-3xl font-bold text-center text-[#000080] mb-8">
+      <h2 className="text-3xl md:text-3xl font-bold text-center text-[#000080] mb-7">
         Meet Our Clients
       </h2>
-      <div className="space-y-4">
-        {renderRow(false)}
-        {renderRow(true)}
-      </div>
+      <div className="space-y-4">{renderRow(false)}</div>
     </section>
   );
 }

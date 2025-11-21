@@ -72,13 +72,13 @@ export default function Rndaboutus() {
             ABOUT US
           </h2>
 
-          <p className="text-gray-700 mb-6 leading-relaxed text-sm sm:text-base">
-            Landsking Infra Infra Pvt. Ltd. with the Team Combined Experience
-            have More than 120MT Capacity Rice mill Plant, 350 Minor and Major
-            Bridge and Super Structure, 26 KM MS Pipe line upto 3.8m dia, and
-            410KM HDPE pipeline Excavation and laying, 6,76,000Sqft PEB Erection
-            Work, 15.5MW solar plant in its Portfolio. We combine our expertise
-            with purposeful technology, deploying innovations like digital
+          <p className="text-gray-600 text-justify mb-6 leading-relaxed text-sm sm:text-base">
+            Landsking Infra Pvt. Ltd. with the Team Combined Experience have
+            More than 120MT Capacity Rice mill Plant, 350 Minor and Major Bridge
+            and Super Structure, 26 KM MS Pipe line upto 3.8m dia, and 410KM
+            HDPE pipeline Excavation and laying, 6,76,000Sqft PEB Erection Work,
+            15.5MW solar plant in its Portfolio. We combine our expertise with
+            purposeful technology, deploying innovations like digital
             engineering and AI to produce powerful results.
           </p>
 

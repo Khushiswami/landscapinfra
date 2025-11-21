@@ -83,7 +83,7 @@ export default function Planttabs() {
               <h2 className="text-[#000080] text-2xl md:text-3xl font-bold mb-3">
                 {section.title}
               </h2>
-              <p className="text-black mb-5 leading-relaxed">
+              <p className="text-gray-600 [#000080] mb-5 leading-relaxed">
                 {section.description}
               </p>
               <ul className="space-y-2">

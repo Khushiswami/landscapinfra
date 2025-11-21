@@ -139,9 +139,9 @@ const Needs = () => {
             <div className="w-20 h-[3px] bg-[#272727] mt-3 mb-6"></div>
 
             <p className="text-gray-700 text-justify mb-4 leading-relaxed">
-              Landsking Infra Infra manages the complete asset lifecycle,
-              offering unparalleled authority across Residential, Commercial,
-              and Industrial sectors. Your specific property needs—whether they
+              Landsking Infra manages the complete asset lifecycle, offering
+              unparalleled authority across Residential, Commercial, and
+              Industrial sectors. Your specific property needs—whether they
               involve complex acquisition, strategic disposition, or optimizing
               operational efficiency—are met by our integrated expert team. As
               India's market evolves, we equip you to not just respond, but to

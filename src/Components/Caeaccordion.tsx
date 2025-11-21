@@ -70,22 +70,24 @@ export default function Caeaccordion() {
                 <span className="text-blue-500 font-bold md:text-3xl text-lg">
                   {/* {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`} */}
                 </span>
-                <span className="text-gray-900 text-3xl ">{item.title}</span>
+                <span className="text-gray-900 text-xl md:text-2xl ">
+                  {item.title}
+                </span>
               </div>
               <span
-                className={`flex items-center justify-center h-8 w-8 rounded-full border border-black ${
+                className={`flex items-center justify-center h-6 w-4 md:h-8 md:w-8 rounded-full border border-black ${
                   openIndex === index ? "bg-black" : "bg-white"
                 }`}
               >
                 {openIndex === index ? (
-                  <MinusIcon className="h-10 w-5 text-white" />
+                  <MinusIcon className=" h-6 w-6 md:h-10 md:w-5 text-white" />
                 ) : (
-                  <PlusIcon className="h-10 w-5 text-black" />
+                  <PlusIcon className="h-6 w-6 md:h-10 md:w-5 text-black" />
                 )}
               </span>
             </button>
             {openIndex === index && (
-              <p className="pb-4 text-gray-800 text-xl tracking-wider ">
+              <p className="pb-4 text-gray-600 text-justify text-xl tracking-wider ">
                 {item.content}
               </p>
             )}

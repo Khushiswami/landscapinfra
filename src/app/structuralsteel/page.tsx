@@ -15,7 +15,7 @@ export default function Structuralsteel() {
     {
       title: "Structural Detailing",
       description:
-        "Landsking Infra Infra Pvt. Ltd. delivers accurate, error-free detailing services using Tekla, AutoCAD, and custom in-house tools. Our shop and GA drawings are optimized for fabrication, ensuring projects finish on time and within scope.",
+        "Landsking Infra Pvt. Ltd. delivers accurate, error-free detailing services using Tekla, AutoCAD, and custom in-house tools. Our shop and GA drawings are optimized for fabrication, ensuring projects finish on time and within scope.",
       image: "/industry.jpg",
     },
     {
@@ -45,7 +45,7 @@ export default function Structuralsteel() {
     {
       title: "Estimation Services",
       description:
-        "Landsking Infra Infra Pvt. Ltd. provides accurate material take-offs and BOMs for PEMB and structural steel projects, helping clients manage project budgeting and planning efficiently.",
+        "Landsking Infra Pvt. Ltd. provides accurate material take-offs and BOMs for PEMB and structural steel projects, helping clients manage project budgeting and planning efficiently.",
       image: "/industry.jpg",
     },
   ];
@@ -258,7 +258,7 @@ export default function Structuralsteel() {
 
             <p className="text-gray-600 text-justify leading-relaxed mb-4">
               <strong>
-                Landsking Infra Infra Pvt. Ltd. LEADING THE WAY TO THE FUTURE
+                Landsking Infra Pvt. Ltd. LEADING THE WAY TO THE FUTURE
               </strong>{" "}
               is your one-stop solution for all structural and building
               requirements. Our pre-engineered steel buildings are thoughtfully
@@ -266,7 +266,7 @@ export default function Structuralsteel() {
               Built in strict compliance with international standards, every
               structure is composed of meticulously engineered components that
               seamlessly integrate with each other. With a focus on durability,
-              efficiency, and innovation, Landsking Infra Infra delivers modern
+              efficiency, and innovation, Landsking Infra delivers modern
               infrastructure solutions that are built to last.
             </p>
           </div>

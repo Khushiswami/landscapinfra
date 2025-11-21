@@ -146,14 +146,14 @@ export default function Rndslider() {
         </div>
 
         {/* Desktop Slider */}
-        <div className="hidden lg:flex w-full h-[500px] overflow-hidden">
+        <div className="hidden lg:flex w-full h-[480px] overflow-hidden">
           {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col border border-gray-300">
             {categories.map((cat, index) => (
               <button
                 key={index}
                 onClick={() => setActiveCategory(cat)}
-                className={`flex-1 text-lg p-8 text-left md:text-[19px] font-medium transition-all duration-300 transition-colors
+                className={`flex-1 text-lg p-5 text-left md:text-[19px] font-medium transition-all duration-300 transition-colors
                   ${
                     activeCategory.title === cat.title
                       ? "bg-white text-black shadow-inner"
@@ -187,9 +187,9 @@ export default function Rndslider() {
                   >
                     <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-11/12">
                       <div className="p-8 text-white shadow-lg transition-all duration-700">
-                        <h3 className="text-2xl font-bold mb-3 text-center">
+                        <h4 className="text-2xl font-bold mb-3 text-center">
                           {activeCategory.title}
-                        </h3>
+                        </h4>
                         <p className="text-sm mb-3 text-center">
                           {activeCategory.description}
                         </p>

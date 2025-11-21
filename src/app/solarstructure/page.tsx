@@ -159,10 +159,8 @@ export default function Solarstructure() {
               </p>
               <p className="text-gray-600 text-justify mb-4 text-sm md:text-base">
                 At{" "}
-                <span className="font-semibold">
-                  Landsking Infra Infra Pvt Ltd
-                </span>
-                , we bring over 7 years of expertise in delivering top-quality
+                <span className="font-semibold">Landsking Infra Pvt Ltd</span>,
+                we bring over 7 years of expertise in delivering top-quality
                 pre-engineered and prefabricated industrial buildings. Our
                 portfolio includes warehouses, manufacturing units, industrial
                 sheds, poultry farms, cold storage facilities, clean rooms, and
