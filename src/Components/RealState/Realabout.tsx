@@ -93,11 +93,11 @@ export default function Realabout() {
 
         {/* Right Section - About Us */}
         <div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 mt-9 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 md:mt-9 sm:mb-6">
             ABOUT US
           </h2>
 
-          <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
+          <p className="text-gray-600 text-justify mb-4 sm:mb-5  text-md sm:text-base">
             Landsking InfraInfra Pvt.Ltd. with the Team Combined Experience have
             More Landsking Infra – India’s emerging real estate powerhouse. We
             specialize in connecting people and properties — from industrial
@@ -107,22 +107,22 @@ export default function Realabout() {
             documentation and deal closure — we manage everything with
             professionalism and precision.
           </p>
-          <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
+          <p className="text-gray-600 text-justify mb-4 sm:mb-5  text-md sm:text-base">
             <span className="text-[#000080] FONT-BOLD text-LG">
               “Right Property. Right Price. Right Time.”
             </span>
             That’s not just a tagline, it’s our operating philosophy.
           </p>
-          <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
+          <p className="text-gray-600 text-justify mb-4 sm:mb-5  text-md sm:text-base">
             With Landsking Infra, every transaction is backed by verified
             listings, legal clarity, and deep market insight — so you can
             invest, lease, or sell with total confidence.
           </p>
-          <p className="text-black mb-4 sm:mb-5  text-md sm:text-base">
+          <p className="text-gray-600 text-justify mb-4 sm:mb-5  text-md sm:text-base">
             We don’t just deal in properties — we deliver value, vision, and
             growth.
           </p>
-          <ul className="space-y-2 text-black text-base md:text-md">
+          <ul className="space-y-2 text-gray-600 text-base md:text-md">
             {[
               "Pan-India Network of Verified Listings",
               "Expert Negotiators & Legal Support",

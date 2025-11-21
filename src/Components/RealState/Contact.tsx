@@ -48,7 +48,6 @@ export default function Solarcontact() {
           <h1 className="text-xl md:text-3xl font-bold mb-4">
             Real Estate Moves Fast. Don’t Miss the Next Big Opportunity
           </h1>
-          <div className="h-1 w-[100%] bg-[#8080FF] mb-4"></div>
           <p className="mb-6 text-gray-200">
             Book your consultation now and stay ahead of the market.
           </p>

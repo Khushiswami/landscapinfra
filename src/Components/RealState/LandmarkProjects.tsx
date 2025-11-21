@@ -78,8 +78,20 @@ export default function LandmarkProjects() {
                   />
 
                   {/* ✅ Hover Overlay */}
-                  <div className=" hover:absolute inset-0 bg-[#000080]/70">
-                    <div className="absolute inset-4   bg-[#000080]/70 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-all duration-500 px-4">
+                  <div
+                    className=" hover:absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(0deg, rgba(33, 71, 95, 0.8) 0%, rgba(22, 46, 68, 0.8) 100%)",
+                    }}
+                  >
+                    <div
+                      className="absolute inset-4    flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-all duration-500 px-4"
+                      style={{
+                        background:
+                          "linear-gradient(0deg, rgba(33, 71, 95, 0.8) 0%, rgba(22, 46, 68, 0.8) 100%)",
+                      }}
+                    >
                       <h3 className="text-white text-lg font-semibold mb-2">
                         {project.title}
                       </h3>

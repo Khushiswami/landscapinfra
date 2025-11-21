@@ -473,7 +473,7 @@ export default function Pebheader() {
       ],
     },
     { name: "Projects", href: "/preengineredbuildingsprojects" },
-    { name: "Insights", href: "/#" },
+    { name: "Insights", href: "/peb-insights" },
     {
       name: "About",
       href: "/pebabout/about",

@@ -54,25 +54,22 @@ const features = [
 ];
 export default function OurLineage() {
   return (
-    <section className="text-center px-4 sm:px-6 md:mx-15 lg:mx-20 pt-12 md:pt-16 bg-white">
+    <section className="text-center px-4 sm:px-6 md:mx-15 lg:mx-20 pt-0 md:pt-16 bg-white">
       {/* Heading */}
-      <h2 className="text-2xl md:text-4xl font-black tracking-wide text-[#000080] uppercase mb-6 md:mb-8">
+      <h2 className="text-2xl md:text-3xl font-black tracking-wide text-[#000080] uppercase mb-6 md:mb-8">
         How We Work
       </h2>
 
       {/* Paragraph */}
-      <p className="text-sm sm:text-base md:text-lg text-black leading-relaxed max-w-6xl mx-auto mb-8 md:mb-10 text-justify md:text-center">
+      <p className="text-sm sm:text-base md:text-lg text-gray  max-w-6xl mx-auto mb-8 md:mb-10 text-justify md:text-center">
         We’ve engineered a process that converts client needs into realized
         assets, ensuring strategic simplicity from start to finish. Our method
         is designed to provide end-to-end clarity, seamless communication, and a
-        result-driven experience for every client.
-        <br />
-        <br />
-        The Landsking Infra Workflow: We initiate by understanding your precise
-        requirement and move systematically through shortlisting, site
-        organization, negotiation, and deal finalization, concluding with
-        complete legal documentation. Every step is managed by your dedicated
-        real estate expert.
+        result-driven experience for every client. The Landsking Infra Workflow:
+        We initiate by understanding your precise requirement and move
+        systematically through shortlisting, site organization, negotiation, and
+        deal finalization, concluding with complete legal documentation. Every
+        step is managed by your dedicated real estate expert.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-3 mb-10">
@@ -85,7 +82,7 @@ export default function OurLineage() {
             <h3 className="text-xl md:text-[23px] font-semibold text-[#000080] mb-3">
               {feature.title}
             </h3>
-            <p className="text-gray-600 text-md md:text-base leading-relaxed">
+            <p className="text-gray-600 text-justify text-md md:text-base leading-relaxed">
               {feature.description}
             </p>
           </div>

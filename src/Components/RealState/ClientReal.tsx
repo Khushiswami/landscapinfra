@@ -13,7 +13,6 @@ export default function ClientReal() {
     "/praj.png",
     "/dee vee projects.jpeg",
     "/mega.jpeg",
-    "/tata steel.jpeg",
     "/healthcare.jpeg",
     "/adani foundation.jpeg",
     "/dilip buildcon.jpeg",
@@ -64,10 +63,7 @@ export default function ClientReal() {
       <h2 className="text-3xl md:text-4xl font-bold text-center text-[#000080] mb-8">
         Our Brands
       </h2>
-      <div className="space-y-4">
-        {renderRow(false)}
-        {renderRow(true)}
-      </div>
+      <div className="space-y-4">{renderRow(false)}</div>
     </section>
   );
 }

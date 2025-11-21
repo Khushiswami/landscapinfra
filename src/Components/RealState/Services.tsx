@@ -7,15 +7,7 @@ import Image from "next/image";
 
 const exploreItems = [
   {
-    subtitle: "Industrial Real Estate",
-    title: " Trusted by top logistics, FMCG, and manufacturing brands.",
-    one: "Buy/Sell/Lease of Industrial Plots, Warehouses & Logistic Parks",
-    two: "Built-to-Suit Solutions for Manufacturing Units",
-    three: "Government-Approved Industrial Lands",
-    image: "/realstate/Industrial Real Estate.jpg",
-  },
-  {
-    subtitle: "Commercial & Retail",
+    subtitle: "Commercial  and  Retail",
     title: " Premium properties in top commercial zones.",
     one: "Leasing of High-Street Shops & Malls",
     two: "Office Spaces, Business Parks, Co-working Solution",
@@ -37,6 +29,14 @@ const exploreItems = [
     two: "Market Research & ROI Analysis",
     three: "Land Acquisition / Joint Ventures / Builder Collaboration",
     image: "/realstate/investment advisory.jpg",
+  },
+  {
+    subtitle: "Industrial Real Estate",
+    title: " Trusted by top  manufacturing brands.",
+    one: "Buy/Sell/Lease of  Plots, Warehouses and Logistic Parks",
+    two: "Built-to-Suit Solutions for Manufacturing Units",
+    three: "Government-Approved Industrial Lands",
+    image: "/realstate/Industrial Real Estate.jpg",
   },
 ];
 
@@ -102,19 +102,19 @@ export default function Services() {
               className="object-cover w-full h-[550px]  md:h-[430px] lg:h-[450px] transition-transform duration-500 group-hover:scale-105 "
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
-              <h4 className="text-white font-bold text-xl mb-2">
+              <h4 className="text-gray-200 font-bold text-xl mb-2">
                 {item.subtitle}
               </h4>
 
               {/* one, two, three — stacked vertically */}
-              <ul className="text-white text-sm md:text-[16px] space-y-1 mb-3">
+              <ul className="text-gray-200 text-sm md:text-[16px] space-y-1 mb-3">
                 {item.one && <li>• {item.one}</li>}
                 {item.two && <li>• {item.two}</li>}
                 {item.three && <li>• {item.three}</li>}
               </ul>
-              <h4 className="text-white font-semibold text-lg mb-2">
+              <h6 className="text-gray-200 font-semibold text-md mb-2">
                 {item.title}
-              </h4>
+              </h6>
             </div>
           </div>
         ))}
