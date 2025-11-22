@@ -365,11 +365,11 @@ export default function Modular() {
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug mb-4 ">
               Smart and Flexible Solutions for Modern Building{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
               Lightweight, durable, relocatable, economical, and
               energy-efficient, prefabricated structures are increasingly
               recognized as a modern and sustainable alternative to conventional
@@ -379,7 +379,7 @@ export default function Modular() {
               design flexibility.{" "}
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
               At Landsking Infra Pvt. Ltd, we specialize in delivering
               high-quality prefabricated structures tailored to diverse
               applications. Our dry construction process enables quicker project
@@ -535,7 +535,7 @@ export default function Modular() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5 text-justify">
+                <p className="text-gray-600 mb-5 text-justify">
                   {selectedArea.description}
                 </p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
@@ -607,43 +607,39 @@ export default function Modular() {
       {/* special section */}
       <section className="bg-white py-12">
         <div className="md:mx-16 mx-auto px-6 md:px-0">
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Accelerate Construction with Prefabrication – Save Up to 60% Time
-          </h2>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="relative">
               <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
               <img
                 src="/menupageimg/mod16.jpg"
                 alt=" Modular benfits"
-                width={600}
-                height={400}
+                width={700}
+                height={450}
                 className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
               />
             </div>
 
             <div>
-              <p className="text-gray-700 text-justify leading-relaxed">
-                With advanced prefabrication technology,{" "}
-                <b>Landsking Infra Pvt. Ltd.</b> helps you build smarter and
-                faster. Our modern, fully automated production systems ensure
-                precision, consistency, and reduced dependency on manual labor,
-                making prefabrication up to <b>60% quicker</b> than conventional
-                construction methods.
+              <div className="flex items-center mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+                  Accelerate Construction with Prefabrication – Save Up to 60%
+                  Time{" "}
+                </h2>
+              </div>
+              <p className="text-gray-600 text-justify leading-relaxed">
+                With advanced prefabrication technology, Landsking Infra Pvt.
+                Ltd. helps you build smarter and faster. Our modern, fully
+                automated production systems ensure precision, consistency, and
+                reduced dependency on manual labor, making prefabrication up to
+                60% quicker than conventional construction methods.
               </p>
-              <p className="text-gray-700 text-justify leading-relaxed mt-4">
+              <p className="text-gray-600 text-justify leading-relaxed mt-4">
                 By cutting down construction timelines, our prefabricated
-                solutions not only <b>speed up project delivery</b> but also
-                guarantee <b>strength, durability, and long-term reliability</b>
-                . This makes them the preferred choice for a wide range of
-                projects, including{" "}
-                <b>
-                  commercial spaces, industrial facilities, residential
-                  complexes, and institutional buildings
-                </b>
-                .
+                solutions not only speed up project deliverybut also guarantee
+                strength, durability, and long-term reliability . This makes
+                them the preferred choice for a wide range of projects,
+                including commercial spaces, industrial facilities, residential
+                complexes, and institutional buildings .
               </p>
             </div>
           </div>

@@ -89,7 +89,7 @@ const CleanRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 High-Precision Controlled Environments
               </h3>
-              <p className="text-gray-700 text-lg  text-justify">
+              <p className="text-gray-600 text-lg  text-justify">
                 Clean rooms are specialized environments created to keep
                 airborne particles, contaminants, and pollutants at extremely
                 low levels. They are critical for sectors such as
@@ -116,9 +116,9 @@ const CleanRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Us for Clean Room Construction?
               </h3>
-              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
+              <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
                 <li>
-                  <strong className="text-gray-700 md:text-lg">
+                  <strong className="text-gray-600 md:text-lg">
                     Comprehensive In-House Design & Manufacturing:
                   </strong>{" "}
                   Landsking Infra offers complete clean room solutions from
@@ -126,7 +126,7 @@ const CleanRoom: React.FC = () => {
                   needs.
                 </li>
                 <li>
-                  <strong className="text-gray-700 md:text-lg">
+                  <strong className="text-gray-600 md:text-lg">
                     Premium Modular Panels:
                   </strong>{" "}
                   Constructed using insulated sandwich panels for high strength,
@@ -178,7 +178,7 @@ const CleanRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Industries Served by Us
               </h3>
-              <ul className=" list-disc text-gray-700 md:text-lg mb-4 space-y-1">
+              <ul className=" list-disc text-gray-600 md:text-lg mb-4 space-y-1 pl-5">
                 <li>Pharmaceutical & API Manufacturing Units</li>
                 <li>Biotechnology & Life Science Industries</li>
                 <li>Food & Beverage Manufacturing</li>
@@ -196,7 +196,7 @@ const CleanRoom: React.FC = () => {
                 Essential Features of Landsking Infrainfra Clean Rooms
               </h3>
 
-              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
+              <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
                 <li>Leak-proof, continuous construction</li>
                 <li>Excellent thermal and sound insulation</li>
                 <li>Panels that resist fire and corrosion</li>

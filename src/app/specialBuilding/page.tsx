@@ -37,16 +37,6 @@ function Card({ image, icon, title, description }: CardProps) {
         <p className="text-gray-600 text-justify text-sm sm:text-base tracking-wide mb-5 flex-1">
           {description}
         </p>
-
-        {/* <a
-          href="#"
-          className="relative border border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit overflow-hidden"
-        >
-          <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-            READ MORE
-          </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a> */}
       </div>
     </div>
   );
@@ -87,14 +77,13 @@ export default function IndustrialBuildingsConstruction() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="text-center  mb-5 md:mb-10">
-            <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Prefab Construction of Specialized Buildings
-            </h2>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
+              <div className="flex items-center mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+                  Prefab Construction of Specialized Buildings
+                </h2>
+              </div>
               <p className="text-gray-600  text-justify mb-4  md:text-lg">
                 We specialize in the design and manufacturing of versatile
                 prefabricated structures, including K-houses, liftable porta

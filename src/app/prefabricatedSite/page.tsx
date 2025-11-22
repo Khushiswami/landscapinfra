@@ -88,7 +88,7 @@ const PrefabricatedSite: React.FC = () => {
                 Complete Infrastructure Solutions for Quick, Efficient, and
                 Economical Project Implementation
               </h3>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Landsking Infra offers customized prefab site infrastructure
                 solutions designed for fast-paced construction, industrial, and
                 infrastructure projects throughout India. Our modular structures
@@ -115,12 +115,12 @@ const PrefabricatedSite: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Essential Site Infrastructure Components We Provide
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg">
                 We offer a comprehensive range of prefabricated infrastructure
                 modules, including:
                 <br />
               </p>
-              <ul className="text-gray-700 mb-4 list-disc pl-5">
+              <ul className="text-gray-600 mb-4 list-disc pl-5">
                 <li> Prefabricated Site Offices</li>
                 <li> Accommodation for Staff and Labour</li>
                 <li> Sanitary and Toilet Facilities</li>
@@ -130,7 +130,7 @@ const PrefabricatedSite: React.FC = () => {
                 <li> Hand Wash and Utility Stations</li>
               </ul>
 
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg">
                 Each unit is factory-built, pre-engineered, and ready for quick
                 on-site assembly, saving you time, effort, and costs.
               </p>
@@ -159,7 +159,7 @@ const PrefabricatedSite: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Landsking Infra for Modular Infrastructure?
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
+              <ul className="text-gray-600 mb-1 space-y-1">
                 <li>
                   380Quick Setup – Get your site ready faster than traditional
                   methods
@@ -193,7 +193,7 @@ const PrefabricatedSite: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Ideal Applications
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg">
                 Our prefabricated infrastructure solutions are trusted across a
                 wide range of sectors: <br />
                 <br />

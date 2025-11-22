@@ -77,14 +77,13 @@ export default function SportsLeisureBuilding() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="text-center  mb-5 md:mb-10">
-            <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Sports and Recreation Facilities
-            </h2>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
+              <div className="flex items-center mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+                  Sports and Recreation Facilities
+                </h2>
+              </div>
               <p className="text-gray-600 text-justify mb-4  md:text-lg">
                 Landsking Infra delivers comprehensive Pre-Engineered Building
                 (PEB) solutions for sports and leisure facilities, combining

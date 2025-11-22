@@ -88,7 +88,7 @@ const RailwayShelters: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Durable and Highly Functional Shelters
               </h3>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Landsking Infra is recognized as a top manufacturer of
                 prefabricated railway and telecom shelters, delivering
                 dependable, customized turnkey solutions to meet the specific
@@ -99,7 +99,7 @@ const RailwayShelters: React.FC = () => {
                 installation, cost savings, and long-lasting performance.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote
@@ -112,13 +112,13 @@ const RailwayShelters: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of Prefabricated Shelters
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-600">
                 Landsking Infras railway and telecom shelters are built using
                 high-quality materials, delivering superior performance. Key
                 features include:
               </p>
               <br />
-              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
+              <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
                 <li>
                   Excellent thermal resistance for effective temperature
                   management
@@ -164,10 +164,10 @@ const RailwayShelters: React.FC = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Advanced Manufacturing Technology
+              <h3 className="text-2xl  md:text-3xl text-[#000080] font-bold mb-4">
+                Manufacturing Technology
               </h3>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Landsking Infra employs advanced manufacturing techniques and
                 meticulous engineering to create robust, high-quality shelters.
                 Tailored for railway and telecom applications, our shelters are
@@ -186,11 +186,11 @@ const RailwayShelters: React.FC = () => {
                 Uses of Prefabricated Shelters
               </h3>
 
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Landsking Infra offers durable and user-friendly shelters
                 suitable for a variety of temporary or permanent uses, such as:
               </p>
-              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
+              <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
                 <li>Railway Shelters</li>
                 <li>BTS (Base Transceiver Station) Shelters</li>
                 <li>Telecom Shelters</li>

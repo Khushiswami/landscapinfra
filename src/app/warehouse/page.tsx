@@ -55,7 +55,7 @@ const Warehouse: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
+        <section className="w-full bg-white py-7 md:py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[390px]">
@@ -71,19 +71,19 @@ const Warehouse: React.FC = () => {
                 Pre-fabricated Warehouse and Storage Solutions by Landsking
                 Infra Infra.
               </h2>
-              <p className="text-gray-600 text-justify mb-4  md:text-lg">
+              <p className="text-gray-600 text-justify mb-1  md:text-lg">
                 Boost your industrial storage and logistics efficiency with
                 Landsking Infras pre-fabricated warehouse and godown structures
                 — engineered for strength, quick deployment, and
                 cost-effectiveness.
               </p>
-              <p className="text-gray-600 text-justify mb-4  md:text-lg">
+              <p className="text-gray-600 text-justify mb-1  md:text-lg">
                 Landsking Infra, a prominent name among warehouse structure
                 manufacturers in India, specializes in delivering pre-engineered
                 warehouses tailored to client-specific demands.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote
@@ -97,23 +97,23 @@ const Warehouse: React.FC = () => {
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Pre-Engineered Warehouses?
               </h2>
-              <p className="text-gray-600  text-justify mb-4  md:text-lg">
+              <p className="text-gray-600  text-justify mb-2  md:text-lg">
                 Rapid Installation - Up to 50% faster construction than
                 traditional methods — enabling quicker operational readiness.
               </p>
-              <p className="text-gray-600  text-justify mb-4  md:text-lg">
+              <p className="text-gray-600  text-justify mb-2  md:text-lg">
                 Cost Efficiency - Reduce overall costs with minimal material
                 waste and lower labor requirements.
               </p>
-              <p className="text-gray-600  text-justify mb-4  md:text-lg">
+              <p className="text-gray-600  text-justify mb-2  md:text-lg">
                 Customizable Designs - Fully tailored to your specific
                 dimensions, layout, and workflow needs.
               </p>
-              <p className="text-gray-600  text-justify mb-4  md:text-lg">
+              <p className="text-gray-600  text-justify mb-2  md:text-lg">
                 Strength & Durability - Built to be earthquake-resistant and
                 weatherproof, ensuring long-term reliability.
               </p>
-              <p className="text-gray-600  text-justify mb-4  md:text-lg">
+              <p className="text-gray-600  text-justify mb-2  md:text-lg">
                 Easily Expandable - Designed for future scalability, allowing
                 smooth expansion as your business grows.
               </p>
@@ -158,7 +158,7 @@ const Warehouse: React.FC = () => {
               <h3 className="text-2xl font-bold mb-4 text-[#000080] md:text-3xl">
                 Main Advantages of Landsking Infras Pre-Engineered Warehouses
               </h3>
-              <ul className="text-gray-700 mb-4 space-y-1">
+              <ul className="text-gray-600 mb-2 space-y-1">
                 <li>
                   <strong>Main Frame Structure:</strong> Heavy-duty welded steel
                   rigid frames ensure strength and stability.
@@ -249,7 +249,7 @@ const Warehouse: React.FC = () => {
               <h3 className="text-2xl font-bold mb-4 text-[#000080] md:text-3xl">
                 Why Landsking Infra Pvt Ltd Prefab?
               </h3>
-              <ul className="space-y-1 text-gray-700">
+              <ul className="space-y-1 text-gray-600">
                 <li>Trusted Expertise Since 1999</li>
                 <li>Comprehensive Turnkey Project Solutions</li>
                 <li>Pan-India Project Delivery & Implementation</li>

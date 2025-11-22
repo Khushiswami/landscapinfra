@@ -33,7 +33,7 @@ export default function ProjectSliderB({
   }, []);
 
   return (
-    <section className="py-12 relative md:px-10">
+    <section className="  py-2 md:py-12 relative md:px-10">
       <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-8">
         {heading}
       </h2>

@@ -70,7 +70,7 @@ export default function Industryplatform() {
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Comprehensive Infrastructure Solutions
         </h1>
-        <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600">
+        <p className="mt-4 text-[14px] font-light md:text-[16px] text-gray-600 text-justify md:text-center">
           Drawing on deep experience, we manage every step of complex projects,
           offering absolute certainty from the initial concept definition to the
           final asset handover. Our EPC (Engineering, Procurement, and

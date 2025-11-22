@@ -102,12 +102,12 @@ export default function Products() {
       </section>
 
       {/* Company Intro Section */}
-      <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 md:px-28 text-center mb-10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
+      <section className="bg-white py-6 sm:py-7 px-4 sm:px-6 md:px-28 text-center mb-10">
+        <h2 className="text-2xl mt-2  md:mt-5 md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
           Modern Designs with Flexible Customization Options
         </h2>
 
-        <p className="text-gray-700 text-justify text-sm sm:text-base md:text-lg mx-auto leading-relaxed mt-10 max-w-5xl">
+        <p className="text-gray-600 text-justify md:text-center text-sm sm:text-base md:text-lg mx-auto leading-relaxed mt-6 max-w-5xl">
           At Landsking Infra, we specialize in delivering innovative,
           sustainable, and efficient prefabricated construction solutions
           designed to meet the evolving needs of industrial, commercial, and
@@ -124,7 +124,7 @@ export default function Products() {
 
       {/* Cards Section */}
       <main className="bg-white px-4 sm:px-6 md:px-12">
-        <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
+        <section className="bg-white py-3 sm:py-9 px-2 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
               image="/menupageimg/peb2.jpg"

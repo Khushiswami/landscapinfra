@@ -97,7 +97,7 @@ export default function Industryplatformtab() {
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
           Leading with Expertise: Our Turnkey Industrial Model
         </h2>
-        <p className="text-gray-700 mb-4 leading-relaxed">
+        <p className="text-gray-700 mb-4 leading-relaxed  ">
           At Landsking Infrarem Pvt. Ltd., we view every new structure as an
           investment in our clients’ future success. Our strategy goes beyond
           construction — it’s about combining impactful innovation with solid

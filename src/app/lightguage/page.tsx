@@ -228,16 +228,16 @@ export default function Lightguage() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4 md:px-14 lg:px-16">
+      <section className="bg-white  py-7 md:py-10 px-4 md:px-14 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug mb-4 ">
               Innovative Light Gauge Steel Framing (LGSF) Solutions by Landsking
-              Infra Infra{" "}
+              Infra
             </h2>
 
-            <p className="text-gray-700 mb-4  text-justify leading-relaxed">
+            <p className="text-gray-600 mb-2  text-justify leading-relaxed">
               Landsking Infra is a prominent provider of Light Gauge Steel
               Framing (LGSF) solutions in India, offering strong, sustainable,
               and budget-friendly construction options for diverse applications.
@@ -245,10 +245,8 @@ export default function Lightguage() {
               we deliver fully tailored LGSF systems designed to align with the
               evolving demands of modern infrastructure.
             </p>
-            <h2 className="font-extrabold text-[#000080] leading-snug  ">
-              What is Light Gauge Steel Framing (LGSF)?{" "}
-            </h2>
-            <p className="text-gray-700  text-justify mb-4 leading-relaxed">
+
+            <p className="text-gray-600  text-justify mb-4 leading-relaxed">
               Light Gauge Steel Framing (LGSF) is an advanced construction
               technique that utilizes cold-formed steel components to create
               structural frameworks for various building types. These components
@@ -274,7 +272,7 @@ export default function Lightguage() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white  sm:py-5 md:py-10 lg:py-16 px-6 md:px-14 lg:px-17">
+      <section className="w-full bg-white  sm:py-3 md:py-10 lg:py-14 px-6 md:px-14 lg:px-17">
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
@@ -349,7 +347,7 @@ export default function Lightguage() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black">{item.description}</p>
+                  <p className="text-sm text-black ">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -358,7 +356,7 @@ export default function Lightguage() {
       </section>
       {/* benefits end */}
       {/* special section */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-8 md:py-10">
         <div className="md:mx-16 mx-auto px-6 md:px-0">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
@@ -379,32 +377,20 @@ export default function Lightguage() {
 
             {/* Text Section (Right Side) */}
             <div>
-              <p className="text-gray-700 leading-relaxed mb-5">
+              <p className="text-gray-600 leading-relaxed mb-5">
                 Landsking Infra provides customized LGSF structures to suit a
                 broad spectrum of industry needs:
               </p>
-              <ul className="text-gray-700 ">
+              <ul className="text-gray-600 leading-relaxed ">
+                <li className="mb-3">350Modern Prefab Villas</li>
+                <li className="mb-3">350Show Flats & Marketing Suites</li>
+                <li className="mb-3">350On-Site Office Setups</li>
                 <li className="mb-3">
-                  <strong>350Modern Prefab Villas</strong>
+                  350Modular Classrooms & Educational Buildings
                 </li>
-                <li className="mb-3">
-                  <strong>350Show Flats & Marketing Suites</strong>
-                </li>
-                <li className="mb-3">
-                  <strong>350On-Site Office Setups</strong>
-                </li>
-                <li className="mb-3">
-                  <strong>350Modular Classrooms & Educational Buildings</strong>
-                </li>
-                <li className="mb-3">
-                  <strong>350Clinics, Hospitals & Medical Units</strong>
-                </li>
-                <li className="mb-3">
-                  <strong>350Staff Housing & Worker Dormitories</strong>
-                </li>
-                <li className="mb-3">
-                  <strong>350Commercial Units & Retail Outlets</strong>
-                </li>
+                <li className="mb-3">350Clinics, Hospitals & Medical Units</li>
+                <li className="mb-3">350Staff Housing & Worker Dormitories</li>
+                <li className="mb-3">350Commercial Units & Retail Outlets</li>
               </ul>
             </div>
           </div>

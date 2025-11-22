@@ -103,10 +103,10 @@ export default function Industrybanner() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl font-light leading-tight mb-8"
+          className="text-2xl md:text-6xl font-light leading-tight mb-8"
         >
           End-to-End Industrial Installation &
-          <span className="font-semibold">Construction Solutions</span>
+          <span className="font-semibold"> Construction Solutions</span>
         </motion.h1>
 
         {/* Dropdown */}

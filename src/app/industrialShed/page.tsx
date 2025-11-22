@@ -71,7 +71,7 @@ const IndustrialShed: React.FC = () => {
         </section>
 
         {/* Main Content */}
-        <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
+        <section className="w-full bg-white py-7 md:py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[470px]">
@@ -152,7 +152,7 @@ const IndustrialShed: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[450px]">
+            <div className="relative w-full h-[500px] md:h-[480px]">
               <Image
                 src="/shed/two.jpeg"
                 alt="High resistance"
@@ -228,7 +228,7 @@ const IndustrialShed: React.FC = () => {
                 <li>Commercial & Retail Outlets</li>
               </ul>
             </div>
-            <div className="relative w-full h-80 md:h-[330px]">
+            <div className="relative w-full h-42 md:h-[310px]">
               <Image
                 src="/shed/for.png"
                 alt="Transport & Logistics Sector"

@@ -40,16 +40,6 @@ function Card({ image, icon, title, description }: CardProps) {
         <p className="text-gray-600  text-justify text-base md:text-[17px] tracking-wide mb-5 flex-1">
           {description}
         </p>
-
-        {/* <a
-          href="#"
-          className="relative border border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
-        >
-          <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-            READ MORE
-          </span>
-          <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </a> */}
       </div>
     </div>
   );
@@ -90,14 +80,13 @@ export default function InfrastructureSector() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto">
-          <div className="text-center  mb-5 md:mb-10">
-            <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              Pre-Engineered Buildings for Infrastructure Projects
-            </h2>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
+              <div className="flex items-center mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+                  Pre-Engineered Buildings for Infrastructure Projects
+                </h2>
+              </div>
               <p className="text-gray-700 mb-4 text-justify">
                 Landsking Infra delivers sturdy and cost-efficient
                 <span className="text-[#000080] font-semibold">

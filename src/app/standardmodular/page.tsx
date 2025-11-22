@@ -191,29 +191,7 @@ export default function Standardmodular() {
       ...possibilities.slice(0, visibleCards - cardsToShow.length)
     );
   }
-  // const prevSlide = () => {
-  //   setStartIndex((prev) =>
-  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
-  //   );
-  // };
 
-  // const nextSlide = () => {
-  //   setStartIndex((prev) =>
-  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
-  //   );
-  // };
-
-  // // Slice visible cards and wrap around if needed
-  // const cardsToShow = possibilities
-  //   .slice(startIndex, startIndex + visibleCards)
-  //   .concat(
-  //     startIndex + visibleCards > possibilities.length
-  //       ? possibilities.slice(
-  //           0,
-  //           (startIndex + visibleCards) % possibilities.length
-  //         )
-  //       : []
-  //   );
   const [selectedId, setSelectedId] = useState(3);
 
   const selectedArea = areas.find((area) => area.id === selectedId);
@@ -255,10 +233,11 @@ export default function Standardmodular() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          aria-label="Standardmodular Video:   Prefabricated structures are buildings or components manufactured
-              in a factory and then transported to the site for quick assemblly."
+          aria-label=" Standard Modular Solutions Video: Build your project offsite with fast accuracy and quality. Enjoy
+              faster completion and effortless on-site assembly for seamless
+              results."
         >
-          <source src="/video/structure.mp4" type="video/mp4" />
+          <source src="/video/modular.mp4" type="video/mp4" />
           Your browser does not support the video tag. This video showcases
           Prefabricated structures are buildings or components manufactured in a
           factory and then transported to the site for quick assemblly.
@@ -268,7 +247,7 @@ export default function Standardmodular() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
           <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
@@ -304,7 +283,7 @@ export default function Standardmodular() {
                         {slide.title}
                       </h3>
                       <a
-                        // href={slide.link}
+                        href={slide.link}
                         className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
                       >
                         Read more →
@@ -322,8 +301,8 @@ export default function Standardmodular() {
         <div className="l mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              Flexible, Expandable, and Quick-to-Deploy Modular Solutions”{" "}
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080]  ">
+              Flexible, Expandable, and Quick-to-Deploy Modular Solutions
             </h2>
 
             <p className="text-gray-600 text-justify mb-4 leading-relaxed">
@@ -553,12 +532,9 @@ export default function Standardmodular() {
       </section>
       {/* benefits end */}
       {/* special section */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-2">
         <div className="md:mx-8 mx-auto px-6 md:px-10">
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Engineered to Support Your Fast-Paced Projects
-          </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
@@ -574,6 +550,9 @@ export default function Standardmodular() {
 
             {/* Text Section (Right Side) */}
             <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]  mb-3">
+                Engineered to Support Your Fast-Paced Projects
+              </h2>
               <p className="text-gray-600  text-justify leading-relaxed">
                 Ladsking Infra brings years of expertise in prefab construction,
                 delivering modular solutions that extend far beyond just
@@ -597,7 +576,7 @@ export default function Standardmodular() {
       {/* end special section */}
       {/* why choose us */}
       {/* why choose us */}
-      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16 px-6 md:px-15 lg:px-20">
+      <section className="w-full bg-white py-8 md:py-10 lg:py-16 px-6 md:px-15 lg:px-20">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>

@@ -359,7 +359,7 @@ export default function Peb() {
         <div className=" mx-auto grid grid-cols-1  lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl  mb-4 md:mb-6 md:text-3xl font-extrabold text-[#000080] leading-snug  ">
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
 
@@ -402,9 +402,9 @@ export default function Peb() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white py-7 md:py-12 px-6 md:px-12 lg:px-20">
         <div className=" mx-auto text-center ">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6">
             Key Features of{" "}
             <span className="text-[#000080]">
               Landsking Infra Pvt. Ltd. PEB Structures
@@ -698,7 +698,7 @@ export default function Peb() {
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080]  mb-4 md:mb-6 flex items-center">
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 

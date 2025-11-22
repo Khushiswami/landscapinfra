@@ -28,9 +28,9 @@ const AcousticEnclosures: React.FC = () => {
         "Addressing a myth, glass wool works as a sound sponge, absorbing noise inside the panel, but it must be paired with a dense outer structure to effectively block the sound from escaping.",
     },
     {
-      question: "How effective is high-density ROCKWOOL for sound panels?",
+      question: "How effective is high-density Rockwool for sound panels?",
       answer:
-        "In reality, high-density ROCKWOOL is highly effective; it offers superior fire safety and is excellent at absorbing sound energy across the vast spectrum of industrial frequencies.",
+        "In reality, high-density Rockwool is highly effective; it offers superior fire safety and is excellent at absorbing sound energy across the vast spectrum of industrial frequencies.",
     },
     {
       question: "What determines if an acoustic enclosure is high-performance?",
@@ -38,7 +38,7 @@ const AcousticEnclosures: React.FC = () => {
         "Performance depends on more than just a dB number: Key factors are the verified Sound Transmission Class (STC) of the panel, the material density, and the quality of the airflow management systems.",
     },
     {
-      question: "What is ROCKWOOL acoustic insulation?",
+      question: "What is Rockwool acoustic insulation?",
       answer:
         "To clarify, this material is specially manufactured stone wool, packed at high density inside our panels to dampen machine vibration and stop sound waves from reflecting back, unlike cheaper, less effective foams.",
     },
@@ -99,20 +99,19 @@ const AcousticEnclosures: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Effective Noise Control Solutions For Industrial Spaces
               </h3>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Acoustic enclosures play a vital role in controlling noise
                 pollution in industrial and commercial spaces. They block noise
                 from loud equipment and protect interiors from external sounds,
-                creating quieter and more productive workplaces.
-                <br /> <br />
-                Landsking Infra Prefab specializes in high-performance acoustic
-                enclosures made from advanced materials like PUF panels, EPS
-                panels, and Rock Wool. Built for durability and efficiency, our
-                enclosures meet strict noise and safety standards and can be
-                customized for a wide range of applications.
+                creating quieter and more productive workplaces. Landsking Infra
+                Prefab specializes in high-performance acoustic enclosures made
+                from advanced materials like PUF panels, EPS panels, and Rock
+                Wool. Built for durability and efficiency, our enclosures meet
+                strict noise and safety standards and can be customized for a
+                wide range of applications.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote
@@ -125,7 +124,7 @@ const AcousticEnclosures: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Advantages of Landsking Infra Prefab Acoustic Enclosures
               </h3>
-              <ul className="list-disc pl-5 text-gray-700 md:text-lg mb-4">
+              <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
                 <li>
                   <strong>Superior Noise Control:</strong> Effectively blocks
                   loud industrial noise for a quieter environment.
@@ -177,7 +176,7 @@ const AcousticEnclosures: React.FC = () => {
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Applications
               </h3>
-              <ul className=" text-gray-700 md:text-lg space-y-1">
+              <ul className=" text-gray-600 md:text-lg space-y-1">
                 <li>
                   Soundproofing solutions for <strong>recording studios</strong>
                   .

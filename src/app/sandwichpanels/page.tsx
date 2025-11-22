@@ -279,15 +279,15 @@ export default function Sandwichpanels() {
         </div>
       </section>
       {/* description */}
-      <section className="bg-white py-12 px-4  md:px-12 lg:px-16">
+      <section className="bg-white  py-8 md:py-12 px-4  md:px-12 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug mb-4   ">
               Premium Insulation Panels Designed for Modern Construction{" "}
             </h2>
 
-            <p className="text-gray-600 text-justify mb-4 leading-relaxed text-justify">
+            <p className="text-gray-600 text-justify mb-4 leading-relaxed ">
               Landsking Infra stands as one of India s top manufacturers of
               sandwich panels, providing a diverse selection of insulated panels
               designed for superior thermal performance, robust structural
@@ -323,7 +323,7 @@ export default function Sandwichpanels() {
       </section>
       {/* end description */}
       {/* capiablites */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-16">
+      <section className="w-full bg-white py-6 md:py-12 px-6 md:px-12 lg:px-16">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative">
@@ -340,7 +340,7 @@ export default function Sandwichpanels() {
           {/* Right Side - Content */}
           <div>
             <div className="flex items-center mb-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] ">
                 Advanced Insulating Capabilities of Sandwich Panels
               </h2>
             </div>
@@ -459,11 +459,18 @@ export default function Sandwichpanels() {
               </div>
 
               {/* Image Section (fills height automatically) */}
-              <div className="w-full md:w-1/2 relative">
+              {/* <div className="w-full md:w-1/2 relative">
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
                   className="w-full h-full object-cover"
+                />
+              </div> */}
+              <div className="w-full md:w-1/2 relative">
+                <img
+                  src={selectedArea.image}
+                  alt={selectedArea.subtitle}
+                  className="w-full h-[345px] object-cover"
                 />
               </div>
             </div>
@@ -558,7 +565,7 @@ export default function Sandwichpanels() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16 px-6 md:px-15 lg:px-20">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -566,7 +573,7 @@ export default function Sandwichpanels() {
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
-            <p>
+            <p className="text-gray-600 text-justify">
               25+ Years of Expertise in prefabricated and steel building
               solutions Nationwide Presence with a strong logistics and project
               execution network In-House Design & Engineering powered by 3D

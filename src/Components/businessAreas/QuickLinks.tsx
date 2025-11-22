@@ -17,7 +17,7 @@ type QuickLinksProps = {
 
 export default function QuickLinks({ heading, links }: QuickLinksProps) {
   return (
-    <section className=" py-5 md:py-12">
+    <section className=" py-8 md:py-12">
       <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#000080] mb-10 relative">
         {heading}
       </h2>

@@ -353,8 +353,7 @@ export default function Epcsolutions() {
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
-              EPC Solutions – Comprehensive Turnkey Project Management by
-              Ladsking Infra{" "}
+              Engineering, Procurement, and Construction Solutions
             </h2>
 
             <p className="text-gray-700 mb-4  text-justify leading-relaxed">
@@ -392,7 +391,7 @@ export default function Epcsolutions() {
               alt="Manufacturing Facility"
               width={700}
               height={450}
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md w-[700px] h-[450px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
 
@@ -415,7 +414,7 @@ export default function Epcsolutions() {
         </div>
       </section>
       {/* endcapill */}
-      <section className="mx-auto px-4 py-10 md:px-20 lg:px-28">
+      <section className="mx-auto px-4 py-10 md:px-20 lg:px-18">
         <h2 className="text-2xl lg:text-3xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
@@ -506,7 +505,7 @@ export default function Epcsolutions() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[430px] object-cover"
                 />
               </div>
             </div>
@@ -562,9 +561,6 @@ export default function Epcsolutions() {
       <section className="bg-white py-12">
         <div className="md:mx-8 mx-auto px-6 md:px-10">
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Why Choose Landsking Infra for Your EPC Projects?
-          </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Image Section (Left Side) */}
@@ -572,44 +568,32 @@ export default function Epcsolutions() {
               <img
                 src="/industry.jpg"
                 alt="epc projects"
-                width={600}
-                height={400}
+                width={700}
+                height={450}
                 className="rounded-md shadow-md  object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
               />
             </div>
 
             {/* Text Section (Right Side) */}
             <div>
-              <p className="text-gray-600 leading-relaxed mb-4 text-justify">
-                <strong> End-to-End Solutions:</strong> We offer single-point
-                responsibility from design to execution, ensuring seamless
-                project management.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                <strong> Cost & Time Efficiency</strong>Our fast-track approach
-                enables timely delivery while keeping costs optimized.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                <strong> Industry Expertise </strong> With over 25 years of
-                experience in PEB and prefabrication, we bring deep industry
-                knowledge to every project.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                <strong> Customization & Scalability </strong> Our modular
-                solutions are tailored to meet the unique needs of various
-                sectors and can scale as required.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                <strong> Pan-India Presence </strong> A strong nationwide supply
-                chain and project execution capability allow us to serve clients
-                across India efficiently.
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
+                Why Choose Landsking Infra Pvt. Ltd for PEBs?
+              </h2>
+
+              <p className="text-gray-600 text-justify">
+                25+ years of expertise in prefabricated and steel building
+                solutions. Nationwide presence with a strong logistics and
+                project execution network. In-house design & engineering powered
+                by 3D modeling and load optimization. Certified manufacturing
+                standards ensuring compliance with IS codes and quality
+                benchmarks. Timely project delivery backed by structured
+                planning and skilled professionals. End-to-end turnkey solutions
+                covering design, fabrication, delivery, and installation.
               </p>
             </div>
           </div>
         </div>
       </section>
-      {/* end special section */}
-      {/* why choose us */}
 
       <Brand />
       <section className=" mx-auto px-4 py-12 md:mx-10 ">

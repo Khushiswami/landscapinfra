@@ -57,14 +57,6 @@ function Card({ image, icon, title, description }: CardProps) {
 // ✅ Main Page Component
 export default function IndustrialBuildingsConstruction() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  // const [isPlaying, setIsPlaying] = useState(false);
-
-  // const handleVideoClick = () => {
-  //   if (videoRef.current) {
-  //     videoRef.current.play();
-  //     setIsPlaying(true);
-  //   }
-  // };
 
   return (
     <>
@@ -89,14 +81,13 @@ export default function IndustrialBuildingsConstruction() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="text-center  mb-5 md:mb-10">
-            <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
-              PEB Institutional Sector
-            </h2>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
+              <div className="flex items-center mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+                  PEB Institutional Sector
+                </h2>
+              </div>
               <p className="text-gray-700 text-justify mb-4  md:text-lg">
                 Stand out from the competition with cutting-edge and visually
                 appealing Pre-Engineered Institutional Building Solutions from

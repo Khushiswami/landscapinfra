@@ -130,14 +130,14 @@ export default function Industryslider() {
         </div>
 
         {/* ✅ Desktop Section */}
-        <div className="hidden lg:flex w-full h-[550px] overflow-hidden">
+        <div className="hidden lg:flex w-full h-[450px] overflow-hidden">
           {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col border border-gray-300">
             {categories.map((cat, index) => (
               <button
                 key={index}
                 onClick={() => setActiveCategory(cat)}
-                className={`flex-1 text-lg p-8 text-left md:text-[19px] font-medium transition-all duration-300
+                className={`flex-1 text-md p-5 text-left md:text-[19px] font-medium transition-all duration-300
                   ${
                     activeCategory.title === cat.title
                       ? "bg-white text-black shadow-inner"

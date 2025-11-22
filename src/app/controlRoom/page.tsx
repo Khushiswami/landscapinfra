@@ -93,7 +93,7 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Advanced Engineering Solutions for Control Rooms
               </h3>
-              <p className="  text-justify text-gray-700 text-lg">
+              <p className="  text-justify text-gray-600 text-lg">
                 Landsking Infra offers prefabricated control rooms using
                 high-quality PUF-insulated panels, serving sectors like steel
                 plants, mining, power generation, and beyond. Designed for
@@ -115,11 +115,11 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Features of Control Rooms
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg text-justify">
                 Control rooms are engineered for superior performance in
                 industrial environments, Key features are:
               </p>
-              <ul className=" text-gray-700 md:text-lg space-y-1">
+              <ul className=" text-gray-600 md:text-lg space-y-1">
                 <li>Pre-engineered construction using PUF-insulated panels</li>
                 <li>
                   Variety of exterior finishes, such as PPGS/PPGS, PPGS/ACP, and
@@ -132,7 +132,7 @@ const ControlRoom: React.FC = () => {
                 </li>
                 <li>Raised flooring for organized cable routing</li>
               </ul>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg">
                 Allows for effortless integration of essential safety equipment,
                 such as smoke detection and fire suppression systems.
               </p>
@@ -161,7 +161,7 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Manufacturing Technology
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg text-justify">
                 Landsking Infra leads in control room engineering, combining
                 cutting-edge production technology with superior materials.
                 Designed for peak performance in demanding conditions, our
@@ -177,11 +177,11 @@ const ControlRoom: React.FC = () => {
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Applications
               </h3>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg text-justify">
                 Landsking Infra provides control room solutions for diverse
                 industries, including:
               </p>
-              <ul className=" text-gray-700 md:text-lg space-y-1">
+              <ul className=" text-gray-600 md:text-lg space-y-1 text-justify">
                 <li>Industrial manufacturing and production sites</li>
                 <li>Steel plants, smelting operations, and furnace sections</li>
                 <li>Bulk goods handling areas</li>

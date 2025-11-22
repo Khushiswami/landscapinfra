@@ -94,12 +94,12 @@ text-transform: capitalize;"
                 Your Reliable Partner for Cold Storage and Cold Room
                 Manufacturing in India
               </h2>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg">
                 Did you know that 40-50% of Indias fresh produce is wasted every
                 year due to insufficient cold chain infrastructure, resulting in
                 losses worth USD 440 billion?
               </p>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg">
                 At Landsking Infra, we offer advanced cold storage and cold room
                 solutions designed to preserve perishables and minimize waste.
                 With our expertise, commitment to quality, and innovative
@@ -122,21 +122,21 @@ text-transform: capitalize;"
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Landsking Infra for Your Cold Storage
               </h2>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Expertise & Experience - Extensive experience delivering
                 customized, high-performance cold storage solutions across
                 diverse industries.
               </p>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Tailored Designs - Customized solutions to meet your specific
                 storage requirements, maximizing temperature control and space
                 efficiency.
               </p>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Energy Efficiency - Incorporation of advanced technologies to
                 reduce energy consumption and lower operational costs.
               </p>
-              <p className="text-gray-700 text-lg text-justify">
+              <p className="text-gray-600 text-lg text-justify">
                 Premium Quality - Use of superior materials and cutting-edge
                 manufacturing processes for enhanced durability and reliability.
               </p>
@@ -165,7 +165,7 @@ text-transform: capitalize;"
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Features of Cold Storage and Cold Room Systems
               </h2>
-              <ul className="text-gray-700 md:text-lg mb-4 space-y-1">
+              <ul className="text-gray-600 md:text-lg mb-4 space-y-1">
                 <li>
                   <strong>Modular and scalable design:</strong> Easily
                   expandable and adaptable to changing storage needs.
