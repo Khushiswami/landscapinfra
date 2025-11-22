@@ -120,15 +120,13 @@ export default function Officespace() {
       </div>
 
       {/* Image + Text Section */}
-      <section className="mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center md:px-20">
+      <section className="mx-auto px-6 py-1 md:py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center md:px-20">
         <div>
           <h2 className="text-3xl md:text-3xl font-bold text-[#000080]">
             CREATING MODERN OFFICE SPACES
           </h2>
 
-          <div className="w-32 h-1 mt-3 mb-6 bg-[#000080]"></div>
-
-          <p className="text-gray-700 leading-relaxed mb-6 text-justify">
+          <p className="text-gray-600 leading-relaxed mb-6 text-justify">
             Building your dream office shouldn&apos;t be a nightmare. At
             Landsking Infra, we turn the complex process of creating a modern
             workspace into a simple, stress-free journey. We design and build
@@ -144,15 +142,12 @@ export default function Officespace() {
             we create inspiring spaces where your people can thrive.
           </p>
 
-          <a
-            href="#"
-            className="group relative border mt-6 border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
+          <button
+            className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+            onClick={() => (window.location.href = "/contact")}
           >
-            <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-              READ MORE
-            </span>
-            <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-          </a>
+            Get a Quote
+          </button>
         </div>
 
         <div className="flex justify-center">
@@ -169,7 +164,7 @@ export default function Officespace() {
       </section>
 
       {/* Sectors Carousel */}
-      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
+      <section className="text-center px-4 sm:px-6 md:px-12 pt-5 md:pt-10 bg-white">
         <section className="w-full py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
@@ -229,9 +224,6 @@ export default function Officespace() {
                             <p className="text-[10px]  md:text-xs mb-4 line-clamp-3">
                               {project.description}
                             </p>
-                            <button className="px-4 py-2 text-xs bg-white text-blue-700 font-semibold shadow-md hover:bg-gray-200 transition">
-                              Know More
-                            </button>
                           </div>
                         </div>
                       </div>

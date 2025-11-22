@@ -211,7 +211,7 @@ export default function Simulationservice() {
       </div>
 
       {/* Image + Text Section */}
-      <section className=" mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-cente md:px-20">
+      <section className=" mx-auto px-6 py-7  md:py-14 lg:py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-cente md:px-20">
         <div>
           <h2 className="text-3xl md:text-3xl font-bold  text-[#000080] ">
             SIMULATION SERVICE{" "}
@@ -245,7 +245,7 @@ export default function Simulationservice() {
             <Image
               src="/industry.jpg"
               alt="SIMULATION"
-              width={500}
+              width={700}
               height={450}
               className="object-cover w-full h-auto"
             />
@@ -254,8 +254,8 @@ export default function Simulationservice() {
       </section>
 
       {/* Sectors Carousel */}
-      <section className="text-center px-4 sm:px-6 md:px-20 pt-1 lg:pt-16 bg-white">
-        <section className="w-full py-8 md:pt-16 bg-white relative">
+      <section className="text-center px-4 sm:px-6 md:px-12 pt-5 md:pt-10 bg-white">
+        <section className="w-full md:py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
               Our Services{" "}
@@ -325,7 +325,7 @@ export default function Simulationservice() {
                             <h3 className="text-sm md:text-lg font-semibold mb-2">
                               {project.title}
                             </h3>
-                            <p className="text-[10px] text-justify md:text-sm mb-4 line-clamp-3">
+                            <p className="text-[10px] text-justify md:text-sm mb-4 ">
                               {project.description}
                             </p>
                           </div>

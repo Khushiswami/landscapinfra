@@ -237,7 +237,7 @@ export default function Greenbuilding() {
           </div>
 
           {/* Slider */}
-          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
+          <div className="w-full relative order-2 mt-10 md:mt-20 flex justify-center md:justify-end">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -283,7 +283,7 @@ export default function Greenbuilding() {
               Landsking Infra – Green Building Solutions
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed mt-3 text-justify">
+            <p className="text-gray-600 mb-4 leading-relaxed mt-3 text-justify">
               Landsking Infra is dedicated to delivering eco-friendly,
               energy-efficient, and sustainable infrastructure that minimizes
               environmental impact. Our green building solutions focus on
@@ -316,7 +316,7 @@ export default function Greenbuilding() {
       </section>
       {/* end description */}
       {/* keyfetaure */}
-      <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-15">
+      <section className="w-full bg-white py-3  md:py-12 px-6 md:px-12 lg:px-15">
         <div className=" mx-auto text-center md:px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             Services of{" "}

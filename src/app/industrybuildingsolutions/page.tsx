@@ -13,7 +13,12 @@ import {
   FaRoad,
   FaStamp,
 } from "react-icons/fa"; // ✅ Added relevant icons
+import { motion } from "framer-motion";
 
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Footer from "../../Components/Footer";
 import Brand from "yes/Components/Brand";
 import Navbar from "yes/Components/Navbar";
@@ -84,74 +89,32 @@ export default function Industrybuildingsolutions() {
   return (
     <>
       <Navbar />
-
-      <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/video/peb.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-          {/* Text */}
-          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
-            <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
-              Industry Buildings Solutions
-            </h1>
-            <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
-              Pre-Engineered Buildings (PEBs) are modern steel structures
-              designed, fabricated, and assembled using standardized components
-              for faster construction.
-            </p>
-          </div>
-
-          {/* Slider */}
-          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
-              loop
-              className="pb-10 max-w-[260px] sm:max-w-sm md:max-w-md"
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-white text-black rounded-xl shadow-lg overflow-hidden flex flex-col items-center mx-auto w-[240px] sm:w-[280px] md:w-[320px]">
-                    <img
-                      src={slide.image}
-                      alt={slide.title}
-                      className="w-full h-48 sm:h-64 md:h-72 object-cover"
-                    />
-                    <div className="p-4 text-center">
-                      <h3 className="text-base sm:text-lg md:text-xl font-semibold">
-                        {slide.title}
-                      </h3>
-                      <a
-                        // href={slide.link}
-                        className="mt-2 inline-block text-[#000080] hover:underline text-sm sm:text-base md:text-lg"
-                      >
-                        Read more →
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+      <div className="relative w-full h-[70vh] flex items-center justify-center bg-gray-900">
+        <Image
+          src="/images/banner.jpg"
+          alt="public office"
+          fill
+          className="object-cover opacity-60"
+        />
+        <div className="relative z-10 text-center text-white px-6">
+          <motion.h1
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl md:text-6xl font-bold"
+          >
+            Industrial Building Solutions{" "}
+          </motion.h1>
+          <motion.p
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mt-4 text-lg md:text-xl"
+          >
+            Building a sustainable future with clean energy solutions
+          </motion.p>
         </div>
-      </section>
+      </div>
 
       {/* Features Section with Icons */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
@@ -159,7 +122,7 @@ export default function Industrybuildingsolutions() {
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6">
             Building & Infrastructure / Industry Building Solutions
           </h2>
-          <p className="text-gray-600 text-justify max-w-2xl mx-auto mb-12">
+          <p className="text-gray-600  max-w-2xl mx-auto mb-12">
             Landsking Infra provides end-to-end construction and infrastructure
             solutions across industrial, commercial, institutional, and public
             sectors, delivering precise engineering, structural integrity, and

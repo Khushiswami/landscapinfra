@@ -147,7 +147,7 @@ export default function Expertisecoldstorage() {
 
   const features = [
     {
-      title: ". Site Assessment",
+      title: "Site Assessment",
       description:
         "We evaluate site conditions and calculate thermal loads to ensure efficient, reliable cold storage facilities.",
       icon: <FaCogs className="text-[#000080] text-3xl mb-4" />,
@@ -301,7 +301,7 @@ export default function Expertisecoldstorage() {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
-          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
+          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-20">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
               Cold Storage
             </h1>
@@ -358,7 +358,7 @@ export default function Expertisecoldstorage() {
               Cold Storage{" "}
             </h2>
 
-            <p className="text-gray-700 text-justify font-medium mb-4 leading-relaxed">
+            <p className="text-gray-600 text-justify font-medium mb-4 leading-relaxed">
               Landsking Infra specializes in advanced cold storage and warehouse
               infrastructure solutions. We design temperature-controlled
               facilities that protect product quality and extend shelf life. Our
@@ -368,7 +368,7 @@ export default function Expertisecoldstorage() {
               provide future-ready storage solutions for diverse industries.
             </p>
 
-            <p className="text-gray-700 text-justify mb-4 leading-relaxed">
+            <p className="text-gray-600 text-justify mb-4 leading-relaxed">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -398,9 +398,8 @@ export default function Expertisecoldstorage() {
       {/* keyfetaure */}
       <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-20">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Why chose us{" "}
-            <span className="text-[#000080]">Landsking Infra Pvt. Ltd.</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
+            Why chose us Landsking Infra Pvt. Ltd.
           </h2>
           {/* <p className="text-gray-600 max-w-2xl mx-auto mb-12">
             Our Pre-Engineered Buildings are designed with innovation,
@@ -414,7 +413,7 @@ export default function Expertisecoldstorage() {
                 className="p-6 bg-gray-50 hover:bg-gray-100 rounded-2xl shadow-md transition-all duration-300 flex flex-col items-center text-center"
               >
                 {feature.icon}
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-gray-600 mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 text-justify text-sm leading-relaxed">
@@ -501,7 +500,7 @@ export default function Expertisecoldstorage() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-600 mb-5">{selectedArea.description}</p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                   Contact{" "}
                   <span className="p-1 rounded-full text-[#000080]">→</span>
@@ -513,7 +512,7 @@ export default function Expertisecoldstorage() {
                 <img
                   src={selectedArea.image}
                   alt={selectedArea.subtitle}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[448px] object-cover"
                 />
               </div>
             </div>
@@ -569,66 +568,9 @@ export default function Expertisecoldstorage() {
           </div>
         </div>
       </section>
-      {/* benefits end */}
-      {/* special section */}
-      <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            SPECIFICATIONS OF INDUSTRIAL SHED COMPONENTS
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
-          </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            {/* Text Section */}
-            <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
-              <li>
-                <span className="font-bold">Wall:</span> PUF / EPS insulated
-                sandwich panels of 50 / 60mm with PPGI sheet on both sides.
-              </li>
-              <li>
-                <span className="font-bold">Roof:</span> PUF / EPS insulated
-                sandwich panels of 30 / 40 mm or PPGI roofing sheets.
-              </li>
-              <li>
-                <span className="font-bold">Doors:</span> Insulated doors with
-                all accessories will be provided from our manufacturing setup.
-              </li>
-              <li>
-                <span className="font-bold">Windows:</span> Aluminum anodized
-                sliding windows will be provided from our manufacturing setup.
-              </li>
-              <li>
-                <span className="font-bold">Structure and Accessories:</span>{" "}
-                All required supporting accessories and structures will be
-                provided before project delivery.
-              </li>
-              <li>
-                <span className="font-bold">
-                  Electrical fittings, sanitary fittings, beds, etc.,
-                </span>{" "}
-                will be provided as per client requirements and fitted as per
-                the contract.
-              </li>
-            </ul>
-
-            {/* Image Section */}
-            <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <Image
-                src="/expertisecold/cold storage three.jpg"
-                alt="applications of coldstorage"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md relative z-20"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
       {/* end special section */}
       <section className="mb-10"></section>
-      {/* end why choose us */}
       <Brand />
 
       {/* faqs */}
@@ -643,9 +585,9 @@ export default function Expertisecoldstorage() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
+        <div className=" ">
           {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
+            <div key={index} className="">
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}

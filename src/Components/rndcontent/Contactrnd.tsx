@@ -40,7 +40,7 @@ export default function Contactrnd({
 
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="relative z-10  mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center md:mx-15 lg:mx-18">
         <div>
           <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
           <p className="text-lg font-semibold text-white mb-3">{subtitle}</p>
@@ -92,7 +92,7 @@ export default function Contactrnd({
                   </div>
 
                   {/* Right Content */}
-                  <div className="p-6 flex flex-col justify-center h-full">
+                  <div className="p-4 flex flex-col justify-center h-full">
                     <h3 className="font-bold text-lg">{item.name}</h3>
                     <p className="text-sm text-gray-200 mb-2">
                       {item.location}

@@ -249,7 +249,7 @@ export default function Heavyengineering() {
 
   const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [open, setOpen] = useState(false); // for mobile dropdown
+  const [open, setOpen] = useState(false);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -358,7 +358,7 @@ export default function Heavyengineering() {
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
               Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
               of Pre-Engineered Buildings (PEBs), delivering complete solutions
               for industrial, commercial, and institutional structures. Our
@@ -367,7 +367,7 @@ export default function Heavyengineering() {
               efficiency, and customized designs for diverse applications.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -399,8 +399,8 @@ export default function Heavyengineering() {
       {/* keyfetaure */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
         <div className=" mx-auto text-center ">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Key Features of{" "}
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6">
+            Key Features of
             <span className="text-[#000080]">
               Landsking Infra Pvt. Ltd. PEB Structures
             </span>
@@ -491,7 +491,7 @@ export default function Heavyengineering() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Text Section */}
-            <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
+            <ul className=" list-disc space-y-4 text-gray-600 text-base leading-relaxed">
               <li>
                 <span className="font-bold">Wall:</span> PUF / EPS insulated
                 sandwich panels of 50 / 60mm with PPGI sheet on both sides.

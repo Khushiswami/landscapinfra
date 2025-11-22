@@ -158,13 +158,14 @@ export default function Waterinfrastructure() {
       </div>
 
       {/* Image + Text Section */}
-      <section className=" mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-cente md:px-20">
+
+      <section className="mx-auto px-6 py-5 md:py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center md:px-20">
         <div>
-          <h2 className="text-3xl md:text-3xl font-bold  text-[#000080] ">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
             Landsking Infra – Water Infrastructure Solutions
           </h2>
 
-          <p className="text-gray-600 text-justify leading-relaxed mb-6 mt-5">
+          <p className="text-gray-600 leading-relaxed mb-2 text-justify">
             Landsking Infra specializes in designing and executing advanced
             water infrastructure systems that promote sustainable urban and
             industrial development. Our turnkey solutions cover water supply,
@@ -180,22 +181,16 @@ export default function Waterinfrastructure() {
             infrastructure solutions.
           </p>
 
-          {/* <button className="mt-6 px-6 py-3 bg-[#000080] text-white font-medium rounded-lg shadow hover:bg-[#000060] transition">
-            Read more
-          </button> */}
-          {/* <a
-            href="#"
-            className="group relative border mt-6 border-blue-900 text-sm sm:text-lg tracking-wider text-black px-4 sm:px-5 py-2 font-semibold w-fit mx-auto sm:mx-0 overflow-hidden"
+          <button
+            className="border mt-2 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+            onClick={() => (window.location.href = "/contact")}
           >
-            <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-              READ MORE
-            </span>
-            <span className="absolute left-0 top-0 h-full w-0 bg-[#000080] transition-all duration-500 ease-out group-hover:w-full"></span>
-          </a> */}
+            Get a Quote
+          </button>
         </div>
 
         <div className="flex justify-center">
-          <div className="relative rounded-lg overflow-hidden shadow-lg w-full ">
+          <div className="relative rounded-lg overflow-hidden shadow-lg w-full">
             <Image
               src="/industry.jpg"
               alt=" Water Infrastructure s services"
@@ -206,10 +201,9 @@ export default function Waterinfrastructure() {
           </div>
         </div>
       </section>
-
       {/* Sectors Carousel */}
-      <section className="text-center px-4 sm:px-6 md:px-12 pt-1 md:pt-16 bg-white">
-        <section className="w-full py-8 md:pt-16 bg-white relative">
+      <section className="text-center px-4 sm:px-6 md:px-12 pt-5 md:pt-10 bg-white">
+        <section className="w-full md:py-8 md:pt-16 bg-white relative">
           <div className="mx-auto px-2 sm:px-4 relative">
             <h2 className="text-2xl md:text-3xl font-bold text-start text-[#000080] mb-6">
               Our services

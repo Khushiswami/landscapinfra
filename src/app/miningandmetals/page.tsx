@@ -255,10 +255,7 @@ export default function Miningandmetals() {
         : []
     );
 
-  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  // const toggleFAQ = (index: number) =>
-  //   setOpenIndex(openIndex === index ? null : index);
 
   return (
     <>
@@ -294,7 +291,7 @@ export default function Miningandmetals() {
           </div>
 
           {/* Slider */}
-          <div className="w-full relative order-2 mt-10 md:mt-0 flex justify-center md:justify-end">
+          <div className="w-full relative order-2 mt-10 md:mt-20 flex justify-center md:justify-end">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -340,7 +337,7 @@ export default function Miningandmetals() {
               Mining and Metals{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4  text-justify leading-relaxed mt-3">
+            <p className="text-gray-600 mb-4  text-justify leading-relaxed mt-3">
               It is extremely important for CAD architects to understand the
               concept of building design for public infrastructure. Equally
               necessary is the alignment of such professionals with service
@@ -350,15 +347,15 @@ export default function Miningandmetals() {
               and works across a wide range of construction projects, including
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
-              <span className="font-bold">Landsking Infra pvt.ltd</span> A
-              Commercial and High-Rise Buildings,Production Facilities,Data
-              Centres,Health and Educational Constructions,Industrial and
-              Distribution Facilities.When our specialists are entrusted with
-              designing a new facility, they focus on intricate details and
-              specifications according to construction plans. Our engineers are
-              adept at classifying critical processes, raw materials, resources,
-              and value supply chains to create appropriate digital models of
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
+              Landsking Infra pvt.ltd A Commercial and High-Rise
+              Buildings,Production Facilities,Data Centres,Health and
+              Educational Constructions,Industrial and Distribution
+              Facilities.When our specialists are entrusted with designing a new
+              facility, they focus on intricate details and specifications
+              according to construction plans. Our engineers are adept at
+              classifying critical processes, raw materials, resources, and
+              value supply chains to create appropriate digital models of
               proposed buildings. As digitization is essential, we leverage the
               latest CAD software to generate multifaceted BIM (Building
               Information Modeling) apparatus. Our experience across industries
@@ -385,11 +382,8 @@ export default function Miningandmetals() {
       {/* keyfetaure */}
       <section className="w-full bg-white py-12 px-6 md:px-16 lg:px-15">
         <div className=" mx-auto text-center md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-            Key Features of{" "}
-            <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
-            </span>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6">
+            Key Features of PEB Structures
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
             Our Pre-Engineered Buildings are designed with innovation,
@@ -489,7 +483,7 @@ export default function Miningandmetals() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5 text-justify">
+                <p className="text-gray-600 mb-5 text-justify">
                   {selectedArea.description}
                 </p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
@@ -563,119 +557,9 @@ export default function Miningandmetals() {
           </div>
         </div>
       </section>
-      {/* endcapill */}
-      {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10 md:px-16">
-        <div className=" mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Inclusive Services{" "}
-          </h2>
-
-          {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            {cardsToShow.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg overflow-hidden shadow-lg"
-              >
-                <img src={item.image} className="w-full h-44 object-cover" />
-                <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
-                    {item.subtitle}
-                  </p>
-                  <p className="text-sm text-black">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Buttons Below */}
-          <div className="flex justify-center mt-6 gap-4">
-            <button
-              onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronLeft className="w-6 h-6 text-black" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-gray-700"
-            >
-              <ChevronRight className="w-6 h-6 text-black" />
-            </button>
-          </div>
-        </div>
-      </section>
-      {/* benefits end */}
-      {/* special section */}
-      <section className="bg-white py-12">
-        <div className=" mx-auto px-6 md:px-20">
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
-            Steel Tubes for Building and Infrastructure
-            <span className="block w-20 h-[2px] bg-[#000080] mx-auto mt-2"></span>
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Left: Text Section */}
-            <div>
-              <p className="text-gray-700  text-justify text-base leading-relaxed mb-4">
-                With the growing adoption of virtual technologies in
-                construction, the role of lean Building Information Models (BIM)
-                and pre-engineering has become vital. Globally, infrastructure
-                upgrades are being driven by robotics, automation, drone-based
-                surveys, and even 3D printing solutions.
-              </p>
-
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
-                Key infrastructure sectors where{" "}
-                <span className="font-bold">Landsking Infra Pvt. Ltd.</span>{" "}
-                provides support include:
-              </p>
-
-              <ul className="list-disc ml-6 space-y-2 text-gray-700 text-base leading-relaxed mb-4">
-                <li>Power and Energy</li>
-                <li>
-                  Transportation Hubs (Rail & Metro Stations, Bus Terminals,
-                  Tunnels, Airports)
-                </li>
-                <li>Stadiums and Leisure Centres</li>
-              </ul>
-
-              <p className="text-gray-700  text-justify text-base leading-relaxed mb-4">
-                This technological disruption is reshaping the way
-                infrastructure is designed, built, and maintained—ensuring
-                sustainability, efficiency, and safety. Construction firms that
-                embrace these advancements can overcome challenges in delivering
-                modern infrastructure projects.
-              </p>
-
-              <p className="text-gray-700 text-justify text-base leading-relaxed">
-                As urban areas continue to transform,{" "}
-                <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
-                earned the trust of clients by offering expertise that minimizes
-                risks, enhances public safety, and integrates automated systems
-                for long-term reliability.
-              </p>
-            </div>
-
-            {/* Right: Image Section */}
-            <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#000080] z-10"></div>
-              <img
-                src="/menupageimg/peb9.jpeg"
-                alt="Steel tubes infrastructure"
-                width={600}
-                height={400}
-                className="rounded-md shadow-md relative z-20"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* end special section */}
-      <section className="bg-white py-12">
+      <section className="bg-white md:py-10  lg:py-12">
         <div className=" mx-auto px-6 md:px-20">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
@@ -684,7 +568,7 @@ export default function Miningandmetals() {
           </h2>
 
           {/* Support Rows */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700 text-base leading-relaxed">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-600 text-base leading-relaxed">
             <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition">
               <h3 className="font-bold text-[#000080] mb-2">
                 Research & Surveys
@@ -773,23 +657,11 @@ export default function Miningandmetals() {
           </div>
 
           {/* About Section */}
-          <div className="mt-12 text-center text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            <p>
-              Over the last 40 years,{" "}
-              <span className="font-bold">Landsking Infra Pvt. Ltd.</span> has
-              fulfilled its promise to numerous clients across the AEC industry
-              — from contractors and architects to fabricators, consultants, MEP
-              contractors, PEB companies, EPCs, OEMs, solution providers, and
-              system integrators. By partnering with us, you can avoid
-              unnecessary overheads and ensure smooth progress in urban planning
-              and infrastructure projects.
-            </p>
-          </div>
         </div>
       </section>
 
       {/* why choose us */}
-      <section className="w-full bg-white py-16 px-6  lg:px-20 md:px-20">
+      <section className="w-full bg-white py-5  md:py-10 lg:py-16 px-6  lg:px-20 md:px-20">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>

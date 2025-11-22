@@ -300,9 +300,9 @@ export default function Otherindustries() {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
-          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
+          <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-20">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-lg mx-auto md:mx-0">
-              Pre Engineered Buildings
+              Other Industries
             </h1>
             <p className="text-sm sm:text-base md:text-lg max-w-md mx-auto md:mx-0">
               Pre-Engineered Buildings (PEBs) are modern steel structures
@@ -358,7 +358,7 @@ export default function Otherindustries() {
               Smart Construction. Faster Delivery. Reliable Performance{" "}
             </h2>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
               Landsking Infra Pvt. Ltd. is one of India’s leading manufacturers
               of Pre-Engineered Buildings (PEBs), delivering complete solutions
               for industrial, commercial, and institutional structures. Our
@@ -367,7 +367,7 @@ export default function Otherindustries() {
               efficiency, and customized designs for diverse applications.
             </p>
 
-            <p className="text-gray-700 mb-4 leading-relaxed text-justify">
+            <p className="text-gray-600 mb-4 leading-relaxed text-justify">
               What is a Pre-Engineered Building?{" "}
               <span className="font-bold">Landsking Infra pvt.ltd</span> A
               Pre-Engineered Building (PEB) is a steel structure based on a
@@ -399,11 +399,8 @@ export default function Otherindustries() {
       {/* keyfetaure */}
       <section className="w-full bg-white py-12 px-6 md:px-12 lg:px-20">
         <div className=" mx-auto text-center ">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Key Features of{" "}
-            <span className="text-[#000080]">
-              Landsking Infra Pvt. Ltd. PEB Structures
-            </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
+            Key Features of Landsking Infra Pvt. Ltd. PEB Structures
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
             Our Pre-Engineered Buildings are designed with innovation,
@@ -417,7 +414,7 @@ export default function Otherindustries() {
                 className="p-6 bg-gray-50 hover:bg-gray-100 rounded-2xl shadow-md transition-all duration-300 flex flex-col items-center text-center"
               >
                 {feature.icon}
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-gray-600 mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -429,7 +426,7 @@ export default function Otherindustries() {
         </div>
       </section>
       {/*neww  explore conettt */}
-      <section className="mx-auto px-4 py-10 md:px-20 lg:px-28">
+      <section className="mx-auto px-4 py-10 md:px-18 lg:px-28">
         <h2 className="text-2xl lg:text-3xl font-bold text-[#000080] mb-8">
           Our Products
         </h2>
@@ -503,7 +500,7 @@ export default function Otherindustries() {
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
                 </h3>
-                <p className="text-gray-700 mb-5">{selectedArea.description}</p>
+                <p className="text-gray-600 mb-5">{selectedArea.description}</p>
                 <button className="flex items-center text-md md:text-xl gap-2 text-[#000080] font-semibold">
                   Contact{" "}
                   <span className="p-1 rounded-full text-[#000080]">→</span>
@@ -547,90 +544,35 @@ export default function Otherindustries() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
-              <strong>Landsking Infra Pvt. Ltd.</strong> operates a modern,
-              fully-integrated PEB manufacturing facility where every stage—
-              from design and fabrication to finishing and dispatch—takes place
-              under one roof. This seamless process ensures superior quality,
-              faster delivery, and reliable performance.
+            <p className="text-gray-600 leading-relaxed mb-2 text-justify">
+              Landsking Infra Pvt. Ltd operates a modern, fully-integrated PEB
+              manufacturing facility where every stage— from design and
+              fabrication to finishing and dispatch—takes place under one roof.
+              This seamless process ensures superior quality, faster delivery,
+              and reliable performance.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
+            <p className="text-gray-600 leading-relaxed mb-2 text-justify">
               Our infrastructure is powered by a highly skilled team of
               engineers, supported with state-of-the-art CNC machinery, robotic
               welding systems, and high-capacity fabrication tools. These
-              advanced resources enable us to deliver large-scale{" "}
-              <span className="font-semibold">steel structures</span> with
-              precision and efficiency.
+              advanced resources enable us to deliver large-scale steel
+              structures with precision and efficiency.
             </p>
 
             <p className="text-gray-600 leading-relaxed text-justify">
               With strict quality checks at every stage—from automated
               fabrication to final assembly—we ensure that all components meet
               global industry standards. Whether it s a standard warehouse,
-              factory building, or a customized industrial project,{" "}
-              <strong>Landsking Infra Pvt. Ltd.</strong> provides dependable,
-              cost-effective, and timely{" "}
-              <span className="font-semibold">PEB solutions across India.</span>
+              factory building, or a customized industrial project, Landsking
+              Infra Pvt. Ltd.provides dependable, cost-effective, and timely PEB
+              solutions across India.
             </p>
           </div>
         </div>
       </section>
-      {/* endcapill */}
-      {/* business benifts */}
-      {/* business benifts */}
-      <section className="bg-[#000080] text-white py-10">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits of Pre-Engineered Buildings
-          </h2>
 
-          {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 transition-all duration-500">
-            {cardsToShow.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
-              >
-                <img
-                  src={item.image}
-                  alt={item.subtitle}
-                  className="w-full h-44 object-cover"
-                />
-                <div className="p-4">
-                  <p className="text-sm text-black font-semibold mb-2 md:text-xl">
-                    {item.subtitle}
-                  </p>
-                  <p className="text-sm text-black text-justify">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="flex justify-center mt-6 gap-4">
-            <button
-              onClick={prevSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
-            >
-              <ChevronLeft className="w-6 h-6 text-[#000080] hover:text-white" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="bg-white p-2 rounded-full shadow hover:bg-black transition"
-            >
-              <ChevronRight className="w-6 h-6 text-[#000080] hover:text-white" />
-            </button>
-          </div>
-        </div>
-      </section>
-      {/* end business benifts */}
-
-      {/* benefits end */}
-      {/* special section */}
-      <section className="bg-white py-12">
+      <section className="bg-white md:py-10">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Title */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-8">
@@ -640,7 +582,7 @@ export default function Otherindustries() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Text Section */}
-            <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
+            <ul className=" list-disc space-y-4 text-gray-600 text-base leading-relaxed">
               <li>
                 <span className="font-bold">Wall:</span> PUF / EPS insulated
                 sandwich panels of 50 / 60mm with PPGI sheet on both sides.
@@ -686,11 +628,11 @@ export default function Otherindustries() {
       </section>
       {/* end special section */}
       {/* why choose us */}
-      <section className="w-full bg-white sm:py-5 md:py-10 lg:py-16  px-6 md:px-12 lg:px-12">
+      <section className="w-full bg-white sm:py-5 md:py-6 lg:py-15  px-6 md:px-12 lg:px-12">
         <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
+            <h2 className="text-2xl  mt-6 md:text-3xl font-bold text-[#000080] mb-6 flex items-center">
               Why Choose Landsking Infra Pvt. Ltd for PEBs?
             </h2>
 
@@ -733,9 +675,9 @@ export default function Otherindustries() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
+        <div className=" ">
           {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
+            <div key={index} className="">
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}

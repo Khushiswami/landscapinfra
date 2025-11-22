@@ -135,35 +135,31 @@ export default function Fabrication() {
 
       {/* Company Intro Section */}
       <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-12">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
+        <div className=" mx-auto">
+          <div className="text-center mb-">
+            <h2 className="text-2xl sm:text-2xl  text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
               Landsking Infra Fabrication Solutions
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base text-justify">
-                Landsking Infra delivers sturdy and cost-efficient
-                <span className="text-[#000080] font-semibold">
-                  {" "}
-                  Fabrication Solutions{" "}
-                </span>
-                Landsking Infra delivers precision-engineered fabrication
-                services for industrial, commercial, and infrastructure
-                projects, ensuring strength, accuracy, and long-lasting
-                performance. Our expertise covers heavy steel structures,
-                customized sheet metal works, and complex assemblies tailored to
-                client requirements. Equipped with an ISO-compliant fabrication
-                facility, we maintain stringent quality standards while ensuring
-                timely project delivery and smooth onsite erection. Our team of
-                skilled welders and certified fabrication engineers works
-                closely with civil and structural teams to guarantee seamless
-                project execution. From design coordination to final
-                installation, Landsking Infra provides reliable, efficient, and
-                high-quality fabrication solutions that meet industry standards
-                and project timelines.
+              <p className="text-gray-600 mb-4 text-sm sm:text-base text-justify">
+                Landsking Infra delivers sturdy and cost-efficient Fabrication
+                Solutions Landsking Infra delivers precision-engineered
+                fabrication services for industrial, commercial, and
+                infrastructure projects, ensuring strength, accuracy, and
+                long-lasting performance. Our expertise covers heavy steel
+                structures, customized sheet metal works, and complex assemblies
+                tailored to client requirements. Equipped with an ISO-compliant
+                fabrication facility, we maintain stringent quality standards
+                while ensuring timely project delivery and smooth onsite
+                erection. Our team of skilled welders and certified fabrication
+                engineers works closely with civil and structural teams to
+                guarantee seamless project execution. From design coordination
+                to final installation, Landsking Infra provides reliable,
+                efficient, and high-quality fabrication solutions that meet
+                industry standards and project timelines.
               </p>
 
               <div className=" mt-3 flex items-center justify-center md:justify-start gap-4">
@@ -190,7 +186,7 @@ export default function Fabrication() {
       {/* Cards Section */}
       <main className="bg-white">
         <section className="py-12 px-4 sm:px-6 md:px-12">
-          <h1 className="text-center text-3xl md:text-4xl font-bold mb-5">
+          <h1 className="text-center  text-2xl text-[#000080] md:text-3xl font-bold mb-5">
             Our Services
           </h1>
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
