@@ -13,39 +13,63 @@ const Prefab: React.FC = () => {
 
   const faqs = [
     {
-      question: "What is a modular clean room building?",
+      question:
+        "What advanced technology is used to construct these prefab buildings?",
       answer:
-        "It is a pre-engineered, contamination-controlled facility built with insulated panels and precision sealing, guaranteeing the required atmospheric purity for sensitive manufacturing or research.",
+        "We primarily utilize Light Gauge Steel Framing (LGSF) technology, the gold standard for modern infrastructure. This involves using cold-formed, high-strength steel sections to create a lightweight yet robust framework. The structural skeleton consists of high-grade galvanized steel frames engineered for longevity, while the walls and roofing feature high-performance insulated sandwich panels (PUF/EPS) that act as superior thermal barriers.",
     },
     {
-      question: "What materials are used in modular clean room construction?",
+      question:
+        "What is the difference between a Modular School Building and a Modular Classroom?",
       answer:
-        "Construction uses pharmaceutical-grade panels, aluminum framing, and specialized anti-static flooring, ensuring ease of sanitation, hygiene compliance, and zero particle shedding.",
+        "A Modular School Building is a complete turnkey educational facility constructed from pre-engineered modules that are assembled onsite to form a permanent campus. A Modular Classroom, on the other hand, is a standalone portable unit designed for immediate extra space—ideal for rapid expansion without the noise and dust of traditional construction.",
     },
     {
-      question: "What industries require clean rooms?",
+      question:
+        "Are prefab school and hospital buildings durable enough for long-term use?",
       answer:
-        "They are essential in biotechnology, pharmaceutical production, microelectronics, and advanced food processing, where maintaining specific air quality and environmental control is mandatory.",
+        "Absolutely. Landsking Infra’s prefab structures are permanent, long-lasting assets. Our LGSF buildings are engineered for a lifespan of 50+ years, comparable to traditional RCC structures. The steel used is heavily galvanized to prevent corrosion, ensuring structural integrity even in humid or coastal climates.",
     },
     {
-      question: "How are clean rooms classified based on cleanliness?",
+      question:
+        "How do these prefabricated structures perform in extreme weather conditions?",
       answer:
-        "Clean rooms are precisely categorized according to ISO 14644 standards, which dictates the maximum concentration of particulates allowed per cubic meter of air.",
+        "Our buildings are engineered for India’s diverse climate zones. The insulated panels provide excellent heat control, keeping interiors cool in summer. The joint-free cladding ensures 100% waterproofing during monsoons, while the steel frames are wind-load tested to withstand high wind velocities and heavy rains.",
     },
     {
-      question: "What systems are integrated inside a clean room?",
+      question:
+        "Can the design be customized for specific school or hospital requirements?",
       answer:
-        "Integrated systems include multi-stage filtration with HEPA/ULPA filters, differential air pressure control, and smart monitoring to sustain consistent temperature and particulate purity.",
+        "Yes, Landsking Infra offers complete design flexibility. We provide custom architectural solutions rather than standard boxes. Projects can be configured as L-shaped blocks, U-shaped courtyards, or multi-story complexes. Aesthetic options include brick-look, wood-grain, or modern glass facades to match institutional branding.",
     },
     {
-      question: "What are the benefits of modular clean room construction?",
+      question: "Can these structures be expanded or relocated later?",
       answer:
-        "Modular construction provides accelerated commissioning, built-in future scalability, and superior risk mitigation by minimizing on-site contamination exposure during the build phase.",
+        "Yes. Modular construction allows easy scalability and relocatability. New floors or wings can be added with minimal disruption to classes or patient care. For temporary sites, the entire structure can be dismantled and reassembled elsewhere with nearly 90% material recovery.",
     },
     {
-      question: "Why choose Landsking Infra for clean room construction?",
+      question:
+        "How is the acoustic performance for classrooms and hospital wards?",
       answer:
-        "We deliver custom-engineered clean rooms that exceed ISO, GMP, and FDA performance thresholds, providing turnkey solutions for verifiable purity and long-term asset reliability.",
+        "Our insulated sandwich panels provide excellent sound-dampening with an STC rating of 30–45 dB. This significantly reduces external noise compared to single-brick walls, creating quiet, optimized environments for learning and healing.",
+    },
+    {
+      question:
+        "Are these buildings compliant with safety codes and fire regulations?",
+      answer:
+        "Yes. Safety is our top priority. LGSF structures have a high strength-to-weight ratio, making them earthquake-resistant and safer during seismic activity. We use fire-retardant panels and non-combustible steel framing that comply with National Building Code (NBC) standards for educational and institutional buildings.",
+    },
+    {
+      question:
+        "How much does it cost to build a prefabricated school in India?",
+      answer:
+        "Costs typically range from ₹800 to ₹1,400 per sq. ft. for a fully finished structure, including civil work, electrical, and plumbing. Prefabricated systems reduce labor costs by 30–50% and accelerate project completion—enabling earlier operational ROI compared to conventional construction.",
+    },
+    {
+      question:
+        "Do these buildings help with Green Building certifications (LEED/IGBC)?",
+      answer:
+        "Yes. Prefab structures support LEED and IGBC green building requirements. LGSF technology generates near-zero construction waste, uses 100% recyclable steel, and provides superior thermal insulation—reducing HVAC loads, operational costs, and overall carbon footprint.",
     },
   ];
 
@@ -67,7 +91,7 @@ const Prefab: React.FC = () => {
             {/* Centered Text */}
             <div className="text-white text-center relative z-10">
               <h1 className="text-3xl md:text-5xl font-bold leading-snug tracking-wide">
-                Clean Room
+                Prefab School
               </h1>
             </div>
           </div>
@@ -87,20 +111,19 @@ const Prefab: React.FC = () => {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                High-Precision Controlled Environments
+                Prefabricated Schools & Hospitals
               </h3>
               <p className="text-gray-600 text-lg  text-justify">
-                Clean rooms are specialized environments created to keep
-                airborne particles, contaminants, and pollutants at extremely
-                low levels. They are critical for sectors such as
-                pharmaceuticals, electronics, biotechnology, food processing,
-                and medical devices, where even tiny particles can compromise
-                product quality. Landsking Infra excels in designing and
-                producing modular clean room solutions using premium PUF, EPS,
-                and Rockwool sandwich panels. Leveraging more than 25 years of
-                prefabrication expertise, our systems comply with rigorous
-                international standards, offering excellent hygiene, thermal
-                performance, and contamination control.
+                Building the Future of Education & Healthcare with Landsking
+                Infra At Landsking Infra, we are redefining institutional
+                infrastructure. As a trusted provider of high-quality
+                prefabricated solutions, we specialize in designing and
+                manufacturing modular buildings that combine speed, durability,
+                and modern aesthetics. Leveraging advanced Light Gauge Steel
+                Framing (LGSF) technology and high-performance insulated panels,
+                Landsking Infra delivers turnkey solutions tailored to meet the
+                urgent and evolving demands of the education and healthcare
+                sectors.
               </p>
               <button
                 className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
@@ -114,43 +137,37 @@ const Prefab: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Why Choose Us for Clean Room Construction?
+                Why Choose Landsking Infra for Institutional Projects?
               </h3>
               <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
                 <li>
-                  <strong className="text-gray-600 md:text-lg">
-                    Comprehensive In-House Design & Manufacturing:
-                  </strong>{" "}
-                  Landsking Infra offers complete clean room solutions from
-                  concept design to commissioning, tailored for your industry’s
-                  needs.
+                  <strong className="text-gray-600 md:text-lg"></strong> Rapid
+                  Speed of Construction Our off-site manufacturing process cuts
+                  project timelines by up to 50%, ensuring your educational or
+                  healthcare facility becomes operational significantly faster
+                  than traditional construction.
                 </li>
                 <li>
-                  <strong className="text-gray-600 md:text-lg">
-                    Premium Modular Panels:
-                  </strong>{" "}
-                  Constructed using insulated sandwich panels for high strength,
-                  thermal efficiency, and airtight performance.
+                  Uncompromised Safety & Durability Built on a robust LGSF
+                  structure with fire-resistant insulated panels, our buildings
+                  deliver superior structural integrity to withstand diverse
+                  climates and seismic activity.
                 </li>
                 <li>
-                  <strong>Flexible Configurations:</strong> ISO-class compliant
-                  clean rooms with modular layouts that can be easily expanded
-                  or reconfigured.
+                  Customizable & Ergonomic Design We provide fully customizable,
+                  ergonomic designs that maximize natural light and ventilation
+                  to create inspiring learning spaces and patient-centric
+                  healing environments.
                 </li>
                 <li>
-                  <strong>Rapid Delivery:</strong> State-of-the-art production
-                  facilities enable fast manufacturing and installation,
-                  covering over 6,800 sqm daily.
+                  State-of-the-art production facilities enable fast
+                  manufacturing and installation, covering over 6,800 sqm daily.
                 </li>
                 <li>
-                  <strong>Nationwide Project Execution:</strong> Delivering to
-                  pharma hubs, industrial zones, and R&D centers across India
-                  with a reliable logistics network.
-                </li>
-                <li>
-                  <strong>Standards & Compliance:</strong> Designed to adhere to
-                  GMP, FDA, ISO, and WHO guidelines depending on project
-                  specifications.
+                  <strong>Nationwide Project Execution:</strong>Hygienic & Low
+                  Maintenance Our structures feature smooth, durable surfaces
+                  that are effortless to clean and sanitize, ensuring a strictly
+                  hygienic and safe environment for all occupants.
                 </li>
               </ul>
             </div>
@@ -165,58 +182,6 @@ const Prefab: React.FC = () => {
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
-              <Image
-                src="/new-images/clean-room-4.jpg"
-                alt="  Industries Served by Us"
-                fill
-                className="object-cover rounded-lg "
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Industries Served by Us
-              </h3>
-              <ul className=" list-disc text-gray-600 md:text-lg mb-4 space-y-1 pl-5">
-                <li>Pharmaceutical & API Manufacturing Units</li>
-                <li>Biotechnology & Life Science Industries</li>
-                <li>Food & Beverage Manufacturing</li>
-                <li>Electronics and Semiconductor Assembly</li>
-                <li>Medical, Lab & Research Centers</li>
-                <li>Aerospace & Defense Sectors</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Row 4 - Content Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Essential Features of Landsking Infrainfra Clean Rooms
-              </h3>
-
-              <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
-                <li>Leak-proof, continuous construction</li>
-                <li>Excellent thermal and sound insulation</li>
-                <li>Panels that resist fire and corrosion</li>
-                <li>Easy-to-clean, hygienic finishes</li>
-                <li>Fully compatible with HVAC and filtration systems</li>
-                <li>
-                  Lower energy consumption thanks to high-performance insulation
-                </li>
-                <li>Long-lasting, maintenance-free design</li>
-              </ul>
-            </div>
-            <div className="relative w-full h-80 md:h-[370px]">
-              <Image
-                src="/new-images/clean-room-5.avif"
-                alt=" Essential Features of Landsking Infra Clean Rooms"
-                fill
-                className="object-cover rounded-lg "
-              />
-            </div>
-          </div>
 
           <div className="mx-auto md:mt-22">
             <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">

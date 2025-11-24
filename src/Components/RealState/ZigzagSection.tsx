@@ -46,7 +46,7 @@ const ZigzagSection: FC = () => {
           </div>
 
           <img
-            src="realstate/Commercial & Retail.jpg"
+            src="realstate/commercial construction.jpg"
             alt="Commercial"
             className="w-full h-64 sm:h-72 md:h-80 lg:h-120 object-cover clip-right"
           />

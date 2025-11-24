@@ -162,12 +162,7 @@ export default function Epcsolutions() {
         "Efficient storage and distribution facilities built for scalability and fast operations.",
       image: "/menupagetwo/w-5.png",
     },
-    {
-      subtitle: " Power & Energy Sector Infrastructure",
-      description:
-        "Custom-built solutions for power plants, substations, and energy sector facilities.",
-      image: "/commercial/Energy Savings, Better Business.jpg",
-    },
+
     {
       subtitle: " Agro & Cold Storage Solutions",
       description:
