@@ -86,7 +86,7 @@ export default function ExpertiseP() {
     },
     {
       title: "T&D Engineering & Simulation",
-      image: "/sectorimg/ste.webp",
+      image: "/imagesall/sim.jpeg",
       link: "/engineeringsimulation",
     },
   ];

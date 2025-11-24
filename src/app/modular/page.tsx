@@ -205,7 +205,7 @@ export default function Modular() {
       subtitle: "Accelerated Project Timelines",
       description:
         "Optimized production and installation processes ensure timely delivery, meeting tight project schedules.",
-      image: "/preimages/",
+      image: "/imagesall/ert.jpeg",
     },
     {
       subtitle: "Robust Construction",
