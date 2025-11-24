@@ -193,7 +193,7 @@ export default function Modular() {
       subtitle: "Quick Erection & Installation",
       description:
         "Designed for rapid erection, enabling swift installation even in complex or challenging site conditions.",
-      image: "/preimages/quick.png",
+      image: "/imagesall/rf.jpg",
     },
     {
       subtitle: "Thermal Efficiency",
@@ -211,7 +211,7 @@ export default function Modular() {
       subtitle: "Robust Construction",
       description:
         "Strong and sturdy construction ensures long service life, structural stability, and reliable performance.",
-      image: "/preimages/",
+      image: "/imagesall/Robust Construction.jpg",
     },
   ];
 

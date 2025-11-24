@@ -77,7 +77,7 @@ const PrefabricatedSite: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[380px]">
               <Image
-                src="/new-images/prefabricated-2.jfif"
+                src="/imagesall/pf.jpg"
                 alt="Prefabricated Site Infrastructure Solutions"
                 fill
                 className="object-cover rounded-lg "

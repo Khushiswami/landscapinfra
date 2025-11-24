@@ -55,13 +55,15 @@ export default function ResourceDetails({
         <div className=" md:px-0  grid grid-cols-1 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-7 p-6 md:p-16">
             <h2 className="text-2xl font-semibold text-[#000080] mb-4">
-              About this {item.type}
+              {item.title}
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-3">
               {item.description}
             </p>
-
+            <h2 className="text-2xl font-semibold text-[#000080] mb-4">
+              {item.question}
+            </h2>
             {/* Detailed Content from resources.ts */}
             <div className="space-y-4 text-gray-600">
               {item.detailedDescription.split("\n").map((line, index) => (

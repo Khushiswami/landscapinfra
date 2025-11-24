@@ -69,7 +69,7 @@ export default function ResourcesPage() {
             <option>All Resources</option>
             <option>eBook</option>
             <option>Whitepaper</option>
-            <option>Insight</option>
+            <option>Case Studies</option>
             <option>Brochure</option>
           </select>
         </div>

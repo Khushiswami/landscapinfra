@@ -134,7 +134,7 @@ export default function InfrastructureSector() {
         <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Card
-              image="/NDR.webp"
+              image="/imagesall/railway.jpeg"
               icon={<FaWarehouse size={32} className="text-white" />}
               title="Railway Shelters"
               description="Durable railway and telecom shelters, built to endure harsh conditions. Quick installation, low maintenance, and long-lasting reliability."

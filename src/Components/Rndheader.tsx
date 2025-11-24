@@ -65,7 +65,7 @@ const Rndheader = () => {
     { label: "Projects", href: "/rndprojects" },
     {
       label: "Insights",
-      href: "/insights",
+      href: "/rnd-insights",
       dropdown: [
         {
           title: "Resources",

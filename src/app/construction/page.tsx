@@ -134,7 +134,7 @@ export default function Construction() {
               description="Light steel structures ideal for both residential and commercial projects, providing flexible design options and fast construction timelines."
             />
             <Card
-              image="/sectorimg/lh.webp"
+              image="/imagesall/lh.jpeg"
               icon={<FaIndustry size={38} className="text-white" />}
               title="Labor Hutment"
               link="/laborHutment"

@@ -8,7 +8,6 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import { MdOutlineCleanHands } from "react-icons/md";
-import Footer from "../../Components/Footer";
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
 import { Link } from "lucide-react";
@@ -53,14 +52,6 @@ function Card({ image, icon, title, description }: CardProps) {
 // ✅ Main Page Component
 export default function IndustrialBuildingsConstruction() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  // const [isPlaying, setIsPlaying] = useState(false);
-
-  // const handleVideoClick = () => {
-  //   if (videoRef.current) {
-  //     videoRef.current.play();
-  //     setIsPlaying(true);
-  //   }
-  // };
 
   return (
     <>

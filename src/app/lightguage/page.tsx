@@ -101,7 +101,7 @@ export default function Lightguage() {
       subtitle: "Quality & Standards",
       description:
         "Adherence to Indian Standards (IS) and global quality norms",
-      image: "/light/qu.jpg",
+      image: "/imagesall/rf.jpg",
     },
   ];
 

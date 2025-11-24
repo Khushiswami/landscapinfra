@@ -57,7 +57,7 @@ export default function Realstateheader() {
     { label: "Projects", href: "/real-estate-project" },
 
     // { label: "People & Offices", href: "/people" },
-    { label: "Insights", href: "#" },
+    { label: "Insights", href: "/realestate-insights" },
 
     { label: "About Us", href: "/real-estate-about" },
     { label: "Contact Us", href: "/realestate-contact" },
