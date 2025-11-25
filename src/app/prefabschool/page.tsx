@@ -3,15 +3,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Pebheader from "yes/Components/Pebheader";
 import Pebfooter from "yes/Components/Pebfooter";
-
+interface FAQ {
+  question: string;
+  answer: string;
+}
 const Prefab: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const handleToggle = (index: number) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
-  const faqs = [
+  const faqs: FAQ[] = [
     {
       question:
         "What advanced technology is used to construct these prefab buildings?",
@@ -100,8 +102,8 @@ const Prefab: React.FC = () => {
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px] order-2 lg:order-1">
               <Image
                 src="/new-images/clean-room-2.jpg"
                 alt="High-Precision Controlled Environments"
@@ -109,7 +111,7 @@ const Prefab: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Prefabricated Schools & Hospitals
               </h3>
@@ -126,7 +128,7 @@ const Prefab: React.FC = () => {
                 sectors.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote
@@ -134,7 +136,7 @@ const Prefab: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Landsking Infra for Institutional Projects?
@@ -180,43 +182,46 @@ const Prefab: React.FC = () => {
               />
             </div>
           </div>
-
-          {/* Row 3 - Image Left, Content Right */}
-
-          <div className="mx-auto md:mt-22">
-            <h2 className="text-2xl md:text-3xl text-[#000080] font-bold text-center mb-8">
+        </section>
+        <section className=" mx-auto px-4 py-12 md:mx-13 ">
+          {/* Heading */}
+          <div className="text-center mb-10">
+            <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
               Frequently Asked Questions
             </h2>
+            {/* Yellow divider line */}
+            <div className="w-16 h-1 bg-[#272727] mx-auto rounded"></div>
+          </div>
 
-            <div className="space-y-4">
-              {faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-4 rounded-md ">
-                  <button
-                    onClick={() => handleToggle(idx)}
-                    className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
-                  >
-                    {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
-                    </span>
-                  </button>
-
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      openIndex === idx ? "max-h-96 mt-2" : "max-h-0"
+          {/* FAQ Items */}
+          <div className=" border-gray-200 ">
+            {faqs.map((faq: FAQ, index: number) => (
+              <div key={index} className=" border-gray-200">
+                {/* Question */}
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
+                >
+                  <span
+                    className={`text-left font-semibold md:text-xl text-md transition-colors duration-200 ${
+                      openIndex === index ? "text-[#000000]" : "text-black"
                     }`}
                   >
-                    <p className="text-gray-600  text-justify text-base md:text-md">
-                      {faq.answer}
-                    </p>
+                    {faq.question}
+                  </span>
+                  <span className="text-black text-lg font-bold">
+                    {openIndex === index ? "▲" : "▼"}
+                  </span>
+                </button>
+
+                {/* Answer */}
+                {openIndex === index && (
+                  <div className="pb-4 text-gray-600  text-base md:text-md">
+                    {faq.answer}
                   </div>
-                </div>
-              ))}
-            </div>
+                )}
+              </div>
+            ))}
           </div>
         </section>
       </div>

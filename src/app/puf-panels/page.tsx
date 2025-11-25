@@ -107,8 +107,8 @@ const Pufpanels: React.FC = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px] order-2 lg:order-1">
               <Image
                 src="/puf/puf panel.png"
                 alt="puf-panels"
@@ -116,7 +116,7 @@ const Pufpanels: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 PUF/PIR Panels – Smart Insulation for Modern Infrastructure
               </h3>
@@ -137,7 +137,7 @@ const Pufpanels: React.FC = () => {
               </button>
             </div>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Types of PUF/PIR Sandwich Panels We Provide
@@ -169,8 +169,8 @@ const Pufpanels: React.FC = () => {
           </div>
 
           <main className="bg-white">
-            <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
-              <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <section className="bg-white py-12 px-4 sm:px-6 md:px-3 lg:px-12">
+              <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card
                   image="/puf/puf panel rail shelter.png"
                   icon={<FaWarehouse size={32} className="text-white" />}
@@ -195,7 +195,7 @@ const Pufpanels: React.FC = () => {
             </section>
           </main>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Best-in-Class PUF/PIR Panel Features & Benefits
@@ -268,12 +268,8 @@ const Pufpanels: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

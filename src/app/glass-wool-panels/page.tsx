@@ -130,8 +130,8 @@ const Glasswool: React.FC = () => {
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px] order-2 lg:order-1">
               <Image
                 src="/glass/glasswool.jpg"
                 alt="  Glasswool Panel"
@@ -139,7 +139,7 @@ const Glasswool: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Glasswool Panel
               </h3>
@@ -162,7 +162,7 @@ const Glasswool: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Technical Specifications
@@ -208,8 +208,8 @@ const Glasswool: React.FC = () => {
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px] order-2 lg:order-1">
               <Image
                 src="/glass/glasswool panel.jpg"
                 alt="core applications glass wool"
@@ -217,7 +217,7 @@ const Glasswool: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Core Applications
               </h3>
@@ -250,12 +250,8 @@ const Glasswool: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

@@ -109,18 +109,6 @@ export default function Lightguage() {
   const visibleCards = 4; // Show 4 cards per row
   const [open, setOpen] = useState(false); // for mobile dropdown
 
-  // const prevSlide = () => {
-  //   setStartIndex((prev) =>
-  //     prev === 0 ? possibilities.length - visibleCards : prev - 1
-  //   );
-  // };
-
-  // const nextSlide = () => {
-  //   setStartIndex((prev) =>
-  //     prev + visibleCards >= possibilities.length ? 0 : prev + 1
-  //   );
-  // };
-
   // Slice visible cards and wrap around if needed
   const cardsToShow = possibilities
     .slice(startIndex, startIndex + visibleCards)
@@ -275,7 +263,7 @@ export default function Lightguage() {
       <section className="w-full bg-white  sm:py-3 md:py-10 lg:py-14 px-6 md:px-14 lg:px-17">
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div className="absolute -bottom-4 -right-4 w-full h-full   "></div>
             <img
               src="/menupageimg/lgs2.jpg" // replace with your real factory image
@@ -287,7 +275,7 @@ export default function Lightguage() {
           </div>
 
           {/* Right Side - Content */}
-          <div>
+          <div className="order-1 lg:order-2">
             <div className="flex items-center mb-4">
               <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Why Choose LGSF Construction?
@@ -444,9 +432,9 @@ export default function Lightguage() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
+        <div className=" ">
           {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
+            <div key={index} className="">
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}

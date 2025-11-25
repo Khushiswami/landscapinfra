@@ -76,8 +76,8 @@ const CleanRoom: React.FC = () => {
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px]  order-2 lg:order-1">
               <Image
                 src="/new-images/clean-room-2.jpg"
                 alt="High-Precision Controlled Environments"
@@ -85,7 +85,7 @@ const CleanRoom: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className=" order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 High-Precision Controlled Environments
               </h3>
@@ -103,7 +103,7 @@ const CleanRoom: React.FC = () => {
                 performance, and contamination control.
               </p>
               <button
-                className="border text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
+                className="border mt-3 text-[#000080] border-[#000080] px-6 py-2 hover:bg-[#000080] hover:text-white transition"
                 onClick={() => (window.location.href = "/peb-contact")}
               >
                 Get a Quote
@@ -111,7 +111,7 @@ const CleanRoom: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Us for Clean Room Construction?
@@ -165,8 +165,8 @@ const CleanRoom: React.FC = () => {
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px]  order-2 lg:order-1">
               <Image
                 src="/new-images/clean-room-4.jpg"
                 alt="  Industries Served by Us"
@@ -174,7 +174,7 @@ const CleanRoom: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className=" order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Industries Served by Us
               </h3>
@@ -190,7 +190,7 @@ const CleanRoom: React.FC = () => {
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Essential Features of Landsking Infrainfra Clean Rooms
@@ -231,12 +231,8 @@ const CleanRoom: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

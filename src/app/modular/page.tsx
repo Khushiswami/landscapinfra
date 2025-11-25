@@ -407,9 +407,9 @@ export default function Modular() {
       {/* end description */}
       {/* capiablites */}
       <section className="w-full bg-white py-4 md:py-12 px-6 md:px-12 lg:px-20">
-        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className=" mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side - Image */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div className="absolute -bottom-4 -left-4 w-full h-full  rounded-2xl"></div>
             <Image
               src="/preimages/define.png" // replace with your real factory image
@@ -421,7 +421,7 @@ export default function Modular() {
           </div>
 
           {/* Right Side - Content */}
-          <div>
+          <div className="order-1 lg:order-2">
             <div className="flex items-center mb-4">
               <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Redefining Modern Infrastructure with Prefabricated Buildings
@@ -691,9 +691,9 @@ export default function Modular() {
         </div>
 
         {/* FAQ Items */}
-        <div className="border-t border-gray-200 ">
+        <div className="  ">
           {faqs.map((faq: FAQ, index: number) => (
-            <div key={index} className="border-b border-gray-200">
+            <div key={index} className=" ">
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}

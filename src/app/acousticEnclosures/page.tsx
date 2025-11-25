@@ -85,7 +85,7 @@ const AcousticEnclosures: React.FC = () => {
         </section>
 
         <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[350px]">
               <Image
                 src="/new-images/acoustic-enclosures-2.webp"
@@ -119,8 +119,8 @@ const AcousticEnclosures: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="">
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Advantages of Landsking Infra Prefab Acoustic Enclosures
               </h3>
@@ -162,8 +162,8 @@ const AcousticEnclosures: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[350px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[350px]  order-2 lg:order-1">
               <Image
                 src="/new-images/acoustic-enclosures-4.webp"
                 alt="  Landsking Infra Prefab Acoustic Enclosures"
@@ -172,7 +172,7 @@ const AcousticEnclosures: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className=" order-1 lg:order-2">
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Applications
               </h3>
@@ -214,12 +214,8 @@ const AcousticEnclosures: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

@@ -81,7 +81,7 @@ export default function IndustrialBuildingsConstruction() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <div className="flex items-center mb-4">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
@@ -93,7 +93,7 @@ export default function IndustrialBuildingsConstruction() {
                 appealing Pre-Engineered Institutional Building Solutions from
                 Landsking Infra.
               </p>
-              <p className="text-gray-700 text-justify mb-4  text-justify  md:text-lg">
+              <p className="text-gray-700 text-justify mb-4  md:text-lg">
                 Our comprehensive range of structures delivers unmatched
                 strength, durability, and elegance. We serve a wide array of
                 sectors, including large-scale Pre-Engineered School Buildings,
@@ -126,7 +126,7 @@ export default function IndustrialBuildingsConstruction() {
       </section>
 
       {/* ✅ Cards Section */}
-      <main className="bg-white px-4 sm:px-6 md:px-12">
+      <main className="bg-white px-4 sm:px-6 lg:px-12 md:px-3">
         <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
@@ -168,7 +168,7 @@ export default function IndustrialBuildingsConstruction() {
         <h2 className="text-2xl text-left md:text-center md:text-3xl font-extrabold  text-[#000080] uppercase">
           Versatile design options, exceptional quality, and refined aesthetics
         </h2>
-        <div className="w-12 h-[2px]  mx-auto mt-3 mb-6 relative"></div>
+        <div className="w-12 h-[2px]  mx-auto mt-0 mb-6 relative"></div>
         <p className="text-gray-700  text-left md:text-center text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           Pre-engineered building technology has gained widespread recognition
           globally. Over time, more and more industries in India are adopting

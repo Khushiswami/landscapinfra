@@ -64,7 +64,7 @@ export default function Brand() {
           </h2>
 
           {/* Right call info */}
-          <div className="flex items-start md:items-center gap-4 text-[#FFF] px-2 py-2 md:px-4">
+          <div className="flex items-start md:items-center gap-4 text-[#FFF] px-2 py-2 md:px-2 lg:px-4">
             <div className="text-black p-3 rounded-full bg-white">
               <IoCallOutline size={26} className="shadow-lg rounded-xl" />
             </div>
@@ -81,7 +81,6 @@ export default function Brand() {
         </div>
       </section>
 
-      {/* Client Logos */}
       <ClientP />
 
       {/* Local CSS */}

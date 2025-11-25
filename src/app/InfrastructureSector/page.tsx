@@ -80,7 +80,7 @@ export default function InfrastructureSector() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <div className="flex items-center mb-4">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
@@ -131,8 +131,8 @@ export default function InfrastructureSector() {
 
       {/* Cards Section */}
       <main className="bg-white">
-        <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
-          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <section className="bg-white py-12 px-4 sm:px-6 md:px-12 ">
+          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card
               image="/imagesall/railway.jpeg"
               icon={<FaWarehouse size={32} className="text-white" />}
@@ -160,7 +160,7 @@ export default function InfrastructureSector() {
         <h2 className="text-2xl text-center md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
           Buildings custom-designed to suit your unique needs
         </h2>
-        <div className="w-12 h-[2px]  mx-auto mt-3 mb-6 relative"></div>
+        <div className="w-12 h-[2px]  mx-auto mt-1 mb-6 relative"></div>
         <p className="text-gray-700  text-left md:text-center text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           <span className="text-[#000080] font-semibold">
             Pre-Engineered Buildings (PEBs)

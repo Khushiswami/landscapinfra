@@ -86,8 +86,8 @@ const IndustrialEnclosures: React.FC = () => {
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px] order-2 lg:order-1">
               <Image
                 src="/menupagetwo/ind-1.jpg"
                 alt=" Industrial Enclosures"
@@ -95,7 +95,7 @@ const IndustrialEnclosures: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Industrial Enclosures – Engineered for Equipment Protection and
                 Environmental Management
@@ -118,7 +118,7 @@ const IndustrialEnclosures: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Landsking Infra Industrial Enclosures?
@@ -166,8 +166,8 @@ const IndustrialEnclosures: React.FC = () => {
           {/* Centered Heading + Paragraph */}
 
           {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px] order-2 lg:order-1">
               <Image
                 src="/menupagetwo/ind-6.jpg"
                 alt=" Applications of Landsking Infra Industrial Enclosures"
@@ -175,7 +175,7 @@ const IndustrialEnclosures: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Applications of Landsking Infra Industrial Enclosures
               </h2>
@@ -192,7 +192,7 @@ const IndustrialEnclosures: React.FC = () => {
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Complete Turnkey Solutions – From Design to Deployment
@@ -219,8 +219,8 @@ const IndustrialEnclosures: React.FC = () => {
           </div>
 
           {/* Row 5 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px] order-2 lg:order-1">
               <Image
                 src="/menupagetwo/ind-4.jpg"
                 alt="Advantages of Choosing Landsking Infra Enclosures"
@@ -228,7 +228,7 @@ const IndustrialEnclosures: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Advantages of Choosing Landsking Infra Enclosures
               </h2>
@@ -253,18 +253,14 @@ const IndustrialEnclosures: React.FC = () => {
 
             <div className="space-y-4">
               {faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-4 rounded-md ">
+                <div key={idx} className="bg-white p-4  ">
                   <button
                     onClick={() => handleToggle(idx)}
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

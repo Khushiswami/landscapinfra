@@ -70,7 +70,7 @@ export default function Construction() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <div className="flex items-center mb-4">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
@@ -116,7 +116,7 @@ export default function Construction() {
       </section>
 
       {/* Cards Section */}
-      <main className="bg-white px-4 sm:px-8 md:px-12">
+      <main className="bg-white px-4 sm:px-8 lg:px-12 md:px-1">
         <section className="bg-white py-12 px-2 sm:px-6 md:px-12">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card

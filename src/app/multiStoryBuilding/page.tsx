@@ -81,8 +81,8 @@ const MultiStoryBuilding: React.FC = () => {
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px] order-2 lg:order-1">
               <Image
                 src="/menupagetwo/msb1.jpg"
                 alt="  Prefab Multi-Storey Buildings by Landsking Infra"
@@ -90,7 +90,7 @@ const MultiStoryBuilding: React.FC = () => {
                 className="object-cover rounded-lg"
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Prefab Multi-Storey Buildings by Landsking Infra
               </h2>
@@ -113,7 +113,7 @@ const MultiStoryBuilding: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Why Choose Prefab Multi-Storey Buildings?
@@ -152,8 +152,8 @@ const MultiStoryBuilding: React.FC = () => {
           </div>
 
           {/* Applications */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px]order-2 lg:order-1">
               <Image
                 src="/menupagetwo/msb4.jpg"
                 alt="Applications of Prefab Multi-Storey Structures"
@@ -161,7 +161,7 @@ const MultiStoryBuilding: React.FC = () => {
                 className="object-cover rounded-lg"
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Applications of Prefab Multi-Storey Structures:
               </h2>
@@ -190,12 +190,8 @@ const MultiStoryBuilding: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

@@ -132,8 +132,8 @@ const Portacabins: React.FC = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12 space-y-8 md:space-y-16">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px] order-2 lg:order-1">
               <Image
                 src="/rockwool/rockwool roof panel.webp"
                 alt="rockwool"
@@ -141,7 +141,7 @@ const Portacabins: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Rockwool Sandwich Panels
               </h3>
@@ -163,7 +163,7 @@ const Portacabins: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Key Technical Specifications
@@ -207,8 +207,8 @@ const Portacabins: React.FC = () => {
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[370px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[370px] order-2 lg:order-1">
               <Image
                 src="/rockwool/rockwool panel (3).jpg"
                 alt=" Rockwool Panel Applications"
@@ -216,7 +216,7 @@ const Portacabins: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Rockwool Panel Applications
               </h3>
@@ -237,7 +237,7 @@ const Portacabins: React.FC = () => {
 
           {/* Row 4 - Content Left, Image Right */}
           <main className="bg-white">
-            <section className="bg-white py-12 px-4 sm:px-6 md:px-12">
+            <section className="bg-white py-12 px-4 sm:px-6 md:px-1 lg:px-12">
               <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card
                   image="/rockwool/rockwool wall panel (single groove).jpg"
@@ -290,12 +290,8 @@ const Portacabins: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

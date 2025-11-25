@@ -85,8 +85,8 @@ const FactoryBuilding: React.FC = () => {
         {/* Main Content */}
         <section className="w-full bg-white  py-8 md:py-12 px-4 md:px-12 space-y-16">
           {/* Row 1 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px] order-2 lg:order-1">
               <Image
                 src="/menupagetwo/fac-3.jpeg"
                 alt="Prefabricated Factory Building"
@@ -94,7 +94,7 @@ const FactoryBuilding: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
                 Prefabricated Factory Buildings Designed for Industrial
                 Applications
@@ -116,7 +116,7 @@ const FactoryBuilding: React.FC = () => {
           </div>
 
           {/* Row 2 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Prefab Factory Building Manufacturing Techniques and Technology
@@ -145,8 +145,8 @@ const FactoryBuilding: React.FC = () => {
           </div>
 
           {/* Row 3 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[390px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[390px] order-2 lg:order-1">
               <Image
                 src="/menupagetwo/fac-4.jpeg"
                 alt="Factory Applications"
@@ -154,7 +154,7 @@ const FactoryBuilding: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Key Applications of Prefabricated Factory Buildings
               </h2>
@@ -173,7 +173,7 @@ const FactoryBuilding: React.FC = () => {
           </div>
 
           {/* Row 5 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Landsking Infra?
@@ -203,18 +203,14 @@ const FactoryBuilding: React.FC = () => {
 
             <div className="space-y-4">
               {faqs.map((faq, idx) => (
-                <div key={idx} className="bg-white p-4 rounded-md shadow-sm">
+                <div key={idx} className="bg-white p-4 ">
                   <button
                     onClick={() => handleToggle(idx)}
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

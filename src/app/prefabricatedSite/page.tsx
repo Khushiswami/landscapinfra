@@ -74,8 +74,8 @@ const PrefabricatedSite: React.FC = () => {
 
         {/* Main Content */}
         <section className="w-full bg-white py-12 px-4 md:px-12  space-y-12 md:space-y-16">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[380px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[380px]  order-2 lg:order-1">
               <Image
                 src="/imagesall/pf.jpg"
                 alt="Prefabricated Site Infrastructure Solutions"
@@ -83,7 +83,7 @@ const PrefabricatedSite: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className=" order-1 lg:order-2">
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Complete Infrastructure Solutions for Quick, Efficient, and
                 Economical Project Implementation
@@ -110,7 +110,7 @@ const PrefabricatedSite: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Essential Site Infrastructure Components We Provide
@@ -146,8 +146,8 @@ const PrefabricatedSite: React.FC = () => {
           </div>
 
           {/* Row 3 - Image Left, Content Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[380px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[380px]  order-2 lg:order-1">
               <Image
                 src="/new-images/prefabricated-4.jpg"
                 alt="Why Choose Landsking Infra for Modular Infrastructure?"
@@ -155,7 +155,7 @@ const PrefabricatedSite: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className=" order-1 lg:order-2">
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Choose Landsking Infra for Modular Infrastructure?
               </h3>
@@ -188,7 +188,7 @@ const PrefabricatedSite: React.FC = () => {
           </div>
 
           {/* Row 4 - Content Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Ideal Applications
@@ -230,12 +230,8 @@ const PrefabricatedSite: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

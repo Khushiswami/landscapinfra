@@ -14,7 +14,7 @@ const IndustrialShed: React.FC = () => {
   const faqs = [
     {
       question:
-        "What are the primary benefits of choosing prefabricated industrial sheds? T",
+        "What are the primary benefits of choosing prefabricated industrial sheds?",
       answer:
         "They deliver significantly faster deployment via off-site manufacturing, offering superior structural accuracy and flexibility for future expansion.",
     },
@@ -73,8 +73,8 @@ const IndustrialShed: React.FC = () => {
         {/* Main Content */}
         <section className="w-full bg-white py-7 md:py-12 px-4 md:px-12 space-y-12 md:space-y-16">
           {/* Row 1 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[470px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[470px] order-2 lg:order-1">
               <Image
                 src="/shed/three.jpg"
                 alt="Pre-engineered Industrial Shed Builders"
@@ -82,7 +82,7 @@ const IndustrialShed: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Pre-engineered Industrial Shed Builders
               </h2>
@@ -117,7 +117,7 @@ const IndustrialShed: React.FC = () => {
           </div>
 
           {/* Row 2 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 High-Quality Features of Industrial Sheds
@@ -163,8 +163,8 @@ const IndustrialShed: React.FC = () => {
           </div>
 
           {/* Row 3 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[450px] order-2 lg:order-1">
               <Image
                 src="/shed/five.jpeg"
                 alt="Engineering Specifications for Industrial Shed Components"
@@ -172,7 +172,7 @@ const IndustrialShed: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Engineering Specifications for Industrial Shed Components
               </h2>
@@ -210,7 +210,7 @@ const IndustrialShed: React.FC = () => {
           </div>
 
           {/* Row 4 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Industrial Shed Applications
@@ -239,8 +239,8 @@ const IndustrialShed: React.FC = () => {
           </div>
 
           {/* Row 5 */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative w-full h-80 md:h-[450px]">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="relative w-full h-80 md:h-[450px]order-2 lg:order-1">
               <Image
                 src="/menupagetwo/is-7.png"
                 alt=" Why Landsking Infra Pvt Ltd for Industrial shed"
@@ -248,7 +248,7 @@ const IndustrialShed: React.FC = () => {
                 className="object-cover rounded-lg "
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="md:text-3xl font-bold mb-4 text-[#000080] text-2xl">
                 Why Landsking Infra Pvt Ltd Prefab?
               </h2>
@@ -275,12 +275,8 @@ const IndustrialShed: React.FC = () => {
                     className="flex justify-between items-center w-full text-left font-semibold md:text-xl text-md focus:outline-none"
                   >
                     {faq.question}
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openIndex === idx ? "rotate-90" : ""
-                      }`}
-                    >
-                      ▶
+                    <span className="text-black text-lg font-bold">
+                      {openIndex === idx ? "▲" : "▼"}
                     </span>
                   </button>
 

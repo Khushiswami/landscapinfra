@@ -40,7 +40,7 @@ export default function Rndtestimonial() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-15 lg:px-7 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">

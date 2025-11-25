@@ -77,7 +77,7 @@ export default function SportsLeisureBuilding() {
       {/* Company Intro Section */}
       <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
               <div className="flex items-center mb-4">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
@@ -121,26 +121,50 @@ export default function SportsLeisureBuilding() {
         </div>
       </section>
 
-      {/* Cards Section */}
-      <main className="bg-white px-4 sm:px-6 md:px-12">
-        <section className="bg-white py-10 sm:py-12 px-2 sm:px-6 md:px-12">
-          <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <Card
-              image="/sectorimg/sportsss.jpeg"
-              icon={<FaWarehouse size={34} className="text-white" />}
-              title="Stadium Sports Complex"
-              description="Modular prefabricated stadium structures offer a modern and cost-effective alternative to permanent stadiums. If you manage a sports team and require quickly installed infrastructure, modular stadiums are the ideal solution. We can construct your stadium facilities efficiently within a matter of weeks."
-            />
+      <section className="w-full bg-white py-8 md:py-12 px-4 md:px-12">
+        <div className="container mx-auto px-4 order-1 lg:order-2">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
+            <div className="order-1 lg:order-2">
+              <div className="flex items-center mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+                  Stadium Sports Complex
+                </h2>
+              </div>
+              <p className="text-gray-600 text-justify mb-4  md:text-lg">
+                Landsking Infra Pvt. Ltd. is redefining the future of modern
+                construction with advanced prefabricated building solutions. Our
+                approach is centered around innovation, precision engineering,
+                and high-performance manufacturing, ensuring that every
+                structure we deliver stands out in terms of strength,
+                durability, and architectural excellence.At the core of our
+                operations lies a highly streamlined manufacturing system
+                equipped with CNC-controlled machinery, robotic welding
+                technology, and automated fabrication units. These cutting-edge
+                tools allow us to maintain exceptional consistency and accuracy
+                in every component we produce, while minimizing human error and
+                accelerating the overall production cycle.
+              </p>
+            </div>
+
+            <div className="relative w-full h-60 sm:h-72 md:h-[400px] order-2 lg:order-1">
+              <Image
+                src="/sectorimg/sportsss.jpeg"
+                alt="sports leisure Building"
+                fill
+                className="object-cover rounded-lg shadow-lg"
+              />
+            </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
       {/* Info Section */}
       <section className="bg-gray-50  py-10 md:py-16 px-6 md:px-16 ">
         <h2 className="text-2xl text-center md:text-3xl font-extrabold tracking-wide text-[#000080] uppercase">
           Modern Designs with Flexible Customization Options
         </h2>
-        <div className="w-12 h-[2px]  mx-auto mt-3 mb-6 relative"></div>
+        <div className="w-12 h-[2px]  mx-auto mt-0 mb-6 relative"></div>
+
         <p className="text-gray-700  text-left md:text-center text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           Pre-engineered building (PEB) technology has achieved global
           recognition and is rapidly being embraced by various industries in
