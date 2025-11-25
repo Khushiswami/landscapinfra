@@ -10,25 +10,25 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const projects = [
   {
     title: "Commercial Construction",
-    image: "/realstate/commercial construction.jpg",
+    image: "/realhome/commercial construction.jpg",
     description:
       "Commercial construction include industrial construction, warehouse, water treatment plant and intake well construction.",
   },
   {
     title: "Project Consultancy",
-    image: "/realstate/project concutancy.jpg",
+    image: "/realhome/project concutancy.jpg",
     description:
       "Project Consultancy includes Architectural and structural design, Interior, Supervision, Project management consultancy.",
   },
   {
     title: "Real Estate",
-    image: "/realstate/real estate.jpg",
+    image: "/realhome/real estate.jpg",
     description:
       "Real estate includes Sales, Purchase, Consultancy for Residential, commercial, industrial and agriculture land.",
   },
   {
     title: "Residential Construction",
-    image: "/realstate/residentail construction.jpg",
+    image: "/realhome/residentail construction.jpg",
     description:
       "This includes Bungalow Construction, Farmhouse, Row houses, villa construction including conventional and modern technologies both.",
   },

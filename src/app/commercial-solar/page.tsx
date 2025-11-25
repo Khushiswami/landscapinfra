@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Footer from "yes/Components/Footer";
@@ -166,42 +166,50 @@ export default function Commercial() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
-  // const visibleCards = 4; // Show 4 cards per row
-  const visibleCards =
-    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
-  const [open, setOpen] = useState(false); // for mobile dropdown
+  const [visibleCards, setVisibleCards] = useState(4);
 
-  const prevSlide = () => {
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  };
+  // Responsive visible card logic
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) setVisibleCards(1);
+      else if (width < 1024) setVisibleCards(2);
+      else setVisibleCards(4);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const nextSlide = () => {
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
+    setStartIndex((prev) => (prev + 1 >= possibilities.length ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
   };
 
   // Slice visible cards and wrap around if needed
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
+  const cardsToShow = possibilities.slice(
+    startIndex,
+    startIndex + visibleCards
+  );
+  if (cardsToShow.length < visibleCards) {
+    cardsToShow.push(
+      ...possibilities.slice(0, visibleCards - cardsToShow.length)
     );
+  }
+
   const [selectedId, setSelectedId] = useState(3);
 
   const selectedArea = areas.find((area) => area.id === selectedId);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [open, setOpen] = useState(false); // for mobile dropdown
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   const slides = [
     {
       image: "/commercial/Stable Energy Costs.jpg",
@@ -349,7 +357,7 @@ export default function Commercial() {
           </h2>
 
           {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}

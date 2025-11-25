@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "West Square",
     status: "Ongoing",
-    image: "/realstate/two.jpg",
+    image: "/realhome/two.jpg",
     location: "Seawoods, Navi Mumbai",
   },
   {

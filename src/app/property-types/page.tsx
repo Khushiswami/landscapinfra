@@ -208,7 +208,7 @@ export default function Propertytypes() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/realstate/property.jpg"
+              src="/realhome/property.jpg"
               alt=" real estate  Property-Types"
               className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />

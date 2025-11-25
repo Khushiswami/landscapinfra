@@ -12,7 +12,7 @@ const exploreItems = [
     one: "Leasing of High-Street Shops & Malls",
     two: "Office Spaces, Business Parks, Co-working Solution",
     three: "Corporate Expansion & Investment Opportunities",
-    image: "/realstate/Commercial & Retail.jpg",
+    image: "/realhome/two.jpg",
   },
   {
     subtitle: "Residential Brokerage",
@@ -20,7 +20,7 @@ const exploreItems = [
     one: "Luxury Apartments • Plots • Farmhouses",
     two: "Developer Tie-ups for New Launches & Pre-Sales",
     three: "Home Loan & Legal Assistance",
-    image: "/realstate/residential.jpg",
+    image: "/realhome/residential.jpg",
   },
   {
     subtitle: "Land & Investment Advisory",
@@ -28,7 +28,7 @@ const exploreItems = [
     one: "Investor Portfolio Management",
     two: "Market Research & ROI Analysis",
     three: "Land Acquisition / Joint Ventures / Builder Collaboration",
-    image: "/realstate/investment advisory.jpg",
+    image: "/realhome/investmnet advisory.jpg",
   },
   {
     subtitle: "Industrial Real Estate",
@@ -36,7 +36,7 @@ const exploreItems = [
     one: "Buy/Sell/Lease of  Plots, Warehouses and Logistic Parks",
     two: "Built-to-Suit Solutions for Manufacturing Units",
     three: "Government-Approved Industrial Lands",
-    image: "/realstate/Industrial Real Estate.jpg",
+    image: "/realstate/real estate.jpg",
   },
 ];
 

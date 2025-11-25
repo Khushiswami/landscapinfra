@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Footer from "yes/Components/Footer";
@@ -172,41 +172,50 @@ export default function Industrial() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
-  // const visibleCards = 4; // Show 4 cards per row
-  const visibleCards =
-    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 4;
-  const [open, setOpen] = useState(false); // for mobile dropdown
+  const [visibleCards, setVisibleCards] = useState(4);
+
+  // Responsive visible card logic
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) setVisibleCards(1);
+      else if (width < 1024) setVisibleCards(2);
+      else setVisibleCards(4);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const nextSlide = () => {
+    setStartIndex((prev) => (prev + 1 >= possibilities.length ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setStartIndex((prev) => (prev === 0 ? possibilities.length - 1 : prev - 1));
+  };
+
+  // Slice visible cards and wrap around if needed
+  const cardsToShow = possibilities.slice(
+    startIndex,
+    startIndex + visibleCards
+  );
+  if (cardsToShow.length < visibleCards) {
+    cardsToShow.push(
+      ...possibilities.slice(0, visibleCards - cardsToShow.length)
+    );
+  }
+
   const [selectedId, setSelectedId] = useState(3);
 
   const selectedArea = areas.find((area) => area.id === selectedId);
-  const prevSlide = () => {
-    setStartIndex((prev) =>
-      prev === 0 ? possibilities.length - visibleCards : prev - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setStartIndex((prev) =>
-      prev + visibleCards >= possibilities.length ? 0 : prev + 1
-    );
-  };
-
-  const cardsToShow = possibilities
-    .slice(startIndex, startIndex + visibleCards)
-    .concat(
-      startIndex + visibleCards > possibilities.length
-        ? possibilities.slice(
-            0,
-            (startIndex + visibleCards) % possibilities.length
-          )
-        : []
-    );
-
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [open, setOpen] = useState(false); // for mobile dropdown
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   const slides = [
     {
       image: "/industryimg/Enhance Asset Value.jpg",
@@ -349,43 +358,15 @@ export default function Industrial() {
         </div>
       </section>
       <Inds />
-      {/* <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#000080]">
-            Steps EPC Approach
-          </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-              >
-                <img
-                  src={step.image}
-                  alt={step.title}
-                  className="w-full h-56 object-cover"
-                />
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-[#000080] mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-      {/* imaeg */}
       <section className="bg-[#000080] text-white py-10">
-        <div className=" mx-auto px-4 md:px-18 lg:mx-8">
+        <div className=" mx-auto px-4 md:mx-12">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-            Benefits for Industries with Landsking Infra
+            Benefits of Industrial Solar
           </h2>
 
           {/* Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 transition-all duration-500">
             {cardsToShow.map((item, idx) => (
               <div
                 key={idx}
@@ -396,7 +377,7 @@ export default function Industrial() {
                   <p className="text-sm text-black font-semibold mb-2 md:text-xl">
                     {item.subtitle}
                   </p>
-                  <p className="text-sm text-black  text-justify">
+                  <p className="text-sm text-justify text-black">
                     {item.description}
                   </p>
                 </div>
