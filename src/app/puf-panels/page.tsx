@@ -247,7 +247,7 @@ const Pufpanels: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/puf/"
+                src="/final/Puf-panels.jpg"
                 alt=" Best-in-Class PUF/PIR Panel Features"
                 fill
                 className="object-cover rounded-lg "

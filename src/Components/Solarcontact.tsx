@@ -28,7 +28,7 @@ const testimonials = [
 
 export default function Solarcontact() {
   return (
-    <div className="relative text-white mt-10 md:mt-20">
+    <div className="relative text-white mt-5 lg:mt-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -121,25 +121,26 @@ export default function Solarcontact() {
             ))}
           </Swiper>
 
-          {/* Custom Arrow Styling */}
-          <style jsx global>{`
-            .swiper-button-prev,
-            .swiper-button-next {
-              top: 50% !important;
-              transform: translateY(-50%);
-              width: 32px;
-              height: 32px;
-              background: rgba(0, 0, 0, 0.5); /* Black transparent */
-              border-radius: 50%;
-              color: #fff !important;
-              font-size: 14px !important;
-            }
-            .swiper-button-prev::after,
-            .swiper-button-next::after {
-              font-size: 14px !important;
-              font-weight: bold;
-            }
-          `}</style>
+          <style jsx global>
+            {`
+              .swiper-button-prev,
+              .swiper-button-next {
+                top: 50% !important;
+                transform: translateY(-50%);
+                width: 32px;
+                height: 32px;
+                background: rgba(0, 0, 0, 0.5); /* Black transparent */
+                border-radius: 50%;
+                color: #fff !important;
+                font-size: 14px !important;
+              }
+              .swiper-button-prev::after,
+              .swiper-button-next::after {
+                font-size: 14px !important;
+                font-weight: bold;
+              }
+            `}
+          </style>
         </div>
       </div>
     </div>

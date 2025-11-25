@@ -149,7 +149,7 @@ export default function Productengineering() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-white  text-[#000080] py-5 md:py-12 px-4 sm:px-8 md:px-12">
+      <section className="w-full bg-white  text-[#000080] py-5 md:py-12 px-4 sm:px-5 md:px-3 lg:px-12">
         <div className="container mx-auto px-4">
           <div className="text-center md:mb-1">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
@@ -162,7 +162,7 @@ export default function Productengineering() {
           </div>
         </div>
       </section>
-      <main className="bg-white px-4 sm:px-8 md:px-12">
+      <main className="bg-white px-4 sm:px-8 md:px-6 lg:px-12">
         <section className=" py-12 px-2 sm:px-6 md:px-12 md:py-5">
           <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card

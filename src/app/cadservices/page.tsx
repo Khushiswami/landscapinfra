@@ -90,7 +90,7 @@ export default function Rndexplore() {
       </section>
 
       {/* Company Intro Section */}
-      <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-12">
+      <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-14">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
@@ -98,14 +98,14 @@ export default function Rndexplore() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-64 sm:h-80 md:h-[450px]">
               <Image
                 src="/rnd/cad.jpeg"
                 alt=" Precision CFD & CAE Services
             "
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg "
               />
             </div>
             <div>
@@ -135,7 +135,7 @@ export default function Rndexplore() {
       </section>
 
       {/* SLIDER */}
-      <main className="bg-white px-4 sm:px-6 lg:px-12 md:mx-7">
+      <main className="bg-white px-4 sm:px-6 lg:px-12 md:mx-1">
         <section className="py-12 px-4 sm:px-6 md:px-12">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">

@@ -40,19 +40,19 @@ export default function RndServicesNew() {
       title: "HVAC Engineering Services",
       description:
         "Designing efficient HVAC systems that ensure comfortable, healthy indoor environments while minimizing energy use and operational costs.",
-      image: "/rndServices/3dStructuralModeling.webp",
+      image: "/final/HVAC Design.jpg",
     },
     {
       title: "Architectural 3D Modeling, Drafting, and Rendering Services",
       description:
         "We create LOD 100 to 500 models with photorealistic renderings and meticulous detailing for both commercial and residential projects. Our designs guarantee zoning compliance and accurate layouts. Immersive visualizations enhance communication and streamline design approvals. Speed up your project timelines with our expert architectural modeling services.",
-      image: "/rndServices/Architectural3DModeling,.jpg",
+      image: "/final/3d cvil design.jpg",
     },
     {
       title: "Civil 3D Modeling, Drafting, and Rendering Services",
       description:
         "We deliver grading plans, terrain models, and utility layouts fully compliant with local regulations. Accurate visualizations support roads, drainage, and infrastructure planning. Our detailed, data-rich models minimize costly revisions and streamline approvals. Achieve regulatory compliance with our high-precision civil workflows.",
-      image: "/rndServices/Civil3DModeling.webp",
+      image: "/final/3d structural design.jpg",
       link: "/coldstorageandwarehouse",
     },
     {
@@ -73,7 +73,7 @@ export default function RndServicesNew() {
       title: "BIM Services",
       description:
         "Our BIM solutions integrate all project elements into a single, coherent model, enhancing stakeholder collaboration and transparency. Reduce errors, optimize resource management, and improve efficiency from concept to completion. Streamline your project lifecycle with our expert BIM consulting and engineering services.",
-      image: "/rndServices/bim.webp",
+      image: "/final/bim service.jpg",
       link: "/fire-saftey",
     },
     {
@@ -87,7 +87,7 @@ export default function RndServicesNew() {
       title: "CAD Services",
       description:
         "Harness our advanced CAD capabilities to deliver precise and innovative design solutions across industries. We produce detailed, accurate drawings to ensure every aspect aligns with your project goals. Enhance efficiency and innovation with our expert engineering services.",
-      image: "/rndServices/cad.webp",
+      image: "/final/cad service.jpg",
       link: "/fire-saftey",
     },
     {

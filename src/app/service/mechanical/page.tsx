@@ -502,7 +502,7 @@ export default function Mechanical() {
       <RNDMechanicalCom />
       {/* description */}
       <section className="bg-white py-12 px-4 md:px-15">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -541,7 +541,7 @@ export default function Mechanical() {
             <img
               src="/mechenical design.jpg"
               alt=" mechanical services"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md w-[700px] h-[450px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>

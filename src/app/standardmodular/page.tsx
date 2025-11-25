@@ -51,7 +51,7 @@ export default function Standardmodular() {
       subtitle: "K-House",
       description:
         "K-House is a state-of-the-art solution for contemporary living, blending sustainability and innovation in its design. Featuring modular construction and energy-efficient elements, K-House provides a comfortable and eco-friendly lifestyle for individuals and families committed to a greener future.",
-      image: "/modular/K-House (1).png",
+      image: "/final/special building.jpg",
     },
   ];
 

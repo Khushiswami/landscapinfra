@@ -73,7 +73,7 @@ export default function Rndsimulation() {
       </section>
 
       {/* new section */}
-      <section className="bg-gray-50 py-6 md:py-16 px-4 sm:px-8 md:px-16">
+      <section className="bg-gray-50 py-6 md:py-16 px-4 sm:px-8 md:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#000080]">
             Our Simulation Services
@@ -82,7 +82,7 @@ export default function Rndsimulation() {
           {/* Grid Container */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Column 1 */}
-            <div className="flex flex-col items-left text-left bg-white p-6 shadow-md rounded-lg h-full">
+            <div className="flex flex-col items-left text-left bg-white p-6  rounded-lg h-full">
               <img
                 src="/simulation/Durability Analysis.jpg"
                 alt="Durability Analysis"
@@ -213,9 +213,9 @@ export default function Rndsimulation() {
       {/* image content */}
       <section className="w-full bg-white py-12 px-4 sm:px-8 md:px-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
+              <h2 className="text-2xl text-[#000080] md:text-3xl font-bold leading-snug max-w-4xl mx-auto">
                 Simulation-Driven Manufacturing: Accelerating Innovation with
                 CAD/CAE
               </h2>

@@ -209,7 +209,7 @@ const Epcpanels: React.FC = () => {
                   description="Our EPS wall panels are designed for durability, thermal efficiency, and easy installation, ideal for both interior and exterior use. Featuring Standard Rib or Micro Rib finishes and a high-quality EPS core, they provide lightweight insulation with strong performance. Available in thicknesses from 40 to 150 mm and a 1170 mm panel width, they ensure efficient coverage and minimal joints. Produced on a continuous line for precision and quality, these panels are perfect for partitions, cladding, industrial buildings, and cold storage interiors."
                 />
                 <Card
-                  image="/epcimg/eps panel (2).png.jpg "
+                  image="/epcimg/eps panel.png "
                   icon={
                     <MdOutlineCleanHands size={32} className="text-white" />
                   }

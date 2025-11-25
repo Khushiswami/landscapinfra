@@ -508,7 +508,7 @@ export default function Civil() {
       <Rndheader />
       <Rndcivil />
       <section className="bg-white py-12 px-4 md:px-15">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#000080] leading-snug  ">
@@ -539,7 +539,7 @@ export default function Civil() {
             <img
               src="/industrial soalr.jpg"
               alt=" civil-engineering"
-              className="rounded-md shadow-md w-[600px] h-[400px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="rounded-md shadow-md w-[700px] h-[430px] object-cover transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
             />
           </div>
         </div>
@@ -609,7 +609,7 @@ export default function Civil() {
         </section>
       </main>
       {/* endcapill */}
-      <section className="max-w-7xl mx-auto px-5 py-5 md:py-10">
+      <section className=" md:mx-5 lg:mx-5 mx-auto px-5 py-5 md:py-10  ">
         <header className="text-center mb-6">
           <h2 className="text-2xl sm:text-3xl text-[#000080] font-extrabold">
             More Engineering Services
@@ -642,7 +642,7 @@ export default function Civil() {
         </div>
 
         {/* Tablet / Desktop */}
-        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6 md:mx-7">
           {servicesing.map((s) => (
             <article
               key={s.id}

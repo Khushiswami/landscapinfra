@@ -1,6 +1,6 @@
 export default function Renewablenews() {
   return (
-    <div className="bg-white py-10 px-6 md:mx-22">
+    <div className="bg-white py-10 px-6 md:mx-12 lg:mx-22">
       {/* Heading */}
       <h2 className="text-3xl  md:mb-20 text-center md:text-4xl font-bold text-[#000080] mb-8">
         News Corner

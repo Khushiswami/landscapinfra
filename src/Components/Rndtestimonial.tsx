@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Rndtestimonial() {
   return (
-    <div className="relative text-white mt-20">
+    <div className="relative text-white md:mt-7 lg:mt-17">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"

@@ -72,7 +72,7 @@ const AcousticEnclosures: React.FC = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/new-images/acoustic-enclosures-1.webp')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/final/Acoustic Enclosure.jpg')",
             }}
           >
             {/* Centered Text */}

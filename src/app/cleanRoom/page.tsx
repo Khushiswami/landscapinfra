@@ -193,7 +193,7 @@ const CleanRoom: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl text-[#000080] font-bold mb-4">
-                Essential Features of Landsking Infrainfra Clean Rooms
+                Essential Features of Landsking Infra Clean Rooms
               </h3>
 
               <ul className="list-disc pl-5 text-gray-600 md:text-lg mb-4">
@@ -210,7 +210,7 @@ const CleanRoom: React.FC = () => {
             </div>
             <div className="relative w-full h-80 md:h-[370px]">
               <Image
-                src="/new-images/clean-room-5.avif"
+                src="/final/clean room.jpg"
                 alt=" Essential Features of Landsking Infra Clean Rooms"
                 fill
                 className="object-cover rounded-lg "

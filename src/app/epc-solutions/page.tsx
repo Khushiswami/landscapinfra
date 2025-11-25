@@ -116,7 +116,7 @@ export default function Epcsolutions() {
           {/* Text Section */}
           <div className="text-center lg:text-left mt-16 lg:mt-0">
             <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4 ">
-              Our Solar EPC Solutions for a Greener Tomorrow
+              Our Solar EPC Solutions
             </h1>
             <p className="text-md md:text-lg max-w-md mx-auto lg:mx-0">
               Landsking Infra delivers advanced solar EPC solutions, from
@@ -161,14 +161,11 @@ export default function Epcsolutions() {
       </section>
       <section className="w-full bg-white py-6 md:py-12 px-4 sm:px-6 md:px-25 lg:px-12">
         <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-xl text-[#000080] sm:text-2xl md:text-3xl font-bold  max-w-4xl mx-auto">
-              Landsking Infra Epc Solutions
-            </h2>
-          </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
+              <h2 className="text-xl mb-3 text-[#000080] sm:text-2xl md:text-3xl font-bold  max-w-4xl mx-auto">
+                Landsking Infra Epc Solutions
+              </h2>
               <p className="text-base md:text-lg font-medium text-justify text-gray-600  mb-6">
                 At Landsking Infra, we offer complete Solar EPC (Engineering,
                 Procurement & Construction) solutions designed to transform
@@ -184,7 +181,7 @@ export default function Epcsolutions() {
                 longer, and perform stronger — year after year.
               </p>
 
-              <div className="flex items-center justify-center md:justify-start gap-4">
+              <div className="flex  md:justify-start gap-4">
                 <Link
                   href="/renewable-contact"
                   className="border border-[#000080] px-6 py-2 font-semibold hover:bg-[#000080] hover:text-white transition-colors inline-block"
@@ -362,14 +359,6 @@ export default function Epcsolutions() {
                 completed projects, and a 98% client retention rate, we deliver
                 reliability and performance you can trust
               </p>
-
-              <div className="flex items-center justify-center md:justify-start gap-4">
-                <Link href="/solar-contact">
-                  <button className="border text-[#000080] border-[#000080] px-6 py-2 text-sm sm:text-base hover:bg-[#000080] hover:text-white transition">
-                    GET A QUOTE
-                  </button>
-                </Link>
-              </div>
             </div>
 
             <div className="relative w-full h-64 sm:h-80 md:h-[450px] md:mb-0 mb-14 ">

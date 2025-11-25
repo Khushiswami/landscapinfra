@@ -38,7 +38,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className=" mx-auto mt-10 p-4 md:px-45">
+    <div className=" mx-auto mt-10 p-4 md:px-20 lg:px-45">
       {/* <h2 className="text-sm uppercase text-gray-500 mb-2">Our Vision</h2> */}
       <h1 className="text-2xl font-semibold mb-6 text-[#000080] md:text-3xl">
         Your Solar EPC Partner Landsking Infra{" "}

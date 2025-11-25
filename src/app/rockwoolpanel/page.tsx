@@ -118,7 +118,7 @@ const Portacabins: React.FC = () => {
             className="flex-1 flex items-center justify-center p-8 bg-cover bg-center relative"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/rockwool/rockwool panel.jpg')",
+                "linear-gradient(rgba(14,14,85,0.4), rgba(14,14,85,0.4)), url('/final/Rockwool Panel (3).jpg')",
             }}
           >
             {/* Centered Text */}
@@ -135,7 +135,7 @@ const Portacabins: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="relative w-full h-80 md:h-[370px] order-2 lg:order-1">
               <Image
-                src="/rockwool/rockwool roof panel.webp"
+                src="/final/Roof Panel.jpg"
                 alt="rockwool"
                 fill
                 className="object-cover rounded-lg "
@@ -268,7 +268,7 @@ const Portacabins: React.FC = () => {
                 />
 
                 <Card
-                  image="/rockwool/rockwool roof panel.webp"
+                  image="/final/Roof Panel.jpg"
                   icon={<FaWarehouse size={32} className="text-white" />}
                   title="Roof Panel"
                   description="A structural roofing solution for industrial and PEB sheds with a corrugated profile for optimal water run-off. Offers high load-bearing capacity and a strong thermal barrier in 50 mm or 80 mm thickness. Security and efficiency from the top down."
