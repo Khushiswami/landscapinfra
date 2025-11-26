@@ -206,7 +206,6 @@ export default function Footer() {
         ))}
       </div>
 
-      {/* Mobile accordion */}
       <div className="md:hidden space-y-6 max-w-7xl mx-auto">
         {sections.map((section) => (
           <div key={section.title} className="border-b border-gray-600 pb-3">
@@ -227,7 +226,7 @@ export default function Footer() {
                 openSection === section.title ? "max-h-[1000px]" : "max-h-0"
               }`}
             >
-              <ul className="mt-3 space-y-3 pl-2">
+              <div className="mt-3 space-y-3 pl-2">
                 {section.items.map((item) => {
                   if (typeof item === "string") {
                     return (
@@ -291,7 +290,7 @@ export default function Footer() {
                     );
                   }
                 })}
-              </ul>
+              </div>
             </div>
           </div>
         ))}
@@ -302,9 +301,6 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-white/20 pb-6 mb-6">
           {/* Logo */}
           <div className="flex items-center space-x-3  mt-5 mb-4 md:mb-0">
-            {/* <Link href="/" className="flex items-center">
-              <img src="/blank.jpg" alt="Logo" className="h-15 w-auto" />
-            </Link> */}
             <span className="font-bold text-lg">Landsking Infra </span>
           </div>
 

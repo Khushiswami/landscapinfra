@@ -194,7 +194,7 @@ export default function Renewfooter() {
                 openSection === section.title ? "max-h-[1000px]" : "max-h-0"
               }`}
             >
-              <ul className="mt-3 space-y-3 pl-2">
+              <div className="mt-3 space-y-3 pl-2">
                 {section.items.map((item) => {
                   if (typeof item === "string") {
                     return (
@@ -258,7 +258,7 @@ export default function Renewfooter() {
                     );
                   }
                 })}
-              </ul>
+              </div>
             </div>
           </div>
         ))}

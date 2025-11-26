@@ -123,9 +123,16 @@ export default function Rnd() {
           className="absolute top-0 left-0 w-full h-full object-cover"
           aria-label={`Video: ${activeSlide.title}. ${activeSlide.desc}`}
         >
+          <track
+            kind="captions"
+            srcLang="en"
+            label="English captions"
+            default
+          />
           Your browser does not support the video. {activeSlide.title}:{" "}
           {activeSlide.desc}
         </video>
+
         <div className="absolute inset-0 bg-black/70" />
         {/* Slide Content */}
         <div className="relative z-10 flex flex-col justify-center h-full mx-auto px-6 sm:px-20 text-left ">

@@ -74,7 +74,6 @@ export default function Banner() {
 
   return (
     <section className="relative w-full h-[500px] sm:h-[380px] md:h-[85vh] lg:h-[100vh] overflow-hidden">
-      {/* // <section className="relative w-full h-[500px] sm:h-[380px] md:h-[100vh] overflow-hidden"> */}
       <video
         src={activeSlide.video}
         autoPlay
@@ -84,6 +83,7 @@ export default function Banner() {
         className="absolute top-0 left-0 w-full h-full object-cover"
         aria-label={`Video: ${activeSlide.title}. ${activeSlide.desc}`}
       >
+        <track kind="captions" srcLang="en" label="English captions" default />
         Your browser does not support the video. {activeSlide.title}:{" "}
         {activeSlide.desc}
       </video>
@@ -106,7 +106,7 @@ export default function Banner() {
             </p>
             <button
               onClick={() => router.push(activeSlide.link)}
-              className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-sm sm:text-base"
+              className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-[18px]"
             >
               <IoIosArrowForward className="w-5 h-5 text-[#000080]" />
               <span>Start now</span>
