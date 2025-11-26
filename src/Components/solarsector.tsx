@@ -61,20 +61,11 @@ export default function Solarsector() {
       }
     };
 
-    // const updateItems = () => {
-    //   if (window.innerWidth < 1025) {
-    //     setItemsPerView(1); // Mobile + All iPads
-    //   } else {
-    //     setItemsPerView(3); // Desktop
-    //   }
-    // };
-
     updateItems();
     window.addEventListener("resize", updateItems);
     return () => window.removeEventListener("resize", updateItems);
   }, []);
 
-  // Autoplay (only for desktop)
   useEffect(() => {
     if (itemsPerView > 1) {
       const timer = setInterval(() => {
@@ -102,7 +93,6 @@ export default function Solarsector() {
         {/* Carousel */}
         <div className="relative overflow-hidden">
           {itemsPerView > 1 ? (
-            // Desktop with sliding effect
             <motion.div
               className="flex transition-transform duration-700"
               style={{
@@ -120,7 +110,6 @@ export default function Solarsector() {
                     style={{ minWidth: `${100 / itemsPerView}%` }}
                   >
                     <div className="relative group overflow-hidden rounded-lg cursor-pointer">
-                      {/* Image */}
                       <Image
                         src={sector.image}
                         alt={sector.title}
@@ -129,12 +118,10 @@ export default function Solarsector() {
                         }`}
                       />
 
-                      {/* Title bar */}
                       <div className="absolute bottom-0 w-full bg-blue-600/90 text-white py-2 text-center text-sm font-semibold">
                         {sector.title}
                       </div>
 
-                      {/* Hover Overlay */}
                       {isCenter && (
                         <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-4 transition-opacity duration-300">
                           <h3 className="text-lg font-bold text-white mb-2">
@@ -157,7 +144,6 @@ export default function Solarsector() {
               })}
             </motion.div>
           ) : (
-            // Mobile: show only active image without effect
             <div className="flex justify-center">
               <div className="relative group overflow-hidden rounded-lg cursor-pointer w-full">
                 <Image

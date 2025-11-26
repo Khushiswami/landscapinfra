@@ -8,7 +8,6 @@ export default function TimelineTabs() {
 
   return (
     <div className="md:w-full px-6  mx-auto  py-12 md:px-25">
-      {/* Tabs */}
       <div className="flex justify-center border-b mb-8 flex-wrap">
         {[
           "1981-1988",

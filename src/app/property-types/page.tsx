@@ -90,7 +90,6 @@ export default function Propertytypes() {
           )}
         </AnimatePresence>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/60" />
 
         {/* Slide Content */}

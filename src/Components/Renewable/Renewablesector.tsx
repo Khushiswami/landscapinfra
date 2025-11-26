@@ -106,7 +106,6 @@ export default function RenewableSector() {
                           {project.title}
                         </div>
 
-                        {/* Overlay */}
                         <div
                           onClick={() => handleOverlayToggle(project.id)}
                           className={`
@@ -125,7 +124,6 @@ export default function RenewableSector() {
                           </h3>
                         </div>
 
-                        {/* Mobile arrows */}
                         <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +159,6 @@ export default function RenewableSector() {
             ))}
           </Swiper>
 
-          {/* Desktop arrows */}
           <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -82,7 +82,7 @@ function Card({ title, description, icon }: CardProps) {
         <h3 className="text-lg sm:text-xl font-bold tracking-wide mb-3 text-center">
           {title}
         </h3>
-        <p className="text-black text-justify text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
+        <p className="text-black  text-sm sm:text-base tracking-wide mb-5 flex-1 text-center">
           {description}
         </p>
       </div>

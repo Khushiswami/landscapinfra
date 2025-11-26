@@ -50,9 +50,7 @@ export default function Trunkeytpes() {
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        {/* Left Sidebar */}
         <div className="w-full lg:w-1/4">
-          {/* Mobile Dropdown */}
           <div className="lg:hidden mb-0">
             <button
               onClick={() => setOpen(!open)}
@@ -94,7 +92,6 @@ export default function Trunkeytpes() {
             )}
           </div>
 
-          {/* Desktop Sidebar */}
           <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
             {areas.map((area) => (
               <button
@@ -110,10 +107,8 @@ export default function Trunkeytpes() {
           </div>
         </div>
 
-        {/* Right Content */}
         {selectedArea && (
           <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full border border-gray-300">
-            {/* Text Section */}
             <div className="p-6 flex flex-col justify-center w-full md:w-1/2 border-t md:border-t-0 md:border-r border-gray-300">
               <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}

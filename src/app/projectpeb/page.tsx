@@ -113,7 +113,6 @@ export default function Projectpeb() {
                 loop
               />
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 group">
                 <p className="text-white text-sm opacity-0 translate-y-4 group-hover:opacity-90 group-hover:translate-y-0 transition-all duration-300 mb-2">
                   {slide.desc}

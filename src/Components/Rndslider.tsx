@@ -93,7 +93,6 @@ export default function Rndslider() {
           .join("\n")}
       `}</style>
 
-      {/* Section Title */}
       <div className=" hidden text-center mb-12 md:hidden">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Expertise
@@ -133,7 +132,6 @@ export default function Rndslider() {
                   </SwiperSlide>
                 ))}
 
-                {/* Mobile arrows */}
                 <div
                   className={`swiper-button-next swiper-next-mobile-${idx}`}
                 />
@@ -147,7 +145,6 @@ export default function Rndslider() {
 
         {/* Desktop Slider */}
         <div className="hidden lg:flex w-full h-[480px] overflow-hidden">
-          {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col border border-gray-300">
             {categories.map((cat, index) => (
               <button
@@ -170,7 +167,6 @@ export default function Rndslider() {
             ))}
           </div>
 
-          {/* Right Image Slider */}
           <div className="w-3/4 relative">
             <Swiper
               navigation={true}
@@ -199,7 +195,6 @@ export default function Rndslider() {
                 </SwiperSlide>
               ))}
 
-              {/* Desktop arrows */}
               <div className="swiper-button-next !text-white" />
               <div className="swiper-button-prev !text-white" />
             </Swiper>

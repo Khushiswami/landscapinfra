@@ -30,7 +30,7 @@ const possibilities = [
     subtitle: "Semiconductor Design Software",
     description:
       "Semiconductor software solutions for design, simulation, and verification.",
-     image: "/industry.jpg",
+    image: "/industry.jpg",
   },
   {
     title: "Thermal",
@@ -64,7 +64,6 @@ export default function MenuBussinessP() {
     );
   };
 
-  // Slice visible cards and wrap around if needed
   const cardsToShow = possibilities
     .slice(startIndex, startIndex + visibleCards)
     .concat(

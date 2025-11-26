@@ -108,10 +108,8 @@ export default function Epcsolutions() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text Section */}
           <div className="text-center lg:text-left mt-16 lg:mt-0">

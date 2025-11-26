@@ -30,7 +30,6 @@ export default function PreEngineeredProducts({
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
-      {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8">
         {heading}
       </h2>
@@ -38,7 +37,6 @@ export default function PreEngineeredProducts({
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
         <div className="w-full md:w-1/4">
-          {/* Mobile Dropdown */}
           <div className="md:hidden mb-4 bg-[#000080]">
             <button
               onClick={() => setOpen(!open)}
@@ -103,7 +101,6 @@ export default function PreEngineeredProducts({
           </div>
         </div>
 
-        {/* Right Content */}
         {selectedArea && (
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
             {/* Text Content */}

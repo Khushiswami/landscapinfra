@@ -69,7 +69,6 @@ export default function ExploreP() {
           ))}
         </div>
 
-        {/* Right Content */}
         {selectedArea && (
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
             {/* Text Content */}

@@ -86,7 +86,6 @@ export default function Renewfooter() {
       className="py-12 px-6 md:px-17 text-[14px] text-white"
       style={{
         backgroundColor: "#0d1d52",
-        fontFamily: `"DM Sans", Arial, sans-serif !important`,
       }}
     >
       {/* Desktop grid */}
@@ -100,7 +99,7 @@ export default function Renewfooter() {
               )}
             </h3>
 
-            <ul className="mt-5 space-y-3">
+            <div className="mt-5 space-y-3">
               {section.items.map((item) => {
                 if (typeof item === "string") {
                   return (
@@ -169,7 +168,7 @@ export default function Renewfooter() {
                   );
                 }
               })}
-            </ul>
+            </div>
           </div>
         ))}
       </div>

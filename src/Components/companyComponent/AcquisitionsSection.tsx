@@ -6,7 +6,6 @@ import Image from "next/image";
 export default function AcquisitionsSection() {
   return (
     <section className="w-full mx-auto px-4 sm:px-6 md:px-10 py-12 md:py-20">
-      {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-10 text-[#000080]">
           Our Acquisitions

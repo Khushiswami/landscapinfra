@@ -199,12 +199,10 @@ const Page = () => {
                             className="object-cover w-full h-full rounded-lg"
                           />
 
-                          {/* Title bar */}
                           <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 text-center text-sm font-semibold">
                             {project.title}
                           </div>
 
-                          {/* Overlay */}
                           <div
                             onClick={() => handleOverlayToggle(project.id)}
                             className={`absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
@@ -234,7 +232,6 @@ const Page = () => {
               ))}
             </Swiper>
 
-            {/* Desktop arrows */}
             <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 z-20 hidden md:flex cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

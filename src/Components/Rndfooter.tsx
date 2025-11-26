@@ -78,21 +78,18 @@ const Rndfooter: React.FC = () => {
   return (
     <footer className="bg-[#000080] text-white text-sm">
       <div className=" mx-auto px-4 sm:px-6 lg:px-13 py-12">
-        {/* ✅ Contacts Section (Now image left, content right) */}
         <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {contacts.map((c, i) => (
             <div
               key={i}
               className="flex items-center bg-transparent text-white p-4 rounded-lg transition-all"
             >
-              {/* Image on the left */}
               <img
                 src={c.img}
                 alt={c.title}
                 className="w-12 h-12 rounded-full mr-4 flex-shrink-0"
               />
 
-              {/* Text content on the right */}
               <div className="flex flex-col text-left">
                 <h3 className="font-semibold text-white text-base mb-1">
                   {c.title}
@@ -109,7 +106,6 @@ const Rndfooter: React.FC = () => {
             </div>
           ))}
 
-          {/* ✅ Brand Section */}
           <div className="flex flex-col items-center justify-center text-center p-6 rounded-lg">
             <p className="mb-3 font-medium text-white">
               Landsking Infra Infr Pvt Limited
@@ -120,11 +116,9 @@ const Rndfooter: React.FC = () => {
           </div>
         </div>
 
-        {/* ✅ Links (Collapsible on Mobile) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
           {columns.map((col, i) => (
             <div key={i} className="w-full">
-              {/* Heading (Clickable on Mobile) */}
               <h4
                 onClick={() => toggleDropdown(i)}
                 className="flex justify-between items-center text-white font-semibold text-base cursor-pointer md:cursor-default mb-2"
@@ -137,7 +131,6 @@ const Rndfooter: React.FC = () => {
                 />
               </h4>
 
-              {/* Dropdown / Expanded Links */}
               <ul
                 className={`transition-all duration-300 overflow-hidden md:overflow-visible md:max-h-full md:block ${
                   openDropdown === i ? "max-h-64" : "max-h-0 md:max-h-full"
@@ -158,7 +151,6 @@ const Rndfooter: React.FC = () => {
           ))}
         </div>
 
-        {/* ✅ Social Media (Bottom) */}
         <div className="flex justify-center items-center gap-6 mt-12 text-xl">
           <a
             href="https://linkedin.com"
@@ -178,7 +170,6 @@ const Rndfooter: React.FC = () => {
           </a>
         </div>
 
-        {/* ✅ Footer Bottom */}
         <div className="mt-8 text-center text-xs text-gray-300">
           © {new Date().getFullYear()} Landsking Infra Pvt Ltd. All rights
           reserved.

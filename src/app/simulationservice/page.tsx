@@ -164,7 +164,6 @@ export default function Simulationservice() {
     return () => window.removeEventListener("resize", updateItems);
   }, []);
 
-  // Autoplay (only for desktop)
   useEffect(() => {
     if (itemsPerView > 1) {
       const timer = setInterval(() => {
@@ -308,7 +307,6 @@ export default function Simulationservice() {
                             {project.title}
                           </div>
 
-                          {/* Overlay */}
                           <div
                             onClick={() => handleOverlayToggle(project.id)}
                             className={`
@@ -330,7 +328,6 @@ export default function Simulationservice() {
                             </p>
                           </div>
 
-                          {/* Mobile arrows */}
                           <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-30 bg-white/80 p-1  cursor-pointer md:hidden">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -366,7 +363,6 @@ export default function Simulationservice() {
               ))}
             </Swiper>
 
-            {/* Desktop arrows */}
             <div className="custom-prev absolute top-1/2 -translate-y-1/2 left-2 md:-left-0 z-20 cursor-pointer hidden md:flex items-center justify-center rounded-full p-2 md:p-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -404,9 +400,7 @@ export default function Simulationservice() {
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Left Sidebar */}
           <div className="w-full lg:w-1/4">
-            {/* Mobile Dropdown */}
             <div className="lg:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
@@ -448,7 +442,6 @@ export default function Simulationservice() {
               )}
             </div>
 
-            {/* Desktop Sidebar */}
             <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
               {areas.map((area) => (
                 <button
@@ -464,10 +457,8 @@ export default function Simulationservice() {
             </div>
           </div>
 
-          {/* Right Content */}
           {selectedArea && (
             <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full border border-gray-300">
-              {/* Text Section */}
               <div className="p-6 flex flex-col justify-center w-full md:w-1/2 border-t md:border-t-0 md:border-r border-gray-300">
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
@@ -481,7 +472,6 @@ export default function Simulationservice() {
                 </button>
               </div>
 
-              {/* Image Section (fills height automatically) */}
               <div className="w-full md:w-1/2 relative">
                 <img
                   src={selectedArea.image}

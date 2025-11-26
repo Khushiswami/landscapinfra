@@ -32,9 +32,7 @@ export default function BusinessPractices() {
   return (
     <section className="w-full bg-white py-12 sm:py-14 md:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Parent Grid */}
         <div className="grid gap-10 md:grid-cols-4 items-start">
-          {/* Left Side Text */}
           <div className="md:col-span-1 flex flex-col justify-center text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-[#000080] mb-4">
               Our Principles Guide Our <br className="hidden md:block" />{" "}
@@ -54,14 +52,12 @@ export default function BusinessPractices() {
             </a>
           </div>
 
-          {/* Right Side Cards */}
           <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {policies.map((policy) => (
               <div
                 key={policy.id}
                 className="bg-gray-50 rounded-lg shadow-sm overflow-hidden flex flex-col hover:shadow-md transition"
               >
-                {/* Card Image */}
                 <div className="relative w-full h-44 sm:h-40">
                   <Image
                     src={policy.image}
@@ -71,7 +67,6 @@ export default function BusinessPractices() {
                   />
                 </div>
 
-                {/* Card Content */}
                 <div className="p-5 sm:p-6 flex flex-col flex-1 text-center sm:text-left">
                   <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
                     {policy.title}

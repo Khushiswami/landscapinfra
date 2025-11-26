@@ -339,10 +339,8 @@ Specialized Solutions for Advanced Industries: Our engineering solutions are tai
           backgroundImage: "url('/rndimages/gn.jpeg')",
         }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
-        {/* Content */}
         <div className="relative z-10 text-center px-4 md:px-20 max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
             Engineering Brilliance at Your Fingertips

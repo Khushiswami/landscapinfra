@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function KeyFeatures() {
   return (
     <section className="w-full bg-white py-12 px-6 lg:px-20">
-      {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-bold mb-10">
         <span className=" text-[#000080] px-3 py-1 rounded-md mr-2">
           KEY FEATURES
@@ -14,7 +13,6 @@ export default function KeyFeatures() {
       </h2>
 
       <div className="grid lg:grid-cols-2 gap-10 items-center">
-        {/* Left Image */}
         <div className="w-full">
           <Image
             src="/industry.jpg"
@@ -25,7 +23,6 @@ export default function KeyFeatures() {
           />
         </div>
 
-        {/* Right Content */}
         <div className="space-y-6">
           <p className="text-gray-600 text-justify leading-relaxed">
             At <span className="font-semibold">Landsking Infra PVT LTD</span>,
@@ -41,7 +38,6 @@ export default function KeyFeatures() {
             food processing, pharmaceuticals, agriculture, and logistics.
           </p>
 
-          {/* Feature Points */}
           <div className="space-y-4">
             <div>
               <h4 className="font-bold text-[#000080]">

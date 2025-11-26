@@ -47,12 +47,10 @@ export default function Rndaboutus() {
 
   return (
     <section className="relative py-8 md:py-16 px-4 md:px-10 lg:px-20 overflow-hidden">
-      {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block w-48 h-48"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block w-48 h-48"></div>
 
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center z-10">
-        {/* Left Section - Video */}
         <div className="w-full flex justify-center">
           <div className="relative rounded-xl w-full h-60 sm:h-72 md:h-[420px] overflow-hidden shadow-lg">
             <video
@@ -66,7 +64,6 @@ export default function Rndaboutus() {
           </div>
         </div>
 
-        {/* Right Section */}
         <div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#000080] mb-4">
             ABOUT US
@@ -82,7 +79,6 @@ export default function Rndaboutus() {
             engineering and AI to produce powerful results.
           </p>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 gap-4 sm:gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;

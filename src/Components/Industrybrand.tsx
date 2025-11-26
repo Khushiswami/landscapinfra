@@ -56,15 +56,12 @@ export default function Industrybrand() {
 
   return (
     <>
-      {/* Section with animated gradient background */}
       <section className="section-footer-cta mb-7 pt-10 pb-10 md:pt-16 md:pb-16 md:mb-0 md:px-6 lg:pt-20 lg:pb-20 lg:px-18">
         <div className="mx-auto flex flex-col md:flex-row items-start md:items-center justify-between text-white px-4 md:px-5 lg:px-8 max-w-7xl">
-          {/* Left text */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left md:text-center mb-4 md:mb-0">
             Get Your Project Started
           </h2>
 
-          {/* Right call info */}
           <div className="flex items-start md:items-center gap-4 text-[#FFF] px-2 py-2 md:px-2 lg:px-4">
             <div className="text-black p-3 rounded-full bg-white">
               <IoCallOutline size={26} className="shadow-lg rounded-xl" />
@@ -82,10 +79,8 @@ export default function Industrybrand() {
         </div>
       </section>
 
-      {/* Client Logos */}
       <ClientP />
 
-      {/* Local CSS */}
       <style jsx>{`
         .section-footer-cta {
           background-color: #272727;

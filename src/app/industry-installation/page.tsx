@@ -510,12 +510,10 @@ const Page = () => {
                             className="object-cover w-full h-full rounded-lg"
                           />
 
-                          {/* Title bar */}
                           <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 text-center text-sm font-semibold">
                             {project.title}
                           </div>
 
-                          {/* Overlay */}
                           <div
                             onClick={() => handleOverlayToggle(project.id)}
                             className={`absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 
@@ -690,7 +688,6 @@ const Page = () => {
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Menu */}
           <div className="w-full md:w-2/4">
-            {/* Mobile Dropdown */}
             <div className="md:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
@@ -754,8 +751,6 @@ const Page = () => {
             </div>
           </div>
 
-          {/* Right Content */}
-          {/* Right Content */}
           {selectedArea && (
             <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
               {/* ✅ Left Text Section */}

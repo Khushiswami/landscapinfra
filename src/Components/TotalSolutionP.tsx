@@ -57,7 +57,6 @@ export default function TotalSolutionP() {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-2xl mb-2 md:text-2xl">{item.title}</h3>
                 <p className="text-gray-600 flex-1">{item.description}</p>

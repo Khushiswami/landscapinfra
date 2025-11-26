@@ -31,7 +31,6 @@ export default function Caetabtwo() {
 
   return (
     <div className="mx-auto px-6 py-12 md:px-18">
-      {/* Tabs */}
       <div className="flex flex-wrap justify-between gap-2 border-b border-gray-300 mb-6">
         {tabs.map((tab, index) => (
           <button
@@ -49,7 +48,6 @@ export default function Caetabtwo() {
         ))}
       </div>
 
-      {/* Active Tab Content */}
       <div className="space-y-4">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
           {tabs[activeIndex].heading}

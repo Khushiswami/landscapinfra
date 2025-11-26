@@ -106,6 +106,7 @@ export default function Navbar() {
           </div>
 
           <a href="mailto:info@Landsking Infra.com">
+            email
             <EnvelopeIcon
               className="h-6 w-6 hover:opacity-80"
               aria-label="mail"

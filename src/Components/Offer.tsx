@@ -150,7 +150,6 @@ export default function () {
         ))}
       </div>
 
-      {/* ✅ Active Tab Content */}
       <div className="space-y-4 text-center md:text-left">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
           {tabs[activeIndex].heading}

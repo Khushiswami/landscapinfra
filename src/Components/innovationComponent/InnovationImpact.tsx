@@ -34,7 +34,6 @@ export default function InnovationImpact() {
 
   return (
     <section className="w-full bg-white py-16 px-4  mt-20 ">
-      {/* Heading */}
       <div className="text-center  mx-auto mb-12 md:mx-20">
         <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
           Our Innovations Create a Positive Impact Everywhere

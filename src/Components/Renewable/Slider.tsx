@@ -50,7 +50,6 @@ export default function Slider() {
 
   return (
     <div className="px-auto py-8 mt-6 bg-gray-50">
-      {/* Section Title */}
       <div className="text-center mb-12">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Expertise
@@ -94,7 +93,6 @@ export default function Slider() {
 
         {/* ✅ Desktop: Tabs left + Slider right (unchanged) */}
         <div className="hidden lg:flex w-full h-[500px] rounded-sm overflow-hidden">
-          {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col rounded-tl-xl rounded-bl-xl border border-gray-300">
             {categories.map((cat, index) => (
               <button
@@ -115,7 +113,6 @@ export default function Slider() {
             ))}
           </div>
 
-          {/* Right Image Slider */}
           <div className="w-3/4 relative">
             <Swiper
               navigation={true}

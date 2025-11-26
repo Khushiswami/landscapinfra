@@ -55,7 +55,6 @@ const features = [
 export default function OurLineage() {
   return (
     <section className="text-center px-4 sm:px-6 md:mx-15 lg:mx-20 pt-0 md:pt-16 bg-white">
-      {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-black tracking-wide text-[#000080] uppercase mb-6 md:mb-8">
         How We Work
       </h2>

@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 
-// TypeScript types
 type MenuLink = {
   label: string;
   href: string;
@@ -32,10 +31,8 @@ export default function Realstateheader() {
     null
   );
 
-  // Mega menu states
   const [megaMenuOpen, setMegaMenuOpen] = useState<string | null>(null);
 
-  // Close mega menu when clicking outside
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (
@@ -89,26 +86,6 @@ export default function Realstateheader() {
       { label: "Office", href: "/property-types" },
     ],
   };
-  // const aboutMenu: MegaMenu = {
-  //   left: {
-  //     title: "About Us",
-  //     text: "Learn more about who we are, our leadership, and our values that drive excellence in real estate.",
-  //     buttonText: " More",
-  //     buttonLink: "/",
-  //     image: "/about-banner.jpg",
-  //     linkText: "Corporate Responsibility",
-  //     linkHref: "/",
-  //   },
-  //   needs: [
-  //     { label: "Our Mission", href: "/real-estate/mission" },
-
-  //     { label: "Our History", href: "/real-estate/history" },
-  //   ],
-  //   propertyTypes: [
-  //     { label: "Our Mission", href: "/real-estate/mission" },
-  //     { label: "Innovation", href: "/real-estate/innovation" },
-  //   ],
-  // };
 
   const propertiesMenu: MegaMenu = {
     left: {

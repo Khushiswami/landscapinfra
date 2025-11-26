@@ -111,7 +111,6 @@ export default function Pebbuildingservice() {
     );
   };
 
-  // Slice visible cards and wrap around if needed
   const cardsToShow = possibilities
     .slice(startIndex, startIndex + visibleCards)
     .concat(
@@ -185,7 +184,6 @@ export default function Pebbuildingservice() {
     <>
       <Pebheader />
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
         <video
           autoPlay
           loop
@@ -200,9 +198,7 @@ export default function Pebbuildingservice() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Text */}
           <div className="text-center lg:text-left order-1">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
               PRE ENGINEERED BUILDINGS{" "}
@@ -214,7 +210,6 @@ export default function Pebbuildingservice() {
             </p>
           </div>
 
-          {/* Right Slider */}
           <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -400,7 +395,6 @@ export default function Pebbuildingservice() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Text Section */}
             <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
               {/* <ul className="list-disc pl-6 space-y-2"> */}
               <li>
@@ -474,12 +468,10 @@ export default function Pebbuildingservice() {
       {/* end special section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Left Image */}
           <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg">
             <Image src="/cadtool.png" alt=" Tools" className="rounded-2xl" />
           </div>
 
-          {/* Right Content */}
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
               CAD TOOLS:

@@ -621,7 +621,6 @@ export default function Mechanical() {
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Menu */}
           <div className="w-full md:w-2/4">
-            {/* Mobile Dropdown */}
             <div className="md:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
@@ -685,8 +684,6 @@ export default function Mechanical() {
             </div>
           </div>
 
-          {/* Right Content */}
-          {/* Right Content */}
           {selectedArea && (
             <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
               {/* ✅ Left Text Section */}
@@ -829,7 +826,6 @@ export default function Mechanical() {
       <Brand />
       {/* faqss */}
       <section className=" mx-auto px-4 py-12 md:px-15 ">
-        {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
             Frequently Asked Questions
@@ -869,7 +865,6 @@ export default function Mechanical() {
           ))}
         </div>
       </section>
-      {/* Heading */}
       <Rndtestimonial />
       <Rndfooter />
     </>

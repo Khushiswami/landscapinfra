@@ -153,10 +153,8 @@ export default function Solardesign() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 container  px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mx-auto md:mx-18">
           {/* Text Section */}
           <div className="text-center lg:text-left mt-16 lg:mt-0">
@@ -269,7 +267,6 @@ export default function Solardesign() {
         </div>
       </section>
       <section className=" mx-auto px-4 py-12 md:mx-22 ">
-        {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
             Frequently Asked Questions

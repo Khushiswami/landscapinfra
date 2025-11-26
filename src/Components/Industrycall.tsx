@@ -59,15 +59,12 @@ export default function Industrycall() {
 
   return (
     <>
-      {/* Section with animated gradient background */}
       <section className="section-footer-cta mb-7 pt-10 pb-10 md:pt-20 md:pb-20 md:mb-0 md:px-18">
         <div className=" mx-auto flex flex-col md:flex-row items-left justify-between text-white px-4 md:items-center ">
-          {/* Left text */}
           <h2 className="text-2xl md:text-4xl font-bold text-left md:text-center mb-4 md:mb-0">
             Looking for a reliable EPC partner?
           </h2>
 
-          {/* Right call info */}
           <div className="flex items-left gap-4  text-[#FFF] px-2 py-2 md:items-center md:px-4  ">
             <div className=" text-black p-3 rounded-full bg-white ">
               <IoCallOutline size={26} className="shadow-lg rounded-xl" />
@@ -85,7 +82,6 @@ export default function Industrycall() {
         </div>
       </section>
 
-      {/* Client Logos */}
       <ClientP />
 
       {/* Local CSS (scoped, not global) */}

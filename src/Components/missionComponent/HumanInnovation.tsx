@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function HumanInnovation() {
   return (
     <section className="w-full bg-white py-8 md:py-5 lg:py-16">
-      {/* Heading */}
       <div className="text-center mx-auto px-4 sm:px-6 mb-10 md:mx-20">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-[#000080]">
           Innovation & Design: by Humans for Humans

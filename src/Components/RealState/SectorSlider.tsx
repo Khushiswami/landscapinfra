@@ -171,7 +171,6 @@ export default function SectorSlider() {
               </svg>
             </div>
 
-            {/* Mobile Arrows */}
             <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-30  p-1 rounded-full cursor-pointer md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -136,7 +136,6 @@ export default function Needtab() {
 
   return (
     <div className="mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-12">
-      {/* ✅ Tabs Section */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap md:justify-between gap-3 border-b border-gray-300 mb-8">
         {tabs.map((tab, index) => (
           <button
@@ -154,7 +153,6 @@ export default function Needtab() {
         ))}
       </div>
 
-      {/* ✅ Active Tab Content */}
       <div className="space-y-4 text-center md:text-left">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
           {tabs[activeIndex].heading}
@@ -166,7 +164,6 @@ export default function Needtab() {
           {tabs[activeIndex].subheading}
         </h3>
 
-        {/* ✅ Boxes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {tabs[activeIndex].boxes.map((box, idx) => (
             <div
@@ -183,7 +180,6 @@ export default function Needtab() {
           ))}
         </div>
 
-        {/* ✅ Image */}
         <img
           src={tabs[activeIndex].img}
           alt={tabs[activeIndex].heading}

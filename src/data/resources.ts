@@ -5,7 +5,7 @@ export interface ResourceItem {
   title: string;
   description: string;
   question: string;
-  detailedDescription: string; // Added for detailed content
+  detailedDescription: string;
   image: string;
   link: string;
 }

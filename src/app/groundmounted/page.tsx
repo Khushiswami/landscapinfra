@@ -171,7 +171,6 @@ export default function Groundmounted() {
 
       {/* ===== Hero Section ===== */}
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
         <video
           autoPlay
           loop
@@ -186,7 +185,6 @@ export default function Groundmounted() {
         {/* Optional dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
           <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">

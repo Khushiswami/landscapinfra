@@ -65,7 +65,6 @@ export default function Industryplatform() {
 
   return (
     <section className="w-full md:px-6 lg:px-16">
-      {/* Top heading + subheading */}
       <div className="mx-auto px-4 pt-12 text-center md:px-13 lg:px-15">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Comprehensive Infrastructure Solutions
@@ -82,7 +81,6 @@ export default function Industryplatform() {
         </p>
       </div>
 
-      {/* Tabs */}
       <div className="mt-8 ">
         <div className="mx-auto px-4 md:px-2 ">
           <div className="relative">

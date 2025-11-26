@@ -43,7 +43,6 @@ export default function ImageSlider() {
         <span className="text-blue-800">Our</span> Products
       </h2>
 
-      {/* Mobile View (stacked list, no slider) */}
       <div className="block md:hidden w-[90%] max-w-lg space-y-6">
         {images.map((item, index) => (
           <div
@@ -62,7 +61,6 @@ export default function ImageSlider() {
         ))}
       </div>
 
-      {/* Desktop View (same as before - Swiper) */}
       <div className="hidden md:block w-[90%] max-w-6xl">
         <Swiper
           effect="coverflow"
@@ -95,7 +93,6 @@ export default function ImageSlider() {
                 className="w-full h-full object-cover shadow-lg"
               />
 
-              {/* Overlay (desktop hover + click) */}
               <div
                 className={`absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-center text-white px-6 
                 transition-opacity duration-300

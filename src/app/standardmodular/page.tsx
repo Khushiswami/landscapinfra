@@ -226,7 +226,6 @@ export default function Standardmodular() {
     <>
       <Pebheader />
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
         <video
           autoPlay
           loop
@@ -246,7 +245,6 @@ export default function Standardmodular() {
         {/* Optional dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
           <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
@@ -395,9 +393,7 @@ export default function Standardmodular() {
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Left Sidebar */}
           <div className="w-full lg:w-1/4">
-            {/* Mobile Dropdown */}
             <div className="lg:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
@@ -439,7 +435,6 @@ export default function Standardmodular() {
               )}
             </div>
 
-            {/* Desktop Sidebar */}
             <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-19 pb-19">
               {areas.map((area) => (
                 <button
@@ -455,10 +450,8 @@ export default function Standardmodular() {
             </div>
           </div>
 
-          {/* Right Content */}
           {selectedArea && (
             <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full border border-gray-300">
-              {/* Text Section */}
               <div className="p-6 flex flex-col justify-center w-full md:w-1/2 border-t md:border-t-0 md:border-r border-gray-300">
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
@@ -477,7 +470,6 @@ export default function Standardmodular() {
                 </button>
               </div>
 
-              {/* Image Section (fills height automatically) */}
               <div className="w-full md:w-1/2 relative">
                 <img
                   src={selectedArea.image}
@@ -614,7 +606,6 @@ export default function Standardmodular() {
       {/* end why choose us */}
       <Brand /> {/* faqs */}
       <section className=" mx-auto px-4 py-12 md:mx-10 ">
-        {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
             Frequently Asked Questions

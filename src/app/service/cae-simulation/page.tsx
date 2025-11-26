@@ -53,13 +53,11 @@ const Caesimulation = () => {
       <Rndheader />
       {/* rnd banner */}
       <section className="relative w-full   h-[60vh] sm:h-[99vh] overflow-hidden">
-        {/* Background Video */}
         <img
           src={slides[active].image}
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/60" />
 
         {/* Slide Content */}

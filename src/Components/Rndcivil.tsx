@@ -28,7 +28,6 @@ export default function Rndcivil() {
 
   return (
     <section className="relative w-full h-[500px] sm:h-[380px] md:h-[70vh] overflow-hidden flex items-center justify-center text-center">
-      {/* Background Video */}
       <video
         src={activeSlide.video}
         autoPlay
@@ -42,7 +41,6 @@ export default function Rndcivil() {
       {/* Black Blur Overlay */}
       <div className="absolute inset-0 bg-black/70 backdrop-blur-[3px]" />
 
-      {/* Content */}
       <div className="relative z-10 px-6 sm:px-10 md:px-20 max-w-4xl mx-auto">
         <AnimatePresence mode="wait">
           <motion.div

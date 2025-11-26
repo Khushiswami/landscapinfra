@@ -50,12 +50,10 @@ export default function AboutPebP() {
 
   return (
     <section className="relative py-16 px-4 md:px-15 lg:px-23 overflow-hidden">
-      {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start z-10">
-        {/* Left Section - Video */}
         <div className="space-y-6 flex flex-col justify-center">
           <div className="relative rounded-lg w-full h-64 sm:h-80 md:h-[500px] overflow-hidden hover:scale-105 transition-transform duration-500">
             <video
@@ -85,7 +83,6 @@ export default function AboutPebP() {
             engineering and AI to produce powerful results.
           </p>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;

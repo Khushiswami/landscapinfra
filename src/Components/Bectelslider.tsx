@@ -30,7 +30,6 @@ export default function Bectelslider() {
 
   return (
     <section className="relative w-full h-[80vh] md:h-[100vh] overflow-hidden">
-      {/* Background Video */}
       <video
         src="/hero/bg-video.mp4"
         autoPlay
@@ -40,10 +39,8 @@ export default function Bectelslider() {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center md:items-start h-full px-6 md:px-12 lg:px-20">
         {/* Left Text */}
         <div className="text-left text-white max-w-xl mt-28 md:mt-48">

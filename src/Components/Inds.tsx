@@ -119,7 +119,6 @@ export default function Inds() {
           </div>
         </div>
 
-        {/* Right Content */}
         {selectedArea && (
           <div className="flex flex-col-reverse lg:flex-row bg-white rounded-lg shadow overflow-hidden w-full min-h-[420px]">
             <div className="p-6 flex flex-col justify-center w-full lg:w-1/2 border border-[#808080] lg:border-r-0">

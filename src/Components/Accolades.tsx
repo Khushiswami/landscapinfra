@@ -42,7 +42,6 @@ const cards: Card[] = [
 export default function Accolades() {
   return (
     <div className="max-w-[1400px] mx-auto py-12 px-4">
-      {/* Heading */}
       <div className="text-center mb-12">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Accolades

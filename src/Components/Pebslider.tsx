@@ -81,7 +81,6 @@ export default function Pebslider() {
 
   return (
     <div className="px-auto py-5 mt-6 mb-5 bg-[#f0f1f5] md:mb-0">
-      {/* Section Title */}
       <div className="text-center mb-6">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Expertise
@@ -93,7 +92,6 @@ export default function Pebslider() {
       </div>
 
       <div className="mx-auto my-8 px-4 lg:px-20 md:px-15">
-        {/* ✅ Mobile Slider */}
         <div className="lg:hidden space-y-2">
           {categories.map((cat, idx) => {
             const [mobIndex, setMobIndex] = useState(0);
@@ -120,14 +118,12 @@ export default function Pebslider() {
                     />
                   </AnimatePresence>
 
-                  {/* Overlay Text */}
                   <div className="absolute inset-0 flex items-center justify-center bg-black/40">
                     <h3 className="text-lg font-bold text-white text-center px-2">
                       {cat.title}
                     </h3>
                   </div>
 
-                  {/* Arrows */}
                   <button
                     onClick={prevMob}
                     className="absolute left-3 top-1/2 -translate-y-1/2 text-white hover:scale-110 transition-transform"
@@ -146,9 +142,7 @@ export default function Pebslider() {
           })}
         </div>
 
-        {/* ✅ Desktop Section */}
         <div className="hidden lg:flex w-full h-[450px] overflow-hidden">
-          {/* Left Tabs */}
           <div className="w-1/4 bg-white flex flex-col border border-gray-300">
             {categories.map((cat, index) => (
               <button
@@ -171,7 +165,6 @@ export default function Pebslider() {
             ))}
           </div>
 
-          {/* Right Image Slider */}
           <div className="w-3/4 relative flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.div
@@ -198,7 +191,6 @@ export default function Pebslider() {
               </motion.div>
             </AnimatePresence>
 
-            {/* Arrows */}
             <button
               onClick={prevSlide}
               className="absolute left-4 text-white hover:scale-110 transition-transform"

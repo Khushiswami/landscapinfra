@@ -51,7 +51,6 @@ export default function Banner() {
 
   return (
     <div className="relative w-full h-[70vh] sm:h-[100vh] overflow-hidden">
-      {/* Background Video */}
       <video
         key={slides[active].video}
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
@@ -62,10 +61,8 @@ export default function Banner() {
         <source src={slides[active].video} type="video/mp4" />
       </video>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-8 md:px-20 text-white">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight max-w-full md:max-w-3xl">
           {slides[active].title}
@@ -78,7 +75,6 @@ export default function Banner() {
           Learn more
         </button>
 
-        {/* Tabs with blue progress bar */}
         <div className="absolute bottom-0 left-0 right-0 flex flex-col sm:flex-row gap-3 sm:gap-6 px-4 sm:px-8 md:px-20 pb-6">
           {slides.map((slide, index) => (
             <div key={index} className="relative w-full sm:w-auto">

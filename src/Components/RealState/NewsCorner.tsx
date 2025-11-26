@@ -1,7 +1,6 @@
 export default function NewsCorner() {
   return (
     <div className="bg-white py-10 px-6 md:px-12 lg:mx-17">
-      {/* Heading */}
       <h2 className="text-3xl  md:mb-20 text-center md:text-4xl font-bold text-[#000080] mb-8">
         News Corner
       </h2>

@@ -17,7 +17,6 @@ export default function HelpP() {
 
   return (
     <section className="py-10 bg-blue-50">
-      {/* Heading */}
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#061b49]">
           How Can We Help?

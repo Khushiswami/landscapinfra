@@ -51,7 +51,6 @@ export default function Realabout() {
 
   return (
     <section className="relative py-16 px-4 lg:px-20 md:px-15 overflow-hidden">
-      {/* Decorative Background */}
       <div className="absolute top-20 left-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
       <div className="absolute bottom-10 right-10 bg-[#f2f2f2] rounded-full blur-3xl animate-pulse hidden md:block"></div>
 

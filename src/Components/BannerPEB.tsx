@@ -47,7 +47,6 @@ export default function BannerPEB() {
 
   return (
     <section className="relative w-full h-[70vh] sm:h-[99vh] overflow-hidden">
-      {/* Background Video */}
       <video
         src={slides[active].video}
         autoPlay
@@ -57,7 +56,6 @@ export default function BannerPEB() {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Slide Content */}

@@ -21,7 +21,6 @@ export default function Solutionservice() {
       <PebheaderW />
       <section className="bg-white mt-10">
         <div className="mx-auto">
-          {/* Heading */}
           <div className=" mx-auto mt-5 py-12">
             <h2 className="text-3xl md:text-4xl mt-10 font-bold text-gray-900 mb-6 px-6">
               Effective & Trustworthy Services
@@ -358,10 +357,8 @@ export default function Solutionservice() {
         </div>
       </section>
       <section className="relative w-full h-[400px] md:h-[400px] bg-[url('/industry.jpg')] bg-cover bg-center">
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
 
-        {/* Content */}
         <div className="relative z-10 flex items-center justify-center h-full px-4 md:px-20">
           <div
             className="flex items-center gap-4 cursor-pointer"

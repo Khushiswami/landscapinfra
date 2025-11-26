@@ -282,7 +282,6 @@ export default function Heavyengineering() {
     <>
       <Navbar />
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
         <video
           autoPlay
           loop
@@ -297,7 +296,6 @@ export default function Heavyengineering() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
           {/* Text */}
           <div className="text-center md:text-left order-1 mt-16 sm:mt-12 md:mt-0">
@@ -490,7 +488,6 @@ export default function Heavyengineering() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            {/* Text Section */}
             <ul className=" list-disc space-y-4 text-gray-600 text-base leading-relaxed">
               <li>
                 <span className="font-bold">Wall:</span> PUF / EPS insulated
@@ -575,7 +572,6 @@ export default function Heavyengineering() {
 
       {/* faqs */}
       <section className=" mx-auto px-4 py-12 md:mx-10 ">
-        {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
             Frequently Asked Questions

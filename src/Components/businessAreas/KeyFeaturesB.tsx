@@ -31,7 +31,6 @@ export default function KeyFeaturesB({
 }: KeyFeaturesProps) {
   return (
     <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
-      {/* Heading */}
       <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold sm:mb-10 leading-snug">
         <span className="text-[#000080] block sm:inline px-3 py-1 rounded-md mr-0 sm:mr-2">
           {heading}
@@ -40,7 +39,6 @@ export default function KeyFeaturesB({
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center">
-        {/* Left Image */}
         <div className="order-2 md:order-1 w-full">
           <Image
             src={img.src}
@@ -53,13 +51,11 @@ export default function KeyFeaturesB({
           />
         </div>
 
-        {/* Right Content */}
         <div className="order-1 md:order-2 space-y-6">
           <p className="text-gray-600 text-justify  text-base sm:text-[18px]">
             {description}
           </p>
 
-          {/* Feature Points */}
           <div className="space-y-4">
             {features.map((feature, index) => (
               <div key={index}>

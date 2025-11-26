@@ -50,10 +50,7 @@ export default function Industryabout() {
 
   return (
     <section className="relative py-16 px-4 md:px-20 lg:px-31 overflow-hidden">
-      {/* Decorative Background */}
-
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start z-10">
-        {/* Left Section - Video */}
         <div className="space-y-6 flex flex-col justify-center">
           <div className="relative rounded-lg w-full h-64 sm:h-80 md:h-[500px] overflow-hidden hover:scale-105 transition-transform duration-500">
             <video
@@ -83,7 +80,6 @@ export default function Industryabout() {
             engineering and AI to produce powerful results.
           </p>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;

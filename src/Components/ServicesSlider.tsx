@@ -83,7 +83,6 @@ export default function ServicesSlider() {
   return (
     <section className="bg-[#E8ECEC] md:py-28 py-12 overflow-x-hidden lg:px-10 px-6 font-sans">
       <div className="mx-auto flex flex-col md:flex-row relative md:border-t md:border-b border-gray-300">
-        {/* Left Side Text */}
         <div className="w-full md:w-2/6 md:border-r md:border-gray-300 lg:pr-10 lg:pl-17">
           <h2 className="text-[#000080] text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 md:mt-15">
             Services
@@ -94,7 +93,6 @@ export default function ServicesSlider() {
             dreams a reality.
           </p>
 
-          {/* Desktop Arrows */}
           <div className="hidden md:flex gap-4 mt-6">
             <button
               className="custom-prev border border-[#000080] text-[#000080] p-3 rounded-sm
@@ -111,7 +109,6 @@ export default function ServicesSlider() {
           </div>
         </div>
 
-        {/* Right Side Swiper */}
         <div className="w-full md:w-4/6 relative overflow-hidden md:pl-4">
           <Swiper
             modules={[Navigation]}
@@ -147,7 +144,6 @@ export default function ServicesSlider() {
             ))}
           </Swiper>
 
-          {/* Mobile Arrows */}
           <div className="flex gap-4 justify-between mt-6 md:hidden px-2">
             <button
               className="custom-prev border border-[#000080] text-[#000080] p-3 rounded-sm

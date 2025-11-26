@@ -14,7 +14,6 @@ export default function Insightbanner() {
         className="object-cover brightness-75"
       />
 
-      {/* Heading */}
       <h1 className="text-white text-3xl md:text-5xl font-bold z-10">
         Insights
       </h1>

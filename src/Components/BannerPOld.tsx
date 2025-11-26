@@ -62,7 +62,6 @@ export default function BannerPOld() {
 
   return (
     <div className="relative w-full h-[70vh] sm:h-[90vh] md:h-[100vh] overflow-hidden">
-      {/* Background Video */}
       <video
         key={slides[active].video}
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
@@ -73,10 +72,8 @@ export default function BannerPOld() {
         <source src={slides[active].video} type="video/mp4" />
       </video>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-6 md:px-20 text-white">
         <h1 className="text-xl sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight max-w-full md:max-w-3xl">
           {slides[active].title}

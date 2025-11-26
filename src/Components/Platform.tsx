@@ -39,7 +39,6 @@ export default function Platform() {
 
   return (
     <section className="w-full">
-      {/* Top heading + subheading */}
       <div className="max-w-4xl mx-auto px-4 pt-12 text-center">
         <h1 className="text-3xl text-[#000080] md:text-4xl font-semibold tracking-tight">
           One Platform, Endless Possibilities
@@ -51,7 +50,6 @@ export default function Platform() {
         </p>
       </div>
 
-      {/* Tabs */}
       <div className="mt-8">
         <div className="max-w-4xl mx-auto px-4">
           <div className="relative flex items-center justify-center gap-8 overflow-x-auto">
@@ -70,7 +68,6 @@ export default function Platform() {
               </button>
             ))}
           </div>
-          {/* Active underline */}
           <div className="relative mx-auto mt-0.5 h-px max-w-4xl bg-gray-200">
             <span
               className="absolute -top-[1px] block h-0.5 bg-[#000080] transition-all duration-300"
@@ -83,7 +80,6 @@ export default function Platform() {
         </div>
       </div>
 
-      {/* Content Card */}
       <div className="max-w-5xl mx-auto px-4">
         <div className="mt-8 relative rounded-xl overflow-hidden shadow-lg">
           <div className="relative w-full h-[340px] md:h-[420px]">

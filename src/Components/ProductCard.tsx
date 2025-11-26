@@ -79,7 +79,6 @@ function Card({ image, icon, title, description }: CardProps) {
         {icon}
       </div>
 
-      {/* Content */}
       <div className="px-5 pb-6 flex-1 flex flex-col">
         <h3 className="text-xl font-bold tracking-wide mb-3">{title}</h3>
         <p className="text-gray-600 text-justify text-base tracking-wide mb-5 flex-1">

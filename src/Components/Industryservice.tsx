@@ -85,7 +85,6 @@ export default function Industryservice() {
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
         <div className="w-full md:w-2/4">
-          {/* Mobile Dropdown */}
           <div className="md:hidden mb-0">
             <button
               onClick={() => setOpen(!open)}
@@ -147,8 +146,6 @@ export default function Industryservice() {
           </div>
         </div>
 
-        {/* Right Content */}
-        {/* Right Content */}
         {selectedArea && (
           <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg border border-[#808080] overflow-hidden w-full items-center">
             {/* ✅ Left Text Section */}

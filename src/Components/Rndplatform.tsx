@@ -66,7 +66,6 @@ export default function Rndplatform() {
 
   return (
     <section className="w-full  md:px-20 lg:px-28">
-      {/* Top heading + subheading */}
       <div className="mx-auto px-4 pt-12 text-center ">
         <h1 className="text-2xl text-[#000080] md:text-3xl font-bold tracking-tight">
           Engineering and RND Solutions
@@ -77,7 +76,6 @@ export default function Rndplatform() {
         </p>
       </div>
 
-      {/* Tabs */}
       <div className="mt-8 ">
         <div className="mx-auto px-4">
           <div className="relative">

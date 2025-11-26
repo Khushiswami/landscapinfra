@@ -50,7 +50,6 @@ const slides: Slide[] = [
 export default function PebExpertiseP() {
   return (
     <div className="max-w-[1400px] mx-auto py-12 px-4">
-      {/* Heading */}
       <div className="text-center mb-12">
         <p className="text-sm uppercase tracking-widest text-gray-500">
           Our Expertise
@@ -82,7 +81,9 @@ export default function PebExpertiseP() {
           <SwiperSlide key={slide.id}>
             <div className="rounded-xl overflow-hidden shadow-lg bg-white flex flex-col h-full">
               {/* Image */}
-              <div className="relative w-full h-[250px] sm:h-[350px]"> {/* Increased height for mobile and desktop */}
+              <div className="relative w-full h-[250px] sm:h-[350px]">
+                {" "}
+                {/* Increased height for mobile and desktop */}
                 <img
                   src={slide.image}
                   alt={slide.title}

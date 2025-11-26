@@ -62,7 +62,6 @@ export default function ProjectSlider() {
       </h2>
 
       <div className="relative max-w-6xl mx-auto px-12">
-        {/* ✅ Swiper only mounts on client */}
         {isMounted && (
           <Swiper
             modules={[Navigation]}

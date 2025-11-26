@@ -68,7 +68,6 @@ export default function PreEngineeredProducts() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-14">
-      {/* Heading */}
       <div className="text-center mb-10">
         <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
           What We Do
@@ -105,7 +104,6 @@ export default function PreEngineeredProducts() {
           ))}
         </div>
 
-        {/* Right Content */}
         {selectedArea && (
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
             {/* Text Content */}

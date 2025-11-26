@@ -58,7 +58,6 @@ export default function Renewablesolution() {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-2xl mb-2 md:text-2xl text-[#000080]">
                   {item.title}

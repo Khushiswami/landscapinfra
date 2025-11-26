@@ -75,7 +75,6 @@ export default function Banner() {
   return (
     <section className="relative w-full h-[500px] sm:h-[380px] md:h-[85vh] lg:h-[100vh] overflow-hidden">
       {/* // <section className="relative w-full h-[500px] sm:h-[380px] md:h-[100vh] overflow-hidden"> */}
-      {/* Background Video */}
       <video
         src={activeSlide.video}
         autoPlay
@@ -88,7 +87,6 @@ export default function Banner() {
         Your browser does not support the video. {activeSlide.title}:{" "}
         {activeSlide.desc}
       </video>
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70" />
       {/* Slide Content */}
       <div className="relative z-10 flex flex-col justify-center h-full mx-auto px-6 sm:px-20 text-left ">

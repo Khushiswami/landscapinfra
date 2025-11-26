@@ -32,7 +32,6 @@ export default function CustomerStories() {
 
   return (
     <section className="w-full bg-white py-12 sm:py-14 md:py-16">
-      {/* Heading */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center mb-10 md:mb-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#000080]">
           We Help Our Customers Create a Positive Impact
@@ -72,7 +71,6 @@ export default function CustomerStories() {
               />
             </div>
 
-            {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 md:p-6">
               <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-gray-200 mb-1 sm:mb-2">
                 {story.tag}

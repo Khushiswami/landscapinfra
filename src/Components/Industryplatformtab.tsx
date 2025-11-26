@@ -132,7 +132,6 @@ export default function Industryplatformtab() {
                   ))}
                 </div>
 
-                {/* Arrows */}
                 <button
                   onClick={() => handlePrev(idx)}
                   className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white "

@@ -206,7 +206,6 @@ export default function Officespace() {
                             {project.title}
                           </div>
 
-                          {/* Overlay */}
                           <div
                             onClick={() => handleOverlayToggle(project.id)}
                             className={`absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 

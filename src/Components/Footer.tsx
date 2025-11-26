@@ -88,10 +88,10 @@ export default function Footer() {
       title: "Insights",
       external: true,
       items: [
-        { name: "Blogs", href: "/insights/reports" },
-        { name: "Brochures", href: "/insights/articles" },
-        { name: "Whitepaper", href: "/insights/case-studies" },
-        { name: "Career", href: "/insights/research" },
+        { name: "Blogs", href: "/insights" },
+        { name: "Brochures", href: "/insights" },
+        { name: "Whitepaper", href: "/insights" },
+        { name: "Career", href: "/insights" },
       ],
     },
     {
@@ -119,7 +119,6 @@ export default function Footer() {
       className="py-12 px-6 md:px-17 text-[14px] text-white"
       style={{
         backgroundColor: "#0d1d52",
-        fontFamily: `"DM Sans", Arial, sans-serif !important`,
       }}
     >
       {/* Desktop grid */}
@@ -133,7 +132,7 @@ export default function Footer() {
               )}
             </h3>
 
-            <ul className="mt-5 space-y-3">
+            <div className="mt-5 space-y-3">
               {section.items.map((item) => {
                 if (typeof item === "string") {
                   return (
@@ -202,7 +201,7 @@ export default function Footer() {
                   );
                 }
               })}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
@@ -340,14 +339,6 @@ export default function Footer() {
               Privacy
             </Link>
 
-            {/* <Link
-              href="mailto:info@Landsking Infrainfra.com"
-              className="hover:underline"
-            >
-              <a href="mailto:info@Landsking Infrainfra.com">info@Landsking Infrainfra.com</a>
-
-              info@Landsking Infrainfra.com
-            </Link> */}
             <a
               href="mailto:info@Landsking Infrainfra.com"
               className="hover:underline"

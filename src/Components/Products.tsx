@@ -69,7 +69,6 @@ export default function Products() {
       <div className="flex flex-col md:flex-row gap-6">
         {/* LEFT MENU */}
         <div className="bg-[#000080] text-white rounded-lg w-full md:w-1/4">
-          {/* Mobile Dropdown */}
           <div className="md:hidden">
             {/* Selected button */}
             <button
@@ -110,7 +109,6 @@ export default function Products() {
             )}
           </div>
 
-          {/* Desktop Sidebar */}
           <div className="hidden md:flex flex-col">
             {areas.map((area, idx) => (
               <button
@@ -131,7 +129,6 @@ export default function Products() {
           </div>
         </div>
 
-        {/* RIGHT CONTENT */}
         {selectedArea && (
           <div className="bg-white rounded-lg shadow overflow-hidden w-full md:w-3/4 mt-4 md:mt-0">
             <div className="flex flex-col md:flex-row">

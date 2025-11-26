@@ -60,7 +60,6 @@ export default function Designsolar() {
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Menu */}
         <div className="w-full md:w-1/4">
-          {/* Mobile Dropdown */}
           <div className="md:hidden mb-0">
             <button
               onClick={() => setOpen(!open)}
@@ -122,7 +121,6 @@ export default function Designsolar() {
           </div>
         </div>
 
-        {/* Right Content */}
         {selectedArea && (
           // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
           <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">

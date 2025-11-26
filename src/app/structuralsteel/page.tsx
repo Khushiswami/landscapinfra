@@ -84,7 +84,6 @@ export default function Structuralsteel() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
         <video
           autoPlay
           loop
@@ -99,9 +98,7 @@ export default function Structuralsteel() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Text */}
           <div className="text-center lg:text-left order-1">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
               Pre Engineered Buildings
@@ -113,7 +110,6 @@ export default function Structuralsteel() {
             </p>
           </div>
 
-          {/* Right Slider */}
           <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}

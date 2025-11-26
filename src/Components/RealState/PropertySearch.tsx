@@ -86,7 +86,6 @@ const PropertySearch = () => {
 
         {/* Right Filters */}
         <div>
-          {/* Tabs */}
           <div className="flex gap-8 border-b border-gray-300 mb-6">
             {TABS.map((tab) => (
               <button

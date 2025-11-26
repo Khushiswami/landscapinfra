@@ -62,7 +62,6 @@ export default function Rndservice() {
       </h2>
 
       <div className="relative   mx-auto  px-12 md:mx-23">
-        {/* ✅ Swiper only mounts on client */}
         {isMounted && (
           <Swiper
             modules={[Navigation]}
@@ -113,7 +112,6 @@ export default function Rndservice() {
           </Swiper>
         )}
 
-        {/* Left Arrow */}
         <div
           ref={prevRef}
           className="
@@ -127,7 +125,6 @@ export default function Rndservice() {
           ◀
         </div>
 
-        {/* Right Arrow */}
         <div
           ref={nextRef}
           className="

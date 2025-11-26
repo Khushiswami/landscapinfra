@@ -30,7 +30,6 @@ export default function ProgressSection() {
             priority
           />
 
-          {/* Overlay */}
           <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left p-4 sm:p-6 md:p-10 bg-black/40 backdrop-blur-[1px]">
             <p className="text-white font-semibold uppercase mb-1 text-xs sm:text-sm">
               Acting on the world’s challenges

@@ -5,14 +5,11 @@ import Footer from "../Components/Footer";
 import PebCallP from "../Components/PebCallP";
 import IndustryHeader from "./Industryheader";
 
-
-// Product interface
 interface Product {
   title: string;
   img: string;
 }
 
-// ProductCard props interface
 interface ProductCardProps {
   product: Product;
   index: number;
@@ -47,7 +44,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
 );
 
 export default function ProductPage() {
-  // Tabs
   const [activeTabProducts, setActiveTabProducts] = useState<
     "standard" | "substructural"
   >("standard");
@@ -55,17 +51,14 @@ export default function ProductPage() {
     "profile" | "color" | "materials"
   >("profile");
 
-  // Hover/active
   const [activeProductIndex, setActiveProductIndex] = useState<number | null>(
     null
   );
 
-  // View More states
   const [showAllProducts, setShowAllProducts] = useState(false);
   const [showAllSheeting, setShowAllSheeting] = useState(false);
   const [showAllAccessories, setShowAllAccessories] = useState(false);
 
-  // DATA
   const standardProducts: Product[] = [
     { title: "Single Slope", img: "/Singleslope.jpg" },
     { title: "Roof System", img: "/RoofSystem.jpg" },
@@ -118,7 +111,6 @@ export default function ProductPage() {
     { title: "Louver", img: "/Accessories/Louver.jpg" },
   ];
 
-  // Switch based on tabs
   const productList =
     activeTabProducts === "standard" ? standardProducts : substructuralProducts;
   const sheetingList =
@@ -130,7 +122,7 @@ export default function ProductPage() {
 
   return (
     <>
-      <IndustryHeader/>
+      <IndustryHeader />
       <section className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-5xl font-bold mb-6 text-center">Products</h2>
@@ -244,7 +236,6 @@ export default function ProductPage() {
         </div>
       </div>
 
-      {/* ACCESSORIES */}
       <div className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6">Accessories</h2>

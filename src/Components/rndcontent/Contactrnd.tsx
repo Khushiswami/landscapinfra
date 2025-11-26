@@ -70,7 +70,6 @@ export default function Contactrnd({
           </a>
         </div>
 
-        {/* Right Slider */}
         <div className="relative hidden md:block">
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -82,7 +81,6 @@ export default function Contactrnd({
             {testimonials.map((item, i) => (
               <SwiperSlide key={i}>
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-black/50 text-white rounded-2xl overflow-hidden relative h-[320px]">
-                  {/* Left Image */}
                   <div className="relative h-full">
                     <img
                       src={item.img}
@@ -91,7 +89,6 @@ export default function Contactrnd({
                     />
                   </div>
 
-                  {/* Right Content */}
                   <div className="p-4 flex flex-col justify-center h-full">
                     <h3 className="font-bold text-lg">{item.name}</h3>
                     <p className="text-sm text-gray-200 mb-2">

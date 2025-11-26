@@ -300,7 +300,6 @@ export default function Buildingandinfrastructure() {
     <>
       <Pebheader />
       <section className="relative  flex items-center text-white overflow-hidden md:h-screen">
-        {/* Background video */}
         <video
           autoPlay
           loop
@@ -315,9 +314,7 @@ export default function Buildingandinfrastructure() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Text */}
           <div className="text-center lg:text-left px-4 sm:px-6 lg:px-0 pt-20 sm:pt-24 lg:pt-32">
             <h1 className="text-[28px] sm:text-4xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6">
               Pre Engineered Buildings
@@ -329,7 +326,6 @@ export default function Buildingandinfrastructure() {
             </p>
           </div>
 
-          {/* Right Slider */}
           <div className="w-full relative mt-10">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -520,7 +516,6 @@ export default function Buildingandinfrastructure() {
             </div>
           </div>
 
-          {/* Right content */}
           {selectedArea && (
             <div className="bg-white rounded-lg shadow overflow-hidden w-full md:w-3/4 mt-4 md:mt-0">
               <div className="flex flex-col md:flex-row">

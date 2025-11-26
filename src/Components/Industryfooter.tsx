@@ -159,7 +159,7 @@ export default function Industryfooter() {
               )}
             </h3>
 
-            <ul className="mt-5 space-y-3">
+            <div className="mt-5 space-y-3">
               {section.items.map((item) => {
                 if (typeof item === "string") {
                   return (
@@ -228,7 +228,7 @@ export default function Industryfooter() {
                   );
                 }
               })}
-            </ul>
+            </div>
           </div>
         ))}
       </div>

@@ -89,7 +89,6 @@ export default function Pebinsight() {
 
   return (
     <div className="relative px-6 md:px-10 pb-6  md:py-10 md:mx-20">
-      {/* Heading */}
       <h1 className="text-center text-3xl font-bold my-10 text-[#000080]">
         Our Latest Insights
       </h1>

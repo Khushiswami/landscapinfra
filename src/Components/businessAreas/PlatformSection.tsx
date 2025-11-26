@@ -29,7 +29,6 @@ export default function PlatformSectionB({
 
   return (
     <section className="w-full">
-      {/* Heading */}
       <div className="max-w-4xl mx-auto px-4 pt-12 text-center">
         <h1 className="text-3xl text-[#000080] md:text-4xl font-semibold tracking-tight">
           {heading}
@@ -37,7 +36,6 @@ export default function PlatformSectionB({
         <p className="mt-4 text-base md:text-lg text-gray-600">{subheading}</p>
       </div>
 
-      {/* Tabs */}
       <div className="mt-8">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-start md:justify-center gap-6 md:gap-10 overflow-x-auto scrollbar-hide border-b border-gray-200 pb-2">
@@ -62,7 +60,6 @@ export default function PlatformSectionB({
         </div>
       </div>
 
-      {/* Content */}
       <div className="max-w-6xl mx-auto px-4">
         <div className="mt-8 relative rounded-xl overflow-hidden shadow-lg">
           <div className="relative w-full h-[340px] md:h-[460px]">

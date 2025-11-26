@@ -265,7 +265,6 @@ export default function Coldstorageandwarehouse() {
     <>
       <Pebheader />
       <section className="relative min-h-screen flex items-center text-white overflow-hidden">
-        {/* Background video */}
         <video
           autoPlay
           loop
@@ -280,9 +279,7 @@ export default function Coldstorageandwarehouse() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Text */}
           <div className="text-center lg:text-left order-1">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug mb-4 sm:mb-6 max-w-md mx-auto lg:mx-0">
               Pre Engineered Buildings
@@ -294,7 +291,6 @@ export default function Coldstorageandwarehouse() {
             </p>
           </div>
 
-          {/* Right Slider */}
           <div className="w-full relative order-2 mt-6 lg:mt-0 flex justify-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -475,7 +471,6 @@ export default function Coldstorageandwarehouse() {
             </div>
           </div>
 
-          {/* Right content */}
           {selectedArea && (
             <div className="bg-white rounded-lg shadow overflow-hidden w-full md:w-3/4 mt-4 md:mt-0">
               <div className="flex flex-col md:flex-row">
@@ -564,7 +559,6 @@ export default function Coldstorageandwarehouse() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Text Section */}
             <ul className=" list-disc space-y-4 text-gray-700 text-base leading-relaxed">
               <li>
                 <span className="font-bold">Wall:</span> PUF / EPS insulated
@@ -618,7 +612,6 @@ export default function Coldstorageandwarehouse() {
 
       {/* faqs */}
       <section className=" mx-auto px-4 py-12 md:px-13 ">
-        {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl  text-[#000080] md:text-3xl font-bold mb-2">
             Frequently Asked Questions

@@ -278,7 +278,6 @@ export default function Industriestherindustries() {
         {/* Optional dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="text-center lg:text-left order-1 mt-16 sm:mt-12 md:mt-16 lg:mt-0">
@@ -418,9 +417,7 @@ export default function Industriestherindustries() {
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Left Sidebar */}
           <div className="w-full lg:w-1/4">
-            {/* Mobile Dropdown */}
             <div className="lg:hidden mb-0">
               <button
                 onClick={() => setOpen(!open)}
@@ -462,7 +459,6 @@ export default function Industriestherindustries() {
               )}
             </div>
 
-            {/* Desktop Sidebar */}
             <div className="hidden lg:flex flex-col bg-[#000080] text-white rounded-lg pt-6 pb-6">
               {areas.map((area) => (
                 <button
@@ -478,10 +474,8 @@ export default function Industriestherindustries() {
             </div>
           </div>
 
-          {/* Right Content */}
           {selectedArea && (
             <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full border border-gray-300">
-              {/* Text Section */}
               <div className="p-6 flex flex-col justify-center w-full md:w-1/2 border-t md:border-t-0 md:border-r border-gray-300">
                 <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                   {selectedArea.subtitle}
@@ -495,7 +489,6 @@ export default function Industriestherindustries() {
                 </button>
               </div>
 
-              {/* Image Section (fills height automatically) */}
               <div className="w-full md:w-1/2 relative">
                 <img
                   src={selectedArea.image}

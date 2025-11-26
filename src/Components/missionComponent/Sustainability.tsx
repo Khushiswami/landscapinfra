@@ -19,7 +19,6 @@ export default function Sustainability() {
 
       <div className="md:mx-20 mx-auto px-4 space-y-20">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Left Image */}
           <div className="relative w-full h-[300px] md:h-[350px] rounded-lg overflow-hidden">
             <Image
               src="/company/about.webp"
@@ -63,7 +62,6 @@ export default function Sustainability() {
 
         {/* Row 2 - Text Left + Image Right */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Left Text */}
           <div>
             <h3 className="text-2xl font-bold mb-4 text-[#000080]">
               Our Impact

@@ -38,7 +38,6 @@ export default function ContactSection() {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Content */}
       <div className="relative z-10  mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center md:mx-15 lg:mx-18">
         {/* Left Content */}
         <div>
@@ -78,7 +77,6 @@ export default function ContactSection() {
           </a>
         </div>
 
-        {/* Right Slider */}
         <div className="relative hidden md:block">
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -90,7 +88,6 @@ export default function ContactSection() {
             {testimonials.map((item, i) => (
               <SwiperSlide key={i}>
                 <div className="grid grid-cols-1 md:grid-cols-2 bg-black/50 text-white rounded-2xl overflow-hidden relative h-[320px]">
-                  {/* Left Image */}
                   <div className="relative h-full">
                     <img
                       src={item.img}
@@ -99,7 +96,6 @@ export default function ContactSection() {
                     />
                   </div>
 
-                  {/* Right Content */}
                   <div className="p-4 flex flex-col justify-center h-full">
                     <h3 className="font-bold text-lg">{item.name}</h3>
                     <p className="text-sm text-gray-200 mb-2">
