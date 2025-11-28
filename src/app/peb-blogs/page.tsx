@@ -3,20 +3,17 @@
 import { useState, useEffect } from "react";
 import Footer from "yes/Components/Footer";
 import Insightbanner from "yes/Components/Insightbanner";
-import Blogs from "yes/Components/insights/blog";
+import Blogss from "yes/Components/insights/Blog";
 import Blogbanner from "yes/Components/insights/Blogbanner";
-import Navbar from "yes/Components/Navbar";
 import Pebfooter from "yes/Components/Pebfooter";
-import Pebheader from "yes/Components/Pebheader";
 import PebheaderW from "yes/Components/PebheaderW";
-import ResourcesPage from "yes/Components/Resources";
 
 export default function Pebblogs() {
   return (
     <>
       <PebheaderW />
       <Blogbanner />
-      <Blogs />
+      <Blogss />
       <Pebfooter />
     </>
   );

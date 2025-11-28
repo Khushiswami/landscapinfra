@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Search, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export default function Blogs() {
+export default function Blogss() {
   const [industry, setIndustry] = useState("All");
   const [type, setType] = useState("All");
   const [search, setSearch] = useState("");
