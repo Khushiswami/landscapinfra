@@ -57,7 +57,6 @@ export default function ResourceDetails({
             <h2 className="text-2xl font-semibold text-[#000080] mb-4">
               {item.title}
             </h2>
-
             <p className="text-gray-700 leading-relaxed mb-3">
               {item.description}
             </p>
@@ -70,6 +69,20 @@ export default function ResourceDetails({
                 <p key={index}>{line.trim()}</p>
               ))}
             </div>
+            {item.image && (
+              <img
+                src={item.image}
+                alt="Description Related"
+                className="my-6 w-full rounded-lg shadow"
+              />
+            )}
+            {item.longDescription && (
+              <div className="space-y-4 text-gray-600 mt-6">
+                {item.longDescription.split("\n").map((line, index) => (
+                  <p key={index}>{line.trim()}</p>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Right Form - 4 columns */}

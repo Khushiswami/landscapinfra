@@ -70,10 +70,10 @@ const Rndheader = () => {
         {
           title: "Resources",
           items: [
-            { label: "Blogs", href: "/blogs" },
-            { label: "Brouchers", href: "/brouchers" },
-            { label: "Whitepaper", href: "/whitepaper" },
-            { label: "Careers", href: "/careers" },
+            { label: "Blogs", href: "/rnd-blog" },
+            { label: "Brouchers", href: "/rnd-broucher" },
+            { label: "Whitepaper", href: "/rnd-whitepaper" },
+            { label: "Case Study", href: "/rnd-case-studies" },
           ],
         },
       ],

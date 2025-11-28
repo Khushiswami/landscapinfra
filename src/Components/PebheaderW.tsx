@@ -123,7 +123,16 @@ export default function PebheaderW() {
       ],
     },
     { name: "Projects", href: "/preengineredbuildingsprojects" },
-    { name: "Insights", href: "/peb-insights" },
+    {
+      name: "Insights",
+      href: "/peb-insights",
+      subItems: [
+        { name: "Blogs", href: "/peb-blogs" },
+        { name: "Brouchers", href: "/peb-brouchers" },
+        { name: "Whitepaper", href: "/peb-whitepaper" },
+        { name: "Case Study", href: "/peb-case-studies" },
+      ],
+    },
     {
       name: "About",
       href: "/pebabout/about",

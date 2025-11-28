@@ -172,28 +172,28 @@ export default function Renewableheader() {
               >
                 <div className="grid grid-cols-4 gap-6 text-center">
                   <Link
-                    href="/renewableenergy-insights"
-                    className="hover:text-[#8080FF]"
-                  >
-                    Careers
-                  </Link>
-                  <Link
-                    href="/renewableenergy-insights"
+                    href="/renewableenergy-blogs"
                     className="hover:text-[#8080FF]"
                   >
                     Blogs
                   </Link>
                   <Link
-                    href="/renewableenergy-insights"
+                    href="/renewableenergy-brouchers"
                     className="hover:text-[#8080FF]"
                   >
-                    Whitepapers
+                    Brouchers
                   </Link>
                   <Link
-                    href="/renewableenergy-insights"
+                    href="/renewableenergy-case-studies"
                     className="hover:text-[#8080FF]"
                   >
-                    Brochures
+                    Case Study
+                  </Link>
+                  <Link
+                    href="/renewableenergy-whitepaper"
+                    className="hover:text-[#8080FF]"
+                  >
+                    Whitepaper
                   </Link>
                 </div>
               </div>

@@ -408,16 +408,22 @@ export default function Navbar() {
                 className="fixed left-0 top-[85px] w-full py-10 bg-[#0a2351] text-white shadow-lg rounded-none z-50 border-t border-gray-100"
               >
                 <div className="grid grid-cols-4 gap-6 text-center">
-                  <Link href="/insights" className="hover:text-[#8080FF]">
-                    Careers
+                  <Link
+                    href="/home/case-studies"
+                    className="hover:text-[#8080FF]"
+                  >
+                    Case Study
                   </Link>
-                  <Link href="/insights" className="hover:text-[#8080FF]">
+                  <Link href="/home/blogs" className="hover:text-[#8080FF]">
                     Blogs
                   </Link>
-                  <Link href="/insights" className="hover:text-[#8080FF]">
+                  <Link
+                    href="/home/whitepaper"
+                    className="hover:text-[#8080FF]"
+                  >
                     Whitepapers
                   </Link>
-                  <Link href="/insights" className="hover:text-[#8080FF]">
+                  <Link href="/home/brouchers" className="hover:text-[#8080FF]">
                     Brochures
                   </Link>
                 </div>

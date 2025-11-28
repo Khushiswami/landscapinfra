@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Search, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export default function ResourcesPage() {
+export default function Whitepaper() {
   const [industry, setIndustry] = useState("All");
   const [type, setType] = useState("All");
   const [search, setSearch] = useState("");
@@ -15,12 +15,14 @@ export default function ResourcesPage() {
   const itemsPerPage = 6;
 
   const filtered = resources.filter((item) => {
+    const isWhitepaper = item.type === "Whitepaper";
+
     const matchesIndustry = industry === "All" || item.industry === industry;
     const matchesType = type === "All" || item.type === type;
     const matchesSearch =
       search === "" || item.title.toLowerCase().includes(search.toLowerCase());
 
-    return matchesIndustry && matchesType && matchesSearch;
+    return isWhitepaper && matchesIndustry && matchesType && matchesSearch;
   });
 
   const totalPages = Math.ceil(filtered.length / itemsPerPage);
@@ -50,7 +52,7 @@ export default function ResourcesPage() {
             value={industry}
             onChange={(e) => setIndustry(e.target.value)}
           >
-            <option>All Industries</option>
+            <option>All</option>
             <option>Solar</option>
             <option>PEB</option>
             <option>Infrastructure</option>
@@ -66,11 +68,11 @@ export default function ResourcesPage() {
             value={type}
             onChange={(e) => setType(e.target.value)}
           >
-            <option>All Resources</option>
-            <option>Blog</option>
+            <option>All</option>
+            <option>eBook</option>
             <option>Whitepaper</option>
             <option>Case Studies</option>
-            <option>Brochure</option>
+            <option>Whitepaper</option>
           </select>
         </div>
 
@@ -78,7 +80,7 @@ export default function ResourcesPage() {
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Search</h4>
           <div className="relative">
             <input
-              className="border-2 border-[#c1cbd1]  p-2  rounded-md w-full pr-12" // add right padding
+              className="border-2 border-[#c1cbd1]  p-2  rounded-md w-full pr-12"
               placeholder="Search by keyword"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -89,7 +91,9 @@ export default function ResourcesPage() {
       </div>
 
       {/* Results Count */}
-      <p className="text-gray-600 mb-4">Showing {filtered.length} results</p>
+      <p className="text-gray-600 mb-4">
+        Showing {filtered.length} Whitepapers
+      </p>
 
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -130,9 +134,7 @@ export default function ResourcesPage() {
         ))}
       </div>
 
-      {/* Pagination Controls */}
       <div className="flex justify-center items-center gap-2 mt-10 flex-wrap">
-        {/* Prev Button */}
         <button
           onClick={handlePrev}
           disabled={currentPage === 1}
@@ -141,7 +143,6 @@ export default function ResourcesPage() {
           Prev
         </button>
 
-        {/* Page Numbers */}
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <button
             key={page}
@@ -156,7 +157,6 @@ export default function ResourcesPage() {
           </button>
         ))}
 
-        {/* Next Button */}
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
