@@ -7,35 +7,32 @@ import { Search, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Blogss() {
+  // Default: Only Blog show
   const [industry, setIndustry] = useState("All");
-  const [type, setType] = useState("All");
+  const [type, setType] = useState("Blog"); // 👈 DEFAULT BLOG
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
   const itemsPerPage = 6;
 
   const filtered = resources.filter((item) => {
-    const isBlog = item.type === "Blog";
-
     const matchesIndustry = industry === "All" || item.industry === industry;
-    const matchesType = type === "All" || item.type === type;
+
+    const matchesType = type === "All" || item.type === type; // 👈 user controls this
+
     const matchesSearch =
       search === "" || item.title.toLowerCase().includes(search.toLowerCase());
 
-    return isBlog && matchesIndustry && matchesType && matchesSearch;
+    return matchesIndustry && matchesType && matchesSearch;
   });
 
   const totalPages = Math.ceil(filtered.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedItems = filtered.slice(startIndex, startIndex + itemsPerPage);
 
-  const handlePrev = () => {
-    setCurrentPage((prev) => Math.max(prev - 1, 1));
-  };
-
-  const handleNext = () => {
+  const handlePrev = () => setCurrentPage((prev) => Math.max(prev - 1, 1));
+  const handleNext = () =>
     setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-  };
 
   return (
     <section className="px-6 md:px-20 py-12">
@@ -43,12 +40,13 @@ export default function Blogss() {
 
       {/* Filters */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        {/* Industry */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">
             Industry
           </h4>
           <select
-            className="border-2 border-[#c1cbd1] p-2  rounded-md w-full"
+            className="border-2 border-[#c1cbd1] p-2 rounded-md w-full"
             value={industry}
             onChange={(e) => setIndustry(e.target.value)}
           >
@@ -61,6 +59,7 @@ export default function Blogss() {
           </select>
         </div>
 
+        {/* Type */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Type</h4>
           <select
@@ -69,18 +68,19 @@ export default function Blogss() {
             onChange={(e) => setType(e.target.value)}
           >
             <option>All</option>
+            <option>Blog</option>
             <option>eBook</option>
             <option>Whitepaper</option>
             <option>Case Studies</option>
-            <option>Blog</option>
           </select>
         </div>
 
+        {/* Search */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Search</h4>
           <div className="relative">
             <input
-              className="border-2 border-[#c1cbd1]  p-2  rounded-md w-full pr-12"
+              className="border-2 border-[#c1cbd1] p-2 rounded-md w-full pr-12"
               placeholder="Search by keyword"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -90,15 +90,14 @@ export default function Blogss() {
         </div>
       </div>
 
-      {/* Results Count */}
-      <p className="text-gray-600 mb-4">Showing {filtered.length} Blogss</p>
+      <p className="text-gray-600 mb-4">Showing {filtered.length} Results</p>
 
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {paginatedItems.map((item) => (
           <div
             key={item.id}
-            className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition bg-white flex flex-col"
+            className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition bg-white"
           >
             <Image
               src={item.image}
@@ -108,7 +107,7 @@ export default function Blogss() {
               className="w-full h-56 object-cover"
             />
 
-            <div className="p-5 flex-1">
+            <div className="p-5">
               <span className="px-3 py-1 text-xs bg-[#000080] text-white rounded-full">
                 {item.type}
               </span>
@@ -123,7 +122,7 @@ export default function Blogss() {
             <div className="p-5 flex justify-end">
               <Link
                 href={`/resources/${item.id}`}
-                className="p-2 bg-[#000080] text-white rounded-sm hover:bg-[#8080FF] transition"
+                className="p-2 bg-[#000080] text-white rounded-sm hover:bg-[#8080FF]"
               >
                 <ArrowRight size={20} />
               </Link>
@@ -132,6 +131,7 @@ export default function Blogss() {
         ))}
       </div>
 
+      {/* Pagination */}
       <div className="flex justify-center items-center gap-2 mt-10 flex-wrap">
         <button
           onClick={handlePrev}

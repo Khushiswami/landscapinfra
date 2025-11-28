@@ -8,34 +8,29 @@ import Link from "next/link";
 
 export default function Whitepaper() {
   const [industry, setIndustry] = useState("All");
-  const [type, setType] = useState("All");
+  const [type, setType] = useState("Whitepaper"); // 👈 DEFAULT SET TO WHITEPAPER
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
   const itemsPerPage = 6;
 
+  // 👇 Remove isWhitepaper so dropdown can work
   const filtered = resources.filter((item) => {
-    const isWhitepaper = item.type === "Whitepaper";
-
     const matchesIndustry = industry === "All" || item.industry === industry;
     const matchesType = type === "All" || item.type === type;
     const matchesSearch =
       search === "" || item.title.toLowerCase().includes(search.toLowerCase());
 
-    return isWhitepaper && matchesIndustry && matchesType && matchesSearch;
+    return matchesIndustry && matchesType && matchesSearch;
   });
 
   const totalPages = Math.ceil(filtered.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedItems = filtered.slice(startIndex, startIndex + itemsPerPage);
 
-  const handlePrev = () => {
-    setCurrentPage((prev) => Math.max(prev - 1, 1));
-  };
-
-  const handleNext = () => {
+  const handlePrev = () => setCurrentPage((prev) => Math.max(prev - 1, 1));
+  const handleNext = () =>
     setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-  };
 
   return (
     <section className="px-6 md:px-20 py-12">
@@ -43,14 +38,18 @@ export default function Whitepaper() {
 
       {/* Filters */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        {/* Industry */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">
             Industry
           </h4>
           <select
-            className="border-2 border-[#c1cbd1] p-2  rounded-md w-full"
+            className="border-2 border-[#c1cbd1] p-2 rounded-md w-full"
             value={industry}
-            onChange={(e) => setIndustry(e.target.value)}
+            onChange={(e) => {
+              setIndustry(e.target.value);
+              setCurrentPage(1);
+            }}
           >
             <option>All</option>
             <option>Solar</option>
@@ -61,29 +60,37 @@ export default function Whitepaper() {
           </select>
         </div>
 
+        {/* Type */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Type</h4>
           <select
             className="border-2 border-[#c1cbd1] p-2 rounded-md w-full"
             value={type}
-            onChange={(e) => setType(e.target.value)}
+            onChange={(e) => {
+              setType(e.target.value);
+              setCurrentPage(1);
+            }}
           >
             <option>All</option>
+            <option>Whitepaper</option>
             <option>eBook</option>
-            <option>Whitepaper</option>
             <option>Case Studies</option>
-            <option>Whitepaper</option>
+            <option>Brochure</option>
           </select>
         </div>
 
+        {/* Search */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Search</h4>
           <div className="relative">
             <input
-              className="border-2 border-[#c1cbd1]  p-2  rounded-md w-full pr-12"
+              className="border-2 border-[#c1cbd1] p-2 rounded-md w-full pr-12"
               placeholder="Search by keyword"
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => {
+                setSearch(e.target.value);
+                setCurrentPage(1);
+              }}
             />
             <Search className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500" />
           </div>
@@ -134,6 +141,7 @@ export default function Whitepaper() {
         ))}
       </div>
 
+      {/* Pagination */}
       <div className="flex justify-center items-center gap-2 mt-10 flex-wrap">
         <button
           onClick={handlePrev}
