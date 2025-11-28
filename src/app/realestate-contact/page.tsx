@@ -157,7 +157,6 @@ export default function Pebcontact() {
               {/* Message */}
               {msg && <p className="text-center text-green-600">{msg}</p>}
 
-              {/* Button */}
               <div className="flex justify-center">
                 <button
                   type="submit"

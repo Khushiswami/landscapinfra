@@ -55,19 +55,22 @@ export default function AboutPebP() {
 
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start z-10">
         <div className="space-y-6 flex flex-col justify-center">
-          <div className="relative rounded-lg w-full h-64 sm:h-80 md:h-[500px] overflow-hidden hover:scale-105 transition-transform duration-500">
+          <div className="relative w-full h-[360px]">
             <video
-              src="/video/peb.mp4"
-              autoPlay
-              loop
+              className="w-full h-full object-cover rounded-md shadow-lg"
+              src="/video.mp4"
               muted
+              loop
               playsInline
-              className="w-full h-full object-cover"
-            />
+              autoPlay
+            ></video>
+            {/* Caption Overlay */}
+            <div className="absolute bottom-4 left-0 w-full text-center text-white bg-black/50 p-2">
+              This is a sample caption shown directly over the video.
+            </div>
           </div>
         </div>
 
-        {/* Right Section - About Us */}
         <div className="flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
             ABOUT US

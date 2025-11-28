@@ -90,7 +90,6 @@ export default function Realabout() {
           </div>
         </div>
 
-        {/* Right Section - About Us */}
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#000080] mb-4 md:mt-9 sm:mb-6">
             ABOUT US

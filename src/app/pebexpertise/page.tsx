@@ -80,7 +80,6 @@ export default function Pebexpertise() {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div className="relative rounded-xl overflow-hidden shadow-lg group h-[500px]">
-              {/* Image */}
               <Image
                 src={slide.image}
                 alt={slide.title}
@@ -113,7 +112,6 @@ export default function Pebexpertise() {
         ))}
       </Swiper>
 
-      {/* Navigation Buttons */}
       <div className="flex justify-center gap-6 mt-0">
         <button
           ref={prevRef}

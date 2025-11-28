@@ -4,11 +4,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { IoCallOutline } from "react-icons/io5";
-import ClientP from "../Components/ClientP";
 
 import "swiper/css";
 import "swiper/css/autoplay";
-import Client from "yes/app/client/page";
 
 export default function Aboutbrand() {
   const images: string[] = [

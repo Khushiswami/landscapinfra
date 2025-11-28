@@ -113,7 +113,6 @@ export default function Solarcontact() {
                 />
               </div>
 
-              {/* Button */}
               <div className="flex justify-center">
                 <button
                   type="submit"

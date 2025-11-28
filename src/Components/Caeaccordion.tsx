@@ -1,4 +1,3 @@
-// components/TripleBottomAccordion.tsx
 "use client";
 
 import { useState } from "react";
@@ -67,9 +66,7 @@ export default function Caeaccordion() {
               className="w-full flex justify-between items-center py-4 text-left"
             >
               <div className="flex items-center space-x-2">
-                <span className="text-blue-500 font-bold md:text-3xl text-lg">
-                  {/* {index + 1 < 10 ? `0${index + 1}.` : `${index + 1}.`} */}
-                </span>
+                <span className="text-blue-500 font-bold md:text-3xl text-lg"></span>
                 <span className="text-gray-900 text-xl md:text-2xl ">
                   {item.title}
                 </span>

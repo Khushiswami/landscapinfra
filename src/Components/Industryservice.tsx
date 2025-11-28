@@ -83,7 +83,6 @@ export default function Industryservice() {
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Left Menu */}
         <div className="w-full md:w-2/4">
           <div className="md:hidden mb-0">
             <button

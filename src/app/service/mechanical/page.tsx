@@ -619,7 +619,6 @@ export default function Mechanical() {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
           <div className="w-full md:w-2/4">
             <div className="md:hidden mb-0">
               <button
@@ -814,7 +813,6 @@ export default function Mechanical() {
                 {service.title}
               </h2>
 
-              {/* Description */}
               <p className="text-gray-600  text-justify text-sm">
                 {service.description}
               </p>

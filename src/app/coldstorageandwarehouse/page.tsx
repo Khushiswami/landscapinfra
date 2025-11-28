@@ -487,7 +487,6 @@ export default function Coldstorageandwarehouse() {
                   </button>
                 </div>
 
-                {/* Image */}
                 <div className="w-full md:w-1/2">
                   <img
                     src={selectedArea.image}

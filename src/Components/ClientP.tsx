@@ -37,7 +37,7 @@ export default function Brand() {
       }}
       speed={6000}
       allowTouchMove={false}
-      className="px-4" // add padding to show borders fully
+      className="px-4"
       breakpoints={{
         320: { slidesPerView: 2, spaceBetween: 15 },
         640: { slidesPerView: 3, spaceBetween: 15 },

@@ -67,7 +67,6 @@ export default function Products() {
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
-        {/* LEFT MENU */}
         <div className="bg-[#000080] text-white rounded-lg w-full md:w-1/4">
           <div className="md:hidden">
             {/* Selected button */}
@@ -145,7 +144,6 @@ export default function Products() {
                 </button>
               </div>
 
-              {/* Image */}
               <div className="w-full md:w-1/2">
                 <img
                   src={selectedArea.image}

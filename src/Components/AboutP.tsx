@@ -24,29 +24,13 @@ export default function AboutP() {
         }}
       >
         <div className=" text-white space-y-6 relative z-10">
-          {/* <h1
-            className={`${lato.className} text-2xl md:text-[25px] font-semibold `}
-          >
-            Lands King Infra works with Clients in diverse industries around the
-            world to design, construct and maintain their capital projects.
-          </h1> */}
-          <h1
-            className="text-xl md:text-[25px] font-semibold  text-justify"
-            // style={{
-            //   fontFamily: "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
-            // }}
-          >
+          <h1 className="text-xl md:text-[25px] font-semibold  text-justify">
             &quot;Lands king Infra works with Clients in diverse industries
             around the world to design, construct and maintain their capital
             projects.&quot;
           </h1>
 
-          <p
-            className="text-[15px] md:text-[16px] font-[500px] text-white text-justify"
-            // style={{
-            //   fontFamily: "'DM Sans', Arial, sans-serif",
-            // }}
-          >
+          <p className="text-[15px] md:text-[16px] font-[500px] text-white text-justify">
             Landsking Infra is one of India’s fastest growing companies as an
             Industrial Solution Provider. It works on engineering, procurement,
             construction (EPC) and maintenance companies.

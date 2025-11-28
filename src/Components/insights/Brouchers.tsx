@@ -36,9 +36,7 @@ export default function Brouchers() {
     <section className="px-6 md:px-20 py-12">
       <h1 className="text-3xl font-bold text-[#000080] mb-10">Insights</h1>
 
-      {/* Filters */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        {/* Industry */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">
             Industry
@@ -60,7 +58,6 @@ export default function Brouchers() {
           </select>
         </div>
 
-        {/* Type */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Type</h4>
           <select
@@ -79,7 +76,6 @@ export default function Brouchers() {
           </select>
         </div>
 
-        {/* Search */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Search</h4>
           <div className="relative">
@@ -97,10 +93,8 @@ export default function Brouchers() {
         </div>
       </div>
 
-      {/* Results Count */}
       <p className="text-gray-600 mb-4">Showing {filtered.length} Results</p>
 
-      {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {paginatedItems.map((item) => (
           <div
@@ -139,7 +133,6 @@ export default function Brouchers() {
         ))}
       </div>
 
-      {/* Pagination */}
       <div className="flex justify-center items-center gap-2 mt-10 flex-wrap">
         <button
           onClick={handlePrev}

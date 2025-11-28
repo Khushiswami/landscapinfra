@@ -5,7 +5,6 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 export default function LeadershipBanner() {
   return (
     <section className="relative w-full">
-      {/* Hero Background */}
       <div className="relative h-[350px] w-full">
         <Image
           src="/company/about.webp"
@@ -16,7 +15,6 @@ export default function LeadershipBanner() {
         />
         <div className="absolute inset-0 bg-black/40 z-10"></div>
 
-        {/* Hero Content (Left aligned) */}
         <div className="absolute inset-0 z-20 flex flex-col justify-center items-start text-left text-white px-8 md:px-16">
           <h2 className="text-4xl font-bold">Leadership</h2>
           <p className="mt-2 max-w-2xl text-lg tracking-wide">
@@ -26,9 +24,7 @@ export default function LeadershipBanner() {
         </div>
       </div>
 
-      {/* Leader Cards */}
       <div className="max-w-6xl mx-auto -mt-24 relative z-30 grid md:grid-cols-2 gap-6 px-4">
-        {/* Card 1 */}
         <div className="bg-[#F4F6F8] shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center gap-6">
           <Image
             src="/company/user.webp"
@@ -69,7 +65,6 @@ export default function LeadershipBanner() {
           </div>
         </div>
 
-        {/* Card 2 */}
         <div className="bg-[#F4F6F8] shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center gap-6">
           <Image
             src="/company/user.webp"

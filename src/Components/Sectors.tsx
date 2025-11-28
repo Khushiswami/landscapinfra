@@ -115,7 +115,6 @@ export default function Sectors() {
                   style={{ minWidth: `${100 / itemsPerView}%` }}
                 >
                   <div className="relative group overflow-hidden rounded-lg cursor-pointer">
-                    {/* Image */}
                     <Image
                       src={sector.image}
                       alt={sector.title}

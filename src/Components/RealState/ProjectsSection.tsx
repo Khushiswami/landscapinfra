@@ -96,7 +96,6 @@ export default function ProjectsSection() {
           ))}
         </Swiper>
 
-        {/* Navigation buttons */}
         <div className="custom-prev absolute left-2 md:-left-10 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"

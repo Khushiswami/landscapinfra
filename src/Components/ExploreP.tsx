@@ -49,7 +49,6 @@ export default function ExploreP() {
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Left Menu */}
         <div className="bg-[#000080] text-white rounded-lg flex flex-col w-full md:w-1/4">
           {areas.map((area, idx) => (
             <button
@@ -71,7 +70,6 @@ export default function ExploreP() {
 
         {selectedArea && (
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-            {/* Text Content */}
             <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
               <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
@@ -87,7 +85,6 @@ export default function ExploreP() {
               </button>
             </div>
 
-            {/* Image */}
             <div className="w-full md:w-1/2">
               <img
                 src={selectedArea.image}

@@ -29,7 +29,6 @@ const testimonials = [
 export default function Solarcontact() {
   return (
     <div className="relative text-white ">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/product/s3.jpg')" }}

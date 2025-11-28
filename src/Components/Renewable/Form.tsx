@@ -23,7 +23,6 @@ const Form = () => {
   return (
     <section className="w-full bg-gray-50 py-12 px-6 md:px-22 lg:px-28">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-[30%_70%] gap-10 items-start">
-        {/* Left Text */}
         <div className="md:pt-20">
           <h2 className="text-2xl md:text-3xl font-light text-[#000080] leading-snug">
             Power Your Future

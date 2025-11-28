@@ -109,7 +109,7 @@ export default function Banner() {
               className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-[18px]"
             >
               <IoIosArrowForward className="w-5 h-5 text-[#000080]" />
-              <span>Start now</span>
+              <span className="text-lg">Start now</span>
             </button>
           </motion.div>
         </AnimatePresence>

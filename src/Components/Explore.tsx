@@ -6,9 +6,9 @@ import {
   Columns,
   Home,
   Building2,
-  Activity, // for sports complexes
-  PlusCircle, // for hospitals
-  Users, // for stadiums/crowd
+  Activity,
+  PlusCircle,
+  Users,
 } from "lucide-react";
 
 const solutions = [
@@ -85,7 +85,6 @@ export default function Explore() {
                 </span>
               </p>
 
-              {/* Link */}
               <a
                 href="#"
                 className="text-sm text-gray-800 group-hover:text-white underline transition font-light"

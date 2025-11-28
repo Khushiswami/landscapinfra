@@ -33,7 +33,6 @@ export default function ContactSectionB({
 }: ContactSectionProps) {
   return (
     <div className="relative text-white pt-6 ">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}

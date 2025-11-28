@@ -609,7 +609,6 @@ export default function Peb() {
             ))}
           </div>
 
-          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}

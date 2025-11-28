@@ -93,7 +93,6 @@ export default function Pebinsight() {
         Our Latest Insights
       </h1>
 
-      {/* Swiper */}
       <Swiper
         modules={[Navigation]}
         spaceBetween={20}

@@ -8,13 +8,12 @@ import Link from "next/link";
 
 export default function Casestudy() {
   const [industry, setIndustry] = useState("All");
-  const [type, setType] = useState("Case Studies"); // 👈 DEFAULT SET
+  const [type, setType] = useState("Case Studies");
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
   const itemsPerPage = 6;
 
-  // 👇 NO isCaseStudies — dropdown will work now
   const filtered = resources.filter((item) => {
     const matchesIndustry = industry === "All" || item.industry === industry;
     const matchesType = type === "All" || item.type === type;
@@ -36,9 +35,7 @@ export default function Casestudy() {
     <section className="px-6 md:px-20 py-12">
       <h1 className="text-3xl font-bold text-[#000080] mb-10">Insights</h1>
 
-      {/* Filters */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        {/* Industry */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">
             Industry
@@ -60,7 +57,6 @@ export default function Casestudy() {
           </select>
         </div>
 
-        {/* Type */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Type</h4>
           <select
@@ -72,14 +68,13 @@ export default function Casestudy() {
             }}
           >
             <option>All</option>
-            <option>Case Studies</option> {/* 👈 Correct type */}
+            <option>Case Studies</option>
             <option>eBook</option>
             <option>Whitepaper</option>
             <option>Brochure</option>
           </select>
         </div>
 
-        {/* Search */}
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">Search</h4>
           <div className="relative">
@@ -101,7 +96,6 @@ export default function Casestudy() {
         Showing {filtered.length} Case Studies
       </p>
 
-      {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {paginatedItems.map((item) => (
           <div
@@ -140,7 +134,6 @@ export default function Casestudy() {
         ))}
       </div>
 
-      {/* Pagination */}
       <div className="flex justify-center items-center gap-2 mt-10 flex-wrap">
         <button
           onClick={handlePrev}

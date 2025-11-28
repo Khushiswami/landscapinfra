@@ -31,10 +31,8 @@ export default function TimelineTabs() {
       </div>
 
       <section className="space-y-16">
-        {/* Tab 1 */}
         {activeTab === 0 && (
           <>
-            {/* Row Layout */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <Image
@@ -58,7 +56,6 @@ export default function TimelineTabs() {
                 </p>
               </div>
             </div>
-            {/* Row Layout */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-gray-500 font-semibold uppercase mb-2">
@@ -83,7 +80,6 @@ export default function TimelineTabs() {
               </div>
             </div>
 
-            {/* Full Width Box */}
             <div className="bg-gray-100 rounded-lg p-8 text-center">
               <p className="text-gray-500 font-semibold uppercase mb-2">
                 Year 1981 –
@@ -123,7 +119,6 @@ export default function TimelineTabs() {
           </>
         )}
 
-        {/* Tab 2 */}
         {activeTab === 1 && (
           <>
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -151,7 +146,6 @@ export default function TimelineTabs() {
             </div>
             <section className="w-full mx-auto px-4">
               <div className="grid md:grid-cols-4 gap-6 items-stretch">
-                {/* Left Card - col-span-1 */}
                 <div className="bg-gray-100 rounded-lg p-8 shadow-sm md:col-span-1 h-full flex flex-col">
                   <p className="text-gray-500 font-semibold uppercase mb-2">
                     Year 1994
@@ -166,7 +160,6 @@ export default function TimelineTabs() {
                   </p>
                 </div>
 
-                {/* Right Card - col-span-3 */}
                 <div className="bg-gray-100 rounded-lg p-8 shadow-sm md:col-span-3 h-full flex flex-col">
                   <p className="text-gray-500 font-semibold uppercase mb-2">
                     Year 1995

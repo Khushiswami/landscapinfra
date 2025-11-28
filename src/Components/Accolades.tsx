@@ -49,7 +49,6 @@ export default function Accolades() {
         <div className="w-16 h-1 bg-[#000080] mx-auto mt-3 rounded-full" />
       </div>
 
-      {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation={{
@@ -82,14 +81,12 @@ export default function Accolades() {
                 {card.title}
               </h3>
 
-              {/* Description */}
               <p className="text-gray-600 text-sm  text-justify">{card.desc}</p>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Navigation Buttons */}
       <div className="flex justify-center gap-4 sm:gap-6 mt-8">
         <button className="custom-prev bg-[#000080] rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-white text-lg hover:bg-[#0000a0] transition-colors">
           ‹

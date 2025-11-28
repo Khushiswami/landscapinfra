@@ -122,18 +122,18 @@ export default function Industrysectors() {
             navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             loop={true}
-            centeredSlides={false} // default false
+            centeredSlides={false}
             breakpoints={{
               0: {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
               640: {
-                slidesPerView: 2, // ✅ iPad Mini / iPad Air / Tablets
+                slidesPerView: 2,
                 spaceBetween: 16,
               },
               1024: {
-                slidesPerView: 3, // ✅ Desktop/Laptop
+                slidesPerView: 3,
                 spaceBetween: 24,
               },
             }}
@@ -155,7 +155,6 @@ export default function Industrysectors() {
                           className="object-cover w-full h-full rounded-lg"
                         />
 
-                        {/* Bottom title bar */}
                         <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-md font-semibold">
                           {project.title}
                         </div>

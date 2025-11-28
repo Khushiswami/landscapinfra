@@ -93,7 +93,6 @@ export default function ExpertiseP() {
 
   return (
     <section className="pt-5 pb-10  md:py-12 px-6 bg-white mx-0 md:mx-1 lg:mx-1 md:px-17">
-      {/* Heading + Arrows */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mx-auto mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center">
           Our Expertise

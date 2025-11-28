@@ -74,7 +74,6 @@ const PropertySearch = () => {
   return (
     <section className="w-full bg-gray-50 py-12 px-6 lg:px-22 md:px-15">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-[30%_70%] gap-10 items-start">
-        {/* Left Text */}
         <div>
           <h2 className="text-2xl md:text-3xl font-light text-[#000080] leading-snug">
             Find the most <br />
@@ -213,7 +212,6 @@ const PropertySearch = () => {
             {/* ---------------- RENT TAB ---------------- */}
             {activeTab === "RENT" && (
               <>
-                {/* Type */}
                 <div>
                   <label className="block text-gray-600 text-sm mb-1 flex items-center gap-1">
                     <Building2 size={16} /> Type

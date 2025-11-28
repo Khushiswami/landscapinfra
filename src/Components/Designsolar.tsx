@@ -58,7 +58,6 @@ export default function Designsolar() {
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Left Menu */}
         <div className="w-full md:w-1/4">
           <div className="md:hidden mb-0">
             <button
@@ -101,8 +100,6 @@ export default function Designsolar() {
             )}
           </div>
 
-          {/* Desktop Menu */}
-          {/* <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg p-3"> */}
           <div className="hidden md:flex flex-col bg-[#000080] text-white rounded-lg pt-[27px] pb-[27px] px-[5px]">
             {areas.map((area, idx) => (
               <button
@@ -122,7 +119,6 @@ export default function Designsolar() {
         </div>
 
         {selectedArea && (
-          // *** CHANGE HERE: flex-col-reverse on mobile, md:flex-row on desktop ***
           <div className="flex flex-col-reverse md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
             <div
               className="
@@ -145,7 +141,6 @@ export default function Designsolar() {
               </button>
             </div>
 
-            {/* Image */}
             <div className="w-full md:w-1/2">
               <img
                 src={selectedArea.image}

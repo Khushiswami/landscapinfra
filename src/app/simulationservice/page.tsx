@@ -265,7 +265,7 @@ export default function Simulationservice() {
               navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               loop={true}
-              centeredSlides={false} // default false
+              centeredSlides={false}
               breakpoints={{
                 0: { slidesPerView: 1, spaceBetween: 0, centeredSlides: false },
                 640: {
@@ -302,7 +302,6 @@ export default function Simulationservice() {
                             className="object-cover w-full h-full rounded-lg"
                           />
 
-                          {/* Bottom title bar */}
                           <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 md:px-0 text-center text-sm font-semibold">
                             {project.title}
                           </div>

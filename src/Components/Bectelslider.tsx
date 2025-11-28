@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
-// right side cards
 const cards = [
   {
     img: "/cards/nuclear.jpg",
@@ -42,7 +41,6 @@ export default function Bectelslider() {
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center md:items-start h-full px-6 md:px-12 lg:px-20">
-        {/* Left Text */}
         <div className="text-left text-white max-w-xl mt-28 md:mt-48">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
             We Live for a Challenge
@@ -54,7 +52,6 @@ export default function Bectelslider() {
           </p>
         </div>
 
-        {/* Right Floating Card Slider */}
         <div className="mt-10 md:mt-48">
           <div className="relative w-[260px] sm:w-[300px] bg-white rounded-xl shadow-xl overflow-hidden">
             <img
@@ -79,7 +76,6 @@ export default function Bectelslider() {
               ))}
             </div>
 
-            {/* Nav arrows */}
             <button
               onClick={prev}
               className="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"

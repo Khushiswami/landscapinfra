@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Insightbanner() {
   return (
     <section className="w-full h-[300px] md:h-[400px] relative flex items-center justify-center">
-      {/* Background Image */}
       <Image
         src="/realstate.png"
         alt="Insights "
@@ -18,7 +17,6 @@ export default function Insightbanner() {
         Insights
       </h1>
 
-      {/* Optional dark overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
     </section>
   );

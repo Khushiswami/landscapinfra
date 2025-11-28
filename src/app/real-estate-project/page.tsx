@@ -267,7 +267,6 @@ export default function Realstateprojects() {
                 className="relative cursor-pointer overflow-hidden rounded-md shadow-md group"
                 onClick={() => handleClick(id)}
               >
-                {/* Image */}
                 <img
                   src={img}
                   alt={location}

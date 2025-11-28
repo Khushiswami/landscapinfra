@@ -40,14 +40,12 @@ export default function TotalSolutionP() {
           </p>
         </div>
 
-        {/* Cards */}
         <div className="grid gap-8 md:grid-cols-3">
           {items.map((item, idx) => (
             <div
               key={idx}
               className="bg-[#f2f2f2] rounded-lg overflow-hidden flex flex-col shadow-md hover:shadow-lg transition-shadow duration-300 group"
             >
-              {/* Image */}
               <div className="relative w-full h-68">
                 <Image
                   src={item.img}

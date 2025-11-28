@@ -64,7 +64,6 @@ export default function Industrybanner() {
   const [showDropdown, setShowDropdown] = useState(false);
   const router = useRouter();
 
-  // Optional auto background rotation
   useEffect(() => {
     const interval = setInterval(() => {
       const nextIndex = (options.indexOf(selected) + 1) % options.length;

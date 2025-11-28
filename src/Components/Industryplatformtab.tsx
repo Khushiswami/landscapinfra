@@ -146,7 +146,6 @@ export default function Industryplatformtab() {
                 </button>
               </div>
 
-              {/* Text Content */}
               <div className="w-full md:w-1/2">
                 <h2 className="text-xl md:text-3xl font-bold mb-4 text-[#000080]">
                   {section.title}

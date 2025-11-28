@@ -64,7 +64,6 @@ export default function Planttabs() {
               isEven ? "md:flex-row" : "md:flex-row-reverse"
             } items-center overflow-hidden rounded-2xl `}
           >
-            {/* Background Image */}
             <div className="w-full md:w-2/3 h-[300px] md:h-[450px] relative">
               <Image
                 src={section.image}

@@ -18,9 +18,7 @@ export default function AcquisitionsSection() {
         </p>
       </div>
 
-      {/* Acquisition Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Card 1 */}
         <div className="bg-white rounded-xl shadow p-6 relative flex flex-col">
           <span className="absolute -top-3 left-6 bg-[#000080] text-white text-xs font-bold px-3 py-1 rounded">
             2019
@@ -51,7 +49,6 @@ export default function AcquisitionsSection() {
           </a>
         </div>
 
-        {/* Card 2 */}
         <div className="bg-white rounded-xl shadow p-6 flex flex-col">
           <Image
             src="/company/about.webp"

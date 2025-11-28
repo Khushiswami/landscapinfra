@@ -49,7 +49,6 @@ export default function MissionBanner() {
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
         className="relative z-30 -mt-16 sm:-mt-20 max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-6 sm:p-10 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8"
       >
-        {/* Left Card */}
         <div className="bg-[#F4F6F8] p-6 rounded-xl flex flex-col items-center text-center hover:shadow-lg transition">
           <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-[#000080] text-white text-3xl sm:text-4xl mb-4 shadow-md">
             <FaBullseye />
@@ -60,7 +59,6 @@ export default function MissionBanner() {
           </p>
         </div>
 
-        {/* Right Card */}
         <div className="col-span-2 bg-[#F4F6F8] p-6 rounded-xl">
           <h3 className="text-xl sm:text-2xl font-bold mb-4 text-[#000080]">
             We Are Purpose Driven
@@ -163,7 +161,6 @@ export default function MissionBanner() {
           </div>
         </div>
 
-        {/* Cards */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
           {[
             {

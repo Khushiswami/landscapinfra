@@ -17,7 +17,6 @@ export default function Construct() {
 
   return (
     <section className="relative w-full h-[500px] sm:h-[380px] md:h-[70vh] overflow-hidden flex items-center justify-center text-center">
-      {/* Background Image */}
       <img
         src={activeSlide.image}
         alt={activeSlide.title}

@@ -40,7 +40,6 @@ export default function TotalSolutionP() {
           </p>
         </div>
 
-        {/* Cards */}
         <div className="grid gap-8 md:grid-cols-3">
           {items.map((item, idx) => (
             <div

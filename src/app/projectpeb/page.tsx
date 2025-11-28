@@ -137,7 +137,6 @@ export default function Projectpeb() {
         ))}
       </Swiper>
 
-      {/* Navigation Buttons */}
       <div className="flex justify-center gap-6 mt-0">
         <button
           ref={prevRef}

@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function Sustainability() {
   return (
     <section className="w-full bg-white md:py-16">
-      {/* Top Heading */}
       <div className="max-w-5xl mx-auto text-center px-4 mb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#000080]">
           We Help Businesses and People Innovate Sustainably to Address the

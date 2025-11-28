@@ -324,7 +324,6 @@ export default function Solutionservice() {
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {/* Card 1 */}
                 <div className="flex flex-col items-start">
                   <div className="bg-[#000080] text-white p-4 rounded">
                     <ShieldCheck className="w-8 h-8" />
@@ -338,7 +337,6 @@ export default function Solutionservice() {
                   </p>
                 </div>
 
-                {/* Card 2 */}
                 <div className="flex flex-col items-start">
                   <div className="bg-[#000080] text-white p-4 rounded">
                     <Layers className="w-8 h-8" />

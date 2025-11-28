@@ -16,7 +16,6 @@ export default function MediaP() {
           </h3>
 
           <div className="grid sm:grid-cols-2 gap-6">
-            {/* Card 1 */}
             <div className="border-[#bfbbbb] rounded-lg shadow-sm p-4 hover:shadow-lg transition">
               <Image
                 src="/Infrastructure.jpg"
@@ -32,7 +31,6 @@ export default function MediaP() {
               </p>
             </div>
 
-            {/* Card 2 */}
             <div className="border-[#bfbbbb] rounded-lg shadow-sm p-4 hover:shadow-lg transition">
               <Image
                 src="/preimages/pref.jpg"

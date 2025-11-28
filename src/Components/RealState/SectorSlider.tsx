@@ -112,7 +112,6 @@ export default function SectorSlider() {
                             className="object-cover w-full h-full rounded-lg"
                           />
 
-                          {/* Bottom title bar */}
                           <div className="absolute bottom-0 w-full bg-[#000080] text-white py-2 px-4 text-center text-sm font-semibold">
                             {project.title}
                           </div>

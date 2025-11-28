@@ -59,7 +59,6 @@ export default function Inds() {
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        {/* Left Menu */}
         <div className="w-full lg:w-1/4">
           {/* Mobile Dropdown Only */}
           <div className="lg:hidden mb-0">

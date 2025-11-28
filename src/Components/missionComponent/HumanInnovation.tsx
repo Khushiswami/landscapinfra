@@ -18,9 +18,7 @@ export default function HumanInnovation() {
         </p>
       </div>
 
-      {/* Cards Section 1 */}
       <div className="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-6xl mx-auto px-4 items-stretch">
-        {/* Card 1 */}
         <div className="relative md:col-span-2 rounded-lg overflow-hidden flex min-h-[350px] sm:min-h-[420px] md:min-h-[500px]">
           <Image
             src="/company/about.webp"
@@ -49,7 +47,6 @@ export default function HumanInnovation() {
           </div>
         </div>
 
-        {/* Card 2 */}
         <div className="relative md:col-span-4 rounded-lg overflow-hidden flex min-h-[350px] sm:min-h-[420px] md:min-h-[500px]">
           <Image
             src="/company/about.webp"
@@ -82,7 +79,6 @@ export default function HumanInnovation() {
 
       {/* Cards Section 2 */}
       <div className="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-6xl mx-auto px-4 items-stretch mt-8">
-        {/* Card 2 */}
         <div className="relative md:col-span-4 rounded-lg overflow-hidden flex min-h-[350px] sm:min-h-[420px] md:min-h-[500px]">
           <Image
             src="/company/about.webp"
@@ -112,7 +108,6 @@ export default function HumanInnovation() {
           </div>
         </div>
 
-        {/* Card 1 */}
         <div className="relative md:col-span-2 rounded-lg overflow-hidden flex min-h-[350px] sm:min-h-[420px] md:min-h-[500px]">
           <Image
             src="/company/about.webp"

@@ -43,7 +43,6 @@ export default function Rndplatform() {
     left: 0,
   });
 
-  // Properly typed ref array
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const router = useRouter();
 
@@ -55,7 +54,6 @@ export default function Rndplatform() {
         left: el.offsetLeft,
       });
 
-      // scroll into view for mobile
       el.scrollIntoView({
         behavior: "smooth",
         inline: "center",

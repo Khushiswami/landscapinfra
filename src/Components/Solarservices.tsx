@@ -94,7 +94,6 @@ export default function Solarservices() {
         Solar Solutions Services
       </h2>
 
-      {/* Cards */}
       <div
         className={`grid gap-6 w-full mx-auto mb-6 ${
           itemsPerPage === 1 ? "grid-cols-1" : "grid-cols-3"

@@ -39,7 +39,6 @@ export default function ResourcesPage() {
     <section className="px-6 md:px-20 py-12">
       <h1 className="text-3xl font-bold text-[#000080] mb-10">Insights</h1>
 
-      {/* Filters */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         <div>
           <h4 className="text-sm font-semibold mb-2 text-[#000080]">
@@ -88,10 +87,8 @@ export default function ResourcesPage() {
         </div>
       </div>
 
-      {/* Results Count */}
       <p className="text-gray-600 mb-4">Showing {filtered.length} results</p>
 
-      {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {paginatedItems.map((item) => (
           <div

@@ -148,7 +148,6 @@ export default function Industryfooter() {
         // fontFamily: `"DM Sans", Arial, sans-serif !important`,
       }}
     >
-      {/* Desktop grid */}
       <div className="hidden md:grid grid-cols-4 gap-10  mx-auto">
         {sections.map((section) => (
           <div key={section.title}>
@@ -325,9 +324,7 @@ export default function Industryfooter() {
       </div>
 
       <div className=" mx-auto px-4">
-        {/* Top section */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-white/20 pb-6 mb-6">
-          {/* Logo */}
           <div className="flex items-center space-x-3  mt-5 mb-4 md:mb-0">
             {/* <Link href="/" className="flex items-center">
               <img src="/blank.jpg" alt="Logo" className="h-15 w-auto" />
@@ -335,7 +332,6 @@ export default function Industryfooter() {
             <span className="font-bold text-lg">Landsking Infra </span>
           </div>
 
-          {/* Social Icons */}
           <div className="flex space-x-4">
             <Link href="#" aria-label="X">
               <FaXTwitter className="text-xl hover:text-[#8080FF]" />
@@ -355,9 +351,7 @@ export default function Industryfooter() {
           </div>
         </div>
 
-        {/* Bottom section */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between text-sm space-y-4 md:space-y-0">
-          {/* Links */}
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             <Link href="#" className="hover:underline">
               Copyright & Terms
@@ -374,7 +368,6 @@ export default function Industryfooter() {
             </Link>
           </div>
 
-          {/* Rights */}
           <div className="text-gray-300">
             © 2025 Landsking Infra Pvt. Limited. All Rights Reserved.
           </div>

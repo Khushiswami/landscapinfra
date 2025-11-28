@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { CountUp } from "countup.js";
 import { Ruler, Building2, Globe, Factory } from "lucide-react";
@@ -64,7 +63,6 @@ export default function Industryabout() {
           </div>
         </div>
 
-        {/* Right Section - About Us */}
         <div className="flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
             ABOUT US

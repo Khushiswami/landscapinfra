@@ -6,7 +6,6 @@ export default function ProgressSection() {
   return (
     <section className="w-full mx-auto px-4 sm:px-6 md:px-10 py-10 md:py-16">
       <div className="grid grid-cols-1  gap-3 lg:grid-cols-4 lg:gap-6 items-stretch">
-        {/* Left Card */}
         <div className="bg-gray-100 rounded-xl p-5 sm:p-6 md:p-8 shadow-sm flex flex-col justify-center text-center md:text-left">
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 leading-snug text-[#000080]">
             Addressing today’s societal <br className="hidden sm:block" /> and
@@ -19,7 +18,6 @@ export default function ProgressSection() {
           </p>
         </div>
 
-        {/* Right Card */}
         <div className="relative md:col-span-3 rounded-xl overflow-hidden flex flex-col">
           <Image
             src="/company/about.webp"

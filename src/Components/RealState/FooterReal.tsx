@@ -24,7 +24,6 @@ export default function FooterReal() {
               height={80}
             />
 
-            {/* Social Icons */}
             <div className="flex items-center gap-4">
               <a className="p-2 rounded-full bg-sky-600 text-white">
                 <FaLinkedinIn size={22} />

@@ -686,7 +686,6 @@ const Page = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Menu */}
           <div className="w-full md:w-2/4">
             <div className="md:hidden mb-0">
               <button
@@ -869,7 +868,6 @@ const Page = () => {
             ))}
           </div>
 
-          {/* Navigation Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <button
               onClick={prevSlide}
@@ -919,7 +917,6 @@ const Page = () => {
                 {service.title}
               </h2>
 
-              {/* Description */}
               <p className="text-gray-600 text-justify text-sm">
                 {service.description}
               </p>

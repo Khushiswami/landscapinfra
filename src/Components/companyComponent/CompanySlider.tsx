@@ -145,7 +145,6 @@ export default function CompanySlider({
               </SwiperSlide>
             ))}
 
-            {/* Navigation Buttons */}
             <div
               ref={prevRef}
               className="absolute top-1/2 left-2 -translate-y-1/2 bg-white text-[#000080] w-12 h-12 flex items-center justify-center cursor-pointer shadow-md hover:bg-gray-100 transition z-10 rounded-full"

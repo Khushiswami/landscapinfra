@@ -143,7 +143,6 @@ export default function RndServicesNew() {
 
   return (
     <section className="py-12 px-6 bg-white mx-0  md:px-20">
-      {/* Heading + Arrows */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mx-auto mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center">
           Cost-Effective Engineering Services

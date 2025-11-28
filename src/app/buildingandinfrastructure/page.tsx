@@ -532,7 +532,6 @@ export default function Buildingandinfrastructure() {
                   </button>
                 </div>
 
-                {/* Image */}
                 <div className="w-full md:w-1/2">
                   <Image
                     src={selectedArea.image}

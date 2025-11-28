@@ -1,4 +1,3 @@
-// app/components/InnovationImpact.tsx
 "use client";
 
 import { FaPlane, FaUsers, FaCar } from "react-icons/fa";
@@ -50,7 +49,6 @@ export default function InnovationImpact() {
         </p>
       </div>
 
-      {/* Stats */}
       <div className="grid md:grid-cols-4 gap-10 max-w-6xl mx-auto text-center">
         {stats.map((item) => (
           <div key={item.id} className="flex flex-col items-center">
@@ -65,7 +63,6 @@ export default function InnovationImpact() {
         ))}
       </div>
 
-      {/* Button */}
       <div className="text-center mt-12">
         <button className="px-6 py-2 border border-[#000080] text-[#000080] font-medium rounded-full hover:bg-black hover:border-black hover:text-white transition">
           Learn more facts

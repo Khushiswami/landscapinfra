@@ -42,7 +42,6 @@ export default function Industryplatform() {
     left: 0,
   });
 
-  // Properly typed ref array
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const router = useRouter();
 
@@ -54,7 +53,6 @@ export default function Industryplatform() {
         left: el.offsetLeft,
       });
 
-      // scroll into view for mobile
       el.scrollIntoView({
         behavior: "smooth",
         inline: "center",

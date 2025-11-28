@@ -79,7 +79,6 @@ export default function Renewableabout() {
           </div>
         </div>
 
-        {/* Right Section - About Us */}
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-6">
             Building Tomorrow’s Energy Infrastructure — Today.

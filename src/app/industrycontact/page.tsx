@@ -113,7 +113,6 @@ export default function Industrycontact() {
                 />
               </div>
 
-              {/* Button */}
               <div className="flex justify-center">
                 <button
                   type="submit"

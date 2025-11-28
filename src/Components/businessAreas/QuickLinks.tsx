@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import { ArrowRight } from "lucide-react"; // arrow ke liye
+import { ArrowRight } from "lucide-react";
 
 type QuickLink = {
   title: string;

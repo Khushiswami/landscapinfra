@@ -5,7 +5,6 @@ import { ArrowRight } from "lucide-react";
 export default function BuildHistory() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
-      {/* Left Side */}
       <div className="space-y-6">
         <h2 className="text-4xl md:text-5xl font-semibold text-gray-800">
           Who we are

@@ -35,7 +35,6 @@ export default function PreEngineeredProducts({
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Left Menu */}
         <div className="w-full md:w-1/4">
           <div className="md:hidden mb-4 bg-[#000080]">
             <button
@@ -103,7 +102,6 @@ export default function PreEngineeredProducts({
 
         {selectedArea && (
           <div className="flex flex-col md:flex-row bg-white rounded-lg shadow overflow-hidden w-full">
-            {/* Text Content */}
             <div className="p-6 flex flex-col justify-center w-full md:w-1/2">
               <h3 className="text-2xl font-semibold text-[#000080] mb-3">
                 {selectedArea.subtitle}
@@ -117,7 +115,6 @@ export default function PreEngineeredProducts({
               </button>
             </div>
 
-            {/* Image */}
             <div className="w-full md:w-1/2">
               <img
                 src={selectedArea.image}

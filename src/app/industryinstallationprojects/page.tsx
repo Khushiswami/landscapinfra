@@ -297,7 +297,6 @@ export default function Industryinstallationprojects() {
                 className="relative cursor-pointer overflow-hidden rounded-md shadow-md group"
                 onClick={() => handleClick(id)}
               >
-                {/* Image */}
                 <Image
                   src={img}
                   alt={location}

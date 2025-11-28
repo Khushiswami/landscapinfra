@@ -1,4 +1,3 @@
-// app/components/CustomerStories.tsx
 import Image from "next/image";
 import { FaPlayCircle } from "react-icons/fa";
 
@@ -54,14 +53,12 @@ export default function CustomerStories() {
         </a>
       </div>
 
-      {/* Cards */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {stories.map((story) => (
           <div
             key={story.id}
             className="relative rounded-lg overflow-hidden group shadow-md hover:shadow-lg transition"
           >
-            {/* Image */}
             <div className="relative w-full h-[240px] sm:h-[300px] md:h-[340px]">
               <Image
                 src={story.image}

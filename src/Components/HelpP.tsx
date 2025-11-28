@@ -42,7 +42,6 @@ export default function HelpP() {
           <button className="text-blue-600 hover:underline">View All</button>
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           {topics.map((topic, index) => (
             <div
