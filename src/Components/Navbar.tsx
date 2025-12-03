@@ -12,17 +12,184 @@ import {
 } from "@heroicons/react/24/outline";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
+const expertiseData: {
+  [key: string]: { items: { name: string; image: string; url: string }[] };
+} = {
+  "Industry Installation": {
+    items: [
+      {
+        name: "Fire & Saftey",
+        image: "/industry/fire safety.jpg",
+        url: "/businessAreas/fire-saftey",
+      },
+      {
+        name: "Industrial Turnkey Projects",
+        image: "/cadservice/turb.jpeg",
+        url: "/Industrialtrunckyprojects",
+      },
+      {
+        name: "Construction Works",
+        image: "/expertiseimages/industry/machine.jpg",
+        url: "/industryinstallation-construction",
+      },
+      {
+        name: "Water Supply & Sanitation",
+        image: "/industryhome/water.jpeg",
+        url: "/businessAreas/waterSupplySanitation",
+      },
+      {
+        name: "Manufacturing & Process Plants",
+        image: "/industryhome/Manufacturing & Process.jpg",
+        url: "/businessAreas/manufacturingProcessPlants",
+      },
+    ],
+  },
+  "Renewable Energy": {
+    items: [
+      {
+        name: "epc solar",
+        image: "/solar/epc solution.jpg",
+        url: "/epc-solutions",
+      },
+      {
+        name: "Industrial Solutions",
+        image: "/solar/industrial solar.jpg",
+        url: "/industrial-solar",
+      },
+      {
+        name: "Commercial Solutions",
+        image: "/industry/Commercial (3).jpg",
+        url: "/commercial-solar",
+      },
+      {
+        name: "Soalr Services",
+        image: "/solar/solar design.jpg",
+        url: "/solar",
+      },
+      {
+        name: "Ground-Mounted Solar Solutions",
+        image: "/groundmounted/Captive power generation.jpg",
+        url: "/groundmounted",
+      },
+    ],
+  },
+  "Engineering R&D": {
+    items: [
+      {
+        name: "CFD & CAE Services",
+        image: "/simulation/CFD.png",
+        url: "/cadservices",
+      },
+      {
+        name: "Product Engineering",
+        image: "/expertiseimages/renewable/wind.jpg",
+        url: "/productengineering",
+      },
+      {
+        name: "CAE Simulation Services",
+        image: "/rnd/simulation.jpg",
+        url: "/service/cae-simulation",
+      },
+      {
+        name: "Mechanical Engineering",
+        image: "/rndServices/mechanicalEngineeringServices.jpg",
+        url: "/service/mechanical",
+      },
+      {
+        name: "Civil Engineering",
+        image: "/rndServices/cadConversationServices.jpg",
+        url: "/service/civil-engineering",
+      },
+    ],
+  },
+  "Pre Engineered Building": {
+    items: [
+      {
+        name: "Industrial Shed",
+        image: "/expertiseimages/renewable/solar.jpg",
+        url: "/industrialShed",
+      },
+      {
+        name: "Modular Buildings",
+        image: "/menupageimg/mod3.jpg",
+        url: "/modular",
+      },
+      {
+        name: "Prefab School",
+        image: "/imagesall/Prefab Construction of Specialized Buildings.jpg",
+        url: "/prefabschool",
+      },
+      {
+        name: "Sandwich panels",
+        image: "/menupageimg/sp1.jpg",
+        url: "/sandwichpanels",
+      },
+      {
+        name: "Standard Modular",
+        image: "/menupagetwo/sms-1.jpg",
+        url: "standardmodular",
+      },
+    ],
+  },
+  "Real Estate Development": {
+    items: [
+      {
+        name: "Invest, Finance & Value",
+        image: "/realhome/Invest (3).jpg",
+        url: "/needs",
+      },
+      {
+        name: "Properties for Sale",
+        image: "/real/propetie for sale.jpg",
+        url: "/properties",
+      },
+      {
+        name: "Logistic & Industry",
+        image: "/realmanage properties (2).jpg",
+        url: "/property-types",
+      },
+
+      {
+        name: "Properties for Lease",
+        image: "/real/properties for lease.jpg",
+        url: "/properties",
+      },
+    ],
+  },
+};
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [rightImage, setRightImage] = useState("/service.jpg"); // default img
   const [language, setLanguage] = useState("EN");
+  // const [selectedLeftCategory, setSelectedLeftCategory] = useState<string>("");
 
-  // toggle dropdown
+  // Set default selected category
+  const firstCategory = Object.keys(expertiseData)[0];
+  const [selectedLeftCategory, setSelectedLeftCategory] =
+    useState<string>(firstCategory);
+
+  // Set default right image when dropdown opens
   const handleDropdownClick = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
-    setRightImage("/service.jpg");
+
+    if (name === "expertise") {
+      // Set default image to first item of the selected category
+      setRightImage(
+        expertiseData[firstCategory].items[0]?.image || "/service.jpg"
+      );
+      setSelectedLeftCategory(firstCategory);
+    } else {
+      setRightImage("/service.jpg"); // reset for other dropdowns
+    }
   };
+
+  // const handleDropdownClick = (name: string) => {
+  //   setOpenDropdown(openDropdown === name ? null : name);
+  //   setRightImage("/service.jpg");
+  // };
+
   const toggleDropdown = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
@@ -40,11 +207,12 @@ export default function Navbar() {
           <img
             src="/finallogo.png"
             alt="Landsking Infralogo"
-            className="h-15 w-auto"
+            // className="h-15 w-auto"
+            className="w-33 h-auto md:w-43 lg:w-45"
           />
         </Link>
         {/* Mobile Icons */}
-        <div className="flex items-center space-x-3 md:hidden">
+        <div className="flex items-center space-x-2 md:hidden">
           {/* <button>
             <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
           </button> */}
@@ -53,7 +221,7 @@ export default function Navbar() {
             <button
               onClick={() => toggleDropdown("search")}
               aria-label="Open search"
-              className="relative flex items-center justify-center p-2 rounded-md hover:bg-gray-100 transition"
+              className="relative flex items-center justify-center p-0 rounded-md hover:bg-gray-100 transition"
             >
               <MagnifyingGlassIcon className="h-6 w-6 hover:opacity-80" />
             </button>
@@ -143,7 +311,7 @@ export default function Navbar() {
             {openDropdown === "industry" && (
               <div
                 onMouseLeave={() => setOpenDropdown(null)}
-                className="fixed left-1/2 top-[85px] mb-10 transform -translate-x-1/2 bg-[#0a2351] shadow-lg rounded-lg w-[1300px] flex z-50"
+                className="fixed left-1/2 top-[85px] mb-10 transform -translate-x-1/2 bg-[#000080] shadow-lg rounded-lg w-[1300px] flex z-50"
               >
                 {/* Left Section */}
                 <div className="w-1/3 text-white p-6 space-y-4">
@@ -168,7 +336,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Middle Section */}
-                <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-4 rounded-md">
+                <div className="w-1/3 bg-[#000080] text-white p-6 space-y-4 rounded-md">
                   <button
                     onMouseEnter={() => handleImageChange("/renewable.jpg")}
                     onClick={() => (window.location.href = "/renewableenergy")}
@@ -199,7 +367,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Right Image Section */}
-                <div className="w-1/3 bg-[#2e69c2] p-4 pt-5 pr-8 flex flex-col justify-between text-white">
+                <div className="w-1/3 bg-[#000080] p-4 pt-5 pr-8 flex flex-col justify-between text-white">
                   <img
                     src={rightImage}
                     alt="Industry"
@@ -212,173 +380,73 @@ export default function Navbar() {
           </div>
 
           {/* Expertise Dropdown */}
+          {/* Expertise Dropdown */}
           <div className="relative">
             <button
               onClick={() => handleDropdownClick("expertise")}
               className="flex items-center hover:opacity-80"
             >
-              Expertise
+              Our Solutions
               {openDropdown === "expertise" ? (
                 <ChevronUpIcon className="h-4 w-4 inline ml-1" />
               ) : (
                 <ChevronDownIcon className="h-4 w-4 inline ml-1" />
               )}
             </button>
+
             {openDropdown === "expertise" && (
               <div
                 onMouseLeave={() => setOpenDropdown(null)}
-                className="fixed left-1/2 top-[85px] mb-20 pb-10 transform -translate-x-1/2 bg-[#0a2351] text-white shadow-lg rounded-lg w-[1300px] flex z-50"
+                className="fixed left-1/2 top-[85px] mb-20 pb-10 transform -translate-x-1/2 bg-[#000080] text-white shadow-lg rounded-lg w-[1300px] flex z-50"
               >
-                {/* Expertise content */}
+                {/* Left Column */}
                 <div className="w-1/3 text-white p-10 space-y-3">
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange(
-                        "/expertiseimages/Heavy Engineering.jpg"
-                      )
-                    }
-                    onClick={() => (window.location.href = "/heavyengineering")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Heavy Engineering
-                  </button>
-                  <button
-                    onMouseEnter={() => handleImageChange("/new5.jpg")}
-                    onClick={() => (window.location.href = "/officespace")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Office Space
-                  </button>
-                  <button
-                    onMouseEnter={() => handleImageChange("/new4.jpg")}
-                    onClick={() => (window.location.href = "/publicoffice")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Public Office
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange("/industryhome/water.jpeg")
-                    }
-                    onClick={() =>
-                      (window.location.href = "/waterinfrastructure")
-                    }
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Water Infrastructure
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange(
-                        "//expertiseimages/STRUCTURAL ENGINEERING SERVICES.jpg"
-                      )
-                    }
-                    onClick={() =>
-                      (window.location.href = "/industrybuildingsolutions")
-                    }
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Industry Building Solutions
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange("/water/Green Building Solutions.jpg")
-                    }
-                    onClick={() => (window.location.href = "/greenbuilding")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Green Building
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange("/expertiseimages/Mining Metals.jpg")
-                    }
-                    onClick={() => (window.location.href = "/miningandmetals")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Mining and Metals
-                  </button>
+                  {Object.keys(expertiseData).map((category, idx) => (
+                    <button
+                      key={category}
+                      onClick={() => {
+                        setSelectedLeftCategory(category);
+                        // Default image: first item of selected category
+                        setRightImage(
+                          expertiseData[category].items[0]?.image ||
+                            "/service.jpg"
+                        );
+                      }}
+                      className={`block w-full text-left hover:text-[#8080FF] ${
+                        selectedLeftCategory === category
+                          ? "text-[#8080FF]"
+                          : ""
+                      }`}
+                    >
+                      {category}
+                    </button>
+                  ))}
                 </div>
 
-                <div className="w-1/3 bg-[#1f3f73] text-white p-6 space-y-3 rounded-md">
-                  <button
-                    onMouseEnter={() => handleImageChange("/simulation.jpeg")}
-                    onClick={() =>
-                      (window.location.href = "/simulationservice")
-                    }
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Simulation Service
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange(
-                        "/expertiseimages/Factories Installation.jpg"
+                {/* Center Column */}
+                <div className="w-1/3 bg-[#000080] text-white p-6 space-y-3 rounded-md">
+                  {selectedLeftCategory &&
+                    expertiseData[selectedLeftCategory].items.map(
+                      (item, idx) => (
+                        <button
+                          key={idx}
+                          onMouseEnter={() => handleImageChange(item.image)}
+                          onClick={() => (window.location.href = item.url)}
+                          className="hover:text-[#8080FF] block text-left w-full"
+                        >
+                          {item.name}
+                        </button>
                       )
-                    }
-                    onClick={() => (window.location.href = "/otherindustries")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Other Industries
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange(
-                        "/expertiseimages/Cold Storage and warehouse.jpg"
-                      )
-                    }
-                    onClick={() =>
-                      (window.location.href = "/expertisecoldstorage")
-                    }
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Cold Storage &amp; Warehouse
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange(
-                        "/expertiseimages/Solar Plant Installation.jpg"
-                      )
-                    }
-                    onClick={() => (window.location.href = "/solar")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Solar Services
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange("/expertiseimages/HVAC.jpg")
-                    }
-                    onClick={() => (window.location.href = "/hvac")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    HVAC Services
-                  </button>
-                  <button
-                    onMouseEnter={() =>
-                      handleImageChange("/expertisecoldstorage")
-                    }
-                    onClick={() => (window.location.href = "/fabrication")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Fabrication
-                  </button>
-                  <button
-                    onMouseEnter={() => handleImageChange("/industry.jpg")}
-                    onClick={() => (window.location.href = "/firesaftey")}
-                    className="hover:text-[#8080FF] block text-left w-full"
-                  >
-                    Fire Safety
-                  </button>
+                    )}
                 </div>
 
-                <div className="w-1/3 bg-[#2e69c2] p-7 pr-8 flex flex-col justify-between text-white">
+                {/* Right Image Column */}
+                <div className="w-1/3 bg-[#000080] p-4 flex flex-col justify-center text-white">
                   <img
                     src={rightImage}
-                    alt="Expertise"
-                    className="rounded-md object-cover h-59 w-full mb-4"
+                    alt="Expertise Preview"
+                    className="rounded-md object-cover h-60 w-full"
                   />
-                  <div></div>
                 </div>
               </div>
             )}
@@ -405,7 +473,7 @@ export default function Navbar() {
             {openDropdown === "insights" && (
               <div
                 onMouseLeave={() => setOpenDropdown(null)}
-                className="fixed left-0 top-[85px] w-full py-10 bg-[#0a2351] text-white shadow-lg rounded-none z-50 border-t border-gray-100"
+                className="fixed left-0 top-[85px] w-full py-10 bg-[#000080] text-white shadow-lg rounded-none z-50 border-t border-gray-100"
               >
                 <div className="grid grid-cols-4 gap-6 text-center">
                   <Link
@@ -447,7 +515,7 @@ export default function Navbar() {
             {openDropdown === "about" && (
               <div
                 onMouseLeave={() => setOpenDropdown(null)}
-                className="fixed left-0 top-[85px] w-full py-10 bg-[#0a2351] text-white shadow-lg rounded-none z-50 border-t border-gray-100"
+                className="fixed left-0 top-[85px] w-full py-10 bg-[#000080] text-white shadow-lg rounded-none z-50 border-t border-gray-100"
               >
                 <div className="grid grid-cols-4 gap-6 text-center">
                   <Link href="/mission" className="hover:text-[#8080FF]">
@@ -578,7 +646,7 @@ export default function Navbar() {
           <div className="border-b border-gray-200 py-2">
             <button
               onClick={() => toggleDropdown("industries")}
-              className="w-full text-left font-semibold flex justify-between items-center"
+              className="w-full text-left  flex justify-between items-center"
             >
               INDUSTRIES
               <span>
@@ -640,133 +708,58 @@ export default function Navbar() {
           <div className="border-b border-gray-200 py-2">
             <button
               onClick={() => toggleDropdown("expertise")}
-              className="w-full text-left font-semibold flex justify-between items-center"
+              className="w-full text-left  flex justify-between items-center"
             >
-              EXPERTISE
+              OUR SOLUTIONS
               <span>
-                {openDropdown === "industries" ? (
+                {openDropdown === "expertise" ? (
                   <FaChevronUp />
                 ) : (
                   <FaChevronDown />
                 )}
-              </span>{" "}
+              </span>
             </button>
 
             {openDropdown === "expertise" && (
-              <ul className="pl-4 mt-2 space-y-1">
-                <li>
-                  <Link
-                    href="/heavyengineering"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Heavy Engineering
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/officespace"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Office Space
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/publicoffice"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Public Office
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/waterinfrastructure"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Water Infrastructure
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/structuralsteel"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Industry Building Solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/otherindustries"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Other Industries
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/simulationservice"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Simulation Service
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/fabrication"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Fabrication
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/firesaftey"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Fire Safety
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/greenbuilding"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Green Building
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/miningandmetals"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Mining and Metals
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/expertisecoldstorage"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Cold Storage &amp; Warehouse
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/solar"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Solar Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/hvac"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    HVAC Services
-                  </Link>
-                </li>
-              </ul>
+              <div className="pl-4 mt-2 space-y-2">
+                {Object.keys(expertiseData).map((category) => (
+                  <div key={category}>
+                    <button
+                      onClick={() =>
+                        setSelectedLeftCategory(
+                          selectedLeftCategory === category ? "" : category
+                        )
+                      }
+                      className="w-full text-left font-medium flex justify-between items-center py-1 hover:text-[#8080FF]"
+                    >
+                      {category}
+                      <span>
+                        {selectedLeftCategory === category ? (
+                          <FaChevronUp />
+                        ) : (
+                          <FaChevronDown />
+                        )}
+                      </span>
+                    </button>
+
+                    {/* Subitems */}
+                    {selectedLeftCategory === category && (
+                      <ul className="pl-4 mt-1 space-y-1">
+                        {expertiseData[category].items.map((item, idx) => (
+                          <li key={idx}>
+                            <button
+                              onClick={() => (window.location.href = item.url)}
+                              className="block w-full text-left px-2 py-1 hover:text-[#8080FF]"
+                            >
+                              {item.name}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
             )}
           </div>
 

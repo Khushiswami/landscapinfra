@@ -37,7 +37,7 @@ export default function Insights() {
   }, []);
 
   return (
-    <div className="relative px-6 lg:px-25 pb-6 md:py-10 md:px-15">
+    <div className="relative px-5 lg:px-25 pb-6 md:py-10 md:px-15">
       <h1 className="text-center text-3xl font-bold my-10 text-[#000080]">
         Our Latest Insights
       </h1>

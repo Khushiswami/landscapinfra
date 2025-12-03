@@ -12,25 +12,25 @@ export default function Banner() {
   const slides = [
     {
       title: "Industry Installation and Construction",
-      desc: "Quality Construction Project Delivery on time with customer satisfaction.",
+      desc: "Quality construction project delivery — on time, with complete client satisfaction",
       video: "/rndvideo/industry instalation.mp4",
       link: "/industryinstallation",
     },
     {
-      title: "Engineering & RND Services",
-      desc: "Committed to advancing innovation, fairness, equity, and quality in assessment.",
+      title: "Engineering & R&D Services",
+      desc: "Committed to advancing innovation, fairness, equity, and quality in assessment",
       video: "/video/engineer.mp4",
       link: "/rnd",
     },
     {
       title: "Renewable Energy Solution Provider",
-      desc: "Explore innovation in industrial equipment with green technologies.",
+      desc: "Explore innovation in industrial equipment with green technologies",
       video: "/solarvideo/design.mp4",
       link: "/renewableenergy",
     },
     {
       title: "Pre-Engineered Buildings",
-      desc: "Modular and pre-engineered structures tailored for efficiency and scalability.",
+      desc: "Modular and pre-engineered structures tailored for efficiency and scalability",
       video: "/video/peb.mp4",
       link: "/preEngineeredBuildings",
     },
@@ -106,10 +106,10 @@ export default function Banner() {
             </p>
             <button
               onClick={() => router.push(activeSlide.link)}
-              className="px-6 py-3 bg-white text-[#000080] font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-[18px]"
+              className=" py-1  px-3 md:px-6 md:py-3 bg-white text-[#000080] font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-[18px]"
             >
-              <IoIosArrowForward className="w-5 h-5 text-[#000080]" />
-              <span className="text-lg">Start now</span>
+              <IoIosArrowForward className=" w-4 h-4 md:w-5 md:h-5 text-[#000080]" />
+              <span className=" text-md md:text-lg">More Info</span>
             </button>
           </motion.div>
         </AnimatePresence>

@@ -28,7 +28,7 @@ export default function CoreBusiness() {
       image: "/home/industry installation.jpeg",
     },
     { title: "Engineering and R&D Services", image: "/engineer.jpg" },
-    { title: "Renewable Energy Solution Provider", image: "/renewable.jpg" },
+    { title: " Solar Renewable Energy Solution ", image: "/renewable.jpg" },
     { title: "Real Estate Development", image: "/home/real estate.jpeg" },
   ];
 
@@ -109,13 +109,7 @@ export default function CoreBusiness() {
 
                 {/* ✅ Title + Circular Arrow below image */}
                 <div className="flex items-center justify-center gap-3 mt-3">
-                  <h3
-                    className="text-[15px] font-bold text-black text-center transition-colors duration-500 group-hover:text-[#000080]"
-                    style={{
-                      fontFamily:
-                        "'NewPanam Skyline', 'DM Sans', Arial, sans-serif",
-                    }}
-                  >
+                  <h3 className="text-[15px] font-bold text-black text-center transition-colors duration-500 group-hover:text-[#000080]">
                     {item.title}
                   </h3>
 
@@ -132,16 +126,20 @@ export default function CoreBusiness() {
         </Swiper>
 
         {/* ✅ Mobile arrows overlay */}
-        <div className="mx-3 absolute inset-0 flex items-center justify-between px-2 md:hidden z-20">
+        {/* Mobile arrows overlay */}
+        <div className="md:hidden">
+          {/* Prev Arrow */}
           <div
             ref={prevMobileRef}
-            className="bg-[#000080] rounded-full p-2 flex items-center justify-center cursor-pointer shadow-lg"
+            className="absolute top-1/2 left-2 transform -translate-y-3/2 bg-[#000080] rounded-full p-2 flex items-center justify-center cursor-pointer shadow-lg z-20"
           >
             <ChevronLeft className="text-white w-5 h-5" />
           </div>
+
+          {/* Next Arrow */}
           <div
             ref={nextMobileRef}
-            className="bg-[#000080] mb-2 rounded-full p-2 flex items-center justify-center cursor-pointer shadow-lg"
+            className="absolute top-1/2 right-2 transform -translate-y-3/2 bg-[#000080] rounded-full p-2 flex items-center justify-center cursor-pointer shadow-lg z-20"
           >
             <ChevronRight className="text-white w-5 h-5" />
           </div>

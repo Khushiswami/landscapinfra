@@ -149,7 +149,7 @@ export default function Industryheadsecond() {
     <header className="fixed top-0 z-50 bg-white w-full shadow-md">
       <div className="mx-auto flex items-center justify-between px-6 md:px-20 py-4">
         {/* Logo */}
-        <Link href="/industryinstallation" className="flex-shrink-0">
+        <Link href="/" className="flex-shrink-0">
           <Image
             src="/finallogo.png"
             alt="Landsking Infra logo"

@@ -179,7 +179,7 @@ export default function Industryheader() {
         }`}
       >
         {/* Logo */}
-        <Link href="/industryinstallation" className="flex-shrink-0">
+        <Link href="/" className="flex-shrink-0">
           <Image
             src={isDesktop && !scrolled ? "/whitelogo.png" : "/finallogo.png"}
             alt="Logo"

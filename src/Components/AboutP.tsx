@@ -24,10 +24,10 @@ export default function AboutP() {
         }}
       >
         <div className=" text-white space-y-6 relative z-10">
-          <h1 className="text-xl md:text-[25px] font-semibold  text-justify">
-            &quot;Lands king Infra works with Clients in diverse industries
+          <h1 className="text-xl md:text-[25px] font-semibold  text-justify ">
+            &quot;Landsking Infra works with clients in diverse industries
             around the world to design, construct and maintain their capital
-            projects.&quot;
+            projects&quot;
           </h1>
 
           <p className="text-[15px] md:text-[16px] font-[500px] text-white text-justify">

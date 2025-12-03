@@ -333,7 +333,7 @@ export default function Footer() {
               href="mailto:info@Landsking Infrainfra.com"
               className="hover:underline"
             >
-              info@Landsking Infrainfra.com
+              landskinginfra@gmail.com
             </a>
           </div>
 

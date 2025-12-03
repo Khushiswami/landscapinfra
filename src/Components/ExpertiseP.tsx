@@ -149,7 +149,8 @@ export default function ExpertiseP() {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    // className="w-full h-full object-cover"
+                    className="w-full h-auto rounded-md object-cover"
                   />
                 </div>
 
