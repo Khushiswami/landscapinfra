@@ -108,8 +108,9 @@ export default function Banner() {
               onClick={() => router.push(activeSlide.link)}
               className=" py-1  px-3 md:px-6 md:py-3 bg-white text-[#000080] font-semibold rounded-full shadow-lg hover:bg-blue-100 transition flex items-center gap-2 text-[18px]"
             >
-              <IoIosArrowForward className=" w-4 h-4 md:w-5 md:h-5 text-[#000080]" />
               <span className=" text-md md:text-lg">More Info</span>
+                            <IoIosArrowForward className=" w-4 h-4 md:w-5 md:h-5 text-[#000080]" />
+
             </button>
           </motion.div>
         </AnimatePresence>
