@@ -186,7 +186,7 @@ export default function Realstateheader() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-gray-700"
+            className="md:hidden text-gray-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
