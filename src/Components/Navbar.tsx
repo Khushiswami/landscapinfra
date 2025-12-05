@@ -499,41 +499,7 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* About */}
-          <div className="relative">
-            <button
-              onClick={() => handleDropdownClick("about")}
-              className="flex items-center hover:opacity-80"
-            >
-              About
-              {openDropdown === "about" ? (
-                <ChevronUpIcon className="h-4 w-4 inline ml-1" />
-              ) : (
-                <ChevronDownIcon className="h-4 w-4 inline ml-1" />
-              )}
-            </button>
-            {openDropdown === "about" && (
-              <div
-                onMouseLeave={() => setOpenDropdown(null)}
-                className="fixed left-0 top-[85px] w-full py-10 bg-[#000080] text-white shadow-lg rounded-none z-50 border-t border-gray-100"
-              >
-                <div className="grid grid-cols-4 gap-6 text-center">
-                  <Link href="/mission" className="hover:text-[#8080FF]">
-                    Mission
-                  </Link>
-                  <Link href="/leadership" className="hover:text-[#8080FF]">
-                    Leadership
-                  </Link>
-                  <Link href="/innovation" className="hover:text-[#8080FF]">
-                    Innovation
-                  </Link>
-                  <Link href="/company" className="hover:text-[#8080FF]">
-                    History
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
+          
         </nav>
         {/* Desktop Right Icons */}
         {/* <div className="hidden md:flex items-center space-x-4"> */}
@@ -782,54 +748,7 @@ export default function Navbar() {
             MEDIA
           </Link>
           {/* About collapsible */}
-          <div className="border-b border-gray-200 py-2">
-            <button
-              onClick={() => toggleDropdown("about")}
-              className="w-full text-left font-semibold flex justify-between items-center"
-            >
-              ABOUT
-              <span>
-                {openDropdown === "about" ? <FaChevronUp /> : <FaChevronDown />}
-              </span>{" "}
-            </button>
-
-            {openDropdown === "about" && (
-              <ul className="pl-4 mt-2 space-y-1">
-                <li>
-                  <Link
-                    href="/company"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Our History
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/leadership"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Leadership
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/mission"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Our Mission
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/innovation"
-                    className="block px-4 py-2  hover:text-[#8080FF]"
-                  >
-                    Innovation
-                  </Link>
-                </li>
-              </ul>
-            )}
-          </div>
+         
 
           <Link
             href="/contact"
